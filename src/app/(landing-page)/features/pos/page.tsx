@@ -1,5 +1,4 @@
 'use client'
-
 import dynamic from "next/dynamic";
 import React from 'react';
 
@@ -11,10 +10,47 @@ const KeyHighlights = dynamic(() => import('@/components/pages/features-page/poi
 const WhyChoosePOS = dynamic(() => import('@/components/pages/features-page/point-of-sale/WhyChoosePOS'));
 const SubFeaturesHero = dynamic(() => import('@/components/pages/features-page/SubFeaturesHero'));
 const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'));
-const IndustryPOSShowcase = dynamic(() => import('@/components/pages/landing-page/IndustryPosShowcase'));
+const IndustryPosShowcase = dynamic(() => import('@/components/pages/landing-page/IndustryPosShowcase'));
 
 
 
+const posIndustries = [
+  {
+    title: 'Retail Stores',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'Barcode scanning, price overrides, and detailed sales reports help you move faster at the counter while keeping inventory and revenue under control.',
+    image: '/assets/industry-type/retail-store.webp',
+    mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+  },
+  {
+    title: 'Restaurant Types',
+    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+    description: 'Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time.',
+    image: '/assets/industry-type/restaurant.webp',
+    mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+  },
+  {
+    title: 'Wholesalers',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'Handle bulk orders with customer-specific pricing, manage multi-location inventory, and keep fulfillment running efficiently.',
+    image: '/assets/industry-type/whole-sale.webp',
+    mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
+  },
+  {
+    title: 'Pharmacies',
+    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+    description: 'Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales effortlessly.',
+    image: '/assets/industry-type/pharmacy.webp',
+    mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+  },
+  {
+    title: 'Service Business',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across stores.',
+    image: '/assets/industry-type/fashion.webp',
+    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+  },
+];
 
 const posTestimonials = [
   {
@@ -113,43 +149,7 @@ const posTestimonials = [
 ];
 
 
-const posIndustries = [
-  {
-    title: "Retail Stores",
-    description:
-      "Barcode scanning, price overrides, and detailed sales reports help you move faster at the counter while keeping inventory and revenue under control, perfect for convenience stores, electronics, cosmetics, and more.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
-  },
-  {
-    title: "Restaurant Types",
-    description:
-      "Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time — ensuring smooth operations from kitchen to counter.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp", // Add mobile image
-  },
-  {
-    title: "Wholesalers",
-    description:
-      "Handle bulk orders with customer-specific pricing, manage multi-location inventory, and keep fulfillment running efficiently with a system built for volume.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp", 
-  },
-  {
-    title: "Pharmacies",
-    description:
-      "Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales and digital prescriptions effortlessly.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
-  },
-  {
-    title: "Fashion & Apparel",
-    description:
-      "Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across online and physical stores, whether you sell streetwear, shoes, or high fashion.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp", // Add mobile image
-  },
-];
+
 
 
 const FeaturesCards = [
@@ -257,10 +257,11 @@ const page = () => {
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
-        <IndustryPOSShowcase
+        {/* <IndustryPOSShowcase
         heading="Industry-Ready POS to Power Your Sales"
   description="There is no single business like another; then why use generic point-of-sale systems? Owners Inventory offers a customized point of sale software and point of sale solution to meet your industry specifications."
-         industries={posIndustries} />
+         industries={posIndustries} /> */}
+          <IndustryPosShowcase industries={posIndustries} />
       </div>
 
       <FeaturesCallToAction

@@ -10,14 +10,14 @@ const features = [
     title: "Smart POS System for Modern Retail",
     icon: "/assets/features-section/pos-system.svg",
     webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm",
-    mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.mp4",
+    mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm.mp4",
   },
   {
     id: "inventory-ecommerce",
     title: "Built-in E-commerce - Fully Synced and Ready to Sell",
     icon: "/assets/features-section/cart-icon.svg",
-    webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/e-commerceopt.webm",
-    mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/e-commerceopt.mp4",
+    webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.webm",
+    mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.mp4",
   },
   {
     id: "inventory-management",

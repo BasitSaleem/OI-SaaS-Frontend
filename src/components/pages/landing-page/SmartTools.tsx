@@ -96,11 +96,11 @@ const SmartTools = () => {
             controls={false}
           >
             <source
-              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay-ahead.mp4"
+              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
               type="video/mp4"
             />
             <source
-              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay-ahead.webm"
+              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"
               type="video/webm"
             />
           </video>
