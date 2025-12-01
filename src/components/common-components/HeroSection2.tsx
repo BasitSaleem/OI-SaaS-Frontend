@@ -277,11 +277,11 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         loop
                       >
                         <source
-                          src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-animation.mp4"
+                          src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.mp4"
                           type="video/mp4"
                         />
                         <source
-                          src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-animation.webm"
+                          src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.webm"
                           type="video/webm"
                         />
                       </video>

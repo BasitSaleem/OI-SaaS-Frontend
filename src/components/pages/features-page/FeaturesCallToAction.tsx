@@ -6,7 +6,16 @@ import ButtonSm from "@/components/button/ButtonSm";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 
-const FeaturesCallToAction: React.FC = () => {
+interface FeaturesCallToAction{
+  title?: string,
+   description?: string;
+}
+
+const FeaturesCallToAction: React.FC<FeaturesCallToAction> = ({
+  title = "Sell Smarter. Run Your Business Better",
+  description= "Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations.",
+  
+}) => {
   return (
     <div className="wrapper">
       <section
@@ -21,11 +30,11 @@ const FeaturesCallToAction: React.FC = () => {
         <div className="wrapper">
           <div className="flex flex-col items-center justify-center w-full mx-auto lg:py-[160px] md:py-28 py-9 lg:px-8 md:px-6 px-3  text-center">
             <MainHeading className="text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5">
-              Sell Smarter. Run Your Business Better
+               {title}
             </MainHeading>
 
             <Paragraph className="text-[var(--white-color)] mb-10 md:mb-8 lg:mb-14">
-              Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations.
+                {description}
             </Paragraph>
             <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
               <ButtonSm

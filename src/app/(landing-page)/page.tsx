@@ -90,6 +90,44 @@ const caseStudiesData = [
   },
 ];
 
+const homeIndustries = [
+  {
+    title: "Retail Stores",
+    description:
+      "Barcode scanning, price overrides, and detailed sales reports help you move faster at the counter while keeping inventory and revenue under control, perfect for convenience stores, electronics, cosmetics, and more.",
+    image: "/assets/industry-type/retail-store.webp",
+    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+  },
+  {
+    title: "Restaurant Types",
+    description:
+      "Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time — ensuring smooth operations from kitchen to counter.",
+    image: "/assets/industry-type/restaurant.webp",
+    mobileImage: "/assets/industry-type/restaurant-mobile.webp", // Add mobile image
+  },
+  {
+    title: "Wholesalers",
+    description:
+      "Handle bulk orders with customer-specific pricing, manage multi-location inventory, and keep fulfillment running efficiently with a system built for volume.",
+    image: "/assets/industry-type/whole-sale.webp",
+    mobileImage: "/assets/industry-type/whole-sale-mobile.webp", 
+  },
+  {
+    title: "Pharmacies",
+    description:
+      "Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales and digital prescriptions effortlessly.",
+    image: "/assets/industry-type/pharmacy.webp",
+    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+  },
+  {
+    title: "Fashion & Apparel",
+    description:
+      "Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across online and physical stores, whether you sell streetwear, shoes, or high fashion.",
+    image: "/assets/industry-type/fashion.webp",
+    mobileImage: "/assets/industry-type/fashion-mobile.webp", // Add mobile image
+  },
+];
+
 // Full page loading component
 const FullPageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-white">
@@ -120,7 +158,9 @@ export default function Home() {
             variant="animation2"
           />
 
-          <TrustedBySection />
+          <TrustedBySection
+           heading="Preferred to businesses who demand precision and performance"
+          />
 
           <TurningChaos
             title="Turning Chaos Into Clarity One Inventory at a Time."
@@ -138,7 +178,7 @@ export default function Home() {
 
           <VoicesRealBusiness />
           
-          <IndustryPOSShowcase />
+          <IndustryPOSShowcase industries={homeIndustries}/>
 
           <PosIconsSection />
 

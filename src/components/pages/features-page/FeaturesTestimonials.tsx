@@ -4,7 +4,24 @@ import Image from 'next/image';
 import SmartTools from '../landing-page/SmartTools';
 import CustomSwiper from '@/components/slider/CustomSwiper';
 
-const slides = [
+interface TestimonialSlide {
+  name: string;
+  title: string;
+  image: string;
+  text: string;
+  icon: string;
+  color: string;
+}
+
+interface FeaturesTestimonialsProps {
+  testimonials?: TestimonialSlide[];
+  heading?: string;
+  paragraph?: string;
+  showSmartTools?: boolean;
+  gradientBackground?: string;
+}
+
+const defaultTestimonials = [
   {
     name: "Fatima A.",
     title: "Boutique Owner",
@@ -100,23 +117,39 @@ const slides = [
   },
 ];
 
-const FeaturesTestimonials = () => {
-  return (
-    <div className='w-full py-[60px] lg:mt-[100px] md:mt-28 mt-20 rounded-t-[40px]' 
-    style={{ background:
-         `
-    linear-gradient(0deg, rgba(255, 255, 255, 0.9) 40%, transparent 100%),
-    linear-gradient(90deg,  rgba(158, 2, 255, 0.3) 0%, rgba(207, 181, 249, 0.9) 40%, rgba(26, 209, 185, 0.3) 90%)
-  `,
-      }}>
-        <section className='wrapper'>
-            <div className="flex flex-col">
-                <MainHeading className='text-center mb-6 md:mb-8 lg:mb-10'>What Clients Say About Us?</MainHeading>
+const defaultGradientBackground = `
+  linear-gradient(0deg, rgba(255, 255, 255, 0.9) 40%, transparent 100%),
+  linear-gradient(90deg, rgba(158, 2, 255, 0.3) 0%, rgba(207, 181, 249, 0.9) 40%, rgba(26, 209, 185, 0.3) 90%)
+`;
 
-            <section className="relative flex items-stretch rounded-2xl">
-               <CustomSwiper
-             slides={slides}
-            renderSlide={(slide, i) => (
+const FeaturesTestimonials = ({
+  testimonials = defaultTestimonials,
+  heading = "What Clients Say About Us?",
+  paragraph,
+  showSmartTools = true,
+  gradientBackground = defaultGradientBackground
+}: FeaturesTestimonialsProps) => {
+  return (
+    <div 
+      className='w-full py-[60px] lg:mt-[100px] md:mt-28 mt-20 rounded-t-[40px]' 
+      style={{ background: gradientBackground }}
+    >
+      <section className='wrapper'>
+        <div className="flex flex-col">
+          <MainHeading className='text-center mb-6 md:mb-8 lg:mb-10'>
+            {heading}
+          </MainHeading>
+          
+          {paragraph && (
+            <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto px-4">
+              {paragraph}
+            </p>
+          )}
+
+          <section className="relative flex items-stretch rounded-2xl">
+            <CustomSwiper
+              slides={testimonials}
+              renderSlide={(slide, i) => (
                 <div
                   className="testimonial-card flex flex-col h-full self-stretch justify-between relative bg-white shadow-[0px_0px_20px_0px_rgba(0,0,0,0.05)] rounded-[30px] xl:p-6 p-5 md:mb-6 mb-20 break-inside-avoid"
                 >
@@ -156,16 +189,18 @@ const FeaturesTestimonials = () => {
                     </p>
                   </div>
                 </div>
-            )}
-          />
+              )}
+            />
           </section>
 
-        <div className="">
-          <SmartTools/>
-        </div>
+          {showSmartTools && (
+            <div className="">
+              <SmartTools />
             </div>
-        </section>
-      </div>
+          )}
+        </div>
+      </section>
+    </div>
   )
 }
 
