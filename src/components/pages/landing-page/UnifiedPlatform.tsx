@@ -47,9 +47,8 @@ export default function UnifiedPlatform() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    // create a GSAP context for scoping to this component
     const ctx = gsap.context(() => {
-      // matchMedia to separate desktop/tablet/mobile timelines
+      
       const mm = gsap.matchMedia();
       mmRef.current = mm;
 
@@ -183,7 +182,8 @@ export default function UnifiedPlatform() {
       className=" min-h-[100vh] relative"
       aria-label="Unified Platform Section"
     >
-      <div ref={sectionTriggerRef} className="h-1 w-full mb-4 md:mb-28 lg:mb-[100px]"></div>
+      <div ref={sectionTriggerRef} className="h-0 absolute top-0 w-full bg-transparent"></div>
+      <div className="lg:h-[100px] md:h-28 h-20"></div>
       <section className="wrapper">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-8 sm:py-20 xl:py-16 px-6 sm:px-10 xl:px-28 rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
           {/* Cards Column */}
