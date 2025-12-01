@@ -16,25 +16,25 @@ const cards = [
     icon: "/assets/unified-platform/unified-operations.svg",
     title: "Unified Operations",
     description:
-      "Manage inventory, POS, e-commerce, and customer data from one unified system — no switching between tools.",
+      "Smartly process inventory, POS, e-commerce, customer data--all in one place. No longer having to carry around various tools.",
   },
   {
     icon: "/assets/unified-platform/real-time-reporting.svg",
     title: "Real-Time Reporting",
     description:
-      "Make faster, smarter decisions with live sales insights, stock analytics, and performance dashboards.",
+      "Keep up with real-time sales data, inventory data, and performance dashboards that enable better-informed, swift decisions.",
   },
   {
     icon: "/assets/unified-platform/cost-effection.svg",
     title: "Cost-Efficient Operations",
     description:
-      "Replace multiple apps with one smart solution, save on software costs and reduce manual errors.",
+      "Automate your operations by integrating several applications into a single smart product. Reduce the cost of software and reduce manual errors.",
   },
   {
     icon: "/assets/unified-platform/built-to-scale.svg",
     title: "Built to Scale with You",
     description:
-      "Owners Inventory grows with your business — start small, scale big.",
+      "Owners Inventory can easily evolve to meet the needs of your business at any stage, whether it is small or large.",
   },
 ];
 
