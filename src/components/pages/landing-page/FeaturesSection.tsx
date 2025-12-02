@@ -10,7 +10,7 @@ const features = [
     title: "Smart POS System for Modern Retail",
     icon: "/assets/features-section/pos-system.svg",
     webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm",
-    mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm.mp4",
+    mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.mp4",
   },
   {
     id: "inventory-ecommerce",

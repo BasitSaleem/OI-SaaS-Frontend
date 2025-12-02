@@ -179,7 +179,7 @@ export default function UnifiedPlatform() {
   return (
     <div
       ref={sectionRef}
-      className=" min-h-[100vh] relative"
+      className=" min-h-[100vh] relative w-full overflow-hidden"
       aria-label="Unified Platform Section"
     >
       <div ref={sectionTriggerRef} className="h-0 absolute top-0 w-full bg-transparent"></div>
