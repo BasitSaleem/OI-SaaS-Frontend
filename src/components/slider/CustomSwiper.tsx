@@ -34,11 +34,11 @@ export default function CustomSwiper<T>({
       breakpoints={{
         768: { 
           slidesPerView: 2, 
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         },
         1024: { 
           slidesPerView: 2, 
-          slidesPerGroup: 2 
+          slidesPerGroup: 1 
         },
       }}
       className="mySwiper overflow-x-hidden flex items-stretch"

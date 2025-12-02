@@ -86,7 +86,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
             className="text-lg leading-[100%] font-medium font-onest text-[var(--text-grey)] flex gap-1 items-center justify-center cursor-pointer"
           >
             {showAll ? "View Less" : "View More"}
-            <span>
+            <span className={`transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`}>
               <ArrowDown size={24} />
             </span>
           </button>

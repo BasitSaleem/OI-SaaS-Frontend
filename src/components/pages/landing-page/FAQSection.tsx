@@ -3,8 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import "../../../app/globals.css";
 import ButtonLg from "@/components/button/ButtonLg";
-import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
+import SubHeading from "../typography/SubHeading";
 
 interface FAQ {
   question: string;
@@ -125,9 +125,9 @@ export default function FaqSection({
 
           {/* Right Content */}
           <div className="order-1 lg:order-2 lg:col-span-5 flex flex-col items-start justify-start text-left">
-            <MainHeading className="mb-5 lg:mb-10">
+            <SubHeading className="mb-5 lg:mb-10">
               {heading}
-            </MainHeading>
+            </SubHeading>
             <Paragraph className="mb-8 md:mb-5 xl:mb-10 text-[var(--text-dark)]">
               {paragraph}
             </Paragraph>

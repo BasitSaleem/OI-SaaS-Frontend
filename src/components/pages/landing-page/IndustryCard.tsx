@@ -46,7 +46,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
 
   return (
     <div
-      className={`relative rounded-[30px] shadow-sm overflow-hidden h-auto md:h-[360px] w-full cursor-pointer transition-all duration-300 ${className}`}
+      className={`relative rounded-[30px] shadow-sm overflow-hidden h-auto md:h-[390px] w-full cursor-pointer transition-all duration-300 ${className}`}
       style={{
         background: isMobile ? "#F3F3F3" : isHovered ? "#F3F3F3" : gradient,
       }}

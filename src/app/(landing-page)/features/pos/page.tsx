@@ -1,54 +1,73 @@
-'use client'
+"use client";
 import dynamic from "next/dynamic";
-import React from 'react';
+import React from "react";
 
 // 🔥 Dynamic Imports
-const TrustedBySection = dynamic(() => import('@/components/common-components/TrustedBySection'));
-const FeaturesCallToAction = dynamic(() => import('@/components/pages/features-page/FeaturesCallToAction'));
-const FeaturesTestimonials = dynamic(() => import('@/components/pages/features-page/FeaturesTestimonials'));
-const KeyHighlights = dynamic(() => import('@/components/pages/features-page/point-of-sale/KeyHighlights'));
-const WhyChoosePOS = dynamic(() => import('@/components/pages/features-page/point-of-sale/WhyChoosePOS'));
-const SubFeaturesHero = dynamic(() => import('@/components/pages/features-page/SubFeaturesHero'));
-const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'));
-const IndustryPosShowcase = dynamic(() => import('@/components/pages/landing-page/IndustryPosShowcase'));
-
-
+const TrustedBySection = dynamic(
+  () => import("@/components/common-components/TrustedBySection")
+);
+const FeaturesCallToAction = dynamic(
+  () => import("@/components/pages/features-page/FeaturesCallToAction")
+);
+const FeaturesTestimonials = dynamic(
+  () => import("@/components/pages/features-page/FeaturesTestimonials")
+);
+const KeyHighlights = dynamic(
+  () => import("@/components/pages/features-page/point-of-sale/KeyHighlights")
+);
+const WhyChoosePOS = dynamic(
+  () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS")
+);
+const SubFeaturesHero = dynamic(
+  () => import("@/components/pages/features-page/SubFeaturesHero")
+);
+const FaqSection = dynamic(
+  () => import("@/components/pages/landing-page/FAQSection")
+);
+const IndustryPosShowcase = dynamic(
+  () => import("@/components/pages/landing-page/IndustryPosShowcase")
+);
 
 const posIndustries = [
   {
-    title: 'Retail Stores',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Barcode scanning, price overrides, and detailed sales reports help you move faster at the counter while keeping inventory and revenue under control.',
-    image: '/assets/industry-type/retail-store.webp',
-    mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+    title: "Retail Stores",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "Quicken checkout with barcode scanning and detailed reports as our POS system streamlines inventory and revenue control with industry-specific insights.",
+    image: "/assets/industry-type/retail-store.webp",
+    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
   },
   {
-    title: 'Restaurant Types',
-    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time.',
-    image: '/assets/industry-type/restaurant.webp',
-    mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+    title: "Restaurants",
+    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+    description:
+      "Serve customers faster with quick-bill POS software that manages tables, menus, and real-time stock while seamlessly connecting kitchen and counter operations for accurate, efficient service.",
+    image: "/assets/industry-type/restaurant.webp",
+    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
   },
   {
-    title: 'Wholesalers',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Handle bulk orders with customer-specific pricing, manage multi-location inventory, and keep fulfillment running efficiently.',
-    image: '/assets/industry-type/whole-sale.webp',
-    mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
+    title: "Wholesalers",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "Easily manage large orders, special pricing, and multi-location stock with wholesaler-focused POS features that streamline bulk transactions and boost efficiency for high-volume businesses.",
+    image: "/assets/industry-type/whole-sale.webp",
+    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
   },
   {
-    title: 'Pharmacies',
-    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales effortlessly.',
-    image: '/assets/industry-type/pharmacy.webp',
-    mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+    title: "Pharmacies",
+    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+    description:
+      "Ensure adherence to various batch tracking, expiry notifications, and detailed records whilst handling walk-in sales and electronic prescriptions with ease using our best point of sale software.",
+    image: "/assets/industry-type/pharmacy.webp",
+    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
   {
-    title: 'Service Business',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across stores.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+    title: "Fashion & Apparel",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "Keep track of all sizes, colors, and styles using product variants, seasonal collections, and matching stock in both online and physical stores using our best point of sale systems-the best in streetwear, shoe, or high fashion.",
+    image: "/assets/industry-type/fashion.webp",
+    mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },
 ];
 
@@ -57,11 +76,7 @@ const posTestimonials = [
     name: "Fatima A.",
     title: "Boutique Owner",
     image: "/assets/pfp.avif",
-    text: `"Before Owners Inventory, I had to switch between spreadsheets, my POS app, and an online
-    store backend just to track what I was selling. I constantly oversold items or ran out of
-    stock without realizing. Now everything is synced, my stock levels, sales
-    reports, customer data, even my online store runs from the same system. I have time to focus
-    on styling my store, not fixing my backend."`,
+    text: `"The transition to Owners Inventory has totally transformed the manner in which we conduct our retail business. It used to be a mess to manage sales and stock in the past but now everything is updated in real time."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -69,7 +84,7 @@ const posTestimonials = [
     name: "Hassan Malik",
     title: "Fashion & Apparel Seller",
     image: "/assets/pfp.avif",
-    text: `"I run a small bakery from home, and I thought inventory tools were just for big stores. But Owners Inventory helps me track ingredients, handle custom orders, and even take online payments through my synced storefront. It feels like I have a full back office — without hiring anyone."`,
+    text: `"Managing a busy restaurant, we have to count every second and this POS has created that difference. There is no confusion in sending orders to the kitchen and there is no problem with managing menus or tables. The speed of our service has increased and customers have felt the difference. It has become an element of our workflow."`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
@@ -77,10 +92,7 @@ const posTestimonials = [
     name: "David Martinez",
     title: "HOD Supply Chain, PureSip Beverages",
     image: "/assets/100.jpeg",
-    text: `"As a beverage company managing retail, wholesale, and DTC channels, stock coordination was our biggest pain. Owners Inventory brought everything into one place — real-time tracking,
-    automated reordering, mobile sales integration. We cut out-of-stocks
-    by over 60% and reduced fulfillment lead time dramatically. It's agile, scalable, and
-    surprisingly easy to roll out across departments."`,
+    text: `"The process of managing multiple store locations would have involved countless spreadsheets and phone calls. With Owners Inventory, all is linked together. It is comforting when we finally get a system that works, regardless of our location."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -88,140 +100,138 @@ const posTestimonials = [
     name: "Ali R.",
     title: "Electronics Shop Manager",
     image: "/assets/100.jpeg",
-    text: `"I'm not a tech expert, and my staff definitely isn't. What I love about Owners Inventory is that it's super intuitive. My staff handles billing and stock without needing constant help, and I get all the reports I need to make smart decisions. It's simple where it needs to be — and powerful where it matters."`,
+    text: `"Everything in the pharmacy business is accuracy and compliance and this system provides both. Owners Inventory provides us with the reassurance to concentrate on our customers rather than work."`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
-  {
-    name: "Zainab Batool",
-    title: "Home Bakery Owner",
-    image: "/assets/pfp.avif",
-    text: `"I run a small bakery from home, and I thought inventory tools were just for big stores. But Owners Inventory helps me track ingredients, handle custom orders, and even take online payments through my synced storefront. It feels like I have a full back office — without hiring anyone."`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
-  },
-  {
-    name: "Rachel Collins",
-    title: "Head of Digital Strategy, NovaMall",
-    image: "/assets/100.jpeg",
-    text: `"We operate a fast-growing online marketplace and needed better sync between sellers,
-    warehouse, and customer front-end. With Owners Inventory, real-time stock visibility and
-    automated workflows keep us agile. We grew from 2K to 20K monthly orders without
-    breaking our operations. It's the ERP alternative we didn't know we needed."`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
-  },
-  {
-    name: "Michael Thompson",
-    title: "COO, UrbanMart Superstores",
-    image: "/assets/pfp.avif",
-    text: `"When we opened our second branch, I thought we'd need a new system just to keep things in
-    sync. But Owners Inventory just scaled with us. We now have three locations, and I can check
-    all sales, inventory, and purchases from a single dashboard. We've
-    saved hours of manual work every week and reduced stockouts by nearly 40%. Owners Inventory
-    made it so easy — I can now track every SKU, run sales, and launch limited collections
-    online in minutes. It's changed the way I do business."`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
-  },
-  {
-    name: "Emma Harris",
-    title: "MD WovenWardrobe Apparel",
-    image: "/assets/pfp.avif",
-    text: `"Managing seasonal apparel launches with multiple variants used to take forever. With Owners
-    Inventory, I can sync products across stores and online within hours. It's intuitive, clean,
-    and built for people who want things done right."`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
-  },
-  {
-    name: "Jonathan Brooks",
-    title: "CEO, SafetyPro Equipment Co",
-    image: "/assets/pfp.avif",
-    text: `"We deal in regulated safety gear across Europe, and our operations rely on accuracy and
-    compliance. Owners Inventory handles everything — expiry tracking, order history, user-level
-    access, audit logs — and it's intuitive for the team. We integrated purchasing
-    and finance in under a week, and our reporting is 5x faster. What impressed me most is that
-    we didn't need to overhaul our workflows; the system just fits into how we already work."`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
-  },
+
 ];
-
-
-
-
 
 const FeaturesCards = [
   {
     title: "Customer Management",
-    description: "Switch to registered and walk-in customers easily to generate a seamless checkout experience. Our software point of sale allows you to monitor purchase history, loyalty points, and preferences to engage your customers better.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/quick-billing.webp",
+    description:
+      "Switch to registered and walk-in customers easily to generate a seamless checkout experience. Our software point of sale allows you to monitor purchase history, loyalty points, and preferences to engage your customers better.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/customer-management.webp",
   },
   {
     title: "Barcode & SKU Search",
-    description: "Search products by barcode or SKU. Best point of sale systems make the process of scanning and lookup accurate, fast and reliable.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/intigrated-with-inventory.webp",
+    description:
+      "Search products by barcode or SKU. Best point of sale systems make the process of scanning and lookup accurate, fast and reliable.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/barcode-sku.webp",
   },
   {
     title: "Product Selection Table",
-    description: "Quickly add items to the sale with customizable quantity, discount, and price. The flexibility of this point of sales system allows you to make changes to transactions within seconds.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/multi-store.webp",
+    description:
+      "Quickly add items to the sale with customizable quantity, discount, and price. The flexibility of this point of sales system allows you to make changes to transactions within seconds.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/product-selection.webp",
   },
   {
     title: "Category & Product Filters",
-    description: "Use filters to browse products by name or category. You can save time on peak hours with our best point of sale software and maintain check out lines running smoothly.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/offline-support.webp",
+    description:
+      "Use filters to browse products by name or category. You can save time on peak hours with our best point of sale software and maintain check out lines running smoothly.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/product-filter.webp",
   },
   {
     title: "Billing Summary",
-    description: "Create automatic billing summaries with auto-calculated items, discounts, taxes, payable amounts, and customer change. Our point of sale systems minimize human error and enhance accuracy of transactions.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/flexible-payments.webp",
+    description:
+      "Create automatic billing summaries with auto-calculated items, discounts, taxes, payable amounts, and customer change. Our point of sale systems minimize human error and enhance accuracy of transactions.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/billing-summary.webp",
   },
   {
     title: "Stock Visibility",
-    description: "Do not miss out on a sale because the stock is not there. The point of sale solution automatically shows the Out of Stock tags, which keeps real time inventory visible.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/customer-engagement.webp",
+    description:
+      "Do not miss out on a sale because the stock is not there. The point of sale solution automatically shows the Out of Stock tags, which keeps real time inventory visible.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/stock-viability.webp",
   },
   {
-    title: "Quick Billing & Checkout",
-    description: "Process sales in seconds with barcode scanning, quick search, and easy product selection.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/quick-billing.webp",
+    title: "User-Friendly Interface",
+    description:
+      "Get a clean, color-coded layout that is easy to use. Whether it is a single store or numerous stores, our optimal point of sales system guarantees steady and effective work.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/user-friendly-interface.webp",
   },
   {
-    title: "Integrated with Inventory",
-    description: "Automatic stock updates with every transaction—no more manual adjustments.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/intigrated-with-inventory.webp",
+    title: "Payment Options",
+    description:
+      "Managing various payment options, such as Cash, Payment, Invoice, Order, Hold, and Coupon actions. Owners Inventory offers a one-stop point of sale to serve all customers.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/payment-option.webp",
   },
   {
-    title: "Multi-Store & Multi-Device Ready",
-    description: "Manage product catalogs, variants, pricing, and stock in one place.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/multi-store.webp",
+    title: "Quick Navigation",
+    description:
+      "Easily switch between Sales, Orders, Hold, and Shift management. The user-friendly point of sales software improves the operational flow and reduces training time.",
+    imageSrc:
+      "/assets/features-page/point-of-sale/features-section/quick-navigation.webp",
+  },
+];
+
+const  posFaqs = [
+  {
+    question: "What can I manage with Owners Inventory POS?",
+    answer:
+      "Our POS allows you to make all your sales effectively, stock in real-time, manage clients profiles, offer discounts or promotions, and produce detailed sales reports, all in one simple to use system.",
   },
   {
-    title: "Offline Mode Support",
-    description: "Continue selling even without internet; data syncs automatically when you’re back online.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/offline-support.webp",
+    question: "Does the POS support multi-location inventory?",
+    answer:
+      "Yes. It coordinates the stock between several stores or warehouses, monitors the amount of stock in stock in real-time, and minimizes the difference, so operations go smoothly at all stations.",
   },
   {
-    title: "Flexible Payments",
-    description: "Accept cash, cards, mobile wallets, and split payments—all in one system.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/flexible-payments.webp",
+    question: "Can I integrate the POS with an online store?",
+    answer:
+      "Absolutely. The POS integrates perfectly with your online store and maintains inventory, prices, and orders in a coordinated way so that you can easily do business both online and offline.",
   },
   {
-    title: "Customer Engagement",
-    description: "Build loyalty with discounts, promotions, and customer profiles directly from the POS.",
-    imageSrc: "/assets/features-page/point-of-sale/key-highlights/customer-engagement.webp",
+    question: "Does the POS handle multiple payment types?",
+    answer:
+      "Yes. It accepts cash, credit/debit cards, mobile wallets, and split payments and ensures transactions are fast, correct, and adaptable to all customers.",
+  },
+  {
+    question: "How long does it take to start using the POS?",
+    answer:
+      "It is quick and easy to set up. The majority of businesses are willing to sell in under a couple of days to a few hours and provide full onboarding and support to help the business get started in a smooth manner.",
   },
 ];
 
 const layoutPatterns = [
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
+  {
+    className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+    mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+    paddingClass: "px-0",
+  },
+  {
+    className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+    mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+    paddingClass: "px-0",
+  },
+  {
+    className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+    mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+    paddingClass: "px-0",
+  },
+  {
+    className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+    mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+    paddingClass: "px-0",
+  },
+  {
+    className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+    mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+    paddingClass: "px-0",
+  },
+  {
+    className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+    mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+    paddingClass: "px-0",
+  },
 ];
 
 const page = () => {
@@ -235,9 +245,7 @@ const page = () => {
       />
 
       {/* 🔥 Custom layout + cards */}
-      <TrustedBySection 
-       heading="Trusted by Leading Global Enterprises"
-      />
+      <TrustedBySection heading="Trusted by Leading Brands" />
       <KeyHighlights
         heading="Power-Packed Features at Your Fingertips"
         features={FeaturesCards}
@@ -246,12 +254,32 @@ const page = () => {
 
       <WhyChoosePOS
         heading="Revolutionize Sales with Our Smarter POS"
-        paragraph='Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable.'
+        paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
         cards={[
-          { icon: "/assets/features-page/point-of-sale/why-chose/speed-accuracy.svg", title: "Fast & Flawless Transactions", description: "Sell processes in seconds, reduce mistakes, and ensure your checkout is fast and efficient." },
-          { icon: "/assets/features-page/point-of-sale/why-chose/all-integration.svg", title: "Unified Business Control", description: "Operate POS, inventory, accounting, and reporting on one platform." },
-          { icon: "/assets/features-page/point-of-sale/why-chose/scalable.svg", title: "Flexible & Scalable", description: "Our system scales with your business, no matter whether you have one store or a multi-location chain." },
-          { icon: "/assets/features-page/point-of-sale/why-chose/smarter-decision.svg", title: "Insight-Driven Decisions", description: "Use real-time sales analytics and detailed reports to make smarter and data-driven business decisions." },
+          {
+            icon: "/assets/features-page/point-of-sale/why-chose/speed-accuracy.svg",
+            title: "Fast & Flawless Transactions",
+            description:
+              "Sell processes in seconds, reduce mistakes, and ensure your checkout is fast and efficient.",
+          },
+          {
+            icon: "/assets/features-page/point-of-sale/why-chose/all-integration.svg",
+            title: "Unified Business Control",
+            description:
+              "Operate POS, inventory, accounting, and reporting on one platform.",
+          },
+          {
+            icon: "/assets/features-page/point-of-sale/why-chose/scalable.svg",
+            title: "Flexible & Scalable",
+            description:
+              "Our system scales with your business, no matter whether you have one store or a multi-location chain.",
+          },
+          {
+            icon: "/assets/features-page/point-of-sale/why-chose/smarter-decision.svg",
+            title: "Insight-Driven Decisions",
+            description:
+              "Use real-time sales analytics and detailed reports to make smarter and data-driven business decisions.",
+          },
         ]}
         mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
       />
@@ -261,7 +289,12 @@ const page = () => {
         heading="Industry-Ready POS to Power Your Sales"
   description="There is no single business like another; then why use generic point-of-sale systems? Owners Inventory offers a customized point of sale software and point of sale solution to meet your industry specifications."
          industries={posIndustries} /> */}
-          <IndustryPosShowcase industries={posIndustries} />
+        <IndustryPosShowcase
+          mainHeading="Industry-Ready POS to Power Your Sales"
+          paragraph="There is no single business like another; then why use generic point-of-sale systems? Owners Inventory offers a customized point of sale software and point of sale solution to meet your industry specifications."
+          buttonText="Explore Now"
+          industries={posIndustries}
+        />
       </div>
 
       <FeaturesCallToAction
@@ -269,16 +302,20 @@ const page = () => {
         description="Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations."
       />
       <FeaturesTestimonials
-  testimonials={posTestimonials}
-  heading="What Clients Say About Us?"
-  showSmartTools={true}
-/>
+        testimonials={posTestimonials}
+        heading="What Clients Say About Us?"
+        showSmartTools={true}
+      />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
-        <FaqSection />
+        <FaqSection
+        heading="Everything You Need to Know About Owners' Inventory"
+        paragraph="We’ve gathered the most common questions about Owners Inventory from setup and features to pricing and support. Still have doubts? Our team is ready to guide you every step of the way." 
+        faqs={posFaqs}
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default page;

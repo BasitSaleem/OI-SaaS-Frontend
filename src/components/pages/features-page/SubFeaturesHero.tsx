@@ -172,7 +172,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                 >
                   <ButtonSm
                     url="#"
-                    text="Get Started for Free"
+                    text="Book a Free Demo"
                     bgColor="[#1AD1B9]"
                     textColor="white"
                     isBorder

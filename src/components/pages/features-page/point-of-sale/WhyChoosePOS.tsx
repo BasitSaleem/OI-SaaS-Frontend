@@ -32,7 +32,7 @@ export default function WhyChoosePOS({
             <MainHeading className="mb-6 text-center">
               {heading}
             </MainHeading>
-            <Paragraph className="mb-[60px] text-center max-w-4xl mx-auto">
+            <Paragraph className="mb-[60px] text-center">
               {paragraph}
             </Paragraph>
           </div>

@@ -26,8 +26,8 @@ interface IndustryPosShowcaseProps {
 
 const IndustryPosShowcase = ({
   industries,
-  mainHeading = "Built for Every Industry",
-  paragraph = "No matter what you sell, the Owners Inventory management program adapts to you.",
+  mainHeading = "",
+  paragraph = "",
   buttonText = "Explore Now",
 }: IndustryPosShowcaseProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -120,13 +120,13 @@ const IndustryPosShowcase = ({
   };
 
   return (
-    <div className="wrapper px-4 py-16">
+    <div className="wrapper px-4 ">
       <div className="w-full flex justify-between items-end mb-10">
         <div className="flex flex-col items-start justify-center w-full max-w-[100%] md:max-w-[70%]">
-          <MainHeading className="mb-4 text-[#333333] text-nowrap">
+          <MainHeading className="mb-4 text-[#333333]">
             {mainHeading}
           </MainHeading>
-          <Paragraph className="text-[#666666] text-nowrap">
+          <Paragraph className="text-[#666666]">
             {paragraph}
           </Paragraph>
           <button className="mt-6 bg-[#7B61FF] text-white px-[63px] py-[20px] rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">

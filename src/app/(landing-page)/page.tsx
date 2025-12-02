@@ -210,7 +210,11 @@ export default function Home() {
 
           <VoicesRealBusiness />
           
-           <IndustryPosShowcase industries={homeIndustries} />
+           <IndustryPosShowcase 
+           mainHeading='Built for Every Industry'
+           paragraph='No matter what you sell, the Owners Inventory management program adapts to you.'
+           buttonText='Explore Now'
+           industries={homeIndustries} />
 
           <PosIconsSection />
 

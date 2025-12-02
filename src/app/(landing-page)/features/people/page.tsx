@@ -55,49 +55,34 @@ const salesIndustries = [
 
 const FeaturesCards = [
   {
-    title: "Manage All Sales Documents",
-    description: "Our sales and order management software enables you to easily manage quotations, sales orders, and invoices in a single location. Be efficient and maintain a seamless flow between enquiry and delivery.",
+    title: "User & Contact Management",
+    description: "Easily coordinate your business contacts with just a single dashboard. Add, edit or delete old records in a few clicks, which is important to maintain a clean database and stay updated.",
     imageSrc: "/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
   },
   {
-    title: "Smart Record Viewing",
-    description: "See everything in a simple dashboard with search, filters, page breaks, and column visibility. Our current POS point of sale and stock management system maintains your data uncluttered and reachable.",
+    title: "Smart Search & Filters",
+    description: "Search and filter any user, customer, or supplier in real time. Filter results by name, role, or category to find information faster.",
     imageSrc: "/assets/features-page/sales-order/features-section/smart-record-view.webp",
   },
   {
-    title: "Manage Sales Docs",
-    description: "Add or delete quotes, orders, and invoices with ease. This is to enable businesses to maintain accuracy and control in their sales management software environment.",
+    title: "Role-Based Permissions",
+    description: "Access who is allowed to read, edit or manipulate certain data on your system. Grant role permissions to ensure data safety and accountability.",
     imageSrc: "/assets/features-page/sales-order/features-section/manage-sales-doc.webp",
   },
   {
-    title: "Export Data to Excel",
-    description: "Export your data to analyze, report, or account. The best sales and order management system is easy and flexible to simplify record-keeping and financial tracking.",
+    title: "Secure Logins & Password",
+    description: "Secure confidential data with password-recovery and high-level authentication. Provide secure access to all users without disrupting convenience.",
     imageSrc: "/assets/features-page/sales-order/features-section/export-data.webp",
   },
   {
-    title: "Order Stages",
-    description: "Keep track of each order by using a visual board that has distinct statuses - To Do, In Progress, and Done. Ideal to control workflow in your sales and order management system.",
+    title: "Activity Logs & Audits",
+    description: "Keep track of all the changes that occur in the system using detailed activity logs. Edits, deletion and amendments of tracks to guarantee complete visibility and transparency.",
     imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
   },
   {
-    title: "Quick Action Buttons",
-    description: "Swiftly transfer orders between stages with smart action buttons. These controls improve productivity and optimize the flow of orders within your sales management software.",
+    title: "Bulk Import & Export",
+    description: "Save time by importing or exporting large datasets in Excel or PDF format. Share data, reporting as well as system migration easily.",
     imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
-  },
-  {
-    title: "Detailed Order View",
-    description: "In every order, essential details such as Order ID, User, Customer, Date, and Status are shown. We have a sales and order management software that provides transparency and real-time following of all transactions.",
-    imageSrc: "/assets/features-page/sales-order/features-section/detailed-order-view.webp",
-  },
-  {
-    title: "Search and Filter Options",
-    description: "Filter and easily search orders by customer, date, amount and status. This smart filtering assists your team to make faster and data-driven choices in a contemporary POS point of sale with inventory management framework.",
-    imageSrc: "/assets/features-page/sales-order/features-section/filter-option.webp",
-  },
-  {
-    title: "User-Friendly Interface",
-    description: "Experience a clear, interactive, and intuitive design that makes working with documents easier and improves work visibility. It simplified and streamlined its invoice management and billing services..",
-    imageSrc: "/assets/features-page/sales-order/features-section/user-friendly-interface.webp",
   },
 ];
 
@@ -178,19 +163,19 @@ const page = () => {
   return (
     <div>
       <SubFeaturesHero
-        title="Turn Every Sale into a Success Story"
-        description="Make it easier to sell, monitor, and process orders all under one roof. Manage sales channels, automate invoices, and stay focused on the driving power of your business with Owners Inventory."
+        title="Empower Your People, Power Your Business"
+        description="Experience the future of business management, quick, unified, and growth-oriented. Powerful automation, real-time insights, and seamless integrations will allow you to work smarter, scale faster, and save more, all within one intelligent platform, with Owners Inventory."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         variant="animation2"
       />
 
       {/* 🔥 Custom layout + cards */}
       <TrustedBySection 
-       heading="Our Valued Clients"
-       paragraph="We proudly work with trusted brands like Al-Asif and Bright Home, helping them streamline sales and inventory management. Our platform automates stock updates and daily operations, enabling smarter, faster, and more efficient business growth."
+       heading="Our Trusted Brands"
+       paragraph="We take pride in partnering with leading brands like Al-Asif and Bright Home, along with many global retail and service companies. Our platform drives smarter operations, seamless management, and sustainable growth. Together, we’re shaping a future of faster, more efficient businesses."
       />
       <KeyHighlights
-        heading="Key Features"
+        heading="Our Key Features"
         features={FeaturesCards}
         layoutPatterns={layoutPatterns}
       />
