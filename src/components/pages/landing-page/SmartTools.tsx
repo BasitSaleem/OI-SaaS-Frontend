@@ -9,7 +9,10 @@ import ContactModal from "@/components/models/ContactModal";
 import Link from "next/link";
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7c1bb14 (sub features pages development)
 interface SmartTools{
   title?: string,
    description?: string;
