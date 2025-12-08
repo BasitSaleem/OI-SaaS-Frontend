@@ -9,12 +9,13 @@ import Paragraph from "../typography/Paragraph";
 interface FeaturesCallToAction{
   title?: string,
    description?: string;
+   ctaDesc?: string;
 }
 
 const FeaturesCallToAction: React.FC<FeaturesCallToAction> = ({
   title = "Sell Smarter. Run Your Business Better",
   description= "Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations.",
-  
+  ctaDesc= "Get Started Instantly"
 }) => {
   return (
     <div className="wrapper">
@@ -39,7 +40,7 @@ const FeaturesCallToAction: React.FC<FeaturesCallToAction> = ({
             <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
               <ButtonSm
                 url="#"
-                text="Get Started Instantly"
+                text={ctaDesc}
                 className="w-full md:w-fit"
                 bgColor="[#795CF5]"
                 textColor="white"
