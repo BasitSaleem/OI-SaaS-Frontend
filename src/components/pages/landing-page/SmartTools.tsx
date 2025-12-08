@@ -36,7 +36,17 @@ const usedTools = [
   },
 ];
 
-const SmartTools = () => {
+interface SmartTools{
+  title?: string,
+   description?: string;
+}
+
+
+const SmartTools: React.FC<SmartTools> = ({
+  title = "Stay Ahead with Smart Tools",
+  description= "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
+  
+}) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <section className="wrapper">
@@ -49,11 +59,10 @@ const SmartTools = () => {
         }}
       >
         <MainHeading className="text-center lg:mb-6 md:mb-6 mb-5 text-[var(--white-color)]">
-          Stay Ahead with Smart Tools
+          {title}
         </MainHeading>
         <Paragraph className="text-center lg:mb-[42px] md:mb-6 mb-5 text-[var(--white-color)]">
-          Everything you need to grow your business, learn at your pace, and
-          stay connected with the community of smart sellers.
+          {description}
         </Paragraph>
         <div className="flex gap-3 lg:gap-6 flex-col md:flex-row items-center justify-center relative z-50">
           <Link
