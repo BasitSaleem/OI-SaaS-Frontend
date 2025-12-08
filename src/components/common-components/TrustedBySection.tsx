@@ -25,11 +25,11 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
   heading = "Preferred to businesses who demand precision and performance",
   paragraph = "",
   brands = [
-    { id: 1, name: "ASK Food Industries", logo: "/assets/brands-logo-section/ask-food.webp" },
-    { id: 2, name: "Industrial Valco", logo: "/assets/brands-logo-section/industrial-valco.webp" },
-    { id: 3, name: "Texas Pipe & Supply", logo: "/assets/brands-logo-section/texas-pipe.webp" },
+    { id: 1, name: "ASK Food Industries", logo: "/assets/brands-logo-section/ask-food.svg" },
+    { id: 2, name: "Industrial Valco", logo: "/assets/brands-logo-section/industrial-valco.svg" },
+    { id: 3, name: "Texas Pipe & Supply", logo: "/assets/brands-logo-section/texas-pipe.svg" },
     { id: 4, name: "Al-Asif", logo: "/assets/brands-logo-section/al-asif.webp" },
-    { id: 5, name: "Sportifi", logo: "/assets/brands-logo-section/sportifi.webp" },
+    { id: 5, name: "Sportifi", logo: "/assets/brands-logo-section/sportifi.svg" },
   ],
 }) => {
   return (
