@@ -20,6 +20,9 @@ interface FeaturesTestimonialsProps {
   paragraph?: string;
   showSmartTools?: boolean;
   gradientBackground?: string;
+  secondHeading?: string;
+  secondDescription?: string;
+  
 }
 
 const defaultTestimonials = [
@@ -74,6 +77,8 @@ const FeaturesTestimonials = ({
   testimonials = defaultTestimonials,
   heading = "What Clients Say About Us?",
   paragraph,
+  secondHeading = "Stay Ahead with Smart Tools",
+  secondDescription = "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
   showSmartTools = true,
   gradientBackground = defaultGradientBackground
 }: FeaturesTestimonialsProps) => {
@@ -141,7 +146,11 @@ const FeaturesTestimonials = ({
 
           {showSmartTools && (
             <div className="">
-              <SmartTools />
+              <SmartTools 
+                title= {secondHeading}
+                description= {secondDescription}
+
+              />
             </div>
           )}
         </div>
