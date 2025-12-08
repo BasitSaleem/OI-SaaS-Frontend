@@ -26,22 +26,57 @@ interface CaseStudiesProps {
 }
 
 export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
-  const [currentSlide, setCurrentSlide] = useState(0);
+ const [currentSlide, setCurrentSlide] = useState(0);
 
   const slidesPerView = 1;
   const totalSlides = Math.ceil(caseStudies.length / slidesPerView);
+  // const currentStudies = caseStudies.slice(
+  //   currentSlide * slidesPerView,
+  //   (currentSlide + 1) * slidesPerView
+  // );
 
-  const currentStudies = caseStudies.slice(
-    currentSlide * slidesPerView,
-    (currentSlide + 1) * slidesPerView
-  );
+   const getCurrentStudies = () => {
+    const start = currentSlide * slidesPerView;
+    const end = start + slidesPerView;
+    
+    // If we're at the end and need to wrap around
+    if (end > caseStudies.length) {
+      const overflow = end - caseStudies.length;
+      return [
+        ...caseStudies.slice(start),
+        ...caseStudies.slice(0, overflow)
+      ];
+    }
+    
+    return caseStudies.slice(start, end);
+  };
 
-  const nextSlide = () => {
-    if (currentSlide < totalSlides - 1) setCurrentSlide((prev) => prev + 1);
+  const currentStudies = getCurrentStudies();
+
+  // const nextSlide = () => {
+  //   if (currentSlide < totalSlides - 1) setCurrentSlide((prev) => prev + 1);
+  // };
+
+  // const prevSlide = () => {
+  //   if (currentSlide > 0) setCurrentSlide((prev) => prev - 1);
+  // };
+
+   const nextSlide = () => {
+    if (currentSlide < totalSlides - 1) {
+      setCurrentSlide((prev) => prev + 1);
+    } else {
+      // If at the last slide, go back to first slide
+      setCurrentSlide(0);
+    }
   };
 
   const prevSlide = () => {
-    if (currentSlide > 0) setCurrentSlide((prev) => prev - 1);
+    if (currentSlide > 0) {
+      setCurrentSlide((prev) => prev - 1);
+    } else {
+      // If at the first slide, go to last slide
+      setCurrentSlide(totalSlides - 1);
+    }
   };
 
   return (
@@ -72,12 +107,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Previous Button */}
             <button
               onClick={prevSlide}
-              disabled={currentSlide === 0}
-              className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors ${
-                currentSlide === 0
-                  ? "border-gray-200 text-gray-400 cursor-not-allowed"
-                  : "border-gray-300 text-gray-600 hover:bg-gray-50"
-              }`}
+              
+              className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors border-gray-300 text-gray-600 hover:bg-gray-50"`}
               aria-label="Previous slide"
             >
               <Image
@@ -109,12 +140,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Next Button */}
             <button
               onClick={nextSlide}
-              disabled={currentSlide === totalSlides - 1}
-              className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors ${
-                currentSlide === totalSlides - 1
-                  ? "border-gray-200 text-gray-400 cursor-not-allowed"
-                  : "border-gray-300 text-gray-600 hover:bg-gray-50"
-              }`}
+             
+              className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors border-gray-300 text-gray-600 hover:bg-gray-50"`}
               aria-label="Next slide"
             >
               <Image
