@@ -11,7 +11,7 @@ const features = [
     icon: "/assets/features-section/pos-system.svg",
     webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm",
     mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.mp4",
-    mediaClass: "scale-[1.30]"
+    mediaClass: "scale-[1]"
   },
   {
     id: "inventory-ecommerce",
@@ -19,7 +19,7 @@ const features = [
     icon: "/assets/features-section/cart-icon.svg",
     webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.webm",
     mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.mp4",
-    mediaClass: "scale-[1.30]"
+    mediaClass: "scale-[1]"
   },
   {
     id: "inventory-management",
@@ -27,7 +27,7 @@ const features = [
     icon: "/assets/features-section/inventory-management.svg",
     webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.webm",
     mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.mp4",
-    mediaClass: "scale-[1.1]"
+    mediaClass: "scale-[1]"
   },
   {
     id: "inventory-autosync",
@@ -35,7 +35,7 @@ const features = [
     icon: "/assets/features-section/autosync.svg",
     webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.webm",
     mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.mp4",
-    mediaClass: "scale-[1.20]"
+    mediaClass: "scale-[1]"
   },
 ];
 
