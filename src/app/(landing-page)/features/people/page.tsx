@@ -1,5 +1,6 @@
 'use client'
 
+
 import dynamic from "next/dynamic";
 import React from 'react';
 
@@ -14,78 +15,43 @@ const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSect
 const IndustryPosShowcase = dynamic(() => import('@/components/pages/landing-page/IndustryPosShowcase'));
 
 
-const salesIndustries = [
+const peopleIndustries = [
   {
     title: 'Retail Stores',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Quickly scan barcodes, offer a wide range of discount options, and real-time inventory display - ideal in electronics, grocery, cosmetics, or other fast-moving retail environments.',
+    description: 'Make everyday tasks easier with intelligent scheduling, time-tracking, and shift arrangements. Make your sales team structured, improve customer service, and make each store operate efficiently.',
     image: '/assets/industry-type/retail-store.webp',
     mobileImage: '/assets/industry-type/retail-store-mobile.webp',
   },
   {
     title: 'Restaurant',
     gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Speed up orders, divide bills, and coordinate kitchen activities easily. Whether dining in or delivering, handle all sales and ingredients precisely.',
+    description: 'Easily coordinate kitchen, waitstaff, and delivery teams. Organize shift rotations, keep attendance, and ensure a smooth service even in the busiest periods.',
     image: '/assets/industry-type/restaurant.webp',
     mobileImage: '/assets/industry-type/restaurant-mobile.webp',
   },
   {
     title: 'Wholesalers',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Streamline big orders with tiered pricing, bulk billing, and automated tracking with multiple warehouses, designed to make your supply chain robust and reliable.',
+    description: 'Standardize human resource operations in warehouses and logistics units. Monitor attendance, delegate tasks, and preserve uniformity in your supply chain.',
     image: '/assets/industry-type/whole-sale.webp',
     mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
   },
   {
     title: 'Pharmacies',
     gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Remain compliant and precise regarding expiry alerts, prescription monitoring, and safe batch control. Build customer trust and a trustworthy service.',
+    description: 'Maintain consistency and accuracy in ensuring that all shifts are properly staffed. Monitor attendance, performance, and rotations to ensure your pharmacy is operating effectively.',
     image: '/assets/industry-type/pharmacy.webp',
     mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
   },
   {
     title: 'Fashion & Apparel',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Easily manage all designs, sizes, and colors. Coordinate collections by season in stores and maintain your sales on and offline.',
+    description: 'Coordinate design, retail, and production departments on a single platform. Monitor attendance and performance in outlets to secure a smooth coordination and on-brand implementation.',
     image: '/assets/industry-type/fashion.webp',
     mobileImage: '/assets/industry-type/fashion-mobile.webp',
   },
-  {
-    title: 'Integrated Module Connection',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Link your people data to sales purchase and reporting systems. Single integration improves accuracy, time-saving and alignment of operations.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
-  },
-  {
-    title: 'Categorization & Segmentation',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'The group users, customers and suppliers can be better organized and categorized into structured categories. Generate customer type or supplier groups to simplify reporting and management.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
-  },
-  {
-    title: 'Transaction & Payment History',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'See all transactions connected to the user, customer or supplier in one location. Check purchase history and payment records to come up with the right decisions.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
-  },
-  {
-    title: 'Balance & Performance Tracking',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Easily keep track of the pending payments and performance trends. Get connected insights that enhance financial control and build relationships',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
-  },
-  {
-    title: 'Intuitive Single Interface',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Switch between records and modules with a clean, modern interface. Control your people, customers, and suppliers more quickly and effectively than ever before.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
-  },
-  
+ 
 ];
 
 
@@ -120,33 +86,58 @@ const FeaturesCards = [
     description: "Save time by importing or exporting large datasets in Excel or PDF format. Share data, reporting as well as system migration easily.",
     imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
   },
+  {
+    title: "Integrated Module Connection",
+    description: "Link your people data to sales purchase and reporting systems. Single integration improves accuracy, time-saving and alignment of operations.",
+    imageSrc: "/assets/features-page/sales-order/features-section/export-data.webp",
+  },
+  {
+    title: "Categorization & Segmentation",
+    description: "The group users, customers and suppliers can be better organized and categorized into structured categories. Generate customer type or supplier groups to simplify reporting and management.",
+    imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
+  },
+  {
+    title: "Transaction & Payment History",
+    description: "See all transactions connected to the user, customer or supplier in one location. Check purchase history and payment records to come up with the right decisions.",
+    imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
+  },
+  {
+    title: "Balance & Performance Tracking",
+    description: "Easily keep track of the pending payments and performance trends. Get connected insights that enhance financial control and build relationships.",
+    imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
+  },
+  {
+    title: "Intuitive Single Interface",
+    description: "Switch between records and modules with a clean, modern interface. Control your people, customers, and suppliers more quickly and effectively than ever before.",
+    imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
+  },
 ];
 
-const  salesFaqs = [
+const  peopleFaqs = [
   {
-    question: "What is sales and order management, and why is it important?",
+    question: "What is the People feature in the Owners Inventory?",
     answer:
-      "Sales and order management is the process of monitoring all sales made on the orders placed from delivery. An effective system guarantees precision, minimizes delays, and aids in customer satisfaction.",
+      "People is a full-fledged employee management system that helps you to handle attendance, performance, and scheduling in a single, easy-to-use platform.",
   },
   {
-    question: "How does your sales and order management software improve daily operations?",
+    question: "Can I track attendance automatically?",
     answer:
-      "Our software brings together your whole workflow, from sales entry to stock updates. It makes it easier to take orders, handle customers, and make real-time business decisions.",
+      "Yes. The employee attendance management system records check-ins, leaves, and working hours, which are accurate during reporting because it is quickly recorded in real-time.",
   },
   {
-    question: "Is this a modern POS point of sale with a stock management system?",
+    question: "Does the People feature of Owners Inventory support performance evaluations?",
     answer:
-      "Yes. Owners Inventory is a combination of powerful POS and full inventory control capabilities, which provides you with one platform to bill, track sales, and manage products.",
+      "Absolutely. The employee performance management system enables you to establish goals, monitor performance, and measure performance so as to reward your best employees.",
   },
   {
-    question: "How does your sales management software handle billing and invoices?",
+    question: "Is the People feature suitable for all business types?",
     answer:
-      "It automates the whole process, creates invoices immediately, documents payments, and tracks all transactions by using built-in billing and invoice management services.",
+      "Yes. People can fit into your workflows and team size, whether you are operating a retail store, restaurant, pharmacy, or wholesale business.",
   },
   {
-    question: "Why is Owners Inventory considered the best sales and order management system?",
+    question: "Can my employees access their own data?",
     answer:
-      "It is fast, dependable, and designed to suit contemporary businesses. It will fit into any industry, align all sales channels, and make sure your team spends less time managing and more time selling.",
+      "Yes. The self-service dashboard also allows employees to check attendance, book leave, and update information, saving time on the part of the administration and enhancing transparency.",
   },
 ];
 
@@ -159,12 +150,12 @@ const layoutPatterns = [
   { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
 ];
 
-const salesTestimonials = [
+const peopleTestimonials = [
   {
     name: "Sana Iqbal",
     title: "Bright Home Owner",
     image: "/assets/pfp.avif",
-    text: `"We have been using Owners Inventory for more than a year and it has really changed the way we do business. Orders, returns and stock levels are so much easier to track now. The system provides us with total control of our inventory operations process and makes everything transparent. Moreover, their support team is never too slow to render assistance whenever we get stuck. It has been a wonderful experience since the beginning."`,
+    text: `"Owners Inventory has completely transformed the way we manage our staff. Scheduling shifts and tracking attendance used to take hours, but now it’s all automated and accurate. Our team coordination has improved, and productivity is at an all-time high. It truly makes management effortless."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -172,7 +163,7 @@ const salesTestimonials = [
     name: "Faisal Rehman",
     title: "Prime Traders",
     image: "/assets/pfp.avif",
-    text: `"As a wholesaler, it was difficult to monitor big orders and various warehouses. Owners Inventory sorted that out with its automation and intelligent inventory operations software. It has made our work much more organized."`,
+    text: `"Since switching to Owners Inventory, we’ve been able to organize our workforce far more efficiently. Our employees love the self-service dashboard — it’s simple, transparent, and saves so much time."`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
@@ -180,7 +171,7 @@ const salesTestimonials = [
     name: "Hina Ahmed",
     title: "StyleMart",
     image: "/assets/100.jpeg",
-    text: `"Our retail store is more efficiently managed now. We are able to view real-time stock levels, issue invoices on-the-fly and learn about customer requirements. The system actually assists us to keep on top of each sale."`,
+    text: `"Owners Inventory has been a game-changer for our business operations. Managing multiple departments and shifts across locations is now easy and error-free."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -188,7 +179,7 @@ const salesTestimonials = [
     name: "Adeel Khan",
     title: "Al-Asif",
     image: "/assets/100.jpeg",
-    text: `"Owners Inventory has totally transformed the manner of sale and stockings. We had to deal with incomplete records and handwritten updates before we used it. Everything is now synchronized and can be seen in real time. The single dashboard identifies each and every sale and order without any beat. It is easy, trustworthy and has genuinely eased our overall workflow."`,
+    text: `"We were looking for a workforce tool that was powerful yet easy to use, and Owners Inventory delivered exactly that. The automation features save us countless hours every week, and the analytics help us spot trends before they become problems. It’s reliable, intuitive, and worth every penny."`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
@@ -216,45 +207,43 @@ const page = () => {
         layoutPatterns={layoutPatterns}
       />
 
-      {/* <WhyChoosePOS
+      <WhyChoosePOS
         heading="Revolutionize Sales with Our Smarter POS"
         paragraph='Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable.'
         cards={[
-          { icon: "/assets/features-page/point-of-sale/why-chose/speed-accuracy.svg", title: "Fast & Flawless Transactions", description: "Sell processes in seconds, reduce mistakes, and ensure your checkout is fast and efficient." },
-          { icon: "/assets/features-page/point-of-sale/why-chose/all-integration.svg", title: "Unified Business Control", description: "Operate POS, inventory, accounting, and reporting on one platform." },
-          { icon: "/assets/features-page/point-of-sale/why-chose/scalable.svg", title: "Flexible & Scalable", description: "Our system scales with your business, no matter whether you have one store or a multi-location chain." },
-          { icon: "/assets/features-page/point-of-sale/why-chose/smarter-decision.svg", title: "Insight-Driven Decisions", description: "Use real-time sales analytics and detailed reports to make smarter and data-driven business decisions." },
+          { icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg", title: "All-in-One Platform", description: "Combine people, inventory, and performance, without having to use multiple tools." },
+          { icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg", title: "Real-Time Insights", description: "Use real-time data on attendance, productivity, and growth to make smarter decisions" },
+          { icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg", title: "Seamless Automation", description: "Automate scheduling, tracking and reporting of your workforce." },
+          { icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg", title: "Scalable for Growth", description: "Owners Inventory scales with you, whether you have a small shop or a growing chain." },
         ]}
         mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
-      /> */}
+      />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
-        {/* <IndustryPOSShowcase
-        heading="Sales and Orders Tailored for Your Industry"
-        description="All businesses sell differently, and your sales system needs to realize that. Whatever you sell, Owners Inventory offers flexible, industry-ready tools to make transactions easier, more accurate, and enable your team to make sales more quickly."
-         industries={posIndustries} /> */}
-         <IndustryPosShowcase 
-          mainHeading='Sales and Orders Tailored for Your Industry'
-           paragraph='All businesses sell differently, and your sales system needs to realize that. Whatever you sell, Owners Inventory offers flexible, industry-ready tools to make transactions easier, more accurate, and enable your team to make sales more quickly.'
+      
+        <IndustryPosShowcase
+           mainHeading='Built for Every Industry'
+           paragraph='The People feature of Owners Inventory is built to fit the way any business operates, be it a retail store or a restaurant, wholesaler or pharmacy, or a fashion brand. Whatever your business is, Owners Inventory can put your operation in a better place to run smoothly, faster, and smarter.'
            buttonText='Explore Now'
-         industries={salesIndustries} />
+           industries={peopleIndustries} />
       </div>
 
       <FeaturesCallToAction
-        title="Sell Smarter. Deliver Faster. Grow Bigger."
-        description="Take control of every sale, from order to delivery, with tools that help you work faster, track better, and scale confidently with Owners Inventory."
+        title="Turn Teams into Powerhouses"
+        description="Start managing your team with data-driven efficiency and effortless control — all through Owners Inventory’s People feature."
+        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-  testimonials={salesTestimonials}
-  heading="Words That Inspire Our Work"
+  testimonials={peopleTestimonials}
+  heading="Words Words That Inspire Our Work"
   showSmartTools={true}
 />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection 
-        heading="Everything You Need to Know about Sales and Orders"
-        paragraph="Sales management should not be complex. Our modern POS point of sale with a stock management system will give you everything you will need to manage billing, invoices, and orders easily. Here is what you need to know about how our sales and order management software can help businesses like yours grow faster and smarter."
-        faqs={salesFaqs}
+        heading="Everything You Were About to Ask"
+        paragraph="We have collected the most frequently asked questions regarding People, the workforce management feature of Owners Inventory. Whether you are setting up and automating or tracking performance and analytics, here is all you need to know."
+        faqs={peopleFaqs}
         />
       </div>
     </div>
