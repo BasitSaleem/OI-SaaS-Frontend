@@ -50,6 +50,42 @@ const salesIndustries = [
     image: '/assets/industry-type/fashion.webp',
     mobileImage: '/assets/industry-type/fashion-mobile.webp',
   },
+  {
+    title: 'Integrated Module Connection',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'Link your people data to sales purchase and reporting systems. Single integration improves accuracy, time-saving and alignment of operations.',
+    image: '/assets/industry-type/fashion.webp',
+    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+  },
+  {
+    title: 'Categorization & Segmentation',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'The group users, customers and suppliers can be better organized and categorized into structured categories. Generate customer type or supplier groups to simplify reporting and management.',
+    image: '/assets/industry-type/fashion.webp',
+    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+  },
+  {
+    title: 'Transaction & Payment History',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'See all transactions connected to the user, customer or supplier in one location. Check purchase history and payment records to come up with the right decisions.',
+    image: '/assets/industry-type/fashion.webp',
+    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+  },
+  {
+    title: 'Balance & Performance Tracking',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'Easily keep track of the pending payments and performance trends. Get connected insights that enhance financial control and build relationships',
+    image: '/assets/industry-type/fashion.webp',
+    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+  },
+  {
+    title: 'Intuitive Single Interface',
+    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+    description: 'Switch between records and modules with a clean, modern interface. Control your people, customers, and suppliers more quickly and effectively than ever before.',
+    image: '/assets/industry-type/fashion.webp',
+    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+  },
+  
 ];
 
 
