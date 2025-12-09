@@ -12,12 +12,14 @@ interface CustomSwiperProps<T> {
   slides: T[];
   renderSlide: (slide: T, index: number) => ReactNode;
   swiperOptions?: Record<string, unknown>;
+  showPagination?: boolean;
 }
 
 export default function FeaturesMainSwiper<T>({
   slides,
   renderSlide,
   swiperOptions = {},
+  showPagination = true,
 }: CustomSwiperProps<T>) {
   return (
     <Swiper
@@ -30,11 +32,20 @@ export default function FeaturesMainSwiper<T>({
         delay: 3000,
         disableOnInteraction: false,
       }}
-      pagination={{
-        clickable: true,
-        renderBullet: (index, className) =>
-          `<span class="${className}"></span>`,
-      }}
+      // pagination={{
+      //   clickable: true,
+      //   renderBullet: (index, className) =>
+      //     `<span class="${className}"></span>`,
+      // }}
+      pagination={
+        showPagination 
+          ? {
+              clickable: true,
+              renderBullet: (index, className) =>
+                `<span class="${className}"></span>`,
+            }
+          : false // Disable pagination when false
+      }
       breakpoints={{
         768: {
           slidesPerView: 2,
