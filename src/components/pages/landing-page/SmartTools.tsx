@@ -104,14 +104,14 @@ const SmartTools: React.FC<SmartTools> = ({
             preload="auto"
             controls={false}
           >
-            <source
+            {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
               type="video/mp4"
             />
             <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"
               type="video/webm"
-            />
+            /> */}
           </video>
         </div>
       </div>
