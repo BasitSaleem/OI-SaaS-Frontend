@@ -30,6 +30,7 @@ const IndustryPosShowcase = dynamic(
 
 const posIndustries = [
   {
+    id: 1,
     title: "Retail Stores",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
@@ -38,6 +39,7 @@ const posIndustries = [
     mobileImage: "/assets/industry-type/retail-store-mobile.webp",
   },
   {
+    id: 2,
     title: "Restaurants",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
@@ -46,6 +48,7 @@ const posIndustries = [
     mobileImage: "/assets/industry-type/restaurant-mobile.webp",
   },
   {
+    id: 3,
     title: "Wholesalers",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
@@ -54,6 +57,7 @@ const posIndustries = [
     mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
   },
   {
+    id: 4,
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
@@ -62,6 +66,7 @@ const posIndustries = [
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
   {
+    id: 5,
     title: "Fashion & Apparel",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
@@ -109,6 +114,7 @@ const posTestimonials = [
 
 const FeaturesCards = [
   {
+    id: 1,
     title: "Customer Management",
     description:
       "Switch to registered and walk-in customers easily to generate a seamless checkout experience. Our software point of sale allows you to monitor purchase history, loyalty points, and preferences to engage your customers better.",
@@ -116,6 +122,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/customer-management.webp",
   },
   {
+    id: 2,
     title: "Barcode & SKU Search",
     description:
       "Search products by barcode or SKU. Best point of sale systems make the process of scanning and lookup accurate, fast and reliable.",
@@ -123,6 +130,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/barcode-sku.webp",
   },
   {
+    id: 3,
     title: "Product Selection Table",
     description:
       "Quickly add items to the sale with customizable quantity, discount, and price. The flexibility of this point of sales system allows you to make changes to transactions within seconds.",
@@ -130,6 +138,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/product-selection.webp",
   },
   {
+    id: 4,
     title: "Category & Product Filters",
     description:
       "Use filters to browse products by name or category. You can save time on peak hours with our best point of sale software and maintain check out lines running smoothly.",
@@ -137,6 +146,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/product-filter.webp",
   },
   {
+    id: 5,
     title: "Billing Summary",
     description:
       "Create automatic billing summaries with auto-calculated items, discounts, taxes, payable amounts, and customer change. Our point of sale systems minimize human error and enhance accuracy of transactions.",
@@ -144,6 +154,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/billing-summary.webp",
   },
   {
+    id: 6,
     title: "Stock Visibility",
     description:
       "Do not miss out on a sale because the stock is not there. The point of sale solution automatically shows the Out of Stock tags, which keeps real time inventory visible.",
@@ -151,6 +162,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/stock-viability.webp",
   },
   {
+    id: 7,
     title: "User-Friendly Interface",
     description:
       "Get a clean, color-coded layout that is easy to use. Whether it is a single store or numerous stores, our optimal point of sales system guarantees steady and effective work.",
@@ -158,6 +170,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/user-friendly-interface.webp",
   },
   {
+    id: 8,
     title: "Payment Options",
     description:
       "Managing various payment options, such as Cash, Payment, Invoice, Order, Hold, and Coupon actions. Owners Inventory offers a one-stop point of sale to serve all customers.",
@@ -165,6 +178,7 @@ const FeaturesCards = [
       "/assets/features-page/point-of-sale/features-section/payment-option.webp",
   },
   {
+    id: 9,
     title: "Quick Navigation",
     description:
       "Easily switch between Sales, Orders, Hold, and Shift management. The user-friendly point of sales software improves the operational flow and reduces training time.",
@@ -175,26 +189,31 @@ const FeaturesCards = [
 
 const  posFaqs = [
   {
+    id: 1,
     question: "What can I manage with Owners Inventory POS?",
     answer:
       "Our POS allows you to make all your sales effectively, stock in real-time, manage clients profiles, offer discounts or promotions, and produce detailed sales reports, all in one simple to use system.",
   },
   {
+    id: 2,
     question: "Does the POS support multi-location inventory?",
     answer:
       "Yes. It coordinates the stock between several stores or warehouses, monitors the amount of stock in stock in real-time, and minimizes the difference, so operations go smoothly at all stations.",
   },
   {
+    id: 3,
     question: "Can I integrate the POS with an online store?",
     answer:
       "Absolutely. The POS integrates perfectly with your online store and maintains inventory, prices, and orders in a coordinated way so that you can easily do business both online and offline.",
   },
   {
+    id: 4,
     question: "Does the POS handle multiple payment types?",
     answer:
       "Yes. It accepts cash, credit/debit cards, mobile wallets, and split payments and ensures transactions are fast, correct, and adaptable to all customers.",
   },
   {
+    id: 5,
     question: "How long does it take to start using the POS?",
     answer:
       "It is quick and easy to set up. The majority of businesses are willing to sell in under a couple of days to a few hours and provide full onboarding and support to help the business get started in a smooth manner.",
