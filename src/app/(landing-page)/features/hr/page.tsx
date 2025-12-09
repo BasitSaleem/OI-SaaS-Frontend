@@ -17,6 +17,7 @@ const IndustryPosShowcase = dynamic(() => import('@/components/pages/landing-pag
 
 const hrIndustries = [
   {
+    id: 1,
     title: 'Retail Stores',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
     description: 'Manage staff and payroll at multiple retail locations with ease and convenience. You will be able to ensure that the store runs smoothly and that customers experience a high level of customer care on a day-to-day basis.',
@@ -24,6 +25,7 @@ const hrIndustries = [
     mobileImage: '/assets/industry-type/retail-store-mobile.webp',
   },
   {
+    id: 2,
     title: 'Restaurant',
     gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
     description: 'Monitor all restaurant staff—from chefs to servers—while simplifying shift planning, payroll, and tip distribution to keep your team organized, happy, and focused on delivering top-notch service.',
@@ -31,6 +33,7 @@ const hrIndustries = [
     mobileImage: '/assets/industry-type/restaurant-mobile.webp',
   },
   {
+    id: 3,
     title: 'Wholesalers',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
     description: 'Manage distribution teams and warehouse employees via a central HR platform. Monitor attendance, shifts, and payroll accurately to ensure your supply chain runs smoothly all the way through.',
@@ -38,6 +41,7 @@ const hrIndustries = [
     mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
   },
   {
+    id: 4,
     title: 'Pharmacies',
     gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
     description: 'Maintain precise employee records while tracking work hours, renewals, and training, keeping your pharmacy staff organized, skilled, and fully prepared to serve customers responsibly.',
@@ -45,6 +49,7 @@ const hrIndustries = [
     mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
   },
   {
+    id: 5,
     title: 'Fashion & Apparel',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
     description: 'Unify the creative, retail, and logistics teams into a single, seamless HR system. Easily manage designer schedules, store personnel, and seasonal employees, as well as maintain operations in all branches.',
@@ -57,46 +62,55 @@ const hrIndustries = [
 
 const FeaturesCards = [
   {
+    id: 1,
     title: "Departments, Designations & Payslips Management",
     description: "Take control of every department, designation, and payroll information with a single potent human resource management software. The best HR software 2025 will simplify your daily HR tasks.",
-    imageSrc: "/assets/features-page/people-page/features-section/user-contact-management.webp",
+    imageSrc: "/assets/features-page/human-resource-page/features-section/payslip-management.webp",
   },
   {
+    id: 2,
     title: "Active / Inactive Department Control",
     description: "Switch between department status easily to make your HR management system tidy. Pay attention to dynamic teams and ensure transparency throughout the company.",
-    imageSrc: "/assets/features-page/people-page/features-section/smart-search-filter.webp",
+    imageSrc: "/assets/features-page/human-resource-page/features-section/department-control.webp",
   },
   {
+    id: 3,
     title: "Add & Edit Department Options",
     description: "Our easy-to-use employee management software enables you to create or update departments in seconds. Created to be precise, fast, and fully controllable.",
-    imageSrc: "/assets/features-page/people-page/features-section/role-based-permision.webp",
+    imageSrc: "/assets/features-page/human-resource-page/features-section/add-department-option.webp",
   },
   {
+    id: 4,
     title: "Categorized Depth Lists",
     description: "See departments in ordered categories such as Finance, Sales, and Services. This organization simplifies navigation in your HR management system.",
-    imageSrc: "/assets/features-page/people-page/features-section/secure-login-password.webp",
+    imageSrc: "/assets/features-page/human-resource-page/features-section/categorized-depth.webp",
   },
   {
+    id: 5,
     title: "Detailed Designation List",
     description: "Browse all designations with key information such as ID, Department, and Status. Organize your team of employees with the best HR management software.",
-    imageSrc: "/assets/features-page/people-page/features-section/activity-logs.webp",
+    imageSrc: "/assets/features-page/human-resource-page/features-section/detailed-designation.webp",
   },
   {
+    id: 6,
     title: "Smart Search & Data Export",
     description: "Search and find what you need instantly or export data to Excel with a single click. Make your HR reports simple, fast, and trustworthy.",
-    imageSrc: "/assets/features-page/people-page/features-section/bulk-imports.webp",
+    imageSrc: "/assets/features-page/human-resource-page/features-section/smart-search-data.webp",
   },
   {
+    id: 7,
     title: "Automated Payslip Management",
     description: "Create and see pay slips with all the information--salary, deductions and salary. Allow our human resource management system to take care of payroll.",
     imageSrc: "/assets/features-page/people-page/features-section/integrated-module.webp",
   },
   {
+    id: 8,
     title: "Custom Payroll Setup",
     description: "Easily set up payroll structures with custom payroll forms and heads. Make sure your policies can be integrated perfectly in the best HR software 2025.",
     imageSrc: "/assets/features-page/people-page/features-section/categorization-and-segmentation.webp",
   },
   {
+    id: 9,
     title: "Table Controls & Pagination",
     description: "Get clear records in tables including pagination and column display. Easily handle employee information within your employee management program.",
     imageSrc: "/assets/features-page/people-page/features-section/transaction-history.webp",
@@ -106,26 +120,31 @@ const FeaturesCards = [
 
 const  hrFaqs = [
   {
+    id: 1,
     question: "What does the Human Resource feature in Owners Inventory do?",
     answer:
       "It assists you in managing the employee data, attendance, payroll, and performance under a single easy dashboard that saves time and minimizes errors.",
   },
   {
+    id: 2,
     question: "Is this HR system suitable for small businesses?",
     answer:
       "Absolutely. Owners Inventory is designed to serve any size of team, be it a small retail store or a large company, and as your company grows, so will your inventory.",
   },
   {
+    id: 3,
     question: "Can I manage multiple branches or locations with one account?",
     answer:
       "Yes, it is possible to deal with employees in various branches or locations with a single system, and all data is stored there and is accessible.",
   },
   {
+    id: 4,
     question: "Is my employee data secure in the system?",
     answer:
       "Yes. We offer state-of-the-art encryption and secure servers to guarantee that the information belonging to your team remains absolutely safe and confidential.",
   },
   {
+    id: 5,
     question: "Does the HR feature integrate with other tools in the Owners Inventory?",
     answer:
       "Definitely. It integrates well with inventory, sales, and accounting features and provides you with a total picture of your business activities.",

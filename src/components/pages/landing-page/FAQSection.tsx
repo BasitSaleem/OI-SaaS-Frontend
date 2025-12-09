@@ -7,6 +7,7 @@ import Paragraph from "../typography/Paragraph";
 import SubHeading from "../typography/SubHeading";
 
 interface FAQ {
+  id?: string | number;
   question: string;
   answer: string;
 }
@@ -88,7 +89,7 @@ export default function FaqSection({
                 >
                   <span
                     className={`w-full max-w-[90%] text-sm md:text-xl leading-5 md:leading-9 font-onest transition-colors duration-300
-                      ${openIndex === index ? "text-[var(--primary-purple)]" : "text-[var(--text-dark)]"}
+                      ${openIndex === index ? "text-(--primary-purple)" : "text-(--text-dark)"}
                     `}
                   >
                     {faq.question}
@@ -114,7 +115,7 @@ export default function FaqSection({
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out
-                    px-5 text-xs md:text-base text-[var(--text-dark)]
+                    px-5 text-xs md:text-base text-(--text-dark)
                     ${openIndex === index ? "max-h-96 opacity-100 pb-5" : "max-h-0 opacity-0 pb-0"}`}
                 >
                   {faq.answer}
@@ -128,7 +129,7 @@ export default function FaqSection({
             <SubHeading className="mb-5 lg:mb-10">
               {heading}
             </SubHeading>
-            <Paragraph className="mb-8 md:mb-5 xl:mb-10 text-[var(--text-dark)]">
+            <Paragraph className="mb-8 md:mb-5 xl:mb-10 text-(--text-dark)">
               {paragraph}
             </Paragraph>
             
