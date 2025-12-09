@@ -1,9 +1,11 @@
 "use client";
 import '../globals.css'
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense,  } from "react";
+import Image from "next/image";
 import dynamic from 'next/dynamic';
 
-// Lazy load all components WITHOUT loading props
+
+// Lazy load all components
 const HeroSection2 = dynamic(() => import('@/components/common-components/HeroSection2'));
 const TrustedBySection = dynamic(() => import('@/components/common-components/TrustedBySection'));
 const TurningChaos = dynamic(() => import('@/components/pages/landing-page/TurningChaos'));
@@ -19,6 +21,7 @@ const InsightsSection = dynamic(() => import('@/components/pages/landing-page/In
 const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'));
 const CalltoActionBottom = dynamic(() => import('@/components/pages/landing-page/CalltoActionBottom'));
 const FeaturesTabSection = dynamic(() => import('@/components/pages/landing-page/FeaturesSection'));
+
 
 
 
@@ -189,52 +192,52 @@ export default function Home() {
 
   return (
     <>
-     <div className="font-onset">
-      <HeroSection2
-        title="Take Control. Gain Clarity. Grow with Owners Inventory."
-        description="Turn all assets to advantage. Our Owners Inventory services assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
-        video="/assets/Manual.mp4"
-        variant="animation2"
-      />
+      <div className="font-onset">
+          <HeroSection2
+            title="Take Control. Gain Clarity. Grow with Owners Inventory."
+            description="Turn all assets to advantage. Our Owners Inventory services assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
+            video="/assets/Manual.mp4"
+            variant="animation2"
+          />
 
-      <TrustedBySection
-        heading="Preferred to businesses who demand precision and performance"
-      />
+          <TrustedBySection
+           heading="Preferred to businesses who demand precision and performance"
+          />
 
-      <TurningChaos
-        title="Turning Chaos Into Clarity One Inventory at a Time."
-        description="With Owners Inventory, everything you need—inventory, POS, e-commerce, customer management, and reporting—works together seamlessly in one place. Simplify your operations, reduce manual errors, and scale your business faster with a platform built to unify, automate, and grow alongside you."
-      />
+          <TurningChaos
+            title="Turning Chaos Into Clarity One Inventory at a Time."
+            description="With Owners Inventory, everything you need—inventory, POS, e-commerce, customer management, and reporting—works together seamlessly in one place. Simplify your operations, reduce manual errors, and scale your business faster with a platform built to unify, automate, and grow alongside you."
+          />
 
-      <CaseStudies caseStudies={caseStudiesData} />
+          <CaseStudies caseStudies={caseStudiesData} />
 
-      <FeaturesTabSection />
 
-      <SmartWaytoSyncndSellSection />
+          <FeaturesTabSection/>
 
-      <UnifiedPlatform />
+          <SmartWaytoSyncndSellSection />
 
-      <VoicesRealBusiness />
-      
-      <IndustryPosShowcase 
-        mainHeading='Built for Every Industry'
-        paragraph='No matter what you sell, the Owners Inventory management program adapts to you.'
-        buttonText='Explore Now'
-        industries={homeIndustries} 
-      />
+          <UnifiedPlatform />
 
-      <PosIconsSection />
+          <VoicesRealBusiness />
+          
+           <IndustryPosShowcase 
+           mainHeading='Built for Every Industry'
+           paragraph='No matter what you sell, the Owners Inventory management program adapts to you.'
+           buttonText='Explore Now'
+           industries={homeIndustries} />
 
-      <ToolsSection />
+          <PosIconsSection />
 
-      <SmartTools />
+          <ToolsSection />
 
-      <InsightsSection />
+          <SmartTools />
 
-      <FaqSection faqs={homeFaqs} />
+          <InsightsSection />
 
-      <CalltoActionBottom />
-    </div>
+          <FaqSection  faqs={homeFaqs}/>
+
+          <CalltoActionBottom />
+      </div>
     </>
   );
 }
