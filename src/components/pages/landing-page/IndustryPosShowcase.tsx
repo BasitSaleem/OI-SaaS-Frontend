@@ -6,8 +6,8 @@ import Paragraph from "../typography/Paragraph";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import IndustryCard from "./IndustryCard";
 
-// Define the type for industry items
 export interface IndustryItem {
+  id?: string | number;
   title: string;
   gradient: string;
   description: string;
@@ -57,7 +57,7 @@ const IndustryPosShowcase = ({
         setSlidesPerView(3);
         setIsMobile(false);
         setIsTablet(false);
-        setTranslationPercentage(100);
+        setTranslationPercentage(102);
       }
     };
 
@@ -122,14 +122,14 @@ const IndustryPosShowcase = ({
   return (
     <div className="wrapper px-4 ">
       <div className="w-full flex justify-between items-end mb-10">
-        <div className="flex flex-col items-start justify-center w-full max-w-[100%] md:max-w-[70%]">
+        <div className="flex flex-col items-start justify-center w-full max-w-full md:max-w-[70%]">
           <MainHeading className="mb-4 text-[#333333]">
             {mainHeading}
           </MainHeading>
           <Paragraph className="text-[#666666]">
             {paragraph}
           </Paragraph>
-          <button className="mt-6 bg-[#7B61FF] text-white px-[63px] py-[20px] rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
+          <button className="mt-6 bg-[#7B61FF] text-white px-[63px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
             {buttonText}
           </button>
         </div>

@@ -6,6 +6,7 @@ import { ArrowDown } from "lucide-react";
 import ButtonSm from "@/components/button/ButtonSm";
 
 interface Feature {
+  id?: string | number;
   title: string;
   description: string;
   imageSrc: string;
