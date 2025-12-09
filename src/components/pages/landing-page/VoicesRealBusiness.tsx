@@ -1,6 +1,7 @@
 import BrandsSwiper from "@/components/slider/BrandsSwiper";
 import MainHeading from "../typography/MainHeading";
 import Image from "next/image";
+import FeaturesMainSwiper from "@/components/slider/FeaturesMainSwiper";
 
 const otherBrands = [
   {
@@ -18,21 +19,7 @@ const otherBrands = [
     name: "Texas Pipe & Supply",
     logo: "/assets/home-page-images/voices-icons/trust-pilot-logo.svg",
   },
-  {
-    id: 4,
-    name: "Al-Asif",
-    logo: "/assets/home-page-images/voices-icons/captera-logo.svg",
-  },
-  {
-    id: 5,
-    name: "ASK Food Industries",
-    logo: "/assets/home-page-images/voices-icons/getapp-logo.svg",
-  },
-  {
-    id: 6,
-    name: "Texas Pipe & Supply",
-    logo: "/assets/home-page-images/voices-icons/trust-pilot-logo.svg",
-  },
+  
 ];
 
 const VoicesRealBusiness = () => {
@@ -51,10 +38,11 @@ const VoicesRealBusiness = () => {
           Voices of Real Businesses
         </MainHeading>
 
-        <BrandsSwiper
+        <FeaturesMainSwiper
+          showPagination={false}
           slides={otherBrands}
           renderSlide={(brandItem) => (
-            <div className="relative z-[10] bg-white py-4 lg:px-[68px] my-10 rounded-2xl 
+            <div className="relative z-10 bg-white py-4 lg:px-[68px] my-10 rounded-2xl 
       border border-[#666666]/40 flex justify-center items-center">
               <Image
                 src={brandItem.logo}
