@@ -107,10 +107,9 @@ const SmartTools: React.FC<SmartTools> = ({
             {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
               type="video/mp4"
-
-              md:mt-[-88px] lg:mt-[-162px]
-            />
-            <source
+             md:mt-[-88px] lg:mt-[-162px]
+            /> */}
+            {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"
               type="video/webm"
             /> */}
