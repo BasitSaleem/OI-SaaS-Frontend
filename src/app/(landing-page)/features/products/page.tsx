@@ -29,7 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const advancereportingIndustries = [
+const productIndustries = [
   {
     id: 1,
     title: "Retail Stores",
@@ -92,7 +92,7 @@ const FeaturesCards = [
     description:
       "Utilize the bulk upload tool to save significant time. Through Excel and CSV files, easily import a number of items, and then export them as needed. Handle updates easily without any additional changes or errors.",
     imageSrc:
-      "/assets/features-page/reports-page/features-section/stock-visibility.webp",
+      "/assets/features-page/products-page/features-section/bulk-imports.webp",
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ const FeaturesCards = [
     description:
       "Dynamic charts and graphs can help you understand your inventory more quickly.  It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
     imageSrc:
-      "/assets/features-page/reports-page/features-section/data-visualization.webp",
+      "/assets/features-page/products-page/features-section/search-filter.webp",
   },
   {
     id: 4,
@@ -108,7 +108,7 @@ const FeaturesCards = [
     description:
       "It’s easy to manage and update cost, selling, and discount prices, all at one place. Easily set active or inactive listings and promotions.",
     imageSrc:
-      "/assets/features-page/reports-page/features-section/store-comparison.webp",
+      "/assets/features-page/products-page/features-section/price-management.webp",
   },
   {
     id: 5,
@@ -116,7 +116,7 @@ const FeaturesCards = [
     description:
       "You can create SKUs and barcodes for each and every item. For faster sales and reporting, instantly scan, update, and track products.",
     imageSrc:
-      "/assets/features-page/reports-page/features-section/advance-filtering.webp",
+      "/assets/features-page/products-page/features-section/barcode-management.webp",
   },
   {
     id: 6,
@@ -124,7 +124,7 @@ const FeaturesCards = [
     description:
       "Monitor stock levels in real time. Quickly spot products that are running low, overstocked or out of stock and take appropriate actions before they affect overall sales. ",
     imageSrc:
-      "/assets/features-page/reports-page/features-section/live-data.webp",
+      "/assets/features-page/products-page/features-section/visibility-status.webp",
   },
   {
     id: 7,
@@ -144,7 +144,7 @@ const FeaturesCards = [
   },
 ];
 
-const advancereportingFaqs = [
+const productFaqs = [
   {
     id: 1,
     question:
@@ -212,7 +212,7 @@ const layoutPatterns = [
   },
 ];
 
-const advancereportingTestimonials = [
+const productTestimonials = [
   {
     name: "Daniel Smith",
     title: "Operations Manager",
@@ -312,7 +312,7 @@ const page = () => {
           mainHeading="Industry-Ready Product Dashboard Solutions"
           paragraph="It does not matter whether you are a manufacturer, wholesaler, distributor, or retailer, our Product Management feature helps you manage your product operations with complete transparency and accuracy. From pricing to performance, Owners Inventory makes sure that every product in your catalog is organized, and optimized for your business."
           buttonText="Explore Now"
-          industries={advancereportingIndustries}
+          industries={productIndustries}
         />
       </div>
 
@@ -322,7 +322,7 @@ const page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={advancereportingTestimonials}
+        testimonials={productTestimonials}
         heading="Clients Voices"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -333,7 +333,7 @@ const page = () => {
         <FaqSection
           heading="Everything You Need to Know About Owners Inventory"
           paragraph="Here are some things you should know, whether you are automating your stock system or setting up your catalog."
-          faqs={advancereportingFaqs}
+          faqs={productFaqs}
         />
       </div>
     </div>

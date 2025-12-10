@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { ReactNode } from "react";
 
+
 interface CustomSwiperProps<T> {
   slides: T[];
   renderSlide: (slide: T, index: number) => ReactNode;
@@ -17,7 +18,7 @@ export default function CustomSwiper<T>({
 }: CustomSwiperProps<T>) {
   return (
     <Swiper
-      modules={[Pagination, Autoplay]} // Added Autoplay module
+      modules={[Pagination, Autoplay]} 
       spaceBetween={20}
       slidesPerView={1}
       slidesPerGroup={1}
