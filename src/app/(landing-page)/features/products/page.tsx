@@ -311,7 +311,7 @@ const page = () => {
         <IndustryPosShowcase
           mainHeading="Industry-Ready Product Dashboard Solutions"
           paragraph="It does not matter whether you are a manufacturer, wholesaler, distributor, or retailer, our Product Management feature helps you manage your product operations with complete transparency and accuracy. From pricing to performance, Owners Inventory makes sure that every product in your catalog is organized, and optimized for your business."
-          buttonText="Explore Now"
+          buttonText="Explore All Industries"
           industries={productIndustries}
         />
       </div>

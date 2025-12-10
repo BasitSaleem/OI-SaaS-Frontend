@@ -1,30 +1,55 @@
 "use client";
-import '../globals.css'
-import React, { useEffect, Suspense,  } from "react";
+import "../globals.css";
+import React, { useEffect, Suspense } from "react";
 import Image from "next/image";
-import dynamic from 'next/dynamic';
-
-
+import dynamic from "next/dynamic";
 
 // Lazy load all components
-const HeroSection2 = dynamic(() => import('@/components/common-components/HeroSection2'));
-const TrustedBySection = dynamic(() => import('@/components/common-components/TrustedBySection'));
-const TurningChaos = dynamic(() => import('@/components/pages/landing-page/TurningChaos'));
-const CaseStudies = dynamic(() => import('@/components/pages/landing-page/CaseStudy'));
-const SmartWaytoSyncndSellSection = dynamic(() => import('@/components/pages/landing-page/SmartWaytoSyncndSellSection'));
-const UnifiedPlatform = dynamic(() => import('@/components/pages/landing-page/UnifiedPlatform'));
-const VoicesRealBusiness = dynamic(() => import('@/components/pages/landing-page/VoicesRealBusiness'));
-const IndustryPosShowcase = dynamic(() => import('@/components/pages/landing-page/IndustryPosShowcase'));
-const PosIconsSection = dynamic(() => import('@/components/pages/landing-page/Smartway'));
-const ToolsSection = dynamic(() => import('@/components/pages/landing-page/ToolsSection'));
-const SmartTools = dynamic(() => import('@/components/pages/landing-page/SmartTools'));
-const InsightsSection = dynamic(() => import('@/components/pages/landing-page/InsightsSection'));
-const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'));
-const CalltoActionBottom = dynamic(() => import('@/components/pages/landing-page/CalltoActionBottom'));
-const FeaturesTabSection = dynamic(() => import('@/components/pages/landing-page/FeaturesSection'));
-
-
-
+const HeroSection2 = dynamic(
+  () => import("@/components/common-components/HeroSection2")
+);
+const TrustedBySection = dynamic(
+  () => import("@/components/common-components/TrustedBySection")
+);
+const TurningChaos = dynamic(
+  () => import("@/components/pages/landing-page/TurningChaos")
+);
+const CaseStudies = dynamic(
+  () => import("@/components/pages/landing-page/CaseStudy")
+);
+const SmartWaytoSyncndSellSection = dynamic(
+  () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection")
+);
+const UnifiedPlatform = dynamic(
+  () => import("@/components/pages/landing-page/UnifiedPlatform")
+);
+const VoicesRealBusiness = dynamic(
+  () => import("@/components/pages/landing-page/VoicesRealBusiness")
+);
+const IndustryPosShowcase = dynamic(
+  () => import("@/components/pages/landing-page/IndustryPosShowcase")
+);
+const PosIconsSection = dynamic(
+  () => import("@/components/pages/landing-page/Smartway")
+);
+const ToolsSection = dynamic(
+  () => import("@/components/pages/landing-page/ToolsSection")
+);
+const SmartTools = dynamic(
+  () => import("@/components/pages/landing-page/SmartTools")
+);
+const InsightsSection = dynamic(
+  () => import("@/components/pages/landing-page/InsightsSection")
+);
+const FaqSection = dynamic(
+  () => import("@/components/pages/landing-page/FAQSection")
+);
+const CalltoActionBottom = dynamic(
+  () => import("@/components/pages/landing-page/CalltoActionBottom")
+);
+const FeaturesTabSection = dynamic(
+  () => import("@/components/pages/landing-page/FeaturesSection")
+);
 
 const caseStudiesData = [
   {
@@ -94,7 +119,7 @@ const caseStudiesData = [
   },
 ];
 
-const  homeFaqs = [
+const homeFaqs = [
   {
     id: 1,
     question: "How does Owners Inventory sync across multiple platforms?",
@@ -115,9 +140,9 @@ const  homeFaqs = [
   },
   {
     id: 4,
-    question: "Does the system offer reporting and analytics?",
+    question: "Who is Owners Inventory designed for?",
     answer:
-      "Yes. Owner Inventory offers real-time dashboards, predictive analytics, and customizable reports to assist you in effortlessly monitoring sales, performance and inventory trends.",
+      "It’s built for retailers, wholesalers, distributors, manufacturers, and ecommerce businesses who want complete control over sales, inventory, staff, and multi-location operations.",
   },
   {
     id: 5,
@@ -125,49 +150,59 @@ const  homeFaqs = [
     answer:
       "We have a committed support staff on chat, email, and phone. We also have some excellent tutorials, video instructions and FAQs so that you can solve problems fast.",
   },
+   {
+    id: 6,
+    question: "Does Owners Inventory support Integrations?",
+    answer:
+      "Yes. You can sync products, inventory, orders, customers, and financials across Shopify, WooCommerce, QuickBooks, Stripe, and marketing platforms like HubSpot or Mailchimp.",
+  },
 ];
-
 
 const homeIndustries = [
   {
     id: 1,
-    title: 'Retail Stores',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.',
-    image: '/assets/industry-type/retail-store.webp',
-    mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+    title: "Retail Stores",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
+    image: "/assets/industry-type/retail-store.webp",
+    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
   },
   {
     id: 2,
-    title: 'Restaurant Types',
-    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time — ensuring smooth operations from kitchen to counter.',
-    image: '/assets/industry-type/restaurant.webp',
-    mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+    title: "Restaurant Types",
+    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+    description:
+      "Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time — ensuring smooth operations from kitchen to counter.",
+    image: "/assets/industry-type/restaurant.webp",
+    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
   },
   {
     id: 3,
-    title: 'Wholesalers',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Handle bulk orders with customer-specific pricing, manage multi-location inventory, and keep fulfillment running efficiently with a system built for volume.',
-    image: '/assets/industry-type/whole-sale.webp',
-    mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
+    title: "Wholesalers",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "Handle bulk orders with custom pricing, manage multi-location stock, and keep fulfillment smooth. Streamline sales, purchases, and inventory operations. All in one system built for high-volume wholesalers.",
+    image: "/assets/industry-type/whole-sale.webp",
+    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
-    title: 'Pharmacies',
-    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales and digital prescriptions effortlessly.',
-    image: '/assets/industry-type/pharmacy.webp',
-    mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+    title: "Pharmacies",
+    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+    description:
+      "Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales and digital prescriptions effortlessly.",
+    image: "/assets/industry-type/pharmacy.webp",
+    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
   {
     id: 5,
-    title: 'Fashion & Apparel',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across online and physical stores, whether you sell streetwear, shoes, or high fashion.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+    title: "Fashion & Apparel",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across online and physical stores, whether you sell streetwear, shoes, or high fashion.",
+    image: "/assets/industry-type/fashion.webp",
+    mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },
 ];
 
@@ -194,50 +229,52 @@ export default function Home() {
   return (
     <>
       <div className="font-onset">
-          <HeroSection2
-            title="Take Control. Gain Clarity. Grow with Owners Inventory."
-            description="Turn all assets to advantage. Our Owners Inventory services assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
-            video="/assets/Manual.mp4"
-            variant="animation2"
-          />
+        <HeroSection2
+          title="Take Control. Gain Clarity. Grow with Owners Inventory."
+          description="Turn all assets to advantage. Our Owners Inventory services assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
+          video="/assets/Manual.mp4"
+          variant="animation2"
+        />
 
-          <TrustedBySection
-           heading="Preferred to businesses who demand precision and performance"
-          />
+        <TrustedBySection heading="Preferred to businesses who demand precision and performance" />
 
-          <TurningChaos
-            title="Turning Chaos Into Clarity One Inventory at a Time."
-            description="With Owners Inventory, everything you need—inventory, POS, e-commerce, customer management, and reporting—works together seamlessly in one place. Simplify your operations, reduce manual errors, and scale your business faster with a platform built to unify, automate, and grow alongside you."
-          />
+        <TurningChaos
+          title="Turning Chaos Into Clarity"
+          miniTitle="One Inventory at a Time"
+          description="Owners Inventory assists any business to manage its assets with accuracy regardless of their size. Everything is quicker,easier, and smarter, in terms of tracking and publishing with our inventory management system.
+Made by the owners, owned by the owners - since you need the tools that can think like you.
+Let us simplify the management of what belongs to you.
+"
+        />
 
-          <CaseStudies caseStudies={caseStudiesData} />
+        <CaseStudies caseStudies={caseStudiesData} />
 
+        <FeaturesTabSection />
 
-          <FeaturesTabSection/>
+        <SmartWaytoSyncndSellSection />
 
-          <SmartWaytoSyncndSellSection />
+        <UnifiedPlatform />
 
-          <UnifiedPlatform />
+        <VoicesRealBusiness />
 
-          <VoicesRealBusiness />
-          
-           <IndustryPosShowcase 
-           mainHeading='Built for Every Industry'
-           paragraph='No matter what you sell, the Owners Inventory management program adapts to you.'
-           buttonText='Explore Now'
-           industries={homeIndustries} />
+        <IndustryPosShowcase
+          mainHeading="Built for Every Industry"
+          paragraph="No matter what you sell, the Owners Inventory management program adapts to you."
+          buttonText="Explore All Industries"
+          industries={homeIndustries}
+        />
 
-          <PosIconsSection />
+        <PosIconsSection />
 
-          <ToolsSection />
+        <ToolsSection />
 
-          <SmartTools />
+        <SmartTools />
 
-          <InsightsSection />
+        <InsightsSection />
 
-          <FaqSection  faqs={homeFaqs}/>
+        <FaqSection faqs={homeFaqs} />
 
-          <CalltoActionBottom />
+        <CalltoActionBottom />
       </div>
     </>
   );

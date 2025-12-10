@@ -234,7 +234,7 @@ const page = () => {
         <IndustryPosShowcase
            mainHeading='Powering People Across Every Industry'
            paragraph='Any business thrives on its people, and Owners Inventory provides you with the means to handle them with ease. Our Human Resource feature is easily adaptable to various industries to help you automate daily operations, keep things under control, and make teams stronger.'
-           buttonText='Explore Now'
+           buttonText='Explore All Industries'
            industries={hrIndustries} />
       </div>
 

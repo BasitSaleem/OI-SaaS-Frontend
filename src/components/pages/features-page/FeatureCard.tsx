@@ -16,6 +16,10 @@ interface FeatureCardProps {
   heightClass?: string;
   truncateTitle?: boolean;
   maxTitleLength?: number;
+   listItems?: string[]; 
+  listClassName?: string; 
+  listItemClassName?: string; 
+  bulletClassName?: string; 
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
@@ -32,6 +36,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   heightClass = "h-full",
   truncateTitle = false,
   maxTitleLength = 50,
+   listItems = [],
+  listClassName = "",
+  listItemClassName = "",
+  bulletClassName = "text-[var(--text-grey)] font-bold mr-2",
 }) => {
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
@@ -78,9 +86,26 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               {displayedTitle}
             </CardHeading>
 
-            <CardDesc className="min-h-[60px] flex items-start flex-1"> 
+            <CardDesc className="min-h-[30px] flex items-start mb-6"> 
               {description}
             </CardDesc>
+             
+            {listItems.length > 0 && (
+              <ul className={`space-y-2 min-h-[60px] flex flex-col items-start flex-1 ${listClassName}`}>
+                {listItems.map((item, index) => (
+                  <li 
+                    key={index} 
+                    className={`flex items-start ${listItemClassName}`}
+                  >
+                    {/* Simple bullet span */}
+                    <span className={bulletClassName}>•</span>
+                    <span className="text-lg leading-[170%] font-onest text-[var(--text-grey)]">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
 
             <p className="xl:text-base text-base leading-6 font-bold font-onest text-[#795CF5] mt-3 lg:mt-4">
               {authorName}

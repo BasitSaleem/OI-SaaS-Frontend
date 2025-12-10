@@ -326,7 +326,7 @@ const page = () => {
         <IndustryPosShowcase
           mainHeading="Industries We Serve"
           paragraph="Regardless of whether you are a manufacturer, distributor or retailer, our Advanced Reporting feature will enable you to transform business data into valuable insights. The best POS system with advanced reports will allow you to monitor performance, identify trends, and make a confident decision in any industry."
-          buttonText="Explore Now"
+          buttonText="Explore All Industries"
           industries={advancereportingIndustries}
         />
       </div>

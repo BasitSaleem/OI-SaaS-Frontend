@@ -56,12 +56,9 @@ export default function InsightsSection() {
   return (
     <section className="ownerinventory-landing-insights rounded-[40px]  lg:py-[100px] md:py-40 py-28 z-50">
       <div className="wrapper text-center">
-        <MainHeading className="mb-4">Everything You Want to Know</MainHeading>
+        <MainHeading className="mb-4">Insights That Help You Grow</MainHeading>
         <Paragraph className="lg:mb-10 md:mb-6 mb-5">
-          We know that you may have questions regarding how Owners Inventory
-          operates, its functions, and integrations. These are the most
-          frequently asked questions that we have responded to so that you can
-          have the confidence to start and start fast.
+          Explore expert guides, industry trends, and practical strategies for smarter operations.
         </Paragraph>
 
         <div className="grid grid-cols-12 lg:gap-6 gap-5 items-stretch">

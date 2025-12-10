@@ -16,13 +16,13 @@ const cards = [
     icon: "/assets/unified-platform/unified-operations.svg",
     title: "Unified Operations",
     description:
-      "Smartly process inventory, POS, e-commerce, customer data--all in one place. No longer having to carry around various tools.",
+      "Smartly process inventory, POS, e-commerce, customer data all in one place. No longer having to carry around various tools.",
   },
   {
     icon: "/assets/unified-platform/real-time-reporting.svg",
     title: "Real-Time Reporting",
     description:
-      "Keep up with real-time sales data, inventory data, and performance dashboards that enable better-informed, swift decisions.",
+      "Keep up with real-time sales data, inventory data, and performance dashboards that enable better-informed and swift decisions.",
   },
   {
     icon: "/assets/unified-platform/cost-effection.svg",
@@ -217,9 +217,10 @@ export default function UnifiedPlatform() {
           {/* Text Column */}
           <div className="w-full order-1 md:order-2 md:w-1/2 lg:w-3/5">
             <div className="flex flex-col items-center justify-center">
-              <MainHeading className="text-center mb-4">Features That Set Us Apart</MainHeading>
+              <MainHeading className="text-center mb-4">Why We Stand Out</MainHeading>
               <Paragraph className="text-center mb-6">
-                Modern tools designed to simplify, scale, and smarten your business.
+                The future of business management is here, quick, integrated, expansionary. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.
+
               </Paragraph>
 
               <div className="hidden md:flex">
