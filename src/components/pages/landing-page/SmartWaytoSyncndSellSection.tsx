@@ -36,7 +36,7 @@ function SmartWaytoSyncndSellSection() {
           <div className="hidden md:flex gap-4 w-full items-center justify-start">
             <ButtonSm
               url="#"
-              text="Boost Your Sales"
+              text="Book a Free Demo"
               bgColor="[#1AD1B9]"
               textColor="white"
               isBorder
@@ -44,7 +44,7 @@ function SmartWaytoSyncndSellSection() {
             />
             <ButtonSm
               url="#"
-              text="Scale with Ease"
+              text="Contact Sales"
               bgColor="[#795CF5]"
               textColor="white"
               isBorder

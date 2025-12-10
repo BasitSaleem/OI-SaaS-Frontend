@@ -80,19 +80,85 @@ const productIndustries = [
 const FeaturesCards = [
   {
     id: 1,
-    title: "Activity Log",
-    description:
-      "Have full access to all activities carried out in your inventory system. The Activity Log assists you in tracking, reviewing, and ensuring changes with detailed records- keeping your operations transparent and well-documented.",
+    title: "Shopify Integration",
     imageSrc:
       "/assets/features-page/general-tools/features-section/activity-log.webp",
+       listItems: [
+      "Sync prices, stock, and product listings automatically.",
+      "Update inventory instantly after every order.",
+      "Import Shopify orders for easy tracking and fulfillment.",
+      "Keep all customer data centralized.",
+      "Generate real-time sales and performance reports."
+    ],
   },
   {
     id: 2,
-    title: "Stock Alert",
+    title: "WooCommerce Integration",
     description:
-      "Automatically track inventory levels and avoid overstocking with warnings. The Stock Alert feature tracks product levels in all stores and warehouses and notifies you in real time when there is a requirement to adjust the stock.",
+      "Display the right amount of stock, how many items are in stock, and where they are available.  Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
     imageSrc:
       "/assets/features-page/general-tools/features-section/stock-alert.webp",
+       listItems: [
+      "Sync products, variations, and stock with WooCommerce.",
+      "Manage online orders from one dashboard.",
+      "Auto-update inventory after every change.",
+      "Keep pricing and catalog consistent everywhere.",
+      "View all performance insights in one report."
+    ],
+  },
+  {
+    id: 3,
+    title: "Data Visualization with Interaction",
+    description:
+      "Dynamic charts and graphs can help you understand your inventory more quickly.  It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
+    imageSrc:
+      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+     
+  },
+   {
+    id: 4,
+    title: "Quickbooks Integration",
+    description:
+      "Take control of your finances with one of the best accounting programs in the world, QuickBooks. Automate your financial records and make sure that every sale, purchase, or expense is accurately reflected in your books immediately by integrating QuickBooks with Owners Inventory.",
+    imageSrc:
+      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+       listItems: [
+      "Direct synchronization of purchases, sales, and expense data into QuickBooks.",
+      "Reduce accounting errors and do away with manual entry.",
+      "Easily manage balance sheets, track tax information, and arrange invoices.",
+      "Real-time revenue, profit, and cost reports help you improve your financial visibility.",
+      "Maintain a perfect balance between your operations and accounting."
+    ],
+  },
+   {
+    id: 5,
+    title: "Payment Getaway Integration",
+    description:
+      "Flexibility in payments is crucial for any business. You can securely and easily accept payments both online and in-store throughout Owners Inventory’s integration with well-known payment gateways like Stripe, PayPal, and others.",
+    imageSrc:
+      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+       listItems: [
+      "Accept digital wallets, credit/debit cards, and online payments.",
+      "Use integrated gateways to handle transactions directly.",
+      "Monitor each payment using your mobile sales platform, website, or POS system.",
+      "Total control over the revenue flow and transaction history.",
+      "Reduce manual cash handling by automating payment reconciliation."
+    ],
+  },
+  {
+    id: 6,
+    title: "Marketing Tools Integration",
+    description:
+      "Sales are only the beginning of your company’s success but visibility is the key. With Owners Inventory, you can effectively measure performance, conduct targeted campaigns, and analyze customer behaviour by integrating with marketing tools and platforms.",
+    imageSrc:
+      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+       listItems: [
+      "Link Owners Inventory data to email marketing platforms such as HubSpot or MailChimp through marketing tool integration.",
+      "For individualized campaigns, sync sales history, loyalty information, and customer segments.",
+      "Monitor campaign performance and conversions straight from your dashboard.",
+      "Gain insights into customer preferences and purchasing trends.",
+      "Use real-time sales data to automate promotional offers and follow-ups. "
+    ],
   },
   
   
@@ -252,57 +318,53 @@ const Page = () => {
   return (
     <div>
       <SubFeaturesHero
-        title="General Tools: Simplify Your Inventory Management"
-        description="Take control of your inventory with smart, easy-to-use tools designed for efficiency. From quick edits to bulk updates, General Tools help you save time, reduce errors, and keep your inventory organized effortlessly."
+        title="Connect Businesses through Smart Integrations"
+        description="Integrate operations with smooth third-party platforms and tools to unify your business with Owners Inventory’s Integration Module. Accounting, payments and marketing are all connected together by our integration-ready service."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         variant="animation2"
       />
 
       {/* 🔥 Custom layout + cards */}
       <TrustedBySection
-        heading="Our Valued Clients"
-        paragraph="Owners Inventory helps businesses like Al-Asif and Bright Home manage inventory smarter and more efficiently. It simplifies operations, increases visibility, and improves decision making driving their success."
+        heading="Trusted by Leading Companies"
+        paragraph="Owners Inventory helps brands like Al-Asif, Sportify, and ASK Food Industries connect their stores, manage inventory, and streamline financial processes, enabling them to scale smoothly with powerful integrations."
       />
       <KeyHighlights
-        heading="Key Highlights"
+        heading="Strong Integrations for All Types of Businesses "
         features={FeaturesCards}
         layoutPatterns={layoutPatterns}
+        
       />
 
       <WhyChoosePOS
-        heading="Why Choose Our Tools?"
-        paragraph="Our tools are designed to help inventory management be more intelligent, quicker, and simpler. They are created with accuracy and performance in mind allowing you to save time, minimize errors and keep full control of your business activities."
+        heading="Why Choose Owners Inventory Integration?"
+        paragraph="Automated, integrated reporting designed to give you clear insights, better visibility, and full control over your daily operations."
         cards={[
           {
             icon: "/assets/features-page/point-of-sale/why-chose/speed-accuracy.svg",
-            title: "Intelligent Automation",
+            title: "Unified Business Control",
             description:
-              "Eliminate manual work with real-time automation, so you can focus on growth instead of routine tasks.",
+              "Manage marketing, accounting, and operations in one connected system with full visibility.",
           },
           {
             icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
-            title: "Real-time insights",
+            title: "Error-Free Automation",
             description:
-              "Stay updated with precise, real-time data so you can make smarter decisions and always know what’s happening in your inventory.",
+              "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate in expansion.",
           },
           {
             icon: "/assets/features-page/general-tools/user-friendly-design.svg",
-            title: "User Friendly Design",
+            title: "Faster Decision Making",
             description:
-              "Enjoy a clean, intuitive interface that’s easy to navigate, making every feature simple and smooth for all users.",
+              "Get real-time data from all channels to make accurate, informed decisions.",
           },
           {
             icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
-            title: "Fluent Integration",
+            title: "Easy to Scale",
             description:
-              "Easily connect with other modules and systems for a unified workflow, keeping all your business data on one platform.",
+              "Easily add or expand integrations as you grow, staying flexible with a system that adapts to changing needs.",
           },
-           {
-            icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
-            title: "Stable Performance",
-            description:
-              "Enjoy fast, stable performance even with large data—our tools are built for accuracy and reliability without interruption.",
-          },
+          
          
         ]}
         mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"

@@ -227,7 +227,7 @@ export default function PosIconsSection() {
                 alt="Logo Image"
                 width={198}
                 height={100}
-                className="flex items-center justify-center w-full mx-auto md:max-w-[198px] max-w-[100px] h-[100px] z-10"
+                className="flex items-center justify-center w-full mx-auto lg:max-w-[198px] lg:h-[198px] md:max-w-[132px] md:h-[139px] max-w-[100px] h-[100px] z-10"
               />
             </a>
 

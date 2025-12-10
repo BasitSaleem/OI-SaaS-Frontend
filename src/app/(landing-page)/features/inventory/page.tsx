@@ -306,7 +306,7 @@ const Page = () => {
         <IndustryPosShowcase
           mainHeading="Built for Every Industry That Sells Smarter"
           paragraph="Whether it is inventory product management software or flexible catalog tools, Owners Inventory makes it easier to add, organize, and manage products in any industry."
-          buttonText="Explore Now"
+          buttonText="Explore All Industries"
           industries={productIndustries}
         />
       </div>

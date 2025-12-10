@@ -28,6 +28,7 @@ const chaos: Chaos[] = [
 
 interface TurningChaosProps {
   title: string;
+  miniTitle?: string;
   description: string;
  
 }
@@ -35,6 +36,7 @@ interface TurningChaosProps {
 const TurningChaos: React.FC<TurningChaosProps> = ({
   title,
   description,
+  miniTitle,
  
 }) => {
   const chaosRefs = useRef<Array<HTMLHeadingElement | null>>([]);
@@ -107,7 +109,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
       >
         <div className="flex wrapper flex-col items-center justify-center w-full">
           <MainHeading className="text-center mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
-            {title}
+            {title} <span className="inline sm:block">{miniTitle}</span>
           </MainHeading>
 
           <Paragraph className="lg:mb-4 mb-6 text-center">{description}</Paragraph>

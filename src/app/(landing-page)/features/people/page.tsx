@@ -245,7 +245,7 @@ const page = () => {
         <IndustryPosShowcase
            mainHeading='Built for Every Industry'
            paragraph='The People feature of Owners Inventory is built to fit the way any business operates, be it a retail store or a restaurant, wholesaler or pharmacy, or a fashion brand. Whatever your business is, Owners Inventory can put your operation in a better place to run smoothly, faster, and smarter.'
-           buttonText='Explore Now'
+           buttonText='Explore All Industries'
            industries={peopleIndustries} />
       </div>
 

@@ -56,8 +56,8 @@ const defaultFaqs: FAQ[] = [
 export default function FaqSection({
   faqs = defaultFaqs,
   heading = "Everything You Were About to Ask",
-  paragraph = "We've compiled the most common questions about Owners Inventory — from setup and features to pricing and support. If you're still unsure, our team is here to help.",
-  buttonText = "Start Now",
+  paragraph = "Find quick answers to the most common questions about Owners Inventory. And if you need anything more, our support team is ready to assist.",
+  buttonText = "Start Free, See Plans",
   buttonUrl = "#",
   buttonBgColor = "#1AD1B9",
   buttonTextColor = "white",
@@ -72,7 +72,7 @@ export default function FaqSection({
   };
 
   return (
-    <section className="wrapper">
+    <section className="wrapper" >
       <div className="rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center justify-center gap-10 md:gap-[100px] lg:gap-12 w-full px-5 md:px-[77px] lg:px-[87px] py-10 md:py-[58px] lg:py-[60px]">
           {/* Left Accordion Cards */}

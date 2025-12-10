@@ -298,7 +298,7 @@ const page = () => {
         <IndustryPosShowcase
           mainHeading="Industries We Serve"
           paragraph="Each business has a different story to tell- so should your reports. Owners' Inventory provides inventory management reports and point of sale system reports that are tailored to your industry. Gain valuable insights, smarter analytics, and clear data visualization that enable you to make decisive business choices."
-          buttonText="Explore Now"
+          buttonText="Explore All Industries"
           industries={advancereportingIndustries}
         />
       </div>

@@ -28,7 +28,7 @@ const IndustryPosShowcase = ({
   industries,
   mainHeading = "",
   paragraph = "",
-  buttonText = "Explore Now",
+  buttonText = "Explore All Industries",
 }: IndustryPosShowcaseProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -129,7 +129,7 @@ const IndustryPosShowcase = ({
           <Paragraph className="text-[#666666]">
             {paragraph}
           </Paragraph>
-          <button className="mt-6 bg-[#7B61FF] text-white px-[63px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
+          <button className="mt-6 bg-[#7B61FF] text-white px-[30px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
             {buttonText}
           </button>
         </div>

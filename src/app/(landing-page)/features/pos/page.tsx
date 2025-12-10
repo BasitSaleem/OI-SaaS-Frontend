@@ -311,7 +311,7 @@ const page = () => {
         <IndustryPosShowcase
           mainHeading="Industry-Ready POS to Power Your Sales"
           paragraph="There is no single business like another; then why use generic point-of-sale systems? Owners Inventory offers a customized point of sale software and point of sale solution to meet your industry specifications."
-          buttonText="Explore Now"
+          buttonText="Explore All Industries"
           industries={posIndustries}
         />
       </div>

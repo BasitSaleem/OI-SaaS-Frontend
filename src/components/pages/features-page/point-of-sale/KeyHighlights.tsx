@@ -8,8 +8,9 @@ import ButtonSm from "@/components/button/ButtonSm";
 interface Feature {
   id?: string | number;
   title: string;
-  description: string;
+  description?: string;
   imageSrc: string;
+   listItems?: string[];
 }
 
 interface LayoutPattern {
@@ -70,7 +71,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
       {/* Cards */}
       <div className="relative w-full">
         <div className="w-full absolute top-0 left-0 right-0 bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] h-[163px]"></div>
-      <div className="grid grid-cols-12 xl:auto-rows-auto items-stretch gap-6">
+      <div className="grid grid-cols-12 xl:auto-rows-auto h-auto items-stretch gap-6">
         {visibleFeatures.map((feature, i) => {
           const pattern = layoutPatterns[i % layoutPatterns.length];
           return <FeatureCard key={i} {...feature} {...pattern} />;

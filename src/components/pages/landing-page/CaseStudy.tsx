@@ -214,7 +214,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                   </div>
 
                   <div
-                    className="bg-contain bg-center bg-no-repeat min-h-[600px]"
+                    className="bg-contain bg-center bg-no-repeat min-h-[550px]"
                     style={{
                       backgroundImage: `url(${study.backgroundImage})`,
                     }}

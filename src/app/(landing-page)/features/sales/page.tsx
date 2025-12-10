@@ -234,7 +234,7 @@ const page = () => {
          <IndustryPosShowcase 
           mainHeading='Sales and Orders Tailored for Your Industry'
            paragraph='All businesses sell differently, and your sales system needs to realize that. Whatever you sell, Owners Inventory offers flexible, industry-ready tools to make transactions easier, more accurate, and enable your team to make sales more quickly.'
-           buttonText='Explore Now'
+           buttonText='Explore All Industries'
          industries={salesIndustries} />
       </div>
 
