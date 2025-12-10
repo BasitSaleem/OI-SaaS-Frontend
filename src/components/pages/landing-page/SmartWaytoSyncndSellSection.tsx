@@ -18,11 +18,11 @@ function SmartWaytoSyncndSellSection() {
   }, []);
 
   // Helper to refresh ScrollTrigger when the video loads
-  const onVideoLoaded = () => {
-    try {
-      ScrollTrigger.refresh();
-    } catch (e) {}
-  };
+  // const onVideoLoaded = () => {
+  //   try {
+  //     ScrollTrigger.refresh();
+  //   } catch (e) {}
+  // };
 
   return (
     <section className="wrapper lg:pt-[100px] md:pt-20 pt-[60px]">
@@ -62,17 +62,17 @@ function SmartWaytoSyncndSellSection() {
             loop
              preload="auto"
            controls={false}
-            onLoadedMetadata={onVideoLoaded}
-            onLoadedData={onVideoLoaded}
+            // onLoadedMetadata={onVideoLoaded}
+            // onLoadedData={onVideoLoaded}
           >
-            <source
+            {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.mp4"
               type="video/mp4"
             />
             <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.webm"
               type="video/webm"
-            />
+            /> */}
           </video>
         </div>
 
