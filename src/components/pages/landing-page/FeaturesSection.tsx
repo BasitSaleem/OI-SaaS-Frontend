@@ -176,7 +176,7 @@ export default function FeaturesTabSection() {
   return (
     <section className="features-tab-section mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
       <div className="wrapper">
-        <MainHeading className="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-20 md:mb-[60px] mb-10">
+        <MainHeading className="max-w-[800px] leading-tight text-(--white-color) lg:mb-20 md:mb-[60px] mb-10">
           Powerful Features Built for Growing Businesses
         </MainHeading>
 
@@ -226,7 +226,7 @@ export default function FeaturesTabSection() {
                   >
                     <div
                       className={`w-10 p-2.5 rounded-full flex items-center justify-center ${
-                        isActive ? "bg-[var(--primary-purple)]" : "bg-[rgba(243,244,246,0.1)]"
+                        isActive ? "bg-(--primary-purple)" : "bg-[rgba(243,244,246,0.1)]"
                       }`}
                     >
                       <Image src={feature.icon} alt="" width={20} height={20} />
@@ -235,8 +235,8 @@ export default function FeaturesTabSection() {
                     <span
                       className={`font-onest ${
                         isActive
-                          ? "text-[var(--primary-purple)] font-semibold text-base xl:text-2xl"
-                          : "text-[var(--white-color)] text-sm xl:text-xl"
+                          ? "text-(--primary-purple) font-semibold text-base xl:text-2xl"
+                          : "text-(--white-color) text-sm xl:text-xl"
                       }`}
                     >
                       {feature.title}

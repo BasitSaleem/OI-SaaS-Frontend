@@ -52,24 +52,24 @@ const SmartTools: React.FC<SmartTools> = ({
     <section className="wrapper">
       <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} />
       <div
-        className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-7 md:mt-20 lg:mt-[100px] bg-cover bg-center"
+        className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] bg-cover bg-center"
         style={{
           backgroundImage:
             "url('/assets/home-page-images/black-background.webp')",
         }}
       >
-        <MainHeading className="text-center lg:mb-6 md:mb-6 mb-5 text-(--white-color)">
+        <MainHeading className="text-center lg:mb-6 md:mb-6 mb-5 text-[var(--white-color)]">
           {title}
         </MainHeading>
-        <Paragraph className="text-center lg:mb-[42px] md:mb-6 mb-5 text-(--white-color)">
+        <Paragraph className="text-center lg:mb-[42px] md:mb-6 mb-5 text-[var(--white-color)]">
           {description}
         </Paragraph>
         <div className="flex gap-3 lg:gap-6 flex-col md:flex-row items-center justify-center relative z-50">
           <Link
             href=""
             className="bg-transparent w-full md:w-fit
-    px-4 py-2.5 md:px-5 md:py-3 lg:px-10 xl:px-16 lg:py-4 flex items-center justify-center text-base font-onest font-semibold
-     text-(--white-color)  border border-(--white-color) hover:border-transparent rounded-full hover:text-black hover:bg-(--white-color)
+    px-4 py-2.5 md:px-5 md:py-3 lg:px-[40px] xl:px-[64px] lg:py-4 flex items-center justify-center text-base font-onest font-semibold
+     text-[var(--white-color)]  border border-[var(--white-color)] hover:border-transparent rounded-full hover:text-black  hover:bg-[var(--white-color)]
      transition-colors duration-300"
           >
             Watch Tutorials
@@ -107,10 +107,9 @@ const SmartTools: React.FC<SmartTools> = ({
             {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
               type="video/mp4"
-
-              md:mt-[-88px] lg:mt-[-162px]
-            />
-            <source
+             md:mt-[-88px] lg:mt-[-162px]
+            /> */}
+            {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"
               type="video/webm"
             /> */}
