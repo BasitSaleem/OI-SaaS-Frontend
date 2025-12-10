@@ -77,7 +77,7 @@ export default function FeaturesTabSection() {
     }, 10000);
   };
 
-  // Setup video ended listeners - run once on mount
+ 
   useEffect(() => {
     const handleVideoEnd = (featureId: string) => {
       return () => {
