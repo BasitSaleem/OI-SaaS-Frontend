@@ -65,17 +65,17 @@ function SmartWaytoSyncndSellSection() {
             // onLoadedMetadata={onVideoLoaded}
             // onLoadedData={onVideoLoaded}
           >
-            {/* <source
-              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.webm"
-              type="video/webm"
-            /> */}
+              <source
+                src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.webm"
+                type="video/webm"
+              />
           </video>
         </div>
-
+    
         <div className="md:hidden flex gap-4 w-full items-center justify-start">
           <ButtonSm
             url="#"
