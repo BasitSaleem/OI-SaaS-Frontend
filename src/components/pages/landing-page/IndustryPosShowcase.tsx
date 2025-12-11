@@ -129,11 +129,10 @@ const IndustryPosShowcase = ({
           <Paragraph className="text-[#666666]">
             {paragraph}
           </Paragraph>
-<<<<<<< HEAD
-          <button className="mt-6 bg-[#7B61FF] text-white px-[30px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
-=======
+
+          
           <button className="mt-6 bg-[#7B61FF] text-white px-[63px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
->>>>>>> 1b1999d (sub features pages development)
+
             {buttonText}
           </button>
         </div>
