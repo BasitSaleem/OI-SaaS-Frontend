@@ -118,7 +118,7 @@ const FeaturesCards = [
   
 ];
 
-const productFaqs = [
+const integrationFaqs = [
   {
     id: 1,
     question:
@@ -230,7 +230,7 @@ const getLayoutPatterns = (cardCount: number) => {
   }
 };
 
-const productTestimonials = [
+const integrationTestimonials = [
   {
     name: "Sadia Noor",
     title: "Operations Manager, Bright Home",
@@ -325,7 +325,7 @@ const Page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={productTestimonials}
+        testimonials={integrationTestimonials}
         heading="Clients’ Voices"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -336,7 +336,7 @@ const Page = () => {
         <FaqSection
           heading="Everything You Should Know About Owners Inventory Integration"
           paragraph="Gain the clarity you require regarding the powerful inventory management reporting tools of Owners Inventory. We have also addressed the most frequently asked questions, so you can make the most of your point of sale reporting system, from setup to insights."
-          faqs={productFaqs}
+          faqs={integrationFaqs}
         />
       </div>
     </div>

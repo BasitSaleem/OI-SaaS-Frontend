@@ -29,7 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const productIndustries = [
+const inventoryIndustries = [
   {
     id: 1,
     title: "Retail Stores",
@@ -112,7 +112,7 @@ const FeaturesCards = [
   },
 ];
 
-const productFaqs = [
+const inventoryFaqs = [
   {
     id: 1,
     question:
@@ -210,7 +210,7 @@ const getLayoutPatterns = (cardCount: number) => {
   }
 };
 
-const productTestimonials = [
+const inventoryTestimonials = [
   {
     name: "Daniel Smith",
     title: "Operations Manager",
@@ -307,7 +307,7 @@ const Page = () => {
           mainHeading="Built for Every Industry That Sells Smarter"
           paragraph="Whether it is inventory product management software or flexible catalog tools, Owners Inventory makes it easier to add, organize, and manage products in any industry."
           buttonText="Explore All Industries"
-          industries={productIndustries}
+          industries={inventoryIndustries}
         />
       </div>
 
@@ -317,7 +317,7 @@ const Page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={productTestimonials}
+        testimonials={inventoryTestimonials}
         heading="What Clients Say About Us"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -328,7 +328,7 @@ const Page = () => {
         <FaqSection
           heading="Everything You Need to Know About Managing Products in POS"
           paragraph="Find the most frequently asked questions regarding how to use Owners Inventory to organize, track, and grow your business using smart product management in POS system tools."
-          faqs={productFaqs}
+          faqs={inventoryFaqs}
         />
       </div>
     </div>

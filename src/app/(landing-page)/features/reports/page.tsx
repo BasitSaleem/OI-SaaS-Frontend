@@ -29,7 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const advancereportingIndustries = [
+const reportsIndustries = [
   {
     id: 1,
     title: "Retail Stores",
@@ -137,7 +137,7 @@ const FeaturesCards = [
  
 ];
 
-const advancereportingFaqs = [
+const reportsFaqs = [
   {
     id: 1,
     question:
@@ -205,7 +205,7 @@ const layoutPatterns = [
   },
 ];
 
-const advancereportingTestimonials = [
+const reportsTestimonials = [
   {
     name: "Ayesha Khan",
     title: "Operations Manager, Bright Home",
@@ -299,7 +299,7 @@ const page = () => {
           mainHeading="Industries We Serve"
           paragraph="Each business has a different story to tell- so should your reports. Owners' Inventory provides inventory management reports and point of sale system reports that are tailored to your industry. Gain valuable insights, smarter analytics, and clear data visualization that enable you to make decisive business choices."
           buttonText="Explore All Industries"
-          industries={advancereportingIndustries}
+          industries={reportsIndustries}
         />
       </div>
 
@@ -309,7 +309,7 @@ const page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={advancereportingTestimonials}
+        testimonials={reportsTestimonials}
         heading="What Clients Say About Us"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -320,7 +320,7 @@ const page = () => {
         <FaqSection
           heading="Your Reporting Questions, Answered"
           paragraph="Gain the clarity you require regarding the powerful inventory management reporting tools of Owners Inventory. We have also addressed the most frequently asked questions, so you can make the most of your point of sale reporting system, from setup to insights."
-          faqs={advancereportingFaqs}
+          faqs={reportsFaqs}
         />
       </div>
     </div>

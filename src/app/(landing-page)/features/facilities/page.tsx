@@ -139,8 +139,7 @@ const FeaturesCards = [
 const facilitiesFaqs = [
   {
     id: 1,
-    question:
-      "What is a facility management dashboard in Owners Inventory?",
+    question: "What is a facility management dashboard in Owners Inventory?",
     answer:
       "It is a centralized system that allows you to see, manage and control all your facilities under a single platform. You can track operations, stock and performance by warehouses, stores or offices easily.",
   },
@@ -152,14 +151,14 @@ const facilitiesFaqs = [
   },
   {
     id: 3,
-    question:
-      "Can I integrate my POS system with the facility dashboard?",
+    question: "Can I integrate my POS system with the facility dashboard?",
     answer:
       "Yes. The facility dashboard POS enables you to integrate sales information, inventory and store reports at all of your stores, providing you with all the visibility you need at the counter to the warehouse.",
   },
   {
     id: 4,
-    question: "Is it suitable for businesses with multiple branches or outlets?",
+    question:
+      "Is it suitable for businesses with multiple branches or outlets?",
     answer:
       "Definitely. Owners Inventory is used in multi-location businesses that allow centralized monitoring, standardization of reporting, and the management of all branches or stores.",
   },
@@ -229,7 +228,6 @@ const facilitiesTestimonials = [
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
-  
 ];
 
 const page = () => {

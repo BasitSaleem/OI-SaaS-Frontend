@@ -29,12 +29,12 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const peopleIndustries = [
+const financeIndustries = [
   {
     id: 1,
     title: 'Retail Stores',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Easily track all sales, returns, and costs in a single location to have full financial visibility. The real time profit and loss reports allow you to quickly track the performance of the store, manage the costs, and make smarter decisions on restocking.',
+    description: 'Owners Inventory retail brands ko finances aur operations manage karne mein madad deta hai. Al-Asif, Brights Home jaisi companies hum par trust karti hain. Hum efficiency, transparency aur growth ko support karte hain.',
     image: '/assets/industry-type/retail-store.webp',
     mobileImage: '/assets/industry-type/retail-store-mobile.webp',
   },
@@ -42,7 +42,7 @@ const peopleIndustries = [
     id: 2,
     title: 'Restaurant',
     gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Automatically track daily sales, ingredient expenses, and supplier invoices. Get transparent financial statements to control costs, eliminate wastage, and become more profitable without manually maintaining a book of accounts.',
+    description: 'Automatically track daily sales, ingredient costs, and supplier invoices. Get transparent financial statements to control expenses, cut wastage, and boost profitability without manual bookkeeping.',
     image: '/assets/industry-type/restaurant.webp',
     mobileImage: '/assets/industry-type/restaurant-mobile.webp',
   },
@@ -50,7 +50,7 @@ const peopleIndustries = [
     id: 3,
     title: 'Wholesalers',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Manage bulk purchases, customer invoices, and supplier payments at speed and accuracy. The system makes the whole process of cash flow a lot easier so that your financial statements and stock transfer remain to be perfectly in line.',
+    description: 'Manage bulk purchases, customer invoices, and supplier payments with speed and accuracy. The system simplifies your entire cash flow process, keeping financial statements and stock transfers perfectly aligned.',
     image: '/assets/industry-type/whole-sale.webp',
     mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
   },
@@ -58,7 +58,7 @@ const peopleIndustries = [
     id: 4,
     title: 'Pharmacies',
     gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Manage your healthcare inventory, sales, and accounts through a single POS accounting platform. Keep proper records of all transactions and make them meet financial and inventory standards.',
+    description: 'Manage your healthcare inventory, sales, and accounts in one POS platform. Keep complete transaction records that meet financial and inventory standards.',
     image: '/assets/industry-type/pharmacy.webp',
     mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
   },
@@ -80,7 +80,7 @@ const FeaturesCards = [
     title: "Comprehensive Financial Accounting",
     description: "Our integrated POS and accounting software allows you to manage all accounting and finance functions easily. Through Chart of Accounts to Journal Entries and Reports, all transactions are properly trailed and recorded in real time.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/centralized-purchase.webp",
+      "/assets/features-page/finance-page/features-section/comprehensive-financial.webp",
      
   },
   {
@@ -89,7 +89,7 @@ const FeaturesCards = [
     description:
       "Design and organize account heads in a simple hierarchical system. Streamline your business finance management POS processes by organizing assets, liabilities, income and expenses effectively.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/supplier-directory.webp",
+      "/assets/features-page/finance-page/features-section/organized-chart.webp",
       
   },
   {
@@ -98,7 +98,7 @@ const FeaturesCards = [
     description:
       "Create, edit and publish journal entries with embedded debit-credit validation. Keep proper records that will directly match your POS accounts and finance system.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/automated-purchase.webp",
+      "/assets/features-page/finance-page/features-section/journal-entry.webp",
      
   },
    {
@@ -107,7 +107,7 @@ const FeaturesCards = [
     description:
       "Prepare required reports such as Trial Balance, Balance Sheet and Journal Reports. Get actionable insights with a powerful financial reporting POS system that transforms complex data into easy-to-understand financial summaries.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/bill-management.webp",
+      "/assets/features-page/finance-page/features-section/financial-statement.webp",
       
   },
    {
@@ -116,7 +116,7 @@ const FeaturesCards = [
     description:
       "Track pending payments and due dues real-time. Cash flow management is easier and smarter with detailed ledgers and aging analysis.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/purchase-approval.webp",
+      "/assets/features-page/finance-page/features-section/recievable-tracking.webp",
       
   },
   {
@@ -125,7 +125,7 @@ const FeaturesCards = [
     description:
       "Manage all fixed assets, depreciation, and other related aspects with ease. Maintain your asset records in accordance with your general accounting and finance.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/import-option.webp",
+      "/assets/features-page/finance-page/features-section/fixed-assets.webp",
       
   },
    {
@@ -149,7 +149,7 @@ const FeaturesCards = [
   
 ];
 
-const productFaqs = [
+const financeFaqs = [
   {
     id: 1,
     question:
@@ -261,7 +261,7 @@ const getLayoutPatterns = (cardCount: number) => {
   }
 };
 
-const productTestimonials = [
+const financeTestimonials = [
   {
     name: "Ali R",
     title: "Brights Home",
@@ -325,19 +325,19 @@ const Page = () => {
               "Automate sales, inventory, and accounting without adding switches between systems.",
           },
           {
-            icon: "/assets/features-page/purchases-page/why-chose/everything-in-oneplace.svg",
+            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
             title: "Real-Time Financial Insights",
             description:
               "Get real-time reports and updates and make smarter business decisions.",
           },
           {
-            icon: "/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
+            icon: "/assets/features-page/finance-page/why-chose/easy-to-use.svg",
             title: "Easy to Use",
             description:
               "Clean, easy-to-use interface that any person can use - no accounting background required.",
           },
           {
-            icon: "/assets/features-page/purchases-page/why-chose/grow-business.svg",
+            icon: "/assets/features-page/finance-page/why-chose/secure-reliable.svg",
             title: "Secure & Reliable",
             description:
               "Your financial information remains secure, correct, and constantly supported.",
@@ -352,17 +352,17 @@ const Page = () => {
            mainHeading='Built for Every Industry That Runs on Numbers'
            paragraph='Sell, serve, supply, whatever you do, proper accounting and finance management will keep your business on the right track. Owners Inventory is flexible and fits all workflows, provides real-time reporting of sales, costs, and performance.'
            buttonText='Explore All Industries'
-           industries={peopleIndustries} />
+           industries={financeIndustries} />
       </div>
 
 
       <FeaturesCallToAction
-        title="Take Charge of Your Business Finances Today"
+        title="Control Your Business Finances"
         description="Simplify your accounting, track every sale, and make smarter financial decisions with one powerful POS system. Join hundreds of growing businesses already managing their money in a smart way."
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={productTestimonials}
+        testimonials={financeTestimonials}
         heading="What Our Clients Say"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -373,7 +373,7 @@ const Page = () => {
         <FaqSection
           heading="Your Accounting Questions, Clearly Answered"
           paragraph="Running business finances does not need to be stressful. Owners Inventory unites your sales, accounting, and reporting into a single convenient system. Some frequent questions are listed here to help you understand how Owners Inventory simplifies all aspects of your financial management."
-          faqs={productFaqs}
+          faqs={financeFaqs}
         />
       </div>
     </div>
