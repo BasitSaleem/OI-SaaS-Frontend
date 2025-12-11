@@ -99,45 +99,65 @@ const FeaturesCards = [
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 7,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 7,
+>>>>>>> 1b1999d (sub features pages development)
     title: "Integrated Module Connection",
     description: "Link your people data to sales purchase and reporting systems. Single integration improves accuracy, time-saving and alignment of operations.",
     imageSrc: "/assets/features-page/sales-order/features-section/export-data.webp",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 8,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 8,
+>>>>>>> 1b1999d (sub features pages development)
     title: "Categorization & Segmentation",
     description: "The group users, customers and suppliers can be better organized and categorized into structured categories. Generate customer type or supplier groups to simplify reporting and management.",
     imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 9,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 9,
+>>>>>>> 1b1999d (sub features pages development)
     title: "Transaction & Payment History",
     description: "See all transactions connected to the user, customer or supplier in one location. Check purchase history and payment records to come up with the right decisions.",
     imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 10,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 10,
+>>>>>>> 1b1999d (sub features pages development)
     title: "Balance & Performance Tracking",
     description: "Easily keep track of the pending payments and performance trends. Get connected insights that enhance financial control and build relationships.",
     imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 11,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 11,
+>>>>>>> 1b1999d (sub features pages development)
     title: "Intuitive Single Interface",
     description: "Switch between records and modules with a clean, modern interface. Control your people, customers, and suppliers more quickly and effectively than ever before.",
     imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
@@ -147,45 +167,65 @@ const FeaturesCards = [
 const  peopleFaqs = [
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 1,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 1,
+>>>>>>> 1b1999d (sub features pages development)
     question: "What is the People feature in the Owners Inventory?",
     answer:
       "People is a full-fledged employee management system that helps you to handle attendance, performance, and scheduling in a single, easy-to-use platform.",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 2,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 2,
+>>>>>>> 1b1999d (sub features pages development)
     question: "Can I track attendance automatically?",
     answer:
       "Yes. The employee attendance management system records check-ins, leaves, and working hours, which are accurate during reporting because it is quickly recorded in real-time.",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 3,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 3,
+>>>>>>> 1b1999d (sub features pages development)
     question: "Does the People feature of Owners Inventory support performance evaluations?",
     answer:
       "Absolutely. The employee performance management system enables you to establish goals, monitor performance, and measure performance so as to reward your best employees.",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 4,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 4,
+>>>>>>> 1b1999d (sub features pages development)
     question: "Is the People feature suitable for all business types?",
     answer:
       "Yes. People can fit into your workflows and team size, whether you are operating a retail store, restaurant, pharmacy, or wholesale business.",
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 5,
 =======
 >>>>>>> 7c1bb14 (sub features pages development)
+=======
+    id: 5,
+>>>>>>> 1b1999d (sub features pages development)
     question: "Can my employees access their own data?",
     answer:
       "Yes. The self-service dashboard also allows employees to check attendance, book leave, and update information, saving time on the part of the administration and enhancing transparency.",
