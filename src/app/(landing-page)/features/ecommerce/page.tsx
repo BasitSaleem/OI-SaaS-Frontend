@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 'use client'
 
 
@@ -244,7 +242,7 @@ const page = () => {
         <IndustryPosShowcase
            mainHeading='Ecommerce That Adapts to Every Industry'
            paragraph='All businesses sell differently, yet they all require one integrated system. Owners Inventory provides unified ecommerce solutions that allow your store, inventory, and sales to be synchronized in all channels with seamless POS ecommerce integration.'
-           buttonText='Explore Now'
+           buttonText='Explore All Industries'
            industries={ecommerceIndustries} />
       </div>
 
@@ -273,4 +271,3 @@ const page = () => {
 }
 
 export default page;
->>>>>>> 1b1999d (sub features pages development)
