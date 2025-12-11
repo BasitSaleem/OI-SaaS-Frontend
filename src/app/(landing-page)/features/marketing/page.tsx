@@ -29,7 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const peopleIndustries = [
+const marketingIndustries = [
   {
     id: 1,
     title: "Retail Stores",
@@ -107,7 +107,7 @@ const FeaturesCards = [
   },
 ];
 
-const peopleFaqs = [
+const marketingFaqs = [
   {
     id: 1,
     question: "Can coupons be applied to online and in-store sales?",
@@ -122,8 +122,7 @@ const peopleFaqs = [
   },
   {
     id: 3,
-    question:
-      "Can the performance of coupons and loyalty programs be tracked?",
+    question: "Can the performance of coupons and loyalty programs be tracked?",
     answer:
       "Yes, comprehensive tracking is a core feature, allowing you to gain deep insights into your marketing efforts. You can track how your campaigns are performing by tracking key metrics which helps you effectively manage, organize and optimize future campaigns for better results.",
   },
@@ -217,7 +216,7 @@ const getLayoutPatterns = (cardCount: number) => {
   }
 };
 
-const peopleTestimonials = [
+const marketingTestimonials = [
   {
     name: "Carol Bush",
     title: "Bright Home Owner",
@@ -310,7 +309,7 @@ const page = () => {
           mainHeading="Industry Ready Marketing"
           paragraph="The Marketing module is designed to support your business whether you are a manufacturer, wholesaler, distributor or retailer. It helps you attract customers, retain them, and promote your brand with complete clarity."
           buttonText="Explore All Industries"
-          industries={peopleIndustries}
+          industries={marketingIndustries}
         />
       </div>
 
@@ -320,7 +319,7 @@ const page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={peopleTestimonials}
+        testimonials={marketingTestimonials}
         heading="What Clients Say About Us?"
         showSmartTools={true}
       />
@@ -329,7 +328,7 @@ const page = () => {
         <FaqSection
           heading="Everything You Need to Know About Marketing Features"
           paragraph="We have collected the most frequently asked questions regarding Marketing, the workforce management feature of Owners Inventory. Whether you are setting up and automating or tracking performance and analytics, here is all you need to know."
-          faqs={peopleFaqs}
+          faqs={marketingFaqs}
         />
       </div>
     </div>

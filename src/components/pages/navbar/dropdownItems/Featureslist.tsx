@@ -28,11 +28,12 @@ export const featuresItems: FeatureItem[] = [
     key: 'facilities',
     title: 'Facilities',
     icon: '/assets/header-dropdown-images/facilitate.svg',
-  }, {
-    key: 'restaurant',
-    title: 'Restaurant',
-    icon: '/assets/header-dropdown-images/restaurent.svg',
-  },
+  }, 
+  // {
+  //   key: 'restaurant',
+  //   title: 'Restaurant',
+  //   icon: '/assets/header-dropdown-images/restaurent.svg',
+  // },
   {
     key: 'products',
     title: 'Products',
@@ -72,11 +73,11 @@ export const featuresItems: FeatureItem[] = [
     title: 'Ecommerce',
     icon: '/assets/header-dropdown-images/ecommerce.svg',
   },
-  {
-    key: 'manufacturing',
-    title: 'Manufacturing',
-    icon: '/assets/header-dropdown-images/manufacturing.svg',
-  },
+  // {
+  //   key: 'manufacturing',
+  //   title: 'Manufacturing',
+  //   icon: '/assets/header-dropdown-images/manufacturing.svg',
+  // },
 
   {
     key: 'integrations',

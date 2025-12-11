@@ -29,7 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const productIndustries = [
+const toolsIndustries = [
   {
     id: 1,
     title: "Retail Stores",
@@ -98,7 +98,7 @@ const FeaturesCards = [
   
 ];
 
-const productFaqs = [
+const toolsFaqs = [
   {
     id: 1,
     question:
@@ -210,7 +210,7 @@ const getLayoutPatterns = (cardCount: number) => {
   }
 };
 
-const productTestimonials = [
+const toolsTestimonials = [
   {
     name: "Sara M",
     title: "Bright Home",
@@ -313,7 +313,7 @@ const Page = () => {
           mainHeading="Industries We Empower"
           paragraph="General Tools are meant to help ease inventory management in a vast array of industries. These tools aid businesses in maintaining order, efficiency, and control of operations, including tracking of fast-moving products as well as maintaining complex stock records."
           buttonText="Explore All Industries"
-          industries={productIndustries}
+          industries={toolsIndustries}
         />
       </div>
 
@@ -323,7 +323,7 @@ const Page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={productTestimonials}
+        testimonials={toolsTestimonials}
         heading="What Our Clients Say"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -334,7 +334,7 @@ const Page = () => {
         <FaqSection
           heading="FAQs"
           paragraph="The following are some of the typical inquiries that businesses have with regard to our General Tools. These responses will guide you in learning how the feature operates and how it can assist in making inventory management smoother, faster, and more precise."
-          faqs={productFaqs}
+          faqs={toolsFaqs}
         />
       </div>
     </div>

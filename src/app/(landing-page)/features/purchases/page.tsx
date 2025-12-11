@@ -29,7 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const peopleIndustries = [
+const purchasesIndustries = [
   {
     id: 1,
     title: 'Retail Stores',
@@ -159,7 +159,7 @@ const FeaturesCards = [
   
 ];
 
-const productFaqs = [
+const purchasesFaqs = [
   {
     id: 1,
     question:
@@ -271,7 +271,7 @@ const getLayoutPatterns = (cardCount: number) => {
   }
 };
 
-const productTestimonials = [
+const purchasesTestimonials = [
   {
     name: "Ahmed Khan",
     title: "HR Manager",
@@ -368,7 +368,7 @@ const Page = () => {
            mainHeading='Purchases Tailored for Your Industry'
            paragraph='Whether you operate as a Manufacturer, a Wholesaler or a Retailer, our Purchases Function is specifically designed to manage your unique operations with perfection. Whether you are managing huge bulk supplies or delicate goods, Owners Inventory adapts to your unique purchasing needs.'
            buttonText='Explore All Industries'
-           industries={peopleIndustries} />
+           industries={purchasesIndustries} />
       </div>
 
 
@@ -378,7 +378,7 @@ const Page = () => {
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-        testimonials={productTestimonials}
+        testimonials={purchasesTestimonials}
         heading="Words That Inspire Us"
         showSmartTools={true}
         secondHeading="Contact Us"
@@ -389,7 +389,7 @@ const Page = () => {
         <FaqSection
           heading="Everything You Need to Know about Purchases Management"
           paragraph="Learn how Owners Inventory can simplify procurement and strengthen your business with intelligent purchasing tool"
-          faqs={productFaqs}
+          faqs={purchasesFaqs}
         />
       </div>
     </div>
