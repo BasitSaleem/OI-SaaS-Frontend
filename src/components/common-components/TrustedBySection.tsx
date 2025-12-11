@@ -46,6 +46,8 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
           <Paragraph className="lg:mt-6 mt-4">
             {paragraph}
           </Paragraph>
+
+          
         )}
 
         {/* 🔥 Brands Swiper */}
