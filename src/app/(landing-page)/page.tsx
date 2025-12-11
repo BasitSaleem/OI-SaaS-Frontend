@@ -150,7 +150,7 @@ const homeFaqs = [
     answer:
       "We have a committed support staff on chat, email, and phone. We also have some excellent tutorials, video instructions and FAQs so that you can solve problems fast.",
   },
-   {
+  {
     id: 6,
     question: "Does Owners Inventory support Integrations?",
     answer:

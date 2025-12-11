@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { ReactNode } from "react";
+import './featureslder.css'
 
 
 interface CustomSwiperProps<T> {

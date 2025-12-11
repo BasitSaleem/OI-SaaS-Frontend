@@ -174,7 +174,7 @@ const getLayoutPatterns = (cardCount: number) => {
 }
       ];
     default:
-      // Return the 4-card layout as default
+      
       return [
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
