@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { ReactNode } from "react";
-import './featureslder.css'
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";

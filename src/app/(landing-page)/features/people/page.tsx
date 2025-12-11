@@ -256,7 +256,7 @@ const page = () => {
       />
       <FeaturesTestimonials
   testimonials={peopleTestimonials}
-  heading="Words Words That Inspire Our Work"
+  heading="Words That Inspire Our Work"
   showSmartTools={true}
 />
 

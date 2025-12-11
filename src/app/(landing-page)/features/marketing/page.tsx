@@ -1,274 +1,339 @@
-'use client'
-
+"use client";
 
 import dynamic from "next/dynamic";
-import React from 'react';
+import React from "react";
 
 // 🔥 Dynamic Imports
-const TrustedBySection = dynamic(() => import('@/components/common-components/TrustedBySection'));
-const FeaturesCallToAction = dynamic(() => import('@/components/pages/features-page/FeaturesCallToAction'));
-const FeaturesTestimonials = dynamic(() => import('@/components/pages/features-page/FeaturesTestimonials'));
-const KeyHighlights = dynamic(() => import('@/components/pages/features-page/point-of-sale/KeyHighlights'));
-const WhyChoosePOS = dynamic(() => import('@/components/pages/features-page/point-of-sale/WhyChoosePOS'));
-const SubFeaturesHero = dynamic(() => import('@/components/pages/features-page/SubFeaturesHero'));
-const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'));
-const IndustryPosShowcase = dynamic(() => import('@/components/pages/landing-page/IndustryPosShowcase'));
-
+const TrustedBySection = dynamic(
+  () => import("@/components/common-components/TrustedBySection")
+);
+const FeaturesCallToAction = dynamic(
+  () => import("@/components/pages/features-page/FeaturesCallToAction")
+);
+const FeaturesTestimonials = dynamic(
+  () => import("@/components/pages/features-page/FeaturesTestimonials")
+);
+const KeyHighlights = dynamic(
+  () => import("@/components/pages/features-page/point-of-sale/KeyHighlights")
+);
+const WhyChoosePOS = dynamic(
+  () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS")
+);
+const SubFeaturesHero = dynamic(
+  () => import("@/components/pages/features-page/SubFeaturesHero")
+);
+const FaqSection = dynamic(
+  () => import("@/components/pages/landing-page/FAQSection")
+);
+const IndustryPosShowcase = dynamic(
+  () => import("@/components/pages/landing-page/IndustryPosShowcase")
+);
 
 const peopleIndustries = [
   {
     id: 1,
-    title: 'Retail Stores',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Make everyday tasks easier with intelligent scheduling, time-tracking, and shift arrangements. Make your sales team structured, improve customer service, and make each store operate efficiently.',
-    image: '/assets/industry-type/retail-store.webp',
-    mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+    title: "Retail Stores",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "For Retail Stores, you can work on both traffic and sales. Here, offering fun seasonal coupons and rewarding your regular shoppers with loyalty points can be helpful.",
+    image: "/assets/industry-type/retail-store.webp",
+    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
   },
   {
     id: 2,
-    title: 'Restaurant',
-    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Easily coordinate kitchen, waitstaff, and delivery teams. Organize shift rotations, keep attendance, and ensure a smooth service even in the busiest periods.',
-    image: '/assets/industry-type/restaurant.webp',
-    mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+    title: "Restaurant",
+    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+    description:
+      "For Restaurants, you will want to encourage repeat visits. Loyalty programs for both dine in customers and takeaway orders are encouraged.",
+    image: "/assets/industry-type/restaurant.webp",
+    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
   },
   {
     id: 3,
-    title: 'Wholesalers',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Standardize human resource operations in warehouses and logistics units. Monitor attendance, delegate tasks, and preserve uniformity in your supply chain.',
-    image: '/assets/industry-type/whole-sale.webp',
-    mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
+    title: "Wholesalers",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "The focus is on large, valuable orders. You can drive bigger bulk purchases and reward your most important, long term clients with custom loyalty programs and targeted discounts.",
+    image: "/assets/industry-type/whole-sale.webp",
+    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
-    title: 'Pharmacies',
-    gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
-    description: 'Maintain consistency and accuracy in ensuring that all shifts are properly staffed. Monitor attendance, performance, and rotations to ensure your pharmacy is operating effectively.',
-    image: '/assets/industry-type/pharmacy.webp',
-    mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+    title: "Pharmacies",
+    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+    description:
+      "For pharmacies, you can encourage customers to return for essentials by offering loyalty points on non prescription items. You can also send them coupons for health and wellness products based on their past purchases.",
+    image: "/assets/industry-type/pharmacy.webp",
+    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
   {
     id: 5,
-    title: 'Fashion & Apparel',
-    gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Coordinate design, retail, and production departments on a single platform. Monitor attendance and performance in outlets to secure a smooth coordination and on-brand implementation.',
-    image: '/assets/industry-type/fashion.webp',
-    mobileImage: '/assets/industry-type/fashion-mobile.webp',
+    title: "Fashion & Apparel",
+    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+    description:
+      "In the Fashion And Apparel Industry, offering exciting promo codes when you drop new collections and establishing a strong reward system will boost repeat purchases.",
+    image: "/assets/industry-type/fashion.webp",
+    mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },
- 
 ];
-
 
 const FeaturesCards = [
   {
     id: 1,
-    title: "User & Contact Management",
-    description: "Easily coordinate your business contacts with just a single dashboard. Add, edit or delete old records in a few clicks, which is important to maintain a clean database and stay updated.",
-    imageSrc: "/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
+    title: "Coupons",
+    description:
+      "Easily create and manage exciting coupons to boost sales immediately. Our coupon system is flexible. It allows you to run any promotion easily across your entire business.",
+    imageSrc:
+      "/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
+    listItems: [
+      "It generates discount codes easily for specific products or entire orders.",
+      "Sets the rules you need, including fixed amounts, expiration dates and usage limits.",
+      "Tracks comprehensive data for every coupon, including its ID, Expiry date, the Store where it was used, Sold By details, Created at date, total Amount, Amount used and the Amount Left.",
+      "You can track results to see exactly how well each coupon campaign is performing.",
+    ],
   },
   {
     id: 2,
-    title: "Smart Search & Filters",
-    description: "Search and filter any user, customer, or supplier in real time. Filter results by name, role, or category to find information faster.",
-    imageSrc: "/assets/features-page/sales-order/features-section/smart-record-view.webp",
-  },
-  {
-    id: 3,
-    title: "Role-Based Permissions",
-    description: "Access who is allowed to read, edit or manipulate certain data on your system. Grant role permissions to ensure data safety and accountability.",
-    imageSrc: "/assets/features-page/sales-order/features-section/manage-sales-doc.webp",
-  },
-  {
-    id: 4,
-    title: "Secure Logins & Password",
-    description: "Secure confidential data with password-recovery and high-level authentication. Provide secure access to all users without disrupting convenience.",
-    imageSrc: "/assets/features-page/sales-order/features-section/export-data.webp",
-  },
-  {
-    id: 5,
-    title: "Activity Logs & Audits",
-    description: "Keep track of all the changes that occur in the system using detailed activity logs. Edits, deletion and amendments of tracks to guarantee complete visibility and transparency.",
-    imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
-  },
-  {
-    id: 6,
-    title: "Bulk Import & Export",
-    description: "Save time by importing or exporting large datasets in Excel or PDF format. Share data, reporting as well as system migration easily.",
-    imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
-  },
-  {
-    id: 7,
-    title: "Integrated Module Connection",
-    description: "Link your people data to sales purchase and reporting systems. Single integration improves accuracy, time-saving and alignment of operations.",
-    imageSrc: "/assets/features-page/sales-order/features-section/export-data.webp",
-  },
-  {
-    id: 8,
-    title: "Categorization & Segmentation",
-    description: "The group users, customers and suppliers can be better organized and categorized into structured categories. Generate customer type or supplier groups to simplify reporting and management.",
-    imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
-  },
-  {
-    id: 9,
-    title: "Transaction & Payment History",
-    description: "See all transactions connected to the user, customer or supplier in one location. Check purchase history and payment records to come up with the right decisions.",
-    imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
-  },
-  {
-    id: 10,
-    title: "Balance & Performance Tracking",
-    description: "Easily keep track of the pending payments and performance trends. Get connected insights that enhance financial control and build relationships.",
-    imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
-  },
-  {
-    id: 11,
-    title: "Intuitive Single Interface",
-    description: "Switch between records and modules with a clean, modern interface. Control your people, customers, and suppliers more quickly and effectively than ever before.",
-    imageSrc: "/assets/features-page/sales-order/features-section/quick-action-button.webp",
+    title: "Loyalty Programs",
+    description:
+      "Build strong, long term relationships with your best customers by automatically rewarding them for their purchases. Our programs encourage repeat business and help you track retention flawlessly.",
+    imageSrc:
+      "/assets/features-page/sales-order/features-section/smart-record-view.webp",
+    listItems: [
+      "It helps with rewarding regular customers automatically with points or exclusive discounts to thank them for their business.",
+      "Builds powerful rules based on customer purchase history to give higher incentives.",
+      "Boosts retention by encouraging repeat business and building long term customer relationships.",
+    ],
   },
 ];
 
-const  peopleFaqs = [
+const peopleFaqs = [
   {
     id: 1,
-    question: "What is the People feature in the Owners Inventory?",
+    question: "Can coupons be applied to online and in-store sales?",
     answer:
-      "People is a full-fledged employee management system that helps you to handle attendance, performance, and scheduling in a single, easy-to-use platform.",
+      "Yes. Our coupon system is designed for complete flexibility and a seamless customer experience. Coupons work in both conditions, whether a customer is checking out at a physical Store or completing a purchase through your online storefront. This ensures you can run unified campaigns across all your sales channels.",
   },
   {
     id: 2,
-    question: "Can I track attendance automatically?",
+    question: "How do loyalty points work?",
     answer:
-      "Yes. The employee attendance management system records check-ins, leaves, and working hours, which are accurate during reporting because it is quickly recorded in real-time.",
+      "Points or discounts are automatically applied based on your rules. You can create rules and reward levels for regular customers.",
   },
   {
     id: 3,
-    question: "Does the People feature of Owners Inventory support performance evaluations?",
+    question:
+      "Can the performance of coupons and loyalty programs be tracked?",
     answer:
-      "Absolutely. The employee performance management system enables you to establish goals, monitor performance, and measure performance so as to reward your best employees.",
+      "Yes, comprehensive tracking is a core feature, allowing you to gain deep insights into your marketing efforts. You can track how your campaigns are performing by tracking key metrics which helps you effectively manage, organize and optimize future campaigns for better results.",
   },
   {
     id: 4,
-    question: "Is the People feature suitable for all business types?",
+    question: "Does the system prevent customers from abusing coupons?",
     answer:
-      "Yes. People can fit into your workflows and team size, whether you are operating a retail store, restaurant, pharmacy, or wholesale business.",
+      "Yes, we provide controls to protect your revenue. Coupon misuse is easily prevented. For instance, you can limit a coupon to one use per customer or a total number of redemptions overall. This feature helps you in maintaining control over your promotions and protecting your profit margins.",
   },
   {
     id: 5,
-    question: "Can my employees access their own data?",
+    question: "How secure is my customer data within the marketing platform?",
     answer:
-      "Yes. The self-service dashboard also allows employees to check attendance, book leave, and update information, saving time on the part of the administration and enhancing transparency.",
+      "We prioritize data security. All customer and sales information is protected using security measures and remains private within your dedicated platform. Your data remains strictly private and isolated within your dedicated platform environment.",
   },
 ];
 
-const layoutPatterns = [
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-  { className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6", mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover", paddingClass: "px-0" },
-];
+// Function to get layout patterns based on card count
+const getLayoutPatterns = (cardCount: number) => {
+  switch (cardCount) {
+    case 2:
+      return [
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+      ];
+    case 4:
+      return [
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className:
+            "col-span-12 md:col-span-6 lg:col-span-6 lg:col-start-4 xl:col-span-6 xl:col-start-4",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+      ];
+    default:
+      return [
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+      ];
+  }
+};
 
 const peopleTestimonials = [
   {
-    name: "Sana Iqbal",
+    name: "Carol Bush",
     title: "Bright Home Owner",
     image: "/assets/pfp.avif",
-    text: `"Owners Inventory has completely transformed the way we manage our staff. Scheduling shifts and tracking attendance used to take hours, but now it’s all automated and accurate. Our team coordination has improved, and productivity is at an all-time high. It truly makes management effortless."`,
+    text: `"Implementing the loyalty points system through Owner's Inventory was honestly  one of the best decisions we made last year. Our customers genuinely love the points, which has increased how often they buy from us. We couldn't be happier with the results."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
   {
-    name: "Faisal Rehman",
+    name: "Yasir Khan",
     title: "Prime Traders",
     image: "/assets/pfp.avif",
-    text: `"Since switching to Owners Inventory, we’ve been able to organize our workforce far more efficiently. Our employees love the self-service dashboard — it’s simple, transparent, and saves so much time."`,
+    text: `"Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales."`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
   {
-    name: "Hina Ahmed",
+    name: "Ginny Victoria",
     title: "StyleMart",
     image: "/assets/100.jpeg",
-    text: `"Owners Inventory has been a game-changer for our business operations. Managing multiple departments and shifts across locations is now easy and error-free."`,
+    text: `"As a growing business, we needed a way to reward our best and most loyal customers. Setting up a special loyalty program for them has never been easier. It has given us a professional way to build strong client relationships."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
-  {
-    name: "Adeel Khan",
-    title: "Al-Asif",
-    image: "/assets/100.jpeg",
-    text: `"We were looking for a workforce tool that was powerful yet easy to use, and Owners Inventory delivered exactly that. The automation features save us countless hours every week, and the analytics help us spot trends before they become problems. It’s reliable, intuitive, and worth every penny."`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
-  },
- 
 ];
 
 const page = () => {
+  // Get layout patterns based on FeaturesCards length
+  const layoutPatterns = getLayoutPatterns(FeaturesCards.length);
   return (
     <div>
       <SubFeaturesHero
-        title="Empower Your People, Power Your Business"
-        description="Experience the future of business management, quick, unified, and growth-oriented. Powerful automation, real-time insights, and seamless integrations will allow you to work smarter, scale faster, and save more, all within one intelligent platform, with Owners Inventory."
+        title="Power Your Business with Smart Marketing Tools"
+        description="Owner's Inventory Marketing helps you boost customer engagement and sales. It's simple, highly effective and works perfectly. Whether you want to reward your most loyal customers or easily attract new ones, it’s all taken care of under a single platform."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         variant="animation2"
       />
 
       {/* 🔥 Custom layout + cards */}
-      <TrustedBySection 
-       heading="Our Trusted Brands"
-       paragraph="We take pride in partnering with leading brands like Al-Asif and Bright Home, along with many global retail and service companies. Our platform drives smarter operations, seamless management, and sustainable growth. Together, we’re shaping a future of faster, more efficient businesses."
+      <TrustedBySection
+        heading="Trusted by Leading Brands"
+        paragraph="Businesses like Al-Asif and Bright Home rely on Owners Inventory Marketing to get better at customer retention and growth. From small shops to large retailers, owners inventory help brands increase repeat purchases and engage customers more effectively."
       />
       <KeyHighlights
-        heading="Our Key Features"
+        heading="Key Marketing Features for Smarter Engagement"
         features={FeaturesCards}
         layoutPatterns={layoutPatterns}
       />
 
       <WhyChoosePOS
-        heading="Revolutionize Sales with Our Smarter POS"
-        paragraph='Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable.'
+        heading="Why Choose Our Marketing Features?"
+        paragraph="Choose Owner's Inventory because we offer simplicity, smart automation and real time data you can trust. We give you more than just marketing tools. We actively help you engage customers, increase their loyalty and grow your revenue in a much smarter way."
         cards={[
-          { icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg", title: "All-in-One Platform", description: "Combine people, inventory, and performance, without having to use multiple tools." },
-          { icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg", title: "Real-Time Insights", description: "Use real-time data on attendance, productivity, and growth to make smarter decisions" },
-          { icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg", title: "Seamless Automation", description: "Automate scheduling, tracking and reporting of your workforce." },
-          { icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg", title: "Scalable for Growth", description: "Owners Inventory scales with you, whether you have a small shop or a growing chain." },
+          {
+            icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
+            title: "Automated and Hassle Free",
+            description:
+              "Setting up your promotions is really fast. You can launch coupons and loyalty programs in minutes. Then watch them run automatically without any daily manual work.",
+          },
+          {
+            icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
+            title: "Retaining Customers",
+            description:
+              "It's easy to keep your best customers happy by rewarding them often. This helps you build stronger relationships. Our tools are built to help you keep customers longer and get them to buy again and again.",
+          },
+          {
+            icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+            title: "Insight Driven Decisions",
+            description:
+              "You can stop guessing about which promotions actually work. You can watch every coupon used and all loyalty activities happen in real time. To get better results, this helps you quickly adjust your marketing campaigns and sales plans.",
+          },
+          {
+            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+            title: "All-in-One Marketing Platform",
+            description:
+              "Everything you need to run promotions, rewards, and tracking is in one spot. This keeps your marketing simple and ensures all your sales data works together perfectly.",
+          },
+          {
+            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+            title: "24/7 Expert Support",
+            description:
+              "If you ever get stuck or have a question, our team is always ready to help. We are available all the time. We help you set up and manage your marketing programs.",
+          },
         ]}
         mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
-      
         <IndustryPosShowcase
-           mainHeading='Built for Every Industry'
-           paragraph='The People feature of Owners Inventory is built to fit the way any business operates, be it a retail store or a restaurant, wholesaler or pharmacy, or a fashion brand. Whatever your business is, Owners Inventory can put your operation in a better place to run smoothly, faster, and smarter.'
-           buttonText='Explore All Industries'
-           industries={peopleIndustries} />
+          mainHeading="Industry Ready Marketing"
+          paragraph="The Marketing module is designed to support your business whether you are a manufacturer, wholesaler, distributor or retailer. It helps you attract customers, retain them, and promote your brand with complete clarity."
+          buttonText="Explore All Industries"
+          industries={peopleIndustries}
+        />
       </div>
 
       <FeaturesCallToAction
-        title="Turn Teams into Powerhouses"
-        description="Start managing your team with data-driven efficiency and effortless control — all through Owners Inventory’s People feature."
+        title="Reward Customers. Grow Your Business."
+        description="Owners Inventory Marketing makes creating coupons and loyalty programs simple, automated and effective. So you can focus on growing your business."
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
-  testimonials={peopleTestimonials}
-  heading="Words Words That Inspire Our Work"
-  showSmartTools={true}
-/>
+        testimonials={peopleTestimonials}
+        heading="What Clients Say About Us?"
+        showSmartTools={true}
+      />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
-        <FaqSection 
-        heading="Everything You Were About to Ask"
-        paragraph="We have collected the most frequently asked questions regarding People, the workforce management feature of Owners Inventory. Whether you are setting up and automating or tracking performance and analytics, here is all you need to know."
-        faqs={peopleFaqs}
+        <FaqSection
+          heading="Everything You Need to Know About Marketing Features"
+          paragraph="We have collected the most frequently asked questions regarding Marketing, the workforce management feature of Owners Inventory. Whether you are setting up and automating or tracking performance and analytics, here is all you need to know."
+          faqs={peopleFaqs}
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default page;
