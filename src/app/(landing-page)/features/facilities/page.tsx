@@ -289,11 +289,7 @@ const page = () => {
         <IndustryPosShowcase
           mainHeading="Facility Management Built for Every Industry"
           paragraph="Owners Inventory simplifies facility management by connecting warehouses and retail floors under one smart dashboard. Track operations, inventory, and staff in real time. Keep all locations efficient, connected, and ready to perform."
-<<<<<<< HEAD
           buttonText="Explore All Industries"
-=======
-          buttonText="Explore Now"
->>>>>>> 1b1999d (sub features pages development)
           industries={facilitiesIndustries}
         />
       </div>
