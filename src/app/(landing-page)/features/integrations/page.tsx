@@ -29,53 +29,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const productIndustries = [
-  {
-    id: 1,
-    title: "Retail Stores",
-    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
-    description:
-      "Manage product catalogs and suppliers effectively. Check stock levels and stocking up of high demand items.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
-  },
-  {
-    id: 2,
-    title: "Restaurant",
-    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
-    description:
-      "Check the ingredients, track stock consumption, and minimize waste on a cross-location basis. Keep stocks clean and efficient kitchens.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
-  },
-  {
-    id: 3,
-    title: "Wholesalers",
-    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
-    description:
-      "Optimize bulk inventory within warehouses and stores. Maintain efficient supply chains and satisfy customers in time.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
-  },
-  {
-    id: 4,
-    title: "Pharmacies",
-    gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
-    description:
-      "Track medications, report expiry dates, and have proper supplier records easily. This guarantees safety, compliance, and operations.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
-  },
-  {
-    id: 5,
-    title: "Fashion & Apparel",
-    gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
-    description:
-      "Operate seasonal inventory, various sizes, and SKUs with real-time visibility. Be ahead of trends and maintain control over inventory.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
-  },
-];
+
 
 const FeaturesCards = [
   {
@@ -168,34 +122,34 @@ const productFaqs = [
   {
     id: 1,
     question:
-      "What are General Tools in Owners Inventory?",
+      "If an integration error occurs, will my data be recoverable?",
     answer:
-      "General Tools are a group of features that can be used to streamline daily inventory work. They assist you with tracking activities, update control, and keeping clean and organized records. This simplifies your workflow and makes it much more reliable.",
+      "Although it is unlikely that your data will be lost, we will help you recover it if it does. To guarantee that any affected data can be promptly restored, Owners Inventory keeps thorough activity logs and safe backups. Our staff will help you right away to fix the problem and get your data back without causing any long-term effects.",
   },
   {
     id: 2,
-    question: "How does the Activity Log help my business?",
+    question: "Does integration help reduce manual errors?",
     answer:
-      "Activity Log maintains a comprehensive log of all activities that occur in your system. You are able to see the person who changed, the date when it was changed, and what has been changed. This enhances accountability, transparency, and control within your team.",
+      "Yes. Inaccurate financial entries, duplicate records, stock mismatches, and human errors are all greatly decreased by automated syncing. This guarantees that your company runs more precisely and effectively.",
   },
   {
     id: 3,
     question:
-      "Can I get alerts for low or critical stock levels?",
+      "Is it possible to simultaneously sync several eCommerce sites?",
     answer:
-      "Yes, Stock Alerts allow you to be notified when products are at significant levels. You would be able to see such information as SKU, supplier, location, and current quantity. This will make sure you replenish in time and never run out of things.",
+      "Yes, it is indeed. To centrally manage inventory, products, and sales, you can link several Shopify or WooCommerce stores. This allows you to operate with proper consistency and control.",
   },
   {
     id: 4,
-    question: "Is the interface easy for new team members to learn?",
+    question: "How safe is the Integration process?",
     answer:
-      "Definitely, General Tools are simple in design. New users do not require long durations of training to navigate features. The design is accurate and transparent, and constructed in such a way that teams can operate with confidence at the outset.",
+      "Strict permission controls and encrypted APIs are used by Owners Inventory to safeguard your data and guarantee safe communication with external platforms. This stops unwanted data access and offers enterprise-level protection.",
   },
   {
     id: 5,
-    question: "Do General Tools work for all types of businesses?",
+    question: "Can I request a custom Integration?",
     answer:
-      "Yes, they are flexible to accommodate different industries such as retail, pharmacy, food, fashion, etc. All tools are easily compatible with your workflow, and they can help you organize inventory in a manner that best suits your company.",
+      "Yes, you can. Custom tool integration tailored to your company’s operations can be created by our team. We customize integration to fit your long-term objectives, industry demands, and workflows. If there is any specific tool or platform you want to integrate, we can build that for you as well.",
   },
 ];
 
@@ -278,37 +232,30 @@ const getLayoutPatterns = (cardCount: number) => {
 
 const productTestimonials = [
   {
-    name: "Sara M",
-    title: "Bright Home",
+    name: "Sadia Noor",
+    title: "Operations Manager, Bright Home",
     image: "/assets/pfp.avif",
-    text: `"The General Tools of Owners Inventory have totally changed our way of handling our inventory. Everything can be easily followed and the interface is highly intuitive. Stock levels are monitored in real time and that saves us much work. My favorite feature is the automated alerts, which avoid errors prior to occurrence. It has simplified our daily work process and made it smoother and more efficient."`,
+    text: `"Connecting our Shopify store with Owners Inventory has completely changed our process. Orders, customers, and stock sync instantly, and our team no longer needs to update anything manually. It’s smooth, reliable, and saves us hours daily."`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
   {
-    name: "Ahmed K",
-    title: "Al-Asif",
+    name: "Alexa Catherine",
+    title: "Co-Founder, The Brew Café",
     image: "/assets/pfp.avif",
-    text: `"I used to have a headache trying to manage more than one store, but now, thanks to the General Tools of Owners Inventory, everything is easy. The logs of activity will enable us to view the specific changes made and by whom they were made. We are informed immediately through stock alerts, and therefore we do not run out of stock. The system is quick, dependable and simple to use by the entire team. It has actually made our entire inventory control much better than before."`,
+    text: `"We integrated WooCommerce and QuickBooks together through Owners Inventory, and it has made all the difference. Reports are accurate, payments flow properly, and financial tasks are far easier to manage. Everything works in real time across our team."`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
   {
-    name: "Lina R",
-    title: "Trendy Fashion",
+    name: "Alice Marshall",
+    title: "Owner, Al-Asif Supermart",
     image: "/assets/100.jpeg",
-    text: `"Owners Inventory General Tools are a life savior to our fashion business. Processing of seasonal collections and handling of multiple SKUs previously consumed hours, but it is now quicker. With its user-friendly design, it is easy to use by anyone. All is organized and controlled, even bulk updates and stock checks. It has certainly streamlined our business processes."`,
+    text: `"What stands out the most is how easy the system makes complex work feel. Our payment gateway and marketing tools work together without any confusion. The integration is stable, and the support team always guides us when we need help"`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
-  {
-    name: "Omar S",
-    title: "FreshBite Cafe",
-    image: "/assets/100.jpeg",
-    text: `"The General Tools of Owners Inventory have made significant contributions to our restaurant. Automated notifications and real-time stock updates enable us not to run out of ingredients. We are able to trace all products in our outlets conveniently. It is time-saving and stress-free to our employees. In general, it has simplified our inventory management greatly and increased accuracy."`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
-  },
+ 
 ];
 
 const Page = () => {
@@ -341,7 +288,7 @@ const Page = () => {
         paragraph="Automated, integrated reporting designed to give you clear insights, better visibility, and full control over your daily operations."
         cards={[
           {
-            icon: "/assets/features-page/point-of-sale/why-chose/speed-accuracy.svg",
+            icon: "/assets/features-page/intigration-page/why-chose/unified-business.svg",
             title: "Unified Business Control",
             description:
               "Manage marketing, accounting, and operations in one connected system with full visibility.",
@@ -353,13 +300,13 @@ const Page = () => {
               "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate in expansion.",
           },
           {
-            icon: "/assets/features-page/general-tools/user-friendly-design.svg",
+            icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
             title: "Faster Decision Making",
             description:
               "Get real-time data from all channels to make accurate, informed decisions.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+            icon: "/assets/features-page/intigration-page/why-chose/easy-to-scale.svg",
             title: "Easy to Scale",
             description:
               "Easily add or expand integrations as you grow, staying flexible with a system that adapts to changing needs.",
@@ -370,32 +317,25 @@ const Page = () => {
         mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
       />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20">
-        <IndustryPosShowcase
-          mainHeading="Industries We Empower"
-          paragraph="General Tools are meant to help ease inventory management in a vast array of industries. These tools aid businesses in maintaining order, efficiency, and control of operations, including tracking of fast-moving products as well as maintaining complex stock records."
-          buttonText="Explore All Industries"
-          industries={productIndustries}
-        />
-      </div>
+     
 
       <FeaturesCallToAction
-        title="Supercharge Your Workflow"
-        description="Handle updates, track actions, and manage stock changes in seconds without any confusion. Step into a faster, cleaner, and more controlled way of working with tools built to keep you ahead, always."
+        title="Elevate Businesses Through Our Integration"
+        description="With Owners Inventory, integrate all platforms, optimize data, and simplify daily tasks. Our integration module unifies marketing, sales, accounting, and payments for full team visibility."
         ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={productTestimonials}
-        heading="What Our Clients Say"
+        heading="Clients’ Voices"
         showSmartTools={true}
         secondHeading="Contact Us"
-        secondDescription="Manage updates, track actions, and control stock changes in seconds with fast, simple, and organized tools built to keep you ahead."
+        secondDescription="We’re available 24/7 for any questions about integration or setup. Contact us for a free demo and see how Owners Inventory fits smoothly into your system."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
-          heading="FAQs"
-          paragraph="The following are some of the typical inquiries that businesses have with regard to our General Tools. These responses will guide you in learning how the feature operates and how it can assist in making inventory management smoother, faster, and more precise."
+          heading="Everything You Should Know About Owners Inventory Integration"
+          paragraph="Gain the clarity you require regarding the powerful inventory management reporting tools of Owners Inventory. We have also addressed the most frequently asked questions, so you can make the most of your point of sale reporting system, from setup to insights."
           faqs={productFaqs}
         />
       </div>
