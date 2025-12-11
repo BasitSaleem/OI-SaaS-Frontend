@@ -9,7 +9,6 @@ import ContactModal from "@/components/models/ContactModal";
 import Link from "next/link";
 
 
-
 interface SmartTools{
   title?: string,
    description?: string;
