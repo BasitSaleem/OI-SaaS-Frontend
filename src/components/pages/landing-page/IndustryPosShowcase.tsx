@@ -13,7 +13,6 @@ export interface IndustryItem {
   description: string;
   image: string;
   mobileImage?: string;
-  
 }
 
 // Define the props interface
@@ -47,7 +46,7 @@ const IndustryPosShowcase = ({
         setIsMobile(true);
         setIsTablet(false);
         setTranslationPercentage(106);
-        setActiveCard(null); 
+        setActiveCard(null);
       } else if (width < 1024) {
         setSlidesPerView(2);
         setIsMobile(false);
@@ -70,17 +69,17 @@ const IndustryPosShowcase = ({
 
   const handlePrev = () => {
     setCurrentSlide((prev) => (prev > 0 ? prev - 1 : totalSlides - 1));
-    setActiveCard(null); 
+    setActiveCard(null);
   };
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev < totalSlides - 1 ? prev + 1 : 0));
-    setActiveCard(null); 
+    setActiveCard(null);
   };
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
-    setActiveCard(null); 
+    setActiveCard(null);
   };
 
   // Handle card interaction based on device
@@ -126,13 +125,8 @@ const IndustryPosShowcase = ({
           <MainHeading className="mb-4 text-[#333333]">
             {mainHeading}
           </MainHeading>
-          <Paragraph className="text-[#666666]">
-            {paragraph}
-          </Paragraph>
-
-          
-          <button className="mt-6 bg-[#7B61FF] text-white px-[63px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
-
+          <Paragraph className="text-[#666666]">{paragraph}</Paragraph>
+          <button className="mt-6 bg-[#7B61FF] text-white px-[30px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
             {buttonText}
           </button>
         </div>
@@ -188,7 +182,6 @@ const IndustryPosShowcase = ({
 
             const isExpanded = isCardExpanded(relativeIndex);
 
-            
             let expandAmount = 0;
             if (isVisible && activeCard !== null && !isMobile) {
               if (activeCard === slidesPerView - 1) {
@@ -197,7 +190,10 @@ const IndustryPosShowcase = ({
                 } else if (relativeIndex === activeCard) {
                   expandAmount = -190;
                 }
-              } else if (activeCard < slidesPerView - 1 && activeCard < relativeIndex) {
+              } else if (
+                activeCard < slidesPerView - 1 &&
+                activeCard < relativeIndex
+              ) {
                 expandAmount = 10;
               }
             }
@@ -208,12 +204,24 @@ const IndustryPosShowcase = ({
                 data-industry-card
                 className="transition-all duration-300 ease-in-out"
                 style={{
-                  width: isVisible && isExpanded && !isMobile ? "560px" : normalWidth,
+                  width:
+                    isVisible && isExpanded && !isMobile
+                      ? "560px"
+                      : normalWidth,
                   flexShrink: 0,
-                  transform: !isMobile ? `translateX(${expandAmount}px)` : "none",
+                  transform: !isMobile
+                    ? `translateX(${expandAmount}px)`
+                    : "none",
                 }}
-                onMouseEnter={() => !isTablet && !isMobile && isVisible && setActiveCard(relativeIndex)}
-                onMouseLeave={() => !isTablet && !isMobile && setActiveCard(null)}
+                onMouseEnter={() =>
+                  !isTablet &&
+                  !isMobile &&
+                  isVisible &&
+                  setActiveCard(relativeIndex)
+                }
+                onMouseLeave={() =>
+                  !isTablet && !isMobile && setActiveCard(null)
+                }
                 onClick={(e) => {
                   if (isTablet && isVisible && !isMobile) {
                     e.stopPropagation();
