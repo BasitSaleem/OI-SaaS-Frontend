@@ -7,6 +7,7 @@ import ButtonOutline from "@/components/button/ButtonOutline";
 import CardHeading from "../typography/CardHeading";
 import Image from "next/image";
 import ButtonSm from "@/components/button/ButtonSm";
+
 import { ArrowUpRight } from "lucide-react";
 
 export interface CaseStudy {
@@ -26,42 +27,33 @@ interface CaseStudiesProps {
 }
 
 export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
- const [currentSlide, setCurrentSlide] = useState(0);
+  // Limit to first 5 case studies
+  const limitedCaseStudies = caseStudies.slice(0, 5);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const slidesPerView = 1;
-  const totalSlides = Math.ceil(caseStudies.length / slidesPerView);
-  // const currentStudies = caseStudies.slice(
-  //   currentSlide * slidesPerView,
-  //   (currentSlide + 1) * slidesPerView
-  // );
+  const totalSlides = Math.ceil(limitedCaseStudies.length / slidesPerView);
 
-   const getCurrentStudies = () => {
+  const getCurrentStudies = () => {
     const start = currentSlide * slidesPerView;
     const end = start + slidesPerView;
-    
+
     // If we're at the end and need to wrap around
-    if (end > caseStudies.length) {
-      const overflow = end - caseStudies.length;
+    if (end > limitedCaseStudies.length) {
+      const overflow = end - limitedCaseStudies.length;
       return [
-        ...caseStudies.slice(start),
-        ...caseStudies.slice(0, overflow)
+        ...limitedCaseStudies.slice(start),
+        ...limitedCaseStudies.slice(0, overflow),
       ];
     }
-    
-    return caseStudies.slice(start, end);
+
+    return limitedCaseStudies.slice(start, end);
   };
 
   const currentStudies = getCurrentStudies();
 
-  // const nextSlide = () => {
-  //   if (currentSlide < totalSlides - 1) setCurrentSlide((prev) => prev + 1);
-  // };
-
-  // const prevSlide = () => {
-  //   if (currentSlide > 0) setCurrentSlide((prev) => prev - 1);
-  // };
-
-   const nextSlide = () => {
+  const nextSlide = () => {
     if (currentSlide < totalSlides - 1) {
       setCurrentSlide((prev) => prev + 1);
     } else {
@@ -107,7 +99,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Previous Button */}
             <button
               onClick={prevSlide}
-              
               className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors border-gray-300 text-gray-600 hover:bg-gray-50"`}
               aria-label="Previous slide"
             >
@@ -140,7 +131,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Next Button */}
             <button
               onClick={nextSlide}
-             
               className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors border-gray-300 text-gray-600 hover:bg-gray-50"`}
               aria-label="Next slide"
             >
@@ -158,7 +148,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
 
         {/* Case Studies Grid */}
         <div className="grid gap-6 mb-8">
-          {currentStudies.map((study) => (
+          {currentStudies.map((study, index) => (
             <div
               key={study.id}
               className="h-full grid grid-col-1 md:grid-cols-12 gap-y-8 md:gap-x-5 justify-center items-center"
@@ -186,7 +176,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                     <div className="relative flex bg-[var(--background-halfwhite)] w-full lg:max-w-[60%] xl:max-w-[70%] 2xl:max-w-[73%] lg:rounded-b-[28px] rounded-b-[20px] ">
                       <div className="absolute z-[-100] left-[-5.4rem] md:left-[-5.8rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] rotate-180 shadow-[0_2.5rem_0_0_#f3f4f6]" />
                     </div>
-                    {/* CTA Button */}
                   </div>
                 </div>
               </div>
@@ -232,74 +221,59 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                     “{study.quote}”
                   </p>
                 </div>
-
-                {/* Author */}
-                {/* <div className="text-right">
-                
-                </div> */}
               </div>
 
-
-               <div className="md:hidden flex justify-center items-center gap-2 lg:mb-[10px]">
-            {/* Previous Button */}
-            <button
-              onClick={prevSlide}
-              disabled={currentSlide === 0}
-              className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors ${
-                currentSlide === 0
-                  ? "border-gray-200 text-gray-400 cursor-not-allowed"
-                  : "border-gray-300 text-gray-600 hover:bg-gray-50"
-              }`}
-              aria-label="Previous slide"
-            >
-              <Image
-                src="/assets/home-page-images/slider-arrow-left.svg"
-                alt="arrow-right"
-                width={800}
-                height={600}
-                loading="lazy"
-                className="w-[20px] h-[20px]"
-              />
-            </button>
-
-            {/* Bullets */}
-            <div className="flex gap-2">
-              {Array.from({ length: totalSlides }).map((_, index) => (
+              {/* Mobile Navigation */}
+              <div className="md:hidden flex justify-center items-center gap-2 lg:mb-[10px]">
                 <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`transition-all duration-300 ${
-                    index === currentSlide
-                      ? "w-[34px] h-[15px] bg-[rgba(26,209,185,1)] rounded-[60px]"
-                      : "w-[16px] h-[15px] bg-[rgba(243,244,246,1)] rounded-[60px]"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
+                  onClick={prevSlide}
+                  className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors border-gray-300 text-gray-600 hover:bg-gray-50`}
+                  aria-label="Previous slide"
+                >
+                  <Image
+                    src="/assets/home-page-images/slider-arrow-left.svg"
+                    alt="arrow-right"
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    className="w-[20px] h-[20px]"
+                  />
+                </button>
 
-            {/* Next Button */}
-            <button
-              onClick={nextSlide}
-              disabled={currentSlide === totalSlides - 1}
-              className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors ${
-                currentSlide === totalSlides - 1
-                  ? "border-gray-200 text-gray-400 cursor-not-allowed"
-                  : "border-gray-300 text-gray-600 hover:bg-gray-50"
-              }`}
-              aria-label="Next slide"
-            >
-              <Image
-                src="/assets/home-page-images/slider-arrow-right.svg"
-                alt="arrow-right"
-                width={800}
-                height={600}
-                loading="lazy"
-                className="w-[20px] h-[20px]"
-              />
-            </button>
-          </div>
+                {/* Bullets */}
+                <div className="flex gap-2">
+                  {Array.from({ length: totalSlides }).map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`transition-all duration-300 ${
+                        index === currentSlide
+                          ? "w-[34px] h-[15px] bg-[rgba(26,209,185,1)] rounded-[60px]"
+                          : "w-[16px] h-[15px] bg-[rgba(243,244,246,1)] rounded-[60px]"
+                      }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  ))}
+                </div>
 
+                {/* Next Button */}
+                <button
+                  onClick={nextSlide}
+                  className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors border-gray-300 text-gray-600 hover:bg-gray-50`}
+                  aria-label="Next slide"
+                >
+                  <Image
+                    src="/assets/home-page-images/slider-arrow-right.svg"
+                    alt="arrow-right"
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    className="w-[20px] h-[20px]"
+                  />
+                </button>
+              </div>
+
+              {/* Mobile View All Button */}
               <div className="md:hidden justify-center items-center mt-0 flex">
                 <ButtonOutline
                   url="#"
@@ -311,13 +285,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             </div>
           ))}
         </div>
-
-        {/* Slide Indicator */}
-        {/* <div className="text-center text-gray-500 text-sm">
-          Showing {currentSlide * slidesPerView + 1}-
-          {Math.min((currentSlide + 1) * slidesPerView, caseStudies.length)} of{" "}
-          {caseStudies.length} case studies
-        </div> */}
       </div>
     </div>
   );

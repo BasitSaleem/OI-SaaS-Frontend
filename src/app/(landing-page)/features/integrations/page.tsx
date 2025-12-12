@@ -35,15 +35,11 @@ const FeaturesCards = [
   {
     id: 1,
     title: "Shopify Integration",
+      description:
+      "Sell with confidence by directly connecting your Shopify store to Owners Inventory. Your online and in-store operations function as one because of our Shopify integration, which guarantees every product, order, and customer detail is synchronized in real-time. ",
     imageSrc:
       "/assets/features-page/general-tools/features-section/activity-log.webp",
-       listItems: [
-      "Sync prices, stock, and product listings automatically.",
-      "Update inventory instantly after every order.",
-      "Import Shopify orders for easy tracking and fulfillment.",
-      "Keep all customer data centralized.",
-      "Generate real-time sales and performance reports."
-    ],
+    
   },
   {
     id: 2,
@@ -52,13 +48,7 @@ const FeaturesCards = [
       "Display the right amount of stock, how many items are in stock, and where they are available.  Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
     imageSrc:
       "/assets/features-page/general-tools/features-section/stock-alert.webp",
-       listItems: [
-      "Sync products, variations, and stock with WooCommerce.",
-      "Manage online orders from one dashboard.",
-      "Auto-update inventory after every change.",
-      "Keep pricing and catalog consistent everywhere.",
-      "View all performance insights in one report."
-    ],
+      
   },
   {
     id: 3,
@@ -76,13 +66,7 @@ const FeaturesCards = [
       "Take control of your finances with one of the best accounting programs in the world, QuickBooks. Automate your financial records and make sure that every sale, purchase, or expense is accurately reflected in your books immediately by integrating QuickBooks with Owners Inventory.",
     imageSrc:
       "/assets/features-page/general-tools/features-section/stock-alert.webp",
-       listItems: [
-      "Direct synchronization of purchases, sales, and expense data into QuickBooks.",
-      "Reduce accounting errors and do away with manual entry.",
-      "Easily manage balance sheets, track tax information, and arrange invoices.",
-      "Real-time revenue, profit, and cost reports help you improve your financial visibility.",
-      "Maintain a perfect balance between your operations and accounting."
-    ],
+      
   },
    {
     id: 5,
@@ -91,13 +75,7 @@ const FeaturesCards = [
       "Flexibility in payments is crucial for any business. You can securely and easily accept payments both online and in-store throughout Owners Inventory’s integration with well-known payment gateways like Stripe, PayPal, and others.",
     imageSrc:
       "/assets/features-page/general-tools/features-section/stock-alert.webp",
-       listItems: [
-      "Accept digital wallets, credit/debit cards, and online payments.",
-      "Use integrated gateways to handle transactions directly.",
-      "Monitor each payment using your mobile sales platform, website, or POS system.",
-      "Total control over the revenue flow and transaction history.",
-      "Reduce manual cash handling by automating payment reconciliation."
-    ],
+      
   },
   {
     id: 6,
@@ -106,13 +84,7 @@ const FeaturesCards = [
       "Sales are only the beginning of your company’s success but visibility is the key. With Owners Inventory, you can effectively measure performance, conduct targeted campaigns, and analyze customer behaviour by integrating with marketing tools and platforms.",
     imageSrc:
       "/assets/features-page/general-tools/features-section/stock-alert.webp",
-       listItems: [
-      "Link Owners Inventory data to email marketing platforms such as HubSpot or MailChimp through marketing tool integration.",
-      "For individualized campaigns, sync sales history, loyalty information, and customer segments.",
-      "Monitor campaign performance and conversions straight from your dashboard.",
-      "Gain insights into customer preferences and purchasing trends.",
-      "Use real-time sales data to automate promotional offers and follow-ups. "
-    ],
+      
   },
   
   
