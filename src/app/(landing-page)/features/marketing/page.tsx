@@ -85,12 +85,7 @@ const FeaturesCards = [
       "Easily create and manage exciting coupons to boost sales immediately. Our coupon system is flexible. It allows you to run any promotion easily across your entire business.",
     imageSrc:
       "/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
-    listItems: [
-      "It generates discount codes easily for specific products or entire orders.",
-      "Sets the rules you need, including fixed amounts, expiration dates and usage limits.",
-      "Tracks comprehensive data for every coupon, including its ID, Expiry date, the Store where it was used, Sold By details, Created at date, total Amount, Amount used and the Amount Left.",
-      "You can track results to see exactly how well each coupon campaign is performing.",
-    ],
+   
   },
   {
     id: 2,
@@ -99,11 +94,7 @@ const FeaturesCards = [
       "Build strong, long term relationships with your best customers by automatically rewarding them for their purchases. Our programs encourage repeat business and help you track retention flawlessly.",
     imageSrc:
       "/assets/features-page/sales-order/features-section/smart-record-view.webp",
-    listItems: [
-      "It helps with rewarding regular customers automatically with points or exclusive discounts to thank them for their business.",
-      "Builds powerful rules based on customer purchase history to give higher incentives.",
-      "Boosts retention by encouraging repeat business and building long term customer relationships.",
-    ],
+    
   },
 ];
 

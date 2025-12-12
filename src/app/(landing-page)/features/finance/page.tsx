@@ -366,7 +366,7 @@ const Page = () => {
         heading="What Our Clients Say"
         showSmartTools={true}
         secondHeading="Contact Us"
-        secondDescription="We will make your business smarter and easier. Whether you are ready to explore Owners Inventory or you are simply interested in learning how our integrated POS and accounting software will make your financial life easier, our staff is ready to support you throughout that process. We will guide you to the correct solution that fits your workflow and objectives through product demos and personalized consultations."
+        secondDescription="We make your business smarter and easier. Whether you want to explore Owners Inventory or learn how our POS and accounting tools simplify finances, our team will guide you with demos and personalized support."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

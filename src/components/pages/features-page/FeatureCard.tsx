@@ -16,10 +16,10 @@ interface FeatureCardProps {
   heightClass?: string;
   truncateTitle?: boolean;
   maxTitleLength?: number;
-   listItems?: string[]; 
-  listClassName?: string; 
-  listItemClassName?: string; 
-  bulletClassName?: string; 
+  //  listItems?: string[]; 
+  // listClassName?: string; 
+  // listItemClassName?: string; 
+  // bulletClassName?: string; 
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
@@ -36,10 +36,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   heightClass = "h-full",
   truncateTitle = false,
   maxTitleLength = 50,
-   listItems = [],
-  listClassName = "",
-  listItemClassName = "",
-  bulletClassName = "text-[var(--text-grey)] font-bold mr-2",
+  //  listItems = [],
+  // listClassName = "",
+  // listItemClassName = "",
+  // bulletClassName = "text-[var(--text-grey)] font-bold mr-2",
 }) => {
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
@@ -90,14 +90,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               {description}
             </CardDesc>
              
-            {listItems.length > 0 && (
+            {/* {listItems.length > 0 && (
               <ul className={`space-y-2 min-h-[60px] flex flex-col items-start flex-1 ${listClassName}`}>
                 {listItems.map((item, index) => (
                   <li 
                     key={index} 
                     className={`flex items-start ${listItemClassName}`}
                   >
-                    {/* Simple bullet span */}
+                    
                     <span className={bulletClassName}>•</span>
                     <span className="text-lg leading-[170%] font-onest text-[var(--text-grey)]">
                       {item}
@@ -105,7 +105,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
                   </li>
                 ))}
               </ul>
-            )}
+            )} */}
 
             <p className="xl:text-base text-base leading-6 font-bold font-onest text-[#795CF5] mt-3 lg:mt-4">
               {authorName}
