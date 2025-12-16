@@ -34,59 +34,58 @@ const IndustryPosShowcase = dynamic(
 const FeaturesCards = [
   {
     id: 1,
-    title: "Shopify Integration",
+    title: "Strong Integrations for All Types of Businesses",
       description:
-      "Sell with confidence by directly connecting your Shopify store to Owners Inventory. Your online and in-store operations function as one because of our Shopify integration, which guarantees every product, order, and customer detail is synchronized in real-time. ",
+      "Connect with top third-party platforms through Owners Inventory, which are essential for expanding and improving modern businesses. Integrations that make Owners Inventory a connected, and future-ready solution are listed below. ",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/activity-log.webp",
+      "/assets/features-page/integration-page/features-section/strong-integration.webp",
     
   },
   {
     id: 2,
-    title: "WooCommerce Integration",
-    description:
-      "Display the right amount of stock, how many items are in stock, and where they are available.  Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
+    title: "Shopify Integration",
+      description:
+      "Connect your Shopify store with Owners Inventory to sync products, stock, orders, and customer data in real time. Keep inventory updated automatically, manage orders easily, and track sales performance across all channels from one place",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
-      
+      "/assets/features-page/integration-page/features-section/shopify-integration.webp",
+    
   },
   {
     id: 3,
-    title: "Data Visualization with Interaction",
+    title: "WooCommerce Integration",
     description:
-      "Dynamic charts and graphs can help you understand your inventory more quickly.  It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
+      "Connect WooCommerce with Owners Inventory to sync products, stock, pricing, and orders in real time. Manage inventory, orders, and sales insights from one unified dashboard.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
-     
+      "/assets/features-page/integration-page/features-section/woocommerce-integration.webp",
+      
   },
-   {
+  {
     id: 4,
     title: "Quickbooks Integration",
     description:
-      "Take control of your finances with one of the best accounting programs in the world, QuickBooks. Automate your financial records and make sure that every sale, purchase, or expense is accurately reflected in your books immediately by integrating QuickBooks with Owners Inventory.",
+      "Integrate QuickBooks with Owners Inventory to automatically sync sales, purchases, and expenses, reduce manual errors, and get real-time financial reports for better control.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
-      
+      "/assets/features-page/integration-page/features-section/quickbook-integration.webp",
+     
   },
    {
     id: 5,
     title: "Payment Getaway Integration",
     description:
-      "Flexibility in payments is crucial for any business. You can securely and easily accept payments both online and in-store throughout Owners Inventory’s integration with well-known payment gateways like Stripe, PayPal, and others.",
+      "Owners Inventory integrates with trusted payment gateways to accept secure online and in-store payments, track transactions in real time, automate reconciliation, and maintain full control over revenue.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/integration-page/features-section/payment-gateway.webp",
       
   },
-  {
+   {
     id: 6,
     title: "Marketing Tools Integration",
     description:
-      "Sales are only the beginning of your company’s success but visibility is the key. With Owners Inventory, you can effectively measure performance, conduct targeted campaigns, and analyze customer behaviour by integrating with marketing tools and platforms.",
+      "Owners Inventory integrates with marketing tools to sync customer data, track campaign performance, and use real-time sales insights for targeted promotions and follow-ups.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/integration-page/features-section/marketing-tools.webp",
       
   },
-  
   
 ];
 
@@ -249,7 +248,7 @@ const Page = () => {
         paragraph="Owners Inventory helps brands like Al-Asif, Sportify, and ASK Food Industries connect their stores, manage inventory, and streamline financial processes, enabling them to scale smoothly with powerful integrations."
       />
       <KeyHighlights
-        heading="Strong Integrations for All Types of Businesses "
+        heading="Why Integrations Matters"
         features={FeaturesCards}
         layoutPatterns={layoutPatterns}
         
@@ -266,13 +265,13 @@ const Page = () => {
               "Manage marketing, accounting, and operations in one connected system with full visibility.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+            icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
             title: "Error-Free Automation",
             description:
               "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate in expansion.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
             title: "Faster Decision Making",
             description:
               "Get real-time data from all channels to make accurate, informed decisions.",
