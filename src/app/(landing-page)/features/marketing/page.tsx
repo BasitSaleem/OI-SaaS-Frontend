@@ -62,7 +62,7 @@ const marketingIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "For pharmacies, you can encourage customers to return for essentials by offering loyalty points on non prescription items. You can also send them coupons for health and wellness products based on their past purchases.",
+      "Pharmacies can encourage customers to return for essentials by offering loyalty points on non-prescription items and sending personalized coupons for health and wellness products based on past purchases.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -82,18 +82,18 @@ const FeaturesCards = [
     id: 1,
     title: "Coupons",
     description:
-      "Easily create and manage exciting coupons to boost sales immediately. Our coupon system is flexible. It allows you to run any promotion easily across your entire business.",
+      "Create and manage powerful coupons effortlessly to boost sales. Generate discount codes for products or full orders, set rules like amounts and expiry dates, and track all usage details in one place. Get clear insights to see how well each coupon campaign performs.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
+      "/assets/features-page/marketing-page/features-section/coupons.webp",
    
   },
   {
     id: 2,
     title: "Loyalty Programs",
     description:
-      "Build strong, long term relationships with your best customers by automatically rewarding them for their purchases. Our programs encourage repeat business and help you track retention flawlessly.",
+      "Build long-term customer relationships by automatically rewarding buyers for their loyalty. Our system makes it easy to give regular customers points or exclusive discounts based on their purchase history. With smart rules and personalized incentives, you can encourage repeat business, strengthen retention, and keep your best customers coming back.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/smart-record-view.webp",
+      "/assets/features-page/marketing-page/features-section/loyalty-programs.webp",
     
   },
 ];
@@ -252,7 +252,7 @@ const page = () => {
         paragraph="Businesses like Al-Asif and Bright Home rely on Owners Inventory Marketing to get better at customer retention and growth. From small shops to large retailers, owners inventory help brands increase repeat purchases and engage customers more effectively."
       />
       <KeyHighlights
-        heading="Key Marketing Features for Smarter Engagement"
+        heading="Smart Marketing Features"
         features={FeaturesCards}
         layoutPatterns={layoutPatterns}
       />
@@ -262,34 +262,34 @@ const page = () => {
         paragraph="Choose Owner's Inventory because we offer simplicity, smart automation and real time data you can trust. We give you more than just marketing tools. We actively help you engage customers, increase their loyalty and grow your revenue in a much smarter way."
         cards={[
           {
-            icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
+            icon: "/assets/features-page/purchases-page/why-chose/grow-business.svg",
             title: "Automated and Hassle Free",
             description:
-              "Setting up your promotions is really fast. You can launch coupons and loyalty programs in minutes. Then watch them run automatically without any daily manual work.",
+              "Create promotions in minutes and let them run automatically no daily work needed.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
+            icon: "/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
             title: "Retaining Customers",
             description:
-              "It's easy to keep your best customers happy by rewarding them often. This helps you build stronger relationships. Our tools are built to help you keep customers longer and get them to buy again and again.",
+              "Keep top customers happy with regular rewards, strengthen relationships, and boost repeat purchases.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+            icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
             title: "Insight Driven Decisions",
             description:
-              "You can stop guessing about which promotions actually work. You can watch every coupon used and all loyalty activities happen in real time. To get better results, this helps you quickly adjust your marketing campaigns and sales plans.",
+              "Track every coupon and loyalty activity in real time. See what works and adjust your marketing quickly for better results.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+            icon: "/assets/features-page/purchases-page/why-chose/automated-buying.svg",
             title: "All-in-One Marketing Platform",
             description:
-              "Everything you need to run promotions, rewards, and tracking is in one spot. This keeps your marketing simple and ensures all your sales data works together perfectly.",
+              "Run promotions, rewards, and tracking all in one place, keeping marketing simple and sales data unified.",
           },
           {
-            icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+            icon: "/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
             title: "24/7 Expert Support",
             description:
-              "If you ever get stuck or have a question, our team is always ready to help. We are available all the time. We help you set up and manage your marketing programs.",
+              "Our team is always ready to help you set up and manage your marketing programs.",
           },
         ]}
         mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
@@ -313,12 +313,14 @@ const page = () => {
         testimonials={marketingTestimonials}
         heading="What Clients Say About Us?"
         showSmartTools={true}
+        secondHeading="Contact Us"
+        secondDescription="We make your business smarter and easier. Whether you want to explore Owners Inventory or learn how our POS and accounting tools simplify finances, our team will guide you with demos and personalized support."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection
           heading="Everything You Need to Know About Marketing Features"
-          paragraph="We have collected the most frequently asked questions regarding Marketing, the workforce management feature of Owners Inventory. Whether you are setting up and automating or tracking performance and analytics, here is all you need to know."
+          paragraph="Running business finances does not need to be stressful. Owners Inventory unites your sales, accounting, and reporting into a single convenient system. Some frequent questions are listed here to help you understand how Owners Inventory simplifies all aspects of your financial management."
           faqs={marketingFaqs}
         />
       </div>
