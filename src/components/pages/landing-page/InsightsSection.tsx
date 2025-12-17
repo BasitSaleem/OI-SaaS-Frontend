@@ -104,7 +104,7 @@ export default function InsightsSection() {
                   </div>
 
                   <div className=" pt-4 border-gray-100 text-left">
-                    <p className="font-onest font-medium text-[#231F20] xl:text-lg lg:text-sm md:text-xs text-sm xl:leading-9 md:leading-7 leading-5">
+                    <p className="font-onest font-medium text-[#231F20] xl:text-lg lg:text-sm text-sm xl:leading-9 leading-[160%]">
                       Posted:{" "}
                       <span className="text-[var(--primary-purple)]">{blog.date}</span>{" "}
                       <span className="text-[#D9D9D9]">|</span> by{" "}

@@ -12,7 +12,7 @@ const CardDesc: React.FC<SubHeadingProps> = ({ children, className }) => {
       className={clsx(
         "font-normal text-[var(--text-grey)] ",
         "font-onest",
-        "md:text-lg text-base",
+        "lg:text-lg text-base",
         "leading-[28px]",
         "",
         className 

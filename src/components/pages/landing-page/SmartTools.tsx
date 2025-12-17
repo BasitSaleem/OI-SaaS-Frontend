@@ -8,17 +8,14 @@ import Image from "next/image";
 import ContactModal from "@/components/models/ContactModal";
 import Link from "next/link";
 
-
-interface SmartTools{
-  title?: string,
-   description?: string;
+interface SmartTools {
+  title?: string;
+  description?: string;
 }
-
 
 const SmartTools: React.FC<SmartTools> = ({
   title = "Stay Ahead with Smart Tools",
-  description= "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
-  
+  description = "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
 }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -41,7 +38,7 @@ const SmartTools: React.FC<SmartTools> = ({
           <Link
             href=""
             className="bg-transparent w-full md:w-fit
-    px-4 py-2.5 md:px-5 md:py-3 lg:px-[40px] xl:px-[64px] lg:py-4 flex items-center justify-center text-base font-onest font-semibold
+    px-4 py-2.5 md:px-5 md:py-3 lg:px-[40px] xl:px-[64px] lg:py-4 flex items-center justify-center text-base font-onest font-medium
      text-[var(--white-color)]  border border-[var(--white-color)] hover:border-transparent rounded-full hover:text-black  hover:bg-[var(--white-color)]
      transition-colors duration-300"
           >
@@ -80,7 +77,6 @@ const SmartTools: React.FC<SmartTools> = ({
             <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
               type="video/mp4"
-             
             />
             <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"

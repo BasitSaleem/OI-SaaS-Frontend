@@ -5,7 +5,7 @@
     overview:
       "Al-Asif struggled with daily sales, inventory checks, and financial tracking, which caused delays and frequent stock mismatches. After reviewing their processes, we introduced a unified system that automated billing, improved stock accuracy, and provided clear financial reports. This helped the business run smoothly with real-time visibility and faster decision-making.",
     quote:
-      "Owners Inventory completely transformed our retail operations. Real-time sync keeps all locations updated and minimizes stock errors. The dashboards give clear sales insights, and automation saves us hours every week — it's like having a full operations team in one system.",
+      "Owners Inventory completely transformed our retail operations. Real-time sync keeps all locations updated and minimizes stock errors. The dashboards give clear sales insights, and automation saves us hours every week it's like having a full operations team in one system.",
     author: "Faique Asif",
     position: "AL-Asif CEO",
     image: "/assets/home-page-images/client-image-1.webp",

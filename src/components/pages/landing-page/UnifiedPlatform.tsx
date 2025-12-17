@@ -206,7 +206,7 @@ export default function UnifiedPlatform() {
                   <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-semibold text-[var(--text-dark)]">
                     {card.title}
                   </h3>
-                  <p className="text-sm lg:text-base leading-6 text-[var(--text-grey)]">
+                  <p className="text-sm md:text-base leading-6 text-[var(--text-grey)]">
                     {card.description}
                   </p>
                 </div>
@@ -220,7 +220,6 @@ export default function UnifiedPlatform() {
               <MainHeading className="text-center mb-4">Why We Stand Out</MainHeading>
               <Paragraph className="text-center mb-6">
                 The future of business management is here, quick, integrated, expansionary. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.
-
               </Paragraph>
 
               <div className="hidden md:flex">

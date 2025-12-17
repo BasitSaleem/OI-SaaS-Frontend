@@ -5,6 +5,7 @@ import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import IndustryCard from "./IndustryCard";
+import SubHeading from "../typography/SubHeading";
 
 export interface IndustryItem {
   id?: string | number;
@@ -45,7 +46,7 @@ const IndustryPosShowcase = ({
         setSlidesPerView(1);
         setIsMobile(true);
         setIsTablet(false);
-        setTranslationPercentage(106);
+        setTranslationPercentage(107);
         setActiveCard(null);
       } else if (width < 1024) {
         setSlidesPerView(2);
@@ -122,11 +123,11 @@ const IndustryPosShowcase = ({
     <div className="wrapper px-4 ">
       <div className="w-full flex justify-between items-end mb-10">
         <div className="flex flex-col items-start justify-center w-full max-w-full md:max-w-[70%]">
-          <MainHeading className="mb-4 text-[#333333]">
+          <SubHeading className="mb-4">
             {mainHeading}
-          </MainHeading>
-          <Paragraph className="text-[#666666]">{paragraph}</Paragraph>
-          <button className="mt-6 bg-[#7B61FF] text-white px-[30px] py-5 rounded-full font-medium hover:bg-[#634AE2] transition-colors cursor-pointer">
+          </SubHeading>
+          <Paragraph className="">{paragraph}</Paragraph>
+          <button className="mt-6 bg-[#7B61FF] text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-onest">
             {buttonText}
           </button>
         </div>

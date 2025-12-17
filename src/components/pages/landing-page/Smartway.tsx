@@ -198,7 +198,7 @@ export default function PosIconsSection() {
           </MainHeading>
 
            <p
-              className="font-onest font-normal text-[var(--white-color)] xl:text-xl lg:text-lg md:text-base text-xs xl:leading-9 lg:leading-7 md:leading-6 leading-5 flex items-center justify-center gap-2"
+              className="font-onest font-normal text-[var(--white-color)] xl:text-xl lg:text-lg text-base xl:leading-9 lg:leading-7 md:leading-6 leading-5 flex items-center justify-center gap-2"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -211,7 +211,7 @@ export default function PosIconsSection() {
                   className="flex items-center justify-center w-6 h-6 z-10"
                 />
               </span>
-              Click any feature below to get started
+              Click any feature below to get started.
             </p>
           {/* <Paragraph className="text-[var(--white-color)] text-center">
             Click any feature below to get started

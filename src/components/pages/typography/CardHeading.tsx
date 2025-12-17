@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 interface SubHeadingProps {
   children: React.ReactNode;
-  className?: string; // For dynamic margin, padding, etc.
+  className?: string; 
 }
 
 const CardHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
@@ -12,8 +12,8 @@ const CardHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
       className={clsx(
         "font-semibold text-[var(--text-dark)]",
         "font-onest",
-        "text-2xl",
-        "leading-[100%]",
+        "lg:text-2xl text-xl",
+        "md:leading-[100%] leading-[140%]",
         "",
         className 
       )}
