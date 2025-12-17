@@ -80,7 +80,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
     gsap.set(mainHeadingRef.current, { opacity: 0, y: 50 });
     gsap.set(paragraphRef.current, { opacity: 0, y: 30 });
     gsap.set(homeHeroSecRef.current, {
-      clipPath: "inset(0% 0% 100% 0%)", // Fixed: using clipPath instead of inset
+      clipPath: "inset(0% 0% 100% 0%)",
     });
     gsap.set(productsImageRef.current, {
       opacity: 0,
@@ -289,7 +289,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                     <div
                       ref={productsImageRef}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[90px] lg:top-[120px] -left-5 lg:left-[-60px]"
+                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[90px] lg:top-20 xl:top-[120px] -left-5 lg:left-[-50px] xl:left-[-60px]"
                     >
                       <Image
                         src="/assets/home-page-images/products.svg"
@@ -299,14 +299,14 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         loading="lazy"
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-lg lg:leading-6 xl:text-[22px] xl:leading-[38px] font-medium font-onest text-(--text-light)">
+                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
                         Products
                       </p>
                     </div>
 
                     <div
                       ref={advanceReportImageRef}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[180px] -left-5 lg:top-[300px] lg:left-[-60px]"
+                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[180px] -left-5 lg:top-[220px] lg:-left-14 xl:top-[300px] xl:left-[-60px]"
                     >
                       <Image
                         src="/assets/home-page-images/advance-report.svg"
@@ -316,14 +316,14 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         loading="lazy"
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-lg lg:leading-6 xl:text-[22px] xl:leading-[38px] font-medium font-onest text-(--text-light)">
+                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
                         Advance Reports
                       </p>
                     </div>
 
                     <div
                       ref={inventorySystemImageRef}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[55px] right-[-19px] md:top-[110px] lg:top-[130px] md:right-[-110px] lg:right-[-150px] 2xl:top-[120px] 2xl:right-[-200px]"
+                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[55px] -right-10 md:top-[110px] lg:top-[130px] md:right-[-110px] lg:-right-40 xl:right-[-150px] 2xl:top-[120px] 2xl:right-[-200px]"
                     >
                       <Image
                         src="/assets/home-page-images/inventory-system.svg"
@@ -333,13 +333,13 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         loading="lazy"
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-lg lg:leading-6 xl:text-[22px] xl:leading-[38px] font-medium font-onest text-(--text-light)">
+                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
                         Inventory Operations
                       </p>
                     </div>
                     <div
                       ref={reportsImageRef}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[148px] -right-5 md:top-[200px] md:right-[-60px] lg:top-[300px] lg:right-[-120px]"
+                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[148px] -right-10 md:top-[200px] md:right-[-60px] lg:top-[250px] lg:-right-20 xl:top-[300px] xl:right-[-120px]"
                     >
                       <Image
                         src="/assets/home-page-images/reports.svg"
@@ -349,7 +349,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         loading="lazy"
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-lg lg:leading-6 xl:text-[22px] xl:leading-[38px] font-medium font-onest text-(--text-light)">
+                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
                         Reports
                       </p>
                     </div>
@@ -397,7 +397,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     width={800}
                     height={600}
                     loading="lazy"
-                    className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute -top-5 -right-2.5 md:-top-2.5 2xl:top-[-60px] 2xl:right-[200px] md:right-0"
+                    className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute top-2 -right-2.5 md:-top-2.5 2xl:top-[-60px] 2xl:right-[200px] md:right-0"
                   />
 
                   <Image
@@ -407,7 +407,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     width={800}
                     height={600}
                     loading="lazy"
-                    className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-[-5px] right-[-5px] md:top-2.5 md:right-5 lg:top-2.5 lg:right-5 2xl:-top-10 2xl:right-[180px]"
+                    className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-5  right-[-5px] md:top-2.5 md:right-5 lg:top-2.5 lg:right-5 2xl:-top-8 2xl:right-[220px]"
                   />
 
                   <div
@@ -415,7 +415,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     className="hidden lg:flex flex-col w-full max-w-[300px] xl:max-w-[400px] 2xl:max-w-[480px] p-4 absolute bottom-0  -z-20"
                   >
                     <div ref={totalGrowthHeadingRef}>
-                      <SubHeading>42.5k</SubHeading>
+                      <p className="text-[#2E263DE5] font-onest font-semibold text-5xl leading-[53px]">42.5k</p>
                     </div>
                     <Image
                       src="/assets/home-page-images/total-growth.svg"
@@ -427,9 +427,9 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                       className="w-full "
                     />
                     <div ref={totalGrowthDescRef}>
-                      <Paragraph className="text-left xl:text-center mt-3">
+                      <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-onest">
                         Total Growth
-                      </Paragraph>
+                      </p>
                     </div>
                   </div>
                 </div>

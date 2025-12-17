@@ -30,7 +30,7 @@ function SmartWaytoSyncndSellSection() {
         {/* Left Content */}
         <div className="flex flex-col items-start justify-center">
           <MainHeading className=" mb-0 md:mb-10 lg:mb-[50px]">
-            Modern Features Designed for Real Owners and Real Growth.
+            Modern Features Designed for Real Owners and Real Growth
           </MainHeading>
 
           <div className="hidden md:flex gap-4 w-full items-center justify-start">

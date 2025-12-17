@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Onest } from "next/font/google";
+import { Geist, Geist_Mono, Onest, Inter } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/pages/navbar/Navbar";
 import Footer from "@/components/pages/footer/Footer";
@@ -25,6 +25,13 @@ const onest = Onest({
   display: "swap",
 });
 
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Owners Inventory",
   description: "Grow Faster with Smarter Inventory Tools",
@@ -38,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${onest.variable} antialiased`}
+         className={`${geistSans.variable} ${geistMono.variable} ${onest.variable} ${inter.variable} antialiased`}
       >
         <ScrollToTop />
         <Navbar />

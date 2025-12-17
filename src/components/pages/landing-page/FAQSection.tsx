@@ -88,7 +88,7 @@ export default function FaqSection({
                   onClick={() => toggle(index)}
                 >
                   <span
-                    className={`w-full max-w-[90%] text-sm md:text-xl leading-5 md:leading-9 font-onest transition-colors duration-300
+                    className={`w-full max-w-[90%] text-base md:text-lg leading-[170%] md:leading-[170%] font-onest font-semibold transition-colors duration-300
                       ${openIndex === index ? "text-(--primary-purple)" : "text-(--text-dark)"}
                     `}
                   >
@@ -115,7 +115,7 @@ export default function FaqSection({
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out
-                    px-5 text-xs md:text-base text-(--text-dark)
+                    px-5 text-sm md:text-base text-(--text-dark)
                     ${openIndex === index ? "max-h-96 opacity-100 pb-5" : "max-h-0 opacity-0 pb-0"}`}
                 >
                   {faq.answer}

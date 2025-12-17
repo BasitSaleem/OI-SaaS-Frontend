@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
     "@heroicons/react": "^2.2.0",
     "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/line-clamp": "^0.4.4",

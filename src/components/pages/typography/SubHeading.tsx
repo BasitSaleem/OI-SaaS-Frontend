@@ -8,18 +8,18 @@ interface SubHeadingProps {
 
 const SubHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
   return (
-    <h3
+    <h2
       className={clsx(
         "font-semibold text-[#231F20]",
         "font-onest",
-        "lg:text-[48px] md:text-[40px] text-4xl",
+        "lg:text-[48px] md:text-[40px] text-[32px]",
         "lg:leading-[48px] leading-[48px]",
         "",
         className 
       )}
     >
       {children}
-    </h3>
+    </h2>
   );
 };
 

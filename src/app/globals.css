@@ -1,13 +1,23 @@
 @import "tailwindcss";
 /* globals.css */
 
-
-
-
 html, body {
-  font-family: var(--font-onest), sans-serif;
   overscroll-behavior: none;
 }
+
+/* You can use these CSS variables directly now */
+.font-onest {
+  font-family: var(--font-onest), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif !important;
+}
+
+.font-geist {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
 
 
 :root {
@@ -20,9 +30,9 @@ html, body {
   --text-dark:   #231F20;
   --text-grey: #666666;
   --text-light: #333333;
+  --text-black: #000000;
   --border-light: #E5E7EB;
 }
-
 
 
 /* .dark {

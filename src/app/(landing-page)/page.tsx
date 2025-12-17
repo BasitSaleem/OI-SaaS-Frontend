@@ -165,7 +165,7 @@ export default function Home() {
     <>
       <div className="font-onset">
         <HeroSection2
-          title="Take Control. Gain Clarity. Grow with Owners Inventory."
+          title="Take Control. Gain Clarity. Grow with Owners Inventory"
           description="Turn all assets to advantage. Our Owners Inventory services assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
           video="/assets/Manual.mp4"
           variant="animation2"
@@ -176,10 +176,8 @@ export default function Home() {
         <TurningChaos
           title="Turning Chaos Into Clarity"
           miniTitle="One Inventory at a Time"
-          description="Owners Inventory assists any business to manage its assets with accuracy regardless of their size. Everything is quicker,easier, and smarter, in terms of tracking and publishing with our inventory management system.
-Made by the owners, owned by the owners - since you need the tools that can think like you.
-Let us simplify the management of what belongs to you.
-"
+          description="Owners Inventory assists any business to manage its assets with accuracy regardless of their size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system.
+            Made by the owners, owned by the owners - since you need the tools that can think like you. Let us simplify the management of what belongs to you."
         />
 
         <CaseStudies caseStudies={caseStudiesData} />

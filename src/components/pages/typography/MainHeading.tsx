@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 interface MainHeadingProps {
   children: React.ReactNode;
-  className?: string; // For dynamic margin, padding, etc.
+  className?: string; 
 }
 
 const MainHeading: React.FC<MainHeadingProps> = ({ children, className }) => {

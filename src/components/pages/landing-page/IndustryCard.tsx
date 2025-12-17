@@ -36,7 +36,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
-  // For mobile, always show the description and use dark text
+  
   const shouldShowDescription = isMobile || isHovered;
   const titleColor = isMobile
     ? "text-[#333333]"
@@ -46,7 +46,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
 
   return (
     <div
-      className={`relative rounded-[30px] shadow-sm overflow-hidden h-auto md:h-[390px] w-full cursor-pointer transition-all duration-300 ${className}`}
+      className={`relative rounded-[30px] shadow-sm overflow-hidden h-[520px] min-h-[400px] md:min-h-[390px] md:h-[390px] w-full cursor-pointer transition-all duration-300 ${className}`}
       style={{
         background: isMobile ? "#F3F3F3" : isHovered ? "#F3F3F3" : gradient,
       }}
@@ -90,7 +90,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
                 </div>
               )}
                {mobileImage && (
-                <div className="w-full block md:hidden md:w-[210px] mb-6 md:mb-0 md:flex-shrink-0 md:-mt-12 pr-0 md:pr-5">
+                <div className="w-full  block md:hidden md:w-[210px] mb-6 md:mb-0 md:flex-shrink-0 md:-mt-12 pr-0 md:pr-5">
                   <Image
                     src={mobileImage}
                     alt={title}
@@ -106,7 +106,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
 
         {/* READ MORE BUTTON - Update background on mobile too */}
         <div
-          className={`bg-white rounded-full h-[60px] flex items-center px-2 pl-6 -mt-0 md:-mt-90  transition-all duration-300 ease-in-out ${
+          className={`bg-white rounded-full h-[60px] hidden md:flex items-center px-2 pl-6 -mt-0 md:-mt-90  transition-all duration-300 ease-in-out ${
     isMobile 
       ? "w-full justify-between" 
       : (isHovered 
@@ -115,7 +115,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
   }`}
         >
           <span className="text-[#333333] text-[16px] font-semibold font-['Onest']">
-            Read more
+            Read More
           </span>
           <div
             className="w-[48px] h-[48px] bg-[#F3F3F3] rounded-full flex justify-center items-center transition-all duration-300"
