@@ -55,7 +55,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
       <div className="wrapper mx-auto flex items-center justify-center">
         <button
           onClick={toggleVisibility}
-          className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[#795CF5] text-white rounded-full text-xs md:text-lg leadign-[100%] font-semibold font-onest w-fit whitespace-nowrap"
+          className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[#795CF5] text-white rounded-full text-xs md:text-lg leadign-[100%] font-semibold font-['Onest'] w-fit whitespace-nowrap"
         >
           Compare Feature List
           <img
@@ -189,11 +189,11 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                               className="flex flex-col items-center rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4"
                               style={{ backgroundColor: plan.bgColor }}
                             >
-                              <h4 className="text-sm md:text-base lg:text-lg text-[#231F20] font-semibold leading-[100%] font-onest">
+                              <h4 className="text-sm md:text-base lg:text-lg text-[#231F20] font-semibold leading-[100%] font-['Onest']">
                                 {plan.name}
                               </h4>
                               <h3
-                                className="text-base md:text-lg lg:text-xl font-bold leading-[100%] font-onest"
+                                className="text-base md:text-lg lg:text-xl font-bold leading-[100%] font-['Onest']"
                                 style={{ color: plan.color }}
                               >
                                 {displayPrice === 0
@@ -207,12 +207,12 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                                       : "/month"}
                                 </span>
                               </h3>
-                              <p className="text-[10px] md:text-xs text-[#231F20] leading-[100%] font-normal font-onest">
+                              <p className="text-[10px] md:text-xs text-[#231F20] leading-[100%] font-normal font-['Onest']">
                                 {plan.description}
                               </p>
                               <a
                                 href="#"
-                                className="inline-block w-fit items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-onest mt-1 hover:bg-transparent transition-all"
+                                className="inline-block w-fit items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
                                 style={
                                   {
                                     backgroundColor: plan.color,

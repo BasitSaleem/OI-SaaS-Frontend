@@ -81,14 +81,14 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
               {description}
             </CardDesc>
 
-            <p className="xl:text-base text-base leading-6 font-bold font-onest text-[#795CF5] mt-3 lg:mt-4">
+            <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
               {authorName}
             </p>
 
             {buttonLabel && (
               <a
                 href={buttonHref || "#"}
-                className="xl:text-base text-sm font-bold font-onest text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block"
+                className="xl:text-base text-sm font-bold font-['Onest'] text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block"
               >
                 {buttonLabel} &gt;&gt;&gt;
               </a>

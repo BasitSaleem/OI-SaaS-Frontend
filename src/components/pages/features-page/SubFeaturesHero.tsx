@@ -155,7 +155,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
               {/* Heading */}
               <div className="owner-inventory-hero__content flex flex-col items-center justify-center w-full">
                 <div ref={mainHeadingRef}>
-                  <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-onest lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
+                  <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
                     {title}
                   </h1>
                 </div>

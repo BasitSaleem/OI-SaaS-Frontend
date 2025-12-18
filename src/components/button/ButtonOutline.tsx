@@ -9,7 +9,7 @@ interface ButtonOutlineProps{
 const ButtonOutline:React.FC<ButtonOutlineProps> = (props) => {
   return (
     <Link href={props.url} className={` bg-transparent 
-    px-8 py-2.5 md:px-5 md:py-3 lg:px-[30px] whitespace-nowrap lg:py-5 flex items-center justify-center text-base md:text-base font-onest font-medium
+    px-8 py-2.5 md:px-5 md:py-3 lg:px-[30px] whitespace-nowrap lg:py-5 flex items-center justify-center text-base md:text-base font-['Onest'] font-medium
      text-${props.borderColor}  border border-${props.borderColor} hover:border-transparent rounded-full hover:text-${props.textColor}  hover:bg-${props.borderColor} 
      transition-colors duration-300
     

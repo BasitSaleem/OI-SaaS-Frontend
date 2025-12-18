@@ -11,7 +11,7 @@ const CardHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
     <h3
       className={clsx(
         "font-semibold text-[var(--text-dark)]",
-        "font-onest",
+        "font-['Onest']",
         "lg:text-2xl text-xl",
         "md:leading-[100%] leading-[140%]",
         "",

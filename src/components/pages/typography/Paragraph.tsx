@@ -12,7 +12,7 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
     <p
       className={clsx(
         "font-normal text-[var(--text-grey)]",
-        "font-onest",
+        "font-['Onest']",
         "lg:text-xl md:text-base text-base",
         "lg:leading-9 md:leading-6 leading-[170%]",
         className 

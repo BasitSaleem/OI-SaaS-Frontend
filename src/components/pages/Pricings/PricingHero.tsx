@@ -117,11 +117,11 @@ const PricingHero: React.FC<PricingHeroProps> = ({
           }}
           className="relative flex flex-col items-center justify-center w-full overflow-hidden pt-10 pb-6 md:py-[76px] lg:py-0 lg:pb-[150px] bg-[#F3F4F6] rounded-b-[40px] rounded-tr-[40px] md:rounded-tl-[40px] backdrop-blur-[374px]"
         >
-          <h1 className="text-4xl px-6 md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-onest font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
+          <h1 className="text-4xl px-6 md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
             Start free. Scale anytime.
           </h1>
 
-          <p className="font-onest px-6 text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-10">
+          <p className="font-['Onest'] px-6 text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-10">
             Get full access to powerful inventory tools without upfront costs.
             Start managing smarter today and upgrade only when your business is
             ready — no contracts, no pressure.

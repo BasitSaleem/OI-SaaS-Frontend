@@ -66,7 +66,7 @@ const AllBlogs: React.FC = () => {
       <div className="bg-white mt-20 md:mt-28 lg:mt-0">
         <div className="flex finance-reporting-shadow items-end md:items-center flex-col gap-5 justify-end md:flex-row md:justify-between">
           <div className="flex flex-col sm:flex-row justify-between md:justify-start gap-3 w-full lg:w-fit items-center md:gap-x-[60px]">
-            <h1 className="font-onest font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] lg:text-5xl leading-9 sm:leading-[48px] lg:leading-[60px] lg:max-w-4xl">
+            <h1 className="font-['Onest'] font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] lg:text-5xl leading-9 sm:leading-[48px] lg:leading-[60px] lg:max-w-4xl">
               Blogs
             </h1>
             <div className="w-full md:w-auto max-w-xl mt-4 md:mt-0">
@@ -119,7 +119,7 @@ const AllBlogs: React.FC = () => {
         <div className="md:mt-7 mt-5 flex items-center justify-center">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="bg-[#795CF5] text-white border border-transparent hover:bg-transparent hover:border-[#795CF5] hover:text-[#795CF5] font-onest font-semibold text-base px-[60px] py-5 rounded-full transition"
+            className="bg-[#795CF5] text-white border border-transparent hover:bg-transparent hover:border-[#795CF5] hover:text-[#795CF5] font-['Onest'] font-semibold text-base px-[60px] py-5 rounded-full transition"
           >
             {showAll ? "Load Less" : "Load More"}
           </button>

@@ -155,11 +155,11 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             >
               {/* Header */}
               <div className="px-0 py-2 lg:p-2  md:col-span-6 lg:col-span-7 xl:col-span-8 relative z-[10]">
-                <p className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-onest">{study.title}</p>
+                <p className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">{study.title}</p>
                 <div className="flex flex-col items-end">
                   <div className="bg-[var(--background-halfwhite)] rounded-l-[20px] rounded-tr-[20px] lg:rounded-l-[28px] lg:rounded-tr-[28px] p-6">
-                   <p className="text-[var(--primary-teal)] lg:text-[32px] text-2xl lg:leading-[100%] leading-[165%] font-normal font-onest mb-4">overview</p>
-                    <p className="text-[var(--text-grey)] font-onest text-xl leading-[180%] md:text-2xl md:leading-[165%] lg:text-[32px] lg:leading-[52px]">
+                   <p className="text-[var(--primary-teal)] lg:text-[32px] text-2xl lg:leading-[100%] leading-[165%] font-normal font-['Onest'] mb-4">overview</p>
+                    <p className="text-[var(--text-grey)] font-['Onest'] text-xl leading-[180%] md:text-2xl md:leading-[165%] lg:text-[32px] lg:leading-[52px]">
                       {study.overview}
                     </p>
                   </div>
@@ -194,7 +194,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       className="w-9 h-[33px]"
                     />
                     <div className="flex flex-col gap-1">
-                      <p className="font-semibold text-[32px] font-onest  md:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
+                      <p className="font-semibold text-[32px] font-['Onest']  md:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
                         {study.author}
                       </p>
                       <p className="px-4 py-2 font-medium text-base leading-[150%] text-[var(--primary-purple)] w-fit bg-[#F1EEFE] rounded-full">

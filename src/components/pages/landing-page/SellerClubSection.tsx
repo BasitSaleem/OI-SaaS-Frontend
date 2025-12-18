@@ -74,10 +74,10 @@ export default function SellerClubSection({
           </div>
 
           <div className="flex flex-col justify-center lg:items-start md:items-center items-start lg:col-span-5 lg:order-2 order-1 lg:text-left md:text-center text-left">
-            <h1 className="font-onest font-semibold text-white lg:text-5xl md:text-[44px] text-[32px] md:leading-[60px] leading-10 mb-5">
+            <h1 className="font-['Onest'] font-semibold text-white lg:text-5xl md:text-[44px] text-[32px] md:leading-[60px] leading-10 mb-5">
               {heading}
             </h1>
-            <p className="font-onest font-normal text-white lg:leading-6 leading-6 md:text-base text-xs xl:mb-14 md:mb-10 mb-8">
+            <p className="font-['Onest'] font-normal text-white lg:leading-6 leading-6 md:text-base text-xs xl:mb-14 md:mb-10 mb-8">
               {description}
             </p>
 

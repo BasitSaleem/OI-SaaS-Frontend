@@ -16,7 +16,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
       <div className="flex items-center gap-3 w-full">
         {/* Recent Label */}
         <span
-          className={`text-sm md:text-base font-onest font-semibold w-full ${
+          className={`text-sm md:text-base font-['Onest'] font-semibold w-full ${
             activeTab === "recent" ? "text-[#231F20]" : "text-gray-400"
           }`}
         >
@@ -42,7 +42,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
 
         {/* Popular Label */}
         <span
-          className={`text-sm md:text-base font-onest font-semibold w-full ${
+          className={`text-sm md:text-base font-['Onest'] font-semibold w-full ${
             activeTab === "popular" ? "text-[#231F20]" : "text-gray-400"
           }`}
         >
@@ -59,7 +59,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
       <button
         onClick={() => onTabChange("recent")}
         className={`tab-btn px-4 py-2 md:px-5 md:py-2 lg:px-[30px] lg:py-[10px] 
-          text-[10px] md:text-xs lg:text-base font-onest font-semibold border rounded-full w-[50%]
+          text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full w-[50%]
           transition-colors duration-300 ${
             activeTab === "recent"
               ? "text-white bg-[#1AD1B9] border-[#1AD1B9]"
@@ -74,7 +74,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
         <button
           onClick={() => onTabChange("popular")}
           className={`tab-btn relative px-4 py-2 md:px-5 md:py-2 lg:px-[30px] lg:py-[10px] 
-            text-[10px] md:text-xs lg:text-base font-onest font-semibold border rounded-full  w-[100%]
+            text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full  w-[100%]
             transition-colors duration-300 ${
               activeTab === "popular"
                 ? "text-white bg-[#1AD1B9] border-[#1AD1B9]"

@@ -33,7 +33,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
     <div className="relative w-full">
       {label && (
         <div className="flex items-center gap-x-1 mb-1">
-          <p className="text-sm text-[#231F20] font-normal font-onest leading-[100%]">
+          <p className="text-sm text-[#231F20] font-normal font-['Onest'] leading-[100%]">
             {label}
           </p>
           {required && variant !== "signup" && <p className="text-redColor">*</p>}
@@ -45,7 +45,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
           value={value}
           onChange={onChange}
           disabled={readOnly}
-          className="w-full px-4 py-[14px] pr-10 rounded-[14px] border border-[#D9D9D9] bg-white appearance-none text-[#231F20] placeholder:text-[#9A9A9A] font-onest"
+          className="w-full px-4 py-[14px] pr-10 rounded-[14px] border border-[#D9D9D9] bg-white appearance-none text-[#231F20] placeholder:text-[#9A9A9A] font-['Onest']"
         >
           <option value="" disabled>
             {placeholder}

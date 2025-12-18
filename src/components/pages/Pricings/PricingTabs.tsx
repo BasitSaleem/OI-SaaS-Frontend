@@ -18,7 +18,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
       <div className="flex items-center gap-3">
         {/* Monthly Label */}
         <span
-          className={`text-sm md:text-base font-onest font-semibold ${activeTab === "monthly" ? "text-[#231F20]" : "text-gray-400"
+          className={`text-sm md:text-base font-['Onest'] font-semibold ${activeTab === "monthly" ? "text-[#231F20]" : "text-gray-400"
             }`}
         >
           Monthly
@@ -40,7 +40,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
 
         {/* Yearly Label */}
         <span
-          className={`text-sm md:text-base font-onest font-semibold ${activeTab === "yearly" ? "text-[#231F20]" : "text-gray-400"
+          className={`text-sm md:text-base font-['Onest'] font-semibold ${activeTab === "yearly" ? "text-[#231F20]" : "text-gray-400"
             }`}
         >
           Yearly
@@ -56,7 +56,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
       <button
         onClick={() => onTabChange("monthly")}
         className={`tab-btn px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-[14px] 
-          text-[10px] md:text-xs lg:text-base font-onest font-semibold border rounded-full 
+          text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full 
           transition-colors duration-300 ${activeTab === "monthly"
             ? "text-white bg-[#795CF5] border-[#795CF5]"
             : "text-[#231F20] bg-transparent border-transparent hover:text-white hover:bg-[#795CF5] hover:border-[#795CF5]"
@@ -70,7 +70,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         <button
           onClick={() => onTabChange("yearly")}
           className={`tab-btn relative px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-[14px] 
-            text-[10px] md:text-xs lg:text-base font-onest font-semibold border rounded-full 
+            text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full 
             transition-colors duration-300 ${activeTab === "yearly"
               ? "text-white bg-[#795CF5] border-[#795CF5]"
               : "text-[#231F20] bg-transparent border-transparent hover:text-white hover:bg-[#795CF5] hover:border-[#795CF5]"
@@ -79,7 +79,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
           Yearly
         </button>
 
-        <span className="px-5 py-2 text-white font-onest font-semibold text-xs lg:text-sm bg-[#1AD1B9] whitespace-nowrap absolute right-0 lg:-right-10 -top-12 lg:-top-14 rounded-full z-30">
+        <span className="px-5 py-2 text-white font-['Onest'] font-semibold text-xs lg:text-sm bg-[#1AD1B9] whitespace-nowrap absolute right-0 lg:-right-10 -top-12 lg:-top-14 rounded-full z-30">
           10% Off
         </span>
 

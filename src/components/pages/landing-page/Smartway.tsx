@@ -198,7 +198,7 @@ export default function PosIconsSection() {
           </MainHeading>
 
            <p
-              className="font-onest font-normal text-[var(--white-color)] xl:text-xl lg:text-lg text-base xl:leading-9 lg:leading-7 md:leading-6 leading-5 flex items-center justify-center gap-2"
+              className="font-['Onest'] font-normal text-[var(--white-color)] xl:text-xl lg:text-lg text-base xl:leading-9 lg:leading-7 md:leading-6 leading-5 flex items-center justify-center gap-2"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -232,7 +232,7 @@ export default function PosIconsSection() {
             </a>
 
             {/* <p
-              className="text-sm font-medium leading-5 font-onest text-[var(--white-color)] flex items-center justify-center gap-2"
+              className="text-sm font-medium leading-5 font-['Onest'] text-[var(--white-color)] flex items-center justify-center gap-2"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >

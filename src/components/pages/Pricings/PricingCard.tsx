@@ -12,11 +12,11 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly = false }) => 
 
   return (
     <div className="flex flex-col items-center justify-start p-8 bg-white rounded-[30px] w-[310px] lg:w-[310px] snap-start flex-shrink-0">
-      <h3 className="text-[28px] text-[#231F20] font-semibold leading-[100%] text-center mb-3 font-onest">
+      <h3 className="text-[28px] text-[#231F20] font-semibold leading-[100%] text-center mb-3 font-['Onest']">
         {plan.name}
       </h3>
       <h2 
-        className="lg:text-4xl md:text-[32px] text-[28px] font-semibold leading-[100%] text-center mb-3 font-onest"
+        className="lg:text-4xl md:text-[32px] text-[28px] font-semibold leading-[100%] text-center mb-3 font-['Onest']"
         style={{ color: plan.color }}
       >
          {plan.price === 0 ? "Free" : `${priceText}`}<span className="text-xs">{plan.price === 0 ? "" : `/month`}</span>
@@ -24,7 +24,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly = false }) => 
      
       <a
         href="#"
-        className="inline-block px-6 md:px-10 lg:px-[75px] py-3 md:py-2.5 text-xs lg:text-base leading-none font-semibold text-white whitespace-nowrap border border-transparent hover:bg-transparent rounded-full font-onest mb-8 transition-all"
+        className="inline-block px-6 md:px-10 lg:px-[75px] py-3 md:py-2.5 text-xs lg:text-base leading-none font-semibold text-white whitespace-nowrap border border-transparent hover:bg-transparent rounded-full font-['Onest'] mb-8 transition-all"
         style={{ 
           backgroundColor: plan.color,
           '--hover-border-color': plan.color,
@@ -50,7 +50,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly = false }) => 
         {plan.features.map((feature, index) => (
           <li 
             key={index}
-            className="text-xs sm:text-base leading-9 font-normal font-onest text-[#231F20] whitespace-nowrap"
+            className="text-xs sm:text-base leading-9 font-normal font-['Onest'] text-[#231F20] whitespace-nowrap"
           >
             {feature}
           </li>

@@ -128,20 +128,20 @@ const PrivacyPolicyPage = () => {
 
       <section className="mt-20 md:mt-28 lg:mt-40">
         <div className="wrapper">
-          <h3 className="text-center text-4xl md:text-[40px] lg:text-5xl xl:text-[64px] leading-[48px] lg:leading-[60px] xl:leading-[76px] mb-5 lg:mb-6 xl:mb-10 font-onest font-semibold text-[#231F20]">
+          <h3 className="text-center text-4xl md:text-[40px] lg:text-5xl xl:text-[64px] leading-[48px] lg:leading-[60px] xl:leading-[76px] mb-5 lg:mb-6 xl:mb-10 font-['Onest'] font-semibold text-[#231F20]">
             Privacy Policy
           </h3>
 
           <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
             {privacyPolicyData.map((section, index) => (
               <div key={index} className="flex flex-col">
-                <h4 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-onest mb-4">
+                <h4 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-['Onest'] mb-4">
                   {section.title}
                 </h4>
                 {section.content.map((para, idx) => (
                   <p
                     key={idx}
-                    className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-onest font-normal text-[#231F20]"
+                    className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20]"
                   >
                     {para}
                   </p>

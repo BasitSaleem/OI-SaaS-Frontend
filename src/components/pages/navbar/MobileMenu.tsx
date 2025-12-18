@@ -92,7 +92,7 @@ const[searchQuery,setSearchQuery]=useState('')
   }, [open, onClose]);
 
   const navButton =
-    "menu-btn flex items-center justify-between w-full px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] rounded-full font-onest hover:bg-gray-100 hover:border-[#795CF5]";
+    "menu-btn flex items-center justify-between w-full px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] rounded-full font-['Onest'] hover:bg-gray-100 hover:border-[#795CF5]";
   const listItem = "relative mb-0";
 
   const panelData: any = {
@@ -271,7 +271,7 @@ const[searchQuery,setSearchQuery]=useState('')
             <li className={listItem}>
               <Link
                 href="/pricing"
-                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] hover:bg-gray-100 hover:border-[#795CF5] active:bg-gray-100 active:border-[#795CF5] rounded-full font-onest"
+                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] hover:bg-gray-100 hover:border-[#795CF5] active:bg-gray-100 active:border-[#795CF5] rounded-full font-['Onest']"
               >
                 Pricing
               </Link>
