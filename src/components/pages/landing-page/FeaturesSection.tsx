@@ -176,7 +176,7 @@ export default function FeaturesTabSection() {
        <div className="absolute  top-[-150px] right-[-0px] z-[300] ">
             <div className="bg-[var(--primary-purple)] h-[300px] w-[300px] blur-[300px] rounded-full"></div>
        </div>
-      <div className="wrapper">
+      <div className="wrapper relative z-[400]">
         <MainHeading className="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-20 md:mb-[60px] mb-10">
           Powerful Features Built for Growing Businesses
         </MainHeading>

@@ -198,7 +198,7 @@ const  posFaqs = [
     id: 2,
     question: "Does the POS support multi-location inventory?",
     answer:
-      "Yes. It coordinates the stock between several stores or warehouses, monitors the amount of stock in stock in real-time, and minimizes the difference, so operations go smoothly at all stations.",
+      "Yes. It coordinates the stock between several stores or warehouses, monitors the amount of stock in real-time, and minimizes the difference, so operations go smoothly at all stations.",
   },
   {
     id: 3,
@@ -264,7 +264,11 @@ const page = () => {
       />
 
       {/* 🔥 Custom layout + cards */}
-      <TrustedBySection heading="Trusted by Leading Brands" />
+      <TrustedBySection 
+      heading="Trusted by Leading Brands" 
+      paragraph="Owners Inventory POS empowers businesses to simplify billing, automate inventory, and grow 
+across multiple locations."
+      />
       <KeyHighlights
         heading="Power-Packed Features at Your Fingertips"
         features={FeaturesCards}
