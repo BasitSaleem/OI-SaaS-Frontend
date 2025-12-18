@@ -56,7 +56,7 @@ const SmartTools: React.FC<SmartTools> = ({
           />
         </div>
 
-        <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto md:mt-[-88px] lg:mt-[-162px]">
+        <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto">
           {/* <Image
             src="/assets/home-page-images/smart-tools.webp"
             alt="Chaos Image"
@@ -74,14 +74,14 @@ const SmartTools: React.FC<SmartTools> = ({
             preload="auto"
             controls={false}
           >
-            <source
+            {/* <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
               type="video/mp4"
             />
             <source
               src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"
               type="video/webm"
-            />
+            /> */}
           </video>
         </div>
       </div>

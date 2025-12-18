@@ -62,7 +62,7 @@ const NavDropdown = ({ label,
         //           0px]
         // `}
         className={`
-          dropdown-menu absolute lg:top-10 top-8 left-1/2 z-50 hidden   transform -translate-x-1/2  group-hover:flex flex-col h-[55
+          dropdown-menu absolute lg:top-10 top-8 left-1/2 z-50 hidden   transform -translate-x-1/2 lg:min-w-[650px] xl:min-w-[800px]  group-hover:flex flex-col h-[55
                   0px]
         `}
       >
