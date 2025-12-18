@@ -96,7 +96,7 @@ export default function InsightsSection() {
                     </div>
 
                     <div className="card-paragraph-wrapper text-left mb-2">
-                      <CardDesc className="card-paragraph xl:text-lg leading-[28px] min-h-[30px] flex items-start ">
+                      <CardDesc className=" min-h-[30px] flex items-start ">
                         {blog.blogOverview.slice(0, 200)}
                         {blog.blogOverview.length > 200 ? "..." : ""}
                       </CardDesc>

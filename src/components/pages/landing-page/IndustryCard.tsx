@@ -56,7 +56,11 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
       <div className="relative w-full h-full p-8 flex flex-col justify-between z-10">
         <div className="flex-1 flex flex-col">
           <h3
-            className={`text-[32px] font-medium font-['Onest'] leading-[1.2] transition-colors duration-300 ${titleColor}`}
+            className={`lg:text-[32px] md:text-2xl text-xl font-medium font-['Onest'] lg:leading-[130%] md:leading-[135%] leading-[140%] transition-colors ${
+              shouldShowDescription
+                ? "font-semibold"
+                : "font-medium"
+            } duration-300 ${titleColor}`}
           >
             {title}
           </h3>
@@ -73,7 +77,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
           >
             <div className="flex md:flex-row flex-col gap-6">
               {description && (
-                <div className="md:flex-1 text-[#666666] text-[16px] font-['Onest'] leading-[1.6]">
+                <div className="md:flex-1 text-[#666666] text-[16px] font-['Onest'] leading-6">
                   {description}
                 </div>
               )}

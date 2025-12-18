@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import MainHeading from "../../typography/MainHeading";
 import Paragraph from "../../typography/Paragraph";
+import CardHeading from "../../typography/CardHeading";
 
 interface CardItem {
   icon: string | StaticImageData;
@@ -56,10 +57,10 @@ export default function WhyChoosePOS({
                     />
                   </div>
                   <div className="flex flex-col items-start justify-baseline xl:gap-4 gap-2 flex-1">
-                    <h4 className="xl:text-2xl sm:text-xl text-base font-semibold text-[var(--text-dark)] font-['Onest'] leading-tight">
+                    <CardHeading className="">
                       {card.title}
-                    </h4>
-                    <p className="xl:text-base text-sm leading-6 font-normal font-['Onest'] text-[var(--text-grey)]">
+                    </CardHeading>
+                    <p className="text-base leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
                       {card.description}
                     </p>
                   </div>
