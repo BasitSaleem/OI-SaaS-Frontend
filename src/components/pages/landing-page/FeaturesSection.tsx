@@ -237,7 +237,7 @@ export default function FeaturesTabSection() {
                       className={`font-['Onest'] ${
                         isActive
                           ? "text-(--primary-purple) font-semibold text-lg lg:text-2xl"
-                          : "text-(--white-color) text-sm  lg:text-xl"
+                          : "text-(--white-color) text-base  lg:text-xl"
                       }`}
                     >
                       {feature.title}
