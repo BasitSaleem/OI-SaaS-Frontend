@@ -75,11 +75,11 @@ const Footer: React.FC = () => {
         <div className="w-full h-[1px] bg-[var(--text-dark)] rounded-full" />
 
         {/* Bottom Row */}
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
-          <p className="text-xs lg:text-base font-normal text-[var(--text-dark)]">
+        <div className="flex flex-col md:flex-row items-center  justify-between w-full">
+          <p className="text-xs lg:text-base font-normal font-onest text-[var(--text-dark)]">
             ©2025 Owners Inventory - All rights reserved
           </p>
-          <p className="text-xs lg:text-base font-normal text-[var(--text-dark)]">
+          <p className="text-xs lg:text-base font-normal fon-onest text-[var(--text-dark)]">
             A product of{" "}
             <Link href="#" className="font-semibold underline cursor-pointer">
               Owners Universe
