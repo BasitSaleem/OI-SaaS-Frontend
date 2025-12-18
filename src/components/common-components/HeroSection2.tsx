@@ -205,11 +205,11 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
             >
               {/* Heading */}
               <div className="owner-inventory-hero__content flex flex-col items-center justify-center w-full">
-                {/* <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-onest font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[var(--text-dark)]">
+                {/* <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[var(--text-dark)]">
                 {title}
               </h1> */}
                 <div ref={mainHeadingRef}>
-                  <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-onest xl:max-w-5xl lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
+                  <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest'] xl:max-w-5xl lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
                     {title}
                   </h1>
                 </div>
@@ -359,7 +359,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={fastServiceDescRef}
                     className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute top-[200px] left-0 2xl:top-[120px] 2xl:left-0"
                   >
-                    <p className="text-base leading-5 font-medium font-onest text-[#581C87]">
+                    <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
                       Fast Service
                     </p>
                   </div>
@@ -376,7 +376,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={safeSecureDescRef}
                     className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute bottom-10 -right-2.5 xl:bottom-[250px] 2xl:bottom-[200px] 2xl:right-0"
                   >
-                    <p className="text-base leading-5 font-medium font-onest text-[#581C87]">
+                    <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
                       Safe & Secure
                     </p>
                   </div>
@@ -415,7 +415,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     className="hidden lg:flex flex-col w-full max-w-[300px] xl:max-w-[400px] 2xl:max-w-[480px] p-4 absolute bottom-0  -z-20"
                   >
                     <div ref={totalGrowthHeadingRef}>
-                      <p className="text-[#2E263DE5] font-onest font-semibold text-5xl leading-[53px]">42.5k</p>
+                      <p className="text-[#2E263DE5] font-['Onest'] font-semibold text-5xl leading-[53px]">42.5k</p>
                     </div>
                     <Image
                       src="/assets/home-page-images/total-growth.svg"
@@ -427,7 +427,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                       className="w-full "
                     />
                     <div ref={totalGrowthDescRef}>
-                      <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-onest">
+                      <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-['Onest']">
                         Total Growth
                       </p>
                     </div>

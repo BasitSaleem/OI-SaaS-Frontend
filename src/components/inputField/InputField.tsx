@@ -29,7 +29,7 @@ const InputField: React.FC<InputFieldProps> = ({
         <div>
             {label && (
                 <div className="flex items-center gap-x-1">
-                    <p className="text-sm text-[#231F20] font-normal font-onest leading-[100%] mb-1">{label}</p>
+                    <p className="text-sm text-[#231F20] font-normal font-['Onest'] leading-[100%] mb-1">{label}</p>
                     {required && variant !== "signup" && <p className="text-redColor">*</p>}
                 </div>
             )}

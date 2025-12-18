@@ -234,7 +234,7 @@ export default function FeaturesTabSection() {
                     </div>
 
                     <span
-                      className={`font-onest ${
+                      className={`font-['Onest'] ${
                         isActive
                           ? "text-(--primary-purple) font-semibold text-lg lg:text-2xl"
                           : "text-(--white-color) text-sm  lg:text-xl"

@@ -88,7 +88,7 @@ export default function FaqSection({
                   onClick={() => toggle(index)}
                 >
                   <span
-                    className={`w-full max-w-[90%] text-base md:text-lg leading-[170%] md:leading-[170%] font-onest font-semibold transition-colors duration-300
+                    className={`w-full max-w-[90%] text-base md:text-lg leading-[170%] md:leading-[170%] font-['Onest'] font-semibold transition-colors duration-300
                       ${openIndex === index ? "text-(--primary-purple)" : "text-(--text-dark)"}
                     `}
                   >

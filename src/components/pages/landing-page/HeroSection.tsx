@@ -71,12 +71,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           >
             {/* Heading */}
             <div className="owner-inventory-hero__content flex flex-col items-center justify-center w-full">
-              <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-onest font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
+              <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
                  {title}
               </h1>
 
               {description && !showButtons &&(
-                 <p className="font-onest text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-16">
+                 <p className="font-['Onest'] text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-16">
                   {description}
                 </p>
               )}

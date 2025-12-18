@@ -150,7 +150,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
                 className="flex flex-col gap-3 items-center justify-start p-4 [var(--white-color)] border border-[rgba(255,255,255,0.5)] rounded-[30px] shadow-[0_4px_4px_0_rgba(0,0,0,0.13)] backdrop-blur-[22px] text-center"
               >
                 <p
-                  className="lg:text-[42px] lg:leading-[100%] text-[32px] leading-[130%] font-onest text-center text-[var(--text-black)] font-semibold"
+                  className="lg:text-[42px] lg:leading-[100%] text-[32px] leading-[130%] font-['Onest'] text-center text-[var(--text-black)] font-semibold"
                   ref={(el) => {
                     chaosRefs.current[index] = el;
                   }}
@@ -160,10 +160,10 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
                 </p>
 
                 <div className="flex flex-col items-center justify-start">
-                  <h3 className="mb-2 lg:text-[28px] lg:leading-[30px] text-2xl leading-[135%] font-onest font-medium text-[var(--text-dark)] text-center">
+                  <h3 className="mb-2 lg:text-[28px] lg:leading-[30px] text-2xl leading-[135%] font-['Onest'] font-medium text-[var(--text-dark)] text-center">
                     {chaosHead}
                   </h3>
-                  <p className="text-base font-onest leading-[170%] text-[var(--text-grey)] font-normal">
+                  <p className="text-base font-['Onest'] leading-[170%] text-[var(--text-grey)] font-normal">
                     {chaosDesc}
                   </p>
                 </div>

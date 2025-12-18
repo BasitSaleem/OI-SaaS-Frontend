@@ -124,18 +124,18 @@ const FeaturesTestimonials = ({
                         style={{ borderColor: slide.color }}
                       />
                       <div>
-                        <h4 className="font-onest font-semibold text-[#231F20] xl:text-xl text-base">
+                        <h4 className="font-['Onest'] font-semibold text-[#231F20] xl:text-xl text-base">
                           {slide.name}
                         </h4>
                         <p
-                          className="font-onest font-medium xl:text-sm text-xs"
+                          className="font-['Onest'] font-medium xl:text-sm text-xs"
                           style={{ color: slide.color }}
                         >
                           {slide.title}
                         </p>
                       </div>
                     </div>
-                    <p className="font-onest font-normal text-[#231F20] xl:text-sm text-xs xl:leading-6 leading-5 flex-grow">
+                    <p className="font-['Onest'] font-normal text-[#231F20] xl:text-sm text-xs xl:leading-6 leading-5 flex-grow">
                       {slide.text}
                     </p>
                   </div>

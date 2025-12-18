@@ -37,7 +37,7 @@ export default function Button({
     bg-${bgColor}
     text-${textColor}
     flex items-center justify-center gap-2 whitespace-nowrap
-    text-sm md:text-base font-onest font-semibold
+    text-sm md:text-base font-['Onest'] font-semibold
     ${isBorder ? `border border-${bgColor} hover:border-${bgColor}` : ""}
     rounded-full hover:text-${bgColor} hover:bg-transparent
     transition-colors duration-300 cursor-pointer

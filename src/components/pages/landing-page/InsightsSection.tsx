@@ -82,7 +82,7 @@ export default function InsightsSection() {
                     loading="lazy"
                     className="w-full h-72 object-cover rounded-[20px]"
                   />
-                  <span className="absolute inline-block text-[var(--white-color)] bg-[var(--primary-purple)] font-onest text-xs lg:text-sm bottom-4 left-4 lg:bottom-3 lg:left-3 px-2 py-1 rounded-md">
+                  <span className="absolute inline-block text-[var(--white-color)] bg-[var(--primary-purple)] font-['Onest'] text-xs lg:text-sm bottom-4 left-4 lg:bottom-3 lg:left-3 px-2 py-1 rounded-md">
                     2 mins read
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export default function InsightsSection() {
                   </div>
 
                   <div className=" pt-4 border-gray-100 text-left">
-                    <p className="font-onest font-medium text-[#231F20] xl:text-lg lg:text-sm text-sm xl:leading-9 leading-[160%]">
+                    <p className="font-['Onest'] font-medium text-[#231F20] xl:text-lg lg:text-sm text-sm xl:leading-9 leading-[160%]">
                       Posted:{" "}
                       <span className="text-[var(--primary-purple)]">{blog.date}</span>{" "}
                       <span className="text-[#D9D9D9]">|</span> by{" "}
@@ -118,7 +118,7 @@ export default function InsightsSection() {
         </div>
 
         {/* <div className="lg:mt-[100px] md:mt-[60px] mt-10">
-          <button className="bg-[var(--primary-purple)] text-[var(--white-color)] border border-transparent cursor-pointer hover:bg-transparent hover:border-[var(--primary-purple)] hover:text-[var(--primary-purple)] font-onest font-semibold text-base px-[60px] py-5 rounded-full transition">
+          <button className="bg-[var(--primary-purple)] text-[var(--white-color)] border border-transparent cursor-pointer hover:bg-transparent hover:border-[var(--primary-purple)] hover:text-[var(--primary-purple)] font-['Onest'] font-semibold text-base px-[60px] py-5 rounded-full transition">
             Browse Insights
           </button>
         </div> */}

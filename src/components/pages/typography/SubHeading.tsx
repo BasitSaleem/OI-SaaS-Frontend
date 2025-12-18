@@ -11,7 +11,7 @@ const SubHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
     <h2
       className={clsx(
         "font-semibold text-[#231F20]",
-        "font-onest",
+        "font-['Onest']",
         "lg:text-[48px] md:text-[40px] text-[32px]",
         "lg:leading-[48px] leading-[48px]",
         "",

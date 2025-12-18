@@ -73,7 +73,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
           >
             <div className="flex md:flex-row flex-col gap-6">
               {description && (
-                <div className="md:flex-1 text-[#666666] text-[17px] font-['Onest'] leading-[1.6]">
+                <div className="md:flex-1 text-[#666666] text-[16px] font-['Onest'] leading-[1.6]">
                   {description}
                 </div>
               )}

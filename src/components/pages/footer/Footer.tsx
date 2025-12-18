@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
               <li key={index}>
                 <Link
                   href={item.href}
-                  className="text-sm whitespace-nowrap md:text-[10px] lg:text-xs xl:text-sm font-semibold font-onest text-[var(--text-dark)] cursor-pointer"
+                  className="text-sm whitespace-nowrap md:text-[10px] lg:text-xs xl:text-sm font-semibold font-['Onest'] text-[var(--text-dark)] cursor-pointer"
                 >
                   {item.text}
                 </Link>
@@ -76,12 +76,12 @@ const Footer: React.FC = () => {
 
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row items-center  justify-between w-full">
-          <p className="text-xs lg:text-base font-normal font-onest text-[var(--text-dark)]">
+          <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             ©2025 Owners Inventory - All rights reserved
           </p>
           <p className="text-xs lg:text-base font-normal fon-onest text-[var(--text-dark)]">
             A product of{" "}
-            <Link href="#" className="font-semibold underline cursor-pointer">
+            <Link href="#" className="font-semibold font-['Onest'] underline cursor-pointer">
               Owners Universe
             </Link>
           </p>

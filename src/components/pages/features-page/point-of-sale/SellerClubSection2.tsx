@@ -49,7 +49,7 @@ export default function SellerClubSection2({
         <div className="d-flex flex-col justify-between items-center pb-0 lg:pt-[60px] md:pt-[90px] pt-10 lg:px-[60px] md:px-[76px] px-4">
           {/* Text Content */}
           <div className="flex flex-col justify-center lg:items-center md:items-center items-center lg:text-left md:text-center text-left">
-            <p className="font-onest font-normal text-white lg:leading-[48px] leading-6 lg:text-[28px] md:text-xl text-base xl:mb-14 md:mb-10 mb-8 text-center">
+            <p className="font-['Onest'] font-normal text-white lg:leading-[48px] leading-6 lg:text-[28px] md:text-xl text-base xl:mb-14 md:mb-10 mb-8 text-center">
               {description}{" "}
               <span className="lg:block inline">{highlight}</span>
             </p>
