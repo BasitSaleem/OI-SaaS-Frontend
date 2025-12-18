@@ -174,7 +174,7 @@ export default function FeaturesTabSection() {
   return (
     <section className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
        <div className="absolute  top-[-150px] right-[-0px] z-[300] ">
-            <div className="bg-[var(--primary-purple)] h-[300px] w-[300px] blur-[200px] rounded-full"></div>
+            <div className="bg-[var(--primary-purple)] h-[300px] w-[300px] blur-[300px] rounded-full"></div>
        </div>
       <div className="wrapper">
         <MainHeading className="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-20 md:mb-[60px] mb-10">
