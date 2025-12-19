@@ -32,7 +32,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
       : "w-full"; 
   return (
     <div id="searchDropdown" className={wrapperClasses}>
-      <div className={`${variant === "navbar" ? "py-4 px-7" : "py-4 px-0 md:px-7"} relative`}>
+      <div className={`${variant === "navbar" ? "py-4 px-7" : "py-4 px-0 lg:px-7"} relative`}>
         <form action="/search" method="GET">
           <input
             ref={inputRef}
@@ -43,7 +43,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button type="submit" className="absolute top-6  rounded-full sm:top-[40%] p-2 right-2   sm:right-4 md:right-12 bg-white">
+          <button type="submit" className="absolute top-1/2 transform -translate-y-1/2 rounded-full p-2 right-2 lg:right-12 bg-white">
             <Image
               src="/assets/header-images/search-icon.svg"
               alt="Search"

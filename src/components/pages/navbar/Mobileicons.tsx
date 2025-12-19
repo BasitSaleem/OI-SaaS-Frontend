@@ -29,7 +29,7 @@ const Mobileicons = () => {
         <img
           src="/assets/header-images/burger-icon.svg"
           alt="Menu"
-          className={`w-4.5 h-4 me-4 md:me-5 ${openMobileMenu ? 'hidden' : ''}`}
+          className={`w-5.5 h-5 me-4 md:me-5 ${openMobileMenu ? 'hidden' : ''}`}
         />
         <img
           src="/assets/header-images/cross-icon.png"

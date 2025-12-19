@@ -11,6 +11,8 @@ const features = [
     icon: "/assets/features-section/pos-system.svg",
     // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm",
     // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.mp4",
+    iconWidth: 20,
+    iconHeight: 20,
   },
   {
     id: "inventory-ecommerce",
@@ -18,6 +20,8 @@ const features = [
     icon: "/assets/features-section/cart-icon.svg",
     // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.webm",
     // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.mp4",
+    iconWidth: 18,
+    iconHeight: 14,
   },
   {
     id: "inventory-management",
@@ -25,7 +29,9 @@ const features = [
     icon: "/assets/features-section/inventory-management.svg",
     // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.webm",
     // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.mp4",
-    mediaClass: "scale-[1.1]"
+    mediaClass: "scale-[1.1]",
+    iconWidth: 16,
+    iconHeight: 14,
   },
   {
     id: "inventory-autosync",
@@ -33,6 +39,8 @@ const features = [
     icon: "/assets/features-section/autosync.svg",
     // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.webm",
     // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.mp4",
+    iconWidth: 18,
+    iconHeight: 18,
     
   },
 ];
@@ -226,11 +234,15 @@ export default function FeaturesTabSection() {
                     onClick={() => handleTabClick(feature.id)}
                   >
                     <div
-                      className={`w-10 p-2.5 rounded-full flex items-center justify-center ${
+                      className={` w-full max-w-11 h-11 m rounded-full flex items-center justify-center ${
                         isActive ? "bg-(--primary-purple)" : "bg-[rgba(243,244,246,0.1)]"
                       }`}
                     >
-                      <Image src={feature.icon} alt="" width={20} height={20} />
+                      <Image src={feature.icon} 
+                      alt="icon-name"
+                      width={feature.iconWidth} 
+                      height={feature.iconHeight} 
+                      className="w-6 h-6 md:w-auto md:h-auto" />
                     </div>
 
                     <span

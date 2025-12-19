@@ -22,6 +22,6 @@ export const companyItems: CompanyItem[] = [
   },
   {
     title: 'Partner Program',
-    icon: '/assets/header-dropdown-images/company-dropdown/testimonial.svg', // You may want to double-check this — the icon is reused from "Testimonials"
+    icon: '/assets/header-dropdown-images/company-dropdown/testimonial.svg', 
   },
 ];
