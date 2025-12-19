@@ -194,13 +194,13 @@ export default function UnifiedPlatform() {
                   key={index}
                   className="w-full max-w-[342px] md:max-w-full p-6 lg:p-8 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
                 >
-                  <div className="w-20 h-20 lg:w-[100px] lg:h-[100px] flex items-center justify-center mb-5 lg:mb-10 rounded-xl bg-[#F3F4F6]">
+                  <div className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex items-center justify-center mb-5 lg:mb-10 rounded-xl bg-[#F3F4F6]">
                     <Image
                       src={card.icon}
                       alt={`${card.title} Icon`}
                       width={56}
                       height={56}
-                      className="w-14 h-14"
+                      className="h-9 w-9 lg:w-14 lg:h-14"
                     />
                   </div>
                   <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-semibold text-[var(--text-dark)]">

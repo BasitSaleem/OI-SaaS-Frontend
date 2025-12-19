@@ -184,7 +184,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               {/* Quote Section */}
               <div className="md:col-span-6 lg:col-span-5 xl:col-span-4">
                 <div className="relative ">
-                  <div className="flex items-center gap-x-6">
+                  <div className="flex items-start lg:items-center gap-x-6">
                     <Image
                       src="/assets/home-page-images/blue-checker.svg"
                       alt="arrow-right"

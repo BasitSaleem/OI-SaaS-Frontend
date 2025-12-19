@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
           <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             ©2025 Owners Inventory - All rights reserved
           </p>
-          <p className="text-xs lg:text-base font-normal fon-onest text-[var(--text-dark)]">
+          <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             A product of{" "}
             <Link href="#" className="font-semibold font-['Onest'] underline cursor-pointer">
               Owners Universe

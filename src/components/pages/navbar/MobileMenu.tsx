@@ -111,7 +111,9 @@ const[searchQuery,setSearchQuery]=useState('')
       links: resourcesItems,
       children: resourcesDetailsMap,
     },
-    company: { title: "company", links: companyItems },
+    company: { 
+      title: "company", 
+      links: companyItems },
     profile: {
       title: "Profile",
       links: [
@@ -191,7 +193,7 @@ const[searchQuery,setSearchQuery]=useState('')
             </button>
           </div> */}
           
-<SearchField searchOpen={true} searchQuery={searchQuery} setSearchQuery={setSearchQuery} variant="page" />
+  <SearchField searchOpen={true} searchQuery={searchQuery} setSearchQuery={setSearchQuery} variant="page" />
           {/* Dynamic back button */}
           <button
             id="dynamic-back-btn"

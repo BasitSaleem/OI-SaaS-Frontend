@@ -129,7 +129,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
         className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[#F3F4F6] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-[42px]`}
         style={{
           backgroundImage: `
-    linear-gradient(180deg, #FFFFFF 33%, transparent 60%),
+    linear-gradient(180deg, #FFFFFF 20%, transparent 60%),
     linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%, rgba(207, 181, 249, 1) 50%, rgba(158, 2, 255, 0.3) 80%)
   `,
         }}
