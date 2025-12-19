@@ -17,7 +17,7 @@ const features = [
   {
     id: "inventory-ecommerce",
     title: "Built-in E-commerce - Fully Synced and Ready to Sell",
-    icon: "/assets/features-section/cart-icon.svg",
+    icon: "/assets/features-section/cart-icons.svg",
     // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.webm",
     // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.mp4",
     iconWidth: 18,

@@ -16,7 +16,7 @@ const Mobileicons = () => {
         href="#"
         className="px-4 py-2 text-sm font-bold text-white bg-[#231F20] rounded-full whitespace-nowrap"
       >
-        Start for free
+        Start for Free
       </a>
 
       <button
