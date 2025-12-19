@@ -58,7 +58,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
           <h3
             className={`lg:text-[32px] md:text-2xl text-xl font-medium font-['Onest'] lg:leading-[130%] md:leading-[135%] leading-[140%] transition-colors ${
               shouldShowDescription
-                ? "font-semibold"
+                ? "font-medium md:font-semibold"
                 : "font-medium"
             } duration-300 ${titleColor}`}
           >
@@ -77,7 +77,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
           >
             <div className="flex md:flex-row flex-col gap-6">
               {description && (
-                <div className="md:flex-1 text-[#666666] text-[16px] font-['Onest'] leading-6">
+                <div className="md:flex-1 text-[#666666] font-normal text-base font-['Onest'] leading-6">
                   {description}
                 </div>
               )}

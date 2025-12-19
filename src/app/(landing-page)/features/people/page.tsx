@@ -84,7 +84,7 @@ const FeaturesCards = [
     description:
       "Easily coordinate your business contacts with just a single dashboard. Add, edit or delete old records in a few clicks, which is important to maintain a clean database and stay updated.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
+      "/assets/features-page/people-page/features-section/user-contact-management.webp",
   },
   {
     id: 2,
@@ -92,7 +92,7 @@ const FeaturesCards = [
     description:
       "Search and filter any user, customer, or supplier in real time. Filter results by name, role, or category to find information faster.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/smart-record-view.webp",
+      "/assets/features-page/people-page/features-section/smart-search-filter.webp",
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ const FeaturesCards = [
     description:
       "Access who is allowed to read, edit or manipulate certain data on your system. Grant role permissions to ensure data safety and accountability.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/manage-sales-doc.webp",
+      "/assets/features-page/people-page/features-section/role-based-permision.webp",
   },
   {
     id: 4,
@@ -108,7 +108,7 @@ const FeaturesCards = [
     description:
       "Secure confidential data with password-recovery and high-level authentication. Provide secure access to all users without disrupting convenience.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/export-data.webp",
+      "/assets/features-page/people-page/features-section/secure-login-password.webp",
   },
   {
     id: 5,
@@ -116,7 +116,7 @@ const FeaturesCards = [
     description:
       "Keep track of all the changes that occur in the system using detailed activity logs. Edits, deletion and amendments of tracks to guarantee complete visibility and transparency.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/order-stage.webp",
+      "/assets/features-page/people-page/features-section/activity-logs.webp",
   },
   {
     id: 6,
@@ -124,7 +124,7 @@ const FeaturesCards = [
     description:
       "Save time by importing or exporting large datasets in Excel or PDF format. Share data, reporting as well as system migration easily.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/quick-action-button.webp",
+      "/assets/features-page/people-page/features-section/bulk-imports.webp",
   },
   {
     id: 7,
@@ -132,7 +132,7 @@ const FeaturesCards = [
     description:
       "Link your people data to sales purchase and reporting systems. Single integration improves accuracy, time-saving and alignment of operations.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/export-data.webp",
+      "/assets/features-page/people-page/features-section/integrated-module.webp",
   },
   {
     id: 8,
@@ -140,7 +140,7 @@ const FeaturesCards = [
     description:
       "The group users, customers and suppliers can be better organized and categorized into structured categories. Generate customer type or supplier groups to simplify reporting and management.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/order-stage.webp",
+      "/assets/features-page/people-page/features-section/categorization-and-segmentation.webp",
   },
   {
     id: 9,
@@ -148,7 +148,7 @@ const FeaturesCards = [
     description:
       "See all transactions connected to the user, customer or supplier in one location. Check purchase history and payment records to come up with the right decisions.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/quick-action-button.webp",
+      "/assets/features-page/people-page/features-section/transaction-history.webp",
   },
   {
     id: 10,
@@ -156,7 +156,7 @@ const FeaturesCards = [
     description:
       "Easily keep track of the pending payments and performance trends. Get connected insights that enhance financial control and build relationships.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/order-stage.webp",
+      "/assets/features-page/people-page/features-section/performance-tracking.webp",
   },
   {
     id: 11,
@@ -164,7 +164,7 @@ const FeaturesCards = [
     description:
       "Switch between records and modules with a clean, modern interface. Control your people, customers, and suppliers more quickly and effectively than ever before.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/quick-action-button.webp",
+      "/assets/features-page/people-page/features-section/single-interface.webp",
   },
 ];
 
@@ -292,8 +292,7 @@ const page = () => {
       />
 
       <WhyChoosePOS
-        heading="Revolutionize Sales with Our Smarter POS"
-        paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
+        heading="Why Choose Us"
         cards={[
           {
             icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
