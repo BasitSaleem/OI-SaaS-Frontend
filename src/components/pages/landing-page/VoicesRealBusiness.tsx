@@ -25,13 +25,8 @@ const otherBrands = [
 const VoicesRealBusiness = () => {
   return (
     <section
-      className="mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px]"
-      style={{
-        backgroundImage: `
-    linear-gradient(180deg, #F3F4F6 0%, transparent 0%),
-    linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%,  rgba(158, 2, 255, 0.2) 100%)
-  `,
-      }}
+      className="mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px] real-voices bg-cover bg-no-repeat"
+      
     >
       <div className="wrapper text-center">
         <MainHeading className="xl:mb-12 lg:mb-6 mb-5">

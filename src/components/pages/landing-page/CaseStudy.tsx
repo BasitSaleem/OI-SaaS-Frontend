@@ -73,7 +73,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
 
   return (
     <div className="wrapper">
-      <div className="max-w-7xl mx-auto">
         <div className="flex justify-between gap-x-3 items-end mb-6 lg:mb-[50px]">
           <MainHeading className="w-full max-w-full md:max-w-[65%] lg:max-w-[60%] gradient-text">
             Businesses Thriving with Owners Inventory
@@ -287,6 +286,5 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
           ))}
         </div>
       </div>
-    </div>
   );
 }
