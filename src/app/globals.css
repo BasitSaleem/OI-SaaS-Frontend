@@ -93,6 +93,11 @@ html, body {
 
 /* Wrapper for complete website styling ended here */
 
+.real-voices{
+   background-image: url(../../public/assets/home-page-images/voices-sectionbg.webp);
+}
+
+
 .gradient-text {
   background: linear-gradient(90deg, #231F20 0%, #8A8A8A 100%);
   -webkit-background-clip: text;
@@ -101,6 +106,7 @@ html, body {
   background-clip: text;
   color: transparent;
 }
+
 
 
 
