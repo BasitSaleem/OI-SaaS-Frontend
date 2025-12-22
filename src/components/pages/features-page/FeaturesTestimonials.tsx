@@ -30,11 +30,11 @@ const defaultTestimonials = [
     name: "Fatima A.",
     title: "Boutique Owner",
     image: "/assets/pfp.avif",
-    text: `"Before Owners Inventory, I had to switch between spreadsheets, my POS app, and an online
+    text: `Before Owners Inventory, I had to switch between spreadsheets, my POS app, and an online
     store backend just to track what I was selling. I constantly oversold items or ran out of
     stock without realizing. Now everything is synced, my stock levels, sales
     reports, customer data, even my online store runs from the same system. I have time to focus
-    on styling my store, not fixing my backend."`,
+    on styling my store, not fixing my backend.`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -42,7 +42,7 @@ const defaultTestimonials = [
     name: "Hassan Malik",
     title: "Fashion & Apparel Seller",
     image: "/assets/pfp.avif",
-    text: `"I run a small bakery from home, and I thought inventory tools were just for big stores. But Owners Inventory helps me track ingredients, handle custom orders, and even take online payments through my synced storefront. It feels like I have a full back office — without hiring anyone."`,
+    text: `I run a small bakery from home, and I thought inventory tools were just for big stores. But Owners Inventory helps me track ingredients, handle custom orders, and even take online payments through my synced storefront. It feels like I have a full back office — without hiring anyone.`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
@@ -50,10 +50,10 @@ const defaultTestimonials = [
     name: "David Martinez",
     title: "HOD Supply Chain, PureSip Beverages",
     image: "/assets/100.jpeg",
-    text: `"As a beverage company managing retail, wholesale, and DTC channels, stock coordination was our biggest pain. Owners Inventory brought everything into one place — real-time tracking,
+    text: `As a beverage company managing retail, wholesale, and DTC channels, stock coordination was our biggest pain. Owners Inventory brought everything into one place — real-time tracking,
     automated reordering, mobile sales integration. We cut out-of-stocks
     by over 60% and reduced fulfillment lead time dramatically. It's agile, scalable, and
-    surprisingly easy to roll out across departments."`,
+    surprisingly easy to roll out across departments.`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -61,7 +61,7 @@ const defaultTestimonials = [
     name: "Ali R.",
     title: "Electronics Shop Manager",
     image: "/assets/100.jpeg",
-    text: `"I'm not a tech expert, and my staff definitely isn't. What I love about Owners Inventory is that it's super intuitive. My staff handles billing and stock without needing constant help, and I get all the reports I need to make smart decisions. It's simple where it needs to be — and powerful where it matters."`,
+    text: `I'm not a tech expert, and my staff definitely isn't. What I love about Owners Inventory is that it's super intuitive. My staff handles billing and stock without needing constant help, and I get all the reports I need to make smart decisions. It's simple where it needs to be — and powerful where it matters.`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
@@ -135,9 +135,9 @@ const FeaturesTestimonials = ({
                         </p>
                       </div>
                     </div>
-                    <Paragraph className="flex-grow">
+                    <p className="flex-grow font-normal text-[var(--text-dark)] lg:text-xl md:text-base text-base font-['Onest'] lg:leading-9 md:leading-6 leading-[170%]">
                       {slide.text}
-                    </Paragraph>
+                    </p>
                   </div>
                 </div>
               )}

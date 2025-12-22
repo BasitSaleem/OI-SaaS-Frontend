@@ -127,7 +127,7 @@ const IndustryPosShowcase = ({
             {mainHeading}
           </SubHeading>
           <Paragraph className="">{paragraph}</Paragraph>
-          <button className="mt-6 bg-[#7B61FF] text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-['Onest']">
+          <button className="mt-6 bg-[#7B61FF] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-['Onest']">
             {buttonText}
           </button>
         </div>

@@ -85,7 +85,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
         <div className="md:mt-7 mt-5 flex items-center justify-center">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="text-lg leading-[100%] font-medium font-['Onest'] text-[var(--text-grey)] flex gap-1 items-center justify-center cursor-pointer"
+            className="text-sm md:text-base leading-[100%] font-medium font-['Onest'] text-[var(--text-grey)] flex gap-1 items-center justify-center cursor-pointer"
           >
             {showAll ? "See Less" : "See All"}
             <span className={`transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`}>
