@@ -9,7 +9,8 @@ const features = [
     id: "inventorypos-system",
     title: "Smart POS System for Modern Retail",
     icon: "/assets/features-section/pos-system.svg",
-    videoSrc: "/assets/Posvideo.mp4",
+    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm",
+    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.mp4",
     iconWidth: 20,
     iconHeight: 20,
   },
@@ -17,7 +18,8 @@ const features = [
     id: "inventory-ecommerce",
     title: "Built-in E-commerce - Fully Synced and Ready to Sell",
     icon: "/assets/features-section/cart-icons.svg",
-    videoSrc: "/assets/Manual.mp4",
+    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.webm",
+    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.mp4",
     iconWidth: 18,
     iconHeight: 14,
   },
@@ -25,7 +27,8 @@ const features = [
     id: "inventory-management",
     title: "Inventory Management to Stay in Control of Every Product",
     icon: "/assets/features-section/inventory-management.svg",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-management.webm",
+    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.webm",
+    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.mp4",
     mediaClass: "scale-[1.1]",
     iconWidth: 16,
     iconHeight: 14,
@@ -34,7 +37,8 @@ const features = [
     id: "inventory-autosync",
     title: "Streamline Manufacturing + Stay in Control of Every Process",
     icon: "/assets/features-section/autosync.svg",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/smart-analytics.webm",
+    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.webm",
+    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.mp4",
     iconWidth: 18,
     iconHeight: 18,
     
@@ -208,9 +212,6 @@ export default function FeaturesTabSection() {
                   preload="auto"
                   controls={false}
                 >
-                  <source src={feature.videoSrc} type="video/mp4" />
-          <source src={feature.videoSrc?.replace('.mp4', '.webm')} type="video/webm" />
-          Your browser does not support the video tag.
                   {/* <source src={feature.mp4} type="video/mp4" />
                   <source src={feature.webm} type="video/webm" /> */}
                 </video>
@@ -278,10 +279,6 @@ export default function FeaturesTabSection() {
                         autoPlay
                         loop={false}
                       >
-
-                        <source src={feature.videoSrc} type="video/mp4" />
-          <source src={feature.videoSrc?.replace('.mp4', '.webm')} type="video/webm" />
-          Your browser does not support the video tag.
                         {/* <source src={feature.mp4} type="video/mp4" />
                         <source src={feature.webm} type="video/webm" /> */}
                       </video>
