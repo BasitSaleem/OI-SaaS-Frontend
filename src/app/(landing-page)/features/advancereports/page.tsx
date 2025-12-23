@@ -271,6 +271,7 @@ const page = () => {
         description="Transform everyday transactions into meaningful insights. Our POS Advance Reporting System helps you track, analyze, and grow with precision."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         variant="animation2"
+        ctaDesc="Get Started for Free"
       />
 
       {/* 🔥 Custom layout + cards */}

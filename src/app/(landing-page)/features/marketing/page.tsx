@@ -243,6 +243,7 @@ const page = () => {
         title="Power Your Business with Smart Marketing Tools"
         description="Owner's Inventory Marketing helps you boost customer engagement and sales. It's simple, highly effective and works perfectly. Whether you want to reward your most loyal customers or easily attract new ones, it’s all taken care of under a single platform."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc= "Get Started for Free"
         variant="animation2"
       />
 

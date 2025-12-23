@@ -247,6 +247,7 @@ const page = () => {
         title="Turn Data into Decisions with Inventory Management Reports"
         description="Transform data into actionable insights by using powerful inventory management reports and point of sale reporting systems, all at one location."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 

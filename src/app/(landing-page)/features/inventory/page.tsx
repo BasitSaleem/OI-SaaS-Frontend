@@ -255,6 +255,7 @@ const Page = () => {
         title="Smart Product Management for Smarter Sales"
         description="Easily manage and organize your catalog with a single, intuitive POS console. Transform chaos into clarity for faster, smarter product management."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 

@@ -271,13 +271,14 @@ const page = () => {
         title="Sell Everywhere, Manage from One Platform"
         description="Owners Inventory ecommerce links your online store, inventory, and POS together. Operate your business on web, mobile and social channels seamlessly with full control and real time view."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 
       {/* 🔥 Custom layout + cards */}
       <TrustedBySection
         heading="Brands that Trust Us"
-        paragraph="Trusted by brands like Al-Asif and, Owners Inventory empowers businesses to manage their online stores in real time. Our all-in-one eCommerce solution streamlines listings, payments, and customer interactions for smarter, faster selling"
+        paragraph="Trusted by brands like Al-Asif and Bright Home use Owners Inventory empowers businesses to manage their online stores in real time. Our all-in-one eCommerce solution streamlines listings, payments, and customer interactions for smarter, faster selling."
       />
       <KeyHighlights
         heading="Ecommerce Engine for Modern Growth"
@@ -287,7 +288,7 @@ const page = () => {
 
       <WhyChoosePOS
         heading="Why Choose Us?"
-        paragraph="Owners Inventory simplifies complex facility operations into one connected platform. We help you monitor performance, standardize processes, and achieve full operational visibility across every location."
+        paragraph="Experience Seamless Selling with Powerful POS & eCommerce Integration."
         cards={[
           {
             icon: "/assets/features-page/ecommerce-page/why-chose/unified-sale.svg",
