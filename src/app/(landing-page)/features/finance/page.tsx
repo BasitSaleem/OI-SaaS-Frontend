@@ -299,6 +299,7 @@ const Page = () => {
         title="Accounting Made Effortless, Finances Made Clear"
         description="Gain control of your business by having an integrated POS and accounting system that monitors every sale, expense, and profit in real-time. Streamline finance, reduce errors, and make smarter financial decisions all in one dashboard."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 

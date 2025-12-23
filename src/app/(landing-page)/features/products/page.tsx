@@ -254,6 +254,7 @@ const page = () => {
         title="Manage Your Products Seamlessly with Owners Inventory"
         description="Create, manage, and monitor all your products effectively through the Product Management Feature in Owners Inventory. Organize stock levels, set prices, SKUs, and barcodes with complete transparency and accuracy."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 

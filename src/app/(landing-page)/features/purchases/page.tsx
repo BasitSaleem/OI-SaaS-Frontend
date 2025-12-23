@@ -309,6 +309,7 @@ const Page = () => {
         title="Handle All Your Purchases in One Place"
         description="Owners Inventory automates your entire purchasing process, from managing suppliers to generating bills, all in one place. Track, buy, and manage everything with ease through our intelligent Automated Purchase Management system."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 

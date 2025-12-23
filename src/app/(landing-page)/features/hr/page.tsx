@@ -261,6 +261,7 @@ const page = () => {
         title="Smarter HR for Growing Businesses"
         description="Change the way you deal with people using the best HR management software of 2025. Combine performance, payroll, and hiring in a single robust HR managerial system. Empower your company with an employee management software that is designed to expand as your business does."
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc="Get Started for Free"
         variant="animation2"
       />
 

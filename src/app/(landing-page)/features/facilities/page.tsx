@@ -237,6 +237,7 @@ const page = () => {
         title="Smart Facilities, Seamless Operations"
         description="Owners Inventory will give you complete control of all stores, warehouses and work areas. Whether it is the management of various locations or the monitoring of stock and employee performance, our platform maintains the entire operation running smoothly all through a single"
         video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        ctaDesc= "Get Started for Free"
         variant="animation2"
       />
 

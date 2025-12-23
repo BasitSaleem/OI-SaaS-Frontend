@@ -18,6 +18,7 @@ interface SubFeaturesHeroProps {
   title?: string;
   video?: string;
   description?: string;
+  ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
 }
 
@@ -25,6 +26,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   title = "Grow Faster with Smarter Inventory Tools",
   description,
   video,
+  ctaDesc = "Book a Free Demo",
   variant = "animation1",
 }) => {
   useHeaderAnimation();
@@ -172,7 +174,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                 >
                   <ButtonSm
                     url="#"
-                    text="Book a Free Demo"
+                    text= {ctaDesc}
                     bgColor="[#1AD1B9]"
                     textColor="white"
                     isBorder
