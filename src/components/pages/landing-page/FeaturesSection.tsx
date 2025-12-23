@@ -28,7 +28,7 @@ export default function FeaturesTabSection({
       title: "Smart POS system for modern retail",
       iconSrc: "/assets/features-section/pos-system.svg",
       iconAlt: "features-icon",
-      videoSrc: "/assets/Posvideo.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/pos-systemopt.mp4",
       isActive: true,
     },
     {
@@ -38,7 +38,7 @@ export default function FeaturesTabSection({
       title: "Sell online with built-in, fully synced e-commerce",
       iconSrc: "/assets/features-section/cart-icon.svg",
       iconAlt: "features-icon",
-      videoSrc: "/assets/Manual.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/ecommerce-opt.mp4",
       isActive: false,
     },
     {
@@ -48,7 +48,7 @@ export default function FeaturesTabSection({
       title: "Inventory management to stay in control of every product",
       iconSrc: "/assets/features-section/inventory-management.svg",
       iconAlt: "features-icon",
-      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-management.webm",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/inventory-managementopt.mp4",
       isActive: false,
     },
     {
@@ -58,7 +58,7 @@ export default function FeaturesTabSection({
       title: "Smart analytics and reports to drive visibility and accountability",
       iconSrc: "/assets/features-section/autosync.svg",
       iconAlt: "features-icon",
-      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/smart-analytics.webm",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/manufacturing-opt.mp4",
       isActive: false,
     },
   ]
@@ -131,7 +131,7 @@ export default function FeaturesTabSection({
     return () => {
       cleanupFunctions.forEach(cleanup => cleanup());
     };
-  }, [features, activeFeature]); // Added activeFeature dependency to reinitialize when tab changes
+  }, [features, activeFeature]); 
 
   // Reset and play video when active feature changes
   useEffect(() => {
