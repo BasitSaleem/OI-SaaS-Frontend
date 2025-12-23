@@ -138,19 +138,17 @@ const NavItems = () => {
             >
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {industriesItems.map((item) => (
-                  <Link 
-                  href={`/industries/${item.key.toLowerCase()}`}
+                  <div
                     className={`relative flex items-center justify-between gap-2 px-3 py-4 border rounded-xl ${
                       selectedFeatureKey === item.key
                         ? "border-[#795CF5] bg-gray-100"
                         : "border-[#D9D9D9]"
                     } hover:bg-gray-100`}
-                      key={item.key}
-                      onMouseEnter={() => setSelectedIndustryKey(item.key)}
                   >
-                    <div
-                     
-                      className={`flex items-center gap-2 w-full`}
+                    <button
+                      key={item.key}
+                      onClick={() => setSelectedIndustryKey(item.key)}
+                      className={`flex items-center gap-2 w-[80%]`}
                     >
                       <Image
                         src={item.icon}
@@ -161,8 +159,8 @@ const NavItems = () => {
                       <span className="text-sm font-medium text-left text-[#231F20]">
                         {item.title}
                       </span>
-                    </div>
-                    {/* <Link
+                    </button>
+                    <Link
                       href={`/industries/${item.key.toLowerCase()}`}
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
@@ -174,8 +172,8 @@ const NavItems = () => {
                         priority
                         className="h-4 w-3"
                       />
-                    </Link> */}
-                  </Link>
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>

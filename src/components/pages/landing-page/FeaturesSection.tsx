@@ -1,292 +1,252 @@
-"use client";
+'use client';
 
-import { useEffect, useState, useRef, useCallback } from "react";
-import Image from "next/image";
-import MainHeading from "../typography/MainHeading";
+import { useEffect, useRef, useState } from 'react';
 
-const features = [
-  {
-    id: "inventorypos-system",
-    title: "Smart POS System for Modern Retail",
-    icon: "/assets/features-section/pos-system.svg",
-    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.webm",
-    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/pos-systemopt.mp4",
-    iconWidth: 20,
-    iconHeight: 20,
-  },
-  {
-    id: "inventory-ecommerce",
-    title: "Built-in E-commerce - Fully Synced and Ready to Sell",
-    icon: "/assets/features-section/cart-icons.svg",
-    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.webm",
-    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/ecommerce-opt.mp4",
-    iconWidth: 18,
-    iconHeight: 14,
-  },
-  {
-    id: "inventory-management",
-    title: "Inventory Management to Stay in Control of Every Product",
-    icon: "/assets/features-section/inventory-management.svg",
-    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.webm",
-    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-managementopt.mp4",
-    mediaClass: "scale-[1.1]",
-    iconWidth: 16,
-    iconHeight: 14,
-  },
-  {
-    id: "inventory-autosync",
-    title: "Streamline Manufacturing + Stay in Control of Every Process",
-    icon: "/assets/features-section/autosync.svg",
-    // webm: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.webm",
-    // mp4: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/manufacturing-opt.mp4",
-    iconWidth: 18,
-    iconHeight: 18,
-    
-  },
-];
+interface FeatureTab {
+  id: string;
+  target: string;
+  barId: string;
+  title: string;
+  iconSrc: string;
+  iconAlt: string;
+  videoSrc: string;
+  isActive?: boolean;
+}
 
-export default function FeaturesTabSection() {
-  const [activeFeature, setActiveFeature] = useState(features[0].id);
-  const [progressMap, setProgressMap] = useState<{ [key: string]: number }>({});
-  const [isAutoRotating, setIsAutoRotating] = useState(true);
-  
-  const desktopRefs = useRef<{ [key: string]: HTMLVideoElement | null }>({});
-  const mobileRefs = useRef<{ [key: string]: HTMLVideoElement | null }>({});
-  const animationRef = useRef<number | null>(null);
-  const autoRotationTimerRef = useRef<NodeJS.Timeout | null>(null);
-  const videoEndedHandlersRef = useRef<{ [key: string]: (() => void) | null }>({});
+interface FeaturesTabSectionProps {
+  title?: string;
+  features?: Partial<FeatureTab>[];
+}
 
-  // Function to get next feature index
-  const getNextFeatureIndex = useCallback((currentId: string) => {
-    const currentIndex = features.findIndex(f => f.id === currentId);
-    return (currentIndex + 1) % features.length;
-  }, []);
+export default function FeaturesTabSection({
+  title = "Powerful Features Built for Growing Businesses",
+  features = [
+    {
+      id: "feature-tab-1",
+      target: "inventorypos-system",
+      barId: "bar-pos",
+      title: "Smart POS system for modern retail",
+      iconSrc: "/assets/features-section/pos-system.svg",
+      iconAlt: "features-icon",
+      videoSrc: "/assets/Posvideo.mp4",
+      isActive: true,
+    },
+    {
+      id: "feature-tab-2",
+      target: "inventory-ecommerce",
+      barId: "bar-ecommerce",
+      title: "Sell online with built-in, fully synced e-commerce",
+      iconSrc: "/assets/features-section/cart-icon.svg",
+      iconAlt: "features-icon",
+      videoSrc: "/assets/Manual.mp4",
+      isActive: false,
+    },
+    {
+      id: "feature-tab-3",
+      target: "inventory-management",
+      barId: "bar-inventory",
+      title: "Inventory management to stay in control of every product",
+      iconSrc: "/assets/features-section/inventory-management.svg",
+      iconAlt: "features-icon",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/inventory-management.webm",
+      isActive: false,
+    },
+    {
+      id: "feature-tab-4",
+      target: "inventory-autosync",
+      barId: "bar-autosync",
+      title: "Smart analytics and reports to drive visibility and accountability",
+      iconSrc: "/assets/features-section/autosync.svg",
+      iconAlt: "features-icon",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/smart-analytics.webm",
+      isActive: false,
+    },
+  ]
+}: FeaturesTabSectionProps) {
+  const [activeFeature, setActiveFeature] = useState(0);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const progressBarRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // Function to rotate to next feature
-  const rotateToNextFeature = useCallback(() => {
-    const nextIndex = getNextFeatureIndex(activeFeature);
-    setActiveFeature(features[nextIndex].id);
-  }, [activeFeature, getNextFeatureIndex]);
-
-  // Handle manual tab click
-  const handleTabClick = (featureId: string) => {
-    setActiveFeature(featureId);
-    setIsAutoRotating(false);
-    
-    // Resume auto rotation after 10 seconds of inactivity
-    if (autoRotationTimerRef.current) {
-      clearTimeout(autoRotationTimerRef.current);
-    }
-    
-    autoRotationTimerRef.current = setTimeout(() => {
-      setIsAutoRotating(true);
-    }, 10000);
+  // Set video ref callback
+  const setVideoRef = (index: number) => (el: HTMLVideoElement | null) => {
+    videoRefs.current[index] = el;
   };
 
- 
+  // Set progress bar ref callback
+  const setProgressBarRef = (index: number) => (el: HTMLDivElement | null) => {
+    progressBarRefs.current[index] = el;
+  };
+
+  // Initialize video progress tracking
   useEffect(() => {
-    const handleVideoEnd = (featureId: string) => {
-      return () => {
-        if (featureId === activeFeature) {
-          rotateToNextFeature();
+    const cleanupFunctions: (() => void)[] = [];
+
+    features.forEach((_, index) => {
+      const video = videoRefs.current[index];
+      const progressBar = progressBarRefs.current[index];
+      
+      if (!video || !progressBar) return;
+
+      // Add smooth transition
+      progressBar.style.transition = "width 0.2s linear";
+
+      const handlePlay = () => {
+        progressBar.style.width = "0%";
+      };
+
+      const handleTimeUpdate = () => {
+        if (video.duration > 0) {
+          const percent = (video.currentTime / video.duration) * 100;
+          progressBar.style.width = percent + "%";
         }
       };
-    };
 
-    const setupVideoEndListeners = () => {
-      features.forEach(feature => {
-        const desktopVideo = desktopRefs.current[feature.id];
-        const mobileVideo = mobileRefs.current[feature.id];
-        
-        // Clean up previous handlers
-        if (videoEndedHandlersRef.current[feature.id]) {
-          desktopVideo?.removeEventListener('ended', videoEndedHandlersRef.current[feature.id]!);
-          mobileVideo?.removeEventListener('ended', videoEndedHandlersRef.current[feature.id]!);
-        }
+      const handleEnded = () => {
+        progressBar.style.width = "100%";
+        setTimeout(() => {
+          // Disable transition for instant reset
+          progressBar.style.transition = "none";
+          progressBar.style.width = "0%";
 
-        // Create new handler for this feature
-        const handler = handleVideoEnd(feature.id);
-        videoEndedHandlersRef.current[feature.id] = handler;
-        
-        // Add event listeners
-        desktopVideo?.addEventListener('ended', handler);
-        mobileVideo?.addEventListener('ended', handler);
+          // Re-enable transition for next play
+          requestAnimationFrame(() => {
+            progressBar.style.transition = "width 0.2s linear";
+          });
+        }, 200);
+      };
+
+      video.addEventListener("play", handlePlay);
+      video.addEventListener("timeupdate", handleTimeUpdate);
+      video.addEventListener("ended", handleEnded);
+
+      // Store cleanup function
+      cleanupFunctions.push(() => {
+        video.removeEventListener("play", handlePlay);
+        video.removeEventListener("timeupdate", handleTimeUpdate);
+        video.removeEventListener("ended", handleEnded);
       });
-    };
+    });
 
-    // Set a timeout to ensure videos are loaded
-    const timer = setTimeout(setupVideoEndListeners, 100);
-    
+    // Cleanup all event listeners on component unmount
     return () => {
-      clearTimeout(timer);
-      // Cleanup event listeners on unmount
-      features.forEach(feature => {
-        const desktopVideo = desktopRefs.current[feature.id];
-        const mobileVideo = mobileRefs.current[feature.id];
-        const handler = videoEndedHandlersRef.current[feature.id];
-        
-        if (handler) {
-          desktopVideo?.removeEventListener('ended', handler);
-          mobileVideo?.removeEventListener('ended', handler);
-        }
-      });
+      cleanupFunctions.forEach(cleanup => cleanup());
     };
-  }, [rotateToNextFeature, activeFeature]);
+  }, [features, activeFeature]); // Added activeFeature dependency to reinitialize when tab changes
 
-  // Animation for progress bar
+  // Reset and play video when active feature changes
   useEffect(() => {
-    const video =
-      desktopRefs.current[activeFeature] ||
-      mobileRefs.current[activeFeature];
-
-    if (!video) return;
-
-    // Reset progress when switching tabs
-    setProgressMap((prev) => ({ ...prev, [activeFeature]: 0 }));
-    video.currentTime = 0;
-
-    const playVideo = async () => {
-      try {
-        await video.play();
-      } catch (e) {
-        console.log("Autoplay blocked:", e);
+    // Pause all videos first
+    videoRefs.current.forEach(video => {
+      if (video) {
+        video.pause();
       }
-    };
+    });
 
-    playVideo();
-
-    const animateProgress = () => {
-      if (video && video.duration > 0) {
-        const percent = (video.currentTime / video.duration) * 100;
-        setProgressMap((prev) => ({ ...prev, [activeFeature]: percent }));
-      }
-      animationRef.current = requestAnimationFrame(animateProgress);
-    };
-
-    animationRef.current = requestAnimationFrame(animateProgress);
-
-    return () => {
-      if (animationRef.current) cancelAnimationFrame(animationRef.current);
-    };
+    // Play the active video
+    const activeVideo = videoRefs.current[activeFeature];
+    if (activeVideo) {
+      activeVideo.currentTime = 0;
+      activeVideo.play().catch(console.error);
+    }
   }, [activeFeature]);
 
-  // Cleanup on unmount
-  useEffect(() => {
-    return () => {
-      if (autoRotationTimerRef.current) {
-        clearTimeout(autoRotationTimerRef.current);
-      }
-    };
-  }, []);
+  const handleTabClick = (index: number) => {
+    setActiveFeature(index);
+  };
 
   return (
-    <section className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
-       <div className="absolute  top-[-150px] right-[-0px] z-[300] ">
-            <div className="bg-[var(--primary-purple)] h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] blur-[400px] lg:blur-[300px] rounded-full"></div>
-       </div>
-      <div className="wrapper relative z-[400]">
-        <MainHeading className="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-20 md:mb-[60px] mb-10">
-          Powerful Features Built for Growing Businesses
-        </MainHeading>
+    <section className="features-tab-section mt-20 md:mt-28 lg:mt-40 py-10 md:py-10 xl:py-24 rounded-[40px] bg-[#231F20] z-11">
+      <div className="wrapper">
+        <h1 className="w-full text-4xl md:text-[44px] lg:text-[56px] xl:text-[64px] leading-[48px] md:leading-[56px] lg:leading-[60px] xl:leading-[76px] mb-10 md:mb-11 xl:mb-10 text-left font-onest font-semibold text-white lg:max-w-[867px] md:max-w-[657px]">
+          {title}
+        </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-32">
-
-          {/* DESKTOP + TABLET VIDEO */}
-          <div className="hidden md:flex flex-col justify-center items-center gap-3">
-            {features.map((feature) => (
+        {/* Features & Images Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-14 xl:gap-32 items-center justify-center w-full">
+          {/* IMAGE SECTION (Only for md and up) */}
+          <div className="hidden md:flex flex-col justify-center items-center gap-3 h-full">
+            {features.map((feature, index) => (
               <div
                 key={feature.id}
-                className={`w-full max-w-[743px] bg-transparent overflow-hidden rounded-3xl h-full max-h-[460px] p-1 ${
-                  activeFeature === feature.id ? "flex" : "hidden"
-                }`}
+                id={feature.target}
+                className={`feature-image feature-section w-full flex items-stretch justify-center ${index === activeFeature ? '' : 'hidden'}`}
               >
                 <video
-                  ref={(el) => {
-                    desktopRefs.current[feature.id] = el;
-                  }}
-                  className={`w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl ${feature.mediaClass || ""}`}
-                  muted
-                  playsInline
+                  ref={setVideoRef(index)}
+                  className="w-full md:h-[300px] lg:h-[380px] xl:h-[430px] object-cover rounded-3xl lazy-video feature-video"
+                  id={`${feature.target}-video`}
                   autoPlay
-                  loop={false}
-                  preload="auto"
-                  controls={false}
+                  muted
+                  loop
+                  playsInline
                 >
-                  {/* <source src={feature.mp4} type="video/mp4" />
-                  <source src={feature.webm} type="video/webm" /> */}
+                  <source src={feature.videoSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
                 </video>
               </div>
             ))}
           </div>
 
-          {/* RIGHT SIDE (TABS + MOBILE VIDEO) */}
-          <div className="flex flex-col gap-10">
-            {features.map((feature) => {
-              const isActive = activeFeature === feature.id;
-              const progress = progressMap[feature.id] || 0;
-
-              return (
-                <div key={feature.id} className="w-full">
-
-                  {/* TAB BUTTON */}
+          {/* FEATURES SECTION */}
+          <div className="flex flex-col items-start justify-center gap-10 xl:gap-10 h-full">
+            {features.map((feature, index) => (
+              <div key={feature.id} className="flex flex-col w-full items-start justify-start">
+                <div
+                  className={`feature-tab flex items-center justify-center gap-4 xl:gap-6 cursor-pointer ${index === activeFeature ? 'text-[#795CF5]' : 'text-white'}`}
+                  id={feature.id}
+                  onClick={() => handleTabClick(index)}
+                  data-target={feature.target}
+                  data-bar={feature.barId}
+                >
                   <div
-                    className="flex items-center gap-4 cursor-pointer"
-                    onClick={() => handleTabClick(feature.id)}
+                    className={`tab-icon-wrapper w-10 xl:w-11 p-2.5 flex items-center justify-center rounded-full ${index === activeFeature ? 'bg-[#795CF5]' : 'bg-[rgba(243,244,246,0.1)]'}`}
+                    id={`tab-icon-wrapper-${index + 1}`}
                   >
-                    <div
-                      className={` w-full max-w-11 h-11 m rounded-full flex items-center justify-center ${
-                        isActive ? "bg-(--primary-purple)" : "bg-[rgba(243,244,246,0.1)]"
-                      }`}
-                    >
-                      <Image src={feature.icon} 
-                      alt="icon-name"
-                      width={feature.iconWidth} 
-                      height={feature.iconHeight} 
-                      className="w-6 h-6 md:w-auto md:h-auto" />
-                    </div>
-
-                    <span
-                      className={`font-['Onest'] ${
-                        isActive
-                          ? "text-(--primary-purple) font-semibold text-lg lg:text-2xl"
-                          : "text-(--white-color) text-base  lg:text-xl"
-                      }`}
-                    >
-                      {feature.title}
-                    </span>
+                    <img
+                      src={feature.iconSrc}
+                      className="w-5 h-5"
+                      alt={feature.iconAlt}
+                    />
                   </div>
-
-                  {/* PROGRESS BAR */}
-                  {isActive && (
-                    <div className="w-full h-1 mt-5 rounded-2xl bg-[rgba(243,244,246,0.1)]">
-                      <div
-                        className="h-full bg-[#F3F4F6]"
-                        style={{ width: `${progress}%` }}
-                      ></div>
-                    </div>
-                  )}
-
-                  {/* MOBILE VIDEO */}
-                  {isActive && (
-                    <div className="md:hidden w-full mt-5">
-                      <video
-                        ref={(el) => {
-                          mobileRefs.current[feature.id] = el;
-                        }}
-                        className="w-full object-cover rounded-3xl"
-                        muted
-                        playsInline
-                        autoPlay
-                        loop={false}
-                      >
-                        {/* <source src={feature.mp4} type="video/mp4" />
-                        <source src={feature.webm} type="video/webm" /> */}
-                      </video>
-                    </div>
-                  )}
+                  <a
+                    className={`tab-label text-lg xl:text-xl leading-6 xl:leading-9 font-onest font-semibold hover:text-[#795CF5] ${index === activeFeature ? 'text-[#795CF5]' : 'text-white font-normal'}`}
+                    id={`feature-tab-text-${index + 1}`}
+                  >
+                    {feature.title}
+                  </a>
                 </div>
-              );
-            })}
+                
+                <div
+                  id={feature.barId}
+                  className={`progress-bar w-full h-1 xl:h-1.5 mt-5 xl:mt-7 rounded-2xl bg-[rgba(243,244,246,0.1)] overflow-hidden ${index === activeFeature ? '' : 'hidden'}`}
+                >
+                  <div
+                    ref={setProgressBarRef(index)}
+                    className="w-0 h-full bg-[#F3F4F6] transition-all"
+                    id={`progress-bar-${index + 1}`}
+                  ></div>
+                </div>
+                
+                {/* Mobile Image Section */}
+                <div
+                  id={`mobile-${feature.target}`}
+                  className={`md:hidden w-full feature-section mt-5 mobile-feature-image ${index === activeFeature ? '' : 'hidden'}`}
+                >
+                  <video
+                    ref={setVideoRef(index)}
+                    className="w-full object-cover rounded-3xl lazy-video feature-video"
+                    id={`${feature.target}-video`}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src={feature.videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
