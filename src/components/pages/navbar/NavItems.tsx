@@ -22,7 +22,6 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const NavItems = () => {
-
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const open = (key: string) => setOpenMenu(key);
   const close = () => setOpenMenu(null);
@@ -40,8 +39,8 @@ const NavItems = () => {
     <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_#0000001A] rounded-full  inventory-menu lg:flex justify-center w-auto">
       <ul className="hidden lg:flex items-center justify-center md:gap-1 lg:gap-3 w-auto">
         {/* FEATURES DROPDOWN */}
-        <NavDropdown label="Features"
-
+        <NavDropdown
+          label="Features"
           isOpen={openMenu === "features"}
           onOpen={() => open("features")}
           onClose={close}
@@ -54,33 +53,32 @@ const NavItems = () => {
                     rounded-2xl shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px]  overflow-y-visible overflow-x-hidden"
           >
             {/* Left Section (9/12) */}
-            <div
-              className="col-span-12  md:col-span-8 lg:col-span-9  pr-4"
-            >
+            <div className="col-span-12  md:col-span-8 lg:col-span-9  pr-4">
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {featuresItems.map((item) => (
-                  <div className={`relative flex items-center justify-between gap-2 px-3 py-4 border rounded-xl ${selectedFeatureKey === item.key
-                      ? "border-[#795CF5] bg-gray-100"
-                      : "border-[#D9D9D9]"
-                      } hover:bg-gray-100`}>
-                  <button
+                  <Link
+                    href={`/features/${item.key.toLowerCase()}`}
+                    className={`relative flex items-center justify-between cursor-pointer gap-2 px-3 py-4 border rounded-xl ${
+                      selectedFeatureKey === item.key
+                        ? "border-[#795CF5] bg-gray-100"
+                        : "border-[#D9D9D9]"
+                    } hover:bg-gray-100`}
                     key={item.key}
-                    onClick={() => setSelectedFeatureKey(item.key)}
-                    className={`relative flex items-center gap-2 w-[80%]`}
+                    onMouseEnter={() => setSelectedFeatureKey(item.key)}
                   >
-
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={16}
-                      height={16}
-                    />
-                    <span className="text-sm font-medium text-left text-[#231F20]">
-                      {item.title}
-                    </span>
-                     </button>
+                    <div className={`relative flex items-center gap-2 w-full`}>
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={16}
+                        height={16}
+                      />
+                      <span className="text-sm font-medium text-left text-[#231F20]">
+                        {item.title}
+                      </span>
+                    </div>
                     {/* Absolute arrow link */}
-                    <Link
+                    {/* <Link
                       href={`/features/${item.key.toLowerCase()}`}
 
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
@@ -93,10 +91,8 @@ const NavItems = () => {
                         priority
                         className="h-4 w-3"
                       />
-                    </Link>
-                    </div>
-                  
-
+                    </Link> */}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -118,7 +114,8 @@ const NavItems = () => {
         </NavDropdown>
 
         {/* INDUSTRIES DROPDOWN */}
-        <NavDropdown label="Industries"
+        <NavDropdown
+          label="Industries"
           isOpen={openMenu === "industries"}
           onOpen={() => open("industries")}
           onClose={close}
@@ -133,35 +130,40 @@ const NavItems = () => {
             {/* Left Section (9/12) */}
             <div
               className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent
-    ${industryDetailsMap[selectedIndustryKey]
-                  ? "md:col-span-9 col-span-12"
-                  : "col-span-12"
-                }`}
+    ${
+      industryDetailsMap[selectedIndustryKey]
+        ? "md:col-span-9 col-span-12"
+        : "col-span-12"
+    }`}
             >
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {industriesItems.map((item) => (
-                  <div className={`relative flex items-center justify-between gap-2 px-3 py-4 border rounded-xl ${selectedFeatureKey === item.key
-                      ? "border-[#795CF5] bg-gray-100"
-                      : "border-[#D9D9D9]"
-                      } hover:bg-gray-100`}>
-                  <button
-                    key={item.key}
-                    onClick={() => setSelectedIndustryKey(item.key)}
-                    className={`flex items-center gap-2 w-[80%]`}
+                  <Link 
+                  href={`/industries/${item.key.toLowerCase()}`}
+                    className={`relative flex items-center justify-between gap-2 px-3 py-4 border rounded-xl ${
+                      selectedFeatureKey === item.key
+                        ? "border-[#795CF5] bg-gray-100"
+                        : "border-[#D9D9D9]"
+                    } hover:bg-gray-100`}
+                      key={item.key}
+                      onMouseEnter={() => setSelectedIndustryKey(item.key)}
                   >
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={16}
-                      height={16}
-                    />
-                    <span className="text-sm font-medium text-left text-[#231F20]">
-                      {item.title}
-                    </span>
-                  </button>
-                   <Link
+                    <div
+                     
+                      className={`flex items-center gap-2 w-full`}
+                    >
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={16}
+                        height={16}
+                      />
+                      <span className="text-sm font-medium text-left text-[#231F20]">
+                        {item.title}
+                      </span>
+                    </div>
+                    {/* <Link
                       href={`/industries/${item.key.toLowerCase()}`}
-
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
                       <Image
@@ -172,8 +174,8 @@ const NavItems = () => {
                         priority
                         className="h-4 w-3"
                       />
-                    </Link>
-                  </div>
+                    </Link> */}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -205,12 +207,13 @@ const NavItems = () => {
 
         {/* RESOURCES DROPDOWN */}
 
-        <NavDropdown label="Resources"
-
+        <NavDropdown
+          label="Resources"
           isOpen={openMenu === "resources"}
           onOpen={() => open("resources")}
           onClose={close}
-          onToggle={() => toggle("resources")}>
+          onToggle={() => toggle("resources")}
+        >
           <div className="h-2 bg-transparent"></div>
 
           <div
@@ -220,35 +223,38 @@ const NavItems = () => {
             {/* Left Section (9/12) */}
             <div
               className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent
-    ${resourcesDetailsMap[selectedResourceKey]
-                  ? "md:col-span-9 col-span-12"
-                  : "col-span-12"
-                }`}
+    ${
+      resourcesDetailsMap[selectedResourceKey]
+        ? "md:col-span-9 col-span-12"
+        : "col-span-12"
+    }`}
             >
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {resourcesItems.map((item) => (
-                   <div className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${selectedResourceKey === item.key
-                      ? "border-[#795CF5] bg-gray-100"
-                      : "border-[#D9D9D9]"
-                      } hover:bg-gray-100`}>
-                  <button
-                    key={item.key}
-                    onClick={() => setSelectedResourceKey(item.key)}
-                    className={`flex items-center gap-2 w-[80%] `}
+                  <div
+                    className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${
+                      selectedResourceKey === item.key
+                        ? "border-[#795CF5] bg-gray-100"
+                        : "border-[#D9D9D9]"
+                    } hover:bg-gray-100`}
                   >
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={16}
-                      height={16}
-                    />
-                    <span className="text-sm font-medium text-left text-[#231F20]">
-                      {item.title}
-                    </span>
+                    <button
+                      key={item.key}
+                      onClick={() => setSelectedResourceKey(item.key)}
+                      className={`flex items-center gap-2 w-[80%] `}
+                    >
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={16}
+                        height={16}
+                      />
+                      <span className="text-sm font-medium text-left text-[#231F20]">
+                        {item.title}
+                      </span>
                     </button>
-                     <Link
+                    <Link
                       href={`/resources/${item.key.toLowerCase()}`}
-
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
                       <Image
@@ -260,7 +266,6 @@ const NavItems = () => {
                         className="h-4 w-3"
                       />
                     </Link>
-                  
                   </div>
                 ))}
               </div>
@@ -294,10 +299,13 @@ const NavItems = () => {
 
         {/* COMPANY DROPDOWN */}
 
-        <NavDropdown label="Company" isOpen={openMenu === "company"}
+        <NavDropdown
+          label="Company"
+          isOpen={openMenu === "company"}
           onOpen={() => open("company")}
           onClose={close}
-          onToggle={() => toggle("company")}>
+          onToggle={() => toggle("company")}
+        >
           <div className="h-2 bg-transparent"></div>
 
           <div
