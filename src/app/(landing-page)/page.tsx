@@ -4,53 +4,68 @@ import React, { useEffect, Suspense } from "react";
 import Image from "next/image";
 import { caseStudiesData } from '@/constant/caseStudiesData/caseStudiesData'
 import dynamic from "next/dynamic";
+import HeroSection2 from "@/components/common-components/HeroSection2";
+import TrustedBySection from "@/components/common-components/TrustedBySection";
+import TurningChaos from "@/components/pages/landing-page/TurningChaos";
+import CaseStudies from "@/components/pages/landing-page/CaseStudy";
+import FeaturesTabSection from "@/components/pages/landing-page/FeaturesSection";
+import SmartWaytoSyncndSellSection from "@/components/pages/landing-page/SmartWaytoSyncndSellSection";
+import UnifiedPlatform from "@/components/pages/landing-page/UnifiedPlatform";
+import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
+import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
+import PosIconsSection from "@/components/pages/landing-page/Smartway";
+import ToolsSection from "@/components/pages/landing-page/ToolsSection";
+import SmartTools from "@/components/pages/landing-page/SmartTools";
+import InsightsSection from "@/components/pages/landing-page/InsightsSection";
+import FaqSection from "@/components/pages/landing-page/FAQSection";
+import CalltoActionBottom from "@/components/pages/landing-page/CalltoActionBottom";
 
 // Lazy load all components
-const HeroSection2 = dynamic(
-  () => import("@/components/common-components/HeroSection2")
-);
-const TrustedBySection = dynamic(
-  () => import("@/components/common-components/TrustedBySection")
-);
-const TurningChaos = dynamic(
-  () => import("@/components/pages/landing-page/TurningChaos")
-);
-const CaseStudies = dynamic(
-  () => import("@/components/pages/landing-page/CaseStudy")
-);
-const SmartWaytoSyncndSellSection = dynamic(
-  () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection")
-);
-const UnifiedPlatform = dynamic(
-  () => import("@/components/pages/landing-page/UnifiedPlatform")
-);
-const VoicesRealBusiness = dynamic(
-  () => import("@/components/pages/landing-page/VoicesRealBusiness")
-);
-const IndustryPosShowcase = dynamic(
-  () => import("@/components/pages/landing-page/IndustryPosShowcase")
-);
-const PosIconsSection = dynamic(
-  () => import("@/components/pages/landing-page/Smartway")
-);
-const ToolsSection = dynamic(
-  () => import("@/components/pages/landing-page/ToolsSection")
-);
-const SmartTools = dynamic(
-  () => import("@/components/pages/landing-page/SmartTools")
-);
-const InsightsSection = dynamic(
-  () => import("@/components/pages/landing-page/InsightsSection")
-);
-const FaqSection = dynamic(
-  () => import("@/components/pages/landing-page/FAQSection")
-);
-const CalltoActionBottom = dynamic(
-  () => import("@/components/pages/landing-page/CalltoActionBottom")
-);
-const FeaturesTabSection = dynamic(
-  () => import("@/components/pages/landing-page/FeaturesSection")
-);
+// const HeroSection2 = dynamic(
+//   () => import("@/components/common-components/HeroSection2")
+// );
+// const TrustedBySection = dynamic(
+//   () => import("@/components/common-components/TrustedBySection")
+// );
+// const TurningChaos = dynamic(
+//   () => import("@/components/pages/landing-page/TurningChaos")
+// );
+// const CaseStudies = dynamic(
+//   () => import("@/components/pages/landing-page/CaseStudy")
+// );
+// const SmartWaytoSyncndSellSection = dynamic(
+//   () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection")
+// );
+// const UnifiedPlatform = dynamic(
+//   () => import("@/components/pages/landing-page/UnifiedPlatform")
+// );
+// const VoicesRealBusiness = dynamic(
+//   () => import("@/components/pages/landing-page/VoicesRealBusiness")
+// );
+// const IndustryPosShowcase = dynamic(
+//   () => import("@/components/pages/landing-page/IndustryPosShowcase")
+// );
+// const PosIconsSection = dynamic(
+//   () => import("@/components/pages/landing-page/Smartway")
+// );
+// const ToolsSection = dynamic(
+//   () => import("@/components/pages/landing-page/ToolsSection")
+// );
+// const SmartTools = dynamic(
+//   () => import("@/components/pages/landing-page/SmartTools")
+// );
+// const InsightsSection = dynamic(
+//   () => import("@/components/pages/landing-page/InsightsSection")
+// );
+// const FaqSection = dynamic(
+//   () => import("@/components/pages/landing-page/FAQSection")
+// );
+// const CalltoActionBottom = dynamic(
+//   () => import("@/components/pages/landing-page/CalltoActionBottom")
+// );
+// const FeaturesTabSection = dynamic(
+//   () => import("@/components/pages/landing-page/FeaturesSection")
+// );
 
 
 
