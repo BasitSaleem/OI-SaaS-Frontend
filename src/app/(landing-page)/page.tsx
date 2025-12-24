@@ -48,10 +48,12 @@ const FaqSection = dynamic(
 const CalltoActionBottom = dynamic(
   () => import("@/components/pages/landing-page/CalltoActionBottom")
 );
+// const FeaturesTabSection = dynamic(
+//   () => import("@/components/pages/landing-page/FeaturesSection")
+// );
 const FeaturesTabSection = dynamic(
-  () => import("@/components/pages/landing-page/FeaturesSection")
+  () => import("@/components/pages/landing-page/FeaturesTabSection")
 );
-
 
 
 const homeFaqs = [
