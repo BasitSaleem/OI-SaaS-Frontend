@@ -18,7 +18,7 @@ export default function FeaturesTabSection() {
       id: "inventorypos-system",
       title: "Smart POS System for Modern Retail",
       icon: "/assets/features-section/pos-system.svg",
-      videoSrc: "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/Air_Spray.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/ecommerce-opt.mp4",
       tabIndex: 1,
       iconWidth: 20,
       iconHeight: 20,
