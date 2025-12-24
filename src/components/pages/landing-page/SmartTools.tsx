@@ -65,24 +65,16 @@ const SmartTools: React.FC<SmartTools> = ({
             loading="lazy"
             className="w-full"
           /> */}
-          <video
-            className="w-full object-cover bg-transparent rounded-3xl"
-            muted
-            playsInline
-            autoPlay
-            loop
-            preload="auto"
-            controls={false}
-          >
-            {/* <source
-              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/stay_ahead+.webm"
-              type="video/webm"
-            /> */}
-          </video>
+           <video
+                    className="w-full object-cover rounded-3xl lazy-video feature-video"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src= "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/user+story+v1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
         </div>
       </div>
     </section>

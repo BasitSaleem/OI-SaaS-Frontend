@@ -54,26 +54,16 @@ function SmartWaytoSyncndSellSection() {
         </div>
 
         <div className="w-full h-full">
-          <video
-            className="w-full object-cover bg-transparent rounded-3xl"
-            muted
-            playsInline
-            autoPlay
-            loop
-             preload="auto"
-           controls={false}
-            // onLoadedMetadata={onVideoLoaded}
-            // onLoadedData={onVideoLoaded}
-          >
-              {/* <source
-                src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.webm"
-                type="video/webm"
-              /> */}
-          </video>
+         <video
+                    className="w-full object-cover rounded-3xl lazy-video feature-video"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src= "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/user+story+v1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
         </div>
     
         <div className="md:hidden flex gap-4 w-full items-center justify-start">
