@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import MainHeading from "../typography/MainHeading";
 
 type VideoRefs = {
   [key: string]: HTMLVideoElement | null;
@@ -106,19 +107,22 @@ export default function FeaturesTabSection() {
   };
 
   return (
-    <section className="features-tab-section mt-20 md:mt-28 lg:mt-40 py-10 md:py-10 xl:py-24 rounded-[40px] bg-[#231F20] z-11">
-      <div className="wrapper">
-        <h1 className="w-full text-4xl md:text-[44px] lg:text-[56px] xl:text-[64px] leading-[48px] md:leading-[56px] lg:leading-[60px] xl:leading-[76px] mb-10 md:mb-11 xl:mb-10 text-left font-onest font-semibold text-white lg:max-w-[867px] md:max-w-[657px]">
+    <section className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
+         <div className="absolute  top-[-150px] right-[-0px] z-[300] ">
+            <div className="bg-[var(--primary-purple)] h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] blur-[400px] lg:blur-[300px] rounded-full"></div>
+       </div>
+      <div className="wrapper relative z-[400]">
+        <MainHeading className="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-20 md:mb-[60px] mb-10">
           Powerful Features Built for Growing Businesses
-        </h1>
+        </MainHeading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-14 xl:gap-32 items-center justify-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-32">
           {/* IMAGE SECTION (Only for md and up) */}
-          <div className="hidden md:flex flex-col justify-center items-center gap-3 h-full">
+          <div className="hidden md:flex flex-col justify-center items-center gap-3">
             {features.map((feature) => (
               <div
                 key={feature.id}
-                className={`feature-image feature-section w-full flex items-stretch justify-center ${
+                className={`w-full max-w-[743px] bg-transparent overflow-hidden rounded-3xl h-full max-h-[460px] p-1 ${
                   activeTab === feature.tabIndex ? "" : "hidden"
                 }`}
               >
@@ -126,7 +130,7 @@ export default function FeaturesTabSection() {
                   ref={(el) => {
                     videoRefs.current[`${feature.id}-video`] = el;
                   }}
-                  className="w-full md:h-[300px] lg:h-[380px] xl:h-[430px] object-cover rounded-3xl lazy-video feature-video"
+                  className="w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl lazy-video feature-video"
                   autoPlay={activeTab === feature.tabIndex}
                   muted
                   loop
@@ -144,30 +148,28 @@ export default function FeaturesTabSection() {
             {features.map((feature) => (
               <div key={feature.id} className="flex flex-col w-full items-start justify-start">
                 <button
-                  className="feature-tab flex items-center justify-center gap-4 xl:gap-6 cursor-pointer w-full text-left"
+                  className="feature-tab flex items-center justify-start gap-4 xl:gap-6 cursor-pointer w-full text-left"
                   onClick={() => handleTabClick(feature.tabIndex, `${feature.id}-video`)}
                   type="button"
                   aria-label={`Show ${feature.title}`}
                 >
                   <div
-                    className={`tab-icon-wrapper w-10 xl:w-11 p-2.5 flex items-center justify-center rounded-full ${
-                      activeTab === feature.tabIndex
-                        ? "bg-[#795CF5]"
-                        : "bg-[rgba(243,244,246,0.1)]"
-                    }`}
+                    className={` w-full max-w-11 h-11 m rounded-full flex items-center justify-center ${
+                        activeTab === feature.tabIndex ? "bg-(--primary-purple)" : "bg-[rgba(243,244,246,0.1)]"
+                      }`}
                   >
                     <img
                       src={feature.icon}
-                      className="w-5 h-5"
+                      className="w-6 h-6 md:w-auto md:h-auto"
                       alt={feature.title}
                     />
                   </div>
                   <span
-                    className={`tab-label text-lg xl:text-xl leading-6 xl:leading-9 font-onest ${
-                      activeTab === feature.tabIndex
-                        ? "text-[#795CF5] font-semibold"
-                        : "text-white font-normal"
-                    } hover:text-[#795CF5] transition-colors`}
+                    className={`font-['Onest'] ${
+                        activeTab === feature.tabIndex
+                          ? "text-(--primary-purple) font-semibold text-lg lg:text-2xl"
+                          : "text-(--white-color) text-base  lg:text-xl"
+                      }`}
                   >
                     {feature.title}
                   </span>
@@ -175,7 +177,7 @@ export default function FeaturesTabSection() {
                 <div
                   className={`progress-bar w-full h-1 xl:h-1.5 mt-5 xl:mt-7 rounded-2xl bg-[rgba(243,244,246,0.1)] overflow-hidden ${
                     activeTab === feature.tabIndex ? "" : "hidden"
-                  }`}
+                  } transition-all`}
                 >
                   <div
                     className="h-full bg-[#F3F4F6] transition-all duration-200"
