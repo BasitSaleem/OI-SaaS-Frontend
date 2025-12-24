@@ -55,13 +55,13 @@ function SmartWaytoSyncndSellSection() {
 
         <div className="w-full h-full">
          <video
-                    className="w-full object-cover rounded-3xl lazy-video feature-video"
+                    className="w-full object-cover rounded-3xl lazy-video"
                     autoPlay
                     muted
                     loop
                     playsInline
                   >
-                    <source src= "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/user+story+v1.mp4" type="video/mp4" />
+                    <source src= "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.webm" type="video/webm" />
                     Your browser does not support the video tag.
                   </video>
         </div>
