@@ -15,24 +15,30 @@ export default function FeaturesTabSection() {
   const features = [
     {
       id: "inventorypos-system",
-      title: "Smart POS system for modern retail",
+      title: "Smart POS System for Modern Retail",
       icon: "/assets/features-section/pos-system.svg",
       videoSrc: "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/Air_Spray.mp4",
       tabIndex: 1,
+      iconWidth: 20,
+    iconHeight: 20,
     },
     {
       id: "inventory-ecommerce",
-      title: "Sell online with built-in, fully synced e-commerce",
-      icon: "/assets/features-section/cart-icon.svg",
+      title: "Built-in E-commerce - Fully Synced and Ready to Sell",
+      icon: "/assets/features-section/cart-icons.svg",
       videoSrc: "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/Bottle.mp4",
       tabIndex: 2,
+      iconWidth: 18,
+    iconHeight: 14,
     },
     {
       id: "inventory-management",
-      title: "Inventory management to stay in control of every product",
-      icon: "/assets/features-section/inventory-management.svg",
+      title: "Streamline Manufacturing + Stay in Control of Every Process",
+      icon: "/assets/features-section/autosync.svg",
       videoSrc: "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/NinjaStream_Final.mp4",
       tabIndex: 3,
+      iconWidth: 16,
+    iconHeight: 14,
     },
     {
       id: "inventory-autosync",
@@ -40,6 +46,8 @@ export default function FeaturesTabSection() {
       icon: "/assets/features-section/autosync.svg",
       videoSrc: "https://redstarwebsitebucket.s3.us-east-1.amazonaws.com/videos/user+story+v1.mp4",
       tabIndex: 4,
+       iconWidth: 18,
+    iconHeight: 18,
     },
   ];
 
@@ -160,6 +168,8 @@ export default function FeaturesTabSection() {
                   >
                     <img
                       src={feature.icon}
+                       width={feature.iconWidth} 
+                      height={feature.iconHeight} 
                       className="w-6 h-6 md:w-auto md:h-auto"
                       alt={feature.title}
                     />
