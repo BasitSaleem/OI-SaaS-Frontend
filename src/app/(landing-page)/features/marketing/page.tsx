@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import imageOne from "../../../../../public/assets/marketing-assets/Frame1.png";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -242,7 +243,8 @@ const page = () => {
       <SubFeaturesHero
         title="Power Your Business with Smart Marketing Tools"
         description="Owner's Inventory Marketing helps you boost customer engagement and sales. It's simple, highly effective and works perfectly. Whether you want to reward your most loyal customers or easily attract new ones, it’s all taken care of under a single platform."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image = {imageOne}
         ctaDesc= "Get Started for Free"
         variant="animation2"
       />
@@ -293,7 +295,7 @@ const page = () => {
               "Our team is always ready to help you set up and manage your marketing programs.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage="/assets/marketing-assets/Frame2.png"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
