@@ -254,7 +254,6 @@ html, body {
   filter: blur(20px);
   z-index: -1;
 
-  /* THIS makes top + bottom fade transparent, middle stays strong */
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0,0,0,0) 0%,
@@ -305,11 +304,73 @@ html, body {
 }
 
 
-/* OPTIONAL — ADD IN YOUR GLOBAL CSS */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+
+.mySwiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.mySwiper .custom-swiper-bullet {
+  width: 28px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active.custom-swiper-bullet {
+  width: 42px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.hero-bg-circle {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate; 
+}
+
+.hero-bg-circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0) 60%
+  );
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: 140% 140%;
+  mask-size: 140% 140%;
+
+  pointer-events: none;
 }

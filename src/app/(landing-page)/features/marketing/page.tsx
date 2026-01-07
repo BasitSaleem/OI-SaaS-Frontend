@@ -104,7 +104,7 @@ const marketingFaqs = [
     id: 1,
     question: "Can coupons be applied to online and in-store sales?",
     answer:
-      "Yes. Our coupon system is designed for complete flexibility and a seamless customer experience. Coupons work in both conditions, whether a customer is checking out at a physical Store or completing a purchase through your online storefront. This ensures you can run unified campaigns across all your sales channels.",
+      "Yes. Our coupon system is designed for complete flexibility and a seamless customer experience. Coupons work in both conditions, whether a customer is checking out at a physical store or completing a purchase through your online storefront. This ensures you can run unified campaigns across all your sales channels.",
   },
   {
     id: 2,
@@ -221,7 +221,7 @@ const marketingTestimonials = [
     name: "Yasir Khan",
     title: "Prime Traders",
     image: "/assets/pfp.avif",
-    text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales.`,
+    text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales, which has increased how often they buy from us. happier with the results.`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
