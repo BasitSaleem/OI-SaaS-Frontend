@@ -1,3 +1,5 @@
+
+
 "use client";
 import { useState } from "react";
 import { companyItems } from "./dropdownItems/Companylist";
@@ -36,7 +38,7 @@ const NavItems = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_#0000001A] rounded-full  inventory-menu lg:flex justify-center w-auto">
+    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_#0000001A] rounded-full inventory-menu lg:flex justify-center w-auto">
       <ul className="hidden lg:flex items-center justify-center md:gap-1 lg:gap-3 w-auto">
         {/* FEATURES DROPDOWN */}
         <NavDropdown
@@ -47,57 +49,33 @@ const NavItems = () => {
           onToggle={() => toggle("features")}
         >
           <div className="h-2 bg-transparent"></div>
-
-          <div
-            className=" bg-white grid grid-cols-12 gap-6 p-10 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] 
-                    rounded-2xl shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px]  overflow-y-visible overflow-x-hidden"
-          >
+          <div className="bg-white grid grid-cols-12 gap-6 p-10 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-visible overflow-x-hidden">
             {/* Left Section (9/12) */}
-            <div className="col-span-12  md:col-span-8 lg:col-span-9  pr-4">
+            <div className="col-span-12 md:col-span-8 lg:col-span-9 pr-4">
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {featuresItems.map((item) => (
                   <Link
+                    key={item.key} // ✅ key on outer element
                     href={`/features/${item.key.toLowerCase()}`}
                     className={`relative flex items-center justify-between cursor-pointer gap-2 px-3 py-4 border rounded-xl ${
                       selectedFeatureKey === item.key
                         ? "border-[#795CF5] bg-gray-100"
                         : "border-[#D9D9D9]"
                     } hover:bg-gray-100`}
-                    key={item.key}
                     onMouseEnter={() => setSelectedFeatureKey(item.key)}
                   >
-                    <div className={`relative flex items-center gap-2 w-full`}>
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={16}
-                        height={16}
-                      />
+                    <div className="relative flex items-center gap-2 w-full">
+                      <Image src={item.icon} alt={item.title} width={16} height={16} />
                       <span className="text-sm font-medium text-left text-[#231F20]">
                         {item.title}
                       </span>
                     </div>
-                    {/* Absolute arrow link */}
-                    {/* <Link
-                      href={`/features/${item.key.toLowerCase()}`}
-
-                      className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
-                    >
-                      <Image
-                        src="/assets/detail-icon.svg"
-                        alt="arrow-up"
-                        width={12}
-                        height={16}
-                        priority
-                        className="h-4 w-3"
-                      />
-                    </Link> */}
                   </Link>
                 ))}
               </div>
             </div>
 
-            {/* Right Section (3/12, hidden on mobile) */}
+            {/* Right Section (3/12) */}
             {featuresDetailsMap[selectedFeatureKey] && (
               <div className="hidden md:block col-span-4 lg:col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto overflow-x-auto w-3xl">
                 <p className="mb-4 text-xs font-bold text-[#231F20]">
@@ -122,40 +100,30 @@ const NavItems = () => {
           onToggle={() => toggle("industries")}
         >
           <div className="h-2 bg-transparent"></div>
-
-          <div
-            className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px]
-               rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden"
-          >
-            {/* Left Section (9/12) */}
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
+            {/* Left Section */}
             <div
-              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent
-    ${
-      industryDetailsMap[selectedIndustryKey]
-        ? "md:col-span-9 col-span-12"
-        : "col-span-12"
-    }`}
+              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent ${
+                industryDetailsMap[selectedIndustryKey]
+                  ? "md:col-span-9 col-span-12"
+                  : "col-span-12"
+              }`}
             >
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {industriesItems.map((item) => (
                   <div
+                    key={item.key} // ✅ key on outer div
                     className={`relative flex items-center justify-between gap-2 px-3 py-4 border rounded-xl ${
-                      selectedFeatureKey === item.key
+                      selectedIndustryKey === item.key
                         ? "border-[#795CF5] bg-gray-100"
                         : "border-[#D9D9D9]"
                     } hover:bg-gray-100`}
                   >
                     <button
-                      key={item.key}
                       onClick={() => setSelectedIndustryKey(item.key)}
-                      className={`flex items-center gap-2 w-[80%]`}
+                      className="flex items-center gap-2 w-[80%]"
                     >
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={16}
-                        height={16}
-                      />
+                      <Image src={item.icon} alt={item.title} width={16} height={16} />
                       <span className="text-sm font-medium text-left text-[#231F20]">
                         {item.title}
                       </span>
@@ -164,21 +132,14 @@ const NavItems = () => {
                       href={`/industries/${item.key.toLowerCase()}`}
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
-                      <Image
-                        src="/assets/detail-icon.svg"
-                        alt="arrow-up"
-                        width={12}
-                        height={16}
-                        priority
-                        className="h-4 w-3"
-                      />
+                      <Image src="/assets/detail-icon.svg" alt="arrow-up" width={12} height={16} priority className="h-4 w-3" />
                     </Link>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right Section (3/12, hidden on mobile) */}
+            {/* Right Section */}
             {industryDetailsMap[selectedIndustryKey] && (
               <div className="hidden md:block col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto">
                 <p className="mb-4 text-xs font-bold text-[#231F20]">
@@ -197,14 +158,13 @@ const NavItems = () => {
         <li>
           <a
             href="/pricing"
-            className="flex items-center justify-center gap-3 px-3.5 py-1.5  xl:px-4 xl:py-[9px] lg:text-xs xl:text-sm font-semibold hover:bg-gray-100 hover:border-[#795CF5] text-[#231F20] bg-white border border-[#F3F4F6] rounded-full"
+            className="flex items-center justify-center gap-3 px-3.5 py-1.5 xl:px-4 xl:py-[9px] lg:text-xs xl:text-sm font-semibold hover:bg-gray-100 hover:border-[#795CF5] text-[#231F20] bg-white border border-[#F3F4F6] rounded-full"
           >
             Pricing
           </a>
         </li>
 
         {/* RESOURCES DROPDOWN */}
-
         <NavDropdown
           label="Resources"
           isOpen={openMenu === "resources"}
@@ -213,23 +173,19 @@ const NavItems = () => {
           onToggle={() => toggle("resources")}
         >
           <div className="h-2 bg-transparent"></div>
-
-          <div
-            className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px]
-               rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden"
-          >
-            {/* Left Section (9/12) */}
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
+            {/* Left Section */}
             <div
-              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent
-    ${
-      resourcesDetailsMap[selectedResourceKey]
-        ? "md:col-span-9 col-span-12"
-        : "col-span-12"
-    }`}
+              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent ${
+                resourcesDetailsMap[selectedResourceKey]
+                  ? "md:col-span-9 col-span-12"
+                  : "col-span-12"
+              }`}
             >
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {resourcesItems.map((item) => (
                   <div
+                    key={item.key} // ✅ key on outer div
                     className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${
                       selectedResourceKey === item.key
                         ? "border-[#795CF5] bg-gray-100"
@@ -237,16 +193,10 @@ const NavItems = () => {
                     } hover:bg-gray-100`}
                   >
                     <button
-                      key={item.key}
                       onClick={() => setSelectedResourceKey(item.key)}
-                      className={`flex items-center gap-2 w-[80%] `}
+                      className="flex items-center gap-2 w-[80%]"
                     >
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={16}
-                        height={16}
-                      />
+                      <Image src={item.icon} alt={item.title} width={16} height={16} />
                       <span className="text-sm font-medium text-left text-[#231F20]">
                         {item.title}
                       </span>
@@ -255,21 +205,14 @@ const NavItems = () => {
                       href={`/resources/${item.key.toLowerCase()}`}
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
-                      <Image
-                        src="/assets/detail-icon.svg"
-                        alt="arrow-up"
-                        width={12}
-                        height={16}
-                        priority
-                        className="h-4 w-3"
-                      />
+                      <Image src="/assets/detail-icon.svg" alt="arrow-up" width={12} height={16} priority className="h-4 w-3" />
                     </Link>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right Section (3/12, hidden on mobile) */}
+            {/* Right Section */}
             {resourcesDetailsMap[selectedResourceKey] && (
               <div className="hidden md:block col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto">
                 <p className="mb-4 text-xs font-bold text-[#231F20]">
@@ -280,7 +223,7 @@ const NavItems = () => {
                 </p>
                 <ul className="space-y-0">
                   {resourcesDetailsMap[selectedResourceKey].map((item) => (
-                    <li key={item}>
+                    <li key={item}> {/* ✅ unique key for each <li> */}
                       <a
                         href="#"
                         className="text-xs font-normal leading-9 text-[#231F20] hover:text-gray-400"
@@ -296,7 +239,6 @@ const NavItems = () => {
         </NavDropdown>
 
         {/* COMPANY DROPDOWN */}
-
         <NavDropdown
           label="Company"
           isOpen={openMenu === "company"}
@@ -305,29 +247,16 @@ const NavItems = () => {
           onToggle={() => toggle("company")}
         >
           <div className="h-2 bg-transparent"></div>
-
-          <div
-            className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white 
-               rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden"
-          >
-            {/* Left Section (9/12) */}
-            <div
-              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent
-    col-span-12`}
-            >
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
+            <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent col-span-12">
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {companyItems.map((item) => (
                   <a
-                    key={item.title}
+                    key={item.title} // ✅ key on outer element
                     href="#"
                     className="flex items-center gap-2 px-4 py-4 border border-[#D9D9D9] rounded-xl hover:bg-gray-100 hover:border-[#795CF5]"
                   >
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={16}
-                      height={16}
-                    />
+                    <Image src={item.icon} alt={item.title} width={16} height={16} />
                     <span className="text-xs font-medium text-[#231F20] hover:font-semibold">
                       {item.title}
                     </span>

@@ -237,18 +237,49 @@ html, body {
   content: "";
   position: absolute;
   top: 20px;
-  right: 0px;
+  right: 0;
   bottom: -100px;
-  left: 0px;
+  left: 0;
   border-radius: inherit;
-  background: linear-gradient(69.54deg,
-      rgba(26, 209, 185, 0.2) 0.66%,
-      rgba(56, 172, 204, 0.2) 29.25%,
-      rgba(85, 136, 223, 0.2) 63.93%,
-      rgba(121, 92, 245, 0.2) 98.14%);
+
+  /* Your glow colors */
+  background: linear-gradient(
+    69.54deg,
+    rgba(26, 209, 185, 0.22) 0.66%,
+    rgba(56, 172, 204, 0.22) 29.25%,
+    rgba(85, 136, 223, 0.22) 63.93%,
+    rgba(121, 92, 245, 0.22) 98.14%
+  );
+
   filter: blur(20px);
   z-index: -1;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.15) 10%,
+    rgba(0,0,0,0.5) 20%,
+    rgba(0,0,0,1) 32%,
+    rgba(0,0,0,1) 68%,
+    rgba(0,0,0,0.5) 80%,
+    rgba(0,0,0,0.15) 90%,
+    rgba(0,0,0,0) 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.15) 10%,
+    rgba(0,0,0,0.5) 20%,
+    rgba(0,0,0,1) 32%,
+    rgba(0,0,0,1) 68%,
+    rgba(0,0,0,0.5) 80%,
+    rgba(0,0,0,0.15) 90%,
+    rgba(0,0,0,0) 100%
+  );
+
 }
+
 .glass-bg {
   border-radius: 9999px;
   backdrop-filter: blur(16px);
@@ -273,11 +304,73 @@ html, body {
 }
 
 
-/* OPTIONAL — ADD IN YOUR GLOBAL CSS */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+
+.mySwiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.mySwiper .custom-swiper-bullet {
+  width: 28px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active.custom-swiper-bullet {
+  width: 42px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.hero-bg-circle {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate; 
+}
+
+.hero-bg-circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0) 60%
+  );
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: 140% 140%;
+  mask-size: 140% 140%;
+
+  pointer-events: none;
 }

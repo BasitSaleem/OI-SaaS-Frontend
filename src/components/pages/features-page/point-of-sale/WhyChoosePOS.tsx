@@ -30,36 +30,43 @@ export default function WhyChoosePOS({
         <div className="wrapper">
           {/* Heading Section */}
           <div className="flex flex-col items-center justify-center">
-            <MainHeading className="mb-6 text-center">
-              {heading}
-            </MainHeading>
-            <Paragraph className="mb-[60px] text-center">
-              {paragraph}
-            </Paragraph>
+            <MainHeading className="mb-6 text-center">{heading}</MainHeading>
+            <Paragraph className="mb-[60px] text-center">{paragraph}</Paragraph>
           </div>
 
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center justify-center gap-[60px]">
             {/* Cards Container */}
-            <div className="xl:col-span-5 col-span-6 flex flex-col xl:gap-6 lg:gap-3 gap-5">
+            <div className="xl:col-span-5 col-span-6 flex flex-col gap-4 sm:gap-5 xl:gap-6">
               {cards.map((card) => (
                 <div
                   key={card.title}
-                  className="bg-white xl:px-[30px] xl:py-6 px-4 py-4 flex flex-col md:flex-row items-start justify-start gap-[30px] rounded-[20px] shadow-sm hover:shadow-md transition-all duration-300 ease-in-out hover:translate-y-[-2px]"
+                  className="
+                    bg-white rounded-[20px]
+                    shadow-sm hover:shadow-md
+                    transition-all duration-300 ease-in-out hover:translate-y-[-2px]
+                    flex flex-col md:flex-row
+                    items-start md:items-start
+                    gap-4 sm:gap-5 md:gap-6
+                    p-5 sm:p-6 xl:p-[30px]
+                  "
                 >
-                  <div className="flex-shrink-0">
-                    <Image
-                      src={card.icon}
-                      alt={card.title}
-                      width={40}
-                      height={40}
-                      className="w-10 h-10"
-                    />
+                  {/* Icon */}
+                  <div className="flex-shrink-0 self-start">
+                    <div className="h-10 w-10">
+                      <Image
+                        src={card.icon}
+                        alt={card.title}
+                        width={40}
+                        height={40}
+                        className="h-10 w-10"
+                      />
+                    </div>
                   </div>
-                  <div className="flex flex-col items-start justify-baseline xl:gap-4 gap-2 flex-1">
-                    <CardHeading className="">
-                      {card.title}
-                    </CardHeading>
+
+                  {/* Text */}
+                  <div className="flex flex-col items-start gap-2 sm:gap-3 xl:gap-4 flex-1">
+                    <CardHeading>{card.title}</CardHeading>
                     <p className="text-base leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
                       {card.description}
                     </p>

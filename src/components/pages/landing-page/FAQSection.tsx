@@ -72,7 +72,7 @@ export default function FaqSection({
   };
 
   return (
-    <section className="wrapper" >
+    <section className="wrapper">
       <div className="rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center justify-center gap-10 md:gap-[100px] lg:gap-12 w-full px-5 md:px-[77px] lg:px-[87px] py-10 md:py-[58px] lg:py-[60px]">
           {/* Left Accordion Cards */}
@@ -88,35 +88,59 @@ export default function FaqSection({
                   onClick={() => toggle(index)}
                 >
                   <span
-                    className={`w-full max-w-[90%] text-base md:text-lg lg:text-xl leading-[170%] md:leading-[170%] lg:leading-[140%] font-['Onest'] font-semibold transition-colors duration-300
-                      ${openIndex === index ? "text-(--primary-purple)" : "text-(--text-dark)"}
-                    `}
+                    className={`w-full max-w-[90%] text-base md:text-lg lg:text-xl leading-[170%] md:leading-[170%] lg:leading-[140%] font-['Onest'] font-semibold transition-colors duration-300 ${
+                      openIndex === index
+                        ? "text-(--primary-purple)"
+                        : "text-(--text-dark)"
+                    }`}
                   >
                     {faq.question}
                   </span>
-                  <span className={openIndex === index ? "hidden" : "block"}>
+
+                  {/* ✅ Smaller on mobile */}
+                  <span
+                    className={
+                      openIndex === index
+                        ? "hidden"
+                        : "flex shrink-0 items-center justify-center"
+                    }
+                  >
                     <Image
                       src="/assets/plus-icon.svg"
                       alt="Plus-icon"
-                      width={24}
-                      height={24}
-                      priority
+                      width={18}
+                      height={18}
+                      className="w-[18px] h-[18px] sm:w-5 sm:h-5 md:w-4 md:h-4 lg:w-5 lg:h-5"
+                      loading="lazy"
                     />
                   </span>
-                  <span className={openIndex === index ? "block" : "hidden"}>
+
+                  <span
+                    className={
+                      openIndex === index
+                        ? "flex shrink-0 items-center justify-center"
+                        : "hidden"
+                    }
+                  >
                     <Image
                       src="/assets/minus-icon.svg"
                       alt="Minus-icon"
-                      width={24}
-                      height={24}
-                      priority
+                      width={18}
+                      height={18}
+                      className="w-[18px] h-[18px] sm:w-5 sm:h-5 md:w-4 md:h-4 lg:w-5 lg:h-5"
+                      loading="lazy"
                     />
                   </span>
                 </button>
+
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out
                     px-5 text-sm md:text-base leading-[170%] text-(--text-dark)
-                    ${openIndex === index ? "max-h-96 opacity-100 pb-5" : "max-h-0 opacity-0 pb-0"}`}
+                    ${
+                      openIndex === index
+                        ? "max-h-96 opacity-100 pb-5"
+                        : "max-h-0 opacity-0 pb-0"
+                    }`}
                 >
                   {faq.answer}
                 </div>
@@ -126,13 +150,12 @@ export default function FaqSection({
 
           {/* Right Content */}
           <div className="order-1 lg:order-2 lg:col-span-5 flex flex-col items-start justify-start text-left">
-            <SubHeading className="mb-5 lg:mb-10">
-              {heading}
-            </SubHeading>
+            <SubHeading className="mb-5 lg:mb-10">{heading}</SubHeading>
+
             <Paragraph className="mb-8 md:mb-5 xl:mb-10 text-(--text-dark)">
               {paragraph}
             </Paragraph>
-            
+
             {showButton && (
               <ButtonLg
                 url={buttonUrl}

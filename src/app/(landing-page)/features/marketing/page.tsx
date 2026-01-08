@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import imageOne from "../../../../../public/assets/marketing-assets/Frame1.png";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -103,7 +104,7 @@ const marketingFaqs = [
     id: 1,
     question: "Can coupons be applied to online and in-store sales?",
     answer:
-      "Yes. Our coupon system is designed for complete flexibility and a seamless customer experience. Coupons work in both conditions, whether a customer is checking out at a physical Store or completing a purchase through your online storefront. This ensures you can run unified campaigns across all your sales channels.",
+      "Yes. Our coupon system is designed for complete flexibility and a seamless customer experience. Coupons work in both conditions, whether a customer is checking out at a physical store or completing a purchase through your online storefront. This ensures you can run unified campaigns across all your sales channels.",
   },
   {
     id: 2,
@@ -220,7 +221,7 @@ const marketingTestimonials = [
     name: "Yasir Khan",
     title: "Prime Traders",
     image: "/assets/pfp.avif",
-    text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales.`,
+    text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales, which has increased how often they buy from us. happier with the results.`,
     icon: "/assets/review-section/coma-green.svg",
     color: "#1AD1B9",
   },
@@ -242,7 +243,8 @@ const page = () => {
       <SubFeaturesHero
         title="Power Your Business with Smart Marketing Tools"
         description="Owner's Inventory Marketing helps you boost customer engagement and sales. It's simple, highly effective and works perfectly. Whether you want to reward your most loyal customers or easily attract new ones, it’s all taken care of under a single platform."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image = {imageOne}
         ctaDesc= "Get Started for Free"
         variant="animation2"
       />
@@ -293,7 +295,7 @@ const page = () => {
               "Our team is always ready to help you set up and manage your marketing programs.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage="/assets/marketing-assets/Frame2.png"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
