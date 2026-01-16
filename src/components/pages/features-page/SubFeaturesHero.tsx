@@ -132,7 +132,6 @@
 
 // export default SubFeaturesHero;
 
-
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -151,6 +150,7 @@ interface SubFeaturesHeroProps {
   title?: string;
   description?: string;
   image?: StaticImageData;
+  video?: string;
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
 }
@@ -159,6 +159,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   title = "Grow Faster with Smarter Inventory Tools",
   description,
   image,
+  video,
   ctaDesc = "Book a Free Demo",
   variant = "animation1",
 }) => {
@@ -189,7 +190,11 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
     // Animations
     tl.to(mainHeadingRef.current, { opacity: 1, y: 0, duration: 0.8 }, 0);
     tl.to(paragraphRef.current, { opacity: 1, y: 0, duration: 0.8 }, 0.2);
-    tl.to(homeHeroSecRef.current, { clipPath: "inset(0% 0% 0% 0%)", duration: 1 }, 0.5);
+    tl.to(
+      homeHeroSecRef.current,
+      { clipPath: "inset(0% 0% 0% 0%)", duration: 1 },
+      0.5
+    );
     tl.to(growthBoxRef.current, { opacity: 1, y: 0, duration: 0.8 }, 1);
     tl.to(heroLowerRef.current, { opacity: 1, y: 0, duration: 1 }, 1.2);
   }, []);
@@ -220,7 +225,8 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
               style={
                 {
                   // background image is painted in CSS ::before using this variable
-                  ["--hero-bg" as any]: "url('/assets/home-page-images/hero-bg.webp')",
+                  ["--hero-bg" as any]:
+                    "url('/assets/home-page-images/hero-bg.webp')",
                 } as React.CSSProperties
               }
             >
@@ -233,19 +239,39 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                 </div>
 
                 <div ref={paragraphRef}>
-                  <Paragraph className="mb-4 text-center mx-auto">{description}</Paragraph>
+                  <Paragraph className="mb-4 text-center mx-auto">
+                    {description}
+                  </Paragraph>
                 </div>
 
                 <div
                   ref={growthBoxRef}
                   className="flex md:gap-4 gap-2 lg:p-1.5 relative z-[60] owner-inventory-hero__content--buttons"
                 >
-                  <ButtonSm url="#" text={ctaDesc} bgColor="[#1AD1B9]" textColor="white" isBorder />
+                  <ButtonSm
+                    url="#"
+                    text={ctaDesc}
+                    bgColor="[#1AD1B9]"
+                    textColor="white"
+                    isBorder
+                  />
                 </div>
 
                 {/* Hero Image */}
-                <div ref={heroLowerRef} className="owner-inventory-hero__lower relative w-full wrapper">
-                  {image ? (
+                <div
+                  ref={heroLowerRef}
+                  className="owner-inventory-hero__lower relative w-full wrapper"
+                >
+                  {video ? (
+                    <video
+                      src={video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full object-cover rounded-3xl"
+                    />
+                  ) : image ? (
                     <Image
                       src={image}
                       alt="Hero Image"
@@ -255,7 +281,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                     />
                   ) : (
                     <div className="w-full h-64 bg-gray-200 rounded-3xl flex items-center justify-center">
-                      <p className="text-gray-500">No image available</p>
+                      <p className="text-gray-500">No media available</p>
                     </div>
                   )}
                 </div>

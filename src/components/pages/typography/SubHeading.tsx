@@ -13,7 +13,7 @@ const SubHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
         "font-semibold text-[#231F20]",
         "font-['Onest']",
         "lg:text-[48px] md:text-[40px] text-[32px]",
-        "lg:leading-[48px] leading-[48px]",
+        "lg:leading-[60px] leading-[48px]",
         "",
         className 
       )}

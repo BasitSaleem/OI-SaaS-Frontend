@@ -397,7 +397,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     width={800}
                     height={600}
                     loading="lazy"
-                    className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute top-2 -right-2.5 md:-top-2.5 2xl:top-[-60px] 2xl:right-[200px] md:right-0"
+                    className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute top-2 -right-2.5 md:-top-2.5 2xl:-top-7 2xl:right-[200px] md:right-0"
                   />
 
                   <Image
@@ -407,7 +407,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     width={800}
                     height={600}
                     loading="lazy"
-                    className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-5  right-[-5px] md:top-2.5 md:right-5 lg:top-2.5 lg:right-5 2xl:-top-8 2xl:right-[220px]"
+                    className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-5  right-[-5px] md:top-2.5 md:right-5 lg:top-2.5 lg:right-5 2xl:top-0 2xl:right-[220px]"
                   />
 
                   <div
@@ -427,7 +427,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                       className="w-full "
                     />
                     <div ref={totalGrowthDescRef}>
-                      <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-['Onest']">
+                      <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-medium font-['Onest']">
                         Total Growth
                       </p>
                     </div>
