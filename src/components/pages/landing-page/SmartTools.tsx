@@ -66,7 +66,7 @@ const SmartTools: React.FC<SmartTools> = ({
             className="w-full"
           /> */}
            <video
-                    className="w-full object-cover rounded-3xl lazy-video "
+                    className="w-full object-cover  lazy-video "
                     autoPlay
                     muted
                     loop
