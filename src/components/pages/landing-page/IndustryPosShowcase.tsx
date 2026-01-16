@@ -167,7 +167,7 @@ const IndustryPosShowcase = ({
 
       <div className="w-full overflow-hidden">
         <div
-          className="flex gap-6 transition-transform duration-500 ease-in-out"
+          className="flex  gap-6 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentSlide * translationPercentage}%)`,
           }}

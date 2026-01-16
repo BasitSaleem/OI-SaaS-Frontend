@@ -126,11 +126,11 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
   return (
     <div className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px]">
       <div
-        className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[#F3F4F6] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-[42px]`}
+        className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[#F3F4F6] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-xl`}
         style={{
           backgroundImage: `
-    linear-gradient(180deg, #FFFFFF 20%, transparent 60%),
-    linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%, rgba(207, 181, 249, 1) 50%, rgba(158, 2, 255, 0.3) 80%)
+    linear-gradient(180deg, #FFFFFF 20%, transparent 100%),
+    linear-gradient(90deg, rgba(26, 209, 185, 0.3) 30%, rgba(207, 181, 249, 1) 60%, rgba(158, 2, 255, 0.3) 100%)
   `,
         }}
       >
@@ -160,9 +160,9 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
                 </p>
 
                 <div className="flex flex-col items-center justify-start">
-                  <h3 className="mb-2 lg:text-[28px] lg:leading-[30px] text-2xl leading-[135%] font-['Onest'] font-medium text-[var(--text-dark)] text-center">
+                  <p className="mb-2 lg:text-[28px] lg:leading-[30px] text-2xl leading-[135%] font-['Onest'] font-medium text-[var(--text-dark)] text-center">
                     {chaosHead}
-                  </h3>
+                  </p>
                   <p className="text-base font-['Onest'] leading-[170%] text-[var(--text-grey)] font-normal">
                     {chaosDesc}
                   </p>

@@ -7,93 +7,146 @@ export interface FeatureItem {
   key: string;
   title: string;
   icon: string;
+  category: string;
 }
 
+export interface FeatureCategory {
+  id: string;
+  title: string;
+}
+
+
+export const featureCategories: FeatureCategory[] = [
+  {
+    id: 'sales-marketing',
+    title: 'Inventory & Manufacturing',
+  },
+  {
+    id: 'operations',
+    title: 'Inventory & Manufacturing',
+  },
+  {
+    id: 'analytics',
+    title: 'Reports & Analytics',
+  },
+  {
+    id: 'finance',
+    title: 'Human Resource & Finance',
+  },
+  {
+    id: 'tools',
+    title: 'Business Tools',
+  },
+];
+
+
+
 export const featuresItems: FeatureItem[] = [
+  // Sales & Marketing
   {
     key: 'pos',
     title: 'Point of Sale',
     icon: '/assets/header-dropdown-images/point-of-sale.svg',
-  },
-  {
-    key: 'people',
-    title: 'People',
-    icon: '/assets/header-dropdown-images/proples.svg',
-  },
-  {
-    key: 'hr',
-    title: 'Human Resource',
-    icon: '/assets/header-dropdown-images/human-resources.svg',
-  }, {
-    key: 'facilities',
-    title: 'Facilities',
-    icon: '/assets/header-dropdown-images/facilitate.svg',
-  }, 
-  // {
-  //   key: 'restaurant',
-  //   title: 'Restaurant',
-  //   icon: '/assets/header-dropdown-images/restaurent.svg',
-  // },
-  {
-    key: 'products',
-    title: 'Products',
-    icon: '/assets/header-dropdown-images/products.svg',
-  },  {
-    key: 'sales',
-    title: 'Sales & Orders',
-    icon: '/assets/header-dropdown-images/sales-order.svg',
-  },
-  {
-    key: 'purchases',
-    title: 'Purchases',
-    icon: '/assets/header-dropdown-images/perchases.svg',
-  },
-  {
-    key: 'inventory',
-    title: 'Inventory Operations',
-    icon: '/assets/header-dropdown-images/inventory-operations.svg',
-  },
-   {
-    key: 'reports',
-    title: 'Reports',
-    icon: '/assets/header-dropdown-images/reports.svg',
-  },
-  {
-    key: 'advanceReports',
-    title: 'Advance Reports',
-    icon: '/assets/header-dropdown-images/advance-reports.svg',
-  },
-    {
-    key: 'finance',
-    title: 'Accounts & Finance',
-    icon: '/assets/header-dropdown-images/account-finance.svg',
+    category: 'sales-marketing',
   },
   {
     key: 'ecommerce',
     title: 'Ecommerce',
     icon: '/assets/header-dropdown-images/ecommerce.svg',
+    category: 'sales-marketing',
   },
-  // {
-  //   key: 'manufacturing',
-  //   title: 'Manufacturing',
-  //   icon: '/assets/header-dropdown-images/manufacturing.svg',
-  // },
-
   {
-    key: 'integrations',
-    title: 'Integrations',
-    icon: '/assets/header-dropdown-images/integrations.svg',
-  },
- 
-  {
-    key: 'tools',
-    title: 'General Tools',
-    icon: '/assets/header-dropdown-images/general-tools.svg',
+    key: 'sales',
+    title: 'Sales & Orders',
+    icon: '/assets/header-dropdown-images/sales-order.svg',
+    category: 'sales-marketing',
   },
   {
     key: 'marketing',
     title: 'Marketing',
     icon: '/assets/header-dropdown-images/marketing.svg',
+    category: 'sales-marketing',
+  },
+  
+  // Operations
+  {
+    key: 'facilities',
+    title: 'Facilities',
+    icon: '/assets/header-dropdown-images/facilitate.svg',
+    category: 'operations',
+  },
+  
+  {
+    key: 'purchases',
+    title: 'Purchases',
+    icon: '/assets/header-dropdown-images/perchases.svg',
+    category: 'operations',
+  },
+
+  {
+    key: 'inventory',
+    title: 'Inventory Operations',
+    icon: '/assets/header-dropdown-images/inventory-operations.svg',
+    category: 'operations',
+  },
+ 
+  {
+    key: 'products',
+    title: 'Products',
+    icon: '/assets/header-dropdown-images/products.svg',
+    category: 'operations',
+  },
+  
+  
+  
+  // Analytics & Reporting
+  {
+    key: 'reports',
+    title: 'Reports',
+    icon: '/assets/header-dropdown-images/reports.svg',
+    category: 'analytics',
+  },
+  {
+    key: 'advanceReports',
+    title: 'Advance Reports',
+    icon: '/assets/header-dropdown-images/advance-reports.svg',
+    category: 'analytics',
+  },
+  
+  // Finance
+  {
+    key: 'finance',
+    title: 'Accounts & Finance',
+    icon: '/assets/header-dropdown-images/account-finance.svg',
+    category: 'finance',
+    
+  },
+
+  {
+    key: 'people',
+    title: 'People',
+    icon: '/assets/header-dropdown-images/proples.svg',
+    category: 'finance',
+  },
+  {
+    key: 'hr',
+    title: 'Human Resource',
+    icon: '/assets/header-dropdown-images/human-resources.svg',
+    category: 'finance',
+  },
+  
+  // Tools & Integrations
+  {
+    key: 'integrations',
+    title: 'Integrations',
+    icon: '/assets/header-dropdown-images/integrations.svg',
+    category: 'tools',
+  },
+  {
+    key: 'tools',
+    title: 'General Tools',
+    icon: '/assets/header-dropdown-images/general-tools.svg',
+    category: 'tools',
   },
 ];
 
@@ -378,5 +431,18 @@ export const  FeatureList = ({ items }: { items: FeatureTreeItem[] }) => (
   </ul>
 );
 
+// Group features by category (helper function)
+export const groupFeaturesByCategory = (): Record<string, FeatureItem[]> => {
+  const grouped: Record<string, FeatureItem[]> = {};
+  
+  featuresItems.forEach((item) => {
+    if (!grouped[item.category]) {
+      grouped[item.category] = [];
+    }
+    grouped[item.category].push(item);
+  });
+  
+  return grouped;
+};
 
 

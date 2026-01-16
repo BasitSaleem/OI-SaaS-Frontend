@@ -39,7 +39,7 @@ const ToolsSection = () => {
                   alt={tool.name}
                   className="w-14 h-14 object-contain"
                 />
-                <CardHeading>{tool.name}</CardHeading>
+                <p className="font-semibold text-[var(--text-dark)] font-['Onest'] lg:text-2xl text-xl md:leading-[100%] leading-[140%]">{tool.name}</p>
               </div>
             );
           })}

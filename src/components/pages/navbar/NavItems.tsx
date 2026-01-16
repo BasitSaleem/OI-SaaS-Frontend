@@ -1,5 +1,3 @@
-
-
 "use client";
 import { useState } from "react";
 import { companyItems } from "./dropdownItems/Companylist";
@@ -7,6 +5,7 @@ import {
   featuresItems,
   featuresDetailsMap,
   FeatureList,
+  featureCategories,
 } from "./dropdownItems/Featureslist";
 import {
   industriesItems,
@@ -35,6 +34,11 @@ const NavItems = () => {
   const [selectedResourceKey, setSelectedResourceKey] =
     useState<string>("learning");
 
+  // Add new state for selected category
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(
+    "sales-marketing"
+  );
+
   const router = useRouter();
 
   return (
@@ -44,50 +48,130 @@ const NavItems = () => {
         <NavDropdown
           label="Features"
           isOpen={openMenu === "features"}
-          onOpen={() => open("features")}
+          onOpen={() => {
+            open("features");
+            // Set default category when opening
+            if (!selectedCategory) {
+              setSelectedCategory("sales-marketing");
+            }
+          }}
           onClose={close}
           onToggle={() => toggle("features")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 p-10 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-visible overflow-x-hidden">
-            {/* Left Section (9/12) */}
-            <div className="col-span-12 md:col-span-8 lg:col-span-9 pr-4">
-              <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
-                {featuresItems.map((item) => (
-                  <Link
-                    key={item.key} // ✅ key on outer element
-                    href={`/features/${item.key.toLowerCase()}`}
-                    className={`relative flex items-center justify-between cursor-pointer gap-2 px-3 py-4 border rounded-xl ${
-                      selectedFeatureKey === item.key
-                        ? "border-[#795CF5] bg-gray-100"
-                        : "border-[#D9D9D9]"
-                    } hover:bg-gray-100`}
-                    onMouseEnter={() => setSelectedFeatureKey(item.key)}
-                  >
-                    <div className="relative flex items-center gap-2 w-full">
-                      <Image src={item.icon} alt={item.title} width={16} height={16} />
-                      <span className="text-sm font-medium text-left text-[#231F20]">
-                        {item.title}
-                      </span>
-                    </div>
-                  </Link>
-                ))}
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+            {/* Left Section (3/12) - Categories */}
+            <div className="lg:col-span-3 px-4 py-6 bg-[#F6F4FE]">
+              <div className="space-y-1 ">
+                {featureCategories.map((category) => {
+                  const categoryFeatures = featuresItems.filter(
+                    (item) => item.category === category.id
+                  );
+
+                  if (categoryFeatures.length === 0) return null;
+
+                  return (
+                    <button
+                      key={category.id}
+                      onClick={() => setSelectedCategory(category.id)}
+                      // onMouseEnter={() => setSelectedCategory(category.id)}
+                      className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${
+                        selectedCategory === category.id
+                          ? "bg-white border border-transparent text-[#795CF5]"
+                          : "hover:bg-[white] text-[#16151C]"
+                      }`}
+                    >
+                      <div className="flex flex-col">
+                        <span className="text-base font-medium font-['Onest']">
+                          {category.title}
+                        </span>
+                        {/* <span className="text-xs text-gray-500 mt-1">
+                    {categoryFeatures.length} features
+                  </span> */}
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
-            {/* Right Section (3/12) */}
-            {featuresDetailsMap[selectedFeatureKey] && (
-              <div className="hidden md:block col-span-4 lg:col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto overflow-x-auto w-3xl">
-                <p className="mb-4 text-xs font-bold text-[#231F20]">
+            {/* Middle Section (6/12) - Features within Selected Category */}
+            <div className="lg:col-span-6 px-4 py-6 relative">
+                   <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#795CF5] absolute blur-[150px] bottom-0 right-20"></div>
+                   <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#1AD1B9] absolute blur-[150px] bottom-0 left-10"></div>
+              {selectedCategory && (
+                <div>
+                  <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[#464253] mb-4">
+                    {
+                      featureCategories.find((c) => c.id === selectedCategory)
+                        ?.title
+                    }
+                  </h3>
+
+                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
+                    {featuresItems
+                      .filter((item) => item.category === selectedCategory)
+                      .map((item) => (
+                        <Link
+                          key={item.key}
+                          href={`/features/${item.key.toLowerCase()}`}
+                          className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
+                            selectedFeatureKey === item.key
+                              ? "border-[#795CF5] bg-purple-50 "
+                              : "border-[#D9D9D9] hover:border-[#795CF5]"
+                          } hover:bg-gray-50 transition-all duration-200`}
+                          onMouseEnter={() => setSelectedFeatureKey(item.key)}
+                        >
+                          <Image
+                            src={item.icon}
+                            alt={item.title}
+                            width={20}
+                            height={20}
+                            className="flex-shrink-0"
+                          />
+                          <span
+                            className={`text-sm font-['Onest'] text-left text-[#231F20]
+                    ${
+                      selectedFeatureKey === item.key
+                        ? "font-bold"
+                        : "font-medium"
+                    }
+                    `}
+                          >
+                            {item.title}
+                          </span>
+                        </Link>
+                      ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Right Section (3/12) - Details Panel */}
+            <div className="px-4 py-6 hidden md:block lg:col-span-3">
+              <div
+                className=" border-l max-h-[400px] min-h-[400px] border-[#D9D9D9] w-full pl-4  overflow-y-auto overflow-x-hidden 
+  [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:bg-transparent
+  [&::-webkit-scrollbar-thumb]:bg-[#D9D9D9]
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  hover:[&::-webkit-scrollbar-thumb]:bg-[#B0B0B0]
+  [scrollbar-width:thin]
+  [scrollbar-color:#D9D9D9_transparent]"
+              >
+                <p className="mb-2 text-xs font-bold text-[#231F20]">
                   {
                     featuresItems.find(
                       (item) => item.key === selectedFeatureKey
                     )?.title
                   }
                 </p>
+
+                <span className="text-xs mb-6 leading-[100%] font-['Onest'] text-[#666666] font-normal">Key Features</span>
+
                 <FeatureList items={featuresDetailsMap[selectedFeatureKey]} />
               </div>
-            )}
+            </div>
           </div>
         </NavDropdown>
 
@@ -123,7 +207,12 @@ const NavItems = () => {
                       onClick={() => setSelectedIndustryKey(item.key)}
                       className="flex items-center gap-2 w-[80%]"
                     >
-                      <Image src={item.icon} alt={item.title} width={16} height={16} />
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={16}
+                        height={16}
+                      />
                       <span className="text-sm font-medium text-left text-[#231F20]">
                         {item.title}
                       </span>
@@ -132,7 +221,14 @@ const NavItems = () => {
                       href={`/industries/${item.key.toLowerCase()}`}
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
-                      <Image src="/assets/detail-icon.svg" alt="arrow-up" width={12} height={16} priority className="h-4 w-3" />
+                      <Image
+                        src="/assets/detail-icon.svg"
+                        alt="arrow-up"
+                        width={12}
+                        height={16}
+                        priority
+                        className="h-4 w-3"
+                      />
                     </Link>
                   </div>
                 ))}
@@ -196,7 +292,12 @@ const NavItems = () => {
                       onClick={() => setSelectedResourceKey(item.key)}
                       className="flex items-center gap-2 w-[80%]"
                     >
-                      <Image src={item.icon} alt={item.title} width={16} height={16} />
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={16}
+                        height={16}
+                      />
                       <span className="text-sm font-medium text-left text-[#231F20]">
                         {item.title}
                       </span>
@@ -205,7 +306,14 @@ const NavItems = () => {
                       href={`/resources/${item.key.toLowerCase()}`}
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
-                      <Image src="/assets/detail-icon.svg" alt="arrow-up" width={12} height={16} priority className="h-4 w-3" />
+                      <Image
+                        src="/assets/detail-icon.svg"
+                        alt="arrow-up"
+                        width={12}
+                        height={16}
+                        priority
+                        className="h-4 w-3"
+                      />
                     </Link>
                   </div>
                 ))}
@@ -223,7 +331,9 @@ const NavItems = () => {
                 </p>
                 <ul className="space-y-0">
                   {resourcesDetailsMap[selectedResourceKey].map((item) => (
-                    <li key={item}> {/* ✅ unique key for each <li> */}
+                    <li key={item}>
+                      {" "}
+                      {/* ✅ unique key for each <li> */}
                       <a
                         href="#"
                         className="text-xs font-normal leading-9 text-[#231F20] hover:text-gray-400"
@@ -256,7 +366,12 @@ const NavItems = () => {
                     href="#"
                     className="flex items-center gap-2 px-4 py-4 border border-[#D9D9D9] rounded-xl hover:bg-gray-100 hover:border-[#795CF5]"
                   >
-                    <Image src={item.icon} alt={item.title} width={16} height={16} />
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={16}
+                      height={16}
+                    />
                     <span className="text-xs font-medium text-[#231F20] hover:font-semibold">
                       {item.title}
                     </span>
