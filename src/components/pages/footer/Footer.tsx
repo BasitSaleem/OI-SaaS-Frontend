@@ -4,16 +4,37 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  gradientBackground?: string;
+}
+
+const DEFAULT_GRADIENT_BACKGROUND = `
+ 
+  radial-gradient(900px 650px at 12% 8%,
+    rgba(207, 181, 249, 0.55) 0%,
+    rgba(207, 181, 249, 0.18) 45%,
+    rgba(207, 181, 249, 0.00) 75%
+  ),
+  radial-gradient(900px 650px at 88% 10%,
+    rgba(160, 215, 255, 0.55) 0%,
+    rgba(160, 215, 255, 0.18) 45%,
+    rgba(160, 215, 255, 0.00) 75%
+  ),
+  linear-gradient(
+    135deg,
+    rgba(210, 185, 255, 0.75) 0%,
+    rgba(175, 205, 255, 0.70) 45%,
+    rgba(160, 230, 245, 0.65) 100%
+  )
+`;
+
+const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
   return (
     <footer
-      className="owner-inventory-footer relative -mt-[131px] pt-[251px] lg:pt-[291px] pb-10 px-4 md:px-6 lg:px-10 bg-white/50 backdrop-blur-xl "
-      style={{
-        background:
-          "linear-gradient(90deg,  rgba(158, 2, 255, 0.3) 0%, rgba(207, 181, 249, 1) 10%, rgba(26, 209, 185, 0.3) 80%) ",
-      }}
+      className="owner-inventory-footer relative -mt-[131px] pt-[251px] lg:pt-[291px] pb-10 bg-white/50 backdrop-blur-xl"
+      style={{ background: gradientBackground || DEFAULT_GRADIENT_BACKGROUND }}
     >
-      <div className="flex wrapper  flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-[40px]">
+      <div className="flex wrapper flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-[40px]">
         {/* Top Row */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-10">
           {/* Logo */}
@@ -29,7 +50,7 @@ const Footer: React.FC = () => {
           </Link>
 
           {/* Navigation Links */}
-          <ul className="flex flex-col md:flex-row items-center justify-center gap-4 xl:gap-6">
+          <ul className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2 xl:gap-6">
             {[
               { text: "Privacy Policy", href: "/privacy-policy" },
               { text: "Terms & Conditions", href: "/terms-and-conditions" },
@@ -40,7 +61,7 @@ const Footer: React.FC = () => {
               <li key={index}>
                 <Link
                   href={item.href}
-                  className="text-sm whitespace-nowrap md:text-[10px] lg:text-xs xl:text-sm font-semibold font-['Onest'] text-[var(--text-dark)] cursor-pointer"
+                  className="text-sm whitespace-nowrap md:text-[12px] lg:text-xs xl:text-sm font-semibold font-['Onest'] text-[var(--text-dark)] cursor-pointer"
                 >
                   {item.text}
                 </Link>
@@ -59,7 +80,7 @@ const Footer: React.FC = () => {
                 >
                   <Image
                     src={`/assets/footer/${platform}-logo.svg`}
-                    alt={`${platform}-logo`}
+                    alt={`${platform} logo`}
                     width={28}
                     height={28}
                     className="w-full"
@@ -75,7 +96,7 @@ const Footer: React.FC = () => {
         <div className="w-full h-[1px] bg-[var(--text-dark)] rounded-full" />
 
         {/* Bottom Row */}
-        <div className="flex flex-col md:flex-row items-center  justify-between w-full">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
           <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             ©2025 Owners Inventory - All rights reserved
           </p>

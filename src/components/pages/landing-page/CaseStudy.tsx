@@ -154,7 +154,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             >
               {/* Header */}
               <div className="px-0 py-2 lg:p-2  md:col-span-6 lg:col-span-7 xl:col-span-8 relative z-[10]">
-                <p className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">{study.title}</p>
+                <h3 className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">{study.title}</h3>
                 <div className="flex flex-col items-end">
                   <div className="bg-[var(--background-halfwhite)] rounded-l-[20px] rounded-tr-[20px] lg:rounded-l-[28px] lg:rounded-tr-[28px] p-6">
                    <p className="text-[var(--primary-teal)] lg:text-[32px] text-2xl lg:leading-[100%] leading-[165%] font-normal font-['Onest'] mb-4">Overview</p>

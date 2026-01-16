@@ -110,7 +110,7 @@ export default function FaqSection({
                       alt="Plus-icon"
                       width={18}
                       height={18}
-                      className="w-[18px] h-[18px] sm:w-5 sm:h-5 md:w-4 md:h-4 lg:w-5 lg:h-5"
+                      className="w-4 h-4"
                       loading="lazy"
                     />
                   </span>
@@ -127,7 +127,7 @@ export default function FaqSection({
                       alt="Minus-icon"
                       width={18}
                       height={18}
-                      className="w-[18px] h-[18px] sm:w-5 sm:h-5 md:w-4 md:h-4 lg:w-5 lg:h-5"
+                      className="w-[18px] h-[18px]"
                       loading="lazy"
                     />
                   </span>
