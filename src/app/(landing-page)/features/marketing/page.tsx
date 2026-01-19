@@ -72,7 +72,7 @@ const marketingIndustries = [
     title: "Fashion & Apparel",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
-      "In the Fashion And Apparel Industry, offering exciting promo codes when you drop new collections and establishing a strong reward system will boost repeat purchases.",
+      "In the Fashion and Apparel Industry, offering exciting promo codes when you drop new collections and establishing a strong reward system will boost repeat purchases.",
     image: "/assets/industry-type/fashion.webp",
     mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },

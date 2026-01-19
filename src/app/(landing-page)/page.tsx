@@ -202,9 +202,9 @@ export default function Home() {
 
         <ToolsSection />
 
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <SmartTools />
-        </div>
+        </div> */}
 
         <InsightsSection />
 

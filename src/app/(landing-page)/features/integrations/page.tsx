@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/integration-page/integration-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/integration-page/why-chose-banner.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -45,7 +47,7 @@ const FeaturesCards = [
     id: 2,
     title: "Shopify Integration",
       description:
-      "Connect your Shopify store with Owners Inventory to sync products, stock, orders, and customer data in real time. Keep inventory updated automatically, manage orders easily, and track sales performance across all channels from one place",
+      "Connect your Shopify store with Owners Inventory to sync products, stock, orders, and customer data in real time. Keep inventory updated automatically, manage orders easily, and track sales performance across all channels from one place.",
     imageSrc:
       "/assets/features-page/integration-page/features-section/shopify-integration.webp",
     
@@ -222,7 +224,7 @@ const integrationTestimonials = [
     name: "Alice Marshall",
     title: "Owner, Al-Asif Supermart",
     image: "/assets/100.jpeg",
-    text: `What stands out the most is how easy the system makes complex work feel. Our payment gateway and marketing tools work together without any confusion. The integration is stable, and the support team always guides us when we need help`,
+    text: `What stands out the most is how easy the system makes complex work feel. Our payment gateway and marketing tools work together without any confusion. The integration is stable, and the support team always guides us when we need help.`,
     icon: "/assets/review-section/double-coma-icon.svg",
     color: "#795CF5",
   },
@@ -238,7 +240,8 @@ const Page = () => {
       <SubFeaturesHero
         title="Connect Businesses through Smart Integrations"
         description="Integrate operations with smooth third-party platforms and tools to unify your business with Owners Inventory’s Integration Module. Accounting, payments and marketing are all connected together by our integration-ready service."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -286,7 +289,7 @@ const Page = () => {
           
          
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
      

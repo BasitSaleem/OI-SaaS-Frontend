@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/products-page/products-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/integration-page/why-chose-banner.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -253,7 +255,8 @@ const page = () => {
       <SubFeaturesHero
         title="Manage Your Products Seamlessly with Owners Inventory"
         description="Create, manage, and monitor all your products effectively through the Product Management Feature in Owners Inventory. Organize stock levels, set prices, SKUs, and barcodes with complete transparency and accuracy."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
