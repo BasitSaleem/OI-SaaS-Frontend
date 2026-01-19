@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import MainHeading from "../typography/MainHeading";
 
 type VideoRefs = {
@@ -11,14 +11,17 @@ export default function FeaturesTabSection() {
   const [activeTab, setActiveTab] = useState(1);
   const [videoProgress, setVideoProgress] = useState<{[key: string]: number}>({});
   const videoRefs = useRef<VideoRefs>({});
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true); // Start with auto-play enabled
+  const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const features = [
     {
       id: "inventorypos-system",
       title: "Smart POS System for Modern Retail",
       icon: "/assets/features-section/pos-system.svg",
-      videoSrc: "https://d1ybi42hallhsh.cloudfront.net/videos/Air_Spray.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/pos-systemopt.mp4",
       tabIndex: 1,
       iconWidth: 20,
       iconHeight: 20,
@@ -27,7 +30,7 @@ export default function FeaturesTabSection() {
       id: "inventory-ecommerce",
       title: "Built-in E-commerce - Fully Synced and Ready to Sell",
       icon: "/assets/features-section/cart-icons.svg",
-      videoSrc: "https://d1ybi42hallhsh.cloudfront.net/videos/Air_Spray.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/pos-systemopt.mp4",
       tabIndex: 2,
       iconWidth: 18,
       iconHeight: 14,
@@ -36,7 +39,7 @@ export default function FeaturesTabSection() {
       id: "inventory-management",
       title: "Streamline Manufacturing + Stay in Control of Every Process",
       icon: "/assets/features-section/management-icon.svg",
-      videoSrc: "https://d1ybi42hallhsh.cloudfront.net/videos/Air_Spray.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/pos-systemopt.mp4",
       tabIndex: 3,
       iconWidth: 16,
       iconHeight: 14,
@@ -45,12 +48,49 @@ export default function FeaturesTabSection() {
       id: "inventory-autosync",
       title: "Smart analytics and reports to drive visibility and accountability",
       icon: "/assets/features-section/autosync.svg",
-      videoSrc: "https://d1ybi42hallhsh.cloudfront.net/videos/Air_Spray.mp4",
+      videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/manufacturing-opt.mp4",
       tabIndex: 4,
       iconWidth: 18,
       iconHeight: 18,
     },
   ];
+
+  // Preload only active video
+  const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
+    if (loadedVideos.has(videoId)) return;
+
+    const video = document.createElement('video');
+    video.preload = 'metadata';
+    video.src = videoSrc;
+    video.muted = true;
+    
+    video.onloadeddata = () => {
+      setLoadedVideos(prev => new Set([...prev, videoId]));
+    };
+
+    video.onerror = () => {
+      console.error(`Failed to load video: ${videoId}`);
+    };
+  }, [loadedVideos]);
+
+  // Function to move to next tab automatically
+  const moveToNextTab = useCallback(() => {
+    if (!isAutoPlaying) return;
+
+    const currentFeatureIndex = features.findIndex(f => f.tabIndex === activeTab);
+    let nextFeature;
+    
+    if (currentFeatureIndex < features.length - 1) {
+      nextFeature = features[currentFeatureIndex + 1];
+    } else {
+      // Loop back to first feature
+      nextFeature = features[0];
+    }
+
+    if (nextFeature) {
+      handleTabClick(nextFeature.tabIndex, `${nextFeature.id}-video`, true);
+    }
+  }, [activeTab, isAutoPlaying, features]);
 
   // Handle video time updates
   useEffect(() => {
@@ -64,124 +104,128 @@ export default function FeaturesTabSection() {
       }
     };
 
-    const handleVideoEnded = (tabIndex: number) => {
+    const handleVideoEnded = () => {
       if (isAutoPlaying) {
-        // Move to next tab when video ends
-        const currentFeatureIndex = features.findIndex(f => f.tabIndex === tabIndex);
-        if (currentFeatureIndex < features.length - 1) {
-          const nextFeature = features[currentFeatureIndex + 1];
-          setTimeout(() => {
-            handleTabClick(nextFeature.tabIndex, `${nextFeature.id}-video`, true);
-          }, 500); // Small delay for smooth transition
-        } else {
-          // If it's the last video, loop back to the first one
-          const firstFeature = features[0];
-          setTimeout(() => {
-            handleTabClick(firstFeature.tabIndex, `${firstFeature.id}-video`, true);
-          }, 500);
-        }
+        // Delay before moving to next tab
+        setTimeout(() => {
+          moveToNextTab();
+        }, 300);
       }
     };
 
-    // Setup event listeners for each video
-    features.forEach((feature) => {
-      const desktopVideoId = `${feature.id}-video`;
-      const mobileVideoId = `${feature.id}-mobile-video`;
+    // Setup event listeners for active video
+    const activeFeature = features.find(f => f.tabIndex === activeTab);
+    if (activeFeature) {
+      const desktopVideoId = `${activeFeature.id}-video`;
+      const mobileVideoId = `${activeFeature.id}-mobile-video`;
       
       const desktopVideo = videoRefs.current[desktopVideoId];
       const mobileVideo = videoRefs.current[mobileVideoId];
 
       // Desktop video listeners
       if (desktopVideo) {
-        // Remove existing listeners first
-        desktopVideo.removeEventListener("timeupdate", () => {});
-        desktopVideo.removeEventListener("ended", () => {});
-        
-        // Add new listeners
         const timeUpdateHandler = () => handleTimeUpdate(desktopVideoId, desktopVideo);
-        const endedHandler = () => handleVideoEnded(feature.tabIndex);
+        const endedHandler = () => handleVideoEnded();
         
         desktopVideo.addEventListener("timeupdate", timeUpdateHandler);
         desktopVideo.addEventListener("ended", endedHandler);
+
+        return () => {
+          desktopVideo.removeEventListener("timeupdate", timeUpdateHandler);
+          desktopVideo.removeEventListener("ended", endedHandler);
+        };
       }
 
       // Mobile video listeners
       if (mobileVideo) {
-        // Remove existing listeners first
-        mobileVideo.removeEventListener("timeupdate", () => {});
-        mobileVideo.removeEventListener("ended", () => {});
-        
-        // Add new listeners
         const timeUpdateHandler = () => handleTimeUpdate(mobileVideoId, mobileVideo);
-        const endedHandler = () => handleVideoEnded(feature.tabIndex);
+        const endedHandler = () => handleVideoEnded();
         
         mobileVideo.addEventListener("timeupdate", timeUpdateHandler);
         mobileVideo.addEventListener("ended", endedHandler);
+
+        return () => {
+          mobileVideo.removeEventListener("timeupdate", timeUpdateHandler);
+          mobileVideo.removeEventListener("ended", endedHandler);
+        };
       }
-    });
-
-    return () => {
-      // Cleanup event listeners
-      Object.keys(videoRefs.current).forEach((key) => {
-        const video = videoRefs.current[key];
-        if (video) {
-          video.removeEventListener("timeupdate", () => {});
-          video.removeEventListener("ended", () => {});
-        }
-      });
-    };
-  }, [activeTab, isAutoPlaying]);
-
-  // Handle tab click
-  const handleTabClick = (tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
-    // When user clicks manually, stop auto-playing sequence
-    if (!isAutoTransition) {
-      setIsAutoPlaying(false);
     }
 
-    // Pause all videos and reset progress
+    return () => {};
+  }, [activeTab, isAutoPlaying, features, moveToNextTab]);
+
+  // Handle tab click
+  const handleTabClick = useCallback((tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
+    // Clear any existing timeout
+    if (autoPlayTimeoutRef.current) {
+      clearTimeout(autoPlayTimeoutRef.current);
+      autoPlayTimeoutRef.current = null;
+    }
+
+    // When user clicks manually, pause auto-playing for a moment, then resume
+    if (!isAutoTransition) {
+      setIsAutoPlaying(false);
+      
+      // Resume auto-play after current video finishes
+      autoPlayTimeoutRef.current = setTimeout(() => {
+        setIsAutoPlaying(true);
+      }, 2000); // Resume auto-play 2 seconds after manual click
+    }
+
+    // Pause all videos
     Object.keys(videoRefs.current).forEach((key) => {
       const video = videoRefs.current[key];
       if (video) {
         video.pause();
-        video.currentTime = 0;
       }
     });
 
     // Set new active tab
     setActiveTab(tabIndex);
-    
-    // Reset progress for all videos
-    setVideoProgress({});
 
-    // Play the selected video after a small delay to ensure DOM is updated
+    // Preload next video
+    const currentFeatureIndex = features.findIndex(f => f.tabIndex === tabIndex);
+    if (currentFeatureIndex < features.length - 1) {
+      const nextFeature = features[currentFeatureIndex + 1];
+      preloadVideo(`${nextFeature.id}-video`, nextFeature.videoSrc);
+      preloadVideo(`${nextFeature.id}-mobile-video`, nextFeature.videoSrc);
+    }
+
+    // Play the selected video
     setTimeout(() => {
-      // Play both desktop and mobile videos
       const selectedDesktopVideo = videoRefs.current[videoId];
       const selectedMobileVideo = videoRefs.current[`${videoId.replace('-video', '-mobile-video')}`];
       
       if (selectedDesktopVideo) {
+        selectedDesktopVideo.currentTime = 0; // Restart video
         selectedDesktopVideo.play().catch((error) => {
           console.error("Desktop video play failed:", error);
         });
       }
       
       if (selectedMobileVideo) {
+        selectedMobileVideo.currentTime = 0; // Restart video
         selectedMobileVideo.play().catch((error) => {
           console.error("Mobile video play failed:", error);
         });
       }
-
-      // If this is an auto-transition, keep auto-playing enabled
-      if (isAutoTransition) {
-        setIsAutoPlaying(true);
-      }
     }, 100);
-  };
+  }, [features, preloadVideo]);
+
+  // Initial load - preload only first video
+  useEffect(() => {
+    if (isInitialLoad) {
+      const firstFeature = features[0];
+      if (firstFeature) {
+        preloadVideo(`${firstFeature.id}-video`, firstFeature.videoSrc);
+        preloadVideo(`${firstFeature.id}-mobile-video`, firstFeature.videoSrc);
+      }
+      setIsInitialLoad(false);
+    }
+  }, [isInitialLoad, features, preloadVideo]);
 
   // Start auto-playing when component mounts
   useEffect(() => {
-    // Start auto-play sequence after initial load
     const timer = setTimeout(() => {
       setIsAutoPlaying(true);
       const firstFeature = features.find(f => f.tabIndex === activeTab);
@@ -193,14 +237,23 @@ export default function FeaturesTabSection() {
           });
         }
       }
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
 
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (autoPlayTimeoutRef.current) {
+        clearTimeout(autoPlayTimeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
-      <div className="absolute  top-[-150px] right-[-0px] z-[300] ">
+      <div className="absolute top-[-150px] right-[-0px] z-[300]">
         <div className="bg-[var(--primary-purple)] h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] blur-[400px] lg:blur-[300px] rounded-full"></div>
       </div>
       <div className="wrapper relative z-[400]">
@@ -225,8 +278,9 @@ export default function FeaturesTabSection() {
                   className="w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl lazy-video feature-video"
                   autoPlay={activeTab === feature.tabIndex}
                   muted
-                  loop={false} // Disable loop for auto-transition
+                  loop={false}
                   playsInline
+                  preload="metadata"
                 >
                   <source src={feature.videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -256,6 +310,7 @@ export default function FeaturesTabSection() {
                       height={feature.iconHeight} 
                       className="w-6 h-6 md:w-auto md:h-auto"
                       alt={feature.title}
+                      loading="lazy"
                     />
                   </div>
                   <span
@@ -294,8 +349,9 @@ export default function FeaturesTabSection() {
                     className="w-full object-cover rounded-3xl lazy-video feature-video"
                     autoPlay={activeTab === feature.tabIndex}
                     muted
-                    loop={false} // Disable loop for auto-transition
+                    loop={false}
                     playsInline
+                    preload="metadata"
                   >
                     <source src={feature.videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.
