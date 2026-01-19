@@ -48,7 +48,7 @@ export default function WhyChoosePOS({
                     flex flex-col md:flex-row
                     items-start md:items-start
                     gap-4 sm:gap-5 md:gap-6
-                    p-5 sm:p-6 xl:p-[30px]
+                    px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6
                   "
                 >
                   {/* Icon */}
@@ -65,7 +65,7 @@ export default function WhyChoosePOS({
                   </div>
 
                   {/* Text */}
-                  <div className="flex flex-col items-start gap-2 sm:gap-3 xl:gap-4 flex-1">
+                  <div className="flex flex-col items-start gap-4 flex-1">
                     <CardHeading>{card.title}</CardHeading>
                     <p className="text-base leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
                       {card.description}

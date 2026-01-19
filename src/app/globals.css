@@ -108,6 +108,13 @@ html, body {
 }
 
 
+/* Equal height cards for Swiper */
+.swiper-wrapper {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+
 
 
 .swiper .swiper-pagination-bullet {
@@ -247,7 +254,7 @@ html, body {
     69.54deg,
     rgba(26, 209, 185, 0.22) 0.66%,
     rgba(56, 172, 204, 0.22) 29.25%,
-    rgba(85, 136, 223, 0.22) 63.93%,
+    rgba(85, 136, 223, 0.22) 50.93%,
     rgba(121, 92, 245, 0.22) 98.14%
   );
 

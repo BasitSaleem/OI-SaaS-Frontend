@@ -77,7 +77,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
           return <FeatureCard key={i} {...feature} {...pattern} />;
         })}
       </div>
-      <div className="w-full absolute bottom-0 left-0 right-0  bg-[linear-gradient(0deg,#FFFFFF_5%,rgba(255,255,255,0)_100%)] h-[163px]"></div>
+      <div className="w-full absolute bottom-0 left-0 right-0  bg-[linear-gradient(0deg,#FFFFFF_5%,rgba(255,255,255,0)_100%)] h-[70px]"></div>
       </div>
 
       {/* See More/Less Button */}

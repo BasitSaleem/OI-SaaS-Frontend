@@ -2,59 +2,58 @@
 import "../globals.css";
 import React, { useEffect, Suspense } from "react";
 import Image from "next/image";
-import { caseStudiesData } from '@/constant/caseStudiesData/caseStudiesData'
+import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 import dynamic from "next/dynamic";
 
 // Lazy load all components
 const HeroSection2 = dynamic(
-  () => import("@/components/common-components/HeroSection2")
+  () => import("@/components/common-components/HeroSection2"),
 );
 const TrustedBySection = dynamic(
-  () => import("@/components/common-components/TrustedBySection")
+  () => import("@/components/common-components/TrustedBySection"),
 );
 const TurningChaos = dynamic(
-  () => import("@/components/pages/landing-page/TurningChaos")
+  () => import("@/components/pages/landing-page/TurningChaos"),
 );
 const CaseStudies = dynamic(
-  () => import("@/components/pages/landing-page/CaseStudy")
+  () => import("@/components/pages/landing-page/CaseStudy"),
 );
 const SmartWaytoSyncndSellSection = dynamic(
-  () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection")
+  () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection"),
 );
 const UnifiedPlatform = dynamic(
-  () => import("@/components/pages/landing-page/UnifiedPlatform")
+  () => import("@/components/pages/landing-page/UnifiedPlatform"),
 );
 const VoicesRealBusiness = dynamic(
-  () => import("@/components/pages/landing-page/VoicesRealBusiness")
+  () => import("@/components/pages/landing-page/VoicesRealBusiness"),
 );
 const IndustryPosShowcase = dynamic(
-  () => import("@/components/pages/landing-page/IndustryPosShowcase")
+  () => import("@/components/pages/landing-page/IndustryPosShowcase"),
 );
 const PosIconsSection = dynamic(
-  () => import("@/components/pages/landing-page/Smartway")
+  () => import("@/components/pages/landing-page/Smartway"),
 );
 const ToolsSection = dynamic(
-  () => import("@/components/pages/landing-page/ToolsSection")
+  () => import("@/components/pages/landing-page/ToolsSection"),
 );
 const SmartTools = dynamic(
-  () => import("@/components/pages/landing-page/SmartTools")
+  () => import("@/components/pages/landing-page/SmartTools"),
 );
 const InsightsSection = dynamic(
-  () => import("@/components/pages/landing-page/InsightsSection")
+  () => import("@/components/pages/landing-page/InsightsSection"),
 );
 const FaqSection = dynamic(
-  () => import("@/components/pages/landing-page/FAQSection")
+  () => import("@/components/pages/landing-page/FAQSection"),
 );
 const CalltoActionBottom = dynamic(
-  () => import("@/components/pages/landing-page/CalltoActionBottom")
-);
-const FeaturesTabSection = dynamic(
-  () => import("@/components/pages/landing-page/FeaturesSection")
+  () => import("@/components/pages/landing-page/CalltoActionBottom"),
 );
 // const FeaturesTabSection = dynamic(
-//   () => import("@/components/pages/landing-page/FeaturesTabSection")
+//   () => import("@/components/pages/landing-page/FeaturesSection"),
 // );
-
+const FeaturesTabSection = dynamic(
+  () => import("@/components/pages/landing-page/FeaturesTabSection")
+);
 
 const homeFaqs = [
   {
@@ -186,7 +185,7 @@ export default function Home() {
 
         <FeaturesTabSection />
 
-        <SmartWaytoSyncndSellSection />
+        {/* <SmartWaytoSyncndSellSection /> */}
 
         <UnifiedPlatform />
 
@@ -203,7 +202,9 @@ export default function Home() {
 
         <ToolsSection />
 
-        <SmartTools />
+        <div className="wrapper">
+          <SmartTools />
+        </div>
 
         <InsightsSection />
 

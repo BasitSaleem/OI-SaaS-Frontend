@@ -1,4 +1,6 @@
-import React, { useMemo, useState } from "react";
+"use client";
+
+import React, { useMemo, useState, useEffect } from "react";
 import MainHeading from "../typography/MainHeading";
 import Image from "next/image";
 import SmartTools from "../landing-page/SmartTools";
@@ -11,7 +13,7 @@ interface TestimonialSlide {
   image: string;
   text: string;
   icon: string;
-  color: string; // kept for data completeness, no longer used for accent
+  color: string;
 }
 
 interface FeaturesTestimonialsProps {
@@ -24,7 +26,6 @@ interface FeaturesTestimonialsProps {
   secondDescription?: string;
 }
 
-/* ✅ Restored default gradient background */
 const DEFAULT_GRADIENT_BACKGROUND = `
   linear-gradient(
     to top,
@@ -104,8 +105,6 @@ const FeaturesTestimonials = ({
           }
           renderSlide={(slide, i) => {
             const isVisible = visibleSet.has(i);
-
-            // ✅ POSITIONAL COLORING (FIGMA RULE)
             const visiblePosition = visibleIndices.indexOf(i);
 
             const accentColor =
@@ -121,6 +120,7 @@ const FeaturesTestimonials = ({
                   "testimonial-card flex flex-col h-full bg-white relative",
                   "shadow-[0px_0px_20px_rgba(0,0,0,0.05)]",
                   "rounded-[30px] p-6 transition-all duration-300",
+                  "flex flex-col h-full", // ✅ Added h-full here
                   isVisible ? "opacity-100" : "opacity-80",
                 ].join(" ")}
               >
@@ -139,16 +139,16 @@ const FeaturesTestimonials = ({
                     alt={slide.name}
                     width={48}
                     height={48}
-                    className="rounded-full border-2"
+                    className="rounded-full border-2 w-[48px] h-[48px] "
                     style={{ borderColor: accentColor }}
                   />
 
-                  <div>
-                    <h4 className="font-semibold text-xl">
+                  <div className="">
+                    <p className="font-semibold text-xl">
                       {slide.name}
-                    </h4>
+                    </p>
                     <p
-                      className="font-medium"
+                      className="font-medium "
                       style={{ color: accentColor }}
                     >
                       {slide.title}
@@ -156,7 +156,7 @@ const FeaturesTestimonials = ({
                   </div>
                 </div>
 
-                <p className="text-base leading-[170%] flex-grow">
+                <p className="text-base leading-[170%] flex-1"> {/* ✅ Changed to flex-1 */}
                   {slide.text}
                 </p>
               </div>

@@ -82,6 +82,7 @@ export default function FaqSection({
                 key={index}
                 className="mb-6 rounded-[20px] bg-white overflow-hidden"
               >
+                
                 <button
                   type="button"
                   className="accordion-toggle flex items-center justify-between w-full p-5 md:px-6 md:py-4 text-left font-medium focus:outline-none rounded-[20px] transition-colors duration-300"
@@ -134,7 +135,7 @@ export default function FaqSection({
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out
+                  className={`overflow-hidden font-['Onest'] transition-all duration-300 ease-in-out
                     px-5 text-sm md:text-base leading-[170%] text-(--text-dark)
                     ${
                       openIndex === index
