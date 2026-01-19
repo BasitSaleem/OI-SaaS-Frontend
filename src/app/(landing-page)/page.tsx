@@ -183,7 +183,7 @@ export default function Home() {
 
         <CaseStudies caseStudies={caseStudiesData} />
 
-        <FeaturesTabSection />
+        {/* <FeaturesTabSection /> */}
 
         {/* <SmartWaytoSyncndSellSection /> */}
 
