@@ -20,7 +20,6 @@ export default function CustomSwiper<T>({
   const emitVisible = (swiper: any) => {
     if (!onVisibleChange) return;
 
-
     if (Array.isArray(swiper.visibleSlides) && swiper.visibleSlides.length) {
       const visibleIndices = swiper.visibleSlides
         .map((slideEl: HTMLElement) =>
@@ -63,19 +62,42 @@ export default function CustomSwiper<T>({
           `<span class="${className} custom-swiper-bullet"></span>`,
       }}
       breakpoints={{
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 2 },
+        768: { 
+          slidesPerView: 1.5,
+          // ✅ Enable autoHeight for equal heights
+          autoHeight: true,
+        },
+        1024: { 
+          slidesPerView: 2,
+          autoHeight: true,
+        },
       }}
-      className="mySwiper flex items-stretch"
-      onSwiper={emitVisible}
-      onSlideChange={emitVisible}
+      // ✅ IMPORTANT: Add these classes
+      className="mySwiper !pb-[80px]" // Added !pb for pagination space
+      // ✅ Enable equal heights
+      autoHeight={true} // This makes all slides same height
+      // ✅ Force equal height behavior
+      onSwiper={(swiper) => {
+        emitVisible(swiper);
+        // Force equal heights on init
+        setTimeout(() => {
+          swiper.updateAutoHeight(300); // 300ms transition
+        }, 100);
+      }}
+      onSlideChange={(swiper) => {
+        emitVisible(swiper);
+        // Update heights on slide change
+        swiper.updateAutoHeight(300);
+      }}
     >
       {slides.map((slide, i) => (
         <SwiperSlide
           key={i}
-          className="flex items-stretch pb-[60px]"
+          // ✅ Add these important classes
+          className="flex items-stretch h-auto"
+          style={{ height: 'auto' }}
         >
-          <div className="flex flex-col h-full w-full">
+          <div className="h-full w-full">
             {renderSlide(slide, i)}
           </div>
         </SwiperSlide>

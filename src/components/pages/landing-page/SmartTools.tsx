@@ -19,7 +19,7 @@ const SmartTools: React.FC<SmartTools> = ({
 }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <section className="wrapper">
+    <section className="">
       <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} />
       <div
         className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] bg-cover bg-center"

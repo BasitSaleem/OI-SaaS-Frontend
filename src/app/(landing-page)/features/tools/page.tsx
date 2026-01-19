@@ -2,7 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
-
+import heroBanner from "../../../../../public/assets/features-page/general-tools/general-tools-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/general-tools/why-chose-banner.webp";
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
   () => import("@/components/common-components/TrustedBySection")
@@ -254,7 +255,8 @@ const Page = () => {
       <SubFeaturesHero
         title="General Tools: Simplify Your Inventory Management"
         description="Take control of your inventory with smart, easy-to-use tools designed for efficiency. From quick edits to bulk updates, General Tools help you save time, reduce errors, and keep your inventory organized effortlessly."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -306,7 +308,7 @@ const Page = () => {
           },
          
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

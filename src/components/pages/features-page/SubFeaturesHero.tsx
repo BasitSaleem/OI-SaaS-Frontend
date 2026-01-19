@@ -277,7 +277,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                       alt="Hero Image"
                       width={1200}
                       height={675}
-                      className="w-full object-cover rounded-3xl"
+                      className="w-full object-cover mt-8  md:mt-10 lg:mt-14 rounded-3xl"
                     />
                   ) : (
                     <div className="w-full h-64 bg-gray-200 rounded-3xl flex items-center justify-center">

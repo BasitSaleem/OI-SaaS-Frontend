@@ -27,7 +27,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 767);
     };
 
     checkIfMobile();

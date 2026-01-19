@@ -3,6 +3,9 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
+import heroBanner from "../../../../../public/assets/features-page/inventory-operations-page/inventory-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/inventory-operations-page/why-chose-banner.webp";
+
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
   () => import("@/components/common-components/TrustedBySection")
@@ -300,7 +303,7 @@ const Page = () => {
           },
          
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
@@ -313,7 +316,7 @@ const Page = () => {
       </div>
 
       <FeaturesCallToAction
-        title="Simplify. Scale. Sell Smarter"
+        title="Simplify. Scale. Sell Smarter."
         description="Feel the convenience of inventory products management software that adds order, speed, and precision to each sale. On retail counters, in warehouses, store each product where it belongs, under your watch."
         ctaDesc="Get Started Now"
       />
