@@ -19,7 +19,7 @@ export interface FeatureCategory {
 export const featureCategories: FeatureCategory[] = [
   {
     id: 'sales-marketing',
-    title: 'Inventory & Manufacturing',
+    title: 'Sales & Marketing',
   },
   {
     id: 'operations',
