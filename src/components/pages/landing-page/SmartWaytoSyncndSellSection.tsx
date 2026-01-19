@@ -61,7 +61,7 @@ function SmartWaytoSyncndSellSection() {
                     loop
                     playsInline
                   >
-                    <source src= "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/modern-feauturehome.webm" type="video/webm" />
+                    <source src= "https://d1ybi42hallhsh.cloudfront.net/videos/Road+Map+V2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
         </div>
