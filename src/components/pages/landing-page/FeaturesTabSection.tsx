@@ -14,9 +14,8 @@ export default function FeaturesTabSection() {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-  const [hasUserInteracted, setHasUserInteracted] = useState(false);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const isIOS = typeof window !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const videoPlayAttempts = useRef<{[key: string]: number}>({});
 
   const features = [
     {
@@ -57,24 +56,72 @@ export default function FeaturesTabSection() {
     },
   ];
 
-  // Preload only active video
+  // Force video autoplay with multiple attempts
+  const forceVideoPlay = useCallback((video: HTMLVideoElement, videoId: string) => {
+    if (!video) return;
+
+    const playVideo = async () => {
+      try {
+        video.currentTime = 0;
+        
+        // Set playsInline for iOS
+        video.playsInline = true;
+        video.setAttribute('playsinline', 'true');
+        video.setAttribute('webkit-playsinline', 'true');
+        
+        // Hide controls and remove poster
+        video.controls = false;
+        video.removeAttribute('poster');
+        
+        // Mute the video (required for autoplay on many browsers)
+        video.muted = true;
+        video.setAttribute('muted', 'true');
+        
+        const playPromise = video.play();
+        
+        if (playPromise !== undefined) {
+          await playPromise;
+          console.log(`Video ${videoId} autoplay successful`);
+        }
+      } catch (error) {
+        console.error(`Video ${videoId} autoplay failed:`, error);
+        
+        // Retry logic
+        videoPlayAttempts.current[videoId] = (videoPlayAttempts.current[videoId] || 0) + 1;
+        
+        if (videoPlayAttempts.current[videoId] < 3) {
+          setTimeout(() => forceVideoPlay(video, videoId), 500);
+        }
+      }
+    };
+
+    playVideo();
+  }, []);
+
+  // Preload videos with better loading strategy
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
     if (loadedVideos.has(videoId)) return;
 
     const video = document.createElement('video');
-    video.preload = 'metadata';
+    video.preload = 'auto';
     video.src = videoSrc;
     video.muted = true;
-    video.setAttribute('playsinline', '');
-    video.setAttribute('webkit-playsinline', '');
+    video.playsInline = true;
+    video.setAttribute('playsinline', 'true');
+    video.setAttribute('webkit-playsinline', 'true');
+    video.setAttribute('muted', 'true');
+    video.style.display = 'none';
     
     video.onloadeddata = () => {
+      console.log(`Video ${videoId} loaded`);
       setLoadedVideos(prev => new Set([...prev, videoId]));
     };
 
     video.onerror = () => {
       console.error(`Failed to load video: ${videoId}`);
     };
+
+    document.body.appendChild(video);
   }, [loadedVideos]);
 
   // Function to move to next tab automatically
@@ -158,13 +205,8 @@ export default function FeaturesTabSection() {
     return () => {};
   }, [activeTab, isAutoPlaying, features, moveToNextTab]);
 
-  // Handle tab click - FIXED FOR iOS
+  // Handle tab click
   const handleTabClick = useCallback((tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
-    // Mark user interaction
-    if (!isAutoTransition) {
-      setHasUserInteracted(true);
-    }
-
     // Clear any existing timeout
     if (autoPlayTimeoutRef.current) {
       clearTimeout(autoPlayTimeoutRef.current);
@@ -186,7 +228,6 @@ export default function FeaturesTabSection() {
       const video = videoRefs.current[key];
       if (video) {
         video.pause();
-        video.currentTime = 0;
       }
     });
 
@@ -201,84 +242,53 @@ export default function FeaturesTabSection() {
       preloadVideo(`${nextFeature.id}-mobile-video`, nextFeature.videoSrc);
     }
 
-    // Play the selected video with better iOS handling
+    // Play the selected video with force autoplay
     setTimeout(() => {
       const selectedDesktopVideo = videoRefs.current[videoId];
       const selectedMobileVideo = videoRefs.current[`${videoId.replace('-video', '-mobile-video')}`];
       
-      const playVideo = async (video: HTMLVideoElement | null) => {
-        if (!video) return;
-        
-        try {
-          // Reset video to start
-          video.currentTime = 0;
-          
-          // On iOS, we need to ensure proper user gesture for initial play
-          if (isIOS && !hasUserInteracted && isAutoTransition) {
-            // For initial auto-play on iOS, we might need to handle differently
-            // iOS often blocks autoplay even for muted videos
-            video.muted = true;
-            await video.play();
-          } else {
-            // For non-iOS or after user interaction
-            await video.play();
-          }
-        } catch (error) {
-          console.error("Video play failed:", error);
-          // On iOS, we might need to show controls or a play button
-          if (isIOS) {
-            // Add controls for user to manually play
-            video.controls = true;
-          }
-        }
-      };
-      
       if (selectedDesktopVideo) {
-        playVideo(selectedDesktopVideo);
+        forceVideoPlay(selectedDesktopVideo, videoId);
       }
       
       if (selectedMobileVideo) {
-        playVideo(selectedMobileVideo);
+        forceVideoPlay(selectedMobileVideo, `${videoId.replace('-video', '-mobile-video')}`);
       }
-    }, 50); // Reduced timeout for better responsiveness
-  }, [features, preloadVideo, isIOS, hasUserInteracted]);
+    }, 100);
+  }, [features, preloadVideo, forceVideoPlay]);
 
-  // Initial load - preload only first video
+  // Initial load - preload all videos in sequence
   useEffect(() => {
     if (isInitialLoad) {
-      const firstFeature = features[0];
-      if (firstFeature) {
-        preloadVideo(`${firstFeature.id}-video`, firstFeature.videoSrc);
-        preloadVideo(`${firstFeature.id}-mobile-video`, firstFeature.videoSrc);
-      }
+      // Preload all videos in sequence to avoid overwhelming network
+      const preloadSequence = async () => {
+        for (const feature of features) {
+          await new Promise(resolve => setTimeout(resolve, 300)); // Delay between loads
+          preloadVideo(`${feature.id}-video`, feature.videoSrc);
+          preloadVideo(`${feature.id}-mobile-video`, feature.videoSrc);
+        }
+      };
+      
+      preloadSequence();
       setIsInitialLoad(false);
     }
   }, [isInitialLoad, features, preloadVideo]);
 
   // Start auto-playing when component mounts
   useEffect(() => {
-    // On iOS, don't try to autoplay immediately
-    if (isIOS) {
-      // iOS requires user interaction first
-      setIsAutoPlaying(true);
-      return;
-    }
-
     const timer = setTimeout(() => {
       setIsAutoPlaying(true);
       const firstFeature = features.find(f => f.tabIndex === activeTab);
       if (firstFeature) {
         const firstVideo = videoRefs.current[`${firstFeature.id}-video`];
         if (firstVideo) {
-          firstVideo.play().catch((error) => {
-            console.error("Initial video play failed:", error);
-          });
+          forceVideoPlay(firstVideo, `${firstFeature.id}-video`);
         }
       }
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
-  }, [isIOS]);
+  }, [forceVideoPlay, features, activeTab]);
 
   // Cleanup timeout on unmount
   useEffect(() => {
@@ -314,13 +324,13 @@ export default function FeaturesTabSection() {
                     videoRefs.current[`${feature.id}-video`] = el;
                   }}
                   className="w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl lazy-video feature-video"
-                  autoPlay={activeTab === feature.tabIndex && !isIOS}
+                  autoPlay={activeTab === feature.tabIndex}
                   muted
                   loop={false}
                   playsInline
-                  preload="metadata"
-                  webkit-playsinline="true"
+                  preload="auto"
                   disablePictureInPicture
+                  disableRemotePlayback
                 >
                   <source src={feature.videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -387,13 +397,13 @@ export default function FeaturesTabSection() {
                       videoRefs.current[`${feature.id}-mobile-video`] = el;
                     }}
                     className="w-full object-cover rounded-3xl lazy-video feature-video"
-                    autoPlay={activeTab === feature.tabIndex && !isIOS}
+                    autoPlay={activeTab === feature.tabIndex}
                     muted
                     loop={false}
                     playsInline
-                    preload="metadata"
-                    webkit-playsinline="true"
+                    preload="auto"
                     disablePictureInPicture
+                    disableRemotePlayback
                   >
                     <source src={feature.videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -404,6 +414,44 @@ export default function FeaturesTabSection() {
           </div>
         </div>
       </div>
+      
+      {/* Add CSS to hide iOS play button */}
+      <style jsx global>{`
+        /* Hide iOS/Safari play button overlay */
+        video::-webkit-media-controls,
+        video::-webkit-media-controls-panel,
+        video::-webkit-media-controls-play-button,
+        video::-webkit-media-controls-start-playback-button {
+          display: none !important;
+          -webkit-appearance: none;
+          opacity: 0;
+        }
+        
+        /* Hide native controls */
+        video {
+          -webkit-tap-highlight-color: transparent;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+        
+        /* Prevent video from showing controls on iOS */
+        video[controls] {
+          display: none;
+        }
+        
+        /* Feature video specific styles */
+        .feature-video {
+          pointer-events: none; /* Prevent interaction that might show controls */
+        }
+        
+        /* For tablets specifically */
+        @media (max-width: 1024px) and (min-width: 768px) {
+          video {
+            -webkit-appearance: none;
+          }
+        }
+      `}</style>
     </section>
   );
 }
