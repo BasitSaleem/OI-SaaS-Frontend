@@ -31,7 +31,7 @@ const NavItems = () => {
     setOpenMenu((curr) => (curr === key ? null : key));
 
   const [selectedFeatureKey, setSelectedFeatureKey] = useState("pos");
-  const [selectedIndustryKey, setSelectedIndustryKey] = useState("retailer");
+  const [selectedIndustryKey, setSelectedIndustryKey] = useState("manufacturing");
   const [selectedResourceKey, setSelectedResourceKey] =
     useState<string>("learning");
 
@@ -42,7 +42,7 @@ const NavItems = () => {
 
   const [selectedIndustryCategory, setselectedIndustryCategory] = useState<
     string | null
-  >("retailer");
+  >("manufacturing");
 
   const router = useRouter();
 
