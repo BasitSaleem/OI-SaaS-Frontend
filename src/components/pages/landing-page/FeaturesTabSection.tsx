@@ -11,10 +11,12 @@ export default function FeaturesTabSection() {
   const [activeTab, setActiveTab] = useState(1);
   const [videoProgress, setVideoProgress] = useState<{[key: string]: number}>({});
   const videoRefs = useRef<VideoRefs>({});
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true); // Start with auto-play enabled
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const [hasUserInteracted, setHasUserInteracted] = useState(false);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isIOS = typeof window !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   const features = [
     {
@@ -63,6 +65,8 @@ export default function FeaturesTabSection() {
     video.preload = 'metadata';
     video.src = videoSrc;
     video.muted = true;
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
     
     video.onloadeddata = () => {
       setLoadedVideos(prev => new Set([...prev, videoId]));
@@ -154,8 +158,13 @@ export default function FeaturesTabSection() {
     return () => {};
   }, [activeTab, isAutoPlaying, features, moveToNextTab]);
 
-  // Handle tab click
+  // Handle tab click - FIXED FOR iOS
   const handleTabClick = useCallback((tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
+    // Mark user interaction
+    if (!isAutoTransition) {
+      setHasUserInteracted(true);
+    }
+
     // Clear any existing timeout
     if (autoPlayTimeoutRef.current) {
       clearTimeout(autoPlayTimeoutRef.current);
@@ -169,7 +178,7 @@ export default function FeaturesTabSection() {
       // Resume auto-play after current video finishes
       autoPlayTimeoutRef.current = setTimeout(() => {
         setIsAutoPlaying(true);
-      }, 2000); // Resume auto-play 2 seconds after manual click
+      }, 2000);
     }
 
     // Pause all videos
@@ -177,6 +186,7 @@ export default function FeaturesTabSection() {
       const video = videoRefs.current[key];
       if (video) {
         video.pause();
+        video.currentTime = 0;
       }
     });
 
@@ -191,26 +201,47 @@ export default function FeaturesTabSection() {
       preloadVideo(`${nextFeature.id}-mobile-video`, nextFeature.videoSrc);
     }
 
-    // Play the selected video
+    // Play the selected video with better iOS handling
     setTimeout(() => {
       const selectedDesktopVideo = videoRefs.current[videoId];
       const selectedMobileVideo = videoRefs.current[`${videoId.replace('-video', '-mobile-video')}`];
       
+      const playVideo = async (video: HTMLVideoElement | null) => {
+        if (!video) return;
+        
+        try {
+          // Reset video to start
+          video.currentTime = 0;
+          
+          // On iOS, we need to ensure proper user gesture for initial play
+          if (isIOS && !hasUserInteracted && isAutoTransition) {
+            // For initial auto-play on iOS, we might need to handle differently
+            // iOS often blocks autoplay even for muted videos
+            video.muted = true;
+            await video.play();
+          } else {
+            // For non-iOS or after user interaction
+            await video.play();
+          }
+        } catch (error) {
+          console.error("Video play failed:", error);
+          // On iOS, we might need to show controls or a play button
+          if (isIOS) {
+            // Add controls for user to manually play
+            video.controls = true;
+          }
+        }
+      };
+      
       if (selectedDesktopVideo) {
-        selectedDesktopVideo.currentTime = 0; // Restart video
-        selectedDesktopVideo.play().catch((error) => {
-          console.error("Desktop video play failed:", error);
-        });
+        playVideo(selectedDesktopVideo);
       }
       
       if (selectedMobileVideo) {
-        selectedMobileVideo.currentTime = 0; // Restart video
-        selectedMobileVideo.play().catch((error) => {
-          console.error("Mobile video play failed:", error);
-        });
+        playVideo(selectedMobileVideo);
       }
-    }, 100);
-  }, [features, preloadVideo]);
+    }, 50); // Reduced timeout for better responsiveness
+  }, [features, preloadVideo, isIOS, hasUserInteracted]);
 
   // Initial load - preload only first video
   useEffect(() => {
@@ -226,6 +257,13 @@ export default function FeaturesTabSection() {
 
   // Start auto-playing when component mounts
   useEffect(() => {
+    // On iOS, don't try to autoplay immediately
+    if (isIOS) {
+      // iOS requires user interaction first
+      setIsAutoPlaying(true);
+      return;
+    }
+
     const timer = setTimeout(() => {
       setIsAutoPlaying(true);
       const firstFeature = features.find(f => f.tabIndex === activeTab);
@@ -240,7 +278,7 @@ export default function FeaturesTabSection() {
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [isIOS]);
 
   // Cleanup timeout on unmount
   useEffect(() => {
@@ -276,11 +314,13 @@ export default function FeaturesTabSection() {
                     videoRefs.current[`${feature.id}-video`] = el;
                   }}
                   className="w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl lazy-video feature-video"
-                  autoPlay={activeTab === feature.tabIndex}
+                  autoPlay={activeTab === feature.tabIndex && !isIOS}
                   muted
                   loop={false}
                   playsInline
                   preload="metadata"
+                  webkit-playsinline="true"
+                  disablePictureInPicture
                 >
                   <source src={feature.videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -347,11 +387,13 @@ export default function FeaturesTabSection() {
                       videoRefs.current[`${feature.id}-mobile-video`] = el;
                     }}
                     className="w-full object-cover rounded-3xl lazy-video feature-video"
-                    autoPlay={activeTab === feature.tabIndex}
+                    autoPlay={activeTab === feature.tabIndex && !isIOS}
                     muted
                     loop={false}
                     playsInline
                     preload="metadata"
+                    webkit-playsinline="true"
+                    disablePictureInPicture
                   >
                     <source src={feature.videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.
