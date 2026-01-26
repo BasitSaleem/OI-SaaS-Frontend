@@ -15,7 +15,7 @@ interface FeaturesCallToAction{
 const FeaturesCallToAction: React.FC<FeaturesCallToAction> = ({
   title = "Sell Smarter. Run Your Business Better",
   description= "Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations.",
-  ctaDesc= "Get Started Instantly"
+  ctaDesc= "Start For Free"
 }) => {
   return (
     <div className="wrapper">

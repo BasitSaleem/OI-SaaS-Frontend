@@ -153,6 +153,7 @@ interface SubFeaturesHeroProps {
   video?: string;
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
+  imageClassName?: string; 
 }
 
 const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
@@ -162,6 +163,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   video,
   ctaDesc = "Book a Free Demo",
   variant = "animation1",
+  imageClassName = "",
 }) => {
   useHeaderAnimation();
   if (variant === "animation1") {
@@ -260,7 +262,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                 {/* Hero Image */}
                 <div
                   ref={heroLowerRef}
-                  className="owner-inventory-hero__lower relative w-full wrapper"
+                  className="owner-inventory-hero__lower flex items-center justify-center relative w-full wrapper"
                 >
                   {video ? (
                     <video
@@ -277,7 +279,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                       alt="Hero Image"
                       width={1200}
                       height={675}
-                      className="w-full object-cover mt-8  md:mt-10 lg:mt-14 rounded-3xl"
+                      className= {`w-full object-cover rounded-3xl ${imageClassName}`}
                     />
                   ) : (
                     <div className="w-full h-64 bg-gray-200 rounded-3xl flex items-center justify-center">

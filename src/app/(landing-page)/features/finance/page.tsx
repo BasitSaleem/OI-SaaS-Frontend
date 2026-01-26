@@ -3,6 +3,9 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/acounting-finance-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/acouting-finance-whychose.webp";
+
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
   () => import("@/components/common-components/TrustedBySection")
@@ -298,7 +301,9 @@ const Page = () => {
       <SubFeaturesHero
         title="Accounting Made Effortless, Finances Made Clear"
         description="Gain control of your business by having an integrated POS and accounting system that monitors every sale, expense, and profit in real-time. Streamline finance, reduce errors, and make smarter financial decisions all in one dashboard."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName="max-w-[1000px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -344,7 +349,7 @@ const Page = () => {
               "Your financial information remains secure, correct, and constantly supported.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
        <div className="lg:mt-[100px] md:mt-28 mt-20">

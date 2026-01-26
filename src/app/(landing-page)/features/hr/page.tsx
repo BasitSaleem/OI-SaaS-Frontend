@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/hr-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/hr-whychose.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -260,7 +262,9 @@ const page = () => {
       <SubFeaturesHero
         title="Smarter HR for Growing Businesses"
         description="Change the way you deal with people using the best HR management software of 2025. Combine performance, payroll, and hiring in a single robust HR managerial system. Empower your company with an employee management software that is designed to expand as your business does."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName="max-w-[1000px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -305,7 +309,7 @@ const page = () => {
               "Our professional staff is constantly prepared to assist you throughout the process.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

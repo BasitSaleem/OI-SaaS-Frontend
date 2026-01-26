@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import React from 'react';
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/sales-order-banner.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(() => import('@/components/common-components/TrustedBySection'));
@@ -199,7 +200,9 @@ const page = () => {
       <SubFeaturesHero
         title="Turn Every Sale into a Success Story"
         description="Make it easier to sell, monitor, and process orders all under one roof. Manage sales channels, automate invoices, and stay focused on the driving power of your business with Owners Inventory."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName="max-w-[930px]"
         variant="animation2"
       />
 

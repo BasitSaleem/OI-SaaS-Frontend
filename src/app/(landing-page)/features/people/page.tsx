@@ -3,6 +3,9 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/people-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/people-whychose.webp";
+
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
   () => import("@/components/common-components/TrustedBySection")
@@ -276,7 +279,9 @@ const page = () => {
       <SubFeaturesHero
         title="Empower Your People, Power Your Business"
         description="Experience the future of business management, quick, unified, and growth-oriented. Powerful automation, real-time insights, and seamless integrations will allow you to work smarter, scale faster, and save more, all within one intelligent platform, with Owners Inventory."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName="max-w-[1000px]"
         variant="animation2"
       />
 
@@ -319,7 +324,7 @@ const page = () => {
               "Owners Inventory scales with you, whether you have a small shop or a growing chain.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

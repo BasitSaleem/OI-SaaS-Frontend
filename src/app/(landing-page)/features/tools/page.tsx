@@ -257,6 +257,7 @@ const Page = () => {
         description="Take control of your inventory with smart, easy-to-use tools designed for efficiency. From quick edits to bulk updates, General Tools help you save time, reduce errors, and keep your inventory organized effortlessly."
         // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         image={heroBanner}
+        imageClassName= "lg:my-14 my-11 max-w-[1000px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />

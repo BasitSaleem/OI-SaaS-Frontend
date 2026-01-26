@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/facilities-herobanner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/facilities-whychose.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -236,7 +238,9 @@ const page = () => {
       <SubFeaturesHero
         title="Smart Facilities, Seamless Operations"
         description="Owners Inventory will give you complete control of all stores, warehouses and work areas. Whether it is the management of various locations or the monitoring of stock and employee performance, our platform maintains the entire operation running smoothly all through a single"
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        imageClassName= "max-w-[1000px]"
+        image={heroBanner}
         ctaDesc= "Get Started for Free"
         variant="animation2"
       />
@@ -281,7 +285,7 @@ const page = () => {
               "Retail, wholesale or hospitality - our system expands with your business.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

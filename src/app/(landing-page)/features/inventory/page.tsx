@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
-import heroBanner from "../../../../../public/assets/features-page/inventory-operations-page/inventory-hero-banner.webp";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/operation-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/features-page/inventory-operations-page/why-chose-banner.webp";
 
 // 🔥 Dynamic Imports
@@ -257,7 +257,9 @@ const Page = () => {
       <SubFeaturesHero
         title="Smart Product Management for Smarter Sales"
         description="Easily manage and organize your catalog with a single, intuitive POS console. Transform chaos into clarity for faster, smarter product management."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName="max-w-[1050px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
