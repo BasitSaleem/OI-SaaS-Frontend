@@ -134,7 +134,7 @@ const FeaturesCards = [
     description:
       "Effortlessly organize your entire product catalog into categories to simplify inventory management and boost the efficiency of your store.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/products-page/features-section/categories.webp",
   },
   {
     id: 8,
@@ -142,7 +142,7 @@ const FeaturesCards = [
     description:
       "Manage and highlight brands efficiently to manage your product catalog, enhance reporting, and make brand based filtering easy. Proper brand management ensures consistency, recognition, and easier stock control across your inventory.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/products-page/features-section/brands.webp",
   },
 ];
 

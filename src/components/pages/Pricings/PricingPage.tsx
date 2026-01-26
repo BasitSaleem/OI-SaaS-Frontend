@@ -5,9 +5,9 @@ import PricingCards from './PricingCards';
 import ComparisonTable from './ComparisonTable';
 import { pricingPlans, featureCategories } from './tableConfig';
 import PricingHero from './PricingHero';
-import FeaturesSection from '../landing-page/FeaturesSection';
 import FaqSection from '../landing-page/FAQSection';
 import CalltoActionBottom from '../landing-page/CalltoActionBottom';
+import FeaturesTabSection from '../landing-page/FeaturesTabSection';
 
 const PricingPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'monthly' | 'yearly'>('monthly');
@@ -21,8 +21,6 @@ const PricingPage: React.FC = () => {
     <div className="min-h-screen">
      
       
-      {/* Spacing for fixed header */}
-      <div className="md:h-6 h-8"></div>
       
       {/* Main Content */}
       <main>
@@ -37,7 +35,7 @@ const PricingPage: React.FC = () => {
         <ComparisonTable categories={featureCategories} tab={activeTab} onTabChange={setActiveTab} />
 
         <section className="">
-          <FeaturesSection/>
+          <FeaturesTabSection />
           <FaqSection/>
           <CalltoActionBottom/>
         

@@ -77,7 +77,7 @@ export default function WhyChoosePOS({
 
             {/* Main Image Container */}
             <div className="xl:col-span-7 col-span-6">
-              <div className="relative rounded-[20px] flex align-center justify-center overflow-hidden shadow-lg">
+              <div className="relative rounded-[20px] flex align-center justify-center overflow-hidden">
                 <Image
                   src={mainImage}
                   alt="Modern POS system interface showing sales analytics and transaction processing"

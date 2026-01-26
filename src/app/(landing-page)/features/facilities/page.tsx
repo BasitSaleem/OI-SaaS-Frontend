@@ -134,7 +134,7 @@ const FeaturesCards = [
     description:
       "Experience an easy and user-friendly interface that simplifies the process of setting up and customizing facilities and control. The facility management dashboard is built to expand as your business expands.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/facilities-page/features-section/scalable-interface.webp",
   },
 ];
 

@@ -137,7 +137,7 @@ const FeaturesCards = [
     description:
       "Gain real-time visibility into purchase activity, supplier performance and pending bills. This is the power of a dedicated Purchase Tracking Software.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/people-page/features-section/performance-tracking.webp",
       
   },
    {
@@ -146,7 +146,7 @@ const FeaturesCards = [
     description:
       "Gain instant, real time clarity! Track all purchase activity, monitor supplier performance, and see pending bills right on a single, easy-to-use, interactive dashboard.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/sales-order/features-section/filter-option.webp",
       
   },
   {
@@ -155,7 +155,7 @@ const FeaturesCards = [
     description:
       "A clean, interactive design means managing purchases is quick and easy. Spend less time struggling with software and more time improving your business.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/sales-order/features-section/user-friendly-interface.webp",
       
   },
   

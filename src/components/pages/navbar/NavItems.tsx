@@ -164,7 +164,7 @@ const NavItems = () => {
   [scrollbar-width:thin]
   [scrollbar-color:#D9D9D9_transparent]"
               >
-                <p className="mb-2 text-xs font-bold text-[#231F20]">
+                <p className="mb-2 text-xs font-bold font-['Onest'] text-[#231F20]">
                   {
                     featuresItems.find(
                       (item) => item.key === selectedFeatureKey,
@@ -182,7 +182,6 @@ const NavItems = () => {
           </div>
         </NavDropdown>
 
-        {/* INDUSTRIES DROPDOWN */}
         {/* INDUSTRIES DROPDOWN */}
         <NavDropdown
           label="Industries"
@@ -308,7 +307,7 @@ const NavItems = () => {
           [scrollbar-width:thin]
           [scrollbar-color:#D9D9D9_transparent]"
               >
-                <p className="mb-2 text-xs font-bold text-[#231F20]">
+                <p className="mb-2 text-xs font-['Onest'] font-bold text-[#231F20]">
                   {
                     industriesItems.find(
                       (item) => item.key === selectedIndustryKey,
@@ -333,7 +332,7 @@ const NavItems = () => {
         <li>
           <a
             href="/pricing"
-            className="flex items-center justify-center gap-3 px-3.5 py-1.5 xl:px-4 xl:py-[9px] lg:text-xs xl:text-sm font-semibold hover:bg-gray-100 hover:border-[#795CF5] text-[#231F20] bg-white border border-[#F3F4F6] rounded-full"
+            className="flex items-center justify-center gap-3 px-3.5 py-1.5 xl:px-4 xl:py-[9px] lg:text-xs  xl:text-sm font-semibold hover:bg-gray-100 hover:border-[#795CF5] font-['onest'] text-[#231F20] bg-white border border-[#F3F4F6] rounded-full"
           >
             Pricing
           </a>
@@ -402,7 +401,7 @@ const NavItems = () => {
             {/* Right Section */}
             {resourcesDetailsMap[selectedResourceKey] && (
               <div className="hidden md:block col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto">
-                <p className="mb-4 text-xs font-bold text-[#231F20]">
+                <p className="mb-4 text-xs font-bold font-['Onest'] text-[#231F20]">
                   {
                     resourcesItems.find((i) => i.key === selectedResourceKey)
                       ?.title
@@ -415,7 +414,7 @@ const NavItems = () => {
                       {/* ✅ unique key for each <li> */}
                       <a
                         href="#"
-                        className="text-xs font-normal leading-9 text-[#231F20] hover:text-gray-400"
+                        className="text-xs font-normal leading-9 text-[#231F20] font-['Onest'] hover:text-gray-400"
                       >
                         {item}
                       </a>
