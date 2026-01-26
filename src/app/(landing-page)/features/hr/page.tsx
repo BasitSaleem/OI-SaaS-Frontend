@@ -134,7 +134,7 @@ const FeaturesCards = [
     description:
       "Create and see pay slips with all the information--salary, deductions and salary. Allow our human resource management system to take care of payroll.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/human-resource-page/features-section/automated-payslip.webp",
   },
   {
     id: 8,
@@ -142,7 +142,7 @@ const FeaturesCards = [
     description:
       "Easily set up payroll structures with custom payroll forms and heads. Make sure your policies can be integrated perfectly in the best HR software 2025.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/categorization-and-segmentation.webp",
+      "/assets/features-page/human-resource-page/features-section/payrol-setup.webp",
   },
   {
     id: 9,
@@ -150,7 +150,7 @@ const FeaturesCards = [
     description:
       "Get clear records in tables including pagination and column display. Easily handle employee information within your employee management program.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/transaction-history.webp",
+      "/assets/features-page/human-resource-page/features-section/table-controls.webp",
   },
 ];
 

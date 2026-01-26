@@ -132,7 +132,7 @@ const FeaturesCards = [
     description:
       "Record every stock purchase and addition to your inventory. A detailed record of stock bought assists with planning, budgeting and examination of supplier performance.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/human-resource-page/features-section/automated-payslip.webp",
   },
   {
     id: 8,
@@ -140,7 +140,7 @@ const FeaturesCards = [
     description:
       "Examine sales volumes and product demand to see best-sellers. This aids in optimization of inventory, enhanced replenishment and increased revenue.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/categorization-and-segmentation.webp",
+      "/assets/features-page/human-resource-page/features-section/payrol-setup.webp",
   },
   {
     id: 9,
@@ -148,7 +148,7 @@ const FeaturesCards = [
     description:
       "See your available inventory in real-time. The knowledge of the current stock enables us to avoid stockouts, minimize surplus, and enhance order fulfillment.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/transaction-history.webp",
+      "/assets/features-page/human-resource-page/features-section/table-controls.webp",
   },
   {
     id: 10,
@@ -156,7 +156,7 @@ const FeaturesCards = [
     description:
       "Combine all movements, purchases, sales, and adjustments to see the entire stock position. The total stock reporting will guarantee effective inventory control and smarter decisions.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/transaction-history.webp",
+      "/assets/features-page/advancereport-page/features-section/total-stock.webp",
   },
 ];
 

@@ -143,7 +143,7 @@ const FeaturesCards = [
     description:
       "Make all operations transparent. Monitor product status, order updates and fulfillment workflows in real time to reduce errors and delays.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/ecommerce-page/features-section/status-tracking.webp",
   },
   {
     id: 8,
@@ -151,7 +151,7 @@ const FeaturesCards = [
     description:
       "Reach out to your customers with ease. Showcase the locations of display stores on maps, manage contact forms, and expand your subscriber list using built-in email collection features.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/categorization-and-segmentation.webp",
+      "/assets/features-page/ecommerce-page/features-section/map-subscriber.webp",
   },
   {
     id: 9,
@@ -159,7 +159,7 @@ const FeaturesCards = [
     description:
       "Customize your online store to your brand. Select a template, customize colors, layouts, and fonts, and make a store that feels and looks unique to you.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/transaction-history.webp",
+      "/assets/features-page/ecommerce-page/features-section/template-customization.webp",
   },
 ];
 

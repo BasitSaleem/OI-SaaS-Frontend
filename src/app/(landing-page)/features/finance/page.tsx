@@ -137,7 +137,7 @@ const FeaturesCards = [
     description:
       "Assign revenues or expenses to departments, projects or cost centers. Enhance financial transparency throughout your organization through a single centralized business finance management POS.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/finance-page/features-section/departmental-costing.webp",
       
   },
    {
@@ -146,7 +146,7 @@ const FeaturesCards = [
     description:
       "Experience a user-friendly, streamlined interface to conveniently input transactions and see all financial information immediately. Keep track of your sales and expense tracking POS system in real-time.",
     imageSrc:
-      "/assets/features-page/general-tools/features-section/stock-alert.webp",
+      "/assets/features-page/people-page/features-section/single-interface.webp",
       
   },
   

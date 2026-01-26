@@ -134,7 +134,7 @@ const FeaturesCards = [
     description:
       "You can use the dashboard easily and enjoy a clean look with tables and charts that are well-organized.  Easily find your way around and make better choices about your inventory.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/integrated-module.webp",
+      "/assets/features-page/facilities-page/features-section/scalable-interface.webp",
   },
  
 ];

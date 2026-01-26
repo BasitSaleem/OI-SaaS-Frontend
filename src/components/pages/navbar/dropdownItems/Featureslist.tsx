@@ -205,7 +205,11 @@ manufacturing: [
 ],
 
 integrations: [
-  { title: 'FBR (Rename from “POS ID”)' },
+  { title: 'Shopify Integration' },
+  { title: 'CMS Integration' },
+  { title: 'Payment Integration' },
+  { title: 'Quickbook Integration' },
+  { title: 'Marketing Tools Integration' },
 ],
 
 marketing: [
@@ -419,12 +423,12 @@ export const  FeatureList = ({ items }: { items: FeatureTreeItem[] }) => (
   <ul className="pl-4 space-y-1">
     {items.map((item) => (
       <li key={item.title}>
-        <a
-          href="#"
-          className="text-xs font-normal leading-7 text-[#231F20] hover:text-gray-400"
+        <p
+          
+          className="text-xs font-normal font-['Onest'] leading-7 text-[#231F20]"
         >
           {item.title}
-        </a>
+        </p>
         {item.children && <FeatureList items={item.children} />}
       </li>
     ))}

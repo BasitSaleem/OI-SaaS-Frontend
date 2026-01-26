@@ -51,7 +51,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
   };
 
   return (
-    <section className="compare-section mt-20 md:mt-0 lg:mt-0">
+    <section className="compare-section mt-20 lg:mt-0">
       <div className="wrapper mx-auto flex items-center justify-center">
         <button
           onClick={toggleVisibility}

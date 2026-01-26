@@ -29,7 +29,7 @@ export const industryCategories: IndustryCategory[] = [
   },
   {
     id: 'restaurant',
-    title: 'Restaurant Types',
+    title: 'Restaurant',
   },
   
   // {
@@ -233,12 +233,11 @@ export const IndustryList = ({ items }: { items: IndustryTreeItem[] }) => (
   <ul className="pl-4 space-y-1">
     {items.map((item) => (
       <li key={item.title}>
-        <a
-          href="#"
-          className="text-xs font-normal leading-7 text-[#231F20] hover:text-gray-400"
+        <p
+          className="text-xs font-normal leading-7 font-['Onest'] text-[#231F20]"
         >
           {item.title}
-        </a>
+        </p>
         {item.children && <IndustryList items={item.children} />}
       </li>
     ))}
