@@ -1,6 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/pos-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/pos-whychose.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -61,7 +63,7 @@ const posIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Ensure adherence to various batch tracking, expiry notifications, and detailed records whilst handling walk-in sales and electronic prescriptions with ease using our best point of sale software.",
+      "Handle high-volume and bulk orders with confidence using a pharmacy-ready POS system. Manage batch-wise inventory, track expiry dates, control supplier transactions, and process wholesale pharmacy sales accurately across single or multiple locations.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -259,7 +261,8 @@ const page = () => {
       <SubFeaturesHero
         title="Empower Your Business with POS"
         description="Sell smarter with our POS system. Intended to be fast, accurate, and the best point of sale, it simplifies all transactions, operates inventory in real-time, and provides you with complete control over your business, all through a simple, easy-to-use interface."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName= "lg:my-14 my-11 max-w-[880px]"
         variant="animation2"
       />
 
@@ -304,7 +307,7 @@ across multiple locations."
               "Use real-time sales analytics and detailed reports to make smarter and data-driven business decisions.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

@@ -11,11 +11,10 @@ export default function FeaturesTabSection() {
   const [activeTab, setActiveTab] = useState(1);
   const [videoProgress, setVideoProgress] = useState<{[key: string]: number}>({});
   const videoRefs = useRef<VideoRefs>({});
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true); // Start with auto-play enabled
   const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const videoPlayAttempts = useRef<{[key: string]: number}>({});
 
   const features = [
     {
@@ -56,72 +55,22 @@ export default function FeaturesTabSection() {
     },
   ];
 
-  // Force video autoplay with multiple attempts
-  const forceVideoPlay = useCallback((video: HTMLVideoElement, videoId: string) => {
-    if (!video) return;
-
-    const playVideo = async () => {
-      try {
-        video.currentTime = 0;
-        
-        // Set playsInline for iOS
-        video.playsInline = true;
-        video.setAttribute('playsinline', 'true');
-        video.setAttribute('webkit-playsinline', 'true');
-        
-        // Hide controls and remove poster
-        video.controls = false;
-        video.removeAttribute('poster');
-        
-        // Mute the video (required for autoplay on many browsers)
-        video.muted = true;
-        video.setAttribute('muted', 'true');
-        
-        const playPromise = video.play();
-        
-        if (playPromise !== undefined) {
-          await playPromise;
-          console.log(`Video ${videoId} autoplay successful`);
-        }
-      } catch (error) {
-        console.error(`Video ${videoId} autoplay failed:`, error);
-        
-        // Retry logic
-        videoPlayAttempts.current[videoId] = (videoPlayAttempts.current[videoId] || 0) + 1;
-        
-        if (videoPlayAttempts.current[videoId] < 3) {
-          setTimeout(() => forceVideoPlay(video, videoId), 500);
-        }
-      }
-    };
-
-    playVideo();
-  }, []);
-
-  // Preload videos with better loading strategy
+  // Preload only active video
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
     if (loadedVideos.has(videoId)) return;
 
     const video = document.createElement('video');
-    video.preload = 'auto';
+    video.preload = 'metadata';
     video.src = videoSrc;
     video.muted = true;
-    video.playsInline = true;
-    video.setAttribute('playsinline', 'true');
-    video.setAttribute('webkit-playsinline', 'true');
-    video.setAttribute('muted', 'true');
-    video.style.display = 'none';
     
     video.onloadeddata = () => {
-      console.log(`Video ${videoId} loaded`);
       setLoadedVideos(prev => new Set([...prev, videoId]));
     };
 
     video.onerror = () => {
       console.error(`Failed to load video: ${videoId}`);
     };
-
-    document.body.appendChild(video);
   }, [loadedVideos]);
 
   // Function to move to next tab automatically
@@ -220,7 +169,7 @@ export default function FeaturesTabSection() {
       // Resume auto-play after current video finishes
       autoPlayTimeoutRef.current = setTimeout(() => {
         setIsAutoPlaying(true);
-      }, 2000);
+      }, 2000); // Resume auto-play 2 seconds after manual click
     }
 
     // Pause all videos
@@ -242,34 +191,35 @@ export default function FeaturesTabSection() {
       preloadVideo(`${nextFeature.id}-mobile-video`, nextFeature.videoSrc);
     }
 
-    // Play the selected video with force autoplay
+    // Play the selected video
     setTimeout(() => {
       const selectedDesktopVideo = videoRefs.current[videoId];
       const selectedMobileVideo = videoRefs.current[`${videoId.replace('-video', '-mobile-video')}`];
       
       if (selectedDesktopVideo) {
-        forceVideoPlay(selectedDesktopVideo, videoId);
+        selectedDesktopVideo.currentTime = 0; // Restart video
+        selectedDesktopVideo.play().catch((error) => {
+          console.error("Desktop video play failed:", error);
+        });
       }
       
       if (selectedMobileVideo) {
-        forceVideoPlay(selectedMobileVideo, `${videoId.replace('-video', '-mobile-video')}`);
+        selectedMobileVideo.currentTime = 0; // Restart video
+        selectedMobileVideo.play().catch((error) => {
+          console.error("Mobile video play failed:", error);
+        });
       }
     }, 100);
-  }, [features, preloadVideo, forceVideoPlay]);
+  }, [features, preloadVideo]);
 
-  // Initial load - preload all videos in sequence
+  // Initial load - preload only first video
   useEffect(() => {
     if (isInitialLoad) {
-      // Preload all videos in sequence to avoid overwhelming network
-      const preloadSequence = async () => {
-        for (const feature of features) {
-          await new Promise(resolve => setTimeout(resolve, 300)); // Delay between loads
-          preloadVideo(`${feature.id}-video`, feature.videoSrc);
-          preloadVideo(`${feature.id}-mobile-video`, feature.videoSrc);
-        }
-      };
-      
-      preloadSequence();
+      const firstFeature = features[0];
+      if (firstFeature) {
+        preloadVideo(`${firstFeature.id}-video`, firstFeature.videoSrc);
+        preloadVideo(`${firstFeature.id}-mobile-video`, firstFeature.videoSrc);
+      }
       setIsInitialLoad(false);
     }
   }, [isInitialLoad, features, preloadVideo]);
@@ -282,13 +232,15 @@ export default function FeaturesTabSection() {
       if (firstFeature) {
         const firstVideo = videoRefs.current[`${firstFeature.id}-video`];
         if (firstVideo) {
-          forceVideoPlay(firstVideo, `${firstFeature.id}-video`);
+          firstVideo.play().catch((error) => {
+            console.error("Initial video play failed:", error);
+          });
         }
       }
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
-  }, [forceVideoPlay, features, activeTab]);
+  }, []);
 
   // Cleanup timeout on unmount
   useEffect(() => {
@@ -328,9 +280,7 @@ export default function FeaturesTabSection() {
                   muted
                   loop={false}
                   playsInline
-                  preload="auto"
-                  disablePictureInPicture
-                  disableRemotePlayback
+                  preload="metadata"
                 >
                   <source src={feature.videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -401,9 +351,7 @@ export default function FeaturesTabSection() {
                     muted
                     loop={false}
                     playsInline
-                    preload="auto"
-                    disablePictureInPicture
-                    disableRemotePlayback
+                    preload="metadata"
                   >
                     <source src={feature.videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -414,44 +362,6 @@ export default function FeaturesTabSection() {
           </div>
         </div>
       </div>
-      
-      {/* Add CSS to hide iOS play button */}
-      <style jsx global>{`
-        /* Hide iOS/Safari play button overlay */
-        video::-webkit-media-controls,
-        video::-webkit-media-controls-panel,
-        video::-webkit-media-controls-play-button,
-        video::-webkit-media-controls-start-playback-button {
-          display: none !important;
-          -webkit-appearance: none;
-          opacity: 0;
-        }
-        
-        /* Hide native controls */
-        video {
-          -webkit-tap-highlight-color: transparent;
-          -webkit-touch-callout: none;
-          -webkit-user-select: none;
-          user-select: none;
-        }
-        
-        /* Prevent video from showing controls on iOS */
-        video[controls] {
-          display: none;
-        }
-        
-        /* Feature video specific styles */
-        .feature-video {
-          pointer-events: none; /* Prevent interaction that might show controls */
-        }
-        
-        /* For tablets specifically */
-        @media (max-width: 1024px) and (min-width: 768px) {
-          video {
-            -webkit-appearance: none;
-          }
-        }
-      `}</style>
     </section>
   );
 }

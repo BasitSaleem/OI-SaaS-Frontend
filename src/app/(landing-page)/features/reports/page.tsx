@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/reports-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/reports-whychose.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -246,7 +248,9 @@ const page = () => {
       <SubFeaturesHero
         title="Turn Data into Decisions with Inventory Management Reports"
         description="Transform data into actionable insights by using powerful inventory management reports and point of sale reporting systems, all at one location."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName= "lg:mt-14 mt-11 max-w-[1000px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -292,7 +296,7 @@ const page = () => {
           },
         
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

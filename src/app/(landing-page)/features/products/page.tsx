@@ -257,6 +257,7 @@ const page = () => {
         description="Create, manage, and monitor all your products effectively through the Product Management Feature in Owners Inventory. Organize stock levels, set prices, SKUs, and barcodes with complete transparency and accuracy."
         // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         image={heroBanner}
+         imageClassName= "lg:my-14 my-11 max-w-[1040px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -308,7 +309,7 @@ const page = () => {
           },
         
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

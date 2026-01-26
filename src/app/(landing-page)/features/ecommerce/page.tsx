@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/ecommerce-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/ecommerce-whychose.webp";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -270,7 +272,9 @@ const page = () => {
       <SubFeaturesHero
         title="Sell Everywhere, Manage from One Platform"
         description="Owners Inventory ecommerce links your online store, inventory, and POS together. Operate your business on web, mobile and social channels seamlessly with full control and real time view."
-        video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
+        image={heroBanner}
+        imageClassName="max-w-[1000px]"
         ctaDesc="Get Started for Free"
         variant="animation2"
       />
@@ -315,7 +319,7 @@ const page = () => {
               "Whether you’re a startup or a multi-store brand, our POS and eCommerce solution scales with you.",
           },
         ]}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage= {whyChoseBanner}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
