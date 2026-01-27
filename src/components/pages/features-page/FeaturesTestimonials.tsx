@@ -12,8 +12,8 @@ interface TestimonialSlide {
   title: string;
   image: string;
   text: string;
-  icon: string;
-  color: string;
+  icon?: string;
+  color?: string;
 }
 
 interface FeaturesTestimonialsProps {
@@ -56,6 +56,8 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 const PURPLE = "#795CF5";
 const GREEN = "#1AD1B9";
 const INACTIVE_ACCENT = "#9CA3AF";
+const PURPLE_ICON = "/assets/review-section/double-coma-icon.svg";
+const GREEN_ICON = "/assets/review-section/coma-green.svg";
 
 const FeaturesTestimonials = ({
   testimonials = [],
@@ -106,13 +108,14 @@ const FeaturesTestimonials = ({
           renderSlide={(slide, i) => {
             const isVisible = visibleSet.has(i);
             const visiblePosition = visibleIndices.indexOf(i);
-
-            const accentColor =
-              visiblePosition === 0
-                ? PURPLE
-                : visiblePosition === 1
-                ? GREEN
-                : INACTIVE_ACCENT;
+            
+            // Determine if the card is odd or even (0-based index)
+            const isOdd = i % 2 === 0; // Index 0, 2, 4, etc. are odd positions (1st, 3rd, 5th cards)
+            const isEven = i % 2 === 1; // Index 1, 3, 5, etc. are even positions (2nd, 4th, 6th cards)
+            
+            // Use odd/even logic for color and icon
+            const accentColor = isOdd ? PURPLE : GREEN;
+            const icon = isOdd ? PURPLE_ICON : GREEN_ICON;
 
             return (
               <div
@@ -126,7 +129,7 @@ const FeaturesTestimonials = ({
               >
                 <div className="absolute top-6 right-6">
                   <Image
-                    src={slide.icon}
+                    src={icon} // Use the calculated icon
                     alt="Quote icon"
                     width={26}
                     height={26}
@@ -140,7 +143,7 @@ const FeaturesTestimonials = ({
                     width={48}
                     height={48}
                     className="rounded-full border-2 w-[48px] h-[48px] "
-                    style={{ borderColor: accentColor }}
+                    style={{ borderColor: accentColor }} // Use the calculated accent color
                   />
 
                   <div className="">
@@ -149,7 +152,7 @@ const FeaturesTestimonials = ({
                     </p>
                     <p
                       className="font-medium "
-                      style={{ color: accentColor }}
+                      style={{ color: accentColor }} // Use the calculated accent color
                     >
                       {slide.title}
                     </p>

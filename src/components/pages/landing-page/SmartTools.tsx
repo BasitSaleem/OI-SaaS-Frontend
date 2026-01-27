@@ -42,7 +42,7 @@ const SmartTools: React.FC<SmartTools> = ({
      text-[var(--white-color)]  border border-[var(--white-color)] hover:border-transparent rounded-full hover:text-black  hover:bg-[var(--white-color)]
      transition-colors duration-300"
           >
-            Watch Tutorials
+            Start for Free
           </Link>
           <ButtonSm
             url="#"

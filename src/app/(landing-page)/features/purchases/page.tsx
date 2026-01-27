@@ -276,28 +276,28 @@ const getLayoutPatterns = (cardCount: number) => {
 
 const purchasesTestimonials = [
   {
-    name: "Ahmed Khan",
-    title: "HR Manager",
-    image: "/assets/pfp.avif",
+    name: "David Lawson",
+    title: "Procurement Head, TradePoint",
+    image: "/assets/features-page/testimonial-images/testinomial-boy10.webp",
     text: `Before Owners Inventory, managing our materials purchases was a difficult task. Now, the entire automated process is easy. We have completely eliminated manual errors and saved hours for our team.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
   {
-    name: "Sarah Collins",
-    title: "Bright Home.",
-    image: "/assets/pfp.avif",
+    name: "Megan Scott",
+    title: "Inventory Analyst, StockBridge",
+    image: "/assets/features-page/testimonial-images/testinomial-girl10.webp",
     text: `Switching to this system has changed how we handle procurement. We no longer worry about late payments or missed orders.`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
+    // icon: "/assets/review-section/coma-green.svg",
+    // color: "#1AD1B9",
   },
   {
-    name: "Omer Hassan",
-    title: "Owner, Al-Asif Supermart",
-    image: "/assets/100.jpeg",
+    name: "Chris Bennett",
+    title: "CEO, OmniRetail Solutions",
+    image: "/assets/features-page/testimonial-images/testinomial-boy11.webp",
     text: `We are impressed with how the system handles everything, from supplier management to automated bill generation. It simplifies buying, tracking and managing everything.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
  
 ];

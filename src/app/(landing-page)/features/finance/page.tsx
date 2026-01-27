@@ -266,28 +266,28 @@ const getLayoutPatterns = (cardCount: number) => {
 
 const financeTestimonials = [
   {
-    name: "Ali R",
-    title: "Brights Home",
-    image: "/assets/pfp.avif",
+    name: "Monica Patel",
+    title: "Business Operations Head, Patel Traders",
+    image: "/assets/features-page/testimonial-images/testinomial-girl19.webp",
     text: `Owners Inventory made our accounting a lot easier. We are able to monitor all our sales and expenditures in a single location without moving through systems. The financial reports are straightforward, fast, and valid - it actually saves us time daily.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
   {
-    name: "Sara M",
-    title: "Al-Asif Stores",
-    image: "/assets/pfp.avif",
+    name: "Nathan Scott",
+    title: "Operations Head, FreshWay Stores",
+    image: "/assets/features-page/testimonial-images/testinomial-boy20.webp",
     text: `We began using Owners Inventory primarily to use in sales but its accounting and finance capabilities have been a great addition. Posting journal entries, monitoring payments, and looking at profit and loss statements can be done in minutes by our team. It is the real financial reporting POS system that ensures our data is correct and our operations clear.`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
+    // icon: "/assets/review-section/coma-green.svg",
+    // color: "#1AD1B9",
   },
   {
-    name: "Hassan K",
-    title: "Retail Partner",
-    image: "/assets/100.jpeg",
+    name: "Ayesha Khan",
+    title: "Managing Director, Khan Enterprises",
+    image: "/assets/features-page/testimonial-images/testinomial-girl20.webp",
     text: `Business finance management is so easy with this software. We can see all the receivables, expenses, and cash flow in a single location through the POS accounts and finance dashboard. I like it best because it is precise and easy, it is powerful enough to use by accountants and easy enough to use by managers like me.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
  
 ];
