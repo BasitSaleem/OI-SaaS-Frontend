@@ -165,7 +165,7 @@ const IndustryPosShowcase = ({
         </div>
       </div>
 
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden h-[450px] md:h-full">
         <div
           className="flex  gap-6 transition-transform duration-500 ease-in-out"
           style={{

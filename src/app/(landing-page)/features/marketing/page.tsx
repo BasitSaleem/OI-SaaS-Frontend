@@ -210,28 +210,28 @@ const getLayoutPatterns = (cardCount: number) => {
 
 const marketingTestimonials = [
   {
-    name: "Carol Bush",
-    title: "Bright Home Owner",
-    image: "/assets/pfp.avif",
+    name: "Thomas Reed",
+    title: "Operations Director, Nexa Supplies",
+    image: "/assets/features-page/testimonial-images/testinomial-boy7.webp",
     text: `Implementing the loyalty points system through Owner's Inventory was honestly  one of the best decisions we made last year. Our customers genuinely love the points, which has increased how often they buy from us. We couldn't be happier with the results.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
   {
-    name: "Yasir Khan",
-    title: "Prime Traders",
-    image: "/assets/pfp.avif",
+    name: "Natalie Green",
+    title: "Business Owner, GreenLine Retail",
+    image: "/assets/features-page/testimonial-images/testinomial-girl7.webp",
     text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales, which has increased how often they buy from us. happier with the results.`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
+    // icon: "/assets/review-section/coma-green.svg",
+    // color: "#1AD1B9",
   },
   {
-    name: "Ginny Victoria",
-    title: "StyleMart",
-    image: "/assets/100.jpeg",
+    name: "Brian Foster",
+    title: "Warehouse Manager, StockFlow Inc",
+    image: "/assets/features-page/testimonial-images/testinomial-boy8.webp",
     text: `As a growing business, we needed a way to reward our best and most loyal customers. Setting up a special loyalty program for them has never been easier. It has given us a professional way to build strong client relationships.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
 ];
 

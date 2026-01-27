@@ -207,28 +207,28 @@ const layoutPatterns = [
 
 const facilitiesTestimonials = [
   {
-    name: "Ahmed",
-    title: "HR Manager at Al-Asif",
-    image: "/assets/pfp.avif",
+    name: "Olivia Harris",
+    title: "Procurement Manager, SmartTrade",
+    image: "/assets/features-page/testimonial-images/testinomial-girl8.webp",
     text: `Owners Inventory has totally transformed our approach to handling our business. We would manage every store individually, and it led to delays and mistakes. We are now able to monitor every place, every stock and every team performance on a single dashboard. It saves us a lot of hours daily and makes us have real mastery of our operations.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
   {
-    name: "Sana",
-    title: "the Head of the operations, Bright Home.",
-    image: "/assets/pfp.avif",
+    name: "Jason Miller",
+    title: "Managing Partner, Miller & Co.",
+    image: "/assets/features-page/testimonial-images/testinomial-boy9.webp",
     text: `Prior to using Owners Inventory, it was a real challenge to track out our inventory, and staff activity across branches. The system simplified everything - stock management, performance reports, etc. It is user-friendly to our team, and we are able to make decisions faster with real-time updates. It truly improved how we work.`,
-    icon: "/assets/review-section/coma-green.svg",
-    color: "#1AD1B9",
+    // icon: "/assets/review-section/coma-green.svg",
+    // color: "#1AD1B9",
   },
   {
-    name: "Urban Threads Clothing Co",
-    title: "Director of HR",
-    image: "/assets/100.jpeg",
+    name: "Hannah Lewis",
+    title: "Retail Operations Head, CityMart",
+    image: "/assets/features-page/testimonial-images/testinomial-girl9.webp",
     text: `Our logistics department used to be under strain trying to manage multiple shipments and warehouses. Owners Inventory put it all on one platform, which makes it far easier to track what is being delivered, where the stock moves, and what employees are doing. The analytics option helps us to plan better, minimize errors, and become more efficient.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
-    color: "#795CF5",
+    // icon: "/assets/review-section/double-coma-icon.svg",
+    // color: "#795CF5",
   },
 ];
 
