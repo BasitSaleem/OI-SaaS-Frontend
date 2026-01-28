@@ -7,44 +7,53 @@ import InputField from '@/components/form-fields/InputField'
 import Image from 'next/image'
 
 const layoutClasses = [
+  // First card - 8 columns (full height)
   {
-    className: "col-span-12 xl:col-span-8 ",
-    mediaClassName: "h-[320px]",
-    paddingClass: "px-0",
-    heightClass: "h-full",
-  },
-  {
-    className: "col-span-12 md:col-span-6 xl:col-span-4",
-    mediaClassName: "h-[220px] xl:h-[190px]",
-    paddingClass: "px-0",
+    className: "col-span-12 xl:col-span-8 xl:row-span-2",
+    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[320px]",
+    paddingClass: "p-0",
     heightClass: "h-fit",
   },
+  
+  // Second card - 4 columns (shorter height)
   {
-    className: "col-span-12 md:col-span-6 xl:col-span-4",
-    mediaClassName: "h-[220px]",
-    paddingClass: "px-0",
-    heightClass: "h-fit",
+    className: "col-span-12 md:col-span-6 xl:col-span-4 xl:row-span-1",
+    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[194px] ",
+    paddingClass: "p-0",
+    heightClass: "xl:h-fit",
   },
+
+  // Third card - 4 columns (same height as first card)
   {
-    className: "col-span-12 md:col-span-6 xl:col-span-4",
-    mediaClassName: "h-[220px]",
-    paddingClass: "px-0",
-    heightClass: "h-fit",
+    className: "col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-1 xl:row-start-3 xl:row-span-1",
+    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[204px]",
+    heightClass: "xl:h-fit",
+    paddingClass: "p-0",
   },
+
+  // Fourth card - 4 columns (same height as first card)
   {
-    className: "col-span-12 md:col-span-6 xl:col-span-4 xl:-mt-[100px]",
-    mediaClassName: "h-[220px] xl:h-[320px]",
-    paddingClass: "px-0",
-    heightClass: "h-fit",
+    className: "col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-5 xl:row-start-3 xl:row-span-1",
+    mediaClassName: "h-[220px] lg:h-[310px] xl:h-[204px]",
+    heightClass: "xl:h-fit",
+    paddingClass: "p-0",
   },
-]
+
+  // Fifth card - 4 columns (tallest height)
+  {
+    className: "col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-9 xl:row-start-2 xl:row-span-2",
+    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[340px] scale-x-[1.05] scale-y-110 md:scale-110 lg:scale-x-135 lg:scale-y-110 xl:scale-100",
+    paddingClass: "p-0",
+    heightClass: "xl:h-fit",
+  },
+];
 
 const defaultLayout = {
   className: "col-span-12 md:col-span-6 xl:col-span-4",
-  mediaClassName: "h-[220px]",
-  paddingClass: "px-0",
-  heightClass: "h-fit",
-}
+  mediaClassName: "h-[220px] lg:h-[330px] xl:h-[204px]",
+  heightClass: "xl:h-fit",
+  paddingClass: "p-0",
+};
 
 const AllBlogs: React.FC = () => {
   const [active, setActive] = useState<"recent" | "popular">("recent")
@@ -97,7 +106,7 @@ const AllBlogs: React.FC = () => {
       {/* Cards */}
       <div className="grid grid-cols-12 gap-6 lg:mt-20 mt-10">
         {visibleRecords.map((feature, i) => {
-          const layout = layoutClasses[i] || defaultLayout
+          const layout = layoutClasses[i] || defaultLayout;
           return (
             <FeatureCard
               key={i}

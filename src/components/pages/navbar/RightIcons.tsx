@@ -54,7 +54,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
 
       {/* User Icon */}
       <div className="relative group">
-        <a href="#">
+        <a href="https://osglobal.ownersjungle.com/login">
           <Image
             src="/assets/header-images/user.svg"
             alt="User"
