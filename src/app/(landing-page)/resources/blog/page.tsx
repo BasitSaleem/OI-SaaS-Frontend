@@ -20,7 +20,9 @@ const page = () => {
 
         <AllBlogs/>
 
+     <div className="lg:mt-[100px] md:mt-40 mt-28">
         <FaqSection />
+        </div>
       <CalltoActionBottom />
         
     </>
