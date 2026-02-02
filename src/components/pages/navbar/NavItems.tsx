@@ -31,7 +31,8 @@ const NavItems = () => {
     setOpenMenu((curr) => (curr === key ? null : key));
 
   const [selectedFeatureKey, setSelectedFeatureKey] = useState("pos");
-  const [selectedIndustryKey, setSelectedIndustryKey] = useState("manufacturing");
+  const [selectedIndustryKey, setSelectedIndustryKey] =
+    useState("manufacturing");
   const [selectedResourceKey, setSelectedResourceKey] =
     useState<string>("learning");
 
@@ -155,7 +156,7 @@ const NavItems = () => {
             {/* Right Section (3/12) - Details Panel */}
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className=" border-l max-h-[400px] min-h-[400px] border-[#D9D9D9] w-full pl-4  overflow-y-auto overflow-x-hidden 
+                className=" border-l max-h-[350px] min-h-[400px] border-[#D9D9D9] w-full pl-4  overflow-y-auto overflow-x-hidden 
   [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-track]:bg-transparent
   [&::-webkit-scrollbar-thumb]:bg-[#D9D9D9]
@@ -178,21 +179,32 @@ const NavItems = () => {
 
                 <FeatureList items={featuresDetailsMap[selectedFeatureKey]} />
               </div>
+              <div className="pt-6 mt-6 border-t border-gray-200">
+                <Link
+                  href="/features"
+                  className="block w-full text-center px-4 py-3 bg-[#1AD1B9] text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 active:scale-[0.98]"
+                  onClick={close}
+                >
+                  View All Features
+                </Link>
+              </div>
             </div>
           </div>
         </NavDropdown>
 
         {/* INDUSTRIES DROPDOWN */}
-        <NavDropdown
+        
+        {/* <NavDropdown
           label="Industries"
           isOpen={openMenu === "industries"}
           onOpen={() => {
             open("industries");
-            // Set default category when opening
+
             if (!selectedIndustryCategory) {
               setselectedIndustryCategory("retailer");
             }
-            // Also set default industry key
+
+
             if (!selectedIndustryKey) {
               setSelectedIndustryKey("bakery-pos");
             }
@@ -202,7 +214,7 @@ const NavItems = () => {
         >
           <div className="h-2 bg-transparent"></div>
           <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
-            {/* Left Section (3/12) - Categories */}
+
             <div className="lg:col-span-3 px-4 py-6 bg-[#F6F4FE]">
               <div className="space-y-1">
                 {industryCategories.map((category) => {
@@ -217,7 +229,8 @@ const NavItems = () => {
                       key={category.id}
                       onClick={() => {
                         setselectedIndustryCategory(category.id);
-                        // Set the first item in this category as selected
+                        
+
                         const firstItem = categoryIndustries[0];
                         if (firstItem) {
                           setSelectedIndustryKey(firstItem.key);
@@ -240,7 +253,6 @@ const NavItems = () => {
               </div>
             </div>
 
-            {/* Middle Section (6/12) - Industries within Selected Category */}
             <div className="lg:col-span-6 px-4 py-6 relative">
               <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#795CF5] absolute blur-[150px] bottom-0 right-20"></div>
               <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#1AD1B9] absolute blur-[150px] bottom-0 left-10"></div>
@@ -295,7 +307,7 @@ const NavItems = () => {
               )}
             </div>
 
-            {/* Right Section (3/12) - Details Panel */}
+
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
                 className="border-l max-h-[400px] min-h-[400px] border-[#D9D9D9] w-full pl-4 overflow-y-auto overflow-x-hidden 
@@ -319,14 +331,14 @@ const NavItems = () => {
                   Key Features
                 </span>
 
-                {/* FIXED: Use IndustryList instead of FeatureList */}
+
                 <IndustryList
                   items={industryDetailsMap[selectedIndustryKey] || []}
                 />
               </div>
             </div>
           </div>
-        </NavDropdown>
+        </NavDropdown> */}
 
         {/* PRICING LINK */}
         <li>
@@ -339,7 +351,7 @@ const NavItems = () => {
         </li>
 
         {/* RESOURCES DROPDOWN */}
-        <NavDropdown
+        {/* <NavDropdown
           label="Resources"
           isOpen={openMenu === "resources"}
           onOpen={() => open("resources")}
@@ -348,7 +360,7 @@ const NavItems = () => {
         >
           <div className="h-2 bg-transparent"></div>
           <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
-            {/* Left Section */}
+           
             <div
               className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent ${
                 resourcesDetailsMap[selectedResourceKey]
@@ -359,7 +371,7 @@ const NavItems = () => {
               <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
                 {resourcesItems.map((item) => (
                   <div
-                    key={item.key} // ✅ key on outer div
+                    key={item.key} 
                     className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${
                       selectedResourceKey === item.key
                         ? "border-[#795CF5] bg-gray-100"
@@ -398,7 +410,7 @@ const NavItems = () => {
               </div>
             </div>
 
-            {/* Right Section */}
+          
             {resourcesDetailsMap[selectedResourceKey] && (
               <div className="hidden md:block col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto">
                 <p className="mb-4 text-xs font-bold font-['Onest'] text-[#231F20]">
@@ -411,7 +423,7 @@ const NavItems = () => {
                   {resourcesDetailsMap[selectedResourceKey].map((item) => (
                     <li key={item}>
                       {" "}
-                      {/* ✅ unique key for each <li> */}
+                     
                       <a
                         href="#"
                         className="text-xs font-normal leading-9 text-[#231F20] font-['Onest'] hover:text-gray-400"
@@ -424,7 +436,7 @@ const NavItems = () => {
               </div>
             )}
           </div>
-        </NavDropdown>
+        </NavDropdown> */}
 
         {/* COMPANY DROPDOWN */}
         <NavDropdown

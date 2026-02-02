@@ -1,5 +1,4 @@
 'use client'
-
 import dynamic from "next/dynamic";
 import React from 'react';
 import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/sales-order-banner.webp";

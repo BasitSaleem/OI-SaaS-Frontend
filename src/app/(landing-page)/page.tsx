@@ -207,8 +207,12 @@ export default function Home() {
         </div>
 
         <InsightsSection />
+ 
 
+      <div className="lg:pt-[100px] md:pt-40 pt-28">
         <FaqSection faqs={homeFaqs} />
+
+        </div>
 
         <CalltoActionBottom />
       </div>

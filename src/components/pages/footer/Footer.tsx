@@ -54,9 +54,8 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
             {[
               { text: "Privacy Policy", href: "/privacy-policy" },
               { text: "Terms & Conditions", href: "/terms-and-conditions" },
-              { text: "Help Center", href: "/help-center" },
-              { text: "Cookies", href: "/cookies" },
-              { text: "FAQs", href: "/faqs" },
+              { text: "About Us", href: "/about" },
+              { text: "Contant Us", href: "/contact" },
             ].map((item, index) => (
               <li key={index}>
                 <Link
@@ -98,14 +97,14 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
           <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
-            ©2025 Owners Inventory - All rights reserved
+            ©2026 Owners Inventory - All rights reserved
           </p>
-          <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
+          {/* <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             A product of{" "}
             <Link href="#" className="font-semibold font-['Onest'] underline cursor-pointer">
               Owners Universe
             </Link>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
