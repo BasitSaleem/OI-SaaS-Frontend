@@ -44,6 +44,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
     : "text-white";
 
   return (
+    
     <div
       className={`relative rounded-[30px] shadow-sm overflow-hidden min-h-[400px] md:min-h-[390px] md:h-[390px] w-full cursor-pointer transition-all duration-300 ${className}`}
       style={{

@@ -9,19 +9,19 @@ export const companyItems: CompanyItem[] = [
     icon: '/assets/header-dropdown-images/company-dropdown/about.svg',
   },
   {
-    title: 'Testimonials',
+    title: 'Contact Us',
     icon: '/assets/header-dropdown-images/company-dropdown/testimonial.svg',
   },
-  {
-    title: 'News',
-    icon: '/assets/header-dropdown-images/company-dropdown/news.svg',
-  },
-  {
-    title: 'Referrals',
-    icon: '/assets/header-dropdown-images/company-dropdown/referals.svg',
-  },
-  {
-    title: 'Partner Program',
-    icon: '/assets/header-dropdown-images/company-dropdown/testimonial.svg', 
-  },
+  // {
+  //   title: 'News',
+  //   icon: '/assets/header-dropdown-images/company-dropdown/news.svg',
+  // },
+  // {
+  //   title: 'Referrals',
+  //   icon: '/assets/header-dropdown-images/company-dropdown/referals.svg',
+  // },
+  // {
+  //   title: 'Partner Program',
+  //   icon: '/assets/header-dropdown-images/company-dropdown/testimonial.svg', 
+  // },
 ];

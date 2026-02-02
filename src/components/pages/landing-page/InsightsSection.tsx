@@ -54,7 +54,7 @@ export default function InsightsSection() {
   }, []);
 
   return (
-    <section className="ownerinventory-landing-insights rounded-[40px] lg:py-[100px] md:py-40 py-28 z-50">
+    <section className="ownerinventory-landing-insights rounded-[40px] lg:pt-[100px] md:pt-40 pt-28 z-50">
       <div className="wrapper text-center">
         <MainHeading className="mb-4">Insights That Help You Grow</MainHeading>
         <Paragraph className="lg:mb-10 md:mb-6 mb-5">

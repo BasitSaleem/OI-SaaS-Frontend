@@ -1,6 +1,14 @@
 @import "tailwindcss";
 /* globals.css */
 
+
+@theme {
+  /* Define a new breakpoint named '1.5xl' at 1500px */
+  --breakpoint-3xl: 1500px; /* 1500px converted to rem (1500/16 = 93.75) */
+  /* Optionally, you can also name it 'custom-lg' or similar */
+  /* --breakpoint-custom-lg: 93.75rem; */
+}
+
 html, body {
   overscroll-behavior: none;
 }
