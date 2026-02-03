@@ -46,7 +46,7 @@ const IndustryPosShowcase = ({
         setSlidesPerView(1);
         setIsMobile(true);
         setIsTablet(false);
-        setTranslationPercentage(107);
+        setTranslationPercentage(110);
         setActiveCard(null);
       } else if (width < 1024) {
         setSlidesPerView(2);
@@ -120,7 +120,7 @@ const IndustryPosShowcase = ({
   };
 
   return (
-    <div className="wrapper px-4 ">
+    <div className="wrapper">
       <div className="w-full flex justify-between items-end mb-10">
         <div className="flex flex-col items-start justify-center w-full max-w-full md:max-w-[70%]">
           <SubHeading className="mb-4">
@@ -165,9 +165,9 @@ const IndustryPosShowcase = ({
         </div>
       </div>
 
-      <div className="w-full overflow-hidden h-[450px] md:h-full">
+      <div className="w-full overflow-hidden h-[460px] md:h-full">
         <div
-          className="flex  gap-6 transition-transform duration-500 ease-in-out"
+          className="flex items-stretch gap-3 mx-2 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentSlide * translationPercentage}%)`,
           }}
@@ -203,7 +203,7 @@ const IndustryPosShowcase = ({
               <div
                 key={index}
                 data-industry-card
-                className="transition-all duration-300 ease-in-out"
+                className="transition-all self-stretch mx-2 duration-300 ease-in-out"
                 style={{
                   width:
                     isVisible && isExpanded && !isMobile

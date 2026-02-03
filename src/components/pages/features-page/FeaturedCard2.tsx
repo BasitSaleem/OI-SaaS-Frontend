@@ -69,11 +69,11 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
 
       {/* Text */}
       <div className={`flex flex-col ${isEven ? "lg:order-2" : "lg:order-1"}`}>
-        <h1 className="font-['Onest'] font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] xl:mb-10 lg:mb-6 mb-5">
+        <h3 className="font-['Onest'] font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px]  mb-4 min-h-[50px] lg:min-h-[50px]">
           {title}
-        </h1>
+        </h3>
 
-        <p className="font-['Onest'] font-normal text-[#231F20] text-sm lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 mb-6 lg:mb-[60px]">
+        <p className="font-['Onest'] font-normal text-[#231F20] text-sm lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 flex-1 mb-6">
           {description}
         </p>
 

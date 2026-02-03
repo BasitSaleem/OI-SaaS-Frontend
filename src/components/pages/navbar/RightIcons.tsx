@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import Tooltip from "@/components/toolTip/Tooltip";
+import Link from "next/link";
 
 type RightIconsProps = {
   searchOpen: boolean;
@@ -54,14 +55,14 @@ const RightIcons: React.FC<RightIconsProps> = ({
 
       {/* User Icon */}
       <div className="relative group">
-        <a href="https://osglobal.ownersjungle.com/login">
+        <Link href="https://osglobal.ownersjungle.com/login">
           <Image
             src="/assets/header-images/user.svg"
             alt="User"
             width={16}
             height={16}
           />
-        </a>
+        </Link>
         <Tooltip text="Login" />
 
         {/* <div className="absolute left-[50%] -translate-x-[50%] top-[120%] z-[999] hidden group-hover:flex flex-col items-left">
@@ -72,12 +73,12 @@ const RightIcons: React.FC<RightIconsProps> = ({
         </div> */}
       </div>
 
-      <a
+      <Link
         href="#"
         className="px-3.5 py-1.5 xl:px-[18px] xl:py-[9px] md:text-[10px] xl:text-sm font-bold font-['Onest'] text-white bg-[#231F20] rounded-full border hover:bg-white hover:text-[#231F20] hover:border-[#231F20] transition-all whitespace-nowrap"
       >
         Start for Free
-      </a>
+      </Link>
     </div>
   );
 };

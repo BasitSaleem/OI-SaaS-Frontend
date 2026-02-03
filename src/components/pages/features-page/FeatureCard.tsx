@@ -82,11 +82,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 
           {/* Text Content - This section will now stretch */}
           <div className="mt-5 flex flex-col flex-1"> 
-            <CardHeading className="mb-6 min-h-[40px] flex item-stretch">
+            <CardHeading className="mb-4 min-h-[70px] lg:min-h-[70px] flex self-stretch">
               {displayedTitle}
             </CardHeading>
 
-            <CardDesc className="min-h-[30px] flex items-start mb-6"> 
+            <CardDesc className="flex-1 mb-6"> 
               {description}
             </CardDesc>
              

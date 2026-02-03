@@ -12,6 +12,8 @@ interface Feature {
   description?: string;
   imageSrc: string;
   listItems?: string[];
+  // buttonLabel?: string;
+  // buttonHref?: string;
 }
 
 interface LayoutPattern {
@@ -51,12 +53,14 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
   const handleToggleShowAll = () => {
   const willShowAll = !showAll;
   setShowAll(willShowAll);
+  
 
   if (!willShowAll) {
     setTimeout(() => {
       sectionRef.current?.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+       block: "start", // Changed from "center" to "start"
+    inline: "nearest",
       });
     }, 300); 
   }
@@ -97,7 +101,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.35, ease: "easeInOut" }}
                 >
-                  <FeatureCard {...feature} {...pattern} />
+                  <FeatureCard {...feature} {...pattern}  />
                 </motion.div>
               );
             })}

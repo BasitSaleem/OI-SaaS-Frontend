@@ -107,7 +107,7 @@ const posTestimonials = [
     name: "Michael Turner",
     title: "Supply Chain Lead, Valco Industries",
     image: "/assets/features-page/testimonial-images/testinomial-boy2.webp",
-    text: `Everything in the pharmacy business is accuracy and compliance and this system provides both. Owners Inventory provides us with the reassurance to concentrate on our customers rather than work.`,
+    text: `Accuracy and speed are critical at the point of sale, and Owners Inventory delivers both. From real-time inventory updates to smooth checkout and reporting, the system has simplified our daily operations. It allows our team to focus more on customers and less on manual work.`,
     // icon: "/assets/review-section/double-coma-icon.svg",
     // color: "#1AD1B9",
   },
@@ -306,6 +306,18 @@ across multiple locations."
             description:
               "Use real-time sales analytics and detailed reports to make smarter and data-driven business decisions.",
           },
+          {
+            icon: "/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
+            title: "24/7 Expert Support",
+            description:
+              "You can always rely on our support team who is committed to help you and make sure that your operations are never stalled.",
+          }, 
+           {
+            icon: "/assets/features-page/human-resource-page/why-chose/reliable-support.svg",
+            title: "Proven Industry Trust",
+            description:
+              "Relied upon by hundreds of retailers, restaurants, and wholesalers that use Owners Inventory to drive their performance.",
+          },
         ]}
         mainImage= {whyChoseBanner}
       />
@@ -331,6 +343,7 @@ across multiple locations."
         testimonials={posTestimonials}
         heading="What Clients Say About Us?"
         showSmartTools={true}
+        secondDescription="Everything you need to manage sales, track inventory in real time, and run your business smoothly from a single point of sale system."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
