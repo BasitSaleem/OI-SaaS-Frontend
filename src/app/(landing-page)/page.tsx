@@ -39,9 +39,9 @@ const ToolsSection = dynamic(
 const SmartTools = dynamic(
   () => import("@/components/pages/landing-page/SmartTools"),
 );
-const InsightsSection = dynamic(
-  () => import("@/components/pages/landing-page/InsightsSection"),
-);
+// const InsightsSection = dynamic(
+//   () => import("@/components/pages/landing-page/InsightsSection"),
+// );
 const FaqSection = dynamic(
   () => import("@/components/pages/landing-page/FAQSection"),
 );
@@ -206,7 +206,7 @@ export default function Home() {
           <SmartTools />
         </div>
 
-        <InsightsSection />
+        {/* <InsightsSection /> */}
  
 
       <div className="lg:pt-[100px] md:pt-40 pt-28">
