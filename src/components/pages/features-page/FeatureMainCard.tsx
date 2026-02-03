@@ -73,15 +73,15 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
 
           {/* Text */}
           <div className="mt-5">
-            <CardHeading className="mb-6 min-h-[40px] flex items-stretch xl:items-start">
+            <CardHeading className="mb-4 min-h-[40px] lg:min-h-[40px]">
               {displayedTitle}
             </CardHeading>
 
-            <CardDesc className="min-h-[60px] flex items-stretch xl:items-start">
+            <CardDesc className="mb-4 min-h-[40px] lg:min-h-[40px]">
               {description}
             </CardDesc>
 
-            <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
+            <p className=" xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
               {authorName}
             </p>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, useCallback } from "react";
 import MainHeading from "../typography/MainHeading";
 import Image from "next/image";
 import SmartTools from "../landing-page/SmartTools";
@@ -70,9 +70,10 @@ const FeaturesTestimonials = ({
 }: FeaturesTestimonialsProps) => {
   const [visibleIndices, setVisibleIndices] = useState<number[]>([0]);
 
-  // ✅ Guarded update to prevent render loops
-  const updateVisibleIndices = (next: number[]) => {
+  // ✅ Optimized update function with useCallback
+  const updateVisibleIndices = useCallback((next: number[]) => {
     setVisibleIndices((prev) => {
+      // Only update if indices actually changed
       if (
         prev.length === next.length &&
         prev.every((v, i) => v === next[i])
@@ -81,12 +82,75 @@ const FeaturesTestimonials = ({
       }
       return next;
     });
-  };
+  }, []);
 
+  // Use useMemo to prevent unnecessary recalculations
   const visibleSet = useMemo(
     () => new Set(visibleIndices),
     [visibleIndices]
   );
+
+  // Memoize renderSlide to prevent recreation on each render
+  const renderTestimonialSlide = useCallback((slide: TestimonialSlide, i: number) => {
+    const isVisible = visibleSet.has(i);
+    const visiblePosition = visibleIndices.indexOf(i);
+    
+    // Determine if the card is odd or even (0-based index)
+    const isOdd = i % 2 === 0;
+    const isEven = i % 2 === 1;
+    
+    // Use odd/even logic for color and icon
+    const accentColor = isOdd ? PURPLE : GREEN;
+    const icon = isOdd ? PURPLE_ICON : GREEN_ICON;
+
+    return (
+      <div
+        className={[
+          "testimonial-card flex flex-col h-full bg-white relative",
+          "shadow-[0px_0px_20px_rgba(0,0,0,0.05)]",
+          "rounded-[30px] p-6 transition-all duration-300",
+          "flex flex-col h-full",
+          isVisible ? "opacity-100" : "opacity-80",
+        ].join(" ")}
+      >
+        <div className="absolute top-6 right-6">
+          <Image
+            src={icon}
+            alt="Quote icon"
+            width={26}
+            height={26}
+          />
+        </div>
+
+        <div className="flex items-center gap-4 mb-5">
+          <Image
+            src={slide.image}
+            alt={slide.name}
+            width={48}
+            height={48}
+            className="rounded-full border-2 w-[48px] h-[48px] "
+            style={{ borderColor: accentColor }}
+          />
+
+          <div className="">
+            <p className="font-semibold text-xl">
+              {slide.name}
+            </p>
+            <p
+              className="font-medium "
+              style={{ color: accentColor }}
+            >
+              {slide.title}
+            </p>
+          </div>
+        </div>
+
+        <p className="text-base leading-[170%] flex-1">
+          {slide.text}
+        </p>
+      </div>
+    );
+  }, [visibleSet, visibleIndices]);
 
   return (
     <div
@@ -105,66 +169,7 @@ const FeaturesTestimonials = ({
           onVisibleChange={({ visibleIndices }) =>
             updateVisibleIndices(visibleIndices)
           }
-          renderSlide={(slide, i) => {
-            const isVisible = visibleSet.has(i);
-            const visiblePosition = visibleIndices.indexOf(i);
-            
-            // Determine if the card is odd or even (0-based index)
-            const isOdd = i % 2 === 0; // Index 0, 2, 4, etc. are odd positions (1st, 3rd, 5th cards)
-            const isEven = i % 2 === 1; // Index 1, 3, 5, etc. are even positions (2nd, 4th, 6th cards)
-            
-            // Use odd/even logic for color and icon
-            const accentColor = isOdd ? PURPLE : GREEN;
-            const icon = isOdd ? PURPLE_ICON : GREEN_ICON;
-
-            return (
-              <div
-                className={[
-                  "testimonial-card flex flex-col h-full bg-white relative",
-                  "shadow-[0px_0px_20px_rgba(0,0,0,0.05)]",
-                  "rounded-[30px] p-6 transition-all duration-300",
-                  "flex flex-col h-full", // ✅ Added h-full here
-                  isVisible ? "opacity-100" : "opacity-80",
-                ].join(" ")}
-              >
-                <div className="absolute top-6 right-6">
-                  <Image
-                    src={icon} // Use the calculated icon
-                    alt="Quote icon"
-                    width={26}
-                    height={26}
-                  />
-                </div>
-
-                <div className="flex items-center gap-4 mb-5">
-                  <Image
-                    src={slide.image}
-                    alt={slide.name}
-                    width={48}
-                    height={48}
-                    className="rounded-full border-2 w-[48px] h-[48px] "
-                    style={{ borderColor: accentColor }} // Use the calculated accent color
-                  />
-
-                  <div className="">
-                    <p className="font-semibold text-xl">
-                      {slide.name}
-                    </p>
-                    <p
-                      className="font-medium "
-                      style={{ color: accentColor }} // Use the calculated accent color
-                    >
-                      {slide.title}
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-base leading-[170%] flex-1"> {/* ✅ Changed to flex-1 */}
-                  {slide.text}
-                </p>
-              </div>
-            );
-          }}
+          renderSlide={renderTestimonialSlide}
         />
 
         {showSmartTools && (

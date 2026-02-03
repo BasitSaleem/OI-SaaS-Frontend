@@ -37,7 +37,7 @@ const ecommerceIndustries = [
     title: "Retail Stores",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
-      "Extend your retail presence on the web with live inventory and pricing. Our ecommerce POS integration ensures that inventory is correct and customers are satisfied in all locations.",
+      "Extend your retail presence on the web with live inventory and pricing. Our eCommerce POS integration ensures that inventory is correct and customers are satisfied in all locations.",
     image: "/assets/industry-type/retail-store.webp",
     mobileImage: "/assets/industry-type/retail-store-mobile.webp",
   },
@@ -46,7 +46,7 @@ const ecommerceIndustries = [
     title: "Restaurant",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Have one platform that manages dine-in, takeout, and online orders. By integrating point of sale ecommerce, menus, orders and payment remain in perfect harmony.",
+      "Have one platform that manages dine-in, takeout, and online orders. By integrating point of sale eCommerce, menus, orders and payment remain in perfect harmony.",
     image: "/assets/industry-type/restaurant.webp",
     mobileImage: "/assets/industry-type/restaurant-mobile.webp",
   },
@@ -55,7 +55,7 @@ const ecommerceIndustries = [
     title: "Wholesalers",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
-      "Automate sales in large quantities by price and inventory adjustment. POS system ecommerce integration provides standardization between warehouses and internet portals.",
+      "Automate sales in large quantities by price and inventory adjustment. POS system eCommerce integration provides standardization between warehouses and internet portals.",
     image: "/assets/industry-type/whole-sale.webp",
     mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
   },
@@ -64,7 +64,7 @@ const ecommerceIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Easily access prescriptions, expiry notifications, and online refills. Our integrated POS and ecommerce system maintains accurate and compliance records in real time.",
+      "Easily access prescriptions, expiry notifications, and online refills. Our integrated POS and eCommerce system maintains accurate and compliance records in real time.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -73,7 +73,7 @@ const ecommerceIndustries = [
     title: "Fashion & Apparel",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
-      "Easily track styles, colors, and sizes. The ecommerce POS system harmonizes inventory between online and in-store collections to provide a seamless way of managing seasons.",
+      "Easily track styles, colors, and sizes. The eCommerce POS system harmonizes inventory between online and in-store collections to provide a seamless way of managing seasons.",
     image: "/assets/industry-type/fashion.webp",
     mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },
@@ -82,7 +82,7 @@ const ecommerceIndustries = [
     title: "Brands",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
-      "Keep track of specs, warranties, and inventory changes. Your product listings and orders will always be in sync with POS and ecommerce integration.",
+      "Keep track of specs, warranties, and inventory changes. Your product listings and orders will always be in sync with POS and eCommerce integration.",
     image: "/assets/industry-type/brands.webp",
     mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },
@@ -105,19 +105,19 @@ const FeaturesCards = [
     imageSrc:
       "/assets/features-page/ecommerce-page/features-section/safe-checkout.webp",
   },
-  {
+   {
     id: 3,
-    title: "Orders, Discounts and Shipping Management",
+    title: "Theme and Template Customization",
     description:
-      "Enhance all orders in a single dashboard since placing through delivery. Issue discounts, issue invoices, and keep track of shipping with ease to maintain correctness and customer satisfaction.",
+      "Customize your online store to your brand. Select a template, customize colors, layouts, and fonts, and make a store that feels and looks unique to you.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/shiping-management.webp",
+      "/assets/features-page/ecommerce-page/features-section/template-customization.webp",
   },
   {
     id: 4,
     title: "Pages, Blog, FAQs & Company Info",
     description:
-      "Establish brand trust through deep content- develop custom pages, blog, host FAQs, and communicate company news right on your platform.",
+      "Establish brand trust through deep content develop custom pages, blog, host FAQs, and communicate company news right on your platform.",
     imageSrc:
       "/assets/features-page/ecommerce-page/features-section/company-info.webp",
   },
@@ -153,13 +153,13 @@ const FeaturesCards = [
     imageSrc:
       "/assets/features-page/ecommerce-page/features-section/map-subscriber.webp",
   },
-  {
+   {
     id: 9,
-    title: "Theme and Template Customization",
+    title: "Orders, Discounts and Shipping Management",
     description:
-      "Customize your online store to your brand. Select a template, customize colors, layouts, and fonts, and make a store that feels and looks unique to you.",
+      "Enhance all orders in a single dashboard since placing through delivery. Issue discounts, issue invoices, and keep track of shipping with ease to maintain correctness and customer satisfaction.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/template-customization.webp",
+      "/assets/features-page/ecommerce-page/features-section/shiping-management.webp",
   },
 ];
 
@@ -169,32 +169,33 @@ const ecommerceFaqs = [
     question:
       "What is the Owners Inventory eCommerce system and how does it work?",
     answer:
-      "With our Ecommerce POS, you can operate your whole online business with a single dashboard, products, inventory, payments, and customer data, and all in real-time. It integrates with your POS and ecommerce integration easily, to sell easily both online and in-store.",
+      "With our eCommerce POS, you can operate your whole online business with a single dashboard, products, inventory, payments, and customer data, and all in real-time. It integrates with your POS and eCommerce integration easily, to sell easily both online and in-store.",
+    
   },
   {
     id: 2,
     question: "Can I integrate my POS with the eCommerce store?",
     answer:
-      "Yes. Our POS ecommerce system maintains sales, stocks and customer records updated at all locations. You can sell in-store, on-line or across a variety of different marketplaces and our point of sale ecommerce integration keeps your stock levels and order management accurate.",
+      "Yes. Our POS eCommerce system maintains sales, stocks and customer records updated at all locations. You can sell in-store, on-line or across a variety of different marketplaces and our point of sale eCommerce integration keeps your stock levels and order management accurate.",
   },
   {
     id: 3,
     question:
       "Does the eCommerce feature support multiple payment and shipping options?",
     answer:
-      "Absolutely. With our built-in ecommerce solutions, you can provide a wide range of payment options such as credit cards and electronic wallets, as well as split payments, and also integrate with various shipping companies that can deliver your orders promptly and accurately.",
+      "Absolutely. With our built-in eCommerce solutions, you can provide a wide range of payment options such as credit cards and electronic wallets, as well as split payments, and also integrate with various shipping companies that can deliver your orders promptly and accurately.",
   },
   {
     id: 4,
     question: "Can I customize my online store through the system?",
     answer:
-      "Yes, pos system ecommerce integration is fully customized. You are able to create product pages, create pricing rules, handle promotions, and analytics all in one, integrated platform that fits your brand identity and business objectives.",
+      "Yes, pos system eCommerce integration is fully customized. You are able to create product pages, create pricing rules, handle promotions, and analytics all in one, integrated platform that fits your brand identity and business objectives.",
   },
   {
     id: 5,
     question: "How secure is the Owners Inventory eCommerce platform?",
     answer:
-      "Our ecommerce POS integration provides security at all levels. Your transactions, customer information and inventory are fully secure with our high-level encryption, safeguarded backup, and fraud protection services.",
+      "Our eCommerce POS integration provides security at all levels. Your transactions, customer information and inventory are fully secure with our high-level encryption, safeguarded backup, and fraud protection services.",
   },
 ];
 
@@ -271,7 +272,7 @@ const page = () => {
     <div>
       <SubFeaturesHero
         title="Sell Everywhere, Manage from One Platform"
-        description="Owners Inventory ecommerce links your online store, inventory, and POS together. Operate your business on web, mobile and social channels seamlessly with full control and real time view."
+        description="Owners Inventory eCommerce links your online store, inventory, and POS together. Operate your business on web, mobile and social channels seamlessly with full control and real time view."
         // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         image={heroBanner}
         imageClassName="max-w-[1000px]"
@@ -282,7 +283,7 @@ const page = () => {
       {/* 🔥 Custom layout + cards */}
       <TrustedBySection
         heading="Brands that Trust Us"
-        paragraph="Trusted by brands like Al-Asif and Bright Home use Owners Inventory empowers businesses to manage their online stores in real time. Our all-in-one eCommerce solution streamlines listings, payments, and customer interactions for smarter, faster selling."
+        paragraph="Well-established companies such as Al-Asif and Bright Home use Owners Inventory ecommerce to operate their online stores in full control and in real time."
       />
       <KeyHighlights
         heading="Ecommerce Engine for Modern Growth"
@@ -291,7 +292,7 @@ const page = () => {
       />
 
       <WhyChoosePOS
-        heading="Why Choose Us?"
+        heading="Why Choose Our Ecommerce Powerhouse?"
         paragraph="Experience Seamless Selling with Powerful POS & eCommerce Integration."
         cards={[
           {
@@ -325,7 +326,7 @@ const page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Ecommerce That Adapts to Every Industry"
-          paragraph="All businesses sell differently, yet they all require one integrated system. Owners Inventory provides unified ecommerce solutions that allow your store, inventory, and sales to be synchronized in all channels with seamless POS ecommerce integration."
+          paragraph="All businesses sell differently, yet they all require one integrated system. Owners Inventory provides unified eCommerce solutions that allow your store, inventory, and sales to be synchronized in all channels with seamless POS eCommerce integration."
           buttonText="Explore All Industries"
           industries={ecommerceIndustries}
         />
@@ -340,14 +341,14 @@ const page = () => {
         testimonials={ecommerceTestimonials}
         heading="What Clients Say About Us?"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="Contact us to find out how Owners Inventory will make your business easier and larger. Complete the form below, and our team will follow up to book a free demo and address any questions that you have. Together, let's create smarter, faster, and more connected sales."
+        secondHeading="Stay Ahead with Smart eCommerce Tools"
+        secondDescription="Everything you need to sell online, manage products, streamline orders, and grow your eCommerce business with confidence."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="Everything You Need to Know"
-          paragraph="We’ve gathered the most common questions about our ecommerce POS system and POS ecommerce integration to help you understand how Owners Inventory transforms online business management."
+          paragraph="We’ve gathered the most common questions about our eCommerce POS system and POS eCommerce integration to help you understand how Owners Inventory transforms online business management."
           faqs={ecommerceFaqs}
         />
       </div>

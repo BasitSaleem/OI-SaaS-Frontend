@@ -247,7 +247,7 @@ const[searchQuery,setSearchQuery]=useState('')
                 </button>
               </div>
             </li>
-            <li className={listItem}>
+            {/* <li className={listItem}>
               <div className={navButton}>
                 <Link
                   href="#"
@@ -269,7 +269,7 @@ const[searchQuery,setSearchQuery]=useState('')
                   />
                 </button>
               </div>
-            </li>
+            </li> */}
             <li className={listItem}>
               <Link
                 href="/pricing"
@@ -278,7 +278,7 @@ const[searchQuery,setSearchQuery]=useState('')
                 Pricing
               </Link>
             </li>
-            <li className={listItem}>
+            {/* <li className={listItem}>
               <div className={navButton}>
                 <Link
                   href="/resources"
@@ -300,7 +300,7 @@ const[searchQuery,setSearchQuery]=useState('')
                   />
                 </button>
               </div>
-            </li>
+            </li> */}
             <li className={listItem}>
               <div className={navButton}>
                 <Link
@@ -325,7 +325,7 @@ const[searchQuery,setSearchQuery]=useState('')
                 </button>
               </div>
             </li>
-            <li className={listItem}>
+            {/* <li className={listItem}>
               <div className={navButton}>
                 <Link
                   href="/profile"
@@ -348,6 +348,14 @@ const[searchQuery,setSearchQuery]=useState('')
                   />
                 </button>
               </div>
+            </li> */}
+            <li className={listItem}>
+              <Link
+                href="https://osglobal.ownersjungle.com/login"
+                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] hover:bg-gray-100 hover:border-[#795CF5] active:bg-gray-100 active:border-[#795CF5] rounded-full font-['Onest']"
+              >
+                Login
+              </Link>
             </li>
           </ul>
 
