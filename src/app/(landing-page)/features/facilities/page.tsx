@@ -64,7 +64,7 @@ const facilitiesIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Keep complete control over your pharmacy network. Store track locations, control facility-wide adherence, and receive temperature, expiry, and inventory notices directly on your facility monitoring dashboard.",
+      "Maintain full oversight of your pharmacy network and wholesale operations. Track multiple store locations, ensure facility-wide compliance, and receive temperature, expiry, and inventory alerts directly on your facility monitoring dashboard.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -237,7 +237,7 @@ const page = () => {
     <div>
       <SubFeaturesHero
         title="Smart Facilities, Seamless Operations"
-        description="Owners Inventory will give you complete control of all stores, warehouses and work areas. Whether it is the management of various locations or the monitoring of stock and employee performance, our platform maintains the entire operation running smoothly all through a single"
+        description="Owners Inventory will give you complete control of all stores, warehouses and work areas. Whether it is the management of various locations or the monitoring of stock and employee performance, our platform maintains the entire operation running smoothly all through a single user-friendly dashboard."
         // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         imageClassName= "max-w-[1000px]"
         image={heroBanner}
@@ -306,13 +306,13 @@ const page = () => {
         testimonials={facilitiesTestimonials}
         heading="Voices of Our Partners"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="Get in touch and transform your facility management to be smarter, smoother and more efficient."
+        secondHeading="Stay Ahead with Smart Tools"
+        secondDescription="Everything you need to manage your locations, monitor operations, and stay connected with your team efficiently."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
-          heading="Your Questions, Answered"
+          heading="Everything You Need to Know"
           paragraph="There is no need to complicate the management of various facilities. Owners Inventory allows you to track all the locations, streamline operations and make better decisions using a single connected facility management dashboard. Here are the most important questions answered for your ease to start the process of facility management."
           faqs={facilitiesFaqs}
         />

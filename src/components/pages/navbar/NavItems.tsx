@@ -67,7 +67,7 @@ const NavItems = () => {
           <div className="h-2 bg-transparent"></div>
           <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
             {/* Left Section (3/12) - Categories */}
-            <div className="lg:col-span-3 px-4 py-6 bg-[#F6F4FE]">
+            <div className="lg:col-span-3 px-4 py-6 bg-[#F6F4FE] flex flex-col items-start justify-between">
               <div className="space-y-1 ">
                 {featureCategories.map((category) => {
                   const categoryFeatures = featuresItems.filter(
@@ -98,6 +98,35 @@ const NavItems = () => {
                     </button>
                   );
                 })}
+              </div>
+
+              <div className="w-full ">
+                <Link
+                  href="/features"
+                  className="flex items-center  justify-center gap-2.5 w-full text-center px-4 py-3 hover:bg-[#795CF5] hover:text-white border-2 border-[#795CF5] text-[#795CF5] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
+                  onClick={close}
+                >
+                  View All Features
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_3863_5707)">
+                      <path
+                        d="M12.9998 0H6.99984C6.44784 0 5.99984 0.447333 5.99984 1C5.99984 1.55267 6.44784 2 6.99984 2H12.5858L0.292512 14.2927C-0.0981549 14.6827 -0.0981549 15.3167 0.292512 15.7067C0.487845 15.902 0.743845 15.9993 0.999845 15.9993C1.25584 15.9993 1.51184 15.902 1.70718 15.7067L13.9998 3.414V9C13.9998 9.55267 14.4478 10 14.9998 10C15.5518 10 15.9998 9.55267 15.9998 9V3C15.9998 1.346 14.6538 0 12.9998 0Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3863_5707">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </Link>
               </div>
             </div>
 
@@ -165,35 +194,35 @@ const NavItems = () => {
   [scrollbar-width:thin]
   [scrollbar-color:#D9D9D9_transparent]"
               >
-                <p className="mb-2 text-xs font-bold font-['Onest'] text-[#231F20]">
+                <p className="mb-2 text-xs flex items-center gap-2 font-bold font-['Onest'] text-[#231F20]">
                   {
                     featuresItems.find(
                       (item) => item.key === selectedFeatureKey,
                     )?.title
                   }
+
+                  <span className="text-xs flex items-center gap-1.5 leading-[100%] font-['Onest'] text-[#666666] font-normal">
+                    <svg
+                      width="3"
+                      height="3"
+                      viewBox="0 0 3 3"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="1.5" cy="1.5" r="1.5" fill="#999999" />
+                    </svg>
+                    Key Features
+                  </span>
                 </p>
 
-                <span className="text-xs mb-6 leading-[100%] font-['Onest'] text-[#666666] font-normal">
-                  Key Features
-                </span>
-
                 <FeatureList items={featuresDetailsMap[selectedFeatureKey]} />
-              </div>
-              <div className="pt-6 mt-6 border-t border-gray-200">
-                <Link
-                  href="/features"
-                  className="block w-full text-center px-4 py-3 bg-[#1AD1B9] text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 active:scale-[0.98]"
-                  onClick={close}
-                >
-                  View All Features
-                </Link>
               </div>
             </div>
           </div>
         </NavDropdown>
 
         {/* INDUSTRIES DROPDOWN */}
-        
+
         {/* <NavDropdown
           label="Industries"
           isOpen={openMenu === "industries"}

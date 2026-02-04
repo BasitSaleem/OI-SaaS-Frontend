@@ -119,34 +119,40 @@ const inventoryFaqs = [
   {
     id: 1,
     question:
-      "What is a product management feature in a POS system?",
+      " What are inventory operations in Owners Inventory?",
     answer:
-      "It is a solution that allows you to add and maintain goods in POS, such as pricing, stock availability, barcodes, and variants, all in a single centralized dashboard.",
+      "Inventory operations cover how stock moves, is received, issued, transferred, and adjusted across stores, warehouses, and production locations. Everything is tracked in one system for accuracy and control.",
   },
   {
     id: 2,
-    question: "How does Owners Inventory simplify product catalog management?",
+    question: "Can I transfer stock between stores and warehouses?",
     answer:
-      "With our product catalog management software, you can sort items by category, collection, and attribute, and maintain a uniform catalog across stores and the Internet.",
+      "Yes. You can create transfer orders to move stock between locations, track each transfer with a unique ID, and monitor dispatch and receipt status in real time.",
   },
   {
     id: 3,
     question:
-      "Can I track stock in real-time with this system?",
+      "How does stock issuing work?",
     answer:
-      "Yes! The inventory product management software automatically updates the stock levels on every sale, every return, and every restock taking place, and therefore, it is absolutely accurate.",
+      "Stock issuing records all outgoing inventory from a store or warehouse. Each issue is logged with product details, quantities, user information, and status to maintain clear records.",
   },
   {
     id: 4,
-    question: "Is this POS product management feature suitable for multiple industries?",
+    question: "How is stock receiving handled?",
     answer:
-      "Absolutely. Our system is designed to handle objects in POS systems of any kind of business, starting with retail and fashion, and down to restaurants and pharmacies.",
+      "You can record incoming stock against supplier invoices, verify quantities, assign receiving locations, and update inventory instantly to keep records accurate.",
   },
   {
     id: 5,
-    question: "What makes Owners Inventory better than other POS solutions?",
+    question: "Can I adjust inventory for damage or mismatches?",
     answer:
-      "In comparison to generic tools, our POS system product listing will provide enhanced customization, analytics, and simple scaling to assist you in selling smarter and managing better.",
+      "Yes. Stock adjustments allow you to increase, decrease, or mark damaged items with reasons, references, and dates to ensure inventory accuracy and compliance.",
+  },
+  {
+    id: 6,
+    question: "Can I track inventory across multiple locations?",
+    answer:
+      "Absolutely. Owners Inventory is built for multi-location businesses, allowing you to manage and monitor inventory operations across stores, warehouses, and production floors from one dashboard.​",
   },
 ];
 
