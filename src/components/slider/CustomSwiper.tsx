@@ -169,7 +169,7 @@ export default function CustomSwiper<T>({
 
   // Use ref to avoid creating new functions on each render
   const swiperRef = useRef<any>(null);
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleSlideChange = useCallback((swiper: any) => {
     // Clear any pending timeout
