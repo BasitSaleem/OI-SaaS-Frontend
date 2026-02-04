@@ -51,7 +51,7 @@ const salesIndustries = [
     id: 5,
     title: 'Fashion & Apparel',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Easily manage all designs, sizes, and colors. Coordinate collections by season in stores and maintain your sales on and offline.',
+    description: 'Easily manage all designs, sizes, and colors. Coordinate collections by season in stores and maintain your sales online and offline.',
     image: '/assets/industry-type/fashion.webp',
     mobileImage: '/assets/industry-type/fashion-mobile.webp',
   },
@@ -73,7 +73,7 @@ const FeaturesCards = [
   },
   {
     id: 3,
-    title: "Manage Sales Docs",
+    title: "Update Sales Documents",
     description: "Add or delete quotes, orders, and invoices with ease. This is to enable businesses to maintain accuracy and control in their sales management software environment.",
     imageSrc: "/assets/features-page/sales-order/features-section/manage-sales-doc.webp",
   },
@@ -85,8 +85,8 @@ const FeaturesCards = [
   },
   {
     id: 5,
-    title: "Order Stages",
-    description: "Keep track of each order by using a visual board that has distinct statuses - To Do, In Progress, and Done. Ideal to control workflow in your sales and order management system.",
+    title: "Orders Board and Status Stages",
+    description: "Keep track of each order by using a visual board that has distinct statuses including To Do, In Progress, and Done. Ideal to control workflow in your sales and order management system.",
     imageSrc: "/assets/features-page/sales-order/features-section/order-stage.webp",
   },
   {
@@ -252,7 +252,7 @@ const page = () => {
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection 
-        heading="Everything You Need to Know about Sales and Orders"
+        heading="Everything You Need to Know About Sales and Orders"
         paragraph="Sales management should not be complex. Our modern POS point of sale with a stock management system will give you everything you will need to manage billing, invoices, and orders easily. Here is what you need to know about how our sales and order management software can help businesses like yours grow faster and smarter."
         faqs={salesFaqs}
         />
