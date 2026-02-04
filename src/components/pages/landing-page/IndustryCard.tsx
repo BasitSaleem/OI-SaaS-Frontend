@@ -46,7 +46,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
   return (
     
     <div
-      className={`relative rounded-[30px] shadow-sm overflow-hidden min-h-[400px] md:min-h-[390px] md:h-[390px] w-full cursor-pointer transition-all duration-300 ${className}`}
+      className={`relative rounded-[30px] shadow-sm overflow-hidden min-h-[450px] h-full md:h-[390px]  w-full cursor-pointer transition-all duration-300 ${className}`}
       style={{
         background: isMobile ? "#F3F3F3" : isHovered ? "#F3F3F3" : gradient,
       }}
@@ -101,23 +101,24 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
 
         {/* MOBILE IMAGE - Placed here to appear at the end */}
 
-        <div className="mt-auto">
+        <div className="mt-auto w-full">
         {mobileImage && isMobile && (
-          <div className="w-full block md:hidden mb-4 mt-3">
-            <Image
-              src={mobileImage}
-              alt={title}
-              width={180}
-              height={250}
-              className="w-full h-auto object-contain"
-            />
+          <div className="w-full flex justify-center items-end mt-4">
+            <div className="w-full h-[220px] relative">
+              <Image
+                src={mobileImage}
+                alt={title}
+                fill
+                className="object-contain object-bottom"
+              />
+            </div>
           </div>
         )}
         </div>
 
         {/* READ MORE BUTTON */}
         <div
-          className={`bg-white rounded-full h-[60px] hidden md:flex items-center px-2 pl-6 -mt-0 md:-mt-90 transition-all duration-300 ease-in-out ${
+          className={`bg-white rounded-full h-[60px] hidden md:flex items-center px-2 pl-6 mt-0 md:-mt-96 transition-all duration-300 ease-in-out ${
             isMobile
               ? "w-full justify-between"
               : isHovered

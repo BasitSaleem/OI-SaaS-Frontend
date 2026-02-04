@@ -47,7 +47,7 @@ const IndustryPosShowcase = ({
         setSlidesPerView(1);
         setIsMobile(true);
         setIsTablet(false);
-        setTranslationPercentage(110);
+        setTranslationPercentage(100);
         setActiveCard(null);
       } else if (width < 1024) {
         setSlidesPerView(2);
@@ -169,17 +169,19 @@ const IndustryPosShowcase = ({
         </div>
       </div>
 
-      <div className="w-full overflow-hidden h-[460px] md:h-full">
+      <div className="w-full overflow-hidden md:h-full">
         <div
-          className="flex items-stretch gap-3 mx-2 transition-transform duration-500 ease-in-out"
+          className="flex items-stretch md:gap-3 md:mx-2 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentSlide * translationPercentage}%)`,
           }}
         >
           {industries.map((industry, index) => {
-            const normalWidth = `calc((100% / ${slidesPerView}) - ${
-              (24 * (slidesPerView - 1)) / slidesPerView
-            }px)`;
+            const normalWidth = isMobile 
+              ? "100%" 
+              : `calc((100% / ${slidesPerView}) - ${
+                (24 * (slidesPerView - 1)) / slidesPerView
+              }px)`;
             const startIdx = currentSlide * slidesPerView;
             const endIdx = startIdx + slidesPerView;
             const isVisible = index >= startIdx && index < endIdx;
@@ -207,7 +209,7 @@ const IndustryPosShowcase = ({
               <div
                 key={index}
                 data-industry-card
-                className="transition-all self-stretch mx-2 duration-300 ease-in-out"
+                className="transition-all self-stretch md:mx-2 duration-300 ease-in-out"
                 style={{
                   width:
                     isVisible && isExpanded && !isMobile
