@@ -106,12 +106,12 @@ export const featuresItems: FeatureItem[] = [
     icon: '/assets/header-dropdown-images/reports.svg',
     category: 'analytics',
   },
-  {
-    key: 'advanceReports',
-    title: 'Advance Reports',
-    icon: '/assets/header-dropdown-images/advance-reports.svg',
-    category: 'analytics',
-  },
+  // {
+  //   key: 'advanceReports',
+  //   title: 'Advance Reports',
+  //   icon: '/assets/header-dropdown-images/advance-reports.svg',
+  //   category: 'analytics',
+  // },
   
   // Finance
   {
@@ -226,29 +226,30 @@ sales: [
   facilities: [
     {
       title: 'Stores',
-      children: [
-        {
-          title: 'Stores List',
-          children: [
-            {
-              title: 'Add Store',
-              children: [
-                { title: 'Invoice Notes' },
-                { title: 'Display Logo on Ticket' },
-                { title: 'Display Product Visuals on POS' },
-              ],
-            },
-          ],
-        },
-      ],
+      // children: [
+      //   {
+      //     title: 'Stores List',
+      //     children: [
+      //       {
+      //         title: 'Add Store',
+      //         children: [
+      //           { title: 'Invoice Notes' },
+      //           { title: 'Display Logo on Ticket' },
+      //           { title: 'Display Product Visuals on POS' },
+      //         ],
+      //       },
+      //     ],
+      //   },
+      // ],
     },
     { title: 'Warehouses' },
+    { title: 'Production Floor' },
   ],
   products:[
     
      { title: 'Products'},
       {title: 'Add Product '},
-      {title: 'Add Raw Material'},
+      // {title: 'Add Raw Material'},
       {title: 'Brands'},
       {title: 'Product Images'}
     
@@ -258,8 +259,8 @@ sales: [
       title: 'Sales',
       children: [
         { title: 'Products' },
-        { title: 'Products 2.0' },
-        { title: 'Products 3.0 ' },
+        // { title: 'Products 2.0' },
+        // { title: 'Products 3.0 ' },
         { title: 'Invoice Payments' },
         { title: 'Cashier' },
         { title: 'Credit' },
@@ -273,11 +274,14 @@ sales: [
       children: [
         { title: 'Warehouse' },
         { title: 'Store' },
+        { title: 'Production Floor' },
       ],
     },
     { title: 'Shifts' },
     { title: 'Commissions' },
     { title: 'Daily Cash Report' },
+    { title: 'Inventory Aging Report' },
+    { title: 'Production Order Tracking Report' },
   ],
 
   advanceReports: [
@@ -330,9 +334,10 @@ sales: [
         { title: 'Subscribers' },
       ],
     },
-    { title: 'Templates & Themes (Owners Jungle)' },
+    { title: 'Themes (Owners Jungle)' },
     { title: 'Orders' },
     { title: 'Discounts' },
+     { title: 'Campaign' },
     { title: 'Payment Methods' },
     { title: 'Shipping Companies' },
   ],
