@@ -166,34 +166,34 @@ const purchasesFaqs = [
   {
     id: 1,
     question:
-      "What is purchase management, and why is it important?",
+      "What is the Purchases feature in Owners Inventory?",
     answer:
-      "Purchase management systematically oversees the entire buying lifecycle, from the initiation of an order through to final payment. Its importance lies in ensuring timely restocking, and a smooth, uninterrupted supply chain flow.",
+      "The Purchases feature helps you manage suppliers, create purchase orders, record stock receipts, and track costs from a single system. It ensures accurate inventory and better control over spending.",
   },
   {
     id: 2,
-    question: "How does your Purchase Management System improve efficiency?",
+    question: "Can I manage multiple suppliers and vendor pricing?",
     answer:
-      "Efficiency is enhanced through the automation of administrative tasks. This includes the automatic generation of purchase orders, the creation of bills and supplier tracking.",
+      "Absolutely. You can add unlimited suppliers, assign vendor-specific prices, track purchase history, and manage outstanding balances easily.",
   },
   {
     id: 3,
     question:
-      "Can I integrate purchase management with inventory tracking?",
+      "How does your Purchase Management System improve efficiency?",
+    answer:
+      "Efficiency is enhanced through the automation of administrative tasks. This includes the automatic generation of purchase orders, the creation of bills and supplier tracking.",
+  },
+  {
+    id: 4,
+    question: "Can I integrate purchase management with inventory tracking?",
     answer:
       "Absolutely. Owners Inventory is designed to integrate fully, synchronizing all purchase data directly with your inventory records.",
   },
   {
-    id: 4,
+    id: 5,
     question: "Is this suitable for multi-location businesses?",
     answer:
       "Yes. Whether managing a single location or a complex network of branches,Owners Inventory facilitates centralized purchasing control.",
-  },
-  {
-    id: 5,
-    question: "Can I request a custom Integration?",
-    answer:
-      "Yes, you can. Custom tool integration tailored to your company’s operations can be created by our team. We customize integration to fit your long-term objectives, industry demands, and workflows. If there is any specific tool or platform you want to integrate, we can build that for you as well.",
   },
 ];
 
@@ -379,7 +379,7 @@ const Page = () => {
 
 
       <FeaturesCallToAction
-        title="Buy Smarter. Manage Better. Grow Faster"
+        title="Buy Smarter. Manage Better. Grow Faster."
         description="Streamline every purchase step with our intelligent Purchase Order Processing System. Using tools that help you stay organized, cost efficient and ready for growth with Owners Inventory."
         ctaDesc="Get Started Now"
       />
@@ -387,14 +387,14 @@ const Page = () => {
         testimonials={purchasesTestimonials}
         heading="Words That Inspire Us"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="See how Owners Inventory can simplify your purchasing with our Purchase Order Management Software. Contact us for a demo or pricing to build a smarter, faster procurement system."
+        secondHeading="Stay Ahead with Smart Purchasing Tools"
+        secondDescription="Everything you need to manage purchases, track suppliers, control costs, and streamline procurement for better business efficiency."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
-          heading="Everything You Need to Know about Purchases Management"
-          paragraph="Learn how Owners Inventory can simplify procurement and strengthen your business with intelligent purchasing tool"
+          heading="Everything You Need to Know About Purchases Management"
+          paragraph="Learn how Owners Inventory can simplify procurement and strengthen your business with intelligent purchasing tool."
           faqs={purchasesFaqs}
         />
       </div>

@@ -63,7 +63,7 @@ const marketingIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Pharmacies can encourage customers to return for essentials by offering loyalty points on non-prescription items and sending personalized coupons for health and wellness products based on past purchases.",
+      "For pharmacies, you can encourage customers to return for essentials by offering loyalty points on non prescription items. You can also send them coupons for health and wellness products based on their past purchases.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -316,14 +316,14 @@ const page = () => {
         testimonials={marketingTestimonials}
         heading="What Clients Say About Us?"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="We make your business smarter and easier. Whether you want to explore Owners Inventory or learn how our POS and accounting tools simplify finances, our team will guide you with demos and personalized support."
+        secondHeading="Stay Ahead with Smart Marketing Tools"
+        secondDescription="Everything you need to reach the right audience, run effective campaigns, and grow your business through data-driven marketing strategies."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection
           heading="Everything You Need to Know About Marketing Features"
-          paragraph="Running business finances does not need to be stressful. Owners Inventory unites your sales, accounting, and reporting into a single convenient system. Some frequent questions are listed here to help you understand how Owners Inventory simplifies all aspects of your financial management."
+          paragraph="Our marketing tools help you reach the right customers, increase engagement, and grow sales. Find answers below to the most frequently asked questions about marketing in Owners Inventory."
           faqs={marketingFaqs}
         />
       </div>

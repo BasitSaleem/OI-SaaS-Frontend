@@ -6,6 +6,7 @@ import Paragraph from "../typography/Paragraph";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import IndustryCard from "./IndustryCard";
 import SubHeading from "../typography/SubHeading";
+import Link from "next/link";
 
 export interface IndustryItem {
   id?: string | number;
@@ -127,9 +128,12 @@ const IndustryPosShowcase = ({
             {mainHeading}
           </SubHeading>
           <Paragraph className="">{paragraph}</Paragraph>
-          <button className="mt-6 bg-[#7B61FF] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-['Onest']">
+        
+        <Link href= '#'>
+          <button  className="mt-6 bg-[#7B61FF] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-['Onest']">
             {buttonText}
           </button>
+        </Link>
         </div>
         <div className="hidden md:flex items-center gap-4 mt-8 md:mt-0">
           <button
