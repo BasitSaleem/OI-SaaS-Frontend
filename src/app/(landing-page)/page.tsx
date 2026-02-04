@@ -5,6 +5,7 @@ import Image from "next/image";
 import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 import dynamic from "next/dynamic";
 
+
 // Lazy load all components
 const HeroSection2 = dynamic(
   () => import("@/components/common-components/HeroSection2"),
