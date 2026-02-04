@@ -326,8 +326,8 @@ const Page = () => {
         testimonials={inventoryTestimonials}
         heading="What Clients Say About Us"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="Have questions or want to see how Owners Inventory can simplify your business? Contact our team for setup help, pricing, or a personalized demo—we’re here to support you every step of the way."
+        secondHeading="Stay Ahead with Smart Inventory Operations"
+        secondDescription="Everything you need to track stock, manage inventory workflows, and maintain accuracy across locations for smooth business operations."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
