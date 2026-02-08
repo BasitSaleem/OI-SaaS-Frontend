@@ -297,7 +297,7 @@ const page = () => {
       />
 
       <WhyChoosePOS
-        heading="Why Choose Us"
+        heading="Why Choose Us?"
         cards={[
           {
             icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",

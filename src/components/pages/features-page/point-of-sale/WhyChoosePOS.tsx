@@ -66,7 +66,7 @@ export default function WhyChoosePOS({
 
                   {/* Text */}
                   <div className="flex flex-col items-start gap-4 flex-1">
-                    <h3 className="font-semibold text-[var(--text-dark)] font-['Onest'] lg:text-2xl text-xl md:leading-[100%] leading-[140%]">{card.title}</h3>
+                    <h3 className="font-semibold text-[var(--text-dark)] font-['Onest'] lg:text-2xl text-xl md:leading-[130%] leading-[140%]">{card.title}</h3>
                     <p className="text-base leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
                       {card.description}
                     </p>

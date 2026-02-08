@@ -73,7 +73,7 @@ const reportsIndustries = [
     title: "Fashion & Apparel",
     gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
     description:
-      "Receive specific point of sale system reports of best-selling styles, seasonal performance, and size-based inventory- making stock planning easy and evidence-based.",
+      "Receive specific point of sale system reports of best-selling styles, seasonal performance, and size-based inventory making stock planning easy and evidence-based.",
     image: "/assets/industry-type/fashion.webp",
     mobileImage: "/assets/industry-type/fashion-mobile.webp",
   },
@@ -84,7 +84,7 @@ const FeaturesCards = [
     id: 1,
     title: "Comprehensive Inventory Reporting",
     description:
-      "You can manage and get detailed inventory reports for both your store and your warehouse.  You can view everything that happens with each product in one place.",
+      "You can manage and get detailed inventory reports for both your store and your warehouse. You can view everything that happens with each product in one place.",
     imageSrc:
       "/assets/features-page/reports-page/features-section/comprehensive-reporting.webp",
   },
@@ -92,7 +92,7 @@ const FeaturesCards = [
     id: 2,
     title: "Stock Visibility in Real Time",
     description:
-      "Display the right amount of stock, how many items are in stock, and where they are available.  Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
+      "Display the right amount of stock, how many items are in stock, and where they are available. Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
     imageSrc:
       "/assets/features-page/reports-page/features-section/stock-visibility.webp",
   },
@@ -100,7 +100,7 @@ const FeaturesCards = [
     id: 3,
     title: "Data Visualization with Interaction",
     description:
-      "Dynamic charts and graphs can help you understand your inventory more quickly.  It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
+      "Dynamic charts and graphs can help you understand your inventory more quickly. It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
     imageSrc:
       "/assets/features-page/reports-page/features-section/data-visualization.webp",
   },
@@ -108,7 +108,7 @@ const FeaturesCards = [
     id: 4,
     title: "Warehouse vs. Store Comparison",
     description:
-      "Look at the stock levels in the warehouse and the store next to each other.  Get a better idea of how your inventory is distributed out and make transfers between locations more efficient.",
+      "Look at the stock levels in the warehouse and the store next to each other. Get a better idea of how your inventory is distributed out and make transfers between locations more efficient.",
     imageSrc:
       "/assets/features-page/reports-page/features-section/store-comparison.webp",
   },
@@ -228,7 +228,7 @@ const reportsTestimonials = [
     name: "Jonathan Brooks",
     title: "Director, Unified Retail",
     image: "/assets/features-page/testimonial-images/testinomial-boy17.webp",
-    text: `We operate several pharmacies and this system maintains all these updated- stock, expiry dates, and daily sales. The support team is attentive and professional.`,
+    text: `We operate several pharmacies and this system maintains all these updated stock, expiry dates, and daily sales. The support team is attentive and professional.`,
     // icon: "/assets/review-section/double-coma-icon.svg",
     // color: "#795CF5",
   },
@@ -267,7 +267,7 @@ const page = () => {
       />
 
       <WhyChoosePOS
-        heading="Why Choose Our Reporting Feature"
+        heading="Why Choose Our Reporting Feature?"
         paragraph="Automated, integrated reporting designed to give you clear insights, better visibility, and full control over your daily operations."
         cards={[
           {
@@ -302,7 +302,7 @@ const page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Industries We Serve"
-          paragraph="Each business has a different story to tell- so should your reports. Owners' Inventory provides inventory management reports and point of sale system reports that are tailored to your industry. Gain valuable insights, smarter analytics, and clear data visualization that enable you to make decisive business choices."
+          paragraph="Each business has a different story to tell so should your reports. Owners' Inventory provides inventory management reports and point of sale system reports that are tailored to your industry. Gain valuable insights, smarter analytics, and clear data visualization that enable you to make decisive business choices."
           buttonText="Explore All Industries"
           industries={reportsIndustries}
         />
@@ -317,8 +317,8 @@ const page = () => {
         testimonials={reportsTestimonials}
         heading="What Clients Say About Us"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="Retailer, wholesaler, or business owner and want to make things easier - our team is on hand to turn your inventory data into growth. Complete the form below and we will respond to you soon."
+        secondHeading="Stay Ahead with Smart Reporting Tools"
+        secondDescription="Everything you need to analyze performance, track insights, and make data-driven decisions with clear and actionable reports."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

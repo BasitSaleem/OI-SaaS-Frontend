@@ -274,7 +274,7 @@ const page = () => {
       />
 
       <WhyChoosePOS
-        heading="Why Choose Product Management System"
+        heading="Why Choose Product Management System?"
         paragraph="Choose Owners Inventory because of its accuracy, scalability, and efficiency. It's not about stocks, but about smartly managing your business."
         cards={[
           {
@@ -330,8 +330,8 @@ const page = () => {
         testimonials={productTestimonials}
         heading="Clients Voices"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="Owners Inventory makes managing your product data easy and efficient. Contact our 24/7 team for a free demo and discover how we can streamline your business."
+        secondHeading="Stay Ahead with Smart Product Management"
+        secondDescription="Everything you need to manage products, organize catalogs, track availability, and scale your offerings with complete control and efficiency."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
