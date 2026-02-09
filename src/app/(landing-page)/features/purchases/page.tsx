@@ -81,7 +81,7 @@ const FeaturesCards = [
   {
     id: 1,
     title: "Centralized Purchase Management",
-    description: "By Centralized Purchase Management, We manage purchase orders, bills and all supplier details in one spot. This simple system ensures procurement and inventory are always in sync.Our Purchase Order Management Software is the single source of truth for your business.",
+    description: "By Centralized Purchase Management, We manage purchase orders, bills and all supplier details in one spot. This simple system ensures procurement and inventory are always in sync. Our Purchase Order Management Software is the single source of truth for your business.",
     imageSrc:
       "/assets/features-page/purchases-page/features-section/centralized-purchase.webp",
      

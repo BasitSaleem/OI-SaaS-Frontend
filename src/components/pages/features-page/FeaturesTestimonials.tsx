@@ -133,11 +133,11 @@ const FeaturesTestimonials = ({
           />
 
           <div className="">
-            <p className="font-semibold text-xl">
+            <p className="font-semibold text-xl font-['onest']">
               {slide.name}
             </p>
             <p
-              className="font-medium "
+              className="font-medium font-['onest']"
               style={{ color: accentColor }}
             >
               {slide.title}
@@ -145,7 +145,7 @@ const FeaturesTestimonials = ({
           </div>
         </div>
 
-        <p className="text-base leading-[170%] flex-1">
+        <p className="text-base leading-[170%] flex-1 font-['onest']">
           {slide.text}
         </p>
       </div>
