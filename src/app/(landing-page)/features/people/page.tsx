@@ -346,7 +346,7 @@ const page = () => {
         heading="Words That Inspire Our Work"
         showSmartTools={true}
         secondHeading="Stay Ahead with Smart Tools"
-        secondDescription="Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers."
+        secondDescription="Everything you need to organize your staff, set roles, and track performance, all while keeping your business running smoothly."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
