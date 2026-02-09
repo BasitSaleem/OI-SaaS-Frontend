@@ -304,8 +304,8 @@ const Page = () => {
         testimonials={integrationTestimonials}
         heading="Clients’ Voices"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="We’re available 24/7 for any questions about integration or setup. Contact us for a free demo and see how Owners Inventory fits smoothly into your system."
+        secondHeading="Stay Ahead with Smart Integrations"
+        secondDescription="Everything you need to connect your tools, sync data seamlessly, and streamline operations through powerful and reliable integrations."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
