@@ -84,7 +84,7 @@ const ecommerceIndustries = [
     description:
       "Keep track of specs, warranties, and inventory changes. Your product listings and orders will always be in sync with POS and eCommerce integration.",
     image: "/assets/industry-type/brands.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    mobileImage: "/assets/industry-type/brands-mobile.webp",
   },
 ];
 
