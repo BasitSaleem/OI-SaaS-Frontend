@@ -64,7 +64,7 @@ const hrIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Keep track of pharmacists’ working hours, maintain compliance, and quickly create payslips. Proper staffing and efficient operations are made possible by Owners Inventory.",
+      "Keep your team organized and compliant with industry standards. The HR feature allows you to track work hours, manage renewals, and oversee training, ensuring your employees are reliable, skilled, and fully equipped to drive your business forward.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -84,7 +84,7 @@ const FeaturesCards = [
     id: 1,
     title: "Departments, Designations & Payslips Management",
     description:
-      "Take control of every department, designation, and payroll information with a single potent human resource management software. The best HR software 2025 will simplify your daily HR tasks.",
+      "Take control of every department, designation, and payroll information with a single potent human resource management software. The best HR software 2026 will simplify your daily HR tasks.",
     imageSrc:
       "/assets/features-page/human-resource-page/features-section/payslip-management.webp",
   },
@@ -132,7 +132,7 @@ const FeaturesCards = [
     id: 7,
     title: "Automated Payslip Management",
     description:
-      "Create and see pay slips with all the information--salary, deductions and salary. Allow our human resource management system to take care of payroll.",
+      "Create and see pay slips with all the information salary, deductions and salary. Allow our human resource management system to take care of payroll.",
     imageSrc:
       "/assets/features-page/human-resource-page/features-section/automated-payslip.webp",
   },
@@ -140,7 +140,7 @@ const FeaturesCards = [
     id: 8,
     title: "Custom Payroll Setup",
     description:
-      "Easily set up payroll structures with custom payroll forms and heads. Make sure your policies can be integrated perfectly in the best HR software 2025.",
+      "Easily set up payroll structures with custom payroll forms and heads. Make sure your policies can be integrated perfectly in the best HR software 2026.",
     imageSrc:
       "/assets/features-page/human-resource-page/features-section/payrol-setup.webp",
   },
@@ -330,8 +330,8 @@ const page = () => {
         testimonials={hrTestimonials}
         heading="What Clients Say About Us"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="We would be delighted to hear from you! If you have any questions about our HR features, setup, or pricing, our staff is ready 24/7 to respond. Get in touch with our team to arrange a free demo or to discover how Owners Inventory can streamline your business operations."
+        secondHeading="Stay Ahead with Smart HR Tools"
+        secondDescription="Everything you need to manage employees, track attendance, streamline payroll, and support efficient workforce management."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">

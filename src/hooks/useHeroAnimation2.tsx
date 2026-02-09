@@ -54,7 +54,7 @@ export const useHeroAnimation2 = () => {
       tl.to('.top-section', { autoAlpha: 0, duration: 1 }, 0);
       tl.to(
         '.owner-inventory-hero',
-        { y: -130, paddingLeft: 0, paddingRight: 0, duration: 1.5, ease: 'power2.out' },
+        { y: -30, paddingLeft: 0, paddingRight: 0, duration: 1.5, ease: 'power2.out' },
         0
       );
      
