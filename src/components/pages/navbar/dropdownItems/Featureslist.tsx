@@ -61,12 +61,12 @@ export const featuresItems: FeatureItem[] = [
     icon: '/assets/header-dropdown-images/sales-order.svg',
     category: 'sales-marketing',
   },
-  {
-    key: 'marketing',
-    title: 'Marketing',
-    icon: '/assets/header-dropdown-images/marketing.svg',
-    category: 'sales-marketing',
-  },
+  // {
+  //   key: 'marketing',
+  //   title: 'Marketing',
+  //   icon: '/assets/header-dropdown-images/marketing.svg',
+  //   category: 'sales-marketing',
+  // },
   
   // Operations
   {
@@ -221,10 +221,10 @@ integrations: [
   { title: 'Marketing Tools Integration' },
 ],
 
-marketing: [
-  { title: 'Coupons' },
-  { title: 'Loyalty' },
-],
+// marketing: [
+//   { title: 'Coupons' },
+//   { title: 'Loyalty' },
+// ],
 sales: [
   { title: 'Invoices' },
   { title: 'Quotations' },
