@@ -64,7 +64,7 @@ const hrIndustries = [
     title: "Pharmacies",
     gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
     description:
-      "Maintain precise employee records while tracking work hours, renewals, and training, keeping your pharmacy staff organized, skilled, and fully prepared to serve customers responsibly.",
+      "Keep track of pharmacists’ working hours, maintain compliance, and quickly create payslips. Proper staffing and efficient operations are made possible by Owners Inventory.",
     image: "/assets/industry-type/pharmacy.webp",
     mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
   },
@@ -261,7 +261,7 @@ const page = () => {
     <div>
       <SubFeaturesHero
         title="Smarter HR for Growing Businesses"
-        description="Change the way you deal with people using the best HR management software of 2025. Combine performance, payroll, and hiring in a single robust HR managerial system. Empower your company with an employee management software that is designed to expand as your business does."
+        description="Change the way you deal with people using the best HR management software of 2026. Combine performance, payroll, and hiring in a single robust HR managerial system. Empower your company with an employee management software that is designed to expand as your business does."
         // video="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/pos-system-hero.webm"
         image={heroBanner}
         imageClassName="max-w-[1000px]"
@@ -331,12 +331,12 @@ const page = () => {
         heading="What Clients Say About Us"
         showSmartTools={true}
         secondHeading="Contact Us"
-        secondDescription="Streamline your HR operations and build smarter, more efficient teams with Owners Inventory."
+        secondDescription="We would be delighted to hear from you! If you have any questions about our HR features, setup, or pricing, our staff is ready 24/7 to respond. Get in touch with our team to arrange a free demo or to discover how Owners Inventory can streamline your business operations."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection
-          heading="Everything You Need to Know"
+          heading="Everything you Should Know About Owners Inventory HR"
           paragraph="We understand that deciding on the appropriate HR system is a huge decision; this is why we have simplified it. These are the answers to the most frequently asked questions of our Human Resource feature, so that you know exactly how it helps your business run more smoothly and intelligently."
           faqs={hrFaqs}
         />
