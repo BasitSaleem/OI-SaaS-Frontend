@@ -99,7 +99,7 @@ export const featuresItems: FeatureItem[] = [
    {
     key: 'manufacturing',
     title: 'Manufacturing',
-    icon: '/assets/header-dropdown-images/facilitate.svg',
+    icon: '/assets/header-dropdown-images/manufacturing.svg',
     category: 'operations',
   },
   
