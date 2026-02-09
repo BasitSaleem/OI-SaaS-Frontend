@@ -83,7 +83,7 @@ const FeaturesCards = [
     id: 1,
     title: "Activity Log",
     description:
-      "Have full access to all activities carried out in your inventory system. The Activity Log assists you in tracking, reviewing, and ensuring changes with detailed records- keeping your operations transparent and well-documented.",
+      "Have full access to all activities carried out in your inventory system. The Activity Log assists you in tracking, reviewing, and ensuring changes with detailed records keeping your operations transparent and well documented.",
     imageSrc:
       "/assets/features-page/general-tools/features-section/activity-log.webp",
   },
@@ -330,8 +330,8 @@ const Page = () => {
         testimonials={toolsTestimonials}
         heading="What Our Clients Say"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="Manage updates, track actions, and control stock changes in seconds with fast, simple, and organized tools built to keep you ahead."
+        secondHeading="Stay Ahead with Smart General Tools"
+        secondDescription="Everything you need to manage everyday operations, simplify workflows, and keep your business running smoothly with essential tools."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
