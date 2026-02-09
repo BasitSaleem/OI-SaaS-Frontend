@@ -401,11 +401,11 @@ const Page = () => {
         mainImage={whyChoseBanner}
       />
 
-      <KeyHighlights
+      {/* <KeyHighlights
         heading="Key Features"
         features={FeaturesCards}
         layoutPatterns={layoutPatterns}
-      />
+      /> */}
 
       <WhyChoosePOS
         heading="Why Choose Us?"
@@ -470,32 +470,34 @@ const Page = () => {
         ]}
       />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20">
+      {/* <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Purchases Tailored for Your Industry"
           paragraph="Whether you operate as a Manufacturer, a Wholesaler or a Retailer, our Purchases Function is specifically designed to manage your unique operations with perfection. Whether you are managing huge bulk supplies or delicate goods, Owners Inventory adapts to your unique purchasing needs."
           buttonText="Explore All Industries"
           industries={purchasesIndustries}
         />
-      </div>
+      </div> */}
 
-      <FeaturesTestimonials
+      {/* <FeaturesTestimonials
         testimonials={purchasesTestimonials}
         heading="Words That Inspire Us"
         showSmartTools={true}
         secondHeading="Stay Ahead with Smart Purchasing Tools"
         secondDescription="Everything you need to manage purchases, track suppliers, control costs, and streamline procurement for better business efficiency."
-      />
+      /> */}
 
+<div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
       <MapComponent />
+      </div>
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+      {/* <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="Everything You Need to Know About Purchases Management"
           paragraph="Learn how Owners Inventory can simplify procurement and strengthen your business with intelligent purchasing tool."
           faqs={purchasesFaqs}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

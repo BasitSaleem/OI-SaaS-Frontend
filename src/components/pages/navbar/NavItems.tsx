@@ -478,7 +478,7 @@ const NavItems = () => {
           <div className="h-2 bg-transparent"></div>
           <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
             <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent col-span-12">
-              <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
+              <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {companyItems.map((item) => (
                   <a
                     key={item.title} // ✅ key on outer element

@@ -46,22 +46,23 @@ export default function whoWeServe({
 
           {/* Cards Container */}
           <div className="col-span-8">
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-5 xl:gap-6">
-              {cards.map((card) => (
+            <div className="grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-[auto_auto_1fr] gap-4 sm:gap-5 xl:gap-x-6 xl:gap-y-0">
+              {cards.map((card, index) => (
                 <div
                   key={card.title}
                   className="
                     bg-white rounded-[20px]
                     border border-[#E2E2E2] hover:shadow-md
                     transition-all duration-300 ease-in-out hover:translate-y-[-2px]
-                    flex flex-col
-                    items-start md:items-start
+                    grid grid-rows-[auto_auto_1fr] xl:grid-rows-subgrid xl:row-span-3
+                    items-start
                     gap-4 sm:gap-5 md:gap-6
                     px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6
+                    mb-6 xl:mb-0
                   "
                 >
                   {/* Icon */}
-                  <div className="flex-shrink-0 self-start">
+                  <div className="flex-shrink-0 self-start xl:row-start-1">
                     <div className="h-10 w-10">
                       {/* Check if icon is a string/StaticImageData or ReactNode */}
                       {typeof card.icon === "string" ||
@@ -84,14 +85,12 @@ export default function whoWeServe({
                   </div>
 
                   {/* Text */}
-                  <div className="flex flex-col items-start gap-4 flex-1">
-                    <h3 className="font-medium text-[var(--text-dark)] font-['Onest'] text-lg leading-[140%]">
-                      {card.title}
-                    </h3>
-                    <p className="text-sm leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
-                      {card.description}
-                    </p>
-                  </div>
+                  <h3 className="font-medium text-[var(--text-dark)] font-['Onest'] text-lg leading-[140%] xl:row-start-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)] xl:row-start-3">
+                    {card.description}
+                  </p>
                 </div>
               ))}
             </div>
