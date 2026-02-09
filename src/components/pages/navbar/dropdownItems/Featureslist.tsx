@@ -75,7 +75,6 @@ export const featuresItems: FeatureItem[] = [
     icon: '/assets/header-dropdown-images/facilitate.svg',
     category: 'operations',
   },
-  
   {
     key: 'purchases',
     title: 'Purchases',
@@ -94,6 +93,13 @@ export const featuresItems: FeatureItem[] = [
     key: 'products',
     title: 'Products',
     icon: '/assets/header-dropdown-images/products.svg',
+    category: 'operations',
+  },
+
+   {
+    key: 'manufacturing',
+    title: 'Manufacturing',
+    icon: '/assets/header-dropdown-images/facilitate.svg',
     category: 'operations',
   },
   
@@ -144,7 +150,7 @@ export const featuresItems: FeatureItem[] = [
   },
   {
     key: 'tools',
-    title: 'General Tools',
+    title: 'System Tools',
     icon: '/assets/header-dropdown-images/general-tools.svg',
     category: 'tools',
   },
@@ -182,6 +188,7 @@ export const featuresDetailsMap: Record<string, FeatureTreeItem[]> = {
 ],
 
 hr: [
+  { title: 'Employees' },
   { title: 'Departments' },
   { title: 'Designations' },
   { title: 'Payslips' },
@@ -202,6 +209,8 @@ purchases: [
 manufacturing: [
   { title: 'Production Orders' },
   { title: 'Machines' },
+  { title: 'Moulds' },
+  { title: 'Quality Inspections' },
 ],
 
 integrations: [
@@ -250,8 +259,8 @@ sales: [
      { title: 'Products'},
       {title: 'Add Product '},
       // {title: 'Add Raw Material'},
+      {title: 'Categories'},
       {title: 'Brands'},
-      {title: 'Product Images'}
     
   ],
   reports: [
@@ -291,28 +300,58 @@ sales: [
   ],
 
   finance: [
-    { title: 'Chart of Accounts' },
-    { title: 'Trial Balance' },
-    { title: 'Chart of Accounts 2.0' },
-    { title: 'Chart of Accounts 3.0' },
-    { title: 'Reports' },
-    { title: 'Balance Sheet' },
-    { title: 'Journal Entry' },
-    { title: 'Journal Report Entry' },
-    {
-      title: 'Payables & Receivables',
+    { title: 'Chart of Accounts' ,
       children: [
-        { title: 'Receivable Ledger' },
-        { title: 'Payable Report' },
-      ],
+        { title: 'Chart of Accounts' },
+        { title: 'Trial Balance' },
+      ]
     },
-    {
-      title: 'Assets',
+     { title: 'Journal Management' ,
+      children: [
+        { title: 'Journal Entry' },
+        { title: 'Journal Report Entry' },
+      ]
+    },
+     { title: 'Financial Reports' ,
+      children: [
+        { title: 'Balance Sheet' },
+        { title: 'Reports (Cash, Flow, PLS)' },
+      ]
+    },
+     { title: 'Payables & Recievables' ,
+      children: [
+        { title: 'Payables & Recievables' },
+        { title: 'Recievables Ledger' },
+        { title: 'Payable Report' },
+      ]
+    },
+     { title: 'Assets' ,
       children: [
         { title: 'Parts' },
         { title: 'Allocations' },
-      ],
+      ]
     },
+    // { title: 'Trial Balance' },
+    // { title: 'Chart of Accounts 2.0' },
+    // { title: 'Chart of Accounts 3.0' },
+    // { title: 'Reports' },
+    // { title: 'Balance Sheet' },
+    // { title: 'Journal Entry' },
+    // { title: 'Journal Report Entry' },
+    // {
+    //   title: 'Payables & Receivables',
+    //   children: [
+    //     { title: 'Receivable Ledger' },
+    //     { title: 'Payable Report' },
+    //   ],
+    // },
+    // {
+    //   title: 'Assets',
+    //   children: [
+    //     { title: 'Parts' },
+    //     { title: 'Allocations' },
+    //   ],
+    // },
   ],
 
   ecommerce: [
@@ -340,86 +379,19 @@ sales: [
      { title: 'Campaign' },
     { title: 'Payment Methods' },
     { title: 'Shipping Companies' },
+     {
+      title: 'Marketing',
+      children: [
+        { title: 'Coupons' },
+        { title: 'Loyalty' },
+      ],
+    },
   ],
 
   tools: [
-    {
-      title: 'Organisation',
-      children: [
-        { title: 'Information' },
-        { title: 'Maintenance Mode' },
-        { title: 'Backup' },
-      ],
-    },
-    {
-      title: 'General',
-      children: [
-        { title: 'Currency Symbol' },
-        { title: 'Language' },
-        { title: 'Thousand Separator' },
-        { title: 'Rounding' },
-        { title: 'Units' },
-        { title: 'Product Columns' },
-        { title: 'Date & Time Format' },
-        { title: 'Timezone' },
-      ],
-    },
-    {
-      title: 'Sales',
-      children: [
-        {
-          title: 'Strings & Serials',
-          children: [
-            { title: 'Invoice' },
-            { title: 'Quotation' },
-            { title: 'Ticket' },
-            { title: 'Sample' },
-            { title: 'Draft' },
-          ],
-        },
-        {
-          title: 'Policies',
-          children: [
-            { title: 'Sales' },
-            { title: 'Discount' },
-            { title: 'Discount Type' },
-          ],
-        },
-        { title: 'Invoice' },
-      ],
-    },
-    {
-      title: 'Purchases',
-      children: [
-        { title: 'Purchase Order String' },
-        { title: 'Purchase Order Serial' },
-        { title: 'Make Physical Bill Number Required on PO' },
-      ],
-    },
-    {
-      title: 'Inventory',
-      children: [
-        { title: 'Transfer Order String' },
-        { title: 'Transfer Order Serial' },
-      ],
-    },
-    {
-      title: 'Marketing',
-      children: [{ title: 'Coupons' }],
-    },
-    {
-      title: 'Tax',
-      children: [
-        { title: 'Taxes' },
-        { title: 'Tax Policy' },
-      ],
-    },
-    {
-      title: 'Notifications',
-      children: [{ title: 'Messages' }],
-    },
-    { title: 'Roles & Permissions' },
-    { title: 'Ecommerce' },
+     { title: 'Activity Logs' },
+    { title: 'Stock Alerts' },
+    
   ],
 };
 

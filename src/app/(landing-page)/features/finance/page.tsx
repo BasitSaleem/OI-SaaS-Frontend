@@ -37,7 +37,7 @@ const financeIndustries = [
     id: 1,
     title: 'Retail Stores',
     gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
-    description: 'Owners Inventory retail brands ko finances aur operations manage karne mein madad deta hai. Al-Asif, Brights Home jaisi companies hum par trust karti hain. Hum efficiency, transparency aur growth ko support karte hain.',
+    description: 'Easily track all sales, returns, and costs in a single location to have full financial visibility. The real time profit and loss reports allow you to quickly track the performance of the store, manage the costs, and make smarter decisions on restocking.',
     image: '/assets/industry-type/retail-store.webp',
     mobileImage: '/assets/industry-type/retail-store-mobile.webp',
   },
@@ -371,8 +371,8 @@ const Page = () => {
         testimonials={financeTestimonials}
         heading="What Our Clients Say"
         showSmartTools={true}
-        secondHeading="Contact Us"
-        secondDescription="We make your business smarter and easier. Whether you want to explore Owners Inventory or learn how our POS and accounting tools simplify finances, our team will guide you with demos and personalized support."
+        secondHeading="Stay Ahead with Smart Accounts & Finance Tools"
+        secondDescription="Everything you need to manage finances, track transactions, monitor cash flow, and maintain accurate financial records with confidence."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
