@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -21,7 +20,7 @@ interface contactHeroProps {
   // video?: string;
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
-  // imageClassName?: string; 
+  // imageClassName?: string;
 }
 
 const contactHero: React.FC<contactHeroProps> = ({
@@ -63,7 +62,7 @@ const contactHero: React.FC<contactHeroProps> = ({
     tl.to(
       homeHeroSecRef.current,
       { clipPath: "inset(0% 0% 0% 0%)", duration: 1 },
-      0.5
+      0.5,
     );
     tl.to(growthBoxRef.current, { opacity: 1, y: 0, duration: 0.8 }, 1);
     tl.to(heroLowerRef.current, { opacity: 1, y: 0, duration: 1 }, 1.2);
@@ -102,8 +101,14 @@ const contactHero: React.FC<contactHeroProps> = ({
             >
               {/* CONTENT ABOVE BACKGROUND LAYER */}
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
-
-                <Link href="" className="py-1.5 border-2 border-red-900 rounded-full px-5">About Inventory</Link>
+                <div className="p-0.5 rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
+                  <Link
+                    href=""
+                    className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center"
+                  >
+                    About Owners Inventory
+                  </Link>
+                </div>
                 <div ref={mainHeadingRef}>
                   <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] xl:mb-8 lg:mb-6 mb-5">
                     {title}

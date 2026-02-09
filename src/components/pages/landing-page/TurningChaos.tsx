@@ -124,7 +124,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
 }, []);
 
   return (
-    <div className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px]">
+    <div className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px] lg:mt-[100px] md:mt-28 mt-20">
       <div
         className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[#F3F4F6] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-xl`}
         style={{

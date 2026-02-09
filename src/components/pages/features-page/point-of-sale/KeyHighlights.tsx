@@ -77,7 +77,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
      ref={sectionRef}
     className="wrapper features-core-opretions">
       {/* Heading */}
-      <div className="flex flex-col items-center justify-center lg:mt-[10px] md:mt-28 mt-20">
+      <div className="flex flex-col items-center justify-center lg:mt-[100px] md:mt-28 mt-20">
         <MainHeading className="xl:mb-10 lg:mb-6 mb-5 text-center w-full">
           {heading}
         </MainHeading>

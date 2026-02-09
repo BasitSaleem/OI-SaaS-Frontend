@@ -33,7 +33,7 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
   ],
 }) => {
   return (
-    <section className="mt-28 md:mt-40 lg:mt-0 mb-28 md:mb-40 lg:mb-[100px]">
+    <section className="mt-28 md:mt-40 lg:mt-[80px] ">
       <div className="wrapper bg-white text-center">
 
         {/* 🔥 Dynamic heading */}
