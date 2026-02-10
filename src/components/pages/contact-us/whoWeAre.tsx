@@ -86,7 +86,7 @@ function WhoWeAre({
             )}
           </div>
 
-          <div className="w-full h-full">
+          <div className="w-full h-full flex items-center justify-center">
             <Image
               src={whoWeBanner}
               alt="Hero Image"

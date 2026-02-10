@@ -478,11 +478,11 @@ const NavItems = () => {
           <div className="h-2 bg-transparent"></div>
           <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
             <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent col-span-12">
-              <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
+              <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {companyItems.map((item) => (
-                  <a
-                    key={item.title} // ✅ key on outer element
-                    href="#"
+                  <Link
+                    key={item.title} 
+                    href={`/company/${item.key.toLowerCase()}`}
                     className="flex items-center gap-2 px-4 py-4 border border-[#D9D9D9] rounded-xl hover:bg-gray-100 hover:border-[#795CF5]"
                   >
                     <Image
@@ -494,7 +494,7 @@ const NavItems = () => {
                     <span className="text-xs font-medium text-[#231F20] hover:font-semibold">
                       {item.title}
                     </span>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
