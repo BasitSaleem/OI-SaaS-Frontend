@@ -4,12 +4,14 @@
 
 @theme {
   /* Define a new breakpoint named '1.5xl' at 1500px */
-  --breakpoint-3xl: 1500px; /* 1500px converted to rem (1500/16 = 93.75) */
+  --breakpoint-3xl: 1500px;
+  /* 1500px converted to rem (1500/16 = 93.75) */
   /* Optionally, you can also name it 'custom-lg' or similar */
   /* --breakpoint-custom-lg: 93.75rem; */
 }
 
-html, body {
+html,
+body {
   overscroll-behavior: none;
 }
 
@@ -35,7 +37,7 @@ html, body {
   --background-light: #F3F3F3;
   --background-halfwhite: #F3F4F6;
   --white-color: #FFFFFF;
-  --text-dark:   #231F20;
+  --text-dark: #231F20;
   --text-grey: #666666;
   --text-light: #333333;
   --text-black: #000000;
@@ -58,32 +60,35 @@ html, body {
 /* Wrapper for complete website styling started here */
 
 .wrapper {
-    margin: 0 24px;
+  margin: 0 24px;
 }
+
 @media (min-width: 768px) {
-   .wrapper{
-       margin: 0 40px;
-    }
+  .wrapper {
+    margin: 0 40px;
+  }
 }
+
 @media (min-width: 1024px) {
-   .wrapper{
-        margin: 0 40px;  
-    }
+  .wrapper {
+    margin: 0 40px;
+  }
 }
 
 @media (min-width: 1280px) {
-   .wrapper{
-        margin: 0 40px;   
-    }
+  .wrapper {
+    margin: 0 40px;
+  }
 }
 
 
 @media (min-width: 1440px) {
-   .wrapper{
-        max-width: 1350px;
-        margin: 0 auto; 
-    }
+  .wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
 }
+
 /* 
 @media (min-width: 1535px) {
   .wrapper{
@@ -101,8 +106,8 @@ html, body {
 
 /* Wrapper for complete website styling ended here */
 
-.real-voices{
-   background-image: url(../../public/assets/home-page-images/voices-sectionbg.webp);
+.real-voices {
+  background-image: url(../../public/assets/home-page-images/voices-sectionbg.webp);
 }
 
 
@@ -128,7 +133,7 @@ html, body {
 .swiper .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  background-color:  var(--primary-purple);
+  background-color: var(--primary-purple);
   box-shadow: inset 0px 0px 0.5px 0px var(--primary-purple);
   opacity: 0.4;
   transition: all 0.3s ease;
@@ -201,6 +206,7 @@ html, body {
   filter: blur(20px);
   z-index: -1;
 }
+
 .gradient-shadow-right {
   position: relative;
   z-index: 1;
@@ -209,21 +215,21 @@ html, body {
 
 @media (min-width: 768px) {
   .gradient-shadow-right::before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  right: 0;
-  bottom: -20px;
-  left: -60px;
-  border-radius: inherit;
-  background: linear-gradient(69.54deg,
-      rgba(26, 209, 185, 0.2) 0.66%,
-      rgba(56, 172, 204, 0.2) 29.25%,
-      rgba(85, 136, 223, 0.2) 63.93%,
-      rgba(121, 92, 245, 0.2) 98.14%);
-  filter: blur(20px);
-  z-index: -1;
-}
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    bottom: -20px;
+    left: -60px;
+    border-radius: inherit;
+    background: linear-gradient(69.54deg,
+        rgba(26, 209, 185, 0.2) 0.66%,
+        rgba(56, 172, 204, 0.2) 29.25%,
+        rgba(85, 136, 223, 0.2) 63.93%,
+        rgba(121, 92, 245, 0.2) 98.14%);
+    filter: blur(20px);
+    z-index: -1;
+  }
 }
 
 .gradient-shadow-right::before {
@@ -258,40 +264,34 @@ html, body {
   border-radius: inherit;
 
   /* Your glow colors */
-  background: linear-gradient(
-    69.54deg,
-    rgba(26, 209, 185, 0.22) 0.66%,
-    rgba(56, 172, 204, 0.22) 29.25%,
-    rgba(85, 136, 223, 0.22) 50.93%,
-    rgba(121, 92, 245, 0.22) 98.14%
-  );
+  background: linear-gradient(69.54deg,
+      rgba(26, 209, 185, 0.22) 0.66%,
+      rgba(56, 172, 204, 0.22) 29.25%,
+      rgba(85, 136, 223, 0.22) 50.93%,
+      rgba(121, 92, 245, 0.22) 98.14%);
 
   filter: blur(20px);
   z-index: -1;
 
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.15) 10%,
-    rgba(0,0,0,0.5) 20%,
-    rgba(0,0,0,1) 32%,
-    rgba(0,0,0,1) 68%,
-    rgba(0,0,0,0.5) 80%,
-    rgba(0,0,0,0.15) 90%,
-    rgba(0,0,0,0) 100%
-  );
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.15) 10%,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 1) 32%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.15) 90%,
+      rgba(0, 0, 0, 0) 100%);
 
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.15) 10%,
-    rgba(0,0,0,0.5) 20%,
-    rgba(0,0,0,1) 32%,
-    rgba(0,0,0,1) 68%,
-    rgba(0,0,0,0.5) 80%,
-    rgba(0,0,0,0.15) 90%,
-    rgba(0,0,0,0) 100%
-  );
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.15) 10%,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 1) 32%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.15) 90%,
+      rgba(0, 0, 0, 0) 100%);
 
 }
 
@@ -311,40 +311,34 @@ html, body {
   border-radius: inherit;
 
   /* Your glow colors */
-  background: linear-gradient(
-    69.54deg,
-    rgba(160, 215, 255, 0.25) 10%,
-    rgba(160, 215, 255, 0.25) 29.25%,
-     rgba(207, 181, 249, 0.35) 50.93%,
-     rgba(207, 181, 249, 0.35) 98.14%
-  );
+  background: linear-gradient(69.54deg,
+      rgba(160, 215, 255, 0.25) 10%,
+      rgba(160, 215, 255, 0.25) 29.25%,
+      rgba(207, 181, 249, 0.35) 50.93%,
+      rgba(207, 181, 249, 0.35) 98.14%);
 
   filter: blur(20px);
   z-index: -1;
 
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.15) 10%,
-    rgba(0,0,0,0.5) 20%,
-    rgba(0,0,0,1) 32%,
-    rgba(0,0,0,1) 68%,
-    rgba(0,0,0,0.5) 80%,
-    rgba(0,0,0,0.15) 90%,
-    rgba(0,0,0,0) 100%
-  );
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.15) 10%,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 1) 32%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.15) 90%,
+      rgba(0, 0, 0, 0) 100%);
 
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.15) 10%,
-    rgba(0,0,0,0.5) 20%,
-    rgba(0,0,0,1) 32%,
-    rgba(0,0,0,1) 68%,
-    rgba(0,0,0,0.5) 80%,
-    rgba(0,0,0,0.15) 90%,
-    rgba(0,0,0,0) 100%
-  );
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.15) 10%,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 1) 32%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.15) 90%,
+      rgba(0, 0, 0, 0) 100%);
 
 }
 
@@ -353,11 +347,9 @@ html, body {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.28) 30%,
-    rgba(255, 255, 255, 0.30) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.28) 30%,
+      rgba(255, 255, 255, 0.30) 100%);
 
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -375,6 +367,7 @@ html, body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -403,7 +396,7 @@ html, body {
 .hero-bg-circle {
   position: relative;
   overflow: hidden;
-  isolation: isolate; 
+  isolation: isolate;
 }
 
 .hero-bg-circle::before {
@@ -417,19 +410,15 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
 
-  
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(0, 0, 0, 0) 60%
-  );
-  mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(0, 0, 0, 0) 60%
-  );
+
+  -webkit-mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 60%);
+  mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 60%);
 
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
