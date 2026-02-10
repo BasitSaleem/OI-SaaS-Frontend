@@ -24,20 +24,22 @@ const locations = [
 // Sub-component to handle map zoom and pan
 const MapHandler = ({
   isHovered,
+  isMobile,
   center,
 }: {
   isHovered: boolean;
+  isMobile: boolean;
   center: [number, number];
 }) => {
   const map = useMap();
 
   useEffect(() => {
-    if (isHovered) {
+    if (isHovered || isMobile) {
       map.flyTo(center, 15, { duration: 1.2, easeLinearity: 0.25 });
     } else {
       map.flyTo(center, 12, { duration: 1.2, easeLinearity: 0.25 });
     }
-  }, [isHovered, map, center]);
+  }, [isHovered, isMobile, map, center]);
 
   return null;
 };
@@ -45,9 +47,16 @@ const MapHandler = ({
 const MapComponent = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   if (!isMounted) return null;
@@ -208,7 +217,7 @@ const MapComponent = () => {
           >
             <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
             <Marker position={office.coords} icon={createCustomIcon()} />
-            <MapHandler isHovered={isHovered} center={office.coords} />
+            <MapHandler isHovered={isHovered} isMobile={isMobile} center={office.coords} />
           </MapContainer>
 
           {/* Gradient Overlay Layer */}
@@ -222,17 +231,17 @@ const MapComponent = () => {
 
           {/* Location Info Overlay */}
 
-          <div className="absolute bottom-12 left-12 z-[1000] flex items-start gap-6 pointer-events-none">
-            {/* MapPin Icon Container - Always Visible - MOVED HERE */}
+          <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 lg:bottom-12 lg:left-12 z-[1000] flex flex-col sm:flex-row items-start gap-6 pointer-events-none">
+            {/* MapPin Icon Container - Always Visible */}
             <div className="flex-shrink-0 p-4 bg-white/5 backdrop-blur-xl rounded-[20px] border-2 border-[rgba(255,255,255,0.05)] shadow-2xl ">
               <MapPin className="text-[#1AD1B9] w-6 h-6" />
             </div>
 
             {/* Animate-able Text Content */}
             <AnimatePresence>
-              {isHovered && (
+              {(isHovered || isMobile) && (
                 <motion.div
-                  initial="hidden"
+                  initial={isMobile ? "visible" : "hidden"}
                   animate="visible"
                   exit="hidden"
                   variants={{
@@ -252,14 +261,13 @@ const MapComponent = () => {
                   className="flex flex-col"
                 >
                   <div className="flex items-center gap-6">
-                    {/* REMOVED THE MAPPIN ICON FROM HERE */}
                     <motion.h3
                       variants={{
                         hidden: { opacity: 0, x: -40 },
                         visible: { opacity: 1, x: 0 },
                       }}
                       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-[var(--white-color)] text-[45px] leading-[130%] font-medium font-['onest'] tracking-tight mb-2"
+                      className="text-[var(--white-color)] text-3xl sm:text-4xl lg:text-[45px] leading-[130%] font-medium font-['onest'] tracking-tight mb-2"
                     >
                       Our Location
                     </motion.h3>
@@ -272,7 +280,7 @@ const MapComponent = () => {
                         visible: { opacity: 1, x: 0 },
                       }}
                       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-[#D4D4D4] text-[28px] leading-[180%] font-normal font-['onest']"
+                      className="text-[#D4D4D4] text-xl sm:text-2xl lg:text-[28px] leading-[180%] font-normal font-['onest']"
                     >
                       {office.address.line1}
                     </motion.p>
@@ -282,7 +290,7 @@ const MapComponent = () => {
                         visible: { opacity: 1, x: 0 },
                       }}
                       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-[#D4D4D4] text-[28px] leading-[180%] font-normal font-['onest']"
+                      className="text-[#D4D4D4] text-xl sm:text-2xl lg:text-[28px] leading-[180%] font-normal font-['onest']"
                     >
                       {office.address.line2}
                     </motion.p>
@@ -292,7 +300,7 @@ const MapComponent = () => {
                         visible: { opacity: 1, x: 0 },
                       }}
                       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-[#A3A3A3] text-[28px] leading-[180%] font-normal font-['onest'] uppercase"
+                      className="text-[#A3A3A3] text-xl sm:text-2xl lg:text-[28px] leading-[180%] font-normal font-['onest'] uppercase"
                     >
                       {office.address.country}
                     </motion.p>
