@@ -103,7 +103,7 @@ const NavItems = () => {
               <div className="w-full ">
                 <Link
                   href="/features"
-                  className="flex items-center  justify-center gap-2.5 w-full text-center px-4 py-3 hover:bg-[#795CF5] hover:text-white border-2 border-[#795CF5] text-[#795CF5] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
+                  className="flex items-center  justify-center gap-2.5 w-full text-center px-4 py-2 hover:bg-[#795CF5] hover:text-white border-2 border-[#795CF5] text-[#795CF5] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
                   onClick={close}
                 >
                   View All Features
