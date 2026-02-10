@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import heroBanner from "../../../../public/assets/features-page/hero-section-banners/purchases-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/about-us/who-we-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/about-us/why-chose-banner.webp";
 import WhoWeAre from "@/components/pages/contact-us/whoWeAre";
 import PhilosophyIcons from "@/components/icons/philosophyIcons";
 
@@ -407,7 +407,7 @@ const Page = () => {
         layoutPatterns={layoutPatterns}
       /> */}
 
-      <WhyChoosePOS
+      {/* <WhyChoosePOS
         heading="Why Choose Us?"
         paragraph="By choosing Owners Inventory, you are not just adopting software. You are implementing a complete purchasing strategy designed for control and growth. Our platform transforms purchasing from a cost center into a strategic advantage, ensuring every transaction is accurate."
         cards={[
@@ -443,7 +443,7 @@ const Page = () => {
           },
         ]}
         mainImage={whyChoseBanner}
-      />
+      /> */}
 
       <WhoWeServe
         heading="Who We Serve"
