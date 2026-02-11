@@ -311,7 +311,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Make Every Report Count"
         description="Stop guessing and start knowing. With Owners Inventory’s inventory management reporting and point of sale report system, every decision is backed by real data."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={reportsTestimonials}

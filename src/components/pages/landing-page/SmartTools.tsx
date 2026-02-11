@@ -17,10 +17,10 @@ const SmartTools: React.FC<SmartTools> = ({
   title = "Stay Ahead with Smart Tools",
   description = "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
 }) => {
-  const [openModal, setOpenModal] = useState(false);
+  // const [openModal, setOpenModal] = useState(false);
   return (
     <section className="">
-      <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} />
+      {/* <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} /> */}
       <div
         className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] bg-cover bg-center"
         style={{
@@ -36,7 +36,7 @@ const SmartTools: React.FC<SmartTools> = ({
         </Paragraph>
         <div className="flex gap-3 lg:gap-6 flex-col md:flex-row items-center justify-center relative z-50">
           <Link
-            href=""
+            href="https://osglobal.ownersjungle.com/sign-up?app=OG"
             className="bg-transparent w-full md:w-fit
     px-4 py-2.5 md:px-5 md:py-3 lg:px-[40px] xl:px-[64px] lg:py-4 flex items-center justify-center text-sm md:text-base font-['Onest'] font-medium
      text-[var(--white-color)]  border border-[var(--white-color)] hover:border-transparent rounded-full hover:text-black  hover:bg-[var(--white-color)]
@@ -45,14 +45,13 @@ const SmartTools: React.FC<SmartTools> = ({
             Start for Free
           </Link>
           <ButtonSm
-            url="#"
+            url="/company/contact"
             text="Contact Now"
             bgColor="[#795CF5]"
             textColor="white"
             paddingLg="lg:px-[40px] xl:px-[64px] lg:py-4"
             isBorder
             className="w-full md:w-fit"
-            onClick={() => setOpenModal(true)}
           />
         </div>
 

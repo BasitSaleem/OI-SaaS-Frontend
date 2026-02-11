@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import "../../../app/globals.css";
 import ButtonSm from "@/components/button/ButtonSm";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
+import ContactModal from "@/components/models/ContactModal";
 
 interface FeaturesCallToAction{
   title?: string,
@@ -15,9 +16,13 @@ interface FeaturesCallToAction{
 const FeaturesCallToAction: React.FC<FeaturesCallToAction> = ({
   title = "Sell Smarter. Run Your Business Better",
   description= "Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations.",
-  ctaDesc= "Start For Free"
+  ctaDesc= "Contact Sales"
 }) => {
+   const [openModal, setOpenModal] = useState(false);
   return (
+    <div className="">
+       <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} />
+  
     <div className="wrapper">
       <section
         className="ownerinventory-landing__pos-icons-section trusted-by-section lg:mt-[100px] md:mt-28 mt-20 flex items-center justify-center rounded-[20px] lg:rounded-[40px] w-[100%] relative z-[100]"
@@ -46,12 +51,14 @@ const FeaturesCallToAction: React.FC<FeaturesCallToAction> = ({
                 textColor="white"
                 paddingLg="md:px-[38px] lg:px-[38px] lg:py-4"
                 isBorder
+                onClick={() => setOpenModal(true)}
               />
             </div>
           </div>
         </div>
       </section>
     </div>
+      </div>
   );
 };
 

@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Tooltip from '@/components/toolTip/Tooltip';
 import MainHeading from '../typography/MainHeading';
 import Paragraph from '../typography/Paragraph';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,14 +59,15 @@ export default function PosIconsSection() {
       tl.to("#feature-icon-4", { x: 70, y: -120, duration: 1.6 }, 0);
       tl.to("#feature-icon-5", { x: small ? -115 : -136, y: 240, duration: 1.6 }, 0);
       tl.to("#feature-icon-6", { x: 0, y: 240, duration: 1.6 }, 0);
-      tl.to("#feature-icon-7", { x: -70, y: 200, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-7", { x: -70, y: 200, duration: 1.6 }, 0);
       tl.to("#feature-icon-8", { x: small ? -115 : -136, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-9", { x: small ? 115 : 136, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-10", { x: 70, y: 200, duration: 1.6 }, 0);
-      tl.to("#feature-icon-11", { x: 0, y: -180, duration: 1.6 }, 0);
-      tl.to("#feature-icon-12", { x: small ? 115 : 136, y: 240, duration: 1.6 }, 0);
-      tl.to("#feature-icon-13", { x: -70, y: 80, duration: 1.6 }, 0);
-      tl.to("#feature-icon-14", { x: 70, y: 80, duration: 1.6 }, 0);
+      tl.to("#feature-icon-9", { x: 0, y: -180, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-9", { x: small ? 115 : 136, y: 0, duration: 1.6 }, 0);
+      tl.to("#feature-icon-10", { x: 130, y: 240, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-11", { x: 0, y: -180, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-12", { x: small ? 115 : 136, y: 240, duration: 1.6 }, 0);
+      tl.to("#feature-icon-13", { x: small ? 115 : 136, y: 0, duration: 1.6 }, 0);
+      tl.to("#feature-icon-14", { x: 0, y: 80, duration: 1.6 }, 0);
       tl.to("#feature-icon-15", { x: small ? -115 : -136, y: 140, duration: 1.6 }, 0);
       tl.to("#feature-icon-16", { x: small ? 115 : 136, y: 140, duration: 1.6 }, 0);
       tl.to("#feature-icon-17", { x: 0, y: 140, duration: 1.6 }, 0);
@@ -79,12 +81,13 @@ export default function PosIconsSection() {
       tl.to("#feature-icon-4", { x: 132, y: -140, duration: 1.6 }, 0);
       tl.to("#feature-icon-5", { x: -330, y: -140, duration: 1.6 }, 0);
       tl.to("#feature-icon-6", { x: 330, y: -140, duration: 1.6 }, 0);
-      tl.to("#feature-icon-7", { x: -340, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-7", { x: -340, y: 100, duration: 1.6 }, 0);
       tl.to("#feature-icon-8", { x: -220, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-9", { x: 220, y: 0, duration: 1.6 }, 0);
+      tl.to("#feature-icon-9", { x: -220, y: 250, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-9", { x: 220, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-10", { x: 220, y: 250, duration: 1.6 }, 0);
-      tl.to("#feature-icon-11", { x: -220, y: 250, duration: 1.6 }, 0);
-      tl.to("#feature-icon-12", { x: 340, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-11", { x: -220, y: 250, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-12", { x: 340, y: 100, duration: 1.6 }, 0);
       tl.to("#feature-icon-13", { x: -132, y: 130, duration: 1.6 }, 0);
       tl.to("#feature-icon-14", { x: 132, y: 130, duration: 1.6 }, 0);
       tl.to("#feature-icon-15", { x: -240, y: 170, duration: 1.6 }, 0);
@@ -102,12 +105,13 @@ export default function PosIconsSection() {
       tl.to("#feature-icon-4", { x: 160, y: -170, duration: 1.6 }, 0);
       tl.to("#feature-icon-5", { x: -400, y: -130, duration: 1.6 }, 0);
       tl.to("#feature-icon-6", { x: 400, y: -130, duration: 1.6 }, 0);
-      tl.to("#feature-icon-7", { x: -460, y: 0, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-7", { x: -460, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-8", { x: -220, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-9", { x: 460, y: 0, duration: 1.6 }, 0);
+       tl.to("#feature-icon-9", { x: -400, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-9", { x: 460, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-10", { x: 220, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-11", { x: -400, y: 100, duration: 1.6 }, 0);
-      tl.to("#feature-icon-12", { x: 400, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-11", { x: -400, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-12", { x: 400, y: 100, duration: 1.6 }, 0);
       tl.to("#feature-icon-13", { x: -160, y: 140, duration: 1.6 }, 0);
       tl.to("#feature-icon-14", { x: 160, y: 140, duration: 1.6 }, 0);
       tl.to("#feature-icon-15", { x: -460, y: yOffset, duration: 1.6 }, 0);
@@ -125,12 +129,13 @@ export default function PosIconsSection() {
       tl.to("#feature-icon-4", { x: 160, y: -170, duration: 1.6 }, 0);
       tl.to("#feature-icon-5", { x: -400, y: -130, duration: 1.6 }, 0);
       tl.to("#feature-icon-6", { x: 400, y: -130, duration: 1.6 }, 0);
-      tl.to("#feature-icon-7", { x: -540, y: 0, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-7", { x: -540, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-8", { x: -220, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-9", { x: 540, y: 0, duration: 1.6 }, 0);
+      tl.to("#feature-icon-9", { x: -400, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-9", { x: 540, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-10", { x: 220, y: 0, duration: 1.6 }, 0);
-      tl.to("#feature-icon-11", { x: -400, y: 100, duration: 1.6 }, 0);
-      tl.to("#feature-icon-12", { x: 400, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-11", { x: -400, y: 100, duration: 1.6 }, 0);
+      // tl.to("#feature-icon-12", { x: 400, y: 100, duration: 1.6 }, 0);
       tl.to("#feature-icon-13", { x: -160, y: 140, duration: 1.6 }, 0);
       tl.to("#feature-icon-14", { x: 160, y: 140, duration: 1.6 }, 0);
       tl.to("#feature-icon-15", { x: -460, y: yOffset, duration: 1.6 }, 0);
@@ -218,8 +223,8 @@ export default function PosIconsSection() {
           </Paragraph> */}
 
           <div className="relative h-[500px] md:h-[600px] lg:h-[550px] flex flex-col justify-center items-center">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="relative flex flex-col justify-center gap-[11px] items-center"
             >
               <Image
@@ -229,7 +234,7 @@ export default function PosIconsSection() {
                 height={100}
                 className="flex items-center justify-center w-full mx-auto lg:max-w-[198px] lg:h-[198px] md:max-w-[132px] md:h-[139px] max-w-[100px] h-[100px] z-10"
               />
-            </a>
+            </Link>
 
             {/* <p
               className="text-sm font-medium leading-5 font-['Onest'] text-[var(--white-color)] flex items-center justify-center gap-2"
@@ -249,9 +254,9 @@ export default function PosIconsSection() {
             </p> */}
 
             {iconData.map((icon) => (
-              <a
+              <Link
                 key={icon.id}
-                href="#"
+                href= {`/features/${icon.category}`}
                 id={icon.id}
                 className={`absolute cursor-pointer ${icon.size} rounded-[20px] border border-transparent hover:border-white w-auto flex items-center justify-center group`}
               >
@@ -263,7 +268,7 @@ export default function PosIconsSection() {
                   className="w-full h-full rounded-[20px] transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"
                 />
                 <Tooltip text={icon.label} isComparisonToolTip={false} />
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -273,21 +278,21 @@ export default function PosIconsSection() {
 }
 
 const iconData = [
-  { id: 'feature-icon-1', label: "Point of Sale", src: '/assets/icons-section/point-of-sale.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-2', label: "Ecommerce", src: '/assets/icons-section/ecomerce.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-3', label: "People", src: '/assets/icons-section/people.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-4', label: "Reports", src: '/assets/icons-section/reports.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-5', label: "Products", src: '/assets/icons-section/products.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-6', label: "Inventory Operations", src: '/assets/icons-section/inventory-operation.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-7', label: "Restaurant", src: '/assets/icons-section/restaurant.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-8', label: "Sales & Orders", src: '/assets/icons-section/sales-order.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-30 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-9', label: "Human Resource", src: '/assets/icons-section/human-resource.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-10', label: "Purchases", src: '/assets/icons-section/purchases.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-11', label: "Marketing", src: '/assets/icons-section/marketing.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-12', label: "Advance Reports", src: '/assets/icons-section/advance-reports.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-13', label: "General Tools", src: '/assets/icons-section/general-tools.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-14', label: "Accounts & Finance", src: '/assets/icons-section/acounts-finance.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-15', label: "Facilities", src: '/assets/icons-section/facilities.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-16', label: "Manufacturing", src: '/assets/icons-section/manufacturing.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
-  { id: 'feature-icon-17', label: "Integrations", src: '/assets/icons-section/integration.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-12 h-12' },
+  { id: 'feature-icon-1', category: 'pos', label: "Point of Sale", src: '/assets/icons-section/point-of-sale.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-2', category: 'ecommerce', label: "Ecommerce", src: '/assets/icons-section/ecomerce.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-3', category: 'people', label: "People", src: '/assets/icons-section/people.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-4', category: 'reports', label: "Reports", src: '/assets/icons-section/reports.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-5', category: 'products', label: "Products", src: '/assets/icons-section/products.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-6', category: 'inventory', label: "Inventory Operations", src: '/assets/icons-section/inventory-operation.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  // { id: 'feature-icon-7', label: "Restaurant", src: '/assets/icons-section/restaurant.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-8', category: 'sales', label: "Sales & Orders", src: '/assets/icons-section/sales-order.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-30 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-9', category: 'hr', label: "Human Resource", src: '/assets/icons-section/human-resource.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-10', category: 'purchases', label: "Purchases", src: '/assets/icons-section/purchases.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  // { id: 'feature-icon-11', category: 'marketing', label: "Marketing", src: '/assets/icons-section/marketing.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  // { id: 'feature-icon-12', label: "Advance Reports", src: '/assets/icons-section/advance-reports.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-13', category: 'tools', label: "System Tools", src: '/assets/icons-section/general-tools.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-14', category: 'finance', label: "Accounts & Finance", src: '/assets/icons-section/acounts-finance.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-15', category: 'facilities', label: "Facilities", src: '/assets/icons-section/facilities.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-16', category: 'manufacturing', label: "Manufacturing", src: '/assets/icons-section/manufacturing.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
+  { id: 'feature-icon-17', category: 'integrations', label: "Integrations", src: '/assets/icons-section/integration.svg', size: 'lg:w-[87px] lg:h-[87px] md:w-20 md:h-20 w-16 h-16' },
 ];

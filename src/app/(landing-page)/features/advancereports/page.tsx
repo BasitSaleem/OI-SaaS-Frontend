@@ -335,7 +335,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Turn Data Into Decisions"
         description="Your data holds the answers, we help you uncover them. Experience the best POS system with advanced reports and make every number count."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={advancereportingTestimonials}

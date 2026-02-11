@@ -62,8 +62,8 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
             {[
               { text: "Privacy Policy", href: "/privacy-policy" },
               { text: "Terms & Conditions", href: "/terms-and-conditions" },
-              { text: "About Us", href: "/about" },
-              { text: "Contact Us", href: "/contact" },
+              { text: "About Us", href: "/company/about" },
+              { text: "Contact Us", href: "/company/contact" },
             ].map((item, index) => (
               <li key={index}>
                 <Link

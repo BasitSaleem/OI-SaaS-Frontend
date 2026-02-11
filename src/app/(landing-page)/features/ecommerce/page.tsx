@@ -335,7 +335,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Your Store, Everywhere"
         description="Owners Inventory POS eCommerce integration turns your products into a global business. Connect with more customers, streamline your sales, and maintain contact with all channels, all in a single powerful dashboard."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={ecommerceTestimonials}

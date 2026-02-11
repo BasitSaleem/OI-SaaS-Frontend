@@ -365,7 +365,6 @@ const Page = () => {
       <FeaturesCallToAction
         title="Control Your Business Finances"
         description="Simplify your accounting, track every sale, and make smarter financial decisions with one powerful POS system. Join hundreds of growing businesses already managing their money in a smart way."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={financeTestimonials}

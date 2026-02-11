@@ -222,13 +222,13 @@ export default function UnifiedPlatform() {
                 The future of business management is here, quick, integrated, expansionary. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.
               </Paragraph>
 
-              <div className="hidden md:flex">
+              {/* <div className="hidden md:flex">
                 <ButtonLg url="#" text="View All FAQs" bgColor="#1AD1B9" textColor="white" isBorder />
-              </div>
+              </div> */}
             </div>
           </div>
 
-          <div className="md:hidden flex order-3">
+          {/* <div className="md:hidden flex order-3">
             <ButtonLg
               url="#"
               text="View All FAQs"
@@ -237,7 +237,7 @@ export default function UnifiedPlatform() {
               isBorder
               className="px-[50px]"
             />
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

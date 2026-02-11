@@ -131,8 +131,8 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
       
       <div className="md:mt-7 mt-5 flex items-center justify-center">
         <ButtonSm
-          url="#"
-          text="Get a Free Demo"
+          url="https://osglobal.ownersjungle.com/sign-up?app=OG"
+          text="Book a Free Demo"
           bgColor="[#1AD1B9]"
           textColor="white"
           isBorder

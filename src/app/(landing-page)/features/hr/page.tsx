@@ -324,7 +324,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Build Stronger Teams, Smarter"
         description="Take control of your workforce with tools that simplify hiring, attendance, and payroll — all in one place. Empower your people and let your business grow with confidence."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={hrTestimonials}

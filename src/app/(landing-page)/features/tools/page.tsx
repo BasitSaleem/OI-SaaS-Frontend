@@ -324,7 +324,6 @@ const Page = () => {
       <FeaturesCallToAction
         title="Supercharge Your Workflow"
         description="Handle updates, track actions, and manage stock changes in seconds without any confusion. Step into a faster, cleaner, and more controlled way of working with tools built to keep you ahead, always."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={toolsTestimonials}

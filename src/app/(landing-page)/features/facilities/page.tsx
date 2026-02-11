@@ -302,7 +302,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Take Control of Every Facility Today"
         description="Unify your operations, track performance, and manage all locations effortlessly with Owners Inventory. Get the visibility and control your business deserves — all in one platform."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={facilitiesTestimonials}

@@ -298,7 +298,6 @@ const Page = () => {
       <FeaturesCallToAction
         title="Elevate Businesses Through Our Integration"
         description="With Owners Inventory, integrate all platforms, optimize data, and simplify daily tasks. Our integration module unifies marketing, sales, accounting, and payments for full team visibility."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={integrationTestimonials}

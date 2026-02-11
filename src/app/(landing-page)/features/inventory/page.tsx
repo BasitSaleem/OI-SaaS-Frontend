@@ -326,7 +326,6 @@ const Page = () => {
       <FeaturesCallToAction
         title="Simplify. Scale. Sell Smarter."
         description="Feel the convenience of inventory products management software that adds order, speed, and precision to each sale. On retail counters, in warehouses, store each product where it belongs, under your watch."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={inventoryTestimonials}

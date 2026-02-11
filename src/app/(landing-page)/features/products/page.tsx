@@ -324,7 +324,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Empower Products Elevate Businesses"
         description="With Owners Inventory, you have complete control over your POS System Product Listing, inventory, and pricing. Organizing and optimizing every aspect of your business is made easier with our platform."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={productTestimonials}

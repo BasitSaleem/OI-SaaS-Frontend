@@ -339,7 +339,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Turn Teams into Powerhouses"
         description="Start managing your team with data-driven efficiency and effortless control — all through Owners Inventory’s People feature."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={peopleTestimonials}

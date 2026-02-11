@@ -381,7 +381,6 @@ const Page = () => {
       <FeaturesCallToAction
         title="Buy Smarter. Manage Better. Grow Faster."
         description="Streamline every purchase step with our intelligent Purchase Order Processing System. Using tools that help you stay organized, cost efficient and ready for growth with Owners Inventory."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={purchasesTestimonials}

@@ -310,7 +310,6 @@ const page = () => {
       <FeaturesCallToAction
         title="Reward Customers. Grow Your Business."
         description="Owners Inventory Marketing makes creating coupons and loyalty programs simple, automated and effective. So you can focus on growing your business."
-        ctaDesc="Get Started Now"
       />
       <FeaturesTestimonials
         testimonials={marketingTestimonials}
