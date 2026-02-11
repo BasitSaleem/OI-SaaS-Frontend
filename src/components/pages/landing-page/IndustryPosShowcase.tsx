@@ -129,11 +129,11 @@ const IndustryPosShowcase = ({
           </SubHeading>
           <Paragraph className="">{paragraph}</Paragraph>
         
-        <Link href= '#'>
+        {/* <Link href= '#'>
           <button  className="mt-6 bg-[#7B61FF] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-['Onest']">
             {buttonText}
           </button>
-        </Link>
+        </Link> */}
         </div>
         <div className="hidden md:flex items-center gap-4 mt-8 md:mt-0">
           <button

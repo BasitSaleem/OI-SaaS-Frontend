@@ -234,8 +234,8 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     textColor="white"
                     isBorder={true}
                     items={[
-                      { label: "Meet With Expert", url: "" },
-                      { label: "View Demo", url: "" },
+                      { label: "Meet With Expert", url: "/company/contact" },
+                      // { label: "View Demo", url: "" },
                     ]}
                   />
                 </div>

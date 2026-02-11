@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
@@ -16,10 +17,6 @@ interface FeatureCardProps {
   heightClass?: string;
   truncateTitle?: boolean;
   maxTitleLength?: number;
-  //  listItems?: string[]; 
-  // listClassName?: string; 
-  // listItemClassName?: string; 
-  // bulletClassName?: string; 
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
@@ -36,10 +33,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   heightClass = "h-full",
   truncateTitle = false,
   maxTitleLength = 50,
-  //  listItems = [],
-  // listClassName = "",
-  // listItemClassName = "",
-  // bulletClassName = "text-[var(--text-grey)] font-bold mr-2",
 }) => {
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
@@ -50,10 +43,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     <div
       className={`p-[1px] rounded-[30px] features-core-opretions__cards 
         bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] 
-        ${heightClass} ${className} h-full`} // Added h-full here
+        ${heightClass} ${className} h-full`} 
     >
       <div className="bg-white w-full rounded-[30px] h-full p-2 lg:p-4 flex flex-col">
-        <div className="flex flex-col flex-1"> {/* Changed to flex-1 */}
+        <div className="flex flex-col flex-1"> 
           {/* Media */}
           <div
             className={`w-full ${paddingClass} pb-0 production-banner 
@@ -80,7 +73,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             ) : null}
           </div>
 
-          {/* Text Content - This section will now stretch */}
+          {/* Text Content */}
           <div className="mt-5 flex flex-col flex-1"> 
             <CardHeading className="mb-4 min-h-[70px] lg:min-h-[70px] flex self-stretch">
               {displayedTitle}
@@ -90,34 +83,17 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               {description}
             </CardDesc>
              
-            {/* {listItems.length > 0 && (
-              <ul className={`space-y-2 min-h-[60px] flex flex-col items-start flex-1 ${listClassName}`}>
-                {listItems.map((item, index) => (
-                  <li 
-                    key={index} 
-                    className={`flex items-start ${listItemClassName}`}
-                  >
-                    
-                    <span className={bulletClassName}>•</span>
-                    <span className="text-lg leading-[170%] font-['Onest'] text-[var(--text-grey)]">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )} */}
-
             <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
               {authorName}
             </p>
 
             {buttonLabel && (
-              <a
+              <Link
                 href={buttonHref || "#"}
                 className="xl:text-base text-sm font-bold font-['Onest'] text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block"
               >
                 {buttonLabel} &gt;&gt;&gt;
-              </a>
+              </Link>
             )}
           </div>
         </div>

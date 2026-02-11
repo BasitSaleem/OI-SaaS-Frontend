@@ -130,7 +130,7 @@ export default function CustomSwiper<T>({
   
   // Throttle the emitVisible function
   const emitVisible = useCallback((swiper: any) => {
-    if (!onVisibleChange) return;
+    if (!onVisibleChange || !swiper || !swiper.params) return;
 
     let visibleIndices: number[] = [];
 
@@ -144,7 +144,7 @@ export default function CustomSwiper<T>({
     }
 
     // If no visible slides found or empty array, use fallback
-    if (!visibleIndices.length) {
+    if (!visibleIndices.length && swiper.params) {
       const slidesPerView =
         typeof swiper.params.slidesPerView === "number"
           ? swiper.params.slidesPerView
@@ -153,14 +153,18 @@ export default function CustomSwiper<T>({
       const start = swiper.realIndex ?? 0;
       visibleIndices = Array.from(
         { length: slidesPerView },
-        (_, i) => (start + i) % slides.length
+        (_, i) => {
+          const index = (start + i) % (slides.length || 1);
+          return isNaN(index) ? 0 : index;
+        }
       );
     }
 
-    // Only emit if indices have changed
+    // Only emit if indices have changed and are valid
     if (
-      lastEmittedIndices.current.length !== visibleIndices.length ||
-      !lastEmittedIndices.current.every((val, idx) => val === visibleIndices[idx])
+      visibleIndices.length > 0 &&
+      (lastEmittedIndices.current.length !== visibleIndices.length ||
+      !lastEmittedIndices.current.every((val, idx) => val === visibleIndices[idx]))
     ) {
       lastEmittedIndices.current = [...visibleIndices];
       onVisibleChange({ visibleIndices });

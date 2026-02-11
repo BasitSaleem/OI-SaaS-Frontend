@@ -28,7 +28,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   description,
   image,
   video,
-  ctaDesc = "Book a Free Demo",
+  ctaDesc = "Get Started for Free",
   variant = "animation1",
   imageClassName = "",
 }) => {
@@ -118,7 +118,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                   className="flex md:gap-4 gap-2 lg:p-1.5 relative z-[60] owner-inventory-hero__content--buttons"
                 >
                   <ButtonSm
-                    url="#"
+                    url="https://osglobal.ownersjungle.com/sign-up?app=OG"
                     text={ctaDesc}
                     bgColor="[#1AD1B9]"
                     textColor="white"

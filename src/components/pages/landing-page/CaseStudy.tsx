@@ -77,14 +77,14 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
           <MainHeading className="w-full max-w-full md:max-w-[65%] lg:max-w-[60%] gradient-text">
             Businesses Thriving with Owners Inventory
           </MainHeading>
-          <div className="hidden md:flex">
+          {/* <div className="hidden md:flex">
             <ButtonOutline
               url="#"
               text="View All Case Studies"
               borderColor="[#795CF5]"
               textColor="white"
             />
-          </div>
+          </div> */}
         </div>
 
         {/* Navigation */}
@@ -163,15 +163,16 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                     </p>
                   </div>
                   <div className="flex justify-between items-stretch gap-x-4 w-full">
-                    <div className="flex items-center justify-center mt-4 w-full lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%]">
-                      <ButtonSm
+                    <div className="flex items-center justify-center mt-4 w-full lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%] h-12">
+                      {/* <ButtonSm
                         url="#"
                         text={study.ctaText}
                         bgColor="[#795CF5]"
                         textColor="white"
                         isBorder
                         icon={<ArrowUpRight size={18} />}
-                      />
+                      /> */}
+
                     </div>
                     <div className="relative flex bg-[var(--background-halfwhite)] w-full lg:max-w-[60%] xl:max-w-[70%] 2xl:max-w-[73%] lg:rounded-b-[28px] rounded-b-[20px] ">
                       <div className="absolute z-[-100] left-[-5.4rem] md:left-[-5.8rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] rotate-180 shadow-[0_2.5rem_0_0_#f3f4f6]" />
@@ -274,14 +275,14 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               </div>
 
               {/* Mobile View All Button */}
-              <div className="md:hidden justify-center items-center mt-0 flex">
+              {/* <div className="md:hidden justify-center items-center mt-0 flex">
                 <ButtonOutline
                   url="#"
                   text="View All Case Studies"
                   borderColor="[#795CF5]"
                   textColor="white"
                 />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

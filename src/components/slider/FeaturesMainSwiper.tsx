@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,6 +21,13 @@ export default function FeaturesMainSwiper<T>({
   swiperOptions = {},
   showPagination = true,
 }: CustomSwiperProps<T>) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
   return (
     <Swiper
       modules={[Pagination, Autoplay]}

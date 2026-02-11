@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Onest, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/pages/navbar/Navbar";
-
-
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Load fonts with CSS variable bindings
 const geistSans = Geist({
@@ -29,6 +28,7 @@ const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
+
 export const metadata: Metadata = {
   title: "Owners Inventory",
   description: "Grow Faster with Smarter Inventory Tools",
@@ -40,18 +40,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-      suppressHydrationWarning
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${onest.variable} ${inter.variable} antialiased`}
       >
-
-        <Navbar/>
-        <div>
-   {children}
-        </div>
-    
-     
+        <ScrollToTop />
+        <Navbar />
+        {children}
       </body>
     </html>
   );

@@ -12,6 +12,7 @@ interface EmpoweredSectionProps {
     title: string;
     description: string;
     videoSrc: string;
+    buttonHref?: string;
     className?: string;
     mediaClassName?: string;
     paddingClass?: string;
@@ -52,7 +53,7 @@ const EmpoweredSection: React.FC<EmpoweredSectionProps> = ({
               heightClass="h-full"
               paddingClass={card.paddingClass}
               buttonLabel="View Details"
-              buttonHref="#"
+              buttonHref={card.buttonHref || "#"}
             />
           )}
         />
