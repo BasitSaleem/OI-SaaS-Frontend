@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import MainHeading from "../typography/MainHeading";
+import { LANDING_FEATURES } from "@/constant/landingPageData";
 
 
 type VideoRefs = {
@@ -17,44 +18,7 @@ export default function FeaturesTabSection() {
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const features = [
-    {
-      id: "inventorypos-system",
-      title: "Smart POS System for Modern Retail",
-      icon: "/assets/features-section/pos-system.svg",
-      videoSrc: '/assets/home-page-images/animations/newscreen.mp4',
-      tabIndex: 1,
-      iconWidth: 20,
-      iconHeight: 20,
-    },
-    {
-      id: "inventory-ecommerce",
-      title: "Built-in E-commerce - Fully Synced and Ready to Sell",
-      icon: "/assets/features-section/cart-icons.svg",
-      videoSrc: '/assets/home-page-images/animations/newscreen2.mp4',
-      tabIndex: 2,
-      iconWidth: 18,
-      iconHeight: 14,
-    },
-    {
-      id: "inventory-management",
-      title: "Streamline Manufacturing + Stay in Control of Every Process",
-      icon: "/assets/features-section/management-icon.svg",
-      videoSrc: '/assets/home-page-images/animations/newscreen3.mp4',
-      tabIndex: 3,
-      iconWidth: 16,
-      iconHeight: 14,
-    },
-    {
-      id: "inventory-autosync",
-      title: "Smart analytics and reports to drive visibility and accountability",
-      icon: "/assets/features-section/autosync.svg",
-      videoSrc: '/assets/home-page-images/animations/newscreen4.mp4',
-      tabIndex: 4,
-      iconWidth: 18,
-      iconHeight: 18,
-    },
-  ];
+  const features = LANDING_FEATURES;
 
   // Preload only active video
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
@@ -93,63 +57,53 @@ export default function FeaturesTabSection() {
     }
   }, [activeTab, isAutoPlaying, features]);
 
-  // Handle video time updates
+  // Handle video progress and ended state
   useEffect(() => {
-    const handleTimeUpdate = (videoId: string, video: HTMLVideoElement) => {
-      if (video && video.duration > 0) {
-        const percent = (video.currentTime / video.duration) * 100;
-        setVideoProgress((prev) => ({
-          ...prev,
-          [videoId]: percent,
-        }));
-      }
-    };
-
+    let animationFrameId: number;
+    const activeFeature = features.find(f => f.tabIndex === activeTab);
+    
     const handleVideoEnded = () => {
       if (isAutoPlaying) {
-        // Delay before moving to next tab
         setTimeout(() => {
           moveToNextTab();
         }, 300);
       }
     };
 
-    // Setup event listeners for active video
-    const activeFeature = features.find(f => f.tabIndex === activeTab);
+    const updateProgress = () => {
+      if (activeFeature) {
+        const desktopVideoId = `${activeFeature.id}-video`;
+        const mobileVideoId = `${activeFeature.id}-mobile-video`;
+        const desktopVideo = videoRefs.current[desktopVideoId];
+        const mobileVideo = videoRefs.current[mobileVideoId];
+        const video = desktopVideo || mobileVideo;
+        const videoId = desktopVideo ? desktopVideoId : mobileVideoId;
+
+        if (video && !video.paused && video.duration > 0) {
+          const percent = (video.currentTime / video.duration) * 100;
+          setVideoProgress((prev) => ({
+            ...prev,
+            [videoId]: percent,
+          }));
+        }
+      }
+      animationFrameId = requestAnimationFrame(updateProgress);
+    };
+
     if (activeFeature) {
-      const desktopVideoId = `${activeFeature.id}-video`;
-      const mobileVideoId = `${activeFeature.id}-mobile-video`;
+      const desktopVideo = videoRefs.current[`${activeFeature.id}-video`];
+      const mobileVideo = videoRefs.current[`${activeFeature.id}-mobile-video`];
+
+      if (desktopVideo) desktopVideo.addEventListener("ended", handleVideoEnded);
+      if (mobileVideo) mobileVideo.addEventListener("ended", handleVideoEnded);
+
+      animationFrameId = requestAnimationFrame(updateProgress);
       
-      const desktopVideo = videoRefs.current[desktopVideoId];
-      const mobileVideo = videoRefs.current[mobileVideoId];
-
-      // Desktop video listeners
-      if (desktopVideo) {
-        const timeUpdateHandler = () => handleTimeUpdate(desktopVideoId, desktopVideo);
-        const endedHandler = () => handleVideoEnded();
-        
-        desktopVideo.addEventListener("timeupdate", timeUpdateHandler);
-        desktopVideo.addEventListener("ended", endedHandler);
-
-        return () => {
-          desktopVideo.removeEventListener("timeupdate", timeUpdateHandler);
-          desktopVideo.removeEventListener("ended", endedHandler);
-        };
-      }
-
-      // Mobile video listeners
-      if (mobileVideo) {
-        const timeUpdateHandler = () => handleTimeUpdate(mobileVideoId, mobileVideo);
-        const endedHandler = () => handleVideoEnded();
-        
-        mobileVideo.addEventListener("timeupdate", timeUpdateHandler);
-        mobileVideo.addEventListener("ended", endedHandler);
-
-        return () => {
-          mobileVideo.removeEventListener("timeupdate", timeUpdateHandler);
-          mobileVideo.removeEventListener("ended", endedHandler);
-        };
-      }
+      return () => {
+        if (desktopVideo) desktopVideo.removeEventListener("ended", handleVideoEnded);
+        if (mobileVideo) mobileVideo.removeEventListener("ended", handleVideoEnded);
+        cancelAnimationFrame(animationFrameId);
+      };
     }
 
     return () => {};
@@ -330,7 +284,7 @@ export default function FeaturesTabSection() {
                   } transition-all`}
                 >
                   <div
-                    className="h-full bg-[#F3F4F6] transition-all duration-200"
+                    className="h-full bg-[#F3F4F6]"
                     style={{
                       width: `${videoProgress[`${feature.id}-video`] || 
                               videoProgress[`${feature.id}-mobile-video`] || 0}%`,
