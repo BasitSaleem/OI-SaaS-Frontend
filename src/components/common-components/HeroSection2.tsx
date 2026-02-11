@@ -222,7 +222,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                 <div className="flex md:gap-4 gap-2 lg:p-1.5  relative z-60 owner-inventory-hero__content--buttons">
                   <ButtonSm
-                    url="#"
+                    url="https://osglobal.ownersjungle.com/sign-up?app=OG"
                     text="Get Started for Free"
                     bgColor="[#795CF5]"
                     textColor="white"

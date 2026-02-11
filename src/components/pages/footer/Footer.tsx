@@ -2,6 +2,7 @@
 import { Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 interface FooterProps {
@@ -29,9 +30,16 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 `;
 
 const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
+  const pathname = usePathname();
+  const isContactPage = pathname.includes("/contact");
+
   return (
     <footer
-      className="owner-inventory-footer relative -mt-[131px] pt-[251px] lg:pt-[291px] pb-10 bg-white/50 backdrop-blur-xl"
+      className={`owner-inventory-footer relative pb-10 bg-white/50 backdrop-blur-xl ${
+        isContactPage
+          ? "pt-10 mt-12"
+          : "-mt-[131px] pt-[251px] lg:pt-[291px]"
+      }`}
       style={{ background: gradientBackground || DEFAULT_GRADIENT_BACKGROUND }}
     >
       <div className="flex wrapper flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-[40px]">
@@ -55,7 +63,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
               { text: "Privacy Policy", href: "/privacy-policy" },
               { text: "Terms & Conditions", href: "/terms-and-conditions" },
               { text: "About Us", href: "/about" },
-              { text: "Contant Us", href: "/contact" },
+              { text: "Contact Us", href: "/contact" },
             ].map((item, index) => (
               <li key={index}>
                 <Link
