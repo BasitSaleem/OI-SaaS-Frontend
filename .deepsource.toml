@@ -2,7 +2,6 @@ version = 1
 
 [[analyzers]]
 name = "javascript"
-
 enabled = true
 
   [analyzers.meta]
@@ -11,12 +10,8 @@ enabled = true
   module_system = "es6"
   jsx = true
   typescript = true
+  plugins = ["react"]
 
 [[analyzers]]
 name = "secrets"
 enabled = true
-
-
-  [analyzers.meta]
-  plugins = ["react"]
-
