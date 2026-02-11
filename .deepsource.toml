@@ -4,9 +4,12 @@ version = 1
 name = "javascript"
 enabled = true
 
-[[analyzers]]
-name = "typescript"
-enabled = true
+  [analyzers.meta]
+  runtime = "nodejs"
+  environment = ["browser"]
+  module_system = "es6"
+  jsx = true
+  typescript = true
 
 [[analyzers]]
 name = "secrets"
