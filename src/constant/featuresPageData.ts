@@ -169,3 +169,15 @@ export const FINANCE_FEATURES = [
         buttonHref: "/features/reports",
     },
 ];
+
+export const TEAM_SECTION_DATA = {
+    title: "Your Team, Organized & Empowered",
+    description: "Empower your team, build customer loyalty, and manage resources with ease.",
+    wrapperClass: "bg-[#F3F4F6] rounded-[40px] py-10 lg:py-[100px] px-5 lg:px-[60px] mx-0"
+};
+
+export const FINANCE_SECTION_DATA = {
+    title: "Finance & Reporting Made Simple",
+    description: "Empower your team, build customer loyalty, and manage resources with ease.",
+    wrapperClass: "finance-reporting-shadow mx-10"
+};

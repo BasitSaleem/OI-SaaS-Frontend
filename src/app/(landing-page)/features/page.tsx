@@ -16,8 +16,10 @@ const SellerClubSection = dynamic(() => import('@/components/pages/landing-page/
 
 import { 
   FINANCE_FEATURES, 
+  FINANCE_SECTION_DATA, 
   MAIN_FEATURES_HERO, 
   TEAM_FEATURES, 
+  TEAM_SECTION_DATA, 
   UTILITIES_DATA 
 } from '@/constant/featuresPageData';
 
@@ -34,10 +36,10 @@ const Page = () => {
       <FeaturesCoreOperations />
 
       <EmpoweredSection
-        title="Your Team, Organized & Empowered"
-        description="Empower your team, build customer loyalty, and manage resources with ease."
+        title={TEAM_SECTION_DATA.title}
+        description={TEAM_SECTION_DATA.description}
         features={TEAM_FEATURES}
-        wrapperClass="bg-[#F3F4F6] rounded-[40px] py-10 lg:py-[100px] px-5 lg:px-[60px] mx-0"
+        wrapperClass={TEAM_SECTION_DATA.wrapperClass}
       />
       
       <div className="overflow-hidden h-full">
@@ -56,10 +58,10 @@ const Page = () => {
       <SmartIntegration />
 
       <EmpoweredSection
-        title="Finance & Reporting Made Simple"
-        description="Empower your team, build customer loyalty, and manage resources with ease."
+        title={FINANCE_SECTION_DATA.title}
+        description={FINANCE_SECTION_DATA.description}
         features={FINANCE_FEATURES}
-        wrapperClass="finance-reporting-shadow mx-10"
+        wrapperClass={FINANCE_SECTION_DATA.wrapperClass}
       />
       
       <div className="lg:mt-[100px] md:mt-28 mt-20">
