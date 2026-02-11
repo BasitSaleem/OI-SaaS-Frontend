@@ -196,6 +196,220 @@ const icons = {
       />
     </svg>
   ),
+
+  emailSupport: (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="white" />
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#E2E2E2" />
+      <path
+        d="M33.4307 21.6429C33.4307 27.5289 26.901 33.6589 24.7084 35.5521C24.5041 35.7057 24.2555 35.7888 23.9999 35.7888C23.7443 35.7888 23.4957 35.7057 23.2914 35.5521C21.0987 33.6589 14.5691 27.5289 14.5691 21.6429C14.5691 19.1417 15.5627 16.7429 17.3313 14.9743C19.0999 13.2057 21.4987 12.2121 23.9999 12.2121C26.5011 12.2121 28.8998 13.2057 30.6685 14.9743C32.4371 16.7429 33.4307 19.1417 33.4307 21.6429Z"
+        stroke="#795CF5"
+        stroke-width="1.76827"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M23.9997 25.1785C25.9529 25.1785 27.5362 23.5951 27.5362 21.642C27.5362 19.6888 25.9529 18.1054 23.9997 18.1054C22.0465 18.1054 20.4631 19.6888 20.4631 21.642C20.4631 23.5951 22.0465 25.1785 23.9997 25.1785Z"
+        stroke="#795CF5"
+        stroke-width="1.76827"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+
+  locationIcon: (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="white" />
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#E2E2E2" />
+      <path
+        d="M33.4307 21.6429C33.4307 27.5289 26.901 33.6589 24.7084 35.5521C24.5041 35.7057 24.2555 35.7888 23.9999 35.7888C23.7443 35.7888 23.4957 35.7057 23.2914 35.5521C21.0987 33.6589 14.5691 27.5289 14.5691 21.6429C14.5691 19.1417 15.5627 16.7429 17.3313 14.9743C19.0999 13.2057 21.4987 12.2121 23.9999 12.2121C26.5011 12.2121 28.8998 13.2057 30.6685 14.9743C32.4371 16.7429 33.4307 19.1417 33.4307 21.6429Z"
+        stroke="#795CF5"
+        stroke-width="1.76827"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M23.9997 25.1785C25.9529 25.1785 27.5362 23.5951 27.5362 21.642C27.5362 19.6888 25.9529 18.1054 23.9997 18.1054C22.0465 18.1054 20.4631 19.6888 20.4631 21.642C20.4631 23.5951 22.0465 25.1785 23.9997 25.1785Z"
+        stroke="#795CF5"
+        stroke-width="1.76827"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+
+  helpCenter: (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="#F8F8F8" />
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#E2E2E2" />
+      <path
+        d="M24 34C29.5228 34 34 29.5228 34 24C34 18.4772 29.5228 14 24 14C18.4772 14 14 18.4772 14 24C14 29.5228 18.4772 34 24 34Z"
+        stroke="#231F20"
+        stroke-width="1.5"
+      />
+      <path
+        d="M22.125 20.875C22.125 20.5466 22.2113 20.224 22.3752 19.9395C22.5391 19.655 22.7748 19.4184 23.0588 19.2536C23.3428 19.0888 23.6651 19.0014 23.9934 19.0003C24.3218 18.9991 24.6447 19.0842 24.9298 19.247C25.215 19.4099 25.4523 19.6447 25.6182 19.9281C25.7841 20.2115 25.8726 20.5335 25.875 20.8618C25.8773 21.1902 25.7934 21.5134 25.6316 21.7991C25.4698 22.0849 25.2358 22.3231 24.953 22.49C24.478 22.771 24 23.198 24 23.75V25"
+        stroke="#231F20"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M24 29C24.5523 29 25 28.5523 25 28C25 27.4477 24.5523 27 24 27C23.4477 27 23 27.4477 23 28C23 28.5523 23.4477 29 24 29Z"
+        fill="#231F20"
+      />
+    </svg>
+  ),
+
+  documentation: (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="#F8F8F8" />
+      <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#E2E2E2" />
+      <path
+        d="M16 20C16 17.172 16 15.757 16.879 14.879C17.757 14 19.172 14 22 14H26C28.828 14 30.243 14 31.121 14.879C32 15.757 32 17.172 32 20V28C32 30.828 32 32.243 31.121 33.121C30.243 34 28.828 34 26 34H22C19.172 34 17.757 34 16.879 33.121C16 32.243 16 30.828 16 28V20Z"
+        stroke="#231F20"
+        stroke-width="1.5"
+      />
+      <path
+        d="M31.898 28H19.898C18.968 28 18.503 28 18.121 28.102C17.6123 28.2384 17.1485 28.5063 16.7762 28.8788C16.4039 29.2513 16.1362 29.7152 16 30.224"
+        stroke="#231F20"
+        stroke-width="1.5"
+      />
+      <path
+        d="M20 19H28M20 22.5H25M31.5 31H20"
+        stroke="#231F20"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+    </svg>
+  ),
+
+  linkingArrow: (
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 72 72"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <foreignObject x="0" y="-2" width="72" height="74">
+        <div
+          style={{
+            backdropFilter: "blur(2px)",
+            clipPath: "url(#bgblur_0_4280_5361_clip_path)",
+            height: "100%",
+            width: "100%",
+          }}
+        ></div>
+      </foreignObject>
+      <g filter="url(#filter0_dd_4280_5361)" data-figma-bg-blur-radius="4">
+        <path
+          d="M12 26C12 12.7452 22.7452 2 36 2C49.2548 2 60 12.7452 60 26C60 39.2548 49.2548 50 36 50C22.7452 50 12 39.2548 12 26Z"
+          fill="white"
+          fill-opacity="0.9"
+          shape-rendering="crispEdges"
+        />
+        <path
+          d="M38.4368 22.671L31.1748 22.1019L31.3322 20.1822L41.8517 21.0262L40.9893 31.5443L39.0693 31.3902L39.6781 24.1314L30.7686 31.7039L29.5274 30.2435L38.4368 22.671Z"
+          fill="#374151"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_dd_4280_5361"
+          x="0"
+          y="-2"
+          width="72"
+          height="74"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius="3"
+            operator="erode"
+            in="SourceAlpha"
+            result="effect1_dropShadow_4280_5361"
+          />
+          <feOffset dy="10" />
+          <feGaussianBlur stdDeviation="7.5" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_4280_5361"
+          />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius="4"
+            operator="erode"
+            in="SourceAlpha"
+            result="effect2_dropShadow_4280_5361"
+          />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="3" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="effect1_dropShadow_4280_5361"
+            result="effect2_dropShadow_4280_5361"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect2_dropShadow_4280_5361"
+            result="shape"
+          />
+        </filter>
+        <clipPath id="bgblur_0_4280_5361_clip_path" transform="translate(0 2)">
+          <path d="M12 26C12 12.7452 22.7452 2 36 2C49.2548 2 60 12.7452 60 26C60 39.2548 49.2548 50 36 50C22.7452 50 12 39.2548 12 26Z" />
+        </clipPath>
+      </defs>
+    </svg>
+  ),
 };
 
 export default function philosophyIcons({

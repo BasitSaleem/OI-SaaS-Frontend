@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import { ReactNode } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
 import { useHeroAnimation } from "@/hooks/useHeroAnimation";
@@ -10,27 +11,33 @@ import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import Image, { StaticImageData } from "next/image";
 import Paragraph from "../typography/Paragraph";
 import Link from "next/link";
+import ContactForm from "./contactForm";
 
 gsap.registerPlugin(ScrollTrigger);
+
+interface CardItem {
+  icon: string | StaticImageData | ReactNode;
+  title: string;
+  icon2?: string | StaticImageData | ReactNode;
+  description: string;
+}
 
 interface contactHeroProps {
   title?: string;
   description?: string;
-  // image?: StaticImageData;
-  // video?: string;
   ctaDesc?: string;
+  cards?: CardItem[];
+  supportCards?: CardItem[];
   variant?: "animation1" | "animation2" | "none";
-  // imageClassName?: string;
 }
 
-const contactHero: React.FC<contactHeroProps> = ({
-  title = "Grow Faster with Smarter Inventory Tools",
+const ContactHero: React.FC<contactHeroProps> = ({
+  title = "Contact Us",
   description,
-  // image,
-  // video,
   ctaDesc = "Book a Free Demo",
+  cards = [],
+  supportCards = [],
   variant = "animation1",
-  // imageClassName = "",
 }) => {
   useHeaderAnimation();
   if (variant === "animation1") {
@@ -45,6 +52,7 @@ const contactHero: React.FC<contactHeroProps> = ({
   const homeHeroSecRef = useRef<HTMLDivElement>(null);
   const heroLowerRef = useRef<HTMLDivElement>(null);
   const growthBoxRef = useRef<HTMLDivElement>(null);
+  const supportCardsRef = useRef<HTMLDivElement>(null); // New ref for support cards
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -54,6 +62,7 @@ const contactHero: React.FC<contactHeroProps> = ({
     gsap.set(paragraphRef.current, { opacity: 0, y: 30 });
     gsap.set(homeHeroSecRef.current, { clipPath: "inset(0% 0% 100% 0%)" });
     gsap.set(growthBoxRef.current, { opacity: 0, y: 50 });
+    gsap.set(supportCardsRef.current, { opacity: 0, y: 50 }); // Use new ref
     gsap.set(heroLowerRef.current, { opacity: 0, y: 50 });
 
     // Animations
@@ -65,7 +74,8 @@ const contactHero: React.FC<contactHeroProps> = ({
       0.5,
     );
     tl.to(growthBoxRef.current, { opacity: 1, y: 0, duration: 0.8 }, 1);
-    tl.to(heroLowerRef.current, { opacity: 1, y: 0, duration: 1 }, 1.2);
+    tl.to(supportCardsRef.current, { opacity: 1, y: 0, duration: 0.8 }, 1.2); // Animate support cards separately
+    tl.to(heroLowerRef.current, { opacity: 1, y: 0, duration: 1 }, 1.4);
   }, []);
 
   return (
@@ -101,67 +111,156 @@ const contactHero: React.FC<contactHeroProps> = ({
             >
               {/* CONTENT ABOVE BACKGROUND LAYER */}
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
-                <div className="p-0.5 rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
-                  <Link
-                    href=""
-                    className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center"
-                  >
-                    About Owners Inventory
-                  </Link>
-                </div>
-                <div ref={mainHeadingRef}>
-                  <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] xl:mb-8 lg:mb-6 mb-5">
-                    {title}
-                  </h1>
-                </div>
-
-                <div ref={paragraphRef}>
-                  <Paragraph className="mb-4 text-center mx-auto">
-                    {description}
-                  </Paragraph>
-                </div>
-
-                <div
-                  ref={growthBoxRef}
-                  className="flex md:gap-4 gap-2 lg:p-1.5 relative z-[60] owner-inventory-hero__content--buttons"
-                >
-                  {/* <ButtonSm
-                    url="#"
-                    text={ctaDesc}
-                    bgColor="[#1AD1B9]"
-                    textColor="white"
-                    isBorder
-                  /> */}
-                </div>
-
-                {/* Hero Image */}
-                {/* <div
-                  ref={heroLowerRef}
-                  className="owner-inventory-hero__lower flex items-center justify-center relative w-full wrapper"
-                >
-                  {video ? (
-                    <video
-                      src={video}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full object-cover rounded-3xl"
-                    />
-                  ) : image ? (
-                    <Image
-                      src={image}
-                      alt="Hero Image"
-                      width={1200}
-                      height={675}
-                      className= {`w-full object-cover rounded-3xl ${imageClassName}`}
-                    />
-                  ) : (
-                    <div className="w-full h-64 bg-gray-200 rounded-3xl flex items-center justify-center">
-                      <p className="text-gray-500">No media available</p>
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-11 items-start">
+                <div className="w-full">
+                  <div className="flex flex-col items-start justify-start gap-8 w-full">
+                    <div className="flex flex-col items-start justify-start gap-6 w-full">
+                      <div ref={mainHeadingRef}>
+                        <h1 className="text-left xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest']">
+                          {title}
+                        </h1>
+                      </div>
+                      <div ref={paragraphRef}>
+                        <Paragraph className="text-left mx-auto">
+                          {description}
+                        </Paragraph>
+                      </div>
                     </div>
-                  )}
-                </div> */}
+
+                    <div className="flex flex-col items-start justify-start gap-6 w-full">
+                      <h3 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)]">
+                        Connect with us
+                      </h3>
+
+                      <div ref={growthBoxRef} className="w-full">
+                        <div className="grid grid-cols-1 gap-4 sm:gap-5 w-full">
+                          {cards.map((card, index) => (
+                            <div
+                              key={index} // Key should be on the outer div
+                              className="p-[1px] rounded-[20px]"
+                              style={{
+                                background:
+                                  "linear-gradient(90deg, #1AD1B9 32.74%, #38ACCC 52.46%, #5588DF 76.39%, #795CF5 100%)",
+                              }}
+                            >
+                              <div className="bg-white rounded-[20px] transition-all duration-300 ease-in-out flex items-start justify-start gap-5 px-5 py-4 md:px-6 md:py-5 h-full w-full">
+                                {/* Icon */}
+                                <div className="h-10 w-10">
+                                  {/* Check if icon is a string/StaticImageData or ReactNode */}
+                                  {typeof card.icon === "string" ||
+                                  (card.icon &&
+                                    typeof card.icon === "object" &&
+                                    "src" in card.icon) ? (
+                                    <Image
+                                      src={card.icon as string | StaticImageData}
+                                      alt={card.title}
+                                      width={40}
+                                      height={40}
+                                      className="h-10 w-10"
+                                    />
+                                  ) : (
+                                    <div className="h-10 w-10 flex items-center justify-center">
+                                      {card.icon as ReactNode}
+                                    </div>
+                                  )}
+                                </div>
+
+                                {/* Heading container with flex-1 to take equal space */}
+                                <div className="flex flex-col">
+                                  <h3 className="font-medium text-[var(--text-grey)] font-['Onest'] text-sm leading-[160%]">
+                                    {card.title}
+                                  </h3>
+
+                                  <p className="text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] ">
+                                    {card.description}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col items-start justify-start gap-6 w-full">
+                      <h3 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)]">
+                        Additional Support
+                      </h3>
+
+                      <div ref={supportCardsRef} className="w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 sm:gap-5 xl:gap-6">
+                          {supportCards.map((card, index) => (
+                            <div
+                              key={index}
+                              className="bg-white rounded-[20px] border border-[#E2E2E2] hover:shadow-md transition-all duration-300 ease-in-out hover:translate-y-[-2px] flex flex-col px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6 mb-6 xl:mb-0 h-full"
+                            >
+                              {/* Icon */}
+                              <div className="flex justify-between items-center w-full mb-6">
+                                {/* First Icon */}
+                                <div className="h-10 w-10">
+                                  {typeof card.icon === "string" ||
+                                  (card.icon &&
+                                    typeof card.icon === "object" &&
+                                    "src" in card.icon) ? (
+                                    <Image
+                                      src={card.icon as string | StaticImageData}
+                                      alt={card.title}
+                                      width={40}
+                                      height={40}
+                                      className="h-10 w-10"
+                                    />
+                                  ) : (
+                                    <div className="h-10 w-10 flex items-center justify-center">
+                                      {card.icon as ReactNode}
+                                    </div>
+                                  )}
+                                </div>
+
+                                {/* Second Icon (icon2) - only render if exists */}
+                                {card.icon2 && (
+                                  <div className="h-10 w-10">
+                                    {typeof card.icon2 === "string" ||
+                                    (card.icon2 &&
+                                      typeof card.icon2 === "object" &&
+                                      "src" in card.icon2) ? (
+                                      <Image
+                                        src={card.icon2 as string | StaticImageData}
+                                        alt={card.title}
+                                        width={40}
+                                        height={40}
+                                        className="h-10 w-10"
+                                      />
+                                    ) : (
+                                      <div className="h-10 w-10 flex items-center justify-center">
+                                        {card.icon2 as ReactNode}
+                                      </div>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+
+                              {/* Heading container with flex-1 to take equal space */}
+                              <div className="flex-1 mb-2">
+                                <h3 className="font-medium text-[var(--text-dark)] font-['Onest'] text-lg leading-[140%]">
+                                  {card.title}
+                                </h3>
+                              </div>
+
+                              <p className="text-sm leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
+                                {card.description}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div className="w-full">
+                    <ContactForm />
+                 </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -171,4 +270,4 @@ const contactHero: React.FC<contactHeroProps> = ({
   );
 };
 
-export default contactHero;
+export default ContactHero;
