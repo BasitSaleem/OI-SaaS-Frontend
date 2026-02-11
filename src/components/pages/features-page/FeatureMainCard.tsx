@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
@@ -86,12 +87,12 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
             </p>
 
             {buttonLabel && (
-              <a
+              <Link
                 href={buttonHref || "#"}
                 className="xl:text-base text-sm font-bold font-['Onest'] text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block"
               >
                 {buttonLabel} &gt;&gt;&gt;
-              </a>
+              </Link>
             )}
           </div>
         </div>

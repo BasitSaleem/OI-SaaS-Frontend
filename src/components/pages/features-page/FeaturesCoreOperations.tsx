@@ -4,34 +4,9 @@ import FeatureMainCard from "./FeatureMainCard";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 
-// Base features coming from backend (without class props)
-const features = [
-  {
-    title: "Point of Sale (POS)",
-    description: "Fast, reliable, and intuitive POS system for retail and quick sales.",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/purchases.webm",
-  },
-  {
-    title: "Products",
-    description: "Manage product catalogs, variants, pricing, and stock in one place.",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/products.webm",
-  },
-  {
-    title: "Purchases",
-    description: "Automate purchase orders, procurement and vendor management.",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/purchases.webm",
-  },
-  {
-    title: "Inventory Operations",
-    description: "Track stock levels, transfers, and adjustments with real-time accuracy.",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/inventory-operations.webm",
-  },
-  {
-    title: "Sales & Orders",
-    description: "Streamline your order processing, from quotation to fulfillment.",
-    videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/sale-order.webm",
-  },
-];
+import { CORE_OPERATIONS_DATA } from "@/constant/featuresPageData";
+
+const { features, heading, paragraph } = CORE_OPERATIONS_DATA;
 
 const layoutClasses = [
   // First card - 8 columns (full height)
@@ -82,14 +57,12 @@ const defaultLayout = {
 const FeaturesCoreOperations: React.FC = () => {
   return (
     <section className="wrapper features-core-opretions">
-      {/* Heading */}
       <div className="flex flex-col items-start justify-center lg:mt-[0px] md:mt-28 mt-20">
         <MainHeading className="lg:max-w-4xl xl:mb-10 lg:mb-6 mb-5">
-          Core Business Operations
+          {heading}
         </MainHeading>
         <Paragraph className="w-full max-w-[978px]">
-          Take full control of your day-to-day operations with tools designed to
-          keep your business running seamlessly
+          {paragraph}
         </Paragraph>
       </div>
 
