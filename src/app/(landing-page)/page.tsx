@@ -167,7 +167,7 @@ export default function Home() {
     <>
       <div className="font-onset">
         <HeroSection2
-          title="haider ali"
+          title="Take Control. Gain Clarity. Grow with Owners Inventory"
           description="Turn all assets to advantage. Our Owners Inventory platform assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
           video="/assets/Manual.mp4"
           variant="animation2"
