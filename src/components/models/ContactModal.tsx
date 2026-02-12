@@ -6,6 +6,7 @@ import Paragraph from "../pages/typography/Paragraph";
 import InputField from "../inputField/InputField";
 import SelectField from "../inputField/SelectField";
 import ButtonSm from "../button/ButtonSm";
+import PhoneInputField from "../inputField/PhoneInputField";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -13,6 +14,7 @@ interface ContactModalProps {
 }
 
 const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
+  const [value, setValue] = useState<string | undefined>()
   const [selected, setSelected] = useState("");
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
@@ -66,12 +68,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
               />
             </div>
             <div className="">
-              <InputField
-                required
-                label="Phone number"
-                type="number"
-                placeHolder="Enter your Phone number"
-              />
+               <PhoneInputField
+                        label="Phone Number"
+                        placeHolder="Enter your phone number"
+                        value={value}
+                        onChange={setValue}
+                        // required
+                    />
             </div>
             <div className="">
               <SelectField

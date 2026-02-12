@@ -22,14 +22,16 @@ export const CONTACT_CARDS = [
 export const CONTACT_SUPPORT_CARDS = [
   {
     icon: <PhilosophyIcons name="helpCenter" size={40} />,
-    icon2: "/assets/about-us/linking-arrow.svg",
-    title: "Help Center",
-    description: "Browse FAQ and guides",
+    icon2: "/assets/about-us/arrow-link.svg",
+    title: "Privacy Policy",
+    description: "Data Protection Guidelines",
+    url: "/privacy-policy",
   },
   {
     icon: <PhilosophyIcons name="documentation" size={40} />,
-    icon2: "/assets/about-us/linking-arrow.svg",
-    title: "Documentation",
-    description: "Technical specs and API",
+    icon2: "/assets/about-us/arrow-link.svg",
+    title: "Terms & Conditions",
+    description: "User Agreement Terms",
+    url: "/terms-and-conditions",
   },
 ];
