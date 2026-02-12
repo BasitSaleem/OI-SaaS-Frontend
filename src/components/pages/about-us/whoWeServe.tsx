@@ -27,7 +27,7 @@ export default function WhoWeServe({
     <section className="lg:mt-[100px] md:mt-28 mt-20 w-full overflow-hidden">
       <div className="wrapper">
         {/* Heading Section */}
-        <div className="grid grid-cols-12 gap-4 md:gap-6 lg:gap-8 xl:gap-12 items-start">
+        <div className="grid grid-cols-12 gap-4 md:gap-6 lg:gap-8 xl:gap-12 items-center">
           {/* Left Column - Heading & Paragraph */}
           <div className="col-span-12  xl:col-span-4">
             <div className="flex flex-col items-start justify-start">

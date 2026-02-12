@@ -1,6 +1,7 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
+import PhoneInputField from '@/components/inputField/PhoneInputField';
 import InputField from '@/components/inputField/InputField';
 import TextArea from '@/components/inputField/TextArea';
 import ButtonSm from '@/components/button/ButtonSm';
@@ -8,6 +9,7 @@ import { HiOutlineShieldCheck } from 'react-icons/hi';
 import Paragraph from '../typography/Paragraph';
 
 const ContactForm = () => {
+    const [value, setValue] = useState<string | undefined>()
     return (
         <div className="bg-white rounded-[40px] p-6 md:p-10 shadow-[0_10px_50px_rgba(0,0,0,0.08)] w-full max-w-[700px] mx-auto lg:ml-auto">
             <div className="text-center mb-10">
@@ -20,10 +22,25 @@ const ContactForm = () => {
             </div>
 
             <div className="space-y-6">
-                <div className="grid grid-cols-1  md:grid-cols-2 gap-x-6 gap-y-6">
+                <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 gap-y-6">
                     <InputField
-                        label="Full Name`"
-                        placeHolder="Enter your name"
+                        label="First Name"
+                        placeHolder="Enter your first name"
+                        // required
+                    />
+                    <InputField
+                        label="Last Name"
+                        placeHolder="Enter your last name"
+                        // required
+                    />
+                </div>
+
+                 <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 gap-y-6">
+                    <PhoneInputField
+                        label="Phone Number"
+                        placeHolder="Enter your phone number"
+                        value={value}
+                        onChange={setValue}
                         // required
                     />
                     <InputField

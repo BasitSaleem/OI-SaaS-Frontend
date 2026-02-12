@@ -1,0 +1,73 @@
+.input-field:focus-within {
+    border-color: #795CF5;
+}
+
+.text-area:focus-within {
+    border-color: #795CF5;
+}
+
+.PhoneInput {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 9px 16px;
+    border-radius: 14px;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.PhoneInput:focus-within {
+    border-color: #795CF5;
+}
+
+/* Hide the default arrow since we render our own in CustomCountrySelect */
+.PhoneInputCountrySelectArrow {
+    display: none;
+}
+
+/* Hide the default country select container's specific default styling if needed, 
+   but since we replaced the component, the structure is different. 
+   However, let's ensure the custom component aligns well. */
+.PhoneInputCountry {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.PhoneInputInput {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #231F20;
+    /* text-dark */
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0;
+}
+
+.PhoneInputInput::placeholder {
+    color: #9A9A9A;
+    opacity: 1;
+}
+
+/* Add custom scrollbar styling for the dropdown */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

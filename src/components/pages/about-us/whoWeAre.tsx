@@ -73,7 +73,7 @@ function WhoWeAre({
                   <div key={item.id} className="flex items-center gap-6">
                     <div className="flex flex-col items-start justify-center gap-2">
                       <CardHeading>{item.heading}</CardHeading>
-                      <CardDesc>{item.description}</CardDesc>
+                      <p className="text-sm leading-[170%] font-['onest'] font-normal text-[var(--text-grey)]">{item.description}</p>
                     </div>
 
                     {/* Add separator line between items except after the last one */}

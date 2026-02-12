@@ -19,6 +19,7 @@ interface CardItem {
   icon: string | StaticImageData | ReactNode;
   title: string;
   icon2?: string | StaticImageData | ReactNode;
+  url?: string;
   description: string;
 }
 
@@ -171,9 +172,9 @@ const ContactHero: React.FC<contactHeroProps> = ({
                                     {card.title}
                                   </h3>
 
-                                  <p className="text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] ">
+                                  <Link href="" className="text-sm md:text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] ">
                                     {card.description}
-                                  </p>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -218,7 +219,7 @@ const ContactHero: React.FC<contactHeroProps> = ({
 
                                 {/* Second Icon (icon2) - only render if exists */}
                                 {card.icon2 && (
-                                  <div className="h-10 w-10">
+                                  <Link href={card.url || "#"} className="h-12 w-12 backdrop-blur-sm rounded-full border-2 border-[rgba(255,255,255,0.05)] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
                                     {typeof card.icon2 === "string" ||
                                     (card.icon2 &&
                                       typeof card.icon2 === "object" &&
@@ -228,25 +229,25 @@ const ContactHero: React.FC<contactHeroProps> = ({
                                         alt={card.title}
                                         width={40}
                                         height={40}
-                                        className="h-10 w-10"
+                                        className="h-12 w-12"
                                       />
                                     ) : (
                                       <div className="h-10 w-10 flex items-center justify-center">
                                         {card.icon2 as ReactNode}
                                       </div>
                                     )}
-                                  </div>
+                                  </Link>
                                 )}
                               </div>
 
                               {/* Heading container with flex-1 to take equal space */}
                               <div className="flex-1 mb-2">
-                                <h3 className="font-medium text-[var(--text-dark)] font-['Onest'] text-lg leading-[140%]">
+                                <h3 className="font-medium text-[var(--text-dark)] whitespace-normal font-['Onest'] text-lg leading-[140%]">
                                   {card.title}
                                 </h3>
                               </div>
 
-                              <p className="text-sm leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
+                              <p className="text-sm leading-[170%] font-normal whitespace-normal font-['Onest'] text-[var(--text-grey)]">
                                 {card.description}
                               </p>
                             </div>
