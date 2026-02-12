@@ -17,7 +17,7 @@ import PhilosophyIcons from "@/components/icons/philosophyIcons";
 gsap.registerPlugin(ScrollTrigger);
 
 interface CardItem {
-  icon: string | StaticImageData | ReactNode;
+  icon?: string | StaticImageData | ReactNode;
   iconName?: string;
   title: string;
   icon2?: string | StaticImageData | ReactNode;
