@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ReactNode } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,11 +12,13 @@ import Image, { StaticImageData } from "next/image";
 import Paragraph from "../typography/Paragraph";
 import Link from "next/link";
 import ContactForm from "./contactForm";
+import PhilosophyIcons from "@/components/icons/philosophyIcons";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface CardItem {
   icon: string | StaticImageData | ReactNode;
+  iconName?: string;
   title: string;
   icon2?: string | StaticImageData | ReactNode;
   url?: string;
@@ -113,155 +115,100 @@ const ContactHero: React.FC<contactHeroProps> = ({
               {/* CONTENT ABOVE BACKGROUND LAYER */}
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-11 items-start">
-                <div className="w-full">
-                  <div className="flex flex-col items-start justify-start gap-8 w-full">
-                    <div className="flex flex-col items-start justify-start gap-6 w-full">
-                      <div ref={mainHeadingRef}>
-                        <h1 className="text-left xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest']">
-                          {title}
-                        </h1>
-                      </div>
-                      <div ref={paragraphRef}>
-                        <Paragraph className="text-left mx-auto">
-                          {description}
-                        </Paragraph>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col items-start justify-start gap-6 w-full">
-                      <h3 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)]">
-                        Connect with us
-                      </h3>
-
-                      <div ref={growthBoxRef} className="w-full">
-                        <div className="grid grid-cols-1 gap-4 sm:gap-5 w-full">
-                          {cards.map((card, index) => (
-                            <div
-                              key={index} // Key should be on the outer div
-                              className="p-[1px] rounded-[20px]"
-                              style={{
-                                background:
-                                  "linear-gradient(90deg, #1AD1B9 32.74%, #38ACCC 52.46%, #5588DF 76.39%, #795CF5 100%)",
-                              }}
-                            >
-                              <div className="bg-white rounded-[20px] transition-all duration-300 ease-in-out flex items-start justify-start gap-5 px-5 py-4 md:px-6 md:py-5 h-full w-full">
-                                {/* Icon */}
-                                <div className="h-10 w-10">
-                                  {/* Check if icon is a string/StaticImageData or ReactNode */}
-                                  {typeof card.icon === "string" ||
-                                  (card.icon &&
-                                    typeof card.icon === "object" &&
-                                    "src" in card.icon) ? (
-                                    <Image
-                                      src={card.icon as string | StaticImageData}
-                                      alt={card.title}
-                                      width={40}
-                                      height={40}
-                                      className="h-10 w-10"
-                                    />
-                                  ) : (
-                                    <div className="h-10 w-10 flex items-center justify-center">
-                                      {card.icon as ReactNode}
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* Heading container with flex-1 to take equal space */}
-                                <div className="flex flex-col">
-                                  <h3 className="font-medium text-[var(--text-grey)] font-['Onest'] text-sm leading-[160%]">
-                                    {card.title}
-                                  </h3>
-
-                                  <Link href="" className="text-sm md:text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] ">
-                                    {card.description}
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
+                  <div className="w-full">
+                    <div className="flex flex-col items-start justify-start gap-8 w-full">
+                      <div className="flex flex-col items-start justify-start gap-6 w-full">
+                        <div ref={mainHeadingRef}>
+                          <h1 className="text-left xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest']">
+                            {title}
+                          </h1>
+                        </div>
+                        <div ref={paragraphRef}>
+                          <Paragraph className="text-left mx-auto">
+                            {description}
+                          </Paragraph>
                         </div>
                       </div>
-                    </div>
 
-                    <div className="flex flex-col items-start justify-start gap-6 w-full">
-                      <h3 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)]">
-                        Additional Support
-                      </h3>
+                      <div className="flex flex-col items-start justify-start gap-6 w-full">
+                        <h3 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)]">
+                          Connect with us
+                        </h3>
 
-                      <div ref={supportCardsRef} className="w-full">
-                        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 sm:gap-5 xl:gap-6">
-                          {supportCards.map((card, index) => (
-                            <div
-                              key={index}
-                              className="bg-white rounded-[20px] border border-[#E2E2E2] hover:shadow-md transition-all duration-300 ease-in-out hover:translate-y-[-2px] flex flex-col px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6 mb-6 xl:mb-0 h-full"
-                            >
-                              {/* Icon */}
-                              <div className="flex justify-between items-center w-full mb-6">
-                                {/* First Icon */}
-                                <div className="h-10 w-10">
-                                  {typeof card.icon === "string" ||
-                                  (card.icon &&
-                                    typeof card.icon === "object" &&
-                                    "src" in card.icon) ? (
-                                    <Image
-                                      src={card.icon as string | StaticImageData}
-                                      alt={card.title}
-                                      width={40}
-                                      height={40}
-                                      className="h-10 w-10"
-                                    />
-                                  ) : (
-                                    <div className="h-10 w-10 flex items-center justify-center">
-                                      {card.icon as ReactNode}
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* Second Icon (icon2) - only render if exists */}
-                                {card.icon2 && (
-                                  <Link href={card.url || "#"} className="h-12 w-12 backdrop-blur-sm rounded-full border-2 border-[rgba(255,255,255,0.05)] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
-                                    {typeof card.icon2 === "string" ||
-                                    (card.icon2 &&
-                                      typeof card.icon2 === "object" &&
-                                      "src" in card.icon2) ? (
+                        <div ref={growthBoxRef} className="w-full">
+                          <div className="grid grid-cols-1 gap-4 sm:gap-5 w-full">
+                            {cards.map((card, index) => (
+                              <div
+                                key={index} // Key should be on the outer div
+                                className="p-[1px] rounded-[20px]"
+                                style={{
+                                  background:
+                                    "linear-gradient(90deg, #1AD1B9 32.74%, #38ACCC 52.46%, #5588DF 76.39%, #795CF5 100%)",
+                                }}
+                              >
+                                <div className="bg-white rounded-[20px] transition-all duration-300 ease-in-out flex items-start justify-start gap-5 px-5 py-4 md:px-6 md:py-5 h-full w-full">
+                                  {/* Icon */}
+                                  <div className="h-10 w-10">
+                                    {/* Check if icon is a string/StaticImageData or ReactNode */}
+                                    {typeof card.icon === "string" ||
+                                    (card.icon &&
+                                      typeof card.icon === "object" &&
+                                      "src" in card.icon) ? (
                                       <Image
-                                        src={card.icon2 as string | StaticImageData}
+                                        src={
+                                          card.icon as string | StaticImageData
+                                        }
                                         alt={card.title}
                                         width={40}
                                         height={40}
-                                        className="h-12 w-12"
+                                        className="h-10 w-10"
                                       />
                                     ) : (
                                       <div className="h-10 w-10 flex items-center justify-center">
-                                        {card.icon2 as ReactNode}
+                                        {card.icon as ReactNode}
                                       </div>
                                     )}
-                                  </Link>
-                                )}
-                              </div>
+                                  </div>
 
-                              {/* Heading container with flex-1 to take equal space */}
-                              <div className="flex-1 mb-2">
-                                <h3 className="font-medium text-[var(--text-dark)] whitespace-normal font-['Onest'] text-lg leading-[140%]">
-                                  {card.title}
-                                </h3>
-                              </div>
+                                  {/* Heading container with flex-1 to take equal space */}
+                                  <div className="flex flex-col">
+                                    <h3 className="font-medium text-[var(--text-grey)] font-['Onest'] text-sm leading-[160%]">
+                                      {card.title}
+                                    </h3>
 
-                              <p className="text-sm leading-[170%] font-normal whitespace-normal font-['Onest'] text-[var(--text-grey)]">
-                                {card.description}
-                              </p>
-                            </div>
+                                    <Link
+                                      href=""
+                                      className="text-sm md:text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] "
+                                    >
+                                      {card.description}
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start justify-start gap-6 w-full">
+                        <h3 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)]">
+                          Additional Support
+                        </h3>
+
+                        <div ref={supportCardsRef} className="w-full">
+                          <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 sm:gap-5 xl:gap-6">
+                          {supportCards.map((card, index) => (
+                            <SupportCard key={index} card={card} />
                           ))}
+                        </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                 <div className="w-full">
+                  <div className="w-full">
                     <ContactForm />
-                 </div>
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -270,5 +217,91 @@ const ContactHero: React.FC<contactHeroProps> = ({
     </div>
   );
 };
+
+const SupportCard = ({ card }: { card: CardItem }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="p-[1px] rounded-[20px] transition-all duration-300"
+      style={{
+        background: isHovered
+          ? "linear-gradient(90deg, #1AD1B9 32.74%, #38ACCC 52.46%, #5588DF 76.39%, #795CF5 100%)"
+          : "#E2E2E2",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="bg-white rounded-[20px] transition-all duration-300 ease-in-out flex flex-col px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6 mb-6 xl:mb-0 h-full">
+        {/* Icon */}
+        <div className="flex justify-between items-center w-full mb-6">
+          {/* First Icon */}
+          <div className="h-10 w-10">
+            {card.iconName ? (
+              <PhilosophyIcons
+                name={
+                  isHovered
+                    ? (`${card.iconName}Hover` as any)
+                    : (card.iconName as any)
+                }
+                size={40}
+              />
+            ) : typeof card.icon === "string" ||
+              (card.icon && typeof card.icon === "object" && "src" in card.icon) ? (
+              <Image
+                src={card.icon as string | StaticImageData}
+                alt={card.title}
+                width={40}
+                height={40}
+                className="h-10 w-10"
+              />
+            ) : (
+              <div className="h-10 w-10 flex items-center justify-center">
+                {card.icon as ReactNode}
+              </div>
+            )}
+          </div>
+
+          {/* Second Icon (icon2) - only render if exists */}
+          {card.icon2 && (
+            <Link
+              href={card.url || "#"}
+              className="h-12 w-12 backdrop-blur-sm rounded-full border-2 border-[rgba(255,255,255,0.05)] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]"
+            >
+              {typeof card.icon2 === "string" ||
+              (card.icon2 &&
+                typeof card.icon2 === "object" &&
+                "src" in card.icon2) ? (
+                <Image
+                  src={card.icon2 as string | StaticImageData}
+                  alt={card.title}
+                  width={40}
+                  height={40}
+                  className="h-12 w-12"
+                />
+              ) : (
+                <div className="h-10 w-10 flex items-center justify-center">
+                  {card.icon2 as ReactNode}
+                </div>
+              )}
+            </Link>
+          )}
+        </div>
+
+        {/* Heading container with flex-1 to take equal space */}
+        <div className="flex-1 mb-2">
+          <h3 className="font-medium text-[var(--text-dark)] whitespace-normal font-['Onest'] text-lg leading-[140%]">
+            {card.title}
+          </h3>
+        </div>
+
+        <p className="text-sm leading-[170%] font-normal whitespace-normal font-['Onest'] text-[var(--text-grey)]">
+          {card.description}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 
 export default ContactHero;

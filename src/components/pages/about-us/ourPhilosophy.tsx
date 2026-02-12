@@ -4,10 +4,12 @@
 import Image, { StaticImageData } from "next/image";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
-import { ReactNode } from "react"; // Add this import
+import { ReactNode, useState } from "react";
+import PhilosophyIcons from "@/components/icons/philosophyIcons";
 
 interface CardItem {
-  icon: string | StaticImageData | ReactNode; // Add ReactNode type
+  icon?: string | StaticImageData | ReactNode;
+  iconName?: string;
   title: string;
   description: string;
 }
@@ -40,53 +42,8 @@ export default function OurPhilosophy({
 
         {/* Cards Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 xl:gap-6">
-          {cards.map((card) => (
-            <div
-              key={card.title}
-              className="
-                          bg-white rounded-[20px]
-                          border border-[#E2E2E2] hover:shadow-md
-                          transition-all duration-300 ease-in-out hover:translate-y-[-2px]
-                          flex flex-col
-                          px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6
-                          mb-6 xl:mb-0
-                          h-full
-                        "
-            >
-              {/* Icon */}
-              <div className="flex-shrink-0 mb-6">
-                <div className="h-10 w-10">
-                  {/* Check if icon is a string/StaticImageData or ReactNode */}
-                  {typeof card.icon === "string" ||
-                  (card.icon &&
-                    typeof card.icon === "object" &&
-                    "src" in card.icon) ? (
-                    <Image
-                      src={card.icon as string | StaticImageData}
-                      alt={card.title}
-                      width={40}
-                      height={40}
-                      className="h-10 w-10"
-                    />
-                  ) : (
-                    <div className="h-10 w-10 flex items-center justify-center">
-                      {card.icon as ReactNode}
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* Heading container with flex-1 to take equal space */}
-              <div className="flex-1 mb-2">
-                <h3 className="font-medium text-[var(--text-dark)] font-['Onest'] text-lg leading-[140%]">
-                  {card.title}
-                </h3>
-              </div>
-
-              <p className="text-sm leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
-                {card.description}
-              </p>
-            </div>
+          {cards.map((card, index) => (
+            <PhilosophyCard key={index} card={card} />
           ))}
         </div>
 
@@ -107,3 +64,70 @@ export default function OurPhilosophy({
     </section>
   );
 }
+
+const PhilosophyCard = ({ card }: { card: CardItem }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="p-[1px] rounded-[20px] transition-all duration-300"
+      style={{
+        background: isHovered
+          ? "linear-gradient(90deg, #1AD1B9 32.74%, #38ACCC 52.46%, #5588DF 76.39%, #795CF5 100%)"
+          : "#E2E2E2",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div
+        className="
+          bg-white rounded-[20px]
+          transition-all duration-300 ease-in-out
+          flex flex-col
+          px-5 py-4 md:px-6 md:py-5 xl:px-[30px] xl:py-6
+          h-full
+        "
+      >
+        {/* Icon */}
+        <div className="flex-shrink-0 mb-6">
+          <div className="h-12 w-12 bg-[#F8F8F8] flex items-center justify-center rounded-xl">
+            {card.iconName ? (
+              <PhilosophyIcons
+                name={
+                  isHovered
+                    ? (`${card.iconName}Hover` as any)
+                    : (card.iconName as any)
+                }
+                size={24}
+              />
+            ) : typeof card.icon === "string" ||
+              (card.icon && typeof card.icon === "object" && "src" in card.icon) ? (
+              <Image
+                src={card.icon as string | StaticImageData}
+                alt={card.title}
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
+            ) : (
+              <div className="h-6 w-6 flex items-center justify-center">
+                {card.icon as ReactNode}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Heading container */}
+        <div className="flex-1 mb-2">
+          <h3 className="font-medium text-[var(--text-dark)] font-['Onest'] text-lg leading-[140%]">
+            {card.title}
+          </h3>
+        </div>
+
+        <p className="text-sm leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
+          {card.description}
+        </p>
+      </div>
+    </div>
+  );
+};
