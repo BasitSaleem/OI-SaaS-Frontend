@@ -9,22 +9,22 @@ export const ABOUT_HERO_CONTENT = {
 
 export const PHILOSOPHY_CARDS = [
   {
-    icon: <PhilosophyIcons name="complication" size={40} />,
+    iconName: "complication",
     title: "Power without complication",
     description: "Power without being complicated: Simple to operate, yet able to perform complicated tasks.",
   },
   {
-    icon: <PhilosophyIcons name="centralized" size={40} />,
+    iconName: "centralized",
     title: "Reliable & Centralized",
     description: "Reliable updates and centralized data can be trusted by businesses to make informed decisions.",
   },
   {
-    icon: <PhilosophyIcons name="scalabilityExpension" size={40} />,
+    iconName: "scalabilityExpension",
     title: "Scalability for Expansion",
     description: "Built to scale grow from a single store to multi-location operations with Owners Inventory.",
   },
   {
-    icon: <PhilosophyIcons name="ownerControl" size={40} />,
+    iconName: "ownerControl",
     title: "Owner Control",
     description: "Power squarely in the hands of the business owners: Flexibility to run operations at your own will.",
   },

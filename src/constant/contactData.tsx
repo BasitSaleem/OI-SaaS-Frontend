@@ -21,14 +21,14 @@ export const CONTACT_CARDS = [
 
 export const CONTACT_SUPPORT_CARDS = [
   {
-    icon: <PhilosophyIcons name="helpCenter" size={40} />,
+    iconName: "helpCenter",
     icon2: "/assets/about-us/arrow-link.svg",
     title: "Privacy Policy",
     description: "Data Protection Guidelines",
     url: "/privacy-policy",
   },
   {
-    icon: <PhilosophyIcons name="documentation" size={40} />,
+    iconName: "documentation",
     icon2: "/assets/about-us/arrow-link.svg",
     title: "Terms & Conditions",
     description: "User Agreement Terms",

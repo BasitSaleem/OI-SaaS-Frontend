@@ -102,12 +102,11 @@ const aboutHero: React.FC<aboutHeroProps> = ({
               {/* CONTENT ABOVE BACKGROUND LAYER */}
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
                 <div className="p-[1px] rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
-                  <Link
-                    href=""
+                  <h2
                     className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center"
                   >
                     About Owners Inventory
-                  </Link>
+                  </h2>
                 </div>
                 <div ref={mainHeadingRef}>
                   <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] xl:mb-8 lg:mb-6 mb-5">
