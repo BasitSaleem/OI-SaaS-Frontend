@@ -36,6 +36,9 @@ const NavItems = () => {
   const [selectedResourceKey, setSelectedResourceKey] =
     useState<string>("learning");
 
+    const [selectedCompanyKey, setSelectedCompanyKey] =
+    useState<string>("About");
+
   // Add new state for selected category
   const [selectedCategory, setSelectedCategory] = useState<string | null>(
     "sales-marketing",
@@ -476,7 +479,7 @@ const NavItems = () => {
           onToggle={() => toggle("company")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_#0000001A] h-auto overflow-hidden">
             <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent col-span-12">
               <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {companyItems.map((item) => (
@@ -484,6 +487,7 @@ const NavItems = () => {
                     key={item.title} 
                     href={`/company/${item.key.toLowerCase()}`}
                     className="flex items-center gap-2 px-4 py-4 border border-[#D9D9D9] rounded-xl hover:bg-gray-100 hover:border-[#795CF5]"
+                     onMouseEnter={() => setSelectedCompanyKey(item.key)}
                   >
                     <Image
                       src={item.icon}
@@ -491,9 +495,17 @@ const NavItems = () => {
                       width={16}
                       height={16}
                     />
-                    <span className="text-xs font-medium text-[#231F20] hover:font-semibold">
-                      {item.title}
-                    </span>
+                    <span
+                            className={`text-sm font-['Onest'] text-left text-[#231F20]
+                    ${
+                      selectedCompanyKey === item.key
+                        ? "font-bold"
+                        : "font-medium"
+                    }
+                    `}
+                          >
+                            {item.title}
+                          </span>
                   </Link>
                 ))}
               </div>
