@@ -190,12 +190,13 @@ const NavItems = () => {
               <div
                 className=" border-l max-h-[350px] min-h-[400px] border-[#D9D9D9] w-full pl-4  overflow-y-auto overflow-x-hidden 
   [&::-webkit-scrollbar]:w-2
-  [&::-webkit-scrollbar-track]:bg-transparent
+  [&::-webkit-scrollbar]:block
+  [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:bg-[#D9D9D9]
   [&::-webkit-scrollbar-thumb]:rounded-full
-  hover:[&::-webkit-scrollbar-thumb]:bg-[#B0B0B0]
+  [&::-webkit-scrollbar-thumb]:hover:bg-[#B0B0B0]
   [scrollbar-width:thin]
-  [scrollbar-color:#D9D9D9_transparent]"
+  [scrollbar-color:#D9D9D9_#f3f4f6]"
               >
                 <p className="mb-2 text-xs flex items-center gap-2 font-bold font-['Onest'] text-[#231F20]">
                   {

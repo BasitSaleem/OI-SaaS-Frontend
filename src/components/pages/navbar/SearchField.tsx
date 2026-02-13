@@ -32,7 +32,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
       : "w-full"; 
   return (
     <div id="searchDropdown" className={wrapperClasses}>
-      <div className={`${variant === "navbar" ? "py-4 px-7" : "py-4 px-0 lg:px-7"} relative`}>
+      <div className={`${variant === "navbar" ? "py-4 px-7" : "py-0 px-0 lg:px-7"} relative`}>
         <form action="/search" method="GET">
           <input
             ref={inputRef}
