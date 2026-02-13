@@ -20,6 +20,7 @@ import {
   FeatureList,
   featuresDetailsMap,
   featuresItems,
+  featureCategories,
 } from "./dropdownItems/Featureslist";
 import SearchField from "./SearchField";
 
@@ -47,11 +48,12 @@ export default function OffcanvasMenu({
   const [mounted, setMounted] = useState(false);
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
-const[searchQuery,setSearchQuery]=useState('')
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [openCatId, setOpenCatId] = useState<string | null>(null);
+  const [expandedItemKey, setExpandedItemKey] = useState<string | null>(null);
 
-  const toggleIndex = (index: number) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
+  const toggleItem = (key: string) => {
+    setExpandedItemKey((prev) => (prev === key ? null : key));
   };
 
   // Mount guard for portal
@@ -359,146 +361,292 @@ const[searchQuery,setSearchQuery]=useState('')
             </li>
           </ul>
 
+
           {/* Sub-panel */}
           {activePanel && (
             <div
               id={`${activePanel}-content`}
-              className="flex flex-col gap-2 animate-in fade-in zoom-in-95"
+              className="flex flex-col gap-2 animate-in fade-in zoom-in-95 max-h-[80vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
             >
-              <ul className="space-y-6">
-                {panelData[activePanel].links.map(
-                  (item: any, index: number) => {
-                    const isOpen = openIndex === index;
-                    const detailsMap = panelData[activePanel].children || {};
-                    const details =
-                      detailsMap[item.key] ?? detailsMap[item.title] ?? null;
-
-                    // works for string[] or object[]
-                    const hasDetails =
-                      (Array.isArray(details) && details.length > 0) ||
-                      (details &&
-                        typeof details === "object" &&
-                        Object.keys(details).length > 0);
-
+              {activePanel === "features" ? (
+                <div className="space-y-3">
+                  {featureCategories.map((cat) => {
+                    const isCatOpen = openCatId === cat.id;
                     return (
-                      <li key={item.key || item.title} className="w-full">
-                        <div
-                          className={`flex items-center border rounded-xl overflow-hidden hover:bg-gray-100 transition-colors ${
-                            isOpen
-                              ? "border-[#795CF5] bg-gray-100"
-                              : "border-[#D9D9D9]"
+                      <div
+                        key={cat.id}
+                        className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${
+                          isCatOpen ? "border-[#795CF5]" : "border-[#D9D9D9]"
+                        }`}
+                      >
+                        <button
+                          onClick={() =>
+                            setOpenCatId(isCatOpen ? null : cat.id)
+                          }
+                          className={`w-full flex items-center justify-between px-4 py-3 text-left transition-colors ${
+                            isCatOpen ? "bg-purple-50" : "hover:bg-gray-50"
                           }`}
                         >
-                          {/* 80% width clickable navigation link */}
-                          <Link
-                            href={`/features/${item.key.toLowerCase()}`}
-                            onClick={onClose} // closes the offcanvas when navigating
-                            className="w-[80%] flex items-center px-4 py-4"
-                          >
-                            <Image
-                              src={item.icon}
-                              alt={item.title}
-                              width={16}
-                              height={16}
-                              loading="lazy"
-                            />
-                            <span className="ml-2 text-sm font-[500] text-[#231F20] hover:font-semibold flex-1">
-                              {item.title}
-                            </span>
-                          </Link>
-
-                          {/* 20% width toggle button */}
-                          {hasDetails && (
-                            <button
-                              onClick={(e) => {
-                                e.preventDefault();
-                                toggleIndex(index);
-                              }}
-                              aria-expanded={isOpen}
-                              aria-controls={`${activePanel}-panel-${index}`}
-                              className="w-[20%]  flex items-center justify-center py-4 border-l border-[#D9D9D9] hover:bg-gray-100"
-                            >
-                              {isOpen ? (
-                                <img
-                                  src="/assets/header-dropdown-images/arrow-up-icon.svg"
-                                  alt="collapse"
-                                  className="h-3 w-3"
-                                />
-                              ) : (
-                                <img
-                                  src="/assets/header-dropdown-images/arrow-down-icon.svg"
-                                  alt="expand"
-                                  className="h-3 w-3"
-                                />
-                              )}
-                            </button>
-                          )}
-                        </div>
-
-                        {/* Dropdown details */}
-                        {hasDetails && (
-                          <div
-                            id={`${activePanel}-panel-${index}`}
-                            className={`overflow-hidden transition-all duration-200 ${
-                              isOpen
-                                ? "max-h-[1000px] opacity-100"
-                                : "max-h-0 opacity-0"
+                          <span
+                            className={`text-sm font-['Onest'] ${
+                              isCatOpen
+                                ? "font-bold text-[#795CF5]"
+                                : "font-semibold text-[#231F20]"
                             }`}
                           >
-                            <div className="px-0 pt-3 pb-2">
-                              {Array.isArray(details) ? (
-                                <ul className="pl-4 space-y-4">
-                                  {details.map((d: any, i: number) => {
-                                    if (typeof d === "string") {
+                            {cat.title}
+                          </span>
+                          <img
+                            src={
+                              isCatOpen
+                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
+                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                            }
+                            alt="toggle"
+                            className={`w-3 h-3 transition-transform duration-300 ${
+                              isCatOpen ? "rotate-0" : "-rotate-90"
+                            }`}
+                          />
+                        </button>
+
+                        <div
+                          className={`transition-all duration-300 ease-in-out ${
+                            isCatOpen
+                              ? "max-h-[1000px] opacity-100 visible"
+                              : "max-h-0 opacity-0 invisible"
+                          }`}
+                        >
+                          <ul className="p-2 space-y-2">
+                            {featuresItems
+                              .filter((item) => item.category === cat.id)
+                              .map((item) => {
+                                const itemKey = item.key || item.title;
+                                const isItemOpen = expandedItemKey === itemKey;
+                                const details = featuresDetailsMap[item.key] ?? null;
+                                const hasDetails =
+                                  (Array.isArray(details) &&
+                                    details.length > 0) ||
+                                  (details &&
+                                    typeof details === "object" &&
+                                    Object.keys(details).length > 0);
+
+                                return (
+                                  <li key={itemKey} className="w-full">
+                                    <div
+                                      className={`flex items-center border rounded-lg overflow-hidden transition-colors ${
+                                        isItemOpen
+                                          ? "border-[#795CF5] bg-gray-50"
+                                          : "border-transparent hover:bg-gray-50"
+                                      }`}
+                                    >
+                                      <Link
+                                        href={`/features/${item.key.toLowerCase()}`}
+                                        onClick={onClose}
+                                        className="w-[85%] flex items-center px-3 py-2.5"
+                                      >
+                                        <Image
+                                          src={item.icon}
+                                          alt={item.title}
+                                          width={16}
+                                          height={16}
+                                          className="flex-shrink-0"
+                                        />
+                                        <span className="ml-2.5 text-xs font-medium text-[#231F20]">
+                                          {item.title}
+                                        </span>
+                                      </Link>
+
+                                      {hasDetails && (
+                                        <button
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            toggleItem(itemKey);
+                                          }}
+                                          className="w-[15%] flex items-center justify-center p-2.5 border-l border-gray-100 hover:bg-gray-100"
+                                        >
+                                          <img
+                                            src={
+                                              isItemOpen
+                                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
+                                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                            }
+                                            alt="toggle"
+                                            className="w-2.5 h-2.5"
+                                          />
+                                        </button>
+                                      )}
+                                    </div>
+
+                                    {hasDetails && (
+                                      <div
+                                        className={`overflow-hidden transition-all duration-300 pl-4 ${
+                                          isItemOpen
+                                            ? "max-h-[500px] opacity-100 mt-2"
+                                            : "max-h-0 opacity-0 mt-0"
+                                        }`}
+                                      >
+                                        <ul className="space-y-1.5 border-l-2 border-gray-100 pl-3">
+                                          {(details as any[]).map((d, idx) => (
+                                            <li
+                                              key={idx}
+                                              className="text-[11px] text-gray-500 font-medium"
+                                            >
+                                              {d.title || d}
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    )}
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <ul className="space-y-6">
+                  {panelData[activePanel].links.map(
+                    (item: any, index: number) => {
+                      const itemKey = item.key || item.title;
+                      const isOpen = expandedItemKey === itemKey;
+                      const detailsMap = panelData[activePanel].children || {};
+                      const details =
+                        detailsMap[item.key] ?? detailsMap[item.title] ?? null;
+
+                      // works for string[] or object[]
+                      const hasDetails =
+                        (Array.isArray(details) && details.length > 0) ||
+                        (details &&
+                          typeof details === "object" &&
+                          Object.keys(details).length > 0);
+
+                      return (
+                        <li key={itemKey} className="w-full">
+                          <div
+                            className={`flex items-center border rounded-xl overflow-hidden hover:bg-gray-100 transition-colors ${
+                              isOpen
+                                ? "border-[#795CF5] bg-gray-100"
+                                : "border-[#D9D9D9]"
+                            }`}
+                          >
+                            {/* 80% width clickable navigation link */}
+                            <Link
+                              href={
+                                activePanel === "company"
+                                  ? `/company/${item.key.toLowerCase()}`
+                                  : activePanel === "industries"
+                                  ? `/industries/${item.key.toLowerCase()}`
+                                  : `/${activePanel}/${item.key.toLowerCase()}`
+                              }
+                              onClick={onClose} // closes the offcanvas when navigating
+                              className="w-[80%] flex items-center px-4 py-4"
+                            >
+                              <Image
+                                src={item.icon}
+                                alt={item.title}
+                                width={16}
+                                height={16}
+                                loading="lazy"
+                              />
+                              <span className="ml-2 text-sm font-[500] text-[#231F20] hover:font-semibold flex-1">
+                                {item.title}
+                              </span>
+                            </Link>
+
+                            {/* 20% width toggle button */}
+                            {hasDetails && (
+                              <button
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  toggleItem(itemKey);
+                                }}
+                                aria-expanded={isOpen}
+                                aria-controls={`${activePanel}-panel-${index}`}
+                                className="w-[20%]  flex items-center justify-center py-4 border-l border-[#D9D9D9] hover:bg-gray-100"
+                              >
+                                {isOpen ? (
+                                  <img
+                                    src="/assets/header-dropdown-images/arrow-up-icon.svg"
+                                    alt="collapse"
+                                    className="h-3 w-3"
+                                  />
+                                ) : (
+                                  <img
+                                    src="/assets/header-dropdown-images/arrow-down-icon.svg"
+                                    alt="expand"
+                                    className="h-3 w-3"
+                                  />
+                                )}
+                              </button>
+                            )}
+                          </div>
+
+                          {/* Dropdown details */}
+                          {hasDetails && (
+                            <div
+                              id={`${activePanel}-panel-${index}`}
+                              className={`overflow-hidden transition-all duration-200 ${
+                                isOpen
+                                  ? "max-h-[1000px] opacity-100"
+                                  : "max-h-0 opacity-0"
+                              }`}
+                            >
+                              <div className="px-0 pt-3 pb-2">
+                                {Array.isArray(details) ? (
+                                  <ul className="pl-4 space-y-4">
+                                    {details.map((d: any, i: number) => {
+                                      if (typeof d === "string") {
+                                        return (
+                                          <li
+                                            key={`${itemKey}-str-${d}-${i}`}
+                                            className="text-xs text-[#231F20] leading-relaxed"
+                                          >
+                                            {d}
+                                          </li>
+                                        );
+                                      }
+                                      const text =
+                                        d?.title ?? d?.label ?? String(d);
+                                      const href = d?.url || d?.href || "#";
                                       return (
                                         <li
-                                          key={`${
-                                            item.key || item.title
-                                          }-str-${d}-${i}`}
+                                          key={`${itemKey}-obj-${
+                                            d?.key || text
+                                          }-${i}`}
                                           className="text-xs text-[#231F20] leading-relaxed"
                                         >
-                                          {d}
+                                          {href !== "#" ? (
+                                            <Link
+                                              href={href}
+                                              className="hover:underline"
+                                              onClick={onClose}
+                                            >
+                                              {text}
+                                            </Link>
+                                          ) : (
+                                            text
+                                          )}
                                         </li>
                                       );
-                                    }
-                                    const text =
-                                      d?.title ?? d?.label ?? String(d);
-                                    const href = d?.url || d?.href || "#";
-                                    return (
-                                      <li
-                                        key={`${item.key || item.title}-obj-${
-                                          d?.key || text
-                                        }-${i}`}
-                                        className="text-xs text-[#231F20] leading-relaxed"
-                                      >
-                                        {href !== "#" ? (
-                                          <Link
-                                            href={href}
-                                            className="hover:underline"
-                                            onClick={onClose}
-                                          >
-                                            {text}
-                                          </Link>
-                                        ) : (
-                                          text
-                                        )}
-                                      </li>
-                                    );
-                                  })}
-                                </ul>
-                              ) : (
-                                <pre className="text-[11px] text-[#231F20]/80 bg-gray-50 p-2 rounded">
-                                  {JSON.stringify(details, null, 2)}
-                                </pre>
-                              )}
+                                    })}
+                                  </ul>
+                                ) : (
+                                  <pre className="text-[11px] text-[#231F20]/80 bg-gray-50 p-2 rounded">
+                                    {JSON.stringify(details, null, 2)}
+                                  </pre>
+                                )}
+                              </div>
                             </div>
-                          </div>
-                        )}
-                      </li>
-                    );
-                  }
-                )}
-              </ul>
+                          )}
+                        </li>
+                      );
+                    }
+                  )}
+                </ul>
+              )}
             </div>
           )}
         </nav>
