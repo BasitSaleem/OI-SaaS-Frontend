@@ -66,12 +66,21 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
         <div className="flex flex-col flex-1"> 
           {/* Media */}
           <div
-            className={`w-full ${paddingClass} pb-0 production-banner 
+            className={`w-full min-h-[230px] max-h-[230px] lg:max-h-full lg:min-h-auto ${paddingClass} pb-0 production-banner 
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
               rounded-tl-[20px] rounded-tr-[20px]`}
           >
-            {isTablet ? (
-              // On tablet: show video
+            {/* Show image on tablet if provided, otherwise show video on other screens */}
+            {isTablet && imageSrc ? (
+              <Image
+                src={imageSrc}
+                alt={title}
+                width={743}
+                height={460}
+                className="w-full h-full object-contain overflow-hidden bg-transparent"
+                priority
+              />
+            ) : videoSrc ? (
               <video
                 className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
                 autoPlay
@@ -79,18 +88,17 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
                 loop
                 playsInline
               >
-                <source src={videoSrc} type="video/webm" />
+                <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
-              // On other devices: show image if available
               imageSrc && (
                 <Image
                   src={imageSrc}
                   alt={title}
                   width={743}
                   height={460}
-                  className="w-full h-full object-contain overflow-hidden bg-transparent"
+                  className={`w-full h-full object-contain overflow-hidden bg-transparent ${mediaClassName}`}
                   priority
                 />
               )
@@ -99,7 +107,7 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
 
           {/* Text Content */}
           <div className="mt-5 flex flex-col flex-1"> 
-            <CardHeading className="mb-4 min-h-[70px] lg:min-h-[70px] flex self-stretch">
+            <CardHeading className="mb-4 min-h-[40px] lg:min-h-[40px] flex self-stretch">
               {displayedTitle}
             </CardHeading>
 

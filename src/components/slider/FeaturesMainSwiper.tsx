@@ -55,11 +55,11 @@ export default function FeaturesMainSwiper<T>({
       }
       breakpoints={{
         768: {
-          slidesPerView: 2,
+          slidesPerView: Math.min(2, slides.length),
           slidesPerGroup: 1
         },
-        1024: {
-          slidesPerView: 3,
+        1280: {
+          slidesPerView: Math.min(3, slides.length),
           slidesPerGroup: 1
         },
       }}
@@ -67,7 +67,7 @@ export default function FeaturesMainSwiper<T>({
       {...swiperOptions}
     >
       {slides.map((slide, i) => (
-        <SwiperSlide key={i} className="h-auto lg:pb-5 pb-[60px]">
+        <SwiperSlide key={i} className="h-auto xl:pb-5 pb-[60px]">
           {renderSlide(slide, i)}
         </SwiperSlide>
       ))}
