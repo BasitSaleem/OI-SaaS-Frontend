@@ -1,7 +1,8 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
+import Image from "next/image";
 
 interface FeatureMainCardProps {
   title: string;
@@ -34,10 +35,24 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
   truncateTitle = false,
   maxTitleLength = 50,
 }) => {
+  const [isTablet, setIsTablet] = useState(false);
+
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    checkTablet();
+    window.addEventListener("resize", checkTablet);
+    return () => window.removeEventListener("resize", checkTablet);
+  }, []);
+
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
       ? title.slice(0, maxTitleLength) + "..."
       : title;
+
   return (
     <div
       className={`p-[1px] rounded-[30px] features-core-opretions__cards 
@@ -52,13 +67,16 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
               rounded-tl-[20px] rounded-tr-[20px]`}
           >
-            {imageSrc ? (
-              <img
+            {isTablet && imageSrc ? (
+              <Image
                 src={imageSrc}
                 alt={title}
-                className={`w-full rounded-tl-[20px] rounded-tr-[20px] ${mediaClassName}`}
+                width={743}
+                height={460}
+                className="w-full h-full object-contain overflow-hidden bg-transparent"
+                priority
               />
-            ) : videoSrc ? (
+            ) : (
               <video
                 className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
                 autoPlay
@@ -69,7 +87,8 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-            ) : null}
+            )}
+            
           </div>
 
           {/* Text */}

@@ -71,6 +71,8 @@ export default function FeaturesTabSection() {
     }
   }, [activeTab, isAutoPlaying, features]);
 
+
+  
   // Handle video progress and ended state (for non-tablet screens)
   // Handle tablet auto-advance with 5-second timer
   useEffect(() => {
@@ -285,7 +287,7 @@ export default function FeaturesTabSection() {
                     alt={feature.title}
                     width={743}
                     height={460}
-                    className="w-full h-full object-contain scale-[1.3] overflow-hidden bg-transparent rounded-3xl"
+                    className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
                     priority={index === 0}
                   />
                 ) : (
