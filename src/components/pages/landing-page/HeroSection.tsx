@@ -1,46 +1,61 @@
-'use client';
+"use client";
 
-import { ReactNode, useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ReactNode, useEffect, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import ButtonSm from '@/components/button/ButtonSm';
-import InputField from '@/components/form-fields/InputField';
-import ButtonLg from '@/components/button/ButtonLg';
-import { useHeroAnimation } from '@/hooks/useHeroAnimation';
-import { useHeroAnimation2 } from '@/hooks/useHeroAnimation2';
-import { useHeaderAnimation } from '@/hooks/useHeaderAnimation';
+import ButtonSm from "@/components/button/ButtonSm";
+import InputField from "@/components/form-fields/InputField";
+import ButtonLg from "@/components/button/ButtonLg";
+import { useHeroAnimation } from "@/hooks/useHeroAnimation";
+import { useHeroAnimation2 } from "@/hooks/useHeroAnimation2";
+import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface HeroSectionProps {
   title?: string;
-  description?: string; 
-  video?: string; 
+  description?: string;
+  video?: string;
+  image?: string;
   showButtons?: boolean;
-  showSubscribe?: boolean;  
-  children?: ReactNode; 
+  showSubscribe?: boolean;
+  children?: ReactNode;
   heroHeight?: string;
   heroOverflow?: string;
-   variant?: 'animation1' | 'animation2' | 'none';
+  variant?: "animation1" | "animation2" | "none";
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  title = 'Grow Faster with Smarter Inventory Tools',
+  title = "Grow Faster with Smarter Inventory Tools",
   description,
   video,
+  image,
   showButtons = true,
   showSubscribe = false,
-  heroHeight= "lg:h-[920px]",
-  heroOverflow= "overflow-y-hidden",
+  heroHeight = "lg:h-[920px]",
+  heroOverflow = "overflow-y-hidden",
   children,
-  variant = 'animation1',
+  variant = "animation1",
 }) => {
- 
-   useHeaderAnimation();
-  if (variant === 'animation1') {
+  const [isTablet, setIsTablet] = useState(false);
+
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    checkTablet();
+    window.addEventListener("resize", checkTablet);
+    return () => window.removeEventListener("resize", checkTablet);
+  }, []);
+
+  useHeaderAnimation();
+  if (variant === "animation1") {
     useHeroAnimation();
-  } else if (variant === 'animation2') {
+  } else if (variant === "animation2") {
     useHeroAnimation2();
   }
   return (
@@ -66,47 +81,68 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             className={`owner-inventory-hero__bottom relative flex flex-col items-center justify-center w-full ${heroHeight} ${heroOverflow} pt-10 pb-6 md:py-[76px] lg:py-0 px-6 md:px-[100px] bg-[#F3F4F6] rounded-b-[40px] rounded-tr-[40px] lg:rounded-tl-[40px]  backdrop-blur-[374px]`}
             style={{
               backgroundImage:
-                'linear-gradient(180deg, #F3F4F6 0%, transparent 40%), linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%, rgba(121, 92, 245, 0.3) 100%)',
+                "linear-gradient(180deg, #F3F4F6 0%, transparent 40%), linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%, rgba(121, 92, 245, 0.3) 100%)",
             }}
           >
             {/* Heading */}
             <div className="owner-inventory-hero__content flex flex-col items-center justify-center w-full">
               <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
-                 {title}
+                {title}
               </h1>
 
-              {description && !showButtons &&(
-                 <p className="font-['Onest'] text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-16">
+              {description && !showButtons && (
+                <p className="font-['Onest'] text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-16">
                   {description}
                 </p>
               )}
 
-              {showButtons &&(
+              {showButtons && (
                 <div className="inline-flex p-1 lg:p-1.5 mt-10 xl:mt-20 rounded-full bg-white owner-inventory-hero__content--buttons">
-                <ButtonSm url="#" text="Book Free Demo" bgColor="[#1AD1B9]" textColor="white" isBorder />
-                <ButtonSm url="#" text="View Pricing Plans" bgColor="white" textColor="[#231F20]" isBorder={false} />
-              </div>
+                  <ButtonSm
+                    url="#"
+                    text="Book Free Demo"
+                    bgColor="[#1AD1B9]"
+                    textColor="white"
+                    isBorder
+                  />
+                  <ButtonSm
+                    url="#"
+                    text="View Pricing Plans"
+                    bgColor="white"
+                    textColor="[#231F20]"
+                    isBorder={false}
+                  />
+                </div>
               )}
-               {showSubscribe && (
+              {showSubscribe && (
                 <div className="mt-10 relative xl:mt-20 w-full max-w-xl mx-auto">
                   <div className="flex  items-center bg-white sm:px-2 rounded-full overflow-hidden shadow-sm">
                     <InputField
-                     placeholder="Enter email" type="email" rounded="left" py='py-3 sm:py-4' px='px-4 sm:px-8'/>
-                     <div className='absolute bottom-[-45px] left-0 w-full sm:relative sm:bottom-0 sm:w-auto'>
-
-                   <ButtonSm url="#" text="Subscribe" bgColor="[#795CF5]" textColor="white" isBorder/>
-                     </div>
+                      placeholder="Enter email"
+                      type="email"
+                      rounded="left"
+                      py="py-3 sm:py-4"
+                      px="px-4 sm:px-8"
+                    />
+                    <div className="absolute bottom-[-45px] left-0 w-full sm:relative sm:bottom-0 sm:w-auto">
+                      <ButtonSm
+                        url="#"
+                        text="Subscribe"
+                        bgColor="[#795CF5]"
+                        textColor="white"
+                        isBorder
+                      />
+                    </div>
                   </div>
                 </div>
               )}
-                {/* Extra flexibility */}
+              {/* Extra flexibility */}
               {children}
-              
             </div>
 
             {/* Video */}
             <div className="owner-inventory-hero__video w-full mt-10 md:mt-10 xl:mt-10 sm:max-w-lg md:max-w-xl lg:max-w-4xl">
-              <video
+              {/* <video
                 className="w-full object-cover rounded-3xl lazy-video feature-video"
                 autoPlay
                 muted
@@ -115,7 +151,38 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+
+              {!video && image ? (
+                <Image
+                  src={image}
+                  alt={title}
+                  width={743}
+                  height={460}
+                  className="w-full h-full object-contain overflow-hidden bg-transparent"
+                  priority
+                />
+              ) : isTablet && image ? (
+                <Image
+                  src={image}
+                  alt={title}
+                  width={743}
+                  height={460}
+                  className="w-full h-full object-contain overflow-hidden bg-transparent"
+                  priority
+                />
+              ) : video ? (
+                <video
+                  className="w-full object-cover rounded-3xl lazy-video feature-video"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={video} type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : null}
             </div>
           </div>
         </div>

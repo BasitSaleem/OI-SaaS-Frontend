@@ -47,8 +47,8 @@ const Page = () => {
       </div>
 
       <SellerClubSection
-        mediaType="video"
         mediaSrc={UTILITIES_DATA.mediaSrc}
+        imageSrc={UTILITIES_DATA.imageSrc}
         heading={UTILITIES_DATA.heading}
         description={UTILITIES_DATA.description}
         buttonText={UTILITIES_DATA.buttonText}

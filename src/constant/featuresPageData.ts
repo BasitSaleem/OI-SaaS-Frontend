@@ -2,6 +2,7 @@ export const MAIN_FEATURES_HERO = {
     title: "Explore the Tools Behind Your Success",
     description: "Owners Inventory brings together everything you need to manage, track, and grow your business in one unified platform. Explore our powerful features, categorized to help you run operations smoothly, manage people efficiently, and scale with confidence.",
     video: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/main-feature.webm",
+    image: "/assets/features-page/features-hero-banner.webp"
 };
 
 export const CORE_OPERATIONS_DATA = {
@@ -128,6 +129,7 @@ export const FEATURE_CARDS_DATA = [
 
 export const UTILITIES_DATA = {
     mediaSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/general-tools.webm",
+    imageSrc: "/assets/features-page/featurescard-banners/utilities-banner.webp",
     heading: "Utilities & General Tools",
     description: "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring your business runs efficiently at every level.",
     buttonText: "Book a Free Demo",
