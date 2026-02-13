@@ -30,6 +30,7 @@ const Page = () => {
         title={MAIN_FEATURES_HERO.title}
         description={MAIN_FEATURES_HERO.description}
         video={MAIN_FEATURES_HERO.video}
+        image={MAIN_FEATURES_HERO.image}
         showButtons={false}
       />
 
