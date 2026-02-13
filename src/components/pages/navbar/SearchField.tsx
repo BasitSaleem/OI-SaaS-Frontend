@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
 type SearchFieldProps = {
-  searchOpen?: boolean; // only relevant for navbar variant
+  searchOpen?: boolean; 
   setSearchOpen?: React.Dispatch<React.SetStateAction<boolean>>;
   searchQuery: string;
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;

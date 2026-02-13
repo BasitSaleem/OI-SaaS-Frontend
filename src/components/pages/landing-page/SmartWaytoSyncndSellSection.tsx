@@ -58,8 +58,8 @@ function SmartWaytoSyncndSellSection() {
               playsInline
             >
               <source
-                src="https://d1ybi42hallhsh.cloudfront.net/videos/Road+Map+V2.mp4"
-                type="video/mp4"
+                src="/assets/home-page-images/animations/trolly-anim.webm"
+                type="video/webm"
               />
               Your browser does not support the video tag.
             </video>
