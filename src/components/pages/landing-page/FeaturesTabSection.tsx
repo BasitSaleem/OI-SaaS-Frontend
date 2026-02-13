@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import MainHeading from "../typography/MainHeading";
 import { LANDING_FEATURES } from "@/constant/landingPageData";
+import Image from "next/image";
 
 
 type VideoRefs = {
@@ -17,8 +18,21 @@ export default function FeaturesTabSection() {
   const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [isTablet, setIsTablet] = useState(false);
 
   const features = LANDING_FEATURES;
+
+
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+    
+    checkTablet();
+    window.addEventListener('resize', checkTablet);
+    return () => window.removeEventListener('resize', checkTablet);
+  }, []);
 
   // Preload only active video
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
@@ -57,13 +71,15 @@ export default function FeaturesTabSection() {
     }
   }, [activeTab, isAutoPlaying, features]);
 
-  // Handle video progress and ended state
+  // Handle video progress and ended state (for non-tablet screens)
+  // Handle tablet auto-advance with 5-second timer
   useEffect(() => {
     let animationFrameId: number;
+    let tabletInterval: NodeJS.Timeout;
     const activeFeature = features.find(f => f.tabIndex === activeTab);
     
     const handleVideoEnded = () => {
-      if (isAutoPlaying) {
+      if (isAutoPlaying && !isTablet) {
         setTimeout(() => {
           moveToNextTab();
         }, 300);
@@ -71,7 +87,7 @@ export default function FeaturesTabSection() {
     };
 
     const updateProgress = () => {
-      if (activeFeature) {
+      if (activeFeature && !isTablet) {
         const desktopVideoId = `${activeFeature.id}-video`;
         const mobileVideoId = `${activeFeature.id}-mobile-video`;
         const desktopVideo = videoRefs.current[desktopVideoId];
@@ -90,7 +106,41 @@ export default function FeaturesTabSection() {
       animationFrameId = requestAnimationFrame(updateProgress);
     };
 
-    if (activeFeature) {
+    // Tablet-specific progress and auto-advance
+    if (isTablet && activeFeature && isAutoPlaying) {
+      const tabletProgressKey = `${activeFeature.id}-tablet`;
+      let progress = 0;
+      const duration = 5000; // 5 seconds
+      const intervalTime = 50; // Update every 50ms for smooth animation
+      const increment = (intervalTime / duration) * 100;
+
+      setVideoProgress((prev) => ({
+        ...prev,
+        [tabletProgressKey]: 0,
+      }));
+
+      tabletInterval = setInterval(() => {
+        progress += increment;
+        if (progress >= 100) {
+          progress = 100;
+          setVideoProgress((prev) => ({
+            ...prev,
+            [tabletProgressKey]: progress,
+          }));
+          clearInterval(tabletInterval);
+          setTimeout(() => {
+            moveToNextTab();
+          }, 100);
+        } else {
+          setVideoProgress((prev) => ({
+            ...prev,
+            [tabletProgressKey]: progress,
+          }));
+        }
+      }, intervalTime);
+    }
+
+    if (activeFeature && !isTablet) {
       const desktopVideo = videoRefs.current[`${activeFeature.id}-video`];
       const mobileVideo = videoRefs.current[`${activeFeature.id}-mobile-video`];
 
@@ -106,8 +156,11 @@ export default function FeaturesTabSection() {
       };
     }
 
-    return () => {};
-  }, [activeTab, isAutoPlaying, features, moveToNextTab]);
+    return () => {
+      if (tabletInterval) clearInterval(tabletInterval);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
+  }, [activeTab, isAutoPlaying, features, moveToNextTab, isTablet]);
 
   // Handle tab click
   const handleTabClick = useCallback((tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
@@ -219,27 +272,38 @@ export default function FeaturesTabSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-32">
           {/* IMAGE SECTION (Only for md and up) */}
           <div className="hidden md:flex flex-col justify-center items-center gap-3">
-            {features.map((feature) => (
+            {features.map((feature, index) => (
               <div
                 key={feature.id}
                 className={`w-full max-w-[743px] bg-transparent overflow-hidden rounded-3xl h-full max-h-[460px] p-1 ${
                   activeTab === feature.tabIndex ? "" : "hidden"
                 }`}
               >
-                <video
-                  ref={(el) => {
-                    videoRefs.current[`${feature.id}-video`] = el;
-                  }}
-                  className="w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl lazy-video feature-video"
-                  autoPlay={activeTab === feature.tabIndex}
-                  muted
-                  loop={false}
-                  playsInline
-                  preload="metadata"
-                >
-                  <source src={feature.videoSrc} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                {isTablet ? (
+                  <Image
+                    src={feature.imageSrc}
+                    alt={feature.title}
+                    width={743}
+                    height={460}
+                    className="w-full h-full object-contain scale-[1.3] overflow-hidden bg-transparent rounded-3xl"
+                    priority={index === 0}
+                  />
+                ) : (
+                  <video
+                    ref={(el) => {
+                      videoRefs.current[`${feature.id}-video`] = el;
+                    }}
+                    className="w-full h-full object-cover overflow-hidden bg-transparent rounded-3xl lazy-video feature-video"
+                    autoPlay={activeTab === feature.tabIndex}
+                    muted
+                    loop={false}
+                    playsInline
+                    preload="metadata"
+                  >
+                    <source src={feature.videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
               </div>
             ))}
           </div>
@@ -286,8 +350,12 @@ export default function FeaturesTabSection() {
                   <div
                     className="h-full bg-[#F3F4F6]"
                     style={{
-                      width: `${videoProgress[`${feature.id}-video`] || 
-                              videoProgress[`${feature.id}-mobile-video`] || 0}%`,
+                      width: `${
+                        isTablet 
+                          ? videoProgress[`${feature.id}-tablet`] || 0
+                          : videoProgress[`${feature.id}-video`] || 
+                            videoProgress[`${feature.id}-mobile-video`] || 0
+                      }%`,
                     }}
                   />
                 </div>
