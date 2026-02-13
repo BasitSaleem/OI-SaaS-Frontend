@@ -63,7 +63,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
         <div className="flex flex-col ">
           {/* Media */}
           <div
-            className={`w-full ${paddingClass} pb-0  production-banner 
+            className={`w-full ${paddingClass} pb-0 min-h-[220px] lg:min-h-[350px] xl:min-h-auto overflow-hidden flex items-center production-banner 
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
               rounded-tl-[20px] rounded-tr-[20px]`}
           >

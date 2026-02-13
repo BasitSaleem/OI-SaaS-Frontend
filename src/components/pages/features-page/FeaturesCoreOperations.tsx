@@ -35,14 +35,14 @@ const layoutClasses = [
   // Fourth card - 4 columns (same height as first card)
   {
     className: "col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-5 xl:row-start-3 xl:row-span-1",
-    mediaClassName: "h-[220px] lg:h-[310px] xl:h-[204px]",
+    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[204px]",
     heightClass: "xl:h-fit",
   },
 
   // Fifth card - 4 columns (tallest height)
   {
     className: "col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-9 xl:row-start-2 xl:row-span-2",
-    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[340px] scale-x-[1.05] scale-y-110 md:scale-110 lg:scale-x-135 lg:scale-y-110 xl:scale-100",
+    mediaClassName: "h-[220px] lg:h-[330px] xl:h-[330px] scale-x-[1.05] scale-y-110 md:scale-110 lg:scale-x-135 lg:scale-y-110 xl:scale-100",
     paddingClass: "px-[24px] pt-4 xl:ps-[24px] pe-0",
     heightClass: "xl:h-fit",
   },

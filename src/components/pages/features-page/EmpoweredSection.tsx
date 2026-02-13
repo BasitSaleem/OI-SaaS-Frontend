@@ -13,6 +13,7 @@ interface EmpoweredSectionProps {
     title: string;
     description: string;
     videoSrc: string;
+    imageSrc?: string;
     buttonHref?: string;
     className?: string;
     mediaClassName?: string;
@@ -49,6 +50,7 @@ const EmpoweredSection: React.FC<EmpoweredSectionProps> = ({
               title={card.title}
               description={card.description}
               videoSrc={card.videoSrc}
+              imageSrc={card.imageSrc}
               className={card.className}
               mediaClassName="w-full scale-x-110  h-[220px] rounded-tl-[20px] rounded-tr-[20px] "
               heightClass="h-full"

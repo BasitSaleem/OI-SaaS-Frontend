@@ -1,5 +1,6 @@
-import FeatureCard from "./FeatureCard";
+
 import { SMART_INTEGRATION_DATA } from "@/constant/featuresPageData";
+import FeatureCateCard from "./FeatureCateCard";
 
 const { features, heading, paragraph } = SMART_INTEGRATION_DATA;
 
@@ -45,11 +46,12 @@ const SmartIntegration: React.FC = () => {
           {features.map((feature, index) => {
             const pattern = classPatterns[index % classPatterns.length]; 
             return (
-              <FeatureCard
+              <FeatureCateCard
                 key={index}
                 title={feature.title}
                 description={feature.description}
                 videoSrc={feature.videoSrc}
+                imageSrc={feature.imageSrc}
                 className={`${pattern.colClass} p-[1px] rounded-[30px] flex`}
                 paddingClass="p-4"
                 mediaClassName="lg:h-auto h-[280px]"

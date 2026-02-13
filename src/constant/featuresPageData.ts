@@ -63,14 +63,14 @@ export const TEAM_FEATURES = [
         title: "Human Resource (HR)",
         description: "Simplify attendance, shifts, payroll, and employee records in one system.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/humanresources.webm",
-        imageSrc: "/assets/features-page/featurescard-banners/facilities-banner.webp",
+        imageSrc: "/assets/features-page/featurescard-banners/hr-banner.webp",
         buttonHref: "/features/hr",
     },
     {
         title: "Facilities",
         description: "Track and manage workspaces, business assets, and internal resources effectively.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/facilities.webm",
-        imageSrc: "/assets/features-page/featurescard-banners/hr-banner.webp",
+        imageSrc: "/assets/features-page/featurescard-banners/facilities-banner.webp",
         buttonHref: "/features/facilities",
     },
 ];
@@ -144,6 +144,7 @@ export const SMART_INTEGRATION_DATA = {
                 "Manage production planning, bills of materials, and assembly workflows with ease.",
             videoSrc:
                 "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/manufacturing.webm",
+             imageSrc: "/assets/features-page/featurescard-banners/manufacturing-banner.webp",
             buttonHref: "#",
         },
         {
@@ -152,6 +153,7 @@ export const SMART_INTEGRATION_DATA = {
                 "Connect Owners Inventory with third-party apps, marketplaces, and payment gateways.",
             videoSrc:
                 "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/integration.webm",
+                 imageSrc: "/assets/features-page/featurescard-banners/integration-banner.webp",
             buttonHref: "/features/integrations",
         },
     ],
@@ -162,18 +164,21 @@ export const FINANCE_FEATURES = [
         title: "Accounting & Financials",
         description: "Integrated invoicing, expense tracking, and tax compliance made simple.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/acounting%26financial.webm",
+        imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
         buttonHref: "/features/finance",
     },
-    {
-        title: "Advanced Reports",
-        description: "Unlock in-depth analytics, trends, and forecasting for smarter decision-making.",
-        videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/advance-report.webm",
-        buttonHref: "/features/advancereports",
-    },
+    // {
+    //     title: "Advanced Reports",
+    //     description: "Unlock in-depth analytics, trends, and forecasting for smarter decision-making.",
+    //     videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/advance-report.webm",
+    //     imageSrc: "/assets/features-page/reports-page/features-section/comprehensive-reporting.webp",
+    //     buttonHref: "/features/advancereports",
+    // },
     {
         title: "Standard Reports",
         description: "Get instant insights into sales, purchases, and stock performance.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/standards-reports.webm",
+        imageSrc: "/assets/features-page/featurescard-banners/reports-banner.webp",
         buttonHref: "/features/reports",
     },
 ];
