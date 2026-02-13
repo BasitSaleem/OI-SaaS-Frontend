@@ -2,8 +2,9 @@
 
 import CustomSwiper from "@/components/slider/CustomSwiper";
 import React from "react";
-import FeatureCard from "./FeatureCard";
+
 import FeaturesMainSwiper from "@/components/slider/FeaturesMainSwiper";
+import FeatureCateCard from "./FeatureCateCard";
 
 interface EmpoweredSectionProps {
   title: string;
@@ -43,7 +44,7 @@ const EmpoweredSection: React.FC<EmpoweredSectionProps> = ({
         <FeaturesMainSwiper
           slides={features}
           renderSlide={(card, i) => (
-            <FeatureCard
+            <FeatureCateCard
               key={i}
               title={card.title}
               description={card.description}

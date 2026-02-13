@@ -1,0 +1,129 @@
+
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import CardHeading from "../typography/CardHeading";
+import CardDesc from "../typography/CardDesc";
+import Image from "next/image";
+
+interface FeatureCateCardProps {
+  title: string;
+  description?: string;
+  videoSrc?: string;
+  imageSrc?: string;
+  authorName?: string;
+  className?: string;
+  mediaClassName?: string;
+  paddingClass?: string;
+  buttonLabel?: string;
+  buttonHref?: string;
+  heightClass?: string;
+  truncateTitle?: boolean;
+  maxTitleLength?: number;
+}
+
+const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
+  title,
+  description = "",
+  videoSrc,
+  imageSrc,
+  authorName = "",
+  className = "",
+  mediaClassName = "",
+  paddingClass = "px-[24px] pt-4",
+  buttonLabel,
+  buttonHref,
+  heightClass = "h-full",
+  truncateTitle = false,
+  maxTitleLength = 50,
+}) => {
+
+   const [isTablet, setIsTablet] = useState(false);
+  
+    // Detect tablet screen size
+    useEffect(() => {
+      const checkTablet = () => {
+        setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+      };
+  
+      checkTablet();
+      window.addEventListener("resize", checkTablet);
+      return () => window.removeEventListener("resize", checkTablet);
+    }, []);
+  
+
+  const displayedTitle =
+    truncateTitle && title.length > maxTitleLength
+      ? title.slice(0, maxTitleLength) + "..."
+      : title;
+  
+  return (
+    <div
+      className={`p-[1px] rounded-[30px] features-core-opretions__cards 
+        bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] 
+        ${heightClass} ${className} h-full`} 
+    >
+      <div className="bg-white w-full rounded-[30px] h-full p-2 lg:p-4 flex flex-col">
+        <div className="flex flex-col flex-1"> 
+          {/* Media */}
+          <div
+            className={`w-full ${paddingClass} pb-0 production-banner 
+              bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
+              rounded-tl-[20px] rounded-tr-[20px]`}
+          >
+            {isTablet ? (
+              // On tablet: show video
+              <video
+                className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src={videoSrc} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              // On other devices: show image if available
+              imageSrc && (
+                <Image
+                  src={imageSrc}
+                  alt={title}
+                  width={743}
+                  height={460}
+                  className="w-full h-full object-contain overflow-hidden bg-transparent"
+                  priority
+                />
+              )
+            )}
+          </div>
+
+          {/* Text Content */}
+          <div className="mt-5 flex flex-col flex-1"> 
+            <CardHeading className="mb-4 min-h-[70px] lg:min-h-[70px] flex self-stretch">
+              {displayedTitle}
+            </CardHeading>
+
+            <CardDesc className="flex-1 mb-6"> 
+              {description}
+            </CardDesc>
+             
+            <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
+              {authorName}
+            </p>
+
+            {buttonLabel && (
+              <Link
+                href={buttonHref || "#"}
+                className="xl:text-base text-sm font-bold font-['Onest'] text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block"
+              >
+                {buttonLabel} &gt;&gt;&gt;
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FeatureCateCard;
