@@ -149,11 +149,11 @@ export default function OffcanvasMenu({
         aria-modal="true"
         aria-label="Mobile navigation"
         className={clsx(
-          "fixed top-0 right-0 h-screen bg-white shadow-lg transform transition-transform duration-300 ease-in-out w-64 z-[9999] lg:hidden overflow-y-auto scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent", // optional tailwind width e.g. w-1/2
+          "fixed top-0 right-0 h-[100dvh] bg-white shadow-lg transform transition-transform duration-300 ease-in-out w-64 z-[9999] lg:hidden flex flex-col", // optional tailwind width e.g. w-1/2
           open ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="p-4 flex flex-col gap-5 ">
+        <div className="p-4 flex flex-col gap-5 flex-shrink-0">
           <button
             ref={closeBtnRef}
             id="close-btn"
@@ -216,7 +216,7 @@ export default function OffcanvasMenu({
           </button>
         </div>
 
-        <nav className="p-4">
+        <nav className="p-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent pb-20">
           {/* Main Menu */}
           <ul
             id="main-menu"
@@ -366,7 +366,7 @@ export default function OffcanvasMenu({
           {activePanel && (
             <div
               id={`${activePanel}-content`}
-              className="flex flex-col gap-2 animate-in fade-in zoom-in-95 max-h-[80vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
+              className="flex flex-col gap-2 animate-in fade-in zoom-in-95"
             >
               {activePanel === "features" ? (
                 <div className="space-y-3">
@@ -412,7 +412,7 @@ export default function OffcanvasMenu({
                         <div
                           className={`transition-all duration-300 ease-in-out ${
                             isCatOpen
-                              ? "max-h-[1000px] opacity-100 visible"
+                              ? "max-h-[5000px] opacity-100 visible"
                               : "max-h-0 opacity-0 invisible"
                           }`}
                         >
@@ -479,10 +479,10 @@ export default function OffcanvasMenu({
 
                                     {hasDetails && (
                                       <div
-                                        className={`overflow-hidden transition-all duration-300 pl-4 ${
+                                        className={`transition-all duration-300 pl-4 ${
                                           isItemOpen
-                                            ? "max-h-[500px] opacity-100 mt-2"
-                                            : "max-h-0 opacity-0 mt-0"
+                                            ? "max-h-[300px] opacity-100 mt-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
+                                            : "max-h-0 opacity-0 mt-0 overflow-hidden"
                                         }`}
                                       >
                                         <ul className="space-y-1.5 border-l-2 border-gray-100 pl-3">
