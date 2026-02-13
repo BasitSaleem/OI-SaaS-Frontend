@@ -67,7 +67,9 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
               rounded-tl-[20px] rounded-tr-[20px]`}
           >
-            {isTablet && imageSrc ? (
+            {/* If no video exists, show image on all screens */}
+            {/* If both exist, show image on tablet, video on desktop/mobile */}
+            {!videoSrc && imageSrc ? (
               <Image
                 src={imageSrc}
                 alt={title}
@@ -76,7 +78,16 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 className="w-full h-full object-contain overflow-hidden bg-transparent"
                 priority
               />
-            ) : (
+            ) : isTablet && imageSrc ? (
+              <Image
+                src={imageSrc}
+                alt={title}
+                width={743}
+                height={460}
+                className="w-full h-full object-contain overflow-hidden bg-transparent"
+                priority
+              />
+            ) : videoSrc ? (
               <video
                 className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
                 autoPlay
@@ -87,7 +98,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-            )}
+            ) : null}
             
           </div>
 
