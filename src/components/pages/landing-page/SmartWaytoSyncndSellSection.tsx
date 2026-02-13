@@ -12,10 +12,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);
-  // useEffect(() => {
+  const [isTablet, setIsTablet] = useState(false);
 
-  //   return () => {};
-  // }, []);
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+    
+    checkTablet();
+    window.addEventListener('resize', checkTablet);
+    return () => window.removeEventListener('resize', checkTablet);
+  }, []);
 
   return (
     <div className="w-full">
@@ -50,19 +58,30 @@ function SmartWaytoSyncndSellSection() {
           </div>
 
           <div className="w-full h-full">
-            <video
-              className="w-full object-cover rounded-3xl lazy-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source
-                src="/assets/home-page-images/animations/trolly-anim.webm"
-                type="video/webm"
+            {isTablet ? (
+              <Image
+                src="/assets/home-page-images/animations/trolly-image.webp"
+                alt="Smart sync and sell"
+                width={743}
+                height={460}
+                className="w-full object-cover rounded-3xl"
+                priority
               />
-              Your browser does not support the video tag.
-            </video>
+            ) : (
+              <video
+                className="w-full object-cover rounded-3xl lazy-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source
+                  src="/assets/home-page-images/animations/trolly-anim.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
 
           <div className="md:hidden flex gap-4 w-full items-center justify-start">
