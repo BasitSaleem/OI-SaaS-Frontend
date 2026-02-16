@@ -9,9 +9,9 @@ import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
-import { sign } from "crypto";
-
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 interface Chaos {
   id: number;
@@ -66,62 +66,57 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
   const imageRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-  const firstBox = chaosRefs.current[0];
-  if (!firstBox || !imageRef.current) return;
+    const ctx = gsap.context(() => {
+      const firstBox = chaosRefs.current[0];
+      if (!firstBox || !imageRef.current) return;
 
-  const triggers: ScrollTrigger[] = [];
+      ScrollTrigger.create({
+        trigger: firstBox,
+        start: "top 70%",
+        once: true,
+        onEnter: () => {
+          // Animate all numbers
+          chaosRefs.current.forEach((el, index) => {
+            if (!el) return;
 
-  const trigger = ScrollTrigger.create({
-    trigger: firstBox,
-    start: "top 70%",
-    once: true,
-    onEnter: () => {
-      // Animate all numbers
-      chaosRefs.current.forEach((el, index) => {
-        if (!el) return;
+            const numberSpan = el.querySelector(".number");
+            if (!numberSpan) return;
 
-        // Find the number span within the paragraph
-        const numberSpan = el.querySelector('.number');
-        if (!numberSpan) return;
+            const finalValue = parseInt(chaos[index].chaosNumber, 10) || 0;
+            const obj = { val: 0 };
 
-        const finalValue = parseInt(chaos[index].chaosNumber, 10) || 0;
-        const obj = { val: 0 };
+            gsap.to(obj, {
+              val: finalValue,
+              duration: 1,
+              ease: "power3.out",
+              onUpdate: () => {
+                numberSpan.textContent = Math.floor(obj.val).toLocaleString();
+              },
+            });
+          });
 
-        gsap.to(obj, {
-          val: finalValue,
-          duration: 1,
-          ease: "power3.out",
-          onUpdate: () => {
-            numberSpan.textContent = Math.floor(obj.val).toLocaleString();
-          },
-        });
+          // Animate image at the same time
+          gsap.fromTo(
+            imageRef.current,
+            { y: 100, opacity: 0 },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 1,
+              ease: "power3.out",
+            }
+          );
+        },
       });
 
-      // Animate image at the same time
-      gsap.fromTo(
-        imageRef.current,
-        { y: 300, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.5,
-          ease: "power3.out",
-        }
-      );
-    },
-  });
+      // Refresh ScrollTrigger for proper syncing
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
+    });
 
-  triggers.push(trigger);
-
-  // Refresh ScrollTrigger for proper syncing
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 100);
-
-  return () => {
-    triggers.forEach((t) => t.kill());
-  };
-}, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <div className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px] lg:mt-[100px] md:mt-28 mt-20">
