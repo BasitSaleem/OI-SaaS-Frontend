@@ -263,7 +263,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ]}
                   /> */}
 
-                    <div className="w-full h-full  rounded-[40px] relative overflow-hidden">
+                    <div className="w-full h-full rounded-[40px] relative overflow-hidden owner-inventory-hero__video">
                       {shouldShowImage ? (
                         <Image
                           src="/assets/home-page-images/home-herofirst.webp"

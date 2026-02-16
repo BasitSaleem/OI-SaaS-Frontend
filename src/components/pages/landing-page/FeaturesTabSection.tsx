@@ -196,14 +196,18 @@ export default function FeaturesTabSection() {
       if (selectedDesktopVideo) {
         selectedDesktopVideo.currentTime = 0; 
         selectedDesktopVideo.play().catch((error) => {
-          console.error("Desktop video play failed:", error);
+          if (error.name !== 'AbortError') {
+            console.error("Desktop video play failed:", error);
+          }
         });
       }
       
       if (selectedMobileVideo) {
         selectedMobileVideo.currentTime = 0; 
         selectedMobileVideo.play().catch((error) => {
-          console.error("Mobile video play failed:", error);
+          if (error.name !== 'AbortError') {
+            console.error("Mobile video play failed:", error);
+          }
         });
       }
     }, 100);
