@@ -12,11 +12,14 @@ export function useSafariDetector() {
         const ua = navigator.userAgent;
 
         // Comprehensive Safari detection (Desktop & Mobile)
-        const safariDetected =
-            /Safari/.test(ua) &&
-            /Apple Computer/.test(navigator.vendor) &&
-            !/Chrome/.test(ua) && // Exclude Chrome
-            !/Edg/.test(ua);    // Exclude Edge
+        const isSafariAgent = /Safari/.test(ua) && !/Chrome/.test(ua) && !/Edg/.test(ua);
+
+        // Detect iPadOS 13+ which presents as Macintosh
+        const isIpad =
+            /Macintosh/.test(ua) &&
+            (navigator.maxTouchPoints && navigator.maxTouchPoints > 0);
+
+        const safariDetected = isSafariAgent || isIpad;
 
         setIsSafari(safariDetected);
 

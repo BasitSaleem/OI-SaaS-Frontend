@@ -23,6 +23,7 @@ export default function BrandsSwiper<T>({
       modules={[Pagination, Autoplay, EffectFade]}
       spaceBetween={20}
       slidesPerView={1.5}
+      // Swiper loop requirement: at least slidesPerView * 2 if loop is true
       loop={slides.length > 4}
        fadeEffect={{ crossFade: true }}
       speed={1200} // Smooth transition speed
@@ -41,8 +42,9 @@ export default function BrandsSwiper<T>({
       className="mySwiper overflow-x-hidden"
       {...swiperOptions}
     >
-      {slides.map((slide: any, i) => (
-        <SwiperSlide key={slide.id || i}>{renderSlide(slide, i)}</SwiperSlide>
+      {/* Duplicate slides if needed for smoother looping on large screens */}
+      {[...slides, ...slides, ...slides].slice(0, Math.max(slides.length, 12)).map((slide: any, i) => (
+        <SwiperSlide key={i}>{renderSlide(slide, i)}</SwiperSlide>
       ))}
     </Swiper>
   );

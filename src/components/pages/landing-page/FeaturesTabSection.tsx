@@ -23,13 +23,37 @@ export default function FeaturesTabSection() {
   const { isTablet, isSafari, shouldShowImage } = useSafariDetector();
 
   const features = LANDING_FEATURES;
+  
+  // Lazy Loading State
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsInView(true);
+          observer.disconnect(); // Load once and keep it
+        }
+      },
+      { threshold: 0.1 } // Start loading when 10% visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
 
-  // Preload only active video (Disabled on Safari/Tablet)
+  // Preload only active video (Disabled on Safari/Tablet or if not in view)
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
-    if (shouldShowImage || loadedVideos.has(videoId)) return;
+    if (shouldShowImage || loadedVideos.has(videoId) || !isInView) return;
 
     const video = document.createElement('video');
+    video.preload = 'metadata';
+    video.src = videoSrc;
     video.preload = 'metadata';
     video.src = videoSrc;
     video.muted = true;
@@ -252,7 +276,7 @@ export default function FeaturesTabSection() {
   }, []);
 
   return (
-    <section className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
+    <section ref={sectionRef} className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
       <div className="absolute top-[-150px] right-[-0px] z-[300]">
         <div className="bg-[var(--primary-purple)] h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] blur-[400px] lg:blur-[300px] rounded-full"></div>
       </div>
@@ -280,7 +304,7 @@ export default function FeaturesTabSection() {
                     className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
                     priority={index === 0}
                   />
-                ) : (
+                ) : isInView ? (
                   <video
                     ref={(el) => {
                       videoRefs.current[`${feature.id}-video`] = el;
@@ -290,12 +314,12 @@ export default function FeaturesTabSection() {
                     muted
                     loop={false}
                     playsInline
-                    preload="metadata"
+                    preload="none" // Lazy load
                   >
                     <source src={feature.videoSrc} type="video/webm" />
                     Your browser does not support the video tag.
                   </video>
-                )}
+                ) : null}
               </div>
             ))}
           </div>
@@ -365,7 +389,7 @@ export default function FeaturesTabSection() {
                       height={460}
                       className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
                     />
-                  ) : (
+                  ) : isInView ? (
                     <video
                       ref={(el) => {
                         videoRefs.current[`${feature.id}-mobile-video`] = el;
@@ -375,12 +399,12 @@ export default function FeaturesTabSection() {
                       muted
                       loop={false}
                       playsInline
-                      preload="metadata"
+                      preload="none"
                     >
                       <source src={feature.videoSrc} type="video/webm" />
                       Your browser does not support the video tag.
                     </video>
-                  )}
+                  ) : null}
                 </div>
               </div>
             ))}

@@ -18,9 +18,29 @@ const SmartTools: React.FC<SmartTools> = ({
   description = "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
 }) => {
   const { shouldShowImage } = useSafariDetector();
+  const sectionRef = React.useRef<HTMLElement>(null);
+  const [isInView, setIsInView] = React.useState(false);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section className="">
+    <section ref={sectionRef} className="">
       <div
         className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] bg-cover bg-center"
         style={{
@@ -65,18 +85,19 @@ const SmartTools: React.FC<SmartTools> = ({
              loading="lazy"
              className="w-full"
            />
-          ) : (
+          ) : isInView ? (
             <video
               className="w-full object-cover  lazy-video "
               autoPlay
               muted
               loop
               playsInline
+              preload="none"
             >
               <source src= "https://d1ybi42hallhsh.cloudfront.net/videos/Road+Map+V2.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          )}
+          ) : null}
         </div>
       </div>
     </section>
