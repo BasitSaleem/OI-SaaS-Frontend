@@ -49,7 +49,7 @@ function SmartWaytoSyncndSellSection() {
             </div>
           </div>
 
-          <div className="w-full h-full">
+          <div className="w-full bg-white h-full">
             {shouldShowImage ? (
               <Image
                 src="/assets/home-page-images/animations/trolly-image.webp"
@@ -61,7 +61,7 @@ function SmartWaytoSyncndSellSection() {
               />
             ) : (
               <video
-                className="w-full object-cover rounded-3xl lazy-video"
+                className="w-full object-cover rounded-3xl bg-white lazy-video"
                 autoPlay
                 muted
                 loop
