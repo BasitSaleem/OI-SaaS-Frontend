@@ -66,11 +66,11 @@ export default function FeaturesMainSwiper<T>({
       className="mySwiper overflow-x-hidden"
       {...swiperOptions}
     >
-      {[...slides, ...slides, ...slides].slice(0, Math.max(slides.length, 12)).map((slide, i) => (
+      {slides.map((slide, i) => (
         <SwiperSlide key={i} className="h-auto xl:pb-5 pb-[60px]">
           {renderSlide(slide, i)}
         </SwiperSlide>
       ))}
     </Swiper>
   );
-}
+} 

@@ -147,7 +147,7 @@ export const SMART_INTEGRATION_DATA = {
                 "Manage production planning, bills of materials, and assembly workflows with ease.",
             videoSrc:
                 "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/manufacturing.webm",
-             imageSrc: "/assets/features-page/featurescard-banners/manufacturing-banner.webp",
+            imageSrc: "/assets/features-page/featurescard-banners/manufacturing-banner.webp",
             buttonHref: "#",
         },
         {
@@ -156,7 +156,7 @@ export const SMART_INTEGRATION_DATA = {
                 "Connect Owners Inventory with third-party apps, marketplaces, and payment gateways.",
             videoSrc:
                 "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/integration.webm",
-                 imageSrc: "/assets/features-page/featurescard-banners/integration-banner.webp",
+            imageSrc: "/assets/features-page/featurescard-banners/integration-banner.webp",
             buttonHref: "/features/integrations",
         },
     ],
@@ -194,6 +194,6 @@ export const TEAM_SECTION_DATA = {
 
 export const FINANCE_SECTION_DATA = {
     title: "Finance & Reporting Made Simple",
-    description: "Empower your team, build customer loyalty, and manage resources with ease.",
+    description: "Gain accurate insights, monitor growth, and manage your financials with precision.",
     wrapperClass: "finance-reporting-shadow2 lg:px-10 lg:pb-10  "
 };
