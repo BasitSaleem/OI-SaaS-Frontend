@@ -3,6 +3,7 @@
 import ButtonLg from '@/components/button/ButtonLg';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { useSafariDetector } from '@/hooks/useSafariDetector';
 
 interface SellerClubSectionProps {
   mediaSrc?: string;
@@ -29,18 +30,7 @@ export default function SellerClubSection({
 
 }: SellerClubSectionProps) {
   const [bgImage, setBgImage] = useState('/assets/seller-club-mobile.webp');
-  const [isTablet, setIsTablet] = useState(false);
-
-  // Detect tablet screen size
-  useEffect(() => {
-    const checkTablet = () => {
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-    };
-
-    checkTablet();
-    window.addEventListener("resize", checkTablet);
-    return () => window.removeEventListener("resize", checkTablet);
-  }, []);
+  const { shouldShowImage } = useSafariDetector();
 
   useEffect(() => {
     const handleResize = () => {
@@ -70,55 +60,36 @@ export default function SellerClubSection({
       >
         <div className="grid items-start justify-center w-full grid-cols-1 lg:grid-cols-12 md:gap-[76px] gap-10 lg:pt-[60px] md:pt-[90px] pt-10 lg:px-[60px] md:px-[76px] px-9">
           <div className="lg:col-span-7 lg:order-1 order-2 lg:mt-0 mt-8">
-            {/* {mediaType === 'image' ? (
-              <Image
-                src={mediaSrc}
-                alt={mediaAlt}
-                width={800}
-                height={600}
-                className="w-full"
-              />
-            ) : (
-              <video
-                src={mediaSrc}
-                className="w-full rounded-[20px]"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-            )} */}
-
-             {!mediaSrc && imageSrc ? (
-                          <Image
-                            src={imageSrc}
-                            alt="Media"
-                            width={743}
-                            height={460}
-                             className="w-full"
-                            priority
-                          />
-                        ) : isTablet && imageSrc ? (
-                          <Image
-                            src={imageSrc}
-                            alt= "Media"
-                            width={743}
-                            height={460}
-                             className="w-full"
-                            priority
-                          />
-                        ) : mediaSrc ? (
-                          <video
-                            className="w-full rounded-[20px]"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                          >
-                            <source src={mediaSrc} type="video/webm" />
-                            Your browser does not support the video tag.
-                          </video>
-                        ) : null}
+             {shouldShowImage && imageSrc ? (
+                <Image
+                  src={imageSrc}
+                  alt={mediaAlt}
+                  width={743}
+                  height={460}
+                  className="w-full"
+                  priority
+                />
+              ) : mediaSrc && !shouldShowImage ? (
+                <video
+                  className="w-full rounded-[20px]"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={mediaSrc} type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : imageSrc ? (
+                 <Image
+                  src={imageSrc}
+                  alt={mediaAlt}
+                  width={743}
+                  height={460}
+                  className="w-full"
+                  priority
+                />
+              ) : null}
           </div>
 
           <div className="flex flex-col justify-center lg:items-start md:items-center items-start lg:col-span-5 lg:order-2 order-1 lg:text-left md:text-center text-left">

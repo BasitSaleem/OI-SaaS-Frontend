@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+"use client";
+
+import React from "react";
 import MainHeading from "../typography/MainHeading";
-import CardHeading from "../typography/CardHeading";
 import Paragraph from "../typography/Paragraph";
 import ButtonSm from "@/components/button/ButtonSm";
-import ButtonOutline from "@/components/button/ButtonOutline";
 import Image from "next/image";
-import ContactModal from "@/components/models/ContactModal";
 import Link from "next/link";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
 
 interface SmartTools {
   title?: string;
@@ -17,10 +17,10 @@ const SmartTools: React.FC<SmartTools> = ({
   title = "Stay Ahead with Smart Tools",
   description = "Everything you need to grow your business, learn at your pace, and stay connected with the community of smart sellers.",
 }) => {
-  // const [openModal, setOpenModal] = useState(false);
+  const { shouldShowImage } = useSafariDetector();
+
   return (
     <section className="">
-      {/* <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} /> */}
       <div
         className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] bg-cover bg-center"
         style={{
@@ -56,24 +56,27 @@ const SmartTools: React.FC<SmartTools> = ({
         </div>
 
         <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto ">
-          {/* <Image
-            src="/assets/home-page-images/smart-tools.webp"
-            alt="Chaos Image"
-            width={800}
-            height={600}
-            loading="lazy"
-            className="w-full"
-          /> */}
-           <video
-                    className="w-full object-cover  lazy-video "
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src= "https://d1ybi42hallhsh.cloudfront.net/videos/Road+Map+V2.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+          {shouldShowImage ? (
+             <Image
+             src="/assets/home-page-images/smart-tools.webp"
+             alt="Chaos Image"
+             width={1065}
+             height={600}
+             loading="lazy"
+             className="w-full"
+           />
+          ) : (
+            <video
+              className="w-full object-cover  lazy-video "
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src= "https://d1ybi42hallhsh.cloudfront.net/videos/Road+Map+V2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
       </div>
     </section>

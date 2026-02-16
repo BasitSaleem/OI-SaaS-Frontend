@@ -1,29 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import gsap from "gsap";
+import { useState } from "react";
+import globalGsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
 import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
 import ContactModal from "@/components/models/ContactModal";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
 
-gsap.registerPlugin(ScrollTrigger);
+globalGsap.registerPlugin(ScrollTrigger);
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);
-  const [isTablet, setIsTablet] = useState(false);
-
-  // Detect tablet screen size
-  useEffect(() => {
-    const checkTablet = () => {
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-    };
-    
-    checkTablet();
-    window.addEventListener('resize', checkTablet);
-    return () => window.removeEventListener('resize', checkTablet);
-  }, []);
+  const { shouldShowImage } = useSafariDetector();
 
   return (
     <div className="w-full">
@@ -58,7 +48,7 @@ function SmartWaytoSyncndSellSection() {
           </div>
 
           <div className="w-full h-full">
-            {isTablet ? (
+            {shouldShowImage ? (
               <Image
                 src="/assets/home-page-images/animations/trolly-image.webp"
                 alt="Smart sync and sell"

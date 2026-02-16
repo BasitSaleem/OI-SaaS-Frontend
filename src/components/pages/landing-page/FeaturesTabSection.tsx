@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import MainHeading from "../typography/MainHeading";
 import { LANDING_FEATURES } from "@/constant/landingPageData";
 import Image from "next/image";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
 
 
 type VideoRefs = {
@@ -14,29 +15,19 @@ export default function FeaturesTabSection() {
   const [activeTab, setActiveTab] = useState(1);
   const [videoProgress, setVideoProgress] = useState<{[key: string]: number}>({});
   const videoRefs = useRef<VideoRefs>({});
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true); // Start with auto-play enabled
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true); 
   const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const [isTablet, setIsTablet] = useState(false);
+  
+  const { isTablet, isSafari, shouldShowImage } = useSafariDetector();
 
   const features = LANDING_FEATURES;
 
 
-  // Detect tablet screen size
-  useEffect(() => {
-    const checkTablet = () => {
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-    };
-    
-    checkTablet();
-    window.addEventListener('resize', checkTablet);
-    return () => window.removeEventListener('resize', checkTablet);
-  }, []);
-
-  // Preload only active video
+  // Preload only active video (Disabled on Safari/Tablet)
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
-    if (loadedVideos.has(videoId)) return;
+    if (shouldShowImage || loadedVideos.has(videoId)) return;
 
     const video = document.createElement('video');
     video.preload = 'metadata';
@@ -50,7 +41,7 @@ export default function FeaturesTabSection() {
     video.onerror = () => {
       console.error(`Failed to load video: ${videoId}`);
     };
-  }, [loadedVideos]);
+  }, [loadedVideos, shouldShowImage]);
 
   // Function to move to next tab automatically
   const moveToNextTab = useCallback(() => {
@@ -62,7 +53,6 @@ export default function FeaturesTabSection() {
     if (currentFeatureIndex < features.length - 1) {
       nextFeature = features[currentFeatureIndex + 1];
     } else {
-      // Loop back to first feature
       nextFeature = features[0];
     }
 
@@ -73,15 +63,14 @@ export default function FeaturesTabSection() {
 
 
   
-  // Handle video progress and ended state (for non-tablet screens)
-  // Handle tablet auto-advance with 5-second timer
+  // Handle progress and auto-advance
   useEffect(() => {
     let animationFrameId: number;
     let tabletInterval: NodeJS.Timeout;
     const activeFeature = features.find(f => f.tabIndex === activeTab);
     
     const handleVideoEnded = () => {
-      if (isAutoPlaying && !isTablet) {
+      if (isAutoPlaying && !shouldShowImage) {
         setTimeout(() => {
           moveToNextTab();
         }, 300);
@@ -89,7 +78,7 @@ export default function FeaturesTabSection() {
     };
 
     const updateProgress = () => {
-      if (activeFeature && !isTablet) {
+      if (activeFeature && !shouldShowImage) {
         const desktopVideoId = `${activeFeature.id}-video`;
         const mobileVideoId = `${activeFeature.id}-mobile-video`;
         const desktopVideo = videoRefs.current[desktopVideoId];
@@ -108,12 +97,12 @@ export default function FeaturesTabSection() {
       animationFrameId = requestAnimationFrame(updateProgress);
     };
 
-    // Tablet-specific progress and auto-advance
-    if (isTablet && activeFeature && isAutoPlaying) {
+    // Fallback Timer Logic (Tablet or Safari)
+    if (shouldShowImage && activeFeature && isAutoPlaying) {
       const tabletProgressKey = `${activeFeature.id}-tablet`;
       let progress = 0;
-      const duration = 5000; // 5 seconds
-      const intervalTime = 50; // Update every 50ms for smooth animation
+      const duration = 5000; 
+      const intervalTime = 50; 
       const increment = (intervalTime / duration) * 100;
 
       setVideoProgress((prev) => ({
@@ -142,7 +131,7 @@ export default function FeaturesTabSection() {
       }, intervalTime);
     }
 
-    if (activeFeature && !isTablet) {
+    if (activeFeature && !shouldShowImage) {
       const desktopVideo = videoRefs.current[`${activeFeature.id}-video`];
       const mobileVideo = videoRefs.current[`${activeFeature.id}-mobile-video`];
 
@@ -162,27 +151,28 @@ export default function FeaturesTabSection() {
       if (tabletInterval) clearInterval(tabletInterval);
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
-  }, [activeTab, isAutoPlaying, features, moveToNextTab, isTablet]);
+  }, [activeTab, isAutoPlaying, features, moveToNextTab, shouldShowImage]);
 
   // Handle tab click
   const handleTabClick = useCallback((tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
-    // Clear any existing timeout
     if (autoPlayTimeoutRef.current) {
       clearTimeout(autoPlayTimeoutRef.current);
       autoPlayTimeoutRef.current = null;
     }
 
-    // When user clicks manually, pause auto-playing for a moment, then resume
     if (!isAutoTransition) {
       setIsAutoPlaying(false);
-      
-      // Resume auto-play after current video finishes
       autoPlayTimeoutRef.current = setTimeout(() => {
         setIsAutoPlaying(true);
-      }, 2000); // Resume auto-play 2 seconds after manual click
+      }, 2000); 
     }
 
-    // Pause all videos
+    // Skip video logic if showing images
+    if (shouldShowImage) {
+      setActiveTab(tabIndex);
+      return;
+    }
+
     Object.keys(videoRefs.current).forEach((key) => {
       const video = videoRefs.current[key];
       if (video) {
@@ -190,10 +180,8 @@ export default function FeaturesTabSection() {
       }
     });
 
-    // Set new active tab
     setActiveTab(tabIndex);
 
-    // Preload next video
     const currentFeatureIndex = features.findIndex(f => f.tabIndex === tabIndex);
     if (currentFeatureIndex < features.length - 1) {
       const nextFeature = features[currentFeatureIndex + 1];
@@ -201,30 +189,29 @@ export default function FeaturesTabSection() {
       preloadVideo(`${nextFeature.id}-mobile-video`, nextFeature.videoSrc);
     }
 
-    // Play the selected video
     setTimeout(() => {
       const selectedDesktopVideo = videoRefs.current[videoId];
       const selectedMobileVideo = videoRefs.current[`${videoId.replace('-video', '-mobile-video')}`];
       
       if (selectedDesktopVideo) {
-        selectedDesktopVideo.currentTime = 0; // Restart video
+        selectedDesktopVideo.currentTime = 0; 
         selectedDesktopVideo.play().catch((error) => {
           console.error("Desktop video play failed:", error);
         });
       }
       
       if (selectedMobileVideo) {
-        selectedMobileVideo.currentTime = 0; // Restart video
+        selectedMobileVideo.currentTime = 0; 
         selectedMobileVideo.play().catch((error) => {
           console.error("Mobile video play failed:", error);
         });
       }
     }, 100);
-  }, [features, preloadVideo]);
+  }, [features, preloadVideo, shouldShowImage]);
 
-  // Initial load - preload only first video
+  // Initial load
   useEffect(() => {
-    if (isInitialLoad) {
+    if (isInitialLoad && !shouldShowImage) {
       const firstFeature = features[0];
       if (firstFeature) {
         preloadVideo(`${firstFeature.id}-video`, firstFeature.videoSrc);
@@ -232,14 +219,14 @@ export default function FeaturesTabSection() {
       }
       setIsInitialLoad(false);
     }
-  }, [isInitialLoad, features, preloadVideo]);
+  }, [isInitialLoad, features, preloadVideo, shouldShowImage]);
 
   // Start auto-playing when component mounts
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAutoPlaying(true);
       const firstFeature = features.find(f => f.tabIndex === activeTab);
-      if (firstFeature) {
+      if (firstFeature && !shouldShowImage) {
         const firstVideo = videoRefs.current[`${firstFeature.id}-video`];
         if (firstVideo) {
           firstVideo.play().catch((error) => {
@@ -250,9 +237,8 @@ export default function FeaturesTabSection() {
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [activeTab, shouldShowImage, features]);
 
-  // Cleanup timeout on unmount
   useEffect(() => {
     return () => {
       if (autoPlayTimeoutRef.current) {
@@ -272,7 +258,7 @@ export default function FeaturesTabSection() {
         </MainHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-32">
-          {/* IMAGE SECTION (Only for md and up) */}
+          {/* IMAGE SECTION */}
           <div className="hidden md:flex flex-col justify-center items-center gap-3">
             {features.map((feature, index) => (
               <div
@@ -281,7 +267,7 @@ export default function FeaturesTabSection() {
                   activeTab === feature.tabIndex ? "" : "hidden"
                 }`}
               >
-                {isTablet ? (
+                {shouldShowImage ? (
                   <Image
                     src={feature.imageSrc}
                     alt={feature.title}
@@ -353,7 +339,7 @@ export default function FeaturesTabSection() {
                     className="h-full bg-[#F3F4F6]"
                     style={{
                       width: `${
-                        isTablet 
+                        shouldShowImage 
                           ? videoProgress[`${feature.id}-tablet`] || 0
                           : videoProgress[`${feature.id}-video`] || 
                             videoProgress[`${feature.id}-mobile-video`] || 0
@@ -367,20 +353,30 @@ export default function FeaturesTabSection() {
                     activeTab === feature.tabIndex ? "" : "hidden"
                   }`}
                 >
-                  <video
-                    ref={(el) => {
-                      videoRefs.current[`${feature.id}-mobile-video`] = el;
-                    }}
-                    className="w-full object-cover rounded-3xl lazy-video feature-video"
-                    autoPlay={activeTab === feature.tabIndex}
-                    muted
-                    loop={false}
-                    playsInline
-                    preload="metadata"
-                  >
-                    <source src={feature.videoSrc} type="video/webm" />
-                    Your browser does not support the video tag.
-                  </video>
+                  {shouldShowImage ? (
+                    <Image
+                      src={feature.imageSrc}
+                      alt={feature.title}
+                      width={743}
+                      height={460}
+                      className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
+                    />
+                  ) : (
+                    <video
+                      ref={(el) => {
+                        videoRefs.current[`${feature.id}-mobile-video`] = el;
+                      }}
+                      className="w-full object-cover rounded-3xl lazy-video feature-video"
+                      autoPlay={activeTab === feature.tabIndex}
+                      muted
+                      loop={false}
+                      playsInline
+                      preload="metadata"
+                    >
+                      <source src={feature.videoSrc} type="video/webm" />
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
                 </div>
               </div>
             ))}
