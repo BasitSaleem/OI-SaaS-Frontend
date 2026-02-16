@@ -41,7 +41,7 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
       {/* Video */}
       <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
         <div
-          className={`px-[30px] py-[35px] flex items-center justify-center gradient-shadow rounded-[30px] ${
+          className={`px-3 py-4 flex items-center justify-center gradient-shadow rounded-[30px] ${
             containerShadow ? "shadow-[0px_0px_20px_0px_rgba(121,92,245,0.2)]" : ""
           }`}
           style={{

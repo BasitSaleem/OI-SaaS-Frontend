@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
@@ -20,7 +19,7 @@ interface SubFeaturesHeroProps {
   video?: string;
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
-  imageClassName?: string; 
+  imageClassName?: string;
 }
 
 const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
@@ -32,6 +31,19 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   variant = "animation1",
   imageClassName = "",
 }) => {
+  const [isTablet, setIsTablet] = useState(false);
+
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    checkTablet();
+    window.addEventListener("resize", checkTablet);
+    return () => window.removeEventListener("resize", checkTablet);
+  }, []);
+
   useHeaderAnimation();
   if (variant === "animation1") {
     useHeroAnimation();
@@ -62,7 +74,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
     tl.to(
       homeHeroSecRef.current,
       { clipPath: "inset(0% 0% 0% 0%)", duration: 1 },
-      0.5
+      0.5,
     );
     tl.to(growthBoxRef.current, { opacity: 1, y: 0, duration: 0.8 }, 1);
     tl.to(heroLowerRef.current, { opacity: 1, y: 0, duration: 1 }, 1.2);
@@ -131,7 +143,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                   ref={heroLowerRef}
                   className="owner-inventory-hero__lower flex items-center justify-center relative w-full wrapper"
                 >
-                  {video ? (
+                  {/* {video ? (
                     <video
                       src={video}
                       autoPlay
@@ -152,7 +164,38 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                     <div className="w-full h-64 bg-gray-200 rounded-3xl flex items-center justify-center">
                       <p className="text-gray-500">No media available</p>
                     </div>
-                  )}
+                  )} */}
+
+                  {!video && image ? (
+                    <Image
+                      src={image}
+                      alt={title}
+                      width={743}
+                      height={460}
+                      className={`w-full object-cover rounded-3xl ${imageClassName}`}
+                      priority
+                    />
+                  ) : isTablet && image ? (
+                    <Image
+                      src={image}
+                      alt={title}
+                      width={743}
+                      height={460}
+                      className={`w-full object-cover rounded-3xl ${imageClassName}`}
+                      priority
+                    />
+                  ) : video ? (
+                    <video
+                      className="w-full object-cover rounded-3xl"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : null}
                 </div>
               </div>
             </div>

@@ -76,7 +76,7 @@ function SmartWaytoSyncndSellSection() {
                 playsInline
               >
                 <source
-                  src="/assets/home-page-images/animations/trolly-anim.webm"
+                  src="/assets/home-page-images/animations/trolly-anim2.webm"
                   type="video/webm"
                 />
                 Your browser does not support the video tag.
