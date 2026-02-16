@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useRef, useEffect, useState } from "react";
-import gsap from "gsap";
+import globalGsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
 import { useHeroAnimation } from "@/hooks/useHeroAnimation";
@@ -14,8 +14,9 @@ import Image from "next/image";
 import SubHeading from "../pages/typography/CardHeading";
 import HeroImageSlider from "./HeroImageSlider";
 import { H1Icon } from "@heroicons/react/16/solid";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
 
-gsap.registerPlugin(ScrollTrigger);
+globalGsap.registerPlugin(ScrollTrigger);
 
 interface HeroSection2Props {
   title?: string;
@@ -44,6 +45,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   }
 
   const [shouldPlayVideo, setShouldPlayVideo] = useState(false);
+  const { shouldShowImage } = useSafariDetector();
 
   // Refs
   const mainHeadingRef = useRef<HTMLHeadingElement>(null);
@@ -65,59 +67,53 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   const safeSecureImageRef = useRef<HTMLImageElement>(null);
   const inventoryBlurIconRef = useRef<HTMLImageElement>(null);
   const inventoryIconRef = useRef<HTMLImageElement>(null);
-  const totalGrowthImageRef = useRef<HTMLImageElement>(null);
-  const totalGrowthHeadingRef = useRef<HTMLImageElement>(null);
-  const totalGrowthDescRef = useRef<HTMLImageElement>(null);
-  const heroLowerRef = useRef<HTMLImageElement>(null);
-  const heroLowerBoxRef = useRef<HTMLImageElement>(null);
   const growthBoxRef = useRef<HTMLImageElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    const tl = globalGsap.timeline({ defaults: { ease: "power3.out" } });
 
     // Initial states
-    gsap.set(mainHeadingRef.current, { opacity: 0, y: 50 });
-    gsap.set(paragraphRef.current, { opacity: 0, y: 30 });
-    gsap.set(homeHeroSecRef.current, {
+    globalGsap.set(mainHeadingRef.current, { opacity: 0, y: 50 });
+    globalGsap.set(paragraphRef.current, { opacity: 0, y: 30 });
+    globalGsap.set(homeHeroSecRef.current, {
       clipPath: "inset(0% 0% 100% 0%)",
     });
-    gsap.set(productsImageRef.current, {
+    globalGsap.set(productsImageRef.current, {
       opacity: 0,
       rotation: 45,
       scale: 0.5,
       x: 60,
       y: 60,
     });
-    gsap.set(advanceReportImageRef.current, {
+    globalGsap.set(advanceReportImageRef.current, {
       opacity: 0,
       rotation: 45,
       scale: 0.5,
       x: 60,
       y: -60,
     });
-    gsap.set(inventorySystemImageRef.current, {
+    globalGsap.set(inventorySystemImageRef.current, {
       opacity: 0,
       rotation: -45,
       scale: 0.5,
       x: -60,
       y: 60,
     });
-    gsap.set(reportsImageRef.current, {
+    globalGsap.set(reportsImageRef.current, {
       opacity: 0,
       rotation: -45,
       scale: 0.5,
       x: -60,
       y: -30,
     });
-    gsap.set(fastServiceImageRef.current, { opacity: 0, x: 60, y: 30 });
-    gsap.set(fastServiceDescRef.current, { opacity: 0, x: 200 });
-    gsap.set(safeSecureImageRef.current, { opacity: 0, x: 60, y: 30 });
-    gsap.set(safeSecureDescRef.current, { opacity: 0, x: -200 });
-    gsap.set(heroLowerBoxRef.current, { opacity: 0, y: 300 });
-    gsap.set(inventoryBlurIconRef.current, { opacity: 0, scale: 0.8 });
-    gsap.set(inventoryIconRef.current, { opacity: 0, scale: 0.8 });
-    gsap.set(growthBoxRef.current, { opacity: 0, y: 100 });
+    globalGsap.set(fastServiceImageRef.current, { opacity: 0, x: 60, y: 30 });
+    globalGsap.set(fastServiceDescRef.current, { opacity: 0, x: 200 });
+    globalGsap.set(safeSecureImageRef.current, { opacity: 0, x: 60, y: 30 });
+    globalGsap.set(safeSecureDescRef.current, { opacity: 0, x: -200 });
+    globalGsap.set(inventoryBlurIconRef.current, { opacity: 0, scale: 0.8 });
+    globalGsap.set(inventoryIconRef.current, { opacity: 0, scale: 0.8 });
+    globalGsap.set(growthBoxRef.current, { opacity: 0, y: 100 });
 
     // Animations
     tl.to(mainHeadingRef.current, { opacity: 1, y: 0, duration: 0.8 }, "0");
@@ -138,7 +134,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
         fastServiceDescRef.current,
         safeSecureImageRef.current,
         safeSecureDescRef.current,
-        heroLowerBoxRef.current,
         inventoryBlurIconRef.current,
         inventoryIconRef.current,
       ],
@@ -170,12 +165,12 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   }, []);
 
   useEffect(() => {
-    if (shouldPlayVideo && videoRef.current) {
+    if (shouldPlayVideo && videoRef.current && !shouldShowImage) {
       videoRef.current.play().catch((error) => {
         console.log("Video play failed:", error);
       });
     }
-  }, [shouldPlayVideo]);
+  }, [shouldPlayVideo, shouldShowImage]);
 
   return (
     <div className="" ref={homeHeroSecRef}>
@@ -243,11 +238,9 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                 {/* Extra flexibility */}
                 {children}
                 <div
-                  ref={heroLowerRef}
                   className="owner-inventory-hero__lower relative w-full wrapper pt-10 md:pt-10 xl:pt-10 "
                 >
                   <div
-                    ref={heroLowerBoxRef}
                     className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative -z-10 backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
                   >
                     {/* <HeroImageSlider
@@ -268,23 +261,31 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   /> */}
 
                     <div className="w-full h-full  rounded-[40px] relative overflow-hidden">
-                      <video
-                        ref={videoRef}
-                        className="w-full object-cover rounded-3xl"
-                        muted
-                        playsInline
-                        autoPlay={shouldPlayVideo}
-                        loop
-                      >
-                        <source
-                          src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.mp4"
-                          type="video/mp4"
+                      {shouldShowImage ? (
+                        <Image
+                          src="/assets/home-page-images/home-herofirst.webp"
+                          alt="Hero Fallback"
+                          width={498}
+                          height={650}
+                          className="w-full h-full object-cover rounded-3xl"
+                          priority
                         />
-                        <source
-                          src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.webm"
-                          type="video/webm"
-                        />
-                      </video>
+                      ) : (
+                        <video
+                          ref={videoRef}
+                          className="w-full object-cover rounded-3xl"
+                          muted
+                          playsInline
+                          autoPlay={shouldPlayVideo}
+                          loop
+                        >
+                          <source
+                            src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.webm"
+                            type="video/webm"
+                          />
+                          Your browser does not support the video tag.
+                        </video>
+                      )}
                     </div>
 
                     <div
@@ -414,19 +415,18 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={growthBoxRef}
                     className="hidden lg:flex flex-col w-full max-w-[300px] xl:max-w-[400px] 2xl:max-w-[480px] p-4 absolute bottom-0  -z-20"
                   >
-                    <div ref={totalGrowthHeadingRef}>
+                    <div>
                       <p className="text-[#2E263DE5] font-['Onest'] font-semibold text-5xl leading-[53px]">42.5k</p>
                     </div>
                     <Image
                       src="/assets/home-page-images/total-growth.svg"
                       alt="Pricing Image"
-                      ref={totalGrowthImageRef}
                       width={800}
                       height={600}
                       loading="lazy"
                       className="w-full "
                     />
-                    <div ref={totalGrowthDescRef}>
+                    <div>
                       <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-medium font-['Onest']">
                         Total Growth
                       </p>
