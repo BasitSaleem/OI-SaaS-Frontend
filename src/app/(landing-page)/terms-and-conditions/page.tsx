@@ -15,6 +15,14 @@ const TermAndConditionPage = () => {
         "Our platform offers inventory management, CRM, accounting, and other business operations tools. These Terms are designed to safeguard your rights and ours, as well as provide a safe and secure experience.",
       ],
     },
+     {
+      title: "Eligibility",
+      contentType: "list",
+      content: [
+        "You should be at least 18 years or be legally able to sign binding agreements.",
+        "Companies that utilize our services should adhere to all the relevant laws, including those related to sales, taxes, and data handling.",
+      ],
+    },
     {
       title: "Account Registration",
       content: [
@@ -178,19 +186,32 @@ const TermAndConditionPage = () => {
           </h3>
 
           <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
-            {TermAndConditionData.map((section, index) => (
+            {TermAndConditionData.map((section: any, index) => (
               <div key={index} className="flex flex-col">
                 <h4 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-['Onest'] mb-4">
                   {section.title}
                 </h4>
-                {section.content.map((para, idx) => (
-                  <p
-                    key={idx}
-                    className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20]"
-                  >
-                    {para}
-                  </p>
-                ))}
+                {section.contentType === "list" ? (
+                  <ul className="list-disc ml-6 flex flex-col gap-2">
+                    {section.content.map((item: string, idx: number) => (
+                      <li
+                        key={idx}
+                        className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20]"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  section.content.map((para: string, idx: number) => (
+                    <p
+                      key={idx}
+                      className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20] mb-4 last:mb-0"
+                    >
+                      {para}
+                    </p>
+                  ))
+                )}
               </div>
             ))}
           </div>
