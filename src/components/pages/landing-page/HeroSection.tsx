@@ -77,15 +77,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* HERO BODY */}
         <div className="md:py-[1px] bg-[#F3F4F6] rounded-[40px]">
-          <div
-            className={`owner-inventory-hero__bottom relative flex flex-col items-center justify-center w-full ${heroHeight} ${heroOverflow} pt-10 pb-6 md:py-[76px] lg:py-0 px-6 md:px-[100px] bg-[#F3F4F6] rounded-b-[40px] rounded-tr-[40px] lg:rounded-tl-[40px]  backdrop-blur-[374px]`}
-            style={{
-              backgroundImage:
-                "linear-gradient(180deg, #F3F4F6 0%, transparent 40%), linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%, rgba(121, 92, 245, 0.3) 100%)",
-            }}
-          >
+           <div
+              className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
+              style={
+                {
+                  // background image is painted in CSS ::before using this variable
+                  ["--hero-bg" as any]:
+                    "url('/assets/home-page-images/hero-bg.webp')",
+                } as React.CSSProperties
+              }
+            >
             {/* Heading */}
-            <div className="owner-inventory-hero__content flex flex-col items-center justify-center w-full">
+            <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full">
               <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
                 {title}
               </h1>
@@ -141,7 +144,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Video */}
-            <div className="owner-inventory-hero__video w-full mt-10 md:mt-10 xl:mt-10 sm:max-w-lg md:max-w-xl lg:max-w-4xl">
+            <div className="owner-inventory-hero__video relative z-[2]  w-full mt-10 md:mt-10 xl:mt-10 sm:max-w-lg md:max-w-xl lg:max-w-4xl">
               {/* <video
                 className="w-full object-cover rounded-3xl lazy-video feature-video"
                 autoPlay

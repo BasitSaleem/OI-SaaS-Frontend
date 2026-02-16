@@ -36,12 +36,12 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className="lg:mt-40 md:mt-28 mt-20 grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12">
+    <div className={`${isEven ? "lg:mt-40 md:mt-28 mt-20" : "lg:my-40 md:my-28 my-20"}  grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}>
       
       {/* Video */}
       <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
         <div
-          className={`px-3 py-4 flex items-center justify-center gradient-shadow rounded-[30px] ${
+          className={`px-3 py-4 flex items-center justify-center  ${isEven ? "gradient-shadow" : "gradient-shadow-right"} rounded-[30px] ${
             containerShadow ? "shadow-[0px_0px_20px_0px_rgba(121,92,245,0.2)]" : ""
           }`}
           style={{
@@ -79,7 +79,7 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
 
         <Link
           href={buttonHref}
-          className="inline-block w-fit px-6 md:px-6 lg:px-12 py-3 md:py-2.5 lg:py-[17px] text-base md:text-xs lg:text-xl leading-none font-semibold text-white border border-transparent hover:bg-transparent mb-3 rounded-full transition-colors duration-300"
+          className="inline-block w-fit px-6 md:px-6 lg:px-12 py-3 md:py-2.5 lg:py-[17px] text-base md:text-xs lg:text-xl leading-none font-['onest'] font-semibold text-white border border-transparent hover:bg-transparent mb-3 rounded-full transition-colors duration-300"
           style={{ backgroundColor: buttonColor }}
           onMouseEnter={(e) => {
             (e.target as HTMLElement).style.backgroundColor = "transparent";
