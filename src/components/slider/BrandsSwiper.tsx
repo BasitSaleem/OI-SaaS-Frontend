@@ -23,7 +23,7 @@ export default function BrandsSwiper<T>({
       modules={[Pagination, Autoplay, EffectFade]}
       spaceBetween={20}
       slidesPerView={1.5}
-      loop={true}
+      loop={slides.length > 4}
        fadeEffect={{ crossFade: true }}
       speed={1200} // Smooth transition speed
       autoplay={{

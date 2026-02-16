@@ -9,7 +9,9 @@ import MainHeading from "../typography/MainHeading";
 import ContactModal from "@/components/models/ContactModal";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
 
-globalGsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  globalGsap.registerPlugin(ScrollTrigger);
+}
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);
