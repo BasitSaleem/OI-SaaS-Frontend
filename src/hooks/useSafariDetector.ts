@@ -17,9 +17,9 @@ export function useSafariDetector() {
         // Detect iPadOS 13+ which presents as Macintosh
         const isIpad =
             /Macintosh/.test(ua) &&
-            (navigator.maxTouchPoints && navigator.maxTouchPoints > 0);
+            (navigator.maxTouchPoints ? navigator.maxTouchPoints > 0 : false);
 
-        const safariDetected = isSafariAgent || isIpad;
+        const safariDetected = isSafariAgent || !!isIpad;
 
         setIsSafari(safariDetected);
 
