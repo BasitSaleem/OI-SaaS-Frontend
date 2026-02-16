@@ -167,6 +167,24 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
     return () => ctx.revert();
   }, []);
 
+  // Lazy Loading Video
+  const [isInView, setIsInView] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0 }
+    );
+    if (homeHeroSecRef.current) {
+      observer.observe(homeHeroSecRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     if (shouldPlayVideo && videoRef.current && !shouldShowImage) {
       videoRef.current.play().catch((error) => {
@@ -273,7 +291,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                           className="w-full h-full object-cover rounded-3xl"
                           priority
                         />
-                      ) : (
+                      ) : isInView ? (
                         <video
                           ref={videoRef}
                           className="w-full object-cover rounded-3xl"
@@ -281,6 +299,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                           playsInline
                           autoPlay={shouldPlayVideo}
                           loop
+                          preload="none"
                         >
                           <source
                             src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.webm"
@@ -288,7 +307,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                           />
                           Your browser does not support the video tag.
                         </video>
-                      )}
+                      ) : null}
                     </div>
 
                     <div
