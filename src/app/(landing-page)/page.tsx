@@ -9,51 +9,59 @@ import dynamic from "next/dynamic";
 // Lazy load all components
 const HeroSection2 = dynamic(
   () => import("@/components/common-components/HeroSection2"),
+  { ssr: false }
 );
 const TrustedBySection = dynamic(
   () => import("@/components/common-components/TrustedBySection"),
+  { ssr: false }
 );
 const TurningChaos = dynamic(
   () => import("@/components/pages/landing-page/TurningChaos"),
+  { ssr: false }
 );
 const CaseStudies = dynamic(
   () => import("@/components/pages/landing-page/CaseStudy"),
+  { ssr: false }
 );
 const SmartWaytoSyncndSellSection = dynamic(
   () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection"),
+  { ssr: false }
 );
 const UnifiedPlatform = dynamic(
   () => import("@/components/pages/landing-page/UnifiedPlatform"),
+  { ssr: false }
 );
 const VoicesRealBusiness = dynamic(
   () => import("@/components/pages/landing-page/VoicesRealBusiness"),
+  { ssr: false }
 );
 const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase"),
+  { ssr: false }
 );
 const PosIconsSection = dynamic(
   () => import("@/components/pages/landing-page/Smartway"),
+  { ssr: false }
 );
 const ToolsSection = dynamic(
   () => import("@/components/pages/landing-page/ToolsSection"),
+  { ssr: false }
 );
 const SmartTools = dynamic(
   () => import("@/components/pages/landing-page/SmartTools"),
+  { ssr: false }
 );
-// const InsightsSection = dynamic(
-//   () => import("@/components/pages/landing-page/InsightsSection"),
-// );
 const FaqSection = dynamic(
   () => import("@/components/pages/landing-page/FAQSection"),
+  { ssr: false }
 );
 const CalltoActionBottom = dynamic(
   () => import("@/components/pages/landing-page/CalltoActionBottom"),
+  { ssr: false }
 );
-// const FeaturesTabSection = dynamic(
-//   () => import("@/components/pages/landing-page/FeaturesSection"),
-// );
 const FeaturesTabSection = dynamic(
-  () => import("@/components/pages/landing-page/FeaturesTabSection")
+  () => import("@/components/pages/landing-page/FeaturesTabSection"),
+  { ssr: false }
 );
 
 const homeFaqs = [
@@ -166,56 +174,54 @@ export default function Home() {
   return (
     <>
       <div className="font-onset">
-        <HeroSection2
-          title="Take Control. Gain Clarity. Grow with Owners Inventory"
-          description="Turn all assets to advantage. Our Owners Inventory platform assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
-          video="/assets/Manual.mp4"
-          variant="animation2"
-        />
+        <Suspense fallback={<FullPageLoader />}>
+          <HeroSection2
+            title="Take Control. Gain Clarity. Grow with Owners Inventory"
+            description="Turn all assets to advantage. Our Owners Inventory platform assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion."
+            video="/assets/Manual.mp4"
+            variant="animation2"
+          />
 
-        <TrustedBySection heading="Preferred to businesses who demand precision and performance" />
+          <TrustedBySection heading="Preferred to businesses who demand precision and performance" />
 
-        <TurningChaos
-          title="Turning Chaos Into Clarity"
-          miniTitle="One Inventory at a Time"
-          description="Owners Inventory assists any business to manage its assets with accuracy regardless of their size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system.
-            Made by the owners, owned by the owners - since you need the tools that can think like you. Let us simplify the management of what belongs to you."
-        />
+          <TurningChaos
+            title="Turning Chaos Into Clarity"
+            miniTitle="One Inventory at a Time"
+            description="Owners Inventory assists any business to manage its assets with accuracy regardless of their size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system.
+              Made by the owners, owned by the owners - since you need the tools that can think like you. Let us simplify the management of what belongs to you."
+          />
 
-        <CaseStudies caseStudies={caseStudiesData} />
+          <CaseStudies caseStudies={caseStudiesData} />
 
-        <FeaturesTabSection />
+          <FeaturesTabSection />
 
-        <SmartWaytoSyncndSellSection />
+          <SmartWaytoSyncndSellSection />
 
-        <UnifiedPlatform />
+          <UnifiedPlatform />
 
-        <VoicesRealBusiness />
+          <VoicesRealBusiness />
 
-        <IndustryPosShowcase
-          mainHeading="Built for Every Industry"
-          paragraph="No matter what you sell, the Owners Inventory management program adapts to you."
-          buttonText="Explore All Industries"
-          industries={homeIndustries}
-        />
+          <IndustryPosShowcase
+            mainHeading="Built for Every Industry"
+            paragraph="No matter what you sell, the Owners Inventory management program adapts to you."
+            buttonText="Explore All Industries"
+            industries={homeIndustries}
+          />
 
-        <PosIconsSection />
+          <PosIconsSection />
 
-        <ToolsSection />
+          <ToolsSection />
 
-        <div className="wrapper">
-          <SmartTools />
-        </div>
+          <div className="wrapper">
+            <SmartTools />
+          </div>
 
-        {/* <InsightsSection /> */}
- 
+          <div className="lg:pt-[100px] md:pt-40 pt-28">
+            <FaqSection faqs={homeFaqs} />
+          </div>
 
-      <div className="lg:pt-[100px] md:pt-40 pt-28">
-        <FaqSection faqs={homeFaqs} />
-
-        </div>
-
-        <CalltoActionBottom />
+          <CalltoActionBottom />
+        </Suspense>
       </div>
     </>
   );
