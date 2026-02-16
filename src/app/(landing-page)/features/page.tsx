@@ -54,6 +54,8 @@ const Page = () => {
         description={UTILITIES_DATA.description}
         buttonText={UTILITIES_DATA.buttonText}
         buttonUrl={UTILITIES_DATA.buttonUrl}
+        buttonColor={UTILITIES_DATA.buttonColor}
+        marginClasses='lg:mt-0 md:mt-0 mt-0'
       />
 
       <SmartIntegration />

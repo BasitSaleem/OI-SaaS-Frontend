@@ -18,7 +18,7 @@ const ButtonLg: React.FC<ButtonLgProps> = ({
   textColor = "white",
   isBorder = false,
   hoverBgColor,
-  className = "",        // ✅ default empty
+  className = "",       
 }) => {
   return (
     <Link

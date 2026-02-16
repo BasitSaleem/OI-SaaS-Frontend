@@ -12,6 +12,8 @@ interface SellerClubSectionProps {
   description: string;
   buttonText?: string;
   buttonUrl?: string;
+  buttonColor?: string;
+  marginClasses?: string;
 }
 
 export default function SellerClubSection({
@@ -22,6 +24,9 @@ export default function SellerClubSection({
   description,
   buttonText = 'Book a Free Demo',
   buttonUrl = '#',
+  buttonColor= "#795CF5",
+  marginClasses= "lg:mt-40 md:mt-28 mt-20"
+
 }: SellerClubSectionProps) {
   const [bgImage, setBgImage] = useState('/assets/seller-club-mobile.webp');
   const [isTablet, setIsTablet] = useState(false);
@@ -55,7 +60,7 @@ export default function SellerClubSection({
   return (
     <section className="wrapper">
       <div
-        className="ownerinventory-landing-sellerclub overflow-y-hidden mb-20 rounded-[40px] lg:mt-40 md:mt-28 mt-20 lg:h-[480px] md:h-[632px] h-[522px]"
+        className={`ownerinventory-landing-sellerclub ${marginClasses} overflow-y-hidden mb-20 rounded-[40px] lg:h-[480px] md:h-[632px] h-[522px]`}
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundPosition: 'top center',
@@ -125,11 +130,12 @@ export default function SellerClubSection({
             </p>
 
             <ButtonLg
-              url="#"
-              text="Book Free Demo"
-              bgColor="#795CF5"
+              url={buttonUrl}
+              text={buttonText}
+              bgColor={buttonColor}
               textColor="white"
               isBorder
+              hoverBgColor="#1AD1B9"
             />
           </div>
         </div>

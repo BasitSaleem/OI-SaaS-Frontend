@@ -109,22 +109,22 @@ export const FEATURE_CARDS_DATA = [
         containerShadow: true,
         scale: 1.15,
     },
-    {
-        title: "Restaurant Operations Simplified",
-        description:
-            "Streamline menus, tables, and kitchen orders with a POS built for restaurants, cafés, and food chains. Serve faster, reduce errors, and keep customers satisfied.",
-        videoSrc:
-            "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/restaurant-operations.webm",
-        buttonLabel: "View Details",
-        buttonHref: "#",
-        buttonColor: "#795CF5",
-        containerWidth: "100%",
-        containerHeight: "420px",
-        containerBorderColor: "transparent",
-        containerBackgroundColor: "transparent",
-        containerShadow: false,
-        scale: 1.5,
-    },
+    // {
+    //     title: "Restaurant Operations Simplified",
+    //     description:
+    //         "Streamline menus, tables, and kitchen orders with a POS built for restaurants, cafés, and food chains. Serve faster, reduce errors, and keep customers satisfied.",
+    //     videoSrc:
+    //         "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/restaurant-operations.webm",
+    //     buttonLabel: "View Details",
+    //     buttonHref: "#",
+    //     buttonColor: "#795CF5",
+    //     containerWidth: "100%",
+    //     containerHeight: "420px",
+    //     containerBorderColor: "transparent",
+    //     containerBackgroundColor: "transparent",
+    //     containerShadow: false,
+    //     scale: 1.5,
+    // },
 ];
 
 export const UTILITIES_DATA = {
@@ -132,8 +132,9 @@ export const UTILITIES_DATA = {
     imageSrc: "/assets/features-page/featurescard-banners/utilities-banner.webp",
     heading: "Utilities & General Tools",
     description: "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring your business runs efficiently at every level.",
-    buttonText: "Book a Free Demo",
-    buttonUrl: "#",
+    buttonText: "View Details",
+    buttonColor: "#1AD1B9",
+    buttonUrl: "/features/tools",
 };
 
 export const SMART_INTEGRATION_DATA = {
@@ -163,7 +164,7 @@ export const SMART_INTEGRATION_DATA = {
 
 export const FINANCE_FEATURES = [
     {
-        title: "Accounting & Financials",
+        title: "Accounts & Finance",
         description: "Integrated invoicing, expense tracking, and tax compliance made simple.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/acounting%26financial.webm",
         imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
@@ -177,7 +178,7 @@ export const FINANCE_FEATURES = [
     //     buttonHref: "/features/advancereports",
     // },
     {
-        title: "Standard Reports",
+        title: "Reports",
         description: "Get instant insights into sales, purchases, and stock performance.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/standards-reports.webm",
         imageSrc: "/assets/features-page/featurescard-banners/reports-banner.webp",
@@ -194,5 +195,5 @@ export const TEAM_SECTION_DATA = {
 export const FINANCE_SECTION_DATA = {
     title: "Finance & Reporting Made Simple",
     description: "Empower your team, build customer loyalty, and manage resources with ease.",
-    wrapperClass: "finance-reporting-shadow mx-10"
+    wrapperClass: "finance-reporting-shadow2 lg:px-10 lg:pb-10  "
 };
