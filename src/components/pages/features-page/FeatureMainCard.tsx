@@ -1,8 +1,9 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
 import Image from "next/image";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
 
 interface FeatureMainCardProps {
   title: string;
@@ -35,18 +36,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
   truncateTitle = false,
   maxTitleLength = 50,
 }) => {
-  const [isTablet, setIsTablet] = useState(false);
-
-  // Detect tablet screen size
-  useEffect(() => {
-    const checkTablet = () => {
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-    };
-
-    checkTablet();
-    window.addEventListener("resize", checkTablet);
-    return () => window.removeEventListener("resize", checkTablet);
-  }, []);
+  const { shouldShowImage } = useSafariDetector();
 
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
@@ -69,7 +59,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
           >
             {/* If no video exists, show image on all screens */}
             {/* If both exist, show image on tablet, video on desktop/mobile */}
-            {!videoSrc && imageSrc ? (
+            {shouldShowImage && imageSrc ? (
               <Image
                 src={imageSrc}
                 alt={title}
@@ -78,26 +68,27 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 className="w-full h-full object-contain overflow-hidden bg-transparent"
                 priority
               />
-            ) : isTablet && imageSrc ? (
-              <Image
-                src={imageSrc}
-                alt={title}
-                width={743}
-                height={460}
-                className="w-full h-full object-contain overflow-hidden bg-transparent"
-                priority
-              />
-            ) : videoSrc ? (
+            ) : !shouldShowImage && videoSrc ? (
               <video
                 className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
                 autoPlay
                 muted
                 loop
                 playsInline
+                preload="none"
               >
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            ) : imageSrc ? (
+              <Image
+                src={imageSrc}
+                alt={title}
+                width={743}
+                height={460}
+                className="w-full h-full object-contain overflow-hidden bg-transparent"
+                priority
+              />
             ) : null}
             
           </div>

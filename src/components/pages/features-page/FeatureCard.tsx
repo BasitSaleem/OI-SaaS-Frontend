@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
 
 interface FeatureCardProps {
   title: string;
@@ -34,6 +35,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   truncateTitle = false,
   maxTitleLength = 50,
 }) => {
+  const { shouldShowImage } = useSafariDetector();
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
       ? title.slice(0, maxTitleLength) + "..."
@@ -53,23 +55,30 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
               rounded-tl-[20px] rounded-tr-[20px]`}
           >
-            {imageSrc ? (
+            {shouldShowImage && imageSrc ? (
               <img
                 src={imageSrc}
                 alt={title}
                 className={`w-full rounded-tl-[20px] rounded-tr-[20px] ${mediaClassName}`}
               />
-            ) : videoSrc ? (
+            ) : !shouldShowImage && videoSrc ? (
               <video
                 className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
                 autoPlay
                 muted
                 loop
                 playsInline
+                preload="none"
               >
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            ) : imageSrc ? (
+              <img
+                src={imageSrc}
+                alt={title}
+                className={`w-full rounded-tl-[20px] rounded-tr-[20px] ${mediaClassName}`}
+              />
             ) : null}
           </div>
 

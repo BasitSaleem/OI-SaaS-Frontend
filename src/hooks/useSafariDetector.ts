@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 export function useSafariDetector() {
     const [isSafari, setIsSafari] = useState(false);
     const [isTablet, setIsTablet] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -23,17 +24,22 @@ export function useSafariDetector() {
 
         setIsSafari(safariDetected);
 
-        const checkTablet = () => {
-            setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+        const checkDevice = () => {
+            const width = window.innerWidth;
+            const isTab = width >= 768 && width < 1024;
+            const isMob = width < 768;
+
+            setIsTablet(isTab || !!isIpad);
+            setIsMobile(isMob);
         };
 
-        checkTablet();
-        window.addEventListener("resize", checkTablet);
+        checkDevice();
+        window.addEventListener("resize", checkDevice);
 
-        return () => window.removeEventListener("resize", checkTablet);
+        return () => window.removeEventListener("resize", checkDevice);
     }, []);
 
-    const shouldShowImage = isMounted && (isSafari || isTablet);
+    const shouldShowImage = isMounted && (isTablet || isMobile);
 
-    return { isSafari, isTablet, isMounted, shouldShowImage };
+    return { isSafari, isTablet, isMobile, isMounted, shouldShowImage };
 }
