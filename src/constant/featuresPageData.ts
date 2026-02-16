@@ -90,7 +90,7 @@ export const FEATURE_CARDS_DATA = [
         containerHeight: "420px",
         containerBorderColor: "#ffffff",
         containerBackgroundColor: "rgba(255,255,255,0.4)",
-        containerShadow: true,
+        containerShadow: false,
         scale: 1.05,
     },
     {

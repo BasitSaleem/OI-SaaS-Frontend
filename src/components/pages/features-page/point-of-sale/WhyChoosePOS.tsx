@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import MainHeading from "../../typography/MainHeading";
 import Paragraph from "../../typography/Paragraph";
 import CardHeading from "../../typography/CardHeading";
+import { useEffect, useState } from "react";
 
 interface CardItem {
   icon: string | StaticImageData;
@@ -15,7 +16,8 @@ interface WhyChoosePOSProps {
   heading: string;
   paragraph?: string;
   cards: CardItem[];
-  mainImage: string | StaticImageData;
+  mainImage?: string | StaticImageData;
+  mainVideo?: string;
 }
 
 export default function WhyChoosePOS({
@@ -23,7 +25,21 @@ export default function WhyChoosePOS({
   paragraph,
   cards,
   mainImage,
+  mainVideo,
 }: WhyChoosePOSProps) {
+
+   const [isTablet, setIsTablet] = useState(false);
+  
+    // Detect tablet screen size
+    useEffect(() => {
+      const checkTablet = () => {
+        setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+      };
+  
+      checkTablet();
+      window.addEventListener("resize", checkTablet);
+      return () => window.removeEventListener("resize", checkTablet);
+    }, []);
   return (
     <section className="lg:mt-[100px] md:mt-28 mt-20">
       <div className="finance-reporting-shadow">
@@ -78,14 +94,45 @@ export default function WhyChoosePOS({
             {/* Main Image Container */}
             <div className="xl:col-span-7 col-span-6">
               <div className="relative rounded-[20px] flex align-center justify-center overflow-hidden">
-                <Image
+                {/* <Image
                   src={mainImage}
                   alt="Modern POS system interface showing sales analytics and transaction processing"
                   width={800}
                   height={600}
                   className="w-full h-auto object-cover"
                   priority
-                />
+                /> */}
+
+                 {!mainVideo && mainImage ? (
+                                    <Image
+                                      src={mainImage}
+                                      alt= "why chose banner"
+                                      width={743}
+                                      height={460}
+                                      className="w-full h-auto object-cover"
+                                      priority
+                                    />
+                                  ) : isTablet && mainImage ? (
+                                    <Image
+                                      src={mainImage}
+                                      alt="why chose banner"
+                                      width={743}
+                                      height={460}
+                                      className={`w-full object-cover rounded-3xl`}
+                                      priority
+                                    />
+                                  ) : mainVideo ? (
+                                    <video
+                                      className="w-full object-cover rounded-3xl"
+                                      autoPlay
+                                      muted
+                                      loop
+                                      playsInline
+                                    >
+                                      <source src={mainVideo} type="video/mp4" />
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  ) : null}
               </div>
             </div>
           </div>
