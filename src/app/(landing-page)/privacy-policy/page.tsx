@@ -5,49 +5,13 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CalltoActionBottom from "@/components/pages/landing-page/CalltoActionBottom";
+import MainHeading from "@/components/pages/typography/MainHeading";
+import SubHeading from "@/components/pages/typography/SubHeading";
+import Paragraph from "@/components/pages/typography/Paragraph";
+
+import { PRIVACY_POLICY_DATA } from "@/constant/privacyData";
 
 const PrivacyPolicyPage = () => {
-   const privacyPolicyData = [
-    {
-      title: "Privacy policy",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        "Orem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pulvinar magna, et commodo elit sodales consectetur. Etiam ut augue ligula. Duis volutpat orci ut malesuada lacinia. Vivamus feugiat egestas",
-      ],
-    },
-    {
-      title: "Personal information",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pulvinar magna, et commodo elit sodales consectetur. Etiam ut augue ligula. Duis volutpat orci ut malesuada lacinia. Vivamus feugiat egestas.",
-      ],
-    },
-    {
-      title: "Payment information",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-      ],
-    },
-    {
-      title: "Personal data protection policy",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pulvinar magna, et commodo elit sodales consectetur. Etiam ut augue ligula. Duis volutpat orci ut malesuada lacinia. Vivamus feugiat egestas.",
-      ],
-    },
-    {
-      title: "How we use your information",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pulvinar magna, et commodo elit sodales consectetur. Etiam ut augue ligula. Duis volutpat orci ut malesuada lacinia. Vivamus feugiat egestas.",
-      ],
-    },
-    {
-      title: "Sharing your information",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pulvinar magna, et commodo elit sodales consectetur. Etiam ut augue ligula. Duis volutpat orci ut malesuada lacinia. Vivamus feugiat egestas.",
-      ],
-    },
-  ];
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -128,24 +92,34 @@ const PrivacyPolicyPage = () => {
 
       <section className="mt-20 md:mt-28 lg:mt-40">
         <div className="wrapper">
-          <h3 className="text-center text-4xl md:text-[40px] lg:text-5xl xl:text-[64px] leading-[48px] lg:leading-[60px] xl:leading-[76px] mb-5 lg:mb-6 xl:mb-10 font-['Onest'] font-semibold text-[#231F20]">
+          <h1 className="text-center text-4xl md:text-[40px] lg:text-5xl xl:text-[64px] leading-[48px] lg:leading-[60px] xl:leading-[76px] mb-5 lg:mb-6 xl:mb-10 font-['Onest'] font-semibold text-[#231F20]">
             Privacy Policy
-          </h3>
+          </h1>
 
-          <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
-            {privacyPolicyData.map((section, index) => (
-              <div key={index} className="flex flex-col">
-                <h4 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-['Onest'] mb-4">
-                  {section.title}
-                </h4>
-                {section.content.map((para, idx) => (
-                  <p
-                    key={idx}
-                    className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20]"
-                  >
-                    {para}
-                  </p>
-                ))}
+          <div className="flex flex-col gap-10 md:gap-16 lg:gap-20">
+            {PRIVACY_POLICY_DATA.map((part: any, pIndex: number) => (
+              <div key={pIndex} className="flex flex-col gap-6 md:gap-8 border-b border-gray-200 pb-10 last:border-0 last:pb-0">
+                <SubHeading className="uppercase">
+                  {part.partTitle}
+                </SubHeading>
+                
+                <div className="flex flex-col gap-8 lg:gap-10">
+                  {part.sections.map((section: any, sIndex: number) => (
+                    <div key={sIndex} className="flex flex-col">
+                      <h3 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-['Onest'] mb-4">
+                        {section.title}
+                      </h3>
+                      {section.content.map((para: string, idx: number) => (
+                        <Paragraph
+                          key={idx}
+                          className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20] mb-4 last:mb-0"
+                        >
+                          {para}
+                        </Paragraph>
+                      ))}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

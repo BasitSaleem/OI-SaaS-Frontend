@@ -6,7 +6,7 @@ export const pricingPlans: PricingPlan[] = [
     name: 'Basic',
     price: 0,
     yearlyPrice: 0,
-     description: '2 users',
+    description: '2 users',
     color: '#1AD1B9',
     bgColor: 'rgba(26,209,185,0.1)',
     features: [
@@ -78,7 +78,7 @@ export const pricingPlans: PricingPlan[] = [
     name: 'Premium',
     price: 199,
     yearlyPrice: 179, // 10% off
-     description: 'Unlimited users',
+    description: 'Unlimited users',
     color: '#795CF5',
     bgColor: 'rgba(121,92,245,0.1)',
     features: [
@@ -254,3 +254,7 @@ export const featureCategories: FeatureCategory[] = [
     ]
   }
 ];
+export const PRICING_HERO_CONTENT = {
+  title: "Start free. Scale anytime.",
+  description: "Get full access to powerful inventory tools without upfront costs. Start managing smarter today and upgrade only when your business is ready — no contracts, no pressure.",
+};
