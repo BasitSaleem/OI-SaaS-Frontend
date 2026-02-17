@@ -2,7 +2,8 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/pos-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/pos-whychose.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/pos-whychose-tab.webp";
+import backgroundImage from "../../../../../public/assets/features-page/why-chose-banners/pos-whychose.webp"
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -68,7 +69,8 @@ across multiple locations."
         paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
         cards={POS_WHY_CHOOSE_CARDS}
         mainImage= {whyChoseBanner}
-        // mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
+        mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
+        backgroundImage={backgroundImage}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
