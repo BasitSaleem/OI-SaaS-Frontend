@@ -252,7 +252,7 @@ sales: [
       // ],
     },
     { title: 'Warehouses' },
-    { title: 'Production Floor' },
+    { title: 'Production Floors' },
   ],
   products:[
     
@@ -291,6 +291,7 @@ sales: [
     { title: 'Daily Cash Report' },
     { title: 'Inventory Aging Report' },
     { title: 'Production Order Tracking Report' },
+    { title: 'Raw Material Consumption vs Planned' },
   ],
 
   advanceReports: [
