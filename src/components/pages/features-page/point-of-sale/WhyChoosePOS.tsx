@@ -18,6 +18,7 @@ interface WhyChoosePOSProps {
   cards: CardItem[];
   mainImage?: string | StaticImageData;
   mainVideo?: string;
+  backgroundImage?: string | StaticImageData;
 }
 
 export default function WhyChoosePOS({
@@ -25,6 +26,7 @@ export default function WhyChoosePOS({
   paragraph,
   cards,
   mainImage,
+  backgroundImage,
   mainVideo,
 }: WhyChoosePOSProps) {
 
@@ -40,6 +42,13 @@ export default function WhyChoosePOS({
       window.addEventListener("resize", checkTablet);
       return () => window.removeEventListener("resize", checkTablet);
     }, []);
+
+    const bgUrl = backgroundImage 
+      ? typeof backgroundImage === 'string' 
+        ? backgroundImage 
+        : backgroundImage.src 
+      : '';
+
   return (
     <section className="lg:mt-[100px] md:mt-28 mt-20">
       <div className="finance-reporting-shadow">
@@ -93,16 +102,19 @@ export default function WhyChoosePOS({
 
             {/* Main Image Container */}
             <div className="xl:col-span-7 col-span-6">
-              <div className="relative rounded-[20px] flex align-center justify-center overflow-hidden">
-                {/* <Image
-                  src={mainImage}
-                  alt="Modern POS system interface showing sales analytics and transaction processing"
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-cover"
-                  priority
-                /> */}
-
+              <div 
+                className="relative rounded-[20px] pt-12 pb-5 flex align-center justify-center overflow-hidden"
+                style={
+                  mainVideo && !isTablet && bgUrl 
+                    ? { 
+                        backgroundImage: `url(${bgUrl})`,
+                        backgroundSize: '100% 100%',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      } 
+                    : {}
+                }
+              >
                  {!mainVideo && mainImage ? (
                                     <Image
                                       src={mainImage}
