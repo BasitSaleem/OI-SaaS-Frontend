@@ -33,7 +33,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
     <div className="relative w-full">
       {label && (
         <div className="flex items-center gap-x-1 ">
-          <p className="text-sm text-[#231F20] font-normal font-['Onest'] leading-[100%]">
+          <p className="text-sm text-[#231F20] mb-1 font-normal font-['Onest'] leading-[100%]">
             {label}
           </p>
           {required && variant !== "signup" && <p className="text-redColor">*</p>}
@@ -45,13 +45,15 @@ const SelectField: React.FC<SelectFieldProps> = ({
           value={value}
           onChange={onChange}
           disabled={readOnly}
-          className="w-full px-4 py-3 pr-10 rounded-[14px] border border-[#D9D9D9] bg-white appearance-none text-[#231F20] placeholder:text-[#9A9A9A] font-['Onest']"
+          className={`w-full px-4 py-3 pr-10 rounded-[14px] border border-[#D9D9D9] bg-white appearance-none outline-none focus:border-[#795CF5] transition-colors font-['Onest'] ${
+            !value ? "text-[#9A9A9A]" : "text-[#231F20]"
+          }`}
         >
           <option value="" disabled>
             {placeholder}
           </option>
           {options.map((opt, idx) => (
-            <option key={idx} value={opt.value}>
+            <option key={idx} value={opt.value} className="text-[#231F20]">
               {opt.label}
             </option>
           ))}

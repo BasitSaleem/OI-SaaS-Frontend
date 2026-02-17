@@ -83,6 +83,7 @@ export const FEATURE_CARDS_DATA = [
             "Seamlessly connect your inventory with online stores and marketplaces. Manage stock, sync products, and process orders across multiple sales channels — all from one unified platform.",
         videoSrc:
             "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/E-commerce.webm",
+        imageSrc: "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/ecommerce",
         buttonColor: "#795CF5",
@@ -99,6 +100,7 @@ export const FEATURE_CARDS_DATA = [
             "Owners Inventory brings together everything you need to manage, track, and grow your business in one unified platform. Explore our powerful features, categorized to help you run operations smoothly, manage people efficiently, and scale with confidence.",
         videoSrc:
             "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/marketing-tools.webm",
+        imageSrc: "/assets/features-page/featurescard-banners/marketing-banner.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/marketing",
         buttonColor: "#1AD1B9",

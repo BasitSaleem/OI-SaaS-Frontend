@@ -1,4 +1,15 @@
 export const PRIVACY_POLICY_DATA = [
+     {
+        sections: [
+            {
+                title: "Introduction & Our Commitment to Privacy",
+                content: [
+                    "Owners Inventory (we, our, or us) values your privacy and is dedicated to keeping your personal information safe. This Privacy Policy describes the information we gather, its use, sharing, and the options you have about your data. Through our Services, you consent to the practices outlined in this Privacy Policy.",
+                ],
+            },
+        ],
+    },
+    
     {
         partTitle: "Part I: Information We Collect and Control",
         sections: [

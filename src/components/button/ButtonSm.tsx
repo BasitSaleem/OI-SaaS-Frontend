@@ -15,6 +15,7 @@ interface ButtonProps {
   paddingLg?: string;
 
   className?: string;   // <-- OPTIONAL extra classes
+  type?: "button" | "submit" | "reset";
 }
 
 export default function Button({
@@ -29,6 +30,7 @@ export default function Button({
   paddingMd = "md:px-5 md:py-3",
   paddingLg = "lg:px-[30px] lg:py-4",
   className = "",         // <-- default empty
+  type = "button",
 }: ButtonProps) {
   const classes = `
     ${padding}
@@ -51,7 +53,7 @@ export default function Button({
   // If onClick is passed → render <button>
   if (onClick) {
     return (
-      <button onClick={onClick} style={style} className={classes}>
+      <button type={type} onClick={onClick} style={style} className={classes}>
         <span>{text}</span>
         {icon && <span className="ml-1 flex items-center">{icon}</span>}
       </button>
