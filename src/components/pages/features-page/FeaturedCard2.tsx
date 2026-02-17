@@ -1,11 +1,14 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { useSafariDetector } from "@/hooks/useSafariDetector";
+import Image from "next/image";
 
 interface FeatureCard2Props {
   title: string;
   description: string;
-  videoSrc: string;
+  videoSrc?: string;
+  imageSrc?: string;
   buttonLabel: string;
   buttonHref: string;
   buttonColor: string;
@@ -22,6 +25,7 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
   title,
   description,
   videoSrc,
+  imageSrc,
   buttonLabel,
   buttonHref,
   buttonColor,
@@ -33,16 +37,20 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
   containerShadow = true,
   scale = 1,
 }) => {
+  const { shouldShowImage } = useSafariDetector();
   const isEven = index % 2 === 0;
 
   return (
-    <div className={`${isEven ? "lg:mt-40 md:mt-28 mt-20" : "lg:my-40 md:my-28 my-20"}  grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}>
-      
+    <div
+      className={`${isEven ? "lg:mt-40 md:mt-28 mt-20" : "lg:my-40 md:my-28 my-20"}  grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
+    >
       {/* Video */}
       <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
         <div
-          className={`px-3 py-4 flex items-center justify-center  ${isEven ? "gradient-shadow" : "gradient-shadow-right"} rounded-[30px] ${
-            containerShadow ? "shadow-[0px_0px_20px_0px_rgba(121,92,245,0.2)]" : ""
+          className={`px-3 py-4 flex items-center justify-center lg:max-w-full md:max-w-[600px] mx-auto  ${isEven ? "gradient-shadow" : "gradient-shadow-right"} rounded-[30px] ${
+            containerShadow
+              ? "shadow-[0px_0px_20px_0px_rgba(121,92,245,0.2)]"
+              : ""
           }`}
           style={{
             width: containerWidth,
@@ -51,18 +59,32 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
             backgroundColor: containerBackgroundColor,
           }}
         >
-          <div className="flex flex-col items-center justify-center w-full h-full">
-            <video
-              className="w-full h-full rounded-[20px]"
-              style={{ transform: `scale(${scale})`}}
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src={videoSrc} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="flex flex-col items-center justify-center w-full h-full ">
+            {shouldShowImage && imageSrc ? (
+              <Image
+                src={imageSrc}
+                alt={title}
+                width={743}
+                height={460}
+                className={`w-full h-full object-contain overflow-hidden bg-transparent`}
+                priority
+              />
+            ) : !shouldShowImage && videoSrc ? (
+              <video
+                className="w-full h-full rounded-[20px]"
+                style={{ transform: `scale(${scale})` }}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="none"
+              >
+                <source src={videoSrc} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : imageSrc ? (
+              <img src={imageSrc} alt={title} className={`w-full`} />
+            ) : null}
           </div>
         </div>
       </div>

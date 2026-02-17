@@ -14,8 +14,29 @@ interface ContactModalProps {
 }
 
 const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
-  const [value, setValue] = useState<string | undefined>()
-  const [selected, setSelected] = useState("");
+  const [value, setValue] = useState<string | undefined>();
+  const [selectedPlan, setSelectedPlan] = useState("");
+  const [selectedSize, setSelectedSize] = useState("");
+
+  const companySizeOptions = [
+    { label: "Less than 5 employees", value: "Less than 5 employees" },
+    { label: "5-20 employees", value: "5-20 employees" },
+    { label: "20-50 employees", value: "20-50 employees" },
+    { label: "50-250 employees", value: "50-250 employees" },
+    { label: "More than 250 employees", value: "More than 250 employees" },
+  ];
+
+  const planOptions = [
+    { label: "Free Plan", value: "free" },
+    { label: "Pro Plan", value: "pro" },
+    { label: "Enterprise", value: "enterprise" },
+  ];
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Modal Form submitted");
+  };
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className="flex flex-col items-center justify-start">
@@ -32,66 +53,48 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
           className="bg-white  w-full max-w-[768px] h-auto mt-5 rounded-[20px] lg:rounded-[30px] p-4 md:p-8"
           style={{ boxShadow: "2px 2px 22px 0px rgba(0,0,0,0.15)" }}
         >
-          
-            <form action="">
-              <div className="grid md:grid-cols-2 gap-x-4 gap-y-4">
-            <div className="">
+          <form onSubmit={handleSubmit}>
+            <div className="grid md:grid-cols-2 gap-x-4 gap-y-4">
               <InputField
-                required
-                label="Work Email"
+                label="Full Name"
+                placeHolder="Enter Your Name"
+                // required
+              />
+              <PhoneInputField
+                label="Phone Number"
+                placeHolder="Enter Your Phone Number"
+                value={value}
+                onChange={setValue}
+                // required
+              />
+              <InputField
+                label="Company Email"
                 type="email"
-                placeHolder="Enter your  work email"
+                placeHolder="Enter Your Company Email"
+                // required
               />
-            </div>
-            <div className="">
               <InputField
-                required
-                label="Company"
-                type="text"
-                placeHolder="Enter your company name"
+                label="Company Name"
+                placeHolder="Enter Your Company Name"
+                // required
               />
-            </div>
-            <div className="">
-              <InputField
-                required
-                label="Your First Name"
-                type="text"
-                placeHolder="Enter your full name"
-              />
-            </div>
-            <div className="">
-              <InputField
-                required
-                label="Your Last Name"
-                type="text"
-                placeHolder="Enter your last name"
-              />
-            </div>
-            <div className="">
-               <PhoneInputField
-                        label="Phone Number"
-                        placeHolder="Enter your phone number"
-                        value={value}
-                        onChange={setValue}
-                        // required
-                    />
-            </div>
-            <div className="">
               <SelectField
-                label="Select your plan"
-                placeholder="Choose a plan"
-                required
-                value={selected}
-                onChange={(e) => setSelected(e.target.value)}
-                options={[
-                  { label: "Free Plan", value: "free" },
-                  { label: "Pro Plan", value: "pro" },
-                  { label: "Enterprise", value: "enterprise" },
-                ]}
-                //   error={selected === "" ? "Please select a plan" : ""}
+                label="Company Size"
+                placeholder="Select Your Company Size"
+                value={selectedSize}
+                onChange={(e) => setSelectedSize(e.target.value)}
+                options={companySizeOptions}
+                // required
+              />
+              <SelectField
+                label="Select Your Plan"
+                placeholder="Select Your Plan"
+                value={selectedPlan}
+                onChange={(e) => setSelectedPlan(e.target.value)}
+                options={planOptions}
+                // required
               />
             </div>
-           </div>
             <div className="flex justify-center items-center mt-6">
               <ButtonSm
                 url="#"
@@ -101,9 +104,11 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 textColor="white"
                 isBorder
                 paddingLg="lg:px-[160px] lg:py-5"
+                type="submit"
+                onClick={() => {}}
               />
             </div>
-            </form>
+          </form>
         </div>
       </div>
     </Modal>

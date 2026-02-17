@@ -32,7 +32,7 @@ const TextArea: React.FC<TextAreaProps> = ({
                 <textarea
                     // {...register}
                     rows={rows}
-                    className="w-[100%] text-area px-4 py-3 outline-0 rounded-[14px] border border-[#D9D9D9] placeholder:text-[16px] text-[#9A9A9A] placeholder:text-[#9A9A9A] appearance-none resize-none"
+                    className="w-[100%] text-area px-4 py-3 outline-none focus:border-[#795CF5] transition-colors rounded-[14px] border border-[#D9D9D9] placeholder:text-[16px] text-[#231F20] placeholder:text-[#9A9A9A] appearance-none resize-none"
                     placeholder={placeHolder}
                     readOnly={readOnly}
                 />

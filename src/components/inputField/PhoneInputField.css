@@ -2,6 +2,11 @@
     border-color: #795CF5;
 }
 
+.select-field:focus-within {
+    border-color: #795CF5;
+}
+
+
 .text-area:focus-within {
     border-color: #795CF5;
 }
