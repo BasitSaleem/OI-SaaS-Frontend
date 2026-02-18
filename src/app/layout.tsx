@@ -30,8 +30,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Owners Inventory",
-  description: "Grow Faster with Smarter Inventory Tools",
+  title: "Owners Inventory | Grow Faster with Smarter Tools",
+  description: "Grow Faster with Smarter Inventory Tools. Experience the next generation of inventory management with Owners Inventory.",
+  keywords: ["inventory management", "POS system", "business tools", "SaaS"],
+  publisher: "Owners Inventory",
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/assets/favicon.svg",
   },
