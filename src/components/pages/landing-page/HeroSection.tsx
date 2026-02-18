@@ -11,7 +11,9 @@ import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import Image from "next/image";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 interface HeroSectionProps {
   title?: string;

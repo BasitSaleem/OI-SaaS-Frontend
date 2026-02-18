@@ -104,6 +104,11 @@ export const useHeroAnimations = (variant: "animation1" | "animation2" | "none" 
           );
         });
       }
+
+      // Force refresh after a short delay to ensure all layout/content is settled
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
     });
 
     return () => ctx.revert();

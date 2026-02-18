@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function useHeaderAnimation() {
   useEffect(() => {
@@ -40,6 +41,11 @@ export function useHeaderAnimation() {
 
         tlHeader.to(".mobile-iventory, .header-left-col", { y: 0, opacity: 1 }, 0);
       }
+
+      // Refresh to ensure correct positions
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
     });
 
     return () => ctx.revert();

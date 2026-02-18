@@ -12,14 +12,17 @@ import {
 
 const FeaturesCallToAction = dynamic(
   () => import("@/components/pages/features-page/FeaturesCallToAction"),
+  { ssr: false },
 );
 
 const WhyChoosePOS = dynamic(
   () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"),
+  { ssr: false },
 );
 
 const ContactHero = dynamic(
   () => import("@/components/pages/contact-us/contactHero"),
+  { ssr: false },
 );
 const Page = () => {
   return (

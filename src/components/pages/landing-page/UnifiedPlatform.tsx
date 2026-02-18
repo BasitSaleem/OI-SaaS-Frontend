@@ -9,7 +9,9 @@ import React from "react";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const cards = [
   {

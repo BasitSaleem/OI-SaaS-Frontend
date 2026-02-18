@@ -8,7 +8,9 @@ import MainHeading from '../typography/MainHeading';
 import Paragraph from '../typography/Paragraph';
 import Link from 'next/link';
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 type GSAPMatchMedia = {
   add: (query: string, context: () => void) => void;

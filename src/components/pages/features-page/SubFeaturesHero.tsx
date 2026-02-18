@@ -9,7 +9,9 @@ import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import Image, { StaticImageData } from "next/image";
 import Paragraph from "../typography/Paragraph";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 interface SubFeaturesHeroProps {
   title?: string;

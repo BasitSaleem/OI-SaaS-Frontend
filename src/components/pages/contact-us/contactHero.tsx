@@ -13,7 +13,9 @@ import Link from "next/link";
 import ContactForm from "./contactForm";
 import PhilosophyIcons from "@/components/icons/philosophyIcons";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 import SupportCard, { CardItem } from "./SupportCard";
 

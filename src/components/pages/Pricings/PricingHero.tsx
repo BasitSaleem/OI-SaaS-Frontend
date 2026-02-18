@@ -8,7 +8,9 @@ import PricingTabs from "./PricingTabs";
 import PricingCards from "./PricingCards";
 import { pricingPlans, PRICING_HERO_CONTENT } from "./tableConfig";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 interface PricingHeroProps {
   activeTab: "monthly" | "yearly";

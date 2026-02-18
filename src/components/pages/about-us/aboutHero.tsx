@@ -10,7 +10,9 @@ import Image, { StaticImageData } from "next/image";
 import Paragraph from "../typography/Paragraph";
 import Link from "next/link";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 interface aboutHeroProps {
   title?: string;

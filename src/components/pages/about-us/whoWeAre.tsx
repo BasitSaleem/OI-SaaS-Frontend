@@ -11,7 +11,9 @@ import whoWeBanner from "../../../../public/assets/about-us/who-we-banner.webp";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 interface FeatureItem {
   id: number;
