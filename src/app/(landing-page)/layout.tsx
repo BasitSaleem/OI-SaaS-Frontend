@@ -2,16 +2,24 @@
 
 import Footer from "@/components/pages/footer/Footer";
 import LenisProvider from "@/components/pages/lenisProvider/LenixProvider";
-import React from "react";
+import React, { Suspense } from "react";
+import { usePathname } from "next/navigation";
+import FullPageLoader from "@/components/common-components/FullPageLoader";
 
 export default function LandingPageLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+
   return (
     <>
-      <LenisProvider>{children}</LenisProvider>
+      <LenisProvider>
+        <div key={pathname}>
+          <Suspense fallback={<FullPageLoader />}>{children}</Suspense>
+        </div>
+      </LenisProvider>
       <Footer />
     </>
   );

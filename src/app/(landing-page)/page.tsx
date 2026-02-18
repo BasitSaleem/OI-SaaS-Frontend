@@ -70,30 +70,12 @@ import {
   HOME_PAGE_CONTENT,
 } from "@/constant/landingPageData";
 
-// Full page loading component
-const FullPageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-white">
-    <div className="text-center">
-      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
-      <p className="text-gray-600">Loading Owners Inventory...</p>
-    </div>
-  </div>
-);
+import FullPageLoader from "@/components/common-components/FullPageLoader";
 
 export default function Home() {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo(0, 0);
-      try {
-        history.scrollRestoration = "manual";
-      } catch (e) {}
-    }
-  }, []);
-
   return (
     <>
       <div className="font-onset">
-        <Suspense fallback={<FullPageLoader />}>
           <HeroSection2
             title={HOME_PAGE_CONTENT.hero.title}
             description={HOME_PAGE_CONTENT.hero.description}
@@ -139,7 +121,6 @@ export default function Home() {
           </div>
 
           <CalltoActionBottom />
-        </Suspense>
       </div>
     </>
   );

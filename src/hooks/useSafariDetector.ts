@@ -39,7 +39,7 @@ export function useSafariDetector() {
         return () => window.removeEventListener("resize", checkDevice);
     }, []);
 
-    const shouldShowImage = isMounted && (isTablet || isMobile);
+    const shouldShowImage = isMounted && isTablet;
 
     return { isSafari, isTablet, isMobile, isMounted, shouldShowImage };
 }

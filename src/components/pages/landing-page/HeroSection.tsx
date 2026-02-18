@@ -7,8 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
 import InputField from "@/components/form-fields/InputField";
 import ButtonLg from "@/components/button/ButtonLg";
-import { useHeroAnimation } from "@/hooks/useHeroAnimation";
-import { useHeroAnimation2 } from "@/hooks/useHeroAnimation2";
+import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import Image from "next/image";
 
@@ -53,11 +52,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   }, []);
 
   useHeaderAnimation();
-  if (variant === "animation1") {
-    useHeroAnimation();
-  } else if (variant === "animation2") {
-    useHeroAnimation2();
-  }
+  useHeroAnimations(variant);
   return (
     <div className="pinned-section-1">
       <div className="top-section md:h-6 h-8"></div>

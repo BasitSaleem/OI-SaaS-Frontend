@@ -4,8 +4,7 @@ import { ReactNode, useRef, useEffect, useState } from "react";
 import globalGsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
-import { useHeroAnimation } from "@/hooks/useHeroAnimation";
-import { useHeroAnimation2 } from "@/hooks/useHeroAnimation2";
+import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import DropdownButtonSm from "../dropdown/DropdownButtonSm";
 import MainHeading from "../pages/typography/MainHeading";
@@ -39,11 +38,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   variant = "animation1",
 }) => {
   useHeaderAnimation();
-  if (variant === "animation1") {
-    useHeroAnimation();
-  } else if (variant === "animation2") {
-    useHeroAnimation2();
-  }
+  useHeroAnimations(variant);
 
   const [shouldPlayVideo, setShouldPlayVideo] = useState(false);
   const { shouldShowImage } = useSafariDetector();

@@ -4,8 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
-import { useHeroAnimation } from "@/hooks/useHeroAnimation";
-import { useHeroAnimation2 } from "@/hooks/useHeroAnimation2";
+import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import Image, { StaticImageData } from "next/image";
 import Paragraph from "../typography/Paragraph";
@@ -45,11 +44,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   }, []);
 
   useHeaderAnimation();
-  if (variant === "animation1") {
-    useHeroAnimation();
-  } else if (variant === "animation2") {
-    useHeroAnimation2();
-  }
+  useHeroAnimations(variant);
 
   // Refs
   const mainHeadingRef = useRef<HTMLHeadingElement>(null);

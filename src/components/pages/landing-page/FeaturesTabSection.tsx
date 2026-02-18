@@ -13,12 +13,12 @@ type VideoRefs = {
 
 export default function FeaturesTabSection() {
   const [activeTab, setActiveTab] = useState(1);
-  const [videoProgress, setVideoProgress] = useState<{[key: string]: number}>({});
   const videoRefs = useRef<VideoRefs>({});
   const [isAutoPlaying, setIsAutoPlaying] = useState(true); 
   const [loadedVideos, setLoadedVideos] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const autoPlayTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const progressRefs = useRef<{[key: string]: HTMLDivElement | null}>({});
   
   const { isTablet, isSafari, shouldShowImage } = useSafariDetector();
 
@@ -112,10 +112,12 @@ export default function FeaturesTabSection() {
 
         if (video && !video.paused && video.duration > 0) {
           const percent = (video.currentTime / video.duration) * 100;
-          setVideoProgress((prev) => ({
-            ...prev,
-            [videoId]: percent,
-          }));
+          
+          // Direct DOM update for 60fps smoothness
+          const progressBar = progressRefs.current[videoId];
+          if (progressBar) {
+            progressBar.style.width = `${percent}%`;
+          }
         }
       }
       animationFrameId = requestAnimationFrame(updateProgress);
@@ -129,28 +131,23 @@ export default function FeaturesTabSection() {
       const intervalTime = 50; 
       const increment = (intervalTime / duration) * 100;
 
-      setVideoProgress((prev) => ({
-        ...prev,
-        [tabletProgressKey]: 0,
-      }));
+      const progressBar = progressRefs.current[tabletProgressKey];
+      if (progressBar) progressBar.style.width = '0%';
 
       tabletInterval = setInterval(() => {
         progress += increment;
         if (progress >= 100) {
           progress = 100;
-          setVideoProgress((prev) => ({
-            ...prev,
-            [tabletProgressKey]: progress,
-          }));
+          const progressBar = progressRefs.current[tabletProgressKey];
+          if (progressBar) progressBar.style.width = '100%';
+          
           clearInterval(tabletInterval);
           setTimeout(() => {
             moveToNextTab();
           }, 100);
         } else {
-          setVideoProgress((prev) => ({
-            ...prev,
-            [tabletProgressKey]: progress,
-          }));
+          const progressBar = progressRefs.current[tabletProgressKey];
+          if (progressBar) progressBar.style.width = `${progress}%`;
         }
       }, intervalTime);
     }
@@ -175,7 +172,7 @@ export default function FeaturesTabSection() {
       if (tabletInterval) clearInterval(tabletInterval);
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
-  }, [activeTab, isAutoPlaying, features, moveToNextTab, shouldShowImage]);
+  }, [activeTab, isAutoPlaying, features, moveToNextTab, shouldShowImage, isInView]);
 
   // Handle tab click
   const handleTabClick = useCallback((tabIndex: number, videoId: string, isAutoTransition: boolean = false) => {
@@ -205,6 +202,11 @@ export default function FeaturesTabSection() {
     });
 
     setActiveTab(tabIndex);
+
+    // Reset all progress bars on tab change
+    Object.values(progressRefs.current).forEach(bar => {
+      if (bar) bar.style.width = '0%';
+    });
 
     const currentFeatureIndex = features.findIndex(f => f.tabIndex === tabIndex);
     if (currentFeatureIndex < features.length - 1) {
@@ -249,23 +251,26 @@ export default function FeaturesTabSection() {
     }
   }, [isInitialLoad, features, preloadVideo, shouldShowImage]);
 
-  // Start auto-playing when component mounts
+  // Initial play trigger when section comes into view
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsAutoPlaying(true);
-      const firstFeature = features.find(f => f.tabIndex === activeTab);
-      if (firstFeature && !shouldShowImage) {
-        const firstVideo = videoRefs.current[`${firstFeature.id}-video`];
-        if (firstVideo) {
-          firstVideo.play().catch((error) => {
-            console.error("Initial video play failed:", error);
-          });
+    if (isInView && !shouldShowImage) {
+      const timer = setTimeout(() => {
+        setIsAutoPlaying(true);
+        const activeFeature = features.find(f => f.tabIndex === activeTab);
+        if (activeFeature) {
+          const video = videoRefs.current[`${activeFeature.id}-video`];
+          if (video && video.paused) {
+            video.play().catch((error) => {
+              if (error.name !== 'AbortError') {
+                console.error("Initial playback failed:", error);
+              }
+            });
+          }
         }
-      }
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, [activeTab, shouldShowImage, features]);
+      }, 500); 
+      return () => clearTimeout(timer);
+    }
+  }, [isInView, shouldShowImage, features]); // Runs once when entering view
 
   useEffect(() => {
     return () => {
@@ -314,7 +319,7 @@ export default function FeaturesTabSection() {
                     muted
                     loop={false}
                     playsInline
-                    preload="none" // Lazy load
+                    preload="metadata"
                   >
                     <source src={feature.videoSrc} type="video/webm" />
                     Your browser does not support the video tag.
@@ -361,18 +366,16 @@ export default function FeaturesTabSection() {
                 <div
                   className={`progress-bar w-full h-1 xl:h-1.5 mt-5 xl:mt-7 rounded-2xl bg-[rgba(243,244,246,0.1)] overflow-hidden ${
                     activeTab === feature.tabIndex ? "" : "hidden"
-                  } transition-all`}
+                  }`}
                 >
                   <div
-                    className="h-full bg-[#F3F4F6]"
-                    style={{
-                      width: `${
-                        shouldShowImage 
-                          ? videoProgress[`${feature.id}-tablet`] || 0
-                          : videoProgress[`${feature.id}-video`] || 
-                            videoProgress[`${feature.id}-mobile-video`] || 0
-                      }%`,
+                    ref={(el) => {
+                      progressRefs.current[`${feature.id}-video`] = el;
+                      progressRefs.current[`${feature.id}-mobile-video`] = el;
+                      progressRefs.current[`${feature.id}-tablet`] = el;
                     }}
+                    className="h-full bg-[#F3F4F6] transition-[width] duration-150 ease-linear"
+                    style={{ width: '0%' }}
                   />
                 </div>
                 {/* Mobile video section */}
@@ -399,7 +402,7 @@ export default function FeaturesTabSection() {
                       muted
                       loop={false}
                       playsInline
-                      preload="none"
+                      preload="metadata"
                     >
                       <source src={feature.videoSrc} type="video/webm" />
                       Your browser does not support the video tag.
