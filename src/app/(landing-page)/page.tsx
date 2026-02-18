@@ -9,59 +9,45 @@ import dynamic from "next/dynamic";
 // Lazy load all components
 const HeroSection2 = dynamic(
   () => import("@/components/common-components/HeroSection2"),
-  { ssr: false }
 );
 const TrustedBySection = dynamic(
   () => import("@/components/common-components/TrustedBySection"),
-  { ssr: false }
 );
 const TurningChaos = dynamic(
   () => import("@/components/pages/landing-page/TurningChaos"),
-  { ssr: false }
 );
 const CaseStudies = dynamic(
   () => import("@/components/pages/landing-page/CaseStudy"),
-  { ssr: false }
 );
 const SmartWaytoSyncndSellSection = dynamic(
   () => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection"),
-  { ssr: false }
 );
 const UnifiedPlatform = dynamic(
   () => import("@/components/pages/landing-page/UnifiedPlatform"),
-  { ssr: false }
 );
 const VoicesRealBusiness = dynamic(
   () => import("@/components/pages/landing-page/VoicesRealBusiness"),
-  { ssr: false }
 );
 const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase"),
-  { ssr: false }
 );
 const PosIconsSection = dynamic(
   () => import("@/components/pages/landing-page/Smartway"),
-  { ssr: false }
 );
 const ToolsSection = dynamic(
   () => import("@/components/pages/landing-page/ToolsSection"),
-  { ssr: false }
 );
 const SmartTools = dynamic(
   () => import("@/components/pages/landing-page/SmartTools"),
-  { ssr: false }
 );
 const FaqSection = dynamic(
   () => import("@/components/pages/landing-page/FAQSection"),
-  { ssr: false }
 );
 const CalltoActionBottom = dynamic(
   () => import("@/components/pages/landing-page/CalltoActionBottom"),
-  { ssr: false }
 );
 const FeaturesTabSection = dynamic(
   () => import("@/components/pages/landing-page/FeaturesTabSection"),
-  { ssr: false }
 );
 
 import {

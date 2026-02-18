@@ -17,31 +17,25 @@ import WhoWeAre from "@/components/pages/about-us/whoWeAre";
 
 const FeaturesCallToAction = dynamic(
   () => import("@/components/pages/features-page/FeaturesCallToAction"),
-  { ssr: false },
 );
 
 const WhyChoosePOS = dynamic(
   () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"),
-  { ssr: false },
 );
 
 const MapComponent = dynamic(
   () => import("@/components/pages/about-us/MapComponent"),
-  { ssr: false },
 );
 
 const AboutHero = dynamic(
   () => import("@/components/pages/about-us/aboutHero"),
-  { ssr: false },
 );
 const OurPhilosophy = dynamic(
   () => import("@/components/pages/about-us/ourPhilosophy"),
-  { ssr: false },
 );
 
 const WhoWeServe = dynamic(
   () => import("@/components/pages/about-us/whoWeServe"),
-  { ssr: false },
 );
 
 const Page = () => {
