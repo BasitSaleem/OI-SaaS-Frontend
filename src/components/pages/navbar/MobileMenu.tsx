@@ -536,7 +536,7 @@ export default function OffcanvasMenu({
                             <Link
                               href={
                                 activePanel === "company"
-                                  ? `/company/${item.key.toLowerCase()}`
+                                  ? `/${item.key.toLowerCase()}`
                                   : activePanel === "industries"
                                   ? `/industries/${item.key.toLowerCase()}`
                                   : `/${activePanel}/${item.key.toLowerCase()}`

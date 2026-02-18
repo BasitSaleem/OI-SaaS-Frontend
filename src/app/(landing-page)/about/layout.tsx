@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://ownersinventory.com/company/about",
+    canonical: "https://ownersinventory.com/about",
   },
 };
 

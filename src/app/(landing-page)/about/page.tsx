@@ -25,6 +25,7 @@ const WhyChoosePOS = dynamic(
 
 const MapComponent = dynamic(
   () => import("@/components/pages/about-us/MapComponent"),
+  { ssr: false }
 );
 
 const AboutHero = dynamic(

@@ -486,7 +486,7 @@ const NavItems = () => {
                 {companyItems.map((item) => (
                   <Link
                     key={item.title} 
-                    href={`/company/${item.key.toLowerCase()}`}
+                    href={`/${item.key.toLowerCase()}`}
                     className="flex items-center gap-2 px-4 py-4 border border-[#D9D9D9] rounded-xl hover:bg-gray-100 hover:border-[#795CF5]"
                      onMouseEnter={() => setSelectedCompanyKey(item.key)}
                   >
