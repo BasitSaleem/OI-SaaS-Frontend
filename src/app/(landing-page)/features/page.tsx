@@ -4,15 +4,15 @@ import dynamic from 'next/dynamic';
 import React from 'react';
 
 // 🔥 Dynamic Initializing Components
-const EmpoweredSection = dynamic(() => import('@/components/pages/features-page/EmpoweredSection'), { ssr: false });
-const FeaturesCoreOperations = dynamic(() => import('@/components/pages/features-page/FeaturesCoreOperations'), { ssr: false });
-const FeaturesssSection = dynamic(() => import('@/components/pages/features-page/FeaturesssSection'), { ssr: false });
-const SmartIntegration = dynamic(() => import('@/components/pages/features-page/SmartIntegration'), { ssr: false });
-const FeaturesTestimonials = dynamic(() => import('@/components/pages/features-page/FeaturesTestimonials'), { ssr: false });
-const CalltoActionBottom = dynamic(() => import('@/components/pages/landing-page/CalltoActionBottom'), { ssr: false });
-const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'), { ssr: false });
-const HeroSection = dynamic(() => import('@/components/pages/landing-page/HeroSection'), { ssr: false });
-const SellerClubSection = dynamic(() => import('@/components/pages/landing-page/SellerClubSection'), { ssr: false });
+const EmpoweredSection = dynamic(() => import('@/components/pages/features-page/EmpoweredSection'));
+const FeaturesCoreOperations = dynamic(() => import('@/components/pages/features-page/FeaturesCoreOperations'));
+const FeaturesssSection = dynamic(() => import('@/components/pages/features-page/FeaturesssSection'));
+const SmartIntegration = dynamic(() => import('@/components/pages/features-page/SmartIntegration'));
+const FeaturesTestimonials = dynamic(() => import('@/components/pages/features-page/FeaturesTestimonials'));
+const CalltoActionBottom = dynamic(() => import('@/components/pages/landing-page/CalltoActionBottom'));
+const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSection'));
+const HeroSection = dynamic(() => import('@/components/pages/landing-page/HeroSection'));
+const SellerClubSection = dynamic(() => import('@/components/pages/landing-page/SellerClubSection'));
 
 import { 
   FINANCE_FEATURES, 
