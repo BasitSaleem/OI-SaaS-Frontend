@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sales Management | Owners Inventory",
-  description: "Track sales performance and manage transactions with ease.",
-  keywords: ["sales", "transaction", "performance", "Owners Inventory"],
+  title: "Sales & Order Management Software – Owners Inventory",
+  description: "Manage sales, quotes, orders & invoices with real-time tracking, dashboards, exports & workflow tools. Centralize sales for retail, wholesale, restaurants & more.",
+  keywords: ["sales and order management software", "sales tracking dashboard", "manage invoices & orders", "real-time sales monitoring", "export sales data", "workflow order statuses", "POS sales integration", "sales solution for retail & wholesale"],
   publisher: "Owners Inventory",
   robots: {
     index: true,

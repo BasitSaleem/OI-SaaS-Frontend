@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Facilities Management | Owners Inventory",
-  description: "Efficiently manage your physical assets and facilities in one place.",
-  keywords: ["facilities", "asset management", "operations", "Owners Inventory"],
+  title: "Manage Multi-Location Facilities with Owners Inventory Software",
+  description: "Centralize facility operations, manage stores & warehouses, track inventory and performance in real-time, and integrate POS across all locations with ease.",
+  keywords: ["facility management software", "multi-location inventory tracking", "warehouse and store management", "real-time facility dashboard", "POS integration across locations"],
   publisher: "Owners Inventory",
   robots: {
     index: true,

@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Features | Owners Inventory",
-  description: "Explore the powerful features of Owners Inventory, from real-time tracking to advanced analytics.",
-  keywords: ["inventory features", "real-time tracking", "analytics", "business tools"],
+  title: "All Features of Owners Inventory | POS & Inventory Software",
+  description: "Explore powerful Owners Inventory features including POS, inventory, sales, purchases, reporting, marketing, integrations, and multi location control.",
+  keywords: ["POS and inventory management software", "All in one POS system", "Inventory management system", "Business management software", "Retail POS software", "Multi location inventory software", "POS software for small business", "Inventory and sales management system"],
   publisher: "Owners Inventory",
   robots: {
     index: true,

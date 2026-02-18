@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "eCommerce Integration | Owners Inventory",
-  description: "Seamlessly connect your online store with Owners Inventory for unified stock management.",
-  keywords: ["ecommerce", "online store", "sync", "Owners Inventory"],
+  title: "eCommerce Inventory Management & POS Sync | Owners Inventory",
+  description: "Manage ecommerce sales with real-time inventory sync, POS integration, secure checkout, customizable storefront, banners, and product filters by Owners Inventory.",
+  keywords: ["ecommerce inventory management software", "ecommerce POS integration", "online store inventory sync", "unified ecommerce platform"],
   publisher: "Owners Inventory",
   robots: {
     index: true,
