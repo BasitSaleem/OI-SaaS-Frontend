@@ -437,7 +437,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     </div>
                     <Image
                       src="/assets/home-page-images/total-growth.svg"
-                      alt="Pricing Image"
+                      alt="Total Growth Chart"
                       width={800}
                       height={600}
                       loading="lazy"

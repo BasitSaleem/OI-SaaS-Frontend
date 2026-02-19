@@ -17,7 +17,8 @@ export default function LandingPageClientWrapper({
     <>
       <LenisProvider>
         <div key={pathname}>
-          <Suspense fallback={<FullPageLoader />}>{children}</Suspense>
+          {/* <Suspense fallback={<FullPageLoader />}>{children}</Suspense> */}
+          <Suspense fallback={null}>{children}</Suspense>
         </div>
       </LenisProvider>
       <Footer />

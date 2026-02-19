@@ -56,7 +56,7 @@ import {
   HOME_PAGE_CONTENT,
 } from "@/constant/landingPageData";
 
-import FullPageLoader from "@/components/common-components/FullPageLoader";
+
 
 export default function Home() {
   return (

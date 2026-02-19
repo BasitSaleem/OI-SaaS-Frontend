@@ -62,6 +62,7 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
                 width={160}
                 height={80}
                 className="object-cover w-full"
+                loading="lazy"
               />
             </div>
           )}

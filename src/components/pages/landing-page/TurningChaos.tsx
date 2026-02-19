@@ -169,11 +169,11 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
           <div className=" w-full max-w-[913px] mt-[45px]" ref={imageRef}>
             <Image
               src="/assets/home-page-images/chaos-mainImage.webp"
-              alt="Chaos Image"
+              alt="Chaos Into Clarity Dashboard"
               width={800}
               height={600}
               loading="lazy"
-              className="w-full"
+              className="w-full h-auto"
             />
           </div>
         </div>
