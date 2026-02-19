@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Integrations Hub | Owners Inventory",
-  description: "Connect your favourite business apps and streamline your workflow with our API integrations.",
-  keywords: ["integrations", "API", "business apps", "Owners Inventory"],
+  title: "Business Software Integrations | Owners Inventory",
+  description: "Connect Shopify, WooCommerce, QuickBooks, payments and marketing tools with Owners Inventory to sync data, reduce errors, and streamline your business processes.",
+  keywords: ["Shopify integration", "WooCommerce integration", "QuickBooks integration", "payment gateway integrations", "marketing tool integration", "sync data in real time", "automated integration workflows", "integrated reporting tools"],
   publisher: "Owners Inventory",
   robots: {
     index: true,

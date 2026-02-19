@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Finance & Accounting | Owners Inventory",
-  description: "Manage your business finances and accounting with integrated tools.",
-  keywords: ["finance", "accounting", "ledger", "Owners Inventory"],
+  title: "Accounting and Finance Software | Owners Inventory",
+  description: "Manage sales, expenses, cash flow, and financial reports in real time with integrated POS accounting and finance tools for smarter business decisions.",
+  keywords: ["accounting and finance software", "financial management software", "POS accounting system", "business finance software", "integrated finance and POS software"],
   publisher: "Owners Inventory",
   robots: {
     index: true,
