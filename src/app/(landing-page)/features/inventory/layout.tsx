@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Inventory Management | Owners Inventory",
-  description: "Real-time inventory tracking and management to help your business grow faster.",
-  keywords: ["inventory tracking", "stock management", "WMS", "Owners Inventory"],
+  title: "Real-Time Inventory Control with Owners Inventory Software",
+  description: "Track stock in real time, manage SKUs, streamline inventory operations, sync across locations, reduce shortages, and improve efficiency with Owners Inventory.",
+  keywords: ["inventory management software", "real-time stock tracking", "SKU and warehouse control", "inventory optimization tools", "multi-location inventory sync", "reduce stock shortages", "inventory dashboard analytics", "inventory operations"],
   publisher: "Owners Inventory",
   robots: {
     index: true,
