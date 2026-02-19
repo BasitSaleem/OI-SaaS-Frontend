@@ -54,8 +54,8 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
                 className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors outline-none"
             >
                 {FlagComponent && (
-                    <span className="w-6 h-4 flex items-center justify-center">
-                        <FlagComponent title={selectedCountry ? labels[selectedCountry] : ''} />
+                    <span className="country-flag-container w-6 h-4 flex items-center justify-center">
+                        <FlagComponent title={selectedCountry ? labels[selectedCountry] : ""} />
                     </span>
                 )}
                 <span className="text-gray-500 text-xs">
@@ -88,7 +88,7 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
                                     setIsOpen(false);
                                 }}
                             >
-                                <span className="mr-3 w-6 h-4 flex-shrink-0">
+                                <span className="country-flag-container mr-3 w-6 h-4 flex-shrink-0">
                                    {CountryFlag && <CountryFlag title={labels[country]} />}
                                 </span>
                                 <span className="flex-1 text-sm text-[#231F20] font-['Onest'] truncate">

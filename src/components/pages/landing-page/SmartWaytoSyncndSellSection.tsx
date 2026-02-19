@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import globalGsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
@@ -15,7 +15,18 @@ if (typeof window !== "undefined") {
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const { shouldShowImage } = useSafariDetector();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="w-full">
@@ -50,13 +61,13 @@ function SmartWaytoSyncndSellSection() {
           </div>
 
           <div className="w-full bg-white h-full aspect-video md:aspect-auto">
-            {shouldShowImage ? (
+            {shouldShowImage || isMobile ? (
               <Image
                 src="/assets/home-page-images/animations/trolly-image.webp"
                 alt="Smart sync and sell"
                 width={743}
                 height={460}
-                className="w-full h-full object-cover rounded-3xl"
+                className="w-full h-full object-contain md:object-cover rounded-3xl"
                 priority
               />
             ) : (

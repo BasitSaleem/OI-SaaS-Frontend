@@ -57,7 +57,7 @@ const defaultLayout = {
 const FeaturesCoreOperations: React.FC = () => {
   return (
     <section className="wrapper features-core-opretions">
-      <div className="flex flex-col items-start justify-center lg:mt-[0px] md:mt-28 mt-20">
+      <div className="flex flex-col items-start justify-center mt-28 md:mt-40 lg:mt-20 ">
         <MainHeading className="lg:max-w-4xl xl:mb-10 lg:mb-6 mb-5">
           {heading}
         </MainHeading>

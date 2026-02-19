@@ -94,23 +94,23 @@ export const FEATURE_CARDS_DATA = [
         containerShadow: false,
         scale: 1.05,
     },
-    {
-        title: "Marketing Tools - Promote, Engage & Grow.",
-        description:
-            "Owners Inventory brings together everything you need to manage, track, and grow your business in one unified platform. Explore our powerful features, categorized to help you run operations smoothly, manage people efficiently, and scale with confidence.",
-        videoSrc:
-            "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/marketing-tools.webm",
-        imageSrc: "/assets/features-page/featurescard-banners/marketing-banner.webp",
-        buttonLabel: "View Details",
-        buttonHref: "/features/marketing",
-        buttonColor: "#1AD1B9",
-        containerWidth: "100%",
-        containerHeight: "100%",
-        containerBorderColor: "#ffffff",
-        containerBackgroundColor: "rgba(255,255,255,0.4)",
-        containerShadow: true,
-        scale: 1.15,
-    },
+    // {
+    //     title: "Marketing Tools - Promote, Engage & Grow.",
+    //     description:
+    //         "Owners Inventory brings together everything you need to manage, track, and grow your business in one unified platform. Explore our powerful features, categorized to help you run operations smoothly, manage people efficiently, and scale with confidence.",
+    //     videoSrc:
+    //         "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/marketing-tools.webm",
+    //     imageSrc: "/assets/features-page/featurescard-banners/marketing-banner.webp",
+    //     buttonLabel: "View Details",
+    //     buttonHref: "/features/marketing",
+    //     buttonColor: "#1AD1B9",
+    //     containerWidth: "100%",
+    //     containerHeight: "100%",
+    //     containerBorderColor: "#ffffff",
+    //     containerBackgroundColor: "rgba(255,255,255,0.4)",
+    //     containerShadow: true,
+    //     scale: 1.15,
+    // },
     // {
     //     title: "Restaurant Operations Simplified",
     //     description:

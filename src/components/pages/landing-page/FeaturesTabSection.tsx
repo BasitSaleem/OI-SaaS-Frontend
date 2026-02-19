@@ -128,7 +128,7 @@ export default function FeaturesTabSection() {
       const tabletProgressKey = `${activeFeature.id}-tablet`;
       let progress = 0;
       const duration = 5000; 
-      const intervalTime = 50; 
+      const intervalTime = 16; 
       const increment = (intervalTime / duration) * 100;
 
       const progressBar = progressRefs.current[tabletProgressKey];
@@ -374,7 +374,7 @@ export default function FeaturesTabSection() {
                       progressRefs.current[`${feature.id}-mobile-video`] = el;
                       progressRefs.current[`${feature.id}-tablet`] = el;
                     }}
-                    className="h-full bg-[#F3F4F6] transition-[width] duration-150 ease-linear"
+                    className="h-full bg-[#F3F4F6]"
                     style={{ width: '0%' }}
                   />
                 </div>

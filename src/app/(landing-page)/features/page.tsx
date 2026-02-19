@@ -32,6 +32,7 @@ const Page = () => {
         video={MAIN_FEATURES_HERO.video}
         image={MAIN_FEATURES_HERO.image}
         showButtons={false}
+         variant = "animation2"
       />
 
       <FeaturesCoreOperations />

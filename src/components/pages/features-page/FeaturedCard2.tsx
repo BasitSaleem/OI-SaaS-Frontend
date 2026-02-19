@@ -42,7 +42,7 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
 
   return (
     <div
-      className={`${isEven ? "lg:mt-40 md:mt-28 mt-20" : "lg:my-40 md:my-28 my-20"}  grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
+      className={`lg:my-40 md:my-28 my-20  grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
     >
       {/* Video */}
       <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>

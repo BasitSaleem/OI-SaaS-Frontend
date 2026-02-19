@@ -73,7 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* HERO BODY */}
-        <div className="md:py-[1px] bg-[#F3F4F6] rounded-[40px]">
+        <div className="md:py-[1px] bg-[#F3F4F6]  rounded-[20px] lg:rounded-[40px]">
            <div
               className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
               style={
@@ -141,7 +141,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Video */}
-            <div className="owner-inventory-hero__video relative z-[2]  w-full mt-10 md:mt-10 xl:mt-10 sm:max-w-lg md:max-w-xl lg:max-w-4xl">
+            <div className="owner-inventory-hero__video relative z-[2]  w-full mt-10 md:mt-10 xl:mt-10 mb-10 sm:max-w-lg md:max-w-xl lg:max-w-4xl">
               {/* <video
                 className="w-full object-cover rounded-3xl lazy-video feature-video"
                 autoPlay
