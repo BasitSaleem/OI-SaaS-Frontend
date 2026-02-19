@@ -90,16 +90,16 @@ const TermAndConditionPage = () => {
 
       <section className="mt-20 md:mt-28 lg:mt-40">
         <div className="wrapper">
-          <h3 className="text-center text-4xl md:text-[40px] lg:text-5xl xl:text-[64px] leading-[48px] lg:leading-[60px] xl:leading-[76px] mb-5 lg:mb-6 xl:mb-10 font-['Onest'] font-semibold text-[#231F20]">
+          <h1 className="text-center text-4xl md:text-[40px] lg:text-5xl xl:text-[64px] leading-[48px] lg:leading-[60px] xl:leading-[76px] mb-5 lg:mb-6 xl:mb-10 font-['Onest'] font-semibold text-[#231F20]">
             Terms and Condition
-          </h3>
+          </h1>
 
           <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
             {TERMS_AND_CONDITIONS_DATA.map((section: any, index: number) => (
               <div key={index} className="flex flex-col">
-                <h4 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-['Onest'] mb-4">
+                <h2 className="xl:text-2xl text-xl font-semibold text-[#231F20] font-['Onest'] mb-4">
                   {section.title}
-                </h4>
+                </h2>
                 {section.contentType === "list" ? (
                   <ul className="list-disc ml-6 flex flex-col gap-2">
                     {section.content.map((item: string, idx: number) => (
