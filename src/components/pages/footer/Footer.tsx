@@ -78,24 +78,29 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
 
           {/* Social Icons */}
           <div className="flex items-center justify-center gap-6 md:gap-[10px] lg:gap-4 xl:gap-6">
-            {["facebook", "instagram", "twitter", "linkdn"].map(
-              (platform, index) => (
-                <Link
-                  key={index}
-                  href="#"
-                  className="cursor-pointer w-7 h-7 md:w-[17px] md:h-[17px] lg:w-7 lg:h-7"
-                >
-                  <Image
-                    src={`/assets/footer/${platform}-logo.svg`}
-                    alt={`${platform} logo`}
-                    width={28}
-                    height={28}
-                    className="w-full"
-                    loading="lazy"
-                  />
-                </Link>
-              )
-            )}
+            {[
+              { platform: "facebook", href: "https://www.facebook.com/ownersinventory" },
+              { platform: "instagram", href: "#" },
+              { platform: "twitter", href: "#" },
+              { platform: "linkdn", href: "https://www.linkedin.com/company/owners-inventory/" },
+            ].map((social, index) => (
+              <Link
+                key={index}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer w-7 h-7 md:w-[17px] md:h-[17px] lg:w-7 lg:h-7"
+              >
+                <Image
+                  src={`/assets/footer/${social.platform}-logo.svg`}
+                  alt={`${social.platform} logo`}
+                  width={28}
+                  height={28}
+                  className="w-full"
+                  loading="lazy"
+                />
+              </Link>
+            ))}
           </div>
         </div>
 

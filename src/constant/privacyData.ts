@@ -149,7 +149,9 @@ export const PRIVACY_POLICY_DATA = [
             {
                 title: "Contact Information",
                 content: [
-                    "If you have any questions or concerns regarding this Privacy Policy or our data practices, please contact us at support@ownersinventory.com.",
+                    "In case of any questions, requests, or concerns about this Privacy Policy or your data, please contact us at: ",
+                    "Email: support@ownersinventory.com",
+                    "Address:  4254 Normandy Ct, Fredericksburg, VA 22408, United States"
                 ],
             },
         ],

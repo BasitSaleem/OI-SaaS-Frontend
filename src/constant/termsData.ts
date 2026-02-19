@@ -89,4 +89,13 @@ export const TERMS_AND_CONDITIONS_DATA = [
             "Your continued use of the Services after the updates take effect is an acceptance of the revised Terms.",
         ],
     },
+
+     {
+                title: "Contact Information",
+                content: [
+                    "For questions, support, or complaints, please contact us at:",
+                    "Email: support@ownersinventory.com",
+                    "Address:  4254 Normandy Ct, Fredericksburg, VA 22408, United States"
+                ],
+            },
 ];
