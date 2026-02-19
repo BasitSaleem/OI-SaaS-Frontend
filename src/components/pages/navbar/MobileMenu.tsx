@@ -353,7 +353,7 @@ export default function OffcanvasMenu({
             </li> */}
             <li className={listItem}>
               <Link
-                href="https://osglobal.ownersjungle.com/login"
+                href="/coming-soon"
                 className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] hover:bg-gray-100 hover:border-[#795CF5] active:bg-gray-100 active:border-[#795CF5] rounded-full font-['Onest']"
               >
                 Login

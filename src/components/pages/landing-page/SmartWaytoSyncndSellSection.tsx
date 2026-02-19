@@ -41,7 +41,7 @@ function SmartWaytoSyncndSellSection() {
 
             <div className="hidden md:flex gap-4 w-full items-center justify-start">
               <ButtonSm
-                url="https://osglobal.ownersjungle.com/sign-up?app=OG"
+                url="/coming-soon"
                 text="Book a Free Demo"
                 bgColor="[#1AD1B9]"
                 textColor="white"

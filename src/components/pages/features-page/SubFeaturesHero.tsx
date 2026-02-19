@@ -127,7 +127,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                   className="flex md:gap-4 gap-2 lg:p-1.5 relative z-[60] owner-inventory-hero__content--buttons"
                 >
                   <ButtonSm
-                    url="https://osglobal.ownersjungle.com/sign-up?app=OG"
+                    url="/coming-soon"
                     text={ctaDesc}
                     bgColor="[#1AD1B9]"
                     textColor="white"

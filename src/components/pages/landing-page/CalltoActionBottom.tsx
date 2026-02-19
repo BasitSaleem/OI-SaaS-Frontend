@@ -28,11 +28,11 @@ const CalltoActionBottom: React.FC = () => {
           </Paragraph>
               <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
         
-          <Link href="https://osglobal.ownersjungle.com/sign-up?app=OG" className="bg-transparent
+          <Link href="/coming-soon" className="bg-transparent
     px-4 py-2.5 md:px-[70px] md:py-3 lg:px-[70px] lg:py-4 flex items-center justify-center w-full md:w-fit text-sm md:text-base font-['Onest'] font-medium
      text-[var(--white-color)]  border border-white hover:border-transparent rounded-full hover:text-[var(--text-dark)]  hover:bg-[var(--white-color)]
      transition-colors duration-300">Free Demo</Link>
-      <ButtonSm url='https://osglobal.ownersjungle.com/sign-up?app=OG' text='Get Started for Free' className='w-full md:w-fit' bgColor='[#795CF5]' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder/>
+      <ButtonSm url='/coming-soon' text='Get Started for Free' className='w-full md:w-fit' bgColor='[#795CF5]' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder/>
           
         </div>
         </div>

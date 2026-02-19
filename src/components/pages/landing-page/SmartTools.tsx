@@ -56,7 +56,7 @@ const SmartTools: React.FC<SmartTools> = ({
         </Paragraph>
         <div className="flex gap-3 lg:gap-6 flex-col md:flex-row items-center justify-center relative z-50">
           <Link
-            href="https://osglobal.ownersjungle.com/sign-up?app=OG"
+            href="/coming-soon"
             className="bg-transparent w-full md:w-fit
     px-4 py-2.5 md:px-5 md:py-3 lg:px-[40px] xl:px-[64px] lg:py-4 flex items-center justify-center text-sm md:text-base font-['Onest'] font-medium
      text-[var(--white-color)]  border border-[var(--white-color)] hover:border-transparent rounded-full hover:text-black  hover:bg-[var(--white-color)]

@@ -55,7 +55,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
 
       {/* User Icon */}
       <div className="relative group">
-        <Link href="https://osglobal.ownersjungle.com/login">
+        <Link href="/coming-soon">
           <Image
             src="/assets/header-images/user.svg"
             alt="User"
@@ -74,7 +74,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
       </div>
 
       <Link
-        href="https://osglobal.ownersjungle.com/sign-up?app=OG"
+        href="/coming-soon"
         className="px-3.5 py-1.5 xl:px-[18px] xl:py-[9px] md:text-[10px] xl:text-sm font-bold font-['Onest'] text-white bg-[#231F20] rounded-full border hover:bg-white hover:text-[#231F20] hover:border-[#231F20] transition-all whitespace-nowrap"
       >
         Start for Free
