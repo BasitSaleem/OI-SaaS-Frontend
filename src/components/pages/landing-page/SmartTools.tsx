@@ -65,7 +65,7 @@ const SmartTools: React.FC<SmartTools> = ({
             Start for Free
           </Link>
           <ButtonSm
-            url="/company/contact"
+            url="/contact"
             text="Contact Now"
             bgColor="[#795CF5]"
             textColor="white"

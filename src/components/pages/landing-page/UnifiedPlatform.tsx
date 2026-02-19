@@ -62,9 +62,10 @@ export default function UnifiedPlatform() {
             start: opts.start ?? "top top",
             end: opts.end ?? "+=200%",
             pin: sectionRef.current,
-            scrub: 1.2,
-            anticipatePin: 1,
+            scrub: 1,
+            anticipatePin: 1.5,
             invalidateOnRefresh: true,
+            pinSpacing: true,
             // markers can be turned on while debugging
             markers: false,
           },
@@ -123,65 +124,22 @@ export default function UnifiedPlatform() {
 
     ctxRef.current = ctx;
 
-    // Refresh triggers after load and when important media finishes loading.
+    // Safe Refresh triggers if needed (ideally handled by GSAP automatically)
     const refresh = () => {
-      try {
-        ScrollTrigger.refresh();
-      } catch (e) {}
+      ScrollTrigger.refresh();
     };
-
-    // Debounced resize refresh
-    let resizeTimer: any = null;
-    const onResize = () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        refresh();
-      }, 200);
-    };
-
-    // When window load occurs (images/fonts/videos finished parsing) — refresh.
-    window.addEventListener("load", refresh);
-    window.addEventListener("resize", onResize);
-
-    // If there are any videos on the page, refresh when they load metadata/data
-    const videos = document.querySelectorAll("video");
-    const boundVideoHandler = () => refresh();
-    videos.forEach((v) => {
-      v.addEventListener("loadedmetadata", boundVideoHandler);
-      v.addEventListener("loadeddata", boundVideoHandler);
-    });
-
-    // small safety refresh after short delay to handle late layout shifts
-    const safetyTimeout1 = window.setTimeout(refresh, 800);
-    const safetyTimeout2 = window.setTimeout(refresh, 1500);
 
     return () => {
-      // cleanup
-      window.clearTimeout(safetyTimeout1);
-      window.clearTimeout(safetyTimeout2);
-      window.removeEventListener("load", refresh);
-      window.removeEventListener("resize", onResize);
-      videos.forEach((v) => {
-        v.removeEventListener("loadedmetadata", boundVideoHandler);
-        v.removeEventListener("loadeddata", boundVideoHandler);
-      });
-
       // revert matchMedia & context
-      try {
-        if (mmRef.current) mmRef.current.revert();
-      } catch (e) {}
-      try {
-        ctxRef.current?.revert();
-      } catch (e) {}
-      // kill any remaining ScrollTriggers
-      ScrollTrigger.getAll().forEach((t) => t.kill());
+      if (mmRef.current) mmRef.current.revert();
+      if (ctxRef.current) ctxRef.current.revert();
     };
   }, []);
 
   return (
     <div
       ref={sectionRef}
-      className=" min-h-[100vh] relative w-full overflow-hidden"
+      className="pinned-section-Unified min-h-[100vh] relative w-full overflow-hidden"
       aria-label="Unified Platform Section"
     >
       <div ref={sectionTriggerRef} className="h-0 absolute top-0 w-full bg-transparent"></div>
