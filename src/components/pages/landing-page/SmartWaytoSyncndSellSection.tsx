@@ -79,7 +79,7 @@ function SmartWaytoSyncndSellSection() {
                 playsInline
               >
                 <source
-                  src="/assets/home-page-images/animations/trolly-anim2.webm"
+                  src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/trolly-anim.webm"
                   type="video/webm"
                 />
                 Your browser does not support the video tag.
