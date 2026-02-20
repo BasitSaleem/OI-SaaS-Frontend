@@ -33,10 +33,10 @@ export default function FeaturesTabSection() {
       (entries) => {
         if (entries[0].isIntersecting) {
           setIsInView(true);
-          observer.disconnect(); // Load once and keep it
+          observer.disconnect(); 
         }
       },
-      { threshold: 0.1 } // Start loading when 10% visible
+      { threshold: 0.1 } 
     );
 
     if (sectionRef.current) {
@@ -47,7 +47,7 @@ export default function FeaturesTabSection() {
   }, []);
 
 
-  // Preload only active video (Disabled on Safari/Tablet or if not in view)
+  
   const preloadVideo = useCallback((videoId: string, videoSrc: string) => {
     if (shouldShowImage || loadedVideos.has(videoId) || !isInView) return;
 
@@ -304,8 +304,8 @@ export default function FeaturesTabSection() {
                   <Image
                     src={feature.imageSrc}
                     alt={feature.title}
-                    width={743}
-                    height={460}
+                    width={300}
+                    height={300}
                     className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
                     priority={index === 0}
                   />
@@ -390,7 +390,7 @@ export default function FeaturesTabSection() {
                       alt={feature.title}
                       width={743}
                       height={460}
-                      className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
+                      className="w-full h-full overflow-hidden bg-transparent rounded-3xl"
                     />
                   ) : isInView ? (
                     <video
