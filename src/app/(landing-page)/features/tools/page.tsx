@@ -1,9 +1,8 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import React from "react";
-import heroBanner from "../../../../../public/assets/features-page/general-tools/general-tools-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/general-tools/why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/tools-hero.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/tools-whychose.webp";
 import {
   TOOLS_FAQS,
   TOOLS_FEATURES_CARDS,
@@ -13,31 +12,14 @@ import {
 } from "@/constant/subfeatures/toolsData";
 import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
-// 🔥 Dynamic Imports
-const TrustedBySection = dynamic(
-  () => import("@/components/common-components/TrustedBySection")
-);
-const FeaturesCallToAction = dynamic(
-  () => import("@/components/pages/features-page/FeaturesCallToAction")
-);
-const FeaturesTestimonials = dynamic(
-  () => import("@/components/pages/features-page/FeaturesTestimonials")
-);
-const KeyHighlights = dynamic(
-  () => import("@/components/pages/features-page/point-of-sale/KeyHighlights")
-);
-const WhyChoosePOS = dynamic(
-  () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS")
-);
-const SubFeaturesHero = dynamic(
-  () => import("@/components/pages/features-page/SubFeaturesHero")
-);
-const FaqSection = dynamic(
-  () => import("@/components/pages/landing-page/FAQSection")
-);
-const IndustryPosShowcase = dynamic(
-  () => import("@/components/pages/landing-page/IndustryPosShowcase")
-);
+import TrustedBySection from "@/components/common-components/TrustedBySection";
+import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
+import FeaturesTestimonials from "@/components/pages/features-page/FeaturesTestimonials";
+import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
+import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
+import SubFeaturesHero from "@/components/pages/features-page/SubFeaturesHero";
+import FaqSection from "@/components/pages/landing-page/FAQSection";
+import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
 
 const Page = () => {
   return (

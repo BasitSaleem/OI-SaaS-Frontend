@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import React from "react";
 import {
   CONTACT_CARDS,
@@ -8,19 +7,9 @@ import {
   CONTACT_SUPPORT_CARDS,
 } from "@/constant/contactData";
 
-// 🔥 Dynamic Imports
-
-const FeaturesCallToAction = dynamic(
-  () => import("@/components/pages/features-page/FeaturesCallToAction"),
-);
-
-const WhyChoosePOS = dynamic(
-  () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"),
-);
-
-const ContactHero = dynamic(
-  () => import("@/components/pages/contact-us/contactHero"),
-);
+import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
+import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
+import ContactHero from "@/components/pages/contact-us/contactHero";
 const Page = () => {
   return (
     <div>

@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import React from "react";
 import {
   ABOUT_HERO_CONTENT,
@@ -14,30 +13,12 @@ import {
 } from "@/constant/aboutData";
 
 import WhoWeAre from "@/components/pages/about-us/whoWeAre";
-
-const FeaturesCallToAction = dynamic(
-  () => import("@/components/pages/features-page/FeaturesCallToAction"),
-);
-
-const WhyChoosePOS = dynamic(
-  () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"),
-);
-
-const MapComponent = dynamic(
-  () => import("@/components/pages/about-us/MapComponent"),
-  { ssr: false }
-);
-
-const AboutHero = dynamic(
-  () => import("@/components/pages/about-us/aboutHero"),
-);
-const OurPhilosophy = dynamic(
-  () => import("@/components/pages/about-us/ourPhilosophy"),
-);
-
-const WhoWeServe = dynamic(
-  () => import("@/components/pages/about-us/whoWeServe"),
-);
+import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
+import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
+import MapComponent from "@/components/pages/about-us/MapComponent";
+import AboutHero from "@/components/pages/about-us/aboutHero";
+import OurPhilosophy from "@/components/pages/about-us/ourPhilosophy";
+import WhoWeServe from "@/components/pages/about-us/whoWeServe";
 
 const Page = () => {
   return (

@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import React from "react";
 import imageOne from "../../../../../public/assets/marketing-assets/Frame1.png";
 import {
@@ -11,31 +10,14 @@ import {
   MARKETING_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/marketingData";
 
-// 🔥 Dynamic Imports
-const TrustedBySection = dynamic(
-  () => import("@/components/common-components/TrustedBySection")
-);
-const FeaturesCallToAction = dynamic(
-  () => import("@/components/pages/features-page/FeaturesCallToAction")
-);
-const FeaturesTestimonials = dynamic(
-  () => import("@/components/pages/features-page/FeaturesTestimonials")
-);
-const KeyHighlights = dynamic(
-  () => import("@/components/pages/features-page/point-of-sale/KeyHighlights")
-);
-const WhyChoosePOS = dynamic(
-  () => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS")
-);
-const SubFeaturesHero = dynamic(
-  () => import("@/components/pages/features-page/SubFeaturesHero")
-);
-const FaqSection = dynamic(
-  () => import("@/components/pages/landing-page/FAQSection")
-);
-const IndustryPosShowcase = dynamic(
-  () => import("@/components/pages/landing-page/IndustryPosShowcase")
-);
+import TrustedBySection from "@/components/common-components/TrustedBySection";
+import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
+import FeaturesTestimonials from "@/components/pages/features-page/FeaturesTestimonials";
+import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
+import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
+import SubFeaturesHero from "@/components/pages/features-page/SubFeaturesHero";
+import FaqSection from "@/components/pages/landing-page/FAQSection";
+import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
 
 // Function to get layout patterns based on card count
 const getLayoutPatterns = (cardCount: number) => {
