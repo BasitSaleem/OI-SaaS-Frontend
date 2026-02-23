@@ -88,7 +88,7 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
                 loop
                 playsInline
               >
-                <source src={videoSrc} type="video/mp4" />
+                <source src={videoSrc} type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             ) : (

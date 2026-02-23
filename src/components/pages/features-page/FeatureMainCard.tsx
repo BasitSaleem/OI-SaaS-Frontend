@@ -77,7 +77,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 playsInline
                 preload="none"
               >
-                <source src={videoSrc} type="video/mp4" />
+                <source src={videoSrc} type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             ) : imageSrc ? (

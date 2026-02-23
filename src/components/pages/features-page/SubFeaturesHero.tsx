@@ -189,7 +189,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                       loop
                       playsInline
                     >
-                      <source src={video} type="video/mp4" />
+                      <source src={video} type="video/webm" />
                       Your browser does not support the video tag.
                     </video>
                   ) : null}

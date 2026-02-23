@@ -7,7 +7,7 @@ export const MAIN_FEATURES_HERO = {
 
 export const CORE_OPERATIONS_DATA = {
     heading: "Core Business Operations",
-    paragraph: "Take full control of your day-to-day operations with tools designed to keep your business running seamlessly",
+    paragraph: "Take full control of your day-to-day operations with tools designed to keep your business running seamlessly.",
     features: [
         {
             title: "Point of Sale (POS)",

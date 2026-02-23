@@ -212,7 +212,7 @@ export default function FeaturesTabSection() {
                   preload="auto"
                   controls={false}
                 >
-                  <source src={feature.mp4} type="video/mp4" />
+
                   <source src={feature.webm} type="video/webm" />
                 </video>
               </div>
@@ -279,7 +279,6 @@ export default function FeaturesTabSection() {
                         autoPlay
                         loop={false}
                       >
-                        <source src={feature.mp4} type="video/mp4" />
                         <source src={feature.webm} type="video/webm" />
                       </video>
                     </div>

@@ -32,9 +32,9 @@ const EmpoweredSection: React.FC<EmpoweredSectionProps> = ({
   return (
     <section className={`${wrapperClass}  lg:mt-[100px] md:mt-28 mt-20`}>
       <div className="wrapper flex flex-col items-center justify-center">
-        <h1 className="font-['Onest'] font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] lg:text-5xl leading-9 sm:leading-[48px] lg:leading-[60px] xl:mb-10 lg:mb-6 mb-5 text-center">
+        <h2 className="font-['Onest'] font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] lg:text-5xl leading-9 sm:leading-[48px] lg:leading-[60px] xl:mb-10 lg:mb-6 mb-5 text-center">
           {title}
-        </h1>
+        </h2>
         <p className="font-['Onest'] font-normal text-[#231F20] text-sm lg:text-lg xl:text-xl leading-6 lg:leading-7 text-center xl:leading-9 w-full max-w-[978px]">
           {description}
         </p>

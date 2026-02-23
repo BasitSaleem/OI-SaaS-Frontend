@@ -141,7 +141,7 @@ export default function WhyChoosePOS({
                                       loop
                                       playsInline
                                     >
-                                      <source src={mainVideo} type="video/mp4" />
+                                      <source src={mainVideo} type="video/webm" />
                                       Your browser does not support the video tag.
                                     </video>
                                   ) : null}

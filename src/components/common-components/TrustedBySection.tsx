@@ -25,7 +25,7 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
   heading = "Preferred to businesses who demand precision and performance",
   paragraph = "",
   brands = [
-    { id: 1, name: "ASK Food Industries", logo: "/assets/brands-logo-section/ask-foods.webp" },
+    { id: 1, name: "ASK Food Industries", logo: "/assets/brands-logo-section/ask-food.svg" },
     { id: 2, name: "Industrial Valco", logo: "/assets/brands-logo-section/industrial-valco.svg" },
     { id: 3, name: "Texas Pipe & Supply", logo: "/assets/brands-logo-section/texas-pipe.svg" },
     { id: 4, name: "Al-Asif", logo: "/assets/brands-logo-section/al-asif.svg" },
@@ -55,15 +55,19 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
         <BrandsSwiper
           slides={brands}
           renderSlide={(brandItem: BrandItem) => (
-            <div className="flex items-center justify-center relative z-20 rounded-0 p-4">
-              <Image
-                src={brandItem.logo}
-                alt={brandItem.name}
-                width={160}
-                height={80}
-                className="object-cover w-full"
-                loading="lazy"
-              />
+            <div className="flex items-center justify-center w-full h-full p-6">
+              <div className="relative w-[140px] md:w-[160px] lg:w-[180px] aspect-[2/1] flex items-center justify-center">
+               
+               <div className="h-10 w-10 rounded bg-[#1AD1B9] -z-10 blur-2xl absolute top-[50%]"></div>
+                <Image
+                  src={brandItem.logo}
+                  alt={brandItem.name}
+                  width={200}
+                  height={100}
+                  className="w-full h-auto max-h-full  object-contain "
+                  loading="lazy"
+                />
+              </div>
             </div>
           )}
         />
