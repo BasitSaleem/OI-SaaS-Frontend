@@ -39,7 +39,9 @@ export default function SearchPageContent({ q }: { q: string }) {
                 </div>
             </section>
             <section>
+                <div className="lg:mt-[100px] md:mt-28 mt-20">
                 <FaqSection />
+                </div>
                 <CalltoActionBottom />
             </section>
         </>
