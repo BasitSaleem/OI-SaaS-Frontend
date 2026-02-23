@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/tools-hero.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/tools-whychose.webp";
+import heroBanner from "../../../../../public/assets/features-page/general-tools/general-tools-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/general-tools/why-chose-banner.webp";
 import {
   TOOLS_FAQS,
   TOOLS_FEATURES_CARDS,

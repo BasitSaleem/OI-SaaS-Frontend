@@ -15,7 +15,10 @@ import {
 import WhoWeAre from "@/components/pages/about-us/whoWeAre";
 import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
 import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
-import MapComponent from "@/components/pages/about-us/MapComponent";
+import dynamic from "next/dynamic";
+const MapComponent = dynamic(() => import("@/components/pages/about-us/MapComponent"), {
+  ssr: false,
+});
 import AboutHero from "@/components/pages/about-us/aboutHero";
 import OurPhilosophy from "@/components/pages/about-us/ourPhilosophy";
 import WhoWeServe from "@/components/pages/about-us/whoWeServe";
