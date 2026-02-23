@@ -60,14 +60,14 @@ function SmartWaytoSyncndSellSection() {
             </div>
           </div>
 
-          <div className="w-full bg-white h-full aspect-video md:aspect-auto">
+          <div className="w-full bg-white h-full aspect-auto md:aspect-auto">
             {shouldShowImage || isMobile ? (
               <Image
                 src="/assets/home-page-images/animations/trolly-image.webp"
                 alt="Smart sync and sell"
                 width={743}
                 height={460}
-                className="w-full h-full object-contain md:object-cover rounded-3xl"
+                className="w-full h-auto rounded-3xl"
                 priority
               />
             ) : (

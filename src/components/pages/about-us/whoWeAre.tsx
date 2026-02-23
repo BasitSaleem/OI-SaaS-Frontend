@@ -44,7 +44,7 @@ function WhoWeAre({
     },
   ],
   title = "Who We Are",
-  description = "Owners Inventory is more than just software; we are a technology partner for modern commerce. We built a platform that seamlessly integrates Point of Sale (POS), eCommerce, and advanced inventory management into a single, cohesive ecosystem.",
+  description = "Owners Inventory is more than just software; we are a technology partner for modern commerce. We built a platform that seamlessly integrates Point of Sale (POS), eCommerce, manufacturing and advanced inventory management into a single, cohesive ecosystem.",
   mission = "Our mission is simple: to provide retailers, wholesalers, and manufacturers with the precision tools they need to streamline daily operations and scale their businesses with absolute confidence.",
   imageSrc = whoWeBanner,
   imageAlt = "Hero Image",

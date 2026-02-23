@@ -150,7 +150,7 @@ export const SMART_INTEGRATION_DATA = {
             videoSrc:
                 "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/manufacturing.webm",
             imageSrc: "/assets/features-page/featurescard-banners/manufacturing-banner.webp",
-            buttonHref: "#",
+            buttonHref: "/features/manufacturing",
         },
         {
             title: "Integrations",

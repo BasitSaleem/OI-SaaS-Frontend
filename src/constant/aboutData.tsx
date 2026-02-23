@@ -2,7 +2,7 @@ import PhilosophyIcons from "@/components/icons/philosophyIcons";
 
 export const ABOUT_HERO_CONTENT = {
   title: "Empowering Businesses with Complete Inventory Control",
-  description: "Owners Inventory integrates POS, eCommerce, and inventory management into one system, streamlining operations and giving retailers confidence, clarity, and control.",
+  description: "Owners Inventory integrates POS, eCommerce, manufacturing and inventory management into one system, streamlining operations and giving retailers confidence, clarity, and control.",
   ctaDesc: "Get Started for Free",
   variant: "animation2" as const,
 };
@@ -25,7 +25,7 @@ export const PHILOSOPHY_CARDS = [
   },
   {
     iconName: "ownerControl",
-    title: "Owner Control",
+    title: "Owner's Control",
     description: "Power squarely in the hands of the business owners: Flexibility to run operations at your own will.",
   },
 ];

@@ -122,7 +122,7 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
             {buttonLabel && (
               <Link
                 href={buttonHref || "#"}
-                className="xl:text-base text-sm font-bold font-['Onest'] text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block"
+                className="xl:text-base text-sm font-bold font-['Onest'] text-[#795CF5] mt-4 xl:mt-6 cursor-pointer inline-block mb-2"
               >
                 {buttonLabel} &gt;&gt;&gt;
               </Link>

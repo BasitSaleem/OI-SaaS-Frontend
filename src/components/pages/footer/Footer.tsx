@@ -110,7 +110,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
           <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
-            ©2026 Owners Inventory - All rights reserved
+           © 2026 Owners Inventory - All rights reserved
           </p>
           {/* <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             A product of{" "}

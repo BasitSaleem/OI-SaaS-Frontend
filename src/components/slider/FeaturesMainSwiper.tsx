@@ -32,7 +32,7 @@ export default function FeaturesMainSwiper<T>({
     <Swiper
       modules={[Pagination, Autoplay]}
       spaceBetween={20}
-      slidesPerView={1}
+      slidesPerView={1.5}
       slidesPerGroup={1}
       loop={true}
       autoplay={{

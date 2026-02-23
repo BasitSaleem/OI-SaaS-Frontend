@@ -75,7 +75,7 @@ const SmartTools: React.FC<SmartTools> = ({
           />
         </div>
 
-        <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto md-8 md:mt-10">
+        <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto mt-8 md:mt-10">
            {/* <Image
              src="/assets/home-page-images/smart-way-banner.webp"
              alt="Chaos Image"
@@ -95,7 +95,7 @@ const SmartTools: React.FC<SmartTools> = ({
            />
           ) : isInView ? (
             <video
-              className="w-full object-cover  lazy-video "
+              className="w-full md:object-cover lazy-video "
               autoPlay
               muted
               loop

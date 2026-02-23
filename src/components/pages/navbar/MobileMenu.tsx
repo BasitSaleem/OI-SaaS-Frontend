@@ -231,7 +231,7 @@ export default function OffcanvasMenu({
                   href="/features"
                   className="w-[80%] flex items-center justify-start text-sm font-semibold text-[#231F20] hover:border-[#795CF5]"
                 >
-                  Features
+                  View All Features
                 </Link>
 
                 <button
