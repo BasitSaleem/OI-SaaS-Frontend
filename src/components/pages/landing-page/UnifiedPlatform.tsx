@@ -45,6 +45,7 @@ export default function UnifiedPlatform() {
   const sectionTriggerRef = useRef<HTMLDivElement | null>(null);
   const ctxRef = useRef<gsap.Context | null>(null);
   const mmRef = useRef<any>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -70,6 +71,15 @@ export default function UnifiedPlatform() {
             markers: false,
           },
         });
+
+        // Entrance animation
+        tl.fromTo(contentRef.current, 
+          { y: 100, opacity: 0.5 },
+          { y: 0, opacity: 1, ease: "power2.out", duration: 0.6 }
+        );
+
+        // Add a small pause or "pin" state for the revealed content
+        tl.to({}, { duration: 0.2 });
 
         tl.to(".unified-platform-cards", { y: "-50%", ease: "none" });
         return tl;
@@ -145,7 +155,7 @@ export default function UnifiedPlatform() {
       <div ref={sectionTriggerRef} className="h-0 absolute top-0 w-full bg-transparent"></div>
       <div className="lg:h-[100px] md:h-28 h-20"></div>
       <section className="wrapper">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-8 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-28 rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
+        <div ref={contentRef} className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-8 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-28 rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
           {/* Cards Column */}
           <div className="md:order-1 order-2 md:w-3/6 lg:w-2/5 md:h-[560px] lg:h-[695px] overflow-hidden">
             <div className="unified-platform-cards flex flex-col items-center justify-start gap-4 w-full">

@@ -75,7 +75,7 @@ export default function RootLayout({
             gtag('config', 'G-X86H4J4WQ4');
           `}
         </Script>
-        <Script id="fb-pixel" strategy="afterInteractive">
+        {/* <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -88,7 +88,7 @@ export default function RootLayout({
             fbq('init', '1435291848047613');
             fbq('track', 'PageView');
           `}
-        </Script>
+        </Script> */}
       </head>
       <body
         suppressHydrationWarning
