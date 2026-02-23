@@ -56,7 +56,7 @@ export const featuresItems: FeatureItem[] = [
     category: 'sales-marketing',
   },
   {
-    key: 'sales',
+    key: 'sales-and-order',
     title: 'Sales & Orders',
     icon: '/assets/header-dropdown-images/sales-order.svg',
     category: 'sales-marketing',
@@ -121,7 +121,7 @@ export const featuresItems: FeatureItem[] = [
   
   // Finance
   {
-    key: 'finance',
+    key: 'accounts-and-finance',
     title: 'Accounts & Finance',
     icon: '/assets/header-dropdown-images/account-finance.svg',
     category: 'finance',
@@ -225,7 +225,7 @@ integrations: [
 //   { title: 'Coupons' },
 //   { title: 'Loyalty' },
 // ],
-sales: [
+  "sales-and-order": [
   { title: 'Invoices' },
   { title: 'Quotations' },
   { title: 'Sales Orders' },
@@ -300,7 +300,7 @@ sales: [
     { title: 'Aging' },
   ],
 
-  finance: [
+  "accounts-and-finance": [
     { title: 'Chart of Accounts' ,
       children: [
         { title: 'Chart of Accounts' },

@@ -9,8 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/contact",
         "/features",
         "/pricing",
-        "/privacy-policy",
-        "/terms-and-conditions",
+        // "/privacy-policy",
+        // "/terms-and-conditions",
         "/resources",
         "/resources/blog",
     ];
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "advancereports",
         "ecommerce",
         "facilities",
-        "finance",
+        "accounts-and-finance",
         "hr",
         "integrations",
         "inventory",
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "products",
         "purchases",
         "reports",
-        "sales",
+        "sales-and-order",
         "tools",
     ];
 

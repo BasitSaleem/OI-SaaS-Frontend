@@ -79,9 +79,9 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
           {/* Social Icons */}
           <div className="flex items-center justify-center gap-6 md:gap-[10px] lg:gap-4 xl:gap-6">
             {[
-              { platform: "facebook", href: "https://www.facebook.com/ownersinventory" },
-              { platform: "instagram", href: "#" },
-              { platform: "twitter", href: "#" },
+              { platform: "facebook", href: "https://www.facebook.com/ownersinventory/" },
+              { platform: "instagram", href: "https://www.instagram.com/ownersinventory/" },
+              // { platform: "twitter", href: "#" },
               { platform: "linkdn", href: "https://www.linkedin.com/company/owners-inventory/" },
             ].map((social, index) => (
               <Link

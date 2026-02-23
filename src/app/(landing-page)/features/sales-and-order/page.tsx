@@ -44,6 +44,7 @@ const Page = () => {
         title="Turn Every Sale into a Success Story"
         description="Make it easier to sell, monitor, and process orders all under one roof. Manage sales channels, automate invoices, and stay focused on the driving power of your business with Owners Inventory."
         image={heroBanner}
+         video="/assets/features-page/hero-section-banners/sales-order-anim.webm"
         imageClassName="max-w-[930px]"
         variant="animation2"
       />

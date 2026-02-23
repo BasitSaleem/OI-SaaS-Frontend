@@ -47,7 +47,7 @@ export const CORE_OPERATIONS_DATA = {
             videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/sale-order.webm",
             imageSrc: "/assets/features-page/featurescard-banners/sales-banner.webp",
             buttonLabel: "View Details",
-            buttonHref: "/features/sales",
+            buttonHref: "/features/sales-and-order",
         },
     ],
 };
@@ -170,7 +170,7 @@ export const FINANCE_FEATURES = [
         description: "Integrated invoicing, expense tracking, and tax compliance made simple.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/acounting%26financial.webm",
         imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-        buttonHref: "/features/finance",
+        buttonHref: "/features/accounts-and-finance",
     },
     // {
     //     title: "Advanced Reports",
