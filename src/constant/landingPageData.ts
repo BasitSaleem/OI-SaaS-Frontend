@@ -118,7 +118,7 @@ export const LANDING_FEATURES = [
     },
     {
         id: "inventory-management",
-        title: "Streamline Manufacturing + Stay in Control of Every Process",
+        title: "Inventory Management to Stay in Control of Every Product",
         icon: "/assets/features-section/management-icon.svg",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/screen3.webm",
         imageSrc: "/assets/home-page-images/animations/screen3-tab.webp",
@@ -128,7 +128,7 @@ export const LANDING_FEATURES = [
     },
     {
         id: "inventory-autosync",
-        title: "Smart analytics and reports to drive visibility and accountability",
+        title: "Auto-Sync & Updates",
         icon: "/assets/features-section/autosync.svg",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/screen4.webm",
         imageSrc: "/assets/home-page-images/animations/screen4-tab.webp",

@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { FeatureCategory } from "./types";
-import { pricingPlans } from "./tableConfig";
+import React, { useEffect, useState, useRef } from "react";
+import { FeatureCategory, PricingPlan } from "./types";
 import PricingTabs from "./PricingTabs";
 import Tooltip from "@/components/toolTip/Tooltip";
 
@@ -9,11 +8,17 @@ interface ComparisonTableProps {
   categories: FeatureCategory[];
   tab: "monthly" | "yearly";
   onTabChange: (tab: "monthly" | "yearly") => void;
+  plans: PricingPlan[];
 }
 
-const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTabChange, }) => {
+const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTabChange, plans }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Filter out custom plans (like "Let's Talk") from the comparison table
+  const tablePlans = plans.filter((p) => !p.isCustom);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
@@ -29,6 +34,29 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
 
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        const progress = ((scrollLeft + clientWidth) / scrollWidth) * 100;
+        setScrollProgress(progress);
+      }
+    };
+
+    const currentRef = scrollRef.current;
+    if (currentRef) {
+      // Initial calculation
+      handleScroll();
+      currentRef.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (currentRef) {
+        currentRef.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [isVisible, plans]); // Re-calculate when visibility or plans change
 
   const renderFeatureValue = (value: string | boolean) => {
     if (typeof value === "boolean") {
@@ -51,7 +79,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
   };
 
   return (
-    <section className="compare-section mt-20 lg:mt-0">
+    <section className="compare-section mt-20 md:mt-28 lg:mt-[100px]">
       <div className="wrapper mx-auto flex items-center justify-center">
         <button
           onClick={toggleVisibility}
@@ -75,13 +103,27 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
         className={`compare-content pt-10 md:pt-16 lg:pt-20 wrapper mx-auto ${isVisible ? "block" : "hidden"
           }`}
       >
-        <div className="w-full flex  items-center justify-end mb-10">
+        <div className="w-full hidden lg:flex  items-center justify-end mb-10">
           <PricingTabs activeTab={tab} onTabChange={onTabChange} variant="toggle" />
         </div>
+
+        {/* Progress Bar for Mobile/Tablet */}
+        <div className="lg:hidden md:w-2/3 w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center  w-full mb-6 ">
+          <div className="h-1.5  w-full md:order-1 order-2 bg-[#795CF5]/10 rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] transition-all duration-200 ease-out"
+              style={{ width: `${scrollProgress}%` }}
+            />
+          </div>
+           <div className=" flex md:w-1/2 md:order-2 order-1 w-full items-center justify-end ">
+          <PricingTabs activeTab={tab} onTabChange={onTabChange} variant="toggle" />
+        </div>
+        </div>
+
         <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] p-[2px]">
           <div className="flex w-full overflow-hidden bg-white rounded-[28px]">
             {/* Left sticky column with feature names */}
-            <div className="bg-white sticky left-0 z-10 w-6/12 md:w-4/12 lg:w-3/12 border-r border-[#1AD1B9] shrink-0">
+            <div className="bg-white sticky left-0 z-30 w-6/12 md:w-4/12 lg:w-3/12 border-r border-[#1AD1B9] shrink-0">
               <table className="table-auto w-full border-collapse">
                 {categories.map((category, categoryIndex) => (
                   <React.Fragment key={categoryIndex}>
@@ -99,10 +141,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                         <tr key={featureIndex} style={{ height: "68px" }}>
                           <td
                             className={`
-                              px-4 text-left text-sm md:text-base lg:text-lg leading-6
-                               text-[#231F20] font-normal 
-                               ${(feature.name !== "Dedicated Account Manager") ? "border-b border-[#1AD1B9]" : "border-b border-transparent"
-                              }`}
+                               px-4 text-left text-sm md:text-base lg:text-lg leading-6
+                                text-[#231F20] font-normal 
+                                border-b border-[#1AD1B9]
+                              `}
                             style={{ height: "68px", verticalAlign: "middle" }}
                           >
                             <div className="flex flex-col items-start justify-center gap-1">
@@ -161,9 +203,12 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
             </div>
 
             {/* Right scrollable column with pricing plans */}
-            <div className="overflow-x-auto w-6/12 md:w-8/12 lg:w-9/12 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory">
+            <div 
+              ref={scrollRef}
+              className="overflow-x-auto w-6/12 md:w-8/12 lg:w-9/12 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory"
+            >
               <div className="flex min-w-max">
-                {pricingPlans.map((plan, planIndex) => {
+                {tablePlans.map((plan, planIndex) => {
                   // decide which price to show
                   const displayPrice =
                     tab === "yearly"
@@ -173,13 +218,13 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                   return (
                     <div
                       key={plan.id}
-                      className="w-[50vw] md:w-1/4 flex-shrink-0 snap-start"
+                      className={`w-[50vw] ${tablePlans.length === 2 ? "md:w-1/2" : "md:w-1/3"} flex-shrink-0 snap-start`}
                     >
                       {categories.map((category, categoryIndex) => (
                         <div key={categoryIndex}>
                           {/* Plan header */}
                           <div
-                            className={`p-2 md:p-4 ${planIndex < pricingPlans.length - 1
+                            className={`p-2 md:p-4 ${planIndex < tablePlans.length - 1
                               ? "border-r"
                               : ""
                               }`}
@@ -207,9 +252,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                                       : "/month"}
                                 </span>
                               </h3>
-                              <p className="text-[10px] md:text-xs text-[#231F20] leading-[100%] font-normal font-['Onest']">
+                              {/* <p className="text-[10px] md:text-xs text-[#231F20] leading-[100%] font-normal font-['Onest']">
                                 {plan.description}
-                              </p>
+                              </p> */}
                               <a
                                 href="#"
                                 className="inline-block w-fit items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
@@ -257,23 +302,52 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                                     ? feature.professional
                                     : feature.premium;
 
+                            const isAddon = typeof featureValue === "string" && featureValue.includes("(Add-on)");
+                            const cleanValue = isAddon ? featureValue.replace("(Add-on)", "").trim() : featureValue;
+
                             return (
                               <div
                                 key={featureIndex}
-                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[#231F20] font-normal px-2 border-b ${planIndex < pricingPlans.length - 1
-                                  ? "border-r"
-                                  : ""
-                                  }`}
+                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[#231F20] font-normal px-2 ${planIndex < tablePlans.length - 1 ? "border-r" : ""}`}
                                 style={{
                                   height: "68px",
-                                  borderBottomColor: planColor,
+                                  borderBottom: isAddon ? "2px solid #FF6E5E" : `1px solid ${planColor}`,
                                   borderRightColor: plan.color,
+                                  borderRight: isAddon ? "2px solid #FF6E5E" : `1px solid ${planColor}`,
+                                  borderLeft: isAddon ? "2px solid #FF6E5E" : "none",
+                                  borderTop: isAddon ? "2px solid #FF6E5E" : "none",
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
+                                  position: "relative",
+                                  zIndex: isAddon ? 10 : 1,
+                                  backgroundColor: isAddon ? "#FFF9F8" : "transparent"
                                 }}
                               >
-                                {renderFeatureValue(featureValue)}
+                                {isAddon && (
+                                  <div 
+                                    className="absolute -top-[12px] -right-[15px] z-20 pointer-events-none"
+                                    style={{ transform: "rotate(2deg)" }}
+                                  >
+                                    <div className="relative">
+                                      {/* Ribbon SVG/Image Placeholder logic */}
+                                      <div className="bg-[#FF6E5E] text-white text-[10px] font-bold px-3 py-1 rounded-sm shadow-md flex items-center justify-center min-w-[60px] relative">
+                                        Add-on
+                                        {/* Ribbon tails */}
+                                        <div className="absolute left-[-5px] top-[50%] -translate-y-[50%] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-r-[5px] border-r-[#FF6E5E]/80"></div>
+                                        <div className="absolute right-[-5px] top-[50%] -translate-y-[50%] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[5px] border-l-[#FF6E5E]/80"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                )}
+                                
+                                {isAddon ? (
+                                  <div className="bg-[#FFF1EF] text-[#FF6E5E] px-4 py-1.5 rounded-full text-sm font-semibold border border-[#FF6E5E]/20 shadow-sm">
+                                    {cleanValue}
+                                  </div>
+                                ) : (
+                                  renderFeatureValue(featureValue)
+                                )}
                               </div>
                             );
                           })}

@@ -156,28 +156,28 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               <div className="px-0 py-2 lg:p-2  md:col-span-6 lg:col-span-7 xl:col-span-8 relative z-[10]">
                 <h3 className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">{study.title}</h3>
                 <div className="flex flex-col items-end">
-                  <div className="bg-[var(--background-halfwhite)] rounded-l-[20px] rounded-tr-[20px] lg:rounded-l-[28px] lg:rounded-tr-[28px] p-6">
+                  <div className="bg-[var(--background-halfwhite)] rounded-l-[20px] rounded-r-[20px] lg:rounded-l-[28px] lg:rounded-r-[28px] p-6">
                    <p className="text-[var(--primary-teal)] lg:text-[32px] text-2xl lg:leading-[100%] leading-[165%] font-normal font-['Onest'] mb-4">Overview</p>
                     <p className="text-[var(--text-grey)] font-['Onest'] text-xl leading-[180%] md:text-2xl md:leading-[165%] lg:text-[32px] lg:leading-[52px]">
                       {study.overview}
                     </p>
                   </div>
-                  <div className="flex justify-between items-stretch gap-x-4 w-full">
+                  {/* <div className="flex justify-between items-stretch gap-x-4 w-full">
                     <div className="flex items-center justify-center mt-4 w-full lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%] h-12">
-                      {/* <ButtonSm
+                      <ButtonSm
                         url="#"
                         text={study.ctaText}
                         bgColor="[#795CF5]"
                         textColor="white"
                         isBorder
                         icon={<ArrowUpRight size={18} />}
-                      /> */}
+                      />
 
                     </div>
                     <div className="relative flex bg-[var(--background-halfwhite)] w-full lg:max-w-[60%] xl:max-w-[70%] 2xl:max-w-[73%] lg:rounded-b-[28px] rounded-b-[20px] ">
                       <div className="absolute z-[-100] left-[-5.4rem] md:left-[-5.8rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] rotate-180 shadow-[0_2.5rem_0_0_#f3f4f6]" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

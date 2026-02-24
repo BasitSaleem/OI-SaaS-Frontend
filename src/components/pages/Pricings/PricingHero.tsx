@@ -6,7 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import PricingTabs from "./PricingTabs";
 import PricingCards from "./PricingCards";
-import { pricingPlans, PRICING_HERO_CONTENT } from "./tableConfig";
+import IndustryTabs from "./IndustryTabs";
+import {
+  PRICING_DATA,
+  BusinessType,
+  PRICING_HERO_CONTENT,
+} from "./tableConfig";
+import Paragraph from "../typography/Paragraph";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -15,11 +21,15 @@ if (typeof window !== "undefined") {
 interface PricingHeroProps {
   activeTab: "monthly" | "yearly";
   onTabChange: (tab: "monthly" | "yearly") => void;
+  activeBusinessTab: BusinessType;
+  onBusinessTabChange: (tab: BusinessType) => void;
 }
 
 const PricingHero: React.FC<PricingHeroProps> = ({
   activeTab,
   onTabChange,
+  activeBusinessTab,
+  onBusinessTabChange,
 }) => {
   useEffect(() => {
     let heroBreak = gsap.matchMedia();
@@ -83,66 +93,85 @@ const PricingHero: React.FC<PricingHeroProps> = ({
       tl.to(".header-right-col", { x: "0%", duration: 1 }, 0);
       tl.to(".header-left-col", { x: "0%", duration: 1 }, 0);
       tl.to(".top-section", { autoAlpha: 0, duration: 1 }, 0);
-      tl.to(".owner-inventory-hero", {
-        y: -150,
-        paddingLeft: 0,
-        paddingRight: 0,
-        duration: 1.5,
-        ease: "power2.out",
-      }, 0);
+      tl.to(
+        ".owner-inventory-hero",
+        {
+          y: -10,
+          paddingLeft: 0,
+          paddingRight: 0,
+          duration: 1.5,
+          ease: "power2.out",
+        },
+        0,
+      );
     });
 
     return () => {
-      heroBreak.revert(); // ✅ cleanup on unmount
+      heroBreak.revert();
     };
   }, []);
 
   return (
     <>
-    <div className="">
-      <div className="top-section md:h-6 h-8"></div>
-       <section className="owner-inventory-hero rounded-b-[40px] px-3 md:px-5 lg:px-10 overflow-hidden">
-        <div className="owner-inventory-hero__home flex items-center justify-start lg:justify-center lg:items-center w-[63%] ml-0 lg:mx-auto relative inset-x-0">
-          {/* Left Shape (only visible on md+) */}
-          <div className="hidden lg:block relative w-1/2 2xl:w-[400px] h-20 bg-[#F3F4F6] rounded-tl-[40px]">
-            <div className="absolute left-[-6rem] bottom-0 w-24 h-full bg-transparent rounded-br-[40px] shadow-[0_2.5rem_0_0_#f3f4f6]" />
+      <div className="">
+        <div className="top-section md:h-6 h-8"></div>
+        <section className="owner-inventory-hero  rounded-b-[40px] px-3 md:px-5 lg:px-10 overflow-hidden">
+          <div className="owner-inventory-hero__home flex items-center justify-start lg:justify-center lg:items-center w-[63%] ml-0 lg:mx-auto relative inset-x-0">
+            {/* Left Shape (only visible on md+) */}
+            <div className="hidden lg:block relative w-1/2 2xl:w-[400px] h-20 bg-[#F3F4F6] rounded-tl-[40px]">
+              <div className="absolute left-[-6rem] bottom-0 w-24 h-full bg-transparent rounded-br-[40px] shadow-[0_2.5rem_0_0_#f3f4f6]" />
+            </div>
+
+            {/* Right Shape */}
+            <div className="relative w-40 rounded-tr-[40px] rounded-tr-[40px] rounded-tl-[40px] lg:rounded-tl-none h-20 md:w-1/2 2xl:w-[400px] lg:h-20 bg-[#F3F4F6] ">
+              <div className="absolute right-[-6rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] shadow-[0_2.5rem_0_0_#f3f4f6]" />
+            </div>
           </div>
 
-          {/* Right Shape */}
-          <div className="relative w-40 rounded-tr-[40px] rounded-tr-[40px] rounded-tl-[40px] lg:rounded-tl-none h-20 md:w-1/2 2xl:w-[400px] lg:h-20 bg-[#F3F4F6] ">
-            <div className="absolute right-[-6rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] shadow-[0_2.5rem_0_0_#f3f4f6]" />
+          <div
+            className="relative hero-bg-circle  flex flex-col items-center justify-center w-full overflow-hidden pt-10 pb-6 md:py-14 lg:py-0 lg:pb-10 bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px] "
+            style={
+              {
+                // background image is painted in CSS ::before using this variable
+                ["--hero-bg" as any]:
+                  "url('/assets/home-page-images/hero-bg.webp')",
+              } as React.CSSProperties
+            }
+          >
+            <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
+             
+               <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
+                    {PRICING_HERO_CONTENT.title}
+                  </h1>
+
+              <Paragraph className="text-center max-w-[946px]">
+                {PRICING_HERO_CONTENT.description}
+              </Paragraph>
+
+              {/* Tabs */}
+              <PricingTabs
+                activeTab={activeTab}
+                onTabChange={onTabChange}
+                variant="tabs"
+              />
+
+              {/* Industry Tabs */}
+              <IndustryTabs
+                activeTab={activeBusinessTab}
+                onTabChange={onBusinessTabChange}
+              />
+
+              {/* Pricing Cards */}
+              <div className="w-full mt-10 md:mt-14 xl:mt-20">
+                <PricingCards
+                  plans={PRICING_DATA[activeBusinessTab].plans}
+                  isYearly={activeTab === "yearly"}
+                />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div
-          style={{
-            backgroundImage:
-              "linear-gradient(180deg, #F3F4F6 0%, transparent 40%), linear-gradient(90deg, rgba(26, 209, 185, 0.3) 0%, rgba(121, 92, 245, 0.3) 100%)",
-          }}
-          className="relative flex flex-col items-center justify-center w-full overflow-hidden pt-10 pb-6 md:py-[76px] lg:py-0 lg:pb-[150px] bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px] "
-        >
-          <h1 className="text-4xl px-6 md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[#231F20]">
-            {PRICING_HERO_CONTENT.title}
-          </h1>
-
-          <p className="font-['Onest'] px-6 text-xl leading-9 font-normal text-[#231F20] text-center w-full max-w-4xl mt-10">
-            {PRICING_HERO_CONTENT.description}
-          </p>
-
-          {/* Tabs */}
-         <PricingTabs activeTab={activeTab} onTabChange={onTabChange} variant="tabs" />
-
-          {/* Pricing Cards */}
-          <div className="w-full mt-10 md:mt-14 xl:mt-20">
-            <PricingCards
-              plans={pricingPlans}
-              isYearly={activeTab === "yearly"}
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-     
+        </section>
+      </div>
     </>
   );
 };

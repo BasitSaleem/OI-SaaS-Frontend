@@ -2,12 +2,13 @@ export interface PricingPlan {
   id: string;
   name: string;
   price: number;
-   description?: string,
+  description?: string,
   yearlyPrice?: number;
   color: string;
   bgColor: string;
   features: string[];
   popular?: boolean;
+  isCustom?: boolean;
 }
 
 export interface FeatureRow {

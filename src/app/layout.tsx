@@ -30,7 +30,12 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/assets/favicon.svg",
+    icon: [
+      {
+        url: "/assets/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
   },
 };
 
