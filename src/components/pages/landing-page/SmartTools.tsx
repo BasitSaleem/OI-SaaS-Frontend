@@ -29,7 +29,7 @@ const SmartTools: React.FC<SmartTools> = ({
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
@@ -42,7 +42,7 @@ const SmartTools: React.FC<SmartTools> = ({
   return (
     <section ref={sectionRef} className="">
       <div
-        className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] bg-cover bg-center"
+        className="w-full px-8 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage:
             "url('/assets/home-page-images/black-background.webp')",
@@ -76,7 +76,7 @@ const SmartTools: React.FC<SmartTools> = ({
         </div>
 
         <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto mt-8 md:mt-10">
-           {/* <Image
+          {/* <Image
              src="/assets/home-page-images/smart-way-banner.webp"
              alt="Chaos Image"
              width={1065}
@@ -85,24 +85,26 @@ const SmartTools: React.FC<SmartTools> = ({
              className="w-full"
            /> */}
           {shouldShowImage ? (
-             <Image
-             src="/assets/home-page-images/smart-way-banner.webp"
-             alt="Chaos Image"
-             width={1065}
-             height={600}
-             loading="lazy"
-             className="w-full"
-           />
+            <Image
+              src="/assets/home-page-images/smart-way-banner.webp"
+              alt="Chaos Image"
+              width={1065}
+              height={600}
+              loading="lazy"
+              className="w-full"
+            />
           ) : isInView ? (
             <video
-              className="w-full md:object-cover lazy-video "
+              className="w-full md:object-cover lazy-video mb-[-70px] lg:mb-[-150px]"
               autoPlay
               muted
-              loop
               playsInline
               preload="none"
             >
-              <source src= "/assets/home-page-images/animations/stay-ahead.webm" type="video/webm" />
+              <source
+                src="/assets/home-page-images/animations/stay-ahead.webm"
+                type="video/webm"
+              />
               Your browser does not support the video tag.
             </video>
           ) : null}

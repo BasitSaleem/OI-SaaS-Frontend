@@ -128,7 +128,7 @@ export const LANDING_FEATURES = [
     },
     {
         id: "inventory-autosync",
-        title: "Auto-Sync & Updates",
+        title: "Streamline Manufacturing + Stay in Control of Every Process",
         icon: "/assets/features-section/autosync.svg",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/screen4.webm",
         imageSrc: "/assets/home-page-images/animations/screen4-tab.webp",
