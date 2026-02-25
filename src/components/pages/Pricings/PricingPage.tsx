@@ -54,13 +54,16 @@ const PricingPage: React.FC = () => {
            heading='Everything You Were About to Ask'
            paragraph='We’ve compiled the most common questions about Owners Inventory — from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
            faqs={PRICING_FAQS}
+           buttonText='Start Now'
+           buttonUrl='/coming-soon'
           />
           </div>
 
           <CalltoActionBottom 
           title='Grow with a platform trusted by businesses worldwide.'
           description="Join a growing community of retailers, wholesalers, and entrepreneurs who are transforming how they manage inventory, sales, and growth. With Owners Inventory, you're not just using another tool — you're becoming part of a forward-thinking ecosystem that’s built to scale with your ambition. Let’s build smarter, together."
-          showDemoButton={false}/>
+          showDemoButton={false}
+          />
         
     </div>
   );

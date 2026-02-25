@@ -304,14 +304,6 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
 
                           {/* Feature rows */}
                           {category.features.map((feature, featureIndex) => {
-                            const planColor =
-                              planIndex === 0
-                                ? "var(--primary-teal)"
-                                : planIndex === 1
-                                  ? "var(--primary-blue-dark)"
-                                  : planIndex === 2
-                                    ? "var(--primary-blue)"
-                                    : "var(--primary-purple)";
                             const featureValue =
                               planIndex === 0
                                 ? feature.basic
@@ -336,11 +328,11 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                   height: "68px",
                                   borderBottom: isAddon
                                     ? "2px solid var(--addon-border)"
-                                    : `1px solid ${planColor}`,
+                                    : `1px solid ${plan.color}`,
                                   borderRightColor: plan.color,
                                   borderRight: isAddon
                                     ? "2px solid var(--addon-border)"
-                                    : `1px solid ${planColor}`,
+                                    : `1px solid ${plan.color}`,
                                   borderLeft: isAddon
                                     ? "2px solid var(--addon-border)"
                                     : "none",

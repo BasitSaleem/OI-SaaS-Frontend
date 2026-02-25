@@ -168,7 +168,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
         className={`flex flex-col items-stretch justify-start flex-1 px-4 py-5 bg-white rounded-[30px] w-full snap-start transition-all duration-300 relative shadow-lg`}
       >
         {plan.popular && (
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[var(--primary-teal)] via-[var(--primary-blue-dark)] via-[var(--primary-blue)] to-[var(--primary-purple)] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">
             Most Popular
           </div>
         )}
@@ -206,15 +206,10 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
           </p>
         </div>
 
-        <div className="flex items-baseline gap-1 mb-8">
+        <div className={`flex items-baseline gap-1 ${isYearly ? 'mb-0' : 'mb-8'}`}>
           <span
-            className={`text-4xl leading-[100%] font-bold  font-['Onest'] ${
-              plan.id === "enterprise"
-                ? "text-[var(--primary-blue)]"
-                : plan.id === "pro"
-                  ? "text-[var(--primary-blue-dark)]"
-                  : "text-[var(--primary-teal)]"
-            }`}
+            className="text-4xl leading-[100%] font-bold font-['Onest']"
+            style={{ color: plan.color }}
           >
             ${basePrice}
           </span>
@@ -223,14 +218,11 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
           </span>
         </div>
 
+        {isYearly && <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5 mb-8">Billed yearly</p>}
+
         <button
-          className={`w-full py-4 rounded-full text-base font-['Onest'] font-bold text-white mb-8 transition-colors ${
-            plan.id === "enterprise"
-              ? "bg-[var(--primary-blue)] hover:bg-[var(--primary-blue-dark)]"
-              : plan.id === "pro"
-                ? "bg-[var(--primary-blue-dark)] hover:bg-[var(--primary-blue)]"
-                : "bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)]"
-          }`}
+          className="w-full py-4 rounded-full text-base font-['Onest'] font-bold text-white mb-8 transition-opacity hover:opacity-90"
+          style={{ backgroundColor: plan.color }}
         >
           Start 14-Day Free Trial
         </button>

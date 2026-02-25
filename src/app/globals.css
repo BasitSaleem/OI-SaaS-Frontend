@@ -8,6 +8,12 @@
   /* 1500px converted to rem (1500/16 = 93.75) */
   /* Optionally, you can also name it 'custom-lg' or similar */
   /* --breakpoint-custom-lg: 93.75rem; */
+
+  /* Brand Colors for Tailwind Utility Classes */
+  --color-primary-purple: #795CF5;
+  --color-primary-teal: #1AD1B9;
+  --color-primary-blue: #5588DF;
+  --color-primary-blue-dark: #38ACCC;
 }
 
 html,
@@ -40,6 +46,7 @@ body {
   --primary-blue: #5588DF;
   --primary-blue-rgb: 85, 136, 223;
   --primary-blue-dark: #38ACCC;
+  --primary-blue-dark-rgb: 56, 172, 204;
   --accent-purple: #9E02FF;
   --accent-purple-light: #CFB5F9;
   --accent-blue-light: #A0D7FF;
