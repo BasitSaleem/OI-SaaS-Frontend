@@ -16,6 +16,7 @@ const PricingCards: React.FC<PricingCardsProps> = ({ plans, isYearly }) => {
             <PricingCard
               plan={plan}
               isYearly={isYearly}
+              allPlans={plans}
             />
           </div>
         ))}

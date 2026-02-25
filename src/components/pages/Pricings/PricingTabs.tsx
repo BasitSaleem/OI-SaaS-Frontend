@@ -88,23 +88,43 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
           Yearly
         </button>
 
-        {/* 10% Off Badge */}
-        <span className="px-5 py-2 text-white font-['Onest'] font-semibold text-xs lg:text-sm bg-[#1AD1B9] whitespace-nowrap absolute right-0 lg:-right-10 -top-12 lg:-top-14 rounded-full z-30">
-          10% Off
-        </span>
+        {/* Discount Banner - Responsive Design */}
+        <div className="absolute left-[70%] md:left-[80%] top-[-25px] md:top-[-20px] translate-x-2 flex flex-col gap-2 md:gap-4 items-center">
+          <div className="flex flex-col items-center md:gap-1 ml-6 md:ml-10">
+            {/* 20% Badge */}
+            <div
+              className="w-[69px] h-[24px] md:w-[70px] md:h-[24px] lg:w-[112px] lg:h-[38px] flex items-center justify-center rotate-[-5deg] text-white font-bold text-[10px] md:text-sm lg:text-xl z-30"
+              style={{
+                clipPath:
+                  "polygon(0% 26.57%, 97.23% 0%, 89.75% 37.8%, 99.46% 70.94%, 2.23% 97.44%, 9.71% 59.68%, 0% 26.57%)",
+                backgroundColor: "#1D2034",
+              }}
+            >
+              20%
+            </div>
 
-        {/* Arrow Image - Add error handling */}
-        <Image
-          src="/assets/owners-inventory-pricing/right-arrow-off.svg"
-          alt=""
-          width={64}
-          height={56}
-          className="lg:w-16 lg:h-14 h-10 w-10 absolute right-3 lg:-right-4 -top-8 lg:-top-10 z-20"
-          onError={(e) => {
-            // Hide image on error
-            e.currentTarget.style.display = 'none';
-          }}
-        />
+            {/* OFF Badge */}
+            <div
+              className="w-[52px] h-[17px] md:w-[58px] md:h-[19px] lg:w-[94px] lg:h-[30px] -mt-1 md:-mt-2.5 flex items-center justify-center text-[#1D2034] font-black text-[8px] md:text-[9px] lg:text-xl z-20"
+              style={{
+                clipPath:
+                  "polygon(0% 26.57%, 97.2% 0%, 89.72% 37.77%, 99.42% 70.89%, 2.23% 97.38%, 9.7% 59.65%, 0% 26.57%)",
+                backgroundColor: "#1AD1B9",
+              }}
+            >
+              OFF
+            </div>
+          </div>
+
+          {/* Squiggled Arrow pointing from Yearly to Badges */}
+          <Image
+            src="/assets/owners-inventory-pricing/pricing-arrow.svg"
+            alt=""
+            width={78}
+            height={30}
+            className="absolute left-[10px] md:left-0 lg:left-5 bottom-[-30px] md:bottom-[-30px] lg:bottom-[-40px] w-10 md:w-16 lg:w-[78px]"
+          />
+        </div>
       </div>
     </div>
   );

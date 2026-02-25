@@ -164,15 +164,14 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         name: 'Basic',
         price: 65,
         yearlyPrice: 52,
-        description: 'Small production floors',
+        description: 'Perfect for small businesses getting started',
         color: '#1AD1B9',
         bgColor: 'rgba(26,209,185,0.1)',
         features: [
-          '1 Production Floor',
+          '1 Store',
+          '1 Production Floors',
           '1 Warehouse',
-          '1 Store (For Invoicing)',
-          'Unlimited Users',
-          'Unlimited Orders & Invoices'
+          '1 POS Terminal'
         ]
       },
       {
@@ -185,11 +184,10 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         bgColor: 'rgba(26,209,185,0.1)',
         popular: true,
         features: [
+          '1 Store',
           '3 Production Floors',
           'Unlimited Warehouse',
-          '1 Store (For Invoicing)',
-          'Unlimited Users',
-          'Unlimited Orders & Invoices'
+          '1 POS Terminal'
         ]
       },
       {
@@ -201,11 +199,10 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         color: '#5588DF',
         bgColor: 'rgba(85,136,223,0.1)',
         features: [
+          '1 Store',
           'Unlimited Production Floors',
           'Unlimited Warehouse',
-          '1 Store (For Invoicing)',
-          'Unlimited Users',
-          'Unlimited Orders & Invoices'
+          '1 POS Terminal'
         ]
       }
     ],
@@ -332,10 +329,10 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         color: '#1AD1B9',
         bgColor: 'rgba(26,209,185,0.1)',
         features: [
+          '1 Store',
           '1 Online Store',
           '1 Warehouse',
-          'Unlimited Users',
-          'Unlimited Orders & Invoices'
+          '1 POS Terminal',
         ]
       },
       {
@@ -348,10 +345,10 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         bgColor: 'rgba(26,209,185,0.1)',
         popular: true,
         features: [
+          '1 Store',
           '1 Online Store',
           '2 Warehouse',
-          'Unlimited Users',
-          'Unlimited Orders & Invoices'
+          '1 POS Terminal',
         ]
       },
       {
@@ -363,10 +360,10 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         color: '#5588DF',
         bgColor: 'rgba(85,136,223,0.1)',
         features: [
+           '1 Store',
           '1 Online Store',
-          'Unlimited Warehouse',
-          'Unlimited Users',
-          'Unlimited Orders & Invoices'
+          'Unlimited Warehouses',
+          '1 POS Terminal',
         ]
       }
     ],
@@ -483,11 +480,11 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         bgColor: 'rgba(121,92,245,0.1)',
         popular: true,
         features: [
-          '5 Stores',
+          '5 Store',
           '1 Online Store',
-          '5 Warehouses',
-          '5 Production Floors',
-          'Unlimited Users',
+          '5 Warehouse',
+          '5 Production Floor, Add-on available',
+          '10 POS Terminal',
           'Accounts & Finance'
         ]
       },
@@ -500,11 +497,11 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         color: '#5588DF',
         bgColor: 'rgba(85,136,223,0.1)',
         features: [
-          'Unlimited Stores',
+          'Unlimited Store',
           '1 Online Store',
-          'Unlimited Warehouses',
-          'Unlimited Production Floors',
-          'Unlimited Users',
+          'Unlimited Warehouse',
+          'Unlimited Production Floor',
+          'Unlimited POS Terminal',
           'Accounts & Finance'
         ]
       },

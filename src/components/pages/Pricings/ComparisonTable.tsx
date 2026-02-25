@@ -11,7 +11,12 @@ interface ComparisonTableProps {
   plans: PricingPlan[];
 }
 
-const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTabChange, plans }) => {
+const ComparisonTable: React.FC<ComparisonTableProps> = ({
+  categories,
+  tab,
+  onTabChange,
+  plans,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -100,24 +105,33 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
       </div>
 
       <div
-        className={`compare-content pt-10 md:pt-16 lg:pt-20 wrapper mx-auto ${isVisible ? "block" : "hidden"
-          }`}
+        className={`compare-content pt-10 md:pt-16 lg:pt-20 wrapper mx-auto ${
+          isVisible ? "block" : "hidden"
+        }`}
       >
         <div className="w-full hidden lg:flex  items-center justify-end mb-10">
-          <PricingTabs activeTab={tab} onTabChange={onTabChange} variant="toggle" />
+          <PricingTabs
+            activeTab={tab}
+            onTabChange={onTabChange}
+            variant="toggle"
+          />
         </div>
 
         {/* Progress Bar for Mobile/Tablet */}
         <div className="lg:hidden md:w-2/3 w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center  w-full mb-6 ">
           <div className="h-1.5  w-full md:order-1 order-2 bg-[#795CF5]/10 rounded-full overflow-hidden">
-            <div 
+            <div
               className="h-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] transition-all duration-200 ease-out"
               style={{ width: `${scrollProgress}%` }}
             />
           </div>
-           <div className=" flex md:w-1/2 md:order-2 order-1 w-full items-center justify-end ">
-          <PricingTabs activeTab={tab} onTabChange={onTabChange} variant="toggle" />
-        </div>
+          <div className=" flex md:w-1/2 md:order-2 order-1 w-full items-center justify-end ">
+            <PricingTabs
+              activeTab={tab}
+              onTabChange={onTabChange}
+              variant="toggle"
+            />
+          </div>
         </div>
 
         <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] p-[2px]">
@@ -151,10 +165,11 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                               {/* Title + Tooltip */}
                               <div className="flex items-center gap-3">
                                 <span
-                                  className={`${isSmallScreen
-                                    ? "max-w-[70px] truncate flex-shrink"
-                                    : ""
-                                    }`}
+                                  className={`${
+                                    isSmallScreen
+                                      ? "max-w-[70px] truncate flex-shrink"
+                                      : ""
+                                  }`}
                                 >
                                   {feature.name}
                                 </span>
@@ -169,7 +184,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                                     />
 
                                     {/* Tooltip (opens upward) */}
-                                    <Tooltip text={feature?.infoText} isComparisonToolTip />
+                                    <Tooltip
+                                      text={feature?.infoText}
+                                      isComparisonToolTip
+                                    />
                                     {/* <div className="absolute left-[-20px] bottom-[120%] z-[999] hidden group-hover:flex flex-col items-start">
                                       <div className="rounded-xl border border-[#795DF5] bg-white px-4 py-2 text-xs leading-4 font-normal text-[#231F20] shadow-lg w-[150px] md:w-[200px] lg:w-[250px]">
                                         {feature.infoText}
@@ -203,7 +221,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
             </div>
 
             {/* Right scrollable column with pricing plans */}
-            <div 
+            <div
               ref={scrollRef}
               className="overflow-x-auto w-6/12 md:w-8/12 lg:w-9/12 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory"
             >
@@ -212,7 +230,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                   // decide which price to show
                   const displayPrice =
                     tab === "yearly"
-                      ? plan.yearlyPrice ?? plan.price
+                      ? (plan.yearlyPrice ?? plan.price)
                       : plan.price;
 
                   return (
@@ -224,10 +242,11 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                         <div key={categoryIndex}>
                           {/* Plan header */}
                           <div
-                            className={`p-2 md:p-4 ${planIndex < tablePlans.length - 1
-                              ? "border-r"
-                              : ""
-                              }`}
+                            className={`p-2 md:p-4 ${
+                              planIndex < tablePlans.length - 1
+                                ? "border-r"
+                                : ""
+                            }`}
                             style={{ borderColor: plan.color }}
                           >
                             <div
@@ -302,8 +321,12 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                                     ? feature.professional
                                     : feature.premium;
 
-                            const isAddon = typeof featureValue === "string" && featureValue.includes("(Add-on)");
-                            const cleanValue = isAddon ? featureValue.replace("(Add-on)", "").trim() : featureValue;
+                            const isAddon =
+                              typeof featureValue === "string" &&
+                              featureValue.includes("(Add-on)");
+                            const cleanValue = isAddon
+                              ? featureValue.replace("(Add-on)", "").trim()
+                              : featureValue;
 
                             return (
                               <div
@@ -311,36 +334,44 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({ categories, tab, onTa
                                 className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[#231F20] font-normal px-2 ${planIndex < tablePlans.length - 1 ? "border-r" : ""}`}
                                 style={{
                                   height: "68px",
-                                  borderBottom: isAddon ? "2px solid #FF6E5E" : `1px solid ${planColor}`,
+                                  borderBottom: isAddon
+                                    ? "2px solid #FF6E5E"
+                                    : `1px solid ${planColor}`,
                                   borderRightColor: plan.color,
-                                  borderRight: isAddon ? "2px solid #FF6E5E" : `1px solid ${planColor}`,
-                                  borderLeft: isAddon ? "2px solid #FF6E5E" : "none",
-                                  borderTop: isAddon ? "2px solid #FF6E5E" : "none",
+                                  borderRight: isAddon
+                                    ? "2px solid #FF6E5E"
+                                    : `1px solid ${planColor}`,
+                                  borderLeft: isAddon
+                                    ? "2px solid #FF6E5E"
+                                    : "none",
+                                  borderTop: isAddon
+                                    ? "2px solid #FF6E5E"
+                                    : "none",
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
                                   position: "relative",
                                   zIndex: isAddon ? 10 : 1,
-                                  backgroundColor: isAddon ? "#FFF9F8" : "transparent"
+                                  backgroundColor: isAddon
+                                    ? "#FFF9F8"
+                                    : "transparent",
                                 }}
                               >
                                 {isAddon && (
-                                  <div 
-                                    className="absolute -top-[12px] -right-[15px] z-20 pointer-events-none"
-                                    style={{ transform: "rotate(2deg)" }}
+                                  <div
+                                    className="absolute -top-[16px] -right-[30px] rotate-3 z-20 w-[80px] h-[26px] overflow-visible"
+                                    style={{
+                                      clipPath:
+                                        "polygon(0px 6.9081px, 77.7857px 0px, 71.8021px 9.8317px, 79.5679px 18.4496px, 1.7823px 25.3411px, 7.7659px 15.5185px, 0px 6.9081px)",
+                                      backgroundColor: "#FF6455",
+                                    }}
                                   >
-                                    <div className="relative">
-                                      {/* Ribbon SVG/Image Placeholder logic */}
-                                      <div className="bg-[#FF6E5E] text-white text-[10px] font-bold px-3 py-1 rounded-sm shadow-md flex items-center justify-center min-w-[60px] relative">
-                                        Add-on
-                                        {/* Ribbon tails */}
-                                        <div className="absolute left-[-5px] top-[50%] -translate-y-[50%] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-r-[5px] border-r-[#FF6E5E]/80"></div>
-                                        <div className="absolute right-[-5px] top-[50%] -translate-y-[50%] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[5px] border-l-[#FF6E5E]/80"></div>
-                                      </div>
+                                    <div className="absolute inset-0 flex items-center justify-center text-white text-[12px] rotate-[-5deg] font-bold text-center leading-none">
+                                      Add-on
                                     </div>
                                   </div>
                                 )}
-                                
+
                                 {isAddon ? (
                                   <div className="bg-[#FFF1EF] text-[#FF6E5E] px-4 py-1.5 rounded-full text-sm font-semibold border border-[#FF6E5E]/20 shadow-sm">
                                     {cleanValue}

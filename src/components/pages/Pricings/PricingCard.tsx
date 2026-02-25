@@ -23,9 +23,10 @@ const addOnsList: AddOn[] = [
 interface PricingCardProps {
   plan: PricingPlan;
   isYearly: boolean;
+  allPlans: PricingPlan[];
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
+const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) => {
   const [showAddOns, setShowAddOns] = useState(false);
   const [quantities, setQuantities] = useState<Record<string, number>>({
     pos: 0,
@@ -41,9 +42,70 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
 
   const basePrice = isYearly ? (plan.yearlyPrice ?? plan.price) : plan.price;
 
+  const nextPlan = useMemo(() => {
+    if (plan.isCustom) return null;
+    
+    // Filter out custom "Let's Talk" and current plan
+    const otherPlans = allPlans.filter(p => !p.isCustom && p.id !== plan.id);
+    
+    // Find plans that are more expensive than current base price
+    const moreExpensivePlans = otherPlans.filter(p => {
+      const pPrice = isYearly ? (p.yearlyPrice ?? p.price) : p.price;
+      return pPrice > basePrice;
+    });
+
+    if (moreExpensivePlans.length === 0) return null;
+
+    // Sort by price and pick the cheapest one among the more expensive ones
+    return moreExpensivePlans.sort((a, b) => {
+      const aPrice = isYearly ? (a.yearlyPrice ?? a.price) : a.price;
+      const bPrice = isYearly ? (b.yearlyPrice ?? b.price) : b.price;
+      return aPrice - bPrice;
+    })[0];
+  }, [allPlans, plan, isYearly, basePrice]);
+
+  const filteredAddOns = useMemo(() => {
+    return addOnsList.filter((addOn) => {
+      const features = plan.features.map((f) => f.toLowerCase());
+
+      if (
+        addOn.id === "pos" &&
+        features.some((f) => f.includes("unlimited pos terminal"))
+      )
+        return false;
+      if (
+        addOn.id === "store" &&
+        features.some((f) => f.includes("unlimited store"))
+      )
+        return false;
+      if (
+        addOn.id === "warehouse" &&
+        features.some((f) => f.includes("unlimited warehouse"))
+      )
+        return false;
+      if (
+        addOn.id === "production" &&
+        features.some((f) => f.includes("unlimited production floor"))
+      )
+        return false;
+      if (
+        addOn.id === "accounting" &&
+        features.some((f) => f.includes("accounts & finance"))
+      )
+        return false;
+      if (
+        addOn.id === "online" &&
+        features.some((f) => f.includes("online store"))
+      )
+        return false;
+
+      return true;
+    });
+  }, [plan.features]);
+
   const addOnTotal = useMemo(() => {
     let total = 0;
-    addOnsList.forEach((addOn) => {
+    filteredAddOns.forEach((addOn) => {
       if (addOn.type === "quantity") {
         total += (quantities[addOn.id] || 0) * addOn.price;
       } else {
@@ -53,19 +115,20 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
       }
     });
     return total;
-  }, [quantities, checkboxes]);
+  }, [quantities, checkboxes, filteredAddOns]);
 
   const totalPrice = basePrice + addOnTotal;
 
   const upgradeMessage = useMemo(() => {
-    if (plan.id === "basic" && totalPrice > 75) {
-      return "💡 Total exceeds Pro plan ($75). Consider moving to the Pro plan for better value!";
-    }
-    if (plan.id === "pro" && totalPrice > 115) {
-      return "💡 Total exceeds Enterprise plan ($115). Consider moving to the Enterprise plan for better value!";
+    if (!nextPlan) return null;
+
+    const nextPlanPrice = isYearly ? (nextPlan.yearlyPrice ?? nextPlan.price) : nextPlan.price;
+
+    if (totalPrice > nextPlanPrice) {
+      return `Consider upgrading to ${nextPlan.name} plan at only $${nextPlanPrice}/mo for more features and better value.`;
     }
     return null;
-  }, [plan.id, totalPrice]);
+  }, [nextPlan, totalPrice, isYearly]);
 
   useEffect(() => {
     if (upgradeMessage) {
@@ -115,7 +178,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
             <div className="mb-8">
               <div className="w-48 h-48 mx-auto relative">
                 <Image
-                  src="/assets/pricing-page/lets-talk.svg"
+                  src="/assets/owners-inventory-pricing/lets-talk.svg"
                   alt="Let's Talk"
                   fill
                   className="object-contain"
@@ -169,7 +232,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
                 : "bg-[#1AD1B9] hover:bg-[#17BDAB]"
           }`}
         >
-          Get Started
+          Start 14-Day Free Trial
         </button>
 
         <ul className="space-y-3 mb-10 flex-grow">
@@ -197,25 +260,33 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
         </ul>
 
         <div className="border-t border-[#F3F4F6] pt-6 mt-auto">
-          <div className={showAddOns ? "bg-[#F3F4F6] rounded-lg px-3 py-4" : ""}>
-            <button
-              onClick={() => setShowAddOns(!showAddOns)}
-              className={`flex items-center justify-center gap-2 font-medium text-base leading-[150%] cursor-pointer font-['onest'] w-full transition-colors ${
-                showAddOns ? "text-[#231F20]" : "text-[#795CF5]"
-              }`}
-            >
-              {showAddOns ? (
-                <FaMinus size={14} className="text-[#795CF5]" />
-              ) : (
-                <FaPlus size={14} />
-              )}
-              <span>{"Add-ons"}</span>
-            </button>
+          <div
+            className={
+              showAddOns && filteredAddOns.length > 0
+                ? "bg-[#F3F4F6] rounded-lg px-3 py-4"
+                : ""
+            }
+          >
+            {filteredAddOns.length > 0 && (
+              <button
+                onClick={() => setShowAddOns(!showAddOns)}
+                className={`flex items-center justify-center gap-2 font-medium text-base leading-[150%] cursor-pointer font-['onest'] w-full transition-colors ${
+                  showAddOns ? "text-[#231F20]" : "text-[#795CF5]"
+                }`}
+              >
+                {showAddOns ? (
+                  <FaMinus size={14} className="text-[#795CF5]" />
+                ) : (
+                  <FaPlus size={14} />
+                )}
+                <span>{"Add-ons"}</span>
+              </button>
+            )}
 
             {showAddOns && (
               <div className="mt-5 space-y-4 animate-in fade-in slide-in-from-top-4 duration-300">
 
-              {addOnsList.map((addOn) => (
+              {filteredAddOns.map((addOn) => (
                 <div
                   key={addOn.id}
                   className="flex items-center justify-between gap-4"
@@ -261,18 +332,19 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
                 </div>
               ))}
 
-              <div className="pt-4 border-t border-black/5 space-y-2">
-                <div className="flex justify-between items-center text-xs">
-                  <span className="text-[#231F20]/60">Summary:</span>
-                  <span className="font-bold text-[#231F20]">
+               <div className="flex justify-between items-center text-xs">
+                  <span className="text-sm font-medium leading-[160%] font-['onest'] text-[#374151]">Add-ons:</span>
+                  <span className="text-sm font-medium leading-[160%] font-['onest'] text-[#231F20]">
                     +${addOnTotal}/mo
                   </span>
                 </div>
+
+              <div className="pt-4 border-t border-black/5 space-y-2">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-bold text-[#231F20]">
+                  <span className="text-sm font-medium leading-[160%] font-['onest'] text-[#231F20]">
                     Total Package:
                   </span>
-                  <span className="text-lg font-bold text-[#231F20]">
+                  <span className="text-lg font-semibold leading-[160%] font-['onest'] text-[#231F20]">
                     ${totalPrice}/mo
                   </span>
                 </div>
@@ -291,10 +363,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
               </h4>
             </div>
             <p className="text-[13px] text-[#8B6E2C] font-['Onest'] leading-relaxed">
-              {plan.id === "basic" 
-                ? "Consider upgrading to Pro plan at only $75/mo for more features and better value."
-                : "Consider upgrading to Enterprise plan at only $115/mo for more features and better value."
-              }
+              {upgradeMessage}
             </p>
           </div>
         )}
