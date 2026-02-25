@@ -32,23 +32,30 @@ export default function Button({
   className = "",         // <-- default empty
   type = "button",
 }: ButtonProps) {
+  const parsedBgColor = bgColor.startsWith("[") && bgColor.endsWith("]") ? bgColor.slice(1, -1) : bgColor;
+  const parsedTextColor = textColor.startsWith("[") && textColor.endsWith("]") ? textColor.slice(1, -1) : textColor;
+
   const classes = `
     ${padding}
     ${paddingMd}
     ${paddingLg}
-    bg-${bgColor}
-    text-${textColor}
+    bg-[var(--btn-bg)]
+    text-[var(--btn-text)]
     flex items-center justify-center gap-2 whitespace-nowrap
     text-sm md:text-base font-['Onest'] font-semibold
-    ${isBorder ? `border border-${bgColor} hover:border-${bgColor}` : ""}
-    rounded-full hover:text-${bgColor} hover:bg-transparent
+    ${isBorder ? `border` : ""}
+    rounded-full hover:text-[var(--btn-bg)] hover:bg-transparent
+    hover:border-[var(--btn-bg)]
     transition-colors duration-300 cursor-pointer
-    ${className}          // <-- added here
+    ${className}
   `;
 
   const style = {
-    border: isBorder ? `1px solid ${bgColor}` : "transparent",
-  };
+    "--btn-bg": parsedBgColor,
+    "--btn-text": parsedTextColor,
+    border: isBorder ? `1px solid var(--btn-bg)` : "transparent",
+  } as React.CSSProperties;
+
 
   // If onClick is passed → render <button>
   if (onClick) {

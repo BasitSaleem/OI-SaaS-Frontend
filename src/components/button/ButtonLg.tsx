@@ -20,13 +20,17 @@ const ButtonLg: React.FC<ButtonLgProps> = ({
   hoverBgColor,
   className = "",       
 }) => {
+  const parsedBgColor = bgColor.startsWith("[") && bgColor.endsWith("]") ? bgColor.slice(1, -1) : bgColor;
+  const parsedTextColor = textColor.startsWith("[") && textColor.endsWith("]") ? textColor.slice(1, -1) : textColor;
+  const parsedHoverBgColor = hoverBgColor ? (hoverBgColor.startsWith("[") && hoverBgColor.endsWith("]") ? hoverBgColor.slice(1, -1) : hoverBgColor) : undefined;
+
   return (
     <Link
       href={url}
       style={{
-        backgroundColor: bgColor === "transparent" ? "transparent" : bgColor,
-        color: textColor,
-        border: isBorder ? `1px solid ${bgColor}` : "transparent",
+        backgroundColor: parsedBgColor === "transparent" ? "transparent" : parsedBgColor,
+        color: parsedTextColor,
+        border: isBorder ? `1px solid ${parsedBgColor}` : "transparent",
       }}
       className={`
         px-4 py-2.5 md:px-5 md:py-2 lg:px-[40px] lg:py-3.5
@@ -36,20 +40,21 @@ const ButtonLg: React.FC<ButtonLgProps> = ({
       `}
       onMouseEnter={(e) => {
         const el = e.currentTarget as HTMLElement;
-        el.style.backgroundColor = hoverBgColor ?? "transparent";
-        el.style.color = hoverBgColor ? "#fff" : bgColor;
-        el.style.border = `1px solid ${hoverBgColor ?? bgColor}`;
+        el.style.backgroundColor = parsedHoverBgColor ?? "transparent";
+        el.style.color = parsedHoverBgColor ? "#fff" : parsedBgColor;
+        el.style.border = `1px solid ${parsedHoverBgColor ?? parsedBgColor}`;
       }}
       onMouseLeave={(e) => {
         const el = e.currentTarget as HTMLElement;
         el.style.backgroundColor =
-          bgColor === "transparent" ? "transparent" : bgColor;
-        el.style.color = textColor;
+          parsedBgColor === "transparent" ? "transparent" : parsedBgColor;
+        el.style.color = parsedTextColor;
         el.style.border = isBorder
-          ? `1px solid ${bgColor}`
+          ? `1px solid ${parsedBgColor}`
           : "transparent";
       }}
     >
+
       {text}
     </Link>
   );
