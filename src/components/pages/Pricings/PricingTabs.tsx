@@ -97,7 +97,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
               style={{
                 clipPath:
                   "polygon(0% 26.57%, 97.23% 0%, 89.75% 37.8%, 99.46% 70.94%, 2.23% 97.44%, 9.71% 59.68%, 0% 26.57%)",
-                backgroundColor: "var(--primary-dark)",
+                backgroundColor: "var(--text-dark)",
               }}
             >
               20%

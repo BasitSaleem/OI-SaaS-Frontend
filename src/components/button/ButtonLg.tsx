@@ -8,7 +8,7 @@ interface ButtonLgProps {
   textColor?: string;
   isBorder?: boolean;
   hoverBgColor?: string;
-  className?: string;   // ✅ optional extra classes
+  className?: string;  
 }
 
 const ButtonLg: React.FC<ButtonLgProps> = ({
@@ -36,7 +36,7 @@ const ButtonLg: React.FC<ButtonLgProps> = ({
         px-4 py-2.5 md:px-5 md:py-2 lg:px-[40px] lg:py-3.5
         flex items-center justify-center text-sm md:text-base
         font-['Onest'] font-semibold rounded-full transition-colors duration-300
-        ${className}                // ✅ merged here
+        ${className}            
       `}
       onMouseEnter={(e) => {
         const el = e.currentTarget as HTMLElement;

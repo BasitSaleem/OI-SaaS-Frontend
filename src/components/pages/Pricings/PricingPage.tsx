@@ -9,6 +9,7 @@ import PricingHero from './PricingHero';
 import FaqSection from '../landing-page/FAQSection';
 import CalltoActionBottom from '../landing-page/CalltoActionBottom';
 import FeaturesTabSection from '../landing-page/FeaturesTabSection';
+import { PRICING_FAQS } from '@/constant/pricingFaqData';
 
 const PricingPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'monthly' | 'yearly'>('monthly');
@@ -52,6 +53,7 @@ const PricingPage: React.FC = () => {
           <FaqSection 
            heading='Everything You Were About to Ask'
            paragraph='We’ve compiled the most common questions about Owners Inventory — from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
+           faqs={PRICING_FAQS}
           />
           </div>
 
