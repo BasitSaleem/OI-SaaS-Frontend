@@ -234,7 +234,7 @@ export const IndustryList = ({ items }: { items: IndustryTreeItem[] }) => (
     {items.map((item) => (
       <li key={item.title}>
         <p
-          className="text-xs font-normal leading-7 font-['Onest'] text-[#231F20]"
+          className="text-xs font-normal leading-7 font-['Onest'] text-[var(--text-dark)]"
         >
           {item.title}
         </p>

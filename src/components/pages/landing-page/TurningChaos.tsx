@@ -121,11 +121,11 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
   return (
     <div className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px] lg:mt-[100px] md:mt-28 mt-20">
       <div
-        className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[#F3F4F6] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-xl`}
+        className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[var(--background-halfwhite)] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-xl`}
         style={{
           backgroundImage: `
-    linear-gradient(180deg, #FFFFFF 20%, transparent 100%),
-    linear-gradient(90deg, rgba(26, 209, 185, 0.3) 30%, rgba(207, 181, 249, 1) 60%, rgba(158, 2, 255, 0.3) 100%)
+    linear-gradient(180deg, var(--white-color) 20%, transparent 100%),
+    linear-gradient(90deg, rgba(var(--primary-teal-rgb), 0.3) 30%, rgba(var(--primary-purple-rgb), 0.4) 60%, rgba(var(--primary-purple-rgb), 0.3) 100%)
   `,
         }}
       >
@@ -142,7 +142,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
             {chaos.map(({ id, chaosHead, chaosSign, chaosDesc }, index) => (
               <div
                 key={id}
-                className="flex flex-col gap-3 items-center justify-start p-4 [var(--white-color)] border border-[rgba(255,255,255,0.5)] rounded-[30px] shadow-[0_4px_4px_0_rgba(0,0,0,0.13)] backdrop-blur-[22px] text-center"
+                className="flex flex-col gap-3 items-center justify-start p-4 bg-[var(--white-color)] border border-[rgba(var(--white-color-rgb),0.5)] rounded-[30px] shadow-[0_4px_4px_0_rgba(var(--text-dark-rgb),0.13)] backdrop-blur-[22px] text-center"
               >
                 <p
                   className="lg:text-[42px] lg:leading-[100%] text-[32px] leading-[130%] font-['Onest'] text-center text-[var(--text-black)] font-semibold"

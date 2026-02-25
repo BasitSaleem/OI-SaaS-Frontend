@@ -2,7 +2,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Get clear insight into store performance and customer demand with advanced POS reports that enable you to realize sales growth and better inventory management.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "With our POS reporting system, you can use daily sales, menu items that do well, and peak times to increase efficiency and profits.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Monitor supply, production, and delivery statistics using a POS with an advanced reporting system that allows better planning and cost control.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Our advanced POS reports will help you to easily sell and track the sales of medicines, stock levels and expiry date so that you will be accurate and operate smoothly.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Know customer purchasing patterns and sales hotspot products through advanced POS reporting that can make you smarter in planning your stock.",
         image: "/assets/industry-type/fashion.webp",

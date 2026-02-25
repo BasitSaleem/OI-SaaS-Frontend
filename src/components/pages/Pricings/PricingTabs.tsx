@@ -18,7 +18,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         {/* Monthly Label */}
         <span
           className={`text-sm md:text-base font-['Onest'] font-semibold ${
-            activeTab === "monthly" ? "text-[#231F20]" : "text-gray-400"
+            activeTab === "monthly" ? "text-[var(--text-dark)]" : "text-gray-400"
           }`}
         >
           Monthly
@@ -29,8 +29,8 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
           onClick={() =>
             onTabChange(activeTab === "monthly" ? "yearly" : "monthly")
           }
-          className={`relative inline-flex items-center h-6 md:h-8 w-12 md:w-16 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#795CF5] ${
-            activeTab === "yearly" ? "bg-[#795CF5]" : "bg-[#1AD1B9]"
+          className={`relative inline-flex items-center h-6 md:h-8 w-12 md:w-16 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
+            activeTab === "yearly" ? "bg-[var(--primary-purple)]" : "bg-[var(--primary-teal)]"
           }`}
           role="switch"
           aria-checked={activeTab === "yearly"}
@@ -46,7 +46,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         {/* Yearly Label */}
         <span
           className={`text-sm md:text-base font-['Onest'] font-semibold ${
-            activeTab === "yearly" ? "text-[#231F20]" : "text-gray-400"
+            activeTab === "yearly" ? "text-[var(--text-dark)]" : "text-gray-400"
           }`}
         >
           Yearly
@@ -62,10 +62,10 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         onClick={() => onTabChange("monthly")}
         className={`tab-btn px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-[14px] 
           text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full 
-          transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#795CF5] ${
+          transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
             activeTab === "monthly"
-              ? "text-white bg-[#795CF5] border-[#795CF5]"
-              : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[#795CF5] hover:border-[#795CF5]"
+              ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
+              : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
           }`}
         aria-pressed={activeTab === "monthly"}
       >
@@ -78,10 +78,10 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
           onClick={() => onTabChange("yearly")}
           className={`tab-btn relative px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-3.5
             text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full 
-            transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#795CF5] ${
+            transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
               activeTab === "yearly"
-                ? "text-white bg-[#795CF5] border-[#795CF5]"
-                : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[#795CF5] hover:border-[#795CF5]"
+                ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
+                : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
             }`}
           aria-pressed={activeTab === "yearly"}
         >
@@ -97,7 +97,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
               style={{
                 clipPath:
                   "polygon(0% 26.57%, 97.23% 0%, 89.75% 37.8%, 99.46% 70.94%, 2.23% 97.44%, 9.71% 59.68%, 0% 26.57%)",
-                backgroundColor: "#1D2034",
+                backgroundColor: "var(--primary-dark)",
               }}
             >
               20%
@@ -105,11 +105,11 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
 
             {/* OFF Badge */}
             <div
-              className="w-[52px] h-[17px] md:w-[58px] md:h-[19px] lg:w-[94px] lg:h-[30px] -mt-1 md:-mt-2.5 flex items-center justify-center text-[#1D2034] font-black text-[8px] md:text-[9px] lg:text-xl z-20"
+              className="w-[52px] h-[17px] md:w-[58px] md:h-[19px] lg:w-[94px] lg:h-[30px] -mt-1 md:-mt-2.5 flex items-center justify-center text-[var(--primary-dark)] font-black text-[8px] md:text-[9px] lg:text-xl z-20"
               style={{
                 clipPath:
                   "polygon(0% 26.57%, 97.2% 0%, 89.72% 37.77%, 99.42% 70.89%, 2.23% 97.38%, 9.7% 59.65%, 0% 26.57%)",
-                backgroundColor: "#1AD1B9",
+                backgroundColor: "var(--primary-teal)",
               }}
             >
               OFF

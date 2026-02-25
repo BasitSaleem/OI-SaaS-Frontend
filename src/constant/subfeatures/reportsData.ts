@@ -2,7 +2,7 @@ export const REPORTS_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const REPORTS_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Dynamic inventory management reporting helps keep your operations lean and profitable by tracking menu item performance, managing ingredient usage, and analyzing daily revenue trends.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const REPORTS_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Streamline bulk order analysis through inventory management reports that indicate the stock flow, customer demand, and the accuracy of pricing among various warehouses.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const REPORTS_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Get accurate inventory management reports, batch tracking, expiry summaries, and POS transaction logs to stay compliant and aid in a successful flow of operations.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const REPORTS_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Receive specific point of sale system reports of best-selling styles, seasonal performance, and size-based inventory making stock planning easy and evidence-based.",
         image: "/assets/industry-type/fashion.webp",

@@ -12,10 +12,10 @@ const Mobileicons = () => {
   };
 
   return (
-    <div className="flex items-center justify-end gap-2 p-1.5 rounded-full bg-white shadow-[0px_0px_10px_0px_#00000026] lg:hidden mobile-iventory">
+    <div className="flex items-center justify-end gap-2 p-1.5 rounded-full bg-white shadow-[0px_0px_10px_0px_rgba(var(--text-dark-rgb),0.15)] lg:hidden mobile-iventory">
       <Link
         href="/coming-soon"
-        className="px-4 py-2 text-sm font-bold text-white bg-[#231F20] rounded-full whitespace-nowrap"
+        className="px-4 py-2 text-sm font-bold text-white bg-[var(--text-dark)] rounded-full whitespace-nowrap"
       >
         Start for Free
       </Link>

@@ -130,7 +130,7 @@ const IndustryPosShowcase = ({
           <Paragraph className="">{paragraph}</Paragraph>
         
         {/* <Link href= '#'>
-          <button  className="mt-6 bg-[#7B61FF] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[#634AE2] transition-colors cursor-pointer font-['Onest']">
+          <button  className="mt-6 bg-[var(--primary-purple)] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[var(--primary-purple-dark)] transition-colors cursor-pointer font-['Onest']">
             {buttonText}
           </button>
         </Link> */}
@@ -138,7 +138,7 @@ const IndustryPosShowcase = ({
         <div className="hidden md:flex items-center gap-4 mt-8 md:mt-0">
           <button
             onClick={handlePrev}
-            className="w-12 h-12 rounded-full px-4 cursor-pointer bg-white shadow-md flex items-center justify-center text-[#333333] hover:bg-gray-50 transition-colors"
+            className="w-12 h-12 rounded-full px-4 cursor-pointer bg-white shadow-md flex items-center justify-center text-[var(--text-light)] hover:bg-gray-50 transition-colors"
             aria-label="Previous slide"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -151,7 +151,7 @@ const IndustryPosShowcase = ({
                 onClick={() => goToSlide(index)}
                 className={`transition-all duration-300 rounded-full cursor-pointer ${
                   index === currentSlide
-                    ? "w-8 h-3 bg-[#1AD1B9]"
+                    ? "w-8 h-3 bg-[var(--primary-teal)]"
                     : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
@@ -161,7 +161,7 @@ const IndustryPosShowcase = ({
 
           <button
             onClick={handleNext}
-            className="w-12 h-12 rounded-full px-4 cursor-pointer bg-white shadow-md flex items-center justify-center text-[#333333] hover:bg-gray-50 transition-colors"
+            className="w-12 h-12 rounded-full px-4 cursor-pointer bg-white shadow-md flex items-center justify-center text-[var(--text-light)] hover:bg-gray-50 transition-colors"
             aria-label="Next slide"
           >
             <ArrowRight className="w-5 h-5" />

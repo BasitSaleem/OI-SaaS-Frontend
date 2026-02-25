@@ -2,7 +2,7 @@ export const FACILITIES_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Manage multiple outlets from a single dashboard POS, track stock movement, and monitor staff activity with live updates ensuring smooth operations and higher customer satisfaction across all locations.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const FACILITIES_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Manage your dining rooms, kitchens, and storage areas from a single facility management dashboard, monitoring ingredient usage, occupancy, and staff movement to keep your restaurant running efficiently.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const FACILITIES_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Manage multiple distribution centers and warehouses at a single platform. Coordinate incoming shipments, control loading zones, and optimize storage and delivery schedules with facility analytics.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const FACILITIES_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Maintain full oversight of your pharmacy network and wholesale operations. Track multiple store locations, ensure facility-wide compliance, and receive temperature, expiry, and inventory alerts directly on your facility monitoring dashboard.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const FACILITIES_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Organize your outlets, stores, and warehouses easily. The POS facility dashboard guarantees uniform inventory, visual merchandising, and monitoring performance of all their stores, online or offline.",
         image: "/assets/industry-type/fashion.webp",

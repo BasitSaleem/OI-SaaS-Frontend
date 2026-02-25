@@ -11,8 +11,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 25,
         yearlyPrice: 20,
         description: 'Perfect for small businesses getting started',
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         features: [
           '1 Store',
           '1 POS Terminal',
@@ -28,8 +28,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 75,
         yearlyPrice: 60,
         description: 'Ideal for growing businesses',
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         popular: true,
         features: [
           '3 Store',
@@ -47,8 +47,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 115,
         yearlyPrice: 92,
         description: 'For established businesses scaling up',
-        color: '#5588DF',
-        bgColor: 'rgba(85,136,223,0.1)',
+        color: 'var(--primary-blue)',
+        bgColor: 'rgba(var(--primary-blue-rgb), 0.1)',
         features: [
           '3 Store',
           '6 POS Terminal',
@@ -149,12 +149,12 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
           { name: 'Dedicated Account Manager', info: true, infoText: "Get personalized service for your business.", basic: false, standard: false, professional: true, premium: true },
         ]
       },
-      {
-        name: 'Integrations',
-        features: [
-          { name: 'FBR', info: true, infoText: "FBR integration for tax compliance.", basic: true, standard: true, professional: true, premium: true },
-        ]
-      }
+      // {
+      //   name: 'Integrations',
+      //   features: [
+      //     { name: 'FBR', info: true, infoText: "FBR integration for tax compliance.", basic: true, standard: true, professional: true, premium: true },
+      //   ]
+      // }
     ]
   },
   Manufacturing: {
@@ -165,8 +165,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 65,
         yearlyPrice: 52,
         description: 'Perfect for small businesses getting started',
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         features: [
           '1 Store',
           '1 Production Floors',
@@ -180,8 +180,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 115,
         yearlyPrice: 94,
         description: 'Expanding factories',
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         popular: true,
         features: [
           '1 Store',
@@ -196,8 +196,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 155,
         yearlyPrice: 124,
         description: 'Large scale manufacturing',
-        color: '#5588DF',
-        bgColor: 'rgba(85,136,223,0.1)',
+        color: 'var(--primary-blue)',
+        bgColor: 'rgba(var(--primary-blue-rgb), 0.1)',
         features: [
           '1 Store',
           'Unlimited Production Floors',
@@ -310,12 +310,12 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
           { name: 'Dedicated Account Manager', info: true, infoText: "Get personalized service for your business.", basic: false, standard: false, professional: true, premium: true },
         ]
       },
-      {
-        name: 'INTEGRATIONS',
-        features: [
-          { name: 'FBR', info: true, infoText: "FBR integration for tax compliance.", basic: true, standard: true, professional: true, premium: true },
-        ]
-      }
+      // {
+      //   name: 'INTEGRATIONS',
+      //   features: [
+      //     { name: 'FBR', info: true, infoText: "FBR integration for tax compliance.", basic: true, standard: true, professional: true, premium: true },
+      //   ]
+      // }
     ]
   },
   Ecommerce: {
@@ -326,8 +326,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 25,
         yearlyPrice: 20,
         description: 'Start selling online',
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         features: [
           '1 Store',
           '1 Online Store',
@@ -341,8 +341,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 50,
         yearlyPrice: 40,
         description: 'Grow your digital presence',
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         popular: true,
         features: [
           '1 Store',
@@ -357,10 +357,10 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 115,
         yearlyPrice: 92,
         description: 'High volume online sales',
-        color: '#5588DF',
-        bgColor: 'rgba(85,136,223,0.1)',
+        color: 'var(--primary-blue)',
+        bgColor: 'rgba(var(--primary-blue-rgb), 0.1)',
         features: [
-           '1 Store',
+          '1 Store',
           '1 Online Store',
           'Unlimited Warehouses',
           '1 POS Terminal',
@@ -460,12 +460,12 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
           { name: 'Dedicated Account Manager', basic: false, standard: false, professional: true, premium: true },
         ]
       },
-      {
-        name: 'INTEGRATIONS',
-        features: [
-          { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
-        ]
-      }
+      // {
+      //   name: 'INTEGRATIONS',
+      //   features: [
+      //     { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
+      //   ]
+      // }
     ]
   },
   Hybrid: {
@@ -476,8 +476,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 210,
         yearlyPrice: 168,
         description: 'Ideal for growing businesses',
-        color: '#795CF5',
-        bgColor: 'rgba(121,92,245,0.1)',
+        color: 'var(--primary-purple)',
+        bgColor: 'rgba(var(--primary-purple-rgb), 0.1)',
         popular: true,
         features: [
           '5 Store',
@@ -494,8 +494,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         price: 315,
         yearlyPrice: 252,
         description: 'Large scale operations',
-        color: '#5588DF',
-        bgColor: 'rgba(85,136,223,0.1)',
+        color: 'var(--primary-blue)',
+        bgColor: 'rgba(var(--primary-blue-rgb), 0.1)',
         features: [
           'Unlimited Store',
           '1 Online Store',
@@ -510,8 +510,8 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
         id: 'lets-talk',
         name: "Let's Talk",
         price: 0,
-        color: '#1AD1B9',
-        bgColor: 'rgba(26,209,185,0.1)',
+        color: 'var(--primary-teal)',
+        bgColor: 'rgba(var(--primary-teal-rgb), 0.1)',
         features: [],
         isCustom: true,
         description: 'Connect with our team to customize features tailored to your business, ensuring effortless growth and success.'
@@ -664,12 +664,12 @@ export const PRICING_DATA: Record<BusinessType, { plans: PricingPlan[]; categori
           { name: 'Dedicated Account Manager', info: true, infoText: "Get personalized service for your business.", basic: true, standard: true, professional: true, premium: true },
         ]
       },
-      {
-        name: 'INTEGRATIONS',
-        features: [
-          { name: 'FBR', info: true, infoText: "FBR integration for tax compliance.", basic: true, standard: true, professional: true, premium: true },
-        ]
-      }
+      // {
+      //   name: 'INTEGRATIONS',
+      //   features: [
+      //     { name: 'FBR', info: true, infoText: "FBR integration for tax compliance.", basic: true, standard: true, professional: true, premium: true },
+      //   ]
+      // }
     ]
   }
 };

@@ -48,7 +48,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
     <div
       className={`relative rounded-[30px] shadow-sm overflow-hidden min-h-[450px] h-full md:h-[390px]  w-full cursor-pointer transition-all duration-300 ${className}`}
       style={{
-        background: isMobile ? "#F3F3F3" : isHovered ? "#F3F3F3" : gradient,
+        background: isMobile ? "var(--background-light)" : isHovered ? "var(--background-light)" : gradient,
       }}
       onClick={onClick}
     >
@@ -78,7 +78,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
           >
             <div className="flex md:flex-row flex-col gap-6">
               {description && (
-                <div className="md:flex-1 text-[#666666] font-normal text-base font-['Onest'] leading-6">
+                <div className="md:flex-1 text-[var(--text-grey)] font-normal text-base font-['Onest'] leading-6">
                   {description}
                 </div>
               )}
@@ -130,13 +130,13 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
             Read More
           </span>
           <div
-            className="w-[48px] h-[48px] bg-[#F3F3F3] rounded-full flex justify-center items-center transition-all duration-300"
+            className="w-[48px] h-[48px] bg-[var(--background-light)] rounded-full flex justify-center items-center transition-all duration-300"
             style={{
               background: isMobile
                 ? gradient
                 : isHovered
                 ? gradient
-                : "#F3F3F3",
+                : "var(--background-light)",
             }}
           >
             <ArrowUpRight

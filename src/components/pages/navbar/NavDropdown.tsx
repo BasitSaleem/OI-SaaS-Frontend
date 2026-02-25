@@ -45,7 +45,7 @@ const NavDropdown = ({ label,
       <Link
         href="#"
         onClick={onToggle} // will still toggle dropdown on click
-        className="flex items-center justify-center xl:gap-3 gap-1 px-[6px] py-[6px] xl:px-4 xl:py-[9px] lg:text-xs xl:text-sm font-semibold text-[#231F20] bg-white border border-[#F3F4F6] hover:bg-gray-100 hover:border-[#795CF5] font-['onest'] active:bg-gray-100 active:border-[#795CF5] rounded-full"
+        className="flex items-center justify-center xl:gap-3 gap-1 px-[6px] py-[6px] xl:px-4 xl:py-[9px] lg:text-xs xl:text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--background-halfwhite)] hover:bg-gray-100 hover:border-[var(--primary-purple)] font-['onest'] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full"
       >
         {label}
         <img

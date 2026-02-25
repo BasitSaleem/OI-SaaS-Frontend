@@ -2,7 +2,7 @@ export const POS_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Quicken checkout with barcode scanning and detailed reports as our POS system streamlines inventory and revenue control with industry-specific insights.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const POS_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurants",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Serve customers faster with quick-bill POS software that manages tables, menus, and real-time stock while seamlessly connecting kitchen and counter operations for accurate, efficient service.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const POS_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Easily manage large orders, special pricing, and multi-location stock with wholesaler-focused POS features that streamline bulk transactions and boost efficiency for high-volume businesses.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const POS_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Handle high-volume and bulk orders with confidence using a pharmacy-ready POS system. Manage batch-wise inventory, track expiry dates, control supplier transactions, and process wholesale pharmacy sales accurately across single or multiple locations.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const POS_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Keep track of all sizes, colors, and styles using product variants, seasonal collections, and matching stock in both online and physical stores using our best point of sale systems-the best in streetwear, shoe, or high fashion.",
         image: "/assets/industry-type/fashion.webp",

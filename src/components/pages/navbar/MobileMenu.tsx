@@ -94,7 +94,7 @@ export default function OffcanvasMenu({
   }, [open, onClose]);
 
   const navButton =
-    "menu-btn flex items-center justify-between w-full px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] rounded-full font-['Onest'] hover:bg-gray-100 hover:border-[#795CF5]";
+    "menu-btn flex items-center justify-between w-full px-5 py-3 text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--border-muted)] rounded-full font-['Onest'] hover:bg-gray-100 hover:border-[var(--primary-purple)]";
   const listItem = "relative mb-0";
 
   const panelData: any = {
@@ -159,7 +159,7 @@ export default function OffcanvasMenu({
             id="close-btn"
             onClick={onClose}
             aria-label="Close menu"
-            className="p-1 w-fit rounded focus:outline-none focus:ring-2 focus:ring-[#231F20]/50"
+            className="p-1 w-fit rounded focus:outline-none focus:ring-2 focus:ring-[var(--text-dark)]/50"
           >
             <Image
               src="/assets/header-images/cross-btn.svg"
@@ -180,7 +180,7 @@ export default function OffcanvasMenu({
             <input
               type="text"
               placeholder="Search"
-              className="w-full pr-10 pl-4 py-2 border-b border-[#231F20] focus:rounded-lg focus:border focus:outline-none focus:ring-[#231F20] text-base placeholder:text-[#231F20] placeholder:font-semibold text-[#231F20] font-semibold focus:border-[#231F20]"
+              className="w-full pr-10 pl-4 py-2 border-b border-[var(--text-dark)] focus:rounded-lg focus:border focus:outline-none focus:ring-[var(--text-dark)] text-base placeholder:text-[var(--text-dark)] placeholder:font-semibold text-[var(--text-dark)] font-semibold focus:border-[var(--text-dark)]"
             />
             <button
               aria-label="Search"
@@ -201,7 +201,7 @@ export default function OffcanvasMenu({
             id="dynamic-back-btn"
             onClick={() => setActivePanel(null)}
             className={clsx(
-              "items-center justify-start gap-3 back-btn text-base text-[#201A1A] font-semibold py-2 border-b border-[#231F20] text-left flex",
+              "items-center justify-start gap-3 back-btn text-base text-[#201A1A] font-semibold py-2 border-b border-[var(--text-dark)] text-left flex",
               activePanel ? "visible" : "hidden"
             )}
           >
@@ -216,7 +216,7 @@ export default function OffcanvasMenu({
           </button>
         </div>
 
-        <nav className="p-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent pb-20">
+        <nav className="p-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[var(--border-muted)] scrollbar-track-transparent pb-20">
           {/* Main Menu */}
           <ul
             id="main-menu"
@@ -229,14 +229,14 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="/features"
-                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[#231F20] hover:border-[#795CF5]"
+                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   View All Features
                 </Link>
 
                 <button
                   onClick={() => setActivePanel("features")}
-                  className="w-[20%] border-l-2 border-[#D9D9D9] flex items-center justify-end"
+                  className="w-[20%] border-l-2 border-[var(--border-muted)] flex items-center justify-end"
                   aria-expanded={activePanel === "features"}
                   aria-controls="features-content"
                 >
@@ -253,13 +253,13 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="#"
-                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[#231F20] hover:border-[#795CF5]"
+                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   Industries
                 </Link>
                 <button
                   onClick={() => setActivePanel("industries")}
-                  className="w-[20%] border-l-2 border-[#D9D9D9] flex items-center justify-end"
+                  className="w-[20%] border-l-2 border-[var(--border-muted)] flex items-center justify-end"
                   aria-expanded={activePanel === "industries"}
                   aria-controls="industries-content"
                 >
@@ -275,7 +275,7 @@ export default function OffcanvasMenu({
             <li className={listItem}>
               <Link
                 href="/pricing"
-                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] hover:bg-gray-100 hover:border-[#795CF5] active:bg-gray-100 active:border-[#795CF5] rounded-full font-['Onest']"
+                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--border-muted)] hover:bg-gray-100 hover:border-[var(--primary-purple)] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full font-['Onest']"
               >
                 Pricing
               </Link>
@@ -284,13 +284,13 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="/resources"
-                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[#231F20] hover:border-[#795CF5]"
+                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   Resources
                 </Link>
                 <button
                   onClick={() => setActivePanel("resources")}
-                  className="w-[20%] border-l-2 border-[#D9D9D9] flex items-center justify-end"
+                  className="w-[20%] border-l-2 border-[var(--border-muted)] flex items-center justify-end"
                   aria-expanded={activePanel === "resources"}
                   aria-controls="resources-content"
                 >
@@ -307,14 +307,14 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="#"
-                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[#231F20] hover:border-[#795CF5]"
+                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   Company
                 </Link>
 
                 <button
                   onClick={() => setActivePanel("company")}
-                  className="w-[20%] border-l-2 border-[#D9D9D9] flex items-center justify-end"
+                  className="w-[20%] border-l-2 border-[var(--border-muted)] flex items-center justify-end"
                   aria-expanded={activePanel === "company"}
                   aria-controls="company-content"
                 >
@@ -331,14 +331,14 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="/profile"
-                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[#231F20] hover:border-[#795CF5]"
+                  className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   Profile
                 </Link>
 
                 <button
                   onClick={() => setActivePanel("profile")}
-                   className="w-[20%] border-l-2 border-[#D9D9D9] flex items-center justify-end"
+                   className="w-[20%] border-l-2 border-[var(--border-muted)] flex items-center justify-end"
                   aria-expanded={activePanel === "profile"}
                   aria-controls="profile-content"
                 >
@@ -354,7 +354,7 @@ export default function OffcanvasMenu({
             <li className={listItem}>
               <Link
                 href="/coming-soon"
-                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[#231F20] bg-white border border-[#D9D9D9] hover:bg-gray-100 hover:border-[#795CF5] active:bg-gray-100 active:border-[#795CF5] rounded-full font-['Onest']"
+                className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--border-muted)] hover:bg-gray-100 hover:border-[var(--primary-purple)] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full font-['Onest']"
               >
                 Login
               </Link>
@@ -376,7 +376,7 @@ export default function OffcanvasMenu({
                       <div
                         key={cat.id}
                         className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${
-                          isCatOpen ? "border-[#795CF5]" : "border-[#D9D9D9]"
+                          isCatOpen ? "border-[var(--primary-purple)]" : "border-[var(--border-muted)]"
                         }`}
                       >
                         <button
@@ -390,8 +390,8 @@ export default function OffcanvasMenu({
                           <span
                             className={`text-sm font-['Onest'] ${
                               isCatOpen
-                                ? "font-bold text-[#795CF5]"
-                                : "font-semibold text-[#231F20]"
+                                ? "font-bold text-[var(--primary-purple)]"
+                                : "font-semibold text-[var(--text-dark)]"
                             }`}
                           >
                             {cat.title}
@@ -435,7 +435,7 @@ export default function OffcanvasMenu({
                                     <div
                                       className={`flex items-center border rounded-lg overflow-hidden transition-colors ${
                                         isItemOpen
-                                          ? "border-[#795CF5] bg-gray-50"
+                                          ? "border-[var(--primary-purple)] bg-gray-50"
                                           : "border-transparent hover:bg-gray-50"
                                       }`}
                                     >
@@ -451,7 +451,7 @@ export default function OffcanvasMenu({
                                           height={16}
                                           className="flex-shrink-0"
                                         />
-                                        <span className="ml-2.5 text-xs font-medium text-[#231F20]">
+                                        <span className="ml-2.5 text-xs font-medium text-[var(--text-dark)]">
                                           {item.title}
                                         </span>
                                       </Link>
@@ -528,8 +528,8 @@ export default function OffcanvasMenu({
                           <div
                             className={`flex items-center border rounded-xl overflow-hidden hover:bg-gray-100 transition-colors ${
                               isOpen
-                                ? "border-[#795CF5] bg-gray-100"
-                                : "border-[#D9D9D9]"
+                                ? "border-[var(--primary-purple)] bg-gray-100"
+                                : "border-[var(--border-muted)]"
                             }`}
                           >
                             {/* 80% width clickable navigation link */}
@@ -551,7 +551,7 @@ export default function OffcanvasMenu({
                                 height={16}
                                 loading="lazy"
                               />
-                              <span className="ml-2 text-sm font-[500] text-[#231F20] hover:font-semibold flex-1">
+                              <span className="ml-2 text-sm font-[500] text-[var(--text-dark)] hover:font-semibold flex-1">
                                 {item.title}
                               </span>
                             </Link>
@@ -565,7 +565,7 @@ export default function OffcanvasMenu({
                                 }}
                                 aria-expanded={isOpen}
                                 aria-controls={`${activePanel}-panel-${index}`}
-                                className="w-[20%]  flex items-center justify-center py-4 border-l border-[#D9D9D9] hover:bg-gray-100"
+                                className="w-[20%]  flex items-center justify-center py-4 border-l border-[var(--border-muted)] hover:bg-gray-100"
                               >
                                 {isOpen ? (
                                   <img
@@ -602,7 +602,7 @@ export default function OffcanvasMenu({
                                         return (
                                           <li
                                             key={`${itemKey}-str-${d}-${i}`}
-                                            className="text-xs text-[#231F20] leading-relaxed"
+                                            className="text-xs text-[var(--text-dark)] leading-relaxed"
                                           >
                                             {d}
                                           </li>
@@ -616,7 +616,7 @@ export default function OffcanvasMenu({
                                           key={`${itemKey}-obj-${
                                             d?.key || text
                                           }-${i}`}
-                                          className="text-xs text-[#231F20] leading-relaxed"
+                                          className="text-xs text-[var(--text-dark)] leading-relaxed"
                                         >
                                           {href !== "#" ? (
                                             <Link
@@ -634,7 +634,7 @@ export default function OffcanvasMenu({
                                     })}
                                   </ul>
                                 ) : (
-                                  <pre className="text-[11px] text-[#231F20]/80 bg-gray-50 p-2 rounded">
+                                  <pre className="text-[11px] text-[var(--text-dark-rgb)]/80 bg-gray-50 p-2 rounded">
                                     {JSON.stringify(details, null, 2)}
                                   </pre>
                                 )}

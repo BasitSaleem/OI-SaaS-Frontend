@@ -74,8 +74,8 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
                 onMouseLeave={() => setHoveredTab(null)}
                 className={`flex flex-col items-start p-4 lg:p-6 backdrop-blur-2xl rounded-[12px] lg:rounded-[30px] transition-all duration-300 text-left group min-w-[200px] sm:min-w-[240px] lg:min-w-0 snap-center ${
                   isActive
-                    ? "bg-[#F6F4FE] shadow-[0_10px_30px_rgba(121,92,245,0.1)] border border-[#795CF5]"
-                    : "bg-[var(--white-color)] border border-transparent hover:bg-[#F6F4FE] hover:border-[var(--primary-purple)]"
+                    ? "bg-[var(--background-purple-light)] shadow-[0_10px_30px_rgba(var(--primary-purple-rgb),0.1)] border border-[var(--primary-purple)]"
+                    : "bg-[var(--white-color)] border border-transparent hover:bg-[var(--background-purple-light)] hover:border-[var(--primary-purple)]"
                 }`}
               >
                 <div className="flex items-start gap-3 mb-2 lg:mb-4">

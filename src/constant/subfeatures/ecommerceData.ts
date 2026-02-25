@@ -2,7 +2,7 @@ export const ECOMMERCE_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Extend your retail presence on the web with live inventory and pricing. Our eCommerce POS integration ensures that inventory is correct and customers are satisfied in all locations.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const ECOMMERCE_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Have one platform that manages dine-in, takeout, and online orders. By integrating point of sale eCommerce, menus, orders and payment remain in perfect harmony.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const ECOMMERCE_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Automate sales in large quantities by price and inventory adjustment. POS system eCommerce integration provides standardization between warehouses and internet portals.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const ECOMMERCE_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Easily access prescriptions, expiry notifications, and online refills. Our integrated POS and eCommerce system maintains accurate and compliance records in real time.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const ECOMMERCE_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Keep track of styles, colors, and sizes. The eCommerce POS system harmonizes inventory between online and in-store collections to provide a seamless way of managing seasons.",
         image: "/assets/industry-type/fashion.webp",
@@ -47,7 +47,7 @@ export const ECOMMERCE_INDUSTRIES = [
     {
         id: 6,
         title: "Brands",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Keep track of specs, warranties, and inventory changes. Your product listings and orders will always be in sync with POS and eCommerce integration.",
         image: "/assets/industry-type/brands.webp",

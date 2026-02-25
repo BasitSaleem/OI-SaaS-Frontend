@@ -155,7 +155,7 @@ export default function UnifiedPlatform() {
       <div ref={sectionTriggerRef} className="h-0 absolute top-0 w-full bg-transparent"></div>
       <div className="lg:h-[100px] md:h-28 h-20"></div>
       <section className="wrapper">
-        <div ref={contentRef} className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-8 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-28 rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
+        <div ref={contentRef} className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-8 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-28 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
           {/* Cards Column */}
           <div className="md:order-1 order-2 md:w-3/6 lg:w-2/5 md:h-[560px] lg:h-[695px] overflow-hidden">
             <div className="unified-platform-cards flex flex-col items-center justify-start gap-4 w-full">
@@ -164,7 +164,7 @@ export default function UnifiedPlatform() {
                   key={index}
                   className="w-full max-w-[342px] md:max-w-full py-5 px-4.5 md:p-5 lg:p-8 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
                 >
-                  <div className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl bg-[#F3F4F6]">
+                  <div className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl bg-[var(--background-halfwhite)]">
                     <Image
                       src={card.icon}
                       alt={`${card.title} Icon`}
@@ -193,7 +193,7 @@ export default function UnifiedPlatform() {
               </Paragraph>
 
               {/* <div className="hidden md:flex">
-                <ButtonLg url="#" text="View All FAQs" bgColor="#1AD1B9" textColor="white" isBorder />
+                <ButtonLg url="#" text="View All FAQs" bgColor="var(--primary-teal)" textColor="white" isBorder />
               </div> */}
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function UnifiedPlatform() {
             <ButtonLg
               url="#"
               text="View All FAQs"
-              bgColor="#1AD1B9"
+              bgColor="var(--primary-teal)"
               textColor="white"
               isBorder
               className="px-[50px]"

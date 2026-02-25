@@ -51,7 +51,7 @@ const NavItems = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_#0000001A] rounded-full inventory-menu lg:flex justify-center w-auto">
+    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-full inventory-menu lg:flex justify-center w-auto">
       <ul className="hidden lg:flex items-center justify-center md:gap-1 lg:gap-3 w-auto">
         {/* FEATURES DROPDOWN */}
         <NavDropdown
@@ -68,9 +68,9 @@ const NavItems = () => {
           onToggle={() => toggle("features")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
             {/* Left Section (3/12) - Categories */}
-            <div className="lg:col-span-3 px-4 py-6 bg-[#F6F4FE] flex flex-col items-start justify-between">
+            <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
               <div className="space-y-1 ">
                 {featureCategories.map((category) => {
                   const categoryFeatures = featuresItems.filter(
@@ -86,8 +86,8 @@ const NavItems = () => {
                       // onMouseEnter={() => setSelectedCategory(category.id)}
                       className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${
                         selectedCategory === category.id
-                          ? "bg-white border border-transparent text-[#795CF5]"
-                          : "hover:bg-[white] text-[#16151C]"
+                          ? "bg-white border border-transparent text-[var(--primary-purple)]"
+                          : "hover:bg-white text-[var(--text-dark)]"
                       }`}
                     >
                       <div className="flex flex-col">
@@ -106,7 +106,7 @@ const NavItems = () => {
               <div className="w-full ">
                 <Link
                   href="/features"
-                  className="flex items-center  justify-center gap-2.5 w-full text-center px-4 py-2 hover:bg-[#795CF5] hover:text-white border-2 border-[#795CF5] text-[#795CF5] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
+                  className="flex items-center  justify-center gap-2.5 w-full text-center px-4 py-2 hover:bg-[var(--primary-purple)] hover:text-white border-2 border-[var(--primary-purple)] text-[var(--primary-purple)] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
                   onClick={close}
                 >
                   View All Features
@@ -135,11 +135,11 @@ const NavItems = () => {
 
             {/* Middle Section (6/12) - Features within Selected Category */}
             <div className="lg:col-span-6 px-4 py-6 relative">
-              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#795CF5] absolute blur-[150px] bottom-0 right-20"></div>
-              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#1AD1B9] absolute blur-[150px] bottom-0 left-10"></div>
+              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-purple)] absolute blur-[150px] bottom-0 right-20"></div>
+              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-teal)] absolute blur-[150px] bottom-0 left-10"></div>
               {selectedCategory && (
                 <div>
-                  <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[#464253] mb-4">
+                  <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[var(--text-header)] mb-4">
                     {
                       featureCategories.find((c) => c.id === selectedCategory)
                         ?.title
@@ -155,8 +155,8 @@ const NavItems = () => {
                           href={`/features/${item.key.toLowerCase()}`}
                           className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
                             selectedFeatureKey === item.key
-                              ? "border-[#795CF5] bg-purple-50 "
-                              : "border-[#D9D9D9] hover:border-[#795CF5]"
+                              ? "border-[var(--primary-purple)] bg-purple-50 "
+                              : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
                           } hover:bg-gray-50 transition-all duration-200`}
                           onMouseEnter={() => setSelectedFeatureKey(item.key)}
                         >
@@ -168,7 +168,7 @@ const NavItems = () => {
                             className="flex-shrink-0"
                           />
                           <span
-                            className={`text-sm font-['Onest'] text-left text-[#231F20]
+                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
                     ${
                       selectedFeatureKey === item.key
                         ? "font-bold"
@@ -188,24 +188,24 @@ const NavItems = () => {
             {/* Right Section (3/12) - Details Panel */}
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className=" border-l max-h-[350px] min-h-[400px] border-[#D9D9D9] w-full pl-4  overflow-y-auto overflow-x-hidden 
+                className=" border-l max-h-[350px] min-h-[400px] border-[var(--border-muted)] w-full pl-4  overflow-y-auto overflow-x-hidden 
   [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar]:block
   [&::-webkit-scrollbar-track]:bg-gray-100
-  [&::-webkit-scrollbar-thumb]:bg-[#D9D9D9]
+  [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
   [&::-webkit-scrollbar-thumb]:rounded-full
-  [&::-webkit-scrollbar-thumb]:hover:bg-[#B0B0B0]
+  [&::-webkit-scrollbar-thumb]:hover:bg-[var(--text-muted-alt)]
   [scrollbar-width:thin]
-  [scrollbar-color:#D9D9D9_#f3f4f6]"
+  [scrollbar-color:var(--border-muted)_var(--background-halfwhite)]"
               >
-                <p className="mb-2 text-xs flex items-center gap-2 font-bold font-['Onest'] text-[#231F20]">
+                <p className="mb-2 text-xs flex items-center gap-2 font-bold font-['Onest'] text-[var(--text-dark)]">
                   {
                     featuresItems.find(
                       (item) => item.key === selectedFeatureKey,
                     )?.title
                   }
 
-                  <span className="text-xs flex items-center gap-1.5 leading-[100%] font-['Onest'] text-[#666666] font-normal">
+                  <span className="text-xs flex items-center gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
                     <svg
                       width="3"
                       height="3"
@@ -213,7 +213,7 @@ const NavItems = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle cx="1.5" cy="1.5" r="1.5" fill="#999999" />
+                      <circle cx="1.5" cy="1.5" r="1.5" fill="var(--text-muted-alt)" />
                     </svg>
                     Key Features
                   </span>
@@ -246,9 +246,9 @@ const NavItems = () => {
           onToggle={() => toggle("industries")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_#0000001A] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
 
-            <div className="lg:col-span-3 px-4 py-6 bg-[#F6F4FE]">
+            <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)]">
               <div className="space-y-1">
                 {industryCategories.map((category) => {
                   const categoryIndustries = industriesItems.filter(
@@ -271,8 +271,8 @@ const NavItems = () => {
                       }}
                       className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${
                         selectedIndustryCategory === category.id
-                          ? "bg-white border border-transparent text-[#795CF5]"
-                          : "hover:bg-[white] text-[#16151C]"
+                          ? "bg-white border border-transparent text-[var(--primary-purple)]"
+                          : "hover:bg-white text-[var(--text-dark)]"
                       }`}
                     >
                       <div className="flex flex-col">
@@ -287,11 +287,11 @@ const NavItems = () => {
             </div>
 
             <div className="lg:col-span-6 px-4 py-6 relative">
-              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#795CF5] absolute blur-[150px] bottom-0 right-20"></div>
-              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[#1AD1B9] absolute blur-[150px] bottom-0 left-10"></div>
+              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-purple)] absolute blur-[150px] bottom-0 right-20"></div>
+              <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-teal)] absolute blur-[150px] bottom-0 left-10"></div>
               {selectedIndustryCategory && (
                 <div>
-                  <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[#464253] mb-4">
+                  <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[var(--text-header)] mb-4">
                     {
                       industryCategories.find(
                         (c) => c.id === selectedIndustryCategory,
@@ -310,8 +310,8 @@ const NavItems = () => {
                           href={`/industries/${item.key.toLowerCase()}`}
                           className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
                             selectedIndustryKey === item.key
-                              ? "border-[#795CF5] bg-purple-50"
-                              : "border-[#D9D9D9] hover:border-[#795CF5]"
+                              ? "border-[var(--primary-purple)] bg-purple-50"
+                              : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
                           } hover:bg-gray-50 transition-all duration-200`}
                           onMouseEnter={() => setSelectedIndustryKey(item.key)}
                         >
@@ -323,7 +323,7 @@ const NavItems = () => {
                             className="flex-shrink-0"
                           />
                           <span
-                            className={`text-sm font-['Onest'] text-left text-[#231F20]
+                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
                       ${
                         selectedIndustryKey === item.key
                           ? "font-bold"
@@ -343,16 +343,16 @@ const NavItems = () => {
 
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className="border-l max-h-[400px] min-h-[400px] border-[#D9D9D9] w-full pl-4 overflow-y-auto overflow-x-hidden 
+                className="border-l max-h-[400px] min-h-[400px] border-[var(--border-muted)] w-full pl-4 overflow-y-auto overflow-x-hidden 
           [&::-webkit-scrollbar]:w-2
           [&::-webkit-scrollbar-track]:bg-transparent
-          [&::-webkit-scrollbar-thumb]:bg-[#D9D9D9]
+          [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
           [&::-webkit-scrollbar-thumb]:rounded-full
-          hover:[&::-webkit-scrollbar-thumb]:bg-[#B0B0B0]
+          hover:[&::-webkit-scrollbar-thumb]:bg-[var(--text-muted-alt)]
           [scrollbar-width:thin]
-          [scrollbar-color:#D9D9D9_transparent]"
+          [scrollbar-color:var(--border-muted)_transparent]"
               >
-                <p className="mb-2 text-xs font-['Onest'] font-bold text-[#231F20]">
+                <p className="mb-2 text-xs font-['Onest'] font-bold text-[var(--text-dark)]">
                   {
                     industriesItems.find(
                       (item) => item.key === selectedIndustryKey,
@@ -360,7 +360,7 @@ const NavItems = () => {
                   }
                 </p>
 
-                <span className="text-xs mb-6 leading-[100%] font-['Onest'] text-[#666666] font-normal">
+                <span className="text-xs mb-6 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
                   Key Features
                 </span>
 
@@ -377,7 +377,7 @@ const NavItems = () => {
         <li>
           <a
             href="/pricing"
-            className="flex items-center justify-center gap-3 px-3.5 py-1.5 xl:px-4 xl:py-[9px] lg:text-xs  xl:text-sm font-semibold hover:bg-gray-100 hover:border-[#795CF5] font-['onest'] text-[#231F20] bg-white border border-[#F3F4F6] rounded-full"
+            className="flex items-center justify-center gap-3 px-3.5 py-1.5 xl:px-4 xl:py-[9px] lg:text-xs  xl:text-sm font-semibold hover:bg-gray-100 hover:border-[var(--primary-purple)] font-['onest'] text-[var(--text-dark)] bg-white border border-[var(--background-halfwhite)] rounded-full"
           >
             Pricing
           </a>
@@ -392,10 +392,10 @@ const NavItems = () => {
           onToggle={() => toggle("resources")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_#0000001A] h-[450px] overflow-hidden">
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-[450px] overflow-hidden">
            
             <div
-              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent ${
+              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[var(--border-muted)] scrollbar-track-transparent ${
                 resourcesDetailsMap[selectedResourceKey]
                   ? "md:col-span-9 col-span-12"
                   : "col-span-12"
@@ -407,8 +407,8 @@ const NavItems = () => {
                     key={item.key} 
                     className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${
                       selectedResourceKey === item.key
-                        ? "border-[#795CF5] bg-gray-100"
-                        : "border-[#D9D9D9]"
+                        ? "border-[var(--primary-purple)] bg-gray-100"
+                        : "border-[var(--border-muted)]"
                     } hover:bg-gray-100`}
                   >
                     <button
@@ -421,7 +421,7 @@ const NavItems = () => {
                         width={16}
                         height={16}
                       />
-                      <span className="text-sm font-medium text-left text-[#231F20]">
+                      <span className="text-sm font-medium text-left text-[var(--text-dark)]">
                         {item.title}
                       </span>
                     </button>
@@ -445,8 +445,8 @@ const NavItems = () => {
 
           
             {resourcesDetailsMap[selectedResourceKey] && (
-              <div className="hidden md:block col-span-3 border-l border-[#D9D9D9] pl-4 overflow-y-auto">
-                <p className="mb-4 text-xs font-bold font-['Onest'] text-[#231F20]">
+              <div className="hidden md:block col-span-3 border-l border-[var(--border-muted)] pl-4 overflow-y-auto">
+                <p className="mb-4 text-xs font-bold font-['Onest'] text-[var(--text-dark)]">
                   {
                     resourcesItems.find((i) => i.key === selectedResourceKey)
                       ?.title
@@ -459,7 +459,7 @@ const NavItems = () => {
                      
                       <a
                         href="#"
-                        className="text-xs font-normal leading-9 text-[#231F20] font-['Onest'] hover:text-gray-400"
+                        className="text-xs font-normal leading-9 text-[var(--text-dark)] font-['Onest'] hover:text-gray-400"
                       >
                         {item}
                       </a>
@@ -480,14 +480,14 @@ const NavItems = () => {
           onToggle={() => toggle("company")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_#0000001A] h-auto overflow-hidden">
-            <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#D9D9D9] scrollbar-track-transparent col-span-12">
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto overflow-hidden">
+            <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[var(--border-muted)] scrollbar-track-transparent col-span-12">
               <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {companyItems.map((item) => (
                   <Link
                     key={item.title} 
                     href={`/${item.key.toLowerCase()}`}
-                    className="flex items-center gap-2 px-4 py-4 border border-[#D9D9D9] rounded-xl hover:bg-gray-100 hover:border-[#795CF5]"
+                    className="flex items-center gap-2 px-4 py-4 border border-[var(--border-muted)] rounded-xl hover:bg-gray-100 hover:border-[var(--primary-purple)]"
                      onMouseEnter={() => setSelectedCompanyKey(item.key)}
                   >
                     <Image
@@ -497,7 +497,7 @@ const NavItems = () => {
                       height={16}
                     />
                     <span
-                            className={`text-sm font-['Onest'] text-left text-[#231F20]
+                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
                     ${
                       selectedCompanyKey === item.key
                         ? "font-bold"

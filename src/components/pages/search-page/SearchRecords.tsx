@@ -47,16 +47,16 @@ const SearchRecords: React.FC = () => {
     >
       {visibleRecords.map((item, idx) => (
         <div key={idx} className="search-record flex flex-col">
-          <h3 className="search-record__title xl:text-2xl text-xl leading-100% font-semibold text-[#231F20] font-['Onest']">
+          <h3 className="search-record__title xl:text-2xl text-xl leading-100% font-semibold text-[var(--text-dark)] font-['Onest']">
             {item.title}
           </h3>
           <a
             href={item.url}
-            className="xl:text-sm text-xs font-bold font-['Onest'] text-[#795CF5] cursor-pointer"
+            className="xl:text-sm text-xs font-bold font-['Onest'] text-[var(--primary-purple)] cursor-pointer"
           >
             {item.url}
           </a>
-          <p className="search-record__desc xl:text-base text-sm font-normal font-['Onest'] text-[#231F20] mt-4">
+          <p className="search-record__desc xl:text-base text-sm font-normal font-['Onest'] text-[var(--text-dark)] mt-4">
             {item.desc}
           </p>
         </div>
@@ -67,7 +67,7 @@ const SearchRecords: React.FC = () => {
         <div className="md:mt-7 mt-5 flex items-center justify-center">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="bg-[#795CF5] text-white border border-transparent hover:bg-transparent hover:border-[#795CF5] hover:text-[#795CF5] font-['Onest'] font-semibold text-base px-[60px] py-5 rounded-full transition"
+            className="bg-[var(--primary-purple)] text-white border border-transparent hover:bg-transparent hover:border-[var(--primary-purple)] hover:text-[var(--primary-purple)] font-['Onest'] font-semibold text-base px-[60px] py-5 rounded-full transition"
           >
             {showAll ? "View Less" : "View More"}
           </button>

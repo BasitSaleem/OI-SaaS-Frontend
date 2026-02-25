@@ -403,7 +403,7 @@ export const  FeatureList = ({ items }: { items: FeatureTreeItem[] }) => (
       <li key={item.title}>
         <p
           
-          className="text-xs font-normal font-['Onest'] leading-7 text-[#231F20]"
+          className="text-xs font-normal font-['Onest'] leading-7 text-[var(--text-dark)]"
         >
           {item.title}
         </p>

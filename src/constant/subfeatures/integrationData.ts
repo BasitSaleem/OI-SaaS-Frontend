@@ -91,7 +91,7 @@ export const INTEGRATION_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy25.webp",
         text: `Connecting our Shopify store with Owners Inventory has completely changed our process. Orders, customers, and stock sync instantly, and our team no longer needs to update anything manually. It’s smooth, reliable, and saves us hours daily.`,
         icon: "/assets/review-section/double-coma-icon.svg",
-        color: "#795CF5",
+        color: "var(--primary-purple)",
     },
     {
         name: "Fahad Khan",
@@ -99,7 +99,7 @@ export const INTEGRATION_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy26.webp",
         text: `We integrated WooCommerce and QuickBooks together through Owners Inventory, and it has made all the difference. Reports are accurate, payments flow properly, and financial tasks are far easier to manage. Everything works in real time across our team.`,
         icon: "/assets/review-section/coma-green.svg",
-        color: "#1AD1B9",
+        color: "var(--primary-teal)",
     },
     {
         name: "Nadia Hussain",
@@ -107,7 +107,7 @@ export const INTEGRATION_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-girl25.webp",
         text: `What stands out the most is how easy the system makes complex work feel. Our payment gateway and marketing tools work together without any confusion. The integration is stable, and the support team always guides us when we need help.`,
         icon: "/assets/review-section/double-coma-icon.svg",
-        color: "#795CF5",
+        color: "var(--primary-purple)",
     },
 ];
 

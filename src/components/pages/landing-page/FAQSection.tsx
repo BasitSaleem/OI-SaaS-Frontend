@@ -59,7 +59,7 @@ export default function FaqSection({
   paragraph = "Find quick answers to the most common questions about Owners Inventory. And if you need anything more, our support team is ready to assist.",
   buttonText = "Start Free, See Plans",
   buttonUrl = "/pricing",
-  buttonBgColor = "#1AD1B9",
+  buttonBgColor = "var(--primary-teal)",
   buttonTextColor = "white",
   buttonHasBorder = true,
   defaultOpenIndex = 0,

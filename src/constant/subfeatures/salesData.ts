@@ -2,7 +2,7 @@ export const SALES_INDUSTRIES = [
     {
         id: 1,
         title: 'Retail Stores',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Quickly scan barcodes, offer a wide range of discount options, and real-time inventory display - ideal in electronics, grocery, cosmetics, or other fast-moving retail environments.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
@@ -10,7 +10,7 @@ export const SALES_INDUSTRIES = [
     {
         id: 2,
         title: 'Restaurant',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Speed up orders, divide bills, and coordinate kitchen activities easily. Whether dining in or delivering, handle all sales and ingredients precisely.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
@@ -18,7 +18,7 @@ export const SALES_INDUSTRIES = [
     {
         id: 3,
         title: 'Wholesalers',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Streamline big orders with tiered pricing, bulk billing, and automated tracking with multiple warehouses, designed to make your supply chain robust and reliable.',
         image: '/assets/industry-type/whole-sale.webp',
         mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
@@ -26,7 +26,7 @@ export const SALES_INDUSTRIES = [
     {
         id: 4,
         title: 'Pharmacies',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Remain compliant and precise regarding expiry alerts, prescription monitoring, and safe batch control. Build customer trust and a trustworthy service.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
@@ -34,7 +34,7 @@ export const SALES_INDUSTRIES = [
     {
         id: 5,
         title: 'Fashion & Apparel',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Easily manage all designs, sizes, and colors. Coordinate collections by season in stores and maintain your sales online and offline.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',
@@ -138,7 +138,7 @@ export const SALES_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-girl5.webp",
         text: `We have been using Owners Inventory for more than a year and it has really changed the way we do business. Orders, returns and stock levels are so much easier to track now. The system provides us with total control of our inventory operations process and makes everything transparent. Moreover, their support team is never too slow to render assistance whenever we get stuck. It has been a wonderful experience since the beginning.`,
         icon: "/assets/review-section/double-coma-icon.svg",
-        color: "#795CF5",
+        color: "var(--primary-purple)",
     },
     {
         name: "Kevin Mitchell",
@@ -146,7 +146,7 @@ export const SALES_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy5.webp",
         text: `As a wholesaler, it was difficult to monitor big orders and various warehouses. Owners Inventory sorted that out with its automation and intelligent inventory operations software. It has made our work much more organized.`,
         icon: "/assets/review-section/coma-green.svg",
-        color: "#1AD1B9",
+        color: "var(--primary-teal)",
     },
     {
         name: "Rebecca Moore",
@@ -154,7 +154,7 @@ export const SALES_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-girl6.webp",
         text: `Our retail store is more efficiently managed now. We are able to view real-time stock levels, issue invoices on-the-fly and learn about customer requirements. The system actually assists us to keep on top of each sale.`,
         icon: "/assets/review-section/double-coma-icon.svg",
-        color: "#795CF5",
+        color: "var(--primary-purple)",
     },
     {
         name: "Andrew Collins",
@@ -162,6 +162,6 @@ export const SALES_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy6.webp",
         text: `Owners Inventory has totally transformed the manner of sale and stockings. We had to deal with incomplete records and handwritten updates before we used it. Everything is now synchronized and can be seen in real time. The single dashboard identifies each and every sale and order without any beat. It is easy, trustworthy and has genuinely eased our overall workflow.`,
         icon: "/assets/review-section/coma-green.svg",
-        color: "#1AD1B9",
+        color: "var(--primary-teal)",
     },
 ];

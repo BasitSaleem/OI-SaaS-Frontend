@@ -86,11 +86,11 @@ export const FEATURE_CARDS_DATA = [
         imageSrc: "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/ecommerce",
-        buttonColor: "#795CF5",
+        buttonColor: "var(--primary-purple)",
         containerWidth: "100%",
         containerHeight: "420px",
-        containerBorderColor: "#ffffff",
-        containerBackgroundColor: "rgba(255,255,255,0.4)",
+        containerBorderColor: "var(--white-color)",
+        containerBackgroundColor: "rgba(var(--white-color-rgb), 0.4)",
         containerShadow: false,
         scale: 1.05,
     },
@@ -135,7 +135,7 @@ export const UTILITIES_DATA = {
     heading: "Utilities & General Tools",
     description: "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring your business runs efficiently at every level.",
     buttonText: "View Details",
-    buttonColor: "#1AD1B9",
+    buttonColor: "var(--primary-teal)",
     buttonUrl: "/features/tools",
 };
 
@@ -191,7 +191,7 @@ export const FINANCE_FEATURES = [
 export const TEAM_SECTION_DATA = {
     title: "Your Team, Organized & Empowered",
     description: "Empower your team, build customer loyalty, and manage resources with ease.",
-    wrapperClass: "bg-[#F3F4F6] rounded-[40px] py-10 lg:py-[100px] px-5 lg:px-[60px] mx-0"
+    wrapperClass: "bg-[var(--background-halfwhite)] rounded-[40px] py-10 lg:py-[100px] px-5 lg:px-[60px] mx-0"
 };
 
 export const FINANCE_SECTION_DATA = {

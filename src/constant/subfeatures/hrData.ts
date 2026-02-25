@@ -2,7 +2,7 @@ export const HR_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Manage staff and payroll at multiple retail locations with ease and convenience. You will be able to ensure that the store runs smoothly and that customers experience a high level of customer care on a day-to-day basis.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const HR_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Monitor all restaurant staff—from chefs to servers—while simplifying shift planning, payroll, and tip distribution to keep your team organized, happy, and focused on delivering top-notch service.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const HR_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Manage distribution teams and warehouse employees via a central HR platform. Monitor attendance, shifts, and payroll accurately to ensure your supply chain runs smoothly all the way through.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const HR_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Keep your team organized and compliant with industry standards. The HR feature allows you to track work hours, manage renewals, and oversee training, ensuring your employees are reliable, skilled, and fully equipped to drive your business forward.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const HR_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Unify the creative, retail, and logistics teams into a single, seamless HR system. Easily manage designer schedules, store personnel, and seasonal employees, as well as maintain operations in all branches.",
         image: "/assets/industry-type/fashion.webp",

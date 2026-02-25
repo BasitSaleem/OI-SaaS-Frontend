@@ -17,7 +17,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
         {/* Recent Label */}
         <span
           className={`text-sm md:text-base font-['Onest'] font-semibold w-full ${
-            activeTab === "recent" ? "text-[#231F20]" : "text-gray-400"
+            activeTab === "recent" ? "text-[var(--text-dark)]" : "text-gray-400"
           }`}
         >
           Recent
@@ -28,7 +28,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
           onClick={() =>
             onTabChange(activeTab === "recent" ? "popular" : "recent")
           }
-          className="relative inline-flex items-center w-[50%] h-6 md:h-8 md:w-16 rounded-full bg-[#1AD1B9] transition-colors duration-300"
+          className="relative inline-flex items-center w-[50%] h-6 md:h-8 md:w-16 rounded-full bg-[var(--primary-teal)] transition-colors duration-300"
         >
           <span
             className={`inline-block h-5 w-[50%] md:w-6 md:h-6 bg-white rounded-full shadow transform transition-transform duration-300 ease-in-out 
@@ -43,7 +43,7 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
         {/* Popular Label */}
         <span
           className={`text-sm md:text-base font-['Onest'] font-semibold w-full ${
-            activeTab === "popular" ? "text-[#231F20]" : "text-gray-400"
+            activeTab === "popular" ? "text-[var(--text-dark)]" : "text-gray-400"
           }`}
         >
           Popular
@@ -62,8 +62,8 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
           text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full w-[50%]
           transition-colors duration-300 ${
             activeTab === "recent"
-              ? "text-white bg-[#1AD1B9] border-[#1AD1B9]"
-              : "text-[#231F20] bg-transparent border-transparent hover:text-white hover:bg-[#1AD1B9] hover:border-[#1AD1B9]"
+              ? "text-white bg-[var(--primary-teal)] border-[var(--primary-teal)]"
+              : "text-[var(--text-dark)] bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-teal)] hover:border-[var(--primary-teal)]"
           }`}
       >
         Recent
@@ -77,8 +77,8 @@ const SmallTabs: React.FC<SmallTabsProps> = ({
             text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full  w-[100%]
             transition-colors duration-300 ${
               activeTab === "popular"
-                ? "text-white bg-[#1AD1B9] border-[#1AD1B9]"
-                : "text-[#231F20] bg-transparent border-transparent hover:text-white hover:bg-[#1AD1B9] hover:border-[#1AD1B9]"
+                ? "text-white bg-[var(--primary-teal)] border-[var(--primary-teal)]"
+                : "text-[var(--text-dark)] bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-teal)] hover:border-[var(--primary-teal)]"
             }`}
         >
           Popular

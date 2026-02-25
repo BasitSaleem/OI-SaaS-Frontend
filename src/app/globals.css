@@ -29,17 +29,56 @@ body {
 
 
 :root {
-  /* Light mode colors */
+  /* Light mode brand colors */
   --primary-purple: #795CF5;
+  --primary-purple-rgb: 121, 92, 245;
+  --primary-purple-light: #7B61FF;
+  --primary-purple-dark: #634AE2;
   --primary-teal: #1AD1B9;
+  --primary-teal-rgb: 26, 209, 185;
+  --primary-teal-dark: #13B49F;
+  --primary-blue: #5588DF;
+  --primary-blue-rgb: 85, 136, 223;
+  --primary-blue-dark: #38ACCC;
+  --accent-purple: #9E02FF;
+  --accent-purple-light: #CFB5F9;
+  --accent-blue-light: #A0D7FF;
+
+  /* Background colors */
   --background-light: #F3F3F3;
   --background-halfwhite: #F3F4F6;
+  --background-purple-light: #F6F4FE;
   --white-color: #FFFFFF;
+  --white-color-rgb: 255, 255, 255;
+
+  /* Text colors */
   --text-dark: #231F20;
+  --text-dark-rgb: 35, 31, 32;
   --text-grey: #666666;
+  --text-grey-rgb: 102, 102, 102;
   --text-light: #333333;
+  --text-light-alt: #374151;
   --text-black: #000000;
+  --text-muted: #8A8A8A;
+  --text-muted-alt: #999999;
+  --primary-dark: #1D2034;
+  --primary-dark-rgb: 29, 32, 52;
+  --text-header: #464253;
+  --warning-text: #8B6E2C;
+
+  /* Border colors */
   --border-light: #E5E7EB;
+  --border-muted: #D9D9D9;
+  --warning-border: #FFD982;
+
+  /* Specialty backgrounds */
+  --warning-bg: #FFF9EB;
+  --addon-bg: #FFF9F8;
+  --addon-tag-bg: #FF6455;
+  --addon-light-bg: #FFF1EF;
+
+  /* Specialty borders */
+  --addon-border: #FF6E5E;
 }
 
 
@@ -112,7 +151,7 @@ body {
 
 
 .gradient-text {
-  background: linear-gradient(90deg, #231F20 0%, #8A8A8A 100%);
+  background: linear-gradient(90deg, var(--text-dark) 0%, var(--text-muted) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -201,10 +240,10 @@ body {
   transform: translate(-50%, -50%);
   border-radius: inherit;
   background: linear-gradient(69.54deg,
-      rgba(26, 209, 185, 1) 0.66%,
-      rgba(56, 172, 204, 1) 29.25%,
-      rgba(85, 136, 223, 1) 63.93%,
-      rgba(121, 92, 245, 1) 98.14%);
+      var(--primary-teal) 0.66%,
+      var(--primary-blue-dark) 29.25%,
+      var(--primary-blue) 63.93%,
+      var(--primary-purple) 98.14%);
   filter: blur(80px);
   z-index: -1;
 }
@@ -336,7 +375,7 @@ body {
   border-radius: inherit;
 
   /* Your glow colors */
-  background: linear-gradient(69.54deg, rgba(158, 2, 255, 0.4) 30%, rgba(207, 181, 249, 0.4) 60%, rgba(26, 209, 185, 1) 100%);
+  background: linear-gradient(69.54deg, rgba(158, 2, 255, 0.4) 30%, rgba(207, 181, 249, 0.4) 60%, var(--primary-teal) 100%);
 
   filter: blur(150px);
   z-index: -1;
@@ -425,7 +464,7 @@ body {
 
 .glass-background {
   border-radius: 47.692px;
-  border: 1.59px solid white;
+  border: 1.59px solid var(--white-color);
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;

@@ -2,7 +2,7 @@ export const INVENTORY_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Add and maintain products in POS quickly with comprehensive listings, categories, and barcodes to maintain your shelves and online catalog flawlessly.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const INVENTORY_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Control menu items, ingredients, and combos with our POS product management feature and make sure that all branches are operating off the same menu.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const INVENTORY_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Manage product catalogs easily with efficient bulk item organization, level pricing, and supplier catalogs with robust product catalog management software.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const INVENTORY_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Monitor batch and expiry of medicines with inventory product management software, ensuring that the stock in your pharmacy is secure, legally compliant, and reliable.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const INVENTORY_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Keep track of all sizes, colors, and styles, with product variants, seasonal collections, and stock coordination between online and physical stores, whether you sell streetwear, shoes, or high fashion.",
         image: "/assets/industry-type/fashion.webp",

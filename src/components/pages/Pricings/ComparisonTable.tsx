@@ -88,7 +88,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       <div className="wrapper mx-auto flex items-center justify-center">
         <button
           onClick={toggleVisibility}
-          className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[#795CF5] text-white rounded-full text-xs md:text-lg leadign-[100%] font-semibold font-['Onest'] w-fit whitespace-nowrap"
+          className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[var(--primary-purple)] text-white rounded-full text-xs md:text-lg leadign-[100%] font-semibold font-['Onest'] w-fit whitespace-nowrap"
         >
           Compare Feature List
           <img
@@ -119,9 +119,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
 
         {/* Progress Bar for Mobile/Tablet */}
         <div className="lg:hidden md:w-2/3 w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center  w-full mb-6 ">
-          <div className="h-1.5  w-full md:order-1 order-2 bg-[#795CF5]/10 rounded-full overflow-hidden">
+          <div className="h-1.5  w-full md:order-1 order-2 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] transition-all duration-200 ease-out"
+              className="h-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] transition-all duration-200 ease-out"
               style={{ width: `${scrollProgress}%` }}
             />
           </div>
@@ -134,17 +134,17 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
           </div>
         </div>
 
-        <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] p-[2px]">
+        <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] p-[2px]">
           <div className="flex w-full overflow-hidden bg-white rounded-[28px]">
             {/* Left sticky column with feature names */}
-            <div className="bg-white sticky left-0 z-30 w-6/12 md:w-4/12 lg:w-3/12 border-r border-[#1AD1B9] shrink-0">
+            <div className="bg-white sticky left-0 z-30 w-6/12 md:w-4/12 lg:w-3/12 border-r border-[var(--primary-teal)] shrink-0">
               <table className="table-auto w-full border-collapse">
                 {categories.map((category, categoryIndex) => (
                   <React.Fragment key={categoryIndex}>
                     <thead>
                       <tr>
                         <th className="text-center md:h-[150px] h-[110px] p-[7.8px] md:p-[15.8px]">
-                          <div className="flex flex-col items-center text-sm md:text-base lg:text-lg bg-[#F3F4F6] font-semibold text-[#231F20] rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4">
+                          <div className="flex flex-col items-center text-sm md:text-base lg:text-lg bg-[var(--background-halfwhite)] font-semibold text-[var(--text-dark)] rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4">
                             {category.name}
                           </div>
                         </th>
@@ -156,8 +156,8 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                           <td
                             className={`
                                px-4 text-left text-sm md:text-base lg:text-lg leading-6
-                                text-[#231F20] font-normal 
-                                border-b border-[#1AD1B9]
+                                text-[var(--text-dark)] font-normal 
+                                border-b border-[var(--primary-teal)]
                               `}
                             style={{ height: "68px", verticalAlign: "middle" }}
                           >
@@ -189,10 +189,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                       isComparisonToolTip
                                     />
                                     {/* <div className="absolute left-[-20px] bottom-[120%] z-[999] hidden group-hover:flex flex-col items-start">
-                                      <div className="rounded-xl border border-[#795DF5] bg-white px-4 py-2 text-xs leading-4 font-normal text-[#231F20] shadow-lg w-[150px] md:w-[200px] lg:w-[250px]">
+                                      <div className="rounded-xl border border-[var(--primary-purple)] bg-white px-4 py-2 text-xs leading-4 font-normal text-[var(--text-dark)] shadow-lg w-[150px] md:w-[200px] lg:w-[250px]">
                                         {feature.infoText}
                                       </div>
-                                      <div className="w-2 h-2 rotate-45 bg-white border-b border-r border-[#795DF5] -mt-1 ms-5"></div>
+                                      <div className="w-2 h-2 rotate-45 bg-white border-b border-r border-[var(--primary-purple)] -mt-1 ms-5"></div>
                                     </div> */}
                                   </div>
                                 )}
@@ -200,13 +200,13 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
 
                               {/* Subtitle */}
                               {feature.name === "Standard Reports" && (
-                                <span className="text-[9px] sm:text-xs lg:text-sm xl:text-base text-[#231F20]">
+                                <span className="text-[9px] sm:text-xs lg:text-sm xl:text-base text-[var(--text-dark)]">
                                   (Sales, Purchases, Inventory)
                                 </span>
                               )}
 
                               {feature.name === "Advanced Reports" && (
-                                <span className="text-[9px] sm:text-xs lg:text-sm xl:text-base text-[#231F20]">
+                                <span className="text-[9px] sm:text-xs lg:text-sm xl:text-base text-[var(--text-dark)]">
                                   (Dashboards, Inventory Aging)
                                 </span>
                               )}
@@ -253,7 +253,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               className="flex flex-col items-center rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4"
                               style={{ backgroundColor: plan.bgColor }}
                             >
-                              <h4 className="text-sm md:text-base lg:text-lg text-[#231F20] font-semibold leading-[100%] font-['Onest']">
+                              <h4 className="text-sm md:text-base lg:text-lg text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
                                 {plan.name}
                               </h4>
                               <h3
@@ -271,7 +271,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                       : "/month"}
                                 </span>
                               </h3>
-                              {/* <p className="text-[10px] md:text-xs text-[#231F20] leading-[100%] font-normal font-['Onest']">
+                              {/* <p className="text-[10px] md:text-xs text-[var(--text-dark)] leading-[100%] font-normal font-['Onest']">
                                 {plan.description}
                               </p> */}
                               <a
@@ -306,12 +306,12 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                           {category.features.map((feature, featureIndex) => {
                             const planColor =
                               planIndex === 0
-                                ? "#1AD1B9"
+                                ? "var(--primary-teal)"
                                 : planIndex === 1
-                                  ? "#38ACCC"
+                                  ? "var(--primary-blue-dark)"
                                   : planIndex === 2
-                                    ? "#5588DF"
-                                    : "#795CF5";
+                                    ? "var(--primary-blue)"
+                                    : "var(--primary-purple)";
                             const featureValue =
                               planIndex === 0
                                 ? feature.basic
@@ -331,21 +331,21 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             return (
                               <div
                                 key={featureIndex}
-                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[#231F20] font-normal px-2 ${planIndex < tablePlans.length - 1 ? "border-r" : ""}`}
+                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${planIndex < tablePlans.length - 1 ? "border-r" : ""}`}
                                 style={{
                                   height: "68px",
                                   borderBottom: isAddon
-                                    ? "2px solid #FF6E5E"
+                                    ? "2px solid var(--addon-border)"
                                     : `1px solid ${planColor}`,
                                   borderRightColor: plan.color,
                                   borderRight: isAddon
-                                    ? "2px solid #FF6E5E"
+                                    ? "2px solid var(--addon-border)"
                                     : `1px solid ${planColor}`,
                                   borderLeft: isAddon
-                                    ? "2px solid #FF6E5E"
+                                    ? "2px solid var(--addon-border)"
                                     : "none",
                                   borderTop: isAddon
-                                    ? "2px solid #FF6E5E"
+                                    ? "2px solid var(--addon-border)"
                                     : "none",
                                   display: "flex",
                                   alignItems: "center",
@@ -353,7 +353,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                   position: "relative",
                                   zIndex: isAddon ? 10 : 1,
                                   backgroundColor: isAddon
-                                    ? "#FFF9F8"
+                                    ? "var(--addon-bg)"
                                     : "transparent",
                                 }}
                               >
@@ -363,7 +363,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                     style={{
                                       clipPath:
                                         "polygon(0px 6.9081px, 77.7857px 0px, 71.8021px 9.8317px, 79.5679px 18.4496px, 1.7823px 25.3411px, 7.7659px 15.5185px, 0px 6.9081px)",
-                                      backgroundColor: "#FF6455",
+                                      backgroundColor: "var(--addon-tag-bg)",
                                     }}
                                   >
                                     <div className="absolute inset-0 flex items-center justify-center text-white text-[12px] rotate-[-5deg] font-bold text-center leading-none">
@@ -373,7 +373,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                 )}
 
                                 {isAddon ? (
-                                  <div className="bg-[#FFF1EF] text-[#FF6E5E] px-4 py-1.5 rounded-full text-sm font-semibold border border-[#FF6E5E]/20 shadow-sm">
+                                  <div className="bg-[var(--addon-light-bg)] text-[var(--addon-border)] px-4 py-1.5 rounded-full text-sm font-semibold border border-[var(--addon-border)]/20 shadow-sm">
                                     {cleanValue}
                                   </div>
                                 ) : (

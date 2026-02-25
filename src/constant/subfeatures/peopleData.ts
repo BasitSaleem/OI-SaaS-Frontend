@@ -2,7 +2,7 @@ export const PEOPLE_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Make everyday tasks easier with intelligent scheduling, time-tracking, and shift arrangements. Make your sales team structured, improve customer service, and make each store operate efficiently.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const PEOPLE_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Easily coordinate kitchen, waitstaff, and delivery teams. Organize shift rotations, keep attendance, and ensure a smooth service even in the busiest periods.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const PEOPLE_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Standardize human resource operations in warehouses and logistics units. Monitor attendance, delegate tasks, and preserve uniformity in your supply chain.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const PEOPLE_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Maintain consistency and accuracy in ensuring that all shifts are properly staffed. Monitor attendance, performance, and rotations to ensure your pharmacy is operating effectively.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const PEOPLE_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Coordinate design, retail, and production departments on a single platform. Monitor attendance and performance in outlets to secure a smooth coordination and on-brand implementation.",
         image: "/assets/industry-type/fashion.webp",

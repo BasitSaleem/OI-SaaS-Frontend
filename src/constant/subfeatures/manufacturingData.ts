@@ -1,8 +1,8 @@
 export const MANUFACTURING_INDUSTRIES = [
-     {
+    {
         id: 1,
         title: 'Retail Stores',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Quickly scan barcodes, offer a wide range of discount options, and real-time inventory display - ideal in electronics, grocery, cosmetics, or other fast-moving retail environments.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
@@ -10,7 +10,7 @@ export const MANUFACTURING_INDUSTRIES = [
     {
         id: 2,
         title: 'Restaurant',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Speed up orders, divide bills, and coordinate kitchen activities easily. Whether dining in or delivering, handle all sales and ingredients precisely.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
@@ -18,7 +18,7 @@ export const MANUFACTURING_INDUSTRIES = [
     {
         id: 3,
         title: 'Wholesalers',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Streamline big orders with tiered pricing, bulk billing, and automated tracking with multiple warehouses, designed to make your supply chain robust and reliable.',
         image: '/assets/industry-type/whole-sale.webp',
         mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
@@ -26,7 +26,7 @@ export const MANUFACTURING_INDUSTRIES = [
     {
         id: 4,
         title: 'Pharmacies',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Remain compliant and precise regarding expiry alerts, prescription monitoring, and safe batch control. Build customer trust and a trustworthy service.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
@@ -34,7 +34,7 @@ export const MANUFACTURING_INDUSTRIES = [
     {
         id: 5,
         title: 'Fashion & Apparel',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Easily manage all designs, sizes, and colors. Coordinate collections by season in stores and maintain your sales online and offline.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',

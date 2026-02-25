@@ -67,7 +67,7 @@ const SmartTools: React.FC<SmartTools> = ({
           <ButtonSm
             url="/contact"
             text="Contact Now"
-            bgColor="[#795CF5]"
+            bgColor="var(--primary-purple)"
             textColor="white"
             paddingLg="lg:px-[40px] xl:px-[64px] lg:py-4"
             isBorder

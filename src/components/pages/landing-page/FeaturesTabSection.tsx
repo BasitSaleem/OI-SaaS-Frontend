@@ -281,7 +281,7 @@ export default function FeaturesTabSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[#231F20] z-11">
+    <section ref={sectionRef} className="features-tab-section overflow-hidden relative mt-20 md:mt-28 lg:mt-[100px] py-10 md:py-10 z-20 xl:py-24 rounded-[20px] lg:rounded-[40px] bg-[var(--text-dark)] z-11">
       <div className="absolute top-[-150px] right-[-0px] z-[300]">
         <div className="bg-[var(--primary-purple)] h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] blur-[400px] lg:blur-[300px] rounded-full"></div>
       </div>
@@ -341,7 +341,7 @@ export default function FeaturesTabSection() {
                 >
                   <div
                     className={`w-full max-w-11 h-11 m rounded-full flex items-center justify-center ${
-                      activeTab === feature.tabIndex ? "bg-(--primary-purple)" : "bg-[rgba(243,244,246,0.1)]"
+                      activeTab === feature.tabIndex ? "bg-[var(--primary-purple)]" : "bg-[rgba(var(--white-color-rgb),0.1)]"
                     }`}
                   >
                     <img
@@ -364,7 +364,7 @@ export default function FeaturesTabSection() {
                   </span>
                 </button>
                 <div
-                  className={`progress-bar w-full h-1 xl:h-1.5 mt-5 xl:mt-7 rounded-2xl bg-[rgba(243,244,246,0.1)] overflow-hidden ${
+                  className={`progress-bar w-full h-1 xl:h-1.5 mt-5 xl:mt-7 rounded-2xl bg-[rgba(var(--white-color-rgb),0.1)] overflow-hidden ${
                     activeTab === feature.tabIndex ? "" : "hidden"
                   }`}
                 >
@@ -374,7 +374,7 @@ export default function FeaturesTabSection() {
                       progressRefs.current[`${feature.id}-mobile-video`] = el;
                       progressRefs.current[`${feature.id}-tablet`] = el;
                     }}
-                    className="h-full bg-[#F3F4F6]"
+                    className="h-full bg-[var(--background-halfwhite)]"
                     style={{ width: '0%' }}
                   />
                 </div>

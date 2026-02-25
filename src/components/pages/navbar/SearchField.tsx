@@ -27,8 +27,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
 
   const wrapperClasses =
     variant === "navbar"
-      ? `absolute left-0 top-[100%] w-full h-fit bg-white shadow-[0_0_20px_0_#0000001A] rounded-2xl transition-all duration-300 ${searchOpen ? "block" : "hidden"
-      }`
+      ? `absolute left-0 top-[100%] w-full h-fit bg-white shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-2xl transition-all duration-300 ${searchOpen ? "block" : "hidden"}`
       : "w-full"; 
   return (
     <div id="searchDropdown" className={wrapperClasses}>
@@ -39,7 +38,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
             type="text"
             name="q"
             placeholder="Search for features overviews, FAQs, and more..."
-            className="w-full border text-[#231F20] border-gray-300 rounded-full p-3"
+            className="w-full border text-[var(--text-dark)] border-gray-300 rounded-full p-3"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />

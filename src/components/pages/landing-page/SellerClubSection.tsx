@@ -25,7 +25,7 @@ export default function SellerClubSection({
   description,
   buttonText = 'Book a Free Demo',
   buttonUrl = '#',
-  buttonColor= "#795CF5",
+  buttonColor= "var(--primary-purple)",
   marginClasses= "lg:mt-40 md:mt-28 mt-20"
 
 }: SellerClubSectionProps) {
@@ -106,7 +106,7 @@ export default function SellerClubSection({
               bgColor={buttonColor}
               textColor="white"
               isBorder
-              hoverBgColor="#1AD1B9"
+              hoverBgColor="var(--primary-teal)"
             />
           </div>
         </div>

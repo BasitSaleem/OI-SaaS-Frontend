@@ -2,7 +2,7 @@ export const FINANCE_INDUSTRIES = [
     {
         id: 1,
         title: 'Retail Stores',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Easily track all sales, returns, and costs in a single location to have full financial visibility. The real time profit and loss reports allow you to quickly track the performance of the store, manage the costs, and make smarter decisions on restocking.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
@@ -10,7 +10,7 @@ export const FINANCE_INDUSTRIES = [
     {
         id: 2,
         title: 'Restaurant',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Automatically track daily sales, ingredient costs, and supplier invoices. Get transparent financial statements to control expenses, cut wastage, and boost profitability without manual bookkeeping.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
@@ -18,7 +18,7 @@ export const FINANCE_INDUSTRIES = [
     {
         id: 3,
         title: 'Wholesalers',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Manage bulk purchases, customer invoices, and supplier payments with speed and accuracy. The system simplifies your entire cash flow process, keeping financial statements and stock transfers perfectly aligned.',
         image: '/assets/industry-type/whole-sale.webp',
         mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
@@ -26,7 +26,7 @@ export const FINANCE_INDUSTRIES = [
     {
         id: 4,
         title: 'Pharmacies',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Manage your healthcare inventory, sales, and accounts in one POS platform. Keep complete transaction records that meet financial and inventory standards.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
@@ -34,7 +34,7 @@ export const FINANCE_INDUSTRIES = [
     {
         id: 5,
         title: 'Fashion & Apparel',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Track real-time profits, discounts, and seasonal trends. Get your accounting sorted with automated cost-tracking and a thorough financial overview of each collection cycle.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',

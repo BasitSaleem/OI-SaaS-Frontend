@@ -43,7 +43,7 @@ function SmartWaytoSyncndSellSection() {
               <ButtonSm
                 url="/coming-soon"
                 text="Book a Free Demo"
-                bgColor="[#1AD1B9]"
+                bgColor="var(--primary-teal)"
                 textColor="white"
                 isBorder
                 paddingLg="xl:px-[64px] lg:px-[40px] lg:py-5"
@@ -51,7 +51,7 @@ function SmartWaytoSyncndSellSection() {
               <ButtonSm
                 url="#"
                 text="Contact Sales"
-                bgColor="[#795CF5]"
+                bgColor="var(--primary-purple)"
                 textColor="white"
                 isBorder
                 paddingLg="xl:px-[64px] lg:px-[40px] lg:py-5"
@@ -91,7 +91,7 @@ function SmartWaytoSyncndSellSection() {
             <ButtonSm
               url="#"
               text="Boost Your Sales"
-              bgColor="[#1AD1B9]"
+              bgColor="var(--primary-teal)"
               textColor="white"
               isBorder
               paddingLg="lg:px-[64px] lg:py-5"
@@ -100,7 +100,7 @@ function SmartWaytoSyncndSellSection() {
             <ButtonSm
               url="#"
               text="Scale with Ease"
-              bgColor="[#795CF5]"
+              bgColor="var(--primary-purple)"
               textColor="white"
               isBorder
               paddingLg="lg:px-[64px] lg:py-5"

@@ -2,7 +2,7 @@ export const PURCHASES_INDUSTRIES = [
     {
         id: 1,
         title: 'Retail Stores',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Reorder your fast moving products automatically. Also, easily manages supplier discounts and tracks incoming shipments in real time.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
@@ -10,7 +10,7 @@ export const PURCHASES_INDUSTRIES = [
     {
         id: 2,
         title: 'Restaurant',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'For restaurants, easily track ingredient purchases, manage multiple vendors and use smart controls to prevent expensive overstocking or wastage.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
@@ -18,7 +18,7 @@ export const PURCHASES_INDUSTRIES = [
     {
         id: 3,
         title: 'Wholesalers',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Handle bulk procurement efficiently with supplier catalogs, multi warehouse support, and automated reorder levels.',
         image: '/assets/industry-type/whole-sale.webp',
         mobileImage: '/assets/industry-type/whole-sale-mobile.webp',
@@ -26,7 +26,7 @@ export const PURCHASES_INDUSTRIES = [
     {
         id: 4,
         title: 'Pharmacies',
-        gradient: 'linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)',
         description: 'Ensure accuracy and compliance with expiry monitoring and batch tracking. Supplier authentication for all medicine purchases is also provided.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
@@ -34,7 +34,7 @@ export const PURCHASES_INDUSTRIES = [
     {
         id: 5,
         title: 'Fashion & Apparel',
-        gradient: 'linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)',
+        gradient: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)',
         description: 'Order fabrics, accessories and finished goods efficiently by tracking supplier performance. Works according to seasonal demand and material availability.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',

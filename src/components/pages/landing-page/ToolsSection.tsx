@@ -13,7 +13,7 @@ const usedTools = [
 const ToolsSection = () => {
   return (
     <section className="wrapper">
-      <div className="w-full bg-[#F3F4F6] p-8 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px]">
+      <div className="w-full bg-[var(--background-halfwhite)] p-8 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px]">
 
         <MainHeading className="text-center lg:mb-10 md:mb-6 mb-5">
           Connect Seamlessly with Your Favorite Tools

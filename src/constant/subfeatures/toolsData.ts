@@ -2,7 +2,7 @@ export const TOOLS_INDUSTRIES = [
     {
         id: 1,
         title: "Retail Stores",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Manage product catalogs and suppliers effectively. Check stock levels and stocking up of high demand items.",
         image: "/assets/industry-type/retail-store.webp",
@@ -11,7 +11,7 @@ export const TOOLS_INDUSTRIES = [
     {
         id: 2,
         title: "Restaurant",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Check the ingredients, track stock consumption, and minimize waste on a cross-location basis. Keep stocks clean and efficient kitchens.",
         image: "/assets/industry-type/restaurant.webp",
@@ -20,7 +20,7 @@ export const TOOLS_INDUSTRIES = [
     {
         id: 3,
         title: "Wholesalers",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Optimize bulk inventory within warehouses and stores. Maintain efficient supply chains and satisfy customers in time.",
         image: "/assets/industry-type/whole-sale.webp",
@@ -29,7 +29,7 @@ export const TOOLS_INDUSTRIES = [
     {
         id: 4,
         title: "Pharmacies",
-        gradient: "linear-gradient(135deg, #7B61FF 0%, #634AE2 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description:
             "Track medications, report expiry dates, and have proper supplier records easily. This guarantees safety, compliance, and operations.",
         image: "/assets/industry-type/pharmacy.webp",
@@ -38,7 +38,7 @@ export const TOOLS_INDUSTRIES = [
     {
         id: 5,
         title: "Fashion & Apparel",
-        gradient: "linear-gradient(135deg, #1AD1B9 0%, #13B49F 100%)",
+        gradient: "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
         description:
             "Operate seasonal inventory, various sizes, and SKUs with real-time visibility. Be ahead of trends and maintain control over inventory.",
         image: "/assets/industry-type/fashion.webp",
@@ -107,7 +107,7 @@ export const TOOLS_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-girl26.webp",
         text: `The General Tools of Owners Inventory have totally changed our way of handling our inventory. Everything can be easily followed and the interface is highly intuitive. Stock levels are monitored in real time and that saves us much work. My favorite feature is the automated alerts, which avoid errors prior to occurrence. It has simplified our daily work process and made it smoother and more efficient.`,
         icon: "/assets/review-section/double-coma-icon.svg",
-        color: "#795CF5",
+        color: "var(--primary-purple)",
     },
     {
         name: "Iqra Siddiqui",
@@ -115,7 +115,7 @@ export const TOOLS_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-girl27.webp",
         text: `I used to have a headache trying to manage more than one store, but now, thanks to the General Tools of Owners Inventory, everything is easy. The logs of activity will enable us to view the specific changes made and by whom they were made. We are informed immediately through stock alerts, and therefore we do not run out of stock. The system is quick, dependable and simple to use by the entire team. It has actually made our entire inventory control much better than before.`,
         icon: "/assets/review-section/coma-green.svg",
-        color: "#1AD1B9",
+        color: "var(--primary-teal)",
     },
     {
         name: "Imran Malik",
@@ -123,7 +123,7 @@ export const TOOLS_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy27.webp",
         text: `Owners Inventory General Tools are a life savior to our fashion business. Processing of seasonal collections and handling of multiple SKUs previously consumed hours, but it is now quicker. With its user-friendly design, it is easy to use by anyone. All is organized and controlled, even bulk updates and stock checks. It has certainly streamlined our business processes.`,
         icon: "/assets/review-section/double-coma-icon.svg",
-        color: "#795CF5",
+        color: "var(--primary-purple)",
     },
     {
         name: "Ahmed Raza",
@@ -131,7 +131,7 @@ export const TOOLS_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy28.webp",
         text: `The General Tools of Owners Inventory have made significant contributions to our restaurant. Automated notifications and real-time stock updates enable us not to run out of ingredients. We are able to trace all products in our outlets conveniently. It is time-saving and stress-free to our employees. In general, it has simplified our inventory management greatly and increased accuracy.`,
         icon: "/assets/review-section/coma-green.svg",
-        color: "#1AD1B9",
+        color: "var(--primary-teal)",
     },
 ];
 

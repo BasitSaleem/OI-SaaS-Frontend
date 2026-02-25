@@ -81,7 +81,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             <ButtonOutline
               url="#"
               text="View All Case Studies"
-              borderColor="[#795CF5]"
+              borderColor="var(--primary-purple)"
               textColor="white"
             />
           </div> */}
@@ -98,7 +98,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Previous Button */}
             <button
               onClick={prevSlide}
-              className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors border-gray-300 text-gray-600 hover:bg-gray-50"`}
+              className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(var(--text-dark-rgb),0.1)] border transition-colors border-[var(--border-light)] text-[var(--text-grey)] hover:bg-gray-50"`}
               aria-label="Previous slide"
             >
               <Image
@@ -119,8 +119,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                   onClick={() => setCurrentSlide(index)}
                   className={`transition-all duration-300 ${
                     index === currentSlide
-                      ? "w-[34px] h-[15px] bg-[rgba(26,209,185,1)] rounded-[60px]"
-                      : "w-[16px] h-[15px] bg-[rgba(243,244,246,1)] rounded-[60px]"
+                      ? "w-[34px] h-[15px] bg-[var(--primary-teal)] rounded-[60px]"
+                      : "w-[16px] h-[15px] bg-[var(--background-halfwhite)] rounded-[60px]"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
@@ -130,7 +130,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             {/* Next Button */}
             <button
               onClick={nextSlide}
-              className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors border-gray-300 text-gray-600 hover:bg-gray-50"`}
+              className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(var(--text-dark-rgb),0.1)] transition-colors border-[var(--border-light)] text-[var(--text-grey)] hover:bg-gray-50"`}
               aria-label="Next slide"
             >
               <Image
@@ -167,7 +167,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       <ButtonSm
                         url="#"
                         text={study.ctaText}
-                        bgColor="[#795CF5]"
+                        bgColor="var(--primary-purple)"
                         textColor="white"
                         isBorder
                         icon={<ArrowUpRight size={18} />}
@@ -175,7 +175,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
 
                     </div>
                     <div className="relative flex bg-[var(--background-halfwhite)] w-full lg:max-w-[60%] xl:max-w-[70%] 2xl:max-w-[73%] lg:rounded-b-[28px] rounded-b-[20px] ">
-                      <div className="absolute z-[-100] left-[-5.4rem] md:left-[-5.8rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] rotate-180 shadow-[0_2.5rem_0_0_#f3f4f6]" />
+                      <div className="absolute z-[-100] left-[-5.4rem] md:left-[-5.8rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] rotate-180 shadow-[0_2.5rem_0_0_var(--background-halfwhite)]" />
                     </div>
                   </div> */}
                 </div>
@@ -197,7 +197,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       <p className="font-semibold text-[32px] font-['Onest']  md:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
                         {study.author}
                       </p>
-                      <p className="px-4 py-2 font-medium text-base leading-[150%] text-[var(--primary-purple)] w-fit bg-[#F1EEFE] rounded-full">
+                      <p className="px-4 py-2 font-medium text-base leading-[150%] text-[var(--primary-purple)] w-fit bg-[var(--background-purple-light)] rounded-full">
                         {study.position}
                       </p>
                     </div>
@@ -218,7 +218,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       className="w-full h-full"
                     />
                   </div>
-                  <p className="text-[[var(--text-dark)]] p-4 lg:p-6 italic text-xl leading-8 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
+                  <p className="text-[var(--text-dark)] p-4 lg:p-6 italic text-xl leading-8 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
                     “{study.quote}”
                   </p>
                 </div>
@@ -228,7 +228,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               <div className="md:hidden flex justify-center items-center gap-2 lg:mb-[10px]">
                 <button
                   onClick={prevSlide}
-                  className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] border transition-colors border-gray-300 text-gray-600 hover:bg-gray-50`}
+                  className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(var(--text-dark-rgb),0.1)] border transition-colors border-[var(--border-light)] text-[var(--text-grey)] hover:bg-gray-50`}
                   aria-label="Previous slide"
                 >
                   <Image
@@ -249,8 +249,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       onClick={() => setCurrentSlide(index)}
                       className={`transition-all duration-300 ${
                         index === currentSlide
-                          ? "w-[34px] h-[15px] bg-[rgba(26,209,185,1)] rounded-[60px]"
-                          : "w-[16px] h-[15px] bg-[rgba(243,244,246,1)] rounded-[60px]"
+                          ? "w-[34px] h-[15px] bg-[var(--primary-teal)] rounded-[60px]"
+                          : "w-[16px] h-[15px] bg-[var(--background-halfwhite)] rounded-[60px]"
                       }`}
                       aria-label={`Go to slide ${index + 1}`}
                     />
@@ -260,7 +260,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                 {/* Next Button */}
                 <button
                   onClick={nextSlide}
-                  className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)] transition-colors border-gray-300 text-gray-600 hover:bg-gray-50`}
+                  className={`p-2 rounded-full border shadow-[0_4px_6px_-4px_rgba(var(--text-dark-rgb),0.1)] transition-colors border-[var(--border-light)] text-[var(--text-grey)] hover:bg-gray-50`}
                   aria-label="Next slide"
                 >
                   <Image
@@ -279,7 +279,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                 <ButtonOutline
                   url="#"
                   text="View All Case Studies"
-                  borderColor="[#795CF5]"
+                  borderColor="var(--primary-purple)"
                   textColor="white"
                 />
               </div> */}

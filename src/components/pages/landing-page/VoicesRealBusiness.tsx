@@ -38,7 +38,7 @@ const VoicesRealBusiness = () => {
           slides={otherBrands}
           renderSlide={(brandItem) => (
             <div className="relative z-10 bg-white py-4 lg:px-[68px] my-10 rounded-2xl 
-      border border-[#666666]/40 flex justify-center items-center">
+      border border-[var(--text-grey)]/40 flex justify-center items-center">
               <Image
                 src={brandItem.logo}
                 alt={brandItem.name}
