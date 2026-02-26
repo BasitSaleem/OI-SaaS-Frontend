@@ -1,8 +1,10 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useCallback, useMemo, useEffect, useState, useRef } from "react";
 import { FeatureCategory, PricingPlan } from "./types";
 import PricingTabs from "./PricingTabs";
 import Tooltip from "@/components/toolTip/Tooltip";
+import Image from "next/image";
+import { useDevice } from "@/hooks/useDevice";
 
 interface ComparisonTableProps {
   categories: FeatureCategory[];
@@ -17,28 +19,17 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
   onTabChange,
   plans,
 }) => {
+  const { isMobile: isSmallScreen } = useDevice();
   const [isVisible, setIsVisible] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Filter out custom plans (like "Let's Talk") from the comparison table
-  const tablePlans = plans.filter((p) => !p.isCustom);
+  const tablePlans = useMemo(() => plans.filter((p) => !p.isCustom), [plans]);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
   };
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 600);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,15 +54,16 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
     };
   }, [isVisible, plans]); // Re-calculate when visibility or plans change
 
-  const renderFeatureValue = (value: string | boolean) => {
+  const renderFeatureValue = useCallback((value: string | boolean) => {
     if (typeof value === "boolean") {
       return value ? (
         <div className="flex items-center justify-center">
-          <img
-            src="./assets/owners-inventory-pricing/compare-feature/tick-icon.svg"
+          <Image
+            src="/assets/owners-inventory-pricing/compare-feature/tick-icon.svg"
             className="xl:h-[28px] md:h-6 md:w-[18px] w-3 h-[24px]"
             alt="Tick icon"
-            loading="lazy"
+            width={28}
+            height={28}
           />
         </div>
       ) : (
@@ -81,7 +73,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       );
     }
     return <div className="text-center">{value}</div>;
-  };
+  }, []);
 
   return (
     <section className="compare-section mt-20 md:mt-28 lg:mt-[100px]">
@@ -91,14 +83,18 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
           className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[var(--primary-purple)] text-white rounded-full text-base leading-[170%] font-semibold font-['Onest'] w-fit whitespace-nowrap"
         >
           Compare Feature List
-          <img
-            src="./assets/owners-inventory-pricing/compare-feature/arrow-down.svg"
+          <Image
+            src="/assets/owners-inventory-pricing/compare-feature/arrow-down.svg"
             alt="Dropdown icon"
+            width={20}
+            height={20}
             className={`arrow-down ${isVisible ? "hidden" : "block"}`}
           />
-          <img
-            src="./assets/owners-inventory-pricing/compare-feature/arrow-up.svg"
+          <Image
+            src="/assets/owners-inventory-pricing/compare-feature/arrow-up.svg"
             alt="Dropdown icon"
+            width={20}
+            height={20}
             className={`arrow-up ${isVisible ? "block" : "hidden"}`}
           />
         </button>
@@ -164,36 +160,23 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             <div className="flex flex-col items-start justify-center gap-1">      
                               {/* Title + Tooltip */}
                               <div className="flex items-center gap-3">
-                                <span
-                                  className={`${
-                                    isSmallScreen
-                                      ? ""
-                                      : ""
-                                  }`}
-                                >
+                                <span>
                                   {feature.name}
                                 </span>
 
                                 {feature.info && (
                                   <div className="relative group inline-block">
-                                    <img
+                                    <Image
                                       src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
                                       className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
                                       alt="Info Icon"
-                                      loading="lazy"
+                                      width={12}
+                                      height={12}
                                     />
-
-                                    {/* Tooltip (opens upward) */}
                                     <Tooltip
                                       text={feature?.infoText}
                                       isComparisonToolTip
                                     />
-                                    {/* <div className="absolute left-[-20px] bottom-[120%] z-[999] hidden group-hover:flex flex-col items-start">
-                                      <div className="rounded-xl border border-[var(--primary-purple)] bg-white px-4 py-2 text-xs leading-4 font-normal text-[var(--text-dark)] shadow-lg w-[150px] md:w-[200px] lg:w-[250px]">
-                                        {feature.infoText}
-                                      </div>
-                                      <div className="w-2 h-2 rotate-45 bg-white border-b border-r border-[var(--primary-purple)] -mt-1 ms-5"></div>
-                                    </div> */}
                                   </div>
                                 )}
                               </div>
@@ -271,9 +254,6 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                       : "/month"}
                                 </span>
                               </p>
-                              {/* <p className="text-[10px] md:text-xs text-[var(--text-dark)] leading-[100%] font-normal font-['Onest']">
-                                {plan.description}
-                              </p> */}
                               <a
                                 href="#"
                                 className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"

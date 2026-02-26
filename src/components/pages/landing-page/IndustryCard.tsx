@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useDevice } from "@/hooks/useDevice";
 import { ArrowUpRight } from "lucide-react";
 
 interface IndustryCardProps {
@@ -23,18 +24,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
   onClick,
   isHovered = false,
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 767);
-    };
-
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
+  const { isMobile } = useDevice();
 
   const shouldShowDescription = isMobile || isHovered;
   const titleColor = isMobile

@@ -8,7 +8,7 @@ import PricingTabs from "./PricingTabs";
 import PricingCards from "./PricingCards";
 import IndustryTabs from "./IndustryTabs";
 import {
-  PRICING_DATA,
+  pricingConfig,
   BusinessType,
   PRICING_HERO_CONTENT,
 } from "./tableConfig";
@@ -164,7 +164,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
               {/* Pricing Cards */}
               <div className="w-full mt-10 md:mt-14 xl:mt-20">
                 <PricingCards
-                  plans={PRICING_DATA[activeBusinessTab].plans}
+                  plans={pricingConfig[activeBusinessTab].plans}
                   isYearly={activeTab === "yearly"}
                 />
               </div>

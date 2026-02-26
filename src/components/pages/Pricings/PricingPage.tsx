@@ -4,7 +4,7 @@ import "../../../app/globals.css"
 
 import PricingCards from './PricingCards';
 import ComparisonTable from './ComparisonTable';
-import { PRICING_DATA, featureCategories, BusinessType } from './tableConfig';
+import { pricingConfig, commonCategories, BusinessType } from './tableConfig';
 import PricingHero from './PricingHero';
 import FaqSection from '../landing-page/FAQSection';
 import CalltoActionBottom from '../landing-page/CalltoActionBottom';
@@ -20,7 +20,7 @@ const PricingPage: React.FC = () => {
     setActiveTab(tab);
   };
 
-  const businessData = PRICING_DATA[activeBusinessTab];
+  const businessData = pricingConfig[activeBusinessTab];
 
   return (
     <div className="min-h-screen">
@@ -42,7 +42,7 @@ const PricingPage: React.FC = () => {
         
         {/* Comparison Table */}
         <ComparisonTable 
-          categories={businessData.categories && businessData.categories.length > 0 ? businessData.categories : featureCategories} 
+          categories={businessData.categories && businessData.categories.length > 0 ? businessData.categories : commonCategories} 
           tab={activeTab} 
           onTabChange={setActiveTab} 
           plans={businessData.plans}

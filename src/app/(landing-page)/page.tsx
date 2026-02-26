@@ -6,18 +6,20 @@ import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 
 import HeroSection2 from "@/components/common-components/HeroSection2";
 import TrustedBySection from "@/components/common-components/TrustedBySection";
-import TurningChaos from "@/components/pages/landing-page/TurningChaos";
-import CaseStudies from "@/components/pages/landing-page/CaseStudy";
-import SmartWaytoSyncndSellSection from "@/components/pages/landing-page/SmartWaytoSyncndSellSection";
-import UnifiedPlatform from "@/components/pages/landing-page/UnifiedPlatform";
-import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
-import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
-import PosIconsSection from "@/components/pages/landing-page/Smartway";
-import ToolsSection from "@/components/pages/landing-page/ToolsSection";
-import SmartTools from "@/components/pages/landing-page/SmartTools";
-import FaqSection from "@/components/pages/landing-page/FAQSection";
-import CalltoActionBottom from "@/components/pages/landing-page/CalltoActionBottom";
-import FeaturesTabSection from "@/components/pages/landing-page/FeaturesTabSection";
+import dynamic from "next/dynamic";
+
+const TurningChaos = dynamic(() => import("@/components/pages/landing-page/TurningChaos"), { ssr: true });
+const CaseStudies = dynamic(() => import("@/components/pages/landing-page/CaseStudy"), { ssr: true });
+const FeaturesTabSection = dynamic(() => import("@/components/pages/landing-page/FeaturesTabSection"), { ssr: true });
+const SmartWaytoSyncndSellSection = dynamic(() => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection"), { ssr: true });
+const UnifiedPlatform = dynamic(() => import("@/components/pages/landing-page/UnifiedPlatform"), { ssr: true });
+const VoicesRealBusiness = dynamic(() => import("@/components/pages/landing-page/VoicesRealBusiness"), { ssr: true });
+const IndustryPosShowcase = dynamic(() => import("@/components/pages/landing-page/IndustryPosShowcase"), { ssr: true });
+const PosIconsSection = dynamic(() => import("@/components/pages/landing-page/Smartway"), { ssr: true });
+const ToolsSection = dynamic(() => import("@/components/pages/landing-page/ToolsSection"), { ssr: true });
+const SmartTools = dynamic(() => import("@/components/pages/landing-page/SmartTools"), { ssr: true });
+const FaqSection = dynamic(() => import("@/components/pages/landing-page/FAQSection"), { ssr: true });
+const CalltoActionBottom = dynamic(() => import("@/components/pages/landing-page/CalltoActionBottom"), { ssr: true });
 
 import {
   HOME_FAQS,

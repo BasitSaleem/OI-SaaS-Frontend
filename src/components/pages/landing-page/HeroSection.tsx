@@ -9,6 +9,7 @@ import InputField from "@/components/form-fields/InputField";
 import ButtonLg from "@/components/button/ButtonLg";
 import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
+import { useDevice } from "@/hooks/useDevice";
 import Image from "next/image";
 
 if (typeof window !== "undefined") {
@@ -40,18 +41,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   children,
   variant = "animation1",
 }) => {
-  const [isTablet, setIsTablet] = useState(false);
-
-  // Detect tablet screen size
-  useEffect(() => {
-    const checkTablet = () => {
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-    };
-
-    checkTablet();
-    window.addEventListener("resize", checkTablet);
-    return () => window.removeEventListener("resize", checkTablet);
-  }, []);
+  const { isTablet } = useDevice();
 
   useHeaderAnimation();
   useHeroAnimations(variant);
@@ -75,15 +65,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* HERO BODY */}
         <div className="md:py-[1px] bg-[var(--background-halfwhite)]  rounded-[20px] lg:rounded-[40px]">
            <div
-              className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
-              style={
-                {
-                  // background image is painted in CSS ::before using this variable
-                  ["--hero-bg" as any]:
-                    "url('/assets/home-page-images/hero-bg.webp')",
-                } as React.CSSProperties
-              }
-            >
+            className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
+          >
+            {/* Background Image Optimization */}
+            <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
+              <Image
+                src="/assets/home-page-images/hero-bg.webp"
+                alt="Background"
+                fill
+                priority
+                className="object-cover object-center"
+              />
+            </div>
             {/* Heading */}
             <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full">
               <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[var(--text-dark)]">

@@ -101,7 +101,7 @@ export const LANDING_FEATURES = [
         title: "Smart POS System for Modern Retail",
         icon: "/assets/features-section/pos-system.svg",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/screen1.webm",
-        imageSrc: "/assets/home-page-images/animations/screen1-tab.webp",
+        imageSrc: "/assets/home-page-images/animations/screen6-tab.webp",
         tabIndex: 1,
         iconWidth: 20,
         iconHeight: 20,

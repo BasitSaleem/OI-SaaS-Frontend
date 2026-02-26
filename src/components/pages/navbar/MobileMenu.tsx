@@ -549,7 +549,7 @@ export default function OffcanvasMenu({
                                 alt={item.title}
                                 width={16}
                                 height={16}
-                                loading="lazy"
+                                priority
                               />
                               <span className="ml-2 text-sm font-[500] text-[var(--text-dark)] hover:font-semibold flex-1">
                                 {item.title}

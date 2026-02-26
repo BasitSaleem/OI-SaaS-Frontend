@@ -306,7 +306,7 @@ export default function FeaturesTabSection() {
                     alt={feature.title}
                     width={300}
                     height={300}
-                    className="w-full h-full object-contain overflow-hidden bg-transparent rounded-3xl"
+                    className="w-full h-full object-contain lg:object-cover overflow-hidden bg-transparent rounded-3xl"
                     priority={index === 0}
                   />
                 ) : isInView ? (
@@ -320,6 +320,7 @@ export default function FeaturesTabSection() {
                     loop={false}
                     playsInline
                     preload="metadata"
+                    poster={feature.imageSrc}
                   >
                     <source src={feature.videoSrc} type="video/webm" />
                     Your browser does not support the video tag.
@@ -403,6 +404,7 @@ export default function FeaturesTabSection() {
                       loop={false}
                       playsInline
                       preload="metadata"
+                      poster={feature.imageSrc}
                     >
                       <source src={feature.videoSrc} type="video/webm" />
                       Your browser does not support the video tag.
