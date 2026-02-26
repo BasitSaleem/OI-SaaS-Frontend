@@ -153,7 +153,7 @@ body {
 /* Wrapper for complete website styling ended here */
 
 .real-voices {
-  background-image: url(../../public/assets/home-page-images/voices-sectionbg.webp);
+  background-image: url(/assets/home-page-images/voices-sectionbg.webp);
 }
 
 

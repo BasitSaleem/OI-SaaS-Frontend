@@ -88,7 +88,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       <div className="wrapper mx-auto flex items-center justify-center">
         <button
           onClick={toggleVisibility}
-          className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[var(--primary-purple)] text-white rounded-full text-xs md:text-lg leadign-[100%] font-semibold font-['Onest'] w-fit whitespace-nowrap"
+          className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[var(--primary-purple)] text-white rounded-full text-base leading-[170%] font-semibold font-['Onest'] w-fit whitespace-nowrap"
         >
           Compare Feature List
           <img
@@ -118,8 +118,8 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         </div>
 
         {/* Progress Bar for Mobile/Tablet */}
-        <div className="lg:hidden md:w-2/3 w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center  w-full mb-6 ">
-          <div className="h-1.5  w-full md:order-1 order-2 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden">
+        <div className="lg:hidden  w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center  w-full mb-6 ">
+          <div className="h-1.5 md:w-2/3  w-full md:order-1 order-2 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] transition-all duration-200 ease-out"
               style={{ width: `${scrollProgress}%` }}
@@ -144,8 +144,8 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                     <thead>
                       <tr>
                         <th className="text-center md:h-[150px] h-[110px] p-[7.8px] md:p-[15.8px]">
-                          <div className="flex flex-col items-center text-sm md:text-base lg:text-lg bg-[var(--background-halfwhite)] font-semibold text-[var(--text-dark)] rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4">
-                            {category.name}
+                          <div className="flex flex-col capitalize items-center font-['onest'] text-sm md:text-base lg:text-lg bg-[var(--background-halfwhite)] font-semibold text-[var(--text-dark)] rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4">
+                            {category.name.toLowerCase()}
                           </div>
                         </th>
                       </tr>
@@ -155,19 +155,19 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                         <tr key={featureIndex} style={{ height: "68px" }}>
                           <td
                             className={`
-                               px-4 text-left text-sm md:text-base lg:text-lg leading-6
+                               px-4 text-left font-['onest'] text-sm md:text-base lg:text-lg leading-6
                                 text-[var(--text-dark)] font-normal 
                                 border-b border-[var(--primary-teal)]
                               `}
                             style={{ height: "68px", verticalAlign: "middle" }}
                           >
-                            <div className="flex flex-col items-start justify-center gap-1">
+                            <div className="flex flex-col items-start justify-center gap-1">      
                               {/* Title + Tooltip */}
                               <div className="flex items-center gap-3">
                                 <span
                                   className={`${
                                     isSmallScreen
-                                      ? "max-w-[70px] truncate flex-shrink"
+                                      ? ""
                                       : ""
                                   }`}
                                 >
@@ -253,10 +253,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               className="flex flex-col items-center rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4"
                               style={{ backgroundColor: plan.bgColor }}
                             >
-                              <h4 className="text-sm md:text-base lg:text-lg text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
+                              <p className="text-sm md:text-base lg:text-lg text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
                                 {plan.name}
-                              </h4>
-                              <h3
+                              </p>
+                              <p
                                 className="text-base md:text-lg lg:text-xl font-bold leading-[100%] font-['Onest']"
                                 style={{ color: plan.color }}
                               >
@@ -270,13 +270,13 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                       ? "/month"
                                       : "/month"}
                                 </span>
-                              </h3>
+                              </p>
                               {/* <p className="text-[10px] md:text-xs text-[var(--text-dark)] leading-[100%] font-normal font-['Onest']">
                                 {plan.description}
                               </p> */}
                               <a
                                 href="#"
-                                className="inline-block w-fit items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
+                                className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
                                 style={
                                   {
                                     backgroundColor: plan.color,

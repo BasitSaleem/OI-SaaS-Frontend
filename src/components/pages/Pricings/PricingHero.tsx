@@ -138,8 +138,8 @@ const PricingHero: React.FC<PricingHeroProps> = ({
               } as React.CSSProperties
             }
           >
-            <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
-             
+            <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper px-4">
+ 
                <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest'] lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
                     {PRICING_HERO_CONTENT.title}
                   </h1>

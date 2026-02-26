@@ -1,7 +1,6 @@
 import PricingPageIcon from "@/components/icons/pricingPageIcons";
 import React, { useState } from "react";
 
-
 export type BusinessType = "Retail" | "Manufacturing" | "Ecommerce" | "Hybrid";
 
 interface Tab {
@@ -16,25 +15,25 @@ const tabs: Tab[] = [
     id: "Retail",
     iconName: "retail",
     title: "Retail",
-    description: "Perfect for stores, shops and multi locations business",
+    description: "Perfect for stores, shops and multi locations business.",
   },
   {
     id: "Manufacturing",
     iconName: "manufacturing",
     title: "Manufacturing",
-    description: "Built for production floors and factories",
+    description: "Built for production floors and factories.",
   },
   {
     id: "Ecommerce",
     iconName: "ecommerce",
     title: "Ecommerce",
-    description: "Grow your online store with ease",
+    description: "Grow your online store with ease.",
   },
   {
     id: "Hybrid",
     iconName: "hybrid",
     title: "Hybrid",
-    description: "All features, all location one platform",
+    description: "All features, all location one platform.",
   },
 ];
 
@@ -50,10 +49,12 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
   const [hoveredTab, setHoveredTab] = useState<BusinessType | null>(null);
 
   return (
-    <div className="w-full max-w-[1312px] mx-auto mt-12 md:mt-16 lg:mt-20 px-4">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-[var(--text-dark)] text-center font-['Onest'] mb-8 md:mb-12">
-        Flexible Plans for Every Business Type
-      </h2>
+    <div className="w-full wrapper">
+    <div className="mt-12 md:mt-16 lg:mt-20 ">
+      
+        <h2 className="text-[32px] leading-[130%] lg:text-5xl font-semibold lg:font-medium text-[var(--text-dark)] text-center font-['Onest'] mb-8 md:mb-12">
+          Flexible Plans for Every Business Type
+        </h2>
 
         <div className="bg-white/24 border border-white backdrop-blur-md rounded-[16px] lg:rounded-[30px] p-2 lg:p-6 flex lg:grid lg:grid-cols-4 overflow-x-auto lg:overflow-x-visible gap-4 no-scrollbar snap-x snap-mandatory lg:snap-none">
           {tabs.map((tab) => {
@@ -87,16 +88,16 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
                     />
                   </div>
                   <div className="flex flex-col">
-                  <span
-                    className={`text-lg leading-[140%] lg:text-xl font-medium font-['Onest'] transition-colors ${isActive || isHovered ? "text-[var(--text-dark)]" : "text-[var(--text-dark)]"}`}
-                  >
-                    {tab.title}
-                  </span>
-                  <p
-                  className={`text-xs md:text-sm md:block hidden leading-relaxed font-['Onest'] transition-colors ${isActive || isHovered ? "text-[var(--text-grey)]" : "text-[var(--text-grey)]"}`}
-                >
-                  {tab.description}
-                </p>
+                    <span
+                      className={`text-lg leading-[140%] lg:text-xl font-medium font-['Onest'] transition-colors ${isActive || isHovered ? "text-[var(--text-dark)]" : "text-[var(--text-dark)]"}`}
+                    >
+                      {tab.title}
+                    </span>
+                    <p
+                      className={`text-xs md:text-sm md:block hidden leading-relaxed font-['Onest'] transition-colors ${isActive || isHovered ? "text-[var(--text-grey)]" : "text-[var(--text-grey)]"}`}
+                    >
+                      {tab.description}
+                    </p>
                   </div>
                 </div>
               </button>
@@ -104,6 +105,7 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
           })}
         </div>
       </div>
+    </div>
   );
 };
 

@@ -30,7 +30,7 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="font-onset overflow-x-hidden">
+      <div className="font-onest overflow-x-hidden">
           <HeroSection2
             title={HOME_PAGE_CONTENT.hero.title}
             description={HOME_PAGE_CONTENT.hero.description}

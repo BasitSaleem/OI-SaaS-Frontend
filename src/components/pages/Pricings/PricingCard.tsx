@@ -165,7 +165,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
       }`}
     >
       <div
-        className={`flex flex-col items-stretch justify-start flex-1 px-4 py-5 bg-white rounded-[30px] w-full snap-start transition-all duration-300 relative shadow-lg`}
+        className={`flex flex-col items-stretch justify-start flex-1 px-4 py-4 bg-white rounded-[30px] w-full snap-start transition-all duration-300 relative`}
       >
         {plan.popular && (
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">
@@ -174,9 +174,10 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
         )}
 
         {plan.isCustom ? (
-          <div className="flex flex-col items-center justify-center flex-grow py-8 text-center">
+          <div className="relative flex flex-col items-center justify-center  flex-grow py-4 text-center">
+            <div className="absolute z-1 left-1 top-10  h-40 w-40 blur-3xl rounded-full bg-[#1AD1B9]"></div>
             <div className="mb-8">
-              <div className="w-48 h-48 mx-auto relative">
+              <div className="relative z-3 w-48 h-48 mx-auto relative">
                 <Image
                   src="/assets/owners-inventory-pricing/lets-talk.svg"
                   alt="Let's Talk"
@@ -186,19 +187,19 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
               </div>
             </div>
             <h3 className="text-5xl font-bold text-[var(--text-dark)] mb-6 font-['Onest']">
-              Let&apos;s <span className="text-[var(--primary-purple)]">Talk</span>
+              Let's <span className="text-[var(--primary-purple)]">Talk</span>
             </h3>
-            <p className="text-sm text-[var(--text-dark)]/60 font-['Onest'] mb-10 max-w-[280px]">
+            <p className="text-sm text-[var(--text-dark)]/60 font-['Onest'] mb-10">
               {plan.description}
             </p>
             <button className="w-full py-4 rounded-full font-bold text-white bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] transition-colors mt-auto">
-              Let&apos;s Connect
+              Let's Connect
             </button>
           </div>
         ) : (
           <>
             <div className="text-left mb-5">
-              <h3 className="text-[28px] text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
+              <h3 className="text-[24px] lg:text-[28px] text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
             {plan.name}
           </h3>
           <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5">
@@ -208,7 +209,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
 
         <div className={`flex items-baseline gap-1 ${isYearly ? 'mb-0' : 'mb-8'}`}>
           <span
-            className="text-4xl leading-[100%] font-bold font-['Onest']"
+            className="text-4xl leading-[100%] font-semibold font-['Onest']"
             style={{ color: plan.color }}
           >
             ${basePrice}
@@ -218,10 +219,10 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
           </span>
         </div>
 
-        {isYearly && <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5 mb-8">Billed yearly</p>}
+        {isYearly && <p className="text-xs leading-[160%] text-[var(--text-grey)] font-['Onest'] mt-1.5 mb-8">Billed yearly</p>}
 
         <button
-          className="w-full py-4 rounded-full text-base font-['Onest'] font-bold text-white mb-8 transition-opacity hover:opacity-90"
+          className="w-full py-4 rounded-full text-base font-['Onest'] font-semibold text-white mb-8 transition-opacity hover:opacity-90"
           style={{ backgroundColor: plan.color }}
         >
           Start 14-Day Free Trial
@@ -325,7 +326,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
               ))}
 
                <div className="flex justify-between items-center text-xs">
-                  <span className="text-sm font-medium leading-[160%] font-['onest'] text-[var(--text-muted-alt)]">Add-ons:</span>
+                  <span className="text-sm font-medium leading-[160%] font-['onest'] text-[var(--text-dark)]">Add-ons:</span>
                   <span className="text-sm font-medium leading-[160%] font-['onest'] text-[var(--text-dark)]">
                     +${addOnTotal}/mo
                   </span>

@@ -170,87 +170,79 @@ const icons = {
   ),
   ecommerce: (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M12 10.6667H28"
-        stroke="#231F20"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M2.66699 2.6665H4.987C6.427 2.6665 7.56033 3.9065 7.44033 5.33317L6.33366 18.6132C6.14699 20.7865 7.86698 22.6532 10.0537 22.6532H24.2537C26.1737 22.6532 27.8537 21.0798 28.0003 19.1732L28.7203 9.17318C28.8803 6.95984 27.2003 5.15983 24.9737 5.15983H7.76034"
-        stroke="#231F20"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M21.6667 29.3333C22.5871 29.3333 23.3333 28.5871 23.3333 27.6667C23.3333 26.7462 22.5871 26 21.6667 26C20.7462 26 20 26.7462 20 27.6667C20 28.5871 20.7462 29.3333 21.6667 29.3333Z"
-        stroke="#231F20"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M10.9997 29.3333C11.9201 29.3333 12.6663 28.5871 12.6663 27.6667C12.6663 26.7462 11.9201 26 10.9997 26C10.0792 26 9.33301 26.7462 9.33301 27.6667C9.33301 28.5871 10.0792 29.3333 10.9997 29.3333Z"
-        stroke="#231F20"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
+      <g clip-path="url(#clip0_5116_5568)">
+        <path
+          d="M9 19.25C9.9665 19.25 10.75 20.0335 10.75 21C10.75 21.9665 9.9665 22.75 9 22.75C8.0335 22.75 7.25 21.9665 7.25 21C7.25 20.0335 8.0335 19.25 9 19.25Z"
+          stroke="#333333"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M20 19.25C20.9665 19.25 21.75 20.0335 21.75 21C21.75 21.9665 20.9665 22.75 20 22.75C19.0335 22.75 18.25 21.9665 18.25 21C18.25 20.0335 19.0335 19.25 20 19.25Z"
+          stroke="#333333"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+          stroke="#333333"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_5116_5568">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   ),
 
   ecommerceHover: (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M12 10.6667H28"
-        stroke="#F95C5B"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M2.66699 2.6665H4.987C6.427 2.6665 7.56033 3.9065 7.44033 5.33317L6.33366 18.6132C6.14699 20.7865 7.86698 22.6532 10.0537 22.6532H24.2537C26.1737 22.6532 27.8537 21.0798 28.0003 19.1732L28.7203 9.17318C28.8803 6.95984 27.2003 5.15983 24.9737 5.15983H7.76034"
-        stroke="#795CF5"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M21.6667 29.3333C22.5871 29.3333 23.3333 28.5871 23.3333 27.6667C23.3333 26.7462 22.5871 26 21.6667 26C20.7462 26 20 26.7462 20 27.6667C20 28.5871 20.7462 29.3333 21.6667 29.3333Z"
-        stroke="#F95C5B"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M10.9997 29.3333C11.9201 29.3333 12.6663 28.5871 12.6663 27.6667C12.6663 26.7462 11.9201 26 10.9997 26C10.0792 26 9.33301 26.7462 9.33301 27.6667C9.33301 28.5871 10.0792 29.3333 10.9997 29.3333Z"
-        stroke="#F95C5B"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
+      <g clip-path="url(#clip0_5116_5564)">
+        <path
+          d="M9 19.25C9.9665 19.25 10.75 20.0335 10.75 21C10.75 21.9665 9.9665 22.75 9 22.75C8.0335 22.75 7.25 21.9665 7.25 21C7.25 20.0335 8.0335 19.25 9 19.25Z"
+          stroke="#1AD1B9"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M20 19.25C20.9665 19.25 21.75 20.0335 21.75 21C21.75 21.9665 20.9665 22.75 20 22.75C19.0335 22.75 18.25 21.9665 18.25 21C18.25 20.0335 19.0335 19.25 20 19.25Z"
+          stroke="#1AD1B9"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+          stroke="#F95C5B"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_5116_5564">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   ),
 
@@ -317,8 +309,6 @@ const icons = {
       />
     </svg>
   ),
-
-  
 };
 
 export default function PricingPageIcon({

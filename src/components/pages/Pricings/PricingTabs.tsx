@@ -17,7 +17,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
       <div className="flex items-center gap-3">
         {/* Monthly Label */}
         <span
-          className={`text-sm md:text-base font-['Onest'] font-semibold ${
+          className={`text-base font-['Onest'] font-semibold ${
             activeTab === "monthly" ? "text-[var(--text-dark)]" : "text-gray-400"
           }`}
         >
@@ -45,7 +45,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
 
         {/* Yearly Label */}
         <span
-          className={`text-sm md:text-base font-['Onest'] font-semibold ${
+          className={`text-base font-['Onest'] font-semibold ${
             activeTab === "yearly" ? "text-[var(--text-dark)]" : "text-gray-400"
           }`}
         >
@@ -61,7 +61,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
       <button
         onClick={() => onTabChange("monthly")}
         className={`tab-btn px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-[14px] 
-          text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full 
+          text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
           transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
             activeTab === "monthly"
               ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
@@ -77,7 +77,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         <button
           onClick={() => onTabChange("yearly")}
           className={`tab-btn relative px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-3.5
-            text-[10px] md:text-xs lg:text-base font-['Onest'] font-semibold border rounded-full 
+           text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
             transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
               activeTab === "yearly"
                 ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
