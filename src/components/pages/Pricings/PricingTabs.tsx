@@ -56,7 +56,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
   }
 
   return (
-    <div className="inline-flex p-1 lg:p-2 mt-10 xl:mt-20 border border-transparent rounded-full bg-white">
+    <div className="inline-flex gap-2 p-1 lg:p-2 mt-10 xl:mt-20 border border-transparent rounded-full bg-white">
       {/* Monthly Button */}
       <button
         onClick={() => onTabChange("monthly")}

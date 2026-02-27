@@ -94,7 +94,7 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
                       {tab.title}
                     </span>
                     <p
-                      className={`text-xs md:text-sm md:block hidden leading-relaxed font-['Onest'] transition-colors ${isActive || isHovered ? "text-[var(--text-grey)]" : "text-[var(--text-grey)]"}`}
+                      className={`text-xs md:text-base md:block hidden leading-relaxed font-['Onest'] transition-colors ${isActive || isHovered ? "text-[var(--text-grey)]" : "text-[var(--text-grey)]"}`}
                     >
                       {tab.description}
                     </p>

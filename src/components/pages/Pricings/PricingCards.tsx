@@ -13,7 +13,7 @@ const PricingCards: React.FC<PricingCardsProps> = ({ plans, isYearly, industryKe
     <div className="">
       <div className="owner-inventory-hero-section__pricing-cards mt-10 pt-4 md:mt-10 xl:mt-16 w-full max-w-[1312px] flex lg:grid lg:grid-cols-3 items-stretch overflow-x-auto lg:overflow-x-visible gap-4 xl:gap-6 no-scrollbar snap-x snap-mandatory">
         {plans.map((plan, index) => (
-          <div key={plan.id} className="min-w-[280px] sm:min-w-[340px] md:min-w-[300px] lg:min-w-0 snap-center flex flex-col">
+          <div key={plan.id} className="min-w-[280px] sm:min-w-[340px] md:min-w-[340px] lg:min-w-0 snap-center flex flex-col">
             <PricingCard
               plan={plan}
               isYearly={isYearly}

@@ -123,11 +123,12 @@ const PricingHero: React.FC<PricingHeroProps> = ({
             </div>
 
             {/* Right Shape */}
-            <div className="relative w-40 rounded-tr-[40px] rounded-tr-[40px] rounded-tl-[40px] lg:rounded-tl-none h-20 md:w-1/2 2xl:w-[400px] lg:h-20 bg-[var(--background-halfwhite)] ">
+            <div className="relative w-40 rounded-tr-[30px] lg:rounded-tr-[40px] rounded-tl-[20px] lg:rounded-tl-none h-20 md:w-1/2 2xl:w-[400px] lg:h-20 bg-[var(--background-halfwhite)] ">
               <div className="absolute right-[-6rem] bottom-0 w-24 h-full bg-transparent rounded-bl-[40px] shadow-[0_2.5rem_0_0_var(--background-halfwhite)]" />
             </div>
           </div>
 
+   <div className="p-[1px] bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] ">
           <div
             className="relative hero-bg-circle  flex flex-col items-center justify-center w-full overflow-hidden pt-10 pb-6 md:py-14 lg:py-0 lg:pb-10 bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px] "
             style={
@@ -140,7 +141,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
           >
             <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper px-4">
  
-               <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest'] lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
+               <h1 className="text-center xl:text-[64px] md:text-5xl  text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest'] lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
                     {PRICING_HERO_CONTENT.title}
                   </h1>
 
@@ -171,6 +172,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
               </div>
 
             </div>
+          </div>
           </div>
         </section>
       </div>

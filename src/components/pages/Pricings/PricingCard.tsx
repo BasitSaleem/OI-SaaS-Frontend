@@ -111,37 +111,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
     });
   }, [plan.features]);
 
-  const displayFeatures = useMemo(() => {
-    if (planIndex === undefined || !industryKeyFeatures || industryKeyFeatures.length === 0) {
-      return plan.features;
-    }
+  const displayFeatures = plan.features;
 
-    return industryKeyFeatures.map((f) => {
-      const value =
-        planIndex === 0
-          ? f.basic
-          : planIndex === 1
-            ? f.standard
-            : planIndex === 2
-              ? f.professional
-              : f.premium;
-
-      const isAddon = typeof value === "string" && value.includes("(Add-on)");
-      
-      if (isAddon) {
-        return `${f.name} (Add-on available)`;
-      }
-
-      if (value === true || value === "TRUE") return f.name;
-      if (value === false || value === "—" || value === "FALSE") return null;
-
-      if (typeof value === "string" && (value === "Unlimited" || /^\d+/.test(value))) {
-        return `${value} ${f.name}`;
-      }
-
-      return value?.toString() || f.name;
-    }).filter(Boolean) as string[];
-  }, [industryKeyFeatures, planIndex, plan.features]);
 
   const addOnTotal = useMemo(() => {
     let total = 0;
@@ -242,7 +213,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
               <h3 className="text-[24px] lg:text-[28px] text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
             {plan.name}
           </h3>
-          <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5">
+          <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5 ">
             {plan.description}
           </p>
         </div>

@@ -234,17 +234,17 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               className="flex flex-col items-center rounded-[10px] justify-center gap-[6px] md:h-[150px] h-[110px] p-2 md:p-4"
                               style={{ backgroundColor: plan.bgColor }}
                             >
-                              <p className="text-sm md:text-base lg:text-lg text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
+                              <p className="text-base md:text-lg  text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
                                 {plan.name}
                               </p>
                               <p
-                                className="text-base md:text-lg lg:text-xl font-bold leading-[100%] font-['Onest']"
+                                className="text-base md:text-xl font-bold leading-[100%] font-['Onest']"
                                 style={{ color: plan.color }}
                               >
                                 {displayPrice === 0
                                   ? "Free"
                                   : `$${displayPrice}`}
-                                <span className="text-xs">
+                                <span className="text-xs text-[#231F20]">
                                   {displayPrice === 0
                                     ? ""
                                     : tab === "yearly"
@@ -254,7 +254,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               </p>
                               <a
                                 href="#"
-                                className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-[10px] md:text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
+                                className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
                                 style={
                                   {
                                     backgroundColor: plan.color,
@@ -303,7 +303,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             return (
                               <div
                                 key={featureIndex}
-                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${
+                                className={`py-5 text-center font-['onest'] text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${
                                   isAddon ? "addon-container-cell" : (planIndex < tablePlans.length - 1 ? "border-r" : "")
                                 }`}
                                 style={{

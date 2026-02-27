@@ -16,6 +16,7 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 'Unlimited Users',
                 'Unlimited Products',
                 'Unlimited Orders & Invoices',
+                'Unlimited Purchases',
                 'Onboarding Assistance & Email Support'
             ]
         },
@@ -35,7 +36,9 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 'Unlimited Users',
                 'Unlimited Products',
                 'Unlimited Orders & Invoices',
-                'Onboarding Assistance & Email Support'
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support',
+                'Live Chat & Phone Support'
             ]
         },
         {
@@ -47,13 +50,16 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             color: '#5588DF',
             bgColor: 'rgba(85,136,223,0.1)',
             features: [
-                '3 Store',
-                '6 POS Terminal',
-                '1 Warehouse',
-                'Unlimited Users',
+                'Unlimited Store',
+                'Unlimited POS Terminal',
+                'Unlimited Warehouse',
+               'Unlimited Users',
                 'Unlimited Products',
                 'Unlimited Orders & Invoices',
-                'Onboarding Assistance & Email Support'
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support',
+                'Live Chat & Phone Support',
+                'Dedicated Account Manager'
             ]
         }
     ],

@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Owners Inventory",
-  description: "Get in touch with Owners Inventory for support, sales, or partnership inquiries.",
-  keywords: ["contact us", "support", "sales", "partnership", "Owners Inventory"],
+  title: "Contact Owners Inventory | Get in Touch",
+  description: "Have questions about Owners Inventory? Contact our team for product support, pricing details, demos, or partnership inquiries.",
   publisher: "Owners Inventory",
   robots: {
     index: true,
