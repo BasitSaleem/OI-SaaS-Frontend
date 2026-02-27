@@ -131,9 +131,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         </div>
 
         <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] p-[2px]">
-          <div className="flex w-full overflow-hidden bg-white rounded-[28px]">
+          <div className="flex w-full bg-white rounded-[28px]">
             {/* Left sticky column with feature names */}
-            <div className="bg-white sticky left-0 z-30 w-6/12 md:w-4/12 lg:w-3/12 border-r border-[var(--primary-teal)] shrink-0">
+            <div className="bg-white sticky left-0 z-30 w-6/12 md:w-4/12 lg:w-3/12 border-r border-[var(--primary-teal)] shrink-0 overflow-visible">
               <table className="table-auto w-full border-collapse">
                 {categories.map((category, categoryIndex) => (
                   <React.Fragment key={categoryIndex}>
@@ -153,32 +153,30 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             className={`
                                px-4 text-left font-['onest'] text-sm md:text-base lg:text-lg leading-6
                                 text-[var(--text-dark)] font-normal 
-                                border-b border-[var(--primary-teal)]
+                                ${category.name === 'Integration' && featureIndex === category.features.length - 1 ? '' : 'border-b border-[var(--primary-teal)]'}
                               `}
                             style={{ height: "68px", verticalAlign: "middle" }}
                           >
                             <div className="flex flex-col items-start justify-center gap-1">      
                               {/* Title + Tooltip */}
-                              <div className="flex items-center gap-3">
-                                <span>
+                              <div className="flex items-center w-full">
+                                <span className="w-5/6">
                                   {feature.name}
                                 </span>
 
-                                {feature.info && (
-                                  <div className="relative group inline-block">
-                                    <Image
-                                      src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
-                                      className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
-                                      alt="Info Icon"
-                                      width={12}
-                                      height={12}
-                                    />
-                                    <Tooltip
-                                      text={feature?.infoText}
-                                      isComparisonToolTip
-                                    />
-                                  </div>
-                                )}
+                                <div className="w-1/6 flex justify-end items-center relative group">
+                                  <Image
+                                    src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
+                                    className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
+                                    alt="Info Icon"
+                                    width={12}
+                                    height={12}
+                                  />
+                                  <Tooltip
+                                    text={feature?.infoText}
+                                    isComparisonToolTip
+                                  />
+                                </div>
                               </div>
 
                               {/* Subtitle */}
@@ -310,7 +308,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                 }`}
                                 style={{
                                   height: "68px",
-                                  borderBottom: isAddon
+                                  borderBottom: isAddon || (category.name === 'Integration' && featureIndex === category.features.length - 1)
                                     ? "none"
                                     : `1px solid ${plan.color}`,
                                   borderRightColor: isAddon ? "var(--addon-border)" : (planIndex === tablePlans.length - 1 ? "transparent" : plan.color),

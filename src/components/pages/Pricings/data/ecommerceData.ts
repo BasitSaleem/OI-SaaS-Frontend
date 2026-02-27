@@ -65,10 +65,10 @@ export const ecommerceData: { plans: PricingPlan[]; categories: FeatureCategory[
             name: 'Ecommerce',
             features: [
                 { name: 'Online Store', info: true, infoText: "Launch your own branded e-commerce website and custom-developed templates will be billed separately.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Templates & Themes', info: true, infoText: "Customize your website's appearance with pre-built and custom-developed templates.", basic: true, standard: true, professional: true, premium: true },
+                // { name: 'Templates & Themes', info: true, infoText: "Customize your website's appearance with pre-built and custom-developed templates.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Orders', info: true, infoText: "Monitor and fulfill orders – placed online.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Discounts', info: true, infoText: "Apply promotional price reductions to products.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Domains', info: true, infoText: "Manage customer records and order history in one place.", basic: true, standard: true, professional: true, premium: true }
+                // { name: 'Domains', info: true, infoText: "Manage customer records and order history in one place.", basic: true, standard: true, professional: true, premium: true }
             ]
         },
         {

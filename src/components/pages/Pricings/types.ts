@@ -15,10 +15,10 @@ export interface FeatureRow {
   name: string;
   info?: boolean;
   infoText?: string;
-  basic: string | boolean;
-  standard: string | boolean;
-  professional: string | boolean;
-  premium: string | boolean;
+  basic?: string | boolean;
+  standard?: string | boolean;
+  professional?: string | boolean;
+  premium?: string | boolean;
 }
 
 export interface FeatureCategory {

@@ -67,23 +67,27 @@ export const getAggregatedCategories = (activeBusiness: BusinessType): FeatureCa
       const activeCat = currentIndustryData.categories.find(c => c.name.toUpperCase() === upperName);
       const activeFeature = activeCat?.features.find(f => f.name.toUpperCase() === fUpperName);
 
+      // Try common data for definitions (info, infoText)
+      const commonCatForMerge = commonFeatureCategories.find(c => c.name.toUpperCase() === upperName);
+      const commonFeature = commonCatForMerge?.features.find(f => f.name.toUpperCase() === fUpperName);
+
       if (activeFeature) {
-        return { ...activeFeature };
+        return {
+          ...commonFeature,
+          ...activeFeature
+        };
       }
 
       // If not in active industry, try common data for definitions (info, infoText)
-      if (commonCat) {
-        const commonFeature = commonCat.features.find(f => f.name.toUpperCase() === fUpperName);
-        if (commonFeature) {
-          // Keep definition but set values to false (dashes)
-          return {
-            ...commonFeature,
-            basic: false,
-            standard: false,
-            professional: false,
-            premium: false
-          };
-        }
+      if (commonFeature) {
+        // Keep definition but set values to false (dashes)
+        return {
+          ...commonFeature,
+          basic: false,
+          standard: false,
+          professional: false,
+          premium: false
+        };
       }
 
       // Default fallback
@@ -107,5 +111,37 @@ export const getAggregatedCategories = (activeBusiness: BusinessType): FeatureCa
     c => c.name.toUpperCase() === "KEY FEATURES"
   ) || { name: "Key Features", features: [] };
 
-  return [keyFeaturesCategory, ...aggregatedCategories];
+  // 5. Define the specific order requested by the user
+  const categoryOrder = [
+    "PEOPLE",
+    "PRODUCTS",
+    "SALES & ORDERS",
+    "PURCHASES",
+    "INVENTORY OPERATIONS",
+    "ECOMMERCE",
+    "MANUFACTURING",
+    "ACCOUNTS & FINANCE",
+    "ANALYTICS",
+    "HUMAN RESOURCES",
+    "RESTAURANT",
+    "MARKETING",
+    "GENERAL TOOLS",
+    "SUPPORT",
+    "INTEGRATION"
+  ];
+
+  // 6. Sort the aggregated categories
+  const sortedAggregatedCategories = aggregatedCategories.sort((a, b) => {
+    const indexA = categoryOrder.indexOf(a.name.toUpperCase());
+    const indexB = categoryOrder.indexOf(b.name.toUpperCase());
+
+    // If not in the list, move to the end
+    if (indexA === -1 && indexB === -1) return 0;
+    if (indexA === -1) return 1;
+    if (indexB === -1) return -1;
+
+    return indexA - indexB;
+  });
+
+  return [keyFeaturesCategory, ...sortedAggregatedCategories];
 };

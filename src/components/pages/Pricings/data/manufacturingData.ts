@@ -122,7 +122,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
         {
             name: 'Sales & Orders',
             features: [
-                { name: 'Point of Sale (For Invoicing)', basic: true, standard: true, professional: true, premium: true },
+                // { name: 'Point of Sale (For Invoicing)', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Invoices', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Quotations', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Sales Orders', basic: true, standard: true, professional: true, premium: true },
