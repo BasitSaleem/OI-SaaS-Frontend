@@ -166,8 +166,10 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                 <PricingCards
                   plans={pricingConfig[activeBusinessTab].plans}
                   isYearly={activeTab === "yearly"}
+                  industryKeyFeatures={pricingConfig[activeBusinessTab].categories.find((c: any) => c.name === "Key Features")?.features}
                 />
               </div>
+
             </div>
           </div>
         </section>

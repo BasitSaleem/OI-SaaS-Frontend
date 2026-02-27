@@ -88,6 +88,48 @@ body {
   --addon-border: #FF6E5E;
 }
 
+.addon-ribbon-badge {
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  background-color: var(--addon-tag-bg);
+  color: white;
+  padding: 5px 18px;
+  font-size: 11px;
+  font-weight: 800;
+  z-index: 30;
+  transform: rotate(3deg);
+  clip-path: polygon(0% 0%, 100% 0%, 92% 50%, 100% 100%, 0% 100%, 8% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 85px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Onest', sans-serif;
+  pointer-events: none;
+}
+
+.addon-container-cell {
+  background-color: var(--addon-bg) !important;
+  border: 2px solid var(--addon-border) !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.addon-pill-value {
+  background-color: var(--addon-light-bg);
+  color: var(--addon-border);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 110, 94, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(255, 110, 94, 0.05);
+}
+
 
 /* .dark {
   --primary-purple: #8C75F7;

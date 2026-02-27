@@ -4,7 +4,7 @@ import "../../../app/globals.css"
 
 import PricingCards from './PricingCards';
 import ComparisonTable from './ComparisonTable';
-import { pricingConfig, commonCategories, BusinessType } from './tableConfig';
+import { pricingConfig, commonCategories, BusinessType, getAggregatedCategories } from './tableConfig';
 import PricingHero from './PricingHero';
 import FaqSection from '../landing-page/FAQSection';
 import CalltoActionBottom from '../landing-page/CalltoActionBottom';
@@ -42,11 +42,12 @@ const PricingPage: React.FC = () => {
         
         {/* Comparison Table */}
         <ComparisonTable 
-          categories={businessData.categories && businessData.categories.length > 0 ? businessData.categories : commonCategories} 
+          categories={getAggregatedCategories(activeBusinessTab)} 
           tab={activeTab} 
           onTabChange={setActiveTab} 
           plans={businessData.plans}
         />
+
 
         
           <div className="lg:pt-[100px] md:pt-40 pt-28">

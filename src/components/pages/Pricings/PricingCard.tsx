@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
-import { PricingPlan } from "./types";
+import { PricingPlan, FeatureRow } from "./types";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 interface AddOn {
@@ -24,9 +24,17 @@ interface PricingCardProps {
   plan: PricingPlan;
   isYearly: boolean;
   allPlans: PricingPlan[];
+  planIndex?: number;
+  industryKeyFeatures?: FeatureRow[];
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) => {
+const PricingCard: React.FC<PricingCardProps> = ({ 
+  plan, 
+  isYearly, 
+  allPlans, 
+  planIndex, 
+  industryKeyFeatures 
+}) => {
   const [showAddOns, setShowAddOns] = useState(false);
   const [quantities, setQuantities] = useState<Record<string, number>>({
     pos: 0,
@@ -102,6 +110,38 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
       return true;
     });
   }, [plan.features]);
+
+  const displayFeatures = useMemo(() => {
+    if (planIndex === undefined || !industryKeyFeatures || industryKeyFeatures.length === 0) {
+      return plan.features;
+    }
+
+    return industryKeyFeatures.map((f) => {
+      const value =
+        planIndex === 0
+          ? f.basic
+          : planIndex === 1
+            ? f.standard
+            : planIndex === 2
+              ? f.professional
+              : f.premium;
+
+      const isAddon = typeof value === "string" && value.includes("(Add-on)");
+      
+      if (isAddon) {
+        return `${f.name} (Add-on available)`;
+      }
+
+      if (value === true || value === "TRUE") return f.name;
+      if (value === false || value === "—" || value === "FALSE") return null;
+
+      if (typeof value === "string" && (value === "Unlimited" || /^\d+/.test(value))) {
+        return `${value} ${f.name}`;
+      }
+
+      return value?.toString() || f.name;
+    }).filter(Boolean) as string[];
+  }, [industryKeyFeatures, planIndex, plan.features]);
 
   const addOnTotal = useMemo(() => {
     let total = 0;
@@ -229,7 +269,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly, allPlans }) =
         </button>
 
         <ul className="space-y-3 mb-10 flex-grow">
-          {plan.features.map((feature, index) => (
+          {displayFeatures.map((feature, index) => (
             <li
               key={index}
               className="flex items-center gap-3 text-sm text-[var(--text-light-alt)] font-['Onest']"

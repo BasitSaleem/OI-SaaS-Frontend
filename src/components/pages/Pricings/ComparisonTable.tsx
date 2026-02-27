@@ -284,68 +284,50 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
 
                           {/* Feature rows */}
                           {category.features.map((feature, featureIndex) => {
+                            // Safely retrieve the value based on plan index
+                            // If the feature doesn't exist for this specific plan/industry setup, default to false
                             const featureValue =
                               planIndex === 0
-                                ? feature.basic
+                                ? feature.basic ?? false
                                 : planIndex === 1
-                                  ? feature.standard
+                                  ? feature.standard ?? false
                                   : planIndex === 2
-                                    ? feature.professional
-                                    : feature.premium;
+                                    ? feature.professional ?? false
+                                    : feature.premium ?? false;
 
                             const isAddon =
                               typeof featureValue === "string" &&
                               featureValue.includes("(Add-on)");
                             const cleanValue = isAddon
-                              ? featureValue.replace("(Add-on)", "").trim()
-                              : featureValue;
+                               ? featureValue.replace("(Add-on)", "").trim()
+                               : featureValue;
 
                             return (
                               <div
                                 key={featureIndex}
-                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${planIndex < tablePlans.length - 1 ? "border-r" : ""}`}
+                                className={`py-5 text-center text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${
+                                  isAddon ? "addon-container-cell" : (planIndex < tablePlans.length - 1 ? "border-r" : "")
+                                }`}
                                 style={{
                                   height: "68px",
                                   borderBottom: isAddon
-                                    ? "2px solid var(--addon-border)"
+                                    ? "none"
                                     : `1px solid ${plan.color}`,
-                                  borderRightColor: plan.color,
-                                  borderRight: isAddon
-                                    ? "2px solid var(--addon-border)"
-                                    : `1px solid ${plan.color}`,
-                                  borderLeft: isAddon
-                                    ? "2px solid var(--addon-border)"
-                                    : "none",
-                                  borderTop: isAddon
-                                    ? "2px solid var(--addon-border)"
-                                    : "none",
+                                  borderRightColor: isAddon ? "var(--addon-border)" : (planIndex === tablePlans.length - 1 ? "transparent" : plan.color),
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
                                   position: "relative",
-                                  zIndex: isAddon ? 10 : 1,
-                                  backgroundColor: isAddon
-                                    ? "var(--addon-bg)"
-                                    : "transparent",
                                 }}
                               >
                                 {isAddon && (
-                                  <div
-                                    className="absolute -top-[16px] -right-[30px] rotate-3 z-20 w-[80px] h-[26px] overflow-visible"
-                                    style={{
-                                      clipPath:
-                                        "polygon(0px 6.9081px, 77.7857px 0px, 71.8021px 9.8317px, 79.5679px 18.4496px, 1.7823px 25.3411px, 7.7659px 15.5185px, 0px 6.9081px)",
-                                      backgroundColor: "var(--addon-tag-bg)",
-                                    }}
-                                  >
-                                    <div className="absolute inset-0 flex items-center justify-center text-white text-[12px] rotate-[-5deg] font-bold text-center leading-none">
-                                      Add-on
-                                    </div>
+                                  <div className="addon-ribbon-badge">
+                                    Add-on
                                   </div>
                                 )}
 
                                 {isAddon ? (
-                                  <div className="bg-[var(--addon-light-bg)] text-[var(--addon-border)] px-4 py-1.5 rounded-full text-sm font-semibold border border-[var(--addon-border)]/20 shadow-sm">
+                                  <div className="addon-pill-value">
                                     {cleanValue}
                                   </div>
                                 ) : (
@@ -354,6 +336,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               </div>
                             );
                           })}
+
                         </div>
                       ))}
                     </div>
