@@ -57,7 +57,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             name: 'Key Features',
             features: [
                 { name: 'Production Floors', basic: '1', standard: '3', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Warehouses', basic: '1 Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Warehouses', basic: '1', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Stores (For Invoicing)', basic: '1', standard: '1', professional: '1', premium: '1' },
                 { name: 'Online Store', basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
                 { name: 'Accounts & Finance', basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
@@ -67,8 +67,8 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
         {
             name: 'Manufacturing',
             features: [
-                { name: 'Production Orders', info: true, infoText: "Manage the end-to-end production of goods.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place.", basic: false, standard: false, professional: true, premium: true },
+                { name: 'Production Orders', info: true, infoText: "Manage the end-to-end production of goods.", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Moulds', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Quality & Inspections', basic: true, standard: true, professional: true, premium: true },
             ]
@@ -122,7 +122,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
         {
             name: 'Sales & Orders',
             features: [
-                // { name: 'Point of Sale (For Invoicing)', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Point of Sale', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Invoices', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Quotations', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Sales Orders', basic: true, standard: true, professional: true, premium: true },
@@ -170,7 +170,14 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
         {
             name: 'Integration',
             features: [
-                { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
+                // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
+                   { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },
+            { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'Leopard', info: true, infoText: "Integrate with Leopard Courier for local delivery tracking and dispatch.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'Zapier', info: true, infoText: "Automate workflows by connecting your store with thousands of apps via Zapier.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'Make', info: true, infoText: "Build advanced automation scenarios using Make (formerly Integromat).", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
             ]
         }
     ]

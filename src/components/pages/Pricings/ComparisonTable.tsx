@@ -77,7 +77,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
 
   return (
     <section className="compare-section mt-20 md:mt-28 lg:mt-[100px]">
-      <div className="wrapper mx-auto flex items-center justify-center">
+      <div className="lg:wrapper mx-auto flex items-center justify-center">
         <button
           onClick={toggleVisibility}
           className="compare-toggle flex gap-5 items-center justify-center px-12 py-5 bg-[var(--primary-purple)] text-white rounded-full text-base leading-[170%] font-semibold font-['Onest'] w-fit whitespace-nowrap"

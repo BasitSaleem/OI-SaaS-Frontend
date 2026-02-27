@@ -63,14 +63,14 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'Accounts & Finance',
             features: [
-                { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: 'Basic', standard: 'Basic', professional: 'Advance', premium: 'Advance' },
-                { name: 'Billing & Payments', info: true, infoText: "Automate invoices, payments & bill tracking.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Payables & Receivables', info: true, infoText: "Ensures smooth cash flow—critical for businesses.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Financial Insights & Reports', info: true, infoText: "Gain powerful reports & business analytics.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "Summarizes financial health—important for compliance.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Chart of Accounts', info: true, infoText: "Supports structured financial management—essential for accountants.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Journal Entries & Reports', info: true, infoText: "Detailed financial transaction recording—used by finance teams.", basic: false, standard: false, professional: true, premium: true },
-                { name: 'Fixed Assets & Allocations', info: true, infoText: "Long-term asset management—more relevant for established businesses.", basic: false, standard: false, professional: true, premium: true }
+                { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Billing & Payments', info: true, infoText: "Automate invoices, payments & bill tracking.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Payables & Receivables', info: true, infoText: "Ensures smooth cash flow—critical for businesses.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Financial Insights & Reports', info: true, infoText: "Gain powerful reports & business analytics.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "Summarizes financial health—important for compliance.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Chart of Accounts', info: true, infoText: "Supports structured financial management—essential for accountants.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Journal Entries & Reports', info: true, infoText: "Detailed financial transaction recording—used by finance teams.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Fixed Assets & Allocations', info: true, infoText: "Long-term asset management—more relevant for established businesses.", basic: true, standard: true, professional: true, premium: true }
             ]
         },
         {
@@ -200,7 +200,14 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'Integration',
             features: [
-                { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
+                // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
+                   { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },
+            { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'Leopard', info: true, infoText: "Integrate with Leopard Courier for local delivery tracking and dispatch.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'Zapier', info: true, infoText: "Automate workflows by connecting your store with thousands of apps via Zapier.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+            { name: 'Make', info: true, infoText: "Build advanced automation scenarios using Make (formerly Integromat).", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
             ]
         }
     ]

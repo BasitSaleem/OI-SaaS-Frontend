@@ -119,7 +119,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
     {
         name: 'Integration',
         features: [
-            { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation." },
+            { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation."  },
             { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe." },
             { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers." },
             { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management." },
