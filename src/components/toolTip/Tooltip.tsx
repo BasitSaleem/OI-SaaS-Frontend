@@ -7,9 +7,9 @@ const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false }) 
     return (
         <div className={`${isComparisonToolTip
             ?
-            "absolute left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-4 bottom-full mb-2 z-[999] hidden group-hover:flex flex-col items-start w-auto"
+            "absolute left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-2 bottom-full mb-2 z-[999] hidden group-hover:flex flex-col items-start w-auto"
             :
-            "absolute left-[50%] -translate-x-[50%] lg:-translate-x-0 lg:left-2 top-[110%] z-[999] hidden group-hover:flex flex-col items-left"}`}>
+            "absolute left-[50%] -translate-x-[50%] top-[110%] z-[999] hidden group-hover:flex flex-col items-left"}`}>
 
             {!isComparisonToolTip && <div className="w-2 h-2 rotate-45 bg-white border-l border-t border-[var(--primary-purple)] -mb-1 mx-auto"></div>}
 
@@ -25,10 +25,6 @@ const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false }) 
             {/* Downward-pointing arrow aligned to the left for comparison tooltip */}
             {isComparisonToolTip &&
                 <div className="w-2 h-2 rotate-45 bg-white border-b border-r border-[var(--primary-purple)] -mt-[5px] ml-6"></div>
-            }
-
-            {!isComparisonToolTip &&
-                <div className="w-2 h-2 rotate-45 bg-white border-b border-r border-[var(--primary-purple)] -mt-1 ms-5"></div>
             }
 
         </div>

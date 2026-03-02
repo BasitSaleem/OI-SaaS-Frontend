@@ -16,8 +16,13 @@ export const ecommerceData: {
       features: [
         "1 Online Store",
         "1 Warehouse",
+        "1 Store",
+        "1 POS Terminal",
         "Unlimited Users",
+        "Unlimited Products",
         "Unlimited Orders & Invoices",
+        "Unlimited Purchases",
+        "Onboarding Assistance & Email Support",
       ],
     },
     {
@@ -32,8 +37,14 @@ export const ecommerceData: {
       features: [
         "1 Online Store",
         "2 Warehouse",
+        "1 Store",
+        "1 POS Terminal",
         "Unlimited Users",
+        "Unlimited Products",
         "Unlimited Orders & Invoices",
+        "Unlimited Purchases",
+        "Onboarding Assistance & Email Support",
+        "Live Chat & Phone Support"
       ],
     },
     {
@@ -47,8 +58,15 @@ export const ecommerceData: {
       features: [
         "1 Online Store",
         "Unlimited Warehouse",
+        "1 Store",
+        "1 POS Terminal",
         "Unlimited Users",
+        "Unlimited Products",
         "Unlimited Orders & Invoices",
+        "Unlimited Purchases",
+        "Onboarding Assistance & Email Support",
+        "Live Chat & Phone Support",
+        "Dedicated Account Manager"
       ],
     },
   ],
@@ -262,27 +280,46 @@ export const ecommerceData: {
       name: "Inventory Operations",
       features: [
         {
-          name: "Transfer Orders", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited'
+          name: "Transfer Orders",
+          basic: "Unlimited",
+          standard: "Unlimited",
+          professional: "Unlimited",
+          premium: "Unlimited",
         },
         {
-          name: "Stock Issuing", basic: true, standard: true, professional: true, premium: true
-         
+          name: "Stock Issuing",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
         },
         {
-          name: "Stock Receiving", basic: true, standard: true, professional: true, premium: true
-         
+          name: "Stock Receiving",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
         },
         {
-          name: "Stock Adjustments", basic: true, standard: true, professional: true, premium: true
-         
+          name: "Stock Adjustments",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
         },
         {
-          name: "Bulk Stock Adjustments", basic: true, standard: true, professional: true, premium: true
-         
+          name: "Bulk Stock Adjustments",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
         },
         {
-          name: "Stock Alerts", basic: true, standard: true, professional: true, premium: true
-         
+          name: "Stock Alerts",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
         },
       ],
     },
@@ -317,14 +354,14 @@ export const ecommerceData: {
           professional: false,
           premium: false,
         },
-         {
+        {
           name: "Commissions",
           basic: true,
           standard: true,
           professional: true,
           premium: true,
         },
-         {
+        {
           name: "Decorations",
           basic: true,
           standard: true,
@@ -333,12 +370,24 @@ export const ecommerceData: {
         },
       ],
     },
-     {
-        name: 'Marketing',
-        features: [
-            { name: 'Coupons', basic: true, standard: true, professional: true, premium: true },
-            { name: 'Loyalty', basic: true, standard: true, professional: true, premium: true }
-        ]
+    {
+      name: "Marketing",
+      features: [
+        {
+          name: "Coupons",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
+        },
+        {
+          name: "Loyalty",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
+        },
+      ],
     },
     {
       name: "General Tools",
@@ -407,16 +456,76 @@ export const ecommerceData: {
       ],
     },
     {
-      name: "Integration",
+      name: "Integrations",
       features: [
-           { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },
-            { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'Leopard', info: true, infoText: "Integrate with Leopard Courier for local delivery tracking and dispatch.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'Zapier', info: true, infoText: "Automate workflows by connecting your store with thousands of apps via Zapier.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'Make', info: true, infoText: "Build advanced automation scenarios using Make (formerly Integromat).", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
-      
+        {
+          name: "API Calls/Day",
+          info: true,
+          infoText:
+            "Number of API requests allowed per day for external integrations and automation.",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
+        {
+          name: "Stripe",
+          info: true,
+          infoText: "Accept online payments securely via Stripe.",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
+        {
+          name: "PayPal",
+          info: true,
+          infoText: "Enable PayPal as a payment method for your customers.",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
+        {
+          name: "DHL",
+          info: true,
+          infoText:
+            "Connect with DHL for automated shipping and courier management.",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
+        {
+          name: "Leopard",
+          info: true,
+          infoText:
+            "Integrate with Leopard Courier for local delivery tracking and dispatch.",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
+        {
+          name: "Zapier",
+          info: true,
+          infoText:
+            "Automate workflows by connecting your store with thousands of apps via Zapier.",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
+        {
+          name: "Make",
+          info: true,
+          infoText:
+            "Build advanced automation scenarios using Make (formerly Integromat).",
+          basic: "Coming Soon",
+          standard: "Coming Soon",
+          professional: "Coming Soon",
+          premium: "Coming Soon",
+        },
       ],
     },
   ],

@@ -16,8 +16,14 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 '1 Online Store',
                 '5 Warehouses',
                 '5 Production Floors',
+                "10 POS Terminal",
+                'Accounts & Finance',
                 'Unlimited Users',
-                'Accounts & Finance'
+                'Unlimited Products',
+                'Unlimited Orders & Invoices',
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support',
+                'Live Chat & Phone Support',
             ]
         },
         {
@@ -32,9 +38,18 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 'Unlimited Stores',
                 '1 Online Store',
                 'Unlimited Warehouses',
+                "Unlimited POS Terminal",
                 'Unlimited Production Floors',
-                'Unlimited Users',
-                'Accounts & Finance'
+                'Accounts & Finance',
+                 'Unlimited Users',
+                'Unlimited Products',
+                'Unlimited Orders & Invoices',
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support',
+                'Live Chat & Phone Support',
+                'Dedicated Account Manager'
+                 
+                
             ]
         },
         {
@@ -198,7 +213,7 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             ]
         },
         {
-            name: 'Integration',
+            name: 'Integrations',
             features: [
                 // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
                    { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },

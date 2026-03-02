@@ -9,6 +9,7 @@ import PricingHero from './PricingHero';
 import FaqSection from '../landing-page/FAQSection';
 import CalltoActionBottom from '../landing-page/CalltoActionBottom';
 import FeaturesTabSection from '../landing-page/FeaturesTabSection';
+import AddOnsSection from './AddOnsSection';
 import { PRICING_FAQS } from '@/constant/pricingFaqData';
 
 const PricingPage: React.FC = () => {
@@ -38,8 +39,8 @@ const PricingPage: React.FC = () => {
 
 
         {/* <FeaturesTabSection /> */}
+        <AddOnsSection />
 
-        
         {/* Comparison Table */}
         <ComparisonTable 
           categories={getAggregatedCategories(activeBusinessTab)} 

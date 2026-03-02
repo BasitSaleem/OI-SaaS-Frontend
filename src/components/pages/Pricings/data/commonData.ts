@@ -64,7 +64,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
             { name: 'Online Store', info: true, infoText: "Launch your own branded e-commerce website and custom-developed templates will be billed separately." },
             { name: 'Orders', info: true, infoText: "Monitor and fulfill orders – placed online." },
             { name: 'Discounts', info: true, infoText: "Apply promotional price reductions to products." },
-            { name: 'collections', info: true, infoText: "Manage customer records and order history in one place." }
+            { name: 'Collections', info: true, infoText: "Manage customer records and order history in one place." }
         ]
     },
     {
@@ -117,7 +117,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
         ]
     },
     {
-        name: 'Integration',
+        name: 'Integrations',
         features: [
             { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation."  },
             { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe." },

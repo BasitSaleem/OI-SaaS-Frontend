@@ -156,7 +156,7 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             ]
         },
         {
-            name: 'Integration',
+            name: 'Integrations',
             features: [
                 // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
                  { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },

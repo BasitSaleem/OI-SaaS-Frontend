@@ -14,8 +14,12 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
                 '1 Production Floor',
                 '1 Warehouse',
                 '1 Store (For Invoicing)',
+                '1 POS Terminal',
                 'Unlimited Users',
-                'Unlimited Orders & Invoices'
+                'Unlimited Products',
+                'Unlimited Orders & Invoices',
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support'
             ]
         },
         {
@@ -28,11 +32,16 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             bgColor: 'rgba(56,172,204,0.1)',
             popular: true,
             features: [
-                '3 Production Floors',
+                 '3 Production Floor',
                 'Unlimited Warehouse',
                 '1 Store (For Invoicing)',
+                '1 POS Terminal',
                 'Unlimited Users',
-                'Unlimited Orders & Invoices'
+                'Unlimited Products',
+                'Unlimited Orders & Invoices',
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support',
+                'Live Chat & Phone Support'
             ]
         },
         {
@@ -44,11 +53,17 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             color: '#5588DF',
             bgColor: 'rgba(85,136,223,0.1)',
             features: [
-                'Unlimited Production Floors',
+                 'Unlimited Production Floor',
                 'Unlimited Warehouse',
                 '1 Store (For Invoicing)',
+                '1 POS Terminal',
                 'Unlimited Users',
-                'Unlimited Orders & Invoices'
+                'Unlimited Products',
+                'Unlimited Orders & Invoices',
+                'Unlimited Purchases',
+                'Onboarding Assistance & Email Support',
+                'Live Chat & Phone Support',
+                'Dedicated Account Manager'
             ]
         }
     ],
@@ -168,7 +183,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             ]
         },
         {
-            name: 'Integration',
+            name: 'Integrations',
             features: [
                 // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
                    { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },
