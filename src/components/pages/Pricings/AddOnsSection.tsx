@@ -61,8 +61,8 @@ const AddOnsSection: React.FC = () => {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   return (
-    <section className="py-20 px-4 md:px-10 lg:px-20 bg-white">
-      <div className="max-w-[1312px] mx-auto">
+    <section className="wrapper bg-white">
+      <div className="mt-20 md:mt-28 lg:mt-[100px]">
         <div className="text-center mb-12">
           <h2 className="text-[32px] leading-[130%] lg:text-5xl font-semibold lg:font-medium text-[var(--text-dark)] text-center font-['Onest'] mb-6">
             Need more? Easily add it whenever required.
