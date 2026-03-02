@@ -31,7 +31,7 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             name: 'Enterprise',
             price: 315,
             yearlyPrice: 252,
-            description: 'Large scale operations',
+            description: 'For established businesses scaling up',
             color: '#5588DF',
             bgColor: 'rgba(85, 136, 223, 0.1)',
             features: [

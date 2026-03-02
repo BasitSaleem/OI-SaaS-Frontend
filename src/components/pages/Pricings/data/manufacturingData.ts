@@ -7,7 +7,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             name: 'Basic',
             price: 65,
             yearlyPrice: 52,
-            description: 'Small production floors',
+            description: 'Perfect for small businesses getting started',
             color: '#1AD1B9',
             bgColor: 'rgba(26,209,185,0.1)',
             features: [
@@ -27,7 +27,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             name: 'Pro',
             price: 115,
             yearlyPrice: 94,
-            description: 'Expanding factories',
+            description: 'Ideal for growing businesses',
             color: '#38ACCC',
             bgColor: 'rgba(56,172,204,0.1)',
             popular: true,
@@ -49,7 +49,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             name: 'Enterprise',
             price: 155,
             yearlyPrice: 124,
-            description: 'Large scale manufacturing',
+            description: 'For established businesses scaling up',
             color: '#5588DF',
             bgColor: 'rgba(85,136,223,0.1)',
             features: [

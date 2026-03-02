@@ -10,7 +10,7 @@ export const ecommerceData: {
       name: "Basic",
       price: 25,
       yearlyPrice: 20,
-      description: "Start selling online",
+      description: "Perfect for small businesses getting started",
       color: "#1AD1B9",
       bgColor: "rgba(26,209,185,0.1)",
       features: [
@@ -30,7 +30,7 @@ export const ecommerceData: {
       name: "Pro",
       price: 50,
       yearlyPrice: 40,
-      description: "Grow your digital presence",
+      description: "Ideal for growing businesses",
       color: "#38ACCC",
       bgColor: "rgba(56, 172, 204, 0.1)",
       popular: true,
@@ -52,7 +52,7 @@ export const ecommerceData: {
       name: "Enterprise",
       price: 115,
       yearlyPrice: 92,
-      description: "High volume online sales",
+      description: "For established businesses scaling up",
       color: "#5588DF",
       bgColor: "rgba(85, 136, 223, 0.1)",
       features: [
