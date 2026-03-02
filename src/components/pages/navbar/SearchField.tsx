@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import { useDevice } from "@/hooks/useDevice";
 
 type SearchFieldProps = {
-  searchOpen?: boolean; 
+  searchOpen?: boolean;
   setSearchOpen?: React.Dispatch<React.SetStateAction<boolean>>;
   searchQuery: string;
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
-  variant?: "navbar" | "page"; 
+  variant?: "navbar" | "page";
 };
 
 const SearchField: React.FC<SearchFieldProps> = ({
@@ -18,6 +19,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
   variant = "navbar",
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const { isDesktop, isMounted } = useDevice();
 
   useEffect(() => {
     if (variant === "navbar" && searchOpen && inputRef.current) {
@@ -25,24 +27,35 @@ const SearchField: React.FC<SearchFieldProps> = ({
     }
   }, [searchOpen, variant]);
 
+  // Determine placeholder based on device
+  const placeholderText =
+    isMounted && !isDesktop
+      ? "Search Here"
+      : "Search for features overviews, FAQs, and more...";
+
   const wrapperClasses =
     variant === "navbar"
       ? `absolute left-0 top-[100%] w-full h-fit bg-white shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-2xl transition-all duration-300 ${searchOpen ? "block" : "hidden"}`
-      : "w-full"; 
+      : "w-full";
   return (
     <div id="searchDropdown" className={wrapperClasses}>
-      <div className={`${variant === "navbar" ? "py-4 px-7" : "py-0 px-0 lg:px-7"} relative`}>
+      <div
+        className={`${variant === "navbar" ? "py-4 px-7" : "py-0 px-0 lg:px-7"} relative`}
+      >
         <form action="/search" method="GET">
           <input
             ref={inputRef}
             type="text"
             name="q"
-            placeholder="Search for features overviews, FAQs, and more..."
-            className="w-full border text-[var(--text-dark)] border-gray-300 rounded-full p-3"
+            placeholder={placeholderText}
+            className="w-full border text-[var(--text-dark)] border-gray-300 rounded-full p-3 cursor-pointer"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button type="submit" className="absolute top-1/2 transform -translate-y-1/2 rounded-full p-2 right-2 lg:right-12 bg-white">
+          <button
+            type="submit"
+            className="absolute top-1/2 transform -translate-y-1/2 rounded-full p-2 right-2 lg:right-12 bg-white cursor-pointer"
+          >
             <Image
               src="/assets/header-images/search-icon.svg"
               alt="Search"

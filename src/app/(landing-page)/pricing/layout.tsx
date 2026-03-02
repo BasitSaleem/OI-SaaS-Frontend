@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 //   keywords: ["inventory management solutions", "inventory management system software", "inventory management systems", "inventory system software", "inventory management system", "inventory management software", "Owners Inventory"],
   publisher: "Owners Inventory",
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
   alternates: {

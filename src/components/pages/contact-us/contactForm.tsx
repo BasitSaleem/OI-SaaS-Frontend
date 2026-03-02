@@ -41,12 +41,12 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
           <InputField
             label="Name"
-            placeHolder="Enter Your Name"
+            placeHolder="Enter Name"
             // required
           />
           <PhoneInputField
             label="Phone Number"
-            placeHolder="Enter Your Phone Number"
+            placeHolder="Enter Phone No"
             value={value}
             onChange={setValue}
             // required
@@ -56,13 +56,13 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
           <InputField
             label="Email Address"
-            placeHolder="Enter Your Email Address"
+            placeHolder="Enter Email Address"
             // required
             type="email"
           />
           <InputField
             label="Company"
-            placeHolder="Enter Your Company Name"
+            placeHolder="Enter Company Name"
             // required
           />
         </div>
@@ -71,7 +71,7 @@ const ContactForm = () => {
           <div className="">
             <SelectField
               label="Company Size"
-              placeholder="Select Your Company Size"
+              placeholder="Select Company Size"
               //   required
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
@@ -81,7 +81,7 @@ const ContactForm = () => {
           </div>
           <InputField
             label="Subject"
-            placeHolder="Enter the Subject of Your Message"
+            placeHolder="Enter the Subject"
             // required
           />
         </div>
