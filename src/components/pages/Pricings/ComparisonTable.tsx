@@ -5,12 +5,15 @@ import PricingTabs from "./PricingTabs";
 import Tooltip from "@/components/toolTip/Tooltip";
 import Image from "next/image";
 import { useDevice } from "@/hooks/useDevice";
+import { useRouter } from "next/navigation";
+import { BusinessType } from "./tableConfig";
 
 interface ComparisonTableProps {
   categories: FeatureCategory[];
   tab: "monthly" | "yearly";
   onTabChange: (tab: "monthly" | "yearly") => void;
   plans: PricingPlan[];
+  industry: BusinessType;
 }
 
 const ComparisonTable: React.FC<ComparisonTableProps> = ({
@@ -18,7 +21,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
   tab,
   onTabChange,
   plans,
+  industry,
 }) => {
+  const router = useRouter();
   const { isMobile: isSmallScreen } = useDevice();
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -252,9 +257,13 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                       : "/month"}
                                 </span>
                               </p>
-                              <a
-                                href="#"
-                                className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all"
+                              <button
+                                onClick={() => {
+                                  router.push(
+                                    `/checkout?plan=${plan.id}&industry=${industry}&cycle=${tab}`,
+                                  );
+                                }}
+                                className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all cursor-pointer"
                                 style={
                                   {
                                     backgroundColor: plan.color,
@@ -276,7 +285,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                 }}
                               >
                                 Get Started
-                              </a>
+                              </button>
                             </div>
                           </div>
 

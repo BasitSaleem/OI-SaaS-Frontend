@@ -37,7 +37,6 @@ const PricingPage: React.FC = () => {
           onBusinessTabChange={setActiveBusinessTab}
         />
 
-
         {/* <FeaturesTabSection /> */}
         <AddOnsSection />
 
@@ -47,6 +46,7 @@ const PricingPage: React.FC = () => {
           tab={activeTab} 
           onTabChange={setActiveTab} 
           plans={businessData.plans}
+          industry={activeBusinessTab}
         />
 
 

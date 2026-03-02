@@ -1,6 +1,6 @@
-"use client";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { PricingPlan, FeatureRow } from "./types";
 
 interface PricingCardProps {
@@ -9,6 +9,7 @@ interface PricingCardProps {
   allPlans: PricingPlan[];
   planIndex?: number;
   industryKeyFeatures?: FeatureRow[];
+  industry: string;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({ 
@@ -16,8 +17,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
   isYearly, 
   allPlans, 
   planIndex, 
-  industryKeyFeatures 
+  industryKeyFeatures,
+  industry
 }) => {
+  const router = useRouter();
   const basePrice = isYearly ? (plan.yearlyPrice ?? plan.price) : plan.price;
   const displayFeatures = plan.features;
 
@@ -87,10 +90,15 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {isYearly && <p className="text-xs leading-[160%] text-[var(--text-grey)] font-['Onest'] mt-1.5 mb-8">Billed yearly</p>}
 
         <button
-          className="w-full py-4 rounded-full text-base font-['Onest'] font-semibold text-white mb-8 transition-opacity hover:opacity-90"
+          onClick={() => {
+            if (!plan.isCustom) {
+               router.push(`/checkout?plan=${plan.id}&industry=${industry}&cycle=${isYearly ? 'yearly' : 'monthly'}`);
+            }
+          }}
+          className="w-full py-4 rounded-full cursor-pointer text-base font-['Onest'] font-semibold text-white mb-8 transition-opacity hover:opacity-90"
           style={{ backgroundColor: plan.color }}
         >
-          Start 14-Day Free Trial
+          {plan.isCustom ? "Let's Connect" : "Start 14-Day Free Trial"}
         </button>
 
         <ul className="space-y-3 mb-10 flex-grow">

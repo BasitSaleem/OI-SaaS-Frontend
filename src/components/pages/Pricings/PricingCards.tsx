@@ -6,9 +6,10 @@ interface PricingCardsProps {
   plans: PricingPlan[];
   isYearly: boolean;
   industryKeyFeatures?: FeatureRow[];
+  industry: string;
 }
 
-const PricingCards: React.FC<PricingCardsProps> = ({ plans, isYearly, industryKeyFeatures }) => {
+const PricingCards: React.FC<PricingCardsProps> = ({ plans, isYearly, industryKeyFeatures, industry }) => {
   return (
     <div className="">
       <div className="owner-inventory-hero-section__pricing-cards mt-10 pt-4 md:mt-10 xl:mt-16 w-full max-w-[1312px] flex lg:grid lg:grid-cols-3 items-stretch overflow-x-auto lg:overflow-x-visible gap-4 xl:gap-6 no-scrollbar snap-x snap-mandatory">
@@ -20,6 +21,7 @@ const PricingCards: React.FC<PricingCardsProps> = ({ plans, isYearly, industryKe
               allPlans={plans}
               planIndex={index}
               industryKeyFeatures={industryKeyFeatures}
+              industry={industry}
             />
           </div>
         ))}
