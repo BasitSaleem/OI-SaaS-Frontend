@@ -13,6 +13,7 @@ import { FaMinus, FaPlus, FaCheck } from "react-icons/fa6";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Paragraph from "@/components/pages/typography/Paragraph";
+import { useErrorAnimation } from "@/hooks/useErrorAnimation";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +31,7 @@ const ADD_ONS_DATA = [
   {
     id: "warehouse",
     name: "Warehouses",
-    price: 15,
+    price: 25,
     type: "quantity",
     icon: "warehouse",
   },
@@ -49,6 +50,47 @@ const ADD_ONS_DATA = [
     icon: "finance",
   },
 ];
+
+const NoPlanFallback = () => {
+  const router = useRouter();
+  useErrorAnimation();
+
+  return (
+    <div className="min-h-screen pinned-section-1 flex flex-col items-center justify-center p-4 text-center">
+      <div className="max-w-md w-full bg-white/30 backdrop-blur-md border border-white p-10 rounded-[40px] shadow-sm">
+        <div className="w-20 h-20 bg-[var(--primary-purple)]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="var(--primary-purple)"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+        </div>
+        <h2 className="text-3xl font-bold text-[var(--text-dark)] mb-4 font-['Onest']">
+          No Plan Selected
+        </h2>
+        <Paragraph className="mb-8">
+          You haven't selected a plan yet. Please choose a plan from our pricing
+          page to proceed with the checkout.
+        </Paragraph>
+        <button
+          onClick={() => router.push("/pricing")}
+          className="w-full py-4 bg-[var(--primary-purple)] text-white rounded-full font-bold hover:opacity-90 transition-opacity active:scale-[0.98] font-['Onest'] cursor-pointer"
+        >
+          Choose a Plan
+        </button>
+      </div>
+    </div>
+  );
+};
 
 const CheckoutContent = () => {
   const searchParams = useSearchParams();
@@ -77,6 +119,8 @@ const CheckoutContent = () => {
   });
 
   useEffect(() => {
+    if (!selectedPlan) return;
+
     let heroBreak = gsap.matchMedia();
     heroBreak.add("(min-width: 1024px)", () => {
       const tl = gsap.timeline({
@@ -124,9 +168,7 @@ const CheckoutContent = () => {
   const selectedPlan = useMemo(() => {
     const industryData = pricingConfig[industry];
     if (!industryData) return null;
-    return (
-      industryData.plans.find((p) => p.id === planId) || industryData.plans[0]
-    );
+    return industryData.plans.find((p) => p.id === planId) || null;
   }, [industry, planId]);
 
   const handleQuantityChange = (id: string, delta: number) => {
@@ -169,12 +211,7 @@ const CheckoutContent = () => {
     return (monthlyTotal - totalMonthly) * 12;
   }, [selectedPlan, billingCycle, calculateAddOnsTotal, totalMonthly]);
 
-  if (!selectedPlan)
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        Loading...
-      </div>
-    );
+  if (!selectedPlan) return <NoPlanFallback />;
 
   return (
     <div className="min-h-screen pinned-section-1">
@@ -385,8 +422,8 @@ const CheckoutContent = () => {
                         </button>
 
                         {/* Discount Banner - Responsive Design */}
-                        <div className="absolute lg:right-0 right-[16px] md:right-[10px] top-[-60px] md:top-[-80px] lg:top-[-100px] translate-x-2 flex flex-col gap-2 md:gap-4 items-center">
-                          <div className="flex flex-col items-center mr-[-20px] md:mr-0 lg:mr-5 md:gap-1">
+                        <div className="absolute lg:right-4 right-[16px] md:right-[10px] top-[-60px] md:top-[-80px] lg:top-[-100px] translate-x-2 flex flex-col gap-2 md:gap-4 items-center">
+                          <div className="flex flex-col items-center mr-[0px] md:mr-3 lg:mr-5 md:gap-1 rotate-12">
                             {/* 20% Badge */}
                             <div
                               className="w-[69px] h-[24px] md:w-[70px] md:h-[24px] lg:w-[112px] lg:h-[38px] flex items-center justify-center rotate-[-5deg] text-white font-bold text-[10px] md:text-sm lg:text-xl z-30"
@@ -418,7 +455,7 @@ const CheckoutContent = () => {
                             alt=""
                             width={78}
                             height={30}
-                            className="absolute  right-[-40px] bottom-[-30px] md:bottom-[-30px] lg:bottom-[-40px] w-10 md:w-16 lg:w-[78px] rotate-[-90deg]"
+                            className="absolute  right-[-30px] bottom-[-8px] md:bottom-[-18px] lg:bottom-[-20px] w-10 md:w-16 lg:w-[78px] rotate-[-90deg]"
                           />
                         </div>
                       </div>
