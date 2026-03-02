@@ -461,87 +461,102 @@ const CheckoutContent = () => {
                       </div>
                     </div>
 
-                <div className="py-5 px-4 bg-white rounded-2xl">
-                    <div className="space-y-4 mb-8">
-                      <div className="flex justify-between items-center text-sm font-medium">
-                        <span className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest']">
-                          {selectedPlan.name} Plan
-                        </span>
-                        <span className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest']">
-                          ${basePrice}
-                        </span>
-                      </div>
-
-                      {billingCycle === "yearly" && (
-                        <div className="bg-[var(--primary-purple)]/5 p-3 rounded-xl border border-[var(--primary-purple)]/10">
-                          <p className="text-[var(--primary-purple)] text-xs font-medium flex items-center gap-2 font-['Onest']">
-                            <span>✨</span> You save ${savings} vs monthly
-                            billing
-                          </p>
+                    <div className="py-5 px-4 bg-white rounded-2xl">
+                      <div className="space-y-4 mb-8">
+                        <div className="flex justify-between items-center text-sm font-medium">
+                          <span className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest']">
+                            {selectedPlan.name} Plan
+                          </span>
+                          <span className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest']">
+                            ${basePrice}
+                          </span>
                         </div>
-                      )}
 
-                      <div className="pt-4 border-t border-gray-100">
-                        <h3 className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest'] mb-4">
-                          Selected Add-ons
-                        </h3>
-                        <div className="space-y-3">
-                          {ADD_ONS_DATA.filter((addon) =>
-                            addon.type === "quantity"
-                              ? quantities[addon.id] > 0
-                              : toggles[addon.id],
-                          ).map((addon) => (
-                            <div
-                              key={addon.id}
-                              className="flex justify-between items-center text-sm"
-                            >
-                              <span className="text-[var(--text-dark)] text-lg leading-[170%] font-normal font-['Onest']">
-                                {addon.name}{" "}
-                                {addon.type === "quantity"
-                                  ? `× ${quantities[addon.id]}`
-                                  : ""}
-                              </span>
-                              <span className="text-[var(--text-dark)] font-['Onest']">
-                                $
-                                {addon.type === "quantity"
-                                  ? quantities[addon.id] * addon.price
-                                  : addon.price}
-                              </span>
-                            </div>
-                          ))}
-                          {Object.values(quantities).every((v) => v === 0) &&
-                            !Object.values(toggles).some((v) => v) && (
-                              <p className="text-gray-400 text-xs italic font-['Onest']">
-                                No add-ons selected
-                              </p>
-                            )}
-                        </div>
-                      </div>
-                    </div>
+                        {billingCycle === "yearly" && (
+                          <div className="bg-[var(--primary-purple)]/15 p-3 rounded-xl border border-[var(--primary-purple)]/10">
+                            <p className="text-[var(--primary-purple)] text-xs font-medium flex items-center gap-2 font-['Onest']">
+                              <span>
+                                <svg
+                                  width="19"
+                                  height="18"
+                                  viewBox="0 0 19 18"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M11.75 15.75C12.95 12.072 14.276 10.745 17.75 9.75C14.276 8.755 12.95 7.428 11.75 3.75C10.55 7.428 9.224 8.755 5.75 9.75C9.224 10.745 10.55 12.072 11.75 15.75ZM3.75 6.75C4.35 4.91 5.013 4.247 6.75 3.75C5.013 3.253 4.35 2.59 3.75 0.75C3.15 2.59 2.487 3.253 0.75 3.75C2.487 4.247 3.15 4.91 3.75 6.75ZM5.25 16.75C5.55 15.83 5.881 15.499 6.75 15.25C5.881 15.001 5.55 14.67 5.25 13.75C4.95 14.67 4.619 15.001 3.75 15.25C4.619 15.499 4.95 15.83 5.25 16.75Z"
+                                    stroke="#795CF5"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </span>{" "}
+                              You save ${savings} vs monthly billing
+                            </p>
+                          </div>
+                        )}
 
-                    <div className="pt-6 border-t border-gray-100 mb-8">
-                      <div className="flex justify-between items-end">
-                        <span className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest']">
-                          Total
-                        </span>
-                        <div className="text-right">
-                          <div className="flex items-baseline justify-end gap-1">
-                            <span className="md:text-[32px] text-2xl leading-[130%] font-semibold text-[var(--primary-purple)] font-['Onest']">
-                              ${totalMonthly}
-                            </span>
-                            <span className="text-[var(--text-grey)] text-sm leading-[170%] font-normal font-['Onest']">
-                              /month
-                            </span>
+                        <div className="pt-4 border-t border-gray-100">
+                          <h3 className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest'] mb-4">
+                            Selected Add-ons
+                          </h3>
+                          <div className="space-y-3">
+                            {ADD_ONS_DATA.filter((addon) =>
+                              addon.type === "quantity"
+                                ? quantities[addon.id] > 0
+                                : toggles[addon.id],
+                            ).map((addon) => (
+                              <div
+                                key={addon.id}
+                                className="flex justify-between items-center text-sm"
+                              >
+                                <span className="text-[var(--text-dark)] text-lg leading-[170%] font-normal font-['Onest']">
+                                  {addon.name}{" "}
+                                  {addon.type === "quantity"
+                                    ? `× ${quantities[addon.id]}`
+                                    : ""}
+                                </span>
+                                <span className="text-[var(--text-dark)] font-['Onest']">
+                                  $
+                                  {addon.type === "quantity"
+                                    ? quantities[addon.id] * addon.price
+                                    : addon.price}
+                                </span>
+                              </div>
+                            ))}
+                            {Object.values(quantities).every((v) => v === 0) &&
+                              !Object.values(toggles).some((v) => v) && (
+                                <p className="text-gray-400 text-xs italic font-['Onest']">
+                                  No add-ons selected
+                                </p>
+                              )}
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <button className="w-full py-4 bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] text-white rounded-full font-bold transition-all shadow-lg active:scale-[0.98] font-['Onest']">
-                      Proceed to Payment
-                    </button>
+                      <div className="pt-6 border-t border-gray-100 mb-8">
+                        <div className="flex justify-between items-end">
+                          <span className="text-[var(--text-dark)] text-xl font-medium leading-[140%] font-['Onest']">
+                            Total
+                          </span>
+                          <div className="text-right">
+                            <div className="flex items-baseline justify-end gap-1">
+                              <span className="md:text-[32px] text-2xl leading-[130%] font-semibold text-[var(--primary-purple)] font-['Onest']">
+                                ${totalMonthly}
+                              </span>
+                              <span className="text-[var(--text-grey)] text-sm leading-[170%] font-normal font-['Onest']">
+                                /month
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button className="w-full py-4 bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] text-white rounded-full font-bold transition-all shadow-lg active:scale-[0.98] font-['Onest']">
+                        Proceed to Payment
+                      </button>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
