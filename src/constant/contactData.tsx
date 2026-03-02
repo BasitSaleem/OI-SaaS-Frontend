@@ -11,11 +11,13 @@ export const CONTACT_CARDS = [
     icon: <PhilosophyIcons name="emailSupport" size={48} />,
     title: "Email Support",
     description: "support@ownersinventory.com",
+    url: "mailto:support@ownersinventory.com",
   },
   {
     icon: <PhilosophyIcons name="locationIcon" size={48} />,
     title: "Visit Us",
     description: "4254 Normandy Ct, Fredericksburg, VA 22408, United States",
+    url: "https://www.google.com/maps/search/?api=1&query=4254+Normandy+Ct,+Fredericksburg,+VA+22408,+United+States",
   },
 ];
 

@@ -167,8 +167,9 @@ const ContactHero: React.FC<contactHeroProps> = ({
                                     </h3>
 
                                     <Link
-                                      href=""
-                                      className="text-sm md:text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] "
+                                      href={card.url || "#"}
+                                      target={card.url?.startsWith("http") ? "_blank" : undefined}
+                                      className="text-sm md:text-lg leading-[140%] font-medium font-['Onest'] text-[var(--text-dark)] hover:text-[var(--primary-purple)] transition-colors duration-300"
                                     >
                                       {card.description}
                                     </Link>
