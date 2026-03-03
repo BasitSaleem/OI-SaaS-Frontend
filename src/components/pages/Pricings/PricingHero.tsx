@@ -163,7 +163,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
               />
 
               {/* Pricing Cards */}
-              <div className="w-full mt-10 md:mt-14 xl:mt-20">
+              <div className="w-full mt-3 md:mt-5 xl:mt-5">
                 <PricingCards
                   plans={pricingConfig[activeBusinessTab].plans}
                   isYearly={activeTab === "yearly"}
