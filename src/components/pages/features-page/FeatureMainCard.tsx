@@ -65,7 +65,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 alt={title}
                 width={743}
                 height={460}
-                className="w-full h-full object-contain overflow-hidden bg-transparent"
+                className={`w-full h-full object-contain overflow-hidden bg-transparent ${mediaClassName}`}
                 priority
               />
             ) : !shouldShowImage && videoSrc ? (
@@ -86,7 +86,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 alt={title}
                 width={743}
                 height={460}
-                className="w-full h-full object-contain overflow-hidden bg-transparent"
+                className={`w-full h-full object-contain overflow-hidden bg-transparent ${mediaClassName}`}
                 priority
               />
             ) : null}

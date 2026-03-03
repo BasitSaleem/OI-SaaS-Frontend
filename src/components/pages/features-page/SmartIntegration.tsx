@@ -50,7 +50,7 @@ const SmartIntegration: React.FC = () => {
                 key={index}
                 title={feature.title}
                 description={feature.description}
-                videoSrc={feature.videoSrc}
+                // videoSrc={feature.videoSrc}
                 imageSrc={feature.imageSrc}
                 className={`${pattern.colClass} p-[1px] rounded-[30px] flex`}
                 paddingClass="p-4"

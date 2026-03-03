@@ -12,7 +12,7 @@ interface EmpoweredSectionProps {
   features: {
     title: string;
     description: string;
-    videoSrc: string;
+    videoSrc?: string;
     imageSrc?: string;
     buttonHref?: string;
     className?: string;
