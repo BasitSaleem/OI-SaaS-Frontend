@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useDevice } from "@/hooks/useDevice";
 import { useRouter } from "next/navigation";
 import { BusinessType } from "./tableConfig";
+import { LuCircleFadingPlus } from "react-icons/lu";
 
 interface ComparisonTableProps {
   categories: FeatureCategory[];
@@ -59,7 +60,23 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
     };
   }, [isVisible, plans]); // Re-calculate when visibility or plans change
 
-  const renderFeatureValue = useCallback((value: string | boolean) => {
+  const renderFeatureValue = useCallback((value: string | boolean | undefined) => {
+    if (value === "Add-on") {
+      return (
+        <div className="flex items-center justify-center">
+          <LuCircleFadingPlus size={22} className="text-[var(--primary-teal)] opacity-80" />
+        </div>
+      );
+    }
+
+    if (value === undefined || value === false) {
+      return (
+        <div className="flex items-center justify-center">
+          <span className="text-gray-400">—</span>
+        </div>
+      );
+    }
+    
     if (typeof value === "boolean") {
       return value ? (
         <div className="flex items-center justify-center">
@@ -313,33 +330,21 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               <div
                                 key={featureIndex}
                                 className={`py-5 text-center font-['onest'] text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${
-                                  isAddon ? "addon-container-cell" : (planIndex < tablePlans.length - 1 ? "border-r" : "")
+                                  planIndex < tablePlans.length - 1 ? "border-r" : ""
                                 }`}
                                 style={{
                                   height: "68px",
-                                  borderBottom: isAddon || (category.name === 'Integration' && featureIndex === category.features.length - 1)
+                                  borderBottom: (category.name === 'Integration' && featureIndex === category.features.length - 1)
                                     ? "none"
                                     : `1px solid ${plan.color}`,
-                                  borderRightColor: isAddon ? "var(--addon-border)" : (planIndex === tablePlans.length - 1 ? "transparent" : plan.color),
+                                  borderRightColor: (planIndex === tablePlans.length - 1 ? "transparent" : plan.color),
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
                                   position: "relative",
                                 }}
                               >
-                                {isAddon && (
-                                  <div className="addon-ribbon-badge">
-                                    Add-on
-                                  </div>
-                                )}
-
-                                {isAddon ? (
-                                  <div className="addon-pill-value">
-                                    {cleanValue}
-                                  </div>
-                                ) : (
-                                  renderFeatureValue(featureValue)
-                                )}
+                                {renderFeatureValue(featureValue)}
                               </div>
                             );
                           })}

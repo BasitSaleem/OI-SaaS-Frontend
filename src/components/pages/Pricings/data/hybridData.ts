@@ -41,15 +41,15 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 "Unlimited POS Terminal",
                 'Unlimited Production Floors',
                 'Accounts & Finance',
-                 'Unlimited Users',
+                'Unlimited Users',
                 'Unlimited Products',
                 'Unlimited Orders & Invoices',
                 'Unlimited Purchases',
                 'Onboarding Assistance & Email Support',
                 'Live Chat & Phone Support',
                 'Dedicated Account Manager'
-                 
-                
+
+
             ]
         },
         {
@@ -67,12 +67,12 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'Key Features',
             features: [
-                { name: 'Stores', basic: '5', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Warehouses', basic: '5', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Production Floors', basic: '5', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Online Store', basic: '1', standard: '1', professional: '1', premium: '1' },
-                { name: 'Accounts & Finance', basic: true, standard: true, professional: true, premium: true },
-                { name: 'POS Terminals', basic: '10', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Stores', info: true, infoText: "Manage multiple stores from one dashboard.", basic: '5', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Warehouses', info: true, infoText: "Track stock across multiple warehouse locations.", basic: '5', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Production Floors', info: true, infoText: "Monitor manufacturing processes and raw material usage.", basic: '5', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Online Store', info: true, infoText: "Sell online with synced inventory and orders.", basic: '1', standard: '1', professional: '1', premium: '1' },
+                { name: 'Accounts & Finance', info: true, infoText: "Automate accounting, expenses, and financial reporting.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'POS Terminal', info: true, infoText: "Fast billing with real-time inventory sync.", basic: '10', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
             ]
         },
         {
@@ -112,7 +112,7 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             name: 'Sales & Orders',
             features: [
                 { name: 'Point of Sale', basic: true, standard: true, professional: true, premium: true },
-                { name: 'POS Terminals', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'POS Terminal', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Invoices', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Quotations', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Sales Orders', basic: true, standard: true, professional: true, premium: true },
@@ -131,43 +131,45 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'Inventory Operations',
             features: [
-                { name: 'Transfer Orders', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Stock Issuing', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Stock Receiving', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Stock Adjustments', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Bulk Stock Adjustments', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Stock Alerts', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Transfer Orders', info: true, infoText: "Move stock between warehouses or store locations.", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Stock Issuing', info: true, infoText: "Log and monitor inventory released for internal use or sales.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Stock Receiving', info: true, infoText: "Log incoming goods into inventory.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Stock Adjustments', info: true, infoText: "Make real-time adjustments to product stock levels from one unified view.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Bulk Stock Adjustments', info: true, infoText: "Update large inventory quantities in seconds.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Stock Alerts', info: true, infoText: "Get low stock notifications before shortages occur.", basic: true, standard: true, professional: true, premium: true },
             ]
         },
         {
             name: 'Ecommerce',
             features: [
-                { name: 'OJ Themes', basic: 'Free/Paid', standard: 'Free/Paid', professional: 'Free/Paid', premium: 'Free/Paid' },
-                { name: 'Orders', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Discounts', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Campaigns', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Custom Domain', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Online Store', info: true, infoText: "Sell online with synced inventory and orders.", basic: '1', standard: '1', professional: '1', premium: '1' },
+                { name: 'OJ Themes', info: true, infoText: "Choose professional themes to design your online store.", basic: 'Free/Paid', standard: 'Free/Paid', professional: 'Free/Paid', premium: 'Free/Paid' },
+                { name: 'Orders', info: true, infoText: "Monitor and fulfill orders – placed online.", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Discounts', info: true, infoText: "Apply promotional price reductions to products.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Campaigns', info: true, infoText: "Run marketing campaigns to boost your sales.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Custom Domain', info: true, infoText: "Use your own branded domain for your store.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Collections', info: true, infoText: "Manage customer records and order history in one place.", basic: true, standard: true, professional: true, premium: true },
             ]
         },
         {
             name: 'Manufacturing',
             features: [
-                { name: 'Production Orders', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Machines', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Moulds', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Quality & Inspections', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Production Orders', info: true, infoText: "Manage the end-to-end production of goods.", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Moulds', info: true, infoText: "Manage and track all product moulds efficiently.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Quality & Inspections', info: true, infoText: "Ensure products meet standards with regular inspections.", basic: true, standard: true, professional: true, premium: true },
             ]
         },
         {
             name: 'Analytics',
             features: [
-                { name: 'Sales Reports', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Purchases Reports', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Inventory Reports', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Shifts', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Commissions', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Daily Cash Report', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Manufacturing', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Sales Reports', info: true, infoText: "Track sales performance and revenue trends instantly.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Purchases Reports', info: true, infoText: "Monitor procurement and supplier purchase history easily.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Inventory Reports', info: true, infoText: "Analyze stock levels and inventory movement efficiently.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Shifts', info: true, infoText: "Review employee shift schedules and work hours.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Commissions', info: true, infoText: "Calculate staff commissions accurately and automatically.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Daily Cash Report', info: true, infoText: "Get daily cash flow summaries at a glance.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Manufacturing', info: true, infoText: "Monitor production output and efficiency metrics quickly.", basic: true, standard: true, professional: true, premium: true },
             ]
         },
         {
@@ -182,9 +184,9 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'Restaurant',
             features: [
-                { name: 'Floors', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Tables', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Decorations', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Floors', info: true, infoText: "Structure your dining space with floor-level mapping for efficient table management.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Tables', info: true, infoText: "Assign and manage tables for restaurant service.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Decorations', info: true, infoText: "Analyze decoration orders and customization performance data.", basic: true, standard: true, professional: true, premium: true },
             ]
         },
         {
@@ -197,7 +199,7 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'General Tools',
             features: [
-                { name: 'Role-Based Permissions', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Role-Based Permissions', info: true, infoText: "Provide user access based on their assigned roles.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Notifications', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Activity Log', basic: true, standard: true, professional: true, premium: true },
             ]
@@ -216,13 +218,13 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             name: 'Integrations',
             features: [
                 // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
-                   { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon'  },
-            { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'Leopard', info: true, infoText: "Integrate with Leopard Courier for local delivery tracking and dispatch.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'Zapier', info: true, infoText: "Automate workflows by connecting your store with thousands of apps via Zapier.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-            { name: 'Make', info: true, infoText: "Build advanced automation scenarios using Make (formerly Integromat).", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
+                { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Leopard', info: true, infoText: "Integrate with Leopard Courier for local delivery tracking and dispatch.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Zapier', info: true, infoText: "Automate workflows by connecting your store with thousands of apps via Zapier.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Make', info: true, infoText: "Build advanced automation scenarios using Make (formerly Integromat).", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
             ]
         }
     ]

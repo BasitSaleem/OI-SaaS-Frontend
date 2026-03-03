@@ -33,7 +33,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
         name: 'Sales & Orders',
         features: [
             { name: 'Point of Sale', info: true, infoText: "Sell products directly with an intuitive POS system." },
-            { name: 'POS Terminals', info: true, infoText: "Set up physical POS stations for cashier use. Hardware is not included." },
+            { name: 'POS Terminal', info: true, infoText: "Set up physical POS stations for cashier use. Hardware is not included." },
             { name: 'Invoices', info: true, infoText: " Print & Share/Send professional invoices to customers with ease." },
             { name: 'Quotations', info: true, infoText: "Prepare and send quotes to leads or existing customers." },
             { name: 'Sales Orders', info: true, infoText: "Track confirmed customer orders." },
@@ -61,9 +61,12 @@ export const commonFeatureCategories: FeatureCategory[] = [
     {
         name: 'Ecommerce',
         features: [
-            { name: 'Online Store', info: true, infoText: "Launch your own branded e-commerce website and custom-developed templates will be billed separately." },
+            { name: 'Online Store', info: true, infoText: "Sell online with synced inventory and orders." },
+            { name: 'OJ Themes', info: true, infoText: "Choose professional themes to design your online store." },
             { name: 'Orders', info: true, infoText: "Monitor and fulfill orders – placed online." },
             { name: 'Discounts', info: true, infoText: "Apply promotional price reductions to products." },
+            { name: 'Campaigns', info: true, infoText: "Run marketing campaigns to boost your sales." },
+            { name: 'Custom Domain', info: true, infoText: "Use your own branded domain for your store." },
             { name: 'Collections', info: true, infoText: "Manage customer records and order history in one place." }
         ]
     },
@@ -72,7 +75,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
         features: [
             { name: 'Floors', info: true, infoText: "Structure your dining space with floor-level mapping for efficient table management." },
             { name: 'Tables', info: true, infoText: "Assign and manage tables for restaurant service." },
-            { name: 'Decorations', info: true, infoText: "Customize your digital floor layout for ambiance." }
+            { name: 'Decorations', info: true, infoText: "Analyze decoration orders and customization performance data." }
         ]
     },
     {
@@ -86,7 +89,9 @@ export const commonFeatureCategories: FeatureCategory[] = [
         name: 'Manufacturing',
         features: [
             { name: 'Production Orders', info: true, infoText: "Manage the end-to-end production of goods." },
-            { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place." }
+            { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place." },
+            { name: 'Moulds', info: true, infoText: "Manage and track all product moulds efficiently." },
+            { name: 'Quality & Inspections', info: true, infoText: "Ensure products meet standards with regular inspections." }
         ]
     },
     {
@@ -104,22 +109,30 @@ export const commonFeatureCategories: FeatureCategory[] = [
     },
     {
         name: 'Analytics',
-        features: []
+        features: [
+            { name: 'Sales Reports', info: true, infoText: "Track sales performance and revenue trends instantly." },
+            { name: 'Purchases Reports', info: true, infoText: "Monitor procurement and supplier purchase history easily." },
+            { name: 'Inventory Reports', info: true, infoText: "Analyze stock levels and inventory movement efficiently." },
+            { name: 'Shifts', info: true, infoText: "Review employee shift schedules and work hours." },
+            { name: 'Commissions', info: true, infoText: "Calculate staff commissions accurately and automatically." },
+            { name: 'Daily Cash Report', info: true, infoText: "Get daily cash flow summaries at a glance." },
+            { name: 'Manufacturing', info: true, infoText: "Monitor production output and efficiency metrics quickly." },
+            { name: 'Decorations', info: true, infoText: "Analyze decoration orders and customization performance data." },
+        ]
     },
     {
         name: 'General Tools',
         features: [
-            // { name: 'Role-Based Access', info: true, infoText: "Limit user access based on job roles and responsibilities." },
+            { name: 'Role-Based Permissions', info: true, infoText: "Provide user access based on their assigned roles." },
             { name: 'Notifications', info: true, infoText: "Automatically receive updates for stock movements, sales, and purchases." },
-            // { name: 'Stock Alerts', info: true, infoText: "Get notified when stock runs low or is out." },
+            { name: 'Stock Alerts', info: true, infoText: "Get low stock notifications before shortages occur." },
             { name: 'Activity Log', info: true, infoText: "View recent user actions and changes." },
-            // { name: 'Automations', info: true, infoText: "Set up workflow automations to save time." }
         ]
     },
     {
         name: 'Integrations',
         features: [
-            { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation."  },
+            { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation." },
             { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe." },
             { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers." },
             { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management." },
