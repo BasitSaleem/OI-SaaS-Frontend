@@ -385,7 +385,7 @@ export default function FeaturesTabSection() {
                     activeTab === feature.tabIndex ? "" : "hidden"
                   }`}
                 >
-                  {shouldShowImage ? (
+                  {/* {shouldShowImage ? (
                     <Image
                       src={feature.imageSrc}
                       alt={feature.title}
@@ -409,7 +409,14 @@ export default function FeaturesTabSection() {
                       <source src={feature.videoSrc} type="video/webm" />
                       Your browser does not support the video tag.
                     </video>
-                  ) : null}
+                  ) : null} */}
+                   <Image
+                      src={feature.imageSrc}
+                      alt={feature.title}
+                      width={743}
+                      height={460}
+                      className="w-full h-full overflow-hidden object-cover bg-transparent rounded-3xl"
+                    />
                 </div>
               </div>
             ))}
