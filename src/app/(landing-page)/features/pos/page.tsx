@@ -69,8 +69,8 @@ across multiple locations."
         paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
         cards={POS_WHY_CHOOSE_CARDS}
         mainImage= {whyChoseBanner}
-        mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
-        backgroundImage={backgroundImage}
+        // mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
+        // backgroundImage={backgroundImage}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
