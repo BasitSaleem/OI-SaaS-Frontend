@@ -8,6 +8,7 @@ import { createPortal } from "react-dom";
 import { companyItems } from "./dropdownItems/Companylist";
 import { title } from "process";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   resourcesDetailsMap,
   resourcesItems,
@@ -55,6 +56,16 @@ export default function OffcanvasMenu({
   const toggleItem = (key: string) => {
     setExpandedItemKey((prev) => (prev === key ? null : key));
   };
+
+  const pathname = usePathname();
+  const lastPathname = useRef(pathname);
+
+  // Close menu when route changes
+  useEffect(() => {
+    if (open && pathname !== lastPathname.current) {
+      onClose();
+    }
+  }, [pathname, open, onClose]);
 
   // Mount guard for portal
   useEffect(() => setMounted(true), []);
@@ -229,6 +240,7 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="/features"
+                  prefetch={false}
                   className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   View All Features
@@ -275,6 +287,7 @@ export default function OffcanvasMenu({
             <li className={listItem}>
               <Link
                 href="/pricing"
+                prefetch={false}
                 className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--border-muted)] hover:bg-gray-100 hover:border-[var(--primary-purple)] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full font-['Onest']"
               >
                 Pricing
@@ -307,6 +320,7 @@ export default function OffcanvasMenu({
               <div className={navButton}>
                 <Link
                   href="#"
+                  prefetch={false}
                   className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   Company
@@ -354,6 +368,7 @@ export default function OffcanvasMenu({
             <li className={listItem}>
               <Link
                 href="/coming-soon"
+                prefetch={false}
                 className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--border-muted)] hover:bg-gray-100 hover:border-[var(--primary-purple)] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full font-['Onest']"
               >
                 Login
@@ -441,6 +456,7 @@ export default function OffcanvasMenu({
                                     >
                                       <Link
                                         href={`/features/${item.key.toLowerCase()}`}
+                                        prefetch={false}
                                         onClick={onClose}
                                         className="w-[85%] flex items-center px-3 py-2.5"
                                       >
@@ -541,6 +557,7 @@ export default function OffcanvasMenu({
                                   ? `/industries/${item.key.toLowerCase()}`
                                   : `/${activePanel}/${item.key.toLowerCase()}`
                               }
+                              prefetch={false}
                               onClick={onClose} // closes the offcanvas when navigating
                               className="w-[80%] flex items-center px-4 py-4"
                             >
@@ -621,6 +638,7 @@ export default function OffcanvasMenu({
                                           {href !== "#" ? (
                                             <Link
                                               href={href}
+                                              prefetch={false}
                                               className="hover:underline"
                                               onClick={onClose}
                                             >
