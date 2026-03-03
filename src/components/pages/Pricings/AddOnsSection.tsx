@@ -16,14 +16,14 @@ const addOns: AddOnItem[] = [
     id: "warehouse",
     name: "Warehouses",
     price: 25,
-    description: "Add warehouses for multi-location inventory tracking",
+    description: "Add warehouses for multi-location inventory tracking.",
     icon: "warehouse",
   },
   {
     id: "finance",
     name: "Accounts & Finance",
     price: 15,
-    description: "Full accounting module with reports and financial tracking",
+    description: "Full accounting module with reports and financial tracking.",
     icon: "finance",
   },
   {
@@ -37,7 +37,7 @@ const addOns: AddOnItem[] = [
     id: "production",
     name: "Production Floors",
     price: 25,
-    description: "Add production floors for manufacturing operations",
+    description: "Add production floors for manufacturing operations.",
     icon: "productionFloors",
   },
   {
