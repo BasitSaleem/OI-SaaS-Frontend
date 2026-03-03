@@ -117,7 +117,6 @@ export const commonFeatureCategories: FeatureCategory[] = [
             { name: 'Commissions', info: true, infoText: "Calculate staff commissions accurately and automatically." },
             { name: 'Daily Cash Report', info: true, infoText: "Get daily cash flow summaries at a glance." },
             { name: 'Manufacturing', info: true, infoText: "Monitor production output and efficiency metrics quickly." },
-            { name: 'Decorations', info: true, infoText: "Analyze decoration orders and customization performance data." },
         ]
     },
     {

@@ -131,6 +131,13 @@ export const ecommerceData: {
       ],
     },
     {
+            name: 'Purchases',
+            features: [
+                { name: 'Purchase Orders', info: true, infoText: " Create and track orders placed to suppliers.", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Bulk Purchase', info: true, infoText: "Simplify restocking with one-step bulk purchasing for any item mix.", basic: true, standard: true, professional: true, premium: true },
+            ]
+        },
+    {
       name: "Ecommerce",
       features: [
         {
@@ -444,15 +451,7 @@ export const ecommerceData: {
           professional: true,
           premium: true,
         },
-        {
-          name: "Decorations",
-          info: true,
-          infoText: "Analyze decoration orders and customization performance data.",
-          basic: true,
-          standard: true,
-          professional: true,
-          premium: true,
-        },
+        
       ],
     },
     {
@@ -460,13 +459,6 @@ export const ecommerceData: {
       features: [
         {
           name: "Coupons",
-          basic: true,
-          standard: true,
-          professional: true,
-          premium: true,
-        },
-         {
-          name: "Fixed Assets & Allocations",
           basic: true,
           standard: true,
           professional: true,

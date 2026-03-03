@@ -132,8 +132,38 @@ export const getAggregatedCategories = (activeBusiness: BusinessType): FeatureCa
 
   // 6. Sort the aggregated categories
   const sortedAggregatedCategories = aggregatedCategories.sort((a, b) => {
-    const indexA = categoryOrder.indexOf(a.name.toUpperCase());
-    const indexB = categoryOrder.indexOf(b.name.toUpperCase());
+    let effectiveOrder = [...categoryOrder];
+
+    // Custom order for Manufacturing tab: move MANUFACTURING after PRODUCTS
+    if (activeBusiness === "Manufacturing") {
+      const manufacturingIndex = effectiveOrder.indexOf("MANUFACTURING");
+      const productsIndex = effectiveOrder.indexOf("PRODUCTS");
+      if (manufacturingIndex !== -1 && productsIndex !== -1) {
+        // Remove MANUFACTURING from its old spot
+        effectiveOrder.splice(manufacturingIndex, 1);
+        // Find NEW index of PRODUCTS
+        const newProductsIndex = effectiveOrder.indexOf("PRODUCTS");
+        // Insert after products
+        effectiveOrder.splice(newProductsIndex + 1, 0, "MANUFACTURING");
+      }
+    }
+
+    // Custom order for Ecommerce tab: move ECOMMERCE after PRODUCTS
+    if (activeBusiness === "Ecommerce") {
+      const ecommerceIndex = effectiveOrder.indexOf("ECOMMERCE");
+      const productsIndex = effectiveOrder.indexOf("PRODUCTS");
+      if (ecommerceIndex !== -1 && productsIndex !== -1) {
+        // Remove ECOMMERCE from its old spot
+        effectiveOrder.splice(ecommerceIndex, 1);
+        // Find NEW index of PRODUCTS
+        const newProductsIndex = effectiveOrder.indexOf("PRODUCTS");
+        // Insert after products
+        effectiveOrder.splice(newProductsIndex + 1, 0, "ECOMMERCE");
+      }
+    }
+
+    const indexA = effectiveOrder.indexOf(a.name.toUpperCase());
+    const indexB = effectiveOrder.indexOf(b.name.toUpperCase());
 
     // If not in the list, move to the end
     if (indexA === -1 && indexB === -1) return 0;

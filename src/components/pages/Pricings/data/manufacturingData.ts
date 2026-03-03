@@ -116,9 +116,9 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
         {
             name: 'Restaurant',
             features: [
-                { name: 'Floors', info: true, infoText: "Structure your dining space with floor-level mapping for efficient table management.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Tables', info: true, infoText: "Assign and manage tables for restaurant service.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Decorations', info: true, infoText: "Customize your digital floor layout for ambiance.", basic: true, standard: true, professional: true, premium: true }
+                { name: 'Floors', info: true, infoText: "Structure your dining space with floor-level mapping for efficient table management.", basic: false, standard: false, professional: false, premium: false },
+                { name: 'Tables', info: true, infoText: "Assign and manage tables for restaurant service.", basic: false, standard: false, professional: false, premium: false },
+                { name: 'Decorations', info: true, infoText: "Customize your digital floor layout for ambiance.", basic: false, standard: false, professional: false, premium: false }
             ]
         },
         {

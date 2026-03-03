@@ -70,8 +70,8 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 { name: 'Stores', info: true, infoText: "Manage multiple stores from one dashboard.", basic: '1', standard: '3', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'POS Terminal', info: true, infoText: "Fast billing with real-time inventory sync.", basic: '1', standard: '6', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Warehouses', info: true, infoText: "Track stock across multiple warehouse locations.", basic: 'Add-on', standard: '1', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Production Floors', info: true, infoText: "Monitor manufacturing processes and raw material usage.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
                 { name: 'Online Store', info: true, infoText: "Sell online with synced inventory and orders.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Production Floors', info: true, infoText: "Monitor manufacturing processes and raw material usage.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
                 { name: 'Accounts & Finance', info: true, infoText: "Automate accounting, expenses, and financial reporting.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
@@ -135,6 +135,24 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 { name: 'Shifts', info: true, infoText: "Review employee shift schedules and work hours.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Commissions', info: true, infoText: "Calculate staff commissions accurately and automatically.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Daily Cash Report', info: true, infoText: "Get daily cash flow summaries at a glance.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Manufacturing', info: true, infoText: "Monitor production output and efficiency metrics quickly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+            ]
+        },
+        {
+            name: 'Human Resources',
+            features: [
+                { name: 'Employees', basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Departments', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Designations', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Payslips', basic: true, standard: true, professional: true, premium: true },
+            ]
+        },
+        {
+            name: 'Restaurant',
+            features: [
+                { name: 'Floors', info: true, infoText: "Structure your dining space with floor-level mapping for efficient table management.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Tables', info: true, infoText: "Assign and manage tables for restaurant service.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Decorations', info: true, infoText: "Customize your digital floor layout for ambiance.", basic: true, standard: true, professional: true, premium: true }
             ]
         },
         {
@@ -158,7 +176,20 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 { name: 'Quality & Inspections', info: true, infoText: "Ensure products meet standards with regular inspections.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
-         {
+        {
+            name: 'Accounts & Finance',
+            features: [
+                { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Billing & Payments', info: true, infoText: "Automate invoices, payments & bill tracking.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Payables & Receivables', info: true, infoText: "Ensures smooth cash flow—critical for businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Financial Insights & Reports', info: true, infoText: "Gain powerful reports & business analytics.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "Summarizes financial health—important for compliance.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Chart of Accounts', info: true, infoText: "Supports structured financial management—essential for accountants.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Journal Entries & Reports', info: true, infoText: "Detailed financial transaction recording—used by finance teams.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Fixed Assets & Allocations', info: true, infoText: "Long-term asset management—more relevant for established businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
+            ]
+        },
+        {
             name: 'Accounts & Finance',
             features: [
                 { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
