@@ -4,7 +4,7 @@ interface ToolTipProps {
     text: string | undefined
     isComparisonToolTip?: boolean
     isVisible?: boolean
-    industry: BusinessType;
+    industry?: BusinessType;
 }
 const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false, isVisible = false, industry }) => {
     return (
