@@ -287,6 +287,7 @@ export const ecommerceData: {
         },
         {
           name: "Bulk Product Import",
+          info: true, infoText: "Import products in bulk with a easy way.",
           basic: true,
           standard: true,
           professional: true,

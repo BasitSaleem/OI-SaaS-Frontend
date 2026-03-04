@@ -189,7 +189,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] p-[2px]">
           <div className="flex w-full bg-white rounded-[30px] overflow-hidden">
             {/* Left sticky column with feature names */}
-            <div className={`bg-white sticky left-0 z-30 w-6/12 ${industry === 'Hybrid' ? 'md:w-5/12 lg:w-4/12' : 'md:w-4/12 lg:w-3/12'}  border-r border-[var(--primary-teal)] shrink-0 overflow-visible`}>
+            <div className={`bg-white sticky left-0 z-30 w-6/12 ${industry === 'Hybrid' ? 'md:w-4/12 lg:w-4/12' : 'md:w-4/12 lg:w-3/12'}  border-r border-[var(--primary-teal)] shrink-0 overflow-visible`}>
               <table className="table-auto w-full border-collapse">
                 {categories.map((category, categoryIndex) => (
                   <React.Fragment key={categoryIndex}>
@@ -264,7 +264,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
             {/* Right scrollable column with pricing plans */}
             <div
               ref={scrollRef}
-              className={`overflow-x-auto w-6/12 ${industry === 'Hybrid' ? 'md:w-7/12 lg:w-8/12' : 'md:w-8/12 lg:w-9/12'}  [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory`}
+              className={`overflow-x-auto w-6/12 ${industry === 'Hybrid' ? 'md:w-8/12 lg:w-8/12' : 'md:w-8/12 lg:w-9/12'}  [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory`}
             >
               <div className="flex min-w-max">
                 {tablePlans.map((plan, planIndex) => {
