@@ -395,7 +395,7 @@ const CheckoutContent = () => {
                         onClick={() => setBillingCycle("monthly")}
                         className={`tab-btn flex-1 cursor-pointer py-2 lg:py-[14px] 
           text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
-          transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
+          transition-colors duration-300 focus:outline-none  ${
             billingCycle === "monthly"
               ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
               : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
@@ -411,7 +411,7 @@ const CheckoutContent = () => {
                           onClick={() => setBillingCycle("yearly")}
                           className={`tab-btn relative cursor-pointer w-full py-2 lg:py-3.5
            text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
-            transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-purple)] ${
+            transition-colors duration-300 focus:outline-none  ${
               billingCycle === "yearly"
                 ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
                 : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
@@ -552,7 +552,7 @@ const CheckoutContent = () => {
                         </div>
                       </div>
 
-                      <button className="w-full py-4 bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] text-white rounded-full font-bold transition-all shadow-lg active:scale-[0.98] font-['Onest']">
+                      <button className="w-full py-4 bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] text-white rounded-full font-bold transition-all font-['Onest']">
                         Proceed to Payment
                       </button>
                     </div>
