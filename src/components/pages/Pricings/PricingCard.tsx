@@ -70,9 +70,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
               <h3 className="text-[24px] lg:text-[28px] text-[var(--text-dark)] font-semibold leading-[100%] font-['Onest']">
             {plan.name}
           </h3>
-          <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5 ">
-            {plan.description}
-          </p>
+            <p className="text-sm text-[var(--text-dark)] font-['Onest'] mt-1.5 min-h-[40px] md:min-h-[48px]">
+              {plan.description}
+            </p>
         </div>
 
         <div className={`flex items-baseline gap-1 ${isYearly ? 'mb-0' : 'mb-8'}`}>

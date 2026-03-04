@@ -43,6 +43,25 @@ export default function PosIconsSection() {
     if (spanRef.current) gsap.set(spanRef.current, { scale: 1 });
   };
 
+  const [activeTooltipId, setActiveTooltipId] = useState<string | null>(null);
+
+  const handleTooltipClick = (e: React.MouseEvent, iconId: string) => {
+    // Only handle click for tooltips on mobile/tablet
+    if (window.innerWidth < 1024) {
+      e.preventDefault();
+      e.stopPropagation();
+      setActiveTooltipId(prev => (prev === iconId ? null : iconId));
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = () => setActiveTooltipId(null);
+    if (activeTooltipId) {
+      window.addEventListener("click", handleClickOutside);
+    }
+    return () => window.removeEventListener("click", handleClickOutside);
+  }, [activeTooltipId]);
+
   // Animate icons to positions with responsive breakpoints
   const animateIconsToPositions = () => {
     if (hasAnimated) return;
@@ -260,6 +279,7 @@ export default function PosIconsSection() {
                 key={icon.id}
                 href= {`/features/${icon.category}`}
                 id={icon.id}
+                onClick={(e) => handleTooltipClick(e, icon.id)}
                 className={`absolute cursor-pointer ${icon.size} rounded-[20px] border border-transparent hover:border-white w-auto flex items-center justify-center group`}
               >
                 <Image
@@ -269,7 +289,11 @@ export default function PosIconsSection() {
                   height={80}
                   className="w-full h-full rounded-[20px] transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"
                 />
-                <Tooltip text={icon.label} isComparisonToolTip={false} />
+                <Tooltip 
+                  text={icon.label} 
+                  isComparisonToolTip={false} 
+                  isVisible={activeTooltipId === icon.id}
+                />
               </Link>
             ))}
           </div>

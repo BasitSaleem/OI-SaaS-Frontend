@@ -25,7 +25,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
   industry,
 }) => {
   const router = useRouter();
-  const { isMobile: isSmallScreen } = useDevice();
+  const { isMobile, isTablet, isDesktop } = useDevice();
+  const isSmallScreen = isMobile || isTablet;
+  const [activeTooltipId, setActiveTooltipId] = useState<string | null>(null);
+
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -37,12 +40,32 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
     setIsVisible(!isVisible);
   };
 
+  const handleTooltipClick = (e: React.MouseEvent, featureId: string) => {
+    if (isSmallScreen) {
+      e.stopPropagation();
+      setActiveTooltipId(prev => prev === featureId ? null : featureId);
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = () => setActiveTooltipId(null);
+    if (activeTooltipId) {
+      window.addEventListener("click", handleClickOutside);
+    }
+    return () => window.removeEventListener("click", handleClickOutside);
+  }, [activeTooltipId]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (scrollRef.current) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
         const progress = ((scrollLeft + clientWidth) / scrollWidth) * 100;
         setScrollProgress(progress);
+        
+        // Close tooltip on scroll for better mobile UX
+        if (activeTooltipId) {
+          setActiveTooltipId(null);
+        }
       }
     };
 
@@ -173,9 +196,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                         <tr key={featureIndex} style={{ height: "68px" }}>
                           <td
                             className={`
-                               px-4 text-left font-['onest'] text-sm md:text-base lg:text-lg leading-6
+                               px-4 text-left font-['onest'] text-xs sm:text-sm md:text-base lg:text-lg leading-6
                                 text-[var(--text-dark)] font-normal 
-                                ${category.name === 'Integration' && featureIndex === category.features.length - 1 ? '' : 'border-b border-[var(--primary-teal)]'}
+                                 ${categoryIndex === categories.length - 1 && featureIndex === category.features.length - 1 ? '' : 'border-b border-[var(--primary-teal)]'}
                               `}
                             style={{ height: "68px", verticalAlign: "middle" }}
                           >
@@ -186,7 +209,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                   {feature.name}
                                 </span>
 
-                                <div className="w-1/6 flex justify-end items-center relative group">
+                                <div 
+                                  className="w-1/6 flex justify-end items-center relative group"
+                                  onClick={(e) => handleTooltipClick(e, `${categoryIndex}-${featureIndex}`)}
+                                >
                                   <Image
                                     src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
                                     className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
@@ -197,6 +223,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                   <Tooltip
                                     text={feature?.infoText}
                                     isComparisonToolTip
+                                    isVisible={activeTooltipId === `${categoryIndex}-${featureIndex}`}
                                   />
                                 </div>
                               </div>
@@ -334,7 +361,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                 }`}
                                 style={{
                                   height: "68px",
-                                  borderBottom: (category.name === 'Integration' && featureIndex === category.features.length - 1)
+                                  borderBottom: (categoryIndex === categories.length - 1 && featureIndex === category.features.length - 1)
                                     ? "none"
                                     : `1px solid ${plan.color}`,
                                   borderRightColor: (planIndex === tablePlans.length - 1 ? "transparent" : plan.color),

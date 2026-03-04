@@ -2,14 +2,15 @@ import React from 'react'
 interface ToolTipProps {
     text: string | undefined
     isComparisonToolTip?: boolean
+    isVisible?: boolean
 }
-const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false }) => {
+const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false, isVisible = false }) => {
     return (
         <div className={`${isComparisonToolTip
             ?
-            "absolute left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-2 bottom-full mb-2 z-[999] hidden group-hover:flex flex-col items-start w-auto"
+            `absolute  -translate-x-2 left-0 md:-translate-x-1 lg:translate-x-2  lg:left-2 bottom-full mb-2 z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-start w-auto`
             :
-            "absolute left-[50%] -translate-x-[50%] top-[110%] z-[999] hidden group-hover:flex flex-col items-left"}`}>
+            `absolute left-[50%] -translate-x-[50%] top-[110%] z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-left`}`}>
 
             {!isComparisonToolTip && <div className="w-2 h-2 rotate-45 bg-white border-l border-t border-[var(--primary-purple)] -mb-1 mx-auto"></div>}
 
