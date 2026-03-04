@@ -159,7 +159,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         </div>
 
         {/* Progress Bar for Mobile/Tablet */}
-        <div className={`lg:hidden w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center mb-6 ${industry === 'Hybrid' ? 'md:hidden' : ''}`}>
+        <div className={`lg:hidden w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center  justify-center mb-6 ${industry === 'Hybrid' ? 'md:hidden' : ''}`}>
           <div className="h-1.5 md:w-2/3  w-full md:order-1 order-2 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] transition-all duration-200 ease-out"
@@ -177,7 +177,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
 
         {/* Center PricingTabs for Hybrid ONLY on Tablet */}
         {industry === "Hybrid" && (
-          <div className="hidden md:flex lg:hidden w-full items-center justify-center mb-6">
+          <div className="hidden md:flex lg:hidden w-full items-center justify-end mb-6">
             <PricingTabs
               activeTab={tab}
               onTabChange={onTabChange}
