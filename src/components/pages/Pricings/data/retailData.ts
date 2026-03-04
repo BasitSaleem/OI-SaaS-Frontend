@@ -91,7 +91,7 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 { name: 'Brands', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Barcode & Serial Tracking', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Product Images', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Bulk Product Import', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Bulk Product Import', info: true, infoText: "Import products in bulk with a easy way.", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Bulk Price Update', basic: true, standard: true, professional: true, premium: true },
             ]
         },
