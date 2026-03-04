@@ -1,5 +1,11 @@
 "use client";
-import React, { useCallback, useMemo, useEffect, useState, useRef } from "react";
+import React, {
+  useCallback,
+  useMemo,
+  useEffect,
+  useState,
+  useRef,
+} from "react";
 import { FeatureCategory, PricingPlan } from "./types";
 import PricingTabs from "./PricingTabs";
 import Tooltip from "@/components/toolTip/Tooltip";
@@ -43,7 +49,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
   const handleTooltipClick = (e: React.MouseEvent, featureId: string) => {
     if (isSmallScreen) {
       e.stopPropagation();
-      setActiveTooltipId(prev => prev === featureId ? null : featureId);
+      setActiveTooltipId((prev) => (prev === featureId ? null : featureId));
     }
   };
 
@@ -61,7 +67,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
         const progress = ((scrollLeft + clientWidth) / scrollWidth) * 100;
         setScrollProgress(progress);
-        
+
         // Close tooltip on scroll for better mobile UX
         if (activeTooltipId) {
           setActiveTooltipId(null);
@@ -83,42 +89,48 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
     };
   }, [isVisible, plans]); // Re-calculate when visibility or plans change
 
-  const renderFeatureValue = useCallback((value: string | boolean | undefined) => {
-    if (value === "Add-on") {
-      return (
-        <div className="flex items-center justify-center">
-          <LuCircleFadingPlus size={22} className="text-[var(--primary-teal)] opacity-80" />
-        </div>
-      );
-    }
+  const renderFeatureValue = useCallback(
+    (value: string | boolean | undefined) => {
+      if (value === "Add-on") {
+        return (
+          <div className="flex items-center justify-center">
+            <LuCircleFadingPlus
+              size={22}
+              className="text-[var(--primary-teal)] opacity-80"
+            />
+          </div>
+        );
+      }
 
-    if (value === undefined || value === false) {
-      return (
-        <div className="flex items-center justify-center">
-          <span className="text-gray-400">—</span>
-        </div>
-      );
-    }
-    
-    if (typeof value === "boolean") {
-      return value ? (
-        <div className="flex items-center justify-center">
-          <Image
-            src="/assets/owners-inventory-pricing/compare-feature/tick-icon.svg"
-            className="xl:h-[28px] md:h-6 md:w-[18px] w-3 h-[24px]"
-            alt="Tick icon"
-            width={28}
-            height={28}
-          />
-        </div>
-      ) : (
-        <div className="flex items-center justify-center">
-          <span className="text-gray-400">—</span>
-        </div>
-      );
-    }
-    return <div className="text-center">{value}</div>;
-  }, []);
+      if (value === undefined || value === false) {
+        return (
+          <div className="flex items-center justify-center">
+            <span className="text-gray-400">—</span>
+          </div>
+        );
+      }
+
+      if (typeof value === "boolean") {
+        return value ? (
+          <div className="flex items-center justify-center">
+            <Image
+              src="/assets/owners-inventory-pricing/compare-feature/tick-icon.svg"
+              className="xl:h-[28px] md:h-6 md:w-[18px] w-3 h-[24px]"
+              alt="Tick icon"
+              width={28}
+              height={28}
+            />
+          </div>
+        ) : (
+          <div className="flex items-center justify-center">
+            <span className="text-gray-400">—</span>
+          </div>
+        );
+      }
+      return <div className="text-center">{value}</div>;
+    },
+    [],
+  );
 
   return (
     <section className="compare-section mt-20 md:mt-28 lg:mt-[100px]">
@@ -159,7 +171,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         </div>
 
         {/* Progress Bar for Mobile/Tablet */}
-        <div className={`lg:hidden w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center mb-6 ${industry === 'Hybrid' ? 'md:hidden' : ''}`}>
+        <div
+          className={`lg:hidden w-full flex md:flex-row flex-col gap-4 md:gap-2 items-center justify-center mb-6 ${industry === "Hybrid" ? "md:hidden" : ""}`}
+        >
           <div className="h-1.5 md:w-2/3  w-full md:order-1 order-2 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] transition-all duration-200 ease-out"
@@ -189,7 +203,9 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         <div className="flex w-full overflow-hidden rounded-[30px] bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] p-[2px]">
           <div className="flex w-full bg-white rounded-[30px] overflow-hidden">
             {/* Left sticky column with feature names */}
-            <div className={`bg-white sticky left-0 z-30 w-6/12 md:w-4/12 ${industry === 'Hybrid' ? 'lg:w-4/12' : 'lg:w-3/12'} border-r border-[var(--primary-teal)] shrink-0 overflow-visible`}>
+            <div
+              className={`bg-white sticky left-0 z-30 w-6/12 md:w-4/12 ${industry === "Hybrid" ? "lg:w-4/12" : "lg:w-3/12"} border-r border-[var(--primary-teal)] shrink-0 overflow-visible`}
+            >
               <table className="table-auto w-full border-collapse">
                 {categories.map((category, categoryIndex) => (
                   <React.Fragment key={categoryIndex}>
@@ -209,34 +225,42 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             className={`
                                px-4 text-left font-['onest'] text-xs sm:text-sm md:text-base lg:text-lg leading-6
                                 text-[var(--text-dark)] font-normal 
-                                 ${categoryIndex === categories.length - 1 && featureIndex === category.features.length - 1 ? '' : 'border-b border-[var(--primary-teal)]'}
+                                 ${categoryIndex === categories.length - 1 && featureIndex === category.features.length - 1 ? "" : "border-b border-[var(--primary-teal)]"}
                               `}
                             style={{ height: "68px", verticalAlign: "middle" }}
                           >
-                            <div className="flex flex-col items-start justify-center gap-1">      
+                            <div className="flex flex-col items-start justify-center gap-1">
                               {/* Title + Tooltip */}
                               <div className="flex items-center w-full">
-                                <span className="w-5/6">
-                                  {feature.name}
-                                </span>
+                                <span className="w-5/6">{feature.name}</span>
 
-                                <div 
-                                  className="w-1/6 flex justify-end items-center relative group"
-                                  onClick={(e) => handleTooltipClick(e, `${categoryIndex}-${featureIndex}`)}
-                                >
-                                  <Image
-                                    src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
-                                    className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
-                                    alt="Info Icon"
-                                    width={12}
-                                    height={12}
-                                  />
-                                  <Tooltip
-                                    text={feature?.infoText}
-                                    isComparisonToolTip
-                                    isVisible={activeTooltipId === `${categoryIndex}-${featureIndex}`}
-                                    industry={industry}
-                                  />
+                                <div className="w-1/6">
+                                  <div
+                                    className="max-w-5 w-full flex justify-end ml-auto items-center relative group"
+                                    onClick={(e) =>
+                                      handleTooltipClick(
+                                        e,
+                                        `${categoryIndex}-${featureIndex}`,
+                                      )
+                                    }
+                                  >
+                                    <Image
+                                      src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
+                                      className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
+                                      alt="Info Icon"
+                                      width={12}
+                                      height={12}
+                                    />
+                                    <Tooltip
+                                      text={feature?.infoText}
+                                      isComparisonToolTip
+                                      isVisible={
+                                        activeTooltipId ===
+                                        `${categoryIndex}-${featureIndex}`
+                                      }
+                                      industry={industry}
+                                    />
+                                  </div>
                                 </div>
                               </div>
 
@@ -265,7 +289,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
             {/* Right scrollable column with pricing plans */}
             <div
               ref={scrollRef}
-              className={`overflow-x-auto w-6/12 md:w-8/12 ${industry === 'Hybrid' ? 'lg:w-8/12' : 'lg:w-9/12'} [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory`}
+              className={`overflow-x-auto w-6/12 md:w-8/12 ${industry === "Hybrid" ? "lg:w-8/12" : "lg:w-9/12"} [scrollbar-width:none] [&::-webkit-scrollbar]:hidden scroll-smooth snap-x snap-mandatory`}
             >
               <div className="flex min-w-max">
                 {tablePlans.map((plan, planIndex) => {
@@ -351,32 +375,40 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             // If the feature doesn't exist for this specific plan/industry setup, default to false
                             const featureValue =
                               planIndex === 0
-                                ? feature.basic ?? false
+                                ? (feature.basic ?? false)
                                 : planIndex === 1
-                                  ? feature.standard ?? false
+                                  ? (feature.standard ?? false)
                                   : planIndex === 2
-                                    ? feature.professional ?? false
-                                    : feature.premium ?? false;
+                                    ? (feature.professional ?? false)
+                                    : (feature.premium ?? false);
 
                             const isAddon =
                               typeof featureValue === "string" &&
                               featureValue.includes("(Add-on)");
                             const cleanValue = isAddon
-                               ? featureValue.replace("(Add-on)", "").trim()
-                               : featureValue;
+                              ? featureValue.replace("(Add-on)", "").trim()
+                              : featureValue;
 
                             return (
                               <div
                                 key={featureIndex}
                                 className={`py-5 text-center font-['onest'] text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${
-                                  planIndex < tablePlans.length - 1 ? "border-r" : ""
+                                  planIndex < tablePlans.length - 1
+                                    ? "border-r"
+                                    : ""
                                 }`}
                                 style={{
                                   height: "68px",
-                                  borderBottom: (categoryIndex === categories.length - 1 && featureIndex === category.features.length - 1)
-                                    ? "none"
-                                    : `1px solid ${plan.color}`,
-                                  borderRightColor: (planIndex === tablePlans.length - 1 ? "transparent" : plan.color),
+                                  borderBottom:
+                                    categoryIndex === categories.length - 1 &&
+                                    featureIndex ===
+                                      category.features.length - 1
+                                      ? "none"
+                                      : `1px solid ${plan.color}`,
+                                  borderRightColor:
+                                    planIndex === tablePlans.length - 1
+                                      ? "transparent"
+                                      : plan.color,
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
@@ -387,7 +419,6 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               </div>
                             );
                           })}
-
                         </div>
                       ))}
                     </div>

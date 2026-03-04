@@ -10,7 +10,7 @@ const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false, is
     return (
         <div className={`${isComparisonToolTip
             ?
-            `absolute  -translate-x-2 left-0 md:translate-x-0  ${industry === 'Hybrid' ? 'lg:translate-x-7' : 'lg:translate-x-2'}   lg:left-2 bottom-full mb-2 z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-start w-auto`
+            `absolute  -translate-x-3.5 left-0 md:-translate-x-3 lg:-translate-x-3.5 lg:left-0 bottom-full mb-2 z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-start w-auto`
             :
             `absolute left-[50%] -translate-x-[50%] top-[110%] z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-left`}`}>
 
