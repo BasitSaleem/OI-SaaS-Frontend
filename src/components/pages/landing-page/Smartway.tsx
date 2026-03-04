@@ -293,6 +293,7 @@ export default function PosIconsSection() {
                   text={icon.label} 
                   isComparisonToolTip={false} 
                   isVisible={activeTooltipId === icon.id}
+                  industry="Retail"
                 />
               </Link>
             ))}

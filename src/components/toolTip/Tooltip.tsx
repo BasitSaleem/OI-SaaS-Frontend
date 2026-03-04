@@ -1,14 +1,16 @@
 import React from 'react'
+import { BusinessType } from "../pages/Pricings/tableConfig";
 interface ToolTipProps {
     text: string | undefined
     isComparisonToolTip?: boolean
     isVisible?: boolean
+    industry: BusinessType;
 }
-const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false, isVisible = false }) => {
+const Tooltip: React.FC<ToolTipProps> = ({ text, isComparisonToolTip = false, isVisible = false, industry }) => {
     return (
         <div className={`${isComparisonToolTip
             ?
-            `absolute  -translate-x-2 left-0 md:-translate-x-1 lg:translate-x-2  lg:left-2 bottom-full mb-2 z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-start w-auto`
+            `absolute  -translate-x-2 left-0 md:-translate-x-1  ${industry === 'Hybrid' ? 'lg:translate-x-7' : 'lg:translate-x-2'}   lg:left-2 bottom-full mb-2 z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-start w-auto`
             :
             `absolute left-[50%] -translate-x-[50%] top-[110%] z-[999] ${isVisible ? "flex" : "hidden lg:group-hover:flex"} flex-col items-left`}`}>
 
