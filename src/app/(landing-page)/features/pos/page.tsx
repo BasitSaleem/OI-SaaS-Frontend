@@ -48,7 +48,7 @@ const Page = () => {
         description="Sell smarter with our POS system. Intended to be fast, accurate, and the best point of sale, it simplifies all transactions, operates inventory in real-time, and provides you with complete control over your business, all through a simple, easy-to-use interface."
         image={heroBanner}
         // video="/assets/features-page/hero-section-banners/pos-hero-anim.webm"
-        imageClassName= "lg:my-14 my-11 max-w-[880px]"
+        imageClassName= " max-w-[880px]"
         variant="animation2"
       />
 

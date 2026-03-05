@@ -16,6 +16,8 @@ import {
 import {
   industriesItems,
   industryDetailsMap,
+  industryCategories,
+  IndustryCategory,
 } from "./dropdownItems/IndustryItemslist";
 import {
   FeatureList,
@@ -261,11 +263,13 @@ export default function OffcanvasMenu({
                 </button>
               </div>
             </li>
-            {/* <li className={listItem}>
+            <li className={listItem}>
               <div className={navButton}>
                 <Link
-                  href="#"
+                  href="/industries"
+                  prefetch={false}
                   className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
+                  onClick={onClose}
                 >
                   Industries
                 </Link>
@@ -283,7 +287,7 @@ export default function OffcanvasMenu({
                   />
                 </button>
               </div>
-            </li> */}
+            </li>
             <li className={listItem}>
               <Link
                 href="/pricing"
@@ -522,6 +526,145 @@ export default function OffcanvasMenu({
                     );
                   })}
                 </div>
+              ) : activePanel === "industries" ? (
+                <div className="space-y-3">
+                  {industryCategories.map((cat: IndustryCategory) => {
+                    const isCatOpen = openCatId === cat.id;
+                    return (
+                      <div
+                        key={cat.id}
+                        className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${
+                          isCatOpen ? "border-[var(--primary-purple)]" : "border-[var(--border-muted)]"
+                        }`}
+                      >
+                        <button
+                          onClick={() =>
+                            setOpenCatId(isCatOpen ? null : cat.id)
+                          }
+                          className={`w-full flex items-center justify-between px-4 py-3 text-left transition-colors ${
+                            isCatOpen ? "bg-purple-50" : "hover:bg-gray-50"
+                          }`}
+                        >
+                          <span
+                            className={`text-sm font-['Onest'] ${
+                              isCatOpen
+                                ? "font-bold text-[var(--primary-purple)]"
+                                : "font-semibold text-[var(--text-dark)]"
+                            }`}
+                          >
+                            {cat.title}
+                          </span>
+                          <img
+                            src={
+                              isCatOpen
+                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
+                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                            }
+                            alt="toggle"
+                            className={`w-3 h-3 transition-transform duration-300 ${
+                              isCatOpen ? "rotate-0" : "-rotate-90"
+                            }`}
+                          />
+                        </button>
+
+                        <div
+                          className={`transition-all duration-300 ease-in-out ${
+                            isCatOpen
+                              ? "max-h-[5000px] opacity-100 visible"
+                              : "max-h-0 opacity-0 invisible"
+                          }`}
+                        >
+                          <ul className="p-2 space-y-2">
+                            {industriesItems
+                              .filter((item) => item.category === cat.id)
+                              .map((item) => {
+                                const itemKey = item.key || item.title;
+                                const isItemOpen = expandedItemKey === itemKey;
+                                const details = industryDetailsMap[item.key] ?? null;
+                                const hasDetails =
+                                  (Array.isArray(details) &&
+                                    details.length > 0) ||
+                                  (details &&
+                                    typeof details === "object" &&
+                                    Object.keys(details).length > 0);
+
+                                return (
+                                  <li key={itemKey} className="w-full">
+                                    <div
+                                      className={`flex items-center border rounded-lg overflow-hidden transition-colors ${
+                                        isItemOpen
+                                          ? "border-[var(--primary-purple)] bg-gray-50"
+                                          : "border-transparent hover:bg-gray-50"
+                                      }`}
+                                    >
+                                      <Link
+                                        href={`/industries/${item.key.toLowerCase()}`}
+                                        prefetch={false}
+                                        onClick={onClose}
+                                        className="w-[85%] flex items-center px-3 py-2.5"
+                                      >
+                                        <Image
+                                          src={item.icon}
+                                          alt={item.title}
+                                          width={16}
+                                          height={16}
+                                          className="flex-shrink-0"
+                                        />
+                                        <span className="ml-2.5 text-xs font-medium text-[var(--text-dark)]">
+                                          {item.title}
+                                        </span>
+                                      </Link>
+
+                                      {hasDetails && (
+                                        <button
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            toggleItem(itemKey);
+                                          }}
+                                          className="w-[15%] flex items-center justify-center p-2.5 border-l border-gray-100 hover:bg-gray-100"
+                                        >
+                                          <img
+                                            src={
+                                              isItemOpen
+                                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
+                                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                            }
+                                            alt="toggle"
+                                            className="w-2.5 h-2.5"
+                                          />
+                                        </button>
+                                      )}
+                                    </div>
+
+                                    {hasDetails && (
+                                      <div
+                                        className={`transition-all duration-300 pl-4 ${
+                                          isItemOpen
+                                            ? "max-h-[300px] opacity-100 mt-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
+                                            : "max-h-0 opacity-0 mt-0 overflow-hidden"
+                                        }`}
+                                      >
+                                        <ul className="space-y-1.5 border-l-2 border-gray-100 pl-3">
+                                          {(details as any[]).map((d, idx) => (
+                                            <li
+                                              key={idx}
+                                              className="text-[11px] text-gray-500 font-medium"
+                                            >
+                                              {d.title || d}
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    )}
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               ) : (
                 <ul className="space-y-6">
                   {panelData[activePanel].links.map(
@@ -553,8 +696,6 @@ export default function OffcanvasMenu({
                               href={
                                 activePanel === "company"
                                   ? `/${item.key.toLowerCase()}`
-                                  : activePanel === "industries"
-                                  ? `/industries/${item.key.toLowerCase()}`
                                   : `/${activePanel}/${item.key.toLowerCase()}`
                               }
                               prefetch={false}

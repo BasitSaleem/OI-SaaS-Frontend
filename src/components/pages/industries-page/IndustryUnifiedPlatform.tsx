@@ -7,33 +7,30 @@ import Image from "next/image";
 import React from "react";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
-import {
-  HOME_UNIFIED_CARDS,
-  HOME_UNIFIED_HEADING,
-  HOME_UNIFIED_PARAGRAPH,
-} from "@/constant/landingPage/unifiedPlatformData";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-export interface UnifiedPlatformCard {
+export interface IndustryUnifiedPlatformCard {
   icon: string;
   title: string;
   description: string;
 }
 
-interface UnifiedPlatformProps {
-  heading?: string;
-  paragraph?: string;
-  cards?: UnifiedPlatformCard[];
+interface IndustryUnifiedPlatformProps {
+  heading: string;
+  paragraph: string;
+  cards: IndustryUnifiedPlatformCard[];
+  textAlign?: "center" | "left";
 }
 
-export default function UnifiedPlatform({
-  heading = HOME_UNIFIED_HEADING,
-  paragraph = HOME_UNIFIED_PARAGRAPH,
-  cards = HOME_UNIFIED_CARDS,
-}: UnifiedPlatformProps) {
+export default function IndustryUnifiedPlatform({
+  heading,
+  paragraph,
+  cards,
+  textAlign = "left",
+}: IndustryUnifiedPlatformProps) {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const sectionTriggerRef = useRef<HTMLDivElement | null>(null);
   const ctxRef = useRef<gsap.Context | null>(null);
@@ -151,9 +148,17 @@ export default function UnifiedPlatform({
 
           {/* Text Column */}
           <div className="w-full order-1 md:order-2 md:w-1/2 lg:w-3/5">
-            <div className="flex flex-col items-center justify-center">
-              <MainHeading className="text-center mb-4">{heading}</MainHeading>
-              <Paragraph className="text-center mb-6">{paragraph}</Paragraph>
+            <div className={`flex flex-col ${
+              textAlign === "left"
+                ? "items-start justify-start"
+                : "items-center justify-center"
+            }`}>
+              <MainHeading className={`${
+                textAlign === "left" ? "text-left" : "text-center"
+              } mb-4`}>{heading}</MainHeading>
+              <Paragraph className={`${
+                textAlign === "left" ? "text-left" : "text-center"
+              } mb-6`}>{paragraph}</Paragraph>
             </div>
           </div>
         </div>

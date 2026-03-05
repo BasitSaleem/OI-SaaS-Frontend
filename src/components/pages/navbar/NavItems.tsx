@@ -226,30 +226,22 @@ const NavItems = () => {
         </NavDropdown>
 
         {/* INDUSTRIES DROPDOWN */}
-
-        {/* <NavDropdown
+        <NavDropdown
           label="Industries"
           isOpen={openMenu === "industries"}
           onOpen={() => {
             open("industries");
-
-            if (!selectedIndustryCategory) {
-              setselectedIndustryCategory("retailer");
-            }
-
-
-            if (!selectedIndustryKey) {
-              setSelectedIndustryKey("bakery-pos");
-            }
+            setselectedIndustryCategory("retailer");
+            setSelectedIndustryKey("pos-grocery-store");
           }}
           onClose={close}
           onToggle={() => toggle("industries")}
         >
           <div className="h-2 bg-transparent"></div>
           <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
-
-            <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)]">
-              <div className="space-y-1">
+            {/* Left Section (3/12) - Categories */}
+            <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
+              <div className="space-y-1 w-full">
                 {industryCategories.map((category) => {
                   const categoryIndustries = industriesItems.filter(
                     (item) => item.category === category.id,
@@ -262,8 +254,6 @@ const NavItems = () => {
                       key={category.id}
                       onClick={() => {
                         setselectedIndustryCategory(category.id);
-                        
-
                         const firstItem = categoryIndustries[0];
                         if (firstItem) {
                           setSelectedIndustryKey(firstItem.key);
@@ -284,8 +274,38 @@ const NavItems = () => {
                   );
                 })}
               </div>
+
+              <div className="w-full">
+                <Link
+                  href="/industries"
+                  className="flex items-center justify-center gap-2.5 w-full text-center px-4 py-2 hover:bg-[var(--primary-purple)] hover:text-white border-2 border-[var(--primary-purple)] text-[var(--primary-purple)] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
+                  onClick={close}
+                >
+                  View All Industries
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clipPath="url(#clip0_3863_5707)">
+                      <path
+                        d="M12.9998 0H6.99984C6.44784 0 5.99984 0.447333 5.99984 1C5.99984 1.55267 6.44784 2 6.99984 2H12.5858L0.292512 14.2927C-0.0981549 14.6827 -0.0981549 15.3167 0.292512 15.7067C0.487845 15.902 0.743845 15.9993 0.999845 15.9993C1.25584 15.9993 1.51184 15.902 1.70718 15.7067L13.9998 3.414V9C13.9998 9.55267 14.4478 10 14.9998 10C15.5518 10 15.9998 9.55267 15.9998 9V3C15.9998 1.346 14.6538 0 12.9998 0Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3863_5707">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </Link>
+              </div>
             </div>
 
+            {/* Middle Section (6/12) - Industries within Selected Category */}
             <div className="lg:col-span-6 px-4 py-6 relative">
               <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-purple)] absolute blur-[150px] bottom-0 right-20"></div>
               <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-teal)] absolute blur-[150px] bottom-0 left-10"></div>
@@ -340,10 +360,10 @@ const NavItems = () => {
               )}
             </div>
 
-
+            {/* Right Section (3/12) - Details Panel */}
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className="border-l max-h-[400px] min-h-[400px] border-[var(--border-muted)] w-full pl-4 overflow-y-auto overflow-x-hidden 
+                className="border-l max-h-[350px] min-h-[400px] border-[var(--border-muted)] w-full pl-4 overflow-y-auto overflow-x-hidden 
           [&::-webkit-scrollbar]:w-2
           [&::-webkit-scrollbar-track]:bg-transparent
           [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
@@ -352,18 +372,25 @@ const NavItems = () => {
           [scrollbar-width:thin]
           [scrollbar-color:var(--border-muted)_transparent]"
               >
-                <p className="mb-2 text-xs font-['Onest'] font-bold text-[var(--text-dark)]">
+                <p className="mb-2 text-xs font-['Onest'] font-bold text-[var(--text-dark)] flex items-center gap-2">
                   {
                     industriesItems.find(
                       (item) => item.key === selectedIndustryKey,
                     )?.title
                   }
+                  <span className="text-xs flex items-center gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
+                    <svg
+                      width="3"
+                      height="3"
+                      viewBox="0 0 3 3"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="1.5" cy="1.5" r="1.5" fill="var(--text-muted-alt)" />
+                    </svg>
+                    Key Features
+                  </span>
                 </p>
-
-                <span className="text-xs mb-6 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
-                  Key Features
-                </span>
-
 
                 <IndustryList
                   items={industryDetailsMap[selectedIndustryKey] || []}
@@ -371,7 +398,7 @@ const NavItems = () => {
               </div>
             </div>
           </div>
-        </NavDropdown> */}
+        </NavDropdown>
 
         {/* PRICING LINK */}
         <li>
