@@ -3,22 +3,17 @@
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/pos-grocery/grocery-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/acouting-finance-whychose.webp";
-import {
-  FINANCE_FAQS,
-  FINANCE_FEATURES_CARDS,
-  FINANCE_INDUSTRIES,
-  FINANCE_TESTIMONIALS,
-  FINANCE_WHY_CHOOSE_CARDS,
-} from "@/constant/subfeatures/financeData";
+// Remove unused finance data imports
 
 import {
- Grocery_WHY_CHOOSE_CARDS
+  Grocery_WHY_CHOOSE_CARDS,
+  GROCERY_FEATURE_CARDS
 } from "@/constant/subindustries/posGroceryData";
 
 
 import TrustedBySection from "@/components/common-components/TrustedBySection";
 import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
-import FeaturesTestimonials from "@/components/pages/features-page/FeaturesTestimonials";
+
 import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
 import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
 import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesHero";
@@ -30,7 +25,15 @@ import {
   GROCERY_UNIFIED_CARDS,
   GROCERY_UNIFIED_HEADING,
   GROCERY_UNIFIED_PARAGRAPH,
+  GROCERY_WORKFLOW_DATA,
+  GROCERY_TESTIMONIALS,
+  GROCERY_FAQS
 } from "@/constant/subindustries/posGroceryData";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
+import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
+import ToolsSection from "@/components/pages/landing-page/ToolsSection";
+
 
 // Function to get layout patterns based on card count
 const getLayoutPatterns = (cardCount: number) => {
@@ -110,9 +113,6 @@ const getLayoutPatterns = (cardCount: number) => {
 };
 
 const Page = () => {
-  // Get layout patterns based on FeaturesCards length
-  const layoutPatterns = getLayoutPatterns(FINANCE_FEATURES_CARDS.length);
-
   return (
     <div>
       <SubIndustriesHero
@@ -120,7 +120,7 @@ const Page = () => {
         description="Run your hardware store with speed, accuracy, and full control with Owners Inventory, the ultimate POS system for hardware stores. Every sale and stock update stays synced in one smart POS. Designed for busy stores that need quick billing and real-time inventory tracking."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
-        ctaDesc="Get Started for Free"
+        ctaDesc="Start Free Today"
         variant="animation2"
       />
 
@@ -142,40 +142,39 @@ const Page = () => {
         mainImage={whyChoseBanner}
       />
 
-
-      <KeyHighlights
-        heading="Key Features"
-        features={FINANCE_FEATURES_CARDS}
-        layoutPatterns={layoutPatterns}
+      <InventoryWorkflow
+        heading={GROCERY_WORKFLOW_DATA.heading}
+        paragraph={GROCERY_WORKFLOW_DATA.paragraph}
+        steps={GROCERY_WORKFLOW_DATA.steps}
       />
-
-      
-      <div className="lg:mt-[100px] md:mt-28 mt-20">
-        <IndustryPosShowcase
-          mainHeading="Built for Every Industry That Runs on Numbers"
-          paragraph="Sell, serve, supply, whatever you do, proper accounting and finance management will keep your business on the right track. Owners Inventory is flexible and fits all workflows, provides real-time reporting of sales, costs, and performance."
-          buttonText="Explore All Industries"
-          industries={FINANCE_INDUSTRIES}
-        />
-      </div>
 
       <FeaturesCallToAction
-        title="Control Your Business Finances"
-        description="Simplify your accounting, track every sale, and make smarter financial decisions with one powerful POS system. Join hundreds of growing businesses already managing their money in a smart way."
+        title="Get Control of Your Inventory Now"
+        description="Our Best POS system for hardware stores will streamline your inventory, eliminate mistakes, and increase efficiency. Start now and discover how our solution can streamline your operations and make the most out of your business."
+        ctaDesc="Request a Free Demo"
       />
-      <FeaturesTestimonials
-        testimonials={FINANCE_TESTIMONIALS}
-        heading="What Our Clients Say"
+
+      <IndustriesFeaturesSection features={GROCERY_FEATURE_CARDS} />
+
+      <ToolsSection />
+
+      <IndustriesTestimonial
+        testimonials={GROCERY_TESTIMONIALS}
+        heading="Clients' Voices"
         showSmartTools={true}
-        secondHeading="Stay Ahead with Smart Accounts & Finance Tools"
-        secondDescription="Everything you need to manage finances, track transactions, monitor cash flow, and maintain accurate financial records with confidence."
+        secondHeading="Manage Your Inventory Efficiently"
+        secondDescription="Get complete control of your stock, sales and operations with a system that is geared towards modern business."
+        whyChooseShow={true}
+        whyChooseTitle="Why Choose Our System?"
+        whyChooseDescription="Our POS system for Hardware stores ensures transparent control, fast billing, and accurate inventory, making daily operations seamless."
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
-          heading="Your Accounting Questions, Clearly Answered"
-          paragraph="Running business finances does not need to be stressful. Owners Inventory unites your sales, accounting, and reporting into a single convenient system. Some frequent questions are listed here to help you understand how Owners Inventory simplifies all aspects of your financial management."
-          faqs={FINANCE_FAQS}
+          heading="FAQS"
+          paragraph="Our hardware store POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from hardware store owners."
+          faqs={GROCERY_FAQS}
+          buttonText="Start Now"
         />
       </div>
     </div>
