@@ -171,7 +171,7 @@ const IndustryPosShowcase = ({
 
       <div className="w-full overflow-hidden md:h-full">
         <div
-          className="flex items-stretch md:gap-3 md:mx-2 transition-transform duration-500 ease-in-out"
+          className="flex items-stretch md:gap-5 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentSlide * translationPercentage}%)`,
           }}
@@ -209,7 +209,7 @@ const IndustryPosShowcase = ({
               <div
                 key={index}
                 data-industry-card
-                className="transition-all self-stretch md:mx-2 duration-300 ease-in-out"
+                className="transition-all self-stretch duration-300 ease-in-out"
                 style={{
                   width:
                     isVisible && isExpanded && !isMobile

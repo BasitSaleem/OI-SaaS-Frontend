@@ -77,7 +77,7 @@ export const ecommerceData: {
         {
           name: "Online Store",
           info: true,
-          infoText: "Sell online with synced inventory and orders.",
+          infoText: "Manage your ecommerce storefront",
           basic: "1",
           standard: "1",
           professional: "1",
@@ -86,7 +86,7 @@ export const ecommerceData: {
         {
           name: "Warehouses",
           info: true,
-          infoText: "Track stock across multiple warehouse locations.",
+          infoText: "Manage stock across storage locations",
           basic: "1",
           standard: "2",
           professional: "Unlimited",
@@ -95,7 +95,7 @@ export const ecommerceData: {
         {
           name: "Stores",
           info: true,
-          infoText: "Manage multiple stores from one dashboard.",
+          infoText: "Manage multiple business store locations",
           basic: "1",
           standard: "1",
           professional: "1",
@@ -104,7 +104,7 @@ export const ecommerceData: {
         {
           name: "POS Terminal",
           info: true,
-          infoText: "Fast billing with real-time inventory sync.",
+          infoText: "Configure and manage POS counters",
           basic: "1",
           standard: "1",
           professional: "1",
@@ -113,7 +113,7 @@ export const ecommerceData: {
         {
           name: "Production Floors",
           info: true,
-          infoText: "Monitor manufacturing processes and raw material usage.",
+          infoText: "Manage factory production areas",
           basic: "Add-on",
           standard: "Add-on",
           professional: "Add-on",
@@ -122,7 +122,7 @@ export const ecommerceData: {
         {
           name: "Accounts & Finance",
           info: true,
-          infoText: "Automate accounting, expenses, and financial reporting.",
+          infoText: "Manage financial records and transactions",
           basic: "Add-on",
           standard: "Add-on",
           professional: "Add-on",
@@ -133,8 +133,8 @@ export const ecommerceData: {
     {
             name: 'Purchases',
             features: [
-                { name: 'Purchase Orders', info: true, infoText: " Create and track orders placed to suppliers.", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Bulk Purchase', info: true, infoText: "Simplify restocking with one-step bulk purchasing for any item mix.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Purchase Orders', info: true, infoText: "Create and manage supplier orders", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Bulk Purchase', info: true, infoText: "Record multiple purchases quickly", basic: true, standard: true, professional: true, premium: true },
             ]
         },
     {
@@ -143,7 +143,7 @@ export const ecommerceData: {
         {
           name: "Online Store",
           info: true,
-          infoText: "Sell online with synced inventory and orders.",
+          infoText: "Manage your ecommerce website",
           basic: '1',
           standard: '1',
           professional: '1',
@@ -152,7 +152,7 @@ export const ecommerceData: {
         {
           name: "OJ Themes",
           info: true,
-          infoText: "Choose professional themes to design your online store.",
+          infoText: "Customize store design and layout",
           basic: true,
           standard: true,
           professional: true,
@@ -161,7 +161,7 @@ export const ecommerceData: {
         {
           name: "Orders",
           info: true,
-          infoText: "Monitor and fulfill orders – placed online.",
+          infoText: "Manage online customer orders",
           basic: 'Unlimited',
           standard: 'Unlimited',
           professional: 'Unlimited',
@@ -170,7 +170,7 @@ export const ecommerceData: {
         {
           name: "Discounts",
           info: true,
-          infoText: "Apply promotional price reductions to products.",
+          infoText: "Create product or cart discounts",
           basic: true,
           standard: true,
           professional: true,
@@ -179,7 +179,7 @@ export const ecommerceData: {
         {
           name: "Campaigns",
           info: true,
-          infoText: "Run marketing campaigns to boost your sales.",
+          infoText: "Run marketing and sales campaigns",
           basic: false,
           standard: true,
           professional: true,
@@ -188,7 +188,7 @@ export const ecommerceData: {
         {
           name: "Custom Domain",
           info: true,
-          infoText: "Use your own branded domain for your store.",
+          infoText: "Connect your branded domain",
           basic: true,
           standard: true,
           professional: true,
@@ -197,7 +197,7 @@ export const ecommerceData: {
         {
           name: "Collections",
           info: true,
-          infoText: "Manage customer records and order history in one place.",
+          infoText: "Group products into collections",
           basic: false,
           standard: true,
           professional: true,
@@ -208,23 +208,23 @@ export const ecommerceData: {
     {
             name: 'Manufacturing',
             features: [
-                { name: 'Production Orders', info: true, infoText: "Manage the end-to-end production of goods.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Moulds', info: true, infoText: "Manage and track all product moulds efficiently.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Quality & Inspections', info: true, infoText: "Ensure products meet standards with regular inspections.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Production Orders', info: true, infoText: "Create and manage production tasks", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Machines', info: true, infoText: "Manage production machinery details", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Moulds', info: true, infoText: "Manage mould and tooling records", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Quality & Inspections', info: true, infoText: "Track product quality checks", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
          {
             name: 'Accounts & Finance',
             features: [
-                { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Billing & Payments', info: true, infoText: "Automate invoices, payments & bill tracking.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Payables & Receivables', info: true, infoText: "Ensures smooth cash flow—critical for businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Financial Insights & Reports', info: true, infoText: "Gain powerful reports & business analytics.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "Summarizes financial health—important for compliance.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Chart of Accounts', info: true, infoText: "Supports structured financial management—essential for accountants.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Journal Entries & Reports', info: true, infoText: "Detailed financial transaction recording—used by finance teams.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Fixed Assets & Allocations', info: true, infoText: "Long-term asset management—more relevant for established businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
+                { name: 'Income & Expense', info: true, infoText: "Track business income and expenses", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Billing & Payments', info: true, infoText: "Manage invoices and received payments", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Payables & Receivables', info: true, infoText: "Track dues from customers and suppliers", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Financial Insights & Reports', info: true, infoText: "Analyze financial performance reports", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "View financial position summaries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Chart of Accounts', info: true, infoText: "Manage structured financial accounts", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Journal Entries & Reports', info: true, infoText: "Record accounting journal entries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Fixed Assets & Allocations', info: true, infoText: "Track assets and depreciation allocations", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
             ]
         },
     {
@@ -287,6 +287,7 @@ export const ecommerceData: {
         },
         {
           name: "Bulk Product Import",
+          infoText: 'Import multiple products via file',
           basic: true,
           standard: true,
           professional: true,
@@ -377,7 +378,7 @@ export const ecommerceData: {
         {
           name: "Stock Adjustments",
           info: true,
-          infoText: "Make real-time adjustments to product stock levels from one unified view.",
+          infoText: "Adjust stock for discrepancies",
           basic: true,
           standard: true,
           professional: true,
@@ -386,7 +387,7 @@ export const ecommerceData: {
         {
           name: "Bulk Stock Adjustments",
           info: true,
-          infoText: "Update large inventory quantities in seconds.",
+          infoText: "Adjust multiple stock items together",
           basic: true,
           standard: true,
           professional: true,
@@ -395,7 +396,7 @@ export const ecommerceData: {
         {
           name: "Stock Alerts",
           info: true,
-          infoText: "Get low stock notifications before shortages occur.",
+          infoText: "Get low stock notifications",
           basic: true,
           standard: true,
           professional: true,
@@ -409,7 +410,7 @@ export const ecommerceData: {
         {
           name: "Sales Reports",
           info: true,
-          infoText: "Track sales performance and revenue trends instantly.",
+          infoText: "Analyze detailed sales performance data",
           basic: false,
           standard: false,
           professional: false,
@@ -418,7 +419,7 @@ export const ecommerceData: {
         {
           name: "Purchases Reports",
           info: true,
-          infoText: "Monitor procurement and supplier purchase history easily.",
+          infoText: "Review purchase transaction reports",
           basic: true,
           standard: true,
           professional: true,
@@ -427,7 +428,7 @@ export const ecommerceData: {
         {
           name: "Inventory Reports",
           info: true,
-          infoText: "Analyze stock levels and inventory movement efficiently.",
+          infoText: "Monitor stock movement and valuation",
           basic: false,
           standard: false,
           professional: false,
@@ -436,7 +437,7 @@ export const ecommerceData: {
         {
           name: "Daily Cash Report",
           info: true,
-          infoText: "Get daily cash flow summaries at a glance.",
+          infoText: "View daily cash summary report",
           basic: false,
           standard: false,
           professional: false,
@@ -445,11 +446,20 @@ export const ecommerceData: {
         {
           name: "Commissions",
           info: true,
-          infoText: "Calculate staff commissions accurately and automatically.",
+          infoText: "Calculate and track sales commissions",
           basic: true,
           standard: true,
           professional: true,
           premium: true,
+        },
+        {
+          name: "Manufacturing",
+          info: true,
+          infoText: "Analyze production performance reports",
+          basic: 'Add-on',
+          standard: 'Add-on',
+          professional: 'Add-on',
+          premium: 'Add-on',
         },
         
       ],
@@ -479,7 +489,7 @@ export const ecommerceData: {
         {
           name: "Role-Based Permissions",
           info: true,
-          infoText: "Provide user access based on their assigned roles.",
+          infoText: "Control access by user roles",
           basic: false,
           standard: true,
           professional: true,
@@ -548,7 +558,7 @@ export const ecommerceData: {
           name: "API Calls/Day",
           info: true,
           infoText:
-            "Number of API requests allowed per day for external integrations and automation.",
+            "Limit of daily API requests",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -557,7 +567,7 @@ export const ecommerceData: {
         {
           name: "Stripe",
           info: true,
-          infoText: "Accept online payments securely via Stripe.",
+          infoText: "Accept payments via Stripe",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -566,7 +576,7 @@ export const ecommerceData: {
         {
           name: "PayPal",
           info: true,
-          infoText: "Enable PayPal as a payment method for your customers.",
+          infoText: "Accept payments via PayPal",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -576,7 +586,7 @@ export const ecommerceData: {
           name: "DHL",
           info: true,
           infoText:
-            "Connect with DHL for automated shipping and courier management.",
+            "Ship orders via DHL",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -586,7 +596,7 @@ export const ecommerceData: {
           name: "Leopard",
           info: true,
           infoText:
-            "Integrate with Leopard Courier for local delivery tracking and dispatch.",
+            "Ship locally with Leopard courier",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -596,7 +606,7 @@ export const ecommerceData: {
           name: "Zapier",
           info: true,
           infoText:
-            "Automate workflows by connecting your store with thousands of apps via Zapier.",
+            "Automate workflows using Zapier",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -606,7 +616,7 @@ export const ecommerceData: {
           name: "Make",
           info: true,
           infoText:
-            "Build advanced automation scenarios using Make (formerly Integromat).",
+            "Connect apps using Make automation",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",

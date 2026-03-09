@@ -64,15 +64,15 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         }
     ],
     categories: [
-        {
+         {
             name: 'Key Features',
             features: [
-                { name: 'Stores', info: true, infoText: "Manage multiple stores from one dashboard.", basic: '1', standard: '3', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'POS Terminal', info: true, infoText: "Fast billing with real-time inventory sync.", basic: '1', standard: '6', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Warehouses', info: true, infoText: "Track stock across multiple warehouse locations.", basic: 'Add-on', standard: '1', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Online Store', info: true, infoText: "Sell online with synced inventory and orders.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Production Floors', info: true, infoText: "Monitor manufacturing processes and raw material usage.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Accounts & Finance', info: true, infoText: "Automate accounting, expenses, and financial reporting.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Stores', info: true, infoText: "Manage multiple business store locations", basic: '1', standard: '3', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'POS Terminal', info: true, infoText: "Configure and manage POS counters", basic: '1', standard: '6', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Warehouses', info: true, infoText: "Manage stock across storage locations", basic: 'Add-on', standard: '1', professional: 'Unlimited', premium: 'Unlimited' },
+                { name: 'Online Store', info: true, infoText: "Manage your ecommerce storefront", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Production Floors', info: true, infoText: "Manage factory production areas", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Accounts & Finance', info: true, infoText: "Manage financial records and transactions", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
         {
@@ -91,7 +91,7 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 { name: 'Brands', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Barcode & Serial Tracking', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Product Images', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Bulk Product Import', basic: true, standard: true, professional: true, premium: true },
+                { name: 'Bulk Product Import', infoText: 'Import multiple products via file', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Bulk Price Update', basic: true, standard: true, professional: true, premium: true },
             ]
         },
@@ -122,20 +122,20 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 { name: 'Stock Issuing', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Stock Receiving', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Stock Adjustments', basic: true, standard: true, professional: true, premium: true },
-                { name: 'Bulk Stock Adjustments', info: true, infoText: "Update large inventory quantities in seconds.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Stock Alerts', info: true, infoText: "Get low stock notifications before shortages occur.", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Bulk Stock Adjustments', info: true, infoText: "Adjust multiple stock items together", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Stock Alerts', info: true, infoText: "Monitor low inventory notifications", basic: true, standard: true, professional: true, premium: true },
             ]
         },
         {
             name: 'Analytics',
             features: [
-                { name: 'Sales Reports', info: true, infoText: "Track sales performance and revenue trends instantly.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Purchases Reports', info: true, infoText: "Monitor procurement and supplier purchase history easily.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Inventory Reports', info: true, infoText: "Analyze stock levels and inventory movement efficiently.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Shifts', info: true, infoText: "Review employee shift schedules and work hours.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Commissions', info: true, infoText: "Calculate staff commissions accurately and automatically.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Daily Cash Report', info: true, infoText: "Get daily cash flow summaries at a glance.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Manufacturing', info: true, infoText: "Monitor production output and efficiency metrics quickly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Sales Reports', info: true, infoText: "Analyze detailed sales performance data", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Purchases Reports', info: true, infoText: "Review purchase transaction reports", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Inventory Reports', info: true, infoText: "Monitor stock movement and valuation", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Shifts', info: true, infoText: "Manage employee work shift records", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Commissions', info: true, infoText: "Calculate and track sales commissions", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Daily Cash Report', info: true, infoText: "View daily cash summary report", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Manufacturing', info: true, infoText: "Analyze production performance reports", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
         {
@@ -150,62 +150,62 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
         {
             name: 'Restaurant',
             features: [
-                { name: 'Floors', info: true, infoText: "Structure your dining space with floor-level mapping for efficient table management.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Tables', info: true, infoText: "Assign and manage tables for restaurant service.", basic: true, standard: true, professional: true, premium: true },
-                { name: 'Decorations', info: true, infoText: "Customize your digital floor layout for ambiance.", basic: true, standard: true, professional: true, premium: true }
+                { name: 'Floors', info: true, infoText: "Manage restaurant floor layout", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Tables', info: true, infoText: "Manage restaurant table assignments", basic: true, standard: true, professional: true, premium: true },
+                { name: 'Decorations', info: true, infoText: "Customize restaurant theme and layout", basic: true, standard: true, professional: true, premium: true }
             ]
         },
         {
             name: 'Ecommerce',
             features: [
-                { name: 'Online Store', info: true, infoText: "Sell online with synced inventory and orders.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'OJ Themes', info: true, infoText: "Choose professional themes to design your online store.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Orders', info: true, infoText: "Monitor and fulfill orders – placed online.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Discounts', info: true, infoText: "Apply promotional price reductions to products.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Campaigns', info: true, infoText: "Run marketing campaigns to boost your sales.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Custom Domain', info: true, infoText: "Use your own branded domain for your store.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Collections', info: true, infoText: "Manage customer records and order history in one place.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Online Store', info: true, infoText: "Manage your ecommerce website", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'OJ Themes', info: true, infoText: "Customize store design and layout", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Orders', info: true, infoText: "Manage online customer orders", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Discounts', info: true, infoText: "Create product or cart discounts", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Campaigns', info: true, infoText: "Run marketing and sales campaigns", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Custom Domain', info: true, infoText: "Connect your branded domain", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Collections', info: true, infoText: "Group products into collections", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
         {
             name: 'Manufacturing',
             features: [
-                { name: 'Production Orders', info: true, infoText: "Manage the end-to-end production of goods.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Machines', info: true, infoText: "Manage your machinery from one centralized place.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Moulds', info: true, infoText: "Manage and track all product moulds efficiently.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Quality & Inspections', info: true, infoText: "Ensure products meet standards with regular inspections.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Production Orders', info: true, infoText: "Create and manage production tasks", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Machines', info: true, infoText: "Manage production machinery details", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Moulds', info: true, infoText: "Manage mould and tooling records", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Quality & Inspections', info: true, infoText: "Track product quality checks", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
             ]
         },
         {
             name: 'Accounts & Finance',
             features: [
-                { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Billing & Payments', info: true, infoText: "Automate invoices, payments & bill tracking.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Payables & Receivables', info: true, infoText: "Ensures smooth cash flow—critical for businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Financial Insights & Reports', info: true, infoText: "Gain powerful reports & business analytics.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "Summarizes financial health—important for compliance.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Chart of Accounts', info: true, infoText: "Supports structured financial management—essential for accountants.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Journal Entries & Reports', info: true, infoText: "Detailed financial transaction recording—used by finance teams.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Fixed Assets & Allocations', info: true, infoText: "Long-term asset management—more relevant for established businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
+                { name: 'Income & Expense', info: true, infoText: "Track business income and expenses", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Billing & Payments', info: true, infoText: "Manage invoices and received payments", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Payables & Receivables', info: true, infoText: "Track dues from customers and suppliers", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Financial Insights & Reports', info: true, infoText: "Analyze financial performance reports", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "View financial position summaries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Chart of Accounts', info: true, infoText: "Manage structured financial accounts", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Journal Entries & Reports', info: true, infoText: "Record accounting journal entries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Fixed Assets & Allocations', info: true, infoText: "Track assets and depreciation allocations", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
             ]
         },
         {
             name: 'Accounts & Finance',
             features: [
-                { name: 'Income & Expense', info: true, infoText: "Monitor revenue and spending effortlessly.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Billing & Payments', info: true, infoText: "Automate invoices, payments & bill tracking.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Payables & Receivables', info: true, infoText: "Ensures smooth cash flow—critical for businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Financial Insights & Reports', info: true, infoText: "Gain powerful reports & business analytics.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "Summarizes financial health—important for compliance.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Chart of Accounts', info: true, infoText: "Supports structured financial management—essential for accountants.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Journal Entries & Reports', info: true, infoText: "Detailed financial transaction recording—used by finance teams.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Fixed Assets & Allocations', info: true, infoText: "Long-term asset management—more relevant for established businesses.", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
+                { name: 'Income & Expense', info: true, infoText: "Track business income and expenses", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Billing & Payments', info: true, infoText: "Manage invoices and received payments", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Payables & Receivables', info: true, infoText: "Track dues from customers and suppliers", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Financial Insights & Reports', info: true, infoText: "Analyze financial performance reports", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "View financial position summaries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Chart of Accounts', info: true, infoText: "Manage structured financial accounts", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Journal Entries & Reports', info: true, infoText: "Record accounting journal entries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
+                { name: 'Fixed Assets & Allocations', info: true, infoText: "Track assets and depreciation allocations", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
             ]
         },
         {
             name: 'General Tools',
             features: [
-                { name: 'Role-Based Permissions', info: true, infoText: "Provide user access based on their assigned roles.", basic: false, standard: true, professional: true, premium: true },
+                { name: 'Role-Based Permissions', info: true, infoText: "Control access by user roles", basic: false, standard: true, professional: true, premium: true },
                 { name: 'Notifications', basic: true, standard: true, professional: true, premium: true },
                 { name: 'Activity Log', basic: false, standard: true, professional: true, premium: true },
             ]
@@ -224,14 +224,15 @@ export const retailData: { plans: PricingPlan[]; categories: FeatureCategory[] }
             name: 'Integrations',
             features: [
                 // { name: 'FBR', basic: true, standard: true, professional: true, premium: true },
-                { name: 'API Calls/Day', info: true, infoText: "Number of API requests allowed per day for external integrations and automation.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-                { name: 'Stripe', info: true, infoText: "Accept online payments securely via Stripe.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-                { name: 'PayPal', info: true, infoText: "Enable PayPal as a payment method for your customers.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-                { name: 'DHL', info: true, infoText: "Connect with DHL for automated shipping and courier management.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-                { name: 'Leopard', info: true, infoText: "Integrate with Leopard Courier for local delivery tracking and dispatch.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-                { name: 'Zapier', info: true, infoText: "Automate workflows by connecting your store with thousands of apps via Zapier.", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
-                { name: 'Make', info: true, infoText: "Build advanced automation scenarios using Make (formerly Integromat).", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
+                { name: 'API Calls/Day', info: true, infoText: "Limit of daily API requests", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Stripe', info: true, infoText: "Accept payments via Stripe", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'PayPal', info: true, infoText: "Accept payments via PayPal", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'DHL', info: true, infoText: "Ship orders via DHL", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Leopard', info: true, infoText: "Ship locally with Leopard courier", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Zapier', info: true, infoText: "Automate workflows using Zapier", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' },
+                { name: 'Make', info: true, infoText: "Connect apps using Make automation", basic: 'Coming Soon', standard: 'Coming Soon', professional: 'Coming Soon', premium: 'Coming Soon' }
             ]
         }
+    
     ]
 };
