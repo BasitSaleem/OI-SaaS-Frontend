@@ -86,7 +86,7 @@ const MapComponent = () => {
     <section className="relative w-full overflow-hidden ">
       <div className="wrapper">
         <div
-          className="relative h-[550px] w-full overflow-hidden rounded-[40px] border border-white/10 shadow-2xl cursor-pointer"
+          className="relative h-[550px] w-full overflow-hidden rounded-[40px] border border-white/10 cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
