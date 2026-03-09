@@ -153,7 +153,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               className="h-full grid grid-col-1 md:grid-cols-12 gap-y-8 md:gap-x-5 justify-center items-center"
             >
               {/* Header */}
-              <div className="px-0 py-2 lg:p-2  md:col-span-6 lg:col-span-7 xl:col-span-8 relative z-[10]">
+              <div className=" md:col-span-6 lg:col-span-7 xl:col-span-8 relative z-[10]">
                 <h3 className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">{study.title}</h3>
                 <div className="flex flex-col items-end">
                   <div className="bg-[var(--background-halfwhite)] rounded-l-[20px] rounded-r-[20px] lg:rounded-l-[28px] lg:rounded-r-[28px] p-6">

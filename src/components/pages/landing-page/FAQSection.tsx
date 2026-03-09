@@ -85,7 +85,7 @@ export default function FaqSection({
                 
                 <button
                   type="button"
-                  className="accordion-toggle flex items-center justify-between w-full p-5 md:px-6 md:py-4 text-left font-medium focus:outline-none rounded-[20px] transition-colors duration-300"
+                  className="accordion-toggle flex items-start justify-between w-full p-5 md:px-6 md:py-4 text-left font-medium focus:outline-none rounded-[20px] transition-colors duration-300"
                   onClick={() => toggle(index)}
                 >
                   <span
@@ -103,7 +103,7 @@ export default function FaqSection({
                     className={
                       openIndex === index
                         ? "hidden"
-                        : "flex shrink-0 items-center justify-center"
+                        : "flex shrink-0 items-center mt-1 justify-center"
                     }
                   >
                     <Image
@@ -119,7 +119,7 @@ export default function FaqSection({
                   <span
                     className={
                       openIndex === index
-                        ? "flex shrink-0 items-center justify-center"
+                        ? "flex shrink-0 items-center mt-1 justify-center"
                         : "hidden"
                     }
                   >
@@ -136,7 +136,7 @@ export default function FaqSection({
 
                 <div
                   className={`overflow-hidden font-['Onest'] transition-all duration-300 ease-in-out
-                    px-5 text-sm md:text-base leading-[170%] text-(--text-dark)
+                    px-5 md:px-6 text-sm md:text-base leading-[170%] text-(--text-dark)
                     ${
                       openIndex === index
                         ? "max-h-96 opacity-100 pb-5"
