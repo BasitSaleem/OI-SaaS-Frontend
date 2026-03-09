@@ -105,6 +105,7 @@ function SmartWaytoSyncndSellSection() {
               isBorder
               paddingLg="lg:px-[64px] lg:py-5"
               className="w-full"
+              onClick={() => setOpenModal(true)}
             />
           </div>
         </div>

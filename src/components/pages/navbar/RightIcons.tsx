@@ -44,7 +44,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
           />}
         </div>
         {/* Tooltip */}
-        <Tooltip text="Search" />
+        <Tooltip text="Search"/>
         {/* <div className="absolute left-[50%] -translate-x-[50%] top-[120%] z-[999] hidden group-hover:flex flex-col items-left">
           <div className="w-2 h-2 rotate-45 bg-white border-l border-t border-[var(--primary-purple)] -mb-1 mx-auto"></div>
           <div className="rounded-xl border border-[var(--primary-purple)] bg-white px-4 py-2 text-sm leading-4 font-['Onest'] font-semibold text-[var(--text-dark)] shadow-lg w-fit">

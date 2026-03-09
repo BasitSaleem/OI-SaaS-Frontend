@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import heroBanner from "../../../../../public/assets/features-page/products-page/products-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/integration-page/why-chose-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/features-page/products-page/why-choose-banner.webp";
 import {
   PRODUCT_FAQS,
   PRODUCT_FEATURES_CARDS,
