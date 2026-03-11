@@ -12,14 +12,19 @@ const Page: React.FC = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@graph": [
-              {
+              ...[
+                { industry: 'Retail', plans: [{ id: 'basic', name: 'Basic', price: '25' }, { id: 'pro', name: 'Pro', price: '75' }, { id: 'enterprise', name: 'Enterprise', price: '115' }] },
+                { industry: 'Manufacturing', plans: [{ id: 'basic', name: 'Basic', price: '65' }, { id: 'pro', name: 'Pro', price: '115' }, { id: 'enterprise', name: 'Enterprise', price: '155' }] },
+                { industry: 'Ecommerce', plans: [{ id: 'basic', name: 'Basic', price: '25' }, { id: 'pro', name: 'Pro', price: '50' }, { id: 'enterprise', name: 'Enterprise', price: '115' }] },
+                { industry: 'Hybrid', plans: [{ id: 'pro', name: 'Pro', price: '210' }, { id: 'enterprise', name: 'Enterprise', price: '315' }] }
+              ].flatMap(ind => ind.plans.map(plan => ({
                 "@type": "Product",
-                "@id": "https://ownersinventory.com/pricing#pro",
-                "name": "Pro Plan",
-                "description": "Ideal for growing businesses. Includes 5 Stores, 10 POS Terminals, and more.",
+                "@id": `https://ownersinventory.com/pricing#${ind.industry.toLowerCase()}-${plan.id}`,
+                "name": `${plan.name} Plan (${ind.industry})`,
+                "description": `Owners Inventory ${plan.name} plan tailored for the ${ind.industry} industry.`,
                 "offers": {
                   "@type": "Offer",
-                  "price": "210",
+                  "price": plan.price,
                   "priceCurrency": "USD",
                   "url": "https://ownersinventory.com/pricing",
                   "availability": "https://schema.org/InStock"
@@ -27,23 +32,7 @@ const Page: React.FC = () => {
                 "publisher": {
                   "@id": "https://ownersinventory.com/#organization"
                 }
-              },
-              {
-                "@type": "Product",
-                "@id": "https://ownersinventory.com/pricing#enterprise",
-                "name": "Enterprise Plan",
-                "description": "For established businesses scaling up. Includes Unlimited Stores, Unlimited POS Terminals, and more.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "315",
-                  "priceCurrency": "USD",
-                  "url": "https://ownersinventory.com/pricing",
-                  "availability": "https://schema.org/InStock"
-                },
-                "publisher": {
-                  "@id": "https://ownersinventory.com/#organization"
-                }
-              },
+              }))),
               {
                 "@type": "FAQPage",
                 "@id": "https://ownersinventory.com/pricing#faq",
