@@ -138,10 +138,10 @@ export default function UnifiedPlatform({
                       className="h-9 w-9 lg:w-14 lg:h-14"
                     />
                   </div>
-                  <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-semibold text-[var(--text-dark)]">
+                  <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-['onest'] font-semibold text-[var(--text-dark)]">
                     {card.title}
                   </h3>
-                  <p className="text-sm md:text-base leading-6 text-[var(--text-grey)]">
+                  <p className="text-sm md:text-base font-['onest'] leading-6 text-[var(--text-grey)]">
                     {card.description}
                   </p>
                 </div>

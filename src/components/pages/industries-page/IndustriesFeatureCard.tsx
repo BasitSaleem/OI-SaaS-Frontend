@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
 import Image from "next/image";
+import Paragraph from "../typography/Paragraph";
 
 interface IndustriesFeatureCardProps {
   title: string;
@@ -53,8 +54,8 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
           style={{
             width: containerWidth,
             height: containerHeight,
-            border: `2px solid ${containerBorderColor}`,
-            backgroundColor: containerBackgroundColor,
+            // border: `2px solid ${containerBorderColor}`,
+            // backgroundColor: containerBackgroundColor,
           }}
         >
           <div className="flex flex-col items-center justify-center w-full h-full ">
@@ -89,13 +90,13 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
 
       {/* Text Content */}
       <div className={`flex flex-col ${isEven ? "lg:order-1" : "lg:order-2"}`}>
-        <h3 className="font-['Onest'] font-semibold text-[#231F20] text-[27px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] mb-4 min-h-[50px]">
+        <h3 className="font-['Onest'] font-semibold text-[var(--text-dark)] text-[32px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] mb-4 min-h-[50px]">
           {title}
         </h3>
 
-        <p className="font-['Onest'] font-normal text-[#231F20] text-sm lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 flex-1 mb-6">
+        <Paragraph className="flex-1 mb-6">
           {description}
-        </p>
+        </Paragraph>
 
         {list && list.length > 0 && (
           <ul className="flex flex-col gap-3 mb-8">
@@ -106,7 +107,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                     <path d="M11.25 15.75L6.75 11.25L11.25 6.75" stroke="#1AD1B9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" transform="rotate(180 9 11.25)"/>
                   </svg>
                 </span>
-                <span className="font-['Onest'] text-[#231F20] text-sm lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9">
+                <span className="font-['Onest'] text-[var(--text-dark)] text-base md:text-xl xl:text-2xl  leading-[150%] xl:leading-[135%]">
                   {item}
                 </span>
               </li>

@@ -16,6 +16,7 @@ import {
   Pointer, 
   AppWindow 
 } from "lucide-react";
+import PosHardwarePageIcons from "../../icons/posHardwarePageIcons";
 
 interface TestimonialSlide {
   name: string;
@@ -29,7 +30,7 @@ interface TestimonialSlide {
 interface Feature {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: React.ReactNode | string;
 }
 
 interface IndustriesTestimonialProps {
@@ -47,6 +48,7 @@ interface IndustriesTestimonialProps {
 }
 
 const DEFAULT_GRADIENT_BACKGROUND = `
+ 
   linear-gradient(
     to top,
     rgba(255, 255, 255, 1) 0%,
@@ -70,8 +72,13 @@ const DEFAULT_GRADIENT_BACKGROUND = `
     rgba(210, 185, 255, 0.75) 0%,
     rgba(175, 205, 255, 0.70) 45%,
     rgba(160, 230, 245, 0.65) 100%
+  ),
+  linear-gradient(
+    135deg,
+     rgba(160, 230, 245, 0.65) 0%,
+    rgba(175, 205, 255, 0.70) 45%,
+    rgba(210, 185, 255, 0.75) 100%
   )
-    
 `;
 
 const PURPLE = "#795CF5";
@@ -80,41 +87,7 @@ const PURPLE_ICON = "/assets/review-section/double-coma-icon.svg";
 const GREEN_ICON = "/assets/review-section/coma-green.svg";
 
 const DEFAULT_FEATURES: Feature[] = [
-  {
-    title: "Easy Setup",
-    description: "We have developed a user-friendly interface that is simple to learn and operate. Quick installation with minimal disruption to daily operations.",
-    icon: <Package className="w-8 h-8 text-orange-400" />,
-  },
-  {
-    title: "Reliable Performance",
-    description: "The hardware store POS operates consistently when there are rush hours and high workloads. Your billing counters remain quick and steady during the day.",
-    icon: <BarChart3 className="w-8 h-8 text-blue-500" />,
-  },
-  {
-    title: "Clear Inventory",
-    description: "All items remain structured in terms of units, sizes, variants and types. You will always have clean and correct inventory of your store.",
-    icon: <Users className="w-8 h-8 text-emerald-500" />,
-  },
-  {
-    title: "Accurate Reporting",
-    description: "Sales, stock value, profits, and the best items are reported in easy formats. It will make your choices more robust as all the details are retained in sight.",
-    icon: <ClipboardCheck className="w-8 h-8 text-indigo-500" />,
-  },
-  {
-    title: "Flexible Features",
-    description: "The POS system at the hardware store is compatible with numerous sub-industries and products. Your hardware company gets equipment that suits actual day-to-day requirements.",
-    icon: <Settings2 className="w-8 h-8 text-red-400" />,
-  },
-  {
-    title: "Safe Access",
-    description: "Cashiers, managers, and admins have their data secured by staff permissions. Your store operates safely with restricted access to all roles.",
-    icon: <Pointer className="w-8 h-8 text-red-500" />,
-  },
-  {
-    title: "Integration and Addons",
-    description: "Integrates with accounting software, ecommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier for easy scaling.",
-    icon: <AppWindow className="w-8 h-8 text-purple-500" />,
-  },
+  
 ];
 
 const IndustriesTestimonial = ({
@@ -127,7 +100,7 @@ const IndustriesTestimonial = ({
   gradientBackground = DEFAULT_GRADIENT_BACKGROUND,
   whyChooseShow = true,
   whyChooseTitle = "Why Choose Our System?",
-  whyChooseDescription = "Our POS system for hardware stores ensures transparent control, fast billing, and accurate inventory, making daily operations seamless.",
+  whyChooseDescription = "Our POS system for Hardware stores ensures transparent control, fast billing, and accurate inventory, making daily operations seamless.",
   features = DEFAULT_FEATURES,
 }: IndustriesTestimonialProps) => {
   const [visibleIndices, setVisibleIndices] = useState<number[]>([0]);
@@ -158,7 +131,7 @@ const IndustriesTestimonial = ({
     return (
       <div
         className={[
-          "testimonial-card flex flex-col h-full bg-white relative",
+          "testimonial-card bg-white relative",
           "shadow-[0px_0px_20px_rgba(0,0,0,0.05)]",
           "rounded-[30px] p-6 transition-all duration-300",
           "flex flex-col h-full",
@@ -206,8 +179,8 @@ const IndustriesTestimonial = ({
 
   return (
     <div
-      className="w-full py-[80px] lg:py-[100px] rounded-t-[40px] mt-[90px] lg:mt-[130px]"
-      style={{ background: gradientBackground }}
+      className="industriestest-gradient-shadow-right w-full py-[80px] lg:py-[100px] rounded-t-[40px] mt-[90px] lg:mt-[130px]"
+      style={{ background: '#ffffff' }}
     >
       <section className="wrapper">
        
@@ -236,35 +209,44 @@ const IndustriesTestimonial = ({
 
          {whyChooseShow && (
           <div className="mt-24">
-            <div className="text-center max-w-[800px] mx-auto mb-16">
+            <div className="text-center mx-auto mb-16">
               <MainHeading className="mb-6">
                 {whyChooseTitle}
               </MainHeading>
-              <p className="text-[#6B7280] text-lg lg:text-xl font-['onest'] leading-[1.6]">
-                {whyChooseDescription}
-              </p>
+              <Paragraph >{whyChooseDescription}</Paragraph>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-              {features.slice(0, 4).map((feature, index) => (
-                <WhyChooseCard
-                  key={index}
-                  title={feature.title}
-                  description={feature.description}
-                  icon={feature.icon}
-                />
-              ))}
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[90%] mx-auto">
-              {features.slice(4).map((feature, index) => (
-                <WhyChooseCard
-                  key={index + 4}
-                  title={feature.title}
-                  description={feature.description}
-                  icon={feature.icon}
-                />
-              ))}
+            <div className="grid grid-cols-12 gap-6">
+              {features.map((feature, index) => {
+                let colSpanClass = "col-span-12"; // Mobile default
+                
+                if (index < 4) {
+                  // First four cards: col-span-3 (desktop), col-span-6 (tablet)
+                  colSpanClass += " md:col-span-6 lg:col-span-3";
+                } else if (index < 6) {
+                  // Next two cards: col-span-4 (desktop), col-span-6 (tablet)
+                  colSpanClass += " md:col-span-6 lg:col-span-4";
+                } else {
+                  // Last card: col-span-4 (desktop), col-span-12 (tablet)
+                  colSpanClass += " md:col-span-12 lg:col-span-4";
+                }
+
+                return (
+                  <div key={index} className={colSpanClass}>
+                    <WhyChooseCard
+                      title={feature.title}
+                      description={feature.description}
+                      icon={
+                        typeof feature.icon === "string" ? (
+                          <PosHardwarePageIcons name={feature.icon as any} size={44} />
+                        ) : (
+                          feature.icon
+                        )
+                      }
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}

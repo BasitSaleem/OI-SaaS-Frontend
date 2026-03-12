@@ -42,8 +42,8 @@ export const industriesItems: IndustryItem[] = [
   //   category: 'retailer',
   // },
   {
-    key: 'pos-grocery-store',
-    title: 'Grocery Store POS System',
+    key: 'pos-hardware-store',
+    title: 'Hardware Store POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
@@ -136,7 +136,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Health and Beauty' },
     { title: 'Clothing' },
     { title: 'Home décor' },
-    { title: 'Grocery' },
+    { title: 'Hardware' },
     { title: 'Jewelry' },
     { title: 'Pet' },
     { title: 'Sporting Goods' },
@@ -162,11 +162,11 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Recipe Costing' },
     { title: 'Freshness Tracking' },
   ],
-  'grocery-store-pos': [
-    { title: 'Grocery Inventory Management' },
-    { title: 'Perishable Goods Tracking' },
-    { title: 'Bulk Item Sales' },
-    { title: 'Loyalty Programs' },
+  'pos-hardware-store': [
+    { title: 'Hardware Inventory Management' },
+    { title: 'Tool Rental System' },
+    { title: 'Contractor Accounts' },
+    { title: 'Project Quoting' },
   ],
   'hardware-store-pos': [
     { title: 'Hardware Inventory Management' },

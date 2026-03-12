@@ -206,29 +206,20 @@ export default function CustomSwiper<T>({
       breakpoints={{
         768: { 
           slidesPerView: 1.5,
-          autoHeight: true,
+          autoHeight: false,
         },
         1024: { 
           slidesPerView: 2,
-          autoHeight: true,
+          autoHeight: false,
         },
       }}
       className="mySwiper !pb-[80px]"
-      autoHeight={true}
+      autoHeight={false}
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
         emitVisible(swiper);
-        
-        // Force equal heights on init
-        setTimeout(() => {
-          swiper.updateAutoHeight(300);
-        }, 100);
       }}
       onSlideChange={handleSlideChange}
-      onSlideChangeTransitionStart={(swiper) => {
-        // Only update heights during transition
-        swiper.updateAutoHeight(300);
-      }}
     >
       {slides.map((slide, i) => (
         <SwiperSlide

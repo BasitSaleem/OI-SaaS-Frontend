@@ -26,7 +26,7 @@ interface IndustriesFeaturesSectionProps {
 
 export default function IndustriesFeaturesSection({ features }: IndustriesFeaturesSectionProps) {
   return (
-    <div className="finance-reporting-shadow">
+    <div className="industries-gradient-shadow-right">
       <section className="wrapper">
         {features.map((feature, index) => (
           <IndustriesFeatureCard key={index} index={index} {...feature} />

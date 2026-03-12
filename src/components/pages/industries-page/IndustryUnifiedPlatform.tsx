@@ -7,6 +7,7 @@ import Image from "next/image";
 import React from "react";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
+import PosHardwarePageIcons from "../../icons/posHardwarePageIcons";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -64,7 +65,7 @@ export default function IndustryUnifiedPlatform({
           { y: 0, opacity: 1, ease: "power2.out", duration: 0.6 }
         );
         tl.to({}, { duration: 0.2 });
-        tl.to(".unified-platform-cards", { y: "-50%", ease: "none" });
+        tl.to(".unified-platform-cards", { y: "-66%", ease: "none" });
         return tl;
       };
 
@@ -126,19 +127,27 @@ export default function IndustryUnifiedPlatform({
                   key={index}
                   className="w-full max-w-[342px] md:max-w-full py-5 px-4.5 md:p-5 lg:p-8 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
                 >
-                  <div className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl bg-[var(--background-halfwhite)]">
-                    <Image
-                      src={card.icon}
-                      alt={`${card.title} Icon`}
-                      width={56}
-                      height={56}
-                      className="h-9 w-9 lg:w-14 lg:h-14"
-                    />
+                  <div className="w-[60px] h-[60px] lg:w-[60px] lg:h-[60px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl border-4 border-[var(--background-halfwhite)]">
+                    {card.icon.startsWith("/") ? (
+                      <Image
+                        src={card.icon}
+                        alt={`${card.title} Icon`}
+                        width={56}
+                        height={56}
+                        className="h-9 w-9 lg:w-14 lg:h-14"
+                      />
+                    ) : (
+                      <PosHardwarePageIcons
+                        name={card.icon as any}
+                        size={56}
+                        className="h-9 w-9 lg:w-14 lg:h-14 child-svg-full"
+                      />
+                    )}
                   </div>
-                  <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-semibold text-[var(--text-dark)]">
+                  <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-['onest'] font-semibold text-[var(--text-dark)]">
                     {card.title}
                   </h3>
-                  <p className="text-sm md:text-base leading-6 text-[var(--text-grey)]">
+                  <p className="text-sm md:text-base font-['onest'] leading-6 text-[var(--text-grey)]">
                     {card.description}
                   </p>
                 </div>

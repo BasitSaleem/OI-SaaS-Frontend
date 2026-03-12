@@ -102,7 +102,7 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
                 {
                   // background image is painted in CSS ::before using this variable
                   ["--hero-bg" as any]:
-                    "url('/assets/industries-pages/pos-grocery/industries-hero-bg.webp')",
+                    "url('/assets/industries-pages/pos-hardware/industries-hero-bg.webp')",
                 } as React.CSSProperties
               }
             >
