@@ -6,7 +6,6 @@ import whyChoseBanner from "../../../../../public/assets/industries-pages/pos-ha
 // Remove unused finance data imports
 
 import {
-  HARDWARE_LAYOUT_PATTERNS,
   POS_KEY_FEATURES_CARDS,
   Hardware_WHY_CHOOSE_CARDS,
   HARDWARE_FEATURE_CARDS
@@ -40,83 +39,6 @@ import IndustriesFeaturesSection from "@/components/pages/industries-page/Indust
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
 
 
-// Function to get layout patterns based on card count
-const getLayoutPatterns = (cardCount: number) => {
-  switch (cardCount) {
-    case 2:
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-    case 4:
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className:
-            "col-span-12 md:col-span-6 lg:col-span-6 lg:col-start-4 xl:col-span-6 xl:col-start-4",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-    default:
-      // Return the 4-card layout as default
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-  }
-};
-
 const Page = () => {
   return (
     <div>
@@ -148,10 +70,9 @@ const Page = () => {
       />
 
       <KeyHighlights
-              heading="Power-Packed Features at Your Fingertips"
-              features={POS_KEY_FEATURES_CARDS}
-              layoutPatterns={HARDWARE_LAYOUT_PATTERNS}
-            />
+        heading="Power-Packed Features at Your Fingertips"
+        features={POS_KEY_FEATURES_CARDS}
+      />
 
       <InventoryWorkflow
         heading={HARDWARE_WORKFLOW_DATA.heading}
@@ -167,9 +88,9 @@ const Page = () => {
 
       <IndustriesFeaturesSection features={HARDWARE_FEATURE_CARDS} />
 
-      <ToolsSection 
-        heading={HARDWARE_TOOLS_DATA.heading} 
-        tools={HARDWARE_TOOLS_DATA.tools} 
+      <ToolsSection
+        heading={HARDWARE_TOOLS_DATA.heading}
+        tools={HARDWARE_TOOLS_DATA.tools}
       />
 
       <IndustriesTestimonial

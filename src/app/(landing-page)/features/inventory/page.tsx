@@ -38,71 +38,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-const getLayoutPatterns = (cardCount: number) => {
-  switch (cardCount) {
-    case 4:
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className:
-            "col-span-12 md:col-span-6 lg:col-span-6 lg:col-start-4 xl:col-span-6 xl:col-start-4",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-    default:
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-  }
-};
-
 const Page = () => {
-  const layoutPatterns = getLayoutPatterns(INVENTORY_FEATURES_CARDS.length);
-
   return (
     <div>
       <SubFeaturesHero
@@ -121,7 +57,6 @@ const Page = () => {
       <KeyHighlights
         heading="Key Highlights"
         features={INVENTORY_FEATURES_CARDS}
-        layoutPatterns={layoutPatterns}
       />
 
       <WhyChoosePOS

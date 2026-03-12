@@ -10,7 +10,6 @@ import {
   INTEGRATION_TESTIMONIALS,
   INTEGRATION_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/integrationData";
-import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -58,7 +57,6 @@ const Page = () => {
       <KeyHighlights
         heading="Why Integrations Matters"
         features={INTEGRATION_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <WhyChoosePOS

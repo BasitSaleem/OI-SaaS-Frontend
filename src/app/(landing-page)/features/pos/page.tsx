@@ -35,7 +35,6 @@ import {
   POS_FAQS,
   POS_FEATURES_CARDS,
   POS_INDUSTRIES,
-  POS_LAYOUT_PATTERNS,
   POS_TESTIMONIALS,
   POS_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/posData";
@@ -61,7 +60,6 @@ across multiple locations."
       <KeyHighlights
         heading="Power-Packed Features at Your Fingertips"
         features={POS_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <WhyChoosePOS

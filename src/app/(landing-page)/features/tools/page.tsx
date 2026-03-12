@@ -10,7 +10,6 @@ import {
   TOOLS_TESTIMONIALS,
   TOOLS_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/toolsData";
-import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
 import TrustedBySection from "@/components/common-components/TrustedBySection";
 import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
@@ -41,7 +40,6 @@ const Page = () => {
       <KeyHighlights
         heading="Key Highlights"
         features={TOOLS_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <WhyChoosePOS

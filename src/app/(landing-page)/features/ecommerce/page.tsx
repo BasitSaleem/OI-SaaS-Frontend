@@ -11,7 +11,6 @@ import {
   ECOMMERCE_TESTIMONIALS,
   ECOMMERCE_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/ecommerceData";
-import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -58,7 +57,6 @@ const Page = () => {
       <KeyHighlights
         heading="Ecommerce Engine for Modern Growth"
         features={ECOMMERCE_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <WhyChoosePOS

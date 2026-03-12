@@ -11,7 +11,6 @@ import {
   PEOPLE_TESTIMONIALS,
   PEOPLE_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/peopleData";
-import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -57,7 +56,6 @@ const Page = () => {
       <KeyHighlights
         heading="Our Key Features"
         features={PEOPLE_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <WhyChoosePOS

@@ -181,38 +181,6 @@ export const POS_FAQS = [
     },
 ];
 
-export const POS_LAYOUT_PATTERNS = [
-    {
-        className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-        mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-        paddingClass: "px-0",
-    },
-    {
-        className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-        mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-        paddingClass: "px-0",
-    },
-    {
-        className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-        mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-        paddingClass: "px-0",
-    },
-    {
-        className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-        mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-        paddingClass: "px-0",
-    },
-    {
-        className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-        mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-        paddingClass: "px-0",
-    },
-    {
-        className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-        mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-        paddingClass: "px-0",
-    },
-];
 
 export const POS_WHY_CHOOSE_CARDS = [
     {

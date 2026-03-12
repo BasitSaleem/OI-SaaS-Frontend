@@ -9,7 +9,6 @@ import {
   SALES_INDUSTRIES,
   SALES_TESTIMONIALS,
 } from "@/constant/subfeatures/salesData";
-import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -57,7 +56,6 @@ const Page = () => {
       <KeyHighlights
         heading="Key Features"
         features={SALES_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
