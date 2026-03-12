@@ -32,6 +32,88 @@ import {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://ownersinventory.com/#organization",
+                "name": "Owners Inventory",
+                "url": "https://ownersinventory.com/",
+                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "Owners Inventory is a home inventory management software that helps users document and manage personal property for insurance and organizational purposes.",
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "email": "support@ownersinventory.com",
+                  "areaServed": "US",
+                  "availableLanguage": "English"
+                }
+              },
+              {
+                "@type": "SoftwareApplication",
+                "@id": "https://ownersinventory.com/#software",
+                "name": "Owners Inventory",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web, iOS, Android",
+                "url": "https://ownersinventory.com/",
+                "description": "Owners Inventory helps business owners track stock, manage products, monitor sales, and get real-time inventory alerts easily.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "210",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/OnlineOnly"
+                },
+                "publisher": {
+                  "@id": "https://ownersinventory.com/#organization"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "reviewCount": "125"
+                }
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://ownersinventory.com/#faq",
+                "mainEntity": HOME_FAQS.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
+                  }
+                }))
+              },
+              {
+                "@type": "Review",
+                "@id": "https://ownersinventory.com/#review",
+                "itemReviewed": {
+                  "@id": "https://ownersinventory.com/#software"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "John D."
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "Owners Inventory makes tracking personal property simple and efficient. The reporting tools are especially helpful for insurance purposes."
+              }
+            ]
+          })
+        }}
+      />
       <div className="font-onest overflow-x-hidden">
           <HeroSection2
             title={HOME_PAGE_CONTENT.hero.title}
