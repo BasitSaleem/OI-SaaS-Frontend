@@ -253,23 +253,23 @@ export const HARDWARE_TESTIMONIALS = [
 export const HARDWARE_FAQS = [
     {
         question: "What is a POS system for a hardware store?",
-        answer: "A hardware store POS system is software that helps manage sales, inventory, and customers in a hardware store. It makes sales work faster and stock billing simpler. Shops are able to take care of their daily work better than before."
+        answer: "A hardware store POS system is software that helps manage sales, inventory and customers all in a single location. It maintains stock in order and prompt billing. Stores are able to trace all items easily and minimize mistakes."
     },
     {
         question: "Can this POS system handle large inventories?",
-        answer: "Yes, our hardware store POS system is designed to handle thousands of items with ease. You can track stock levels, variants, and categories across multiple locations."
+        answer: "Yes, it can handle thousands of products having various units, sizes and variants. The stock is automatically updated following every sale or purchase. This assists stores in preventing errors and stockouts."
     },
     {
         question: "Is the system easy to use for staff?",
-        answer: "Absolutely. We've designed the interface to be intuitive and user-friendly, requiring minimal training for your staff to get started."
+        answer: "The interface is easy to navigate and use by any staff member. Billing, inventory and reports can be made fast. Employees do not need extensive training to use it."
     },
     {
         question: "Does it provide reports and insights?",
-        answer: "Yes, you get comprehensive reports on sales trends, inventory movement, and profit margins, helping you make data-driven decisions."
+        answer: "The system provides understandable sales, profit, and stock reports. The owners of the stores are able to see what sells quickly and what should be replenished. Real-time and accurate data make it easier to make decisions."
     },
     {
         question: "Can multiple staff members use the system safely?",
-        answer: "Yes, you can create multiple user accounts with different permission levels to ensure your data is secure while allowing your team to work efficiently."
+        answer: "Yes, there are user roles and permissions that protect the data. Access is granted to cashiers, managers, and admins according to their roles. The system prevents unauthorized alterations to significant records."
     }
 ];
 

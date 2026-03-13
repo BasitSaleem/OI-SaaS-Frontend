@@ -275,7 +275,7 @@ const NavItems = () => {
                 })}
               </div>
 
-              <div className="w-full">
+              {/* <div className="w-full">
                 <Link
                   href="/industries"
                   className="flex items-center justify-center gap-2.5 w-full text-center px-4 py-2 hover:bg-[var(--primary-purple)] hover:text-white border-2 border-[var(--primary-purple)] text-[var(--primary-purple)] text-base font-['onest'] font-semibold rounded-full hover:shadow-lg transition-all duration-300"
@@ -302,7 +302,7 @@ const NavItems = () => {
                     </defs>
                   </svg>
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             {/* Middle Section (6/12) - Industries within Selected Category */}

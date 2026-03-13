@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/bakery-pos/hardware-hero-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/bakery-pos/bakery-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/bakery-pos/why-chose-banner.webp";
 
 import {
@@ -20,6 +20,7 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
+import posBakeryPageIcons from "@/components/icons/posBakeryPageIcons";
 import {
   BAKERY_UNIFIED_CARDS,
   BAKERY_UNIFIED_HEADING,
@@ -42,8 +43,9 @@ const Page = () => {
   return (
     <div>
       <SubIndustriesHero
-        title="Bakery POS System for Complete Freshness and Inventory Control"
-        description="Run your bakery with speed, accuracy, and full control with Owners Inventory. Our smart bakery POS system ensures that your billing is quick and stock updates are automatic. Designed for bakeries that need real-time inventory and wastage tracking."
+        title="POS System For Bakeries Controlling 
+Orders & Inventory"
+        description="Manage your bakery with complete precision and control using Owners Inventory, the ultimate POS system for bakeries. Every sale, including the latest ingredient updates and fresh batches of morning cakes to orders for custom-made cake designs are synced into one intelligent system. This system is designed for bakeries who need to track inventory in real time and bill quickly."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"
@@ -52,26 +54,27 @@ const Page = () => {
 
       {/* <TrustedBySection
         heading="Rated on Leading Review Platforms"
-        paragraph="Big bakeries, pastry shops, and wholesale dessert businesses trust Owners Inventory for fast, accurate, and error-free checkout. Brands like Sweet Delights and Fresh Bakes use our POS to bill in real time, monitor fresh stock, and deliver better customer service."
+        paragraph="Big bakerys, specialty book shops, and wholesale book businesses trust Owners Inventory for fast, accurate, and error-free checkout."
       /> */}
 
-      <VoicesRealBusiness title="Trusted by Bakeries Globally" />
+      <VoicesRealBusiness title="Ratings on the Leading Review Platforms" />
 
       <IndustryUnifiedPlatform
         heading={BAKERY_UNIFIED_HEADING}
         paragraph={BAKERY_UNIFIED_PARAGRAPH}
         cards={BAKERY_UNIFIED_CARDS}
+        IconsComponent={posBakeryPageIcons}
       />
 
       <WhyChoosePOS
-        heading="How Our Inventory Software Solves These Challenges"
-        paragraph="The Owners Inventory removes operational confusion by linking sales, production stock, suppliers and reports into a single intelligent system. All activities in your bakery are automatically tracked."
+        heading="How Our Inventory Software Solves These Challenges?"
+        paragraph="Every feature of our Bakery POS System was created to help take the pressure off and streamline your processes."
         cards={BAKERY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       />
 
       <KeyHighlights
-        heading="Power-Packed Features for Your Bakery"
+        heading="Our Key Features"
         features={BAKERY_KEY_FEATURES_CARDS}
       />
 
@@ -82,8 +85,8 @@ const Page = () => {
       />
 
       <FeaturesCallToAction
-        title="Get Control of Your Bakery Now"
-        description="The best POS system for bakeries will streamline your inventory, eliminate wastage, and increase efficiency. Start now and discover how our solution can streamline your bakery operations."
+        title="Take Full Control of Your Bakery Operations"
+        description="Our bakery POS reduces waste, accelerates billing and maintains accurate ingredient stocks. Simplify your day-to-day operations today."
         ctaDesc="Request a Free Demo"
       />
 
@@ -110,7 +113,8 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our bakery POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bakery owners."
+          paragraph="Our bakery POS system is designed to make daily operations smooth and easy.
+Here are answers to some common questions from bakery owners."
           faqs={BAKERY_FAQS}
           buttonText="Start Now"
         />

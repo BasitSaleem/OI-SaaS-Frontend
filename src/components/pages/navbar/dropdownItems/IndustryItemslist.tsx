@@ -43,7 +43,7 @@ export const industriesItems: IndustryItem[] = [
   },
   {
     key: 'hardware-pos-system',
-    title: 'Hardware Store POS System',
+    title: 'Hardware POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
@@ -62,8 +62,8 @@ export const industriesItems: IndustryItem[] = [
 
   // Ecommerce
   // {
-  //   key: 'bookstore-pos',
-  //   title: 'Bookstore POS Systems',
+  //   key: 'bakery-pos',
+  //   title: 'Bakery POS Systems',
   //   icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
   //   category: 'ecommerce',
   // },
@@ -159,8 +159,8 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
   'bakery-pos-system': [
     { title: 'Bakery POS System Features' },
     { title: 'Inventory Management for Bakeries' },
-    { title: 'Recipe Costing' },
-    { title: 'Freshness Tracking' },
+    { title: 'Recipe & Ingredient Tracking' },
+    { title: 'Custom Cake Orders' },
   ],
   'hardware-pos-system': [
     { title: 'Hardware Inventory Management' },
@@ -180,7 +180,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Delivery Scheduling' },
     { title: 'Showroom Management' },
   ],
-  'bookstore-pos': [
+  'bakery-pos': [
     { title: 'Book Inventory Management' },
     { title: 'ISBN Scanning' },
     { title: 'Author/Track Management' },

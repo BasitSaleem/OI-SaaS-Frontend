@@ -22,6 +22,7 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
+import PosHardwarePageIcons from "@/components/icons/posHardwarePageIcons";
 import {
   HARDWARE_UNIFIED_CARDS,
   HARDWARE_UNIFIED_HEADING,
@@ -63,6 +64,7 @@ const Page = () => {
         heading={HARDWARE_UNIFIED_HEADING}
         paragraph={HARDWARE_UNIFIED_PARAGRAPH}
         cards={HARDWARE_UNIFIED_CARDS}
+        IconsComponent={PosHardwarePageIcons}
       />
 
       <WhyChoosePOS
