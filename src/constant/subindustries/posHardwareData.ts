@@ -193,17 +193,32 @@ export const HARDWARE_WORKFLOW_DATA = {
         {
             number: 1,
             title: "Inventory Acquisition",
-            description: "Owners begin by ordering products with reliable suppliers according to demand and inventory levels. New stock is thoroughly checked for quality and quantity. After verification, the products are entered into the inventory system so that they can be tracked properly."
+            description: "Owners begin by ordering products with reliable suppliers according to demand and inventory levels. Every item received is thoroughly checked in terms of quality and quantity. After verification, the products are entered into the inventory system so that they can be tracked properly."
         },
         {
             number: 2,
             title: "Stock Organization & Storage",
-            description: "Products are kept in shelves, bins or warehouses based on type, size or category. It is easy to find things because they are well-labeled and organized. This minimizes mistakes, saves time for staff and eliminates confusion of stocks."
+            description: "Products are kept in shelves, bins or warehouses based on type, size or category. It is easy to find things because they are well labeled and organized. This minimizes mistakes, saves time on the part of the staff and eliminates confusion of stocks."
         },
         {
             number: 3,
             title: "Inventory Tracking",
             description: "All inventory movements, such as sales, transfers, and returns, are updated in real-time. This ensures that the owners are aware of the stock levels at any given time."
+        },
+        {
+            number: 4,
+            title: "Supplier & Purchasing",
+            description: "Owners can control various suppliers effectively through the creation of purchase orders and deliveries. Maintaining records of lead times, prices and supplier performance will guarantee stock replenishment in time."
+        },
+        {
+            number: 5,
+            title: "Order Fulfillment",
+            description: "The inventory system is automatically updated when products are sold or allocated. Orders are selected, packed and shipped with high precision and this minimizes errors and enhances customer satisfaction."
+        },
+        {
+            number: 6,
+            title: "Reporting & Analysis",
+            description: "Periodic reports give information on the movement of stocks, slow and fast moving products and profitability. Owners are able to examine trends to make wiser buying and inventory choices."
         },
     ]
 };

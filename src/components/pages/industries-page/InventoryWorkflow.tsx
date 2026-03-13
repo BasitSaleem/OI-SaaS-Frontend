@@ -4,6 +4,7 @@ import Paragraph from "../typography/Paragraph";
 import WorkflowCard from "./WorkflowCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { type Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
 interface WorkflowStep {
@@ -19,6 +20,20 @@ interface InventoryWorkflowProps {
 }
 
 const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps) => {
+  const [progress, setProgress] = React.useState(0);
+
+  const handleProgress = (swiper: SwiperType) => {
+    const total = steps.length;
+    const slidesPerView = (swiper.params.breakpoints && swiper.currentBreakpoint && swiper.params.breakpoints[Number(swiper.currentBreakpoint)]?.slidesPerView !== undefined)
+      ? Number(swiper.params.breakpoints[Number(swiper.currentBreakpoint)].slidesPerView)
+      : (typeof swiper.params.slidesPerView === 'number' ? swiper.params.slidesPerView : 1);
+    
+    // Simplest way to get active slides relative to total
+    const current = swiper.activeIndex + slidesPerView;
+    const calculatedProgress = Math.min((current / total) * 100, 100);
+    setProgress(calculatedProgress);
+  };
+
   return (
     <section className="wrapper py-16 lg:py-24 overflow-hidden">
       <div className=" mx-auto text-center mb-16 lg:mb-20">
@@ -26,11 +41,21 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
         <Paragraph className="text-lg opacity-80">{paragraph}</Paragraph>
       </div>
 
+      {/* Progress Bar */}
+      <div className="max-w-full md:max-w-[400px] lg:hidden block h-1.5 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden mb-4">
+        <div
+          className="h-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] transition-all duration-300 ease-out"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
+
       <Swiper
         modules={[Autoplay]}
         spaceBetween={2}
         slidesPerView={1}
-        loop={steps.length > 3}
+        loop={false}
+        onInit={handleProgress}
+        onSlideChange={handleProgress}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -41,6 +66,9 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
             slidesPerView: 2,
           },
           1024: {
+            slidesPerView: 3,
+          },
+          1440: {
             slidesPerView: 3,
           },
         }}
