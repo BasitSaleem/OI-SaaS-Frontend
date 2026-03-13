@@ -41,7 +41,7 @@ function SmartWaytoSyncndSellSection() {
 
             <div className="hidden md:flex gap-4 w-full items-center justify-start">
               <ButtonSm
-                url="/coming-soon"
+                url="https://app.ownersinventory.com/"
                 text="Book a Free Demo"
                 bgColor="var(--primary-teal)"
                 textColor="white"
@@ -89,7 +89,7 @@ function SmartWaytoSyncndSellSection() {
 
           <div className="md:hidden flex gap-4 w-full items-center justify-start">
             <ButtonSm
-              url="/coming-soon"
+              url="https://app.ownersinventory.com/"
                text="Book a Free Demo"
               bgColor="var(--primary-teal)"
               textColor="white"

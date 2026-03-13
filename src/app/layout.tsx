@@ -99,6 +99,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${onest.variable} ${inter.variable} antialiased`}
       >
+        
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5LZ72NX8"

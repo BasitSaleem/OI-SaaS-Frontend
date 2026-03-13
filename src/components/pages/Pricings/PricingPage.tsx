@@ -57,7 +57,7 @@ const PricingPage: React.FC = () => {
            paragraph='We’ve compiled the most common questions about Owners Inventory — from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
            faqs={PRICING_FAQS}
            buttonText='Start Now'
-           buttonUrl='/coming-soon'
+           buttonUrl='https://app.ownersinventory.com/'
           />
           </div>
 
