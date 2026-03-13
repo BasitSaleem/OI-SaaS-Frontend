@@ -232,7 +232,7 @@ const NavItems = () => {
           onOpen={() => {
             open("industries");
             setselectedIndustryCategory("retailer");
-            setSelectedIndustryKey("pos-hardware-store");
+            setSelectedIndustryKey("hardware-pos-system");
           }}
           onClose={close}
           onToggle={() => toggle("industries")}

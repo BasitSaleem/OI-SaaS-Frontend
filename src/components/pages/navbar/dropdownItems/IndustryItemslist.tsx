@@ -35,14 +35,14 @@ export const industryCategories: IndustryCategory[] = [
 
 export const industriesItems: IndustryItem[] = [
   // Retailer
-  // {
-  //   key: 'bakery-pos',
-  //   title: 'Bakery POS System',
-  //   icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
-  //   category: 'retailer',
-  // },
   {
-    key: 'pos-hardware-store',
+    key: 'bakery-pos-system',
+    title: 'Bakery POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    category: 'retailer',
+  },
+  {
+    key: 'hardware-pos-system',
     title: 'Hardware Store POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
@@ -156,13 +156,13 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Multi Unit' },
   ],
   // Add details for new categories if needed
-  'bakery-pos': [
+  'bakery-pos-system': [
     { title: 'Bakery POS System Features' },
     { title: 'Inventory Management for Bakeries' },
     { title: 'Recipe Costing' },
     { title: 'Freshness Tracking' },
   ],
-  'pos-hardware-store': [
+  'hardware-pos-system': [
     { title: 'Hardware Inventory Management' },
     { title: 'Tool Rental System' },
     { title: 'Contractor Accounts' },

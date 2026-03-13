@@ -37,6 +37,7 @@ import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkf
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
+import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
 
 
 const Page = () => {
@@ -51,10 +52,12 @@ const Page = () => {
         variant="animation2"
       />
 
-      <TrustedBySection
+      {/* <TrustedBySection
         heading="Rated on Leading Review Platforms"
         paragraph="Big supermarkets, mini-marts, and wholesale stores trust Owners Inventory for fast, accurate, and error-free checkout. Brands like ASK Food Industries and Al-Asif use our POS to bill in real time, monitor stock, and deliver better customer service."
-      />
+      /> */}
+
+      <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
       <IndustryUnifiedPlatform
         heading={HARDWARE_UNIFIED_HEADING}
