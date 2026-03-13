@@ -4,6 +4,7 @@ import Paragraph from "../typography/Paragraph";
 import WorkflowCard from "./WorkflowCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useDevice } from "@/hooks/useDevice";
 import { type Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
@@ -20,19 +21,26 @@ interface InventoryWorkflowProps {
 }
 
 const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps) => {
+  const { isDesktop, isMounted } = useDevice();
   const [progress, setProgress] = React.useState(0);
 
   const handleProgress = (swiper: SwiperType) => {
     const total = steps.length;
-    const slidesPerView = (swiper.params.breakpoints && swiper.currentBreakpoint && swiper.params.breakpoints[Number(swiper.currentBreakpoint)]?.slidesPerView !== undefined)
-      ? Number(swiper.params.breakpoints[Number(swiper.currentBreakpoint)].slidesPerView)
-      : (typeof swiper.params.slidesPerView === 'number' ? swiper.params.slidesPerView : 1);
-    
-    // Simplest way to get active slides relative to total
+    const slidesPerView =
+      swiper.params.breakpoints &&
+      swiper.currentBreakpoint &&
+      swiper.params.breakpoints[Number(swiper.currentBreakpoint)]?.slidesPerView !== undefined
+        ? Number(swiper.params.breakpoints[Number(swiper.currentBreakpoint)].slidesPerView)
+        : typeof swiper.params.slidesPerView === "number"
+          ? swiper.params.slidesPerView
+          : 1;
+
     const current = swiper.activeIndex + slidesPerView;
     const calculatedProgress = Math.min((current / total) * 100, 100);
     setProgress(calculatedProgress);
   };
+
+  const swiperKey = isDesktop ? "desktop-loop" : "mobile-no-loop";
 
   return (
     <section className="wrapper py-16 lg:py-24 overflow-hidden">
@@ -49,40 +57,43 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
         />
       </div>
 
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={2}
-        slidesPerView={1}
-        loop={false}
-        onInit={handleProgress}
-        onSlideChange={handleProgress}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        breakpoints={{
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          1440: {
-            slidesPerView: 3,
-          },
-        }}
-      >
-        {steps.map((step, index) => (
-          <SwiperSlide key={index} className="!h-auto flex items-stretch">
-            <WorkflowCard
-              number={step.number}
-              title={step.title}
-              description={step.description}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {isMounted && (
+        <Swiper
+          key={swiperKey}
+          modules={[Autoplay]}
+          spaceBetween={2}
+          slidesPerView={1}
+          loop={isDesktop && steps.length > 3}
+          onInit={handleProgress}
+          onSlideChange={handleProgress}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1440: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {steps.map((step, index) => (
+            <SwiperSlide key={index} className="!h-auto flex items-stretch">
+              <WorkflowCard
+                number={step.number}
+                title={step.title}
+                description={step.description}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </section>
   );
 };
