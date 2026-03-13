@@ -42,12 +42,12 @@ const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
               <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
         
           {showDemoButton && (
-            <Link href="/coming-soon" className="bg-transparent
+            <Link href="https://app.ownersinventory.com/" className="bg-transparent
             px-4 py-2.5 md:px-[70px] md:py-3 lg:px-[70px] lg:py-4 flex items-center justify-center w-full md:w-fit text-sm md:text-base font-['Onest'] font-medium
              text-[var(--white-color)]  border border-white hover:border-transparent rounded-full hover:text-[var(--text-dark)]  hover:bg-[var(--white-color)]
              transition-colors duration-300">{demoButtonText}</Link>
           )}
-      <ButtonSm url='/coming-soon' text={actionButtonText} className='w-full md:w-fit' bgColor='var(--primary-purple)' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder/>
+      <ButtonSm url='https://app.ownersinventory.com/' text={actionButtonText} className='w-full md:w-fit' bgColor='var(--primary-purple)' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder/>
           
         </div>
         </div>
