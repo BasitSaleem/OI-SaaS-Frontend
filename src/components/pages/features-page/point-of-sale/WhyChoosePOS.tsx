@@ -5,6 +5,7 @@ import MainHeading from "../../typography/MainHeading";
 import Paragraph from "../../typography/Paragraph";
 import CardHeading from "../../typography/CardHeading";
 import { useEffect, useState } from "react";
+import PosHardwarePageIcons from "../../../icons/posHardwarePageIcons";
 
 interface CardItem {
   icon: string | StaticImageData;
@@ -79,13 +80,17 @@ export default function WhyChoosePOS({
                   {/* Icon */}
                   <div className="flex-shrink-0 self-start">
                     <div className="h-10 w-10">
-                      <Image
-                        src={card.icon}
-                        alt={card.title}
-                        width={40}
-                        height={40}
-                        className="h-10 w-10"
-                      />
+                      {typeof card.icon === "string" && !card.icon.startsWith("/") ? (
+                        <PosHardwarePageIcons name={card.icon as any} size={40} />
+                      ) : (
+                        <Image
+                          src={card.icon}
+                          alt={card.title}
+                          width={40}
+                          height={40}
+                          className="h-10 w-10"
+                        />
+                      )}
                     </div>
                   </div>
 

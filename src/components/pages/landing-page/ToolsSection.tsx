@@ -2,25 +2,39 @@ import React from "react";
 import MainHeading from "../typography/MainHeading";
 import CardHeading from "../typography/CardHeading";
 
-const usedTools = [
+interface Tool {
+  id: number;
+  name: string;
+  image: string;
+}
+
+interface ToolsSectionProps {
+  heading?: string;
+  tools?: Tool[];
+}
+
+const DEFAULT_TOOLS = [
   { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
   { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
   { id: 3, name: "QuickBooks", image: "/assets/home-page-images/tools-section/quick-book.svg" },
   { id: 4, name: "Xero", image: "/assets/home-page-images/tools-section/xero.svg" },
-  { id: 5, name: "Stripe", image: "/assets/home-page-images/tools-section/stripe.svg" },
+  { id: 5, name: "Stripe", image: "/assets/ home-page-images/tools-section/stripe.svg" },
 ];
 
-const ToolsSection = () => {
+const ToolsSection = ({
+  heading = "Connect Seamlessly with Your Favorite Tools",
+  tools = DEFAULT_TOOLS,
+}: ToolsSectionProps) => {
   return (
     <section className="wrapper">
       <div className="w-full bg-[var(--background-halfwhite)] p-8 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px]">
 
         <MainHeading className="text-center lg:mb-10 md:mb-6 mb-5">
-          Connect Seamlessly with Your Favorite Tools
+          {heading}
         </MainHeading>
 
         <div className="mt-10 grid grid-cols-12 gap-6">
-          {usedTools.map((tool, index) => {
+          {tools.map((tool, index) => {
             const i = index % 5;
 
             let mdCol = "md:col-span-6";

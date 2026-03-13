@@ -11,123 +11,118 @@ export interface IndustryCategory {
 }
 
 export const industryCategories: IndustryCategory[] = [
-   {
-    id: 'manufacturing',
-    title: 'Manufacturing',
-  },
-  {
-    id: 'distribution',
-    title: 'Distributor/Wholesaler',
-  },
   {
     id: 'retailer',
     title: 'Retailer',
   },
-  {
-    id: 'ecommerce',
-    title: 'Ecommerce',
-  },
-  {
-    id: 'restaurant',
-    title: 'Restaurant',
-  },
-  
   // {
-  //   id: 'largebusinesses',
-  //   title: 'Large Businesses',
+  //   id: 'manufacturing',
+  //   title: 'Manufacturing',
+  // },
+  // {
+  //   id: 'distribution',
+  //   title: 'Distributor/Wholesaler',
+  // },
+  // {
+  //   id: 'ecommerce',
+  //   title: 'Ecommerce',
+  // },
+  // {
+  //   id: 'restaurant',
+  //   title: 'Restaurant',
   // },
 ];
 
 export const industriesItems: IndustryItem[] = [
   // Retailer
   {
-    key: 'bakery-pos',
+    key: 'bakery-pos-system',
     title: 'Bakery POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
   {
-    key: 'grocery-store-pos',
-    title: 'Grocery Store POS System',
+    key: 'hardware-pos-system',
+    title: 'Hardware Store POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
-  {
-    key: 'hardware-store-pos',
-    title: 'POS System for Hardware Store',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
-    category: 'retailer',
-  },
-  {
-    key: 'furniture-store-pos',
-    title: 'POS System for Furniture Store',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
-    category: 'retailer',
-  },
+  // {
+  //   key: 'hardware-store-pos',
+  //   title: 'POS System for Hardware Store',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+  //   category: 'retailer',
+  // },
+  // {
+  //   key: 'furniture-store-pos',
+  //   title: 'POS System for Furniture Store',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+  //   category: 'retailer',
+  // },
 
   // Ecommerce
-  {
-    key: 'bookstore-pos',
-    title: 'Bookstore POS Systems',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
-    category: 'ecommerce',
-  },
-  {
-    key: 'grocery-ecommerce',
-    title: 'Grocery Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
-    category: 'ecommerce',
-  },
+  // {
+  //   key: 'bookstore-pos',
+  //   title: 'Bookstore POS Systems',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+  //   category: 'ecommerce',
+  // },
+  // {
+  //   key: 'grocery-ecommerce',
+  //   title: 'Grocery Store POS System',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+  //   category: 'ecommerce',
+  // },
 
   // Restaurant Types
-  {
-    key: 'restaurant',
-    title: 'Restaurant Types',
-    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant-types.svg",
-    category: 'restaurant',
-  },
+  // {
+  //   key: 'restaurant',
+  //   title: 'Restaurant Types',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/restaurant-types.svg",
+  //   category: 'restaurant',
+  // },
 
   // Manufacturing
-  {
-    key: 'manufacturing',
-    title: 'Manufacturing',
-    icon: "/assets/header-dropdown-images/industries-dropdown/manufacturing.svg",
-    category: 'manufacturing',
-  },
+  // {
+  //   key: 'manufacturing',
+  //   title: 'Manufacturing',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/manufacturing.svg",
+  //   category: 'manufacturing',
+  // },
 
   // Distributor/Wholesaler
-  {
-    key: 'jewelry-distributor',
-    title: 'POS System for Jewelry Store',
-    icon: "/assets/header-dropdown-images/industries-dropdown/wholesale.svg",
-    category: 'distribution',
-  },
-  {
-    key: 'clothing-distributor',
-    title: 'POS System for Clothing Store',
-    icon: "/assets/header-dropdown-images/industries-dropdown/wholesale.svg",
-    category: 'distribution',
-  },
-  {
-    key: 'wholesale',
-    title: 'Wholesale',
-    icon: "/assets/header-dropdown-images/industries-dropdown/wholesale.svg",
-    category: 'distribution',
-  },
-  {
-    key: 'distribution',
-    title: 'Distribution',
-    icon: "/assets/header-dropdown-images/industries-dropdown/distribution.svg",
-    category: 'distribution',
-  },
+  // {
+  //   key: 'jewelry-distributor',
+  //   title: 'POS System for Jewelry Store',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/wholesale.svg",
+  //   category: 'distribution',
+  // },
+  // {
+  //   key: 'clothing-distributor',
+  //   title: 'POS System for Clothing Store',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/wholesale.svg",
+  //   category: 'distribution',
+  // },
+  // {
+  //   key: 'wholesale',
+  //   title: 'Wholesale',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/wholesale.svg",
+  //   category: 'distribution',
+  // },
+  // {
+  //   key: 'distribution',
+  //   title: 'Distribution',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/distribution.svg",
+  //   category: 'distribution',
+  // },
 
   // Large Businesses
-  {
-    key: 'largebusinesses',
-    title: 'Large Businesses',
-    icon: "/assets/header-dropdown-images/industries-dropdown/large-bussiness.svg",
-    category: 'largebusinesses',
-  },
+  // {
+  //   key: 'largebusinesses',
+  //   title: 'Large Businesses',
+  //   icon: "/assets/header-dropdown-images/industries-dropdown/large-bussiness.svg",
+  //   category: 'largebusinesses',
+  // },
 ];
 
 export interface IndustryTreeItem {
@@ -141,7 +136,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Health and Beauty' },
     { title: 'Clothing' },
     { title: 'Home décor' },
-    { title: 'Grocery' },
+    { title: 'Hardware' },
     { title: 'Jewelry' },
     { title: 'Pet' },
     { title: 'Sporting Goods' },
@@ -161,17 +156,17 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Multi Unit' },
   ],
   // Add details for new categories if needed
-  'bakery-pos': [
+  'bakery-pos-system': [
     { title: 'Bakery POS System Features' },
     { title: 'Inventory Management for Bakeries' },
     { title: 'Recipe Costing' },
     { title: 'Freshness Tracking' },
   ],
-  'grocery-store-pos': [
-    { title: 'Grocery Inventory Management' },
-    { title: 'Perishable Goods Tracking' },
-    { title: 'Bulk Item Sales' },
-    { title: 'Loyalty Programs' },
+  'hardware-pos-system': [
+    { title: 'Hardware Inventory Management' },
+    { title: 'Tool Rental System' },
+    { title: 'Contractor Accounts' },
+    { title: 'Project Quoting' },
   ],
   'hardware-store-pos': [
     { title: 'Hardware Inventory Management' },

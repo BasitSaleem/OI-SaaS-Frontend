@@ -22,7 +22,11 @@ const otherBrands = [
   
 ];
 
-const VoicesRealBusiness = () => {
+interface VoicesRealBusinessProps {
+  title?: string;
+}
+
+const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealBusinessProps) => {
   return (
     <section
       className="mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px] real-voices bg-cover bg-no-repeat"
@@ -30,7 +34,7 @@ const VoicesRealBusiness = () => {
     >
       <div className="wrapper text-center">
         <MainHeading className="xl:mb-12 lg:mb-6 mb-5">
-          Voices of Real Businesses
+          {title}
         </MainHeading>
 
         <FeaturesMainSwiper

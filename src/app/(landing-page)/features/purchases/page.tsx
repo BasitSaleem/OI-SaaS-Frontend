@@ -38,87 +38,7 @@ const IndustryPosShowcase = dynamic(
   () => import("@/components/pages/landing-page/IndustryPosShowcase")
 );
 
-// Function to get layout patterns based on card count
-const getLayoutPatterns = (cardCount: number) => {
-  switch (cardCount) {
-    case 2:
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-    case 4:
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className:
-            "col-span-12 md:col-span-6 lg:col-span-6 lg:col-start-4 xl:col-span-6 xl:col-start-4",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-    default:
-      // Return the 4-card layout as default
-      return [
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-        {
-          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
-          paddingClass: "px-0",
-        },
-      ];
-  }
-};
-
 const Page = () => {
-  // Get layout patterns based on FeaturesCards length
-  const layoutPatterns = getLayoutPatterns(PURCHASES_FEATURES_CARDS.length);
-
   return (
     <div>
       <SubFeaturesHero
@@ -137,7 +57,6 @@ const Page = () => {
       <KeyHighlights
         heading="Key Features"
         features={PURCHASES_FEATURES_CARDS}
-        layoutPatterns={layoutPatterns}
       />
 
       <WhyChoosePOS

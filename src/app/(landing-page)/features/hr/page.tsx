@@ -11,7 +11,6 @@ import {
   HR_TESTIMONIALS,
   HR_WHY_CHOOSE_CARDS,
 } from "@/constant/subfeatures/hrData";
-import { POS_LAYOUT_PATTERNS } from "@/constant/subfeatures/posData";
 
 // 🔥 Dynamic Imports
 const TrustedBySection = dynamic(
@@ -58,7 +57,6 @@ const Page = () => {
       <KeyHighlights
         heading="Features that Set Us Apart"
         features={HR_FEATURES_CARDS}
-        layoutPatterns={POS_LAYOUT_PATTERNS}
       />
 
       <WhyChoosePOS
