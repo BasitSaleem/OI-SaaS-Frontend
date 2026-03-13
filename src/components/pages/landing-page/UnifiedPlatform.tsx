@@ -78,7 +78,7 @@ export default function UnifiedPlatform({
                     transition={{ duration: 0.35, ease: "easeInOut" }}
                     className="w-full py-5 px-4.5 md:p-5 lg:p-8 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
                   >
-                    <div className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl bg-[var(--background-halfwhite)]">
+                    <div className="w-fit p-[11px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl border-5 border-[var(--background-halfwhite)]">
                       <Image
                         src={card.icon}
                         alt={`${card.title} Icon`}
