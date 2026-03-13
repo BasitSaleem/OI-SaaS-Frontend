@@ -1,17 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import React from "react";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 import PosHardwarePageIcons from "../../icons/posHardwarePageIcons";
-
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 
 export interface IndustryUnifiedPlatformCard {
   icon: string;
@@ -32,96 +25,16 @@ export default function IndustryUnifiedPlatform({
   cards,
   textAlign = "left",
 }: IndustryUnifiedPlatformProps) {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const sectionTriggerRef = useRef<HTMLDivElement | null>(null);
-  const ctxRef = useRef<gsap.Context | null>(null);
-  const mmRef = useRef<any>(null);
-  const contentRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      const mm = gsap.matchMedia();
-      mmRef.current = mm;
-
-      const createTimeline = (opts: { start?: string; end?: string }) => {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: sectionTriggerRef.current,
-            start: opts.start ?? "top top",
-            end: opts.end ?? "+=200%",
-            pin: sectionRef.current,
-            scrub: 1,
-            anticipatePin: 1.5,
-            invalidateOnRefresh: true,
-            pinSpacing: true,
-            markers: false,
-          },
-        });
-
-        tl.fromTo(contentRef.current,
-          { y: 100, opacity: 0.5 },
-          { y: 0, opacity: 1, ease: "power2.out", duration: 0.6 }
-        );
-        tl.to({}, { duration: 0.2 });
-        tl.to(".unified-platform-cards", { y: "-66%", ease: "none" });
-        return tl;
-      };
-
-      mm.add("(min-width:1024px)", () => {
-        const tl = createTimeline({ start: "top top", end: "+=200%" });
-        return () => { tl.scrollTrigger && tl.scrollTrigger.kill(); tl.kill(); };
-      });
-
-      mm.add("(min-width:768px) and (max-width:1023px)", () => {
-        const tl = createTimeline({ start: "top top", end: "+=160%" });
-        return () => { tl.scrollTrigger && tl.scrollTrigger.kill(); tl.kill(); };
-      });
-
-      mm.add("(max-width:767px)", () => {
-        const cardEls = sectionRef.current?.querySelectorAll(".unified-platform-cards > *");
-        if (cardEls?.length) {
-          gsap.set(cardEls, { y: 30, opacity: 0 });
-          const reveal = gsap.timeline({
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top 80%",
-              end: "bottom 20%",
-              toggleActions: "play none none reverse",
-              markers: false,
-            },
-          });
-          reveal.to(cardEls, { y: 0, opacity: 1, stagger: 0.12, ease: "power2.out" });
-          return () => { reveal.scrollTrigger && reveal.scrollTrigger.kill(); reveal.kill(); };
-        }
-        return;
-      });
-
-      ScrollTrigger.refresh();
-    }, sectionRef);
-
-    ctxRef.current = ctx;
-
-    return () => {
-      if (mmRef.current) mmRef.current.revert();
-      if (ctxRef.current) ctxRef.current.revert();
-    };
-  }, []);
-
   return (
     <div
-      ref={sectionRef}
-      className="pinned-section-Unified min-h-[100vh] relative w-full overflow-hidden"
+      className="relative w-full"
       aria-label="Unified Platform Section"
     >
-      <div ref={sectionTriggerRef} className="h-0 absolute top-0 w-full bg-transparent"></div>
-      <div className="lg:h-[100px] md:h-28 h-20"></div>
       <section className="wrapper">
-        <div ref={contentRef} className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-8 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-5 lg:gap-14 xl:gap-32 py-10 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
           {/* Cards Column */}
-          <div className="md:order-1 order-2 md:w-3/6 lg:w-2/5 md:h-[560px] lg:h-[695px] overflow-hidden">
-            <div className="unified-platform-cards flex flex-col items-center justify-start gap-4 w-full">
+          <div className="md:order-1 order-2 md:w-3/6 lg:w-2/5">
+            <div className="flex flex-col items-center justify-start gap-4 w-full">
               {cards.map((card, index) => (
                 <div
                   key={index}
@@ -175,3 +88,4 @@ export default function IndustryUnifiedPlatform({
     </div>
   );
 }
+
