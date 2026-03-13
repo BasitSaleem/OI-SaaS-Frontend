@@ -73,7 +73,7 @@ const Page = () => {
       />
 
       <KeyHighlights
-        heading="Power-Packed Features at Your Fingertips"
+        heading="Our Key Features"
         features={POS_KEY_FEATURES_CARDS}
       />
 

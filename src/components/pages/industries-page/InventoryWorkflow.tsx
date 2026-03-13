@@ -23,6 +23,26 @@ interface InventoryWorkflowProps {
 const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps) => {
   const { isDesktop, isMounted } = useDevice();
   const [progress, setProgress] = React.useState(0);
+  const [swiperInstance, setSwiperInstance] = React.useState<SwiperType | null>(null);
+  const sectionRef = React.useRef<HTMLElement>(null);
+
+  React.useEffect(() => {
+    if (!sectionRef.current || !swiperInstance) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          swiperInstance.autoplay.start();
+        } else {
+          swiperInstance.autoplay.stop();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, [swiperInstance]);
 
   const handleProgress = (swiper: SwiperType) => {
     const total = steps.length;
@@ -43,7 +63,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
   const swiperKey = isDesktop ? "desktop-loop" : "mobile-no-loop";
 
   return (
-    <section className="wrapper py-16 lg:py-24 overflow-hidden">
+    <section ref={sectionRef} className="wrapper py-16 lg:py-24 overflow-hidden">
       <div className=" mx-auto text-center mb-16 lg:mb-20">
         <MainHeading className="mb-6">{heading}</MainHeading>
         <Paragraph className="text-lg opacity-80">{paragraph}</Paragraph>
@@ -60,11 +80,15 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
       {isMounted && (
         <Swiper
           key={swiperKey}
+          onSwiper={setSwiperInstance}
           modules={[Autoplay]}
           spaceBetween={2}
           slidesPerView={1}
           loop={isDesktop && steps.length > 3}
-          onInit={handleProgress}
+          onInit={(swiper) => {
+            handleProgress(swiper);
+            swiper.autoplay.stop(); // Stop initially until visible
+          }}
           onSlideChange={handleProgress}
           autoplay={{
             delay: 3000,
