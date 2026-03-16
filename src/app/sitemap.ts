@@ -34,6 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "tools",
     ];
 
+    const industries = [
+        "hardware-pos-system",
+        "bakery-pos-system",
+    ];
+
     const routes = [
         ...mainRoutes.map((route) => ({
             url: `${baseUrl}${route}`,
@@ -46,6 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: "monthly" as const,
             priority: 0.7,
+        })),
+        ...industries.map((industry) => ({
+            url: `${baseUrl}/industries/${industry}`,
+            lastModified: new Date(),
+            changeFrequency: "monthly" as const,
+            priority: 0.8,
         })),
     ];
 
