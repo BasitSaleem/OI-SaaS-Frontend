@@ -12,7 +12,7 @@ import {
 
 
 import TrustedBySection from "@/components/common-components/TrustedBySection";
-import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
+import IndustriesCallToAction from "@/components/pages/industries-page/IndustriesCallToAction";
 
 import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
 import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
@@ -84,7 +84,7 @@ Orders & Inventory"
         steps={BAKERY_WORKFLOW_DATA.steps}
       />
 
-      <FeaturesCallToAction
+      <IndustriesCallToAction
         title="Take Full Control of Your Bakery Operations"
         description="Our bakery POS reduces waste, accelerates billing and maintains accurate ingredient stocks. Simplify your day-to-day operations today."
         ctaDesc="Request a Free Demo"

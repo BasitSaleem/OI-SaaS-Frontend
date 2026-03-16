@@ -148,12 +148,12 @@ body {
 
 
 .wrapper {
-  margin: 0 24px;
+  margin: 0 16px;
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    margin: 0 40px;
+    margin: 0 32px;
   }
 }
 

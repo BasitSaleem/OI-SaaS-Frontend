@@ -125,7 +125,7 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
                   className="flex md:gap-4 gap-2 lg:p-1.5 relative z-[60] owner-inventory-hero__content--buttons"
                 >
                   <ButtonSm
-                    url="/coming-soon"
+                    url="https://app.ownersinventory.com/"
                     text={ctaDesc}
                     bgColor="[#1AD1B9]"
                     textColor="white"

@@ -92,7 +92,8 @@ export const HARDWARE_FEATURE_CARDS = [
             "POS Sales Management",
             "Ecommerce Operations and Sales Online",
             "Single Multi-Channel Control"
-        ]
+        ],
+        secondaryDescription: "In this manner, you are able to run your business effectively and provide a smooth experience to customers all over."
     },
     {
         title: "Better Decision Reporting and Analytics",
@@ -106,7 +107,9 @@ export const HARDWARE_FEATURE_CARDS = [
             "Real-time sales and inventory analysis.",
             "Predict demand and schedule reorders.",
             "Determine revenue leakages and enhance profitability."
-        ]
+        ],
+        secondaryDescription: "Data-driven insights minimize guesswork and assist owners in making smarter and faster decisions that increase efficiency and revenue."
+
     },
 ];
 

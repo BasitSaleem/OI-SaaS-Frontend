@@ -204,8 +204,9 @@ const NavItems = () => {
                       (item) => item.key === selectedFeatureKey,
                     )?.title
                   }
+                </p>
 
-                  <span className="text-xs flex items-center gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
+                <span className="text-xs flex items-center mb-3 gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
                     <svg
                       width="3"
                       height="3"
@@ -217,7 +218,6 @@ const NavItems = () => {
                     </svg>
                     Key Features
                   </span>
-                </p>
 
                 <FeatureList items={featuresDetailsMap[selectedFeatureKey]} />
               </div>
@@ -378,7 +378,10 @@ const NavItems = () => {
                       (item) => item.key === selectedIndustryKey,
                     )?.title
                   }
-                  <span className="text-xs flex items-center gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
+                  
+                </p>
+
+                <span className="text-xs flex items-center mb-3 gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
                     <svg
                       width="3"
                       height="3"
@@ -390,7 +393,6 @@ const NavItems = () => {
                     </svg>
                     Key Features
                   </span>
-                </p>
 
                 <IndustryList
                   items={industryDetailsMap[selectedIndustryKey] || []}

@@ -13,7 +13,7 @@ import {
 
 
 import TrustedBySection from "@/components/common-components/TrustedBySection";
-import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
+import IndustriesCallToAction from "@/components/pages/industries-page/IndustriesCallToAction";
 
 import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
 import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
@@ -39,6 +39,8 @@ import IndustriesTestimonial from "@/components/pages/industries-page/Industries
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
 import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
+import SecurityCompliance from "@/components/pages/industries-page/securityCompliance";
+import IndustriesHardwareControl from "@/components/pages/industries-page/IndustriesHardwareControl";
 
 
 const Page = () => {
@@ -85,16 +87,26 @@ const Page = () => {
         steps={HARDWARE_WORKFLOW_DATA.steps}
       />
 
-      <FeaturesCallToAction
+      <IndustriesCallToAction
         title="Get Control of Your Inventory Now"
         description="Our Best POS system for hardware stores will streamline your inventory, eliminate mistakes, and increase efficiency. Start now and discover how our solution can streamline your operations and make the most out of your business."
         ctaDesc="Request a Free Demo"
       />
 
+
       <IndustriesFeaturesSection features={HARDWARE_FEATURE_CARDS} />
+
+
+      <SecurityCompliance 
+          title="Security, Accuracy, & Compliance."
+        description="An effective inventory system will make sure that all the transactions are properly documented and monitored. The user roles and permissions restrict access to sensitive information, minimizing errors and theft. All details will be secured with us."
+        secondDescription="It also keeps audit trails and aids in regulatory compliance, which keep businesses accountable and safeguard inventory and financial data. Live tracking will make sure that all the stock movements are documented in a transparent manner. Automated reports minimize errors in manual reports and enable store owners to keep accurate financial records with confidence."
+      />
+
 
       <ToolsSection
         heading={HARDWARE_TOOLS_DATA.heading}
+        description={HARDWARE_TOOLS_DATA.paragraph}
         tools={HARDWARE_TOOLS_DATA.tools}
       />
 
@@ -119,6 +131,12 @@ const Page = () => {
           buttonText="Start Now"
         />
       </div>
+
+      <IndustriesHardwareControl
+        title="Take Control of Your Hardware Store"
+        description="Hardware stores lose an average of $30,000 per year due to stock errors and mismanagement. Our hardware store POS system helps reduce losses, keep inventory accurate, and speed up daily operations. Smarter tracking and faster billing make every day more profitable."
+        ctaDesc="Start Today"
+      />
     </div>
   );
 };

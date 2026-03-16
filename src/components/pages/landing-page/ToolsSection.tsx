@@ -1,6 +1,7 @@
 import React from "react";
 import MainHeading from "../typography/MainHeading";
 import CardHeading from "../typography/CardHeading";
+import Paragraph from "../typography/Paragraph";
 
 interface Tool {
   id: number;
@@ -10,6 +11,7 @@ interface Tool {
 
 interface ToolsSectionProps {
   heading?: string;
+  description?: string;
   tools?: Tool[];
 }
 
@@ -23,15 +25,18 @@ const DEFAULT_TOOLS = [
 
 const ToolsSection = ({
   heading = "Connect Seamlessly with Your Favorite Tools",
+  description,
   tools = DEFAULT_TOOLS,
 }: ToolsSectionProps) => {
   return (
     <section className="wrapper">
       <div className="w-full bg-[var(--background-halfwhite)] p-8 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px]">
 
-        <MainHeading className="text-center lg:mb-10 md:mb-6 mb-5">
+        <MainHeading className="text-center lg:mb-6 md:mb-6 mb-5">
           {heading}
         </MainHeading>
+
+        <Paragraph className="lg:mb-10 md:mb-6 mb-5 text-center">{description}</Paragraph>
 
         <div className="mt-10 grid grid-cols-12 gap-6">
           {tools.map((tool, index) => {
