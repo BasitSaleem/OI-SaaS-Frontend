@@ -209,13 +209,21 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
           {/* HERO BODY */}
           <div className="md:py-px bg-[#F3F4F6] rounded-[20px] lg:rounded-[40px]">
             <div
-              className={`owner-inventory-hero__bottom relative flex flex-col items-center justify-center  w-full ${heroHeight} ${heroOverflow} pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] bg-cover bg-no-repeat backdrop-blur-[374px]`}
-              style={{
-                backgroundImage: "url('/assets/home-page-images/hero-bg.webp')",
-              }}
+              className={`owner-inventory-hero__bottom relative flex flex-col items-center justify-center  w-full ${heroHeight} ${heroOverflow} pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
             >
+              {/* Background Image Optimization */}
+              <div className="absolute inset-0 z-[-1] pointer-events-none">
+                <Image
+                  src="/assets/home-page-images/hero-bg.webp"
+                  alt="Background"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  className="object-cover object-center"
+                />
+              </div>
               {/* Heading */}
-              <div className="owner-inventory-hero__content flex flex-col items-center justify-center w-full">
+              <div className="owner-inventory-hero__content relative z-10 flex flex-col items-center justify-center w-full">
                 {/* <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[var(--text-dark)]">
                 {title}
               </h1> */}
@@ -294,10 +302,11 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                           playsInline
                           autoPlay={shouldPlayVideo}
                           loop
-                          preload="auto"
+                          preload="metadata"
+                          poster="/assets/home-page-images/hero-anim-banner.webp"
                         >
                           <source
-                            src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/landing-page/hero-main-video.webm"
+                            src="/videos-s3/landing-page/hero-main-video.webm"
                             type="video/webm"
                           />
                           Your browser does not support the video tag.

@@ -76,6 +76,7 @@ export default function SellerClubSection({
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                 >
                   <source src={mediaSrc} type="video/webm" />
                   Your browser does not support the video tag.

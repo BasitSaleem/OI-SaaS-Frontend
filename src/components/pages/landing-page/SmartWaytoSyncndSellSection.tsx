@@ -77,9 +77,10 @@ function SmartWaytoSyncndSellSection() {
                 muted
                 loop
                 playsInline
+                preload="metadata"
               >
                 <source
-                  src="https://owner-inventory.s3.us-east-1.amazonaws.com/videos/home-page-videos/trolly-anim.webm"
+                  src="/videos-s3/home-page-videos/trolly-anim.webm"
                   type="video/webm"
                 />
                 Your browser does not support the video tag.

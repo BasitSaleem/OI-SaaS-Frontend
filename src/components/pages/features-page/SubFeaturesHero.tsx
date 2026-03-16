@@ -188,6 +188,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                       muted
                       loop
                       playsInline
+                      preload="metadata"
                     >
                       <source src={video} type="video/webm" />
                       Your browser does not support the video tag.

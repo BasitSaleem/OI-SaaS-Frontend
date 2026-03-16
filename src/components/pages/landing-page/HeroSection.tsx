@@ -74,6 +74,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 alt="Background"
                 fill
                 priority
+                fetchPriority="high"
                 className="object-cover object-center"
               />
             </div>
@@ -141,6 +142,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 muted
                 loop
                 playsInline
+                preload="metadata"
               >
                 <source src={video} type="video/webm" />
                 Your browser does not support the video tag.
@@ -171,6 +173,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                 >
                   <source src={video} type="video/webm" />
                   Your browser does not support the video tag.
