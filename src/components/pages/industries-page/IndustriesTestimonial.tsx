@@ -220,7 +220,10 @@ const IndustriesTestimonial = ({
               {features.map((feature, index) => {
                 let colSpanClass = "col-span-12"; // Mobile default
                 
-                if (index < 4) {
+                if (features.length === 6) {
+                  // If there are exactly 6 cards, show 3 cards per row on desktop (col-span-4)
+                  colSpanClass += " md:col-span-6 lg:col-span-4";
+                } else if (index < 4) {
                   // First four cards: col-span-3 (desktop), col-span-6 (tablet)
                   colSpanClass += " md:col-span-6 lg:col-span-3";
                 } else if (index < 6) {

@@ -335,7 +335,7 @@ body {
   background: linear-gradient(90.54deg,
       rgba(160, 230, 245, 0.4) 30%,
       rgba(175, 205, 255, 0.5) 50%,
-      rgba(210, 185, 255, 1) 100%);
+      rgba(210, 185, 255, 0.9) 100%);
 
   -webkit-mask-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -357,7 +357,7 @@ body {
       rgba(0, 0, 0, 0.15) 90%,
       rgba(0, 0, 0, 0) 100%);
 
-  filter: blur(100px);
+  filter: blur(60px);
   z-index: -1;
 }
 
@@ -384,9 +384,9 @@ body {
       rgba(175, 205, 255, 1) 30%,
       rgba(210, 185, 255, 1) 100%),
     linear-gradient(90.54deg,
-      rgba(26, 209, 185, 0.3) 30%,
-      rgba(175, 205, 255, 1) 50%,
-      rgba(210, 185, 255, 1) 100%);
+      rgba(26, 209, 185, 0.2) 30%,
+      rgba(175, 205, 255, 0.6) 50%,
+      rgba(210, 185, 255, 0.9) 65%);
   background-size: 100% 50%;
   background-position: top, bottom;
   background-repeat: no-repeat;

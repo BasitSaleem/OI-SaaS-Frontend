@@ -105,7 +105,6 @@ export const HARDWARE_FEATURE_CARDS = [
             "Ecommerce Operations and Sales Online",
             "Single Multi-Channel Control"
         ],
-        secondaryDescription: "In this manner, you are able to run your business effectively and provide a smooth experience to customers all over."
     },
     {
         id: "better-decision-reporting-hardware",
@@ -121,7 +120,6 @@ export const HARDWARE_FEATURE_CARDS = [
             "Predict demand and schedule reorders.",
             "Determine revenue leakages and enhance profitability."
         ],
-        secondaryDescription: "Data-driven insights minimize guesswork and assist owners in making smarter and faster decisions that increase efficiency and revenue."
 
     },
 ];

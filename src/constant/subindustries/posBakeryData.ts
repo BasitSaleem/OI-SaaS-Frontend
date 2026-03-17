@@ -346,12 +346,12 @@ export const BAKERY_TESTIMONIAL_FEATURES = [
         description: "Permissions based on roles protect confidential business data. Each of the cashiers, chefs, and managers has their own access control, which ensures security and discipline.",
         icon: "testWhychoseIcon6",
     },
-    {
-        id: "integration-addons",
-        title: "Integration and Addons",
-        description: "Integrates with accounting software, ecommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier portals for easy scaling.",
-        icon: "testWhychoseIcon7",
-    },
+    // {
+    //     id: "integration-addons",
+    //     title: "Integration and Addons",
+    //     description: "Integrates with accounting software, ecommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier portals for easy scaling.",
+    //     icon: "testWhychoseIcon7",
+    // },
 ];
 
 export const BAKERY_TOOLS_DATA = {

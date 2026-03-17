@@ -96,19 +96,13 @@ Orders & Inventory"
 
       <SecurityCompliance
         title="Security, Accuracy, & Compliance."
-        description="A good bookstore POS system will make sure that all the transactions are well-documented and tracked. The user roles and permissions restrict access to sensitive information and minimize errors and misuse. All data in the bookstores is safe and secure."
-        secondDescription="The system also keeps audit trails and facilitates compliance needs, protecting inventory and financial records. The real-time tracking will provide a clear view of stock movement and automated reports will reduce the number of mistakes made by the manual process and keep the books accurate."
+        description="Each transaction in the Owners Inventory has a time stamp and is recorded securely. Each staff member has access to only the information relevant to his or her responsibilities."
+        secondDescription="Audit trails increase transparency, and they reduce the possibility of errors within an organization or unauthorized changes. Automated reports reduce manual errors and help ensure that financial records are accurate and in compliance."
       />
 
       <ToolsSection
         heading={BAKERY_TOOLS_DATA.heading}
         tools={BAKERY_TOOLS_DATA.tools}
-      />
-
-      <IndustriesHardwareControl
-        title="All-in-One Inventory Solution for Bookstores"
-        description="Have complete control of your books, sales, and day-to-day operations with a system that is tailored to the needs of a modern bookstore."
-        ctaDesc="Start Today"
       />
 
       <IndustriesTestimonial
@@ -133,6 +127,11 @@ Here are answers to some common questions from bakery owners."
           buttonText="Start Now"
         />
       </div>
+       <IndustriesHardwareControl
+        title="Take Charge of Your Bakery Business Today"
+        description="Due to stock mistakes, slow billing, and wastage, bakeries lose significant revenue. Owners Inventory reduces losses, helps manage orders efficiently, and keeps ingredient tracking accurate."
+        ctaDesc="Start Today"
+      />
     </div>
   );
 };

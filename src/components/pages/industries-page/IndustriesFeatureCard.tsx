@@ -8,7 +8,6 @@ import Paragraph from "../typography/Paragraph";
 interface IndustriesFeatureCardProps {
   title: string;
   description: string;
-  secondaryDescription?: string;
   videoSrc?: string;
   imageSrc?: string;
   buttonLabel: string;
@@ -27,7 +26,6 @@ interface IndustriesFeatureCardProps {
 const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
   title,
   description,
-  secondaryDescription,
   videoSrc,
   imageSrc,
   buttonLabel,
@@ -150,8 +148,6 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
             ))}
           </ul>
         )}
-
-        <Paragraph className="flex-1 mb-6">{secondaryDescription}</Paragraph>
 
         {/* <Link
           href={buttonHref}
