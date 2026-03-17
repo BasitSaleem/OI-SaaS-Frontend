@@ -59,6 +59,7 @@ const EmpoweredSection: React.FC<EmpoweredSectionProps> = ({
               buttonHref={card.buttonHref || "#"}
             />
           )}
+          slidesPerView={1}
         />
       </div>
       </div>

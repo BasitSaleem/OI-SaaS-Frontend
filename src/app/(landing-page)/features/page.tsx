@@ -88,7 +88,7 @@ const Page = () => {
       <HeroSection
         title={MAIN_FEATURES_HERO.title}
         description={MAIN_FEATURES_HERO.description}
-        // video={MAIN_FEATURES_HERO.video}
+        video={MAIN_FEATURES_HERO.video}
         image={MAIN_FEATURES_HERO.image}
         showButtons={false}
          variant = "animation2"
@@ -108,7 +108,7 @@ const Page = () => {
       </div>
 
       <SellerClubSection
-        // mediaSrc={UTILITIES_DATA.mediaSrc}
+        mediaSrc={UTILITIES_DATA.mediaSrc}
         imageSrc={UTILITIES_DATA.imageSrc}
         heading={UTILITIES_DATA.heading}
         description={UTILITIES_DATA.description}

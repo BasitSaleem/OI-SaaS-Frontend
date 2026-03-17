@@ -13,6 +13,8 @@ interface CustomSwiperProps<T> {
   renderSlide: (slide: T, index: number) => ReactNode;
   swiperOptions?: Record<string, unknown>;
   showPagination?: boolean;
+  slidesPerView?: number;
+  breakpoints?: Record<number, { slidesPerView: number; slidesPerGroup: number }>;
 }
 
 export default function FeaturesMainSwiper<T>({
@@ -20,6 +22,8 @@ export default function FeaturesMainSwiper<T>({
   renderSlide,
   swiperOptions = {},
   showPagination = true,
+  slidesPerView = 1.5,
+  breakpoints,
 }: CustomSwiperProps<T>) {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -27,12 +31,23 @@ export default function FeaturesMainSwiper<T>({
     setIsMounted(true);
   }, []);
 
+  const defaultBreakpoints = {
+    768: {
+      slidesPerView: Math.min(2, slides.length),
+      slidesPerGroup: 1,
+    },
+    1280: {
+      slidesPerView: Math.min(3, slides.length),
+      slidesPerGroup: 1,
+    },
+  };
+
   if (!isMounted) return null;
   return (
     <Swiper
       modules={[Pagination, Autoplay]}
       spaceBetween={20}
-      slidesPerView={1.5}
+      slidesPerView={slidesPerView}
       slidesPerGroup={1}
       loop={true}
       autoplay={{
@@ -45,7 +60,7 @@ export default function FeaturesMainSwiper<T>({
       //     `<span class="${className}"></span>`,
       // }}
       pagination={
-        showPagination 
+        showPagination
           ? {
               clickable: true,
               renderBullet: (index, className) =>
@@ -53,16 +68,7 @@ export default function FeaturesMainSwiper<T>({
             }
           : false // Disable pagination when false
       }
-      breakpoints={{
-        768: {
-          slidesPerView: Math.min(2, slides.length),
-          slidesPerGroup: 1
-        },
-        1280: {
-          slidesPerView: Math.min(3, slides.length),
-          slidesPerGroup: 1
-        },
-      }}
+      breakpoints={breakpoints || defaultBreakpoints}
       className="mySwiper overflow-x-hidden"
       {...swiperOptions}
     >
