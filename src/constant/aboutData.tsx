@@ -7,6 +7,61 @@ export const ABOUT_HERO_CONTENT = {
   variant: "animation2" as const,
 };
 
+export const TEAM_MEMBERS = [
+    {
+        id: "team-john-doe",
+        name: "John Doe",
+        role: "Founder & CEO",
+        image: "/assets/about-us/team/john.webp",
+        bio: "John has 15+ years of experience in retail management and software development."
+    },
+    {
+        id: "team-jane-smith",
+        name: "Jane Smith",
+        role: "Chief Operating Officer",
+        image: "/assets/about-us/team/jane.webp",
+        bio: "Jane specializes in scaling operations and customer success strategies."
+    },
+    {
+        id: "team-michael-brown",
+        name: "Michael Brown",
+        role: "Head of Engineering",
+        image: "/assets/about-us/team/michael.webp",
+        bio: "Michael leads our technical team in building robust and scalable solutions."
+    },
+    {
+        id: "team-sarah-wilson",
+        name: "Sarah Wilson",
+        role: "Head of Design",
+        image: "/assets/about-us/team/sarah.webp",
+        bio: "Sarah ensures our platform is intuitive, beautiful, and easy to use for everyone."
+    }
+];
+
+export const ABOUT_TIMELINE = [
+    {
+        id: "timeline-2018",
+        year: "2018",
+        title: "The Beginning",
+        description: "Owners Inventory started with a simple vision: to bridge the gap between complex enterprise software and the needs of small business owners.",
+        image: "/assets/about-us/mission-image.png"
+    },
+    {
+        id: "timeline-2020",
+        year: "2020",
+        title: "Growth Phase",
+        description: "We expanded our suite of tools to include POS and HR management, serving over 500+ businesses across multiple industries.",
+        image: "/assets/about-us/mission-image.png"
+    },
+    {
+        id: "timeline-2023",
+        year: "2023",
+        title: "Going Global",
+        description: "With our new cloud-based infrastructure, we now support businesses in 5+ countries with real-time analytics and global support.",
+        image: "/assets/about-us/mission-image.png"
+    }
+];
+
 export const PHILOSOPHY_CARDS = [
   {
     iconName: "complication",

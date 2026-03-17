@@ -141,18 +141,21 @@ export const FACILITIES_FAQS = [
 
 export const FACILITIES_TESTIMONIALS = [
     {
+        id: "facilities-testimonial-1",
         name: "Olivia Harris",
         title: "Procurement Manager, SmartTrade",
         image: "/assets/features-page/testimonial-images/testinomial-girl8.webp",
         text: `Owners Inventory has totally transformed our approach to handling our business. We would manage every store individually, and it led to delays and mistakes. We are now able to monitor every place, every stock and every team performance on a single dashboard. It saves us a lot of hours daily and makes us have real mastery of our operations.`,
     },
     {
+        id: "facilities-testimonial-2",
         name: "Jason Miller",
         title: "Managing Partner, Miller & Co.",
         image: "/assets/features-page/testimonial-images/testinomial-boy9.webp",
         text: `Prior to using Owners Inventory, it was a real challenge to track out our inventory, and staff activity across branches. The system simplified everything - stock management, performance reports, etc. It is user-friendly to our team, and we are able to make decisions faster with real-time updates. It truly improved how we work.`,
     },
     {
+        id: "facilities-testimonial-3",
         name: "Hannah Lewis",
         title: "Retail Operations Head, CityMart",
         image: "/assets/features-page/testimonial-images/testinomial-girl9.webp",
@@ -162,24 +165,28 @@ export const FACILITIES_TESTIMONIALS = [
 
 export const FACILITIES_WHY_CHOOSE_CARDS = [
     {
+        id: "facilities-why-choose-1",
         icon: "/assets/features-page/facilities-page/why-chose/facility-control.svg",
         title: "All-in-One Facility Control",
         description:
             "Operate all warehouses, stores and work areas through a single connected system.",
     },
     {
+        id: "facilities-why-choose-2",
         icon: "/assets/features-page/facilities-page/why-chose/real-time-monitoring.svg",
         title: "Real-Time Monitoring",
         description:
             "Monitor performance and operations in real-time by accessing a live facility monitoring dashboard.",
     },
     {
+        id: "facilities-why-choose-3",
         icon: "/assets/features-page/facilities-page/why-chose/seamless-pos.svg",
         title: "Seamless POS Integration",
         description:
             "Connect your facility dashboard POS to facilitate sales, stock and reporting across stores.",
     },
     {
+        id: "facilities-why-choose-4",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Scalable for Any Industry",
         description:

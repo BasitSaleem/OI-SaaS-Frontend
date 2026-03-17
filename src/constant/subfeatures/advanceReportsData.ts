@@ -166,24 +166,28 @@ export const ADVANCE_REPORTS_FAQS = [
 
 export const ADVANCE_REPORTS_TESTIMONIALS = [
     {
+        id: "advance-reports-testimonial-1",
         name: "Alex Morgan",
         title: "Product Operations Lead, ScaleMart",
         image: "/assets/features-page/testimonial-images/testinomial-boy18.webp",
         text: `Advanced reporting of Owners Inventory has transformed the way we operate our store entirely. I am able to monitor sales trends, stock levels and customer preferences under a single location. It saves me hours per week and makes me make wiser decisions. Definitely recommend it to all retail business owners!`,
     },
     {
+        id: "advance-reports-testimonial-2",
         name: "Ju",
         title: "Inventory Manager, TradeWorks",
         image: "/assets/features-page/testimonial-images/testinomial-girl17.webp",
         text: `The inventory aging and sales reports are fantastic. I am able to easily tell which products are selling and which are not. It has actually assisted us in overstock reduction and better purchasing decisions. The dashboard is easy and simple to interpret as well.`,
     },
     {
+        id: "advance-reports-testimonial-3",
         name: "Eric Thompson",
         title: "Business Consultant, RetailWorks",
         image: "/assets/features-page/testimonial-images/testinomial-boy19.webp",
         text: `We have changed to Owners Inventory because of its sophisticated POS reporting features and it has transformed the game. It is always clear and precise whether it is daily sales tracking or a report on the product. It makes me confident in my ability to plan and expand our business.`,
     },
     {
+        id: "advance-reports-testimonial-4",
         name: "Lauren White",
         title: "Director, White Retail Group",
         image: "/assets/features-page/testimonial-images/testinomial-girl18.webp",
@@ -193,30 +197,35 @@ export const ADVANCE_REPORTS_TESTIMONIALS = [
 
 export const ADVANCE_REPORTS_WHY_CHOOSE_CARDS = [
     {
+        id: "advance-reports-why-choose-1",
         icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
         title: "Real-Time Data Insights",
         description:
             "Monitor real-time performance data and be on top of all sales trends.",
     },
     {
+        id: "advance-reports-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
         title: "Customizable POS Reports",
         description:
             "Generate detailed, filter-based reports that are customized to your business objectives.",
     },
     {
+        id: "advance-reports-why-choose-3",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Visual Dashboards",
         description:
             "Transform complicated information into simple charts and summaries.",
     },
     {
+        id: "advance-reports-why-choose-4",
         icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
         title: "Multi-Outlet Analysis",
         description:
             "Compare store and location performance in a single dashboard.",
     },
     {
+        id: "advance-reports-why-choose-5",
         icon: "/assets/features-page/human-resource-page/why-chose/reliable-support.svg",
         title: "Smart Decision Support",
         description:

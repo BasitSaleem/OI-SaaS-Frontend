@@ -133,6 +133,7 @@ export const SALES_FAQS = [
 
 export const SALES_TESTIMONIALS = [
     {
+        id: "sales-testimonial-1",
         name: "Laura Martinez",
         title: "Inventory Lead, ShopSphere",
         image: "/assets/features-page/testimonial-images/testinomial-girl5.webp",
@@ -141,6 +142,7 @@ export const SALES_TESTIMONIALS = [
         color: "var(--primary-purple)",
     },
     {
+        id: "sales-testimonial-2",
         name: "Kevin Mitchell",
         title: "COO, Axis Retail Group",
         image: "/assets/features-page/testimonial-images/testinomial-boy5.webp",
@@ -149,6 +151,7 @@ export const SALES_TESTIMONIALS = [
         color: "var(--primary-teal)",
     },
     {
+        id: "sales-testimonial-3",
         name: "Rebecca Moore",
         title: "Operations Director, CoreCommerce",
         image: "/assets/features-page/testimonial-images/testinomial-girl6.webp",
@@ -157,6 +160,7 @@ export const SALES_TESTIMONIALS = [
         color: "var(--primary-purple)",
     },
     {
+        id: "sales-testimonial-4",
         name: "Andrew Collins",
         title: "Business Owner, SmartGrocers",
         image: "/assets/features-page/testimonial-images/testinomial-boy6.webp",

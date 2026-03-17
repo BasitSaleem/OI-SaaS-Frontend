@@ -13,6 +13,7 @@ import {
 } from "@/constant/landingPage/unifiedPlatformData";
 
 export interface UnifiedPlatformCard {
+  id?: string | number;
   icon: string;
   title: string;
   description: string;
@@ -70,7 +71,7 @@ export default function UnifiedPlatform({
               <AnimatePresence>
                 {visibleCards.map((card, index) => (
                   <motion.div
-                    key={index}
+                    key={card.id || index}
                     layout
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

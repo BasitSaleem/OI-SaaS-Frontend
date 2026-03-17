@@ -173,24 +173,28 @@ export const PEOPLE_FAQS = [
 
 export const PEOPLE_TESTIMONIALS = [
     {
+        id: "people-testimonial-1",
         name: "Kevin Brooks",
         title: "Inventory Lead, Global Traders",
         image: "/assets/features-page/testimonial-images/testinomial-boy21.webp",
         text: `Owners Inventory has completely transformed the way we manage our staff. Scheduling shifts and tracking attendance used to take hours, but now it’s all automated and accurate. Our team coordination has improved, and productivity is at an all-time high. It truly makes management effortless.`,
     },
     {
+        id: "people-testimonial-2",
         name: "Fatima Noor",
         title: "Operations Manager, Noor Wholesale",
         image: "/assets/features-page/testimonial-images/testinomial-girl21.webp",
         text: `Since switching to Owners Inventory, we’ve been able to organize our workforce far more efficiently. Our employees love the self-service dashboard — it’s simple, transparent, and saves so much time.`,
     },
     {
+        id: "people-testimonial-3",
         name: "Sara Ahmed",
         title: "Retail Consultant, GrowthMart",
         image: "/assets/features-page/testimonial-images/testinomial-girl22.webp",
         text: `Owners Inventory has been a game-changer for our business operations. Managing multiple departments and shifts across locations is now easy and error-free.`,
     },
     {
+        id: "people-testimonial-4",
         name: "Sam Wilson",
         title: "Retail Manager, ValueMart",
         image: "/assets/features-page/testimonial-images/testinomial-boy22.webp",
@@ -200,24 +204,28 @@ export const PEOPLE_TESTIMONIALS = [
 
 export const PEOPLE_WHY_CHOOSE_CARDS = [
     {
+        id: "people-why-choose-1",
         icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
         title: "All-in-One Platform",
         description:
             "Combine people, inventory, and performance, without having to use multiple tools.",
     },
     {
+        id: "people-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
         title: "Real-Time Insights",
         description:
             "Use real-time data on attendance, productivity, and growth to make smarter decisions",
     },
     {
+        id: "people-why-choose-3",
         icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
         title: "Seamless Automation",
         description:
             "Automate scheduling, tracking and reporting of your workforce.",
     },
     {
+        id: "people-why-choose-4",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Scalable for Growth",
         description:

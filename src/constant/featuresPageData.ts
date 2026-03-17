@@ -10,6 +10,7 @@ export const CORE_OPERATIONS_DATA = {
     paragraph: "Take full control of your day-to-day operations with tools designed to keep your business running seamlessly.",
     features: [
         {
+            id: "pos-feature",
             title: "Point of Sale (POS)",
             description: "Fast, reliable, and intuitive POS system for retail and quick sales.",
             videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/purchases.webm",
@@ -18,6 +19,7 @@ export const CORE_OPERATIONS_DATA = {
             buttonHref: "/features/pos",
         },
         {
+            id: "products-feature",
             title: "Products",
             description: "Manage product catalogs, variants, pricing, and stock in one place.",
             videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/products.webm",
@@ -26,6 +28,7 @@ export const CORE_OPERATIONS_DATA = {
             buttonHref: "/features/products",
         },
         {
+            id: "purchases-feature",
             title: "Purchases",
             description: "Automate purchase orders, procurement and vendor management.",
             videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/purchases.webm",
@@ -34,6 +37,7 @@ export const CORE_OPERATIONS_DATA = {
             buttonHref: "/features/purchases",
         },
         {
+            id: "inventory-ops-feature",
             title: "Inventory Operations",
             description: "Track stock levels, transfers, and adjustments with real-time accuracy.",
             videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/inventory-operations.webm",
@@ -42,6 +46,7 @@ export const CORE_OPERATIONS_DATA = {
             buttonHref: "/features/inventory",
         },
         {
+            id: "sales-orders-feature",
             title: "Sales & Orders",
             description: "Streamline your order processing, from quotation to fulfillment.",
             videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/sale-order.webm",
@@ -54,6 +59,7 @@ export const CORE_OPERATIONS_DATA = {
 
 export const TEAM_FEATURES = [
     {
+        id: "people-feature",
         title: "People",
         description: "Centralized customer and supplier management with loyalty programs and CRM tools.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/peoples-bg.webm",
@@ -61,6 +67,7 @@ export const TEAM_FEATURES = [
         buttonHref: "/features/people",
     },
     {
+        id: "hr-feature",
         title: "Human Resource (HR)",
         description: "Simplify attendance, shifts, payroll, and employee records in one system.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/humanresources.webm",
@@ -68,6 +75,7 @@ export const TEAM_FEATURES = [
         buttonHref: "/features/hr",
     },
     {
+        id: "facilities-feature",
         title: "Facilities",
         description: "Track and manage workspaces, business assets, and internal resources effectively.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/facilities.webm",
@@ -78,6 +86,7 @@ export const TEAM_FEATURES = [
 
 export const FEATURE_CARDS_DATA = [
     {
+        id: "ecommerce-card",
         title: "Ecommerce - Sell Anywhere, Anytime.",
         description:
             "Seamlessly connect your inventory with online stores and marketplaces. Manage stock, sync products, and process orders across multiple sales channels — all from one unified platform.",
@@ -93,39 +102,6 @@ export const FEATURE_CARDS_DATA = [
         containerShadow: false,
         scale: 1.05,
     },
-    // {
-    //     title: "Marketing Tools - Promote, Engage & Grow.",
-    //     description:
-    //         "Owners Inventory brings together everything you need to manage, track, and grow your business in one unified platform. Explore our powerful features, categorized to help you run operations smoothly, manage people efficiently, and scale with confidence.",
-    //     videoSrc:
-    //         "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/marketing-tools.webm",
-    //     imageSrc: "/assets/features-page/featurescard-banners/marketing-banner.webp",
-    //     buttonLabel: "View Details",
-    //     buttonHref: "/features/marketing",
-    //     buttonColor: "#1AD1B9",
-    //     containerWidth: "100%",
-    //     containerHeight: "100%",
-    //     containerBorderColor: "#ffffff",
-    //     containerBackgroundColor: "rgba(255,255,255,0.4)",
-    //     containerShadow: true,
-    //     scale: 1.15,
-    // },
-    // {
-    //     title: "Restaurant Operations Simplified",
-    //     description:
-    //         "Streamline menus, tables, and kitchen orders with a POS built for restaurants, cafés, and food chains. Serve faster, reduce errors, and keep customers satisfied.",
-    //     videoSrc:
-    //         "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/restaurant-operations.webm",
-    //     buttonLabel: "View Details",
-    //     buttonHref: "#",
-    //     buttonColor: "#795CF5",
-    //     containerWidth: "100%",
-    //     containerHeight: "420px",
-    //     containerBorderColor: "transparent",
-    //     containerBackgroundColor: "transparent",
-    //     containerShadow: false,
-    //     scale: 1.5,
-    // },
 ];
 
 export const UTILITIES_DATA = {
@@ -143,6 +119,7 @@ export const SMART_INTEGRATION_DATA = {
     paragraph: "Take control of your manufacturing workflows while keeping your business connected. You can manage production orders, bills of materials, and assembly processes effortlessly.",
     features: [
         {
+            id: "manufacturing-feature",
             title: "Manufacturing",
             description:
                 "Manage production planning, bills of materials, and assembly workflows with ease.",
@@ -151,6 +128,7 @@ export const SMART_INTEGRATION_DATA = {
             buttonHref: "/features/manufacturing",
         },
         {
+            id: "integrations-feature",
             title: "Integrations",
             description:
                 "Connect Owners Inventory with third-party apps, marketplaces, and payment gateways.",
@@ -163,6 +141,7 @@ export const SMART_INTEGRATION_DATA = {
 
 export const FINANCE_FEATURES = [
     {
+        id: "finance-feature",
         title: "Accounts & Finance",
         description: "Integrated invoicing, expense tracking, and tax compliance made simple.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/acounting%26financial.webm",
@@ -177,6 +156,7 @@ export const FINANCE_FEATURES = [
     //     buttonHref: "/features/advancereports",
     // },
     {
+        id: "reports-feature",
         title: "Reports",
         description: "Get instant insights into sales, purchases, and stock performance.",
         videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/standards-reports.webm",

@@ -142,24 +142,28 @@ export const REPORTS_FAQS = [
 
 export const REPORTS_TESTIMONIALS = [
     {
+        id: "reports-testimonial-1",
         name: "Ryan Cooper",
         title: "Operations Analyst, MarketLink",
         image: "/assets/features-page/testimonial-images/testinomial-boy16.webp",
         text: `Prior to Owners Inventory, we were operating on spread sheets and manual tracking that is prone to confusion and overstocking. Everything is now centralized and real time visible. The reporting dashboard provides us with an excellent opportunity to see what sells, what does not, and where to optimize. That is as though we had a data analyst embedded within our day-to-day processes.`,
     },
     {
+        id: "reports-testimonial-2",
         name: "Claire Roberts",
         title: "Logistics Coordinator, RetailNet",
         image: "/assets/features-page/testimonial-images/testinomial-girl15.webp",
         text: `Managing a cafe that is busy implies that every ingredient and each order counts. Owners Inventory allows us to monitor menu performance, food waste, and plan foods to prepare on the following day. The real-time POS reports are unbelievably accurate - the system seems to know about our rhythm of business.`,
     },
     {
+        id: "reports-testimonial-3",
         name: "Jonathan Brooks",
         title: "Director, Unified Retail",
         image: "/assets/features-page/testimonial-images/testinomial-boy17.webp",
         text: `We operate several pharmacies and this system maintains all these updated stock, expiry dates, and daily sales. The support team is attentive and professional.`,
     },
     {
+        id: "reports-testimonial-4",
         name: "Anna Collins",
         title: "Operations Lead, FastTrack Retail",
         image: "/assets/features-page/testimonial-images/testinomial-girl16.webp",
@@ -169,24 +173,28 @@ export const REPORTS_TESTIMONIALS = [
 
 export const REPORTS_WHY_CHOOSE_CARDS = [
     {
+        id: "reports-why-choose-1",
         icon: "/assets/features-page/reports-page/why-chose/actionable-data.svg",
         title: "Actionable Data at a Glance",
         description:
             "Turn complex numbers into easy-to-understand data with intuitive reports on inventory management that enable real-time decisions.",
     },
     {
+        id: "reports-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
         title: "Seamless POS Integration",
         description:
             "Link sales, inventory, and client data with ease, and use our integrated point of sale reporting system to find full visibility.",
     },
     {
+        id: "reports-why-choose-3",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Unique Reports to Each Requirement",
         description:
             "Design custom inventory management reports to suit your objectives, such as daily summaries or detailed trend analysis.",
     },
     {
+        id: "reports-why-choose-4",
         icon: "/assets/features-page/reports-page/why-chose/smart-automation.svg",
         title: "Smart Automation & Exports",
         description:

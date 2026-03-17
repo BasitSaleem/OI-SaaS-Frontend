@@ -150,18 +150,21 @@ export const PURCHASES_FAQS = [
 
 export const PURCHASES_TESTIMONIALS = [
     {
+        id: "purchases-testimonial-1",
         name: "David Lawson",
         title: "Procurement Head, TradePoint",
         image: "/assets/features-page/testimonial-images/testinomial-boy10.webp",
         text: `Before Owners Inventory, managing our materials purchases was a difficult task. Now, the entire automated process is easy. We have completely eliminated manual errors and saved hours for our team.`,
     },
     {
+        id: "purchases-testimonial-2",
         name: "Megan Scott",
         title: "Inventory Analyst, StockBridge",
         image: "/assets/features-page/testimonial-images/testinomial-girl10.webp",
         text: `Switching to this system has changed how we handle procurement. We no longer worry about late payments or missed orders.`,
     },
     {
+        id: "purchases-testimonial-3",
         name: "Chris Bennett",
         title: "CEO, OmniRetail Solutions",
         image: "/assets/features-page/testimonial-images/testinomial-boy11.webp",
@@ -171,30 +174,35 @@ export const PURCHASES_TESTIMONIALS = [
 
 export const PURCHASES_WHY_CHOOSE_CARDS = [
     {
+        id: "purchases-why-choose-1",
         icon: "/assets/features-page/purchases-page/why-chose/automated-buying.svg",
         title: "Automated Buying, Zero Effort",
         description:
             "We automate your purchase process from receiving items to bill approval, reducing errors and boosting efficiency.",
     },
     {
+        id: "purchases-why-choose-2",
         icon: "/assets/features-page/purchases-page/why-chose/everything-in-oneplace.svg",
         title: "Everything in One Place",
         description:
             "Stay updated with precise, real-time data so you can make smarter decisions and always know what’s happening in your inventory.",
     },
     {
+        id: "purchases-why-choose-3",
         icon: "/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
         title: "Smarter Decisions, Faster",
         description:
             "Our system gives you real-time analytics and easy dashboards, helping you instantly see trends and supplier performance for faster decisions.",
     },
     {
+        id: "purchases-why-choose-4",
         icon: "/assets/features-page/purchases-page/why-chose/grow-business.svg",
         title: "Grows With Your Business",
         description:
             "Whether you're a small team or a large operation, Owners Inventory scales effortlessly and adapts to your business without any hassle.",
     },
     {
+        id: "purchases-why-choose-5",
         icon: "/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
         title: "Dedicated Support, 24/7",
         description:

@@ -99,12 +99,14 @@ export const MANUFACTURING_FAQS = [
 
 export const MANUFACTURING_TESTIMONIALS = [
     {
+        id: "manufacturing-testimonial-1",
         name: "David Chen",
         title: "Production Lead, Global Fabrics",
         image: "/assets/features-page/testimonial-images/testinomial-boy12.webp",
         text: `The manufacturing module has streamlined our entire production floor. We now have complete visibility into production orders and material usage.`,
     },
     {
+        id: "manufacturing-testimonial-2",
         name: "Elena Rodriguez",
         title: "Operations Director, Pure Foods",
         image: "/assets/features-page/testimonial-images/testinomial-girl11.webp",
@@ -114,24 +116,28 @@ export const MANUFACTURING_TESTIMONIALS = [
 
 export const MANUFACTURING_WHY_CHOOSE_CARDS = [
     {
+        id: "manufacturing-why-choose-1",
         icon: "/assets/features-page/inventory-operations-page/why-chose/designed-every-business.svg",
         title: "Full Production Control",
         description:
             "From raw materials to finished goods, track every step of your manufacturing workflow with precision.",
     },
     {
+        id: "manufacturing-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Real-Time Tracking",
         description:
             "Monitor production progress, machine status, and stock levels in real-time to avoid delays and bottlenecks.",
     },
     {
+        id: "manufacturing-why-choose-3",
         icon: "/assets/features-page/inventory-operations-page/why-chose/effortless-setup.svg",
         title: "Scalable Operations",
         description:
             "Whether you have one production line or multiple factories, our system scales to meet your growing manufacturing needs.",
     },
     {
+        id: "manufacturing-why-choose-4",
         icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
         title: "Data-Driven Insights",
         description:

@@ -150,24 +150,28 @@ export const PRODUCT_FAQS = [
 
 export const PRODUCT_TESTIMONIALS = [
     {
+        id: "product-testimonial-1",
         name: "Nicole Baker",
         title: "Founder, Baker Supplies",
         image: "/assets/features-page/testimonial-images/testinomial-girl13.webp",
         text: `It used to take hours and hours of manual entry to Manage Items in the POS System. But now with the help of Owners Inventory, we can upload or modify products in seconds. And because of that the process is now very easy and reliable.`,
     },
     {
+        id: "product-testimonial-2",
         name: "Paul Richardson",
         title: "Founder, QuickStock",
         image: "/assets/features-page/testimonial-images/testinomial-boy14.webp",
         text: `The bulk upload feature in inventory management has been a lifesaver for my business. We can now manage hundreds and thousands of SKUs across multiple stores without any errors, which has saved us so much time and hassle.`,
     },
     {
+        id: "product-testimonial-3",
         name: "Victoria King",
         title: "Supply Manager, Unified Goods",
         image: "/assets/features-page/testimonial-images/testinomial-girl14.webp",
         text: `The product tracking tools make it so much easier to see what’s selling and what’s not. It really helps us plan our inventory and make smarter decisions for better results.`,
     },
     {
+        id: "product-testimonial-4",
         name: "Adam Lewis",
         title: "E-commerce Manager, ShopEase",
         image: "/assets/features-page/testimonial-images/testinomial-boy15.webp",
@@ -177,30 +181,35 @@ export const PRODUCT_TESTIMONIALS = [
 
 export const PRODUCT_WHY_CHOOSE_CARDS = [
     {
+        id: "product-why-choose-1",
         icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
         title: "Smooth Automation",
         description:
             "For optimal productivity, automate routine processes like imports, updates, and syncs.",
     },
     {
+        id: "product-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
         title: "Adaptable to Growth",
         description:
             "Owners Inventory expands as your business grows, whether you are a startup or a multinational corporation.",
     },
     {
+        id: "product-why-choose-3",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Secure Data Management",
         description:
             "Owners Inventory safeguards your product data, guaranteeing transparency and confidentiality.",
     },
     {
+        id: "product-why-choose-4",
         icon: "/assets/features-page/products-page/product-control.svg",
         title: "Product Control",
         description:
             "Manage all product details from every retailer in one dashboard, no switching systems.",
     },
     {
+        id: "product-why-choose-5",
         icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
         title: "Real-Time Updates",
         description:

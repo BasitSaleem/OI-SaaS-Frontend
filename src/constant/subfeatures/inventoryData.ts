@@ -122,24 +122,28 @@ export const INVENTORY_FAQS = [
 
 export const INVENTORY_TESTIMONIALS = [
     {
+        id: "inventory-testimonial-1",
         name: "Steven Parker",
         title: "Store Operations Manager, RetailEdge",
         image: "/assets/features-page/testimonial-images/testinomial-boy12.webp",
         text: `Owners' Inventory has changed the way we manage our stock in a big way. Their inventory management software makes it easy to keep track of and restock items. Our whole inventory operations process has gotten more accurate and faster. Our team can now make quick, smart decisions more easily every day.`,
     },
     {
+        id: "inventory-testimonial-2",
         name: "Sophia Turner",
         title: "CEO, OmniTrade Solutions",
         image: "/assets/features-page/testimonial-images/testinomial-girl11.webp",
         text: `Managing more than one branch was always hard, but Owners Inventory made it easier.  The system makes everything easier, from keeping an eye on things to making reports.  Their inventory management services help us stay on top of things and save us a lot of time.  The support team is always there for us and ready to help when we need it.`,
     },
     {
+        id: "inventory-testimonial-3",
         name: "Mark Evans",
         title: "Logistics Supervisor, SupplyHub",
         image: "/assets/features-page/testimonial-images/testinomial-boy13.webp",
         text: `We use Owners Inventory every day to keep track of the products in our warehouse and store.  Our team finds it easy to use the platform's inventory operations software for everyday tasks. It keeps everything in sync. It's a really useful tool that grows with our business.`,
     },
     {
+        id: "inventory-testimonial-4",
         name: "Rachel Adams",
         title: "Operations Manager, Prime Retail",
         image: "/assets/features-page/testimonial-images/testinomial-girl12.webp",
@@ -149,24 +153,28 @@ export const INVENTORY_TESTIMONIALS = [
 
 export const INVENTORY_WHY_CHOOSE_CARDS = [
     {
+        id: "inventory-why-choose-1",
         icon: "/assets/features-page/inventory-operations-page/why-chose/designed-every-business.svg",
         title: "Designed for Every Business Type",
         description:
             "Our POS product management fits smoothly into any workflow retail, wholesale, or hospitality.",
     },
     {
+        id: "inventory-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Real-Time Control & Accuracy",
         description:
             "Get real-time updates on stock, pricing, and product information using smart inventory product management software.",
     },
     {
+        id: "inventory-why-choose-3",
         icon: "/assets/features-page/inventory-operations-page/why-chose/effortless-setup.svg",
         title: "Effortless Setup & Scalability",
         description:
             "Our POS product management feature enables you to easily add and expand your catalog and is designed to scale with your business.",
     },
     {
+        id: "inventory-why-choose-4",
         icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
         title: "Insight-Driven Decisions",
         description:

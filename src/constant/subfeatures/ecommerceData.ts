@@ -167,24 +167,28 @@ export const ECOMMERCE_FAQS = [
 
 export const ECOMMERCE_TESTIMONIALS = [
     {
+        id: "ecommerce-testimonial-1",
         name: "Daniel Wright",
         title: "Founder, UrbanMart",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: `Owners Inventory has simplified running our business significantly. Our online and store inventory used to be very hard to maintain, but now it is automatically maintained. The dashboard is easy and user-friendly and we can monitor the sales real-time without any fuss. It is as though the entire business operates itself.`,
     },
     {
+        id: "ecommerce-testimonial-2",
         name: "Jessica Brown",
         title: "Supply Chain Manager, RetailPlus",
         image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: `Our sales process has been expedited and made more trustworthy since we use Owners Inventory. Orders, payments, and reports are updated in real-time, which saves our team much work. Our data is now accurate through all channels and customers are pleased with the fact that their shopping experience has become so easy.`,
     },
     {
+        id: "ecommerce-testimonial-3",
         name: "Robert Hayes",
         title: "Inventory Manager, Prime Distributors",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
         text: `Owners Inventory totally transformed our store operation. We save hours daily by handling our online and in-store sales on a single dashboard. It is easy, smooth and even enjoyable to use.`,
     },
     {
+        id: "ecommerce-testimonial-4",
         name: "Amanda Clark",
         title: "COO, MarketFlow",
         image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
@@ -194,24 +198,28 @@ export const ECOMMERCE_TESTIMONIALS = [
 
 export const ECOMMERCE_WHY_CHOOSE_CARDS = [
     {
+        id: "ecommerce-why-choose-1",
         icon: "/assets/features-page/ecommerce-page/why-chose/unified-sale.svg",
         title: "Unified Sales Experience",
         description:
             "Sync online and in-store sales effortlessly with real-time POS integration.",
     },
     {
+        id: "ecommerce-why-choose-2",
         icon: "/assets/features-page/ecommerce-page/why-chose/centralized-inventory.svg",
         title: "Centralized Inventory Control",
         description:
             "Manage all your inventory from one dashboard with automatic multi-channel updates.",
     },
     {
+        id: "ecommerce-why-choose-3",
         icon: "/assets/features-page/ecommerce-page/why-chose/smarter-customer.svg",
         title: "Smarter Customer Insights",
         description:
             "Understand your customers with POS-integrated profiles, order history, and personalized offers.",
     },
     {
+        id: "ecommerce-why-choose-4",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Scalable for Every Business",
         description:

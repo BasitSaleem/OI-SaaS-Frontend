@@ -102,6 +102,7 @@ export const TOOLS_FAQS = [
 
 export const TOOLS_TESTIMONIALS = [
     {
+        id: "tools-testimonial-1",
         name: "Sana Malik",
         title: "Operations Manager, Malik Stores",
         image: "/assets/features-page/testimonial-images/testinomial-girl26.webp",
@@ -110,6 +111,7 @@ export const TOOLS_TESTIMONIALS = [
         color: "var(--primary-purple)",
     },
     {
+        id: "tools-testimonial-2",
         name: "Iqra Siddiqui",
         title: "Retail Manager, UrbanGoods",
         image: "/assets/features-page/testimonial-images/testinomial-girl27.webp",
@@ -118,6 +120,7 @@ export const TOOLS_TESTIMONIALS = [
         color: "var(--primary-teal)",
     },
     {
+        id: "tools-testimonial-3",
         name: "Imran Malik",
         title: "Founder, Malik Traders",
         image: "/assets/features-page/testimonial-images/testinomial-boy27.webp",
@@ -126,6 +129,7 @@ export const TOOLS_TESTIMONIALS = [
         color: "var(--primary-purple)",
     },
     {
+        id: "tools-testimonial-4",
         name: "Ahmed Raza",
         title: "Inventory Supervisor, Prime Goods",
         image: "/assets/features-page/testimonial-images/testinomial-boy28.webp",
@@ -137,30 +141,35 @@ export const TOOLS_TESTIMONIALS = [
 
 export const TOOLS_WHY_CHOOSE_CARDS = [
     {
+        id: "tools-why-choose-1",
         icon: "/assets/features-page/point-of-sale/why-chose/speed-accuracy.svg",
         title: "Intelligent Automation",
         description:
             "Eliminate manual work with real-time automation, so you can focus on growth instead of routine tasks.",
     },
     {
+        id: "tools-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Real-time insights",
         description:
             "Stay updated with precise, real-time data so you can make smarter decisions and always know what’s happening in your inventory.",
     },
     {
+        id: "tools-why-choose-3",
         icon: "/assets/features-page/general-tools/user-friendly-design.svg",
         title: "User Friendly Design",
         description:
             "Enjoy a clean, intuitive interface that’s easy to navigate, making every feature simple and smooth for all users.",
     },
     {
+        id: "tools-why-choose-4",
         icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
         title: "Fluent Integration",
         description:
             "Easily connect with other modules and systems for a unified workflow, keeping all your business data on one platform.",
     },
     {
+        id: "tools-why-choose-5",
         icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
         title: "Stable Performance",
         description:

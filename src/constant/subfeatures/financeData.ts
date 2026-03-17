@@ -144,18 +144,21 @@ export const FINANCE_FAQS = [
 
 export const FINANCE_TESTIMONIALS = [
     {
+        id: "finance-testimonial-1",
         name: "Monica Patel",
         title: "Business Operations Head, Patel Traders",
         image: "/assets/features-page/testimonial-images/testinomial-girl19.webp",
         text: `Owners Inventory made our accounting a lot easier. We are able to monitor all our sales and expenditures in a single location without moving through systems. The financial reports are straightforward, fast, and valid - it actually saves us time daily.`,
     },
     {
+        id: "finance-testimonial-2",
         name: "Nathan Scott",
         title: "Operations Head, FreshWay Stores",
         image: "/assets/features-page/testimonial-images/testinomial-boy20.webp",
         text: `We began using Owners Inventory primarily to use in sales but its accounting and finance capabilities have been a great addition. Posting journal entries, monitoring payments, and looking at profit and loss statements can be done in minutes by our team. It is the real financial reporting POS system that ensures our data is correct and our operations clear.`,
     },
     {
+        id: "finance-testimonial-3",
         name: "Ayesha Khan",
         title: "Managing Director, Khan Enterprises",
         image: "/assets/features-page/testimonial-images/testinomial-girl20.webp",
@@ -165,24 +168,28 @@ export const FINANCE_TESTIMONIALS = [
 
 export const FINANCE_WHY_CHOOSE_CARDS = [
     {
+        id: "finance-why-choose-1",
         icon: "/assets/features-page/purchases-page/why-chose/automated-buying.svg",
         title: "All-in-One Platform",
         description:
             "Automate sales, inventory, and accounting without adding switches between systems.",
     },
     {
+        id: "finance-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Real-Time Financial Insights",
         description:
             "Get real-time reports and updates and make smarter business decisions.",
     },
     {
+        id: "finance-why-choose-3",
         icon: "/assets/features-page/finance-page/why-chose/easy-to-use.svg",
         title: "Easy to Use",
         description:
             "Clean, easy-to-use interface that any person can use - no accounting background required.",
     },
     {
+        id: "finance-why-choose-4",
         icon: "/assets/features-page/finance-page/why-chose/secure-reliable.svg",
         title: "Secure & Reliable",
         description:

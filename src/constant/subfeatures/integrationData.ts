@@ -86,6 +86,7 @@ export const INTEGRATION_FAQS = [
 
 export const INTEGRATION_TESTIMONIALS = [
     {
+        id: "integration-testimonial-1",
         name: "Bilal Ahmed",
         title: "Managing Director, Star Distributors",
         image: "/assets/features-page/testimonial-images/testinomial-boy25.webp",
@@ -94,6 +95,7 @@ export const INTEGRATION_TESTIMONIALS = [
         color: "var(--primary-purple)",
     },
     {
+        id: "integration-testimonial-2",
         name: "Fahad Khan",
         title: "Retail Operations Lead, Metro Stores",
         image: "/assets/features-page/testimonial-images/testinomial-boy26.webp",
@@ -102,6 +104,7 @@ export const INTEGRATION_TESTIMONIALS = [
         color: "var(--primary-teal)",
     },
     {
+        id: "integration-testimonial-3",
         name: "Nadia Hussain",
         title: "Operations Lead, City Supplies",
         image: "/assets/features-page/testimonial-images/testinomial-girl25.webp",
@@ -113,24 +116,28 @@ export const INTEGRATION_TESTIMONIALS = [
 
 export const INTEGRATION_WHY_CHOOSE_CARDS = [
     {
+        id: "integration-why-choose-1",
         icon: "/assets/features-page/intigration-page/why-chose/unified-business.svg",
         title: "Unified Business Control",
         description:
             "Manage marketing, accounting, and operations in one connected system with full visibility.",
     },
     {
+        id: "integration-why-choose-2",
         icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
         title: "Error-Free Automation",
         description:
             "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate in expansion.",
     },
     {
+        id: "integration-why-choose-3",
         icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
         title: "Faster Decision Making",
         description:
             "Get real-time data from all channels to make accurate, informed decisions.",
     },
     {
+        id: "integration-why-choose-4",
         icon: "/assets/features-page/intigration-page/why-chose/easy-to-scale.svg",
         title: "Easy to Scale",
         description:

@@ -100,18 +100,21 @@ export const MARKETING_FAQS = [
 
 export const MARKETING_TESTIMONIALS = [
     {
+        id: "marketing-testimonial-1",
         name: "Thomas Reed",
         title: "Operations Director, Nexa Supplies",
         image: "/assets/features-page/testimonial-images/testinomial-boy7.webp",
         text: `Implementing the loyalty points system through Owner's Inventory was honestly  one of the best decisions we made last year. Our customers genuinely love the points, which has increased how often they buy from us. We couldn't be happier with the results.`,
     },
     {
+        id: "marketing-testimonial-2",
         name: "Natalie Green",
         title: "Business Owner, GreenLine Retail",
         image: "/assets/features-page/testimonial-images/testinomial-girl7.webp",
         text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales, which has increased how often they buy from us. happier with the results.`,
     },
     {
+        id: "marketing-testimonial-3",
         name: "Brian Foster",
         title: "Warehouse Manager, StockFlow Inc",
         image: "/assets/features-page/testimonial-images/testinomial-boy8.webp",
@@ -121,30 +124,35 @@ export const MARKETING_TESTIMONIALS = [
 
 export const MARKETING_WHY_CHOOSE_CARDS = [
     {
+        id: "marketing-why-choose-1",
         icon: "/assets/features-page/purchases-page/why-chose/grow-business.svg",
         title: "Automated and Hassle Free",
         description:
             "Create promotions in minutes and let them run automatically no daily work needed.",
     },
     {
+        id: "marketing-why-choose-2",
         icon: "/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
         title: "Retaining Customers",
         description:
             "Keep top customers happy with regular rewards, strengthen relationships, and boost repeat purchases.",
     },
     {
+        id: "marketing-why-choose-3",
         icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
         title: "Insight Driven Decisions",
         description:
             "Track every coupon and loyalty activity in real time. See what works and adjust your marketing quickly for better results.",
     },
     {
+        id: "marketing-why-choose-4",
         icon: "/assets/features-page/purchases-page/why-chose/automated-buying.svg",
         title: "All-in-One Marketing Platform",
         description:
             "Run promotions, rewards, and tracking all in one place, keeping marketing simple and sales data unified.",
     },
     {
+        id: "marketing-why-choose-5",
         icon: "/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
         title: "24/7 Expert Support",
         description:

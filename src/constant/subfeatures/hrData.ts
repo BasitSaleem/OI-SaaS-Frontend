@@ -157,24 +157,28 @@ export const HR_FAQS = [
 
 export const HR_TESTIMONIALS = [
     {
+        id: "hr-testimonial-1",
         name: "Maryam Ali",
         title: "Inventory Specialist, SmartStock",
         image: "/assets/features-page/testimonial-images/testinomial-girl23.webp",
         text: `Owners Inventory has entirely transformed our approach to staff management. All the payroll, attendance, and department tracking are under one roof. The system is quick, precise and saves us hours a week. It really seems as though we have an additional player on our team that keeps us straight.`,
     },
     {
+        id: "hr-testimonial-2",
         name: "Hina Shah",
         title: "Business Owner, Shah Retail Co.",
         image: "/assets/features-page/testimonial-images/testinomial-girl24.webp",
         text: `We have tried a number of HR tools previously, but none were as convenient and dependable as Owners Inventory. It is well organised and our non technical staff can easily use it. We have found the best HR management software in it, efficient, clear, and tailored to the actual business needs.`,
     },
     {
+        id: "hr-testimonial-3",
         name: "Omar Hassan",
         title: "Supply Manager, Al Noor Traders",
         image: "/assets/features-page/testimonial-images/testinomial-boy23.webp",
         text: `Owners Inventory provides us with complete control of employee information, payroll, and titles. The best thing about it is that it runs smoothly even when it has many branches. The system of human resource management is a game changer to a growing company.`,
     },
     {
+        id: "hr-testimonial-4",
         name: "Hassan Ali",
         title: "Operations Director, City Wholesale",
         image: "/assets/features-page/testimonial-images/testinomial-boy24.webp",
@@ -184,23 +188,27 @@ export const HR_TESTIMONIALS = [
 
 export const HR_WHY_CHOOSE_CARDS = [
     {
+        id: "hr-why-choose-1",
         icon: "/assets/features-page/human-resource-page/why-chose/hr-solution.svg",
         title: "All-in-One HR Solution",
         description: "Hire, payroll, and more, all in one integrated solution.",
     },
     {
+        id: "hr-why-choose-2",
         icon: "/assets/features-page/human-resource-page/why-chose/easy-to-use.svg",
         title: "Easy to Use",
         description:
             "An easy-to-use and user-friendly interface that can be navigated easily by anyone on your team.",
     },
     {
+        id: "hr-why-choose-3",
         icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
         title: "Scalable for Growth",
         description:
             "Created to expand with your business, whether you have 5 employees or 500.",
     },
     {
+        id: "hr-why-choose-4",
         icon: "/assets/features-page/human-resource-page/why-chose/reliable-support.svg",
         title: "Reliable Support",
         description:
