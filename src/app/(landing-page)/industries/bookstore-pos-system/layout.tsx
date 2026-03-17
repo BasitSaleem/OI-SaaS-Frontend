@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bookstore POS System for Inventory and Title Management",
+  title: "Bookstore POS Systems for Inventory and Sales Management",
   description:
-    "Bookstore POS system to manage sales, titles, customer pre-orders, and inventory in real time. Improve billing speed and keep bookstore operations organized.",
+    "Bookstore POS systems to manage book inventory, sales, billing, and stock tracking in one platform. Improve checkout speed and keep bookstore records organized.",
   keywords: [
-    "bookstore pos system",
-    "pos system for bookstore",
+    "bookstore pos systems",
     "bookstore pos software",
+    "pos systems for bookstores",
     "bookstore inventory management system",
   ],
   publisher: "Owners Inventory",
