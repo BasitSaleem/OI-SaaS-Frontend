@@ -37,6 +37,8 @@ import IndustriesTestimonial from "@/components/pages/industries-page/Industries
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
 import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
+import SecurityCompliance from "@/components/pages/industries-page/securityCompliance";
+import IndustriesHardwareControl from "@/components/pages/industries-page/IndustriesHardwareControl";
 
 
 const Page = () => {
@@ -92,9 +94,21 @@ Orders & Inventory"
 
       <IndustriesFeaturesSection features={BAKERY_FEATURE_CARDS} />
 
+      <SecurityCompliance
+        title="Security, Accuracy, & Compliance."
+        description="A good bookstore POS system will make sure that all the transactions are well-documented and tracked. The user roles and permissions restrict access to sensitive information and minimize errors and misuse. All data in the bookstores is safe and secure."
+        secondDescription="The system also keeps audit trails and facilitates compliance needs, protecting inventory and financial records. The real-time tracking will provide a clear view of stock movement and automated reports will reduce the number of mistakes made by the manual process and keep the books accurate."
+      />
+
       <ToolsSection
         heading={BAKERY_TOOLS_DATA.heading}
         tools={BAKERY_TOOLS_DATA.tools}
+      />
+
+      <IndustriesHardwareControl
+        title="All-in-One Inventory Solution for Bookstores"
+        description="Have complete control of your books, sales, and day-to-day operations with a system that is tailored to the needs of a modern bookstore."
+        ctaDesc="Start Today"
       />
 
       <IndustriesTestimonial

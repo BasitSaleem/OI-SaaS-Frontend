@@ -18,21 +18,21 @@ const DEFAULT_GRADIENT_BACKGROUND = `
     rgba(255, 255, 255, 0.00) 100%
   ),
   radial-gradient(900px 650px at 12% 8%,
-    rgba(207, 181, 249, 0.55) 0%,
-    rgba(207, 181, 249, 0.18) 45%,
-    rgba(207, 181, 249, 0.00) 75%
+    rgba(207, 181, 249, 0) 0%,
+    rgba(207, 181, 249, 0.4) 45%,
+    rgba(207, 181, 249, 1) 75%
   ),
   radial-gradient(900px 650px at 88% 10%,
-    rgba(160, 215, 255, 0.55) 0%,
-    rgba(160, 215, 255, 0.18) 45%,
+    rgba(160, 215, 255, 0.1) 0%,
+    rgba(160, 215, 255, 0.4) 45%,
     rgba(160, 215, 255, 0.00) 75%
   ),
   linear-gradient(
     90deg,
-    rgba(26, 209, 185, 0.5) 32.74%,
-    rgba(56, 172, 204, 0.5) 52.46%,
-    rgba(85, 136, 223, 0.5) 76.39%,
-    rgba(121, 92, 245, 0.5) 100%
+    rgba(26,209,185,0.2) 30%,
+    rgba(56,172,204,0.3) 50%,
+    rgba(85,136,223,0.3) 55%,
+    rgba(121,92,245,0.03) 100%
   )
 `;
 
@@ -40,9 +40,9 @@ const WorkflowCard = ({ number, title, description }: WorkflowCardProps) => {
   const iconName = `workflowIcon${number}` as any;
 
   return (
-    <div className="relative group p-[0px] pt-[2px] rounded-[30px] bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] h-full">
+    <div className="relative group p-[0px] pt-[2px] rounded-[30px]  bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] h-full">
       <div className="relative flex flex-col items-center p-2 lg:p-4 rounded-[27px] bg-white  h-full overflow-hidden">
-        <div className="relative flex flex-col items-center rounded-[27px] p-6 h-full shadow-[inset_0px_17px_29px_0px_rgba(255,255,255,0.25)]"
+        <div className="relative flex flex-col items-center  rounded-[27px] p-6 h-full  "
         style={{ background: DEFAULT_GRADIENT_BACKGROUND }}
         >
         
