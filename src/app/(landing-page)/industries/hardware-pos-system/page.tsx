@@ -74,6 +74,7 @@ const Page = () => {
         paragraph="The Owners Inventory removes operational confusion by linking sales, stock, suppliers and reports into a single intelligent system. All the activities in your store are automatically updated and kept."
         cards={Hardware_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
+        IconsComponent={PosHardwarePageIcons}
       />
 
       <KeyHighlights
@@ -121,6 +122,7 @@ const Page = () => {
         whyChooseTitle={HARDWARE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={HARDWARE_TESTIMONIAL_DATA.whyChooseDescription}
         features={HARDWARE_TESTIMONIAL_FEATURES}
+        IconsComponent={PosHardwarePageIcons}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

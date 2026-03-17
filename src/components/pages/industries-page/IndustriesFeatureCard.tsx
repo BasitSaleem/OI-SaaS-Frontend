@@ -44,8 +44,9 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
   const isEven = index % 2 === 0;
 
   return (
+    <div className="lg:my-40 md:my-28 my-20">
     <div
-      className={`lg:my-40 md:my-28 my-20 grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
+      className={` grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
     >
       {/* Media Content */}
       <div className={`${isEven ? "lg:order-2" : "lg:order-1"}`}>
@@ -167,6 +168,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
           {buttonLabel}
         </Link> */}
       </div>
+    </div>
     </div>
   );
 };

@@ -333,9 +333,9 @@ body {
   transform: translate(-50%, -50%);
   border-radius: inherit;
   background: linear-gradient(90.54deg,
-      rgba(160, 230, 245, 0.4) 30%,
+      rgba(160, 230, 245, 0.3) 30%,
       rgba(175, 205, 255, 0.5) 50%,
-      rgba(210, 185, 255, 0.9) 100%);
+      rgba(210, 185, 255, 0.75) 70%);
 
   -webkit-mask-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0) 0%,

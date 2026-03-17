@@ -73,6 +73,7 @@ Orders & Inventory"
         paragraph="Every feature of our Bakery POS System was created to help take the pressure off and streamline your processes."
         cards={BAKERY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
+        IconsComponent={posBakeryPageIcons}
       />
 
       <KeyHighlights
@@ -102,6 +103,7 @@ Orders & Inventory"
 
       <ToolsSection
         heading={BAKERY_TOOLS_DATA.heading}
+        description={BAKERY_TOOLS_DATA.paragraph}
         tools={BAKERY_TOOLS_DATA.tools}
       />
 
@@ -116,6 +118,7 @@ Orders & Inventory"
         whyChooseTitle={BAKERY_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={BAKERY_TESTIMONIAL_DATA.whyChooseDescription}
         features={BAKERY_TESTIMONIAL_FEATURES}
+        IconsComponent={posBakeryPageIcons}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

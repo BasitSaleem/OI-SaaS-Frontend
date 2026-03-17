@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const industries = [
         "hardware-pos-system",
         "bakery-pos-system",
+        "bookstore-pos-system",
     ];
 
     const routes = [
