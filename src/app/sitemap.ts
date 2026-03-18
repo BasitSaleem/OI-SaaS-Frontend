@@ -38,7 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "hardware-pos-system",
         "bakery-pos-system",
         "bookstore-pos-system",
+        "retail-store-pos-system",
     ];
+
 
     const routes = [
         ...mainRoutes.map((route) => ({

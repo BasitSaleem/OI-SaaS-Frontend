@@ -53,6 +53,13 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
+  {
+    key: 'retail-store-pos-system',
+    title: 'Retail Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    category: 'retailer',
+  },
+
   // {
   //   key: 'hardware-store-pos',
   //   title: 'POS System for Hardware Store',
@@ -174,6 +181,13 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'ISBN & Title Tracking' },
     { title: 'Pre-Order Management' },
   ],
+  'retail-store-pos-system': [
+    { title: 'Retail Store POS System Features' },
+    { title: 'Inventory Management for Retail Stores' },
+    { title: 'Stock & Inventory Control' },
+    { title: 'Multi-Branch Management' },
+  ],
+
   'hardware-pos-system': [
     { title: 'Hardware Inventory Management' },
     { title: 'Tool Rental System' },

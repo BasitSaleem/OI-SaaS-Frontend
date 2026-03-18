@@ -266,24 +266,29 @@ export const BOOKSTORE_TESTIMONIALS = [
 
 export const BOOKSTORE_FAQS = [
     {
-        id: "faq-isbn-support",
-        question: "Does the system support ISBN scanning?",
-        answer: "Yes, our POS is fully compatible with barcode and ISBN scanners, making it easy to add and sell books quickly."
+        id: "1",
+        question: "What is Owners' Inventory Bookstore POS Software?",
+        answer: "Owners Inventory Bookstore POS Software is a program intended to store books, stationery, sales and customer information under a single platform. It assists bookstores in monitoring inventory and performing smooth checkouts."
     },
     {
-        id: "faq-manage-genres",
-        question: "Can I manage different genres and categories?",
-        answer: "Absolutely. You can create as many categories and sub-categories as you need to organize your bookstore effectively."
+        id: "2",
+        question: "Can the system handle Stationery Inventory Management?",
+        answer: "Yes. The software incorporates Stationery Inventory Management. All pens, notebooks, and school supplies are kept up to date, and the stock quantities are always up to date."
     },
     {
-        id: "faq-online-store",
-        question: "Does it integrate with my online bookstore?",
-        answer: "Yes, we support integration with major e-commerce platforms like Shopify and WooCommerce to keep your stock synced."
+        id: "3",
+        question: "Does it support online orders and multiple branches?",
+        answer: "Yes. Shopping and online sales remain in touch, and there is real-time data-sharing across all branches. Stock, price, and sales are automated and updated across locations."
     },
     {
-        id: "faq-customer-history",
-        question: "Can I track customer purchase history?",
-        answer: "Yes, our system allows you to maintain customer profiles and view their past purchases and loyalty points."
+        id: "4",
+        question: "Can I manage discounts by author or genre?",
+        answer: "Yes. Specific authors, genres or publishers can be discounted easily. The Bookstore POS Software simplifies the process of promotions and eliminates pricing errors."
+    },
+    {
+        id: "5",
+        question: "Is the system easy for staff to use?",
+        answer: "Yes. The software has a simple interface, quick billing and clear stock views. Employees can scan ISBN codes, sell packages, and examine stationery supplies within a short period of time without confusion."
     },
 ];
 
