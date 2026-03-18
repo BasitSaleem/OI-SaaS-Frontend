@@ -32,7 +32,7 @@ const NavItems = () => {
 
   const [selectedFeatureKey, setSelectedFeatureKey] = useState("pos");
   const [selectedIndustryKey, setSelectedIndustryKey] =
-    useState("manufacturing");
+    useState("bakery-pos-system");
   const [selectedResourceKey, setSelectedResourceKey] =
     useState<string>("learning");
 
@@ -46,7 +46,7 @@ const NavItems = () => {
 
   const [selectedIndustryCategory, setselectedIndustryCategory] = useState<
     string | null
-  >("manufacturing");
+  >("retailer");
 
   const router = useRouter();
 
@@ -232,7 +232,7 @@ const NavItems = () => {
           onOpen={() => {
             open("industries");
             setselectedIndustryCategory("retailer");
-            setSelectedIndustryKey("hardware-pos-system");
+            setSelectedIndustryKey("bakery-pos-system");
           }}
           onClose={close}
           onToggle={() => toggle("industries")}

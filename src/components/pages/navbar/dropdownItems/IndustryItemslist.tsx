@@ -15,6 +15,10 @@ export const industryCategories: IndustryCategory[] = [
     id: 'retailer',
     title: 'Retailer',
   },
+  {
+    id: 'wholesale',
+    title: 'Wholesale',
+  },
   // {
   //   id: 'manufacturing',
   //   title: 'Manufacturing',
@@ -45,7 +49,7 @@ export const industriesItems: IndustryItem[] = [
     key: 'hardware-pos-system',
     title: 'Hardware POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
-    category: 'retailer',
+    category: 'wholesale',
   },
   {
     key: 'bookstore-pos-system',
