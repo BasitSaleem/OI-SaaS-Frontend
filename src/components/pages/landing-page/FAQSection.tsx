@@ -16,6 +16,7 @@ interface FaqSectionProps {
   faqs?: FAQ[];
   heading?: string;
   paragraph?: string;
+  secondParagraph?: string;
   buttonText?: string;
   buttonUrl?: string;
   buttonBgColor?: string;
@@ -57,6 +58,7 @@ export default function FaqSection({
   faqs = defaultFaqs,
   heading = "Everything You Were About to Ask",
   paragraph = "Find quick answers to the most common questions about Owners Inventory. And if you need anything more, our support team is ready to assist.",
+  secondParagraph,
   buttonText = "Start Free, See Plans",
   buttonUrl = "/pricing",
   buttonBgColor = "var(--primary-teal)",
@@ -153,8 +155,11 @@ export default function FaqSection({
           <div className="order-1 lg:order-2 lg:col-span-5 flex flex-col items-start justify-start text-left">
             <SubHeading className="mb-5 lg:mb-10">{heading}</SubHeading>
 
-            <Paragraph className="mb-8 md:mb-5 xl:mb-10 text-(--text-dark)">
+            <Paragraph className=" text-(--text-dark)">
               {paragraph}
+            </Paragraph>
+            <Paragraph className="mb-8 md:mb-5 xl:mb-10 text-(--text-dark)">
+              {secondParagraph}
             </Paragraph>
 
             {showButton && (

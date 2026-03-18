@@ -1,14 +1,15 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Retail Store POS Systems for Inventory and Sales Management",
+  title: "POS System for Small Retail Store Management",
   description:
-    "Retail Store POS systems to manage inventory, sales, billing, and stock tracking in one platform. Improve checkout speed and keep records organized.",
+    "POS system for small retail store that simplifies billing, inventory, payments, and reporting. Improve efficiency, control operations, and grow sales.",
   keywords: [
-    "retail store pos systems",
-    "retail store pos software",
-    "pos systems for retail stores",
-    "retail inventory management system",
+    "pos system for small retail store",
+    "pos for small retail business",
+    "best small business pos",
+    "best pos system for small retail store",
+    "best point of sale software for small retail business"
   ],
   publisher: "Owners Inventory",
   robots: {

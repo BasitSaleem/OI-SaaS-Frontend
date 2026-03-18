@@ -51,7 +51,7 @@ const WorkflowCard = ({ number, title, description }: WorkflowCardProps) => {
           <div className="flex items-center justify-center w-20 h-20 mb-6">
             <PosHardwarePageIcons name={iconName} size={80} />
           </div>
-          <h3 className="text-xl lg:text-2xl leading-[140%] font-['onest] font-semibold mb-4 text-[var(--text-dark)] text-center">
+          <h3 className="text-xl lg:text-2xl leading-[140%] font-['onest'] font-semibold mb-4 text-[var(--text-dark)] text-center min-h-[58px] lg:min-h-[70px]">
             {title}
           </h3>
           <p className="text-sm lg:text-base leading-[170%] text-[var(--text-grey)] font-normal  text-center">

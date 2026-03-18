@@ -23,28 +23,28 @@ export const RETAIL_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     },
     {
         id: "3",
-        icon: "onlineMarketing",
+        icon: "onlineVisibility",
         title: "Lack of Sales Insights",
         description:
             "Online stores offer faster purchasing and massive discounts. Physical retail stores are under pressure since customers demand equal speed and accuracy in stores.",
     },
     {
         id: "4",
-        icon: "onlineVisibility",
+        icon: "employeManagement",
         title: "Employee Management Issues",
         description:
             "It becomes challenging to monitor performance and shifts among the staff. This results in poor productivity and misunderstanding.",
     },
     {
         id: "5",
-        icon: "priceInconsistency",
+        icon: "onlineMarketing",
         title: "Challenges in Managing Multiple Payments",
         description:
             "Small retailers have a disadvantage in terms of cash, card, and online payments. This causes delays and mistakes.",
     },
     {
         id: "6",
-        icon: "schoolRush",
+        icon: "whychoseIcon5",
         title: "No Centralized Control",
         description:
             "In the absence of adequate equipment, owners are unable to track day-to-day operations. This complicates the expansion or running of the store remotely.",
@@ -55,35 +55,35 @@ export const RETAIL_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
 export const RETAIL_STORE_WHY_CHOOSE_CARDS = [
     {
         id: "1",
-        icon: "stockConfusion",
+        icon: "onlineVisibility",
         title: "Inventory Automation for Small Retailers",
         description:
             "Accurate inventory is key for retail. Our POS automatically updates stock in real time, preventing stockouts and overstocking while improving cash flow.",
     },
     {
         id: "2",
-        icon: "slowBilling",
+        icon: "whychoseIcon6",
         title: "Fast Checkout POS",
         description:
             "Long checkout lines directly impact customer satisfaction. Our platform is a small business POS that uses barcode scanning, automated billing, and other features to complete transactions in seconds.",
     },
     {
         id: "3",
-        icon: "supplierMisalignment",
+        icon: "whychoseIcon4",
         title: "Data-Driven Insights",
         description:
             "Our POS system converts transaction data into insights, showing daily sales, profit margins, product performance, and employee productivity.",
     },
     {
         id: "4",
-        icon: "whychoseIcon5",
+        icon: "whychoseIcon7",
         title: "Staff Performance Tracking",
         description:
             "The POS tracks employee activity, sales, performance, and shifts, boosting accountability and highlighting top performers.",
     },
     {
         id: "5",
-        icon: "whychoseIcon4",
+        icon: "whychoseIcon8",
         title: "Secure Payments & Centralized Control",
         description:
             "Our POS secures every transaction and stores data encrypted in the cloud, protecting financial and customer information.",
@@ -98,7 +98,7 @@ export const RETAIL_STORE_FEATURE_CARDS = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
+            "Our POS system for small stores join all your sales channels, including physical shops, online platforms, and mobile sales, into one stand alone system. Whether a sale happens in-store or online, everything updates within a few seconds which makes room for accuracy and consistency.",
         imageSrc: "/assets/industries-pages/retail-store-pos/retail-store-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
@@ -111,17 +111,17 @@ export const RETAIL_STORE_FEATURE_CARDS = [
     },
     {
         id: "2",
-        title: "Better Decision Reporting and Analytics",
+        title: "Reporting and Analytics for Better Decisions",
         description:
-            "Comprehensive reporting and analytics give retail-store owners clear insights into stock movement, sales trends, and profitability. This helps in smarter purchasing, reordering and optimization of inventory on time.",
+            "Our best point of sale software for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
         imageSrc: "/assets/industries-pages/retail-store-pos/retail-store-better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Real-time sales and inventory control.",
-            "Forecast demand and schedule reorders.",
-            "Determine slow moving products and enhance stock turnover.",
+            "Real-time sales and inventory insights",
+            "Identify trends and forecast demand",
+            "Detect revenue gaps and improve margins",
         ]
     },
 ];
@@ -225,38 +225,38 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
 
 
 export const RETAIL_STORE_WORKFLOW_DATA = {
-    heading: "Inventory Workflow of Owners Inventory",
-    paragraph: "Our POS software in the retail-store automates inventory operations to be accurate and efficient, with all the stock movements being traced between purchase and sale.",
+    heading: "Inventory Workflow for Small Retail Stores",
+    paragraph: "Our POS system for small stores simplifies inventory management by automating stock updates, tracking product movement, and ensuring efficient control at every stage of operations.",
     steps: [
         {
             number: 1,
             title: "Inventory Acquisition",
-            description: "Products are ordered from suppliers and distributors based on the demand forecasts. Verify quantities and conditions and add them to the system. This ensures that you only have the right and saleable inventory in your store."
+            description: "Store owners start by sourcing products based on demand and stock requirements. Each item is checked for quality and quantity before being added to the system, ensuring accurate inventory records from the beginning."
         },
         {
             number: 2,
             title: "Stock Organization & Storage",
-            description: "Sort products into categories, brands, or sections to identify them easily and handle them faster. Adequate organization saves time on search and enhances in-store shopping."
+            description: "Products are organized on shelves or storage areas according to category, type, or usage. Proper labeling and arrangement make it easier for staff to locate items quickly, reducing errors and saving time."
         },
         {
             number: 3,
             title: "Inventory Tracking",
-            description: "Sales, returns and transfers are automatically updated in real time and the availability is correct. This avoids stock mismatch and assists in avoiding lost sales."
+            description: "All stock movements, including sales, returns, and adjustments, are updated in real time. This allows store owners to always have an accurate view of available inventory and avoid stock discrepancies."
         },
         {
             number: 4,
             title: "Supplier & Purchasing",
-            description: "Keep good records of suppliers, monitor lead times and purchase cycles. Improved management of suppliers will guarantee timely replenishment of the bestsellers."
+            description: "Manage suppliers efficiently by creating purchase orders and tracking deliveries. Keeping records of supplier performance, pricing, and lead times helps ensure timely restocking and better purchasing decisions."
         },
         {
             number: 5,
             title: "Order Fulfillment",
-            description: "When a book is sold or reserved, the system updates stock immediately, reducing overselling. This will ensure that customers are always provided with the right information on availability."
+            description: "As products are sold, the system automatically updates inventory levels. This ensures accurate order handling, reduces manual errors, and improves the overall customer experience."
         },
          {
             number: 6,
             title: "Reporting & Analysis",
-            description: "Examine the trends in categories, products, and prices to make improved stocking choices. Evidence-based information is used to maximize inventory investment and profit maximization."
+            description: "Detailed reports provide insights into stock movement, fast- and slow-selling products, and overall profitability. These insights help small store owners make smarter decisions about restocking, pricing, and inventory optimization."
         },
        
     ]
@@ -265,55 +265,60 @@ export const RETAIL_STORE_WORKFLOW_DATA = {
 export const RETAIL_STORE_TESTIMONIALS = [
     {
         id: "1",
-        name: "Sarah M.",
-        title: "City Retail Store",
+        name: "Ayesha",
+        title: "Grocery Store Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
-        text: "Everything is easy with Owners Inventory Retail Store POS Software. Billing is quicker, and items remain organised. Now, Inventory Management is also very easy.",
+        text: "Owners' Inventory POS changed how we manage our store. Billing is far quicker, and keeping track of stock is easy. It saves me a lot of time each day.",
     },
     {
         id: "2",
-        name: "Ahmed R.",
-        title: "Knowledge Hub",
+        name: "Ellen",
+        title: "Grocery Store Owner",
         image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-        text: "The software assists us in tracking all products and items. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
+        text: "Now our boutique moves so smoothly. All inventory notifications, sales data, and employee tracking are centralized. It actually makes us plan more and makes us avoid errors.",
     },
     {
         id: "3",
-        name: "Priya K.",
-        title: "Urban Mart",
+        name: "Sara",
+        title: "Gift & Decor Shop Owner​",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
-        text: "Discounts, category-wise sales and Inventory Management have become easy to handle. The Retail Store POS Software offers simple to understand reports, which help us make superior decisions and plan our promotions better.",
+        text: "It was easy to feel overwhelmed by running a POS system for small retail stores. It was tense and time-consuming to handle inventory, sales, and staff simultaneously. Since we began using the POS system of Owners Inventory, everything is in one place. I can use the real-time stock reporting and sales data to make smarter decisions on a daily basis. It actually seems like the system is working with me.",
     },
     {
         id: "4",
-        name: "Daniel S.",
-        title: "Retail Hub",
+        name: "Bilal",
+        title: "Boutique Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
-        text: "The POS Software of Owners Inventory Retail Store has transformed our retail-store. Barcode tracking, inventory updates and stock management is not interrupted. Billing is fast and accurate even during peak seasons. Our clients and employees like the more streamlined experience.",
+        text: "Our boutique has increased the pace after we adopted this POS. Billing is fast, stock management is easy, and even monitoring staff performance is easier. Customers can feel the difference in quicker checkouts, and I will be able to concentrate on business development rather than on the management of daily mess.",
     },
     
 ];
 
 export const RETAIL_STORE_FAQS = [
     {
-        id: "faq-isbn-support",
-        question: "Does the system support barcode scanning?",
-        answer: "Yes, our POS is fully compatible with barcode scanners, making it easy to add and sell products quickly."
+        id: "1",
+        question: "What makes this POS suitable for small retail stores?",
+        answer: "This is a small retail POS system that serves small shops. It is easy to operate, with little setup, and it manages billing, inventory, and staff management effectively. Small retailers receive all the necessary features without the need to purchase complicated extras."
     },
     {
-        id: "faq-manage-genres",
-        question: "Can I manage different genres and categories?",
-        answer: "Absolutely. You can create as many categories and sub-categories as you need to organize your retail-store effectively."
+        id: "2",
+        question: "Can I manage inventory easily with this system?",
+        answer: "Yes! The POS shows real-time inventory changes and provides low inventory notifications. You are able to trace items, view best sellers, and prevent overstocking or scarcity of goods. It simplifies inventory management and makes it error-free."
     },
     {
-        id: "faq-online-store",
-        question: "Does it integrate with my online retail-store?",
-        answer: "Yes, we support integration with major e-commerce platforms like Shopify and WooCommerce to keep your stock synced."
+        id: "3",
+        question: "Does it support multiple payment methods?",
+        answer: "Absolutely. This system accepts money, cards, and electronic payments within seconds. Customers are subjected to an easy checkout process, and the store owners can easily handle all forms of payment without getting it wrong."
     },
     {
-        id: "faq-customer-history",
-        question: "Can I track customer purchase history?",
-        answer: "Yes, our system allows you to maintain customer profiles and view their past purchases and loyalty points."
+        id: "4",
+        question: "Can I access reports and insights remotely?",
+        answer: "Yes, you are able to check sales, inventory, and employee performance wherever you are. The POS also offers easy-to-read reports that will assist you in making informed decisions even when you are not physically present in the store."
+    },
+    {
+        id: "5",
+        question: "Is this POS suitable for shops with a small budget?",
+        answer: "Definitely. This is among the most suitable small business POS systems that are adapted to small retail stores. It provides high-quality features at a low cost, providing small retailers with a professional system without emptying their pockets."
     },
 ];
 
@@ -365,60 +370,66 @@ export const RETAIL_STORE_KEY_FEATURES = [
 export const RETAIL_STORE_TESTIMONIAL_DATA = {
     heading: "What Our Clients Say About Us?",
     paragraph: "", // Optional paragraph
-    secondHeading: "All-in-One Inventory Solution for Retail Stores",
-    secondDescription: "With a modern POS designed for retail stores, you can take full control over inventory, sales and operations.",
-    whyChooseTitle: "Why Choose Our System?",
-    whyChooseDescription: "Owners' Inventory makes retail-store management simple, fast, and reliable. Every feature is built to help stores save time, reduce errors, and boost sales. From products to groceries, every item stays organised and accessible.",
+    secondHeading: "Get Control of Your Inventory",
+    secondDescription: "Our Best POS system for small stores will streamline your inventory and increase efficiency. Start now and discover how our solution can streamline your operations.",
+    whyChooseTitle: "Why Choose OI for Small Retail Stores?",
+    whyChooseDescription: "Small retailers rely on us due to the fact that our system is designed to face challenges of daily life. We maintain your store lean, clean, and under control. Each tool is employed to aid you in developing confidently and clearly.",
 };
 
 export const RETAIL_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "1",
-        title: "Accurate Stock Management",
-        description: "Products and inventory always have a clear stock level. Real-time updates help in avoiding stock errors.",
+        title: "Built for Small Retail Success",
+        description: "Our POS system for small retail stores is meant to cater to both minimal areas, low budgets, and high-speed shops. It provides large-scale capabilities without complication.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
-        title: "Faster Billing & Checkout",
-        description: "Customers like short queues and fast billing. The system manages barcode scanning and bundles easily.",
+        title: "Faster Checkout, Happier Customers",
+        description: "Small business retailers who utilize our best small business POS have smoother billing and shorter lines. Quick checkout retains customers and encourages repeat buying.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
-        title: "Data-Driven Decisions",
-        description: "Detailed reports list sales by category, product, or time. Real-time insights enable store owners to make smart decisions.",
+        title: "Inventory That Runs Itself",
+        description: "You never lose track of stock. Inventory becomes a breeze with real-time updates, alert notifications, and smart tracking, even with busy small stores.",
         icon: "testWhychoseIcon3",
     },
     {
         id: "4",
-        title: "Flexible Discounts & Pricing",
-        description: "Special offers in terms of product bundles or seasonal sales are not difficult to manage. Pricing in wholesale and retail may be different.",
+        title: "Useful Insights",
+        description: "Our system indicates what sells, when it sells, and why it is important. Such knowledge assists small retailers in making decisions on a daily basis.",
         icon: "testWhychoseIcon4",
     },
     {
         id: "5",
-        title: "Multi-Branch & Online Sync",
-        description: "All the branches are connected, and the orders are synchronised online. Stock and sales updates are done in all the locations in real-time.",
+        title: "Easy to Use",
+        description: "Its interface is user-friendly. It can be taught to anyone in a few minutes, and therefore, easier and faster to train.",
         icon: "testWhychoseIcon5",
     },
     {
         id: "6",
-        title: "Reliable Support & Training",
-        description: "Our team is available 24/7. Onboarding and support make sure that stores run well on the first day.",
+        title: "Reliable Support",
+        description: "Our team is on call. You may require assistance in setup or daily instructions. We ensure that your POS is running efficiently throughout the year.",
         icon: "testWhychoseIcon6",
     },
     {
         id: "7",
-        title: "Secure & Stable Platform",
-        description: "Offline mode ensures that sales are maintained even when WiFi is unavailable. The transactions and payments are not impacted.",
+        title: "Budget-Friendly",
+        description: "We provide the best point of sale software to a small retail business without costly plans. You get the best features at a shop-friendly price.",
         icon: "testWhychoseIcon7",
+    },
+    {
+        id: "8",
+        title: "Sell Anywhere",
+        description: "Sell in-store and online using one system. Products, sales, and customers stay in sync automatically.",
+        icon: "testWhychoseIcon8",
     },
 ];
 
 export const RETAIL_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the retail-stores to control inventory, sales, finances and customer information on a single dashboard.",
+    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
