@@ -89,6 +89,7 @@ export const RETAIL_STORE_WHY_CHOOSE_CARDS = [
             "Our POS secures every transaction and stores data encrypted in the cloud, protecting financial and customer information.",
     },
     
+    
 ];
 
 
