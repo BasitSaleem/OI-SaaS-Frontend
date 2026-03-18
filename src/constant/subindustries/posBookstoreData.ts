@@ -71,7 +71,7 @@ export const BOOKSTORE_WHY_CHOOSE_CARDS = [
         icon: "slowBilling",
         title: "Faster & Smoother Billing",
         description:
-            "Barcode scanning by ISBN and smart search makes checkout quick and efficient even during rush hours",
+            "Barcode scanning by ISBN and smart search makes checkout quick and efficient even during rush hours.",
     },
     {
         id: "3",
@@ -103,7 +103,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
+            "Stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
         imageSrc: "/assets/industries-pages/bookstore-pos/bookstore-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
@@ -237,21 +237,21 @@ export const BOOKSTORE_TESTIMONIALS = [
         id: "1",
         name: "Sarah M.",
         title: "City Bookstore",
-        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: "Everything is easy with Owners Inventory Bookstore POS Software. Billing is quicker, and books remain organised. Now, Stationery Inventory Management is also very easy.",
     },
     {
         id: "2",
         name: "Ahmed R.",
         title: "Knowledge Hub",
-        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "The software assists us in tracking all titles and stationery. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
     },
     {
         id: "3",
         name: "Priya K.",
         title: "Read & Learn​",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
         text: "Discounts, author-wise sales and Stationery Inventory Management have become easy to handle. The Bookstore POS Software offers simple to understand reports, which help us make superior decisions and plan our promotions better.",
     },
     {
@@ -393,7 +393,7 @@ export const BOOKSTORE_TESTIMONIAL_FEATURES = [
 
 export const BOOKSTORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
+    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and eCommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

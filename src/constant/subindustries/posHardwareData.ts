@@ -239,28 +239,28 @@ export const HARDWARE_WORKFLOW_DATA = {
 
 export const HARDWARE_TESTIMONIALS = [
     {
-        id: "sadia-noor",
-        name: "Sadia Noor",
+        id: "1",
+        name: "Hassan Anwar",
         title: "Business Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "The POS system has simplified our day to day work. Billing is quick and stock is never wrong. This system is making Al-Asif run well.",
     },
     {
-        id: "alexa-catherine",
+        id: "2",
         name: "Alexa Catherine",
         title: "Store Manager",
         image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: "This is the best POS that we have tried previously. It keeps our store in order and assists us in decision-making. Since we started using it, Bright Homes has experienced fewer errors and has increased its checkout speed.",
     },
     {
-        id: "oliver-smith-hardware",
+        id: "3",
         name: "Oliver Smith",
         title: "Store Manager",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
         text: "Our hardware store required a system that could manage thousands of objects and maintain all of them in order. This POS system provides precisely that. It is easy to use by the staff and provides a daily report.",
     },
     {
-        id: "amelia-evans",
+        id: "4",
         name: "Amelia Evans",
         title: "Store Manager",
         image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",

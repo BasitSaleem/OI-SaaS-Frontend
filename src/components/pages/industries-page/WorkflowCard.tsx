@@ -29,10 +29,10 @@ const DEFAULT_GRADIENT_BACKGROUND = `
   ),
   linear-gradient(
     90deg,
-    rgba(26,209,185,0.2) 30%,
+    rgba(26,209,185,0.1) 30%,
     rgba(56,172,204,0.3) 50%,
     rgba(85,136,223,0.3) 55%,
-    rgba(121,92,245,0.03) 100%
+    rgba(121,92,245,0.01) 100%
   )
 `;
 

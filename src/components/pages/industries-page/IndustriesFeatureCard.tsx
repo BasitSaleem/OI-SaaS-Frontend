@@ -49,15 +49,13 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
       className={` grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
     >
       {/* Media Content */}
-      <div className={`${isEven ? "lg:order-2" : "lg:order-1"}`}>
+      <div className={`${isEven ? "order-2 lg:order-2" : "order-2 lg:order-1"}`}>
         <div
-          className={`px-3 py-4 flex items-center justify-center lg:max-w-full md:max-w-[600px] mx-auto rounded-[30px] `}
+          className={`px-3 py-4 flex items-center justify-center lg:max-w-full md:max-w-[600px] mx-auto rounded-[30px] h-auto lg:h-[var(--container-height)]`}
           style={{
             width: containerWidth,
-            height: containerHeight,
-            // border: `2px solid ${containerBorderColor}`,
-            // backgroundColor: containerBackgroundColor,
-          }}
+            "--container-height": containerHeight,
+          } as any}
         >
           <div className="flex flex-col items-center justify-center w-full h-full ">
             {shouldShowImage && imageSrc ? (
@@ -90,7 +88,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
       </div>
 
       {/* Text Content */}
-      <div className={`flex flex-col ${isEven ? "lg:order-1" : "lg:order-2"}`}>
+      <div className={`flex flex-col ${isEven ? "order-1 lg:order-1" : "order-1 lg:order-2"}`}>
         <h3 className="font-['Onest'] font-semibold text-[var(--text-dark)] text-[32px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] mb-4 min-h-[50px]">
           {title}
         </h3>
@@ -142,7 +140,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                     </defs>
                   </svg>
                 </span>
-                <span className="font-['Onest'] text-[var(--text-dark)] text-base md:text-xl xl:text-2xl  leading-[150%] xl:leading-[135%]">
+                <span className="font-['Onest'] text-[var(--text-dark)] text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]">
                   {item}
                 </span>
               </li>

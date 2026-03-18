@@ -176,7 +176,7 @@ export const BAKERY_KEY_FEATURES_CARDS = [
 
 export const BAKERY_WORKFLOW_DATA = {
     heading: "Inventory Workflow of Owners Inventory",
-    paragraph: "Owners Inventory automates your entire production and sales cycle. Every process, from purchasing raw materials through to managing counter sales and fulfilling cake orders are integrated into one system. Your entire workflow is now managed in real-time, without the need to juggle notebooks, worksheets and manual calculations.",
+    paragraph: "Owners Inventory automates your entire production and sales cycle. Every process, from purchasing raw materials through to managing counter sales and fulfilling cake orders are integrated into one system. The entire workflow is managed in real-time, without juggling notebooks and manual calculations.",
     steps: [
         {
             number: 1,
@@ -212,21 +212,21 @@ export const BAKERY_TESTIMONIALS = [
         id: "sarah-mitchell",
         name: "Sarah Mitchell",
         title: "Bakery Owner",
-        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: "The POS system has made billing faster and more efficient. We no longer have to struggle at rush hour.",
     },
     {
         id: "james-carter",
         name: "James Carter",
         title: "Bakery Manager",
-        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "Managing cake orders has never been easier. Every detail is properly recorded, nothing gets overlooked.",
     },
     {
         id: "oliver-smith",
         name: "Oliver Smith",
         title: "Operations Manager",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
         text: "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions",
     },
     
@@ -305,7 +305,7 @@ export const BAKERY_TESTIMONIAL_DATA = {
     paragraph: "", // Optional paragraph
     secondHeading: "Manage Your Bakery Effectively",
     secondDescription: "With a modern POS designed for bakeries, you can take full control over ingredients, sales and custom orders.",
-    whyChooseTitle: "Why Choose Our System?",
+    whyChooseTitle: "Why Choose Owners Inventory for Your Bakery?",
     whyChooseDescription: "Owners Inventory was designed specifically to support bakery workflows. The system combines performance and simplicity so that you can concentrate on the baking process while it handles all the other operations.",
 };
 

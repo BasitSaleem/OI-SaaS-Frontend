@@ -71,7 +71,7 @@ const Page = () => {
       />
 
       <KeyHighlights
-        heading="Our Key Features"
+        heading="Our Features Designed for Modern Bookstores"
         features={BOOKSTORE_KEY_FEATURES_CARDS}
       />
 
@@ -125,8 +125,8 @@ Here are answers to some common questions from bookstore owners."
         />
       </div>
        <IndustriesHardwareControl
-        title="Take Charge of Your Bookstore Business Today"
-        description="Due to stock mistakes, slow billing, and inaccuracies, bookstores lose significant revenue. Owners Inventory reduces losses, helps manage orders efficiently, and keeps title tracking accurate."
+        title="Boost Your Bookstore"
+        description="Turn every sale into a smooth, organised experience. Owners' Inventory keeps books, stationery, and online orders perfectly in sync, saving time and increasing revenue."
         ctaDesc="Start Today"
       />
     </div>
