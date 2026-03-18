@@ -20,7 +20,7 @@ const DEFAULT_TOOLS = [
   { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
   { id: 3, name: "QuickBooks", image: "/assets/home-page-images/tools-section/quick-book.svg" },
   { id: 4, name: "Xero", image: "/assets/home-page-images/tools-section/xero.svg" },
-  { id: 5, name: "Stripe", image: "/assets/ home-page-images/tools-section/stripe.svg" },
+  { id: 5, name: "Stripe", image: "/assets/home-page-images/tools-section/stripe.svg" },
 ];
 
 const ToolsSection = ({
