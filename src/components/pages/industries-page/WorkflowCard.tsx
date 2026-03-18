@@ -54,7 +54,7 @@ const WorkflowCard = ({ number, title, description }: WorkflowCardProps) => {
           <h3 className="text-xl lg:text-2xl leading-[140%] font-['onest'] font-semibold mb-4 text-[var(--text-dark)] text-center min-h-[58px] lg:min-h-[70px]">
             {title}
           </h3>
-          <p className="text-sm lg:text-base leading-[170%] text-[var(--text-grey)] font-normal  text-center">
+          <p className="text-sm lg:text-base leading-[170%] font-['onest'] text-[var(--text-grey)] font-normal  text-center">
             {description}
           </p>
         </div>
