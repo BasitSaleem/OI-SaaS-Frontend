@@ -26,7 +26,7 @@ export const RETAIL_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "onlineMarketing",
         title: "Lack of Sales Insights",
         description:
-            "Online stores offer faster purchasing and massive discounts. Physical bookstores are under pressure since customers demand equal speed and accuracy in stores.",
+            "Online stores offer faster purchasing and massive discounts. Physical retail stores are under pressure since customers demand equal speed and accuracy in stores.",
     },
     {
         id: "4",
@@ -112,7 +112,7 @@ export const RETAIL_STORE_FEATURE_CARDS = [
         id: "2",
         title: "Better Decision Reporting and Analytics",
         description:
-            "Comprehensive reporting and analytics give retail-store owners clear insights into stock movement, sales trends, and profitability. This helps in smarter purchasing, reordering and optimization of books on time.",
+            "Comprehensive reporting and analytics give retail-store owners clear insights into stock movement, sales trends, and profitability. This helps in smarter purchasing, reordering and optimization of inventory on time.",
         imageSrc: "/assets/industries-pages/retail-store-pos/retail-store-better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
@@ -120,7 +120,7 @@ export const RETAIL_STORE_FEATURE_CARDS = [
         list: [
             "Real-time sales and inventory control.",
             "Forecast demand and schedule reorders.",
-            "Determine slow moving titles and enhance stock turnover.",
+            "Determine slow moving products and enhance stock turnover.",
         ]
     },
 ];
@@ -188,35 +188,35 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
         title: "Barcode & Label Printing",
         description:
             "Produce barcodes and price labels directly from of the POS. It maintains your inventory and enhances the precision of scanning.",
-        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card3.webp",
+        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card9.webp",
     },
     {
         id: 10,
         title: "Expense Tracking",
         description:
             "Enter expenses daily in a couple of clicks. This aspect provides small retailers with a clear picture of profits and expenditure.",
-        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card4.webp",
+        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card10.webp",
     },
     {
         id: 11,
         title: "Multi-Device Access",
         description:
             "Access POS systems in small retail stores, mobile, tablet, or desktop as it provides flexibility to operate the store anywhere.",
-        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card5.webp",
+        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card11.webp",
     },
     {
         id: 12,
         title: "Cloud Backup & Security",
         description:
             "All information remains secure in the cloud. Your store data is insured even in case devices are lost or damaged.",
-        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card6.webp",
+        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card12.webp",
     },
     {
         id: 13,
-        title: "yeh data dalna hai",
+        title: "Promotions & Discounts",
         description:
-            "Keep your customer information, order history, and preferences in a convenient place. Develop loyalty programs that will enable your small retail business to boost repeat sales.",
-        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card7.webp",
+            "Make instant offers, bundles, and special discounts. This assists in attracting customers and boosting sales.",
+        imageSrc: "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card13.webp",
     },
     
 ];
@@ -225,17 +225,17 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
 
 export const RETAIL_STORE_WORKFLOW_DATA = {
     heading: "Inventory Workflow of Owners Inventory",
-    paragraph: "Our POS software in the retail-store automates inventory operations to be accurate and efficient, with all the book movements being traced between purchase and sale.",
+    paragraph: "Our POS software in the retail-store automates inventory operations to be accurate and efficient, with all the stock movements being traced between purchase and sale.",
     steps: [
         {
             number: 1,
             title: "Inventory Acquisition",
-            description: "Books are ordered by publishers and distributors based on the demand forecasts. Verify quantities and conditions and add them to the system. This ensures that you only have the right and saleable inventory in your inventory books."
+            description: "Products are ordered from suppliers and distributors based on the demand forecasts. Verify quantities and conditions and add them to the system. This ensures that you only have the right and saleable inventory in your store."
         },
         {
             number: 2,
             title: "Stock Organization & Storage",
-            description: "Sort books into genres, authors, publishers or sections to identify them easily and handle them faster. Adequate organization saves time on search and enhances in-store shopping."
+            description: "Sort products into categories, brands, or sections to identify them easily and handle them faster. Adequate organization saves time on search and enhances in-store shopping."
         },
         {
             number: 3,
@@ -255,7 +255,7 @@ export const RETAIL_STORE_WORKFLOW_DATA = {
          {
             number: 6,
             title: "Reporting & Analysis",
-            description: "Examine the trends in genres, authors, and prices to make improved stocking choices. Evidence-based information is used to maximize inventory investment and profit maximization."
+            description: "Examine the trends in categories, products, and prices to make improved stocking choices. Evidence-based information is used to maximize inventory investment and profit maximization."
         },
        
     ]
@@ -267,28 +267,28 @@ export const RETAIL_STORE_TESTIMONIALS = [
         name: "Sarah M.",
         title: "City Retail Store",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
-        text: "Everything is easy with Owners Inventory Retail Store POS Software. Billing is quicker, and books remain organised. Now, Stationery Inventory Management is also very easy.",
+        text: "Everything is easy with Owners Inventory Retail Store POS Software. Billing is quicker, and items remain organised. Now, Inventory Management is also very easy.",
     },
     {
         id: "2",
         name: "Ahmed R.",
         title: "Knowledge Hub",
         image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-        text: "The software assists us in tracking all titles and stationery. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
+        text: "The software assists us in tracking all products and items. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
     },
     {
         id: "3",
         name: "Priya K.",
-        title: "Read & Learn​",
+        title: "Urban Mart",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
-        text: "Discounts, author-wise sales and Stationery Inventory Management have become easy to handle. The Retail Store POS Software offers simple to understand reports, which help us make superior decisions and plan our promotions better.",
+        text: "Discounts, category-wise sales and Inventory Management have become easy to handle. The Retail Store POS Software offers simple to understand reports, which help us make superior decisions and plan our promotions better.",
     },
     {
         id: "4",
         name: "Daniel S.",
-        title: "BookWorld​",
+        title: "Retail Hub",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
-        text: "The POS Software of Owners Inventory Retail Store has transformed our retail-store. ISBN tracking, inventory updates and stationery management is not interrupted. Billing is fast and accurate even during peak school seasons. Our clients and employees like the more streamlined experience.",
+        text: "The POS Software of Owners Inventory Retail Store has transformed our retail-store. Barcode tracking, inventory updates and stock management is not interrupted. Billing is fast and accurate even during peak seasons. Our clients and employees like the more streamlined experience.",
     },
     
 ];
@@ -296,8 +296,8 @@ export const RETAIL_STORE_TESTIMONIALS = [
 export const RETAIL_STORE_FAQS = [
     {
         id: "faq-isbn-support",
-        question: "Does the system support ISBN scanning?",
-        answer: "Yes, our POS is fully compatible with barcode and ISBN scanners, making it easy to add and sell books quickly."
+        question: "Does the system support barcode scanning?",
+        answer: "Yes, our POS is fully compatible with barcode scanners, making it easy to add and sell products quickly."
     },
     {
         id: "faq-manage-genres",
@@ -318,33 +318,33 @@ export const RETAIL_STORE_FAQS = [
 
 export const RETAIL_STORE_KEY_FEATURES = [
     {
-        id: "fast-book-billing",
-        title: "Fast Book Billing",
-        description: "Speed up your checkout process with barcode scanning. Search by title, author, or ISBN to handle morning rushes with ease.",
+        id: "fast-retail-billing",
+        title: "Fast Retail Billing",
+        description: "Speed up your checkout process with barcode scanning. Search by product name, category, or barcode to handle busy hours with ease.",
         imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
     },
     {
         id: "live-stock-control",
         title: "Live Stock Control",
-        description: "Every book sold is automatically deducted from your inventory, giving you a real-time view of what's on your shelves.",
+        description: "Every product sold is automatically deducted from your inventory, giving you a real-time view of what's on your shelves.",
         imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
     },
     {
         id: "vendor-management",
-        title: "Publisher & Vendor Management",
-        description: "Maintain records of your publishers and suppliers. Generate purchase orders and track shipments with ease.",
+        title: "Supplier & Vendor Management",
+        description: "Maintain records of your suppliers and vendors. Generate purchase orders and track shipments with ease.",
         imageSrc: "/assets/features-page/featurescard-banners/purchases-banner.webp",
     },
     {
-        id: "edition-tracking",
-        title: "Edition & Format Tracking",
-        description: "Manage different editions, formats, and conditions of books within a single, organized catalog.",
+        id: "variant-tracking",
+        title: "Variant & Category Tracking",
+        description: "Manage different sizes, colors, and categories of products within a single, organized catalog.",
         imageSrc: "/assets/features-page/featurescard-banners/inventory-banner.webp",
     },
     {
         id: "loyalty-programs",
         title: "Loyalty & CRM",
-        description: "Build strong relationships with your readers through loyalty programs and personalized offers based on their habits.",
+        description: "Build strong relationships with your customers through loyalty programs and personalized offers based on their habits.",
         imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
     },
     {
@@ -365,34 +365,34 @@ export const RETAIL_STORE_TESTIMONIAL_DATA = {
     heading: "What Our Clients Say About Us?",
     paragraph: "", // Optional paragraph
     secondHeading: "All-in-One Inventory Solution for Retail Stores",
-    secondDescription: "With a modern POS designed for bakeries, you can take full control over ingredients, sales and custom orders.",
+    secondDescription: "With a modern POS designed for retail stores, you can take full control over inventory, sales and operations.",
     whyChooseTitle: "Why Choose Our System?",
-    whyChooseDescription: "Owners' Inventory makes retail-store management simple, fast, and reliable. Every feature is built to help stores save time, reduce errors, and boost sales. From books to stationery, every item stays organised and accessible.",
+    whyChooseDescription: "Owners' Inventory makes retail-store management simple, fast, and reliable. Every feature is built to help stores save time, reduce errors, and boost sales. From products to groceries, every item stays organised and accessible.",
 };
 
 export const RETAIL_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "1",
         title: "Accurate Stock Management",
-        description: "Books and stationery always have a clear inventory level. Real-time updates helps in avoiding stock errors.",
+        description: "Products and inventory always have a clear stock level. Real-time updates help in avoiding stock errors.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
         title: "Faster Billing & Checkout",
-        description: "Customers like short queues and fast billing. The system manages ISBN codes and bundles easily.",
+        description: "Customers like short queues and fast billing. The system manages barcode scanning and bundles easily.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
         title: "Data-Driven Decisions",
-        description: "Detailed reports list sales by author, genre, or category. Real-time insights enable store owners to make smart decisions.",
+        description: "Detailed reports list sales by category, product, or time. Real-time insights enable store owners to make smart decisions.",
         icon: "testWhychoseIcon3",
     },
     {
         id: "4",
         title: "Flexible Discounts & Pricing",
-        description: "Special offers in terms of author, genre or publisher are not difficult to manage. Pricing in wholesale and retail may be different.",
+        description: "Special offers in terms of product bundles or seasonal sales are not difficult to manage. Pricing in wholesale and retail may be different.",
         icon: "testWhychoseIcon4",
     },
     {
