@@ -63,6 +63,12 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
+  {
+    key: 'furniture-store-pos-system',
+    title: 'Furniture Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    category: 'retailer',
+  },
 
   // {
   //   key: 'hardware-store-pos',
@@ -204,7 +210,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Contractor Accounts' },
     { title: 'Project Quoting' },
   ],
-  'furniture-store-pos': [
+  'furniture-store-pos-system': [
     { title: 'Furniture Inventory Management' },
     { title: 'Custom Order Tracking' },
     { title: 'Delivery Scheduling' },
