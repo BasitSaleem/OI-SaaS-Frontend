@@ -69,6 +69,12 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
+  {
+    key: 'jewelry-store-pos-system',
+    title: 'Jewelry Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    category: 'retailer',
+  },
 
   // {
   //   key: 'hardware-store-pos',
@@ -215,6 +221,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Custom Order Tracking' },
     { title: 'Delivery Scheduling' },
     { title: 'Showroom Management' },
+  ],
+  'jewelry-store-pos-system': [
+    { title: 'Jewelry Inventory Management' },
+    { title: 'Precious Metals Tracking' },
+    { title: 'Gemstone Catalog' },
+    { title: 'Appraisal Management' },
   ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
