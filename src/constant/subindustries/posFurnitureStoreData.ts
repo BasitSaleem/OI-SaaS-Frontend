@@ -120,7 +120,7 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         title: "Omni-Channel and Sales Integration",
         description:
             "Sell furniture in-store and online using the same system. Maintain consistent prices, live stock, and customer data on every platform. Your operations are synchronized across showroom and online sales without manual updates.",
-        imageSrc: "/assets/industries-pages/bakery-pos/retail-store-omini-chanel.webp",
+        imageSrc: "/assets/industries-pages/furniture-store-pos/furniture-store-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
@@ -135,7 +135,7 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         title: "Better Reporting & Business Insights",
         description:
             "Our best point of sale software for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
-        imageSrc: "/assets/industries-pages/furniture-store-pos/retail-store-better-decision.webp",
+        imageSrc: "/assets/industries-pages/furniture-store-pos/furniture-store-why-chose-banner.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",

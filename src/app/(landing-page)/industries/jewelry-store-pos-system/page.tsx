@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/bookstore-pos/bookstore-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/bakery-pos/why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/jewelary-store-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/jewelary-store-why-chose-banner.webp";
 
 import {
   JEWELRY_STORE_KEY_FEATURES_CARDS,
@@ -11,7 +11,6 @@ import {
 } from "@/constant/subindustries/posJewelryStoreData";
 
 
-import TrustedBySection from "@/components/common-components/TrustedBySection";
 import IndustriesCallToAction from "@/components/pages/industries-page/IndustriesCallToAction";
 
 import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
@@ -45,15 +44,15 @@ const Page = () => {
   return (
     <div>
       <SubIndustriesHero
-        title="Result-Oriented POS Solutions for Jewellery Stores"
-        description="Owners Inventory is the ultimate jewellery store POS system that can be used to run your store with precision, elegance, and total control. All sales, repair orders, and stock-related activities remain synchronized within a single intelligent platform. It is designed for high-value goods, comprehensive tracking, and safe billing."
+        title="Jewelry Store POS System for Tracking High-Value Inventory"
+        description="Owners Inventory provides a specialized POS system for jewelry stores to manage high-value items, track repairs, and automate billing based on live metal rates. Keep your inventory secure and your operations transparent with our intelligent system."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"
         variant="animation2"
       />
 
-      <VoicesRealBusiness title="Rated on Leading Review Platforms" />
+      <VoicesRealBusiness title="Ratings on the Leading Review Platforms" />
 
       <IndustryUnifiedPlatform
         heading={JEWELRY_STORE_UNIFIED_HEADING}
@@ -63,8 +62,8 @@ const Page = () => {
       />
 
       <WhyChoosePOS
-        heading="How Our Inventory Software Solves These Challenges"
-        paragraph="Sales, stock, gold rates, suppliers, and reports are connected to one safe POS system by Owners Inventory. It eradicates human errors and holds all the departments in tune with each other."
+        heading="How Our Jewelry Store POS Solves These Challenges"
+        paragraph="Owners Inventory integrates your sales, high-value inventory, repairs, and custom orders into a single secure platform."
         cards={JEWELRY_STORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
         IconsComponent={posJewelryStorePageIcons}
@@ -82,8 +81,8 @@ const Page = () => {
       />
 
       <IndustriesCallToAction
-        title="Get Full Control of Your Jewelry Store"
-        description="Our POS system of high-tech jewelry stores will assist you in avoiding stock errors, speeding up the billing process, and making deliveries without any issues. Enhance efficiency in operations and provide a smooth customer experience."
+        title="Take Full Control of Your Jewelry Store"
+        description="Our specialized jewelry POS minimizes inventory discrepancies, simplifies complex billing, and enhances security for your high-value assets. Build customer trust with transparency and accuracy."
         ctaDesc="Request a Free Demo"
       />
 
@@ -91,8 +90,8 @@ const Page = () => {
 
       <SecurityCompliance
         title="Security, Accuracy, & Compliance."
-        description="Our system is secure and ensures controlled access and transactions through organized data management and constant monitoring. Role-based permissions allow you to determine the degree of access of cashiers, managers, and administrators, reducing the possibility of unauthorized actions. All sales, returns, and inventory adjustments are kept in full audit trails which are completely transparent."
-        secondDescription="Proper financial documentation makes reconciliation and reporting easier and real-time inventory tracking eliminates discrepancies and manipulation of stocks. Your business data is securely backed up, system controls are reliable, and your business data is compliant and reliable, and you have confidence in every transaction and operational decision."
+        description="The jewelry industry requires the highest level of security. Our system ensures controlled access with role-based permissions and detailed audit trails for every transaction. Protect your inventory and maintain financial transparency."
+        secondDescription="Automated reporting and real-time tracking reduce manual errors and ensure compliance. Your business data is securely backed up, giving you confidence in every operational decision and high-value sale."
       />
 
       <ToolsSection
@@ -118,15 +117,14 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our POS System for Jewelry Stores is designed to make daily operations smooth and easy."
-          secondParagraph="Here are answers to some common questions from POS System for Jewelry Stores owners."
+          paragraph="Our Jewelry Store POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from jewelry store owners."
           faqs={JEWELRY_STORE_FAQS}
           buttonText="Start Now"
         />
       </div>
        <IndustriesHardwareControl
-        title="Take Control of Your Jewelry Store"
-        description="Jewelry businesses lose significant revenue each year due to stock errors, delivery delays, and poor order tracking. Our jewelry store POS system helps reduce losses, maintain accurate inventory, and streamline billing and delivery operations. Smarter management and faster processes make every day more profitable."
+        title="Secure Your Jewelry Business Today"
+        description="Avoid losses due to stock errors and inaccurate valuation. Owners Inventory helps you track every gram and every gemstone with precision. Smarter management for a more profitable jewelry store."
         ctaDesc="Start Today"
       />
     </div>

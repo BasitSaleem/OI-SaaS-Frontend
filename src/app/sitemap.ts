@@ -39,6 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "bakery-pos-system",
         "bookstore-pos-system",
         "retail-store-pos-system",
+        "furniture-store-pos-system",
+        "jewelry-store-pos-system",
     ];
 
 
