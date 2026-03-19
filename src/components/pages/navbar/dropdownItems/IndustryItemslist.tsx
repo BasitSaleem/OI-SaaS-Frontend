@@ -216,6 +216,8 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Contractor Accounts' },
     { title: 'Project Quoting' },
   ],
+
+  
   'furniture-store-pos-system': [
     { title: 'Furniture Inventory Management' },
     { title: 'Custom Order Tracking' },
