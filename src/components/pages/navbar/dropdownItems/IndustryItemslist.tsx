@@ -75,6 +75,12 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
+  {
+    key: 'grocery-store-pos-system',
+    title: 'Grocery Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    category: 'retailer',
+  },
 
   // {
   //   key: 'hardware-store-pos',
@@ -229,6 +235,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Precious Metals Tracking' },
     { title: 'Gemstone Catalog' },
     { title: 'Appraisal Management' },
+  ],
+  'grocery-store-pos-system': [
+    { title: 'Grocery Inventory Management' },
+    { title: 'Barcode & SKU Tracking' },
+    { title: 'Shelf Life Monitoring' },
+    { title: 'Bulk Pricing & Discounts' },
   ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
