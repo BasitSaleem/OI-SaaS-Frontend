@@ -43,7 +43,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   useHeroAnimations(variant);
 
   const [shouldPlayVideo, setShouldPlayVideo] = useState(false);
-  const { shouldShowImage } = useSafariDetector();
+  const { shouldShowImage, isMobile } = useSafariDetector();
   const { videoSrc } = useVideoCache("/videos-s3/landing-page/hero-main-video.webm");
 
   // Refs
@@ -288,7 +288,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   /> */}
 
                     <div className="w-full h-full rounded-[40px] relative overflow-hidden owner-inventory-hero__video">
-                      {shouldShowImage ? (
+                      {shouldShowImage || isMobile ? (
                         <Image
                           src="/assets/home-page-images/hero-anim-banner.webp"
                           alt="Hero Fallback"
