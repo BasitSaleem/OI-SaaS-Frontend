@@ -4,7 +4,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 export const FURNITURE_STORE_UNIFIED_HEADING = "Challenges Holding Back Furniture Stores";
 
 export const FURNITURE_STORE_UNIFIED_PARAGRAPH =
-    "Furniture stores have special operational issues, which influence sales, delivery, and profitability. The following are some of the problems that most stores face";
+    "Furniture stores have special operational issues, which influence sales, delivery, and profitability. The following are some of the problems that most stores face.";
 
 export const FURNITURE_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
@@ -26,7 +26,7 @@ export const FURNITURE_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "furnitureUnifiedIcon3",
         title: "Slow Billing & Order Processing",
         description:
-            "Furniture purchases are usually customized, paid in installments, and scheduled. Paperwork,  handwritten invoices, and calculations slow down the checkout process and cause confusion.",
+            "Furniture purchases are usually customized, paid in installments, and scheduled. Paperwork, handwritten invoices, and calculations slow down the checkout process and cause confusion.",
     },
     {
         id: "4",
@@ -105,7 +105,7 @@ export const FURNITURE_STORE_WHY_CHOOSE_CARDS = [
     {
         id: "6",
         icon: "whychoseIcon6",
-        title: "Data-Driven Decision Makin",
+        title: "Data-Driven Decision Making",
         description:
             "Live sales and stock reports will assist you in making decisions on high profit products, fast-moving products, and seasonal trends.",
     },
@@ -126,7 +126,7 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         buttonColor: "var(--primary-purple)",
         list: [
             "POS Sales Management",
-            "Ecommerce & Online Orders",
+            "Ecommerce and Online Orders",
             "Centralized Multi-Channel Control",
         ]
     },
@@ -135,14 +135,14 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         title: "Better Reporting & Business Insights",
         description:
             "Our best point of sale software for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
-        imageSrc: "/assets/industries-pages/furniture-store-pos/furniture-store-why-chose-banner.webp",
+        imageSrc: "/assets/industries-pages/furniture-store-pos/furniture-store-better-reporting.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Identify fast and slow moving products.",
+            "Identify fast and slow moving products",
             "Forecast demand and plan smarter reorders",
-            "Track sales, profit margins, and revenue trends in real time.",
+            "Track sales, profit margins, and revenue trends in real time",
         ]
     },
 ];
@@ -155,21 +155,21 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
         title: "Custom Order & Advance Payment Tracking",
         description:
             "Track the balance due, advance payments, and delivery status of made-to-order furniture. Store all custom orders in a systematic manner between booking and final installation.",
-        imageSrc: "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card1.webp",
+        imageSrc: "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card3.webp",
     },
     {
         id: 2,
         title: "Fast & Accurate Billing",
         description:
             "Create professional invoices in a flash, with taxes, discounts, delivery fees, and partial payments. Speeds up the checkout process and retains complete pricing accuracy on each transaction.",
-        imageSrc: "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card2.webp",
+        imageSrc: "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card1.webp",
     },
     {
         id: 3,
         title: "Real-Time Inventory Tracking",
         description:
             "Stock updates automatically with every sale or purchase, reducing manual errors. Always be aware of what is available, what variants are available in what form and what is on display in the showroom.",
-        imageSrc: "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card3.webp",
+        imageSrc: "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card2.webp",
     },
     
     {
@@ -307,7 +307,7 @@ export const FURNITURE_STORE_FAQS = [
     {
         id: "1",
         question: "What is a POS system for a furniture store?",
-        answer: "It is software that is utilized to process sales, inventory, deliveries, and custom orders. Big products, colors, sizes, and materials remain tracked correctly.Warehouses and showrooms are in real time contact."
+        answer: "It is software that is utilized to process sales, inventory, deliveries, and custom orders. Big products, colors, sizes, and materials remain tracked correctly. Warehouses and showrooms are in real time contact."
     },
     {
         id: "2",
@@ -395,13 +395,13 @@ export const FURNITURE_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "2",
         title: "Real-Time Inventory",
-        description: "Inventory, options and finishes are updated in real-time. Mistakes are minimized and managers can make decisions quicke",
+        description: "Inventory, options and finishes are updated in real-time. Mistakes are minimized and managers can make decisions quicker",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
         title: "Mobile POS Support",
-        description: "Sales teams are able to sell on the showroom floor. Every customer receives a quote and invoice immediately",
+        description: "Sales teams are able to sell on the showroom floor. Every customer receives a quote and invoice immediately.",
         icon: "testWhychoseIcon3",
     },
     {

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/bookstore-pos/bookstore-hero-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/furniture-store-pos/furniture-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/bakery-pos/why-chose-banner.webp";
 
 import {
@@ -46,7 +46,7 @@ const Page = () => {
     <div>
       <SubIndustriesHero
         title="POS System for Furniture Stores That Controls Inventory & Sales"
-        description="Owners Inventory is a POS system that enables you to run your furniture store accurately, fast, and in full control. Order large quantities, manage custom orders, deliveries and payments all within a single intelligent system. All sales and stock movements remain updated in real time"
+        description="Owners Inventory is a POS system that enables you to run your furniture store accurately, fast, and in full control. Order large quantities, manage custom orders, deliveries and payments all within a single intelligent system. All sales and stock movements remain updated in real time."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"
