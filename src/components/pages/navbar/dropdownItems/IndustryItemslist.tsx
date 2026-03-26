@@ -81,6 +81,12 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
     category: 'retailer',
   },
+  {
+    key: 'clothing-store-pos-system',
+    title: 'Clothing Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    category: 'retailer',
+  },
 
   // {
   //   key: 'hardware-store-pos',
@@ -241,6 +247,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Barcode & SKU Tracking' },
     { title: 'Shelf Life Monitoring' },
     { title: 'Bulk Pricing & Discounts' },
+  ],
+  'clothing-store-pos-system': [
+    { title: 'Clothing Inventory Management' },
+    { title: 'Size, Color & Material Tracking' },
+    { title: 'Seasonal Collection Management' },
+    { title: 'Loyalty & Reward Programs' },
   ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
