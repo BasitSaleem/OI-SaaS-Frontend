@@ -8,6 +8,7 @@ import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
 import ContactModal from "@/components/models/ContactModal";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
+import { useVideoCache } from "@/hooks/useVideoCache";
 
 if (typeof window !== "undefined") {
   globalGsap.registerPlugin(ScrollTrigger);
@@ -17,6 +18,7 @@ function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const { shouldShowImage } = useSafariDetector();
+  const { videoSrc } = useVideoCache("/videos-s3/home-page-videos/trolly-anim.webm");
 
   useEffect(() => {
     const handleResize = () => {
@@ -80,7 +82,7 @@ function SmartWaytoSyncndSellSection() {
                 preload="metadata"
               >
                 <source
-                  src="/videos-s3/home-page-videos/trolly-anim.webm"
+                  src={videoSrc}
                   type="video/webm"
                 />
                 Your browser does not support the video tag.

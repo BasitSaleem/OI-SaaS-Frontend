@@ -14,6 +14,8 @@ import SubHeading from "../pages/typography/CardHeading";
 import HeroImageSlider from "./HeroImageSlider";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
 
+import { useVideoCache } from "@/hooks/useVideoCache";
+
 if (typeof window !== "undefined") {
   globalGsap.registerPlugin(ScrollTrigger);
 }
@@ -42,6 +44,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
   const [shouldPlayVideo, setShouldPlayVideo] = useState(false);
   const { shouldShowImage } = useSafariDetector();
+  const { videoSrc } = useVideoCache("/videos-s3/landing-page/hero-main-video.webm");
 
   // Refs
   const mainHeadingRef = useRef<HTMLHeadingElement>(null);
@@ -306,7 +309,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                           poster="/assets/home-page-images/hero-anim-banner.webp"
                         >
                           <source
-                            src="/videos-s3/landing-page/hero-main-video.webm"
+                            src={videoSrc}
                             type="video/webm"
                           />
                           Your browser does not support the video tag.
