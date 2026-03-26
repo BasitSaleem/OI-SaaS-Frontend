@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Grocery Store POS System | Efficient Inventory & Billing | Owners Inventory",
-  description: "Owners Inventory provides a specialized POS system for grocery stores to manage large inventories, simplify billing, and track sales performance in real-time.",
-  keywords: ["grocery pos", "grocery store management", "grocery inventory tracking", "billing software", "Owners Inventory"],
+  title: "Grocery Store POS System for Billing and Inventory",
+  description: "Grocery store POS system to manage billing, inventory, pricing, and stock in real time. Speed up checkout and maintain accurate inventory across your store.",
+  keywords: ["grocery store pos system", "pos system grocery store", "pos for grocery store", "pos system for grocery store", "grocery store pos systems", "best pos for grocery store", "best pos system for grocery store", "best grocery store pos", "grocery store pos software", "pos software for grocery store", "best pos software for grocery store"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/grocery-store-pos-system",
   },
