@@ -26,7 +26,7 @@ export const RETAIL_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "onlineVisibility",
         title: "Lack of Sales Insights",
         description:
-            "Online stores offer faster purchasing and massive discounts. Physical retail stores are under pressure since customers demand equal speed and accuracy in stores.",
+            "Lots of small shops are unaware of what sells and what does not. This leads to bad decision-making and lost opportunities.",
     },
     {
         id: "4",
@@ -267,21 +267,21 @@ export const RETAIL_STORE_TESTIMONIALS = [
         id: "1",
         name: "Ayesha",
         title: "Grocery Store Owner",
-        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: "Owners' Inventory POS changed how we manage our store. Billing is far quicker, and keeping track of stock is easy. It saves me a lot of time each day.",
     },
     {
         id: "2",
         name: "Ellen",
         title: "Grocery Store Owner",
-        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "Now our boutique moves so smoothly. All inventory notifications, sales data, and employee tracking are centralized. It actually makes us plan more and makes us avoid errors.",
     },
     {
         id: "3",
         name: "Sara",
         title: "Gift & Decor Shop Owner​",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
         text: "It was easy to feel overwhelmed by running a POS system for small retail stores. It was tense and time-consuming to handle inventory, sales, and staff simultaneously. Since we began using the POS system of Owners Inventory, everything is in one place. I can use the real-time stock reporting and sales data to make smarter decisions on a daily basis. It actually seems like the system is working with me.",
     },
     {

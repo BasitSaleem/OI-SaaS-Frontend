@@ -83,7 +83,7 @@ const Page = () => {
 
       <IndustriesCallToAction
         title="Manage Your Small Retail Business Today"
-        description="Control your store efficiently with the best POS system for small retail stores. Retailers using our best point of sale software for small retail business report faster checkouts, smarter inventory management, and happier customers every day"
+        description="Control your store efficiently with the best POS system for small retail stores. Retailers using our best point of sale software for small retail business report faster checkouts, smarter inventory management, and happier customers every day."
         ctaDesc="Request a Free Demo"
       />
 

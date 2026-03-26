@@ -51,7 +51,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
       {/* Media Content */}
       <div className={`${isEven ? "order-2 lg:order-2" : "order-2 lg:order-1"}`}>
         <div
-          className={`px-3 py-4 flex items-center justify-center lg:max-w-full md:max-w-[600px] mx-auto rounded-[30px] h-auto lg:h-[var(--container-height)]`}
+          className={`flex items-center justify-center lg:max-w-full md:max-w-[600px] mx-auto rounded-[30px] h-auto lg:h-[var(--container-height)]`}
           style={{
             width: containerWidth,
             "--container-height": containerHeight,
