@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/grocery-store-pos/jewelary-store-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/grocery-store-pos/jewelary-store-why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/grocery-store-pos/grocery-store-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/industries-pages/grocery-store-pos/grocery-store-why-chose-banner.webp";
 
 import {
   GROCERY_STORE_KEY_FEATURES_CARDS,

@@ -141,21 +141,21 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
         title: "Fast & Accurate Billing",
         description:
             "Quick product search and barcode scanning increase the speed of the check out and customer satisfaction.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card1.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card1.webp",
     },
     {
         id: 2,
         title: "Live Inventory Management",
         description:
             "All transactions are recorded in inventory and stock is always visible.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card2.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card2.webp",
     },
     {
         id: 3,
         title: "Purchase & Supplier Management",
         description:
             "Make purchase orders, delivery tracking and multiple suppliers without confusion.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card3.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card3.webp",
     },
     
     {
@@ -163,49 +163,49 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
         title: "Multi-Unit & Variant Support",
         description:
             "Sell products per unit, kg, gram, carton, or pack. Ideal when there are several packaging choices of the grocery products.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card4.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card4.webp",
     },
     {
         id: 5,
         title: "Customer & Credit Management",
         description:
             "Keep customer information, loyalty programs and credit cards to develop long-term customer relationships.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card5.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card5.webp",
     },
     {
         id: 6,
         title: "Expense & Cash Flow Tracking",
         description:
             "Monitor daily expenses and cash flow with complete financial transparency.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card6.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card6.webp",
     },
     {
         id: 7,
         title: "Online Grocery Integration",
         description:
             "Operate your grocery store online with synchronized stock and prices. Accept payments online and handle delivery orders without any hassles.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card7.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card7.webp",
     },
     {
         id: 8,
         title: "Multi-Branch Connectivity",
         description:
             "Control several grocery stores simultaneously with centralized control over inventory and sales.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card8.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card8.webp",
     },
       {
         id: 9,
         title: "Smart Reports & Analytics",
         description:
             "Understand sales trends, stock value, and profit margins with easy-to-read reports.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card9.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card9.webp",
     },
      {
         id: 10,
         title: "Staff Roles & Permissions",
         description:
             "Provide cashiers, supervisors and managers with secure access levels in order to secure sensitive data.",
-        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/jewelary-store-key-card9.webp",
+        imageSrc: "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card10.webp",
     },
     
 ];
@@ -260,14 +260,14 @@ export const GROCERY_STORE_TESTIMONIALS = [
     },
     {
         id: "2",
-        name: "Alice R.",
+        name: "Atif Aslam",
         title: "Interior Decor Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "This grocery POS helps to have everything in order and simplifies the restocking process. Our checkout time was immediately increased and customers are pleased with the quicker service.",
     },
     {
         id: "3",
-        name: "Marie A.",
+        name: "Mark R.",
         title: "Home Decor & Grocery Shop Owner​",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
         text: "Our products are thousands each day and we do not get mixed up. Reports enable us to make improved purchasing choices, minimize wastage, and have adequate stocks.",
@@ -276,7 +276,7 @@ export const GROCERY_STORE_TESTIMONIALS = [
         id: "4",
         name: "Sadaf Kanwal",
         title: "Home Decor & Grocery Shop Owner​",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
         text: "Prior to the use of this system, the expiry items were stressful to manage. All the sales and stock updates are now being tracked flawlessly. It saves time, mistakes are minimized and it is much easier to run our grocery store.",
     },
   
