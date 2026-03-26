@@ -42,7 +42,7 @@ const SmartTools: React.FC<SmartTools> = ({
   return (
     <section ref={sectionRef} className="">
       <div
-        className="w-full px-4 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] overflow-hidden bg-cover bg-center"
+        className="w-full px-4 xl:px-16 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage:
             "url('/assets/home-page-images/black-background.webp')",
