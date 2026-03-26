@@ -12,7 +12,7 @@ export const JEWELRY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "jewelryUnifiedIcon1",
         title: "Complex Inventory Management",
         description:
-            "Jewellery retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality Jewellery POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage",
+            "Jewellery retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality Jewellery POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
     },
     {
         id: "2",
@@ -111,7 +111,7 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
     },
     {
         id: "2",
-        title: "Better Reporting & Business Insights",
+        title: "Better Decision Reporting and Analytics",
         description:
             "Top-notch reporting and analytics help jewellery store owners to understand the valuation of their stocks, sales performance, and profitability. This assists in making wiser decisions when doing purchases, reorders, and pricing strategy.",
         imageSrc: "/assets/industries-pages/jewelry-store-pos/jewelary-store-better-decision.webp",
@@ -119,10 +119,10 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Live sales and inventory value.",
-            "Monitor metal usage and minimize wastage.",
-            "Find slow-moving and fast-moving designs.",
-            "Review profit margin by category and type of metal.",
+            "Live sales and inventory value",
+            "Monitor metal usage and minimize wastage",
+            "Find slow-moving and fast-moving designs",
+            "Review profit margin by category and type of metal",
         ]
     },
 ];
@@ -247,7 +247,7 @@ export const JEWELRY_STORE_TESTIMONIALS = [
     },
     {
         id: "2",
-        name: "Alice R.",
+        name: "Alexendar R.",
         title: "Interior Decor Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "We opened 3 new branches efficiently all thanks to the centralized POS system for Jewellery  stores that Owners Inventory catered for us.",
@@ -256,7 +256,7 @@ export const JEWELRY_STORE_TESTIMONIALS = [
         id: "3",
         name: "Marie A.",
         title: "Home Decor & Jewelry Shop Owner​",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
         text: "Our inventory accuracy improved drastically. With real-time tracking and detailed reporting, we now finally have full control over our high-value items.",
     },
   
