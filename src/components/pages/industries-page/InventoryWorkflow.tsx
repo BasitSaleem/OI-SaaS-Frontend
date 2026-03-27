@@ -60,7 +60,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
     setProgress(calculatedProgress);
   };
 
-  const swiperKey = isDesktop ? "desktop-loop" : "mobile-no-loop";
+
 
   return (
     <section ref={sectionRef} className="wrapper py-16 lg:py-24 overflow-hidden">
@@ -79,21 +79,22 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
 
       {isMounted && (
         <Swiper
-          key={swiperKey}
+          key="inventory-swiper"
           onSwiper={setSwiperInstance}
           modules={[Autoplay]}
           spaceBetween={2}
           slidesPerView={1}
-          loop={isDesktop && steps.length > 3}
+          loop={false}
           onInit={(swiper) => {
             handleProgress(swiper);
-            swiper.autoplay.stop(); // Stop initially until visible
+            swiper.autoplay.stop(); 
           }}
           onSlideChange={handleProgress}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
+            stopOnLastSlide: true,
           }}
           breakpoints={{
             768: {

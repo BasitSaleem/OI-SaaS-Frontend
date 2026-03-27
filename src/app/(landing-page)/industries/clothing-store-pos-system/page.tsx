@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/clothing-store-pos/grocery-store-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/clothing-store-pos/grocery-store-why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/clothing-store-pos/clothing-store-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/industries-pages/clothing-store-pos/clothing-store-why-chose-banner.webp";
 
 import {
   CLOTHING_STORE_KEY_FEATURES_CARDS,
@@ -70,7 +70,7 @@ const Page = () => {
       />
 
       <KeyHighlights
-        heading="Features of Our POS System for Clothing Stores"
+        heading="Our Key Features"
         features={CLOTHING_STORE_KEY_FEATURES_CARDS}
       />
 

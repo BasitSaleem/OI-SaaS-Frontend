@@ -105,7 +105,7 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
         title: "Omni-channel and Sales Integration",
         description:
             "The Owners POS updates inventory with every sale in real time. By connecting all the sales channels, such as physical stores, online platforms, and marketplaces, enables brands to operate under one system. This keeps stocks updated and provides a smooth shopping experience to customers. We provide:",
-        imageSrc: "/assets/industries-pages/clothing-store-pos/jewelary-store-omini-chanel.webp",
+        imageSrc: "/assets/industries-pages/clothing-store-pos/clothing-store-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
@@ -120,7 +120,7 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
         title: "Better Decisions with Reporting and Analytics",
         description:
             "Accurate POS reporting provides store owners with clear visibility into size-wise sales, color performance, style trends, and profitability, which allows them to improve stock management and margin control.",
-        imageSrc: "/assets/industries-pages/clothing-store-pos/jewelary-store-better-decision.webp",
+        imageSrc: "/assets/industries-pages/clothing-store-pos/clothing-store-better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
@@ -365,37 +365,37 @@ export const CLOTHING_STORE_TESTIMONIAL_DATA = {
 export const CLOTHING_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "1",
-        title: "Made for Apparel Variants",
+        title: "Apparel Variants",
         description: "The system manages sizes, colors, styles, and fabrics with 100% accuracy. This makes it the best POS system for clothing stores that handle a huge variety of selections.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
-        title: "Faster Billing & Better Customer Flow",
+        title: "Faster Billing",
         description: "Fast checkout, barcode scanning, and intelligent product search save queue time. Your team bills at higher rates, your customers remain satisfied, and sales grow automatically.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
-        title: "Accurate Stock in Every Branch",
+        title: "Branch Stock Accuracy",
         description: "Inventory is kept current regardless of the number of stores you have. Retailers believe that it is the best POS system for retail clothing stores since it avoids the confusion of stock.",
         icon: "testWhychoseIcon3",
     },
     {
         id: "4",
-        title: "Built-In Customer Profiles",
+        title: "Customer Profiles",
         description: "Save sizes, shopping history, and preferences. This will assist in managing loyalty programs, targeted offers, and repeat sales campaigns.",
         icon: "testWhychoseIcon4",
     },
     {
         id: "5",
-        title: "Real-Time Sales Insights",
+        title: "Sales Insights",
         description: "Receive reports about the best sellers, slow movers, peak hours, and employee output. You buy smarter when you have reliable data to rely on.",
         icon: "testWhychoseIcon5",
     },
     {
         id: "6",
-        title: "Simple, Clean & Easy for Staff",
+        title: "Easy for Staff",
         description: "The interface is simple and comprehensible even to the first-time user. The training period is minimal, and the error is minimized.",
         icon: "testWhychoseIcon6",
     },
