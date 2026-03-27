@@ -6,6 +6,7 @@ import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 import { ArrowDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
 
 export interface IndustryUnifiedPlatformCard {
   icon: string;
@@ -18,8 +19,8 @@ interface IndustryUnifiedPlatformProps {
   paragraph: string;
   cards: IndustryUnifiedPlatformCard[];
   textAlign?: "center" | "left";
-  /** Pass your page-specific icons component here (e.g. PosHardwarePageIcons or PosBakeryPageIcons) */
-  IconsComponent?: React.ComponentType<{ name: any; size?: number; className?: string }>;
+  /** The name of the icon set to use (e.g. "bakery", "retail") */
+  iconSet?: IndustryIconSet;
 }
 
 export default function IndustryUnifiedPlatform({
@@ -27,7 +28,7 @@ export default function IndustryUnifiedPlatform({
   paragraph,
   cards,
   textAlign = "left",
-  IconsComponent,
+  iconSet,
 }: IndustryUnifiedPlatformProps) {
   const [showAll, setShowAll] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -87,13 +88,14 @@ export default function IndustryUnifiedPlatform({
                           height={56}
                           className="h-9 w-9 lg:w-11 lg:h-11"
                         />
-                      ) : IconsComponent ? (
-                        <IconsComponent
-                          name={card.icon as any}
+                      ) : (
+                        <IndustryIcon
+                          set={iconSet}
+                          name={card.icon}
                           size={56}
                           className="h-9 w-9 lg:w-14 lg:h-14 child-svg-full"
                         />
-                      ) : null}
+                      )}
                     </div>
                     <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-['onest'] font-semibold text-[var(--text-dark)]">
                       {card.title}

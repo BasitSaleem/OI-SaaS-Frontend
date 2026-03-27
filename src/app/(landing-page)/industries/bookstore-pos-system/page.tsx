@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/bookstore-pos/bookstore-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/bookstore-pos/bookstore-why-chose-banner.webp";
@@ -20,7 +18,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posBookstorePageIcons from "@/components/icons/posBookstorePageIcons";
 import {
   BOOKSTORE_UNIFIED_CARDS,
   BOOKSTORE_UNIFIED_HEADING,
@@ -59,7 +56,7 @@ const Page = () => {
         heading={BOOKSTORE_UNIFIED_HEADING}
         paragraph={BOOKSTORE_UNIFIED_PARAGRAPH}
         cards={BOOKSTORE_UNIFIED_CARDS}
-        IconsComponent={posBookstorePageIcons}
+        iconSet="bookstore"
       />
 
       <WhyChoosePOS
@@ -67,7 +64,7 @@ const Page = () => {
         paragraph="Owners Inventory eliminates operational confusion by connecting sales, stock, suppliers, and reporting in one unified platform."
         cards={BOOKSTORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posBookstorePageIcons}
+        iconSet="bookstore"
       />
 
       <KeyHighlights
@@ -112,7 +109,7 @@ const Page = () => {
         whyChooseTitle={BOOKSTORE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={BOOKSTORE_TESTIMONIAL_DATA.whyChooseDescription}
         features={BOOKSTORE_TESTIMONIAL_FEATURES}
-        IconsComponent={posBookstorePageIcons}
+        iconSet="bookstore"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

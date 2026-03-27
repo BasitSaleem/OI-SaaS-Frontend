@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";

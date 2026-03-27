@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import imageOne from "../../../../../public/assets/marketing-assets/Frame1.png";
 import {
