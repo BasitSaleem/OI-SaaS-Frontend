@@ -42,7 +42,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'bakery-pos-system',
     title: 'Bakery POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/bakeries.svg",
     category: 'retailer',
   },
   {
@@ -54,37 +54,37 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'bookstore-pos-system',
     title: 'Bookstore POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/bookstore.svg",
     category: 'retailer',
   },
   {
     key: 'retail-store-pos-system',
     title: 'Retail Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
     category: 'retailer',
   },
   {
     key: 'furniture-store-pos-system',
     title: 'Furniture Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/furniture.svg",
     category: 'retailer',
   },
   {
     key: 'jewelry-store-pos-system',
     title: 'Jewelry Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/jewllery.svg",
     category: 'retailer',
   },
   {
     key: 'grocery-store-pos-system',
     title: 'Grocery Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/grocery.svg",
     category: 'retailer',
   },
   {
     key: 'clothing-store-pos-system',
     title: 'Clothing Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
     category: 'retailer',
   },
 
