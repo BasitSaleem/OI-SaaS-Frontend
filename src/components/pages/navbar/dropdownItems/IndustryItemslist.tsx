@@ -48,7 +48,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'hardware-pos-system',
     title: 'Hardware POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/retail-ecommerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
     category: 'wholesale',
   },
   {
