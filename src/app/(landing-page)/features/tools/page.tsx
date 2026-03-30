@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/features-page/general-tools/general-tools-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/features-page/general-tools/why-chose-banner.webp";

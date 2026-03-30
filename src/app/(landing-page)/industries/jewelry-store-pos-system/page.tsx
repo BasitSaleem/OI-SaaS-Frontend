@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/jewelary-store-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/jewelary-store-why-chose-banner.webp";
@@ -19,7 +17,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posJewelryStorePageIcons from "@/components/icons/posJewelryStorePageIcons";
 import {
   JEWELRY_STORE_UNIFIED_CARDS,
   JEWELRY_STORE_UNIFIED_HEADING,
@@ -58,7 +55,7 @@ const Page = () => {
         heading={JEWELRY_STORE_UNIFIED_HEADING}
         paragraph={JEWELRY_STORE_UNIFIED_PARAGRAPH}
         cards={JEWELRY_STORE_UNIFIED_CARDS}
-        IconsComponent={posJewelryStorePageIcons}
+        iconSet="jewelry"
       />
 
       <WhyChoosePOS
@@ -66,7 +63,7 @@ const Page = () => {
         paragraph="Sales, stock, gold rates, suppliers, and reports are connected to one safe POS system by Owners Inventory. It eradicates human errors and holds all the departments in tune with each other."
         cards={JEWELRY_STORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posJewelryStorePageIcons}
+        iconSet="jewelry"
       />
 
       <KeyHighlights
@@ -111,7 +108,7 @@ const Page = () => {
         whyChooseTitle={JEWELRY_STORE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={JEWELRY_STORE_TESTIMONIAL_DATA.whyChooseDescription}
         features={JEWELRY_STORE_TESTIMONIAL_FEATURES}
-        IconsComponent={posJewelryStorePageIcons}
+        iconSet="jewelry"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

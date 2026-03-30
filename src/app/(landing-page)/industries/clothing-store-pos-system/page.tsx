@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/clothing-store-pos/clothing-store-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/clothing-store-pos/clothing-store-why-chose-banner.webp";
@@ -19,7 +17,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posClothingStorePageIcons from "@/components/icons/posClothingStorePageIcons";
 import {
   CLOTHING_STORE_UNIFIED_CARDS,
   CLOTHING_STORE_UNIFIED_HEADING,
@@ -58,7 +55,7 @@ const Page = () => {
         heading={CLOTHING_STORE_UNIFIED_HEADING}
         paragraph={CLOTHING_STORE_UNIFIED_PARAGRAPH}
         cards={CLOTHING_STORE_UNIFIED_CARDS}
-        IconsComponent={posClothingStorePageIcons}
+        iconSet="clothing"
       />
 
       <WhyChoosePOS
@@ -66,7 +63,7 @@ const Page = () => {
         paragraph="Owners inventory software allows clothing stores to manage their sales operations efficiently. The stock remains visible accurately. Customers can check out easily  without being stuck during peak hours."
         cards={CLOTHING_STORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posClothingStorePageIcons}
+        iconSet="clothing"
       />
 
       <KeyHighlights
@@ -111,7 +108,7 @@ const Page = () => {
         whyChooseTitle={CLOTHING_STORE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={CLOTHING_STORE_TESTIMONIAL_DATA.whyChooseDescription}
         features={CLOTHING_STORE_TESTIMONIAL_FEATURES}
-        IconsComponent={posClothingStorePageIcons}
+        iconSet="clothing"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

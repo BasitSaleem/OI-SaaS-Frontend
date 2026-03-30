@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/pos-hardware/hardware-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/pos-hardware/why-chose-banner.webp";
@@ -12,7 +10,6 @@ import {
 } from "@/constant/subindustries/posHardwareData";
 
 
-import TrustedBySection from "@/components/common-components/TrustedBySection";
 import IndustriesCallToAction from "@/components/pages/industries-page/IndustriesCallToAction";
 
 import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
@@ -20,9 +17,7 @@ import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoo
 import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesHero";
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
-import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import PosHardwarePageIcons from "@/components/icons/posHardwarePageIcons";
 import {
   HARDWARE_UNIFIED_CARDS,
   HARDWARE_UNIFIED_HEADING,
@@ -55,18 +50,13 @@ const Page = () => {
         variant="animation2"
       />
 
-      {/* <TrustedBySection
-        heading="Rated on Leading Review Platforms"
-        paragraph="Big supermarkets, mini-marts, and wholesale stores trust Owners Inventory for fast, accurate, and error-free checkout. Brands like ASK Food Industries and Al-Asif use our POS to bill in real time, monitor stock, and deliver better customer service."
-      /> */}
-
       <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
       <IndustryUnifiedPlatform
         heading={HARDWARE_UNIFIED_HEADING}
         paragraph={HARDWARE_UNIFIED_PARAGRAPH}
         cards={HARDWARE_UNIFIED_CARDS}
-        IconsComponent={PosHardwarePageIcons}
+        iconSet="hardware"
       />
 
       <WhyChoosePOS
@@ -74,7 +64,7 @@ const Page = () => {
         paragraph="The Owners Inventory removes operational confusion by linking sales, stock, suppliers and reports into a single intelligent system. All the activities in your store are automatically updated and kept."
         cards={Hardware_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={PosHardwarePageIcons}
+        iconSet="hardware"
       />
 
       <KeyHighlights
@@ -122,7 +112,7 @@ const Page = () => {
         whyChooseTitle={HARDWARE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={HARDWARE_TESTIMONIAL_DATA.whyChooseDescription}
         features={HARDWARE_TESTIMONIAL_FEATURES}
-        IconsComponent={PosHardwarePageIcons}
+        iconSet="hardware"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

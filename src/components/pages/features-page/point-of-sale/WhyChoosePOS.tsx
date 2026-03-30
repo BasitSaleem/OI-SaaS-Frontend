@@ -5,6 +5,7 @@ import MainHeading from "../../typography/MainHeading";
 import Paragraph from "../../typography/Paragraph";
 import CardHeading from "../../typography/CardHeading";
 import { useEffect, useState } from "react";
+import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
 
 interface CardItem {
   icon: string | StaticImageData;
@@ -19,8 +20,8 @@ interface WhyChoosePOSProps {
   mainImage?: string | StaticImageData;
   mainVideo?: string;
   backgroundImage?: string | StaticImageData;
-  /** Pass your page-specific icons component here (e.g. PosHardwarePageIcons or PosBakeryPageIcons) */
-  IconsComponent?: React.ComponentType<{ name: any; size?: number; className?: string }>;
+  /** The name of the icon set to use (e.g. "bakery", "retail") */
+  iconSet?: IndustryIconSet;
 }
 
 export default function WhyChoosePOS({
@@ -30,7 +31,7 @@ export default function WhyChoosePOS({
   mainImage,
   backgroundImage,
   mainVideo,
-  IconsComponent,
+  iconSet,
 }: WhyChoosePOSProps) {
 
    const [isTablet, setIsTablet] = useState(false);
@@ -83,9 +84,7 @@ export default function WhyChoosePOS({
                   <div className="flex-shrink-0 self-start">
                     <div className="h-10 w-10">
                       {typeof card.icon === "string" && !card.icon.startsWith("/") ? (
-                        IconsComponent ? (
-                          <IconsComponent name={card.icon as any} size={40} />
-                        ) : null
+                        <IndustryIcon set={iconSet} name={card.icon} size={40} />
                       ) : (
                         <Image
                           src={card.icon as string | StaticImageData}

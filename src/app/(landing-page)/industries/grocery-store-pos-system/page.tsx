@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/grocery-store-pos/grocery-store-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/grocery-store-pos/grocery-store-why-chose-banner.webp";
@@ -19,7 +17,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posGroceryStorePageIcons from "@/components/icons/posGroceryStorePageIcons";
 import {
   GROCERY_STORE_UNIFIED_CARDS,
   GROCERY_STORE_UNIFIED_HEADING,
@@ -58,7 +55,7 @@ const Page = () => {
         heading={GROCERY_STORE_UNIFIED_HEADING}
         paragraph={GROCERY_STORE_UNIFIED_PARAGRAPH}
         cards={GROCERY_STORE_UNIFIED_CARDS}
-        IconsComponent={posGroceryStorePageIcons}
+        iconSet="grocery"
       />
 
       <WhyChoosePOS
@@ -66,7 +63,7 @@ const Page = () => {
         paragraph="Owner Inventory integrates the sales, stock, suppliers and reports together into a single smart grocery POS. All the store operations are automatically updated and kept in sync."
         cards={GROCERY_STORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posGroceryStorePageIcons}
+        iconSet="grocery"
       />
 
       <KeyHighlights
@@ -111,7 +108,7 @@ const Page = () => {
         whyChooseTitle={GROCERY_STORE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={GROCERY_STORE_TESTIMONIAL_DATA.whyChooseDescription}
         features={GROCERY_STORE_TESTIMONIAL_FEATURES}
-        IconsComponent={posGroceryStorePageIcons}
+        iconSet="grocery"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

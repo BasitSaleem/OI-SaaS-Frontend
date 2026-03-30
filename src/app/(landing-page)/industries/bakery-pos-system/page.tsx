@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/bakery-pos/bakery-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/bakery-pos/why-chose-banner.webp";
@@ -20,7 +18,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posBakeryPageIcons from "@/components/icons/posBakeryPageIcons";
 import {
   BAKERY_UNIFIED_CARDS,
   BAKERY_UNIFIED_HEADING,
@@ -64,7 +61,7 @@ const Page = () => {
         heading={BAKERY_UNIFIED_HEADING}
         paragraph={BAKERY_UNIFIED_PARAGRAPH}
         cards={BAKERY_UNIFIED_CARDS}
-        IconsComponent={posBakeryPageIcons}
+        iconSet="bakery"
       />
 
       <WhyChoosePOS
@@ -72,7 +69,7 @@ const Page = () => {
         paragraph="Every feature of our Bakery POS System was created to help take the pressure off and streamline your processes."
         cards={BAKERY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posBakeryPageIcons}
+        iconSet="bakery"
       />
 
       <KeyHighlights
@@ -117,7 +114,7 @@ const Page = () => {
         whyChooseTitle={BAKERY_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={BAKERY_TESTIMONIAL_DATA.whyChooseDescription}
         features={BAKERY_TESTIMONIAL_FEATURES}
-        IconsComponent={posBakeryPageIcons}
+        iconSet="bakery"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

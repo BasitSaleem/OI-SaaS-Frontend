@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/retail-store-pos/retail-store-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/retail-store-pos/retail-store-why-chose-banner.webp";
@@ -20,7 +18,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posRetailStorePageIcons from "@/components/icons/posRetailStorePageIcons";
 import {
   RETAIL_STORE_UNIFIED_CARDS,
   RETAIL_STORE_UNIFIED_HEADING,
@@ -59,7 +56,7 @@ const Page = () => {
         heading={RETAIL_STORE_UNIFIED_HEADING}
         paragraph={RETAIL_STORE_UNIFIED_PARAGRAPH}
         cards={RETAIL_STORE_UNIFIED_CARDS}
-        IconsComponent={posRetailStorePageIcons}
+        iconSet="retail"
       />
 
       <WhyChoosePOS
@@ -67,7 +64,7 @@ const Page = () => {
         paragraph="Our POS system for small retail stores centralizes billing, inventory, payments, reports, and employee management, giving owners full control and reducing operational confusion."
         cards={RETAIL_STORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posRetailStorePageIcons}
+        iconSet="retail"
       />
 
       <KeyHighlights
@@ -112,7 +109,7 @@ const Page = () => {
         whyChooseTitle={RETAIL_STORE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={RETAIL_STORE_TESTIMONIAL_DATA.whyChooseDescription}
         features={RETAIL_STORE_TESTIMONIAL_FEATURES}
-        IconsComponent={posRetailStorePageIcons}
+        iconSet="retail"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

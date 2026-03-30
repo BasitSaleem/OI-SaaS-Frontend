@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import {
   ABOUT_HERO_CONTENT,
@@ -15,13 +13,11 @@ import {
 import WhoWeAre from "@/components/pages/about-us/whoWeAre";
 import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
 import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
-import dynamic from "next/dynamic";
-const MapComponent = dynamic(() => import("@/components/pages/about-us/MapComponent"), {
-  ssr: false,
-});
 import AboutHero from "@/components/pages/about-us/aboutHero";
 import OurPhilosophy from "@/components/pages/about-us/ourPhilosophy";
 import WhoWeServe from "@/components/pages/about-us/whoWeServe";
+
+import MapComponentDynamic from "@/components/pages/about-us/MapComponentDynamic";
 
 const Page = () => {
   return (
@@ -61,7 +57,7 @@ const Page = () => {
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <MapComponent />
+        <MapComponentDynamic />
       </div>
       </div>
   );

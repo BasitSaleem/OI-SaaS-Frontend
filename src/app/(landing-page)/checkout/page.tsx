@@ -455,6 +455,8 @@ const CheckoutContent = () => {
                             alt=""
                             width={78}
                             height={30}
+                            priority
+                            sizes="(max-width: 768px) 40px, (max-width: 1024px) 64px, 78px"
                             className="absolute  right-[-30px] bottom-[-8px] md:bottom-[-18px] lg:bottom-[-20px] w-10 md:w-16 lg:w-[78px] rotate-[-90deg]"
                           />
                         </div>

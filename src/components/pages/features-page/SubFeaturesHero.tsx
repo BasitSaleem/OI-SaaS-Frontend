@@ -171,6 +171,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                       height={460}
                       className={`w-full object-cover rounded-3xl ${imageClassName}`}
                       priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 743px, 1000px"
                     />
                   ) : isTablet && image ? (
                     <Image
@@ -180,6 +181,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                       height={460}
                       className={`w-full object-cover rounded-3xl ${imageClassName}`}
                       priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 743px, 1000px"
                     />
                   ) : video ? (
                     <video

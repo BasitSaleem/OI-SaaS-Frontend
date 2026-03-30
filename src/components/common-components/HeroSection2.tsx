@@ -222,6 +222,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   fill
                   priority
                   fetchPriority="high"
+                  sizes="100vw"
                   className="object-cover object-center"
                 />
               </div>
@@ -296,6 +297,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                           height={650}
                           className="w-full h-full object-cover rounded-3xl"
                           priority
+                          sizes="(max-width: 768px) 250px, (max-width: 1024px) 300px, 498px"
                         />
                       ) : isInView ? (
                         <video

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import heroBanner from "../../../../../public/assets/industries-pages/furniture-store-pos/furniture-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/bakery-pos/why-chose-banner.webp";
@@ -20,7 +18,6 @@ import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesH
 
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
-import posFurnitureStorePageIcons from "@/components/icons/posFurnitureStorePageIcons";
 import {
   FURNITURE_STORE_UNIFIED_CARDS,
   FURNITURE_STORE_UNIFIED_HEADING,
@@ -59,7 +56,7 @@ const Page = () => {
         heading={FURNITURE_STORE_UNIFIED_HEADING}
         paragraph={FURNITURE_STORE_UNIFIED_PARAGRAPH}
         cards={FURNITURE_STORE_UNIFIED_CARDS}
-        IconsComponent={posFurnitureStorePageIcons}
+        iconSet="furniture"
       />
 
       <WhyChoosePOS
@@ -67,7 +64,7 @@ const Page = () => {
         paragraph="Owners Inventory integrates your sales, inventory, suppliers, custom orders and reports into a single smart platform."
         cards={FURNITURE_STORE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-        IconsComponent={posFurnitureStorePageIcons}
+        iconSet="furniture"
       />
 
       <KeyHighlights
@@ -112,7 +109,7 @@ const Page = () => {
         whyChooseTitle={FURNITURE_STORE_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={FURNITURE_STORE_TESTIMONIAL_DATA.whyChooseDescription}
         features={FURNITURE_STORE_TESTIMONIAL_FEATURES}
-        IconsComponent={posFurnitureStorePageIcons}
+        iconSet="furniture"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

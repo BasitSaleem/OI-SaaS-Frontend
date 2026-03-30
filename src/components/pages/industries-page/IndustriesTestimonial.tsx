@@ -16,6 +16,7 @@ import {
   Pointer, 
   AppWindow 
 } from "lucide-react";
+import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
 
 interface TestimonialSlide {
   name: string;
@@ -44,8 +45,8 @@ interface IndustriesTestimonialProps {
   whyChooseTitle?: string;
   whyChooseDescription?: string;
   features?: Feature[];
-  /** Pass your page-specific icons component here (e.g. PosHardwarePageIcons or PosBakeryPageIcons) */
-  IconsComponent?: React.ComponentType<{ name: any; size?: number; className?: string }>;
+  /** The name of the icon set to use (e.g. "bakery", "retail") */
+  iconSet?: IndustryIconSet;
 }
 
 const DEFAULT_GRADIENT_BACKGROUND = `
@@ -103,7 +104,7 @@ const IndustriesTestimonial = ({
   whyChooseTitle = "Why Choose Our System?",
   whyChooseDescription = "Our POS system for Hardware stores ensures transparent control, fast billing, and accurate inventory, making daily operations seamless.",
   features = DEFAULT_FEATURES,
-  IconsComponent,
+  iconSet,
 }: IndustriesTestimonialProps) => {
   const [visibleIndices, setVisibleIndices] = useState<number[]>([0]);
 
@@ -246,9 +247,7 @@ const IndustriesTestimonial = ({
                       description={feature.description}
                       icon={
                         typeof feature.icon === "string" ? (
-                          IconsComponent ? (
-                            <IconsComponent name={feature.icon as any} size={44} />
-                          ) : null
+                          <IndustryIcon set={iconSet} name={feature.icon} size={44} />
                         ) : (
                           feature.icon
                         )

@@ -1,3 +1,5 @@
+"use client";
+
 import BrandsSwiper from "@/components/slider/BrandsSwiper";
 import MainHeading from "../typography/MainHeading";
 import Image from "next/image";

@@ -159,6 +159,7 @@ const NavItems = () => {
                               : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
                           } hover:bg-gray-50 transition-all duration-200`}
                           onMouseEnter={() => setSelectedFeatureKey(item.key)}
+                          onClick={close}
                         >
                           <Image
                             src={item.icon}
@@ -334,6 +335,7 @@ const NavItems = () => {
                               : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
                           } hover:bg-gray-50 transition-all duration-200`}
                           onMouseEnter={() => setSelectedIndustryKey(item.key)}
+                          onClick={close}
                         >
                           <Image
                             src={item.icon}
@@ -518,6 +520,7 @@ const NavItems = () => {
                     href={`/${item.key.toLowerCase()}`}
                     className="flex items-center gap-2 px-4 py-4 border border-[var(--border-muted)] rounded-xl hover:bg-gray-100 hover:border-[var(--primary-purple)]"
                      onMouseEnter={() => setSelectedCompanyKey(item.key)}
+                     onClick={close}
                   >
                     <Image
                       src={item.icon}
