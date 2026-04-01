@@ -27,7 +27,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-[40px] p-6 md:p-10 shadow-[0_10px_50px_rgba(0,0,0,0.08)] w-full max-w-[700px] mx-auto lg:ml-auto">
+    <div className="bg-white rounded-[20px] sm:rounded-[40px] p-6 md:p-10 shadow-[0_10px_50px_rgba(0,0,0,0.08)] w-full max-w-[700px] mx-auto lg:ml-auto">
       <div className="text-center mb-10">
         {/* <h2 className="lg:text-[32px] sm:text-[28px] text-2xl leading-[130%] font-medium font-['onest'] text-[var(--text-dark)] mb-6">
                     Reach Out to Us

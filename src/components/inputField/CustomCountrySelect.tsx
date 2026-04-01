@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { getCountries, getCountryCallingCode } from 'react-phone-number-input/input';
 import type { Country } from 'react-phone-number-input/input';
 import en from 'react-phone-number-input/locale/en.json'; // Importing English country names
@@ -21,7 +22,13 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
     ...rest
 }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
     const dropdownRef = useRef<HTMLDivElement>(null);
+    const searchInputRef = useRef<HTMLInputElement>(null);
+    const pathname = usePathname();
+
+    const isContactPage = pathname?.includes('/contact');
+    const widthClass = isContactPage ? 'min-w-[240px] max-w-[240px] sm:min-w-[340px] sm:max-w-[340px] xl:min-w-[260px] xl:max-w-[260px]' : 'min-w-[250px] max-w-[250px] md:min-w-[300px] md:max-w-[300px] lg:min-w-[340px] lg:max-w-[340px]';
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -33,6 +40,12 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
 
         if (isOpen) {
             document.addEventListener('mousedown', handleClickOutside);
+            // Focus search input when opening
+            setTimeout(() => {
+                searchInputRef.current?.focus();
+            }, 100);
+        } else {
+            setSearchQuery(''); // Reset search when closing
         }
 
         return () => {
@@ -41,6 +54,13 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
     }, [isOpen]);
 
     const countries = getCountries();
+
+    const filteredCountries = countries.filter((country) => {
+        const name = labels[country]?.toLowerCase() || '';
+        const code = getCountryCallingCode(country);
+        const query = searchQuery.toLowerCase();
+        return name.includes(query) || code.includes(query) || `+${code}`.includes(query);
+    });
 
     const selectedCountry = value as Country;
     const FlagComponent = selectedCountry ? flags[selectedCountry] : undefined;
@@ -68,38 +88,60 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
 
             {isOpen && (
                 <div
-                    className="absolute top-full left-0 -ml-2 z-50 mt-1 min-w-[200px] max-w-[250px] bg-white shadow-lg overflow-y-auto custom-scrollbar overscroll-y-contain"
+                    className={`absolute top-full left-0 -ml-2 z-50 mt-1 ${widthClass} bg-white shadow-lg flex flex-col`}
                     style={{
-                        maxHeight: '350px',
                         border: '1px solid #E2E2E2',
                         borderRadius: '16px',
+                        overflow: 'hidden'
                     }}
                 >
-                    {countries.map((c) => {
-                        const country = c as Country;
-                        const CountryFlag = flags[country];
-                         return (
-                            <button
-                                key={country}
-                                type="button"
-                                className={`flex items-center w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors ${selectedCountry === country ? 'bg-gray-50' : ''}`}
-                                onClick={() => {
-                                    onChange(country);
-                                    setIsOpen(false);
-                                }}
-                            >
-                                <span className="country-flag-container mr-3 w-6 h-4 flex-shrink-0">
-                                   {CountryFlag && <CountryFlag title={labels[country]} />}
-                                </span>
-                                <span className="flex-1 text-sm text-[#231F20] font-['Onest'] truncate">
-                                    {labels[country]}
-                                </span>
-                                <span className="text-xs text-gray-400 font-['Onest'] ml-2">
-                                    +{getCountryCallingCode(country)}
-                                </span>
-                            </button>
-                        );
-                    })}
+                    <div className="p-3 border-b border-gray-100 flex-shrink-0">
+                        <input
+                            ref={searchInputRef}
+                            type="text"
+                            placeholder="Search country..."
+                            className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:border-[#795CF5] transition-colors"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                    </div>
+                    <div 
+                        className="overflow-y-auto custom-scrollbar" 
+                        style={{ maxHeight: '280px', overscrollBehavior: 'contain' }}
+                    >
+                        {filteredCountries.length > 0 ? (
+                            filteredCountries.map((c) => {
+                                const country = c as Country;
+                                const CountryFlag = flags[country];
+                                return (
+                                    <button
+                                        key={country}
+                                        type="button"
+                                        className={`flex items-center w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors ${selectedCountry === country ? 'bg-gray-50' : ''}`}
+                                        onClick={() => {
+                                            onChange(country);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        <span className="country-flag-container mr-3 w-6 h-4 flex-shrink-0">
+                                           {CountryFlag && <CountryFlag title={labels[country]} />}
+                                        </span>
+                                        <span className="flex-1 text-sm whitespace-normal text-[#231F20] font-['Onest'] truncate">
+                                            {labels[country]}
+                                        </span>
+                                        <span className="text-xs text-gray-400 font-['Onest'] ml-2">
+                                            +{getCountryCallingCode(country)}
+                                        </span>
+                                    </button>
+                                );
+                            })
+                        ) : (
+                            <div className="px-4 py-3 text-sm text-gray-500 text-center">
+                                No countries found
+                            </div>
+                        )}
+                    </div>
                 </div>
             )}
         </div>
