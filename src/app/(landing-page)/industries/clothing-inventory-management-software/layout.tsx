@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Inventory Management Software for Clothing Stores",
-  description: "Advanced inventory management software for clothing stores to manage sizes, colors, inventory, billing, and sales in real time. Keep stock accurate and improve efficiency.",
-  keywords: ["inventory management software for clothing store", "clothing store inventory management", "inventory control for clothing retail", "best inventory software for clothing store"],
+  title: "Clothing Inventory Management Software | Owners Inventory",
+  description: "Clothing inventory management software with fast billing, stock tracking, and reports. Manage sizes, sales, and suppliers easily. Book a demo or try it for free.",
+  keywords: ["clothing inventory management software", "apparel inventory management software", "fashion inventory management software", "clothing stock management system", "apparel stock management software", "garment inventory software"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/clothing-inventory-management-software",
   },
