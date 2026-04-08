@@ -21,6 +21,7 @@ interface SubFeaturesHeroProps {
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
   imageClassName?: string;
+  url?: string;
 }
 
 const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
@@ -31,6 +32,7 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
   ctaDesc = "Get Started for Free",
   variant = "animation1",
   imageClassName = "",
+  url = "",
 }) => {
   const [isTablet, setIsTablet] = useState(false);
 
@@ -138,30 +140,8 @@ const SubFeaturesHero: React.FC<SubFeaturesHeroProps> = ({
                 {/* Hero Image */}
                 <div
                   ref={heroLowerRef}
-                  className="owner-inventory-hero__lower flex items-center justify-center relative w-full wrapper"
+                  className={`owner-inventory-hero__lower flex items-center justify-center relative w-full wrapper ${url === "pos" ? "p-10" : ""}`}
                 >
-                  {/* {video ? (
-                    <video
-                      src={video}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full object-cover rounded-3xl"
-                    />
-                  ) : image ? (
-                    <Image
-                      src={image}
-                      alt="Hero Image"
-                      width={1200}
-                      height={675}
-                      className= {`w-full object-cover rounded-3xl ${imageClassName}`}
-                    />
-                  ) : (
-                    <div className="w-full h-64 bg-gray-200 rounded-3xl flex items-center justify-center">
-                      <p className="text-gray-500">No media available</p>
-                    </div>
-                  )} */}
 
                   {!video && image ? (
                     <Image
