@@ -1,5 +1,5 @@
 "use client";
-
+// HMR Trigger: 2026-04-08 14:30
 import dynamic from "next/dynamic";
 import React from "react";
 
@@ -8,6 +8,10 @@ const posBakeryPageIcons = dynamic(() => import("./posBakeryPageIcons"));
 const posBookstorePageIcons = dynamic(() => import("./posBookstorePageIcons"));
 const posClothingStorePageIcons = dynamic(() => import("./posClothingStorePageIcons"));
 const posFurnitureStorePageIcons = dynamic(() => import("./posFurnitureStorePageIcons"));
+const clothingInventoryManagementSoftwareIcons = dynamic(
+  () => import("./clothingInventoryManagementSoftwareIcons"),
+  { ssr: false }
+);
 const posGroceryStorePageIcons = dynamic(() => import("./posGroceryStorePageIcons"));
 const posHardwarePageIcons = dynamic(() => import("./posHardwarePageIcons"));
 const posJewelryStorePageIcons = dynamic(() => import("./posJewelryStorePageIcons"));
@@ -17,6 +21,7 @@ export type IndustryIconSet =
   | "bakery" 
   | "bookstore" 
   | "clothing" 
+  | "clothingInventory" 
   | "furniture" 
   | "grocery" 
   | "hardware" 
@@ -27,6 +32,7 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
   bookstore: posBookstorePageIcons,
   clothing: posClothingStorePageIcons,
+  clothingInventory: clothingInventoryManagementSoftwareIcons,
   furniture: posFurnitureStorePageIcons,
   grocery: posGroceryStorePageIcons,
   hardware: posHardwarePageIcons,

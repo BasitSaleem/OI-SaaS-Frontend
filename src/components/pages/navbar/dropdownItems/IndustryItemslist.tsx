@@ -87,6 +87,12 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
     category: 'retailer',
   },
+  {
+    key: 'clothing-inventory-management-software',
+    title: 'Clothing Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    category: 'retailer',
+  },
 
   // {
   //   key: 'hardware-store-pos',
@@ -249,6 +255,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Bulk Pricing & Discounts' },
   ],
   'clothing-store-pos-system': [
+    { title: 'Clothing Inventory Management' },
+    { title: 'Size, Color & Material Tracking' },
+    { title: 'Seasonal Collection Management' },
+    { title: 'Loyalty & Reward Programs' },
+  ],
+  'clothing-inventory-management-software': [
     { title: 'Clothing Inventory Management' },
     { title: 'Size, Color & Material Tracking' },
     { title: 'Seasonal Collection Management' },
