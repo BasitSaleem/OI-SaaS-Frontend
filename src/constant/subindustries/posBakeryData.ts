@@ -108,11 +108,11 @@ export const BAKERY_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            { listheading: "POS Counter Sales", listdescription: "POS Counter Sales" },
-            { listheading: "Delivery and Online Integration", listdescription: "Delivery and Online Integration" },
-            { listheading: "Unified Multi-Channel Dashboard", listdescription: "Unified Multi-Channel Dashboard" },
-            { listheading: "Smart Order Flow Across All Sales Channels", listdescription: "Smart Order Flow Across All Sales Channels" },
-            { listheading: "Automated Sales and Stock Synchronization", listdescription: "Automated Sales and Stock Synchronization" }
+            { listheading: "POS Counter Sales"},
+            { listheading: "Delivery and Online Integration"},
+            { listheading: "Unified Multi-Channel Dashboard"},
+            { listheading: "Smart Order Flow Across All Sales Channels"},
+            { listheading: "Automated Sales and Stock Synchronization"}
         ]
     },
     {
@@ -125,9 +125,9 @@ export const BAKERY_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Security, Accuracy & Compliance", listdescription: "Security, Accuracy & Compliance" },
-            { listheading: "Predict demand and schedule reorders.", listdescription: "Predict demand and schedule reorders." },
-            { listheading: "Determine revenue leakages and enhance profitability.", listdescription: "Determine revenue leakages and enhance profitability." }
+            { listheading: "Security, Accuracy & Compliance"},
+            { listheading: "Predict demand and schedule reorders."},
+            { listheading: "Determine revenue leakages and enhance profitability."}
         ]
     },
 ];

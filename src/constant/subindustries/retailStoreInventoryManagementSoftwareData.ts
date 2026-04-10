@@ -1,4 +1,5 @@
 import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlatform";
+import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFeaturesSection";
 
 // ─── Retail Store Inventory Management — UnifiedPlatform Section ──────────────────────────────
 export const RETAIL_STORE_INVENTORY_UNIFIED_HEADING = "Challenges Retail Stores Face Today";
@@ -99,7 +100,7 @@ export const RETAIL_STORE_INVENTORY_WHY_CHOOSE_CARDS = [
 ];
 
 
-export const RETAIL_STORE_INVENTORY_FEATURE_CARDS = [
+export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "1",
         title: "Omni-Channel and Sales Integration",
@@ -109,6 +110,7 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS = [
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
+        listVariant: "accordion",
         list: [
             { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
             { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
@@ -124,6 +126,7 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS = [
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
+        listVariant: "accordion",
         list: [
             { listheading: "Store owners can analyze sales and inventory in real time.", listdescription: "Store owners can analyze sales and inventory in real time." },
             { listheading: "They can predict demand and plan reorders.", listdescription: "They can predict demand and plan reorders." },

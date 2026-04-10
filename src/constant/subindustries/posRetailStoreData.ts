@@ -104,9 +104,9 @@ export const RETAIL_STORE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
-            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
-            { listheading: "Single Multi-Channel Control", listdescription: "Single Multi-Channel Control" },
+            { listheading: "POS Sales Management"},
+            { listheading: "Ecommerce Operations and Sales Online"},
+            { listheading: "Single Multi-Channel Control"},
         ]
     },
     {
@@ -119,9 +119,9 @@ export const RETAIL_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Real-time sales and inventory insights", listdescription: "Real-time sales and inventory insights" },
-            { listheading: "Identify trends and forecast demand", listdescription: "Identify trends and forecast demand" },
-            { listheading: "Detect revenue gaps and improve margins", listdescription: "Detect revenue gaps and improve margins" },
+            { listheading: "Real-time sales and inventory insights"},
+            { listheading: "Identify trends and forecast demand"},
+            { listheading: "Detect revenue gaps and improve margins"},
         ]
     },
 ];

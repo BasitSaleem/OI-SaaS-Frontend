@@ -109,9 +109,9 @@ export const BOOKSTORE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
-            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
-            { listheading: "Single Multi-Channel Control", listdescription: "Single Multi-Channel Control" },
+            { listheading: "POS Sales Management"},
+            { listheading: "Ecommerce Operations and Sales Online"},
+            { listheading: "Single Multi-Channel Control"},
         ]
     },
     {
@@ -124,9 +124,9 @@ export const BOOKSTORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Real-time sales and inventory control.", listdescription: "Real-time sales and inventory control." },
-            { listheading: "Forecast demand and schedule reorders.", listdescription: "Forecast demand and schedule reorders." },
-            { listheading: "Determine slow moving titles and enhance stock turnover.", listdescription: "Determine slow moving titles and enhance stock turnover." },
+            { listheading: "Real-time sales and inventory control."},
+            { listheading: "Forecast demand and schedule reorders."},
+            { listheading: "Determine slow moving titles and enhance stock turnover."},
         ]
     },
 ];

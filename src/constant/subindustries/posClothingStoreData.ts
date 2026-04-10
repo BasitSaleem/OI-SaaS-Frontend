@@ -110,9 +110,9 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
-            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
-            { listheading: "Single Multichannel Control", listdescription: "Single Multichannel Control" },
+            { listheading: "POS Sales Management"},
+            { listheading: "Ecommerce Operations and Sales Online"},
+            { listheading: "Single Multichannel Control"},
         ]
     },
     {
@@ -125,9 +125,9 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Identify slow-moving stock pricing gaps and revenue leakages", listdescription: "Identify slow-moving stock pricing gaps and revenue leakages" },
-            { listheading: "Forecast seasonal demands using past trends and sales history", listdescription: "Forecast seasonal demands using past trends and sales history" },
-            { listheading: "Real-time tracking of branch-level performance", listdescription: "Real-time tracking of branch-level performance" },
+            { listheading: "Identify slow-moving stock pricing gaps and revenue leakages"},
+            { listheading: "Forecast seasonal demands using past trends and sales history"},
+            { listheading: "Real-time tracking of branch-level performance"},
         ]
     },
 ];

@@ -3,7 +3,8 @@
 import React from "react";
 import IndustriesFeatureCard from "./IndustriesFeatureCard";
 
-interface FeatureCardData {
+export interface FeatureCardData {
+  id?: string | number;
   title: string;
   description: string;
   videoSrc?: string;
@@ -17,7 +18,8 @@ interface FeatureCardData {
   containerBackgroundColor?: string;
   containerShadow?: boolean;
   scale?: number;
-  list?: { listheading: string; listdescription: string }[];
+  list?: string[] | { listheading: string; listdescription?: string }[];
+  listVariant?: "list" | "accordion";
 }
 
 interface IndustriesFeaturesSectionProps {

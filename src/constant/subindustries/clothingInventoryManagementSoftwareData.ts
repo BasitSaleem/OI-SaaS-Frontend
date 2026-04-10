@@ -1,4 +1,5 @@
 import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlatform";
+import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFeaturesSection";
 
 // ─── Clothing Store Inventory Management — UnifiedPlatform Section ──────────────────────────────
 export const CLOTHING_INVENTORY_UNIFIED_HEADING = "Challenges Holding Back Clothing Stores";
@@ -99,7 +100,7 @@ export const CLOTHING_INVENTORY_WHY_CHOOSE_CARDS = [
 ];
 
 
-export const CLOTHING_INVENTORY_FEATURE_CARDS = [
+export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "1",
         title: "Omni-Channel and Sales Integration",
@@ -109,10 +110,11 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS = [
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
+        listVariant: "accordion",
         list: [
-            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
-            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
-            { listheading: "Single Multichannel Control", listdescription: "Single Multichannel Control" },
+            { listheading: "POS Sales Management", listdescription: "The system makes billing easy. It gives staff visibility into stock levels and real-time store analytics. This helps everything run smoothly and accurately at the counter." },
+            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Store owners can accept secure payments. They can run promotions and process orders efficiently. This helps them grow their clothing business beyond physical stores." },
+            { listheading: "Single Multichannel Control", listdescription: "Store owners can track stock, sales and performance across all channels in real time. They have visibility and control over their business from a single dashboard." },
         ]
     },
     {
@@ -124,6 +126,7 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS = [
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
+        // listVariant: "accordion",
         list: [
             { listheading: "Store owners can analyze sales and inventory in real time.", listdescription: "Store owners can analyze sales and inventory in real time." },
             { listheading: "They can predict demand and plan reorders.", listdescription: "They can predict demand and plan reorders." },
