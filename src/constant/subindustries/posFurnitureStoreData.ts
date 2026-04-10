@@ -125,9 +125,9 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            "POS Sales Management",
-            "Ecommerce and Online Orders",
-            "Centralized Multi-Channel Control",
+            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
+            { listheading: "Ecommerce and Online Orders", listdescription: "Ecommerce and Online Orders" },
+            { listheading: "Centralized Multi-Channel Control", listdescription: "Centralized Multi-Channel Control" },
         ]
     },
     {
@@ -140,9 +140,9 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Identify fast and slow moving products",
-            "Forecast demand and plan smarter reorders",
-            "Track sales, profit margins, and revenue trends in real time",
+            { listheading: "Identify fast and slow moving products", listdescription: "Identify fast and slow moving products" },
+            { listheading: "Forecast demand and plan smarter reorders", listdescription: "Forecast demand and plan smarter reorders" },
+            { listheading: "Track sales, profit margins, and revenue trends in real time", listdescription: "Track sales, profit margins, and revenue trends in real time" },
         ]
     },
 ];

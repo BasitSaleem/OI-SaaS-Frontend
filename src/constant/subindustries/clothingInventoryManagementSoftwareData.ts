@@ -110,9 +110,9 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS = [
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
         list: [
-            "POS Sales Management",
-            "Ecommerce Operations and Sales Online",
-            "Single Multichannel Control",
+            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
+            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
+            { listheading: "Single Multichannel Control", listdescription: "Single Multichannel Control" },
         ]
     },
     {
@@ -125,9 +125,9 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Store owners can analyze sales and inventory in real time.",
-            "They can predict demand and plan reorders. ",
-            "They can identify areas where they are losing money and improve profitability.",
+            { listheading: "Store owners can analyze sales and inventory in real time.", listdescription: "Store owners can analyze sales and inventory in real time." },
+            { listheading: "They can predict demand and plan reorders.", listdescription: "They can predict demand and plan reorders." },
+            { listheading: "They can identify areas where they are losing money and improve profitability.", listdescription: "They can identify areas where they are losing money and improve profitability." },
         ]
     },
 ];

@@ -111,9 +111,9 @@ export const GROCERY_STORE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            "POS Sales Management",
-            "Ecommerce Operations and Online Sales",
-            "Single Multi-Channel Control",
+            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
+            { listheading: "Ecommerce Operations and Online Sales", listdescription: "Ecommerce Operations and Online Sales" },
+            { listheading: "Single Multi-Channel Control", listdescription: "Single Multi-Channel Control" },
         ]
     },
     {
@@ -126,9 +126,9 @@ export const GROCERY_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Real-time sales and stock analysis help improve decisions.",
-            "Inventory demand and reorder automation",
-            "Determine wastages and enhance profit margins",
+            { listheading: "Real-time sales and stock analysis help improve decisions.", listdescription: "Real-time sales and stock analysis help improve decisions." },
+            { listheading: "Inventory demand and reorder automation", listdescription: "Inventory demand and reorder automation" },
+            { listheading: "Determine wastages and enhance profit margins", listdescription: "Determine wastages and enhance profit margins" },
         ]
     },
 ];

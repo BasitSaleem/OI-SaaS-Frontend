@@ -101,9 +101,9 @@ export const HARDWARE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            "POS Sales Management",
-            "Ecommerce Operations and Sales Online",
-            "Single Multi-Channel Control"
+            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
+            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
+            { listheading: "Single Multi-Channel Control", listdescription: "Single Multi-Channel Control" }
         ],
     },
     {
@@ -116,9 +116,9 @@ export const HARDWARE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Real-time sales and inventory analysis.",
-            "Predict demand and schedule reorders.",
-            "Determine revenue leakages and enhance profitability."
+            { listheading: "Real-time sales and inventory analysis.", listdescription: "Real-time sales and inventory analysis." },
+            { listheading: "Predict demand and schedule reorders.", listdescription: "Predict demand and schedule reorders." },
+            { listheading: "Determine revenue leakages and enhance profitability.", listdescription: "Determine revenue leakages and enhance profitability." }
         ],
 
     },

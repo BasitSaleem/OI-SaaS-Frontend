@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "grocery-store-pos-system",
         "clothing-store-pos-system",
         "clothing-inventory-management-software",
+        "retail-store-inventory-management-software",
     ];
 
 

@@ -17,7 +17,7 @@ interface FeatureCardData {
   containerBackgroundColor?: string;
   containerShadow?: boolean;
   scale?: number;
-  list?: string[];
+  list?: { listheading: string; listdescription: string }[];
 }
 
 interface IndustriesFeaturesSectionProps {

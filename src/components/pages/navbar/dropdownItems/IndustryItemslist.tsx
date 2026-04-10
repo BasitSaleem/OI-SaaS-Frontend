@@ -93,6 +93,12 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
     category: 'retailer',
   },
+  {
+    key: 'retail-store-inventory-management-software',
+    title: 'Retail Store Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
+    category: 'retailer',
+  },
 
   // {
   //   key: 'hardware-store-pos',
@@ -264,6 +270,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Clothing Inventory Management' },
     { title: 'Size, Color & Material Tracking' },
     { title: 'Seasonal Collection Management' },
+    { title: 'Loyalty & Reward Programs' },
+  ],
+  'retail-store-inventory-management-software': [
+    { title: 'Retail Store Inventory Management' },
+    { title: 'Variant & Category Tracking' },
+    { title: 'Asset & Stock Control' },
     { title: 'Loyalty & Reward Programs' },
   ],
   'bakery-pos': [

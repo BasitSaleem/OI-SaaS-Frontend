@@ -104,9 +104,9 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
         list: [
-            "POS Sales Management",
-            "Ecommerce Operations and Sales Online",
-            "Single Multi-Channel Control",
+            { listheading: "POS Sales Management", listdescription: "POS Sales Management" },
+            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Ecommerce Operations and Sales Online" },
+            { listheading: "Single Multi-Channel Control", listdescription: "Single Multi-Channel Control" },
         ]
     },
     {
@@ -119,10 +119,10 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            "Live sales and inventory value",
-            "Monitor metal usage and minimize wastage",
-            "Find slow-moving and fast-moving designs",
-            "Review profit margin by category and type of metal",
+            { listheading: "Live sales and inventory value", listdescription: "Live sales and inventory value" },
+            { listheading: "Monitor metal usage and minimize wastage", listdescription: "Monitor metal usage and minimize wastage" },
+            { listheading: "Find slow-moving and fast-moving designs", listdescription: "Find slow-moving and fast-moving designs" },
+            { listheading: "Review profit margin by category and type of metal", listdescription: "Review profit margin by category and type of metal" },
         ]
     },
 ];
