@@ -378,7 +378,7 @@ const NavItems = () => {
                             : "text-gray-600 bg-transparent border-transparent hover:text-[var(--primary-purple)]"
                         }`}
                       >
-                        Inventory
+                        Inventory System
                       </button>
                     </div>
                   </div>

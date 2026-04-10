@@ -560,7 +560,7 @@ export default function OffcanvasMenu({
                         >
                           <div className="flex items-center gap-3">
                             <span
-                              className={`text-base font-['Onest'] uppercase tracking-wider ${
+                              className={`text-base font-['Onest']  tracking-wider ${
                                 isTypeOpen
                                   ? "font-bold text-[var(--primary-purple)]"
                                   : "font-semibold text-[var(--text-dark)]"
