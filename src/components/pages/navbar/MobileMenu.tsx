@@ -54,6 +54,7 @@ export default function OffcanvasMenu({
   const [searchQuery, setSearchQuery] = useState("");
   const [openCatId, setOpenCatId] = useState<string | null>(null);
   const [expandedItemKey, setExpandedItemKey] = useState<string | null>(null);
+  const [openIndustryType, setOpenIndustryType] = useState<"pos" | "inventory" | null>(null);
 
   const toggleItem = (key: string) => {
     setExpandedItemKey((prev) => (prev === key ? null : key));
@@ -528,138 +529,172 @@ export default function OffcanvasMenu({
                 </div>
               ) : activePanel === "industries" ? (
                 <div className="space-y-3">
-                  {industryCategories.map((cat: IndustryCategory) => {
-                    const isCatOpen = openCatId === cat.id;
+                  {/* Type Level Accordions: POS & Inventory */}
+                  {["pos", "inventory"].map((type) => {
+                    const isTypeOpen = openIndustryType === type;
+                    const typeItems = industriesItems.filter(
+                      (item) => item.type === type,
+                    );
+                    const typeCategories = industryCategories.filter((cat) =>
+                      typeItems.some((item) => item.category === cat.id),
+                    );
+
+                    if (typeItems.length === 0) return null;
+
                     return (
                       <div
-                        key={cat.id}
+                        key={type}
                         className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${
-                          isCatOpen ? "border-[var(--primary-purple)]" : "border-[var(--border-muted)]"
+                          isTypeOpen
+                            ? "border-[var(--primary-purple)] shadow-sm"
+                            : "border-[var(--border-muted)]"
                         }`}
                       >
                         <button
                           onClick={() =>
-                            setOpenCatId(isCatOpen ? null : cat.id)
+                            setOpenIndustryType(isTypeOpen ? null : (type as any))
                           }
-                          className={`w-full flex items-center justify-between px-4 py-3 text-left transition-colors ${
-                            isCatOpen ? "bg-purple-50" : "hover:bg-gray-50"
+                          className={`w-full flex items-center justify-between px-4 py-4 text-left transition-colors ${
+                            isTypeOpen ? "bg-purple-50" : "hover:bg-gray-50"
                           }`}
                         >
-                          <span
-                            className={`text-sm font-['Onest'] ${
-                              isCatOpen
-                                ? "font-bold text-[var(--primary-purple)]"
-                                : "font-semibold text-[var(--text-dark)]"
-                            }`}
-                          >
-                            {cat.title}
-                          </span>
+                          <div className="flex items-center gap-3">
+                            <span
+                              className={`text-base font-['Onest'] uppercase tracking-wider ${
+                                isTypeOpen
+                                  ? "font-bold text-[var(--primary-purple)]"
+                                  : "font-semibold text-[var(--text-dark)]"
+                              }`}
+                            >
+                              {type === "pos" ? "POS Systems" : "Inventory Management"}
+                            </span>
+                          </div>
                           <img
                             src={
-                              isCatOpen
+                              isTypeOpen
                                 ? "/assets/header-dropdown-images/arrow-up-icon.svg"
                                 : "/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
-                            className={`w-3 h-3 transition-transform duration-300 ${
-                              isCatOpen ? "rotate-0" : "-rotate-90"
+                            className={`w-3.5 h-3.5 transition-transform duration-300 ${
+                              isTypeOpen ? "rotate-0" : "-rotate-90"
                             }`}
                           />
                         </button>
 
                         <div
                           className={`transition-all duration-300 ease-in-out ${
-                            isCatOpen
-                              ? "max-h-[5000px] opacity-100 visible"
+                            isTypeOpen
+                              ? "max-h-[5000px] opacity-100 visible p-2"
                               : "max-h-0 opacity-0 invisible"
                           }`}
                         >
-                          <ul className="p-2 space-y-2">
-                            {industriesItems
-                              .filter((item) => item.category === cat.id)
-                              .map((item) => {
-                                const itemKey = item.key || item.title;
-                                const isItemOpen = expandedItemKey === itemKey;
-                                const details = industryDetailsMap[item.key] ?? null;
-                                const hasDetails =
-                                  (Array.isArray(details) &&
-                                    details.length > 0) ||
-                                  (details &&
-                                    typeof details === "object" &&
-                                    Object.keys(details).length > 0);
-
-                                return (
-                                  <li key={itemKey} className="w-full">
-                                    <div
-                                      className={`flex items-center border rounded-lg overflow-hidden transition-colors ${
-                                        isItemOpen
-                                          ? "border-[var(--primary-purple)] bg-gray-50"
-                                          : "border-transparent hover:bg-gray-50"
+                          {/* Nested Category Level */}
+                          <div className="space-y-2">
+                            {typeCategories.map((cat) => {
+                              const isCatOpen = openCatId === `${type}-${cat.id}`;
+                              return (
+                                <div
+                                  key={cat.id}
+                                  className={`border rounded-lg bg-gray-50 overflow-hidden transition-all duration-300 ${
+                                    isCatOpen ? "border-purple-200" : "border-gray-100"
+                                  }`}
+                                >
+                                  <button
+                                    onClick={() =>
+                                      setOpenCatId(isCatOpen ? null : `${type}-${cat.id}`)
+                                    }
+                                    className={`w-full flex items-center justify-between px-4 py-2.5 text-left transition-colors ${
+                                      isCatOpen ? "bg-white" : "hover:bg-white/50"
+                                    }`}
+                                  >
+                                    <span className={`text-sm font-['Onest'] ${isCatOpen ? "font-bold text-[var(--primary-purple)]" : "font-semibold text-gray-700"}`}>
+                                      {cat.title}
+                                    </span>
+                                    <img
+                                      src={
+                                        isCatOpen
+                                          ? "/assets/header-dropdown-images/arrow-up-icon.svg"
+                                          : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                      }
+                                      alt="toggle"
+                                      className={`w-3 h-3 transition-transform duration-300 ${
+                                        isCatOpen ? "rotate-0" : "-rotate-90"
                                       }`}
-                                    >
-                                      <Link
-                                        href={`/industries/${item.key.toLowerCase()}`}
-                                        prefetch={false}
-                                        onClick={onClose}
-                                        className="w-[85%] flex items-center px-3 py-2.5"
-                                      >
-                                        <Image
-                                          src={item.icon}
-                                          alt={item.title}
-                                          width={16}
-                                          height={16}
-                                          className="flex-shrink-0"
-                                        />
-                                        <span className="ml-2.5 text-xs font-medium text-[var(--text-dark)]">
-                                          {item.title}
-                                        </span>
-                                      </Link>
+                                    />
+                                  </button>
 
-                                      {hasDetails && (
-                                        <button
-                                          onClick={(e) => {
-                                            e.preventDefault();
-                                            toggleItem(itemKey);
-                                          }}
-                                          className="w-[15%] flex items-center justify-center p-2.5 border-l border-gray-100 hover:bg-gray-100"
-                                        >
-                                          <img
-                                            src={
-                                              isItemOpen
-                                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
-                                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
-                                            }
-                                            alt="toggle"
-                                            className="w-2.5 h-2.5"
-                                          />
-                                        </button>
-                                      )}
-                                    </div>
+                                  <div
+                                    className={`transition-all duration-300 ease-in-out ${
+                                      isCatOpen
+                                        ? "max-h-[2000px] opacity-100 visible"
+                                        : "max-h-0 opacity-0 invisible"
+                                    }`}
+                                  >
+                                    <ul className="p-2 space-y-1.5">
+                                      {typeItems
+                                        .filter((item) => item.category === cat.id)
+                                        .map((item) => {
+                                          const itemKey = item.key || item.title;
+                                          const isItemOpen = expandedItemKey === itemKey;
+                                          const details = industryDetailsMap[item.key] ?? null;
+                                          const hasDetails = (Array.isArray(details) && details.length > 0);
 
-                                    {hasDetails && (
-                                      <div
-                                        className={`transition-all duration-300 pl-4 ${
-                                          isItemOpen
-                                            ? "max-h-[300px] opacity-100 mt-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
-                                            : "max-h-0 opacity-0 mt-0 overflow-hidden"
-                                        }`}
-                                      >
-                                        <ul className="space-y-1.5 border-l-2 border-gray-100 pl-3">
-                                          {(details as any[]).map((d, idx) => (
-                                            <li
-                                              key={idx}
-                                              className="text-[11px] text-gray-500 font-medium"
-                                            >
-                                              {d.title || d}
+                                          return (
+                                            <li key={itemKey} className="w-full">
+                                              <div className={`flex items-center border rounded-lg overflow-hidden transition-colors ${isItemOpen ? "border-[var(--primary-purple)] bg-white" : "border-transparent hover:bg-white"}`}>
+                                                <Link
+                                                  href={`/industries/${item.key.toLowerCase()}`}
+                                                  prefetch={false}
+                                                  onClick={onClose}
+                                                  className="w-[85%] flex items-center px-3 py-2.5"
+                                                >
+                                                  <Image
+                                                    src={item.icon}
+                                                    alt={item.title}
+                                                    width={16}
+                                                    height={16}
+                                                    className="flex-shrink-0"
+                                                  />
+                                                  <span className="ml-2.5 text-xs font-medium text-[var(--text-dark)]">
+                                                    {item.title}
+                                                  </span>
+                                                </Link>
+
+                                                {hasDetails && (
+                                                  <button
+                                                    onClick={() => toggleItem(itemKey)}
+                                                    className="w-[15%] flex items-center justify-center p-2.5 border-l border-gray-100"
+                                                  >
+                                                    <img
+                                                      src={isItemOpen ? "/assets/header-dropdown-images/arrow-up-icon.svg" : "/assets/header-dropdown-images/arrow-down-icon.svg"}
+                                                      alt="toggle"
+                                                      className="w-2.5 h-2.5"
+                                                    />
+                                                  </button>
+                                                )}
+                                              </div>
+
+                                              {isItemOpen && hasDetails && (
+                                                <div className="mt-2 pl-4 border-l-2 border-purple-100 ml-3">
+                                                  <ul className="space-y-1.5 py-1">
+                                                    {(details as any[]).map((d, idx) => (
+                                                      <li key={idx} className="text-[11px] text-gray-500 font-medium">
+                                                        {d.title || d}
+                                                      </li>
+                                                    ))}
+                                                  </ul>
+                                                </div>
+                                              )}
                                             </li>
-                                          ))}
-                                        </ul>
-                                      </div>
-                                    )}
-                                  </li>
-                                );
-                              })}
-                          </ul>
+                                          );
+                                        })}
+                                    </ul>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
                     );

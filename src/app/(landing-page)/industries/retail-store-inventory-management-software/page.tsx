@@ -1,6 +1,6 @@
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/retail-store-inventory-management-software/clothing-store-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/retail-store-inventory-management-software/clothing-store-why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/retail-store-inventory-management-software/retail-store-hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/industries-pages/retail-store-inventory-management-software/retail-store-why-chose-banner.webp";
 
 import {
   RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS,
@@ -55,7 +55,7 @@ const Page = () => {
         heading={RETAIL_STORE_INVENTORY_UNIFIED_HEADING}
         paragraph={RETAIL_STORE_INVENTORY_UNIFIED_PARAGRAPH}
         cards={RETAIL_STORE_INVENTORY_UNIFIED_CARDS}
-        iconSet="clothingInventory"
+        iconSet="retailInventory"
       />
 
       <WhyChoosePOS
@@ -63,7 +63,7 @@ const Page = () => {
         paragraph="Our retail inventory software connects stock, sales, and reporting into one automated system, ensuring accuracy, efficiency, and better control over daily operations."
         cards={RETAIL_STORE_INVENTORY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-         iconSet="clothingInventory"
+         iconSet="retailInventory"
       />
 
       <KeyHighlights
@@ -78,8 +78,8 @@ const Page = () => {
       />
 
       <IndustriesCallToAction
-        title="Get Control of Your Inventory Now"
-        description="Our retail store inventory management software makes managing stock easier. It reduces mistakes and improves efficiency. Start today to simplify operations and improve performance."
+        title="Manage Your Retail Store Efficiently"
+        description="The system is designed to improve accuracy, reduce errors and make store operations more efficient. Retailers can manage their store with our software. It helps them to increase efficiency and make their store operations smooth."
         ctaDesc="Request a Free Demo"
       />
 
@@ -87,8 +87,8 @@ const Page = () => {
 
       <SecurityCompliance
         title="Security, Accuracy, and Compliance"
-        description="The system ensures that all transactions are recorded and monitored accurately. It restricts data access to authorized staff only. This reduces mistakes and prevents unauthorized actions."
-        secondDescription="The system keeps a record of all changes. This ensures compliance and accountability. Real-time tracking gives transparency into stock movements. Automated reports improve accuracy and reliability."
+        description="Security, accuracy, and compliance are crucial for businesses. Every transaction is recorded securely with time-stamped data. This ensures transparency and accountability in all transactions."
+        secondDescription="The point of sale system has role-based access control. This means authorized staff can access information. Automated processes maintain inventory records."
       />
 
       <ToolsSection
@@ -108,20 +108,20 @@ const Page = () => {
         whyChooseTitle={RETAIL_STORE_INVENTORY_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={RETAIL_STORE_INVENTORY_TESTIMONIAL_DATA.whyChooseDescription}
         features={RETAIL_STORE_INVENTORY_TESTIMONIAL_FEATURES}
-         iconSet="clothingInventory"
+         iconSet="retailInventory"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our Retail Store inventory software is designed to make daily operations smooth and easy. Here are answers to some common questions from retail store owners."
+          paragraph="The Inventory Management Software for Retail Store  is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by Inventory Management Software for Retail Store."
           faqs={RETAIL_STORE_INVENTORY_FAQS}
           buttonText="Start Now"
         />
       </div>
        <IndustriesHardwareControl
-        title="Take Control of Your Retail Store"
-        description="Many retail stores lose money because of mistakes with stock and inefficient ways of doing things. The retail store inventory management software helps reduce losses and improve accuracy. It also speeds up operations. The billing process is smarter and faster which leads to profitability and growth."
+        title="Ready to Simplify Your Retail Store?"
+        description="Get rid of inefficiencies and be confident in controlling your inventory. With precise tracking of stock, quick billing and more, it all comes together to assist you in operating a more profitable retail business."
         ctaDesc="Start Today"
       />
     </div>

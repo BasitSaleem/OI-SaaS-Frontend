@@ -44,7 +44,7 @@ const IndustriesCallToAction: React.FC<IndustriesCallToAction> = ({
             </Paragraph>
             <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
               <ButtonSm
-                url="https://app.ownersinventory.com/"
+                url="https://app.ownersinventory.com/sign-up?app=OG"
                 text={ctaDesc}
                 className="w-full md:w-fit"
                 bgColor="[#795CF5]"

@@ -48,6 +48,10 @@ const NavItems = () => {
     string | null
   >("retailer");
 
+  const [selectedIndustryType, setselectedIndustryType] = useState<
+    "pos" | "inventory"
+  >("pos");
+
   const router = useRouter();
 
   return (
@@ -255,9 +259,22 @@ const NavItems = () => {
                       key={category.id}
                       onClick={() => {
                         setselectedIndustryCategory(category.id);
-                        const firstItem = categoryIndustries[0];
-                        if (firstItem) {
-                          setSelectedIndustryKey(firstItem.key);
+                        const categoryTypeItems = industriesItems.filter(
+                          (item) =>
+                            item.category === category.id &&
+                            item.type === selectedIndustryType,
+                        );
+                        if (categoryTypeItems.length > 0) {
+                          setSelectedIndustryKey(categoryTypeItems[0].key);
+                        } else {
+                          // Fallback if no items of current type exist in new category
+                          const firstInCategory = industriesItems.find(
+                            (item) => item.category === category.id,
+                          );
+                          if (firstInCategory) {
+                            setSelectedIndustryKey(firstInCategory.key);
+                            setselectedIndustryType(firstInCategory.type);
+                          }
                         }
                       }}
                       className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${
@@ -312,18 +329,66 @@ const NavItems = () => {
               <div className="w-[150px] h-[150px] rotate-[-26deg] bg-[var(--primary-teal)] absolute blur-[150px] bottom-0 left-10"></div>
               {selectedIndustryCategory && (
                 <div>
-                  <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[var(--text-header)] mb-4">
-                    {
-                      industryCategories.find(
-                        (c) => c.id === selectedIndustryCategory,
-                      )?.title
-                    }
-                  </h3>
+                  <div className="flex justify-between items-center gap-4 mb-6">
+                    <h3 className="text-xl leading-[140%] font-semibold font-['Onest'] text-[var(--text-header)]">
+                      {
+                        industryCategories.find(
+                          (c) => c.id === selectedIndustryCategory,
+                        )?.title
+                      }
+                    </h3>
+
+                    {/* Industry Tabs */}
+                    <div className="inline-flex gap-2 p-1 border border-[var(--border-muted)] rounded-full bg-white shadow-sm">
+                      <button
+                        onClick={() => {
+                          setselectedIndustryType("pos");
+                          const firstPosItem = industriesItems.find(
+                            (item) =>
+                              item.category === selectedIndustryCategory &&
+                              item.type === "pos",
+                          );
+                          if (firstPosItem) {
+                            setSelectedIndustryKey(firstPosItem.key);
+                          }
+                        }}
+                        className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none ${
+                          selectedIndustryType === "pos"
+                            ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)] shadow-lg"
+                            : "text-gray-600 bg-transparent border-transparent hover:text-[var(--primary-purple)]"
+                        }`}
+                      >
+                        POS
+                      </button>
+                      <button
+                        onClick={() => {
+                          setselectedIndustryType("inventory");
+                          const firstInventoryItem = industriesItems.find(
+                            (item) =>
+                              item.category === selectedIndustryCategory &&
+                              item.type === "inventory",
+                          );
+                          if (firstInventoryItem) {
+                            setSelectedIndustryKey(firstInventoryItem.key);
+                          }
+                        }}
+                        className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none ${
+                          selectedIndustryType === "inventory"
+                            ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)] shadow-lg"
+                            : "text-gray-600 bg-transparent border-transparent hover:text-[var(--primary-purple)]"
+                        }`}
+                      >
+                        Inventory
+                      </button>
+                    </div>
+                  </div>
 
                   <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
                     {industriesItems
                       .filter(
-                        (item) => item.category === selectedIndustryCategory,
+                        (item) =>
+                          item.category === selectedIndustryCategory &&
+                          item.type === selectedIndustryType,
                       )
                       .map((item) => (
                         <Link
@@ -358,6 +423,17 @@ const NavItems = () => {
                         </Link>
                       ))}
                   </div>
+                  {industriesItems.filter(
+                    (item) =>
+                      item.category === selectedIndustryCategory &&
+                      item.type === selectedIndustryType,
+                  ).length === 0 && (
+                    <div className="flex flex-col items-center justify-center py-10 text-center">
+                      <p className="text-[var(--text-grey)] font-['Onest']">
+                        No {selectedIndustryType === "pos" ? "POS" : "Inventory"} systems available for this category yet.
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

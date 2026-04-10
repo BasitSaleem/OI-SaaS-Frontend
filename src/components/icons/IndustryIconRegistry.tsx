@@ -8,10 +8,8 @@ const posBakeryPageIcons = dynamic(() => import("./posBakeryPageIcons"));
 const posBookstorePageIcons = dynamic(() => import("./posBookstorePageIcons"));
 const posClothingStorePageIcons = dynamic(() => import("./posClothingStorePageIcons"));
 const posFurnitureStorePageIcons = dynamic(() => import("./posFurnitureStorePageIcons"));
-const clothingInventoryManagementSoftwareIcons = dynamic(
-  () => import("./clothingInventoryManagementSoftwareIcons"),
-  { ssr: false }
-);
+const clothingInventoryManagementSoftwareIcons = dynamic(() => import("./clothingInventoryManagementSoftwareIcons"));
+const retailInventoryManagementSoftwareIcons = dynamic(() => import("./retailInventoryManagementSoftwareIcons"));
 const posGroceryStorePageIcons = dynamic(() => import("./posGroceryStorePageIcons"));
 const posHardwarePageIcons = dynamic(() => import("./posHardwarePageIcons"));
 const posJewelryStorePageIcons = dynamic(() => import("./posJewelryStorePageIcons"));
@@ -22,6 +20,7 @@ export type IndustryIconSet =
   | "bookstore" 
   | "clothing" 
   | "clothingInventory" 
+  | "retailInventory" 
   | "furniture" 
   | "grocery" 
   | "hardware" 
@@ -33,6 +32,7 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bookstore: posBookstorePageIcons,
   clothing: posClothingStorePageIcons,
   clothingInventory: clothingInventoryManagementSoftwareIcons,
+  retailInventory: retailInventoryManagementSoftwareIcons,
   furniture: posFurnitureStorePageIcons,
   grocery: posGroceryStorePageIcons,
   hardware: posHardwarePageIcons,

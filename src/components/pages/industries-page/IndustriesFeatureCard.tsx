@@ -122,7 +122,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                       className={`rounded-[20px] transition-all duration-300 ${
                         openIndex === idx
                           ? "border-3 border-white shadow-[inset_0px_17px_29px_0px_#FFFFFF40] backdrop-blur-[10.45px]"
-                          : "border-transparent bg-transparent"
+                          : "border-3 border-transparent bg-transparent"
                       } overflow-hidden`}
                     >
                       <button
