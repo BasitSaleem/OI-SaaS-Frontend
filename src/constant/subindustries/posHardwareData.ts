@@ -8,42 +8,42 @@ export const HARDWARE_UNIFIED_PARAGRAPH =
 
 export const HARDWARE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     {
-        id: "stock-confusion-unified",
+        id: "1",
         icon: "stockConfusion",
         title: "Stock Confusion",
         description:
             "The problem of misplaced or miscounted items results in losses of up to 20% annually in many hardware stores. Products tend to resemble each other, and manual counts cause huge inaccuracies. Owners are unable to maintain accurate inventory.",
     },
     {
-        id: "slow-billing-unified",
+        id: "2",
         icon: "slowBilling",
         title: "Slow Billing",
         description:
             "Overcrowded counters and paper-based receipts delay customer traffic. Delayed billing decreases sales at peak times and influences customer satisfaction. The delays cause the loss of 10-15% of potential sales in many stores.",
     },
     {
-        id: "supplier-misalignment-unified",
+        id: "3",
         icon: "supplierMisalignment",
         title: "Supplier Misalignment",
         description:
             "Delays in delivery and shortages cause gaps in the shelves. Most hardware stores deal with various suppliers and it becomes confusing to keep track of all the suppliers. Inadequate coordination escalates the stockout rates by almost 30 percent.",
     },
     {
-        id: "data-guesswork-unified",
+        id: "4",
         icon: "dataGuesswork",
         title: "Data Guesswork",
         description:
             "Most owners make decisions without appropriate numbers and insights. Trends of profit, high movement, and slow moving stock are uncertain. This ambiguity results in revenue leakage of 15–25%.",
     },
     {
-        id: "price-inconsistency-unified",
+        id: "5",
         icon: "priceInconsistency",
         title: "Price Inconsistency",
         description:
             "The price updates are not easy due to frequent changes in the market. The manual changes are time-consuming and usually result in wrong billing. These errors lead to customer complaints in stores.",
     },
     {
-        id: "online-visibility-unified",
+        id: "6",
         icon: "onlineVisibility",
         title: "Lack of Online Visibility",
         description:
@@ -53,35 +53,35 @@ export const HARDWARE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
 
 export const Hardware_WHY_CHOOSE_CARDS = [
     {
-        id: "real-time-stock-accuracy",
+        id: "1",
         icon: "whychoseIcon1",
         title: "Real-Time Stock Accuracy",
         description:
             "Inventory updates instantly after every sale and purchase, reducing manual errors and keeping stock records accurate.",
     },
     {
-        id: "fast-effortless-billing",
+        id: "2",
         icon: "whychoseIcon2",
         title: "Fast & Effortless Billing",
         description:
             "Smart product search and barcode scanning saves time at checkout. Your billing counter remains efficient and free even at peak hours.",
     },
     {
-        id: "intelligent-supplier-management",
+        id: "3",
         icon: "whychoseIcon3",
         title: "Intelligent Supplier Management",
         description:
             "Owners Inventory tracks suppliers, purchase orders, and deliveries while sending automatic low stock alerts to prevent stock outs.",
     },
     {
-        id: "centralized-price-control",
+        id: "4",
         icon: "whychoseIcon4",
         title: "Centralized Price Control",
         description:
             "Owners Inventory tracks suppliers, purchase orders, and deliveries with automatic low stock alerts to prevent stockouts.",
     },
     {
-        id: "instant-system-wide-updates",
+        id: "5",
         icon: "whychoseIcon5",
         title: "Instant System-Wide Updates",
         description:

@@ -278,7 +278,7 @@ const icons = {
     </svg>
   ),
 
-  clothingInventoryUnifiedIcon1: (
+  UnifiedIcon1: (
     <svg
       width="44"
       height="44"
@@ -325,7 +325,7 @@ const icons = {
     </svg>
   ),
 
-  clothingInventoryUnifiedIcon2: (
+  UnifiedIcon2: (
     <svg
       width="44"
       height="44"
@@ -367,7 +367,7 @@ const icons = {
     </svg>
   ),
 
-  clothingInventoryUnifiedIcon3: (
+  UnifiedIcon3: (
     <svg
       width="44"
       height="44"
@@ -409,7 +409,7 @@ const icons = {
     </svg>
   ),
 
-  clothingInventoryUnifiedIcon4: (
+  UnifiedIcon4: (
     <svg
       width="44"
       height="44"
@@ -441,7 +441,7 @@ const icons = {
     </svg>
   ),
 
-  clothingInventoryUnifiedIcon5: (
+  UnifiedIcon5: (
     <svg
       width="44"
       height="44"
@@ -499,7 +499,7 @@ const icons = {
     </svg>
   ),
 
-  clothingInventoryUnifiedIcon6: (
+  UnifiedIcon6: (
     <svg
       width="39"
       height="39"

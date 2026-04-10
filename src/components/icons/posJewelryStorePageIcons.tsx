@@ -278,7 +278,7 @@ const icons = {
     </svg>
   ),
 
-  jewelryUnifiedIcon1: (
+  UnifiedIcon1: (
     <svg
       width="44"
       height="44"
@@ -325,7 +325,7 @@ const icons = {
     </svg>
   ),
 
-  jewelryUnifiedIcon2: (
+  UnifiedIcon2: (
     <svg
       width="44"
       height="44"
@@ -380,7 +380,7 @@ const icons = {
     </svg>
   ),
 
-  jewelryUnifiedIcon3: (
+  UnifiedIcon3: (
     <svg
       width="44"
       height="44"
@@ -435,7 +435,7 @@ const icons = {
     </svg>
   ),
 
-  jewelryUnifiedIcon4: (
+  UnifiedIcon4: (
     <svg
       width="44"
       height="44"
@@ -493,7 +493,7 @@ const icons = {
     </svg>
   ),
 
-  jewelryUnifiedIcon5: (
+  UnifiedIcon5: (
     <svg
       width="44"
       height="44"

@@ -278,7 +278,7 @@ const icons = {
     </svg>
   ),
 
-  groceryUnifiedIcon1: (
+  UnifiedIcon1: (
     <svg
       width="44"
       height="44"
@@ -325,7 +325,7 @@ const icons = {
     </svg>
   ),
 
-  groceryUnifiedIcon2: (
+  UnifiedIcon2: (
     <svg
       width="44"
       height="44"
@@ -367,7 +367,7 @@ const icons = {
     </svg>
   ),
 
-  groceryUnifiedIcon3: (
+  UnifiedIcon3: (
     <svg
       width="44"
       height="44"
@@ -414,7 +414,7 @@ const icons = {
     </svg>
   ),
 
-  groceryUnifiedIcon4: (
+  UnifiedIcon4: (
     <svg
       width="44"
       height="44"
@@ -446,7 +446,7 @@ const icons = {
     </svg>
   ),
 
-  groceryUnifiedIcon5: (
+  UnifiedIcon5: (
     <svg
       width="44"
       height="44"
@@ -477,7 +477,7 @@ const icons = {
       />
     </svg>
   ),
-  groceryUnifiedIcon6: (
+  UnifiedIcon6: (
     <svg
       width="44"
       height="44"

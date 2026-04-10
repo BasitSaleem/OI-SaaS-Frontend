@@ -9,35 +9,35 @@ export const JEWELRY_STORE_UNIFIED_PARAGRAPH =
 export const JEWELRY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
-        icon: "jewelryUnifiedIcon1",
+        icon: "UnifiedIcon1",
         title: "Complex Inventory Management",
         description:
             "Jewellery retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality Jewellery POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
     },
     {
         id: "2",
-        icon: "jewelryUnifiedIcon2",
+        icon: "UnifiedIcon2",
         title: "Need for Accurate Valuation",
         description:
             "Gold, silver, diamonds, and gemstones change constantly. A good point-of-sale for a jewellery shop needs to automatically update pricing, calculate making charges and reduce human error so that everything is crystal clear.",
     },
     {
         id: "3",
-        icon: "jewelryUnifiedIcon3",
+        icon: "UnifiedIcon3",
         title: "High-Value Product Security",
         description:
             "When showcasing high-end inventory, retailers need a Jewellery store POS system that enables user authentication, employee permissions, secure billing, and anti-fraud measures to protect each piece as if it were stored in an actual vault.",
     },
     {
         id: "4",
-        icon: "jewelryUnifiedIcon4",
+        icon: "UnifiedIcon4",
         title: "Custom Orders and Repairs",
         description:
             "Whether they are engraving rings, resizing them or designing custom bridal sets, Jewellery  stores deal in intimate and emotional transactions. Customization and repairs are a big part of the Jewellery  business, but without a powerful POS system for Jewellery stores to help manage them, operations can suffer.",
     },
     {
         id: "5",
-        icon: "jewelryUnifiedIcon5",
+        icon: "UnifiedIcon5",
         title: "Limited Digital Presence & Reporting",
         description:
             "Most retailers are still depending on non-real-time, traditional billing systems. A contemporary POS system for Jewellery  stores includes dashboards, customer insights, purchase histories and margin monitoring.",

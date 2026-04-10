@@ -9,56 +9,56 @@ export const FURNITURE_STORE_UNIFIED_PARAGRAPH =
 export const FURNITURE_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
-        icon: "furnitureUnifiedIcon1",
+        icon: "UnifiedIcon1",
         title: "Complex Inventory Tracking",
         description:
             "Almost 38% of furniture stores have mismatched inventory due to large products and multiple options. Stock movement always causes confusion between showrooms and warehouses. A specialized system is required to achieve accurate visibility.",
     },
     {
         id: "2",
-        icon: "furnitureUnifiedIcon2",
+        icon: "UnifiedIcon2",
         title: "Stock Inaccuracy",
         description:
             "Furniture products are available in various sizes, colors, materials, and variations. Tracking results in wrong stock quantities and lost items. This usually leads to overselling or lost sales.",
     },
     {
         id: "3",
-        icon: "furnitureUnifiedIcon3",
+        icon: "UnifiedIcon3",
         title: "Slow Billing & Order Processing",
         description:
             "Furniture purchases are usually customized, paid in installments, and scheduled. Paperwork, handwritten invoices, and calculations slow down the checkout process and cause confusion.",
     },
     {
         id: "4",
-        icon: "furnitureUnifiedIcon4",
+        icon: "UnifiedIcon4",
         title: "Complex Variant Management",
         description:
             "Without a proper system, it gets difficult to deal with sofas, beds, tables, and cabinets of different finishes and sizes. Variant errors cause wrong deliveries and complaints from customers.",
     },
     {
         id: "5",
-        icon: "furnitureUnifiedIcon5",
+        icon: "UnifiedIcon5",
         title: "Delivery & Order Tracking Issues",
         description:
             "The delays and poor customer experience are caused by manual tracking of pending orders, delivery schedules, and installation status.",
     },
     {
         id: "6",
-        icon: "furnitureUnifiedIcon6",
+        icon: "UnifiedIcon6",
         title: "Supplier & Purchase Confusion",
         description:
             "Furniture stores deal with several manufacturers and suppliers. Lack of coordination leads to late delivery, stockouts, or overstocking.",
     },
      {
         id: "7",
-        icon: "furnitureUnifiedIcon7",
+        icon: "UnifiedIcon7",
         title: "Lack of Business Insights",
         description:
             "In the absence of appropriate reports, owners are unable to monitor the best-selling products, profit margins, or slow-moving inventory. Guesswork is used to make decisions.",
     },
     {
         id: "8",
-        icon: "furnitureUnifiedIcon8",
+        icon: "UnifiedIcon8",
         title: "Limited Online Presence",
         description:
             "Customers browse and compare furniture online, and go to stores. The stores lose potential buyers without digital integration.",

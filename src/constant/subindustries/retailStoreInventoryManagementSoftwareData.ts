@@ -9,42 +9,42 @@ export const RETAIL_STORE_INVENTORY_UNIFIED_PARAGRAPH ="Retail businesses deal w
 export const RETAIL_STORE_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
-        icon: "clothingInventoryUnifiedIcon1",
+        icon: "UnifiedIcon1",
         title: "Stock Mismanagement",
         description:
             "When managing large product catalogs, it can be hard to keep track of items without a computer system. Mistakes like overstock, stock misplacements and stockouts can occur, which affect sales and profitability.",
     },
     {
         id: "2",
-        icon: "clothingInventoryUnifiedIcon2",
+        icon: "UnifiedIcon2",
         title: "Slow Checkout Process",
         description:
             "The checkout process can be very slow. Outdated billing systems can slow things down during busy times. Long lines can frustrate customers. This can reduce the number of sales you make.",
     },
     {
         id: "3",
-        icon: "clothingInventoryUnifiedIcon3",
+        icon: "UnifiedIcon3",
         title: "Multi-Location Complexity",
         description:
             "Managing inventory for several stores can be complex. When you do not have a system, it can lead to inconsistent stock levels, duplicate orders and confusion about what products are available.",
     },
     {
         id: "4",
-        icon: "clothingInventoryUnifiedIcon4",
+        icon: "UnifiedIcon4",
         title: "Lack of Real-Time Insights",
         description:
             "Not having real-time insights can be a problem. When you do not have reports, you cannot track sales trends or inventory movement. This makes it hard to make business decisions.",
     },
     {
         id: "5",
-        icon: "clothingInventoryUnifiedIcon5",
+        icon: "UnifiedIcon5",
         title: "Pricing Errors",
         description:
             "Pricing errors can happen. Managing discounts, offers and price variations manually can lead to mistakes. These mistakes can cause billing errors and customer dissatisfaction.",
     },
     {
         id: "6",
-        icon: "clothingInventoryUnifiedIcon6",
+        icon: "UnifiedIcon6",
         title: "Limited Online Integration",
         description:
             "Not having an online presence can limit your sales. Retail stores that are not online miss out on opportunities. They cannot reach customers or manage online and offline sales efficiently.",

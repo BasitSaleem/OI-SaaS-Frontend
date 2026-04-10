@@ -110,6 +110,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'inventory',
   },
+  {
+    key: 'jewelry-inventory-management-software',
+    title: 'Jewelry Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/jewllery.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
 
   
 ];
@@ -212,6 +219,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Retail Store Inventory Management' },
     { title: 'Variant & Category Tracking' },
     { title: 'Asset & Stock Control' },
+    { title: 'Loyalty & Reward Programs' },
+  ],
+  'jewelry-inventory-management-software': [
+    { title: 'Jewelry Inventory Management' },
+    { title: 'Precious Metals & Gemstone Tracking' },
+    { title: 'Variant & Category Tracking' },
     { title: 'Loyalty & Reward Programs' },
   ],
   'bakery-pos': [

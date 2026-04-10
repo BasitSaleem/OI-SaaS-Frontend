@@ -9,42 +9,42 @@ export const GROCERY_STORE_UNIFIED_PARAGRAPH =
 export const GROCERY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
-        icon: "groceryUnifiedIcon1",
+        icon: "UnifiedIcon1",
         title: "Stock Mismanagement",
         description:
             "Out-of-date products, lost goods and wrong counts cause extensive losses. Grocery stores handle thousands of moving goods daily. Paper tracking causes confusion and contraction, leading to reduced profits per year.",
     },
     {
         id: "2",
-        icon: "groceryUnifiedIcon2",
+        icon: "UnifiedIcon2",
         title: "Slow Checkout Lines",
         description:
             "Customers get frustrated by long queues at billing counters. Pricing processes and barcodes are manual and slow down transactions. Delays may cost stores 10-20 percent of potential sales during peak hours.",
     },
     {
         id: "3",
-        icon: "groceryUnifiedIcon3",
+        icon: "UnifiedIcon3",
         title: "Expiry & Wastage",
         description:
             "Goods that are perishable such as dairy, bakery, and frozen products need tight controls. Lack of effective tracking leads to stocking of expired goods on shelves which results in loss of revenue and high risk of non-compliance.",
     },
     {
         id: "4",
-        icon: "groceryUnifiedIcon4",
+        icon: "UnifiedIcon4",
         title: "Supplier & Reordering Confusion",
         description:
             "Procurement is complicated by the presence of a variety of distributors, fluctuating prices, and unreliable delivery times. Lack of coordination may lead to overstocking or stockouts.",
     },
     {
         id: "5",
-        icon: "groceryUnifiedIcon5",
+        icon: "UnifiedIcon5",
         title: "Price Fluctuations",
         description:
             "Grocery prices are subject to updates by suppliers and changes in the market. Paper-based updates increase billing mistakes and customer grievances.",
     },
     {
         id: "6",
-        icon: "groceryUnifiedIcon6",
+        icon: "UnifiedIcon6",
         title: "Limited Online Presence",
         description:
             "A lot of grocery stores are not utilizing online orders and delivery. Lack of integrated ecommerce means that they lose customers who would like their orders to be done digitally.",

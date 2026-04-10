@@ -278,7 +278,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon1: (
+  UnifiedIcon1: (
     <svg
       width="44"
       height="44"
@@ -319,7 +319,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon2: (
+  UnifiedIcon2: (
     <svg
       width="44"
       height="44"
@@ -374,7 +374,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon3: (
+  UnifiedIcon3: (
     <svg
       width="44"
       height="44"
@@ -429,7 +429,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon4: (
+  UnifiedIcon4: (
     <svg
       width="44"
       height="44"
@@ -461,7 +461,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon5: (
+  UnifiedIcon5: (
     <svg
       width="44"
       height="44"
@@ -528,7 +528,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon6: (
+  UnifiedIcon6: (
     <svg
       width="44"
       height="44"
@@ -560,7 +560,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon7: (
+  UnifiedIcon7: (
     <svg
       width="44"
       height="44"
@@ -592,7 +592,7 @@ const icons = {
     </svg>
   ),
 
-  furnitureUnifiedIcon8: (
+  UnifiedIcon8: (
     <svg
       width="44"
       height="44"

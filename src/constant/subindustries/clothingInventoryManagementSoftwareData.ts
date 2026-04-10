@@ -9,42 +9,42 @@ export const CLOTHING_INVENTORY_UNIFIED_PARAGRAPH ="Challenges Holding Back Clot
 export const CLOTHING_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
-        icon: "clothingInventoryUnifiedIcon1",
+        icon: "UnifiedIcon1",
         title: "Stock Confusion",
         description:
             "Managing different sizes, colors, and designs of clothing items can be really challenging when it comes to keeping track of inventory. Sometimes clothing items get miscounted, which leads to losses. When you do things manually, it is hard to keep track of how many clothing items you have in stock.",
     },
     {
         id: "2",
-        icon: "clothingInventoryUnifiedIcon2",
+        icon: "UnifiedIcon2",
         title: "Slow Billing",
         description:
             "When there are lines at the checkout, it slows everything down. This happens because it takes time to enter information and find clothing products. During busy times this can be really frustrating for customers and it can even affect how many clothing products you sell.",
     },
     {
         id: "3",
-        icon: "clothingInventoryUnifiedIcon3",
+        icon: "UnifiedIcon3",
         title: "Supplier Misalignment",
         description:
             "Dealing with vendors, seasonal collections and restocking timelines can be tough. If you do not work together well you might end up with few or too many items, which can affect how well your clothing store does.",
     },
     {
         id: "4",
-        icon: "clothingInventoryUnifiedIcon4",
+        icon: "UnifiedIcon4",
         title: "Data Guesswork",
         description:
             "Without reports, owners of clothing stores have to make guesses. It becomes hard to figure out which clothes are selling well, which ones are not selling and what are your profit margins. This can lead to decisions that affect your clothing business.",
     },
     {
         id: "5",
-        icon: "clothingInventoryUnifiedIcon5",
+        icon: "UnifiedIcon5",
         title: "Price Inconsistency",
         description:
             "It can be hard to manage discounts, sales and price changes for clothes. If you make mistakes with prices it can lead to billing errors and unhappy customers who purchase from your store.",
     },
     {
         id: "6",
-        icon: "clothingInventoryUnifiedIcon6",
+        icon: "UnifiedIcon6",
         title: "Lack of Online Visibility",
         description:
             "Many clothing stores miss out on sales because they do not have a website or social media. If you do not have a website then you are limiting your chances of growing your customer base and reaching people who might be interested in your clothes.",

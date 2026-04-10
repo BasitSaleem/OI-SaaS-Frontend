@@ -8,42 +8,42 @@ export const CLOTHING_STORE_UNIFIED_PARAGRAPH ="";
 export const CLOTHING_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
-        icon: "clothingUnifiedIcon1",
+        icon: "UnifiedIcon1",
         title: "Complicated Size & Color Variants",
         description:
             "When dealing with various sizes, colors, fits, and styles, confusion is likely to arise. In the absence of a proper system, stock counts become inaccurate, leading to lost sales and overstock.",
     },
     {
         id: "2",
-        icon: "clothingUnifiedIcon2",
+        icon: "UnifiedIcon2",
         title: "Slow Billing During Peak Hours",
         description:
             "Customers are frustrated by long queues and reduced conversion. Checkout is slowed down by manual item searches or slow POS systems, particularly when sales seasons occur.",
     },
     {
         id: "3",
-        icon: "clothingUnifiedIcon3",
+        icon: "UnifiedIcon3",
         title: "Frequent Returns & Exchanges",
         description:
             "Clothing stores are characterized by high returns and exchange rates. Lack of proper tracking leads to loss of items, clouded records, and loss of accuracy in revenue.",
     },
     {
         id: "4",
-        icon: "clothingUnifiedIcon4",
+        icon: "UnifiedIcon4",
         title: "Stock Mismatch Across Branches",
         description:
             "Improper inventory causes challenges in the movement of goods or handling of fast-moving products.",
     },
     {
         id: "5",
-        icon: "clothingUnifiedIcon5",
+        icon: "UnifiedIcon5",
         title: "Poor Visibility of Best-Selling Items",
         description:
             "In the absence of clear reporting, it is difficult to know which styles are working. This creates ineffective buying choices, increased dead stock, and lost opportunities.",
     },
     // {
     //     id: "6",
-    //     icon: "clothingUnifiedIcon6",
+    //     icon: "UnifiedIcon6",
     //     title: "Limited Online Presence",
     //     description:
     //         "A lot of Clothing stores are not utilizing online orders and delivery. Lack of integrated ecommerce means that they lose customers who would like their orders to be done digitally.",
@@ -204,7 +204,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
         title: "Discount and Promotion Management",
         description:
             "Interchangeably make and implement discounts, seasonal rates, and promotional activities. This will aid in attracting the customers, increase sales and ensure that prices are the same in all stores.",
-        imageSrc: "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card1.webp",
+        imageSrc: "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card10.webp",
     },
     
 ];
