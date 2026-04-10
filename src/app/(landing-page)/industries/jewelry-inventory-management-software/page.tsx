@@ -55,7 +55,7 @@ const Page = () => {
         heading={JEWELRY_INVENTORY_UNIFIED_HEADING}
         paragraph={JEWELRY_INVENTORY_UNIFIED_PARAGRAPH}
         cards={JEWELRY_INVENTORY_UNIFIED_CARDS}
-        iconSet="retailInventory"
+        iconSet="jewelaryInventory"
       />
 
       <WhyChoosePOS
@@ -63,7 +63,7 @@ const Page = () => {
         paragraph="Our POS system efficiently handles jewelry inventory management, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
         cards={JEWELRY_INVENTORY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-         iconSet="retailInventory"
+         iconSet="jewelaryInventory"
       />
 
       <KeyHighlights
@@ -108,7 +108,7 @@ const Page = () => {
         whyChooseTitle={JEWELRY_INVENTORY_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={JEWELRY_INVENTORY_TESTIMONIAL_DATA.whyChooseDescription}
         features={JEWELRY_INVENTORY_TESTIMONIAL_FEATURES}
-         iconSet="retailInventory"
+         iconSet="jewelaryInventory"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
