@@ -46,6 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "clothing-inventory-management-software",
         "retail-store-inventory-management-software",
         "jewelry-inventory-management-software",
+        "auto-parts-inventory-management-software",
+        "ecommerce-store-inventory-management-software",
     ];
 
 

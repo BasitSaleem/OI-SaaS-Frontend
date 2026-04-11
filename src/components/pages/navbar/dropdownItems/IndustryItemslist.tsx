@@ -117,6 +117,20 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'inventory',
   },
+  {
+    key: 'auto-parts-inventory-management-software',
+    title: 'Auto Parts Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
+  {
+    key: 'ecommerce-store-inventory-management-software',
+    title: 'Ecommerce Store Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
 
   
 ];
@@ -226,6 +240,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Precious Metals & Gemstone Tracking' },
     { title: 'Variant & Category Tracking' },
     { title: 'Loyalty & Reward Programs' },
+  ],
+  'auto-parts-inventory-management-software': [
+    { title: 'Auto Parts Inventory Management' },
+    { title: 'Make, Model & Year Tracking' },
+    { title: 'Supplier & Purchase Management' },
+    { title: 'Multi-Branch Management' },
+  ],
+  'ecommerce-store-inventory-management-software': [
+    { title: 'Ecommerce Inventory Management' },
+    { title: 'Multi-Platform Stock Sync' },
+    { title: 'SKU & Variant Tracking' },
+    { title: 'Order Fulfillment Integration' },
   ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },

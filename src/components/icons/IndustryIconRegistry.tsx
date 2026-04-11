@@ -6,27 +6,51 @@ import React from "react";
 // Dynamically import all industry icon components to keep the main bundle size small
 const posBakeryPageIcons = dynamic(() => import("./posBakeryPageIcons"));
 const posBookstorePageIcons = dynamic(() => import("./posBookstorePageIcons"));
-const posClothingStorePageIcons = dynamic(() => import("./posClothingStorePageIcons"));
-const posFurnitureStorePageIcons = dynamic(() => import("./posFurnitureStorePageIcons"));
-const clothingInventoryManagementSoftwareIcons = dynamic(() => import("./clothingInventoryManagementSoftwareIcons"));
-const retailInventoryManagementSoftwareIcons = dynamic(() => import("./retailInventoryManagementSoftwareIcons"));
-const jewelaryInventoryManagementSoftwareIcons = dynamic(() => import("./jewelaryInventoryManagementSoftwareIcons"));
-const posGroceryStorePageIcons = dynamic(() => import("./posGroceryStorePageIcons"));
+const posClothingStorePageIcons = dynamic(
+  () => import("./posClothingStorePageIcons"),
+);
+const posFurnitureStorePageIcons = dynamic(
+  () => import("./posFurnitureStorePageIcons"),
+);
+const clothingInventoryManagementSoftwareIcons = dynamic(
+  () => import("./clothingInventoryManagementSoftwareIcons"),
+);
+const retailInventoryManagementSoftwareIcons = dynamic(
+  () => import("./retailInventoryManagementSoftwareIcons"),
+);
+const jewelaryInventoryManagementSoftwareIcons = dynamic(
+  () => import("./jewelaryInventoryManagementSoftwareIcons"),
+);
+const autoStoreInventoryManagementSoftwareIcons = dynamic(
+  () => import("./autoStoreInventoryManagementSoftwareIcons"),
+);
+const ecommerceStoreInventoryManagementSoftwareIcons = dynamic(
+  () => import("./ecommerceStoreInventoryManagementSoftwareIcons"),
+);
+const posGroceryStorePageIcons = dynamic(
+  () => import("./posGroceryStorePageIcons"),
+);
 const posHardwarePageIcons = dynamic(() => import("./posHardwarePageIcons"));
-const posJewelryStorePageIcons = dynamic(() => import("./posJewelryStorePageIcons"));
-const posRetailStorePageIcons = dynamic(() => import("./posRetailStorePageIcons"));
+const posJewelryStorePageIcons = dynamic(
+  () => import("./posJewelryStorePageIcons"),
+);
+const posRetailStorePageIcons = dynamic(
+  () => import("./posRetailStorePageIcons"),
+);
 
-export type IndustryIconSet = 
-  | "bakery" 
-  | "bookstore" 
-  | "clothing" 
-  | "clothingInventory" 
+export type IndustryIconSet =
+  | "bakery"
+  | "bookstore"
+  | "clothing"
+  | "clothingInventory"
   | "retailInventory"
-  |  "jewelaryInventory" 
-  | "furniture" 
-  | "grocery" 
-  | "hardware" 
-  | "jewelry" 
+  | "jewelaryInventory"
+  | "autoStoreInventory"
+  | "ecommerceStoreInventory"
+  | "furniture"
+  | "grocery"
+  | "hardware"
+  | "jewelry"
   | "retail";
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
@@ -36,6 +60,8 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   clothingInventory: clothingInventoryManagementSoftwareIcons,
   retailInventory: retailInventoryManagementSoftwareIcons,
   jewelaryInventory: jewelaryInventoryManagementSoftwareIcons,
+  autoStoreInventory: autoStoreInventoryManagementSoftwareIcons,
+  ecommerceStoreInventory: ecommerceStoreInventoryManagementSoftwareIcons,
   furniture: posFurnitureStorePageIcons,
   grocery: posGroceryStorePageIcons,
   hardware: posHardwarePageIcons,
@@ -50,11 +76,11 @@ interface IndustryIconProps {
   className?: string;
 }
 
-export default function IndustryIcon({ 
-  set, 
-  name, 
-  size = 48, 
-  className = "" 
+export default function IndustryIcon({
+  set,
+  name,
+  size = 48,
+  className = "",
 }: IndustryIconProps) {
   if (!set || !REGISTRY[set]) {
     return null;
