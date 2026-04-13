@@ -47,7 +47,7 @@ const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
              text-[var(--white-color)]  border border-white hover:border-transparent rounded-full hover:text-[var(--text-dark)]  hover:bg-[var(--white-color)]
              transition-colors duration-300">{demoButtonText}</Link>
           )}
-      <ButtonSm url='https://app.ownersinventory.com/' text={actionButtonText} className='w-full md:w-fit' bgColor='var(--primary-purple)' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder/>
+      <ButtonSm url='https://app.ownersinventory.com/sign-up?app=OG' text={actionButtonText} className='w-full md:w-fit' bgColor='var(--primary-purple)' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder/>
           
         </div>
         </div>
