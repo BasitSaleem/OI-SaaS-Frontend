@@ -86,7 +86,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={CLOTHING_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description="The system ensures that all transactions are recorded and monitored accurately. It restricts data access to authorized staff only. This reduces mistakes and prevents unauthorized actions."
         secondDescription="The system keeps a record of all changes. This ensures compliance and accountability. Real-time tracking gives transparency into stock movements. Automated reports improve accuracy and reliability."
       />

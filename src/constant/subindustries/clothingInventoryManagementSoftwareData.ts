@@ -4,7 +4,7 @@ import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFe
 // ─── Clothing Store Inventory Management — UnifiedPlatform Section ──────────────────────────────
 export const CLOTHING_INVENTORY_UNIFIED_HEADING = "Challenges Holding Back Clothing Stores";
 
-export const CLOTHING_INVENTORY_UNIFIED_PARAGRAPH ="Challenges Holding Back Clothing Stores";
+export const CLOTHING_INVENTORY_UNIFIED_PARAGRAPH ="Clothing stores face daily challenges that slow down growth and reduce profits. Below are some of the most common issues retailers deal with.";
 
 export const CLOTHING_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
@@ -128,9 +128,9 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         buttonColor: "#1AD1B9",
         // listVariant: "accordion",
         list: [
-            { listheading: "Store owners can analyze sales and inventory in real time.", listdescription: "Store owners can analyze sales and inventory in real time." },
-            { listheading: "They can predict demand and plan reorders.", listdescription: "They can predict demand and plan reorders." },
-            { listheading: "They can identify areas where they are losing money and improve profitability.", listdescription: "They can identify areas where they are losing money and improve profitability." },
+            { listheading: "Store owners can analyze sales and inventory in real time" },
+            { listheading: "They can predict demand and plan reorders"},
+            { listheading: "They can identify areas where they are losing money and improve profitability"},
         ]
     },
 ];
@@ -251,12 +251,12 @@ export const CLOTHING_INVENTORY_WORKFLOW_DATA = {
 };
 
 export const CLOTHING_INVENTORY_TESTIMONIALS = [
-    {
+     {
         id: "1",
-        name: "Linda K.",
-        title: "Clothing Store Owner",
+        name: "Kirsten Larson",
+        title: "Clothing Store Manager",
         image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-        text: "This is one of the best systems that we have used. It keeps everything organized and helps owners make better decisions. Our checkout process is now much faster.",
+        text: "Our daily operations are much easier now. Billing is fast and inventory is always accurate. This system has really improved how our clothing store runs.",
     },
     {
         id: "2",
@@ -267,6 +267,13 @@ export const CLOTHING_INVENTORY_TESTIMONIALS = [
     },
     {
         id: "3",
+        name: "Linda K.",
+        title: "Clothing Store Owner",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+        text: "This is one of the best systems that we have used. It keeps everything organized and helps owners make better decisions. Our checkout process is now much faster.",
+    },
+    {
+        id: "4",
         name: "James T.",
         title: "Home Decor & Clothing Store Owner​",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",

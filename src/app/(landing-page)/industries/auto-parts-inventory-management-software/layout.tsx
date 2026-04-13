@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Auto Parts Inventory Management Software | Owners Inventory",
-  description: "Auto parts inventory management software with fast billing, stock tracking, and reports. Manage variants, sales, and suppliers easily. Book a demo or try it for free.",
-  keywords: ["auto parts inventory management software", "auto parts inventory management", "auto parts store inventory software", "auto parts stock management system", "auto parts stock management software", "auto parts inventory software"],
+  description: "Track auto parts stock in real time, manage supplier orders, and streamline multi-location repair workflows with Owners Inventory's auto parts inventory software.",
+  keywords: ["auto parts inventory management software", "automotive inventory management software", "automotive parts inventory software", "auto repair shop inventory management", "auto parts inventory software for small business", "real-time auto parts stock visibility"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/auto-parts-inventory-management-software",
   },

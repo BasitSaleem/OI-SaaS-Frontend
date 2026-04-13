@@ -105,9 +105,9 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
             isEven ? "order-1 lg:order-1" : "order-1 lg:order-2"
           }`}
         >
-          <h3 className="font-['Onest'] font-semibold text-[var(--text-dark)] text-[32px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] mb-4 min-h-[50px]">
+          <h2 className="font-['Onest'] font-semibold text-[var(--text-dark)] text-[32px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] mb-4 min-h-[50px]">
             {title}
-          </h3>
+          </h2>
 
           <Paragraph className="flex-1 mb-6">{description}</Paragraph>
 

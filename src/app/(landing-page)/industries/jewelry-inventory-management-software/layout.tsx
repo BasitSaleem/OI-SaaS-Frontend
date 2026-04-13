@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Jewelry Inventory Management Software | Owners Inventory",
-  description: "Jewelry inventory management software with fast billing, stock tracking, and reports. Manage variants, sales, and suppliers easily. Book a demo or try it for free.",
-  keywords: ["jewelry inventory management software", "jewelry inventory management", "jewelry store inventory software", "jewelry stock management system", "jewelry stock management software", "jewelry inventory software"],
+  description: "Track jewelry stock, manage custom orders, sync multi-location inventory, and automate purchase orders with Owners Inventory's jewelry inventory software.",
+  keywords: ["jewelry stock tracking system", "jewelry inventory management software", "jewelry inventory software", "jewelry store management software", "jewelry store inventory tracking system", "jewelry business inventory software", "real-time jewelry stock management"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/jewelry-inventory-management-software",
   },
