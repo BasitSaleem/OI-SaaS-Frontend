@@ -131,6 +131,20 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'inventory',
   },
+  {
+    key: 'supermarket-pos-system',
+    title: 'Supermarket POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/grocery.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'restaurant-inventory-management-software',
+    title: 'Restaurant Inventory Management',
+    icon: "/assets/icons-section/restaurant.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
 
   
 ];
@@ -252,6 +266,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Multi-Platform Stock Sync' },
     { title: 'SKU & Variant Tracking' },
     { title: 'Order Fulfillment Integration' },
+  ],
+  'supermarket-pos-system': [
+    { title: 'Supermarket Inventory Management' },
+    { title: 'Barcode & SKU Tracking' },
+    { title: 'Shelf Life Monitoring' },
+    { title: 'Bulk Pricing & Discounts' },
+  ],
+  'restaurant-inventory-management-software': [
+    { title: 'Restaurant Inventory Management' },
+    { title: 'Menu & Ingredient Tracking' },
+    { title: 'Order Preparation Sync' },
+    { title: 'Supplier & Purchase Management' },
   ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },

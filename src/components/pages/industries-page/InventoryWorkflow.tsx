@@ -104,8 +104,8 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
             1024: {
               slidesPerView: 3,
             },
-            1440: {
-              slidesPerView: 3,
+            1280: {
+              slidesPerView: 3.5,
             },
           }}
         >
