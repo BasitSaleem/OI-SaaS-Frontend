@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Restaurant Inventory Management Software | Owners Inventory",
-  description: "Manage restaurant ingredients, recipes, and orders in real time. Automate prep and keep stock accurate with Owners Inventory's restaurant inventory management software.",
-  keywords: ["restaurant inventory management software", "inventory management system for restaurant", "food service inventory management", "restaurant ingredient tracking", "kitchen inventory software", "restaurant management system"],
+  description: "Restaurant inventory management software to track ingredients, control food costs, reduce waste, and manage stock in real time for better kitchen efficiency.",
+  keywords: ["restaurant inventory management software", "restaurant inventory system", "inventory management software for restaurants", "restaurant stock management software"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/restaurant-inventory-management-software",
   },

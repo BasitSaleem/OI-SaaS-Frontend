@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "POS System for Supermarkets with Inventory Control",
-  description: "POS system for supermarkets to manage products, categories, inventory, billing, and sales in real time. Improve checkout speed and keep stock accurate.",
-  keywords: ["pos system for supermarket", "supermarket pos system", "pos system for retail supermarket", "best pos system for supermarket", "best pos system for retail supermarket", "pos systems for supermarket"],
+  title: "Supermarket POS System for Billing and Inventory Control",
+  description: "Supermarket POS system to manage billing, inventory, pricing, and stock in real time. Improve checkout speed, reduce errors, and streamline store operations.",
+  keywords: ["supermarket pos system", "pos system for supermarket", "supermarket pos software", "supermarket inventory management system"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/supermarket-pos-system",
   },
