@@ -145,6 +145,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'inventory',
   },
+  {
+    key: 'healthcare-inventory-management-software',
+    title: 'Healthcare Inventory Management',
+    icon: "/assets/icons-section/facilities.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
 
   
 ];
@@ -277,6 +284,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Restaurant Inventory Management' },
     { title: 'Menu & Ingredient Tracking' },
     { title: 'Order Preparation Sync' },
+    { title: 'Supplier & Purchase Management' },
+  ],
+  'healthcare-inventory-management-software': [
+    { title: 'Healthcare Inventory Management' },
+    { title: 'Medical Supply & Item Tracking' },
+    { title: 'Expiry Date & Batch Management' },
     { title: 'Supplier & Purchase Management' },
   ],
   'bakery-pos': [
