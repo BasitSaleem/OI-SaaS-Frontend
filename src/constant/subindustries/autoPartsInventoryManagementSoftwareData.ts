@@ -341,23 +341,23 @@ export const AUTO_PARTS_INVENTORY_TESTIMONIAL_FEATURES = [
         description: "Our POS adapts to growing business needs. It manages multiple outlets, syncs stocks, and enhances store growth, making it a scalable platform.",
         icon: "testWhychoseIcon5",
     },
-    {
-        id: "6",
-        title: "Safe Access",
-        description: "The clothing store staff can only see what they need to see because of user roles and permissions. This keeps the business information safe.",
-        icon: "testWhychoseIcon6",
-    },
-    {
-        id: "7",
-        title: "Integration and Addons",
-        description: "Integrates with accounting applications, e-commerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
-        icon: "testWhychoseIcon7",
-    },
+    // {
+    //     id: "6",
+    //     title: "Safe Access",
+    //     description: "The clothing store staff can only see what they need to see because of user roles and permissions. This keeps the business information safe.",
+    //     icon: "testWhychoseIcon6",
+    // },
+    // {
+    //     id: "7",
+    //     title: "Integration and Addons",
+    //     description: "Integrates with accounting applications, e-commerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
+    //     icon: "testWhychoseIcon7",
+    // },
 ];
 
 export const AUTO_PARTS_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Our inventory solution integrates seamlessly with POS systems, accounting software, CRM platforms and ecommerce tools. This allows store owners to manage inventory, sales, finances and customer data from one place. Integrated tools streamline operations which reduces effort and improves overall efficiency across the clothing business.",
+    paragraph: "It integrates with essential business tools such as CRM, accounting tools, barcode systems, and payment gateways. It creates a powerful connected system that improves efficiency. These integrations simplify daily operations and reduce duplicate work. With these tools connected in one system, businesses can manage inventory, sales, and financial data.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

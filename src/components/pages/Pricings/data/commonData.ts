@@ -124,7 +124,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
         features: [
             { name: 'Role-Based Permissions', info: true, infoText: "Control access by user roles" },
             { name: 'Notifications', info: true, infoText: "Receive important system alerts" },
-            { name: 'Stock Alerts', info: true, infoText: "Monitor low inventory notifications" },
+            // { name: 'Stock Alerts', info: true, infoText: "Monitor low inventory notifications" },
             { name: 'Activity Log', info: true, infoText: "Track user system activities" },
         ]
     },

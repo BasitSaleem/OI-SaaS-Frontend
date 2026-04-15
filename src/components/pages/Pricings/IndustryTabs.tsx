@@ -84,8 +84,9 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
                     <PricingPageIcon
                       name={currentIconName}
                       size={32}
-                      className="h-5 w-5 lg:h-8 lg:w-8"
+                      className="h-8 w-8"
                     />
+
                   </div>
                   <div className="flex flex-col">
                     <span

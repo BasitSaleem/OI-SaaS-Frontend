@@ -229,6 +229,17 @@ const IndustriesTestimonial = ({
                 } else if (features.length === 6) {
                   // If there are exactly 6 cards, show 3 cards per row on desktop (col-span-4)
                   colSpanClass += " md:col-span-6 lg:col-span-4";
+                } else if (features.length === 5) {
+                  // If there are exactly 5 cards:
+                  // Desktop: 3 cards (col-span-4), 2 cards (col-span-6)
+                  // Tablet: 4 cards (col-span-6), 1 card (col-span-12)
+                  if (index < 3) {
+                    colSpanClass += " md:col-span-6 lg:col-span-4";
+                  } else if (index === 3) {
+                    colSpanClass += " md:col-span-6 lg:col-span-6";
+                  } else {
+                    colSpanClass += " md:col-span-12 lg:col-span-6";
+                  }
                 } else if (index < 4) {
                   // First four cards: col-span-3 (desktop), col-span-6 (tablet)
                   colSpanClass += " md:col-span-6 lg:col-span-3";
