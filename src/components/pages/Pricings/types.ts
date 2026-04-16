@@ -9,6 +9,7 @@ export interface PricingPlan {
   features: string[];
   popular?: boolean;
   isCustom?: boolean;
+  link?: string;
 }
 
 export interface FeatureRow {

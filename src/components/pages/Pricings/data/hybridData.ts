@@ -24,7 +24,8 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 'Unlimited Purchases',
                 'Onboarding Assistance & Email Support',
                 'Live Chat & Phone Support',
-            ]
+            ],
+            link: 'https://osglobal.ownersjungle.com/create-organization?pkgId=98d8f68b-6b0c-43e2-aa6b-f0594e505cbe'
         },
         {
             id: 'enterprise',
@@ -48,9 +49,8 @@ export const hybridData: { plans: PricingPlan[]; categories: FeatureCategory[] }
                 'Onboarding Assistance & Email Support',
                 'Live Chat & Phone Support',
                 'Dedicated Account Manager'
-
-
-            ]
+            ],
+            link: 'https://osglobal.ownersjungle.com/create-organization?pkgId=51dfa210-cd5a-4943-ba46-ee106f854f80'
         },
         {
             id: 'lets-talk',

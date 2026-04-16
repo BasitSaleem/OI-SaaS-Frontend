@@ -20,7 +20,8 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
                 'Unlimited Orders & Invoices',
                 'Unlimited Purchases',
                 'Onboarding Assistance & Email Support'
-            ]
+            ],
+            link: 'https://osglobal.ownersjungle.com/create-organization?pkgId=bb2e676e-6b10-40a9-83be-c0c660dc8ad2'
         },
         {
             id: 'pro',
@@ -42,7 +43,8 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
                 'Unlimited Purchases',
                 'Onboarding Assistance & Email Support',
                 'Live Chat & Phone Support'
-            ]
+            ],
+            link: 'https://osglobal.ownersjungle.com/create-organization?pkgId=4cb8ef12-08a5-48bb-8d48-4c738f0848bf'
         },
         {
             id: 'enterprise',
@@ -64,7 +66,8 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
                 'Onboarding Assistance & Email Support',
                 'Live Chat & Phone Support',
                 'Dedicated Account Manager'
-            ]
+            ],
+            link: 'https://osglobal.ownersjungle.com/create-organization?pkgId=fd06bfbc-5de7-4457-bad5-0c073c5ee98e'
         }
     ],
     categories: [
