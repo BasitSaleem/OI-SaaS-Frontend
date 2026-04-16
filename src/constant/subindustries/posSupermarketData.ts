@@ -76,7 +76,7 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
     {
         id: "4",
         icon: "whychoseIcon4",
-        title: "Centralized Price Contro",
+        title: "Centralized Price Control",
         description:
             "You can update prices on all products and in all branches at once to make sure that billing is always correct and consistent. The Owners Inventory POS System is great for price control.",
     },
