@@ -64,21 +64,21 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon2",
         title: "Faster & Smoother Billing",
         description:
-            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times. The Owners Inventory POS System is great for smoother billing.",
+            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times. With us your billing becomes smoother and faster.",
     },
     {
         id: "3",
         icon: "whychoseIcon3",
         title: "Intelligent Supplier Management",
         description:
-            "You can keep monitoring your suppliers, handle purchase orders and get alerts when your stock is low to avoid running out. The Owners Inventory POS System is great for supplier management.",
+            "You can keep monitoring your suppliers, handle purchase orders and get alerts when your stock is low to avoid running out.",
     },
     {
         id: "4",
         icon: "whychoseIcon4",
         title: "Centralized Price Control",
         description:
-            "You can update prices on all products and in all branches at once to make sure that billing is always correct and consistent. The Owners Inventory POS System is great for price control.",
+            "You can update prices on all products and in all branches at once to make sure that billing is always correct and consistent.",
     },
     {
         id: "5",

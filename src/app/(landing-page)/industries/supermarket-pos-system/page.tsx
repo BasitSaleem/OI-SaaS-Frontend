@@ -114,7 +114,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading= "FAQS"
-          paragraph= "The ecommerce inventory management software is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by ecommerce inventory management software"
+          paragraph= "Our supermarket store POS solution is built in such a way that it makes everyday operations easy and effective. These are the responses to some of the most frequent questions of the store owners in supermarkets."
           faqs={SUPERMARKET_FAQS}
           buttonText="Start Now"
         />

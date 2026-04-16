@@ -340,7 +340,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               <button
                                 onClick={() => {
                                   if (plan.link) {
-                                    router.push(plan.link);
+                                    window.open(plan.link, "_blank", "noopener,noreferrer");
                                   }
                                 }}
                                 className="inline-block text-center w-full items-center justify-center px-6 md:px-[26px] lg:px-[26px] py-2 md:py-2 text-xs leading-[100%] font-semibold text-white whitespace-nowrap border border-transparent rounded-full font-['Onest'] mt-1 hover:bg-transparent transition-all cursor-pointer"
