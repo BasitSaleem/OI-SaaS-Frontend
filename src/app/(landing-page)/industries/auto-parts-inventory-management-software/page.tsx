@@ -38,7 +38,7 @@ const Page = () => {
     <div>
       <SubIndustriesHero
         title="Auto Parts Inventory Management Software to Organize and Track Stocks"
-        description="Our auto parts inventory management software provides smarter ways to track stock, manage inventory, and order parts efficiently. Get real-time visibility into stocks; automate purchases; and manage repair workflows or service orders. The POS improves reporting with quick alerts. It simplifies operations and lets automotive store owners run their business with assurance."
+        description="Our auto parts inventory management software provides smarter ways to track stock, manage inventory, and order parts efficiently. Get real-time visibility into stocks, automate purchases, and manage repair workflows or service orders. The software improves reporting with quick alerts. It simplifies operations and lets automotive store owners run their business with assurance."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"

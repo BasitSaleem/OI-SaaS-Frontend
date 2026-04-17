@@ -72,7 +72,7 @@ export const JEWELRY_INVENTORY_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon3",
         title: "Product and Variant Management",
         description:
-            "The POS system manages jewelry by type, price, size, and style, making it easy for staff to find items and speed up selling procedures without making customers wait. It allows you to adjust stock and categorize new arrivals simply, without confusion.",
+            "The system manages jewelry by type, price, size, and style, making it easy for staff to find items and speed up selling procedures without making customers wait. It allows you to adjust stock and categorize new arrivals simply, without confusion.",
     },
     {
         id: "4",
@@ -86,7 +86,7 @@ export const JEWELRY_INVENTORY_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon5",
         title: "Multi-Channel Sync",
         description:
-            "Our POS keeps all inventory synced across multiple channels. It helps store owners to avoid overselling and maintain accurate stock availability for every sales channel.",
+            "Our stock control system keeps all inventory synced across multiple channels. It helps store owners to avoid overselling and maintain accurate stock availability for every sales channel.",
     },
     {
         id: "6",
@@ -105,15 +105,15 @@ export const JEWELRY_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "1",
         title: "Omni Channel and Sales Integration",
         description:
-            "Our POS helps jewelry stores manage sales across physical counters, custom orders, and digital channels. It ensures every order and sale updates the inventory accurately. The software minimizes manual errors in handling multiple orders from different platforms. It makes sure that accurate stock levels are shown on the dashboard for better visibility.",
+            "Our AI-powered inventory software helps jewelry stores manage sales across physical counters, custom orders, and digital channels. It ensures every order and sale updates the inventory accurately. The software minimizes manual errors in handling multiple orders from different platforms. It makes sure that accurate stock levels are shown on the dashboard for better visibility.",
         imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Sales Counter", listdescription: "The POS sales counter helps customers compare designs, metals, and pricing before purchasing. It provides quick access to item details, checks availability, and ensures smooth billing while helping staff provide accurate information to customers about products. This improves customer satisfaction. The POS sends immediate stock updates after every purchase to ensure accurate counting of jewelry items available in inventory." },
-            { listheading: "Online and Wholesale Integration", listdescription: "The system records precise order details separately for wholesale dealers, online buyers, and contractors. It efficiently handles bulk and custom orders for events or online sales. With insights into stock availability, POS ensures correct order fulfillment. It minimizes the confusion between showroom and external orders, making daily operations easy to perform." },
+            { listheading: "POS Sales Counter", listdescription: "The POS sales counter helps customers compare designs, metals, and pricing before purchasing. It provides quick access to item details, checks availability, and ensures smooth billing while helping staff provide accurate information to customers about products. This improves customer satisfaction. Our inventory automation software sends immediate stock updates after every purchase to ensure accurate counting of jewelry items available in inventory." },
+            { listheading: "Online and Wholesale Integration", listdescription: "The system records precise order details separately for wholesale dealers, online buyers, and contractors. It efficiently handles bulk and custom orders for events or online sales. With insights into stock availability, it ensures correct order fulfillment. It minimizes the confusion between showroom and external orders, making daily operations easy to perform." },
             { listheading: "Unified Dashboard", listdescription: "Owners Inventory provides a single multi-channel dashboard. The dashboard allows store owners to switch between channels, helping monitor showroom sales, product performance, bulk orders, consignments, and inventory updates. You can check store activities from one place. The transparency helps you adjust inventory and identify which channels are driving revenue." },
         ]
     },
@@ -121,7 +121,7 @@ export const JEWELRY_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "2",
         title: "Advanced Analytics and Reporting",
         description:
-            "The POS handles inventory management by providing real-time analytics reports. These reports highlight demand patterns for different items such as gold, diamonds, and silver jewelry. It keeps track of best-selling products and dead stock. The system helps store owners restock inventory based on buyer demand and modern trends. Accurate decision-making helps promote sales and business growth.",
+            "Our inventory tracking system handles expensive jewelry item management by providing real-time analytics reports. These reports highlight demand patterns for different items such as gold, diamonds, and silver jewelry. It keeps track of best-selling products and dead stock. The system helps store owners restock inventory based on buyer demand and modern trends. Accurate decision-making helps promote sales and business growth.",
         imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
@@ -143,7 +143,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
         id: 2,
         title: "Display Management",
         description:
-            "Each product is categorized by type, size, price, and collection. POS integrations ensure accurate placement in displays, allowing staff to quickly find items and maintain a well-organized showcase. This improves customer experience and boosts sales.",
+            "Each product is categorized by type, size, price, and collection.  Our software ensures accurate placement in displays, allowing staff to quickly find items and maintain a well-organized showcase. This improves customer experience and boosts sales.",
         imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card2.webp",
     },
      {
@@ -157,7 +157,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
         id: 4,
         title: "Custom Order and Repair Tracking",
         description:
-            "The POS records special orders or repair requests with all specifications, such as included engravings, gemstone selection, and delivery deadline. It tracks progress payments and order completion dates to maintain transparency. This keeps staff and customers updated with accurate order and repair details.",
+            "The inventory control system records special orders or repair requests with all specifications, such as included engravings, gemstone selection, and delivery deadline. It tracks progress payments and order completion dates to maintain transparency. This keeps staff and customers updated with accurate order and repair details.",
         imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card4.webp",
     },
     {
@@ -190,7 +190,7 @@ export const JEWELRY_INVENTORY_WORKFLOW_DATA = {
         {
             number: 2,
             title: "Display Management",
-            description: "Jewelry is categorized and showcased in its specific storage areas with clear attributes like necklaces, rings, and earrings. The system maintains visibility for each item to help staff find them quickly. POS ensures stock availability for customer interactions."
+            description: "Jewelry is categorized and showcased in its specific storage areas with clear attributes like necklaces, rings, and earrings. The system maintains visibility for each item to help staff find them quickly. It ensures stock availability for customer interactions."
         },
         {
             number: 3,
@@ -205,7 +205,7 @@ export const JEWELRY_INVENTORY_WORKFLOW_DATA = {
         {
             number: 5,
             title: "Inventory Reconciliation",
-            description: "The POS records stock movements and sales activity and provides accurate reports. This helps identify in-demand items, slow-moving products, and trending jewelry pieces. It helps align restocking with customer demand and seasonal trends. This boosts sales and increases revenue."
+            description: "Our inventory planning software records stock movements and sales activity and provides accurate reports. This helps identify in-demand items, slow-moving products, and trending jewelry pieces. It helps align restocking with customer demand and seasonal trends. This boosts sales and increases revenue."
         },
        
        
@@ -241,17 +241,17 @@ export const JEWELRY_INVENTORY_FAQS = [
     {
         id: "1",
         question: "How can jewelry inventory management software improve accuracy?",
-        answer: "The POS automatically updates inventory after every sale, return, or adjustment. It ensures that store records always match actual inventory without manual counting."
+        answer: "The system automatically updates inventory after every sale, return, or adjustment. It ensures that store records always match actual inventory without manual counting."
     },
     {
         id: "2",
         question: "Is it suitable for small jewelry stores?",
-        answer: "Yes, Owners Inventory POS is suitable for both large organizations and small shops. It provides efficient features that keep your store organized and automate routine tasks to save time."
+        answer: "Yes, Owners Inventory is suitable for both large organizations and small shops. It provides efficient features that keep your store organized and automate routine tasks to save time."
     },
     {
         id: "3",
         question: "Can I track inventory across multiple store branches?",
-        answer: "Yes, you can easily track every jewelry item in inventory across multiple store locations with a centralized POS dashboard. It provides visibility and allows you to monitor stocks available in different branches."
+        answer: "Yes, you can easily track every jewelry item in inventory across multiple store locations with a centralized dashboard. It provides visibility and allows you to monitor stocks available in different branches."
     },
     {
         id: "4",
@@ -315,7 +315,7 @@ export const JEWELRY_INVENTORY_TESTIMONIAL_DATA = {
     paragraph: "", // Optional paragraph
     secondHeading: "Start Efficiently Managing Your Jewelry Business",
     secondDescription: "Manual tracking, stock inconsistencies, and operational delays can limit your growth. Our structured jewelry business software helps you manage inventory accurately, handle orders efficiently, and maintain complete visibility across your jewelry business.",
-    whyChooseTitle: "Why Choose Our POS Inventory Management Software?",
+    whyChooseTitle: "Why Choose Our Inventory Management Software?",
     whyChooseDescription: "Owners Inventory is more than just a basic management tool. The system is designed to support precision, control, and flexibility, which helps jewelry store owners manage complex operations without manual effort.",
 };
 
@@ -341,7 +341,7 @@ export const JEWELRY_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "4",
         title: "Adapts to Store Growth",
-        description: "The POS can adapt to your growing business needs without requiring major adjustments. It does not disrupt existing operations or data while helping your business expand freely.",
+        description: "The software can adapt to your growing business needs without requiring major adjustments. It does not disrupt existing operations or data while helping your business expand freely.",
         icon: "testWhychoseIcon4",
     },
     {
@@ -361,7 +361,7 @@ export const JEWELRY_INVENTORY_TESTIMONIAL_FEATURES = [
 
 export const JEWELRY_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Our inventory solution integrates seamlessly with POS systems, accounting software, CRM platforms and ecommerce tools. This allows store owners to manage inventory, sales, finances and customer data from one place. Integrated tools streamline operations which reduces effort and improves overall efficiency across the clothing business.",
+    paragraph: "Our jewelry inventory management software connects tools and systems to make operations efficient. The software integrates with CRM, ERP, accounting tools, barcode systems, and different payment gateways, which ensure smooth business processes. These integrations reduce manual effort and maintain consistency between inventory, billing, and sales tasks. It keeps records error-free without duplication or confusion.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

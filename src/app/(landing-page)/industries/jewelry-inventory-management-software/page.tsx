@@ -60,7 +60,7 @@ const Page = () => {
 
       <WhyChoosePOS
         heading="How Our Jewelry Inventory Management Software Solves These Challenges"
-        paragraph="Our POS system efficiently handles jewelry inventory management, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
+        paragraph="Our inventory software efficiently handles jewelry inventory management, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
         cards={JEWELRY_INVENTORY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
          iconSet="jewelaryInventory"
@@ -114,14 +114,14 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="The POS System for Clothing Stores is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by POS System for Clothing Stores."
+          paragraph="Below are some of the most frequently asked questions about the jewelry inventory management software we provide."
           faqs={JEWELRY_INVENTORY_FAQS}
           buttonText="Start Now"
         />
       </div>
        <IndustriesHardwareControl
         title="Experience Smarter Jewelry Management"
-        description="Upgrade your store with our POS system designed to handle the complexities of jewelry inventory management and sales."
+        description="Upgrade your store with our jewelry management system designed to handle the complexities of jewelry inventory management and sales."
         ctaDesc="Start Today"
       />
     </div>
