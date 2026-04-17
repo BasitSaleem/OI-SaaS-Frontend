@@ -162,16 +162,7 @@ const ContactForm = () => {
 
         {/* Submit */}
         <div className="pt-2">
-          {/* <ButtonSm
-            text={isLoading ? "Sending..." : "Send a request"}
-            bgColor="[#795CF5]"
-            textColor="white"
-            isBorder
-            className="w-full"
-            paddingLg="lg:py-5"
-            onClick={() => {}}
-            type="submit"
-          /> */}
+         
           <button
             type="submit"
             className="w-full bg-[var(--primary-purple)] border-2 border-transparent leading-[100%] text-sm md:text-base font-['Onest'] font-semibold cursor-pointer text-white hover:text-[var(--primary-purple)] hover:border-[var(--primary-purple)] hover:bg-transparent py-5 rounded-full"
