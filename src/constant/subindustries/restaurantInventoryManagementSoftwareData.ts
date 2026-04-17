@@ -108,7 +108,7 @@ export const RESTAURANT_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Order Counter", listdescription: "Orders placed through POS are linked directly to inventory usage. The system keeps a record of ingredient usage based on predefined recipes. It keeps sales streamlined even in busy service hours, helping the kitchen and front-of-house teams stay aligned without delays or manual tracking errors." },
+            { listheading: "POS Order Counter", listdescription: "Orders are linked directly to inventory usage. The system keeps a record of ingredient usage based on predefined recipes. It keeps sales streamlined even in busy service hours, helping the kitchen and front-of-house teams stay aligned without delays or manual tracking errors." },
             { listheading: "Online Order and Delivery Sync ", listdescription: "Owners Inventory keeps your restaurant inventory aligned with every online and in-restaurant order. It reduces the required manual effort. As orders are processed, stocks get updates automatically to identify actual ingredient usage. This maintains accurate and up-to-date inventory information across all sales and ordering channels." },
             { listheading: "Centralized Order Dashboard", listdescription: "It provides a centralized dashboard to track all restaurant activities. It allows store owners to monitor order flow, track restaurant performance, and manage purchase operations efficiently. This eliminates confusion caused by multiple systems. It also maintains a smooth workflow between kitchen storage, sales, and inventory management." },
         ]
@@ -161,7 +161,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
 ];
 
 export const RESTAURANT_INVENTORY_WORKFLOW_DATA = {
-    heading: "Restaurant Inventory Workflow of Our POS",
+    heading: "Our Restaurant Inventory Management Software Workflow",
     paragraph: "Owners Inventory helps restaurants maintain a structured workflow for their day-to-day tasks and complex operations. It tracks every activity of your inventory. The system provides real-time, accurate updates using smart AI features. It reduces confusion, delays, and dependency on guesswork.",
     steps: [
         {
@@ -182,7 +182,7 @@ export const RESTAURANT_INVENTORY_WORKFLOW_DATA = {
         {
             number: 4,
             title: "Order and POS Processing",
-            description: "Orders from POS are recorded accurately and synced with inventory in real time to ensure accurate stock counts on reports. After every order, inventory is updated instantly without disrupting restaurant operations workflows."
+            description: "Orders are recorded accurately and synced with inventory in real time to ensure accurate stock counts on reports. After every order, inventory is updated instantly without disrupting restaurant operations workflows."
         },
         {
             number: 5,
@@ -240,7 +240,7 @@ export const RESTAURANT_INVENTORY_FAQS = [
     },
     {
         id: "5",
-        question: "Is Owners Inventory POS suitable for a small restaurant?",
+        question: "Is Inventory software of Owners Inventory suitable for a small restaurant?",
         answer: "Our system is suitable for restaurants of every size. It keeps both small and large inventories efficiently managed, simplifies routine operations, and improves accuracy in reports. It provides restaurant owners with better control over stock."
     },
 ];

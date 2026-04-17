@@ -55,7 +55,7 @@ const Page = () => {
       />
 
       <WhyChoosePOS
-        heading="How Owners Inventory POS Solves Restaurant Challenges"
+        heading="How Owners Inventory Solves Restaurant Challenges"
         paragraph="Owners Inventory streamlines restaurant operations, automates inventory management, and reduces waste. It improves accuracy and kitchen efficiency with advanced management features."
         cards={RESTAURANT_INVENTORY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
