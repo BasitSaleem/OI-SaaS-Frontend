@@ -8,6 +8,7 @@ import Paragraph from "../typography/Paragraph";
 interface IndustriesFeatureCardProps {
   title: string;
   description: string;
+  subDescription?: string;
   videoSrc?: string;
   imageSrc?: string;
   buttonLabel: string;
@@ -20,13 +21,14 @@ interface IndustriesFeatureCardProps {
   containerBackgroundColor?: string;
   containerShadow?: boolean;
   scale?: number;
-  list?: string[] | { listheading: string; listdescription?: string }[];
+  list?: string[] | { listheading: string; listdescription?: string; listSubDescription?: string }[];
   listVariant?: "list" | "accordion";
 }
 
 const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
   title,
   description,
+  subDescription,
   videoSrc,
   imageSrc,
   buttonLabel,
@@ -110,6 +112,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
           </h2>
 
           <Paragraph className="flex-1 mb-6">{description}</Paragraph>
+          <Paragraph className="flex-1 mb-6">{subDescription}</Paragraph>
 
           {list &&
             list.length > 0 &&
@@ -185,6 +188,8 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                                 }`}
                       >
                         {typeof item === "string" ? "" : item.listdescription}
+                        <br />
+                        {typeof item === "string" ? item : item.listSubDescription}
                       </div>
                     </div>
                   )

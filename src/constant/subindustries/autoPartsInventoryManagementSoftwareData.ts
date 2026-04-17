@@ -101,7 +101,8 @@ export const AUTO_PARTS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "1",
         title: "Omni-Channel Sales Integration for Auto Parts Business",
         description:
-            "Auto parts businesses manage sales across different channels. The auto parts management software provides an integrated single system where every activity is recorded in one place, ensuring accurate inventory tracking. It integrates sales, bulk workshop orders, and external sales channels into a single workflow. This helps businesses manage processes automatically, reducing the reliance on manual processes.",
+            "Auto parts businesses manage sales across different channels. The auto parts management software provides an integrated single system where every activity is recorded in one place, ensuring accurate inventory tracking. It integrates sales, bulk workshop orders, and external sales channels into a single workflow.",
+        subDescription: "This helps businesses manage processes automatically, reducing the reliance on manual processes.",
         imageSrc: "/assets/industries-pages/auto-parts-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
@@ -110,7 +111,7 @@ export const AUTO_PARTS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         list: [
             { listheading: "POS Sales Counter", listdescription: "Every sale in the POS is processed accurately by selecting the required automotive parts. The system updates the inventory after completing a transaction. It provides accurate counting of stock levels with each stock adjustment, which promotes accurate reporting and prevents miscalculations." },
             { listheading: "Order Synchronization ", listdescription: "Bulk order requests or orders received from external channels are entered as structured orders within the system. It verifies parts in stock, allocates quantities, and records transactions. This ensures orders are processed without affecting inventory accuracy or creating stock conflicts. The system captures each order, checks availability, and updates stock while reducing duplications and ensuring consistent inventory records." },
-            { listheading: "Centralized Sales Dashboard", listdescription: "All store activities are recorded in one system. The dashboard makes it easy to track all updates related to inventory management and other store operations. This creates a unified view that improves visibility. Automotive businesses gain complete insights into operations and workflows without switching systems or relying on disconnected data sources." },
+            { listheading: "Centralized Sales Dashboard", listdescription: "All store activities are recorded in one system. The dashboard makes it easy to track all updates related to inventory management and other store operations. This creates a unified view that improves visibility.", listSubDescription: "Automotive businesses gain complete insights into operations and workflows without switching systems or relying on disconnected data sources." },
         ]
     },
     {

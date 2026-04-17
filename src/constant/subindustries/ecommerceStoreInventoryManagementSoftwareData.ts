@@ -12,7 +12,7 @@ export const ECOMMERCE_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "UnifiedIcon1",
         title: "Stock Mismatch Across Channels",
         description:
-            "Businesses that sell ecommerce products usually do so on several platforms, such as websites and online marketplaces. It is difficult to update stock across all platforms without a system. It leads to confusion and mismatched inventories.",
+            "Businesses that sell eCommerce products usually do so on several platforms, such as websites and online marketplaces. It is difficult to update stock across all platforms without a system. It leads to confusion and mismatched inventories.",
     },
     {
         id: "2",
@@ -85,7 +85,7 @@ export const ECOMMERCE_INVENTORY_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon5",
         title: "Multi-Channel Integration",
         description:
-            "We connect all of your marketplaces and ecommerce platforms. This allows inventory to be synced up in real-time. Multi-channel integration is easy with the Owners Inventory System.",
+            "We connect all of your marketplaces and eCommerce platforms. This allows inventory to be synced up in real-time. Multi-channel integration is easy with the Owners Inventory System.",
     },
     {
         id: "6",
@@ -101,7 +101,7 @@ export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "1",
         title: "Sales Integration and Omnichannel Marketing",
         description:
-            "All platforms that you use to sell your products, such as your mobile app, e-commerce site, or marketplaces are connected into our system. You can manage all your products from a single place, without switching between tools. This software keeps all your orders, inventory, and sales data in sync so that your business is always accurate.",
+            "All platforms that you use to sell your products, such as your mobile app, eCommerce site, or marketplaces are connected into our system. You can manage all your products from a single place, without switching between tools. This software keeps all your orders, inventory, and sales data in sync so that your business is always accurate.",
         imageSrc: "/assets/industries-pages/ecommerce-store-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
@@ -110,14 +110,14 @@ export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         list: [
             { listheading: "Ecommerce Sales Management", listdescription: "Manage your inventory and orders all from the same place. It is easy to keep track of daily transactions and product performance. It helps you run your online business smoothly." },
             { listheading: "Online Order Processing", listdescription: "Manage orders from beginning to end efficiently and accept secure payments. This system allows you to process orders faster, minimize delays and make sure that your customers receive their products on time. It builds customer trust and improves satisfaction." },
-            { listheading: "Unified Multi-Channel Control", listdescription: "You can view your business performance, including orders and inventory in real-time across multiple platforms. It's easier to keep track of stock, prevent errors and make better business decisions. You can deliver an experience that is consistent and reliable to all your customers, no matter from where they are shopping. This ensures your ecommerce operation is organized, efficient, and fast." },
+            { listheading: "Unified Multi-Channel Control", listdescription: "You can view your business performance, including orders and inventory in real-time across multiple platforms. It's easier to keep track of stock, prevent errors and make better business decisions. You can deliver an experience that is consistent and reliable to all your customers, no matter from where they are shopping. This ensures your eCommerce operation is organized, efficient, and fast." },
         ]
     },
     {
         id: "2",
         title: "Better Decision Reporting & Analytics",
         description:
-            "We provide valuable insights into the ecommerce operation so that you can make better decisions.",
+            "We provide valuable insights into the eCommerce operation so that you can make better decisions.",
         imageSrc: "/assets/industries-pages/ecommerce-store-inventory-management-software/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
@@ -205,7 +205,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
 
 export const ECOMMERCE_INVENTORY_WORKFLOW_DATA = {
     heading: "The Inventory Workflow for Owners Inventory",
-    paragraph: "Our ecommerce inventory management software automates inventory tasks to simplify operations.",
+    paragraph: "Our eCommerce inventory management software automates inventory tasks to simplify operations.",
     steps: [
         {
             number: 1,
@@ -268,7 +268,7 @@ export const ECOMMERCE_INVENTORY_TESTIMONIALS = [
 export const ECOMMERCE_INVENTORY_FAQS = [
     {
         id: "1",
-        question: "What is inventory management software for ecommerce?",
+        question: "What is inventory management software for eCommerce?",
         answer: "The Ecommerce Inventory Management Software is an online system which helps manage orders and sales on different platforms. The software automatically tracks inventory, updates inventory levels and minimizes manual labor. It makes your online business run more efficiently."
     },
     {
@@ -342,7 +342,7 @@ export const ECOMMERCE_INVENTORY_TESTIMONIAL_DATA = {
     heading: "What Do Our Clients Say About Owners Inventory?",
     paragraph: "",
     secondHeading: "Inventory Management Made Easy",
-    secondDescription: "You can take full control over your online business inventory by using a system specifically designed for ecommerce. This system helps you grow and stay organized.",
+    secondDescription: "You can take full control over your online business inventory by using a system specifically designed for eCommerce. This system helps you grow and stay organized.",
     whyChooseTitle: "Why Choose Us?",
     whyChooseDescription: "Our system gives you complete control of your online inventory and business operations. This system is built to help you simplify daily tasks and reduce mistakes, while also helping your business grow more quickly with greater visibility.",
 };
@@ -387,14 +387,14 @@ export const ECOMMERCE_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "7",
         title: "Integration and Addons",
-        description: "Our system integrates seamlessly with shipping platforms, accounting software, payment gateways, and ecommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
+        description: "Our system integrates seamlessly with shipping platforms, accounting software, payment gateways, and eCommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
         icon: "testWhychoseIcon7",
     },
 ];
 
 export const ECOMMERCE_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Our software is compatible with accounting systems, shipping systems, payment gateways and ecommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
+    paragraph: "Our software is compatible with accounting systems, shipping systems, payment gateways and eCommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

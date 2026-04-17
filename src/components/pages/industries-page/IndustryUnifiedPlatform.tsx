@@ -79,7 +79,7 @@ export default function IndustryUnifiedPlatform({
                     transition={{ duration: 0.35, ease: "easeInOut" }}
                     className="w-full p-6 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
                   >
-                    <div className="w-fit p-[11px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl border-5 border-[var(--background-halfwhite)]">
+                    <div className="w-fit p-[11px] flex items-center justify-center mb-[18px] md:mb-5  rounded-xl border-5 border-[var(--background-halfwhite)]">
                       {card.icon.startsWith("/") ? (
                         <Image
                           src={card.icon}

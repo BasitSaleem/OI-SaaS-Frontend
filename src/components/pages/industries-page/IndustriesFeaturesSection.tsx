@@ -7,6 +7,7 @@ export interface FeatureCardData {
   id?: string | number;
   title: string;
   description: string;
+  subDescription?: string;
   videoSrc?: string;
   imageSrc?: string;
   buttonLabel: string;
@@ -18,7 +19,7 @@ export interface FeatureCardData {
   containerBackgroundColor?: string;
   containerShadow?: boolean;
   scale?: number;
-  list?: string[] | { listheading: string; listdescription?: string }[];
+  list?: string[] | { listheading: string; listdescription?: string; listSubDescription?: string }[];
   listVariant?: "list" | "accordion";
 }
 
