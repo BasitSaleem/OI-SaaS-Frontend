@@ -88,6 +88,16 @@ body {
   --addon-border: #FF6E5E;
 }
 
+/* React Toastify Theme Overrides */
+:root {
+  --toastify-color-progress-light: var(--primary-purple);
+  --toastify-color-progress-dark: var(--primary-purple);
+  --toastify-color-progress-info: var(--primary-purple);
+  --toastify-color-progress-success: var(--primary-purple);
+  --toastify-color-progress-warning: var(--primary-purple);
+  --toastify-color-progress-error: var(--primary-purple);
+}
+
 .addon-ribbon-badge {
   position: absolute;
   top: -12px;

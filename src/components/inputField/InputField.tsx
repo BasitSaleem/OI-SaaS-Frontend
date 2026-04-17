@@ -10,7 +10,7 @@ interface InputFieldProps {
     register?: UseFormRegisterReturn;
     error?: string;
     required?: boolean;
-    variant?: "default" | "signup"
+    variant?: "default" | "signup";
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -30,13 +30,15 @@ const InputField: React.FC<InputFieldProps> = ({
             {label && (
                 <div className="flex items-center gap-x-1">
                     <p className="text-sm text-[#231F20] font-normal font-['Onest'] leading-[100%] mb-1">{label}</p>
-                    {required && variant !== "signup" && <p className="text-redColor">*</p>}
+                    {required && variant !== "signup" && <p className="text-red-500">*</p>}
                 </div>
             )}
             <div className="relative">
                 <input
-                    // {...register}
-                    className="w-[100%] px-4 py-3 outline-none focus:border-[#795CF5] transition-colors font-['onest] rounded-[14px] border border-[#D9D9D9] placeholder:font-['onest']  placeholder:text-[16px] text-[#231F20] placeholder:text-[#9A9A9A] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0"
+                    {...register}
+                    className={`w-[100%] px-4 py-3 outline-none focus:border-[#795CF5] transition-colors font-['onest'] rounded-[14px] border placeholder:font-['onest'] placeholder:text-[16px] text-[#231F20] placeholder:text-[#9A9A9A] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 ${
+                        error ? "border-red-500 focus:border-red-500" : "border-[#D9D9D9]"
+                    }`}
                     type={
                         type === "password"
                             ? isHidden
@@ -47,23 +49,22 @@ const InputField: React.FC<InputFieldProps> = ({
                     placeholder={placeHolder}
                     readOnly={readOnly}
                 />
-                {/* {type === "password" &&
+                {type === "password" &&
                     (isHidden ? (
                         <HiOutlineEyeOff
-                            className="absolute top-3.5 right-2 w-[17px] h-[12px] sm:w-[20px] sm:h-[15px] cursor-pointer"
+                            className="absolute top-3.5 right-3 w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] cursor-pointer text-[#9A9A9A]"
                             onClick={() => setIsHidden(false)}
                         />
                     ) : (
                         <HiOutlineEye
                             onClick={() => setIsHidden(true)}
-                            className="absolute top-3.5 right-2 w-[17px] h-[12px] sm:w-[20px] sm:h-[15px] cursor-pointer"
+                            className="absolute top-3.5 right-3 w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] cursor-pointer text-[#9A9A9A]"
                         />
-                    ))} */}
+                    ))}
             </div>
-            {/* {error && <p className="errorText text-left mt-1">{error}</p>} */}
+            {error && <p className="text-red-500 text-xs mt-1 font-['Onest']">{error}</p>}
         </div>
     );
 };
 
 export default InputField;
-

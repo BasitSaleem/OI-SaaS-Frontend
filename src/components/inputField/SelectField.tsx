@@ -36,7 +36,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
           <p className="text-sm text-[#231F20] mb-1 font-normal font-['Onest'] leading-[100%]">
             {label}
           </p>
-          {required && variant !== "signup" && <p className="text-redColor">*</p>}
+          {required && variant !== "signup" && <p className="text-red-500">*</p>}
         </div>
       )}
       <div className="relative">
@@ -45,9 +45,9 @@ const SelectField: React.FC<SelectFieldProps> = ({
           value={value}
           onChange={onChange}
           disabled={readOnly}
-          className={`w-full px-4 py-3 pr-10 rounded-[14px] border border-[#D9D9D9] bg-white appearance-none outline-none focus:border-[#795CF5] transition-colors font-['Onest'] ${
+          className={`w-full px-4 py-3 pr-10 rounded-[14px] border bg-white appearance-none outline-none focus:border-[#795CF5] transition-colors font-['Onest'] ${
             !value ? "text-[#9A9A9A]" : "text-[#231F20]"
-          }`}
+          } ${error ? "border-red-500 focus:border-red-500" : "border-[#D9D9D9]"}`}
         >
           <option value="" disabled>
             {placeholder}
@@ -60,7 +60,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
         </select>
         <HiChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-[#9A9A9A] pointer-events-none" />
       </div>
-      {/* {error && <p className="text-redColor text-left mt-1 text-sm">{error}</p>} */}
+      {error && <p className="text-red-500 text-xs mt-1 font-['Onest']">{error}</p>}
     </div>
   );
 };
