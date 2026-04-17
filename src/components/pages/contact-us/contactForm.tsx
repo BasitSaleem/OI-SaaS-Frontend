@@ -125,7 +125,7 @@ const ContactForm = () => {
         </div>
 
         {/* Row 3: Company Size + Subject */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-x-4 gap-y-6">
           <Controller
             name="companySize"
             control={control}
