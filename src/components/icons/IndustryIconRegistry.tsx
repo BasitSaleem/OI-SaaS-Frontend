@@ -45,6 +45,9 @@ const restaurantInventoryManagementSoftwareIcons = dynamic(
 const healthCareInventoryManagementSoftwareIcons = dynamic(
   () => import("./healthCareInventoryManagementSoftwareIcons"),
 );
+const hotelInventoryManagementSoftwareIcons = dynamic(
+  () => import("./hotelInventoryManagementSoftwareIcons"),
+);
 const posRetailStorePageIcons = dynamic(
   () => import("./posRetailStorePageIcons"),
 );
@@ -59,6 +62,7 @@ export type IndustryIconSet =
   | "autoStoreInventory"
   | "ecommerceStoreInventory"
   | "healthCareInventory"
+  | "hotelInventory"
   | "superMarket"
   | "restaurantInventory"
   | "furniture"
@@ -79,6 +83,7 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   superMarket: posSupermarketStorePageIcons,
   restaurantInventory: restaurantInventoryManagementSoftwareIcons,
   healthCareInventory: healthCareInventoryManagementSoftwareIcons,
+  hotelInventory: hotelInventoryManagementSoftwareIcons,
   furniture: posFurnitureStorePageIcons,
   grocery: posGroceryStorePageIcons,
   hardware: posHardwarePageIcons,
