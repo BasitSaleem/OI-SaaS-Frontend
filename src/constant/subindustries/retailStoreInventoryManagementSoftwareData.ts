@@ -12,7 +12,7 @@ export const RETAIL_STORE_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "UnifiedIcon1",
         title: "Stock Mismanagement",
         description:
-            "When managing large product catalogs, it can be hard to keep track of items without a computer system. Mistakes like overstock, stock misplacements and stockouts can occur, which affect sales and profitability.",
+            "When managing large product categories it can be hard to keep track of them without a computer system. Retailers often miscount stock, misplace items and have too much or too little stock, which affects sales and profitability.",
     },
     {
         id: "2",
@@ -93,7 +93,7 @@ export const RETAIL_STORE_INVENTORY_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon6",
         title: "Online Sales Integration",
         description:
-            "Our software integrates online and offline sales. You can connect your store with ecommerce platforms. This helps you manage sales seamlessly with synchronized inventory updates. Our inventory management software for stores is the solution you need.",
+            "Our software integrates online and offline sales. You can connect your store with eCommerce platforms. This helps you manage sales seamlessly with synchronized inventory updates. Our inventory management software for stores is the solution you need.",
     },
     
     
@@ -106,7 +106,7 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         title: "Omni Channel and Sales Integration",
         description:
             "Retail stores operate across multiple sales channels, physical stores, online shops and mobile apps. Managing these channels need control over stock, prices and orders. A connected inventory system lets store owners see real-time stock updates no matter where the sale happens. It handles walk-in customers, online buyers and big orders from one platform.",
-        imageSrc: "/assets/industries-pages/retail-store-inventory-management-software/clothing-store-omini-chanel.webp",
+        imageSrc: "/assets/industries-pages/retail-store-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
@@ -122,7 +122,7 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         title: "Advanced Analytics and Reporting",
         description:
             "The point of sale system provides insights into sales, inventory trends and customer behavior. It analyzes which products sell the most and which ones do not sell well. These insights help retailers plan inventory, reduce stock and improve profitability.",
-        imageSrc: "/assets/industries-pages/retail-store-inventory-management-software/clothing-store-better-decision.webp",
+        imageSrc: "/assets/industries-pages/retail-store-inventory-management-software/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
@@ -236,17 +236,17 @@ export const RETAIL_STORE_INVENTORY_WORKFLOW_DATA = {
 export const RETAIL_STORE_INVENTORY_TESTIMONIALS = [
     {
         id: "1",
-        name: "Grace Hasan",
-        title: "Retail Store Owner",
-        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-        text: "The way we operate in our store is much easier now. Billing is fast and inventory is always current. This system has made a tremendous difference in the way we conduct business in our retail store.",
-    },
-    {
-        id: "2",
         name: "Adam Khan",
         title: "Interior Decor Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
         text: "The way we operate in our store is much easier now. Billing is fast and inventory is always current. This system has made a tremendous difference in the way we conduct business in our retail store.",
+    },
+    {
+        id: "2",
+        name: "Rose Singh",
+        title: "Home Decor & Retail Store Owner​",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+        text: "Before this system, we used to have stock errors and slow procedures; now all are recorded in real time and time saved and store management is a lot easier.",
     },
     {
         id: "3",
@@ -255,13 +255,7 @@ export const RETAIL_STORE_INVENTORY_TESTIMONIALS = [
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
         text: "We needed a system that could be able to control various products and different categories. This software does that perfectly well because it is easy to use and gives clear reports on a daily basis.",
     },
-     {
-        id: "4",
-        name: "Rose Singh",
-        title: "Home Decor & Retail Store Owner​",
-        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
-        text: "Before this system, we used to have stock errors and slow procedures; now all are recorded in real time and time saved and store management is a lot easier.",
-    },
+    
 ];
 
 export const RETAIL_STORE_INVENTORY_FAQS = [
@@ -283,7 +277,7 @@ export const RETAIL_STORE_INVENTORY_FAQS = [
     {
         id: "4",
         question: "Can I integrate my online store with this system?",
-        answer: "Absolutely. The software works with ecommerce platforms so you can manage the products you sell in your physical store and the products you sell online all in one place. This means that your stock numbers will always be up to date whether someone buys something in person."
+        answer: "Absolutely. The software works with eCommerce platforms so you can manage the products you sell in your physical store and the products you sell online all in one place. This means that your stock numbers will always be up to date whether someone buys something in person."
     },
     {
         id: "5",

@@ -106,7 +106,7 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         title: "Omni-Channel and Sales Integration",
         description:
             "Our system connects all your sales channels. This includes stores, ecommerce platforms, and mobile apps. Store owners can manage in-store and online sales from one dashboard. The inventory is synchronized across all channels.",
-        imageSrc: "/assets/industries-pages/clothing-inventory-management-software/clothing-store-omini-chanel.webp",
+        imageSrc: "/assets/industries-pages/clothing-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
@@ -114,7 +114,7 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         list: [
             { listheading: "POS Sales Management", listdescription: "The system makes billing easy. It gives staff visibility into stock levels and real-time store analytics. This helps everything run smoothly and accurately at the counter." },
             { listheading: "Ecommerce Operations and Sales Online", listdescription: "Store owners can accept secure payments. They can run promotions and process orders efficiently. This helps them grow their clothing business beyond physical stores." },
-            { listheading: "Single Multichannel Control", listdescription: "Store owners can track stock, sales and performance across all channels in real time. They have visibility and control over their business from a single dashboard." },
+            { listheading: "Single Multichannel Control", listdescription: "Store owners can track stock, sales and performance across all channels in real time. They have visibility and control over their business from a single dashboard.", listSubDescription: "This helps store owners run their business efficiently. It also gives customers a seamless shopping experience across all channels." },
         ]
     },
     {
@@ -122,7 +122,7 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         title: "Better Decision Reporting and Analytics",
         description:
             "The system gives store owners reporting tools. These tools provide insights into sales performance, inventory movement and profitability. This helps store owners make decisions about buying, pricing and stock optimization.",
-        imageSrc: "/assets/industries-pages/clothing-inventory-management-software/clothing-store-better-decision.webp",
+        imageSrc: "/assets/industries-pages/clothing-inventory-management-software/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
@@ -403,7 +403,7 @@ export const CLOTHING_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "7",
         title: "Integration and Addons",
-        description: "Integrates with accounting applications, e-commerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
+        description: "Integrates with accounting applications, eCommerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
         icon: "testWhychoseIcon7",
     },
     

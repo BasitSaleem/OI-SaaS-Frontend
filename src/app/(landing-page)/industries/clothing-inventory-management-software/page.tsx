@@ -1,6 +1,6 @@
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/clothing-inventory-management-software/clothing-store-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/clothing-inventory-management-software/clothing-store-why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/clothing-inventory-management-software/hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/industries-pages/clothing-inventory-management-software/why-chose-banner.webp";
 
 import {
   CLOTHING_INVENTORY_KEY_FEATURES_CARDS,
