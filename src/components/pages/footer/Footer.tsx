@@ -1,4 +1,5 @@
 "use client";
+import Copyright from "@/constant/Copyright";
 import { Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -109,9 +110,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
 
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
-          <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
-           © 2026 Owners Inventory - All rights reserved
-          </p>
+           <Copyright/>
           {/* <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             A product of{" "}
             <Link href="#" className="font-semibold font-['Onest'] underline cursor-pointer">

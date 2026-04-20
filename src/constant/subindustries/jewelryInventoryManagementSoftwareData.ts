@@ -160,19 +160,19 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
             "The inventory control system records special orders or repair requests with all specifications, such as included engravings, gemstone selection, and delivery deadline. It tracks progress payments and order completion dates to maintain transparency. This keeps staff and customers updated with accurate order and repair details.",
         imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card4.webp",
     },
+    // {
+    //     id: 5,
+    //     title: "Expense and Cash Flow Tracking",
+    //     description:
+    //         "You can see what you spend every day and track money coming in and going out. This helps you control your jewelry business finances.",
+    //     imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
+    // },
     {
         id: 5,
-        title: "Expense and Cash Flow Tracking",
-        description:
-            "You can see what you spend every day and track money coming in and going out. This helps you control your jewelry business finances.",
-        imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
-    },
-    {
-        id: 6,
         title: "Analytics and Decision Support",
         description:
             "Owners Inventory automatically analyzes daily sales, stock movements, product trends, and slow-moving items. It provides analytics reports to keep store owners updated. These reports help them make decisions based on actual data that proves beneficial for increasing sales and growing their business. It ensures that your store runs without any guesswork.",
-        imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card6.webp",
+        imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
     },
    
     
@@ -353,7 +353,7 @@ export const JEWELRY_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "6",
         title: "Integration and Addons",
-        description: "Integrates with accounting applications, e-commerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
+        description: "Integrates with accounting applications, eCommerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
         icon: "testWhychoseIcon6",
     },
     

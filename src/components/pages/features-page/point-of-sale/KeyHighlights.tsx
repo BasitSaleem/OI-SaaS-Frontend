@@ -65,6 +65,34 @@ const getDefaultLayoutPatterns = (cardCount: number): LayoutPattern[] => {
           paddingClass: "px-0",
         },
       ];
+    case 5:
+      return [
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+        {
+          className: "col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          paddingClass: "px-0",
+        },
+      ];
     default:
       return [
         {

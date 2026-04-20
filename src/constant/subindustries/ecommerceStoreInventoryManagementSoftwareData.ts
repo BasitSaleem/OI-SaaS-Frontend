@@ -99,7 +99,7 @@ export const ECOMMERCE_INVENTORY_WHY_CHOOSE_CARDS = [
 export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "1",
-        title: "Sales Integration and Omnichannel Marketing",
+        title: "Sales Integration and Omni-channel Marketing",
         description:
             "All platforms that you use to sell your products, such as your mobile app, eCommerce site, or marketplaces are connected into our system. You can manage all your products from a single place, without switching between tools. This software keeps all your orders, inventory, and sales data in sync so that your business is always accurate.",
         imageSrc: "/assets/industries-pages/ecommerce-store-inventory-management-software/omini-chanel.webp",
