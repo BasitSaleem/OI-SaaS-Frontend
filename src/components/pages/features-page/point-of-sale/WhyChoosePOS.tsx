@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import MainHeading from "../../typography/MainHeading";
 import Paragraph from "../../typography/Paragraph";
 import CardHeading from "../../typography/CardHeading";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
 
 interface CardItem {
@@ -24,7 +24,7 @@ interface WhyChoosePOSProps {
   iconSet?: IndustryIconSet;
 }
 
-export default function WhyChoosePOS({
+function WhyChoosePOS({
   heading,
   paragraph,
   cards,
@@ -161,3 +161,5 @@ export default function WhyChoosePOS({
     </section>
   );
 }
+
+export default React.memo(WhyChoosePOS);

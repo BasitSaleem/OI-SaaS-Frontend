@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
@@ -159,4 +159,4 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
   );
 };
 
-export default SubIndustriesHero;
+export default React.memo(SubIndustriesHero);

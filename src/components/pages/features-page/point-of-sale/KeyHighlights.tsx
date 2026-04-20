@@ -212,4 +212,4 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
   );
 };
 
-export default KeyHighlights;
+export default React.memo(KeyHighlights);

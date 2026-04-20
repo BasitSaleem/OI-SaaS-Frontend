@@ -8,12 +8,22 @@ import {
   AUTO_PARTS_INVENTORY_FEATURE_CARDS,
 } from "@/constant/subindustries/autoPartsInventoryManagementSoftwareData";
 
-import IndustriesCallToAction from "@/components/pages/industries-page/IndustriesCallToAction";
-import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
-import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
 import SubIndustriesHero from "@/components/pages/industries-page/subIndustriesHero";
-import FaqSection from "@/components/pages/landing-page/FAQSection";
-import IndustryUnifiedPlatform from "@/components/pages/industries-page/IndustryUnifiedPlatform";
+import dynamic from "next/dynamic";
+
+const VoicesRealBusiness = dynamic(() => import("@/components/pages/landing-page/VoicesRealBusiness"), { ssr: true });
+const IndustryUnifiedPlatform = dynamic(() => import("@/components/pages/industries-page/IndustryUnifiedPlatform"), { ssr: true });
+const WhyChoosePOS = dynamic(() => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"), { ssr: true });
+const KeyHighlights = dynamic(() => import("@/components/pages/features-page/point-of-sale/KeyHighlights"), { ssr: true });
+const InventoryWorkflow = dynamic(() => import("@/components/pages/industries-page/InventoryWorkflow"), { ssr: true });
+const IndustriesCallToAction = dynamic(() => import("@/components/pages/industries-page/IndustriesCallToAction"), { ssr: true });
+const IndustriesFeaturesSection = dynamic(() => import("@/components/pages/industries-page/IndustriesFeaturesSection"), { ssr: true });
+const SecurityCompliance = dynamic(() => import("@/components/pages/industries-page/securityCompliance"), { ssr: true });
+const ToolsSection = dynamic(() => import("@/components/pages/landing-page/ToolsSection"), { ssr: true });
+const IndustriesTestimonial = dynamic(() => import("@/components/pages/industries-page/IndustriesTestimonial"), { ssr: true });
+const FaqSection = dynamic(() => import("@/components/pages/landing-page/FAQSection"), { ssr: true });
+const IndustriesHardwareControl = dynamic(() => import("@/components/pages/industries-page/IndustriesHardwareControl"), { ssr: true });
+
 import {
   AUTO_PARTS_INVENTORY_UNIFIED_CARDS,
   AUTO_PARTS_INVENTORY_UNIFIED_HEADING,
@@ -25,13 +35,6 @@ import {
   AUTO_PARTS_INVENTORY_TESTIMONIAL_FEATURES,
   AUTO_PARTS_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/autoPartsInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
-import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
-import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
-import ToolsSection from "@/components/pages/landing-page/ToolsSection";
-import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
-import SecurityCompliance from "@/components/pages/industries-page/securityCompliance";
-import IndustriesHardwareControl from "@/components/pages/industries-page/IndustriesHardwareControl";
 
 const Page = () => {
   return (

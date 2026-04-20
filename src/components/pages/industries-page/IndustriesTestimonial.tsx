@@ -276,4 +276,4 @@ const IndustriesTestimonial = ({
   );
 };
 
-export default IndustriesTestimonial;
+export default React.memo(IndustriesTestimonial);

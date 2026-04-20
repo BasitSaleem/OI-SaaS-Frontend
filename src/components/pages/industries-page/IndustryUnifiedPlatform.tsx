@@ -23,7 +23,7 @@ interface IndustryUnifiedPlatformProps {
   iconSet?: IndustryIconSet;
 }
 
-export default function IndustryUnifiedPlatform({
+function IndustryUnifiedPlatform({
   heading,
   paragraph,
   cards,
@@ -132,4 +132,6 @@ export default function IndustryUnifiedPlatform({
     </div>
   );
 }
+
+export default React.memo(IndustryUnifiedPlatform);
 
