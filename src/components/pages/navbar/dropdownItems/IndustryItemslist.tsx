@@ -20,22 +20,6 @@ export const industryCategories: IndustryCategory[] = [
     id: 'wholesale',
     title: 'Wholesale',
   },
-  // {
-  //   id: 'manufacturing',
-  //   title: 'Manufacturing',
-  // },
-  // {
-  //   id: 'distribution',
-  //   title: 'Distributor/Wholesaler',
-  // },
-  // {
-  //   id: 'ecommerce',
-  //   title: 'Ecommerce',
-  // },
-  // {
-  //   id: 'restaurant',
-  //   title: 'Restaurant',
-  // },
 ];
 
 export const industriesItems: IndustryItem[] = [
@@ -141,21 +125,21 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'restaurant-inventory-management-software',
     title: 'Restaurant Inventory Management',
-    icon: "/assets/icons-section/restaurant.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
     category: 'retailer',
     type: 'inventory',
   },
   {
     key: 'healthcare-inventory-management-software',
     title: 'Healthcare Inventory Management',
-    icon: "/assets/icons-section/facilities.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/healthcare.svg",
     category: 'retailer',
     type: 'inventory',
   },
   {
     key: 'hotel-inventory-management-software',
     title: 'Hotel Inventory Management',
-    icon: "/assets/icons-section/facilities.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/hotel.svg",
     category: 'retailer',
     type: 'inventory',
   },
