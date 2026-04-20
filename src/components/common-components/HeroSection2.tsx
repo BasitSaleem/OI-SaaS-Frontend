@@ -14,8 +14,6 @@ import SubHeading from "../pages/typography/CardHeading";
 import HeroImageSlider from "./HeroImageSlider";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
 
-import { useVideoCache } from "@/hooks/useVideoCache";
-
 if (typeof window !== "undefined") {
   globalGsap.registerPlugin(ScrollTrigger);
 }
@@ -30,6 +28,22 @@ interface HeroSection2Props {
   variant?: "animation1" | "animation2" | "none";
 }
 
+const HERO_IMAGES = [
+  "/assets/home-page-images/hero-animation/animation-img1.webp",
+  "/assets/home-page-images/hero-animation/animation-img2.webp",
+  "/assets/home-page-images/hero-animation/animation-img3.webp",
+  "/assets/home-page-images/hero-animation/animation-img4.webp",
+  "/assets/home-page-images/hero-animation/animation-img5.webp",
+];
+
+const HERO_BACKGROUNDS = [
+  "#E2D9F3",
+  "#F1DBD5",
+  "#E7E2D4",
+  "#DAE6F1",
+  "#E4E7D4",
+];
+
 const HeroSection2: React.FC<HeroSection2Props> = ({
   title = "Grow Faster with Smarter Inventory Tools",
   description,
@@ -42,9 +56,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   useHeaderAnimation();
   useHeroAnimations(variant);
 
-  const [shouldPlayVideo, setShouldPlayVideo] = useState(false);
   const { shouldShowImage } = useSafariDetector();
-  const { videoSrc } = useVideoCache("/videos-s3/landing-page/hero-main-video.webm");
 
   // Refs
   const mainHeadingRef = useRef<HTMLHeadingElement>(null);
@@ -67,7 +79,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   const inventoryBlurIconRef = useRef<HTMLImageElement>(null);
   const inventoryIconRef = useRef<HTMLImageElement>(null);
   const growthBoxRef = useRef<HTMLImageElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const ctx = globalGsap.context(() => {
@@ -145,9 +156,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
           rotation: 0,
           duration: 1.5,
           stagger: 0.1,
-          onComplete: () => {
-            setShouldPlayVideo(true);
-          },
         },
         "0.4"
       );
@@ -165,31 +173,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
     return () => ctx.revert();
   }, []);
 
-  // Lazy Loading Video
-  const [isInView, setIsInView] = useState(false);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0 }
-    );
-    if (homeHeroSecRef.current) {
-      observer.observe(homeHeroSecRef.current);
-    }
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (shouldPlayVideo && videoRef.current && !shouldShowImage) {
-      videoRef.current.play().catch((error) => {
-        console.log("Video play failed:", error);
-      });
-    }
-  }, [shouldPlayVideo, shouldShowImage]);
 
   return (
     <div className="" ref={homeHeroSecRef}>
@@ -268,9 +251,9 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                 <div
                   className="owner-inventory-hero__lower relative w-full wrapper pt-10 md:pt-10 xl:pt-10 "
                 >
-                  <div
-                    className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative -z-10 backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
-                  >
+                    <div
+                      className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative z-[1] backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
+                    >
                     {/* <HeroImageSlider
                     images={[
                       "/assets/home-page-images/home-herofirst.webp",
@@ -289,34 +272,10 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   /> */}
 
                     <div className="w-full h-full rounded-[40px] relative overflow-hidden owner-inventory-hero__video">
-                      {shouldShowImage ? (
-                        <Image
-                          src="/assets/home-page-images/hero-anim-banner.webp"
-                          alt="Hero Fallback"
-                          width={498}
-                          height={650}
-                          className="w-full h-full object-cover rounded-3xl"
-                          priority
-                          sizes="(max-width: 768px) 250px, (max-width: 1024px) 300px, 498px"
-                        />
-                      ) : isInView ? (
-                        <video
-                          ref={videoRef}
-                          className="w-full object-cover rounded-3xl"
-                          muted
-                          playsInline
-                          autoPlay={shouldPlayVideo}
-                          loop
-                          preload="metadata"
-                          poster="/assets/home-page-images/hero-anim-banner.webp"
-                        >
-                          <source
-                            src={videoSrc}
-                            type="video/webm"
-                          />
-                          Your browser does not support the video tag.
-                        </video>
-                      ) : null}
+                      <HeroImageSlider
+                        images={HERO_IMAGES}
+                        backgrounds={HERO_BACKGROUNDS}
+                      />
                     </div>
 
                     <div

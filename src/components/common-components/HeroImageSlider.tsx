@@ -15,99 +15,95 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
   backgrounds = [],
   className,
 }) => {
-  const imageRefs = useRef<HTMLDivElement[]>([]);
+  const img1Ref = useRef<HTMLDivElement>(null);
+  const img2Ref = useRef<HTMLDivElement>(null);
+  const img3Ref = useRef<HTMLDivElement>(null);
+  const img4Ref = useRef<HTMLDivElement>(null);
+  const img5Ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const setImageRef = (el: HTMLDivElement | null, idx: number) => {
-    if (el) imageRefs.current[idx] = el;
-  };
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (!containerRef.current) return;
 
- useEffect(() => {
-  const imgs = imageRefs.current;
-  if (!imgs || imgs.length === 0 || !containerRef.current) return;
+      const imgRef1 = img1Ref.current;
+      const imgRef2 = img2Ref.current;
+      const imgRef3 = img3Ref.current;
+      const imgRef4 = img4Ref.current;
+      const imgRef5 = img5Ref.current;
 
-  // --- Initial Styles ---
-  gsap.set(imgs, {
-    opacity: 0,
-    scale: 1,
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-  });
+      const refs = [imgRef1, imgRef2, imgRef3, imgRef4, imgRef5];
 
-  gsap.set(imgs[0], { opacity: 1, scale: 1 });
+     
+      // Initial states for all images
+      gsap.set(refs, {
+        position: "absolute",
+        scale: 1,
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        opacity: 0,
+      });
+      
+      gsap.set(imgRef1, { opacity: 1, scale: 1.1 });
+      
+      gsap.set(containerRef.current, { background: backgrounds[0] });
 
-  if (backgrounds[0])
-    containerRef.current.style.backgroundColor = backgrounds[0];
+      const tl = gsap.timeline({ repeat: -1, delay: 2 });
 
-  const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power2.inOut" } });
+      tl.to(containerRef.current, { background: backgrounds[1], duration: 0.1, ease: "power3.inOut" }, 0);
+      tl.to(imgRef1, { opacity: 0, duration: 2, scale: 1.3, ease: "power3.inOut" }, 0);
+      tl.to(imgRef2, { opacity: 1, duration: 2, scale: 1, ease: "power3.inOut" }, 0);
+      tl.to(containerRef.current, { background: backgrounds[2], duration: 0.1, ease: "power3.inOut" }, 2);
+      tl.to(imgRef2, { opacity: 0, duration: 2, scale: 1.3, ease: "power3.inOut" }, 2);
+      tl.to(imgRef3, { opacity: 1, duration: 2, scale: 1, ease: "power3.inOut" }, 2);
 
-  const startSlider = () => {
-    imgs.forEach((current, idx) => {
-      const next = imgs[(idx + 1) % imgs.length];
-      const nextBg = backgrounds[(idx + 1) % backgrounds.length];
+      tl.to(containerRef.current, { background: backgrounds[3], duration: 0.1, ease: "power3.inOut" }, 4);
+      tl.to(imgRef3, { opacity: 0, duration: 2, scale: 1.3, ease: "power3.inOut" }, 4);
+      tl.to(imgRef4, { opacity: 1, duration: 2, scale: 1, ease: "power3.inOut" }, 4);
 
-      // CURRENT IMAGE → zoom little → fade out
-      tl.to(
-        current,
-        {
-          scale: 1.4,
-          opacity: 0,
-          duration: 1.5,
-        },
-        "+=2" // wait 2 seconds before each transition
-      );
+      tl.to(containerRef.current, { background: backgrounds[4], duration: 0.1, ease: "power3.inOut" }, 6);
+      tl.to(imgRef4, { opacity: 0, duration: 2, scale: 1.3, ease: "power3.inOut" }, 6);
+      tl.to(imgRef5, { opacity: 1, duration: 2, scale: 1, ease: "power3.inOut" }, 6);
 
-      // NEXT IMAGE → fade in smoothly (scale stays normal)
-      tl.fromTo(
-        next,
-        { opacity: 0, scale: 1 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.5,
-        },
-        "<" // run at the same time as fade out
-      );
+      tl.to(containerRef.current, { background: backgrounds[0], duration: 0.1, ease: "power3.inOut" }, 8);
+      tl.to(imgRef5, { opacity: 0, duration: 2, scale: 1.3, ease: "power3.inOut" }, 8);
+      tl.to(imgRef1, { opacity: 1, duration: 2, scale: 1.1, ease: "power3.inOut" }, 8);
+      
 
-      // Background change in sync
-      if (nextBg) {
-        tl.to(
-          containerRef.current,
-          { backgroundColor: nextBg, duration: 1.5 },
-          "<"
-        );
-      }
-    });
-  };
+     
+    }, containerRef);
 
-  const handle = () => startSlider();
-  document.addEventListener("heroAnimationFinished", handle);
-
-  return () => {
-    document.removeEventListener("heroAnimationFinished", handle);
-    tl.kill();
-  };
-}, [images, backgrounds]);
+    return () => ctx.revert();
+  }, [backgrounds]);
 
   return (
     <div
       ref={containerRef}
-      className={`w-full h-[376px] lg:h-[598px] px-6 rounded-[40px] relative overflow-hidden ${className}`}
+      className={`w-full h-full rounded-[40px] relative overflow-hidden ${className}`}
+      style={{ background: backgrounds[0] }}
     >
-      {images.map((src, idx) => (
-        <div key={idx} ref={(el) => setImageRef(el, idx)}>
-          <Image
-            src={src}
-            alt={`Hero Image ${idx + 1}`}
-            fill
-            className="object-contain w-full max-w-[100%] mx-auto h-full"
-            priority={idx === 0} // First image should be prioritized for loading
-          />
-        </div>
-      ))}
+      
+      <div ref={img1Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 1 }}>
+        <Image src="/assets/home-page-images/hero-animation/animation-img1.webp" alt="Hero Animation 1" fill className="object-cover w-full h-full" priority />
+      </div>
+
+      <div ref={img2Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
+        <Image src="/assets/home-page-images/hero-animation/animation-img2.webp" alt="Hero Animation 2" fill className="object-cover w-full h-full" />
+      </div>
+
+      <div ref={img3Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
+        <Image src="/assets/home-page-images/hero-animation/animation-img3.webp" alt="Hero Animation 3" fill className="object-contain w-full h-full" />
+      </div>
+
+      <div ref={img4Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
+        <Image src="/assets/home-page-images/hero-animation/animation-img4.webp" alt="Hero Animation 4" fill className="object-cover w-full h-full" />
+      </div>
+
+      <div ref={img5Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
+        <Image src="/assets/home-page-images/hero-animation/animation-img5.webp" alt="Hero Animation 5" fill className="object-cover w-full h-full" />
+      </div>
     </div>
   );
 };
