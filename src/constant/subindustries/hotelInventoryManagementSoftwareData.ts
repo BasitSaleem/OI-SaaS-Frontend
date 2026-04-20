@@ -254,8 +254,8 @@ export const HOTEL_INVENTORY_TESTIMONIAL_DATA = {
     paragraph: "",
     secondHeading: "Easy Hotel Inventory Management",
     secondDescription: "Get full control over your hotel's inventory using a modern system that is designed for hospitality operations. Increase accuracy, cut waste and streamline the entire supply chain, while maintaining high standards of service.",
-    whyChooseTitle: "Why Choose Owners Inventory for Healthcare Inventory Management?",
-    whyChooseDescription: "Our inventory management software handles tasks efficiently where accuracy is crucial. It manages complex healthcare inventory with structured workflows and reduces the chances of human errors by eliminating manuzal processes.",
+    whyChooseTitle: "Why Choose Owners Inventory for Hotel Inventory Management?",
+    whyChooseDescription: "Our inventory management software handles tasks efficiently where accuracy is crucial. It manages complex hotel inventory with structured workflows and reduces the chances of human errors by eliminating manual processes.",
 };
 
 export const HOTEL_INVENTORY_TESTIMONIALS = [
@@ -401,7 +401,7 @@ export const HOTEL_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "8",
         title: "Continuous Support",
-        description: "Connect easily with accounting and procurement systems for a seamless workflow. It reduces the need for manual data entry and improves accuracy so that all business processes are coordinated efficiently.",
+        description: "We provide ongoing support for your system to make sure it runs at its best. Our team continuously updates the software to meet industry requirements, ensuring that you are always up-to-date with the latest tools and practices for hotel inventory management.",
         icon: "testWhychoseIcon8",
     },
 ];
@@ -410,10 +410,10 @@ export const HOTEL_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
     paragraph: "Owners Inventory is integrated with accounting platforms, procurement systems, hotel management systems, and supplier systems. It reduces the manual workload, removes duplication of data, and streamlines operational workflows throughout your business.",
     tools: [
-        { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
-        { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
-        { id: 3, name: "QuickBooks", image: "/assets/home-page-images/tools-section/quick-book.svg" },
-        { id: 4, name: "Xero", image: "/assets/home-page-images/tools-section/xero.svg" },
-        { id: 5, name: "Stripe", image: "/assets/home-page-images/tools-section/stripe.svg" },
+        { id: 1, name: "QuickBooks", image: "/assets/home-page-images/tools-section/quick-book.svg" },
+        { id: 2, name: "Xero", image: "/assets/home-page-images/tools-section/xero.svg" },
+        { id: 3, name: "Stripe", image: "/assets/home-page-images/tools-section/stripe.svg" },
+        //   { id: 4, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
+        // { id: 5, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
     ],
 };
