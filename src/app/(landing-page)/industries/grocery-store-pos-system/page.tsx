@@ -86,7 +86,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={GROCERY_STORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Speed, Accuracy, & Reliability."
+        title="Security, Accuracy, and Reliability."
         description="An effective grocery POS system is one that ensures that all the transactions are logged and tracked correctly. User roles and permissions restrict access to sensitive information, which minimizes internal errors and theft."
         secondDescription="Accountability is also ensured by audit trails which aid in adherence to financial regulations. Live tracking tracks all the stock movements in a transparent manner, and automated reporting provides proper bookkeeping and financial assurance."
       />
@@ -114,7 +114,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our Grocery Store POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from grocery store owners."
+          paragraph="The POS system for our grocery store is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by grocery store owners."
           faqs={GROCERY_STORE_FAQS}
           buttonText="Start Now"
         />

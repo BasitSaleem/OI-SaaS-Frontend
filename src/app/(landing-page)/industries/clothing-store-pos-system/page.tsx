@@ -86,9 +86,8 @@ const Page = () => {
       <IndustriesFeaturesSection features={CLOTHING_STORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Speed, Accuracy, & Reliability."
-        description="Clothing stores need POS systems that are secure and accurate. Our owners inventory POS constantly handles transactions, returns, and discounts safely. This protects sales data, private customer information, and financial records with role-based access and limited permissions."
-        secondDescription="With accurate transaction records, it reduces billing errors and fraud. Organized data helps brands stay compliant with tax regulations and audit requirements without operational stress."
+        title="Security, Accuracy, and Compliance"
+        description="Clothing stores need POS systems that are secure and accurate. Our owners inventory POS constantly handles transactions, returns, and discounts safely. This protects sales data, private customer information, and financial records with role-based access and limited permissions. With accurate transaction records, it reduces billing errors and fraud. Organized data helps brands stay compliant with tax regulations and audit requirements without operational stress."
       />
 
       <ToolsSection
@@ -114,7 +113,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our Clothing Store POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from clothing store owners."
+          paragraph="The POS System for Clothing Stores is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by POS System for Clothing Stores."
           faqs={CLOTHING_STORE_FAQS}
           buttonText="Start Now"
         />

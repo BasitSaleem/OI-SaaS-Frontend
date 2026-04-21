@@ -60,7 +60,7 @@ const Page = () => {
 
       <WhyChoosePOS
         heading="How Our Inventory Software Solves These Challenges"
-        paragraph="The Owners Inventory POS System has features that help supermarkets, including"
+        paragraph="The Owners Inventory POS System has features that help supermarkets, including:"
         cards={SUPERMARKET_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
         iconSet="superMarket"
@@ -86,7 +86,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={SUPERMARKET_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Speed, Accuracy, & Reliability."
+        title="Speed, Accuracy, and Reliability."
         description="Our system works with other tools like accounting software, customer management, online stores and payment systems. This lets you manage the supermarket from one place."
         secondDescription="These tools make things easier, reduce work and make the supermarket run faster and more efficiently."
       />

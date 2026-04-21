@@ -47,7 +47,7 @@ export const GROCERY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "UnifiedIcon6",
         title: "Limited Online Presence",
         description:
-            "A lot of grocery stores are not utilizing online orders and delivery. Lack of integrated ecommerce means that they lose customers who would like their orders to be done digitally.",
+            "A lot of grocery stores are not utilizing online orders and delivery. Lack of integrated eCommerce means that they lose customers who would like their orders to be done digitally.",
     },
       
 ];
@@ -105,7 +105,7 @@ export const GROCERY_STORE_FEATURE_CARDS = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time.Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time.",
+            "Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time. Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time.",
         imageSrc: "/assets/industries-pages/grocery-store-pos/jewelary-store-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
@@ -126,7 +126,7 @@ export const GROCERY_STORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Real-time sales and stock analysis help improve decisions."},
+            { listheading: "Real-time sales and stock analysis help improve decisions"},
             { listheading: "Inventory demand and reorder automation"},
             { listheading: "Determine wastages and enhance profit margins"},
         ]
@@ -405,7 +405,7 @@ export const GROCERY_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "7",
         title: "Integration and Addons",
-        description: "Integrates with accounting applications, e-commerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
+        description: "Integrates with accounting applications, eCommerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
         icon: "testWhychoseIcon7",
     },
     
@@ -413,7 +413,7 @@ export const GROCERY_STORE_TESTIMONIAL_FEATURES = [
 
 export const GROCERY_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary jewellery inventory systems fit perfectly well with POS, accounting packages, customer relationship management (CRM), barcode readers, and ecommerce. This enables the owners to have all inventory, sales, finances, and customer relationship under one dashboard.",
+    paragraph: "Our grocery POS also connects to accounting software, customer relationship management software, online shopping platforms, barcode readers, scales and secure payment gateways. Such combined tools make business easier, require less manual effort, and inventory management more efficient and faster throughout your grocery business.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

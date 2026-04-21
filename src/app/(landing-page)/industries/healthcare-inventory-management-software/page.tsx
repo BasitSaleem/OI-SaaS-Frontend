@@ -82,7 +82,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={HEALTHCARE_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description= "Healthcare inventory requires accountability. The system records actions like who handled what, when, and where, creating a clear usage trail. This helps teams investigate discrepancies, maintain internal discipline, and stay prepared for audits without scrambling through scattered records. It ensures each record is complete and accurate."
       />
 

@@ -53,33 +53,15 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           <div
             className={`w-full ${paddingClass} pb-0 production-banner 
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
-              rounded-tl-[20px] rounded-tr-[20px]`}
+              rounded-[20px]`}
           >
-            {shouldShowImage && imageSrc ? (
+           
               <img
                 src={imageSrc}
                 alt={title}
-                className={`w-full rounded-tl-[20px] rounded-tr-[20px] ${mediaClassName}`}
+                className={`w-full rounded-[20px] ${mediaClassName}`}
               />
-            ) : !shouldShowImage && videoSrc ? (
-              <video
-                className={`w-full rounded-tl-[20px] rounded-tr-[20px] lazy-video feature-video ${mediaClassName}`}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="none"
-              >
-                <source src={videoSrc} type="video/webm" />
-                Your browser does not support the video tag.
-              </video>
-            ) : imageSrc ? (
-              <img
-                src={imageSrc}
-                alt={title}
-                className={`w-full rounded-tl-[20px] rounded-tr-[20px] ${mediaClassName}`}
-              />
-            ) : null}
+           
           </div>
 
           {/* Text Content */}

@@ -57,14 +57,14 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon1",
         title: "Real-Time Stock Accuracy",
         description:
-            "The inventory changes right away after every sale and purchase, which reduces mistakes and keeps stock levels accurate. The Owners Inventory POS System is great for real-time stock accuracy.",
+            "The inventory changes right away after every sale and purchase, which reduces mistakes and keeps stock levels accurate.",
     },
     {
         id: "2",
         icon: "whychoseIcon2",
         title: "Faster & Smoother Billing",
         description:
-            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times. With us your billing becomes smoother and faster.",
+            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times.",
     },
     {
         id: "3",
@@ -85,14 +85,14 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon5",
         title: "Data-Driven Decision Making",
         description:
-            "Live reports show which products are selling well and which ones are not which helps you set prices and make the right purchases. The Owners Inventory POS System is great for data-driven decision making.",
+            "Live reports show which products are selling well and which ones are not which helps you set prices and make the right purchases.",
     },
     {
         id: "6",
         icon: "whychoseIcon6",
         title: "Stronger Online Presence",
         description:
-            "The Owners Inventory POS System works with ecommerce systems so supermarkets can sell online and keep their inventory up to date in real time. The Owners Inventory POS System is great for online presence.",
+            "The Owners Inventory POS System works with ecommerce systems so supermarkets can sell online and keep their inventory up to date in real time.",
     },
 ];
 
@@ -108,7 +108,7 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Sales Management", listdescription: "We make it easy to check out fast, see what is in stock and get the numbers for the store. This helps the supermarket run smoothly and be in control." },
+            { listheading: "POS Sales Management", listdescription: "We ensure that the checkout process is made easy, you can keep track of the stock in real time and be able to retrieve precise sales information about your store.", listSubDescription: "This assists supermarkets to run smoothly, minimize mistakes and have a better control of day to day operations and general performance. It also enhances customer experience by minimizing waiting time at billing counters, and processing all transactions fast and properly." },
             { listheading: "Ecommerce Operations and Sales Online", listdescription: "Accept secure online payments, manage digital promotions, and process orders smoothly to expand your supermarket beyond the physical store." },
             { listheading: "Single Multi-Channel Control", listdescription: "You can see what is in stock, what is selling and how the supermarket is doing in time. This gives you a view and control of your business." },
         ]
@@ -125,7 +125,7 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
         list: [
             { listheading: "See what is selling and what is not"},
             { listheading: "Know when to order things"},
-            { listheading: "Find out where money is being lost and improve profitability."},
+            { listheading: "Find out where money is being lost and improve profitability"},
         ]
     },
 ];
@@ -235,7 +235,7 @@ export const SUPERMARKET_WORKFLOW_DATA = {
         {
             number: 6,
             title: "Reporting & Analysis",
-            description: "Our reports show sales performance, stock movement and revenue in detail."
+            description: "Our reports show sales performance, stock movement and revenue in detail. Our supermarket POS system simplifies tasks, reduces errors and improves efficiency. Change your supermarket's operations today."
         },
     ]
 };
@@ -348,7 +348,7 @@ export const SUPERMARKET_TESTIMONIAL_DATA = {
     heading: "What Do Our Clients Say About Owners Inventory?",
     paragraph: "", // Optional paragraph
     secondHeading: "Inventory Management Made Easy",
-    secondDescription: "You can take full control over your online business inventory by using a system specifically designed for ecommerce. This system helps you grow and stay organized.",
+    secondDescription: "You can take full control over your online business inventory by using a system specifically designed for eCommerce. This system helps you grow and stay organized.",
     whyChooseTitle: "Why Choose Our System?",
     whyChooseDescription: "Our system gives you inventory, fast billing and control of the supermarket.",
 };
@@ -393,14 +393,14 @@ export const SUPERMARKET_TESTIMONIAL_FEATURES = [
     {
         id: "7",
         title: "Integration and Addons",
-        description: "Our system integrates seamlessly with shipping platforms, accounting software, payment gateways, and ecommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
+        description: "Our system integrates seamlessly with shipping platforms, accounting software, payment gateways, and eCommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
         icon: "testWhychoseIcon7",
     },
 ];
 
 export const SUPERMARKET_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Our POS integrates with accounting software, ecommerce platforms, CRM systems, and payment gateways. These integrations streamline operations and reduce manual work.",
+    paragraph: "Our POS integrates with accounting software, eCommerce platforms, CRM systems, and payment gateways. These integrations streamline operations and reduce manual work.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

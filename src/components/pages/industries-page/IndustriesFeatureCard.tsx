@@ -240,7 +240,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                         </defs>
                       </svg>
                     </span>
-                    <span className="font-['Onest'] text-[var(--text-dark)] text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]">
+                    <span className="font-['Onest'] text-[var(--text-dark)] font-semibold text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]">
                       {typeof item === "string" ? item : item.listheading}
                     </span>
                   </li>

@@ -32,6 +32,7 @@ import ToolsSection from "@/components/pages/landing-page/ToolsSection";
 import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
 import SecurityCompliance from "@/components/pages/industries-page/securityCompliance";
 import IndustriesHardwareControl from "@/components/pages/industries-page/IndustriesHardwareControl";
+import DisclaimerHotel from "@/components/pages/industries-page/DisclaimerHotel";
 
 const Page = () => {
   return (
@@ -82,15 +83,21 @@ const Page = () => {
       <IndustriesFeaturesSection features={HOTEL_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description= "This system provides a secure way to handle inventory data, while maintaining the accuracy of all hotel operations. Each transaction is documented, creating an audit trail which helps to maintain accountability."
       />
-
-      <ToolsSection
-        heading={HOTEL_INVENTORY_TOOLS_DATA.heading}
-        description={HOTEL_INVENTORY_TOOLS_DATA.paragraph}
-        tools={HOTEL_INVENTORY_TOOLS_DATA.tools}
+      
+      <DisclaimerHotel
+       title="All-in-One Hotel Inventory Platform"
+        description= "An all in one hotel inventory platform centralizes stock control purchasing and reporting in one system. It ensures consistent data, reduces errors, improves visibility, and eliminates reliance on external tools or integrations."
+        list={[
+            { listheading: "No third-party dependency"},
+            { listheading: "Centralized operations" },
+            { listheading: "Unified data across modules"},
+            { listheading: "Reduced integration costs"},
+        ]}
       />
+      
 
       <IndustriesTestimonial
         testimonials={HOTEL_INVENTORY_TESTIMONIALS}
