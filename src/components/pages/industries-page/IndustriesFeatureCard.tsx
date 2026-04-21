@@ -179,7 +179,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                       </button>
 
                       <div
-                        className={`overflow-hidden font-['Onest'] transition-all duration-300 ease-in-out
+                        className={`overflow-hidden flex flex-col  font-['Onest'] transition-all duration-300 ease-in-out
                                 px-5 md:px-6 text-sm md:text-base leading-[170%] text-(--text-dark)
                                 ${
                                   openIndex === idx
@@ -188,7 +188,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                                 }`}
                       >
                         {typeof item === "string" ? "" : item.listdescription}
-                        <br />
+                        <br /> <br />
                         {typeof item === "string" ? item : item.listSubDescription}
                       </div>
                     </div>
