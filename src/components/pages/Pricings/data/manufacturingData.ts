@@ -79,7 +79,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
                 { name: 'Stores (For Invoicing)', info: true, infoText: "Manage multiple business store locations", basic: '1', standard: '1', professional: '1', premium: '1' },
                 { name: 'Online Store', info: true, infoText: "Manage your ecommerce website", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
                 { name: 'Accounts & Finance', info: true, infoText: "Manage financial records and transactions", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'POS Terminal', info: true, infoText: "Configure and manage POS counters", basic: '1', standard: '1', professional: '1', premium: '1' },
+                { name: 'POS Terminal', info: true, infoText: "Operate sales through POS counter", basic: '1', standard: '1', professional: '1', premium: '1' },
             ]
         },
         {
@@ -166,7 +166,7 @@ export const manufacturingData: { plans: PricingPlan[]; categories: FeatureCateg
             name: 'Sales & Orders',
             features: [
                 { name: 'Point of Sale', info: true, infoText: "Process in-store sales transactions", basic: true, standard: true, professional: true, premium: true },
-                { name: 'POS Terminal', info: true, infoText: "Configure and manage POS counters", basic: '1', standard: '1', professional: '1', premium: '1' },
+                { name: 'POS Terminal', info: true, infoText: "Operate sales through POS counter", basic: '1', standard: '1', professional: '1', premium: '1' },
                 { name: 'Invoices', info: true, infoText: "Generate and manage sales invoices", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
                 { name: 'Quotations', info: true, infoText: "Create and send price quotes", basic: true, standard: true, professional: true, premium: true },
                 { name: 'Sales Orders', info: true, infoText: "Manage confirmed customer sales orders", basic: true, standard: true, professional: true, premium: true },
