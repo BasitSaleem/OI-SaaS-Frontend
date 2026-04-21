@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import globalGsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
 import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
 import ContactModal from "@/components/models/ContactModal";
-import { useSafariDetector } from "@/hooks/useSafariDetector";
-import { useVideoCache } from "@/hooks/useVideoCache";
+import TrollyAnimation from "./trollyAnimation";
+
 
 if (typeof window !== "undefined") {
   globalGsap.registerPlugin(ScrollTrigger);
@@ -16,25 +16,13 @@ if (typeof window !== "undefined") {
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const { shouldShowImage } = useSafariDetector();
-  const { videoSrc } = useVideoCache("/videos-s3/home-page-videos/trolly-anim.webm");
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full smart-way-section">
       <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} />
       <section className="wrapper lg:pt-[100px] md:pt-20 pt-[60px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-14 xl:gap-32 items-center justify-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-10 xl:gap-12 items-center justify-center w-full">
           {/* Left Content */}
           <div className="flex flex-col items-start justify-center">
             <MainHeading className=" mb-0 md:mb-10 lg:mb-[50px]">
@@ -62,38 +50,12 @@ function SmartWaytoSyncndSellSection() {
             </div>
           </div>
 
-          <div className="w-full bg-white h-full aspect-auto md:aspect-auto">
-            {shouldShowImage || isMobile ? (
-              <Image
-                src="/assets/home-page-images/animations/trolly-image.webp"
-                alt="Smart sync and sell"
-                width={743}
-                height={460}
-                className="w-full h-auto rounded-3xl"
-                priority
-              />
-            ) : (
-              <video
-                className="w-full h-full object-cover rounded-3xl bg-white lazy-video"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source
-                  src={videoSrc}
-                  type="video/webm"
-                />
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
+          <TrollyAnimation />
 
           <div className="md:hidden flex gap-4 w-full items-center justify-start">
             <ButtonSm
               url="https://app.ownersinventory.com/"
-               text="Book a Free Demo"
+              text="Book a Free Demo"
               bgColor="var(--primary-teal)"
               textColor="white"
               isBorder
@@ -102,7 +64,7 @@ function SmartWaytoSyncndSellSection() {
             />
             <ButtonSm
               url="#"
-             text="Contact Sales"
+              text="Contact Sales"
               bgColor="var(--primary-purple)"
               textColor="white"
               isBorder
