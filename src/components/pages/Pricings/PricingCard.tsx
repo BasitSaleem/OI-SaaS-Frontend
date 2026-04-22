@@ -98,7 +98,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           className="w-full py-4 rounded-full cursor-pointer text-base font-['Onest'] font-semibold text-white mb-8 transition-opacity hover:opacity-90"
           style={{ backgroundColor: plan.color }}
         >
-          {plan.isCustom ? "Let's Connect" : "Start 14-Day Free Trial"}
+          {plan.isCustom ? "Let's Connect" : "Start 30-Days Free Trial"}
         </button>
 
         <ul className="space-y-3 mb-10 flex-grow">

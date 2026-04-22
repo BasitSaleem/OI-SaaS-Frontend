@@ -179,7 +179,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
 ];
 
 export const JEWELRY_INVENTORY_WORKFLOW_DATA = {
-    heading: "Jewellery Store Inventory Workflow of Owners Inventory",
+    heading: "jewelry Store Inventory Workflow of Owners Inventory",
     paragraph: "Our software streamlines jewelry inventory management by precisely tracking every item. The high-value jewelry in stores is managed safely to prevent issues like misplacement. This ensures accurate stock management. It also simplifies custom order management and optimizes sales performance.",
     steps: [
         {

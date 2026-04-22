@@ -1,6 +1,6 @@
 import React from "react";
-import heroBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/jewelary-store-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/jewelary-store-why-chose-banner.webp";
+import heroBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/hero-banner.webp";
+import whyChoseBanner from "../../../../../public/assets/industries-pages/jewelry-store-pos/why-chose-banner.webp";
 
 import {
   JEWELRY_STORE_KEY_FEATURES_CARDS,
@@ -41,8 +41,8 @@ const Page = () => {
   return (
     <div>
       <SubIndustriesHero
-        title="Result-Oriented POS Solutions for Jewellery Stores"
-        description="Owners Inventory is the ultimate jewellery store POS system that can be used to run your store with precision, elegance, and total control. All sales, repair orders, and stock-related activities remain synchronized within a single intelligent platform. It is designed for high-value goods, comprehensive tracking, and safe billing."
+        title="Result-Oriented POS Solutions for jewelry Stores"
+        description="Owners Inventory is the ultimate jewelry store POS system that can be used to run your store with precision, elegance, and total control. All sales, repair orders, and stock-related activities remain synchronized within a single intelligent platform. It is designed for high-value goods, comprehensive tracking, and safe billing."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"
@@ -78,17 +78,17 @@ const Page = () => {
       />
 
       <IndustriesCallToAction
-        title="Take Control of Your Jewellery  Inventory Now"
-        description="The Best POS for jewellery stores will make your inventory easier and will help minimize mistakes during pricing and make daily work more effective. Begin today and find out how our solution will make doing business in the jewellery business a lot easier and profitability of your store maximized."
+        title="Take Control of Your jewelry  Inventory Now"
+        description="The Best POS for jewelry stores will make your inventory easier and will help minimize mistakes during pricing and make daily work more effective. Begin today and find out how our solution will make doing business in the jewelry business a lot easier and profitability of your store maximized."
         ctaDesc="Request a Free Demo"
       />
 
       <IndustriesFeaturesSection features={JEWELRY_STORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, & Compliance."
-        description="An advanced jewellery POS system makes sure that all the transactions are duly managed and tracked. Role-based access controls access to sensitive financial, and inventory information minimizing risks and avoiding internal losses."
-        secondDescription="The system has full audit trails and facilitates compliance needs in protection of jewellery assets which have high-values. Live tracking will guarantee clear stock movement while automated reports will minimize errors in tracking and assist in maintaining proper financial records with certainty."
+        title="Security, Accuracy, and Compliance."
+        description="An advanced jewelry POS system makes sure that all the transactions are duly managed and tracked. Role-based access controls access to sensitive financial, and inventory information minimizing risks and avoiding internal losses."
+        secondDescription="The system has full audit trails and facilitates compliance needs in protection of jewelry assets which have high-values. Live tracking will guarantee clear stock movement while automated reports will minimize errors in tracking and assist in maintaining proper financial records with certainty."
       />
 
       <ToolsSection
@@ -114,14 +114,15 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our Jewelry Store POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from jewelry store owners."
+          paragraph="Our POS Solutions for Jewelry Stores is designed to make daily operations smooth and easy."
+          secondParagraph = "Here are answers to some common questions from POS Solutions for Jewelry Stores owners."
           faqs={JEWELRY_STORE_FAQS}
           buttonText="Start Now"
         />
       </div>
        <IndustriesHardwareControl
-        title="Take Control of Your Jewellery Store"
-        description="Many jewellery stores lose a lot of money annually because of inaccuracies in stock and price mistakes. Our jewellery store POS system removes risks, protects inventory, and accelerates day-to-day operations. Better tracking and correct billing make every day a profitable one."
+        title="Take Control of Your jewelry Store"
+        description="Many jewelry stores lose a lot of money annually because of inaccuracies in stock and price mistakes. Our jewelry store POS system removes risks, protects inventory, and accelerates day-to-day operations. Better tracking and correct billing make every day a profitable one."
         ctaDesc="Start Today"
       />
     </div>

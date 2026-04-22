@@ -1,10 +1,10 @@
 import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlatform";
 
 // ─── Jewelry Store POS — UnifiedPlatform Section ──────────────────────────────
-export const JEWELRY_STORE_UNIFIED_HEADING = "Challenges in Jewellery Retail POS Industry";
+export const JEWELRY_STORE_UNIFIED_HEADING = "Challenges in jewelry Retail POS Industry";
 
 export const JEWELRY_STORE_UNIFIED_PARAGRAPH =
-    "The Jewellery retail industry faces unique operational challenges that require specialized, secure, and intelligent POS solutions to ensure accuracy, transparency, and profitability.";
+    "The jewelry retail industry faces unique operational challenges that require specialized, secure, and intelligent POS solutions to ensure accuracy, transparency, and profitability.";
 
 export const JEWELRY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
@@ -12,35 +12,35 @@ export const JEWELRY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "UnifiedIcon1",
         title: "Complex Inventory Management",
         description:
-            "Jewellery retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality Jewellery POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
+            "jewelry retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality jewelry POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
     },
     {
         id: "2",
         icon: "UnifiedIcon2",
         title: "Need for Accurate Valuation",
         description:
-            "Gold, silver, diamonds, and gemstones change constantly. A good point-of-sale for a jewellery shop needs to automatically update pricing, calculate making charges and reduce human error so that everything is crystal clear.",
+            "Gold, silver, diamonds, and gemstones change constantly. A good point-of-sale for a jewelry shop needs to automatically update pricing, calculate making charges and reduce human error so that everything is crystal clear.",
     },
     {
         id: "3",
         icon: "UnifiedIcon3",
         title: "High-Value Product Security",
         description:
-            "When showcasing high-end inventory, retailers need a Jewellery store POS system that enables user authentication, employee permissions, secure billing, and anti-fraud measures to protect each piece as if it were stored in an actual vault.",
+            "When showcasing high-end inventory, retailers need a jewelry store POS system that enables user authentication, employee permissions, secure billing, and anti-fraud measures to protect each piece as if it were stored in an actual vault.",
     },
     {
         id: "4",
         icon: "UnifiedIcon4",
         title: "Custom Orders and Repairs",
         description:
-            "Whether they are engraving rings, resizing them or designing custom bridal sets, Jewellery  stores deal in intimate and emotional transactions. Customization and repairs are a big part of the Jewellery  business, but without a powerful POS system for Jewellery stores to help manage them, operations can suffer.",
+            "Whether they are engraving rings, resizing them or designing custom bridal sets, jewelry  stores deal in intimate and emotional transactions. Customization and repairs are a big part of the jewelry  business, but without a powerful POS system for jewelry stores to help manage them, operations can suffer.",
     },
     {
         id: "5",
         icon: "UnifiedIcon5",
         title: "Limited Digital Presence & Reporting",
         description:
-            "Most retailers are still depending on non-real-time, traditional billing systems. A contemporary POS system for Jewellery  stores includes dashboards, customer insights, purchase histories and margin monitoring.",
+            "Most retailers are still depending on non-real-time, traditional billing systems. A contemporary POS system for jewelry  stores includes dashboards, customer insights, purchase histories and margin monitoring.",
     },
       
 ];
@@ -56,7 +56,7 @@ export const JEWELRY_STORE_WHY_CHOOSE_CARDS = [
     {
         id: "2",
         icon: "whychoseIcon2",
-        title: "Smart Jewellery Billing",
+        title: "Smart jewelry Billing",
         description:
             "The automatic calculation of weight, purity, and making charges, wastage, and tax calculations make sure that correct and prompt billing is generated every time. It minimizes errors in calculations and builds confidence in the customers.",
     },
@@ -98,8 +98,8 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "Our inventory system integrates all your selling points such as the physical showrooms, on-line jewellery catalogs and mobile platforms in a single integrated system. Store POS sales as well as online orders can be handled simultaneously without confusion and duplication of records.",
-        imageSrc: "/assets/industries-pages/jewelry-store-pos/jewelary-store-omini-chanel.webp",
+            "Our inventory system integrates all your selling points such as the physical showrooms, on-line jewelry catalogs and mobile platforms in a single integrated system. Store POS sales as well as online orders can be handled simultaneously without confusion and duplication of records.",
+        imageSrc: "/assets/industries-pages/jewelry-store-pos/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
         buttonColor: "var(--primary-purple)",
@@ -113,8 +113,8 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
         id: "2",
         title: "Better Decision Reporting and Analytics",
         description:
-            "Top-notch reporting and analytics help jewellery store owners to understand the valuation of their stocks, sales performance, and profitability. This assists in making wiser decisions when doing purchases, reorders, and pricing strategy.",
-        imageSrc: "/assets/industries-pages/jewelry-store-pos/jewelary-store-better-decision.webp",
+            "Top-notch reporting and analytics help jewelry store owners to understand the valuation of their stocks, sales performance, and profitability. This assists in making wiser decisions when doing purchases, reorders, and pricing strategy.",
+        imageSrc: "/assets/industries-pages/jewelry-store-pos/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
@@ -134,7 +134,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
         id: 1,
         title: "Fast & Accurate Billing",
         description:
-            "Smart search and barcode scanning assist in accomplishing complicated jewellery billing in a few seconds. This enhances customer satisfaction and minimizes congestion at the counters during peak time.",
+            "Smart search and barcode scanning assist in accomplishing complicated jewelry billing in a few seconds. This enhances customer satisfaction and minimizes congestion at the counters during peak time.",
         imageSrc: "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card1.webp",
     },
     {
@@ -148,7 +148,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
         id: 3,
         title: "Purchase & Supplier Management",
         description:
-            "Prepare purchase orders of gold, diamonds and finished jewellery. Monitor payments and supplier deliveries.. This ensures that procurement is well-organized and prevents the effect of stock shortage at the wrong time.",
+            "Prepare purchase orders of gold, diamonds and finished jewelry. Monitor payments and supplier deliveries. This ensures that procurement is well-organized and prevents the effect of stock shortage at the wrong time.",
         imageSrc: "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card3.webp",
     },
     
@@ -170,7 +170,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
         id: 6,
         title: "Repair Management",
         description:
-            "Manage delivery times, jewellery repair tickets, and charges easily. Employees will be able to monitor all stages of repairs without delays and misunderstandings.",
+            "Manage delivery times, jewelry repair tickets, and charges easily. Employees will be able to monitor all stages of repairs without delays and misunderstandings.",
         imageSrc: "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card6.webp",
     },
     {
@@ -201,12 +201,12 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
 
 export const JEWELRY_STORE_WORKFLOW_DATA = {
     heading: "Inventory Workflow of Owners Inventory",
-    paragraph: "Our POS system for jewellery stores simplified complex handling and ensured price tracking of valuable items while reducing manual errors and stock discrepancies.",
+    paragraph: "Our POS system for jewelry stores simplified complex handling and ensured price tracking of valuable items while reducing manual errors and stock discrepancies.",
     steps: [
         {
             number: 1,
             title: "Precious Inventory Procurement",
-            description: "Jewellery store owners source products such as gold, diamonds, and custom pieces based on demand and customer preferences. Each item is carefully inspected for weight, purity, and certification. They are added to the system with detailed attributes like carat, stone type, and design category."
+            description: "jewelry store owners source products such as gold, diamonds, and custom pieces based on demand and customer preferences. Each item is carefully inspected for weight, purity, and certification. They are added to the system with detailed attributes like carat, stone type, and design category."
         },
         {
             number: 2,
@@ -221,7 +221,7 @@ export const JEWELRY_STORE_WORKFLOW_DATA = {
         {
             number: 4,
             title: "Vendor Management and Smart Purchasing",
-            description: "The system manages multiple suppliers by tracking purchase orders, pricing variations, and delivery timelines. Owners can evaluate suppliers' reliability and ensure timely restocking of fast-selling or high-demand jewellery items."
+            description: "The system manages multiple suppliers by tracking purchase orders, pricing variations, and delivery timelines. Owners can evaluate suppliers' reliability and ensure timely restocking of fast-selling or high-demand jewelry items."
         },
         {
             number: 5,
@@ -243,14 +243,14 @@ export const JEWELRY_STORE_TESTIMONIALS = [
         name: "Sana K.",
         title: "Jewelry Store Owner",
         image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-        text: "Many thanks to Owners Inventory as they help us deliver a powerful Jewellery  POS system that made our entire workflow easy and daily operations effortlessly smooth.",
+        text: "Many thanks to Owners Inventory as they help us deliver a powerful jewelry  POS system that made our entire workflow easy and daily operations effortlessly smooth.",
     },
     {
         id: "2",
         name: "Alexendar R.",
         title: "Interior Decor Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
-        text: "We opened 3 new branches efficiently all thanks to the centralized POS system for Jewellery  stores that Owners Inventory catered for us.",
+        text: "We opened 3 new branches efficiently all thanks to the centralized POS system for jewelry  stores that Owners Inventory catered for us.",
     },
     {
         id: "3",
@@ -266,28 +266,28 @@ export const JEWELRY_STORE_TESTIMONIALS = [
 export const JEWELRY_STORE_FAQS = [
     {
         id: "1",
-        question: "How long does it take to build a jewellery POS system?",
-        answer: "Time depends on the size of your catalog, custom features, and integration requirements, as the majority of Jewellery  point-of-sale systems go live within 6 to 12 weeks."
+        question: "How long does it take to build a jewelry POS system?",
+        answer: "Time depends on the size of your catalog, custom features, and integration requirements, as the majority of jewelry  point-of-sale systems go live within 6 to 12 weeks."
     },
     {
         id: "2",
         question: "Can you customize the POS for multi-branch stores?",
-        answer: "Yes, our POS for Jewellery  stores supports limitless branches that give you centralized control over stock, pricing, staff, reporting, and transfers across different locations. "
+        answer: "Yes, our POS for jewelry  stores supports limitless branches that give you centralized control over stock, pricing, staff, reporting, and transfers across different locations. "
     },
     {
         id: "3",
         question: "Do you integrate barcodes?",
-        answer: "Yes, you can tag, scan, and track gold, diamond, and gemstone Jewellery  pieces all thanks to our POS’s compatibility with barcodes systems."
+        answer: "Yes, you can tag, scan, and track gold, diamond, and gemstone jewelry  pieces all thanks to our POS’s compatibility with barcodes systems."
     },
     {
         id: "4",
         question: "Can your POS manage custom orders and repairs?",
-        answer: "Yes, indeed. For a flawless customer experience, our Jewellery  point of sale system offers full repair and custom order management along with status tracking and automated updates."
+        answer: "Yes, indeed. For a flawless customer experience, our jewelry  point of sale system offers full repair and custom order management along with status tracking and automated updates."
     },
     {
         id: "5",
         question: "Can multiple branches operate under one system?",
-        answer: "Yes, all jewellery branches can be connected under one centralized dashboard for unified control."
+        answer: "Yes, all jewelry branches can be connected under one centralized dashboard for unified control."
     },
 ];
 
@@ -340,28 +340,28 @@ export const JEWELRY_STORE_TESTIMONIAL_DATA = {
     heading: "What Our Clients Say About Us?",
     paragraph: "", // Optional paragraph
     secondHeading: "Manage Your Inventory Efficiently",
-    secondDescription: "Have total control over your stock of jewellery, sales and day to day running of your business with a system that is suited to the current jewellery business.",
+    secondDescription: "Have total control over your stock of jewelry, sales and day to day running of your business with a system that is suited to the current jewelry business.",
     whyChooseTitle: "Why Choose Our System?",
-    whyChooseDescription: "Jewellery stores have a POS system that allows them to have a clear control, accurate billing and safe inventory management, so that the daily operation is easy and consistent.",
+    whyChooseDescription: "jewelry stores have a POS system that allows them to have a clear control, accurate billing and safe inventory management, so that the daily operation is easy and consistent.",
 };
 
 export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "1",
         title: "Easy Setup",
-        description: "Our interface is user-friendly, easy to learn and use and it can be installed within a very short time and with minimum interference to your jewellery business.",
+        description: "Our interface is user-friendly, easy to learn and use and it can be installed within a very short time and with minimum interference to your jewelry business.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
         title: "Reliable Performance",
-        description: "Jewellery POS works when there are peak times, high-valued transactions and thus your billing counters will be consistent and efficient.",
+        description: "jewelry POS works when there are peak times, high-valued transactions and thus your billing counters will be consistent and efficient.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
         title: "Precise Inventory",
-        description: "Jewellery items are all organized according to weight, purity, design and category and hence inventory records are always accurate and properly arranged.",
+        description: "jewelry items are all organized according to weight, purity, design and category and hence inventory records are always accurate and properly arranged.",
         icon: "testWhychoseIcon3",
     },
     {
@@ -373,7 +373,7 @@ export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "5",
         title: "Flexible Features",
-        description: "The jewellery POS system serves the gold, silver, diamond, platinum and gemstone business by adjusting itself to the day to day operations of your business.",
+        description: "The jewelry POS system serves the gold, silver, diamond, platinum and gemstone business by adjusting itself to the day to day operations of your business.",
         icon: "testWhychoseIcon5",
     },
     {
@@ -385,7 +385,7 @@ export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "7",
         title: "Integration and Addons",
-        description: "Integrates with accounting applications, e-commerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
+        description: "Integrates with accounting applications, eCommerce applications, barcodes, and online payment gateways. Loyalty programs, SMS notifications, multi-branch management, and supplier tracking are some of the add-ons that facilitate easy expansion of the business.",
         icon: "testWhychoseIcon7",
     },
     
@@ -393,7 +393,7 @@ export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
 
 export const JEWELRY_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary jewellery inventory systems fit perfectly well with POS, accounting packages, customer relationship management (CRM), barcode readers, and ecommerce. This enables the owners to have all inventory, sales, finances, and customer relationship under one dashboard.",
+    paragraph: "Contemporary jewelry inventory systems fit perfectly well with POS, accounting packages, customer relationship management (CRM), barcode readers, and eCommerce. This enables the owners to have all inventory, sales, finances, and customer relationship under one dashboard.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

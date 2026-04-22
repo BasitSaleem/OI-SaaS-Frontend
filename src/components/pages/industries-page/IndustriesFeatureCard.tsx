@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
 import Image from "next/image";
 import Paragraph from "../typography/Paragraph";
+import SubHeading from "../typography/SubHeading";
 
 interface IndustriesFeatureCardProps {
   title: string;
@@ -107,9 +108,9 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
             isEven ? "order-1 lg:order-1" : "order-1 lg:order-2"
           }`}
         >
-          <h2 className="font-['Onest'] font-semibold text-[var(--text-dark)] text-[32px] sm:text-4xl md:text-[40px] xl:text-5xl leading-9 sm:leading-[48px] xl:leading-[60px] mb-4 min-h-[50px]">
+          <SubHeading className=" mb-4 min-h-[50px]">
             {title}
-          </h2>
+          </SubHeading>
 
           <Paragraph className="flex-1 mb-6">{description}</Paragraph>
           <Paragraph className="flex-1 mb-6">{subDescription}</Paragraph>
@@ -124,7 +125,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                       key={idx}
                       className={`rounded-[20px] transition-all duration-300 ${
                         openIndex === idx
-                          ? "border-3 border-white shadow-[inset_0px_17px_29px_0px_#FFFFFF40] backdrop-blur-[10.45px]"
+                          ? "border-3 border-white shadow-[inset_0px_17px_29px_0px_#FFFFFF40] bg-gradient-to-b from-transparent from-[40%] to-white/65 to-[100%] backdrop-blur-[10.45px]"
                           : "border-3 border-transparent bg-transparent"
                       } overflow-hidden`}
                     >
@@ -134,7 +135,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                         onClick={() => toggle(idx)}
                       >
                         <span
-                          className={`w-full max-w-[90%] text-base md:text-lg lg:text-xl leading-[170%] md:leading-[170%] lg:leading-[140%] font-['Onest'] font-semibold transition-colors duration-300 ${
+                          className={`w-full max-w-[90%]  text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]  font-['Onest'] font-semibold transition-colors duration-300 ${
                             openIndex === idx
                               ? "text-(--text-dark)"
                               : "text-(--text-dark)"
