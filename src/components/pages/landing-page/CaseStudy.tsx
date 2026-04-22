@@ -106,7 +106,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                 alt="arrow-right"
                 width={800}
                 height={600}
-                loading="lazy"
                 className="w-[20px] h-[20px]"
               />
             </button>
@@ -138,7 +137,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                 alt="arrow-right"
                 width={800}
                 height={600}
-                loading="lazy"
                 className="w-[20px] h-[20px]"
               />
             </button>
@@ -190,7 +188,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       alt="arrow-right"
                       width={800}
                       height={600}
-                      loading="lazy"
                       className="w-9 h-[33px]"
                     />
                     <div className="flex flex-col gap-1">
@@ -214,7 +211,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                       alt="arrow-right"
                       width={800}
                       height={600}
-                      loading="lazy"
                       className="w-full h-full"
                     />
                   </div>
@@ -236,7 +232,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                     alt="arrow-right"
                     width={800}
                     height={600}
-                    loading="lazy"
                     className="w-5 h-5"
                   />
                 </button>
@@ -268,7 +263,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                     alt="arrow-right"
                     width={800}
                     height={600}
-                    loading="lazy"
                     className="w-5 h-5"
                   />
                 </button>

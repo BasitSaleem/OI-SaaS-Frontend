@@ -43,8 +43,7 @@ const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealB
           showPagination={false}
           slides={otherBrands}
           renderSlide={(brandItem) => (
-            <div className="relative z-10 bg-white py-4 lg:px-[68px] my-10 rounded-2xl 
-      border border-[var(--text-grey)]/40 flex justify-center items-center">
+            <div className="relative z-10 bg-white py-4 lg:px-[68px] my-10 rounded-2xl border border-[var(--text-grey)]/40 flex justify-center items-center">
               <Image
                 src={brandItem.logo}
                 alt={brandItem.name}
@@ -58,9 +57,7 @@ const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealB
                 width={158}
                 height={57}
                 alt="Yellow Stars"
-                loading="lazy"
-                className="absolute bottom-[-24px] lg:bottom-[-40px] -xl:bottom-10 left-1/2 -translate-x-1/2
-         w-full xl:max-w-[202px] lg:max-w-[180px] lg:py-2 max-w-[133px] lg:px-3 py-0 px-0 rounded-2xl"
+                className="absolute bottom-[-24px] lg:bottom-[-40px] -xl:bottom-10 left-1/2 -translate-x-1/2 w-full xl:max-w-[202px] lg:max-w-[180px] lg:py-2 max-w-[133px] lg:px-3 py-0 px-0 rounded-2xl"
               />
             </div>
           )}

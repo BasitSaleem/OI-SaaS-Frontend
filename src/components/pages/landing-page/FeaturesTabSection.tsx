@@ -26,7 +26,6 @@ export default function FeaturesTabSection() {
               width={800}
               height={600}
               className="w-full h-auto object-contain z-10 drop-shadow-2xl"
-              priority
             />
           </div>
 
@@ -64,7 +63,6 @@ export default function FeaturesTabSection() {
                     height={feature.iconHeight || 44}
                     className="w-6 h-6 sm:w-11 sm:h-11 object-contain"
                     alt={feature.title}
-                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-['Onest'] text-[var(--white-color)] opacity-90 text-base sm:text-lg xl:text-xl font-medium leading-[150%] sm:leading-[167%] xl:leading-[172%] relative z-10">

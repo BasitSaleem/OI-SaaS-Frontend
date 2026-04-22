@@ -287,7 +287,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         alt="Pricing Image"
                         width={33}
                         height={33}
-                        priority
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
                       <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
@@ -304,7 +303,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         alt="Pricing Image"
                         width={33}
                         height={33}
-                        priority
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
                       <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
@@ -321,7 +319,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         alt="Pricing Image"
                         width={33}
                         height={33}
-                        priority
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
                       <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
@@ -337,7 +334,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                         alt="Pricing Image"
                         width={33}
                         height={33}
-                        priority
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
                       />
                       <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
@@ -360,7 +356,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={fastServiceImageRef}
                     width={51}
                     height={64}
-                    priority
                     className="w-[51px] h-16 hidden lg:block absolute top-[110px] left-[30px] 2xl:top-[50px] 2xl:left-[60px]"
                   />
                   <div
@@ -377,7 +372,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={safeSecureImageRef}
                     width={100}
                     height={118}
-                    priority
                     className="2xl:w-[100px] hidden lg:block 2xl:h-[118px] w-20 h-[90px] absolute bottom-[85px] right-0 xl:bottom-[300px] 2xl:bottom-[250px] 2xl:right-[60px]"
                   />
 
@@ -387,7 +381,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={inventoryBlurIconRef}
                     width={120}
                     height={120}
-                    priority
                     className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute top-2 -right-2.5 md:-top-2.5 2xl:-top-7 2xl:right-[200px] md:right-0"
                   />
 
@@ -397,7 +390,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={inventoryIconRef}
                     width={120}
                     height={120}
-                    priority
                     className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-5  right-[-5px] md:top-2.5 md:right-5 lg:top-2.5 lg:right-5 2xl:top-0 2xl:right-[220px]"
                   />
 
@@ -413,7 +405,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                       alt="Total Growth Chart"
                       width={800}
                       height={600}
-                      priority
                       className="w-full "
                     />
                     <div>

@@ -104,7 +104,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
               opacity: 1,
               duration: 1,
               ease: "power3.out",
-            }
+            },
           );
         },
       });
@@ -123,10 +123,8 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
       <div
         className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[var(--background-halfwhite)] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-xl`}
         style={{
-          backgroundImage: `
-    linear-gradient(180deg, var(--white-color) 20%, transparent 100%),
-    linear-gradient(90deg, rgba(var(--primary-teal-rgb), 0.3) 30%, rgba(var(--primary-purple-rgb), 0.4) 60%, rgba(var(--primary-purple-rgb), 0.3) 100%)
-  `,
+          backgroundImage: `linear-gradient(180deg, var(--white-color) 20%, transparent 100%),
+          linear-gradient(90deg, rgba(var(--primary-teal-rgb), 0.3) 30%, rgba(var(--primary-purple-rgb), 0.4) 60%, rgba(var(--primary-purple-rgb), 0.3) 100%)`,
         }}
       >
         <div className="flex wrapper flex-col items-center justify-center w-full">
@@ -172,7 +170,6 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
               alt="Chaos Into Clarity Dashboard"
               width={800}
               height={600}
-              loading="lazy"
               className="w-full h-auto"
             />
           </div>

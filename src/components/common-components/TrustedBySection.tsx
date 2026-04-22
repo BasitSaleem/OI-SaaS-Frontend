@@ -65,7 +65,6 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
                   width={200}
                   height={100}
                   className="w-full h-auto max-h-full  object-contain "
-                  priority
                 />
               </div>
             </div>

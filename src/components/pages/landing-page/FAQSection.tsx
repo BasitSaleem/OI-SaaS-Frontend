@@ -114,7 +114,6 @@ export default function FaqSection({
                       width={18}
                       height={18}
                       className="w-4 h-4"
-                      loading="lazy"
                     />
                   </span>
 
@@ -131,7 +130,6 @@ export default function FaqSection({
                       width={18}
                       height={18}
                       className="w-[18px] h-[18px]"
-                      loading="lazy"
                     />
                   </span>
                 </button>

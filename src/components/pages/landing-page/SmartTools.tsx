@@ -90,7 +90,6 @@ const SmartTools: React.FC<SmartTools> = ({
               alt="Chaos Image"
               width={1065}
               height={600}
-              loading="lazy"
               className="w-full"
             />
           ) : isInView ? (
