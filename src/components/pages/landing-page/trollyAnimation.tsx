@@ -108,7 +108,6 @@ const TrollyAnimation = () => {
                     width={743}
                     height={460}
                     className="w-[22px] h-[22px] lg:w-9 lg:h-9 xl:w-[50px] xl:h-[50px] object-contain absolute right-2.5 lg:right-[22px] top-[70px] lg:top-[154px] mobile-icon"
-                    priority
                 />
             </div>
             <div className="w-full min-h-[200px] lg:min-h-[290px] rounded-bl-[20px] md:rounded-bl-[40px] xl:min-h-[322px] bg-[#231F20] clip-path-rounded2">
@@ -120,7 +119,6 @@ const TrollyAnimation = () => {
                         width={743}
                         height={460}
                         className="w-8 h-8 lg:w-10 lg:h-10 xl:w-14 xl:h-14 star-icon"
-                        priority
                     />
 
                     <p
@@ -141,7 +139,6 @@ const TrollyAnimation = () => {
                             width={743}
                             height={460}
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon1"
-                            priority
                         />
                         <Image
                             ref={cartIcon2Ref}
@@ -150,7 +147,6 @@ const TrollyAnimation = () => {
                             width={743}
                             height={460}
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon2"
-                            priority
                         />
                         <Image
                             ref={cartIcon3Ref}
@@ -159,7 +155,6 @@ const TrollyAnimation = () => {
                             width={743}
                             height={460}
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon3"
-                            priority
                         />
                         <Image
                             ref={cartIcon4Ref}
@@ -168,7 +163,6 @@ const TrollyAnimation = () => {
                             width={743}
                             height={460}
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon4"
-                            priority
                         />
                         <Image
                             ref={cartIcon5Ref}
@@ -177,7 +171,6 @@ const TrollyAnimation = () => {
                             width={743}
                             height={460}
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon5"
-                            priority
                         />
                     </div>
                 </div>
@@ -191,7 +184,6 @@ const TrollyAnimation = () => {
                         width={743}
                         height={460}
                         className="w-[26px] h-5 mb-3 arrow-icon"
-                        priority
                     />
 
                     <p
@@ -208,7 +200,6 @@ const TrollyAnimation = () => {
                         width={743}
                         height={460}
                         className="w-full max-w-[108px] lg:max-w-[190px] xl:max-w-[242px] h-14 lg:h-[100px] xl:h-[120px] graph-image"
-                        priority
                     />
                 </div>
             </div>

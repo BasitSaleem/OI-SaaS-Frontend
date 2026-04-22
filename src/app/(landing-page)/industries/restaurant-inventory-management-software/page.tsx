@@ -84,7 +84,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={RESTAURANT_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description= "It provides controlled access to staff based on their roles. The system records transactions securely. Maintaining detailed logs promotes transparency in inventory and sales activities."
         secondDescription= "The inventory control software for restaurants helps them reduce errors, prevent unauthorized access to sensitive data, and maintain accurate records of all operations for better internal control or compliance purposes."
       />

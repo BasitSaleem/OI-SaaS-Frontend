@@ -135,7 +135,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                         onClick={() => toggle(idx)}
                       >
                         <span
-                          className={`w-full max-w-[90%]  text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]  font-['Onest'] font-semibold transition-colors duration-300 ${
+                          className={`w-full max-w-[90%]  text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]  font-['Onest'] font-medium transition-colors duration-300 ${
                             openIndex === idx
                               ? "text-(--text-dark)"
                               : "text-(--text-dark)"
@@ -241,7 +241,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                         </defs>
                       </svg>
                     </span>
-                    <span className="font-['Onest'] text-[var(--text-dark)] font-semibold text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]">
+                    <span className="font-['Onest'] text-[var(--text-dark)] font-medium text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]">
                       {typeof item === "string" ? item : item.listheading}
                     </span>
                   </li>

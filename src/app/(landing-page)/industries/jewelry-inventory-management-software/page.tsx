@@ -86,7 +86,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={JEWELRY_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description="Security, accuracy, and compliance are crucial for businesses. Every transaction is recorded securely with time-stamped data. This ensures transparency and accountability in all transactions."
         secondDescription="The point of sale system has role-based access control. This means authorized staff can access information. Automated processes maintain inventory records."
       />
