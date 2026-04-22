@@ -566,7 +566,7 @@ export default function OffcanvasMenu({
                                   : "font-semibold text-[var(--text-dark)]"
                               }`}
                             >
-                              {type === "pos" ? "POS Systems" : "Inventory Management"}
+                              {type === "pos" ? "POS" : "Inventory"}
                             </span>
                           </div>
                           <img
