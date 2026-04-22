@@ -696,6 +696,45 @@ body {
   pointer-events: none;
 }
 
+.voices-bg-circle {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.voices-bg-circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  /* -webkit-mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 60%);
+  mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 60%); */
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+
+  pointer-events: none;
+}
+
 
 @utility clip-path-rounded {
   -webkit-clip-path: polygon( 0% 50%,0% 50%,0.654% 41.89%,2.549% 34.196%,5.581% 27.022%,9.647% 20.471%,14.645% 14.645%,20.471% 9.647%,27.022% 5.581%,34.196% 2.549%,41.89% 0.654%,50% 0%,87.578% 0%,87.578% 0%,89.593% 0.163%,91.504% 0.633%,93.286% 1.387%,94.914% 2.397%,96.362% 3.638%,97.603% 5.086%,98.613% 6.714%,99.367% 8.496%,99.837% 10.407%,100% 12.422%,100% 100%,50% 100%,50% 100%,41.89% 99.346%,34.196% 97.451%,27.022% 94.419%,20.471% 90.353%,14.645% 85.355%,9.647% 79.529%,5.581% 72.978%,2.549% 65.804%,0.654% 58.11%,0% 50% );
