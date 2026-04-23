@@ -87,8 +87,7 @@ const Page = () => {
 
       <SecurityCompliance
         title="Security, Accuracy, and Compliance."
-        description="Security, accuracy, and compliance are crucial for businesses. Every transaction is recorded securely with time-stamped data. This ensures transparency and accountability in all transactions."
-        secondDescription="The point of sale system has role-based access control. This means authorized staff can access information. Automated processes maintain inventory records."
+        description="With high security controls and accurate tracking, our secure jewelry inventory software makes it convenient for jewelry stores to handle expensive items. Every transaction is recorded, ensuring accountability at each stage. The role-based access feature of Owners Inventory limits access to sensitive data, while detailed logs identify discrepancies and maintain operational transparency across inventory, sales, and financial records."
       />
 
       <ToolsSection
