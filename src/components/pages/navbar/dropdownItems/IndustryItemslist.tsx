@@ -20,6 +20,18 @@ export const industryCategories: IndustryCategory[] = [
     id: 'wholesale',
     title: 'Wholesale',
   },
+  {
+    id: 'ecommerce',
+    title: 'Ecommerce',
+  },
+  {
+    id: 'restaurant',
+    title: 'Restaurant',
+  },
+  {
+    id: 'pharmacies',
+    title: 'Pharmacies',
+  },
 ];
 
 export const industriesItems: IndustryItem[] = [
@@ -105,14 +117,14 @@ export const industriesItems: IndustryItem[] = [
     key: 'auto-parts-inventory-management-software',
     title: 'Auto Parts Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
-    category: 'retailer',
+    category: 'wholesale',
     type: 'inventory',
   },
   {
     key: 'ecommerce-store-inventory-management-software',
     title: 'Ecommerce Store Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
-    category: 'retailer',
+    category: 'ecommerce',
     type: 'inventory',
   },
   {
@@ -126,19 +138,26 @@ export const industriesItems: IndustryItem[] = [
     key: 'restaurant-inventory-management-software',
     title: 'Restaurant Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
-    category: 'retailer',
+    category: 'restaurant',
     type: 'inventory',
   },
   {
     key: 'healthcare-inventory-management-software',
     title: 'Healthcare Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/healthcare.svg",
-    category: 'retailer',
+    category: 'pharmacies',
     type: 'inventory',
   },
   {
     key: 'hotel-inventory-management-software',
     title: 'Hotel Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/hotel.svg",
+    category: 'restaurant',
+    type: 'inventory',
+  },
+  {
+    key: 'small-businesses-inventory-management-software',
+    title: 'Small Business Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/hotel.svg",
     category: 'retailer',
     type: 'inventory',
@@ -287,6 +306,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Hotel Inventory Management' },
     { title: 'Hotel Supply & Item Tracking' },
     { title: 'Expiry Date & Batch Management' },
+    { title: 'Supplier & Purchase Management' },
+  ],
+  'small-businesses-inventory-management-software': [
+    { title: 'Small Business Inventory Management' },
+    { title: 'Business Supply & Item Tracking' },
+    { title: 'Inventory Efficiency Analytics' },
     { title: 'Supplier & Purchase Management' },
   ],
   'bakery-pos': [
