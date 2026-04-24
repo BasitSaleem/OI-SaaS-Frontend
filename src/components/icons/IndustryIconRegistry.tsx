@@ -54,6 +54,12 @@ const smallBusinessInventoryManagementSoftwareIcons = dynamic(
 const posRetailStorePageIcons = dynamic(
   () => import("./posRetailStorePageIcons"),
 );
+const posBeautySalonStorePageIcons = dynamic(
+  () => import("./posBeautySalonStorePageIcons"),
+);
+const furnitureInventoryManagementSoftwareIcons = dynamic(
+  () => import("./furnitureInventoryManagementSoftwareIcons"),
+);
 
 export type IndustryIconSet =
   | "bakery"
@@ -73,7 +79,9 @@ export type IndustryIconSet =
   | "grocery"
   | "hardware"
   | "jewelry"
-  | "retail";
+  | "retail"
+  | "beautySalon"
+  | "furnitureInventory";
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -94,6 +102,8 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   hardware: posHardwarePageIcons,
   jewelry: posJewelryStorePageIcons,
   retail: posRetailStorePageIcons,
+  beautySalon: posBeautySalonStorePageIcons,
+  furnitureInventory: furnitureInventoryManagementSoftwareIcons,
 };
 
 interface IndustryIconProps {

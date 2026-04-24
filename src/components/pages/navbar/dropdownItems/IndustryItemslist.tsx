@@ -162,6 +162,20 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'inventory',
   },
+  {
+    key: 'beauty-salon-pos-system',
+    title: 'Beauty Salon POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'furniture-inventory-management-software',
+    title: 'Furniture Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/furniture.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
 
   
 ];
@@ -313,6 +327,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Business Supply & Item Tracking' },
     { title: 'Inventory Efficiency Analytics' },
     { title: 'Supplier & Purchase Management' },
+  ],
+  'beauty-salon-pos-system': [
+    { title: 'Appointment Scheduling' },
+    { title: 'Product & Service Catalog' },
+    { title: 'Client Management (CRM)' },
+    { title: 'Staff Performance Tracking' },
+  ],
+  'furniture-inventory-management-software': [
+    { title: 'Variant & Dimension Tracking' },
+    { title: 'Multi-Warehouse Management' },
+    { title: 'Delivery & Assembly Tracking' },
+    { title: 'Purchase Order Management' },
   ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },

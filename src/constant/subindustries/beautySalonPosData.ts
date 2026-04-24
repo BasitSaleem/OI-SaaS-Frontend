@@ -1,0 +1,411 @@
+import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlatform";
+import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFeaturesSection";
+
+// ─── Beauty Salon POS — UnifiedPlatform Section ──────────────────────────────
+export const BEAUTY_SALON_UNIFIED_HEADING = "Challenges Holding Back Beauty Salons";
+
+export const BEAUTY_SALON_UNIFIED_PARAGRAPH ="Beauty Salons face challenges every day that can slow down growth and increase costs. Some of these challenges include:";
+
+export const BEAUTY_SALON_UNIFIED_CARDS: UnifiedPlatformCard[] = [
+   {
+        id: "1",
+        icon: "UnifiedIcon1",
+        title: "Inventory Mismanagement",
+        description:
+            "This happens when you have to handle thousands of products and it is hard to keep track of them. You might make mistakes when you track things by hand which can cost your business up to 20% each year.",
+    },
+    {
+        id: "2",
+        icon: "UnifiedIcon2",
+        title: "Slow Appointment Handling",
+        description:
+            "Long wait times and double bookings can frustrate customers. This can reduce sales. The Owners Inventory POS System can help reduce scheduling errors.",
+    },
+    {
+        id: "3",
+        icon: "UnifiedIcon3",
+        title: "Supplier Coordination Issues",
+        description:
+            "It can be hard to keep track of suppliers and deliveries without a centralized system. The Owners Inventory POS System can help with supplier coordination issues.",
+    },
+    {
+        id: "4",
+        icon: "UnifiedIcon4",
+        title: "Lack of Business Insights",
+        description:
+            "Without the reports, beauty salon owners have to guess which services are selling well and which are not. The Owners Inventory POS System can help with lack of sales insights.",
+    },
+    {
+        id: "5",
+        icon: "UnifiedIcon5",
+        title: "Frequent Price Changes",
+        description:
+            "Prices at salons change all the time and updating them by hand can lead to mistakes. The Owners Inventory POS System can help with price changes.",
+    },      
+     {
+        id: "6",
+        icon: "UnifiedIcon6",
+        title: "Limited Online Presence",
+        description:
+            "Many salons miss out on online bookings because they do not have digital integration. The Owners Inventory POS System can help with online presence.",
+    },      
+];
+
+export const BEAUTY_SALON_WHY_CHOOSE_CARDS = [
+    {
+        id: "1",
+        icon: "whychoseIcon1",
+        title: "Real-Time Stock Accuracy",
+        description:
+            "The inventory changes right away after every sale and purchase, which reduces mistakes and keeps stock levels accurate.",
+    },
+    {
+        id: "2",
+        icon: "whychoseIcon2",
+        title: "Faster & Smoother Billing",
+        description:
+            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times.",
+    },
+    {
+        id: "3",
+        icon: "whychoseIcon3",
+        title: "Intelligent Supplier Management",
+        description:
+            "You can keep monitoring your suppliers, handle purchase orders and get alerts when your stock is low to avoid running out.",
+    },
+    {
+        id: "4",
+        icon: "whychoseIcon4",
+        title: "Centralized Price Control",
+        description:
+            "You can update prices on all products and in all branches at once to make sure that billing is always correct and consistent.",
+    },
+    {
+        id: "5",
+        icon: "whychoseIcon5",
+        title: "Data-Driven Decision Making",
+        description:
+            "Live reports show which products are selling well and which ones are not which helps you set prices and make the right purchases.",
+    },
+    {
+        id: "6",
+        icon: "whychoseIcon6",
+        title: "Stronger Online Presence",
+        description:
+            "The Owners Inventory POS System works with ecommerce systems so salons can sell online and keep their inventory up to date in real time.",
+    },
+];
+
+export const BEAUTY_SALON_FEATURE_CARDS: FeatureCardData[] = [
+    {
+        id: "1",
+        title: "Omni-Channel and Sales Integration",
+        description:
+            "Our system connects all the places where people buy things from your beauty salon like the store, the website and the mobile app into one simple system. You can manage in-store and online sales from one place.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/omini-chanel.webp",
+        buttonLabel: "View Details",
+        buttonHref: "/features/pos",
+        buttonColor: "var(--primary-purple)",
+        listVariant: "accordion",
+        list: [
+            { listheading: "POS Sales Management", listdescription: "We ensure that the checkout process is made easy, you can keep track of the stock in real time and be able to retrieve precise sales information about your store.", listSubDescription: "This assists salons to run smoothly, minimize mistakes and have a better control of day to day operations and general performance. It also enhances customer experience by minimizing waiting time at billing counters, and processing all transactions fast and properly." },
+            { listheading: "Ecommerce Operations and Sales Online", listdescription: "Accept secure online payments, manage digital promotions, and process orders smoothly to expand your beauty salon beyond the physical store." },
+            { listheading: "Single Multi-Channel Control", listdescription: "You can see what is in stock, what is selling and how the beauty salon is doing in time. This gives you a view and control of your business." },
+        ]
+    },
+    {
+        id: "2",
+        title: "Better Decision Reporting and Analytics",
+        description:
+            "Our system gives you numbers and insights into what is selling, what is in stock and how much money the beauty salon is making. This helps you make decisions about what to buy, how to price things and what to keep in stock.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/better-decision.webp",
+        buttonLabel: "View Details",
+        buttonHref: "/features/products",
+        buttonColor: "#1AD1B9",
+        list: [
+            { listheading: "See what is selling and what is not"},
+            { listheading: "Know when to order things"},
+            { listheading: "Find out where money is being lost and improve profitability"},
+        ]
+    },
+];
+
+export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
+   {
+        id: 1,
+        title: "Fast & Accurate Billing",
+        description:
+            "Barcode scanning for quick checkout keeps customers moving smoothly even during busy times. The Owners Inventory POS System is great for accurate billing.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card1.webp",
+    },
+    {
+        id: 2,
+        title: "Live Inventory Management",
+        description:
+            "Stock updates itself after each sale so the inventory is always correct. The Owners Inventory POS System is great for inventory management.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card2.webp",
+    },
+    {
+        id: 3,
+        title: "Purchases Management",
+        description:
+            "You can make purchase orders quickly, keep track of deliveries and manage suppliers well. The Owners Inventory POS System is great for purchases management.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card3.webp",
+    },
+    {
+        id: 4,
+        title: "Multi-Unit & Variant Support",
+        description:
+            "You can easily deal with items that come in sizes, weights, and types of packaging. The Owners Inventory POS System is great for multi-unit and variant support.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card4.webp",
+    },
+    {
+        id: 5,
+        title: "Customer & Loyalty Management",
+        description:
+            "Track customer information and purchase history is easy. Give loyal customers discounts and special deals. The Owners Inventory POS System is great for customer and loyalty management.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card5.webp",
+    },
+    {
+        id: 6,
+        title: "Expense & Cash Flow Control",
+        description:
+            "You can keep track of your expenses and cash flow to maintain financial transparency. The Owners Inventory POS System is great for expense and cash flow control.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card6.webp",
+    },
+    {
+        id: 7,
+        title: "Online Commerce",
+        description:
+            "You can sell products online with synced inventory and real-time updates. The Owners Inventory POS System is great for online commerce.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card7.webp",
+    },
+    {
+        id: 8,
+        title: "Unified Branches",
+        description:
+            "With control, you can manage multiple beauty salon branches from one dashboard. The Owners Inventory POS System is great for branches.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card8.webp",
+    },
+    {
+        id: 9,
+        title: "Smart Sales & Stock Reports",
+        description:
+            "Sales trends, profits and stock movement can help you make smart choices. The Owners Inventory POS System is great for sales and stock reports.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card9.webp",
+    },
+    {
+        id: 10,
+        title: "Staff Permissions and User Roles",
+        description:
+            "You can control access for cashiers, managers and admins to ensure data security. The Owners Inventory POS System is great for staff permissions and user roles.",
+        imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card10.webp",
+    },
+];
+
+export const BEAUTY_SALON_WORKFLOW_DATA = {
+    heading: "Inventory Workflow of Owners Inventory",
+    paragraph: "To make things easier, our beauty salon POS system automates inventory tasks.",
+    steps: [
+        {
+            number: 1,
+            title: "Inventory Acquisition",
+            description: "Suppliers send products based on customer demand. We check each item. Add it to our system to track it."
+        },
+        {
+            number: 2,
+            title: "Stock Organization & Storage",
+            description: "We store things in a way that makes them easy to find and manage."
+        },
+        {
+            number: 3,
+            title: "Inventory Tracking",
+            description: "We efficiently track inventory and update. We update sales, returns and transfers in time.",
+        },
+        {
+            number: 4,
+            title: "Supplier & Purchasing",
+            description: "We keep track of deliveries, manage suppliers and restock items on time.",
+        },
+        {
+            number: 5,
+            title: "Order Fulfillment",
+            description: "Picking, packing and billing products correctly reduces mistakes. Makes things run smoothly."
+        },
+        {
+            number: 6,
+            title: "Reporting & Analysis",
+            description: "Our reports show sales performance, stock movement and revenue in detail. Our beauty salon POS system simplifies tasks, reduces errors and improves efficiency. Change your beauty salon's operations today."
+        },
+    ]
+};
+
+export const BEAUTY_SALON_TESTIMONIALS = [
+    {
+        id: "1",
+        name: "Olivia Rose",
+        title: "Beauty Salon Owner",
+        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+        text: "Our system has made billing and inventory more accurate. The daily work is now easy and stress-free.",
+    },
+    {
+        id: "2",
+        name: "Liam Alexander",
+        title: "Spa Owner",
+        image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+        text: "This is the system we have used. It keeps everything organized. Helps us make better decisions. The checkout is now faster.",
+    },
+    {
+        id: "3",
+        name: "Noah James",
+        title: "Beauty & Wellness Center Owner​",
+        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        text: "We used to have trouble managing thousands of items. Now everything is tracked perfectly. The staff can use the system easily.",
+    },
+    {
+        id: "4",
+        name: "Emma Grace",
+        title: "Salon Franchise Owner​",
+        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+        text: "We used to have stock errors and delays. Now everything is accurate. It saves time and makes the salon more efficient.",
+    },
+];
+
+export const BEAUTY_SALON_FAQS = [
+    {
+        id: "1",
+        question: "What is a POS system for a beauty salon?",
+        answer: "A beauty salon system helps manage sales, inventory and customers from one place. It makes billing and inventory more accurate."
+    },
+    {
+        id: "2",
+        question: "Can this POS system handle large inventories?",
+        answer: "Yes, it is designed to manage thousands of products with categories, sizes and variations."
+    },
+    {
+        id: "3",
+        question: "Is it easy for staff to use?",
+        answer: "Absolutely,  the system is simple and easy to use. The staff can do their jobs quickly without a lot of training."
+    },
+    {
+        id: "4",
+        question: "Does it provide reports and insights?",
+        answer: "Yes, it gives real-time reports on sales, stock and profits which helps with decision-making."
+    },
+    {
+        id: "5",
+        question: "Is the system secure for multiple users?",
+        answer: "It is. We have controls in place so that only the right people can access the system. It is safe for different staff roles."
+    },
+];
+
+export const BEAUTY_SALON_KEY_FEATURES = [
+    {
+        id: "salon-billing",
+        title: "Beauty Salon Billing",
+        description: "Speed up your sales with integrated billing and custom item creation for a smoother client experience.",
+        imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
+    },
+    {
+        id: "salon-stock-control",
+        title: "Real-Time Salon Stock",
+        description: "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both store and warehouse.",
+        imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
+    },
+    {
+        id: "salon-vendor-mgmt",
+        title: "Manufacturer & Supplier Management",
+        description: "Keep track of all your beauty salon manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
+        imageSrc: "/assets/features-page/featurescard-banners/purchases-banner.webp",
+    },
+    {
+        id: "salon-variants",
+        title: "Item & Category Tracking",
+        description: "Manage different product styles, materials, and categories in one easy-to-navigate catalog system.",
+        imageSrc: "/assets/features-page/featurescard-banners/inventory-banner.webp",
+    },
+    {
+        id: "salon-loyalty",
+        title: "Client & Loyalty Management",
+        description: "Build relationships with your beauty salon clients using integrated CRM tools to track their preferences and order history.",
+        imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
+    },
+    {
+        id: "salon-finances",
+        title: "Financial Reporting",
+        description: "Monitor your store’s financial health with detailed reports on sales, deposits, and operating expenses.",
+        imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
+    },
+    {
+        id: "salon-ecommerce",
+        title: "Online Salon Integration",
+        description: "Sync your physical store with your online beauty salon to manage all inventory and orders in one place.",
+        imageSrc: "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
+    },
+];
+
+export const BEAUTY_SALON_TESTIMONIAL_DATA = {
+    heading: "What Do Our Clients Say About Owners Inventory?",
+    paragraph: "", // Optional paragraph
+    secondHeading: "Inventory Management Made Easy",
+    secondDescription: "You can take full control over your online business inventory by using a system specifically designed for eCommerce. This system helps you grow and stay organized.",
+    whyChooseTitle: "Why Choose Our System?",
+    whyChooseDescription: "Our system gives you inventory, fast billing and control of the beauty salon.",
+};
+
+export const BEAUTY_SALON_TESTIMONIAL_FEATURES = [
+    {
+        id: "1",
+        title: "Easy Setup",
+        description: "The system is easy to use and sets up quickly without disrupting the work.",
+        icon: "testWhychoseIcon1",
+    },
+    {
+        id: "2",
+        title: "Reliable Performance",
+        description: "It handles a lot of customers and makes sure the checkout is smooth during busy times.",
+        icon: "testWhychoseIcon2",
+    },
+    {
+        id: "3",
+        title: "Clear Inventory",
+        description: "All the products are organized so you can see what is in stock.",
+        icon: "testWhychoseIcon3",
+    },
+    {
+        id: "4",
+        title: "Accurate Reporting",
+        description: "We give you insights into sales, stock and profits which helps you make better decisions.",
+        icon: "testWhychoseIcon4",
+    },
+    {
+        id: "5",
+        title: "Flexible Features",
+        description: "The system is designed to work for salons of all sizes which makes it flexible.",
+        icon: "testWhychoseIcon5",
+    },
+    {
+        id: "6",
+        title: "Safe Access",
+        description: "We have controls in place so that only the right people can access the system.",
+        icon: "testWhychoseIcon6",
+    },
+    {
+        id: "7",
+        title: "Integration and Addons",
+        description: "Our system integrates seamlessly with shipping platforms, accounting software, payment gateways, and eCommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
+        icon: "testWhychoseIcon7",
+    },
+];
+
+export const BEAUTY_SALON_TOOLS_DATA = {
+    heading: "Integration and Tools",
+    paragraph: "Our POS integrates with accounting software, eCommerce platforms, CRM systems, and payment gateways. These integrations streamline operations and reduce manual work.",
+    tools: [
+        { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
+        { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
+        { id: 3, name: "QuickBooks", image: "/assets/home-page-images/tools-section/quick-book.svg" },
+        { id: 4, name: "Xero", image: "/assets/home-page-images/tools-section/xero.svg" },
+        { id: 5, name: "Stripe", image: "/assets/home-page-images/tools-section/stripe.svg" },
+    ],
+};
