@@ -1,9 +1,15 @@
 "use client";
 
-import BrandsSwiper from "@/components/slider/BrandsSwiper";
 import MainHeading from "../typography/MainHeading";
 import Image from "next/image";
-import FeaturesMainSwiper from "@/components/slider/FeaturesMainSwiper";
+import dynamic from "next/dynamic";
+
+const FeaturesMainSwiper = dynamic(() => import("@/components/slider/FeaturesMainSwiper"), { ssr: false }) as React.ComponentType<{
+  slides: any[];
+  renderSlide: (slide: any, index: number) => React.ReactNode;
+  showPagination?: boolean;
+  swiperOptions?: Record<string, unknown>;
+}>;
 
 const otherBrands = [
   {

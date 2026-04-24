@@ -91,7 +91,8 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
           priority 
           alt="Hero Animation 1" 
           fill 
-          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
+          quality={75}
           className="object-cover w-full h-full" 
         />
       </div>
@@ -102,7 +103,8 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
           priority
           alt="Hero Animation 2" 
           fill 
-          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
+          quality={75}
           className="object-cover w-full h-full" 
         />
       </div>
@@ -113,7 +115,8 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
           priority
           alt="Hero Animation 3" 
           fill 
-          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
+          quality={75}
           className="object-contain w-full h-full" 
         />
       </div>
@@ -123,7 +126,8 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
           src="/assets/home-page-images/hero-animation/animation-img4.webp" 
           alt="Hero Animation 4" 
           fill 
-          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
+          quality={75}
           className="object-cover w-full h-full" 
         />
       </div>
@@ -133,7 +137,8 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
           src="/assets/home-page-images/hero-animation/animation-img5.webp" 
           alt="Hero Animation 5" 
           fill 
-          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
+          quality={75}
           className="object-cover w-full h-full" 
         />
       </div>

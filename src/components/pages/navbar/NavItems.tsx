@@ -157,6 +157,7 @@ const NavItems = () => {
                         <Link
                           key={item.key}
                           href={`/features/${item.key.toLowerCase()}`}
+                          prefetch={false}
                           className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
                             selectedFeatureKey === item.key
                               ? "border-[var(--primary-purple)] bg-purple-50 "
@@ -394,6 +395,7 @@ const NavItems = () => {
                         <Link
                           key={item.key}
                           href={`/industries/${item.key.toLowerCase()}`}
+                          prefetch={false}
                           className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
                             selectedIndustryKey === item.key
                               ? "border-[var(--primary-purple)] bg-purple-50"
@@ -441,15 +443,7 @@ const NavItems = () => {
             {/* Right Section (3/12) - Details Panel */}
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className="border-l max-h-[350px] min-h-[400px] border-[var(--border-muted)] w-full pl-4 overflow-y-auto overflow-x-hidden 
-          [&::-webkit-scrollbar]:w-2
-          [&::-webkit-scrollbar-track]:bg-transparent
-          [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
-          [&::-webkit-scrollbar-thumb]:rounded-full
-          hover:[&::-webkit-scrollbar-thumb]:bg-[var(--text-muted-alt)]
-          [scrollbar-width:thin]
-          [scrollbar-color:var(--border-muted)_transparent]"
-              >
+                className="border-l max-h-[350px] min-h-[400px] border-[var(--border-muted)] w-full pl-4 overflow-y-auto overflow-x-hidden [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)] [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[var(--text-muted-alt)] [scrollbar-width:thin] [scrollbar-color:var(--border-muted)_transparent]">
                 <p className="mb-2 text-xs font-['Onest'] font-bold text-[var(--text-dark)] flex items-center gap-2">
                   {
                     industriesItems.find(

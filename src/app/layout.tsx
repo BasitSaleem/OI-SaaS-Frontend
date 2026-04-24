@@ -60,6 +60,7 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "vj9pzbdqky");
           `}
         </Script>
+        {/* Google Tag Manager - Consistently configured via GTM */}
         <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -69,20 +70,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-5LZ72NX8');
           `}
         </Script>
-        <Script
-          id="google-tag"
-          src="https://www.googletagmanager.com/gtag/js?id=G-X86H4J4WQ4"
-          strategy="lazyOnload"
-        />
-        <Script id="google-tag-init" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-X86H4J4WQ4');
-          `}
-        </Script>
-        <Script id="fb-pixel" strategy="afterInteractive">
+        <Script id="fb-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

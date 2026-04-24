@@ -2,8 +2,13 @@
 
 import Image from "next/image";
 import MainHeading from "../pages/typography/MainHeading";
-import BrandsSwiper from "../slider/BrandsSwiper";
 import Paragraph from "../pages/typography/Paragraph";
+import dynamic from "next/dynamic";
+const BrandsSwiper = dynamic(() => import("../slider/BrandsSwiper"), { ssr: false }) as React.ComponentType<{
+  slides: BrandItem[];
+  renderSlide: (slide: BrandItem, index: number) => React.ReactNode;
+  swiperOptions?: Record<string, unknown>;
+}>;
 
 // -------------------------
 // ✅ Types
