@@ -86,23 +86,56 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
     >
       
       <div ref={img1Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 1 }}>
-        <Image src="/assets/home-page-images/hero-animation/animation-img1.webp" priority alt="Hero Animation 1" fill className="object-cover w-full h-full" />
+        <Image 
+          src="/assets/home-page-images/hero-animation/animation-img1.webp" 
+          priority 
+          alt="Hero Animation 1" 
+          fill 
+          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          className="object-cover w-full h-full" 
+        />
       </div>
 
       <div ref={img2Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
-        <Image src="/assets/home-page-images/hero-animation/animation-img2.webp" alt="Hero Animation 2" fill className="object-cover w-full h-full" />
+        <Image 
+          src="/assets/home-page-images/hero-animation/animation-img2.webp" 
+          priority
+          alt="Hero Animation 2" 
+          fill 
+          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          className="object-cover w-full h-full" 
+        />
       </div>
 
       <div ref={img3Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
-        <Image src="/assets/home-page-images/hero-animation/animation-img3.webp" alt="Hero Animation 3" fill className="object-contain w-full h-full" />
+        <Image 
+          src="/assets/home-page-images/hero-animation/animation-img3.webp" 
+          priority
+          alt="Hero Animation 3" 
+          fill 
+          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          className="object-contain w-full h-full" 
+        />
       </div>
 
       <div ref={img4Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
-        <Image src="/assets/home-page-images/hero-animation/animation-img4.webp" alt="Hero Animation 4" fill className="object-cover w-full h-full" />
+        <Image 
+          src="/assets/home-page-images/hero-animation/animation-img4.webp" 
+          alt="Hero Animation 4" 
+          fill 
+          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          className="object-cover w-full h-full" 
+        />
       </div>
 
       <div ref={img5Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
-        <Image src="/assets/home-page-images/hero-animation/animation-img5.webp" alt="Hero Animation 5" fill className="object-cover w-full h-full" />
+        <Image 
+          src="/assets/home-page-images/hero-animation/animation-img5.webp" 
+          alt="Hero Animation 5" 
+          fill 
+          sizes="(max-width: 768px) 300px, (max-width: 1200px) 500px, 500px"
+          className="object-cover w-full h-full" 
+        />
       </div>
     </div>
   );
