@@ -85,7 +85,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={AUTO_PARTS_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance."
+        title="Security, Accuracy, and Data Control."
         description="Managing automotive inventory requires strict control over data and transactions. The system records every activity, ensuring transparency and reducing risks of errors or unauthorized changes. Role-based access improves security across operations. Owners' inventory provides a secure environment for automotive store operations."
         secondDescription="By improving data accuracy, the system supports better operational control and consistency."
       />
@@ -120,8 +120,8 @@ const Page = () => {
       </div>
 
       <IndustriesHardwareControl
-        title="Take Control of Your Clothing Store"
-        description="Many clothing stores lose money because of mistakes with stock and inefficient ways of doing things. The clothing inventory management software helps reduce losses and improve accuracy. It also speeds up operations. The billing process is smarter and faster which leads to profitability and growth."
+        title="Efficient Stock Management for Automotive Stores"
+        description="Optimize your auto parts store’s operations by tracking and organizing every component accurately. Our inventory control software provides real-time stock visibility. It prevents shortages and keeps your shop running smoothly with advanced operational controls."
         ctaDesc="Start Today"
       />
     </div>

@@ -101,7 +101,7 @@ export const HEALTHCARE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "Owners Inventory connects healthcare providers across multiple sales and service channels. It maintains accurate records of whether medicines are issued from pharmacy counters, internal departments, or external requests. It updates stocks with every transaction. The system ensures medical supply records remain consistently accurate without duplication errors.",
+            "Owners Inventory connects healthcare providers across multiple sales and service channels. It maintains accurate records of whether medicines are issued from pharmacy counters, internal departments, or external requests. It updates stocks with every transaction.", subDescription: "The system ensures medical supply records remain consistently accurate without duplication errors.",
         imageSrc: "/assets/industries-pages/healthcare-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
@@ -116,7 +116,7 @@ export const HEALTHCARE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "2",
         title: "Insights and Performance Monitoring",
-        description: "Owners Inventory provides accurate reports of your healthcare inventory usage. The insights help healthcare administrators understand demand patterns of medicines, which helps in restocking inventory according to consumer needs. Informed decision-making helps the healthcare business improve financial efficiency",
+        description: "Owners Inventory provides accurate reports of your healthcare inventory usage. The insights help healthcare administrators understand demand patterns of medicines, which helps in restocking inventory according to consumer needs. Informed decision-making helps the healthcare business improve financial efficiency.",
         imageSrc: "/assets/industries-pages/healthcare-inventory-management-software/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
