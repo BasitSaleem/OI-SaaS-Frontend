@@ -37,8 +37,8 @@ const Page = () => {
   return (
     <div>
       <SubIndustriesHero
-        title="Furniture Inventory Management Software for Scalable Business Control"
-        description="Managing a furniture business requires precise control over various product variants, large-scale inventory, and multi-channel sales. Our furniture inventory management software is designed to track every item, from large furniture pieces to small accessories, ensuring your stock levels are always accurate. It streamlines your supply chain, improves order fulfillment, and supports smarter business decisions for sustainable growth."
+        title="Furniture Inventory Management System for Real-Time Stock Control"
+        description="A furniture business needs accuracy, speed, and absolute control of inventory and sales. Furniture products are usually large, have various forms, and need to be tracked appropriately. Manual stock handling may cause errors, delays and loss of revenue. The furniture inventory management software makes life easier with the stock tracking, sales updates and reporting in one system."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"
