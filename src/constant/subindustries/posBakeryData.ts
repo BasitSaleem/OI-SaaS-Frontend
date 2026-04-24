@@ -53,46 +53,54 @@ export const BAKERY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
 
 export const BAKERY_WHY_CHOOSE_CARDS = [
     {
-        id: "ultra-fast-billing",
+        id: "1",
         icon: "slowBilling",
         title: "Ultra-Fast Billing",
         description:
             "Our POS handles orders in seconds, letting cashiers quickly look up items, apply discounts, and complete payments efficiently during busy hours.",
     },
     {
-        id: "ingredient-level-tracking",
+        id: "2",
         icon: "whychoseIcon2",
         title: "Ingredient-Level Tracking",
         description:
             "The POS tracks finished products and ingredients like flour, sugar, and butter in real time. Stock updates automatically after every sale to prevent shortages.",
     },
     {
-        id: "menu-variant-management",
+        id: "3",
         icon: "stockConfusion",
         title: "Menu & Variant Management",
         description:
             "Our system simplifies bakery menu management, letting you adjust cake sizes, flavors, toppings, pastries, breads, and specials quickly, update prices, or restructure categories effortlessly.",
     },
     {
-        id: "custom-order-module",
+        id: "4",
         icon: "whychoseIcon5",
         title: "Custom Order & Pre-Order Module",
         description:
             "Manage special orders effortlessly with our module like custom messages, cake designs, sizes, flavors, delivery dates, customer notes, advance payments, and reminders all clearly organized.",
     },
     {
-        id: "multi-channel-sales-sync",
+        id: "5",
         icon: "whychoseIcon4",
         title: "Multi-Channel Sales Sync",
         description:
             "Our system combines all orders from walk-ins, takeaway, online, and delivery apps into one platform, preventing errors, avoiding double entries, and showing daily sales and efficiency clearly.",
     },
+   
     {
-        id: "real-time-analytics",
+        id: "6",
         icon: "whychoseIcon3",
         title: "Real-Time Analytics Dashboard",
         description:
             "Owners can track top-selling products, peak traffic times, and most-used ingredients, with daily, weekly, and monthly sales reports to support informed decision-making.",
+    },
+     {
+        id: "7",
+        icon: "whychoseIcon6",
+        title: "Role-Based Staff Access",
+        description:
+            "Managers, delivery teams, cashiers, and other kitchen employees are all assigned roles and permissions. This maintains the security and organization of your operations.",
     },
 ];
 
@@ -201,7 +209,7 @@ export const BAKERY_WORKFLOW_DATA = {
         {
             number: 5,
             title: "Reporting & Analysis",
-            description: "The system gives a detailed view of your bakery performance, beyond the daily operation. It monitors the production output, ingredient consumption trends, peak sales hour, and profitability.  Accurate reports help optimize pricing and adjust production volume, allowing decisions based on real data, not assumptions."
+            description: "The system gives a detailed view of your bakery performance, beyond the daily operation. It monitors the production output, ingredient consumption trends, peak sales hour, and profitability. Accurate reports help optimize pricing and adjust production volume, allowing decisions based on real data, not assumptions."
         },
        
     ]
@@ -356,7 +364,7 @@ export const BAKERY_TESTIMONIAL_FEATURES = [
 
 export const BAKERY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory solutions are compatible with POS, accounting, CRM, and e-commerce solutions. This enables bakery owners to control inventory, sales, finances, and customer data on one dashboard.",
+    paragraph: "Owners Inventory seamlessly integrates with accounting software, barcode scanning, ecommerce platforms and payment gateways to create a connected ecosystem. Additional features like SMS notifications, loyalty programs and branch management will allow you to grow your business without adding complexity. It grows with your bakery, supporting small bakeries and large chains.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

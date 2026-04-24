@@ -87,7 +87,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={BOOKSTORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, & Compliance."
+        title="Security, Accuracy, and Compliance."
         description="A good bookstore POS system will make sure that all the transactions are well-documented and tracked. The user roles and permissions restrict access to sensitive information and minimize errors and misuse. All data in the bookstores is safe and secure."
         secondDescription="The system also keeps audit trails and facilitates compliance needs, protecting inventory and financial records. The real-time tracking will provide a clear view of stock movement and automated reports will reduce the number of mistakes made by the manual process and keep the books accurate."
       />
@@ -115,8 +115,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our bookstore POS system is designed to make daily operations smooth and easy.
-Here are answers to some common questions from bookstore owners."
+          paragraph="Our bookstore POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bookstore owners."
           faqs={BOOKSTORE_FAQS}
           buttonText="Start Now"
         />
