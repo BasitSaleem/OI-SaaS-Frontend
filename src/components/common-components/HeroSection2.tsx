@@ -203,8 +203,8 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   src="/assets/home-page-images/hero-bg.webp"
                   alt="Background"
                   fill
-                  // priority
-                  // fetchPriority="high"
+                  priority
+                  quality={75}
                   sizes="100vw"
                   className="object-cover object-center"
                 />

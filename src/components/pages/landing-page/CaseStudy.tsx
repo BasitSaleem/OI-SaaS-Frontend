@@ -103,9 +103,9 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
             >
               <Image
                 src="/assets/home-page-images/slider-arrow-left.svg"
-                alt="arrow-right"
-                width={800}
-                height={600}
+                alt="arrow-left"
+                width={20}
+                height={20}
                 className="w-[20px] h-[20px]"
               />
             </button>
@@ -135,8 +135,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               <Image
                 src="/assets/home-page-images/slider-arrow-right.svg"
                 alt="arrow-right"
-                width={800}
-                height={600}
+                width={20}
+                height={20}
                 className="w-[20px] h-[20px]"
               />
             </button>
@@ -185,9 +185,9 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                   <div className="flex items-start lg:items-center gap-x-6">
                     <Image
                       src="/assets/home-page-images/blue-checker.svg"
-                      alt="arrow-right"
-                      width={800}
-                      height={600}
+                      alt="blue-checker"
+                      width={36}
+                      height={33}
                       className="w-9 h-[33px]"
                     />
                     <div className="flex flex-col gap-1">
@@ -208,10 +208,10 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                   >
                     <Image
                       src={study.image}
-                      alt="arrow-right"
-                      width={800}
-                      height={600}
-                      className="w-full h-full"
+                      alt={study.author}
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <p className="text-[var(--text-dark)] p-4 lg:p-6 italic text-xl leading-8 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
@@ -229,9 +229,9 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                 >
                   <Image
                     src="/assets/home-page-images/slider-arrow-left.svg"
-                    alt="arrow-right"
-                    width={800}
-                    height={600}
+                    alt="arrow-left"
+                    width={20}
+                    height={20}
                     className="w-5 h-5"
                   />
                 </button>
@@ -261,8 +261,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
                   <Image
                     src="/assets/home-page-images/slider-arrow-right.svg"
                     alt="arrow-right"
-                    width={800}
-                    height={600}
+                    width={20}
+                    height={20}
                     className="w-5 h-5"
                   />
                 </button>
