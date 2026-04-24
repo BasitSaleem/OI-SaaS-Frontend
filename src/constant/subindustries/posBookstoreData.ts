@@ -103,7 +103,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "Stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
+            "Our inventory system will connect all your sales outlets like the physical bookstores, online stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
         imageSrc: "/assets/industries-pages/bookstore-pos/bookstore-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",
@@ -124,9 +124,9 @@ export const BOOKSTORE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Real-time sales and inventory control."},
-            { listheading: "Forecast demand and schedule reorders."},
-            { listheading: "Determine slow moving titles and enhance stock turnover."},
+            { listheading: "Real-time sales and inventory control"},
+            { listheading: "Forecast demand and schedule reorders"},
+            { listheading: "Determine slow moving titles and enhance stock turnover"},
         ]
     },
 ];
@@ -341,7 +341,7 @@ export const BOOKSTORE_TESTIMONIAL_DATA = {
     heading: "What Our Clients Say About Us?",
     paragraph: "", // Optional paragraph
     secondHeading: "All-in-One Inventory Solution for Bookstores",
-    secondDescription: "With a modern POS designed for bakeries, you can take full control over ingredients, sales and custom orders.",
+    secondDescription: "Have complete control of your books, sales, and day-to-day operations with a system that is tailored to the needs of a modern bookstore.",
     whyChooseTitle: "Why Choose Our System?",
     whyChooseDescription: "Owners' Inventory makes bookstore management simple, fast, and reliable. Every feature is built to help stores save time, reduce errors, and boost sales. From books to stationery, every item stays organised and accessible.",
 };
@@ -393,7 +393,7 @@ export const BOOKSTORE_TESTIMONIAL_FEATURES = [
 
 export const BOOKSTORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and eCommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
+    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard. The integrated tools simplify the business processes, minimize the number of people working manually and make inventory management quicker and more efficient in all the operations of the bookstore.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

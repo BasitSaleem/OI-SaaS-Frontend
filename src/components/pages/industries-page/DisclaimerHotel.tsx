@@ -82,7 +82,7 @@ const DisclaimerHotel: React.FC<DisclaimerHotelProps> = ({
                         </defs>
                       </svg>
                     </span>
-                    <span className="font-['Onest'] text-[var(--text-dark)] font-semibold text-base md:text-xl lg:text-2xl text-left  leading-[150%] lg:leading-[135%]">
+                    <span className="font-['Onest'] text-[var(--text-dark)] font-medium text-base md:text-xl lg:text-2xl text-left  leading-[150%] lg:leading-[135%]">
                        {typeof item === "string" ? item : item.listheading}
                     </span>
                   </li>

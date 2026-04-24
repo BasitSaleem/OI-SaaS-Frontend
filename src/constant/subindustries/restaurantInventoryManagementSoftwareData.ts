@@ -101,16 +101,17 @@ export const RESTAURANT_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "1",
         title: "Omni-Channel Sales Integration for Restaurants",
         description:
-            "Owners Inventory connects all sales channels, which helps restaurant owners gain maximum visibility into inventory updates. It helps restaurants seamlessly operate across dine-in, takeaway, and delivery channels. This keeps track of stocks accurately, prevents order duplication, and allows restaurants to manage complex operations of multiple platforms from a single system.",
+            "Owners Inventory connects all sales channels, which helps restaurant owners gain maximum visibility into inventory updates. It helps restaurants seamlessly operate across dine-in, takeaway, and delivery channels.",
+        subDescription: "This keeps track of stocks accurately, prevents order duplication, and allows restaurants to manage complex operations of multiple platforms from a single system.",
         imageSrc: "/assets/industries-pages/restaurant-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Order Counter", listdescription: "Orders are linked directly to inventory usage. The system keeps a record of ingredient usage based on predefined recipes. It keeps sales streamlined even in busy service hours, helping the kitchen and front-of-house teams stay aligned without delays or manual tracking errors." },
-            { listheading: "Online Order and Delivery Sync ", listdescription: "Owners Inventory keeps your restaurant inventory aligned with every online and in-restaurant order. It reduces the required manual effort. As orders are processed, stocks get updates automatically to identify actual ingredient usage. This maintains accurate and up-to-date inventory information across all sales and ordering channels." },
-            { listheading: "Centralized Order Dashboard", listdescription: "It provides a centralized dashboard to track all restaurant activities. It allows store owners to monitor order flow, track restaurant performance, and manage purchase operations efficiently. This eliminates confusion caused by multiple systems. It also maintains a smooth workflow between kitchen storage, sales, and inventory management." },
+            { listheading: "POS Order Counter", listdescription: "Orders are linked directly to inventory usage. The system keeps a record of ingredient usage based on predefined recipes.", listSubDescription: "It keeps sales streamlined even in busy service hours, helping the kitchen and front-of-house teams stay aligned without delays or manual tracking errors." },
+            { listheading: "Online Order and Delivery Sync ", listdescription: "Owners Inventory keeps your restaurant inventory aligned with every online and in-restaurant order. It reduces the required manual effort. As orders are processed, stocks get updates automatically to identify actual ingredient usage.", listSubDescription: "This maintains accurate and up-to-date inventory information across all sales and ordering channels." },
+            { listheading: "Centralized Order Dashboard", listdescription: "It provides a centralized dashboard to track all restaurant activities. It allows store owners to monitor order flow, track restaurant performance, and manage purchase operations efficiently. This eliminates confusion caused by multiple systems.", listSubDescription: "It also maintains a smooth workflow between kitchen storage, sales, and inventory management." },
         ]
     },
     {
@@ -294,7 +295,7 @@ export const RESTAURANT_INVENTORY_TESTIMONIAL_DATA = {
     heading: "What Do Our Clients Say About Owners Inventory?",
     paragraph: "",
     secondHeading: "Stop Losing Money to Inventory Guesswork",
-    secondDescription: "Every untracked ingredient and missed expiry date costs your restaurant real money. Owners Inventory gives you the visibility and control to stop the losses",
+    secondDescription: "Every untracked ingredient and missed expiry date costs your restaurant real money. Owners Inventory gives you the visibility and control to stop the losses.",
     whyChooseTitle: "Why Choose Restaurant Inventory Management Software",
     whyChooseDescription: "Owners Inventory can efficiently handle all complex restaurant tasks. It offers accurate ingredient usage, inventory management, and food cost control. The system makes it easy to make better purchase decisions and boost overall operational efficiency.",
 };
@@ -340,7 +341,7 @@ export const RESTAURANT_INVENTORY_TESTIMONIAL_FEATURES = [
 
 export const RESTAURANT_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Owners Inventory connects with essential restaurant-based tools to make the work environment efficient. It connects CRM, ERP, payment gateways, and accounting tools to ensure higher functionality, which helps boost customer satisfaction and business efficiency. It ensures seamless data flow between systems.",
+    paragraph: "Owners Inventory connects with essential restaurant-based tools to make the work environment efficient. It connects CRM, ERP, payment gateways, and accounting tools to ensure higher functionality, which helps boost customer satisfaction and business efficiency. It ensures seamless data flow between systems. Restaurants can manage orders, inventory, and financial records within one well-connected ecosystem.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

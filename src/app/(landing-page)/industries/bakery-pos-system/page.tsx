@@ -93,7 +93,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={BAKERY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, & Compliance."
+        title="Security, Accuracy, and Compliance."
         description="Each transaction in the Owners Inventory has a time stamp and is recorded securely. Each staff member has access to only the information relevant to his or her responsibilities."
         secondDescription="Audit trails increase transparency, and they reduce the possibility of errors within an organization or unauthorized changes. Automated reports reduce manual errors and help ensure that financial records are accurate and in compliance."
       />
@@ -121,8 +121,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Our bakery POS system is designed to make daily operations smooth and easy.
-Here are answers to some common questions from bakery owners."
+          paragraph="Our bakery POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bakery owners."
           faqs={BAKERY_FAQS}
           buttonText="Start Now"
         />

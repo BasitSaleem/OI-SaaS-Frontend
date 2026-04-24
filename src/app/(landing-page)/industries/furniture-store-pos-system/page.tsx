@@ -87,7 +87,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={FURNITURE_STORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, & Compliance."
+        title="Security, Accuracy, and Compliance."
         description="Our system is secure and ensures controlled access and transactions through organized data management and constant monitoring. Role-based permissions allow you to determine the degree of access of cashiers, managers, and administrators, reducing the possibility of unauthorized actions. All sales, returns, and inventory adjustments are kept in full audit trails which are completely transparent."
         secondDescription="Proper financial documentation makes reconciliation and reporting easier and real-time inventory tracking eliminates discrepancies and manipulation of stocks. Your business data is securely backed up, system controls are reliable, and your business data is compliant and reliable, and you have confidence in every transaction and operational decision."
       />

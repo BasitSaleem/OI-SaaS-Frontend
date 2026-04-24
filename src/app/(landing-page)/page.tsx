@@ -49,7 +49,7 @@ export default function Home() {
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Customer Support",
-                  "email": "support@ownersinventory.com",
+                  "email": "sales@ownersinventory.com",
                   "areaServed": "US",
                   "availableLanguage": "English"
                 }

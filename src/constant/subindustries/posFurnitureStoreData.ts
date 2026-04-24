@@ -134,7 +134,7 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
         id: "2",
         title: "Better Reporting & Business Insights",
         description:
-            "Our best point of sale software for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
+            "Take better decisions based on real time sales, stock, and profitability data. Get a clear image of performance to maximize revenue and reduce losses.",
         imageSrc: "/assets/industries-pages/furniture-store-pos/furniture-store-better-reporting.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
@@ -425,7 +425,7 @@ export const FURNITURE_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "7",
         title: "Integration and Add-Ons",
-        description: "Combined with accounting, ecommerce, barcode scanners and payment gateways. Scalable furniture store solution is achieved by add-ons such as loyalty programs, SMS alerts, multi-branch, delivery tracking, and supplier tools.",
+        description: "Combined with accounting, eCommerce, barcode scanners and payment gateways. Scalable furniture store solution is achieved by add-ons such as loyalty programs, SMS alerts, multi-branch, delivery tracking, and supplier tools.",
         icon: "testWhychoseIcon7",
     },
     
@@ -433,7 +433,7 @@ export const FURNITURE_STORE_TESTIMONIAL_FEATURES = [
 
 export const FURNITURE_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
+    paragraph: "The POS solutions of modern furniture stores are combined with accounting software, CRM systems, payment gateways, and ecommerce platforms. This enables proprietors to control inventory, showroom sales, online orders, finances and customer data on a single centralized dashboard.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

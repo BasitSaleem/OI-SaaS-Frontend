@@ -77,20 +77,13 @@ export const RETAIL_STORE_INVENTORY_WHY_CHOOSE_CARDS = [
     {
         id: "4",
         icon: "whychoseIcon4",
-        title: "Centralized Price Control",
-        description:
-            "You can update the prices and discounts offered for all the retail items at once. This ensures that the prices are consistent across your store without any mistakes.",
-    },
-    {
-        id: "5",
-        icon: "whychoseIcon5",
         title: "Data-Driven Insights",
         description:
             "The software provides data-driven insights. You can access reports on sales performance, stock movement and profitability. This helps you make better decisions and improve business growth.",
     },
     {
-        id: "6",
-        icon: "whychoseIcon6",
+        id: "5",
+        icon: "whychoseIcon5",
         title: "Online Sales Integration",
         description:
             "Our software integrates online and offline sales. You can connect your store with eCommerce platforms. This helps you manage sales seamlessly with synchronized inventory updates. Our inventory management software for stores is the solution you need.",
@@ -103,7 +96,7 @@ export const RETAIL_STORE_INVENTORY_WHY_CHOOSE_CARDS = [
 export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "1",
-        title: "Omni Channel and Sales Integration",
+        title: "Omni-Channel and Sales Integration",
         description:
             "Retail stores operate across multiple sales channels, physical stores, online shops and mobile apps. Managing these channels need control over stock, prices and orders. A connected inventory system lets store owners see real-time stock updates no matter where the sale happens. It handles walk-in customers, online buyers and big orders from one platform.",
         imageSrc: "/assets/industries-pages/retail-store-inventory-management-software/omini-chanel.webp",
@@ -112,9 +105,9 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Sales Management", listdescription: "A user-friendly point of sale system lets staff search for products fast using categories, barcodes or names. This helps staff process transactions quickly. It also makes sure bundled purchases, discounts and multiple items are processed correctly." },
-            { listheading: "Online and Wholesale Order Integration", listdescription: "Online and wholesale order integration is important for businesses. These businesses handle bulk orders with different prices, quantities and delivery needs. The point of sale system captures all order details and aligns them with available stock. If a customer places an order for products the point of sale system checks stock instantly. This prevents delays or incorrect order processing." },
-            { listheading: "Unified Multichannel Dashboard", listdescription: "The unified multichannel dashboard shows an overview of inventory, sales and product performance across all channels. It displays product categories, stock movement and sales trends. This helps store owners understand which products are in demand online or in the store. They can then make decisions about stock." },
+            { listheading: "POS Sales Management", listdescription: "A user-friendly point of sale system lets staff search for products fast using categories, barcodes or names. This helps staff process transactions quickly.", listSubDescription: "It also makes sure bundled purchases, discounts and multiple items are processed correctly." },
+            { listheading: "Online and Wholesale Order Integration", listdescription: "Online and wholesale order integration is important for businesses. These businesses handle bulk orders with different prices, quantities and delivery needs. The point of sale system captures all order details and aligns them with available stock.", listSubDescription: "If a customer places an order for products the point of sale system checks stock instantly. This prevents delays or incorrect order processing." },
+            { listheading: "Unified Multichannel Dashboard", listdescription: "The unified multichannel dashboard shows an overview of inventory, sales and product performance across all channels. It displays product categories, stock movement and sales trends.", listSubDescription: "This helps store owners understand which products are in demand online or in the store. They can then make decisions about stock." },
         ]
     },
     {
@@ -388,7 +381,7 @@ export const RETAIL_STORE_INVENTORY_TESTIMONIAL_FEATURES = [
 
 export const RETAIL_STORE_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Our inventory solution integrates seamlessly with POS systems, accounting software, CRM platforms and ecommerce tools. This allows store owners to manage inventory, sales, finances and customer data from one place. Integrated tools streamline operations which reduces effort and improves overall efficiency across the clothing business.",
+    paragraph: "The inventory software works with point of sale systems, accounting software, barcode scanners, payment gateways and online shops. These integrations create an ecosystem. Retailers can manage inventory, sales, finances and customer data from one place enabling management from a single platform.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

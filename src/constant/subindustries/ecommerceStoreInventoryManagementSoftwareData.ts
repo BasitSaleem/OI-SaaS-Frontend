@@ -101,7 +101,7 @@ export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         id: "1",
         title: "Sales Integration and Omni-channel Marketing",
         description:
-            "All platforms that you use to sell your products, such as your mobile app, eCommerce site, or marketplaces are connected into our system. You can manage all your products from a single place, without switching between tools. This software keeps all your orders, inventory, and sales data in sync so that your business is always accurate.",
+            "All platforms that you use to sell your products, such as your mobile app, e-commerce site, or marketplaces are connected into our system. You can manage all your products from a single place, without switching between tools. This software keeps all your orders, inventory, and sales data in sync so that your business is always accurate.",
         imageSrc: "/assets/industries-pages/ecommerce-store-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
@@ -110,7 +110,7 @@ export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         list: [
             { listheading: "Ecommerce Sales Management", listdescription: "Manage your inventory and orders all from the same place. It is easy to keep track of daily transactions and product performance. It helps you run your online business smoothly." },
             { listheading: "Online Order Processing", listdescription: "Manage orders from beginning to end efficiently and accept secure payments. This system allows you to process orders faster, minimize delays and make sure that your customers receive their products on time. It builds customer trust and improves satisfaction." },
-            { listheading: "Unified Multi-Channel Control", listdescription: "You can view your business performance, including orders and inventory in real-time across multiple platforms. It's easier to keep track of stock, prevent errors and make better business decisions. You can deliver an experience that is consistent and reliable to all your customers, no matter from where they are shopping. This ensures your eCommerce operation is organized, efficient, and fast." },
+            { listheading: "Unified Multi-Channel Control", listdescription: "You can view your business performance, including orders and inventory in real-time across multiple platforms. It's easier to keep track of stock, prevent errors and make better business decisions.", listSubDescription: "You can deliver an experience that is consistent and reliable to all your customers, no matter from where they are shopping. This ensures your ecommerce operation is organized, efficient, and fast." },
         ]
     },
     {
@@ -375,7 +375,7 @@ export const ECOMMERCE_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "5",
         title: "Flexibility",
-        description: "This system supports e-commerce companies of any size. It adapts to the needs of any business, whether it is a small shop or an established brand.",
+        description: "This system supports eCommerce companies of any size. It adapts to the needs of any business, whether it is a small shop or an established brand.",
         icon: "testWhychoseIcon5",
     },
     {

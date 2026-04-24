@@ -394,15 +394,9 @@ export const HOTEL_INVENTORY_TESTIMONIAL_FEATURES = [
     },
     {
         id: "7",
-        title: "Seamless Integrations",
-        description: "Connect easily with accounting and procurement systems for a seamless workflow. It reduces the need for manual data entry and improves accuracy so that all business processes are coordinated efficiently.",
-        icon: "testWhychoseIcon7",
-    },
-    {
-        id: "8",
         title: "Continuous Support",
         description: "We provide ongoing support for your system to make sure it runs at its best. Our team continuously updates the software to meet industry requirements, ensuring that you are always up-to-date with the latest tools and practices for hotel inventory management.",
-        icon: "testWhychoseIcon8",
+        icon: "testWhychoseIcon7",
     },
 ];
 

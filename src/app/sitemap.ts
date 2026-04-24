@@ -51,6 +51,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "supermarket-pos-system",
         "restaurant-inventory-management-software",
         "healthcare-inventory-management-software",
+        "hotel-inventory-management-software",
+        "small-businesses-inventory-management-software",
     ];
 
 

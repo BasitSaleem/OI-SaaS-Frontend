@@ -12,9 +12,9 @@ export const CONTACT_METHODS = [
         id: "contact-email",
         title: "Email Us",
         description: "Our team is here to help with any inquiries or support needs.",
-        contact: "support@ownersinventory.com",
+        contact: "sales@ownersinventory.com",
         icon: <Mail className="w-6 h-6" />,
-        link: "mailto:support@ownersinventory.com"
+        link: "mailto:sales@ownersinventory.com"
     },
     {
         id: "contact-phone",
@@ -38,8 +38,8 @@ export const CONTACT_CARDS = [
   {
     icon: <PhilosophyIcons name="emailSupport" size={48} />,
     title: "Email Support",
-    description: "support@ownersinventory.com",
-    url: "mailto:support@ownersinventory.com",
+    description: "sales@ownersinventory.com",
+    url: "mailto:sales@ownersinventory.com",
   },
   {
     icon: <PhilosophyIcons name="locationIcon" size={48} />,

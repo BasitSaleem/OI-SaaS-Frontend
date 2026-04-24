@@ -84,7 +84,6 @@ const Page = () => {
       <SecurityCompliance
         title="Security, Accuracy, and Compliance."
         description="It ensures accurate tracking of inventory and secure handling of data across all online operations. This system helps to maintain reliability and consistency."
-        secondDescription="By improving data accuracy, the system supports better operational control and consistency."
       />
 
       <ToolsSection

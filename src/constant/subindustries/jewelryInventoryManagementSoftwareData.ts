@@ -103,7 +103,7 @@ export const JEWELRY_INVENTORY_WHY_CHOOSE_CARDS = [
 export const JEWELRY_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "1",
-        title: "Omni Channel and Sales Integration",
+        title: "Omni-Channel and Sales Integration",
         description:
             "Our AI-powered inventory software helps jewelry stores manage sales across physical counters, custom orders, and digital channels. It ensures every order and sale updates the inventory accurately. The software minimizes manual errors in handling multiple orders from different platforms. It makes sure that accurate stock levels are shown on the dashboard for better visibility.",
         imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/omini-chanel.webp",
@@ -112,9 +112,9 @@ export const JEWELRY_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Sales Counter", listdescription: "The POS sales counter helps customers compare designs, metals, and pricing before purchasing. It provides quick access to item details, checks availability, and ensures smooth billing while helping staff provide accurate information to customers about products. This improves customer satisfaction. Our inventory automation software sends immediate stock updates after every purchase to ensure accurate counting of jewelry items available in inventory." },
-            { listheading: "Online and Wholesale Integration", listdescription: "The system records precise order details separately for wholesale dealers, online buyers, and contractors. It efficiently handles bulk and custom orders for events or online sales. With insights into stock availability, it ensures correct order fulfillment. It minimizes the confusion between showroom and external orders, making daily operations easy to perform." },
-            { listheading: "Unified Dashboard", listdescription: "Owners Inventory provides a single multi-channel dashboard. The dashboard allows store owners to switch between channels, helping monitor showroom sales, product performance, bulk orders, consignments, and inventory updates. You can check store activities from one place. The transparency helps you adjust inventory and identify which channels are driving revenue." },
+            { listheading: "POS Sales Counter", listdescription: "The POS sales counter helps customers compare designs, metals, and pricing before purchasing. It provides quick access to item details, checks availability, and ensures smooth billing while helping staff provide accurate information to customers about products.", listSubDescription: "This improves customer satisfaction. Our inventory automation software sends immediate stock updates after every purchase to ensure accurate counting of jewelry items available in inventory." },
+            { listheading: "Online and Wholesale Integration", listdescription: "The system records precise order details separately for wholesale dealers, online buyers, and contractors. It efficiently handles bulk and custom orders for events or online sales. With insights into stock availability, it ensures correct order fulfillment.", listSubDescription: "It minimizes the confusion between showroom and external orders, making daily operations easy to perform." },
+            { listheading: "Unified Dashboard", listdescription: "Owners Inventory provides a single multi-channel dashboard. The dashboard allows store owners to switch between channels, helping monitor showroom sales, product performance, bulk orders, consignments, and inventory updates.", listSubDescription: "You can check store activities from one place. The transparency helps you adjust inventory and identify which channels are driving revenue." },
         ]
     },
     {
