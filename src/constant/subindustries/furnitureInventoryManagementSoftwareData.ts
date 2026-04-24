@@ -2,52 +2,52 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFeaturesSection";
 
 // ─── Furniture Inventory Management — UnifiedPlatform Section ─────────────
-export const FURNITURE_INVENTORY_UNIFIED_HEADING = "Challenges Furniture Businesses Face in Inventory Management";
+export const FURNITURE_INVENTORY_UNIFIED_HEADING = "Challenges Furniture Businesses Face Today";
 
-export const FURNITURE_INVENTORY_UNIFIED_PARAGRAPH = "Managing inventory in a furniture business becomes difficult when systems are not connected. Without a reliable inventory management system, the day-to-day operations slow down, and the chances of errors increase.";
+export const FURNITURE_INVENTORY_UNIFIED_PARAGRAPH = "When processes are not automated, furniture businesses have to cope with daily operational difficulties that influence efficiency, profitability, and accuracy of inventory.";
 
 export const FURNITURE_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     {
         id: "1",
         icon: "UnifiedIcon1",
-        title: "Lack of Real-Time Tracking",
+        title: "Stock Mismanagement",
         description:
-            "Furniture business owners struggle to track stocks due to the absence of real-time inventory visibility. Lack of efficient management tools leads to poor operational performance.",
+            "Lack of an appropriate furniture inventory management system can cause stock errors. The problem of overstocking, understocking and misplaced items is common in businesses, and it affects the sales and customer satisfaction.",
     },
     {
         id: "2",
         icon: "UnifiedIcon2",
-        title: "Manual Processes",
+        title: "Slow Billing Process",
         description:
-            "Full reliance on spreadsheets and manual methods makes inventory management difficult and increases errors in records. This affects overall business processes such as inaccurate stock data, billing errors, and inefficient reporting.",
+            "The conventional ways of billing may delay the process, particularly when the business is busy. Waiting lines creates bad customer experience and can result in loss of sales.",
     },
     {
         id: "3",
         icon: "UnifiedIcon3",
-        title: "Managing Multiple Sales Channels",
+        title: "Multi-Location Complexity",
         description:
-            "Selling across multiple channels makes it hard to manage inventory consistently, resulting in inconsistent stock updates after sales, purchases, or returns. It increases confusion across channels.",
+            "Furniture companies have a tendency to work in showrooms and warehouses. Lack of a centralized system makes it hard to manage stock across the locations, which results in a lack of consistent data and confusion.",
     },
     {
         id: "4",
         icon: "UnifiedIcon4",
-        title: "Overstocking and Cash Flow Issues",
+        title: "Lack of Real-Time Insights",
         description:
-            "Without inventory software, it becomes difficult to know the actual stock levels. It results in excess stock, blocks cash flow, and reduces profitability.",
+            "It is hard to monitor the movement of inventory and sales trends without real-time data. This restricts making informed business decisions.",
     },
     {
         id: "5",
         icon: "UnifiedIcon5",
-        title: "Delayed Order Fulfillment",
+        title: "Product Variations and Pricing Errors",
         description:
-            "Furniture businesses can't monitor inventory frequently if the essential items are near the end of the inventory. This leads to stock shortages and delayed order fulfillment, which makes customers unhappy.",
+            "Furniture pieces are available in various sizes, materials, and finishes. Handling pricing may lead to variations and errors in products and regional pricing.",
     },
     {
         id: "6",
         icon: "UnifiedIcon6",
-        title: "Complex Workflows",
+        title: "Limited Online Integration",
         description:
-            "Manual workflow handling slows down the business operations. This complicates workflows, which makes the team struggle to efficiently complete tasks.",
+            "Furniture companies that lack integrated online systems are losing a chance to increase their coverage. Online and offline sales management in isolation are inefficient.",
     },
     
 ];
@@ -56,44 +56,36 @@ export const FURNITURE_INVENTORY_WHY_CHOOSE_CARDS = [
     {
         id: "1",
         icon: "whychoseIcon1",
-        title: "Real-time Visibility",
+        title: "Real-Time Inventory Tracking",
         description:
-            "The real-time visibility feature of Owners Inventory helps businesses track inventory accurately. Each movement updates stock levels, which helps managers make better decisions for restocking without confusion.",
+            "The system automatically updates inventory with each sale, return, or restocking. This helps to maintain the right stock and to eliminate manual tracking.",
     },
     {
         id: "2",
         icon: "whychoseIcon2",
-        title: "Automated Processes",
+        title: "Fast and Efficient Billing",
         description:
-            "The software uses automated AI features to enhance the overall operational efficiency of businesses. With automated and structured workflows, businesses can handle billing, reporting, and stock management without errors.",
+            "Billing is more convenient and fast with the help of barcodes and smart searches. This saves time and enhances efficiency in checkout.",
     },
     {
         id: "3",
         icon: "whychoseIcon3",
-        title: "Seamless Integration",
+        title: "Automated Price Management",
         description:
-            "Owners Inventory supports integration across multiple sales channels, making sure that inventory levels stay accurate and stocks are managed without discrepancies across platforms.",
+            "Immediately update product prices, discounts and offers in all locations. This guarantees uniformity and eradicates pricing mistakes.",
     },
     {
         id: "4",
         icon: "whychoseIcon4",
-        title: "Optimized Inventory",
+        title: "Data-Driven Insights",
         description:
-            "The system helps optimize stock levels by analyzing patterns. This improves cash flow, reduces excess stocking, and ensures that furniture businesses invest in those items that they actually need.",
+            "Get access to sales, stock movement, and product performance reports. These are insights that can be used to enhance decision-making and profitability.",
     },
     {
         id: "5",
         icon: "whychoseIcon5",
-        title: "Smart Alerts",
-        description:
-            "It uses built-in alerts to help businesses monitor inventory and avoid stock shortages, which ensures that products are restocked before they impact order fulfillment and cause delays.",
-    },
-    {
-        id: "6",
-        icon: "whychoseIcon6",
-        title: "Simplified and Efficient Workflows",
-        description:
-            "Our software offers an easy-to-use and intuitive system that helps staff use it without complicated training. This helps streamline workflows and handle business operations efficiently.",
+        title: "Online Sales Integration",
+        description: "Manage showroom and online sales in a single system. Real-time updating of inventory on all platforms.",
     },
     
 ];
@@ -130,34 +122,62 @@ export const FURNITURE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
 export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     {
         id: 1,
-        title: "Inventory Updates",
-        description: "Real-time inventory updates provide an accurate stock item count after every sale, purchase, or return without delays or manual intervention.",
+        title: "Smart Billing System",
+        description: "Facilitate speedy transactions with barcode scanning and automated billing to provide a smooth customer experience.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card1.webp",
     },
     {
         id: 2,
-        title: "Barcode Scanning",
-        description: "It uses barcode scanning to handle product tracking more efficiently. It improves accuracy in daily inventory management tasks while minimizing errors.",
+        title: "Live Inventory Management",
+        description: "Track furniture in real-time, and with size, material and design variation.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card2.webp",
     },
     {
         id: 3,
-        title: "Warehouse Control",
-        description: "The software allows furniture business owners to manage inventory across multiple locations, including warehouses and in-store items. It ensures stocks stay easily accessible and organized.",
+        title: "Purchase and Supplier Management",
+        description: "Manage orders, deliveries by suppliers, and vendor relations in one platform.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card3.webp",
     },
     {
         id: 4,
-        title: "Billing and Invoicing",
+        title: "Product Categorization",
         description:
-            "It helps you generate invoices and billing records with built-in tools that are directly connected with the inventory, which ensures that every transaction reflects accurate stock movement.",
+            "Categorize furniture in terms of category, type or material to make inventory easier to manage.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
     },
     {
         id: 5,
-        title: "Reporting and Inventory Insights",
+        title: "Customer and Order Management",
         description:
-            "The software keeps business owners updated with accurate reports that contain detailed information on inventory usage and operational performance. This supports better business decision-making.",
+            "Store customer information, track orders and delivery information.",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
+    },
+    {
+        id: 6,
+        title: "Cost and Cash Flow Monitoring",
+        description:
+            "Monitor daily expenses and cash flow to ensure that your business is under financial control.",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
+    },
+    {
+        id: 7,
+        title: "Multi-Store and Warehouse Management",
+        description:
+            "Manage different showrooms and warehouses using a centralized dashboard.",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
+    },
+    {
+        id: 8,
+        title: "Advanced Reporting",
+        description:
+            "Create sales performance, inventory turnover, and product demand reports.",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
+    },
+    {
+        id: 9,
+        title: "Role-Based Access Control",
+        description:
+            "Grant roles and permissions to employees to achieve system security and access control.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
     },
     

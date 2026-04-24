@@ -55,15 +55,15 @@ const Page = () => {
       />
 
       <WhyChoosePOS
-        heading= "How Owners Inventory Software Solves Furniture Business Challenges"
-        paragraph="Owners Inventory is built to simplify the complexities of furniture store operations by providing real-time tracking, automated restocking alerts, and multi-location management. It brings clarity to your inventory workflows without any technical overhead."
+        heading= "How Our Furniture Inventory Management Software Solves These Challenges"
+        paragraph="Our furniture inventory software links stock, sales, and reporting into a single automated system enhancing accuracy, control and efficiency of operations."
         cards={FURNITURE_INVENTORY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
         iconSet="furnitureInventory"
       />
 
       <KeyHighlights
-        heading="Key Features of Owners Inventory that Optimize Furniture Management"
+        heading="Key Features of Our Furniture Inventory Management Software"
         features={FURNITURE_INVENTORY_KEY_FEATURES_CARDS}
       />
 

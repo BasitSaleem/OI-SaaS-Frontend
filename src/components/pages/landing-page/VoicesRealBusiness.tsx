@@ -37,14 +37,8 @@ interface VoicesRealBusinessProps {
 const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealBusinessProps) => {
   return (
     <section
-      className="mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px] voices-bg-circle"
-       style={
-                {
-                  // background image is painted in CSS ::before using this variable
-                  ["--hero-bg" as any]:
-                    "url('/assets/home-page-images/hero-bg.webp')",
-                } as React.CSSProperties
-              }
+      className="mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px] real-voices bg-cover bg-no-repeat"
+      
     >
       <div className="wrapper text-center">
         <MainHeading className="xl:mb-12 lg:mb-6 mb-5">
