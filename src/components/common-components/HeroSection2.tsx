@@ -249,7 +249,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                 {/* Extra flexibility */}
                 {children}
                 <div
-                  className="owner-inventory-hero__lower relative w-full wrapper pt-10 md:pt-10 xl:pt-10 "
+                  className="owner-inventory-hero__lower relative w-full lg:max-w-[1000px] xl:max-w-[1200px] wrapper  pt-10 md:pt-10 xl:pt-10 "
                 >
                     <div
                       className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative z-[1] backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
@@ -360,7 +360,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   />
                   <div
                     ref={safeSecureDescRef}
-                    className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute bottom-10 -right-2.5 xl:bottom-[250px] 2xl:bottom-[200px] 2xl:right-0"
+                    className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute bottom-10 right-2 xl:bottom-[250px] 2xl:bottom-[200px] 2xl:right-0"
                   >
                     <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
                       Safe & Secure
