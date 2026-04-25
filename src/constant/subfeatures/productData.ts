@@ -7,6 +7,7 @@ export const PRODUCT_INDUSTRIES = [
             "Easily handle hundreds of SKUs and seasonal products. Manage prices, track sales and monitor moving inventory. Perfect for retail establishments like supermarkets, cosmetics stores, etc.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const PRODUCT_INDUSTRIES = [
             "Accurately create and manage menu items, combos, and track food items. Keep your menu aligned with availability and instantly update pricing.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const PRODUCT_INDUSTRIES = [
             "Effectively manage medication batches and expiration dates. Maintain the accuracy and full  traceability of your pharmacy’s product data.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const PRODUCT_INDUSTRIES = [
             "Effortlessly arrange sizes, colors, and styles. Collection-based management for apparel and accessories is all supported by the Product Catalog Management Software.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

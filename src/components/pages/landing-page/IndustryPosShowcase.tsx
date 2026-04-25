@@ -15,6 +15,7 @@ export interface IndustryItem {
   description: string;
   image: string;
   mobileImage?: string;
+  link?: string;
 }
 
 // Define the props interface
@@ -264,6 +265,7 @@ const IndustryPosShowcase = ({
                   imageUrl={industry.image}
                   mobileImage={industry.mobileImage}
                   isHovered={isExpanded}
+                  link={industry.link}
                 />
               </div>
             );

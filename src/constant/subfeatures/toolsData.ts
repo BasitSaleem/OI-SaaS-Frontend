@@ -7,6 +7,7 @@ export const TOOLS_INDUSTRIES = [
             "Manage product catalogs and suppliers effectively. Check stock levels and stocking up of high demand items.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const TOOLS_INDUSTRIES = [
             "Check the ingredients, track stock consumption, and minimize waste on a cross-location basis. Keep stocks clean and efficient kitchens.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const TOOLS_INDUSTRIES = [
             "Track medications, report expiry dates, and have proper supplier records easily. This guarantees safety, compliance, and operations.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const TOOLS_INDUSTRIES = [
             "Operate seasonal inventory, various sizes, and SKUs with real-time visibility. Be ahead of trends and maintain control over inventory.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

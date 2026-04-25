@@ -7,6 +7,7 @@ export const REPORTS_INDUSTRIES = [
             "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const REPORTS_INDUSTRIES = [
             "Dynamic inventory management reporting helps keep your operations lean and profitable by tracking menu item performance, managing ingredient usage, and analyzing daily revenue trends.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const REPORTS_INDUSTRIES = [
             "Get accurate inventory management reports, batch tracking, expiry summaries, and POS transaction logs to stay compliant and aid in a successful flow of operations.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const REPORTS_INDUSTRIES = [
             "Receive specific point of sale system reports of best-selling styles, seasonal performance, and size-based inventory making stock planning easy and evidence-based.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

@@ -7,6 +7,7 @@ export const HR_INDUSTRIES = [
             "Manage staff and payroll at multiple retail locations with ease and convenience. You will be able to ensure that the store runs smoothly and that customers experience a high level of customer care on a day-to-day basis.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const HR_INDUSTRIES = [
             "Monitor all restaurant staff—from chefs to servers—while simplifying shift planning, payroll, and tip distribution to keep your team organized, happy, and focused on delivering top-notch service.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const HR_INDUSTRIES = [
             "Keep your team organized and compliant with industry standards. The HR feature allows you to track work hours, manage renewals, and oversee training, ensuring your employees are reliable, skilled, and fully equipped to drive your business forward.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const HR_INDUSTRIES = [
             "Unify the creative, retail, and logistics teams into a single, seamless HR system. Easily manage designer schedules, store personnel, and seasonal employees, as well as maintain operations in all branches.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

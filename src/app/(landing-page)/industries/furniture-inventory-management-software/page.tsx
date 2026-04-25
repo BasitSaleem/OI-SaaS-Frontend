@@ -74,16 +74,17 @@ const Page = () => {
       />
 
       <IndustriesCallToAction
-        title= "Take the Next Step in Furniture Business Growth"
-        description= "Upgrade to a structured inventory management system and eliminate the chaos of manual tracking. Our software helps furniture businesses stay organized, minimize stock discrepancies, and scale operations with confidence."
+        title= "Start Efficiently Managing Your Furniture Business"
+        description= "Your growth can be limited by manual tracking, mismatch of stock and delays in operations. Our inventory management software is a structured furniture inventory management system that helps you make accurate inventory management, order processing and have full visibility in your furniture business."
         ctaDesc="Request a Free Demo"
       />
 
       <IndustriesFeaturesSection features={FURNITURE_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Accuracy, Security, and Seamless Operations."
-        description= "Maintain high standards of accuracy with role-based access controls and detailed activity logs. Every transaction is tracked, ensuring accountability and data protection across your entire furniture business. Our system keeps your financial records precise and your operations compliant."
+        title="Security, Accuracy and Compliance"
+        description= "All production and inventory activities are recorded effectively by the system. Only authorized personnel will have access, minimizing mistakes and unauthorized activities."
+        secondDescription="It maintains a comprehensive audit trail for accountability and compliance. Real-time tracking improves stock and production tracking. Accuracy and reliability are improved by automated reporting."
       />
       
        <ToolsSection
@@ -116,8 +117,8 @@ const Page = () => {
       </div>
 
       <IndustriesHardwareControl
-        title= "Build a More Structured Furniture Business Workflow"
-        description= "Say goodbye to scattered spreadsheets and hello to a unified inventory system. Create a more efficient environment for your team, reduce operational friction, and drive business growth with Owners Inventory."
+        title= "Improve Efficiency Across Your Furniture Business"
+        description= "Stop losing time and money to manual errors and disorganized inventory. Simplify your workflow, improve accuracy, and keep your production running smoothly with smarter furniture inventory management. Get started now and take full control of your operations."
         ctaDesc="Start Today"
       />
     </div>

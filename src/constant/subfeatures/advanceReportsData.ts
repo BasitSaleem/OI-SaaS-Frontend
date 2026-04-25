@@ -7,6 +7,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
             "Get clear insight into store performance and customer demand with advanced POS reports that enable you to realize sales growth and better inventory management.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
             "With our POS reporting system, you can use daily sales, menu items that do well, and peak times to increase efficiency and profits.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
             "Our advanced POS reports will help you to easily sell and track the sales of medicines, stock levels and expiry date so that you will be accurate and operate smoothly.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
             "Know customer purchasing patterns and sales hotspot products through advanced POS reporting that can make you smarter in planning your stock.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

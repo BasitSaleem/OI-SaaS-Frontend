@@ -7,6 +7,7 @@ export const POS_INDUSTRIES = [
             "Quicken checkout with barcode scanning and detailed reports as our POS system streamlines inventory and revenue control with industry-specific insights.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const POS_INDUSTRIES = [
             "Serve customers faster with quick-bill POS software that manages tables, menus, and real-time stock while seamlessly connecting kitchen and counter operations for accurate, efficient service.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const POS_INDUSTRIES = [
             "Handle high-volume and bulk orders with confidence using a pharmacy-ready POS system. Manage batch-wise inventory, track expiry dates, control supplier transactions, and process wholesale pharmacy sales accurately across single or multiple locations.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const POS_INDUSTRIES = [
             "Keep track of all sizes, colors, and styles using product variants, seasonal collections, and matching stock in both online and physical stores using our best point of sale systems-the best in streetwear, shoe, or high fashion.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

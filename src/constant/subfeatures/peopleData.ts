@@ -7,6 +7,7 @@ export const PEOPLE_INDUSTRIES = [
             "Make everyday tasks easier with intelligent scheduling, time-tracking, and shift arrangements. Make your sales team structured, improve customer service, and make each store operate efficiently.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const PEOPLE_INDUSTRIES = [
             "Easily coordinate kitchen, waitstaff, and delivery teams. Organize shift rotations, keep attendance, and ensure a smooth service even in the busiest periods.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const PEOPLE_INDUSTRIES = [
             "Maintain consistency and accuracy in ensuring that all shifts are properly staffed. Monitor attendance, performance, and rotations to ensure your pharmacy is operating effectively.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const PEOPLE_INDUSTRIES = [
             "Coordinate design, retail, and production departments on a single platform. Monitor attendance and performance in outlets to secure a smooth coordination and on-brand implementation.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

@@ -6,6 +6,7 @@ export const FINANCE_INDUSTRIES = [
         description: 'Easily track all sales, returns, and costs in a single location to have full financial visibility. The real time profit and loss reports allow you to quickly track the performance of the store, manage the costs, and make smarter decisions on restocking.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const FINANCE_INDUSTRIES = [
         description: 'Automatically track daily sales, ingredient costs, and supplier invoices. Get transparent financial statements to control expenses, cut wastage, and boost profitability without manual bookkeeping.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ export const FINANCE_INDUSTRIES = [
         description: 'Manage your healthcare inventory, sales, and accounts in one POS platform. Keep complete transaction records that meet financial and inventory standards.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -38,6 +41,7 @@ export const FINANCE_INDUSTRIES = [
         description: 'Track real-time profits, discounts, and seasonal trends. Get your accounting sorted with automated cost-tracking and a thorough financial overview of each collection cycle.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

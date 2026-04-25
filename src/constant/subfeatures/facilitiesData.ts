@@ -7,6 +7,7 @@ export const FACILITIES_INDUSTRIES = [
             "Manage multiple outlets from a single dashboard POS, track stock movement, and monitor staff activity with live updates ensuring smooth operations and higher customer satisfaction across all locations.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const FACILITIES_INDUSTRIES = [
             "Manage your dining rooms, kitchens, and storage areas from a single facility management dashboard, monitoring ingredient usage, occupancy, and staff movement to keep your restaurant running efficiently.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const FACILITIES_INDUSTRIES = [
             "Maintain full oversight of your pharmacy network and wholesale operations. Track multiple store locations, ensure facility-wide compliance, and receive temperature, expiry, and inventory alerts directly on your facility monitoring dashboard.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const FACILITIES_INDUSTRIES = [
             "Organize your outlets, stores, and warehouses easily. The POS facility dashboard guarantees uniform inventory, visual merchandising, and monitoring performance of all their stores, online or offline.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

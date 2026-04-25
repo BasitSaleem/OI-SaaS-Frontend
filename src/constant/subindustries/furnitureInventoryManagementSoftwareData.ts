@@ -93,29 +93,35 @@ export const FURNITURE_INVENTORY_WHY_CHOOSE_CARDS = [
 export const FURNITURE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     {
         id: "1",
-        title: "Omni-Channel Sales and Integration",
+        title: "Omni-channel and Sales Integration",
         description:
-            "Owners Inventory connects multiple sales channels that furniture businesses use into one synchronized system. Stock levels, sales records, and order data stay consistent whether a transaction is performed in-store, online, or through a delivery platform.",
-        subDescription: "This removes the need to manage separate systems and keeps operations streamlined without confusion.",
+            "Furniture companies conduct business in showrooms, online, and on mobile platforms. The control of these channels involves a coherent system that keeps the inventory, prices, and orders.",
+        subDescription: "The integrated system enables the business to trace stock wherever it is sold.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/inventory-management",
         buttonColor: "var(--primary-purple)",
         listVariant: "accordion",
         list: [
-            { listheading: "POS Counter Sales", listdescription: "Sales processed at the counter are recorded in real time within the system. Real-time stock updates keep the records accurate throughout the sales procedures. It helps staff focus on other business operations instead of managing inventory manually.", listSubDescription: "This helps keep inventory counting accurate by recording exactly what was sold in the day." },
-            { listheading: "Delivery and Online Integration", listdescription: "Orders placed through a website, delivery app, or online marketplace are captured automatically by the system. Inventory is updated when the order is confirmed, which prevents overselling. This reduces the requirement of manual order sync between platforms and the risk of fulfilling an order for an item that is no longer in stock." },
-            { listheading: "Unified Dashboard", listdescription: "All inventory management activities appear in one central dashboard. The dashboard helps business owners monitor performance, track stock movements, and manage operations without the need to switch between systems.", listSubDescription: "It gives a clear understanding of business operations at any point during the day without relying on separate reports or multiple tools." },
+            { listheading: "Production and Inventory Management", listdescription: "The system eases furniture manufacturing tracking and inventory management. It provides employees with full access to raw materials, work in progress, and finished furniture products. This will facilitate the process of production and management of stocks in all operations." },
+            { listheading: "Supply Chain Operations and Order Processing", listdescription: "Manufacturers of furniture are able to manage the orders of suppliers, track the usage of materials and handle the production orders. The system assists in ensuring that the stock is maintained at optimum levels and delays in production are avoided. This helps in regular production and stable growth of business." },
+            { listheading: "Single Multi-Process Control", listdescription: "Inventory, production and overall performance of all operations can be tracked by the manufacturers in real time. Full visibility and control is achieved through a centralized dashboard. This eases the operations and enhances the efficiency of workflow. It also enhances coordination between departments. " },
         ]
     },
     {
         id: "2",
-        title: "Better Analytics and Reporting",
-        description: "The software converts daily sales and stock data into clear, understandable reports. It helps business owners identify best-selling items, slow-moving products, and sales patterns over time. These insights help businesses make better purchasing decisions, reduce unnecessary stock holding, and maintain consistent growth rates.",
+        title: "Better Decision Reporting and Analytics",
+        description: "The system offers advanced reporting tools. These give an understanding of production efficiency, flow of inventory and cost-effectiveness. This allows the manufacturers to make good decisions regarding procurement, production planning, and cost management.",
         imageSrc: "/assets/industries-pages/furniture-inventory-management-software/better-decision.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
+        list: [
+            { listheading: "Real-time production and inventory data can be analyzed by manufacturers"},
+            { listheading: "They are able to predict demand and make material purchases"},
+            { listheading: "They are able to detect inefficiencies and save on the cost of operations"},
+            { listheading: "Evidence-based information will help in making superior business decisions"},
+        ]
     },
 ];
 
@@ -157,123 +163,123 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
         title: "Cost and Cash Flow Monitoring",
         description:
             "Monitor daily expenses and cash flow to ensure that your business is under financial control.",
-        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card6.webp",
     },
     {
         id: 7,
         title: "Multi-Store and Warehouse Management",
         description:
             "Manage different showrooms and warehouses using a centralized dashboard.",
-        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card7.webp",
     },
     {
         id: 8,
         title: "Advanced Reporting",
         description:
             "Create sales performance, inventory turnover, and product demand reports.",
-        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card8.webp",
     },
     {
         id: 9,
         title: "Role-Based Access Control",
         description:
             "Grant roles and permissions to employees to achieve system security and access control.",
-        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
+        imageSrc: "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card9.webp",
     },
     
 ];
 
 export const FURNITURE_INVENTORY_WORKFLOW_DATA = {
-    heading: "Workflows of Furniture Inventory Management Software",
-    paragraph: "Owners Inventory follows the natural flow of how furniture businesses buy, manage, and sell products. It connects every workflow step with others to ensure operational accuracy. This gives business owners full visibility of management procedures.",
+    heading: "Workflow of Furniture Inventory Management",
+    paragraph: "We have a structured workflow that enables the operations to run smoothly and manage inventory in our system.",
     steps: [
         {
             number: 1,
-            title: "Product Catalog Setup",
-            description: "You can add products in the system with categorization, such as variants, pricing, and opening stock quantities in the system. Every item is organized in one place. This makes it easy for your staff to find items in the store and manage everything accurately. It speeds up the sales process."
+            title: "Inventory Procurement",
+            description: "Furniture is procured according to the demand and trends. Before adding products into inventory, they are inspected in terms of quality and quantity."
         },
         {
             number: 2,
-            title: "Connect Sales Channels",
-            description: "It links your POS, online store, and delivery platform to a single inventory system. All channels use the same stock. So sales from any source are recorded instantly without creating separate records, reducing the reliance on manual processes."
+            title: "Stock Organization",
+            description: "Each transaction is automatically updated in the inventory to provide a clear view of available inventory."
         },
         {
             number: 3,
-            title: "Sales Processing and Stock Updates",
-            description: "The system automatically adjusts inventory levels whenever sales occur. This ensures accurate tracking of inventory stock levels while helping businesses avoid human errors. It keeps operational activities streamlined by managing stock counts precisely while enhancing business growth."
+            title: "Inventory Tracking",
+            description: "Inventory levels are updated in real-time (sales and returns) and stock records are accurate at all locations."
         },
         {
             number: 4,
-            title: "Stock Coordination",
-            description: "Incoming orders are processed efficiently while inventory is being checked for availability, which helps furniture businesses fulfill orders on time and maintain proper coordination between stock levels and customer demands."
+            title: "Order Processing",
+            description: "Orders are handled effectively and the inventory is adjusted automatically in both showroom and online sales."
         },
         {
             number: 5,
-            title: "Performance Review and Restock",
-            description: "With built-in reports, it shows which products are selling well, which are slow-moving, and where your stock levels stand. It ensures accurate restock decisions and better order planning while helping businesses grow without guesswork and with fewer losses."
+            title: "Reporting and Analysis",
+            description: "The system offers information on product performance, sales trends and profitability to assist businesses to make wise decisions."
         },
        
     ]
 };
 
 export const FURNITURE_INVENTORY_TESTIMONIAL_DATA = {
-    heading: "What Do Our Clients Say About Owners Inventory?",
+    heading: "What Our Clients Say About Furniture Inventory System?",
     paragraph: "",
-    secondHeading: "Bring Structure to Your Daily Operations",
-    secondDescription: "Switch to our structured inventory management system that keeps everything organized and easy to handle. Our system improves how your business runs without adding complexity.",
-    whyChooseTitle: "Why Choose Owners Inventory for Furniture Business Management?",
-    whyChooseDescription: "Owners Inventory is built for furniture business owners who need accurate inventory control without complicated system setups and large IT teams. Our software is reliable, efficient, and designed to support real business operations.",
+    secondHeading: "Manage Your Furniture Business Efficiently",
+    secondDescription: "The furniture inventory management software eliminates mistakes, enhances accuracy and streamlines day-to-day operations. A reliable system will help businesses to manage inventory, sales, and orders.",
+    whyChooseTitle: "Why Choose Our System?",
+    whyChooseDescription: "We offer high-level furniture inventory management software that is meant to streamline operations, enhance production efficiency and give you complete control of your inventory.",
 };
 
 export const FURNITURE_INVENTORY_TESTIMONIALS = [
     {
         id: "1",
-        name: "Hassan R",
+        name: "Michael Brown",
         title: "Furniture Showroom Owner",
         image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
-        text: "We were struggling to keep our inventory organized as our business grew. Owners Inventory gave us a structured way to handle stocks without making things complicated. It's simple to use and perfectly supports our operations efficiently.",
+        text: "Our process of producing furniture has become much more organized than previously. We are always aware of what materials we have in stock and what we need to order next, which has made our process much less confusing and has helped us plan better.",
     },
     {
         id: "2",
-        name: "Anabiya K",
+        name: "Jessica Martinez",
         title: "Operations Manager",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
-        text: "Managing inventory across different product categories used to take a lot of time. With Owners Inventory, everything feels more streamlined now.",
+        text: "This system has greatly enhanced our overall efficiency, it has provided us with a well-structured approach to managing the raw materials and finished furniture products and the reports are easy to comprehend and very helpful in planning and decision making.",
     },
     {
         id: "3",
-        name: "Rebecca S",
+        name: "Amanda Taylor",
         title: "Business Manager",
         image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
-        text: "The system helped us stay organized without adding extra workload. The system just perfectly fits our workflow",
+        text: "We used to face a lot of problems with stock shortages and mismanagement before installing this system. Now, all the items are well-controlled in real-time, which saves us time and effort and allows us to operate without difficulties.",
     },
 ];
 
 export const FURNITURE_INVENTORY_FAQS = [
     {
         id: "1",
-        question: "How long does it take to set up inventory management software?",
-        answer: "The setup time of Owners Inventory depends on your business size. However, it is easy to set up for most businesses. You can quickly add products and categories while tracking other operations."
+        question: "What is furniture inventory management software?",
+        answer: "It is a system that assists in controlling the raw materials, production process, and finished furniture products altogether. It guarantees effective monitoring and control of production."
     },
     {
         id: "2",
-        question: "Can I manage different product types under one system?",
-        answer: "Yes, our inventory software allows you to organize different product types with categories, making it easier to handle varied items within one system."
+        question: "Can this software handle large-scale furniture manufacturing?",
+        answer: "Yes, it can handle extensive inventories, a series of production lines, and complicated workflows with real-time updates."
     },
     {
         id: "3",
-        question: "Does the software support pricing management for products?",
-        answer: "Yes, it allows you to update product pricing within the system. It helps maintain pricing consistency across stores and online platforms while ensuring accurate billing during checkout procedures."
+        question: "Is it easy for staff to use?",
+        answer: "Absolutely, the system is easy and convenient. With minimum training, staff can handle production, inventory, and reports."
     },
     {
         id: "4",
-        question: "How does inventory software help during busy sales periods?",
-        answer: "The software keeps stocks updated automatically, allowing businesses to handle high transaction volumes without losing track of inventory or creating confusion in records."
+        question: "Does it provide reports and insights?",
+        answer: "Yes, it provides real-time reports on production, inventory, and costs to enable the manufacturers to make informed decisions."
     },
     {
         id: "5",
-        question: "Can I customize the system based on my business needs?",
-        answer: "Our inventory management system offers flexibility. It allows businesses to adjust workflows, categories, and processes based on their unique operational requirements."
+        question: "Can multiple users access the system securely?",
+        answer: "Yes, role-based permissions enable access to the system by several users and prevent access to sensitive data."
     },
 ];
 
@@ -325,38 +331,50 @@ export const FURNITURE_INVENTORY_KEY_FEATURES = [
 export const FURNITURE_INVENTORY_TESTIMONIAL_FEATURES = [
     {
         id: "1",
-        title: "Purpose-Built System",
-        description: "The system fulfills the daily inventory management needs of furniture businesses, such as stock tracking, sales recording, and growth tracking.",
+        title: "Simple and Quick Implementation",
+        description: "We have created our system to be easy to use. It can be installed within a short period of time without the need for complicated configurations. It can be used by your team with a minimum of training and transitioning to it is easy and painless.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
-        title: "Quick Setup",
-        description: "Furniture businesses can add their product catalogs, connect sales channels, and start tracking inventory. It allows you to carry on with existing operations without disruption.",
+        title: "Scalable for Growing Businesses",
+        description: "Our system fits well with your needs whether it is a small furniture workshop or a large-scale manufacturing unit. The software can keep up with your business, and the larger your business is, the more production volumes, more inventory, and more operations you are able to handle.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
-        title: "All-in-One Platform",
-        description: "Owners Inventory eliminates the need for separate tools. It manages everything with one connected system, which helps keep business data consistent in one place.",
+        title: "Real-Time Visibility and Control",
+        description: "Gain complete visibility into your inventory, production status, and material usage at any given moment. With real-time updates and a centralized dashboard, you can monitor every stage of the process.",
         icon: "testWhychoseIcon3",
     },
     {
         id: "4",
-        title: "Scalable Platform",
-        description: "As your business expands from small to enterprise-level, the system provides you with more features, such as handling more products, locations, and sales volumes without compromising accuracy and performance.",
+        title: "Improved Operational Efficiency",
+        description: "The system lowers the amount of manual work by automating the most important processes like inventory tracking, order management, and reporting. This reduces mistakes, wastage of time and enables your team to do more significant things.",
         icon: "testWhychoseIcon4",
     },
     {
         id: "5",
-        title: "Reliable Support",
-        description: "The system provides operational support to furniture businesses, which helps them automate routine tasks and focus on main operations that effectively help them grow.",
+        title: "Reliable and Secure System",
+        description: "The security of your business data is of utmost importance to us. With role-based access control and secure data management, only authorized personnel can access sensitive information.",
         icon: "testWhychoseIcon5",
     },
     {
         id: "6",
-        title: "Actionable Reporting",
-        description: "The software uses advanced AI features for real-time updates of stocks, inventory, and sales management. These reports help business owners get visibility into all operations.",
+        title: "Customizable to Your Needs",
+        description: "Each furniture company operates differently. Our system is flexible and can be customized to suit your workflows, production processes, and inventory needs.",
+        icon: "testWhychoseIcon6",
+    },
+    {
+        id: "7",
+        title: "Safe Access",
+        description: "Role-based access control ensures that only authorized staff can access sensitive business data.",
+        icon: "testWhychoseIcon6",
+    },
+    {
+        id: "8",
+        title: "Integration and Add-Ons",
+        description: "The system is integrated with the ERP systems, accounting systems, and supply chain systems. It also facilitates barcode scanning and automation tools. Other features such as supplier management, production planning, and alerts are useful in enhancing the business performance and growth.",
         icon: "testWhychoseIcon6",
     },
     
@@ -364,7 +382,7 @@ export const FURNITURE_INVENTORY_TESTIMONIAL_FEATURES = [
 
 export const FURNITURE_INVENTORY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Owners Inventory integrates with platforms such as Shopify and WooCommerce. It can also connect with marketing tools, payment gateways, and other essential software required to manage a furniture business. It allows tools and platforms to work together in a connected system so business owners can manage different operations instantly.",
+    paragraph: "Our furniture inventory management system can be integrated with ERP systems, accounting software, CRM systems, and supply chain systems. This helps manufacturers to manage manufacturing, inventory, finances and customer information. Combined tools make the workflow smoother, decrease the number of manual operations, and enhance productivity.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
