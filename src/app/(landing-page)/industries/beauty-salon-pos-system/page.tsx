@@ -41,8 +41,8 @@ const Page = () => {
   return (
     <div>
       <SubIndustriesHero
-        title="Beauty Salon POS System with Advanced Stock Management"
-        description="Owners Inventory offers a high-performance Beauty Salon POS System designed to simplify your salon's daily operations. From tracking high-demand beauty products to managing service appointments and billing, our POS system ensures everything runs smoothly. It's the perfect solution for beauty salons looking to increase efficiency and maintain accurate stock records in real time."
+        title="Beauty Salon Point-of-Sale System for Smooth Checkout and Product Handling"
+        description="Busy counters make stylists lose clients more quickly than bad service. To prevent slow billing, missing retail stock, and scattered client records, a reliable salon POS system is necessary. The POS smoothly handles daily sales operations. Our beauty salon's point-of-sale system ensures that customers get quick services while avoiding messy counters."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         ctaDesc="Start Free Today"
@@ -59,15 +59,15 @@ const Page = () => {
       />
 
       <WhyChoosePOS
-        heading="How Our Inventory Software Solves These Challenges"
-        paragraph="Owners Inventory Beauty Salon POS system provides features specifically built for the beauty and wellness industry, including:"
+        heading="How Owners Inventory Solves Beauty Salon POS Challenges"
+        paragraph="Owners Inventory provides a structured salon POS system that connects sales, payments, and inventory in one place, helping beauty salon owners prevent confusion and handle daily operations with clarity."
         cards={BEAUTY_SALON_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
         iconSet="beautySalon"
       />
 
       <KeyHighlights
-        heading="Key Features of Our Beauty Salon POS System"
+        heading="Key Features of Our Beauty Salon Point of Sale System"
         features={BEAUTY_SALON_KEY_FEATURES_CARDS}
       />
 
@@ -78,17 +78,16 @@ const Page = () => {
       />
 
       <IndustriesCallToAction
-        title="Elevate Your Salon's Efficiency"
-        description="Take complete control of your beauty salon operations with our specialized system. Built for growth and precision."
+        title="Take Control of Every Salon Operation"
+        description="Upgrade your beauty salon with a POS system that keeps billing, sales, and services organized in one place. Work faster, reduce errors, and manage daily operations with confidence and clarity."
         ctaDesc="Request a Free Demo"
       />
 
       <IndustriesFeaturesSection features={BEAUTY_SALON_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Reliable, Secure, and Efficient."
-        description="Our system integrates seamlessly with appointment booking tools, customer management platforms, online stores, and payment processors. Manage your entire salon from a single, unified interface."
-        secondDescription="Automate routine tasks, reduce manual errors, and let your team focus on providing exceptional beauty services."
+        title="Security, Accuracy, and Compliance."
+        description="With accurate details of recorded transactions, the system creates a reliable activity trail. This improves data accuracy, reduces discrepancies in payment records, and helps salon businesses maintain organized documentation. This helps beauty salon owners to perform internal checks and promotes financial clarity."
       />
 
       <ToolsSection
@@ -114,14 +113,14 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading= "FAQS"
-          paragraph= "Our beauty salon POS solution is designed to make your everyday business operations effortless. Find answers to common questions below."
+          paragraph= "The following are some of the common questions that are asked about our beauty salon point of sale system."
           faqs={BEAUTY_SALON_FAQS}
           buttonText="Start Now"
         />
       </div>
        <IndustriesHardwareControl
-        title= "Take Complete Control of Your Salon"
-        description= "Inaccurate stock counts and slow checkout processes can cost your salon money. Owners Inventory helps you minimize losses, maintain precise records, and speed up client billing for better business growth."
+        title= "Control Salon Operations with a Reliable POS"
+        description= "Manage all your salon activities with an effective POS system. Make things consistent by ensuring that every operation at the salon will perfectly align. Improve efficiency and ensure accuracy in every task without experiencing any delay with our beauty salon point-of-sale system."
         ctaDesc="Start Today"
       />
     </div>
