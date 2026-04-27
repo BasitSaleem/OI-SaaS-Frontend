@@ -64,7 +64,7 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon2",
         title: "Faster & Smoother Billing",
         description:
-            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times.",
+            "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times. With us your billing becomes smoother and faster",
     },
     {
         id: "3",
@@ -110,7 +110,7 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
         list: [
             { listheading: "POS Sales Management", listdescription: "We ensure that the checkout process is made easy, you can keep track of the stock in real time and be able to retrieve precise sales information about your store.", listSubDescription: "This assists supermarkets to run smoothly, minimize mistakes and have a better control of day to day operations and general performance. It also enhances customer experience by minimizing waiting time at billing counters, and processing all transactions fast and properly." },
             { listheading: "Ecommerce Operations and Sales Online", listdescription: "Accept secure online payments, manage digital promotions, and process orders smoothly to expand your supermarket beyond the physical store." },
-            { listheading: "Single Multi-Channel Control", listdescription: "You can see what is in stock, what is selling and how the supermarket is doing in time. This gives you a view and control of your business." },
+            { listheading: "Single Multi-Channel Control", listdescription: "You can see what is in stock, what is selling and how the supermarket is doing in time. This gives you a view and control of your business.", listSubDescription: "This way you can run the supermarket efficiently. Make sure the customers have a good experience everywhere they shop." },
         ]
     },
     {
@@ -205,7 +205,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
 
 export const SUPERMARKET_WORKFLOW_DATA = {
     heading: "Inventory Workflow of Owners Inventory",
-    paragraph: "To make things easier, our supermarket POS system automates inventory tasks.",
+    paragraph: "Our POS system automates inventory so that it is easier in our supermarket. It assists in real time monitoring of stock, real time updates of sales, and proper control of inventory in all operations.",
     steps: [
         {
             number: 1,
@@ -357,43 +357,43 @@ export const SUPERMARKET_TESTIMONIAL_FEATURES = [
     {
         id: "1",
         title: "Easy Setup",
-        description: "The system is easy to use and sets up quickly without disrupting the work.",
+        description: "The system is easily installed and easy to operate and you can be up and running in a short time without interfering with your day to day running of the store. It can be easily learnt even by personnel who have little technical experience.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
         title: "Reliable Performance",
-        description: "It handles a lot of customers and makes sure the checkout is smooth during busy times.",
+        description: "It is designed in such a way that it can accommodate a lot of customer traffic and a lot of transactions without slacking. This provides hassle free and quick checkout experiences even during the peak periods.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
         title: "Clear Inventory",
-        description: "All the products are organized so you can see what is in stock.",
+        description: "All products are correctly arranged and monitored in real time, providing you with an accurate picture of what is available, what is out of stock and what has to be reordered.",
         icon: "testWhychoseIcon3",
     },
     {
         id: "4",
         title: "Accurate Reporting",
-        description: "We give you insights into sales, stock and profits which helps you make better decisions.",
+        description: "We give comprehensive sales, stock movement and profit performance reports. These insights can make you make better business decisions and enhance store profitability.",
         icon: "testWhychoseIcon4",
     },
     {
         id: "5",
         title: "Flexible Features",
-        description: "The system is designed to work for supermarkets of all sizes which makes it flexible.",
+        description: "The system is created to accommodate any supermarket regardless of size, small or big stores or chains. It can easily adapt to your business needs as you grow.",
         icon: "testWhychoseIcon5",
     },
     {
         id: "6",
         title: "Safe Access",
-        description: "We have controls in place so that only the right people can access the system.",
+        description: "Effective security measures are in place to ensure that only authorized personnel can gain access to certain aspects of the system. This is to secure your data and ensure safety in operations.",
         icon: "testWhychoseIcon6",
     },
     {
         id: "7",
         title: "Integration and Addons",
-        description: "Our system integrates seamlessly with shipping platforms, accounting software, payment gateways, and eCommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
+        description: "Our system integrates with other tools like barcode scanners, accounting software, online stores and payment systems. We also have features like loyalty programs and supplier integration.",
         icon: "testWhychoseIcon7",
     },
 ];

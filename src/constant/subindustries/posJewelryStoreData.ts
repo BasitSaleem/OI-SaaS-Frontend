@@ -12,7 +12,7 @@ export const JEWELRY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
         icon: "UnifiedIcon1",
         title: "Complex Inventory Management",
         description:
-            "jewelry retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality jewelry POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
+            "Jewelry retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality jewelry POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
     },
     {
         id: "2",
@@ -206,7 +206,7 @@ export const JEWELRY_STORE_WORKFLOW_DATA = {
         {
             number: 1,
             title: "Precious Inventory Procurement",
-            description: "jewelry store owners source products such as gold, diamonds, and custom pieces based on demand and customer preferences. Each item is carefully inspected for weight, purity, and certification. They are added to the system with detailed attributes like carat, stone type, and design category."
+            description: "Jewelry store owners source products such as gold, diamonds, and custom pieces based on demand and customer preferences. Each item is carefully inspected for weight, purity, and certification. They are added to the system with detailed attributes like carat, stone type, and design category."
         },
         {
             number: 2,
@@ -342,7 +342,7 @@ export const JEWELRY_STORE_TESTIMONIAL_DATA = {
     secondHeading: "Manage Your Inventory Efficiently",
     secondDescription: "Have total control over your stock of jewelry, sales and day to day running of your business with a system that is suited to the current jewelry business.",
     whyChooseTitle: "Why Choose Our System?",
-    whyChooseDescription: "jewelry stores have a POS system that allows them to have a clear control, accurate billing and safe inventory management, so that the daily operation is easy and consistent.",
+    whyChooseDescription: "Jewelry stores have a POS system that allows them to have a clear control, accurate billing and safe inventory management, so that the daily operation is easy and consistent.",
 };
 
 export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
@@ -355,13 +355,13 @@ export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "2",
         title: "Reliable Performance",
-        description: "jewelry POS works when there are peak times, high-valued transactions and thus your billing counters will be consistent and efficient.",
+        description: "Jewelry POS works when there are peak times, high-valued transactions and thus your billing counters will be consistent and efficient.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
         title: "Precise Inventory",
-        description: "jewelry items are all organized according to weight, purity, design and category and hence inventory records are always accurate and properly arranged.",
+        description: "Jewelry items are all organized according to weight, purity, design and category and hence inventory records are always accurate and properly arranged.",
         icon: "testWhychoseIcon3",
     },
     {

@@ -256,7 +256,7 @@ export const RETAIL_STORE_WORKFLOW_DATA = {
          {
             number: 6,
             title: "Reporting & Analysis",
-            description: "Detailed reports provide insights into stock movement, fast- and slow-selling products, and overall profitability. These insights help small store owners make smarter decisions about restocking, pricing, and inventory optimization."
+            description: "Detailed reports provide insights into stock movement, fast and slow-selling products, and overall profitability. These insights help small store owners make smarter decisions about restocking, pricing, and inventory optimization."
         },
        
     ]
@@ -429,7 +429,7 @@ export const RETAIL_STORE_TESTIMONIAL_FEATURES = [
 
 export const RETAIL_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
+    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and eCommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

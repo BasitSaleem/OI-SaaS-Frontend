@@ -65,7 +65,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* HERO BODY */}
         <div className="md:py-[1px] bg-[var(--background-halfwhite)]  rounded-[20px] lg:rounded-[40px]">
            <div
-            className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-6 lg:px-[100px] bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
+            className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-3.5 md:px-7 bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
           >
             {/* Background Image Optimization */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40">

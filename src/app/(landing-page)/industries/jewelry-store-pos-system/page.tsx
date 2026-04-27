@@ -121,7 +121,7 @@ const Page = () => {
         />
       </div>
        <IndustriesHardwareControl
-        title="Take Control of Your jewelry Store"
+        title="Take Control of Your Jewelry Store"
         description="Many jewelry stores lose a lot of money annually because of inaccuracies in stock and price mistakes. Our jewelry store POS system removes risks, protects inventory, and accelerates day-to-day operations. Better tracking and correct billing make every day a profitable one."
         ctaDesc="Start Today"
       />

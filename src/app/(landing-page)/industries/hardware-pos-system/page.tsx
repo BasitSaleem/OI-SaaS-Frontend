@@ -89,7 +89,7 @@ const Page = () => {
 
 
       <SecurityCompliance 
-          title="Security, Accuracy, & Compliance."
+          title="Security, Accuracy, and Compliance."
         description="An effective inventory system will make sure that all the transactions are properly documented and monitored. The user roles and permissions restrict access to sensitive information, minimizing errors and theft. All details will be secured with us."
         secondDescription="It also keeps audit trails and aids in regulatory compliance, which keep businesses accountable and safeguard inventory and financial data. Live tracking will make sure that all the stock movements are documented in a transparent manner. Automated reports minimize errors in manual reports and enable store owners to keep accurate financial records with confidence."
       />
