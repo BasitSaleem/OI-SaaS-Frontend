@@ -55,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "small-businesses-inventory-management-software",
         "beauty-salon-pos-system",
         "furniture-inventory-management-software",
+        "coffee-shop-pos-system",
     ];
 
 

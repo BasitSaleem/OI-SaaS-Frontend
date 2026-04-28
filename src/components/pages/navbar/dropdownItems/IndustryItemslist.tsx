@@ -176,6 +176,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'inventory',
   },
+  {
+    key: 'coffee-shop-pos-system',
+    title: 'Coffee Shop POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
 
   
 ];
@@ -381,6 +388,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Multi-location Management' },
     { title: 'Corporate Accounts' },
     { title: 'Advanced Reporting' },
+  ],
+  'coffee-shop-pos-system': [
+    { title: 'Quick Checkout & Billing' },
+    { title: 'Order & Ingredient Sync' },
+    { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
   ],
 };
 
