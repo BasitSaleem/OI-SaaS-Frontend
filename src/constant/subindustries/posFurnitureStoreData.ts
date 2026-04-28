@@ -395,7 +395,7 @@ export const FURNITURE_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "2",
         title: "Real-Time Inventory",
-        description: "Inventory, options and finishes are updated in real-time. Mistakes are minimized and managers can make decisions quicker",
+        description: "Inventory, options and finishes are updated in real-time. Mistakes are minimized and managers can make decisions quicker.",
         icon: "testWhychoseIcon2",
     },
     {

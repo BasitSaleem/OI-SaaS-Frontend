@@ -4,7 +4,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 export const HARDWARE_UNIFIED_HEADING = "Challenges Holding Back Hardware Store";
 
 export const HARDWARE_UNIFIED_PARAGRAPH =
-    "Hardware stores encounter numerous day-to-day challenges that decelerate growth and add expenses. Below are some of the challenges encountered by most store.";
+    "Hardware stores encounter numerous day-to-day challenges that decelerate growth and add expenses. Below are some of the challenges encountered by most stores.";
 
 export const HARDWARE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     {
@@ -78,7 +78,7 @@ export const Hardware_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon4",
         title: "Centralized Price Control",
         description:
-            "Owners Inventory tracks suppliers, purchase orders, and deliveries with automatic low stock alerts to prevent stockouts.",
+            "Owners Inventory allows you to control and centralize pricing for all products from one central system, while ensuring consistency and cost control.",
     },
     {
         id: "5",
@@ -92,7 +92,7 @@ export const Hardware_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon6",
         title: "Stronger Online Presence",
         description:
-            " Owners Inventory supports ecommerce and online integrations, allowing hardware stores to showcase products online and sync inventory automatically. This helps attract more customers, manage online orders smoothly, and expand sales beyond the physical store.",
+            " Owners Inventory supports eCommerce and online integrations, allowing hardware stores to showcase products online and sync inventory automatically. This helps attract more customers, manage online orders smoothly, and expand sales beyond the physical store.",
     }
 ];
 

@@ -86,7 +86,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={GROCERY_STORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Reliability."
+        title="Security, Accuracy, and Compliance."
         description="An effective grocery POS system is one that ensures that all the transactions are logged and tracked correctly. User roles and permissions restrict access to sensitive information, which minimizes internal errors and theft."
         secondDescription="Accountability is also ensured by audit trails which aid in adherence to financial regulations. Live tracking tracks all the stock movements in a transparent manner, and automated reporting provides proper bookkeeping and financial assurance."
       />
