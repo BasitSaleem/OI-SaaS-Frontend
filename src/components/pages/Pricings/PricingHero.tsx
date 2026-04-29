@@ -50,31 +50,6 @@ const PricingHero: React.FC<PricingHeroProps> = ({
       tl.to("header", { y: -30, duration: 1 }, 1);
     });
 
-    // ✅ Tablet
-    // heroBreak.add("(min-width: 768px) and (max-width: 1023px)", () => {
-    //   const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //       scroller: "body",
-    //       start: "top top",
-    //       end: "+=" + window.innerHeight * 1,
-    //       trigger: ".pinned-section-1",
-    //       scrub: 2,
-    //     },
-    //   });
-
-    //   tl.to("header", { y: -20, duration: 1.5, ease: "power2.out" }, 0);
-    //   tl.to(".inventory-menu", { width: "100%", duration: 1 }, 0);
-    //   tl.to(".header-right-col", { x: "0%", duration: 1 }, 0);
-    //   tl.to(".header-left-col", { x: "0%", duration: 1 }, 0);
-    //   tl.to(".top-section", { autoAlpha: 0, duration: 1 }, 0);
-    //   tl.to(".owner-inventory-hero", {
-    //     y: -150,
-    //     paddingLeft: 0,
-    //     paddingRight: 0,
-    //     duration: 1.5,
-    //     ease: "power2.out",
-    //   }, 0);
-    // });
 
     // ✅ Desktop
     heroBreak.add("(min-width: 1024px)", () => {
