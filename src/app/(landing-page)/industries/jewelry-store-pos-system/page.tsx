@@ -78,7 +78,7 @@ const Page = () => {
       />
 
       <IndustriesCallToAction
-        title="Take Control of Your jewelry  Inventory Now"
+        title="Take Control of Your Jewelry Inventory Now"
         description="The Best POS for jewelry stores will make your inventory easier and will help minimize mistakes during pricing and make daily work more effective. Begin today and find out how our solution will make doing business in the jewelry business a lot easier and profitability of your store maximized."
         ctaDesc="Request a Free Demo"
       />
