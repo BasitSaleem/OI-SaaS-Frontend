@@ -10,44 +10,44 @@ export const BEAUTY_SALON_UNIFIED_CARDS: UnifiedPlatformCard[] = [
    {
         id: "1",
         icon: "UnifiedIcon1",
-        title: "Slow Payment Procedures",
+        title: "Time-Consuming Payment Processing",
         description:
-            "During rushed hours, checkout counters become busy if the system is not quick and accurate. The staff is forced to handle every transaction manually, which delays payment processing and affects customer experience negatively.",
+            "During busy time periods, checkout counters become congested if the payment process becomes lengthy and erroneous. As a result, staff members have to process all payments manually, causing delays.",
     },
     {
         id: "2",
         icon: "UnifiedIcon2",
         title: "Booking Gaps",
         description:
-            "Long wait times and double bookings can frustrate customers. This can reduce sales. The Owners Inventory POS System can help reduce scheduling errors.",
+            "Without proper appointment scheduling and sales alignment, salons struggle to manage service flows and transactions at the same time. This creates operational gaps and reduces efficiency.",
     },
     {
         id: "3",
         icon: "UnifiedIcon3",
-        title: "Supplier Coordination Issues",
+        title: "Mixed Sales Handling",
         description:
-            "It can be hard to keep track of suppliers and deliveries without a centralized system. The Owners Inventory POS System can help with supplier coordination issues.",
+            "Beauty salons often sell products along with their services, including retail sales, which requires precise tracking. Lack of point-of-sale software leads to confusion and mismanaged sales records.",
     },
     {
         id: "4",
         icon: "UnifiedIcon4",
-        title: "Lack of Business Insights",
+        title: "Stock Inaccuracies",
         description:
-            "Without the reports, beauty salon owners have to guess which services are selling well and which are not. The Owners Inventory POS System can help with lack of sales insights.",
+            "Salons cannot monitor product usage properly without integrated inventory tracking, which results in overuse of products and shortages of stock while affecting retail operations and supplier coordination.",
     },
     {
         id: "5",
         icon: "UnifiedIcon5",
-        title: "Frequent Price Changes",
+        title: "Payment Methods Limitations ",
         description:
-            "Prices at salons change all the time and updating them by hand can lead to mistakes. The Owners Inventory POS System can help with price changes.",
+            "With several options available for payment, but with a POS that is not modern enough, the entire process becomes tough to handle. This results in inconvenience for customers.",
     },      
      {
         id: "6",
         icon: "UnifiedIcon6",
-        title: "Limited Online Presence",
+        title: "Using Separate Tools",
         description:
-            "Many salons miss out on online bookings because they do not have digital integration. The Owners Inventory POS System can help with online presence.",
+            "When businesses use separate management tools instead of a single POS, it disrupts workflows. This increases manual work, errors, and makes it difficult to maintain operational consistency.",
     },      
 ];
 
@@ -55,16 +55,16 @@ export const BEAUTY_SALON_WHY_CHOOSE_CARDS = [
     {
         id: "1",
         icon: "whychoseIcon1",
-        title: "Fast Checkout Flow",
+        title: "Seamless Transactions",
         description:
-            "Our beauty salon POS speeds up checkout by quickly processing transactions. It ensures smooth payment handling, allowing staff to serve more customers efficiently.",
+            "The salon POS provides efficient checkout features, which means quick and easy transaction processing. It ensures smooth payment handling, allowing staff to serve more customers efficiently.",
     },
     {
         id: "2",
         icon: "whychoseIcon2",
-        title: "Unified Sales Tracking",
+        title: "Easy Sales Monitoring",
         description:
-            "It records both service and product sales data, helping salons to track and manage everything effectively in one place. It helps maintain accurate records and prevent missing entries.",
+            "The POS system monitors all types of sales data made, both from products and services. It allows you to keep track of all your salon activities effectively.",
     },
     {
         id: "3",
@@ -76,23 +76,23 @@ export const BEAUTY_SALON_WHY_CHOOSE_CARDS = [
     {
         id: "4",
         icon: "whychoseIcon4",
-        title: "Accurate Stock Updates",
+        title: "Stock Update Accuracy",
         description:
-            "Owners Inventory automatically updates stocks as products are sold. This helps beauty salons maintain accurate stock levels while reducing the chances of shortages and overuse of beauty products.",
+            "The Owners Inventory module automatically updates stocks as goods are sold out. This helps beauty salons maintain accurate stock levels while reducing the chances of shortages and overuse of beauty products.",
     },
     {
         id: "5",
         icon: "whychoseIcon5",
         title: "Flexible Payment Handling",
         description:
-            "It supports multiple payment methods, allowing salons to handle transactions smoothly and providing customers with a better service experience. It keeps the whole payment procedure fast and secure.",
+            "It supports multiple payment methods, allowing salons to handle transactions smoothly and providing customers with a better service experience. It makes sure the entire transaction process is quick and secure.",
     },
     {
         id: "6",
         icon: "whychoseIcon6",
-        title: "Streamlined Daily Workflows",
+        title: "Efficient Daily Processes",
         description:
-            "The software lets you manage salon workflows from one system by combining necessary management tools. This helps manage operations in an organized way without relying on multiple systems or tools.",
+            "The software makes it easy for users to run the salon’s workflow process through one system as it integrates all essential management modules. This helps manage operations in an organized way without relying on multiple systems or tools.",
     },
 ];
 
@@ -128,16 +128,16 @@ export const BEAUTY_SALON_FEATURE_CARDS: FeatureCardData[] = [
 export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
    {
         id: 1,
-        title: "Product Filters",
+        title: "Product Filter Module",
         description:
-            "Products and services are organized by category in the POS. Staff can apply a filter by name or category to locate items quickly and keep checkout moving without delays.",
+            "The POS categorizes products into different groups or allows employees to filter items either by their names or categories. This ensures smooth checkout processing without any lags.",
         imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card1.webp",
     },
     {
         id: 2,
         title: "Loyalty Points Management",
         description:
-            "The system tracks clients' loyalty points against every profile and applies them at checkout without manual intervention, while the correct reward is correctly reflected in the transaction.",
+            "The system tracks the accumulated loyalty points per client and applies them during checkouts without requiring users to input data manually.",
         imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card2.webp",
     },
     {
@@ -158,14 +158,14 @@ export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
         id: 5,
         title: "Split Payments",
         description:
-            "Clients paying with more than one method are processed within a single transaction. The system handles cash, card, and mobile wallet combinations accurately without requiring separate entries.",
+            "Clients paying with more than one method are processed within a single transaction. The system processes cash, cards, and mobile wallets correctly without the need to input them separately.",
         imageSrc: "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card5.webp",
     },
 ];
 
 export const BEAUTY_SALON_WORKFLOW_DATA = {
     heading: "Workflow of the Owners Inventory Salon POS System",
-    paragraph: "The POS system for beauty salons follows a structured workflow that manages checkout, payment, and transaction processing in real time using advanced AI features. It ensures sales are recorded accurately while keeping inventory and billing fully synchronized across sales operations.",
+    paragraph: "The salon POS system adopts a well-structured process through which checkouts, billing, and payments are made in real time using its powerful AI features.  It ensures that all sales transactions are made while synchronizing all inventory transactions throughout the process.",
     steps: [
         {
             number: 1,
@@ -307,13 +307,13 @@ export const BEAUTY_SALON_TESTIMONIAL_FEATURES = [
     {
         id: "1",
         title: "User-Friendly Interface",
-        description: "It has an easy-to-use and friendly interface that helps salon staff to manage tasks without complex training or higher technical knowledge.",
+        description: "The system comes with a simple and user-friendly interface for salon employees to operate effectively without undergoing any intensive training sessions.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
-        title: "No Longer Contracts",
-        description: "Owners Inventory works on a flexible subscription model. You can start, stop, or upgrade anytime without committing to lengthy agreements that do not suit your budget.",
+        title: "Independent Agreements",
+        description: "Owners Inventory provides salons a flexible subscription model. You can subscribe anytime and cancel anytime based on your convenience and financial needs.",
         icon: "testWhychoseIcon2",
     },
     {
