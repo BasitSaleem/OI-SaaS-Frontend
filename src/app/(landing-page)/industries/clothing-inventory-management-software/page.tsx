@@ -39,7 +39,295 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 
 const Page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web, iOS, Android",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "description": "Free trial available"
+                },
+                "description": "Clothing inventory management software that helps fashion retailers track stock by size, color, and style, manage billing, handle supplier orders, and sync inventory across in-store and online sales channels in real time.",
+                "featureList": [
+                  "Fast and accurate billing with barcode scanning",
+                  "Live inventory management with real-time stock updates",
+                  "Multi-unit and variant support for sizes, colors, and designs",
+                  "Purchase management and supplier tracking",
+                  "Customer and loyalty management",
+                  "Expense and cash flow control",
+                  "Online commerce integration",
+                  "Unified multi-branch management",
+                  "Smart sales and stock reports",
+                  "Staff permissions and user roles"
+                ]
+              },
+              {
+                "@type": "WebPage",
+                "name": "Clothing Inventory Management Software | Owners Inventory",
+                "url": "https://www.ownersinventory.com/industries/clothing-inventory-management-software",
+                "description": "Clothing inventory management software with fast billing, stock tracking, and reports. Manage sizes, sales, and suppliers easily. Book a demo or try it for free.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@type": "WebSite",
+                  "name": "Owners Inventory",
+                  "url": "https://www.ownersinventory.com"
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.ownersinventory.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Industries",
+                      "item": "https://www.ownersinventory.com/industries"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Clothing Inventory Management Software",
+                      "item": "https://www.ownersinventory.com/industries/clothing-inventory-management-software"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "availableLanguage": "English",
+                  "url": "https://www.ownersinventory.com/contact"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory",
+                  "https://www.instagram.com/ownersinventory",
+                  "https://www.linkedin.com/company/owners-inventory"
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": "Clothing Inventory Management Software",
+                "description": "Inventory management software designed for clothing and fashion retailers to track stock by size, color, and style, manage supplier orders, handle fast billing, sync online and in-store sales, and generate real-time reports.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Owners Inventory"
+                },
+                "url": "https://www.ownersinventory.com/industries/clothing-inventory-management-software",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "description": "Free trial available. Book a demo to get started."
+                }
+              },
+              {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Kirsten Larson"
+                      },
+                      "reviewBody": "Our daily operations are much easier now. Billing is fast and inventory is always accurate. This system has really improved how our clothing store runs.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Linda K"
+                      },
+                      "reviewBody": "This is one of the best systems that we have used. It keeps everything organized and helps owners make better decisions. Our checkout process is now much faster.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Michael R"
+                      },
+                      "reviewBody": "We needed a system to manage sizes and styles efficiently. This software does that. It is easy for staff to use and provides clear daily reports.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "James T"
+                      },
+                      "reviewBody": "Before using this system, we struggled with stock errors and delays. Now everything is tracked accurately. It saves time and makes managing the store stress-free.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is clothing inventory management software?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "It is a tool that helps manage the stock, sales and customers all in one place. It helps keep track of the clothing items, including the sizes and types. It also makes the billing process easy."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can this software handle large inventories?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, it can handle thousands of products with sizes, colors and styles. The inventory is updated automatically after every sale."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is it easy for staff to use?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the clothing inventory management software is easy to use. The staff can do billing, manage inventory and look at reports without needing to be trained."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does it provide reports and insights?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the clothing inventory management software provides reports on sales, stock and profits in real time. This helps store owners make better decisions."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can multiple users access the system securely?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the clothing inventory management software has role-based permissions. This means that different staff members can use the software while keeping business information safe."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory Manages Clothing Store Inventory",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines clothing inventory management from stock acquisition to reporting and analysis.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Inventory Acquisition",
+                    "text": "Store owners source clothing items from trusted suppliers based on demand and seasonal trends. Every product is checked for quality, correct sizes, and accurate quantities before being added to the system."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Stock Organization and Storage",
+                    "text": "The system organizes clothing items by type, size, color, or brand with clear labels. Items are arranged logically so staff can find products quickly, reducing confusion and saving time during busy hours."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Inventory Tracking",
+                    "text": "Stock levels are updated continuously after every sale, return, or stock movement. Store owners always have full visibility into what is in stock across all locations and channels."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Supplier and Purchasing",
+                    "text": "Store owners can create purchase orders, track deliveries, and monitor supplier performance directly in the system. This ensures clothing items are restocked on time without delays."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Order Fulfillment",
+                    "text": "When a purchase is made in store or online, the inventory updates immediately. Orders are picked, packed, and processed accurately to ensure a smooth experience for every customer."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 6,
+                    "name": "Reporting and Analysis",
+                    "text": "The system generates detailed reports showing what is selling well, what is slow-moving, and how much profit is being made. This helps store owners make smarter decisions about buying and pricing."
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
+      <div>
       <SubIndustriesHero
         title="Clothing Inventory Management Software That Controls Stock"
         description="Run your clothing store with speed, accuracy, and complete control using Owners Inventory, the clothing inventory management software. Every sale and stock update is synced in one system. This software is designed for fashion retailers who need billing, size-based tracking and real-time inventory visibility."
@@ -125,6 +413,7 @@ const Page = () => {
         ctaDesc="Start Today"
       />
     </div>
+    </>
   );
 };
 
