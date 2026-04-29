@@ -129,7 +129,6 @@ const Page = () => {
                   "name": "Owners Inventory"
                 },
                 "url": "https://www.ownersinventory.com/industries/healthcare-inventory-management-software",
-                "image": "https://www.ownersinventory.com/images/healthcare-inventory-software.png",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",

@@ -133,7 +133,6 @@ const Page = () => {
                   "name": "Owners Inventory"
                 },
                 "url": "https://www.ownersinventory.com/industries/jewelry-inventory-management-software",
-                "image": "https://www.ownersinventory.com/images/jewelry-inventory-software.png",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
