@@ -429,7 +429,7 @@ export const RETAIL_STORE_TESTIMONIAL_FEATURES = [
 
 export const RETAIL_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and eCommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard.",
+    paragraph: "The POS system is designed for small retail shops and integrates seamlessly with barcode readers, receipt printers, cash drawers, accounting platforms, and online payment gateways. These integrations create an integrated retail ecosystem, where all tools work together seamlessly without manual adjustments. The system is designed for growth, ensuring flexibility over time.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
