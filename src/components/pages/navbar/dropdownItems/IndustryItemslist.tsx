@@ -68,7 +68,7 @@ export const industriesItems: IndustryItem[] = [
     key: 'furniture-store-pos-system',
     title: 'Furniture Store POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/furniture.svg",
-    category: 'retailer',
+    category: 'wholesale',
     type: 'pos',
   },
   {
@@ -130,7 +130,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'supermarket-pos-system',
     title: 'Supermarket POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/grocery.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/supermarket-pos-system.svg",
     category: 'retailer',
     type: 'pos',
   },
