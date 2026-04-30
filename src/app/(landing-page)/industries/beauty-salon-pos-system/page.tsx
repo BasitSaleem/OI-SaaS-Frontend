@@ -41,7 +41,7 @@ const Page = () => {
   return (
     <div>
       <SubIndustriesHero
-        title="Beauty Salon Point-of-Sale System for Smooth Checkout and Product Handling"
+        title="Beauty Salon POS System for Seamless Transactions and Retail Management"
         description="A crowded counter makes stylists lose their clients faster than poor quality services. To ensure that the billing process does not become slow, retail inventory is kept at bay, and the records of clients are not scattered around, an efficient POS system is required. The POS helps in managing day-to-day sales processes seamlessly. Our beauty salon's point-of-sale system ensures that customers get quick services while avoiding messy counters."
         image={heroBanner}
         imageClassName="max-w-[1000px]"

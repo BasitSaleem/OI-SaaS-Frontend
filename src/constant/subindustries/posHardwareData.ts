@@ -404,7 +404,7 @@ export const HARDWARE_TESTIMONIAL_FEATURES = [
 
 export const HARDWARE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory solutions are compatible with POS, accounting, CRM, and eCommerce solutions. This enables the owners to control inventory, sales, finances, and customer data on one dashboard.",
+    paragraph: "Contemporary inventory solutions are compatible with POS, accounting, CRM, and eCommerce solutions. This enables the owners to control inventory, sales, finances, and customer data on one dashboard. Integrated tools simplify business processes, minimize human effort, and make inventory management quicker and more efficient throughout the business.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
