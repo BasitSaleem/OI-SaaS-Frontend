@@ -1,13 +1,15 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Furniture Inventory Management Software",
-  description: "Scale your furniture business with Owners Inventory's management software. Track variants, manage multi-location stock, and streamline order fulfillment.",
+  title: "Furniture Inventory Management Software | Owners Inventory",
+  description: "Furniture inventory software to track stock in real time, automate billing, manage multi-location warehouses, and get insights to grow your business faster.",
   keywords: [
     "furniture inventory management software",
-    "furniture store inventory software",
-    "furniture stock tracking",
-    "best inventory software for furniture business"
+    "furniture inventory management system",
+    "furniture inventory software",
+    "furniture stock management software",
+    "inventory management software for furniture business",
+    "furniture inventory tracking software"
   ],
   alternates: {
     canonical: "https://ownersinventory.com/industries/furniture-inventory-management-software"

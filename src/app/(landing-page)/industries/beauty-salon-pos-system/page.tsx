@@ -39,7 +39,269 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 
 const Page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web, iOS, Android",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "description": "Free trial available"
+                },
+                "description": "Beauty salon POS system that speeds up checkouts, manages retail product and service sales, tracks loyalty points, applies flexible discounts, supports split payments across cash, cards, and mobile wallets, and keeps stock levels accurate from one connected dashboard.",
+                "featureList": [
+                  "Fast checkout with seamless transaction processing",
+                  "Service and retail product sales tracking",
+                  "Connected booking and billing flow",
+                  "Real-time retail stock updates",
+                  "Loyalty points management with auto-apply at checkout",
+                  "Flexible discounts, bundles, and promotional offers",
+                  "Out-of-stock alerts for retail products",
+                  "Split payment handling across cash, cards, and mobile wallets",
+                  "Centralized dashboard for all salon activities",
+                  "Multi-counter billing support",
+                  "Role-based access for staff",
+                  "Integrations with Stripe, PayPal, Mailchimp, Zapier, and WooCommerce"
+                ]
+              },
+              {
+                "@type": "WebPage",
+                "name": "Beauty Salon POS System | Owners Inventory",
+                "url": "https://www.ownersinventory.com/industries/beauty-salon-pos-system",
+                "description": "Speed up salon billing, track retail stock, manage loyalty points, handle split payments, and connect bookings with sales using Owners Inventory's beauty salon POS system.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@type": "WebSite",
+                  "name": "Owners Inventory",
+                  "url": "https://www.ownersinventory.com"
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.ownersinventory.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Industries",
+                      "item": "https://www.ownersinventory.com/industries"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Beauty Salons",
+                      "item": "https://www.ownersinventory.com/industries/beauty-salon-pos-system"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "availableLanguage": "English",
+                  "url": "https://www.ownersinventory.com/contact"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory",
+                  "https://www.instagram.com/ownersinventory",
+                  "https://www.linkedin.com/company/owners-inventory"
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": "Beauty Salon POS System",
+                "description": "POS software designed for beauty salons to handle fast checkout, service and retail product sales, loyalty points, flexible discounts, split payments, real-time stock updates, multi-counter billing, and connected booking flows from a single unified dashboard.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Owners Inventory"
+                },
+                "url": "https://www.ownersinventory.com/industries/beauty-salon-pos-system",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "description": "Free trial available. Book a demo to get started."
+                }
+              },
+              {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Hira M"
+                      },
+                      "reviewBody": "We used to experience lag in checkouts during busy days. However, since implementing their salon POS system, the billing process has improved tremendously, and every transaction is now done with proper recordkeeping.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Jenna B"
+                      },
+                      "reviewBody": "It has enabled us to be organized and streamlined all our operations into one place. The system also makes our payment tracking more efficient and accurate.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Georgie K"
+                      },
+                      "reviewBody": "Their salon POS software is user-friendly. Our team picked it up quickly, and now we are able to handle every salon management operation quickly.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Can the system handle both retail products and services separately?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. The system allows salons to record services and product sales separately, making it easy to track performance for each category without mixing data."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does the system support discount handling during billing?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. Discounts can be applied during billing to help salons manage promotions, special offers, or customer-specific pricing without disrupting the transaction flow."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I track daily revenue without manual calculation?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. The system automatically compiles daily sales, allowing salon owners to view revenue summaries without needing to calculate totals manually."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is it possible to manage multiple counters in one salon?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. The POS system supports multiple billing counters, allowing salons to handle more customers simultaneously without creating data inconsistencies."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does the system require frequent maintenance or updates?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No. The system is designed to run smoothly without consistent manual maintenance, allowing salon teams to focus on daily operations instead of system management."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages Beauty Salon Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines beauty salon operations from sales entry to reporting.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Sales Entry Point",
+                    "text": "The process begins at the POS machine, where any chosen product or service is entered into the system. This triggers live transaction processing and ensures accurate recording of sales before billing."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Bill Generation",
+                    "text": "The system generates a bill following the addition of products or services. It precisely calculates the total cost and produces the bill that appears during checkout, ensuring customers receive accurate billing information before payment."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Payment Completion",
+                    "text": "Checkout involves processing payment through different methods such as cash, debit card, or credit card. Each transaction is recorded instantly, helping maintain accurate financial records and updated daily sales data."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Stock Adjustment",
+                    "text": "After payment confirmation, the system updates inventory automatically. Every product used or sold is deducted from inventory in real time, keeping stock levels aligned with actual salon product usage."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Reporting Summary Layer",
+                    "text": "All completed transactions are compiled into structured reports within the beauty salon POS system. These insights help salon owners review sales performance, monitor revenue, and understand operational trends."
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
+      <div>
       <SubIndustriesHero
         title="Beauty Salon POS System for Seamless Transactions and Retail Management"
         description="A crowded counter makes stylists lose their clients faster than poor quality services. To ensure that the billing process does not become slow, retail inventory is kept at bay, and the records of clients are not scattered around, an efficient POS system is required. The POS helps in managing day-to-day sales processes seamlessly. Our beauty salon's point-of-sale system ensures that customers get quick services while avoiding messy counters."
@@ -124,6 +386,7 @@ const Page = () => {
         ctaDesc="Start Today"
       />
     </div>
+    </>
   );
 };
 

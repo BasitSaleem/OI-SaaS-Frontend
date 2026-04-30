@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Beauty Salon POS System for Appointment and Inventory Control",
-  description: "Advanced Beauty Salon POS system to manage appointments, inventory, services, and client data in real time. Optimize your salon operations and billing efficiency.",
-  keywords: ["beauty salon pos system", "salon management software", "pos system for beauty salon", "beauty salon inventory software"],
+  title: "Beauty Salon POS Software for Billing, Stock & Bookings",
+  description: "Beauty salon POS system to speed up billing, track retail stock, manage bookings, and handle split payments from one connected dashboard built for salons.",
+  keywords: ["beauty salon POS system", "beauty salon point of sale system", "salon POS system", "POS system for beauty salons", "beauty salon POS software", "salon POS software", "point of sale system for salons"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/beauty-salon-pos-system",
   },

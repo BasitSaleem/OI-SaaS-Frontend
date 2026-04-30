@@ -39,7 +39,297 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 
 const Page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web, iOS, Android",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "description": "Free trial available"
+                },
+                "description": "Supermarket POS system that handles thousands of SKUs with fast barcode billing, real-time inventory updates, supplier and purchase management, multi-unit selling, customer loyalty tracking, online sales integration, and centralized control across multiple branches.",
+                "featureList": [
+                  "Fast and accurate barcode billing",
+                  "Live inventory management with automatic updates",
+                  "Purchase order and supplier management",
+                  "Multi-unit and variant support for sizes, weights, and packaging",
+                  "Customer profiles and loyalty management",
+                  "Expense and cash flow tracking",
+                  "Online commerce with synced inventory",
+                  "Unified multi-branch control from one dashboard",
+                  "Smart sales and stock reports",
+                  "Centralized price control across all branches",
+                  "Role-based staff permissions for cashiers, managers, and admins",
+                  "Integrations with accounting software, CRM, and payment gateways"
+                ]
+              },
+              {
+                "@type": "WebPage",
+                "name": "POS System for Supermarkets | Owners Inventory",
+                "url": "https://www.ownersinventory.com/industries/supermarket-pos-system",
+                "description": "Run your supermarket with fast barcode billing, real-time stock tracking, supplier management, multi-branch control, and online sales sync using Owners Inventory's POS system for supermarkets.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@type": "WebSite",
+                  "name": "Owners Inventory",
+                  "url": "https://www.ownersinventory.com"
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.ownersinventory.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Industries",
+                      "item": "https://www.ownersinventory.com/industries"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Supermarkets",
+                      "item": "https://www.ownersinventory.com/industries/supermarket-pos-system"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "availableLanguage": "English",
+                  "url": "https://www.ownersinventory.com/contact"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory",
+                  "https://www.instagram.com/ownersinventory",
+                  "https://www.linkedin.com/company/owners-inventory"
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": "Supermarket POS System",
+                "description": "POS software designed for supermarkets to handle fast barcode billing, real-time inventory tracking, supplier and purchase management, multi-unit selling, customer loyalty programs, online ordering, and centralized multi-branch operations from a single dashboard.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Owners Inventory"
+                },
+                "url": "https://www.ownersinventory.com/industries/supermarket-pos-system",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "description": "Free trial available. Book a demo to get started."
+                }
+              },
+              {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Supermarket Owner"
+                      },
+                      "reviewBody": "We have been very pleased with Owners Inventory. It has made billing a lot quicker and more precise, and inventory tracking is automated, making the daily routine of the store easier, orderly, and stress-free.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Store Manager"
+                      },
+                      "reviewBody": "This is among the best systems we have used in our supermarket. It keeps our data in order, helps us monitor stock in real time, and supports better decisions. The checkout process is now faster and our customers are served more quickly.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Multi-Branch Retailer"
+                      },
+                      "reviewBody": "Previously, we had problems handling many products and categories, but now everything is well monitored and readily available. The system is easy for staff to use and has enhanced efficiency across all store operations.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Hypermarket Operator"
+                      },
+                      "reviewBody": "We used to have stock errors and delays. Now everything is accurate. It saves time and makes the supermarket more efficient.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is a POS system for a supermarket?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "A supermarket POS system helps manage sales, inventory, and customers from one place. It makes billing and inventory tracking more accurate while streamlining daily operations."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can this POS system handle large inventories?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. It is designed to manage thousands of products with categories, sizes, and variations, making it suitable for supermarkets and hypermarkets of any scale."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is it easy for staff to use?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. The system is simple and easy to use. Staff can perform their jobs quickly without a lot of training, which reduces onboarding time and improves efficiency."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does it provide reports and insights?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. It provides real-time reports on sales, stock, and profits, which help with smarter purchasing, pricing, and inventory decisions."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is the system secure for multiple users?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. Role-based controls ensure that only the right people can access specific parts of the system, keeping data safe across different staff roles."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory Manages Supermarket Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines supermarket inventory management from acquisition to reporting and analysis.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Inventory Acquisition",
+                    "text": "Suppliers send products based on customer demand. Each item is checked for quality and quantity, then added to the system to begin accurate tracking from intake."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Stock Organization and Storage",
+                    "text": "Products are stored and arranged in a way that makes them easy to find and manage. Proper organization improves shelf efficiency and reduces handling errors."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Inventory Tracking",
+                    "text": "Stock movements such as sales, returns, and transfers are updated in real time, giving supermarket owners an always-accurate view of available inventory."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Supplier and Purchasing",
+                    "text": "Track deliveries, manage suppliers, and restock items on time. Reliable supplier coordination prevents stockouts and supports better purchasing decisions."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Order Fulfillment",
+                    "text": "Picking, packing, and billing products correctly reduces mistakes and keeps in-store and online orders running smoothly."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 6,
+                    "name": "Reporting and Analysis",
+                    "text": "Detailed reports show sales performance, stock movement, and revenue insights, helping supermarket owners plan smarter purchases and improve profitability."
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
+      <div>
       <SubIndustriesHero
         title="Complete POS System for Supermarkets with Stock Tracking"
         description="The Owners Inventory POS System for supermarkets is the way to control your store’s inventory. It helps you run your supermarket quickly and accurately. Our POS System keeps track of all sales and stock updates in one place. This is great for supermarkets that need to bill customers quickly and keep track of their inventory in real time."
@@ -125,6 +415,7 @@ const Page = () => {
         ctaDesc="Start Today"
       />
     </div>
+    </>
   );
 };
 
