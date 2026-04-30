@@ -39,7 +39,267 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 
 const Page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web, iOS, Android",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "description": "Free trial available"
+                },
+                "description": "Inventory management software for retail stores that helps track stock and sales in real time, automate billing, manage suppliers, handle multi-location inventory, and integrate online and offline sales channels.",
+                "featureList": [
+                  "Smart billing system with barcode scanning",
+                  "Live inventory management with real-time stock updates",
+                  "Purchase and supplier management",
+                  "Product categorization by type, brand, size, and category",
+                  "Customer and loyalty management",
+                  "Expense and cash flow tracking",
+                  "Multi-branch management",
+                  "Advanced sales and inventory reporting",
+                  "Role-based access control",
+                  "Omnichannel sales integration"
+                ]
+              },
+              {
+                "@type": "WebPage",
+                "name": "Inventory Management Software for Retail Store | Owners Inventory",
+                "url": "https://www.ownersinventory.com/industries/retail-store-inventory-management-software",
+                "description": "Inventory management software for retail stores with real-time stock tracking, fast billing, multi-location control, and online sales integration. Try it free or book a demo today.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@type": "WebSite",
+                  "name": "Owners Inventory",
+                  "url": "https://www.ownersinventory.com"
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.ownersinventory.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Industries",
+                      "item": "https://www.ownersinventory.com/industries"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Retail Store",
+                      "item": "https://www.ownersinventory.com/industries/retail-store-inventory-management-software"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "availableLanguage": "English",
+                  "url": "https://www.ownersinventory.com/contact"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory",
+                  "https://www.instagram.com/ownersinventory",
+                  "https://www.linkedin.com/company/owners-inventory"
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": "Inventory Management Software for Retail Store",
+                "description": "Retail inventory management software that helps store owners track stock in real time, automate billing with barcode scanning, manage multiple store locations, integrate online sales channels, and generate detailed sales and profit reports.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Owners Inventory"
+                },
+                "url": "https://www.ownersinventory.com/industries/retail-store-inventory-management-software",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "description": "Free trial available. Book a demo to get started."
+                }
+              },
+              {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Retail Customer 1"
+                      },
+                      "reviewBody": "The way we operate in our store is much easier now. Billing is fast and inventory is always current. This system has made a tremendous difference in the way we conduct business in our retail store.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Retail Customer 2"
+                      },
+                      "reviewBody": "We needed a system that could be able to control various products and different categories. This software does that perfectly well because it is easy to use and gives clear reports on a daily basis.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Retail Customer 3"
+                      },
+                      "reviewBody": "Before this system, we used to have stock errors and slow procedures. Now all are recorded in real time, time is saved, and store management is a lot easier.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is retail inventory management software and how does it help my store?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Retail inventory management software is a tool that helps you keep track of inventory, sales, and purchases all in one place. It automates stock updates, speeds up billing, and gives you real-time insights to help run your store more efficiently."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I manage multiple store locations with this software?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, you can use this software to manage more than one store from the same place. You can see stock levels, sales, pricing, and performance for each store all at the same time from a single dashboard."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does the software support barcode scanning and fast billing?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the software supports barcode scanning and smart product search to make checkout faster. This reduces customer wait times and improves the overall shopping experience in your retail store."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I integrate my online store with this system?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the software works with ecommerce platforms so you can manage products sold in your physical store and online from one place. Stock numbers stay up to date whether someone buys in person or online."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Will I get reports and insights to improve my business?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the software provides detailed reports on sales, inventory, revenue, and profitability. These reports help you make better decisions, plan stock purchases, and grow your retail business."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory Manages Retail Store Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines retail inventory management from procurement to reporting and analysis.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Inventory Procurement",
+                    "text": "Retailers purchase products based on customer demand and current trends. Each item is checked for quality, quantity, and accuracy before being added to the inventory system."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Stock Organization",
+                    "text": "Stock levels are updated every time a transaction happens. This gives a real-time picture of what is available in inventory across all store locations."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Inventory Tracking",
+                    "text": "When sales are made, the inventory gets updated automatically. This ensures that stock levels are always accurate whether orders are made in-store or online."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Order Processing",
+                    "text": "Sales transactions automatically update inventory while ensuring accurate order handling for both in-store and online purchases, reducing errors and improving fulfillment speed."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Reporting and Analysis",
+                    "text": "The system provides detailed reports on product performance, sales trends, and profitability. This helps retailers make smarter decisions about inventory planning and stock purchasing."
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
+      <div>
       <SubIndustriesHero
         title="Inventory Management Software for Retail Store That Simplifies Operations"
         description="Managing a store is a big job that requires being accurate, fast and having complete control over stock and sales. Our inventory management software for stores helps make operations smooth and efficient. It also tracks stock automatically and handles sales in one smart system."
@@ -125,6 +385,7 @@ const Page = () => {
         ctaDesc="Start Today"
       />
     </div>
+    </>
   );
 };
 

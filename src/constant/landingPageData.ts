@@ -61,14 +61,16 @@ export const HOME_INDUSTRIES = [
         description: "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
-        title: "Restaurant Types",
+        title: "Restaurant",
         gradient: "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
         description: "Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time — ensuring smooth operations from kitchen to counter.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -85,6 +87,7 @@ export const HOME_INDUSTRIES = [
         description: "Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales and digital prescriptions effortlessly.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -93,6 +96,7 @@ export const HOME_INDUSTRIES = [
         description: "Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across online and physical stores, whether you sell streetwear, shoes, or high fashion.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 export const LANDING_FEATURES = [

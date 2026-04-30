@@ -41,9 +41,261 @@ import {
 
 const Page = () => {
   return (
-    <div>
-      <SubIndustriesHero
-        title="POS System For Bakeries Controlling Orders & Inventory"
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web, iOS, Android",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "description": "Free trial available"
+                },
+                "description": "POS system for bakeries that tracks ingredients in real time, manages custom cake orders and pre-bookings, handles multi-channel sales, automates stock deductions, and provides real-time analytics for bakery owners.",
+                "featureList": [
+                  "Ultra-fast billing with smart product search and barcode scanning",
+                  "Ingredient-level inventory tracking with automatic deductions",
+                  "Menu and variant management for cakes, pastries, and breads",
+                  "Custom order and pre-order module with delivery tracking",
+                  "Multi-channel sales sync for walk-ins, online, and delivery orders",
+                  "Real-time analytics dashboard with daily and weekly reports",
+                  "Role-based staff access control",
+                  "Smart inventory alerts for low stock ingredients",
+                  "Recipe-based automated stock deduction",
+                  "Multi-branch management from a single dashboard"
+                ]
+              },
+              {
+                "@type": "WebPage",
+                "name": "POS System for Bakeries | Owners Inventory",
+                "url": "https://www.ownersinventory.com/industries/bakery-pos-system",
+                "description": "Track ingredients in real time, manage custom cake orders, sync multi-channel sales, and automate stock deductions with Owners Inventory's POS system for bakeries.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@type": "WebSite",
+                  "name": "Owners Inventory",
+                  "url": "https://www.ownersinventory.com"
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.ownersinventory.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Industries",
+                      "item": "https://www.ownersinventory.com/industries"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Bakery",
+                      "item": "https://www.ownersinventory.com/industries/bakery-pos-system"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "Owners Inventory",
+                "url": "https://www.ownersinventory.com",
+                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "availableLanguage": "English",
+                  "url": "https://www.ownersinventory.com/contact"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory",
+                  "https://www.instagram.com/ownersinventory",
+                  "https://www.linkedin.com/company/owners-inventory"
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": "POS System for Bakeries",
+                "description": "Bakery POS software that tracks ingredients at recipe level, manages custom cake and event orders, syncs walk-in, online, and delivery sales in one platform, automates stock deductions, and provides real-time analytics for smarter bakery management.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Owners Inventory"
+                },
+                "url": "https://www.ownersinventory.com/industries/bakery-pos-system",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "description": "Free trial available. Book a demo to get started."
+                }
+              },
+              {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Bakery Customer 1"
+                      },
+                      "reviewBody": "The POS system has made billing faster and more efficient. We no longer have to struggle at rush hour.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Bakery Customer 2"
+                      },
+                      "reviewBody": "Managing cake orders has never been easier. Every detail is properly recorded and nothing gets overlooked.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Bakery Customer 3"
+                      },
+                      "reviewBody": "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Does the POS support custom orders?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, the POS seamlessly handles custom orders. Sizes, notes, designs, and payments can all be recorded. It also lets you store templates for custom orders that are frequently requested."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I manage my ingredients individually?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. With every sale, each ingredient is automatically updated based on recipe usage. You can also set low-stock alerts to prevent shortages during peak hours."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does the system work well for small bakeries?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, it works well for both small and large setups. Because of its modular features, you can start small and grow without needing to switch systems."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you provide support for several branches?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, it is possible to oversee every branch from one single dashboard. You can quickly compare performance across locations with centralized reporting."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory Manages Bakery Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines bakery inventory management from ingredient procurement to reporting and analysis.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Ingredient Procurement",
+                    "text": "Owners Inventory helps generate purchase orders based on current inventory levels. Quantities of ingredients delivered by suppliers are recorded and tracked, allowing bakery owners to make informed purchase decisions."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Stock Organization",
+                    "text": "Inventory is categorized by product type, ingredient, size, flavor, or season. This ensures billing and kitchen staff are always aware of what is available, reducing confusion and speeding up production."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Automatic Deduction",
+                    "text": "Recipe-based automated deduction connects products to ingredients. The system calculates precisely which ingredients were used to make each item and makes stock adjustments automatically to ensure accurate inventory and prevent overuse."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Allocate Custom Orders",
+                    "text": "When a custom or pre-order is placed, Owners Inventory records all details including flavors, sizes, notes, delivery dates, and payment methods. All information is clearly documented, eliminating the possibility of missing deadlines."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Reporting and Analysis",
+                    "text": "The system monitors production output, ingredient consumption trends, peak sales hours, and profitability. Accurate reports help optimize pricing and adjust production volume based on real data rather than assumptions."
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
+      <div>
+        <SubIndustriesHero
+          title="POS System For Bakeries Controlling Orders & Inventory"
         description="Manage your bakery with complete precision and control using Owners Inventory, the ultimate POS system for bakeries. Every sale, including the latest ingredient updates and fresh batches of morning cakes to orders for custom-made cake designs are synced into one intelligent system. This system is designed for bakeries who need to track inventory in real time and bill quickly."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
@@ -132,6 +384,7 @@ const Page = () => {
         ctaDesc="Start Today"
       />
     </div>
+    </>
   );
 };
 

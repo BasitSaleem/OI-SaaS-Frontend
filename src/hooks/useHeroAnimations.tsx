@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.config({ nullTargetWarn: false });
 }
 
 export const useHeroAnimations = (variant: "animation1" | "animation2" | "none" = "animation1") => {

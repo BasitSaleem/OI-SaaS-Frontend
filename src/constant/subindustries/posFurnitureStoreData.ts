@@ -395,7 +395,7 @@ export const FURNITURE_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "2",
         title: "Real-Time Inventory",
-        description: "Inventory, options and finishes are updated in real-time. Mistakes are minimized and managers can make decisions quicker",
+        description: "Inventory, options and finishes are updated in real-time. Mistakes are minimized and managers can make decisions quicker.",
         icon: "testWhychoseIcon2",
     },
     {
@@ -433,7 +433,7 @@ export const FURNITURE_STORE_TESTIMONIAL_FEATURES = [
 
 export const FURNITURE_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "The POS solutions of modern furniture stores are combined with accounting software, CRM systems, payment gateways, and ecommerce platforms. This enables proprietors to control inventory, showroom sales, online orders, finances and customer data on a single centralized dashboard.",
+    paragraph: "The POS solutions of modern furniture stores are combined with accounting software, CRM systems, payment gateways, and eCommerce platforms. This enables proprietors to control inventory, showroom sales, online orders, finances and customer data on a single centralized dashboard.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

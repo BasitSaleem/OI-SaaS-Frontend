@@ -6,6 +6,7 @@ export const PURCHASES_INDUSTRIES = [
         description: 'Reorder your fast moving products automatically. Also, easily manages supplier discounts and tracks incoming shipments in real time.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const PURCHASES_INDUSTRIES = [
         description: 'For restaurants, easily track ingredient purchases, manage multiple vendors and use smart controls to prevent expensive overstocking or wastage.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ export const PURCHASES_INDUSTRIES = [
         description: 'Ensure accuracy and compliance with expiry monitoring and batch tracking. Supplier authentication for all medicine purchases is also provided.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -38,6 +41,7 @@ export const PURCHASES_INDUSTRIES = [
         description: 'Order fabrics, accessories and finished goods efficiently by tracking supplier performance. Works according to seasonal demand and material availability.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

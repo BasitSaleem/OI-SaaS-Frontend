@@ -4,7 +4,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 export const HARDWARE_UNIFIED_HEADING = "Challenges Holding Back Hardware Store";
 
 export const HARDWARE_UNIFIED_PARAGRAPH =
-    "Hardware stores encounter numerous day-to-day challenges that decelerate growth and add expenses. Below are some of the challenges encountered by most store";
+    "Hardware stores encounter numerous day-to-day challenges that decelerate growth and add expenses. Below are some of the challenges encountered by most stores.";
 
 export const HARDWARE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     {
@@ -71,22 +71,29 @@ export const Hardware_WHY_CHOOSE_CARDS = [
         icon: "whychoseIcon3",
         title: "Intelligent Supplier Management",
         description:
-            "Owners Inventory tracks suppliers, purchase orders, and deliveries while sending automatic low stock alerts to prevent stock outs.",
+            "Owners Inventory tracks suppliers, purchase orders, and deliveries while sending automatic low stock alerts to prevent stockouts.",
     },
     {
         id: "4",
         icon: "whychoseIcon4",
         title: "Centralized Price Control",
         description:
-            "Owners Inventory tracks suppliers, purchase orders, and deliveries with automatic low stock alerts to prevent stockouts.",
+            "Owners Inventory allows you to control and centralize pricing for all products from one central system, while ensuring consistency and cost control.",
     },
     {
         id: "5",
         icon: "whychoseIcon5",
-        title: "Instant System-Wide Updates",
+        title: "Data-Driven Decision Making",
         description:
-            "Live sales and stock reports highlight fast & slow moving, and high profit items, helping owners plan purchases and pricing with insights.",
+            "Live sales and stock reports highlight fast moving, slow moving, and high profit items, helping owners plan purchases and pricing with real insights.",
     },
+    {
+        id: "6",
+        icon: "whychoseIcon6",
+        title: "Stronger Online Presence",
+        description:
+            " Owners Inventory supports eCommerce and online integrations, allowing hardware stores to showcase products online and sync inventory automatically. This helps attract more customers, manage online orders smoothly, and expand sales beyond the physical store.",
+    }
 ];
 
 
@@ -116,9 +123,9 @@ export const HARDWARE_FEATURE_CARDS = [
         buttonHref: "/features/products",
         buttonColor: "#1AD1B9",
         list: [
-            { listheading: "Real-time sales and inventory analysis." },
-            { listheading: "Predict demand and schedule reorders."},
-            { listheading: "Determine revenue leakages and enhance profitability." }
+            { listheading: "Real-time sales and inventory analysis" },
+            { listheading: "Predict demand and schedule reorders"},
+            { listheading: "Determine revenue leakages and enhance profitability" }
         ],
 
     },
@@ -390,14 +397,14 @@ export const HARDWARE_TESTIMONIAL_FEATURES = [
     {
         id: "integration-addons-hardware",
         title: "Integration and Addons",
-        description: "Integrates with accounting software, ecommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier for easy scaling.",
+        description: "Integrates with accounting software, eCommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier for easy scaling.",
         icon: "testWhychoseIcon7",
     },
 ];
 
 export const HARDWARE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Contemporary inventory solutions are compatible with POS, accounting, CRM, and e-commerce solutions. This enables the owners to control inventory, sales, finances, and customer data on one dashboard.",
+    paragraph: "Contemporary inventory solutions are compatible with POS, accounting, CRM, and eCommerce solutions. This enables the owners to control inventory, sales, finances, and customer data on one dashboard. Integrated tools simplify business processes, minimize human effort, and make inventory management quicker and more efficient throughout the business.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

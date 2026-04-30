@@ -6,6 +6,7 @@ export const SALES_INDUSTRIES = [
         description: 'Quickly scan barcodes, offer a wide range of discount options, and real-time inventory display - ideal in electronics, grocery, cosmetics, or other fast-moving retail environments.',
         image: '/assets/industry-type/retail-store.webp',
         mobileImage: '/assets/industry-type/retail-store-mobile.webp',
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const SALES_INDUSTRIES = [
         description: 'Speed up orders, divide bills, and coordinate kitchen activities easily. Whether dining in or delivering, handle all sales and ingredients precisely.',
         image: '/assets/industry-type/restaurant.webp',
         mobileImage: '/assets/industry-type/restaurant-mobile.webp',
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ export const SALES_INDUSTRIES = [
         description: 'Remain compliant and precise regarding expiry alerts, prescription monitoring, and safe batch control. Build customer trust and a trustworthy service.',
         image: '/assets/industry-type/pharmacy.webp',
         mobileImage: '/assets/industry-type/pharmacy-mobile.webp',
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -38,6 +41,7 @@ export const SALES_INDUSTRIES = [
         description: 'Easily manage all designs, sizes, and colors. Coordinate collections by season in stores and maintain your sales online and offline.',
         image: '/assets/industry-type/fashion.webp',
         mobileImage: '/assets/industry-type/fashion-mobile.webp',
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

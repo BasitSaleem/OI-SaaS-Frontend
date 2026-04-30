@@ -7,6 +7,7 @@ export const INVENTORY_INDUSTRIES = [
             "Add and maintain products in POS quickly with comprehensive listings, categories, and barcodes to maintain your shelves and online catalog flawlessly.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const INVENTORY_INDUSTRIES = [
             "Control menu items, ingredients, and combos with our POS product management feature and make sure that all branches are operating off the same menu.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const INVENTORY_INDUSTRIES = [
             "Monitor batch and expiry of medicines with inventory product management software, ensuring that the stock in your pharmacy is secure, legally compliant, and reliable.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const INVENTORY_INDUSTRIES = [
             "Keep track of all sizes, colors, and styles, with product variants, seasonal collections, and stock coordination between online and physical stores, whether you sell streetwear, shoes, or high fashion.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 

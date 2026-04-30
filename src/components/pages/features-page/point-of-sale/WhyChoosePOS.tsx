@@ -66,7 +66,7 @@ function WhyChoosePOS({
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center justify-center gap-[60px]">
             {/* Cards Container */}
-            <div className="xl:col-span-5 col-span-6 flex flex-col gap-4 sm:gap-5 xl:gap-6">
+            <div className="xl:col-span-6 col-span-6 flex flex-col gap-4 sm:gap-5 xl:gap-6">
               {cards.map((card) => (
                 <div
                   key={card.title}
@@ -109,7 +109,7 @@ function WhyChoosePOS({
             </div>
 
             {/* Main Image Container */}
-            <div className="xl:col-span-7 col-span-6">
+            <div className="xl:col-span-6 col-span-6">
               <div 
                 className="relative rounded-[20px] pt-12 pb-5 flex align-center justify-center overflow-hidden"
                 style={

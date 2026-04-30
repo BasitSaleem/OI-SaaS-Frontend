@@ -134,8 +134,8 @@ export const BAKERY_FEATURE_CARDS = [
         buttonColor: "#1AD1B9",
         list: [
             { listheading: "Security, Accuracy & Compliance"},
-            { listheading: "Predict demand and schedule reorders."},
-            { listheading: "Determine revenue leakages and enhance profitability."}
+            { listheading: "Predict demand and schedule reorders"},
+            { listheading: "Determine revenue leakages and enhance profitability"}
         ]
     },
 ];
@@ -234,7 +234,7 @@ export const BAKERY_TESTIMONIALS = [
         id: "oliver-smith",
         name: "Oliver Smith",
         title: "Operations Manager",
-        image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
         text: "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions",
     },
     
@@ -249,7 +249,7 @@ export const BAKERY_FAQS = [
     {
         id: "faq-manage-ingredients",
         question: "Can I manage my ingredients individually?",
-        answer: "Yes, of course. With every sale, each ingredient is automatically updated. To prevent storage during traffic hours, you can also set low-stock alerts."
+        answer: "Yes, of course. With every sale, each ingredient is automatically updated. To prevent shortages during traffic hours, you can also set low-stock alerts."
     },
     {
         id: "faq-small-bakeries",
@@ -364,7 +364,7 @@ export const BAKERY_TESTIMONIAL_FEATURES = [
 
 export const BAKERY_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Owners Inventory seamlessly integrates with accounting software, barcode scanning, ecommerce platforms and payment gateways to create a connected ecosystem. Additional features like SMS notifications, loyalty programs and branch management will allow you to grow your business without adding complexity. It grows with your bakery, supporting small bakeries and large chains.",
+    paragraph: "Owners Inventory seamlessly integrates with accounting software, barcode scanning, eCommerce platforms and payment gateways to create a connected ecosystem. Additional features like SMS notifications, loyalty programs and branch management will allow you to grow your business without adding complexity. It grows with your bakery, supporting small bakeries and large chains.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

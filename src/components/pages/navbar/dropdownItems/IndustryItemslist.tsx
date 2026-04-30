@@ -68,7 +68,7 @@ export const industriesItems: IndustryItem[] = [
     key: 'furniture-store-pos-system',
     title: 'Furniture Store POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/furniture.svg",
-    category: 'retailer',
+    category: 'wholesale',
     type: 'pos',
   },
   {
@@ -130,7 +130,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'supermarket-pos-system',
     title: 'Supermarket POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/grocery.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/supermarket-pos-system.svg",
     category: 'retailer',
     type: 'pos',
   },
@@ -161,6 +161,27 @@ export const industriesItems: IndustryItem[] = [
     icon: "/assets/header-dropdown-images/industries-dropdown/hotel.svg",
     category: 'retailer',
     type: 'inventory',
+  },
+  {
+    key: 'beauty-salon-pos-system',
+    title: 'Beauty Salon POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'furniture-inventory-management-software',
+    title: 'Furniture Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/furniture.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
+  {
+    key: 'coffee-shop-pos-system',
+    title: 'Coffee Shop POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    category: 'restaurant',
+    type: 'pos',
   },
 
   
@@ -314,6 +335,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Inventory Efficiency Analytics' },
     { title: 'Supplier & Purchase Management' },
   ],
+  'beauty-salon-pos-system': [
+    { title: 'Appointment Scheduling' },
+    { title: 'Product & Service Catalog' },
+    { title: 'Client Management (CRM)' },
+    { title: 'Staff Performance Tracking' },
+  ],
+  'furniture-inventory-management-software': [
+    { title: 'Variant & Dimension Tracking' },
+    { title: 'Multi-Warehouse Management' },
+    { title: 'Delivery & Assembly Tracking' },
+    { title: 'Purchase Order Management' },
+  ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
     { title: 'ISBN Scanning' },
@@ -355,6 +388,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Multi-location Management' },
     { title: 'Corporate Accounts' },
     { title: 'Advanced Reporting' },
+  ],
+  'coffee-shop-pos-system': [
+    { title: 'Quick Checkout & Billing' },
+    { title: 'Order & Ingredient Sync' },
+    { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
   ],
 };
 

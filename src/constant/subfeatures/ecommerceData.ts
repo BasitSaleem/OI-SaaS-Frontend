@@ -7,6 +7,7 @@ export const ECOMMERCE_INDUSTRIES = [
             "Extend your retail presence on the web with live inventory and pricing. Our eCommerce POS integration ensures that inventory is correct and customers are satisfied in all locations.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const ECOMMERCE_INDUSTRIES = [
             "Have one platform that manages dine-in, takeout, and online orders. By integrating point of sale eCommerce, menus, orders and payment remain in perfect harmony.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+         link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const ECOMMERCE_INDUSTRIES = [
             "Automate sales in large quantities by price and inventory adjustment. POS system eCommerce integration provides standardization between warehouses and internet portals.",
         image: "/assets/industry-type/whole-sale.webp",
         mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+        
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const ECOMMERCE_INDUSTRIES = [
             "Easily access prescriptions, expiry notifications, and online refills. Our integrated POS and eCommerce system maintains accurate and compliance records in real time.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+         link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +47,7 @@ export const ECOMMERCE_INDUSTRIES = [
             "Keep track of styles, colors, and sizes. The eCommerce POS system harmonizes inventory between online and in-store collections to provide a seamless way of managing seasons.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
     {
         id: 6,
@@ -52,6 +57,7 @@ export const ECOMMERCE_INDUSTRIES = [
             "Keep track of specs, warranties, and inventory changes. Your product listings and orders will always be in sync with POS and eCommerce integration.",
         image: "/assets/industry-type/brands.webp",
         mobileImage: "/assets/industry-type/brands-mobile.webp",
+        link: "/industries/ecommerce-store-inventory-management-software",
     },
 ];
 

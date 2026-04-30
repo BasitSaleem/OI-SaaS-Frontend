@@ -105,7 +105,7 @@ export const GROCERY_STORE_FEATURE_CARDS = [
         id: "1",
         title: "Omni-Channel and Sales Integration",
         description:
-            "Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time. Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time.",
+            "Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time.",
         imageSrc: "/assets/industries-pages/grocery-store-pos/jewelary-store-omini-chanel.webp",
         buttonLabel: "View Details",
         buttonHref: "/features/pos",

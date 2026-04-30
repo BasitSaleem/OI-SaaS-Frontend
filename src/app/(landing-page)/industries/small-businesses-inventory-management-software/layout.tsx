@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Inventory Management Software for Small Business",
-  description: "Manage stock, track orders, and streamline daily operations with Owners Inventory's inventory management software built for small businesses. Start free today.",
+  title: "Inventory Management Software for Small Businesses & Stores",
+  description: "Inventory software for small businesses to track stock in real time, automate billing, sync sales channels, and simplify daily operations from one dashboard.",
   keywords: [
-    "inventory management software for small business",
-    "small business inventory software",
-    "inventory tracking software for small business",
+    "inventory management software for small businesses",
+    "small business inventory management software",
+    "inventory software for small business",
+    "small business inventory system",
+    "inventory management system for small business",
     "best inventory software for small business"
   ],
   alternates: {

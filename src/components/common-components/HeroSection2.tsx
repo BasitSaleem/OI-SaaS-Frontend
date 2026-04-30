@@ -195,7 +195,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
           {/* HERO BODY */}
           <div className="md:py-px bg-[#F3F4F6] rounded-[20px] lg:rounded-[40px]">
             <div
-              className={`owner-inventory-hero__bottom relative flex flex-col items-center justify-center  w-full ${heroHeight} ${heroOverflow} pt-10 pb-6 md:py-[76px] lg:py-0  bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
+              className={`owner-inventory-hero__bottom relative flex flex-col items-center justify-center  w-full ${heroHeight} ${heroOverflow} pt-10 pb-6 md:py-[76px] lg:py-0  px-3.5 sm:px-7  bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
             >
               {/* Background Image Optimization */}
               <div className="absolute inset-0 z-[-1] pointer-events-none">

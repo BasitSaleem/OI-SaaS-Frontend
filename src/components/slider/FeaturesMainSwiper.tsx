@@ -49,7 +49,7 @@ export default function FeaturesMainSwiper<T>({
       spaceBetween={20}
       slidesPerView={slidesPerView}
       slidesPerGroup={1}
-      loop={true}
+      loop={slides.length > 3}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,

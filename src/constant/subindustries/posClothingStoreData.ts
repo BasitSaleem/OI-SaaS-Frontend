@@ -410,7 +410,7 @@ export const CLOTHING_STORE_TESTIMONIAL_FEATURES = [
 
 export const CLOTHING_STORE_TOOLS_DATA = {
     heading: "Integration and Tools",
-    paragraph: "Brands need integration tools that support more than just in-store billing. Our POS system integrates with e-commerce platforms, barcode scanners, payment gateways, and warehouse systems to keep operations centralized. These integrated tools reduce manual errors. The system ensures that inventory, sales, and financial data stay consistent across every branch and sales channel.",
+    paragraph: "Brands need integration tools that support more than just in-store billing. Our POS system integrates with eCommerce platforms, barcode scanners, payment gateways, and warehouse systems to keep operations centralized. These integrated tools reduce manual errors. The system ensures that inventory, sales, and financial data stay consistent across every branch and sales channel.",
     tools: [
         { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
         { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },

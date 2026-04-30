@@ -67,7 +67,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
     <section ref={sectionRef} className="wrapper py-16 lg:py-24 overflow-hidden">
       <div className=" mx-auto text-center mb-16 lg:mb-20">
         <MainHeading className="mb-6">{heading}</MainHeading>
-        <Paragraph className="text-lg opacity-80">{paragraph}</Paragraph>
+        <Paragraph className="text-lg opacity-80 px-4">{paragraph}</Paragraph>
       </div>
 
       {/* Progress Bar */}

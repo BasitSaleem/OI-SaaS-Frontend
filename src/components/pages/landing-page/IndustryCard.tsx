@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { useDevice } from "@/hooks/useDevice";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 interface IndustryCardProps {
   title: string;
@@ -12,6 +13,7 @@ interface IndustryCardProps {
   className?: string;
   onClick?: () => void;
   isHovered?: boolean;
+  link?: string;
 }
 
 const IndustryCard: React.FC<IndustryCardProps> = ({
@@ -23,6 +25,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
   className = "",
   onClick,
   isHovered = false,
+  link,
 }) => {
   const { isMobile } = useDevice();
 
@@ -108,6 +111,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
 
         {/* READ MORE BUTTON */}
         <div
+          onClick={(e) => link && e.stopPropagation()}
           className={`bg-white rounded-full h-[60px] hidden md:flex items-center px-2 pl-6 mt-0 md:-mt-96 transition-all duration-300 ease-in-out ${
             isMobile
               ? "w-full justify-between"
@@ -116,27 +120,58 @@ const IndustryCard: React.FC<IndustryCardProps> = ({
               : "w-full justify-between"
           }`}
         >
-          <span className="text-[#333333] text-[16px] font-semibold font-['Onest']">
-            Read More
-          </span>
-          <div
-            className="w-[48px] h-[48px] bg-[var(--background-light)] rounded-full flex justify-center items-center transition-all duration-300"
-            style={{
-              background: isMobile
-                ? gradient
-                : isHovered
-                ? gradient
-                : "var(--background-light)",
-            }}
-          >
-            <ArrowUpRight
-              className={`w-5 h-5 transition-all duration-300 ${
-                isMobile || isHovered
-                  ? "text-white rotate-45"
-                  : "text-[#333333]"
-              }`}
-            />
-          </div>
+          {link ? (
+            <Link
+              href={link}
+              className="flex items-center justify-between w-full h-full"
+            >
+              <span className="text-[#333333] text-[16px] font-semibold font-['Onest']">
+                Read More
+              </span>
+              <div
+                className="w-[48px] h-[48px] bg-[var(--background-light)] rounded-full flex justify-center items-center transition-all duration-300"
+                style={{
+                  background: isMobile
+                    ? gradient
+                    : isHovered
+                    ? gradient
+                    : "var(--background-light)",
+                }}
+              >
+                <ArrowUpRight
+                  className={`w-5 h-5 transition-all duration-300 ${
+                    isMobile || isHovered
+                      ? "text-white rotate-45"
+                      : "text-[#333333]"
+                  }`}
+                />
+              </div>
+            </Link>
+          ) : (
+            <>
+              <span className="text-[#333333] text-[16px] font-semibold font-['Onest']">
+                Read More
+              </span>
+              <div
+                className="w-[48px] h-[48px] bg-[var(--background-light)] rounded-full flex justify-center items-center transition-all duration-300"
+                style={{
+                  background: isMobile
+                    ? gradient
+                    : isHovered
+                    ? gradient
+                    : "var(--background-light)",
+                }}
+              >
+                <ArrowUpRight
+                  className={`w-5 h-5 transition-all duration-300 ${
+                    isMobile || isHovered
+                      ? "text-white rotate-45"
+                      : "text-[#333333]"
+                  }`}
+                />
+              </div>
+            </>
+          )}
         </div>
       </div>
 

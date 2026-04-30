@@ -77,7 +77,7 @@ function IndustryUnifiedPlatform({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="w-full p-6 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
+                    className="w-full p-6 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white flex flex-col md:grid md:grid-rows-subgrid md:row-span-3 gap-0"
                   >
                     <div className="w-fit p-[11px] flex items-center justify-center mb-[18px] md:mb-5  rounded-xl border-5 border-[var(--background-halfwhite)]">
                       {card.icon.startsWith("/") ? (
@@ -97,9 +97,11 @@ function IndustryUnifiedPlatform({
                         />
                       )}
                     </div>
-                    <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-['onest'] font-semibold text-[var(--text-dark)]  min-h-[70px]">
-                      {card.title}
-                    </h3>
+                    <div className="flex-1 mb-3 lg:mb-4">
+                      <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 font-['onest'] font-semibold text-[var(--text-dark)]">
+                        {card.title}
+                      </h3>
+                    </div>
                     <p className="text-sm md:text-base font-['onest'] leading-6 text-[var(--text-grey)]">
                       {card.description}
                     </p>

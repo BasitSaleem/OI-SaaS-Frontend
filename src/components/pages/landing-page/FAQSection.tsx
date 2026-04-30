@@ -78,7 +78,7 @@ export default function FaqSection({
       <div className="rounded-[20px] lg:rounded-[40px] bg-[#F3F4F6]">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center justify-center gap-10 md:gap-[100px] lg:gap-12 w-full px-5 md:px-[77px] lg:px-[87px] py-10 md:py-[58px] lg:py-[60px]">
           {/* Left Accordion Cards */}
-          <div className="order-2 lg:order-1 lg:col-span-7">
+          <div className="order-2 lg:order-1 lg:col-span-6">
             {faqs.map((faq, index) => (
               <div
                 key={index}
@@ -150,7 +150,7 @@ export default function FaqSection({
           </div>
 
           {/* Right Content */}
-          <div className="order-1 lg:order-2 lg:col-span-5 flex flex-col items-start justify-start text-left">
+          <div className="order-1 lg:order-2 lg:col-span-6 flex flex-col items-start justify-start text-left">
             <SubHeading className="mb-5 lg:mb-10">{heading}</SubHeading>
 
             <Paragraph className=" text-(--text-dark)">

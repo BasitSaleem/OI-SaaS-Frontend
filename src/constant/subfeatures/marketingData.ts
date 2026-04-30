@@ -7,6 +7,7 @@ export const MARKETING_INDUSTRIES = [
             "For Retail Stores, you can work on both traffic and sales. Here, offering fun seasonal coupons and rewarding your regular shoppers with loyalty points can be helpful.",
         image: "/assets/industry-type/retail-store.webp",
         mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+        link: "/industries/retail-store-pos-system",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const MARKETING_INDUSTRIES = [
             "For Restaurants, you will want to encourage repeat visits. Loyalty programs for both dine in customers and takeaway orders are encouraged.",
         image: "/assets/industry-type/restaurant.webp",
         mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+        link: "/industries/restaurant-inventory-management-software",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const MARKETING_INDUSTRIES = [
             "For pharmacies, you can encourage customers to return for essentials by offering loyalty points on non prescription items. You can also send them coupons for health and wellness products based on their past purchases.",
         image: "/assets/industry-type/pharmacy.webp",
         mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+        link: "/industries/healthcare-inventory-management-software",
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const MARKETING_INDUSTRIES = [
             "In the Fashion and Apparel Industry, offering exciting promo codes when you drop new collections and establishing a strong reward system will boost repeat purchases.",
         image: "/assets/industry-type/fashion.webp",
         mobileImage: "/assets/industry-type/fashion-mobile.webp",
+        link: "/industries/clothing-store-pos-system",
     },
 ];
 
