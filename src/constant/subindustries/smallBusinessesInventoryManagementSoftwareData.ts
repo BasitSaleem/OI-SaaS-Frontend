@@ -197,7 +197,7 @@ export const SMALL_BUSINESS_INVENTORY_WORKFLOW_DATA = {
 };
 
 export const SMALL_BUSINESS_INVENTORY_TESTIMONIAL_DATA = {
-    heading: "What Do Our Clients Say About Owners Inventory?",
+    heading: "What Our Clients Say?",
     paragraph: "",
     secondHeading: "Bring Structure to Your Daily Operations",
     secondDescription: "Switch to our structured inventory management system that keeps everything organized and easy to handle. Our system improves how your business runs without adding complexity.",
