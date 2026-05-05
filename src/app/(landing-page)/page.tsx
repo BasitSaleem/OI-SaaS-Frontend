@@ -16,6 +16,11 @@ import ToolsSection from "@/components/pages/landing-page/ToolsSection";
 import SmartTools from "@/components/pages/landing-page/SmartTools";
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import CalltoActionBottom from "@/components/pages/landing-page/CalltoActionBottom";
+import {
+  HOME_UNIFIED_CARDS,
+  HOME_UNIFIED_HEADING,
+  HOME_UNIFIED_PARAGRAPH,
+} from "@/constant/landingPage/unifiedPlatformData";
 
 import {
   HOME_FAQS,
@@ -132,7 +137,11 @@ export default function Home() {
 
           <SmartWaytoSyncndSellSection />
 
-          <UnifiedPlatform />
+           <UnifiedPlatform
+            heading={HOME_UNIFIED_HEADING}
+            paragraph={HOME_UNIFIED_PARAGRAPH}
+            cards={HOME_UNIFIED_CARDS}
+          />
 
           <VoicesRealBusiness />
 

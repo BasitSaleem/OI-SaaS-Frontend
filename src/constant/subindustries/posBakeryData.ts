@@ -8,42 +8,42 @@ export const BAKERY_UNIFIED_PARAGRAPH =
 
 export const BAKERY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     {
-        id: "long-queues",
+        id: "1",
         icon: "longQueue",
         title: "Long Queues During Peak Hours",
         description:
             "Morning rush, evening crowd, and weekend traffic often contribute to long lines. Slow billing is irritating to a point that your customer satisfaction rate will go down.",
     },
     {
-        id: "manual-stock-counting",
+        id: "2",
         icon: "stockCounting",
         title: "Manual Stock Counting",
         description:
             "Most bakeries still track ingredients by hand. This results in errors, wastage and stockouts. Without knowledge in real-time, an owner can’t anticipate what needs to be restocked.",
     },
     {
-        id: "product-variations",
+        id: "3",
         icon: "stockConfusion",
         title: "Product Variations",
         description:
             "Cakes, pastries, and breads are available in a variety of toppings, sizes and flavors. Putting lots of hard work and time to maintain it manually would be useless.",
     },
     {
-        id: "custom-orders",
+        id: "4",
         icon: "slowBilling",
         title: "Custom Orders and Pre-Bookings",
         description:
             "Event orders, birthday and wedding cakes need to be more detailed. Losing a note, forgetting details or missing deadlines can damage your reputation.",
     },
     {
-        id: "multiple-sales-channels",
+        id: "5",
         icon: "priceInconsistency",
         title: "Multiple Sales Channels",
         description:
             "Modern bakeries now have to handle walk-ins, takeaways, deliveries, online orders and also third-party app orders. As managing them separately creates chaos.",
     },
     {
-        id: "lack-of-real-time-report",
+        id: "6",
         icon: "onlineVisibility",
         title: "Lack of Real-Time Report",
         description:

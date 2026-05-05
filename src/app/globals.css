@@ -157,31 +157,22 @@ body {
 
 
 
-.wrapper {
+@utility wrapper {
   margin: 0 16px;
-}
 
-@media (min-width: 768px) {
-  .wrapper {
+  @media (min-width: 768px) {
     margin: 0 32px;
   }
-}
 
-@media (min-width: 1024px) {
-  .wrapper {
+  @media (min-width: 1024px) {
     margin: 0 40px;
   }
-}
 
-@media (min-width: 1280px) {
-  .wrapper {
+  @media (min-width: 1280px) {
     margin: 0 40px;
   }
-}
 
-
-@media (min-width: 1440px) {
-  .wrapper {
+  @media (min-width: 1440px) {
     max-width: 1350px;
     margin: 0 auto;
   }
@@ -420,6 +411,53 @@ body {
   z-index: -1;
 }
 
+.case-study-gradient-shadow-right {
+  position: relative;
+  z-index: 1;
+}
+
+
+.case-study-gradient-shadow-right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  background:
+   linear-gradient(90.54deg,
+      #ffffff 30%,
+      #ffffff 60%,
+      rgba(26, 209, 185, 0.15) 65%),
+    linear-gradient(270.54deg,
+      rgba(210, 185, 255, 0.7) 0%,
+      #ffffff 60%,
+      #ffffff 100%);
+   
+  background-size: 100% 50%;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+
+
+  /* -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.15) 90%,
+      rgba(0, 0, 0, 0) 100%);
+
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.15) 90%,
+      rgba(0, 0, 0, 0) 100%); */
+
+  filter: blur(100px);
+  z-index: -1;
+}
 
 
 .gradient-shadow-right {

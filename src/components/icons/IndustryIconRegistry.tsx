@@ -63,6 +63,9 @@ const furnitureInventoryManagementSoftwareIcons = dynamic(
 const posCoffeeShopStorePageIcons = dynamic(
   () => import("./posCoffeeShopStorePageIcons"),
 );
+const alAsifCasestudyIcons = dynamic(
+  () => import("./alAsifCasestudyIcons"),
+);
 
 export type IndustryIconSet =
   | "bakery"
@@ -85,7 +88,8 @@ export type IndustryIconSet =
   | "retail"
   | "beautySalon"
   | "coffeeShop"
-  | "furnitureInventory";
+  | "furnitureInventory"
+  | "alAsifCasestudyIcons"
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -109,6 +113,7 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   beautySalon: posBeautySalonStorePageIcons,
   coffeeShop: posCoffeeShopStorePageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
+  alAsifCasestudyIcons: alAsifCasestudyIcons
 };
 
 interface IndustryIconProps {
@@ -125,6 +130,7 @@ export default function IndustryIcon({
   className = "",
 }: IndustryIconProps) {
   if (!set || !REGISTRY[set]) {
+    console.warn(`IndustryIcon: Set "${set}" not found in registry.`);
     return null;
   }
 

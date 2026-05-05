@@ -32,18 +32,18 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 
 const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
   const pathname = usePathname();
-   const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout");
+   const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout") || pathname.includes("/case-studies");
 
   return (
     <footer
-      className={`owner-inventory-footer relative pb-10 bg-white/50 backdrop-blur-xl ${
+      className={`owner-inventory-footer relative md:pb-10 bg-white/50 backdrop-blur-xl ${
         isContactPage
           ? "pt-10 mt-12"
           : "-mt-[131px] pt-[251px] lg:pt-[291px]"
       }`}
       style={{ background: gradientBackground || DEFAULT_GRADIENT_BACKGROUND }}
     >
-      <div className="flex wrapper flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-[40px]">
+      <div className="flex md:wrapper flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-t-[40px] md:rounded-[40px]">
         {/* Top Row */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-10">
           {/* Logo */}
