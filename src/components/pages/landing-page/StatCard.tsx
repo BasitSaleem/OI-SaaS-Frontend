@@ -20,7 +20,7 @@ const StatCard: React.FC<StatCardProps> = ({ metric, index, statRefs }) => {
   const subtitle = words.slice(1).join(" ");
 
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-white/40 border border-white/60 rounded-[30px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] backdrop-blur-md text-center h-full transition-transform duration-300 hover:scale-[1.02]">
+    <div className="flex flex-col items-center justify-start p-6 bg-white/40 border border-white/60 rounded-[30px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] backdrop-blur-md text-center h-full transition-transform duration-300 hover:scale-[1.02]">
       <p
         className="text-[32px] lg:text-[42px] leading-[130%] lg:leading-[100%] font-semibold font-['Onest'] text-[var(--text-black)]  mb-2"
         ref={(el) => {
