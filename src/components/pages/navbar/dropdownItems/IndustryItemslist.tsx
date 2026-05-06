@@ -183,6 +183,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'restaurant',
     type: 'pos',
   },
+  {
+    key: 'shoe-stores-pos-system',
+    title: 'Shoe Stores POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
 
   
 ];
@@ -392,6 +399,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
   'coffee-shop-pos-system': [
     { title: 'Quick Checkout & Billing' },
     { title: 'Order & Ingredient Sync' },
+    { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'shoes-store-pos-system': [
+    { title: 'Fast Counter Checkout' },
+    { title: 'Size & Variant Tracking' },
     { title: 'Customer Loyalty Programs' },
     { title: 'Sales Analytics & Reports' },
   ],

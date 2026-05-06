@@ -61,7 +61,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
     if (currentSlide < totalSlides - 1) {
       setCurrentSlide((prev) => prev + 1);
     } else {
-      // If at the last slide, go back to first slide
       setCurrentSlide(0);
     }
   };
@@ -70,7 +69,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
     if (currentSlide > 0) {
       setCurrentSlide((prev) => prev - 1);
     } else {
-      // If at the first slide, go to last slide
       setCurrentSlide(totalSlides - 1);
     }
   };
