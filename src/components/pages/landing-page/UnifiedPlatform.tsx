@@ -68,7 +68,7 @@ function UnifiedPlatform({
             <div className="flex flex-col items-center justify-center">
               {isCaseStudy && (
                 <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
-                  <span className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
+                  <span className="py-2 px-6 text-base lg:text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
                     The Challenge
                   </span>
                 </div>
@@ -114,7 +114,7 @@ function UnifiedPlatform({
                         {card.title}
                       </h3>
                     </div>
-                    <p className="text-sm md:text-base font-['onest'] leading-6 text-[var(--text-grey)]">
+                    <p className="text-base font-['onest'] leading-6 text-[var(--text-grey)]">
                       {card.description}
                     </p>
                   </motion.div>

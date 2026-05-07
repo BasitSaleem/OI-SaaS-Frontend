@@ -73,7 +73,7 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
       steps.forEach((step) => {
         const circle = step.querySelector(".step-circle");
         const card = step.querySelector(".step-card");
-        const horizontalFill = step.querySelector(".horizontal-fill");
+        const horizontalFill = step.querySelector(".horizontal");
 
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -92,8 +92,8 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
         )
           .fromTo(
             horizontalFill,
-            { scaleX: 0 },
-            { scaleX: 1, duration: 0.4, ease: "power2.inOut" },
+            { scaleX: 0, scaleY: 1 },
+            { scaleX: 1, scaleY: 1, duration: 0.4, ease: "power2.inOut" },
             "0",
           )
           .fromTo(
@@ -131,23 +131,28 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
       steps.forEach((step) => {
         const circle = step.querySelector(".step-circle");
         const card = step.querySelector(".step-card");
+        const connectorFill = step.querySelector(".connecter");
 
-        gsap.fromTo(
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: step,
+            scroller: stepsRef.current,
+            horizontal: true,
+            start: "left 80%",
+            end: "left 20%",
+            scrub: 0.5,
+          },
+        });
+
+        tl.fromTo(
           circle,
           { scale: 1, opacity: 1 },
-          {
-            scale: 1,
-            opacity: 1,
-            duration: 0.4,
-            scrollTrigger: {
-              trigger: step,
-              scroller: stepsRef.current,
-              horizontal: true,
-              start: "left 80%",
-              end: "left 20%",
-              scrub: 0.5,
-            },
-          },
+          { scale: 1, opacity: 1, duration: 0.4 }
+        ).fromTo(
+          connectorFill,
+          { scaleY: 0, scaleX: 1 },
+          { scaleY: 1, scaleX: 1, duration: 0.4, ease: "power2.inOut" },
+          "0"
         );
 
         // Card remains static as requested (opacity 1, y: 0)
@@ -161,12 +166,13 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
     <section
       ref={containerRef}
       className="relative case-study-gradient-shadow-right py-20 lg:py-32 overflow-hidden lg:mt-[100px] md:mt-20 mt-[60px]"
+      style={{ background: gradientBackground }}
     >
       <div className="wrapper relative z-10">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16 lg:mb-24">
           <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
-            <span className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
+            <span className="py-2 px-6 text-base lg:text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
               {miniTitle}
             </span>
           </div>
@@ -197,8 +203,11 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
 
           {/* Horizontal Line Container (Mobile Only) */}
           <div
-            className="md:hidden absolute left-[50%] right-[50%] top-[32px] h-[2px] bg-[#E2E2E2] z-0"
-            style={{ width: `${items.length * 235}px` }}
+            className="md:hidden absolute left-0 top-[32px] h-[2px] bg-[#E2E2E2] z-0"
+            style={{ 
+              width: `${items.length * 229 + (items.length - 1) * 16}px`,
+              left: '128.5px' 
+            }}
           >
             <div
               ref={mobileLineRef}
@@ -229,10 +238,10 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
                     className="step-circle w-16 h-16 md:w-20 md:h-20 relative z-20 transition-all duration-300 group"
                   />
 
-                  {/* Horizontal Connector Line (Desktop Only) */}
-                  <div className="step-horizontal-line absolute left-full top-1/2 w-8 md:w-20 h-[2px] bg-[#E2E2E2] origin-left -translate-y-1/2 overflow-hidden hidden md:block">
+                  {/* Connector Line (Vertical on Mobile, Horizontal on Desktop) */}
+                  <div className="step-connector-line absolute left-1/2 md:left-full top-full md:top-1/2 w-[2px] md:w-20 h-8 md:h-[2px] bg-[#E2E2E2] -translate-x-1/2 md:translate-x-0 md:-translate-y-1/2 overflow-hidden z-10">
                     <div
-                      className="horizontal-fill absolute inset-0 bg-gradient-to-r from-[var(--primary-teal)] via-[var(--primary-purple)] to-[var(--primary-teal)] origin-left scale-x-0"
+                      className="connecter horizontal absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-[var(--primary-teal)] via-[var(--primary-purple)] to-[var(--primary-teal)] origin-top md:origin-left scale-x-1 md:scale-x-0 scale-y-0 md:scale-y-100"
                       style={{ willChange: "transform" }}
                     />
                   </div>
@@ -244,10 +253,10 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
                   style={{ willChange: "transform, opacity" }}
                 >
                   <div className="bg-white md:bg-white/50 p-6 md:p-8 rounded-[24px] min-w-[254px] max-w-[257px] md:min-w-0 md:max-w-none h-full">
-                    <h3 className="text-xl leading-[140%] md:text-left text-center lg:text-[32px] lg:leading-[130%] font-medium text-[var(--text-dark)] mb-3 font-['Onest']">
+                    <h3 className="text-xl leading-[140%] md:text-left text-center lg:text-[32px] lg:leading-[130%] font-semibold lg:font-medium text-[var(--text-dark)] font-['Onest'] md:min-h-auto min-h-[70px] mb-0 md:mb-3">
                       {item.title}
                     </h3>
-                    <p className="text-base md:text-lg md:leading-[140%] leading-[170%] text-[var(--text-grey)] font-['Onest'] font-normal">
+                    <p className="text-base md:text-lg md:leading-[140%] leading-[170%] text-[var(--text-grey)] text-center md:text-left font-['Onest'] font-medium">
                       {item.description}
                     </p>
                   </div>

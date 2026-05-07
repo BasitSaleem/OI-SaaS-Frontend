@@ -33,6 +33,7 @@ export interface Outcome {
 }
 
 export interface ResultMetric {
+  heading: string;
   value: string;
   label: string;
 }
@@ -81,7 +82,7 @@ export const caseStudiesData: CaseStudyData[] = [
     heroStats: [
       { percentage: "45%", description: "Reduction in Operational Work Hours" },
       { percentage: "90%", description: "Surge in Inventory Accuracy" },
-      { percentage: "30%", description: "Faster Billing Spee" },
+      { percentage: "30%", description: "Faster Billing Speed." },
     ],
     founderQuote: {
       heading: "The Beginning of Al-Asif’s Transformation",
@@ -126,13 +127,13 @@ export const caseStudiesData: CaseStudyData[] = [
     resultsHeading: "How Their Operational Efficiency Increased",
     resultsSubheading: "The implementation of Owners Inventory POS transformed manual friction into high-performance digital operations.",
     resultMetrics: [
-      { value: "5000+", label: "Items Already Organized Digitally" },
-      { value: "35%", label: "Less Administrative Labor" },
-      { value: "90%", label: "Real-time Stock Tracking Accuracy" },
-      { value: "03", label: "Regions Serving Teams Across the Continent" },
-      { value: "250+", label: "Active System Users" },
-      { value: "65%", label: "Faster Monthly Financial Closings" },
-      { value: "100%", label: "Automated Profit and Loss Reporting" },
+      { heading: "Items", value: "5000+", label: "Already Organized Digitally" },
+      { heading: "Less", value: "35%", label: "Administrative Labor" },
+      { heading: "real-time", value: "90%", label: "stock tracking accuracy" },
+      { heading: "Regions", value: "03", label: "Serving Teams Across the Continent" },
+      { heading: "Users", value: "250+", label: "Active System Users" },
+      { heading: "Faster Closing", value: "65%", label: "Quick financials" },
+      { heading: "Automation", value: "100%", label: "Profit & loss reports" },
     ],
   },
   // {

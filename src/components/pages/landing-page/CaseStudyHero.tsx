@@ -121,17 +121,17 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
               >
                 <div className="col-span-12 lg:col-span-6 flex flex-col items-center justify-center lg:items-start lg:justify-start">
                   <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
-                    <h1 className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
+                    <span className="py-2 px-6 text-base lg:text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
                       Case Study
-                    </h1>
+                    </span>
                   </div>
                   <div ref={mainHeadingRef}>
-                    <h2 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] xl:mb-8 lg:mb-6 mb-5 text-left">
+                    <h1 className="text-center xl:text-[64px] md:text-5xl text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] xl:mb-8 lg:mb-6 mb-5 text-left">
                       {title}:{" "}
                       <span className="text-[var(--primary-purple)]">
                         {subTitle}
                       </span>
-                    </h2>
+                    </h1>
                   </div>
 
                   <div ref={paragraphRef}>
@@ -154,14 +154,14 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
                           i < 2
                             ? "col-span-12 md:col-span-4 lg:col-span-6"
                             : "col-span-12 md:col-span-4 lg:col-span-12"
-                        } flex items-center justify-center p-[2.5px] bg-[linear-gradient(11.61deg,#FFFFFF_20.11%,rgba(255,255,255,0)_82.07%)] rounded-[24px]`}
+                        } flex items-center justify-center p-[3px] bg-[linear-gradient(11.61deg,rgba(255,255,255,0.4)_20.11%,rgba(255,255,255,0)_82.07%)] rounded-[24px]`}
                       >
                         <div
-                          className={`bg-white/50 backdrop-blur-md rounded-[24px] w-full h-full p-6 flex flex-col items-center`}
+                          className={`bg-white/50 backdrop-blur-lg rounded-[24px] w-full h-full p-6 flex flex-col items-center`}
                         >
-                          <h3 className="text-[32px] lg:text-[42px] leading-[130%] lg:leading-[100%] font-semibold text-[var(--text-dark)] leading-none mb-2 font-['Onest']">
+                          <span className="text-[32px] lg:text-[42px] leading-[130%] lg:leading-[100%] font-semibold text-[var(--text-dark)] leading-none mb-2 font-['Onest']">
                             {stat.percentage}
-                          </h3>
+                          </span>
                           <p className="text-lg leading-[170%] lg:text-xl lg:leading-[30px] font-medium text-[var(--text-dark)] text-center font-['Onest']">
                             {stat.description}
                           </p>

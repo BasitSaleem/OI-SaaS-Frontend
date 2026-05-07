@@ -102,7 +102,7 @@ function IndustryUnifiedPlatform({
                         {card.title}
                       </h3>
                     </div>
-                    <p className="text-sm md:text-base font-['onest'] leading-6 text-[var(--text-grey)]">
+                    <p className="text-base font-['onest'] leading-6 text-[var(--text-grey)]">
                       {card.description}
                     </p>
                   </motion.div>

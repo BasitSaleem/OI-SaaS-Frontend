@@ -108,7 +108,7 @@ const ResultsInNumbers: React.FC<ResultsInNumbersProps> = ({
       <div className="md:wrapper relative z-10 flex flex-col items-center">
         {/* Badge */}
         <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
-          <span className="py-2 px-6 text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
+          <span className="py-2 px-6 text-base lg:text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
             {badge}
           </span>
         </div>

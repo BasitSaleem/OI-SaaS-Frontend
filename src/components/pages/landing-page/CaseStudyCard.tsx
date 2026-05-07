@@ -78,10 +78,10 @@ export default function CaseStudyCard({
               className="w-9 h-[33px]"
             />
             <div className="flex flex-col gap-1">
-              <p className="font-semibold text-[32px] font-['Onest']  md:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
+              <p className="font-semibold text-[32px] lg:text-[32px] font-['Onest']  lg:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
                 {study.founderQuote?.author}
               </p>
-              <p className="px-4 py-2 font-medium text-base leading-[150%] text-[var(--primary-purple)] w-fit bg-[var(--background-purple-light)] rounded-full">
+              <p className="px-4 py-2 font-medium text-base leading-[150%] text-[var(--primary-purple)] w-fit bg-[var(--background-purple-light)] font-['onest'] rounded-full">
                 {study.founderQuote?.authorTitle}
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function CaseStudyCard({
               className="w-full h-full object-contain"
             />
           </div>
-          <p className="text-[var(--text-dark)] p-4 lg:p-6 italic text-xl leading-8 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
+          <p className="text-[var(--text-dark)] p-4 lg:p-6 font-['onest'] italic text-xl leading-8 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
             “{study.founderQuote?.text}”
           </p>
         </div>
