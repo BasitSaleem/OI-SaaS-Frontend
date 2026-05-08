@@ -47,7 +47,7 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 `;
 
 const CaseStudyOutcomes: React.FC<CaseStudyOutcomesProps> = ({
-  badge = "The Difference Made",
+  badge,
   heading,
   description,
   outcomes,

@@ -52,16 +52,20 @@ export interface CaseStudyData {
   subtitle?: string;
   heroStats?: HeroStats[];
   founderQuote?: Quote;
+  challengesTitle?: string;
   challengesIntro?: string;
   challengesHead?: string;
   challenges?: Challenge[];
   challengesIconSet?: IndustryIconSet;
+  strategyTitle?: string;
   strategyIntro?: string;
   strategySteps?: StrategyStep[];
+  outcomesTitle?: string;
   outcomesIntro?: string;
   outcomesHeading?: string;
   outcomes?: Outcome[];
   outcomesIconSet?: IndustryIconSet;
+  resultTitle?: string;
   resultsHeading?: string;
   resultsSubheading?: string;
   resultMetrics?: ResultMetric[];
@@ -91,6 +95,7 @@ export const caseStudiesData: CaseStudyData[] = [
       author: "Faique Asif",
       authorTitle: "Al-Asif CEO",
     },
+     challengesTitle: "The Challenge",
     challengesHead: "What Was Holding Them Back",
     challengesIntro: "Al-Asif faced a complex web of operational friction where manual data entry acted as a barrier to real-time growth.",
     challengesIconSet: "alAsifCasestudyIcons",
@@ -103,6 +108,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { id: "6", title: "High Dependency on Manual Labour", icon: "challengeIcon6", description: "All processes relied on individuals, not procedures. One mistake would impact the stock level, accounting entries, or daily summaries and cause a series of errors." },
       { id: "7", title: "Difficulty Scaling Operations", icon: "challengeIcon7", description: "The manual structure was unable to match the increasing business demands. The system was not flexible or automated to support long-term growth and productivity." },
     ],
+    strategyTitle: "Our Approach",
     strategyIntro: "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks and establish a foundation for digital precision.",
     strategySteps: [
       { title: "Workflow Assessment", description: "We started auditing how Al-Asif handled their sales, stock turnover, purchases, and financial accounting. We understood each process to identify where errors and time loss were occurring." },
@@ -113,6 +119,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { title: "Role Management", description: "Introduced secure access levels to ensure clean operations. Admins have full visibility, while staff can only access the specific tools required for duties." },
       { title: "Growth Readiness", description: "We designed a flexible architecture capable of scaling as AL-Asif expands product lines or branches without operational interruption or technical debt." },
     ],
+    outcomesTitle: "The Difference Made",
     outcomesIntro: "The transformation fundamentally changed how Al-Asif operates, ensuring the business is automated, accurate, and ready for future expansion.",
     outcomesHeading: "How Everything Changed",
     outcomesIconSet: "alAsifCasestudyIcons",
@@ -124,6 +131,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { id: "5", title: "Enhanced Productivity", icon: "outcomeIcon5", description: "Employee processes became quicker. Billing, stock checks, and reporting were done easily, and the team was able to concentrate on customer service." },
       { id: "6", title: "Scalable Growth", icon: "outcomeIcon6", description: "The system was constructed to expand with Al-Asif. Without disturbing the operations, new products, branches or workflows could be easily added." },
     ],
+    resultTitle: "Results in Numbers",
     resultsHeading: "How Their Operational Efficiency Increased",
     resultsSubheading: "The implementation of Owners Inventory POS transformed manual friction into high-performance digital operations.",
     resultMetrics: [
