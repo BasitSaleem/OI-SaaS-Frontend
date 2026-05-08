@@ -119,6 +119,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
           </p> */}
         </div>
       </div>
+      
     </footer>
   );
 };
