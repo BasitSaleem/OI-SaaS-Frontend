@@ -344,7 +344,8 @@ const Page = () => {
 
       <SecurityCompliance
         title="Security, Accuracy, and Compliance."
-        description= "Access to inventory data is controlled based on staff roles. Each transaction is recorded with a clear audit trail, making it easy to view activities and identify errors. It ensures that sensitive business data is protected. The system maintains accurate financial records and supports internal accountability across daily operations."
+        description= "Access to inventory data is controlled based on staff roles. Each transaction is recorded with a clear audit trail, making it easy to view activities and identify errors. It ensures that sensitive business data is protected."
+        secondDescription="The system maintains accurate financial records and supports internal accountability across daily operations."
       />
       
        <ToolsSection

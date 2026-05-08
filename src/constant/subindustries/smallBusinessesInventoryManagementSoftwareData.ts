@@ -217,7 +217,7 @@ export const SMALL_BUSINESS_INVENTORY_TESTIMONIALS = [
         id: "2",
         name: "Anabiya K",
         title: "Operations Manager",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: "Managing inventory across different product categories used to take a lot of time. With Owners Inventory, everything feels more streamlined now.",
     },
     {
@@ -225,7 +225,7 @@ export const SMALL_BUSINESS_INVENTORY_TESTIMONIALS = [
         name: "Rebecca S",
         title: "Business Manager",
         image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
-        text: "The system helped us stay organized without adding extra workload. The system just perfectly fits our workflow",
+        text: "The system helped us stay organized without adding extra workload. The system just perfectly fits our workflow.",
     },
 ];
 

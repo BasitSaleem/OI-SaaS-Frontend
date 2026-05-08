@@ -342,7 +342,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={FURNITURE_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy and Compliance"
+        title="Security, Accuracy and Compliance."
         description= "All production and inventory activities are recorded effectively by the system. Only authorized personnel will have access, minimizing mistakes and unauthorized activities."
         secondDescription="It maintains a comprehensive audit trail for accountability and compliance. Real-time tracking improves stock and production tracking. Accuracy and reliability are improved by automated reporting."
       />
@@ -370,7 +370,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Find answers to frequently asked questions about our furniture inventory management solution."
+          paragraph="Here are some commonly asked questions about our furniture inventory management software to help you better understand how the system works."
           faqs={FURNITURE_INVENTORY_FAQS}
           buttonText="Start Now"
         />
