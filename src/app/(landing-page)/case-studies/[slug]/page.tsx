@@ -54,7 +54,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
        />
 
         <IndustryWorkflowSection
-          title="A Structured Path to Success"
+          title={caseStudy.strategyHead || "A Structured Path to Success"}
           miniTitle="Our Approach"
           description={caseStudy.strategyIntro || "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks."}
           items={caseStudy.strategySteps?.map((step: StrategyStep, index: number) => ({
@@ -69,7 +69,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           description={caseStudy.outcomesIntro || ""}
           outcomes={caseStudy.outcomes || []}
           iconSet={caseStudy.outcomesIconSet}
-          bottomImage="/assets/case-studies/outcome-banner.webp"
+          bottomImage={caseStudy.outcomesBanner || "/assets/case-studies/outcome-banner.webp"}
         />
 
         <ResultsInNumbers 

@@ -56,10 +56,12 @@ export interface CaseStudyData {
   challengesHead?: string;
   challenges?: Challenge[];
   challengesIconSet?: IndustryIconSet;
+  strategyHead?: string;
   strategyIntro?: string;
   strategySteps?: StrategyStep[];
   outcomesIntro?: string;
   outcomesHeading?: string;
+  outcomesBanner: string;
   outcomes?: Outcome[];
   outcomesIconSet?: IndustryIconSet;
   resultsHeading?: string;
@@ -103,6 +105,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { id: "6", title: "High Dependency on Manual Labour", icon: "challengeIcon6", description: "All processes relied on individuals, not procedures. One mistake would impact the stock level, accounting entries, or daily summaries and cause a series of errors." },
       { id: "7", title: "Difficulty Scaling Operations", icon: "challengeIcon7", description: "The manual structure was unable to match the increasing business demands. The system was not flexible or automated to support long-term growth and productivity." },
     ],
+    strategyHead: "A Structured Path to Success",
     strategyIntro: "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks and establish a foundation for digital precision.",
     strategySteps: [
       { title: "Workflow Assessment", description: "We started auditing how Al-Asif handled their sales, stock turnover, purchases, and financial accounting. We understood each process to identify where errors and time loss were occurring." },
@@ -116,6 +119,7 @@ export const caseStudiesData: CaseStudyData[] = [
     outcomesIntro: "The transformation fundamentally changed how Al-Asif operates, ensuring the business is automated, accurate, and ready for future expansion.",
     outcomesHeading: "How Everything Changed",
     outcomesIconSet: "alAsifCasestudyIcons",
+    outcomesBanner: "/assets/case-studies/outcome-banner.webp",
     outcomes: [
       { id: "1", title: "Seamless Operations", icon: "outcomeIcon1", description: "Through Owners Inventory, Al-Asif managed to have a system where sales, inventory, and accounting went hand in hand. Manual errors were eliminated, and everything became smooth." },
       { id: "2", title: "Real-Time Visibility", icon: "outcomeIcon2", description: "Managers received real-time information regarding stocks, sales, and financial status. Decisions previously made in hours might be made in minutes, and the data was precise." },
@@ -136,43 +140,72 @@ export const caseStudiesData: CaseStudyData[] = [
       { heading: "Automation", value: "100%", label: "Profit & loss reports" },
     ],
   },
-  // {
-  //   id: "2",
-  //   companyName: "BrightHome",
-  //   founderQuote: {
-  //     overview: "BrightHome Appliances struggled with seasonal demand, delayed order fulfillment, and poor visibility across multiple warehouses. After reviewing their sales, inventory, and supply workflows, we built a system that brought everything into one place. It provided live stock updates, automated order handling, and clearer sales forecasts, helping them reduce overstock, improve delivery speed, and increase profitability during peak seasons.",
-  //     text: "We started using Owners Inventory during our peak season, and it honestly changed the game. It gave us real-time visibility into every warehouse, so we could fill orders faster and cut down on overstock. The team found it easy to use, and it took the guesswork out of our daily decisions.",
-  //     author: "Sarah Johnson",
-  //     authorTitle: "Retail Pro COO",
-  //   },
-  //   image: "/assets/home-page-images/client-image-1.webp",
-  //   backgroundImage: "/assets/home-page-images/isolation-mode.webp",
-  //   ctaText: "Read Case Study",
-  // },
-  // {
-  //   id: "3",
-  //   companyName: "Tech Gear",
-  //   founderQuote: {
-  //     overview: "Tech Gear's manual, disconnected systems for sales, inventory, and finance were causing major delays and inaccuracies as they grew. We integrated their operations into one platform to automate billing, sync inventory in real time, and provide clear financial dashboards. This eliminated their data chaos, giving them reliable stock, faster fulfillment, and actionable insights for growth.",
-  //     text: "Before this system we were always guessing with our stock and chasing billing errors. Now everything is in one place. We have live inventory, clean invoices and clear reports. It took the stress out of daily work. Now we can focus on growing the business.",
-  //     author: "Mike Chen",
-  //     authorTitle: "Tech Gear Founder",
-  //   },
-  //   image: "/assets/home-page-images/client-image-1.webp",
-  //   backgroundImage: "/assets/home-page-images/isolation-mode.webp",
-  //   ctaText: "Read Case Study",
-  // },
-  // {
-  //   id: "4",
-  //   companyName: "Urban Threads",
-  //   founderQuote: {
-  //     overview: "Urban Threads was struggling to synchronize manufacturing with sales, leading to chronic stock issues. We implemented a system that links factory data directly to their retail and online inventory. This provides a single, real-time view of production and demand, enabling them to correct stock imbalances and align output with actual customer orders.",
-  //     text: "This system fixed our biggest headache. It finally connected our factory production to our actual sales. Now we make what we sell, and we've stopped wasting money on the wrong inventory.",
-  //     author: "Emma Davis",
-  //     authorTitle: "Urban Threads Director",
-  //   },
-  //   image: "/assets/home-page-images/client-image-1.webp",
-  //   backgroundImage: "/assets/home-page-images/isolation-mode.webp",
-  //   ctaText: "Read Case Study",
-  // }
+   {
+    id: "2",
+    image: "/assets/home-page-images/client-image-1.webp",
+    backgroundImage: "/assets/home-page-images/isolation-mode.webp",
+    ctaText: "Read Case Study",
+
+    // New schema data
+    slug: "bright-home",
+    companyName: "BrightHome Transformation:",
+    tagline: "Smarter Inventory, Faster Fulfillment",
+    subtitle: "Connecting inventory, warehouse, and order systems into a single one real-time platform for better accuracy, faster operations, and scalable growth.",
+    heroStats: [
+      { percentage: "42%", description: " Reduction in Overstock" },
+      { percentage: "38%", description: "Reduction in Order Processing Time" },
+      { percentage: "100%", description: "Inventory Accuracy Across Warehouses" },
+    ],
+    founderQuote: {
+      heading: "How BrightHome Took Control of Growth",
+      overview: "BrightHome Appliances approached Owners Inventory at a time when their current systems were unable to accommodate the need to grow fast and seasonal surges. Isolated tools, paper-based tracking, and sluggish reporting were triggering delays in fulfillment and inventory errors in warehouses. They required one solid, trusting platform to have real-time visibility, simplify order processing, and be ready to expect peak sales seasons.",
+      text: "Owners Inventory gave us one system to manage our inventory and orders in real time. It’s made everything much smoother and more accurate.",
+      author: "Basit Saleem",
+      authorTitle: "BrightHome CEO",
+    },
+    challengesHead: "When Growth Started Hurting Operations",
+    challengesIntro: "When BrightHome Appliances started expanding, their gaps in operations were more apparent particularly in peak seasons. Instead of expected profit seasons turned into stressful periods of delays, mismanagement, and missed opportunities.",
+    challengesIconSet: "alAsifCasestudyIcons",
+    challenges: [
+      { id: "1", title: "Seasonal Demand Pressure", icon: "challengeIcon1", description: "The demand increased within certain months, yet it was not matched with inventory planning. Appliances that sold fast cleared stock more quickly and the slow sellers accumulated, damaging sales and cash flow." },
+      { id: "2", title: "Multi-Warehouse Visibility Lapses", icon: "challengeIcon2", description: "Inventory was distributed across various warehouses and lacked a single source of truth. There was a problem with teams not being able to find stock in real time, resulting in incorrect commitments and delivery failures." },
+      { id: "3", title: "Order Fulfillment Delays", icon: "challengeIcon3", description: "Orders handling was not coordinated with systems. This led to delayed deliveries, missed delivery schedules, and more complaints among customers during peak season." },
+      { id: "4", title: "Overstock & Dead Inventory", icon: "challengeIcon4", description: "BrightHome often overstocked some of the products without proper forecasting. Capital remained tied up in dead stock, and in-demand products were out of stock." },
+      { id: "5", title: "Weak Reporting & Forecasting", icon: "challengeIcon5", description: "Tools and spreadsheets were used to maintain sales and inventory. The management had no clear understanding of how to forecast demand, plan procurement, or make business decisions in time." },
+    ],
+    strategyHead: "A Clear Plan For Complex Operations",
+    strategyIntro: "To address the problems facing BrightHome, we worked on exploring their end-to-end operations. Our strategy was based on bringing clarity, control and scalability without disrupting business operations.",
+    strategySteps: [
+      { title: "Operational Assessment", description: "We did an in-depth analysis of the sales flow, inventory management, and warehouse operations of BrightHome. This assisted us in determining bottlenecks, inefficiencies, and gaps that led to delays and stock mismatches." },
+      { title: "Demand Pattern Analysis", description: "Past sales information was examined to gain insight into seasonality and product flow. This also enabled us to strategize a way that could accommodate demand surges without overstocking or shortages." },
+      { title: "Process Mapping", description: "We tracked stock flow within warehouses and sales channels. We plotted every step, and this helped find the point where automation and system-level control were required." },
+      { title: "Data Centric Decision Framework", description: "We focused on centralized reporting and real-time insights. This ensured that the management made quick and informed decisions using the right and real-time information." },
+      { title: "Technology Integration Strategy", description: "We connected the new system to BrightHome’s legacy sales platforms, accounting, and warehouse management systems. This eliminated data inconsistencies and created a data environment in which all processes were integrated." },
+      { title: "Workflow Automation", description: "We removed manual work in the process and introduced workflow automation for inventory management, order management and reporting. This removed errors, made the process faster, and allowed staff to do other value-added tasks." },
+      { title: "Team Enablement", description: "We provided BrightHome training on the new system and process changes. Tight processes, training, and support allowed staff to easily adopt the new system for future use." },
+    ],
+    outcomesHeading: "Clear Control, Measurable Impact",
+    outcomesIntro: "Under the new system, BrightHome Appliances changed the way it managed inventory, orders and seasonal demand. Previously existing pain points became growth-supporting strengths.",
+    outcomesIconSet: "alAsifCasestudyIcons",
+    outcomesBanner: "/assets/case-studies/outcome-banner.webp",
+    outcomes: [
+      { id: "1", title: "Faster Order Fulfillment", icon: "outcomeIcon1", description: "Real-time visibility of the stock and the automated workflows led to a dramatic decrease in the order processing time. The customers were getting their appliances much quicker, even on peak seasons." },
+      { id: "2", title: "Inventory Accurac", icon: "outcomeIcon2", description: "Inventory tracking of all warehouses in real time eradicated conjecture. The level of stock turned out to be dependable and minimised any mistakes and increased confidence in planning." },
+      { id: "3", title: "Reduced Overstock", icon: "outcomeIcon3", description: "BrightHome experienced smarter forecasting, which allowed it to match purchase with actual demand. The inventory was reduced and this released the working capital and storage areas." },
+      { id: "4", title: "Improved Seasonal Readiness", icon: "outcomeIcon4", description: "Sales peaks were no longer chaotic. BrightHome was ready to go into high demand times with the right products, in the right places." },
+      { id: "5", title: "Stronger Profitability", icon: "outcomeIcon5", description: "The improved margins were a direct result of better stock control, fewer delays and improved sales fulfillment. Seasonal campaigns were more cost effective and predictable." },
+      { id: "6", title: "Better Decision-Making", icon: "outcomeIcon6", description: "Centralised and real-time data and reporting enabled management to see the big picture. Decisions that were once intuitive  could be backed up with data, and were made quicker and with greater confidence." },
+    ],
+    resultsHeading: "Measurable Business Results",
+    resultsSubheading: "BrightHome Appliances saw improvements in inventory, service level and profits after trusting Owners Inventory. Their results were tracked and measured to see actual business results.",
+    resultMetrics: [
+      { heading: "Inventory Accuracy", value: "100%", label: "Real-time synchronization across all warehouses" },
+      { heading: "Reduction in Overstock", value: "42%", label: "Freed up warehouse capacity and funds" },
+      { heading: "Faster Order Processing", value: "38%", label: "Automated workflows improved fulfillment speed" },
+      { heading: "Fewer Late Deliveries", value: "35%", label: "Higher on-time delivery rate during busy times" },
+      { heading: "more Stock Turnover", value: "30%", label: "Higher Stock Turnover of popular products" },
+      { heading: "Fewer Order Cancellations", value: "25%", label: "Better stock availability across channels" },
+      { heading: "Increase in Seasonal Sales", value: "22%", label: "Increased sales during peak times " },
+    ],
+  },
 ];
