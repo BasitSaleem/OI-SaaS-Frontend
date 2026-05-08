@@ -186,7 +186,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'shoe-stores-pos-system',
     title: 'Shoe Stores POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/shoe-stores-pos-system.svg",
     category: 'retailer',
     type: 'pos',
   },
