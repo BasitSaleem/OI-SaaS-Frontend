@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/ecommerce-store-inventory-management-software/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/ecommerce-store-inventory-management-software/why-chose-banner.webp";
 
@@ -36,8 +37,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-ecommerce"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

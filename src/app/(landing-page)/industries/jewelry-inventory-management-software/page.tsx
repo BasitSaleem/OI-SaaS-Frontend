@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/jewelry-inventory-management-software/jewelary-store-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/jewelry-inventory-management-software/jewelary-store-why-chose-banner.webp";
 
@@ -40,8 +41,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-jewelry-inventory"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/small-businesses-inventory-management-software/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/small-businesses-inventory-management-software/why-chose-banner.webp";
 
@@ -37,8 +38,10 @@ import DisclaimerHotel from "@/components/pages/industries-page/DisclaimerHotel"
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-small-business"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

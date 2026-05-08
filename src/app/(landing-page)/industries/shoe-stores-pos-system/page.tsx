@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/shoes-store-pos/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/shoes-store-pos/why-chose-banner.webp";
 
@@ -40,8 +41,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-shoe-stores"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -58,27 +61,27 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Coffee shop POS system that speeds up counter orders, captures custom drink details, automates kitchen routing, syncs inventory in real time, processes multiple payment methods, and connects in-store, online, and delivery channels from one unified dashboard.",
+                "description": "Shoe store POS software that tracks every size, style, brand, and category in real time, speeds up checkout with barcode scanning, manages returns and exchanges, syncs inventory across multiple branches and online channels, and provides detailed sales and trend analytics for footwear retailers.",
                 "featureList": [
-                  "Fast counter order capture with custom drink modifiers",
-                  "Automatic order routing to preparation stations",
-                  "Real-time inventory tracking for ingredients",
-                  "Multiple payment options including cards and contactless",
-                  "Built-in digital and printed receipt system",
-                  "Custom menu and price adjustment tools",
-                  "Multi-location management from one dashboard",
-                  "Centralized sales dashboard with real-time visibility",
-                  "Role-based access for staff",
-                  "Online order and delivery platform integration",
-                  "Detailed sales and peak-hour analytics",
-                  "Integrations with CRM, analytics, and payment gateways"
+                  "Complete variant management for sizes, styles, brands, and categories",
+                  "Fast checkout with barcode scanning and smart item search",
+                  "Real-time inventory tracking across all variants",
+                  "Seamless returns and exchange handling",
+                  "Customer profiles with sizes, history, and loyalty points",
+                  "Multi-branch inventory and pricing sync",
+                  "E-commerce integration with automatic stock updates",
+                  "Smart sales and seasonal trend reports",
+                  "Employee roles, permissions, and activity tracking",
+                  "Discount and promotion management across branches",
+                  "Supplier and purchase order management",
+                  "Centralized price control from a single dashboard"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "Point of Sale System for Shoes Stores | Owners Inventory",
+                "name": "POS System for Shoe Stores | Owners Inventory",
                 "url": "https://www.ownersinventory.com/industries/shoe-stores-pos-system",
-                "description": "Run your shoes store with fast counter ordering, real-time inventory tracking, multi-payment processing, and unified online and delivery sales using Owners Inventory's POS system for shoes stores.",
+                "description": "Manage every size, style, and brand with real-time variant tracking, fast checkout, smooth returns, and multi-branch sync using Owners Inventory's POS system for shoe stores.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -103,7 +106,7 @@ const Page = () => {
                     {
                       "@type": "ListItem",
                       "position": 3,
-                      "name": "Shoes Stores",
+                      "name": "Shoe Stores Pos System",
                       "item": "https://www.ownersinventory.com/industries/shoe-stores-pos-system"
                     }
                   ]
@@ -128,8 +131,8 @@ const Page = () => {
               },
               {
                 "@type": "Product",
-                "name": "Shoes Store POS System",
-                "description": "POS software designed for shoes stores and shoes stores to handle fast counter ordering, custom drink modifiers, automated order routing, real-time ingredient tracking, multi-payment processing, online and delivery integration, and multi-location management from a single dashboard.",
+                "name": "Shoe Store POS System",
+                "description": "POS software designed for shoe and footwear stores to manage size, style, and brand variants, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, manage suppliers, and generate detailed sales and trend reports from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -154,9 +157,9 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Ayesha M"
+                        "name": "Footwear Retailer"
                       },
-                      "reviewBody": "Managing the peak morning rush became easier. Orders move faster from counters to the kitchen, and the setup keeps everything organized without confusion.",
+                      "reviewBody": "This POS enabled us to bill faster and handle size and style changes without confusion. It is simple for our staff and quick for our customers.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -176,9 +179,9 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Amanda K"
+                        "name": "Shoe Store Owner"
                       },
-                      "reviewBody": "Our payments, orders, and inventory stay in sync. The software helped us reduce manual effort and simplified daily operational management.",
+                      "reviewBody": "Our shoe store had problems with stock management and returns. Owners Inventory POS keeps everything current, returns are simple to handle, and reports are clear and easy to understand.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -198,9 +201,31 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Samantha B"
+                        "name": "Multi-Branch Footwear Retailer"
                       },
-                      "reviewBody": "As our shoes store expanded, the software scaled smoothly. Managing multiple orders is now much simpler than before.",
+                      "reviewBody": "It used to take hours to sync stock across multiple branches, but the POS system for shoe stores reflects inventory immediately, and billing is quick even during peak time. Reports clearly show top-selling shoes.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Shoe Boutique Owner"
+                      },
+                      "reviewBody": "It was difficult to keep track of hundreds of shoes, sizes, and styles, but with Owners Inventory POS, everything is organized, all variants can be tracked, exchanges are easy, and customer profiles help us understand preferences.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -220,86 +245,86 @@ const Page = () => {
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "What makes your POS suitable for shoes stores?",
+                    "name": "How does this POS system handle sizes and styles?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Our POS for shoes stores handles fast data entry, custom order details, and quick checkout procedures at the counter. It provides consistent performance during the morning rush and keeps daily shoes store tasks streamlined."
+                      "text": "Our POS system for footwear stores tracks individual sizes, styles, and brands separately, ensuring that stock remains updated and errors are reduced."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does Owners Inventory manage custom coffee orders?",
+                    "name": "Is it able to handle multiple branches?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "It captures every order detail precisely, such as coffee type, milk, size, sugar quantity, and other modifiers. This helps staff deliver the exact order the customer has asked for, which increases satisfaction."
+                      "text": "Yes. Inventory, sales, prices, and reports stay synchronized across all branches. Stock transfers can take place on demand from a single dashboard."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does it handle inventory for shoes stores?",
+                    "name": "Does the POS support returns and exchanges?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Owners Inventory effectively manages inventory operations by providing real-time visibility into stock levels, organizing items by category, and automating stock deduction after each order is completed."
+                      "text": "Yes. Returns and exchanges are handled efficiently, and every action is documented to ensure nothing is lost or overlooked."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How will your POS help my shoes store grow?",
+                    "name": "Is it possible to integrate my online shop?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "By improving process flow, reducing errors, and managing customer data, it helps shoes stores increase efficiency, revenue, and overall growth. The system supports long-term goals with advanced features to handle large volumes of data."
+                      "text": "Yes. Our shoe store POS keeps online and retail inventory updated in real time, preventing duplication and overselling."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it easy for staff to learn and use the system?",
+                    "name": "Is it easy for staff to learn?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Our shoes store POS is well-designed and easy to use. Staff do not require specific technical training to use Owners Inventory effectively."
+                      "text": "Yes. The interface is simple, and employees can pick it up in a few hours, saving training time and avoiding disruption to operations."
                     }
                   }
                 ]
               },
               {
                 "@type": "HowTo",
-                "name": "How Owners Inventory POS Manages Shoes Store Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines shoes store operations from counter ordering to inventory sync.",
+                "name": "How Owners Inventory Manages Shoe Store Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines shoe store inventory management from acquisition to reporting and analysis.",
                 "step": [
                   {
                     "@type": "HowToStep",
                     "position": 1,
-                    "name": "Ordering from the Counter",
-                    "text": "Customers place orders at the counter using the POS system. Staff capture orders quickly with a few clicks, including custom drink modifiers, ensuring precise order entry from the start."
+                    "name": "Inventory Acquisition",
+                    "text": "When new shoes are added, the POS system captures size, style, price, and supplier information. This prevents stock shortages and pricing mistakes."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 2,
-                    "name": "Automatic Order Routing",
-                    "text": "After the order is confirmed, it is automatically sent to the correct preparation station, whether for coffee brewing or other items. This removes verbal coordination and improves staff efficiency."
+                    "name": "Stock Organization and Storage",
+                    "text": "The POS system organizes inventory clearly. Products are sorted by brand, category, and season, making them easy to locate and manage."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 3,
-                    "name": "Preparation Tracking",
-                    "text": "Kitchen and barista staff monitor orders from the dashboard in real time. This keeps preparation status visible and improves coordination between counter and prep teams."
+                    "name": "Inventory Tracking",
+                    "text": "The POS tracks stock movement in real time across sales, returns, and transfers between branches, ensuring accurate visibility at every location."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 4,
-                    "name": "Payment Processing",
-                    "text": "Customers complete payment using cash, cards, or contactless methods. The system records transaction details instantly and updates daily sales data for accurate financial records."
+                    "name": "Supplier and Purchasing",
+                    "text": "Stores can manage suppliers, purchase orders, and delivery schedules to make smarter restocking decisions for fast-moving and seasonal footwear."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 5,
-                    "name": "Inventory Data Sync",
-                    "text": "Once the order is completed, the system automatically updates inventory levels for ingredients, providing real-time data for better stock management."
+                    "name": "Order Fulfillment",
+                    "text": "Orders are processed accurately, ensuring the correct size and style are delivered to customers. This reduces returns and improves satisfaction."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 6,
                     "name": "Reporting and Analysis",
-                    "text": "Detailed reports show sales performance, stock movement, and peak hour insights, helping shoes store owners plan smarter purchases and improve profitability."
+                    "text": "The system generates reports on best-selling products, low stock, profits, and branch performance, supporting smarter buying and inventory decisions."
                   }
                 ]
               }
@@ -354,7 +379,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={SHOES_STORE_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description="Footwear stores require a POS system that is safe and precise. Sales, returns and discounts are safely managed in the owner's Inventory POS. It secures financial information, customer information, and transactions by granting permission access according to role. Proper records decrease billing errors and fraud, and well-arranged data keep stores abreast with taxation and audit standards."
       />
 

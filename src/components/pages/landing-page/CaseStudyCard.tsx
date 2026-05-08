@@ -93,8 +93,8 @@ export default function CaseStudyCard({
           </div>
 
           <div
-            className={`bg-contain bg-center bg-no-repeat ${
-              hideCTA ? "min-h-[460px] max-h-[470px]" : ""
+            className={`bg-contain bg-center bg-no-repeat  ${
+              hideCTA ? "min-h-[330px] lg:min-h-[460px] max-h-[470px]" : "min-h-[460px] lg:min-h-[460px]"
             }`}
             style={{
               backgroundImage: `url(${study.backgroundImage})`,
@@ -106,7 +106,7 @@ export default function CaseStudyCard({
               width={400}
               height={300}
               className={`w-full h-auto object-contain ${
-                hideCTA ? "min-h-[450px] max-h-[455px]" : ""
+                hideCTA ? "min-h-[340px] lg:min-h-[450px] max-h-[455px]" : "min-h-[450px]"
               }`}
             />
           </div>

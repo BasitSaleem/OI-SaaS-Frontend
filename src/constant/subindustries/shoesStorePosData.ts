@@ -102,7 +102,7 @@ export const SHOES_STORE_FEATURE_CARDS: FeatureCardData[] = [
         buttonColor: "var(--primary-purple)",
         list: [
             { listheading: "POS Sales Management"},
-            { listheading: "E-commerce Sales and Operations"},
+            { listheading: "Ecommerce Sales and Operations"},
             { listheading: "Single Multichannel Control"},
         ]
     },

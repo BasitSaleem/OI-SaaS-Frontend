@@ -1,4 +1,5 @@
 import { caseStudiesData, Challenge, StrategyStep } from "@/constant/caseStudiesData/caseStudiesData";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import MainHeading from "@/components/pages/typography/MainHeading";
@@ -14,6 +15,31 @@ export async function generateStaticParams() {
   return caseStudiesData.map((study) => ({
     slug: study.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const caseStudy = caseStudiesData.find(
+    (study) => study.slug === resolvedParams.slug
+  );
+
+  if (!caseStudy) {
+    return {
+      title: "Case Study Not Found | Owners Inventory",
+    };
+  }
+
+  return {
+    title: `${caseStudy.companyName} | Owners Inventory`,
+    description: caseStudy.subtitle,
+    alternates: {
+      canonical: `https://ownersinventory.com/case-studies/${caseStudy.slug}`,
+    },
+  };
 }
 
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -55,7 +81,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
        />
 
         <IndustryWorkflowSection
-          title="A Structured Path to Success"
+          title={caseStudy.strategyHead || "A Structured Path to Success"}
           miniTitle= {caseStudy.strategyTitle || "Our Approach"}
           description={caseStudy.strategyIntro || "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks."}
           items={caseStudy.strategySteps?.map((step: StrategyStep, index: number) => ({
@@ -71,7 +97,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           description={caseStudy.outcomesIntro || ""}
           outcomes={caseStudy.outcomes || []}
           iconSet={caseStudy.outcomesIconSet}
-          bottomImage="/assets/case-studies/outcome-banner.webp"
+          bottomImage={caseStudy.outcomesBanner || "/assets/case-studies/outcome-banner.webp"}
         />
 
         <ResultsInNumbers 

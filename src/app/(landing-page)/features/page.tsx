@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import React from 'react';
+import Script from "next/script";
 
 // 🔥 Dynamic Initializing Components
 const EmpoweredSection = dynamic(() => import('@/components/pages/features-page/EmpoweredSection'));
@@ -26,8 +27,10 @@ import {
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-features"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/auto-parts-inventory-management-software/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/auto-parts-inventory-management-software/why-chose-banner.webp";
 
@@ -39,8 +40,10 @@ import {
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-auto-parts"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/furniture-inventory-management-software/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/furniture-inventory-management-software/why-chose-banner.webp";
 
@@ -36,8 +37,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-furniture-inventory"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -297,7 +300,7 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="Furniture Inventory Management System for Real-Time Stock Control"
+          title="Furniture Inventory Management software for Real-Time Stock Control"
         description="A furniture business needs accuracy, speed, and absolute control of inventory and sales. Furniture products are usually large, have various forms, and need to be tracked appropriately. Manual stock handling may cause errors, delays and loss of revenue. The furniture inventory management software makes life easier with the stock tracking, sales updates and reporting in one system."
         image={heroBanner}
         imageClassName="max-w-[1000px]"

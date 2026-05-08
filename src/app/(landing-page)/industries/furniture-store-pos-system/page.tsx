@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/furniture-store-pos/furniture-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/bakery-pos/why-chose-banner.webp";
 
@@ -41,8 +42,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-furniture-pos"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

@@ -1,5 +1,6 @@
 import "../globals.css";
 import React from "react";
+import Script from "next/script";
 import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 
 import HeroSection2 from "@/components/common-components/HeroSection2";
@@ -33,8 +34,10 @@ import {
 export default function Home() {
   return (
     <>
-      <script
+      <Script
+        id="schema-home"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
