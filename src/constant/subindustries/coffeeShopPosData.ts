@@ -213,7 +213,7 @@ export const COFFEE_SHOP_TESTIMONIALS = [
     },
     {
         id: "3",
-        name: "Samantha B",
+        name: "Alexander Reed",
         title: "Coffee & Beverage Center Owner​",
         image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
         text: "As our coffee shop expanded, the software scaled smoothly. Managing multiple orders is now much simpler than before.",

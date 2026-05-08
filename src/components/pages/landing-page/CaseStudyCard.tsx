@@ -25,12 +25,17 @@ export default function CaseStudyCard({
   hideNavigation = false
 }: CaseStudyCardProps) {
   return (
-    <div className="h-full grid grid-col-1 md:grid-cols-12 gap-y-8 md:gap-x-5 justify-center items-center">
-      {/* Header */}
-      <div className="md:col-span-6 lg:col-span-7 xl:col-span-8 relative z-[10]">
-        <h3 className="mb-6 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">
+    <section>
+       <div className="w-full">
+      <h3 className="mb-5 md:mb-9 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">
           {study.companyName}
         </h3>
+        </div>
+   
+    <div className="h-full grid grid-col-1 md:grid-cols-12 gap-y-8 md:gap-x-5 justify-center items-start">
+      {/* Header */}
+      <div className="md:col-span-6 lg:col-span-7 relative z-[10]">
+        
         <div className="flex flex-col items-end">
           <div className={`bg-[var(--background-halfwhite)] rounded-tl-[20px] rounded-bl-[20px] lg:rounded-tl-[28px] lg:rounded-bl-[28px] p-6 ${
             !hideCTA 
@@ -47,7 +52,7 @@ export default function CaseStudyCard({
             </p>
           </div>
           {!hideCTA && (
-            <div className="flex justify-between items-stretch gap-x-4 w-full">
+            <div className="flex justify-between items-stretch gap-x-4 xl:gap-x-6 w-full">
               <div className="flex items-center justify-center mt-4 w-full lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%] h-12">
                 <ButtonSm
                   url={`/case-studies/${study.slug}`}
@@ -67,7 +72,7 @@ export default function CaseStudyCard({
       </div>
 
       {/* Quote Section */}
-      <div className="md:col-span-6 lg:col-span-5 xl:col-span-4">
+      <div className="md:col-span-6 lg:col-span-5">
         <div className="relative ">
           <div className="flex items-start lg:items-center gap-x-6">
             <Image
@@ -78,7 +83,7 @@ export default function CaseStudyCard({
               className="w-9 h-[33px]"
             />
             <div className="flex flex-col gap-1">
-              <p className="font-semibold text-[32px] lg:text-[32px] font-['Onest']  lg:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
+              <p className="font-semibold text-[32px] lg:text-[38px] font-['Onest']  lg:leading-[100%] leading-[130%] text-[[var(--text-dark)]]">
                 {study.founderQuote?.author}
               </p>
               <p className="px-4 py-2 font-medium text-base leading-[150%] text-[var(--primary-purple)] w-fit bg-[var(--background-purple-light)] font-['onest'] rounded-full">
@@ -88,7 +93,9 @@ export default function CaseStudyCard({
           </div>
 
           <div
-            className="bg-contain bg-center bg-no-repeat min-h-[550px]"
+            className={`bg-contain bg-center bg-no-repeat ${
+              hideCTA ? "min-h-[460px] max-h-[470px]" : ""
+            }`}
             style={{
               backgroundImage: `url(${study.backgroundImage})`,
             }}
@@ -98,10 +105,12 @@ export default function CaseStudyCard({
               alt={study.founderQuote?.author || "Author"}
               width={400}
               height={300}
-              className="w-full h-full object-contain"
+              className={`w-full h-auto object-contain ${
+                hideCTA ? "min-h-[450px] max-h-[455px]" : ""
+              }`}
             />
           </div>
-          <p className="text-[var(--text-dark)] p-4 lg:p-6 font-['onest'] italic text-xl leading-8 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
+          <p className="text-[var(--text-dark)] p-4 lg:p-5 font-['onest'] italic text-xl md:text-base lg:text-lg leading-7 absolute bottom-0 bg-[#FFF7D7] rounded-xl border-[5px] border-white">
             “{study.founderQuote?.text}”
           </p>
         </div>
@@ -157,5 +166,6 @@ export default function CaseStudyCard({
         </div>
       )}
     </div>
+     </section>
   );
 }

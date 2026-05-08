@@ -354,7 +354,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={COFFEE_SHOP_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description="Every transaction is recorded securely. The private financial data of customers is protected with security protocols. It ensures accurate payment tracking and controlled system usage with role-based access features."
         secondDescription="It promotes privacy and keeps cafes and bakeries compliant with operational standards while maintaining reliable data across all POS activities."
       />
