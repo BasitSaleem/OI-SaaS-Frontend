@@ -82,7 +82,7 @@ export const caseStudiesData: CaseStudyData[] = [
     heroStats: [
       { percentage: "45%", description: "Reduction in Operational Work Hours" },
       { percentage: "90%", description: "Surge in Inventory Accuracy" },
-      { percentage: "30%", description: "Faster Billing Speed." },
+      { percentage: "30%", description: "Faster Billing Speed" },
     ],
     founderQuote: {
       heading: "The Beginning of Al-Asif’s Transformation",
