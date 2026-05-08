@@ -49,7 +49,7 @@ interface ResultsInNumbersProps {
 
 const ResultsInNumbers: React.FC<ResultsInNumbersProps> = ({
   title = "How Their Operational Efficiency Increased",
-  badge = "Results in Numbers",
+  badge,
   description = "The implementation of Owners Inventory POS transformed manual friction into high-performance digital operations.",
   metrics = [],
   gradientBackground,

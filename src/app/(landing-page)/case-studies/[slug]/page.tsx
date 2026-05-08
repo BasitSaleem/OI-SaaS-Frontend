@@ -43,6 +43,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
        />
        <UnifiedPlatform
          isCaseStudy={true}
+         title={caseStudy.challengesTitle || "The Challenge"}
          heading={caseStudy.challengesHead || "Operational Challenges"}
          paragraph={caseStudy.challengesIntro || ""}
          cards={caseStudy.challenges?.map((challenge: Challenge) => ({
@@ -55,7 +56,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         <IndustryWorkflowSection
           title={caseStudy.strategyHead || "A Structured Path to Success"}
-          miniTitle="Our Approach"
+          miniTitle= {caseStudy.strategyTitle || "Our Approach"}
           description={caseStudy.strategyIntro || "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks."}
           items={caseStudy.strategySteps?.map((step: StrategyStep, index: number) => ({
             id: index + 1,
@@ -65,6 +66,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         />
 
         <CaseStudyOutcomes
+         badge={caseStudy.outcomesTitle || "The Difference Made"}
           heading={caseStudy.outcomesHeading || "How Everything Changed"}
           description={caseStudy.outcomesIntro || ""}
           outcomes={caseStudy.outcomes || []}
@@ -73,6 +75,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         />
 
         <ResultsInNumbers 
+          badge={caseStudy.resultTitle || "Results in Numbers"}
           title={caseStudy.resultsHeading}
           description={caseStudy.resultsSubheading}
           metrics={caseStudy.resultMetrics}
