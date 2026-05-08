@@ -63,6 +63,17 @@ const furnitureInventoryManagementSoftwareIcons = dynamic(
 const posCoffeeShopStorePageIcons = dynamic(
   () => import("./posCoffeeShopStorePageIcons"),
 );
+const posShoesStorePageIcons = dynamic(
+  () => import("./posShoesStorePageIcons"),
+);
+const alAsifCasestudyIcons = dynamic(
+  () => import("./alAsifCasestudyIcons"),
+  
+);
+const bightHomeIcons = dynamic(
+  () => import("./bightHomeIcons"),
+  
+);
 
 export type IndustryIconSet =
   | "bakery"
@@ -85,7 +96,10 @@ export type IndustryIconSet =
   | "retail"
   | "beautySalon"
   | "coffeeShop"
-  | "furnitureInventory";
+  | "shoesStore"
+  | "furnitureInventory"
+  | "alAsifCasestudyIcons"
+  | "bightHomeIcons"
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -108,7 +122,10 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   retail: posRetailStorePageIcons,
   beautySalon: posBeautySalonStorePageIcons,
   coffeeShop: posCoffeeShopStorePageIcons,
+  shoesStore: posShoesStorePageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
+  alAsifCasestudyIcons: alAsifCasestudyIcons,
+  bightHomeIcons: bightHomeIcons
 };
 
 interface IndustryIconProps {
@@ -125,6 +142,7 @@ export default function IndustryIcon({
   className = "",
 }: IndustryIconProps) {
   if (!set || !REGISTRY[set]) {
+    console.warn(`IndustryIcon: Set "${set}" not found in registry.`);
     return null;
   }
 

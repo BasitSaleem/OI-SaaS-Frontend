@@ -11,6 +11,8 @@ export default function LandingPageClientWrapper({
 }) {
   const pathname = usePathname();
 
+  const isCaseStudyDetail = pathname.includes("/case-studies/") && pathname.split("/").length > 2;
+
   return (
     <>
       <LenisProvider>
@@ -18,7 +20,7 @@ export default function LandingPageClientWrapper({
           {children}
         </div>
       </LenisProvider>
-      <Footer />
+      {!isCaseStudyDetail && <Footer />}
     </>
   );
 }

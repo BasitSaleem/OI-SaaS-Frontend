@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/furniture-inventory-management-software/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/furniture-inventory-management-software/why-chose-banner.webp";
 
@@ -36,8 +37,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-furniture-inventory"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -297,7 +300,7 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="Furniture Inventory Management System for Real-Time Stock Control"
+          title="Furniture Inventory Management software for Real-Time Stock Control"
         description="A furniture business needs accuracy, speed, and absolute control of inventory and sales. Furniture products are usually large, have various forms, and need to be tracked appropriately. Manual stock handling may cause errors, delays and loss of revenue. The furniture inventory management software makes life easier with the stock tracking, sales updates and reporting in one system."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
@@ -342,7 +345,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={FURNITURE_INVENTORY_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy and Compliance"
+        title="Security, Accuracy and Compliance."
         description= "All production and inventory activities are recorded effectively by the system. Only authorized personnel will have access, minimizing mistakes and unauthorized activities."
         secondDescription="It maintains a comprehensive audit trail for accountability and compliance. Real-time tracking improves stock and production tracking. Accuracy and reliability are improved by automated reporting."
       />
@@ -370,7 +373,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="FAQS"
-          paragraph="Find answers to frequently asked questions about our furniture inventory management solution."
+          paragraph="Here are some commonly asked questions about our furniture inventory management software to help you better understand how the system works."
           faqs={FURNITURE_INVENTORY_FAQS}
           buttonText="Start Now"
         />

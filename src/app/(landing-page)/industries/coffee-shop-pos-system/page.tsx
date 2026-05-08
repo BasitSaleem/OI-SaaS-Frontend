@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import heroBanner from "../../../../../public/assets/industries-pages/coffee-shop-pos/hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/industries-pages/coffee-shop-pos/why-chose-banner.webp";
 
@@ -40,8 +41,10 @@ import IndustriesHardwareControl from "@/components/pages/industries-page/Indust
 const Page = () => {
   return (
     <>
-      <script
+      <Script
+        id="schema-coffee-shop"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -354,7 +357,7 @@ const Page = () => {
       <IndustriesFeaturesSection features={COFFEE_SHOP_FEATURE_CARDS} />
 
       <SecurityCompliance
-        title="Security, Accuracy, and Compliance"
+        title="Security, Accuracy, and Compliance."
         description="Every transaction is recorded securely. The private financial data of customers is protected with security protocols. It ensures accurate payment tracking and controlled system usage with role-based access features."
         secondDescription="It promotes privacy and keeps cafes and bakeries compliant with operational standards while maintaining reliable data across all POS activities."
       />

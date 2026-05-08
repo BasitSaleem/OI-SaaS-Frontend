@@ -1,6 +1,7 @@
 import PricingPage from '@/components/pages/Pricings/PricingPage';
 import { PRICING_FAQS } from '@/constant/pricingFaqData';
 import React from 'react';
+import Script from "next/script";
 
 
 const Page: React.FC = () => {
@@ -165,8 +166,10 @@ const Page: React.FC = () => {
 
   return (
     <div>
-      <script
+      <Script
+        id="schema-pricing"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <PricingPage />

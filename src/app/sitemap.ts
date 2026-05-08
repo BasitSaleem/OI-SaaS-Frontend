@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "beauty-salon-pos-system",
         "furniture-inventory-management-software",
         "coffee-shop-pos-system",
+        "shoe-stores-pos-system",
     ];
 
 

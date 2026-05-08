@@ -51,16 +51,48 @@ const chaos: Chaos[] = [
   },
 ];
 
+
+const DEFAULT_GRADIENT_BACKGROUND = `
+ 
+  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.98) 18%,
+    rgba(255, 255, 255, 0.85) 35%,
+    rgba(255, 255, 255, 0.00) 50%,
+    rgba(255, 255, 255, 0.00) 100%
+  ),
+  radial-gradient(900px 650px at 12% 8%,
+    rgba(207, 181, 249, 0.55) 0%,
+    rgba(207, 181, 249, 0.18) 45%,
+    rgba(207, 181, 249, 0.00) 75%
+  ),
+  radial-gradient(900px 650px at 88% 10%,
+    rgba(160, 215, 255, 0.55) 0%,
+    rgba(160, 215, 255, 0.18) 45%,
+    rgba(160, 215, 255, 0.00) 75%
+  ),
+ 
+  linear-gradient(
+    135deg,
+     rgba(175, 205, 255, 0.70) 0%,
+     rgba(160, 230, 245, 0.70) 30%,
+    rgba(210, 185, 255, 0.90) 70%
+  )
+`;
+
 interface TurningChaosProps {
   title: string;
   miniTitle?: string;
   description: string;
+  gradientBackground?: string;
 }
 
 const TurningChaos: React.FC<TurningChaosProps> = ({
   title,
   description,
   miniTitle,
+  gradientBackground = DEFAULT_GRADIENT_BACKGROUND,
 }) => {
   const chaosRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const imageRef = useRef<HTMLDivElement | null>(null);
@@ -121,13 +153,14 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
   return (
     <div className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px] lg:mt-[100px] md:mt-28 mt-20">
       <div
-        className={`relative  flex flex-col items-center justify-center w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[var(--background-halfwhite)] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] backdrop-blur-xl`}
+        className={`relative z-1  flex flex-col items-center justify-center  w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[var(--background-halfwhite)] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] `}
         style={{
-          backgroundImage: `linear-gradient(180deg, var(--white-color) 20%, transparent 100%),
-          linear-gradient(90deg, rgba(var(--primary-teal-rgb), 0.3) 30%, rgba(var(--primary-purple-rgb), 0.4) 60%, rgba(var(--primary-purple-rgb), 0.3) 100%)`,
+          backgroundImage: `linear-gradient(180deg, var(--white-color) 20%, transparent 100%)`,
+           background: gradientBackground,
         }}
       >
-        <div className="flex wrapper flex-col items-center justify-center w-full">
+        <div className="w-full absolute blur-3xl left-0 right-0 z-2 h-full"></div>
+        <div className="relative z-10 flex wrapper flex-col items-center justify-center w-full">
           <MainHeading className="text-center mx-auto md:max-w-screen-sm xl:max-w-5xl xl:mb-8 lg:mb-6 mb-5">
             {title} <span className="inline sm:block">{miniTitle}</span>
           </MainHeading>
@@ -174,6 +207,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
             />
           </div>
         </div>
+        
       </div>
     </div>
   );

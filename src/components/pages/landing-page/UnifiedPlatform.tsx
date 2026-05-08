@@ -6,11 +6,9 @@ import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 import { ArrowDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  HOME_UNIFIED_CARDS,
-  HOME_UNIFIED_HEADING,
-  HOME_UNIFIED_PARAGRAPH,
-} from "@/constant/landingPage/unifiedPlatformData";
+import IndustryIcon, {
+  IndustryIconSet,
+} from "@/components/icons/IndustryIconRegistry";
 
 export interface UnifiedPlatformCard {
   id?: string | number;
@@ -20,15 +18,24 @@ export interface UnifiedPlatformCard {
 }
 
 interface UnifiedPlatformProps {
-  heading?: string;
-  paragraph?: string;
-  cards?: UnifiedPlatformCard[];
+   title?: string;
+  heading: string;
+  paragraph: string;
+  cards: UnifiedPlatformCard[];
+  textAlign?: "center" | "left";
+  /** The name of the icon set to use (e.g. "bakery", "retail") */
+  iconSet?: IndustryIconSet;
+  isCaseStudy?: boolean;
 }
 
-export default function UnifiedPlatform({
-  heading = HOME_UNIFIED_HEADING,
-  paragraph = HOME_UNIFIED_PARAGRAPH,
-  cards = HOME_UNIFIED_CARDS,
+function UnifiedPlatform({
+   title,
+  heading,
+  paragraph,
+  cards,
+  textAlign = "left",
+  iconSet,
+  isCaseStudy = false,
 }: UnifiedPlatformProps) {
   const [showAll, setShowAll] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -49,18 +56,25 @@ export default function UnifiedPlatform({
   };
 
   // Calculate visible features - default to 4
-  const visibleCards = showAll ? cards : cards.slice(0, 4);
+  const visibleCards = showAll ? cards || [] : (cards || []).slice(0, 4);
 
   return (
-    <div
-      className="relative w-full lg:mt-[100px] md:mt-40 mt-28"
-      aria-label="Unified Platform Section"
-    >
-      <section ref={sectionRef} className="wrapper">
+    <div className="relative w-full" aria-label="Unified Platform Section">
+      <section
+        ref={sectionRef}
+        className="wrapper lg:pt-[100px] md:pt-20 pt-[60px]"
+      >
         <div className="flex flex-col items-center justify-center gap-10 py-10 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
           {/* Text Column */}
           <div className="w-full order-1">
             <div className="flex flex-col items-center justify-center">
+              {isCaseStudy && (
+                <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
+                  <span className="py-2 px-6 text-base lg:text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
+                    {title}
+                  </span>
+                </div>
+              )}
               <MainHeading className="text-center mb-4">{heading}</MainHeading>
               <Paragraph className="text-center mb-6">{paragraph}</Paragraph>
             </div>
@@ -71,27 +85,38 @@ export default function UnifiedPlatform({
               <AnimatePresence>
                 {visibleCards.map((card, index) => (
                   <motion.div
-                    key={card.id || index}
+                    key={index}
                     layout
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="w-full py-5 px-4.5 md:p-5 lg:p-8 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white"
+                    className="w-full p-6 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white flex flex-col md:grid md:grid-rows-subgrid md:row-span-3 gap-0"
                   >
-                    <div className="w-fit p-[11px] flex items-center justify-center mb-[18px] md:mb-5 lg:mb-10 rounded-xl border-5 border-[var(--background-halfwhite)]">
-                      <Image
-                        src={card.icon}
-                        alt={`${card.title} Icon`}
-                        width={56}
-                        height={56}
-                        className="h-9 w-9 lg:w-14 lg:h-14"
-                      />
+                    <div className="w-[66px] h-[66px] flex items-center justify-center mb-[18px] md:mb-5  rounded-xl border-5 border-[var(--background-halfwhite)]">
+                      {card.icon.startsWith("/") ? (
+                        <Image
+                          src={card.icon}
+                          alt={`${card.title} Icon`}
+                          width={56}
+                          height={56}
+                          className="h-9 w-9 lg:w-11 lg:h-11 flex items-center justify-center"
+                        />
+                      ) : (
+                        <IndustryIcon
+                          set={iconSet}
+                          name={card.icon}
+                          size={56}
+                          className="h-9 w-9 lg:w-11 lg:h-11 flex items-center justify-center child-svg-full"
+                        />
+                      )}
                     </div>
-                    <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 mb-3 lg:mb-4 font-['onest'] font-semibold text-[var(--text-dark)]">
-                      {card.title}
-                    </h3>
-                    <p className="text-sm md:text-base font-['onest'] leading-6 text-[var(--text-grey)]">
+                    <div className="flex-1 mb-3 lg:mb-4">
+                      <h3 className="text-xl lg:text-2xl leading-8 lg:leading-10 font-['onest'] font-semibold text-[var(--text-dark)]">
+                        {card.title}
+                      </h3>
+                    </div>
+                    <p className="text-base font-['onest'] leading-6 text-[var(--text-grey)]">
                       {card.description}
                     </p>
                   </motion.div>
@@ -100,7 +125,7 @@ export default function UnifiedPlatform({
             </div>
 
             {/* See More/Less Button */}
-            {cards.length > 4 && (
+            {(cards?.length || 0) > 4 && (
               <div className="md:mt-10 mt-6 flex items-center justify-center">
                 <button
                   onClick={handleToggleShowAll}
@@ -124,3 +149,4 @@ export default function UnifiedPlatform({
   );
 }
 
+export default React.memo(UnifiedPlatform);

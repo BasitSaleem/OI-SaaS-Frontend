@@ -243,7 +243,7 @@ export const FURNITURE_INVENTORY_TESTIMONIALS = [
         id: "2",
         name: "Jessica Martinez",
         title: "Operations Manager",
-        image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+        image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
         text: "This system has greatly enhanced our overall efficiency, it has provided us with a well-structured approach to managing the raw materials and finished furniture products and the reports are easy to comprehend and very helpful in planning and decision making.",
     },
     {
@@ -369,13 +369,13 @@ export const FURNITURE_INVENTORY_TESTIMONIAL_FEATURES = [
         id: "7",
         title: "Safe Access",
         description: "Role-based access control ensures that only authorized staff can access sensitive business data.",
-        icon: "testWhychoseIcon6",
+        icon: "testWhychoseIcon7",
     },
     {
         id: "8",
         title: "Integration and Add-Ons",
         description: "The system is integrated with the ERP systems, accounting systems, and supply chain systems. It also facilitates barcode scanning and automation tools. Other features such as supplier management, production planning, and alerts are useful in enhancing the business performance and growth.",
-        icon: "testWhychoseIcon6",
+        icon: "testWhychoseIcon8",
     },
     
 ];

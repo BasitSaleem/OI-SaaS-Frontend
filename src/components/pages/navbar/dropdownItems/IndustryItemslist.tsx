@@ -116,14 +116,14 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'auto-parts-inventory-management-software',
     title: 'Auto Parts Inventory Management',
-    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/auto-parts-inventory.svg",
     category: 'wholesale',
     type: 'inventory',
   },
   {
     key: 'ecommerce-store-inventory-management-software',
     title: 'Ecommerce Store Inventory Management',
-    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/ecommerce-store-pos-system.svg",
     category: 'ecommerce',
     type: 'inventory',
   },
@@ -158,14 +158,14 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'small-businesses-inventory-management-software',
     title: 'Small Business Inventory Management',
-    icon: "/assets/header-dropdown-images/industries-dropdown/hotel.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/small-business-inventory-software.svg",
     category: 'retailer',
     type: 'inventory',
   },
   {
     key: 'beauty-salon-pos-system',
     title: 'Beauty Salon POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/beauty-saloon-pos-system.svg",
     category: 'retailer',
     type: 'pos',
   },
@@ -181,6 +181,13 @@ export const industriesItems: IndustryItem[] = [
     title: 'Coffee Shop POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
     category: 'restaurant',
+    type: 'pos',
+  },
+  {
+    key: 'shoe-stores-pos-system',
+    title: 'Shoe Stores POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    category: 'retailer',
     type: 'pos',
   },
 
@@ -392,6 +399,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
   'coffee-shop-pos-system': [
     { title: 'Quick Checkout & Billing' },
     { title: 'Order & Ingredient Sync' },
+    { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'shoes-store-pos-system': [
+    { title: 'Fast Counter Checkout' },
+    { title: 'Size & Variant Tracking' },
     { title: 'Customer Loyalty Programs' },
     { title: 'Sales Analytics & Reports' },
   ],

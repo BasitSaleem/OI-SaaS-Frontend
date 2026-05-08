@@ -1,5 +1,6 @@
 import "../globals.css";
 import React from "react";
+import Script from "next/script";
 import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 
 import HeroSection2 from "@/components/common-components/HeroSection2";
@@ -16,6 +17,11 @@ import ToolsSection from "@/components/pages/landing-page/ToolsSection";
 import SmartTools from "@/components/pages/landing-page/SmartTools";
 import FaqSection from "@/components/pages/landing-page/FAQSection";
 import CalltoActionBottom from "@/components/pages/landing-page/CalltoActionBottom";
+import {
+  HOME_UNIFIED_CARDS,
+  HOME_UNIFIED_HEADING,
+  HOME_UNIFIED_PARAGRAPH,
+} from "@/constant/landingPage/unifiedPlatformData";
 
 import {
   HOME_FAQS,
@@ -28,8 +34,10 @@ import {
 export default function Home() {
   return (
     <>
-      <script
+      <Script
+        id="schema-home"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -132,7 +140,11 @@ export default function Home() {
 
           <SmartWaytoSyncndSellSection />
 
-          <UnifiedPlatform />
+           <UnifiedPlatform
+            heading={HOME_UNIFIED_HEADING}
+            paragraph={HOME_UNIFIED_PARAGRAPH}
+            cards={HOME_UNIFIED_CARDS}
+          />
 
           <VoicesRealBusiness />
 
