@@ -21,6 +21,8 @@ interface CaseStudyHeroProps {
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
   heroStats?: { percentage: string; description: string }[];
+  primaryColor?: string;
+  secondaryColor?: string;
 }
 
 const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
@@ -30,6 +32,8 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
   ctaDesc = "Book a Free Demo",
   variant = "animation1",
   heroStats,
+  primaryColor = "#1AD1B9",
+  secondaryColor = "#795CF5",
 }) => {
   useHeaderAnimation();
   useHeroAnimations(variant);
@@ -112,15 +116,23 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
             >
               {/* CONTENT ABOVE BACKGROUND LAYER */}
               <div
-                className="relative z-[2] owner-inventory-hero__content grid grid-cols-12 items-center justify-center w-full wrapper p-3 md:p-4 lg:p-8 rounded-[30px]"
-                style={{
-                  backgroundImage: `url(${bgImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                className="relative z-[10] owner-inventory-hero__content overflow-hidden grid grid-cols-12 items-center justify-center w-full wrapper p-3 md:p-4 lg:p-8 rounded-[30px] bg-white"
+                // style={{
+                //   backgroundImage: `url(${bgImage})`,
+                //   backgroundSize: "cover",
+                //   backgroundPosition: "center",
+                // }}
               >
+                <div 
+                  className="absolute bottom-6 z-[-1] right-6 md:top-[284px] lg:right-8 lg:top-[50px] blur-[190px] md:blur-[230px] w-[230px] md:w-[400px] lg:w-[448px] h-[300px] md:h-[400px] lg:h-[406px] rounded-full"
+                  style={{ backgroundColor: secondaryColor }}
+                ></div>
+                <div 
+                  className="absolute bottom-[60px] z-[-2] right-[60px] md:top-[284px] md:right-[300px] lg:right-[370px] lg:top-[87px] blur-[220px] md:blur-[200px] h-[270px] w-[180px] lg:h-[277px] lg:w-[278px] rounded-full"
+                  style={{ backgroundColor: primaryColor }}
+                ></div>
                 <div className="col-span-12 lg:col-span-6 flex flex-col items-center justify-center lg:items-start lg:justify-start">
-                  <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#1AD1B9] to-[#795CF5] inline-block mb-3">
+                  <div className="p-[1px]  rounded-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] inline-block mb-3">
                     <span className="py-2 px-6 text-base lg:text-lg leading-[170%] font-['onest'] text-[#231F20] font-normal bg-[#F3F4F6] rounded-full backdrop-blur-sm block text-center">
                       Case Study
                     </span>

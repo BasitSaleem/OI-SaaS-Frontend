@@ -17,8 +17,8 @@ export interface CaseStudy {
   backgroundImage: string;
   ctaText: string;
   slug?: string;
-  companyName?: string;
   founderQuote?: {
+    authorCompanyName?: string;
     overview: string;
     text: string;
     author: string;

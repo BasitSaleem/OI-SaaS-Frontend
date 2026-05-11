@@ -62,6 +62,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         description={caseStudy.subtitle}
         heroStats={caseStudy.heroStats}
         variant="animation2"
+        primaryColor={caseStudy.primaryColor}
+        secondaryColor={caseStudy.secondaryColor}
        />
        <CaseStudyOverview 
          heading={caseStudy.founderQuote?.heading || ""}

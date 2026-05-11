@@ -27,20 +27,24 @@ export default function CaseStudyCard({
   return (
     <section>
        <div className="w-full">
-      <h3 className="mb-5 md:mb-9 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">
-          {study.companyName}
-        </h3>
+        <h3 className="mb-5 md:mb-9 font-semibold text-[var(--text-dark)] lg:text-[60px] md:text-[32px] text-[48px] lg:leading-[100%] leading-[130%] font-['Onest']">
+            {study.founderQuote?.authorCompanyName}
+          </h3>
         </div>
    
-    <div className="h-full grid grid-col-1 md:grid-cols-12 gap-y-8 md:gap-x-5 justify-center items-start">
+    <div className={ `h-full grid grid-col-1 md:grid-cols-12 gap-y-8 md:gap-x-5 justify-center items-stretch ${
+            !hideCTA 
+              ? "items-stretch" 
+              : "items-start"
+          }`}>
       {/* Header */}
-      <div className="md:col-span-6 lg:col-span-7 relative z-[10]">
+      <div className="md:col-span-6 lg:col-span-7  relative z-[10]">
         
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col h-full items-end">
           <div className={`bg-[var(--background-halfwhite)] rounded-tl-[20px] rounded-bl-[20px] lg:rounded-tl-[28px] lg:rounded-bl-[28px] p-6 ${
             !hideCTA 
-              ? "rounded-tr-[20px] lg:rounded-tr-[28px] rounded-br-none lg:rounded-br-none" 
-              : "rounded-r-[20px] lg:rounded-r-[28px] "
+              ? "rounded-tr-[20px] lg:rounded-tr-[28px] h-auto rounded-br-none lg:rounded-br-none" 
+              : "rounded-r-[20px] lg:rounded-r-[28px] h-full"
           }`}>
             {!hideCTA && (
             <p className="text-[var(--primary-teal)] lg:text-[32px] text-2xl lg:leading-[100%] leading-[165%] font-normal font-['Onest'] mb-4">
@@ -94,7 +98,7 @@ export default function CaseStudyCard({
 
           <div
             className={`bg-contain bg-center bg-no-repeat  ${
-              hideCTA ? "min-h-[330px] lg:min-h-[460px] max-h-[470px]" : "min-h-[460px] lg:min-h-[460px]"
+              hideCTA ? "min-h-[450px] md:min-h-[380px] lg:min-h-[460px] max-h-[470px]" : "min-h-[460px] lg:min-h-[460px]"
             }`}
             style={{
               backgroundImage: `url(${study.backgroundImage})`,
@@ -106,7 +110,7 @@ export default function CaseStudyCard({
               width={400}
               height={300}
               className={`w-full h-auto object-contain ${
-                hideCTA ? "min-h-[340px] lg:min-h-[450px] max-h-[455px]" : "min-h-[450px]"
+                hideCTA ? "min-h-[450px] md:min-h-[380px] lg:min-h-[450px] max-h-[455px]" : "min-h-[450px]"
               }`}
             />
           </div>
@@ -118,7 +122,7 @@ export default function CaseStudyCard({
 
       {/* Mobile Navigation */}
       {!hideNavigation && (
-        <div className="md:hidden flex justify-center items-center gap-2 mb-16 lg:mb-[10px]">
+        <div className="md:hidden flex justify-center items-center gap-2 lg:mb-[10px]">
           <button
             onClick={prevSlide}
             className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(var(--text-dark-rgb),0.1)] border transition-colors border-[var(--border-light)] text-[var(--text-grey)] hover:bg-gray-50`}

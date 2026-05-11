@@ -6,6 +6,7 @@ export interface HeroStats {
 }
 
 export interface Quote {
+  authorCompanyName?: string; 
   heading?: string;
   text: string;
   author: string;
@@ -71,6 +72,8 @@ export interface CaseStudyData {
   resultsHeading?: string;
   resultsSubheading?: string;
   resultMetrics?: ResultMetric[];
+  primaryColor?: string;
+  secondaryColor?: string;
 }
 
 export const caseStudiesData: CaseStudyData[] = [
@@ -79,6 +82,8 @@ export const caseStudiesData: CaseStudyData[] = [
     image: "/assets/home-page-images/client-image-1.webp",
     backgroundImage: "/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
+    primaryColor: "#1AD1B9",
+    secondaryColor: "#795CF5",
 
     // New schema data
     slug: "al-asif",
@@ -91,6 +96,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { percentage: "30%", description: "Faster Billing Speed" },
     ],
     founderQuote: {
+      authorCompanyName: "AL-Asif",
       heading: "The Beginning of Al-Asif’s Transformation",
       overview: "Their business greatly relied on handwritten bills, manual record checks, and calculations in ledgers. There was a lack of structure and visibility in day-to-day activities. Stock shortages became a routine, delays on the billing side aggravated employees and clients alike, and the financial transparency always lagged. The management wanted precision, the workers wanted simplicity, and the whole business wanted a single point of truth, a single location where all things remained updated, interrelated, and free of errors.",
       text: "We require a single system to process our sales, inventory, and accounts correctly and immediately. We don't just want software; we want to eliminate manual effort.",
@@ -153,6 +159,8 @@ export const caseStudiesData: CaseStudyData[] = [
     image: "/assets/home-page-images/client-image-1.webp",
     backgroundImage: "/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
+    primaryColor: "#F95C5B", 
+    secondaryColor: "#795CF5",
 
     // New schema data
     slug: "bright-home",
@@ -165,6 +173,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { percentage: "100%", description: "Inventory Accuracy Across Warehouses" },
     ],
     founderQuote: {
+      authorCompanyName: "BrightHome",
       heading: "How BrightHome Took Control of Growth",
       overview: "BrightHome Appliances approached Owners Inventory at a time when their current systems were unable to accommodate the need to grow fast and seasonal surges. Isolated tools, paper-based tracking, and sluggish reporting were triggering delays in fulfillment and inventory errors in warehouses. They required one solid, trusting platform to have real-time visibility, simplify order processing, and be ready to expect peak sales seasons.",
       text: "Owners Inventory gave us one system to manage our inventory and orders in real time. It’s made everything much smoother and more accurate.",
@@ -214,6 +223,77 @@ export const caseStudiesData: CaseStudyData[] = [
       { heading: "more Stock Turnover", value: "30%", label: "Higher Stock Turnover of popular products" },
       { heading: "Fewer Order Cancellations", value: "25%", label: "Better stock availability across channels" },
       { heading: "Increase in Seasonal Sales", value: "22%", label: "Increased sales during peak times " },
+    ],
+  },
+
+  {
+    id: "3",
+    image: "/assets/home-page-images/client-image-1.webp",
+    backgroundImage: "/assets/home-page-images/isolation-mode.webp",
+    ctaText: "Read Case Study",
+    primaryColor: "#F95C5B", 
+    secondaryColor: "#1AD1B9",
+
+    // New schema data
+    slug: "urban-threads",
+    companyName: "Urban Threads Transformation:",
+    tagline: "Smarter Inventory, Smoother Production",
+    subtitle: "Connecting manufacturing and sales into a unified system that keeps production in sync with demand and reduces the gap between planning and execution.",
+    heroStats: [
+      { percentage: "38%", description: "Reduction in Excess Stock" },
+      { percentage: "45%", description: "Fewer Stockouts on Fast-Moving Items" },
+      { percentage: "98%", description: "Inventory Accuracy Across All Channels" },
+    ],
+    founderQuote: {
+      authorCompanyName: "Urban Threads", 
+      heading: "Urban Threads: Smarter Inventory, Smoother Production",
+      overview: "Urban Threads continued to experience stock mismatch, because there was no coordination between manufacturing and sales. Owners Inventory introduced a single system allowing the factory production information to be linked to retail and online inventory in real-time. This provided Urban Threads with one source of truth which made them balance their stock and match the manufacturing output against the real customer demand.",
+      text: "Since implementing this system, our operations have become much more streamlined. Everything is aligned perfectly now, which has significantly improved our stock accuracy and decision making. Our operations run more smoothly than they did before.",
+      author: "Jahanzaib",
+      authorTitle: "Urban Threads CEO",
+    },
+    challengesHead: "When Production and Sales Didn’t Speak",
+    challengesIntro: "Urban Threads had a problem of inability to connect systems in manufacturing, retail, and online sales. This invisibility led to constant stock shortages and slowness in decision-making.",
+    challengesIconSet: "urbansThreadsIcons",
+    challenges: [
+      { id: "1", title: "Manufacturing Blind Spots", icon: "challengeIcon1", description: "The factory teams lacked real-time sales information thus overmaking slow moving goods and leaving shortages of high demand products." },
+      { id: "2", title: "Inventory Mismatch", icon: "challengeIcon2", description: "The stock held at stores and on the Internet were often not equal to the available, which led to frequent shortages and large amounts of unsold goods." },
+      { id: "3", title: "Delayed Replenishment", icon: "challengeIcon3", description: "The lack of synchronized data meant that restocking decisions were usually reactive and not proactive leading to lost sales opportunities and customer dissatisfaction." },
+      { id: "4", title: "Limited Demand Insight", icon: "challengeIcon4", description: "The channels were not unified in sales trends and the leadership could not easily predict a need or match production to actual customer orders." },
+    ],
+    strategyHead: "Turning Disconnection into a Unified Strategy",
+    strategyIntro: "To solve these challenges, we focused on creating a connected ecosystem where manufacturing and sales worked together seamlessly.",
+    strategySteps: [
+      { title: "System Integration", description: "We linked factory systems to retail and online inventory. This guaranteed the organisation of production data and sales updates in a single, real time platform." },
+      { title: "Single Inventory View", description: "Stock, manufactured, in-store, as well as online, were consolidated into a single dashboard. Accurate inventory levels in all channels could be viewed immediately by the teams." },
+      { title: "Demand-Led Planning", description: "Planning of manufacturing was associated with sales trends. This enabled Urban Threads to manage output using actual customer orders and not estimates." },
+      { title: "Real-Time Updates", description: "Inventory was automatically updated throughout the production or sale of goods. This eliminated manual tracking and made quicker and more decisive decisions." },
+      { title: "Operational Assessment", description: "We analyzed end-to-end workflows across manufacturing, retail, and online sales to identify inefficiencies and data gaps." },
+      { title: "Demand Pattern Analysis", description: "Historical sales data was evaluated to understand product movement and demand trends, enabling better production planning." },
+      // { title: "Team Enablement", description: "We provided BrightHome training on the new system and process changes. Tight processes, training, and support allowed staff to easily adopt the new system for future use." },
+    ],
+    outcomesHeading: "Business Impact Achieved",
+    outcomesIntro: "Being fully connected in manufacturing and sales, Urban Threads had more control over inventory and production. Real-time visibility enabled the teams to respond more quickly and work confidently.",
+    outcomesIconSet: "urbansThreadsIcons",
+    outcomesBanner: "/assets/case-studies/urbanthreads-outcome-banner.webp",
+    outcomes: [
+      { id: "1", title: "Balanced Stock Levels", icon: "outcomeIcon1", description: "Stockouts and overstock were minimized. Inventory levels in all channels became predictable and stable." },
+      { id: "2", title: "Improved Production Accuracy", icon: "outcomeIcon2", description: "The production output was low relative to real sales. This reduced wastage and prevented unwarranted production cycles." },
+      { id: "3", title: "Faster Replenishment", icon: "outcomeIcon3", description: "Real time restocking decisions were made. Popular products were restocked before they went out of stock, and sales were saved." },
+      { id: "4", title: "Higher Sales Availability", icon: "outcomeIcon4", description: "Goods remained on sale both in shops and online. There were fewer out of stock cases among the customers." },
+      { id: "5", title: "Operational Efficiency", icon: "outcomeIcon5", description: "Substantial coordination and spreadsheet activities were removed. Teams saved time and could concentrate on strategic planning rather than firefighting." },
+      { id: "6", title: "Clear Decision-Making", icon: "outcomeIcon6", description: "Leadership acquired one source of truth. Guesswork in production and inventory management was eliminated by data-driven decisions." },
+    ],
+    resultsHeading: "Measurable Business Results",
+    resultsSubheading: "Urban Threads achieved significant improvements in inventory control, production efficiency, and sales performance after implementing Owners Inventory.",
+    resultMetrics: [
+      { heading: "Inventory Accuracy", value: "98%", label: "Across factory, retail, and online channels through real-time synchronization" },
+      { heading: "Reduction in Excess Stock", value: "38%", label: "Better alignment of production with actual demand" },
+      { heading: "Fewer Stockouts", value: "45%", label: "Improved availability of fast-moving products" },
+      { heading: "Improvement in Manufacturing Efficiency", value: "30%", label: "Reduced waste and optimized production cycles" },
+      { heading: "Faster Replenishment Cycles", value: "40%", label: "Real-time updates enabled quicker response to demand changes" },
+      { heading: "Increase in Product Availability", value: "25%", label: "Consistent stock across all sales channels" },
+      // { heading: "Increase in Seasonal Sales", value: "22%", label: "Increased sales during peak times " },
     ],
   },
 ];

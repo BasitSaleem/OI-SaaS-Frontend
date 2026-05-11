@@ -168,7 +168,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     },
     {
         id: 7,
-        title: "E-Commerce Integration",
+        title: "Ecommerce Integration",
         description:
             "Integrate your online shoe store with the POS system for a shoe store in order to automatically match the inventory. This eliminates manual processes and inventory mistakes.",
         imageSrc: "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card7.webp",

@@ -74,6 +74,10 @@ const bightHomeIcons = dynamic(
   () => import("./bightHomeIcons"),
   
 );
+const urbansThreadsIcons = dynamic(
+  () => import("./urbansThreadsIcons"),
+  
+);
 
 export type IndustryIconSet =
   | "bakery"
@@ -100,6 +104,7 @@ export type IndustryIconSet =
   | "furnitureInventory"
   | "alAsifCasestudyIcons"
   | "bightHomeIcons"
+  | "urbansThreadsIcons"
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -125,7 +130,8 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   shoesStore: posShoesStorePageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
   alAsifCasestudyIcons: alAsifCasestudyIcons,
-  bightHomeIcons: bightHomeIcons
+  bightHomeIcons: bightHomeIcons,
+  urbansThreadsIcons: urbansThreadsIcons
 };
 
 interface IndustryIconProps {

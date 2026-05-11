@@ -1054,7 +1054,7 @@ const icons = {
   ),
 };
 
-export default function alAsifCasestudyIcons({
+export default function bightHomeIcons({
   name,
   size = 48,
   className = "",
@@ -1069,5 +1069,5 @@ export default function alAsifCasestudyIcons({
 }
 
 // Export individual icons as well
-export { icons as alAsifCasestudyIconss };
+export { icons as bightHomeIcons };
   
