@@ -372,7 +372,7 @@ export const RETAIL_STORE_TESTIMONIAL_DATA = {
     paragraph: "", // Optional paragraph
     secondHeading: "Get Control of Your Inventory",
     secondDescription: "Our Best POS system for small stores will streamline your inventory and increase efficiency. Start now and discover how our solution can streamline your operations.",
-    whyChooseTitle: "Why Choose OI for Small Retail Stores?",
+    whyChooseTitle: "Why Choose Owners Inventory for Small Retail Stores?",
     whyChooseDescription: "Small retailers rely on us due to the fact that our system is designed to face challenges of daily life. We maintain your store lean, clean, and under control. Each tool is employed to aid you in developing confidently and clearly.",
 };
 
