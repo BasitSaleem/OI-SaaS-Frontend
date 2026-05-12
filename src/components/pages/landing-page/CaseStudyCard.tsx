@@ -118,7 +118,7 @@ export default function CaseStudyCard({
 
       {/* Mobile Navigation */}
       {!hideNavigation && (
-        <div className="md:hidden flex justify-center items-center gap-2 lg:mb-[10px]">
+        <div className="md:hidden flex justify-center items-center gap-2 mb-16 lg:mb-[10px]">
           <button
             onClick={prevSlide}
             className={`p-2 rounded-full shadow-[0_4px_6px_-4px_rgba(var(--text-dark-rgb),0.1)] border transition-colors border-[var(--border-light)] text-[var(--text-grey)] hover:bg-gray-50`}
