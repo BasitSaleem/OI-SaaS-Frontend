@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 
@@ -52,10 +53,13 @@ const ToolsSection = ({
                 key={tool.id}
                 className={`col-span-12 ${mdCol} ${lgCol} bg-white p-5 rounded-2xl flex flex-col gap-4 items-center justify-start`}
               >
-                <img
+                <Image
                   src={tool.image}
                   alt={tool.name}
+                  width={56}
+                  height={56}
                   className="w-14 h-14 object-contain"
+                  loading="lazy"
                 />
                 <p className="font-semibold text-[var(--text-dark)] font-['Onest'] lg:text-2xl text-xl md:leading-[100%] leading-[140%]">{tool.name}</p>
               </div>

@@ -259,7 +259,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     >
                       <Image
                         src="/assets/home-page-images/products.svg"
-                        alt="Pricing Image"
+                        alt="Products module icon"
                         width={33}
                         height={33}
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
@@ -275,7 +275,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     >
                       <Image
                         src="/assets/home-page-images/advance-report.svg"
-                        alt="Pricing Image"
+                        alt="Advance Reports module icon"
                         width={33}
                         height={33}
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
@@ -291,7 +291,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     >
                       <Image
                         src="/assets/home-page-images/inventory-system.svg"
-                        alt="Pricing Image"
+                        alt="Inventory Operations module icon"
                         width={33}
                         height={33}
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
@@ -306,7 +306,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     >
                       <Image
                         src="/assets/home-page-images/reports.svg"
-                        alt="Pricing Image"
+                        alt="Reports module icon"
                         width={33}
                         height={33}
                         className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
@@ -327,7 +327,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   </div>
                   <Image
                     src="/assets/home-page-images/fast-service.svg"
-                    alt="Pricing Image"
+                    alt="Fast Service"
                     ref={fastServiceImageRef}
                     width={51}
                     height={64}
@@ -343,7 +343,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                   </div>
                   <Image
                     src="/assets/home-page-images/safe-secure.svg"
-                    alt="Pricing Image"
+                    alt="Safe and Secure"
                     ref={safeSecureImageRef}
                     width={100}
                     height={118}
@@ -352,7 +352,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                   <Image
                     src="/assets/home-page-images/inventory-blur-icon.svg"
-                    alt="Pricing Image"
+                    alt="Inventory icon decorative"
                     ref={inventoryBlurIconRef}
                     width={120}
                     height={120}
@@ -361,7 +361,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                   <Image
                     src="/assets/home-page-images/inventory-icon.svg"
-                    alt="Pricing Image"
+                    alt="Inventory management icon"
                     ref={inventoryIconRef}
                     width={120}
                     height={120}

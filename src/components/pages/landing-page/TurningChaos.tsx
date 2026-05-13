@@ -201,6 +201,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
               alt="Chaos Into Clarity Dashboard"
               width={800}
               height={600}
+              loading="lazy"
               className="w-full h-auto"
             />
           </div>
