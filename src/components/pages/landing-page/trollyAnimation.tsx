@@ -1,9 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useSafariDetector } from "@/hooks/useSafariDetector";
-import { useVideoCache } from "@/hooks/useVideoCache";
 import { useTrollyAnimation } from "@/hooks/useTrollyAnimation";
 
 
@@ -27,52 +24,12 @@ const TrollyAnimation = () => {
         graphRef,
     } = useTrollyAnimation();
 
-    // const [isMobile, setIsMobile] = useState(false);
-    // const { shouldShowImage } = useSafariDetector();
-    // const { videoSrc } = useVideoCache(
-    //     "/videos-s3/home-page-videos/trolly-anim.webm",
-    // );
-
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setIsMobile(window.innerWidth < 768);
-    //     };
-
-    //     handleResize();
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener("resize", handleResize);
-    // }, []);
 
     return (
         <div
             ref={containerRef}
             className="w-full max-w-[358px] md:max-w-full relative grid grid-cols-2 mx-auto gap-0 gap-y-0 h-full"
         >
-            {/* {shouldShowImage || isMobile ? (
-              <Image
-                src="/assets/home-page-images/animations/trolly-image.webp"
-                alt="Smart sync and sell"
-                width={743}
-                height={460}
-                className="w-full h-auto rounded-3xl"
-                priority
-              />
-            ) : (
-              <video
-                className="w-full h-full object-cover rounded-3xl bg-white lazy-video"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source
-                  src={videoSrc}
-                  type="video/webm"
-                />
-                Your browser does not support the video tag.
-              </video>
-            )} */}
 
             <div className=" w-full min-h-[200px] lg:min-h-[290px] xl:min-h-[322px] rounded-tl-[20px] md:rounded-tl-[40px] relative bg-[#F3F4F6]">
                 <p

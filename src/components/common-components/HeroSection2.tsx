@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode, useRef, useEffect, useState } from "react";
+import { ReactNode, useRef, useEffect } from "react";
 import globalGsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
@@ -61,15 +61,9 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   // Refs
   const mainHeadingRef = useRef<HTMLHeadingElement>(null);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
-  // const homeHeroImageRef = useRef<HTMLImageElement>(null);
-  // const homeHeroImage1Ref = useRef<HTMLImageElement>(null);
-  // const homeHeroImage2Ref = useRef<HTMLImageElement>(null);
-  // const homeHeroImage3Ref = useRef<HTMLImageElement>(null);
-  // const homeHeroImage4Ref = useRef<HTMLImageElement>(null);
-  // const homeHeroImage5Ref = useRef<HTMLImageElement>(null);
   const productsImageRef = useRef<HTMLImageElement>(null);
   const advanceReportImageRef = useRef<HTMLImageElement>(null);
-  const homeHeroSecRef = useRef<HTMLImageElement>(null);
+  const homeHeroSecRef = useRef<HTMLDivElement>(null);
   const inventorySystemImageRef = useRef<HTMLImageElement>(null);
   const reportsImageRef = useRef<HTMLImageElement>(null);
   const fastServiceImageRef = useRef<HTMLImageElement>(null);
@@ -211,9 +205,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
               </div>
               {/* Heading */}
               <div className="owner-inventory-hero__content relative z-10 flex flex-col items-center justify-center w-full">
-                {/* <h1 className="owner-inventory-hero__content--title text-4xl md:text-[60px] xl:text-7xl leading-[48px] md:leading-[66px] xl:leading-[90px] text-center font-['Onest'] font-semibold mx-auto md:max-w-screen-sm xl:max-w-5xl lg:mt-[150px] text-[var(--text-dark)]">
-                {title}
-              </h1> */}
                 <div ref={mainHeadingRef}>
                   <h1 className="text-center xl:text-[64px] md:text-5xl  text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest'] xl:max-w-5xl lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
                     {title}
@@ -254,22 +245,6 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     <div
                       className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative z-[1] backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
                     >
-                    {/* <HeroImageSlider
-                    images={[
-                      "/assets/home-page-images/home-herofirst.webp",
-                      "/assets/home-page-images/girl.webp",
-                      "/assets/home-page-images/products.webp",
-                      "/assets/home-page-images/pos.webp",
-                      "/assets/home-page-images/warehouse.webp",
-                    ]}
-                    backgrounds={[
-                      "#E9E3F6",
-                      "#F1F6E3",
-                      "#E9E3F6",
-                      "#F1F6E3",
-                      "#E9E3F6",
-                    ]}
-                  /> */}
 
                     <div className="w-full h-full rounded-[40px] relative overflow-hidden owner-inventory-hero__video">
                       <HeroImageSlider
@@ -423,4 +398,4 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   );
 };
 
-export default React.memo(HeroSection2);
+export default HeroSection2;

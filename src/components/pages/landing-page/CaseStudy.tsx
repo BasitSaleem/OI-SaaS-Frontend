@@ -3,12 +3,8 @@
 
 import { useState } from "react";
 import MainHeading from "../typography/MainHeading";
-import ButtonOutline from "@/components/button/ButtonOutline";
-import CardHeading from "../typography/CardHeading";
 import Image from "next/image";
-import ButtonSm from "@/components/button/ButtonSm";
 
-import { ArrowUpRight } from "lucide-react";
 import CaseStudyCard from "./CaseStudyCard";
 
 export interface CaseStudy {
@@ -79,14 +75,6 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
           <MainHeading className="w-full max-w-full md:max-w-[65%] lg:max-w-[60%] gradient-text">
             Businesses Thriving with Owners Inventory
           </MainHeading>
-          {/* <div className="hidden md:flex">
-            <ButtonOutline
-              url="#"
-              text="View All Case Studies"
-              borderColor="var(--primary-purple)"
-              textColor="white"
-            />
-          </div> */}
         </div>
 
         {/* Navigation */}

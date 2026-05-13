@@ -1,18 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import globalGsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
-import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
 import ContactModal from "@/components/models/ContactModal";
 import TrollyAnimation from "./trollyAnimation";
 
 
-if (typeof window !== "undefined") {
-  globalGsap.registerPlugin(ScrollTrigger);
-}
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);

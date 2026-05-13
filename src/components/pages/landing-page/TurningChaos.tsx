@@ -7,8 +7,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
-import CardHeading from "../typography/CardHeading";
-import CardDesc from "../typography/CardDesc";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }

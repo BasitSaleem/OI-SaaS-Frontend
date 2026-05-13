@@ -1,5 +1,4 @@
 import "../globals.css";
-import React from "react";
 import Script from "next/script";
 import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 

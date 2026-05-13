@@ -1,6 +1,5 @@
 import React from "react";
 import MainHeading from "../typography/MainHeading";
-import CardHeading from "../typography/CardHeading";
 import Paragraph from "../typography/Paragraph";
 
 interface Tool {

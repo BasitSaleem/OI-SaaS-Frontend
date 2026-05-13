@@ -1,12 +1,10 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
-import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import IndustryCard from "./IndustryCard";
 import SubHeading from "../typography/SubHeading";
-import Link from "next/link";
 
 export interface IndustryItem {
   id?: string | number;
@@ -130,11 +128,6 @@ const IndustryPosShowcase = ({
           </SubHeading>
           <Paragraph className="">{paragraph}</Paragraph>
         
-        {/* <Link href= '#'>
-          <button  className="mt-6 bg-[var(--primary-purple)] text-sm md:text-base text-white px-[30px] py-5 rounded-full font-semibold hover:bg-[var(--primary-purple-dark)] transition-colors cursor-pointer font-['Onest']">
-            {buttonText}
-          </button>
-        </Link> */}
         </div>
         <div className="hidden md:flex items-center gap-4 mt-8 md:mt-0">
           <button

@@ -7,8 +7,11 @@ const nextConfig: NextConfig = {
   //     { protocol: "https", hostname: "owner-inventory.s3.us-east-1.amazonaws.com" },
   //   ],
   // },
-    experimental: {
-    inlineCss: true,  
+  images: {
+    minimumCacheTTL: 31536000,
+  },
+  experimental: {
+    inlineCss: true,
   },
 
   async headers() {
