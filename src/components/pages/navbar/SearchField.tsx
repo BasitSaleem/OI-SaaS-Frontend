@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import { useScrollLockEffect } from "@/context/ScrollLockContext";
 import Image from "next/image";
 import { useDevice } from "@/hooks/useDevice";
 
@@ -21,6 +22,8 @@ const SearchField: React.FC<SearchFieldProps> = ({
   const inputRef = useRef<HTMLInputElement>(null);
   const { isDesktop, isMounted } = useDevice();
 
+  useScrollLockEffect(variant === "navbar" && searchOpen);
+
   useEffect(() => {
     if (variant === "navbar" && searchOpen && inputRef.current) {
       inputRef.current.focus();
@@ -38,7 +41,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
       ? `absolute left-0 top-[100%] w-full h-fit bg-white shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-2xl transition-all duration-300 ${searchOpen ? "block" : "hidden"}`
       : "w-full";
   return (
-    <div id="searchDropdown" className={wrapperClasses}>
+    <div id="searchDropdown" data-lenis-prevent className={wrapperClasses}>
       <div
         className={`${variant === "navbar" ? "py-4 px-7" : "py-0 px-0 lg:px-7"} relative`}
       >

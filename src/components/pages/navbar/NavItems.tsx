@@ -72,9 +72,9 @@ const NavItems = () => {
           onToggle={() => toggle("features")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] lg:max-h-[450px] overflow-y-hidden overflow-x-hidden">
             {/* Left Section (3/12) - Categories */}
-            <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
+            <div className="lg:col-span-3 h-full px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
               <div className="space-y-1 ">
                 {featureCategories.map((category) => {
                   const categoryFeatures = featuresItems.filter(
@@ -150,42 +150,44 @@ const NavItems = () => {
                     }
                   </h3>
 
-                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
-                    {featuresItems
-                      .filter((item) => item.category === selectedCategory)
-                      .map((item) => (
-                        <Link
-                          key={item.key}
-                          href={`/features/${item.key.toLowerCase()}`}
-                          prefetch={false}
-                          className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
-                            selectedFeatureKey === item.key
-                              ? "border-[var(--primary-purple)] bg-purple-50 "
-                              : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
-                          } hover:bg-gray-50 transition-all duration-200`}
-                          onMouseEnter={() => setSelectedFeatureKey(item.key)}
-                          onClick={close}
-                        >
-                          <Image
-                            src={item.icon}
-                            alt={item.title}
-                            width={20}
-                            height={20}
-                            className="flex-shrink-0"
-                          />
-                          <span
-                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
-                    ${
-                      selectedFeatureKey === item.key
-                        ? "font-bold"
-                        : "font-medium"
-                    }
-                    `}
+                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto">
+                    <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
+                      {featuresItems
+                        .filter((item) => item.category === selectedCategory)
+                        .map((item) => (
+                          <Link
+                            key={item.key}
+                            href={`/features/${item.key.toLowerCase()}`}
+                            prefetch={false}
+                            className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
+                              selectedFeatureKey === item.key
+                                ? "border-[var(--primary-purple)] bg-purple-50 "
+                                : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
+                            } hover:bg-gray-50 transition-all duration-200`}
+                            onMouseEnter={() => setSelectedFeatureKey(item.key)}
+                            onClick={close}
                           >
-                            {item.title}
-                          </span>
-                        </Link>
-                      ))}
+                            <Image
+                              src={item.icon}
+                              alt={item.title}
+                              width={20}
+                              height={20}
+                              className="flex-shrink-0"
+                            />
+                            <span
+                              className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
+                      ${
+                        selectedFeatureKey === item.key
+                          ? "font-bold"
+                          : "font-medium"
+                      }
+                      `}
+                            >
+                              {item.title}
+                            </span>
+                          </Link>
+                        ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -194,15 +196,15 @@ const NavItems = () => {
             {/* Right Section (3/12) - Details Panel */}
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className=" border-l max-h-[350px] min-h-[400px] border-[var(--border-muted)] w-full pl-4  overflow-y-auto overflow-x-hidden 
-  [&::-webkit-scrollbar]:w-2
-  [&::-webkit-scrollbar]:block
-  [&::-webkit-scrollbar-track]:bg-gray-100
-  [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
-  [&::-webkit-scrollbar-thumb]:rounded-full
-  [&::-webkit-scrollbar-thumb]:hover:bg-[var(--text-muted-alt)]
-  [scrollbar-width:thin]
-  [scrollbar-color:var(--border-muted)_var(--background-halfwhite)]"
+                className=" border-l max-h-[400px] min-h-[400px] border-[var(--border-muted)] w-full pl-4  overflow-y-auto overflow-x-hidden 
+                [&::-webkit-scrollbar]:w-2
+                [&::-webkit-scrollbar]:block
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
+                [&::-webkit-scrollbar-thumb]:rounded-full
+                [&::-webkit-scrollbar-thumb]:hover:bg-[var(--text-muted-alt)]
+                [scrollbar-width:thin]
+                [scrollbar-color:var(--border-muted)_var(--background-halfwhite)]"
               >
                 <p className="mb-2 text-xs flex items-center gap-2 font-bold font-['Onest'] text-[var(--text-dark)]">
                   {
@@ -244,7 +246,7 @@ const NavItems = () => {
           onToggle={() => toggle("industries")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] lg:max-h-[450px] overflow-y-hidden overflow-x-hidden">
             {/* Left Section (3/12) - Categories */}
             <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
               <div className="space-y-1 w-full">
@@ -384,46 +386,48 @@ const NavItems = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
-                    {industriesItems
-                      .filter(
-                        (item) =>
-                          item.category === selectedIndustryCategory &&
-                          item.type === selectedIndustryType,
-                      )
-                      .map((item) => (
-                        <Link
-                          key={item.key}
-                          href={`/industries/${item.key.toLowerCase()}`}
-                          prefetch={false}
-                          className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
-                            selectedIndustryKey === item.key
-                              ? "border-[var(--primary-purple)] bg-purple-50"
-                              : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
-                          } hover:bg-gray-50 transition-all duration-200`}
-                          onMouseEnter={() => setSelectedIndustryKey(item.key)}
-                          onClick={close}
-                        >
-                          <Image
-                            src={item.icon}
-                            alt={item.title}
-                            width={20}
-                            height={20}
-                            className="flex-shrink-0"
-                          />
-                          <span
-                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
-                      ${
-                        selectedIndustryKey === item.key
-                          ? "font-bold"
-                          : "font-medium"
-                      }
-                    `}
+                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto">
+                    <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
+                      {industriesItems
+                        .filter(
+                          (item) =>
+                            item.category === selectedIndustryCategory &&
+                            item.type === selectedIndustryType,
+                        )
+                        .map((item) => (
+                          <Link
+                            key={item.key}
+                            href={`/industries/${item.key.toLowerCase()}`}
+                            prefetch={false}
+                            className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
+                              selectedIndustryKey === item.key
+                                ? "border-[var(--primary-purple)] bg-purple-50"
+                                : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
+                            } hover:bg-gray-50 transition-all duration-200`}
+                            onMouseEnter={() => setSelectedIndustryKey(item.key)}
+                            onClick={close}
                           >
-                            {item.title}
-                          </span>
-                        </Link>
-                      ))}
+                            <Image
+                              src={item.icon}
+                              alt={item.title}
+                              width={20}
+                              height={20}
+                              className="flex-shrink-0"
+                            />
+                            <span
+                              className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
+                        ${
+                          selectedIndustryKey === item.key
+                            ? "font-bold"
+                            : "font-medium"
+                        }
+                      `}
+                            >
+                              {item.title}
+                            </span>
+                          </Link>
+                        ))}
+                    </div>
                   </div>
                   {industriesItems.filter(
                     (item) =>

@@ -190,6 +190,7 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
+  
 
   
 ];

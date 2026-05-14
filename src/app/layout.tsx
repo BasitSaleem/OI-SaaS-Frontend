@@ -41,6 +41,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { ScrollLockProvider } from "@/context/ScrollLockContext";
+import LenisProvider from "@/components/pages/lenisProvider/LenixProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -89,37 +92,40 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${onest.variable} ${inter.variable} antialiased`}
       >
-        
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5LZ72NX8"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1435291848047613&ev=PageView&noscript=1"
-          />
-        </noscript>
-        <ScrollToTop />
-        <Navbar />
-        {children}
-        <ToastContainer
-          position="top-right"
-          autoClose={4000}
-          hideProgressBar={false}
-          newestOnTop
-          closeOnClick
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
+        <ScrollLockProvider>
+          <LenisProvider>
+            <noscript>
+              <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5LZ72NX8"
+                height="0"
+                width="0"
+                style={{ display: "none", visibility: "hidden" }}
+              ></iframe>
+            </noscript>
+            <noscript>
+              <img
+                height="1"
+                width="1"
+                style={{ display: "none" }}
+                src="https://www.facebook.com/tr?id=1435291848047613&ev=PageView&noscript=1"
+              />
+            </noscript>
+            <ScrollToTop />
+            <Navbar />
+            {children}
+            <ToastContainer
+              position="top-right"
+              autoClose={4000}
+              hideProgressBar={false}
+              newestOnTop
+              closeOnClick
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+          </LenisProvider>
+        </ScrollLockProvider>
       </body>
     </html>
   );

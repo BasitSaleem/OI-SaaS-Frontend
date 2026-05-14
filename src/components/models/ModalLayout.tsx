@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { ReactNode } from "react";
+import { useScrollLockEffect } from "@/context/ScrollLockContext";
 
 interface ModalProps {
   isOpen: boolean;
@@ -42,11 +43,13 @@ export default function Modal({
   children,
   gradientBackground = DEFAULT_GRADIENT_BACKGROUND // Add this parameter with default value
 }: ModalProps) {
+  useScrollLockEffect(isOpen);
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-[99999]">
       <div 
+        data-lenis-prevent
         className="rounded-2xl py-[40px] px-0 md:px-5 w-full backdrop-blur-md h-screen flex items-center justify-center shadow-xl relative bg-contain z-[10000] bg-center bg-no-repeat" 
         style={{ background: gradientBackground }}
       >

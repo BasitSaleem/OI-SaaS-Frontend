@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Children, useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import { createPortal } from "react-dom";
+import { useScrollLockEffect } from "@/context/ScrollLockContext";
 import { companyItems } from "./dropdownItems/Companylist";
 import { title } from "process";
 import Link from "next/link";
@@ -55,6 +56,8 @@ export default function OffcanvasMenu({
   const [openCatId, setOpenCatId] = useState<string | null>(null);
   const [expandedItemKey, setExpandedItemKey] = useState<string | null>(null);
   const [openIndustryType, setOpenIndustryType] = useState<"pos" | "inventory" | null>(null);
+
+  useScrollLockEffect(open);
 
   const toggleItem = (key: string) => {
     setExpandedItemKey((prev) => (prev === key ? null : key));
@@ -162,6 +165,7 @@ export default function OffcanvasMenu({
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation"
+        data-lenis-prevent
         className={clsx(
           "fixed top-0 right-0 h-[100dvh] bg-white shadow-lg transform transition-transform duration-300 ease-in-out w-64 z-[9999] lg:hidden flex flex-col", // optional tailwind width e.g. w-1/2
           open ? "translate-x-0" : "translate-x-full"
