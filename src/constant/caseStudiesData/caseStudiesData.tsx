@@ -201,6 +201,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { title: "Workflow Automation", description: "We removed manual work in the process and introduced workflow automation for inventory management, order management and reporting. This removed errors, made the process faster, and allowed staff to do other value-added tasks." },
       { title: "Team Enablement", description: "We provided BrightHome training on the new system and process changes. Tight processes, training, and support allowed staff to easily adopt the new system for future use." },
     ],
+    outcomesTitle: "The Outcome",
     outcomesHeading: "Clear Control, Measurable Impact",
     outcomesIntro: "Under the new system, BrightHome Appliances changed the way it managed inventory, orders and seasonal demand. Previously existing pain points became growth-supporting strengths.",
     outcomesIconSet: "bightHomeIcons",
@@ -236,7 +237,7 @@ export const caseStudiesData: CaseStudyData[] = [
 
     // New schema data
     slug: "urban-threads",
-    companyName: "Urban Threads Transformation:",
+    companyName: "Urban Threads Transformation",
     tagline: "Smarter Inventory, Smoother Production",
     subtitle: "Connecting manufacturing and sales into a unified system that keeps production in sync with demand and reduces the gap between planning and execution.",
     heroStats: [
@@ -272,6 +273,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { title: "Demand Pattern Analysis", description: "Historical sales data was evaluated to understand product movement and demand trends, enabling better production planning." },
       // { title: "Team Enablement", description: "We provided BrightHome training on the new system and process changes. Tight processes, training, and support allowed staff to easily adopt the new system for future use." },
     ],
+    outcomesTitle: "The Outcome",
     outcomesHeading: "Business Impact Achieved",
     outcomesIntro: "Being fully connected in manufacturing and sales, Urban Threads had more control over inventory and production. Real-time visibility enabled the teams to respond more quickly and work confidently.",
     outcomesIconSet: "urbansThreadsIcons",

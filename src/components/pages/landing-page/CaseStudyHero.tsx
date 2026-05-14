@@ -166,7 +166,7 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
                           i < 2
                             ? "col-span-12 md:col-span-4 lg:col-span-6"
                             : "col-span-12 md:col-span-4 lg:col-span-12"
-                        } flex items-center justify-center p-[3px] bg-[linear-gradient(11.61deg,rgba(255,255,255,0.4)_20.11%,rgba(255,255,255,0)_82.07%)] rounded-[24px]`}
+                        } flex items-center justify-center p-[3px] bg-[linear-gradient(360deg,rgba(255,255,255,0.4)_20.11%,rgba(255,255,255,0)_82.07%)] rounded-[24px]`}
                       >
                         <div
                           className={`bg-white/50 backdrop-blur-lg rounded-[24px] w-full h-full p-6 flex flex-col items-center`}

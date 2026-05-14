@@ -98,7 +98,7 @@ export default function CaseStudyCard({
 
           <div
             className={`bg-contain bg-center bg-no-repeat  ${
-              hideCTA ? "min-h-[450px] md:min-h-[380px] lg:min-h-[460px] max-h-[470px]" : "min-h-[460px] lg:min-h-[460px]"
+              hideCTA ? "min-h-[610px] md:min-h-[470px] lg:min-h-[460px] md:max-h-[470px]" : "min-h-[460px] lg:min-h-[460px]"
             }`}
             style={{
               backgroundImage: `url(${study.backgroundImage})`,
@@ -110,7 +110,7 @@ export default function CaseStudyCard({
               width={400}
               height={300}
               className={`w-full h-auto object-contain ${
-                hideCTA ? "min-h-[450px] md:min-h-[380px] lg:min-h-[450px] max-h-[455px]" : "min-h-[450px]"
+                hideCTA ? "min-h-[590px] md:min-h-[420px] lg:min-h-[450px] md:max-h-[455px]" : "min-h-[450px]"
               }`}
             />
           </div>
