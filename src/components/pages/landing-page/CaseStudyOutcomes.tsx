@@ -58,7 +58,7 @@ const CaseStudyOutcomes: React.FC<CaseStudyOutcomesProps> = ({
 
   return (
     <section
-      className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] mb-28 md:mb-20 lg:mb-[100px] lg:mt-[100px] md:mt-28 mt-20"
+      className="overflow-hidden lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] lg:mt-[100px] md:mt-28 mt-20"
       style={{ background: DEFAULT_GRADIENT_BACKGROUND }}
     >
       <div className="wrapper relative z-10">

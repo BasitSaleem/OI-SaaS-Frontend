@@ -33,6 +33,7 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
   const pathname = usePathname();
    const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout") || pathname.includes("/case-studies");
+  const isCaseStudyDetail = pathname.includes("/case-studies/") && pathname.split("/").length > 2;
 
   return (
     <footer
@@ -43,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
       }`}
       style={{ background: gradientBackground || DEFAULT_GRADIENT_BACKGROUND }}
     >
-      <div className="flex md:wrapper flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-t-[40px] md:rounded-[40px]">
+      <div className={`flex ${isCaseStudyDetail ? "" : "md:wrapper"} flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-t-[40px] md:rounded-[40px]`}>
         {/* Top Row */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-10">
           {/* Logo */}
