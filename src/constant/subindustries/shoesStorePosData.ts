@@ -363,10 +363,11 @@ export const SHOES_STORE_TESTIMONIAL_FEATURES = [
     },
     {
         id: "3",
-        title: "Branch Stock Accuracy",
-        description: "Inventory is constantly current in stores. This is the ideal POS system that retailers use in shoe stores because they avoid confusion in stocks.",
+        title: "Easy for Staff",
+        description: "The interface is clear and very easy. It becomes easily learned by the staff, mistakes are reduced, and training is minimal.",
         icon: "testWhychoseIcon3",
     },
+    
     {
         id: "4",
         title: "Customer Profiles",
@@ -375,16 +376,18 @@ export const SHOES_STORE_TESTIMONIAL_FEATURES = [
     },
     {
         id: "5",
-        title: "Sales Insights",
-        description: "Receive best-seller, slow-moving inventory, peak hours and employee performance reports. With trustworthy information, smart purchases can be made.",
+        title: "Branch Stock Accuracy",
+        description: "Inventory is constantly current in stores. This is the ideal POS system that retailers use in shoe stores because they avoid confusion in stocks.",
         icon: "testWhychoseIcon5",
     },
+
     {
         id: "6",
-        title: "Easy for Staff",
-        description: "The interface is clear and very easy. It becomes easily learned by the staff, mistakes are reduced, and training is minimal.",
+        title: "Sales Insights",
+        description: "Receive best-seller, slow-moving inventory, peak hours and employee performance reports. With trustworthy information, smart purchases can be made.",
         icon: "testWhychoseIcon6",
     },
+    
    
 ];
 
