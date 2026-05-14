@@ -28,7 +28,7 @@ const DEFAULT_GRADIENT_BACKGROUND = `
     rgba(160, 215, 255, 0.00) 75%
   ),
   linear-gradient(
-    90deg,
+    135deg,
     rgba(175, 205, 255, 0.50) 0%,
     rgba(160, 230, 245, 0.70) 30%,
     rgba(210, 185, 255, 0.70) 70%
