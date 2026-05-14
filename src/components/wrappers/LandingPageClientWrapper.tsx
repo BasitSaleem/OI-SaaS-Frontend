@@ -15,11 +15,11 @@ export default function LandingPageClientWrapper({
 
   return (
     <>
-      <LenisProvider>
+      {/* <LenisProvider> */}
         <div key={pathname}>
           {children}
         </div>
-      </LenisProvider>
+      {/* </LenisProvider> */}
       {!isCaseStudyDetail && <Footer />}
     </>
   );
