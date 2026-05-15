@@ -51,7 +51,7 @@ export default function CaseStudyCard({
               Overview
             </p>
             )}
-            <p className="text-[var(--text-grey)] font-['Onest'] text-xl leading-[180%] md:text-base lg:text-2xl md:leading-[165%] lg:leading-[52px]">
+            <p className="text-[var(--text-grey)] font-['Onest'] text-xl leading-[180%] md:text-lg lg:text-2xl md:leading-[165%] lg:leading-[52px]">
               {study.founderQuote?.overview}
             </p>
           </div>
