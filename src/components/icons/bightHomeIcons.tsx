@@ -1060,6 +1060,7 @@ export default function bightHomeIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div style={{ width: size, height: size }} className={className}>

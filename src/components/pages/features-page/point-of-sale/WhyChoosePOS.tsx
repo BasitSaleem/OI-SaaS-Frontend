@@ -21,7 +21,7 @@ interface WhyChoosePOSProps {
   mainVideo?: string;
   backgroundImage?: string | StaticImageData;
   /** The name of the icon set to use (e.g. "bakery", "retail") */
-  iconSet?: IndustryIconSet;
+  iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
 function WhyChoosePOS({

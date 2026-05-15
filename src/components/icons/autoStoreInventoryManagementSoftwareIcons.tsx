@@ -1162,6 +1162,7 @@ export default function clothingInventoryManagementSoftwareIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

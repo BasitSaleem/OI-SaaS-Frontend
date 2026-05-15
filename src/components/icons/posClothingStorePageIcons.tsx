@@ -1020,6 +1020,7 @@ export default function posClothingStorePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

@@ -79,6 +79,11 @@ const urbansThreadsIcons = dynamic(
   
 );
 
+const industriesTestmonialProfileIcons = dynamic(
+  () => import("./industriesTestmonialProfileIcons"),
+  
+);
+
 export type IndustryIconSet =
   | "bakery"
   | "bookstore"
@@ -105,6 +110,7 @@ export type IndustryIconSet =
   | "alAsifCasestudyIcons"
   | "bightHomeIcons"
   | "urbansThreadsIcons"
+  | "industriesTestmonialProfileIcons"
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -131,14 +137,16 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
   alAsifCasestudyIcons: alAsifCasestudyIcons,
   bightHomeIcons: bightHomeIcons,
-  urbansThreadsIcons: urbansThreadsIcons
+  urbansThreadsIcons: urbansThreadsIcons,
+  industriesTestmonialProfileIcons: industriesTestmonialProfileIcons
 };
 
 interface IndustryIconProps {
-  set?: IndustryIconSet;
+  set?: IndustryIconSet | IndustryIconSet[];
   name: string;
   size?: number;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export default function IndustryIcon({
@@ -146,12 +154,31 @@ export default function IndustryIcon({
   name,
   size = 48,
   className = "",
+  style,
 }: IndustryIconProps) {
-  if (!set || !REGISTRY[set]) {
-    console.warn(`IndustryIcon: Set "${set}" not found in registry.`);
-    return null;
-  }
+  if (!set) return null;
 
-  const IconsComponent = REGISTRY[set];
-  return <IconsComponent name={name} size={size} className={className} />;
+  const sets = Array.isArray(set) ? set : [set];
+
+  return (
+    <>
+      {sets.map((s) => {
+        const IconsComponent = REGISTRY[s];
+        if (!IconsComponent) {
+          console.warn(`IndustryIcon: Set "${s}" not found in registry.`);
+          return null;
+        }
+        return (
+          <IconsComponent
+            key={s}
+            name={name}
+            size={size}
+            className={className}
+            style={style}
+          />
+        );
+      })}
+    </>
+  );
 }
+

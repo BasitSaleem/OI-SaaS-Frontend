@@ -46,7 +46,7 @@ interface IndustriesTestimonialProps {
   whyChooseDescription?: string;
   features?: Feature[];
   /** The name of the icon set to use (e.g. "bakery", "retail") */
-  iconSet?: IndustryIconSet;
+  iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
 const DEFAULT_GRADIENT_BACKGROUND = `
@@ -151,14 +151,46 @@ const IndustriesTestimonial = ({
         </div>
 
         <div className="flex items-center gap-4 mb-5">
-          <Image
-            src={slide.image}
-            alt={slide.name}
-            width={48}
-            height={48}
-            className="rounded-full border-2 w-[48px] h-[48px] "
-            style={{ borderColor: accentColor }}
-          />
+          
+          {/* <div className="border-2 w-[48px] h-[48px] overflow-hidden rounded-full flex items-center justify-center" style={{ borderColor: accentColor }}>
+          {iconSet && slide.image ? (
+            <IndustryIcon
+              set={iconSet}
+              name={slide.image}
+              size={48}
+              className="rounded-full"
+          
+            />
+          ) : slide.image?.startsWith("/") ? (
+            <Image
+              src={slide.image}
+              alt={slide.name}
+              width={48}
+              height={48}
+              className="rounded-full  object-contain"
+              
+            />
+          ) : null}
+          </div> */}
+
+          <div className="w-[66px] h-[66px] flex items-center justify-center mb-[18px] md:mb-5  rounded-xl border-5 border-[var(--background-halfwhite)]">
+                                {slide.image.startsWith("/") ? (
+                                  <Image
+                                    src={slide.image}
+                                    alt={`${slide.title} Icon`}
+                                    width={56}
+                                    height={56}
+                                    className="h-9 w-9 lg:w-11 lg:h-11 flex items-center justify-center"
+                                  />
+                                ) : (
+                                  <IndustryIcon
+                                    set={iconSet}
+                                    name={slide.image}
+                                    size={56}
+                                    className="h-9 w-9 lg:w-11 lg:h-11 flex items-center justify-center child-svg-full"
+                                  />
+                                )}
+                              </div>
 
           <div className="">
             <p className="font-semibold text-xl font-['onest']">

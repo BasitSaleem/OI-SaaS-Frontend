@@ -20,7 +20,7 @@ interface IndustryUnifiedPlatformProps {
   cards: IndustryUnifiedPlatformCard[];
   textAlign?: "center" | "left";
   /** The name of the icon set to use (e.g. "bakery", "retail") */
-  iconSet?: IndustryIconSet;
+  iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
 function IndustryUnifiedPlatform({

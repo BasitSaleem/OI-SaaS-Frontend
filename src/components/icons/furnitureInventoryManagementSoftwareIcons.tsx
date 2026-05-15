@@ -1165,6 +1165,7 @@ export default function furnitureInventoryManagementSoftwareIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div
