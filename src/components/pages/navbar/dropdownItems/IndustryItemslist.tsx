@@ -190,6 +190,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
+  {
+    key: 'barber-shop-pos-system',
+    title: 'Barber Shop POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/beauty-saloon-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
   
 
   
@@ -407,6 +414,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Fast Counter Checkout' },
     { title: 'Size & Variant Tracking' },
     { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'barber-shop-pos-system': [
+    { title: 'Appointment Scheduling' },
+    { title: 'Stylist Performance Sync' },
+    { title: 'Retail Product Tracking' },
     { title: 'Sales Analytics & Reports' },
   ],
 };
