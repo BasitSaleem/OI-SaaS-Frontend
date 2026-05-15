@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 interface IconProps {
   name: keyof typeof icons;
@@ -315,9 +315,9 @@ const icons = {
           y2="80"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#06919D" />
-          <stop offset="0.541667" stop-color="#B28CFF" />
-          <stop offset="1" stop-color="#1CEADD" />
+          <stop stopColor="#06919D" />
+          <stop offset="0.541667" stopColor="#B28CFF" />
+          <stop offset="1" stopColor="#1CEADD" />
         </linearGradient>
       </defs>
     </svg>
@@ -333,44 +333,44 @@ const icons = {
       <path
         d="M33.0005 13.127C32.8905 13.1087 32.7621 13.1087 32.6521 13.127C30.1221 13.0353 28.1055 10.9637 28.1055 8.397C28.1055 5.77533 30.2138 3.66699 32.8355 3.66699C35.4571 3.66699 37.5655 5.79366 37.5655 8.397C37.5471 10.9637 35.5305 13.0353 33.0005 13.127Z"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M31.1136 26.474C33.6253 26.8956 36.3936 26.4556 38.3369 25.154C40.9219 23.4306 40.9219 20.6073 38.3369 18.884C36.3753 17.5823 33.5703 17.1423 31.0586 17.5823"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M10.9439 13.127C11.0539 13.1087 11.1822 13.1087 11.2922 13.127C13.8222 13.0353 15.8389 10.9637 15.8389 8.397C15.8389 5.77533 13.7306 3.66699 11.1089 3.66699C8.48724 3.66699 6.37891 5.79366 6.37891 8.397C6.39724 10.9637 8.41391 13.0353 10.9439 13.127Z"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M12.834 26.474C10.3223 26.8956 7.55396 26.4556 5.61062 25.154C3.02563 23.4306 3.02563 20.6073 5.61062 18.884C7.57229 17.5823 10.3773 17.1423 12.889 17.5823"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M22.0005 26.8213C21.8905 26.803 21.7621 26.803 21.6521 26.8213C19.1221 26.7297 17.1055 24.658 17.1055 22.0913C17.1055 19.4697 19.2138 17.3613 21.8355 17.3613C24.4571 17.3613 26.5655 19.488 26.5655 22.0913C26.5471 24.658 24.5305 26.748 22.0005 26.8213Z"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.6653 32.5963C14.0803 34.3196 14.0803 37.143 16.6653 38.8663C19.5986 40.828 24.402 40.828 27.3353 38.8663C29.9203 37.143 29.9203 34.3196 27.3353 32.5963C24.4203 30.653 19.5986 30.653 16.6653 32.5963Z"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -386,38 +386,38 @@ const icons = {
       <path
         d="M42.1668 32.835C42.2035 34.21 41.8368 35.5117 41.1768 36.63C40.8101 37.29 40.3152 37.895 39.7652 38.39C38.5002 39.5634 36.8318 40.2784 34.9801 40.3334C32.3035 40.3884 29.9385 39.0134 28.6368 36.9051C27.9401 35.8234 27.5185 34.5217 27.5002 33.1467C27.4452 30.8367 28.4718 28.7467 30.1218 27.3717C31.3685 26.345 32.9452 25.7034 34.6685 25.6667C38.7202 25.575 42.0752 28.7833 42.1668 32.835Z"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M31.9736 33.0551L33.8253 34.8151L37.657 31.1117"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.81152 13.64L21.9998 23.0083L38.0781 13.695"
         stroke="#F95C5B"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M22 39.6183V22.99"
         stroke="#F95C5B"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M39.6184 16.8116V27.1884C39.6184 27.28 39.6185 27.3533 39.6002 27.4449C38.3168 26.3266 36.6668 25.6667 34.8335 25.6667C33.1101 25.6667 31.5151 26.2717 30.2501 27.28C28.5635 28.6183 27.5001 30.69 27.5001 33C27.5001 34.375 27.8851 35.6767 28.5635 36.7767C28.7285 37.07 28.9301 37.345 29.1501 37.6017L25.7952 39.4534C23.7052 40.6267 20.2951 40.6267 18.2051 39.4534L8.41514 34.0267C6.1968 32.7983 4.38184 29.7184 4.38184 27.1884V16.8116C4.38184 14.2816 6.1968 11.2017 8.41514 9.97333L18.2051 4.54663C20.2951 3.37329 23.7052 3.37329 25.7952 4.54663L35.5851 9.97333C37.8035 11.2017 39.6184 14.2816 39.6184 16.8116Z"
         stroke="#F95C5B"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -433,58 +433,58 @@ const icons = {
       <path
         d="M40.3333 27.5C40.3333 34.595 34.595 40.3333 27.5 40.3333L29.425 37.125"
         stroke="#F95C5B"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.66699 16.5C3.66699 9.40502 9.40533 3.66669 16.5003 3.66669L14.5753 6.87502"
         stroke="#F95C5B"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M25.1162 8.15839L32.4129 12.375L39.6362 8.17674"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M32.4131 19.8367V12.3567"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M30.6896 4.05169L26.2896 6.48994C25.2996 7.03994 24.4746 8.43326 24.4746 9.56993V14.2267C24.4746 15.3633 25.2813 16.7567 26.2896 17.3067L30.6896 19.745C31.6246 20.2767 33.1646 20.2767 34.1179 19.745L38.5179 17.3067C39.5079 16.7567 40.3329 15.3633 40.3329 14.2267V9.56993C40.3329 8.43326 39.5263 7.03994 38.5179 6.48994L34.1179 4.05169C33.1829 3.53835 31.6429 3.53835 30.6896 4.05169Z"
         stroke="#795CF5"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M4.30859 28.325L11.5869 32.5417L18.8286 28.3434"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M11.5869 40.0033V32.5233"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M9.88199 24.2183L5.482 26.6566C4.492 27.2066 3.66699 28.5999 3.66699 29.7366V34.3933C3.66699 35.53 4.47367 36.9233 5.482 37.4733L9.88199 39.9116C10.817 40.4433 12.357 40.4433 13.3103 39.9116L17.7103 37.4733C18.7003 36.9233 19.5253 35.53 19.5253 34.3933V29.7366C19.5253 28.5999 18.7187 27.2066 17.7103 26.6566L13.3103 24.2183C12.357 23.705 10.817 23.705 9.88199 24.2183Z"
         stroke="#1AD1B9"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -497,30 +497,30 @@ const icons = {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_7425_12841)">
+      <g clipPath="url(#clip0_7425_12841)">
         <path
           d="M42.713 10.9542L33.0479 1.28906L23.3828 10.9542H28.9057V42.7109H37.19V10.9542H42.713Z"
           stroke="#1AD1B9"
-          stroke-width="2.57812"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2.57812"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M10.2844 30H2V42.4266H10.2844V30Z"
           stroke="#F95C5B"
-          stroke-width="2.57812"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2.57812"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M23.2844 19H15V42.4724H23.2844V19Z"
           stroke="#B11E67"
-          stroke-width="2.57812"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2.57812"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
@@ -542,38 +542,38 @@ const icons = {
       <path
         d="M23.9586 18.6563C23.9794 19.4375 23.771 20.1771 23.396 20.8125C23.1877 21.1875 22.9065 21.5313 22.594 21.8125C21.8752 22.4792 20.9273 22.8854 19.8752 22.9167C18.3544 22.9479 17.0106 22.1667 16.271 20.9688C15.8752 20.3542 15.6356 19.6146 15.6252 18.8334C15.594 17.5209 16.1773 16.3334 17.1148 15.5521C17.8231 14.9688 18.719 14.6042 19.6981 14.5834C22.0002 14.5313 23.9065 16.3542 23.9586 18.6563Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M18.167 18.7814L19.2191 19.7813L21.3962 17.6771"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.30176 7.75L12.4997 13.0729L21.6351 7.78122"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M12.5 22.5104V13.0625"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M22.5101 9.55213V15.448C22.5101 15.5001 22.5101 15.5417 22.4997 15.5938C21.7705 14.9584 20.833 14.5834 19.7913 14.5834C18.8122 14.5834 17.9059 14.9271 17.1872 15.5001C16.2288 16.2605 15.6247 17.4376 15.6247 18.7501C15.6247 19.5313 15.8434 20.2709 16.2288 20.8959C16.3226 21.0626 16.4372 21.2188 16.5622 21.3647L14.6559 22.4167C13.4684 23.0834 11.5309 23.0834 10.3434 22.4167L4.78091 19.3334C3.52049 18.6355 2.48926 16.8855 2.48926 15.448V9.55213C2.48926 8.11463 3.52049 6.36465 4.78091 5.66673L10.3434 2.58337C11.5309 1.91671 13.4684 1.91671 14.6559 2.58337L20.2184 5.66673C21.4788 6.36465 22.5101 8.11463 22.5101 9.55213Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -588,50 +588,50 @@ const icons = {
       <path
         d="M16 4C19.33 4.18 21 5.41 21 9.98V15.98C21 19.98 20 21.98 15 21.98H9C4 21.98 3 19.98 3 15.98V9.98C3 5.42 4.67 4.18 8 4"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M10 6H14C16 6 16 5 16 4C16 2 15 2 14 2H10C9 2 8 2 8 4C8 6 9 6 10 6Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M7.45312 11.4099L11.5002 13.752L15.5198 11.4236"
         stroke="#231F20"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M11.5 17.9045V13.7474"
         stroke="#231F20"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15.9049 12.2029V14.7971C15.9049 14.82 15.9049 14.8383 15.9003 14.8612C15.5794 14.5816 15.1669 14.4166 14.7086 14.4166C14.2778 14.4166 13.879 14.5679 13.5628 14.82C13.1411 15.1546 12.8753 15.6725 12.8753 16.25C12.8753 16.5937 12.9715 16.9191 13.1411 17.1941C13.1824 17.2675 13.2328 17.3362 13.2878 17.4004L12.449 17.8633C11.9265 18.1566 11.074 18.1566 10.5515 17.8633L8.10403 16.5066C7.54944 16.1996 7.0957 15.4296 7.0957 14.7971V12.2029C7.0957 11.5704 7.54944 10.8004 8.10403 10.4933L10.5515 9.13663C11.074 8.84329 11.9265 8.84329 12.449 9.13663L14.8965 10.4933C15.4511 10.8004 15.9049 11.5704 15.9049 12.2029Z"
         stroke="#231F20"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.5417 16.25C16.5417 16.8 16.2988 17.2904 15.9183 17.625C15.5929 17.9091 15.1713 18.0833 14.7083 18.0833C13.6954 18.0833 12.875 17.2629 12.875 16.25C12.875 15.6725 13.1408 15.1545 13.5625 14.82C13.8788 14.5679 14.2775 14.4166 14.7083 14.4166C15.7213 14.4166 16.5417 15.237 16.5417 16.25Z"
         stroke="#231F20"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M14.8229 15.677V16.3645L14.25 16.7083"
         stroke="#231F20"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -646,58 +646,58 @@ const icons = {
       <path
         d="M22 15C22 18.87 18.87 22 15 22L16.05 20.25"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M2 9C2 5.13 5.13 2 9 2L7.95 3.75"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13.6992 4.44995L17.6792 6.74994L21.6192 4.45996"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.6797 10.82V6.73999"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.7396 2.21L14.3396 3.53996C13.7996 3.83996 13.3496 4.59995 13.3496 5.21995V7.75999C13.3496 8.37999 13.7896 9.13998 14.3396 9.43998L16.7396 10.77C17.2496 11.06 18.0896 11.06 18.6096 10.77L21.0096 9.43998C21.5496 9.13998 21.9996 8.37999 21.9996 7.75999V5.21995C21.9996 4.59995 21.5596 3.83996 21.0096 3.53996L18.6096 2.21C18.0996 1.93 17.2596 1.93 16.7396 2.21Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M2.34961 15.4501L6.31961 17.7501L10.2696 15.4601"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6.31934 21.82V17.74"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.39 13.21L2.99001 14.54C2.45001 14.84 2 15.5999 2 16.2199V18.76C2 19.38 2.44001 20.14 2.99001 20.44L5.39 21.77C5.9 22.06 6.73999 22.06 7.25999 21.77L9.66 20.44C10.2 20.14 10.65 19.38 10.65 18.76V16.2199C10.65 15.5999 10.21 14.84 9.66 14.54L7.25999 13.21C6.73999 12.93 5.9 12.93 5.39 13.21Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -712,23 +712,23 @@ const icons = {
       <path
         d="M9.00098 21.9999H15.001C20.001 21.9999 22.001 19.9999 22.001 14.9999V8.99988C22.001 3.99988 20.001 1.99988 15.001 1.99988H9.00098C4.00098 1.99988 2.00098 3.99988 2.00098 8.99988V14.9999C2.00098 19.9999 4.00098 21.9999 9.00098 21.9999Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15.5 18.5C16.6 18.5 17.5 17.6 17.5 16.5V7.5C17.5 6.4 16.6 5.5 15.5 5.5C14.4 5.5 13.5 6.4 13.5 7.5V16.5C13.5 17.6 14.39 18.5 15.5 18.5Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.50098 18.4999C9.60098 18.4999 10.501 17.5999 10.501 16.4999V12.9999C10.501 11.8999 9.60098 10.9999 8.50098 10.9999C7.40098 10.9999 6.50098 11.8999 6.50098 12.9999V16.4999C6.50098 17.5999 7.39098 18.4999 8.50098 18.4999Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -740,7 +740,7 @@ const icons = {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_7435_12956)">
+      <g clipPath="url(#clip0_7435_12956)">
         <path
           d="M18.75 12C18.75 10.875 17.85 9.9 16.725 9.75C15.9 7.95 14.1 6.75 12 6.75C11.85 6.75 11.625 6.75 11.475 6.825C11.025 6.3 10.425 6 9.75 6C8.475 6 7.5 6.975 7.5 8.25C7.5 8.55 7.575 8.775 7.65 9.075C7.05 9.9 6.75 10.875 6.75 12C6.75 13.6875 7.05 14.1 7.65 14.925C7.575 15.225 7.5 15.45 7.5 15.75C7.5 17.025 8.475 18 9.75 18C10.425 18 11.025 17.7 11.475 17.175C11.625 17.175 11.85 17.25 12 17.25C14.1 17.25 15.9 15.975 16.725 14.25C17.85 14.1 18.75 13.125 18.75 12ZM9.75 7.5C10.2 7.5 10.5 7.8 10.5 8.25C10.5 8.7 10.2 9 9.75 9C9.3 9 9 8.7 9 8.25C9 7.8 9.3 7.5 9.75 7.5ZM9.75 16.5C9.3 16.5 9 16.2 9 15.75C9 15.3 9.3 15 9.75 15C10.2 15 10.5 15.3 10.5 15.75C10.5 16.2 10.2 16.5 9.75 16.5ZM12 15.75C12 14.475 11.025 13.5 9.75 13.5C9.375 13.5 9 13.575 8.7 13.8C8.4 13.275 8.25 12.675 8.25 12C8.25 10.9875 8.4 10.725 8.7 10.2C9 10.425 9.375 10.5 9.75 10.5C11.025 10.5 12 9.525 12 8.25C13.425 8.25 14.55 9 15.225 10.125C14.625 10.575 14.25 11.25 14.25 12C14.25 12.75 14.625 13.425 15.225 13.875C14.55 15 13.425 15.75 12 15.75ZM16.5 12.75C16.05 12.75 15.75 12.45 15.75 12C15.75 11.55 16.05 11.25 16.5 11.25C16.95 11.25 17.25 11.55 17.25 12C17.25 12.45 16.95 12.75 16.5 12.75Z"
           fill="#231F20"
@@ -768,41 +768,41 @@ const icons = {
       <path
         d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.1494 13.8199L14.1094 16.8599"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6.84961 13.8199H17.1496"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6.84961 10.18L9.88961 7.14001"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.1496 10.1801H6.84961"
         stroke="#231F20"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -817,38 +817,38 @@ const icons = {
       <path
         d="M23.9583 18.6563C23.9791 19.4375 23.7708 20.1771 23.3958 20.8125C23.1875 21.1875 22.9062 21.5313 22.5937 21.8125C21.875 22.4792 20.927 22.8854 19.875 22.9167C18.3541 22.9479 17.0104 22.1667 16.2708 20.9688C15.875 20.3542 15.6354 19.6146 15.625 18.8334C15.5937 17.5209 16.1771 16.3334 17.1146 15.5521C17.8229 14.9688 18.7187 14.6042 19.6979 14.5834C22 14.5313 23.9062 16.3542 23.9583 18.6563Z"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M18.1667 18.7812L19.2188 19.7812L21.3959 17.677"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.302 7.75L12.4999 13.0729L21.6353 7.78122"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M12.5 22.5104V13.0625"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M22.5103 9.55201V15.4479C22.5103 15.5 22.5103 15.5416 22.4999 15.5937C21.7707 14.9582 20.8332 14.5833 19.7916 14.5833C18.8124 14.5833 17.9062 14.927 17.1874 15.4999C16.2291 16.2604 15.6249 17.4374 15.6249 18.7499C15.6249 19.5312 15.8436 20.2708 16.2291 20.8958C16.3228 21.0624 16.4374 21.2187 16.5624 21.3645L14.6562 22.4166C13.4687 23.0833 11.5311 23.0833 10.3436 22.4166L4.78115 19.3333C3.52073 18.6354 2.4895 16.8854 2.4895 15.4479V9.55201C2.4895 8.1145 3.52073 6.36453 4.78115 5.66661L10.3436 2.58325C11.5311 1.91659 13.4687 1.91659 14.6562 2.58325L20.2187 5.66661C21.4791 6.36453 22.5103 8.1145 22.5103 9.55201Z"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -863,50 +863,50 @@ const icons = {
       <path
         d="M16 4C19.33 4.18 21 5.41 21 9.98V15.98C21 19.98 20 21.98 15 21.98H9C4 21.98 3 19.98 3 15.98V9.98C3 5.42 4.67 4.18 8 4"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M10 6H14C16 6 16 5 16 4C16 2 15 2 14 2H10C9 2 8 2 8 4C8 6 9 6 10 6Z"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M7.45288 11.4102L11.5 13.7522L15.5195 11.4239"
         stroke="#F95C5B"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M11.5 17.9046V13.7476"
         stroke="#F95C5B"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15.9046 12.203V14.7972C15.9046 14.8201 15.9046 14.8384 15.9 14.8613C15.5792 14.5817 15.1667 14.4168 14.7084 14.4168C14.2775 14.4168 13.8788 14.568 13.5625 14.8201C13.1409 15.1547 12.875 15.6726 12.875 16.2501C12.875 16.5938 12.9713 16.9193 13.1409 17.1943C13.1821 17.2676 13.2325 17.3363 13.2875 17.4005L12.4488 17.8634C11.9263 18.1568 11.0738 18.1568 10.5513 17.8634L8.10378 16.5068C7.5492 16.1997 7.09546 15.4297 7.09546 14.7972V12.203C7.09546 11.5705 7.5492 10.8005 8.10378 10.4934L10.5513 9.13675C11.0738 8.84341 11.9263 8.84341 12.4488 9.13675L14.8963 10.4934C15.4509 10.8005 15.9046 11.5705 15.9046 12.203Z"
         stroke="#F95C5B"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.5417 16.2501C16.5417 16.8001 16.2988 17.2905 15.9183 17.6251C15.5929 17.9092 15.1713 18.0834 14.7083 18.0834C13.6954 18.0834 12.875 17.263 12.875 16.2501C12.875 15.6726 13.1408 15.1547 13.5625 14.8201C13.8788 14.568 14.2775 14.4167 14.7083 14.4167C15.7213 14.4167 16.5417 15.2372 16.5417 16.2501Z"
         stroke="#795CF5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M14.8229 15.6772V16.3647L14.25 16.7085"
         stroke="#F95C5B"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -921,58 +921,58 @@ const icons = {
       <path
         d="M22 15C22 18.87 18.87 22 15 22L16.05 20.25"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M2 9C2 5.13 5.13 2 9 2L7.95 3.75"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13.7002 4.44995L17.6802 6.74994L21.6202 4.45996"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.6802 10.82V6.73999"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.7401 2.21L14.3401 3.53996C13.8001 3.83996 13.3501 4.59995 13.3501 5.21995V7.75999C13.3501 8.37999 13.7901 9.13998 14.3401 9.43998L16.7401 10.77C17.2501 11.06 18.0901 11.06 18.6101 10.77L21.0101 9.43998C21.5501 9.13998 22.0001 8.37999 22.0001 7.75999V5.21995C22.0001 4.59995 21.5601 3.83996 21.0101 3.53996L18.6101 2.21C18.1001 1.93 17.2601 1.93 16.7401 2.21Z"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M2.3501 15.45L6.3201 17.7499L10.2701 15.46"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6.32007 21.82V17.74"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.39 13.21L2.99001 14.54C2.45001 14.84 2 15.5999 2 16.2199V18.76C2 19.38 2.44001 20.14 2.99001 20.44L5.39 21.77C5.9 22.06 6.73999 22.06 7.25999 21.77L9.66 20.44C10.2 20.14 10.65 19.38 10.65 18.76V16.2199C10.65 15.5999 10.21 14.84 9.66 14.54L7.25999 13.21C6.73999 12.93 5.9 12.93 5.39 13.21Z"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -987,23 +987,23 @@ const icons = {
       <path
         d="M9.00073 22H15.0007C20.0007 22 22.0007 20 22.0007 15V9C22.0007 4 20.0007 2 15.0007 2H9.00073C4.00073 2 2.00073 4 2.00073 9V15C2.00073 20 4.00073 22 9.00073 22Z"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15.5 18.5C16.6 18.5 17.5 17.6 17.5 16.5V7.5C17.5 6.4 16.6 5.5 15.5 5.5C14.4 5.5 13.5 6.4 13.5 7.5V16.5C13.5 17.6 14.39 18.5 15.5 18.5Z"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.50073 18.5C9.60073 18.5 10.5007 17.6 10.5007 16.5V13C10.5007 11.9 9.60073 11 8.50073 11C7.40073 11 6.50073 11.9 6.50073 13V16.5C6.50073 17.6 7.39073 18.5 8.50073 18.5Z"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -1015,7 +1015,7 @@ const icons = {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_7435_12951)">
+      <g clipPath="url(#clip0_7435_12951)">
         <path
           d="M18.75 12C18.75 10.875 17.85 9.9 16.725 9.75C15.9 7.95 14.1 6.75 12 6.75C11.85 6.75 11.625 6.75 11.475 6.825C11.025 6.3 10.425 6 9.75 6C8.475 6 7.5 6.975 7.5 8.25C7.5 8.55 7.575 8.775 7.65 9.075C7.05 9.9 6.75 10.875 6.75 12C6.75 13.6875 7.05 14.1 7.65 14.925C7.575 15.225 7.5 15.45 7.5 15.75C7.5 17.025 8.475 18 9.75 18C10.425 18 11.025 17.7 11.475 17.175C11.625 17.175 11.85 17.25 12 17.25C14.1 17.25 15.9 15.975 16.725 14.25C17.85 14.1 18.75 13.125 18.75 12ZM9.75 7.5C10.2 7.5 10.5 7.8 10.5 8.25C10.5 8.7 10.2 9 9.75 9C9.3 9 9 8.7 9 8.25C9 7.8 9.3 7.5 9.75 7.5ZM9.75 16.5C9.3 16.5 9 16.2 9 15.75C9 15.3 9.3 15 9.75 15C10.2 15 10.5 15.3 10.5 15.75C10.5 16.2 10.2 16.5 9.75 16.5ZM12 15.75C12 14.475 11.025 13.5 9.75 13.5C9.375 13.5 9 13.575 8.7 13.8C8.4 13.275 8.25 12.675 8.25 12C8.25 10.9875 8.4 10.725 8.7 10.2C9 10.425 9.375 10.5 9.75 10.5C11.025 10.5 12 9.525 12 8.25C13.425 8.25 14.55 9 15.225 10.125C14.625 10.575 14.25 11.25 14.25 12C14.25 12.75 14.625 13.425 15.225 13.875C14.55 15 13.425 15.75 12 15.75ZM16.5 12.75C16.05 12.75 15.75 12.45 15.75 12C15.75 11.55 16.05 11.25 16.5 11.25C16.95 11.25 17.25 11.55 17.25 12C17.25 12.45 16.95 12.75 16.5 12.75Z"
           fill="#F95C5B"
@@ -1043,41 +1043,41 @@ const icons = {
       <path
         d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
         stroke="#1AD1B9"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.1501 13.8201L14.1101 16.8601"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6.8501 13.8201H17.1501"
         stroke="#795CF5"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M6.8501 10.1799L9.8901 7.13989"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.1501 10.1799H6.8501"
         stroke="#F95C5B"
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -1100,3 +1100,4 @@ export default function urbansThreadsIcons({
 
 // Export individual icons as well
 export { icons as urbansThreadsIconss };
+

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 interface IconProps {
   name: keyof typeof icons;
@@ -315,9 +315,9 @@ const icons = {
           y2="80"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#06919D" />
-          <stop offset="0.541667" stop-color="#B28CFF" />
-          <stop offset="1" stop-color="#1CEADD" />
+          <stop stopColor="#06919D" />
+          <stop offset="0.541667" stopColor="#B28CFF" />
+          <stop offset="1" stopColor="#1CEADD" />
         </linearGradient>
       </defs>
     </svg>
@@ -1103,3 +1103,4 @@ export default function alAsifCasestudyIcons({
 
 // Export individual icons as well
 export { icons as alAsifCasestudyIconss };  
+
