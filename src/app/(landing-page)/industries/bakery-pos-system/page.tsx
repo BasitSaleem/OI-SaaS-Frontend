@@ -370,7 +370,7 @@ const Page = () => {
         whyChooseTitle={BAKERY_TESTIMONIAL_DATA.whyChooseTitle}
         whyChooseDescription={BAKERY_TESTIMONIAL_DATA.whyChooseDescription}
         features={BAKERY_TESTIMONIAL_FEATURES}
-        iconSet={["bakery"]}
+        iconSet="bakery"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

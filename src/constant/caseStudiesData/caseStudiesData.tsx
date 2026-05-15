@@ -147,11 +147,11 @@ export const caseStudiesData: CaseStudyData[] = [
     resultMetrics: [
       { heading: "Items", value: "5000+", label: "Already Organized Digitally" },
       { heading: "Less", value: "35%", label: "Administrative Labor" },
-      { heading: "real-time", value: "90%", label: "stock tracking accuracy" },
+      { heading: "Real-time", value: "90%", label: "Stock Tracking Accuracy" },
       { heading: "Regions", value: "03", label: "Serving Teams Across the Continent" },
       { heading: "Users", value: "250+", label: "Active System Users" },
-      { heading: "Faster Closing", value: "65%", label: "Quick financials" },
-      { heading: "Automation", value: "100%", label: "Profit & loss reports" },
+      { heading: "Faster Closing", value: "65%", label: "Quick Financials" },
+      { heading: "Automation", value: "100%", label: "Profit & Loss Reports" },
     ],
   },
    {
