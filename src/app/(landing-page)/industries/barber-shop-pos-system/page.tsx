@@ -406,14 +406,14 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading= "FAQS"
-          paragraph= "The following are some of the common questions that are asked about our POS system for barber shops."
+          paragraph= "The following are some of the most commonly asked questions about our barber shop POS system."
           faqs={BARBER_SHOP_FAQS}
           buttonText="Start Now"
         />
       </div>
        <IndustriesHardwareControl
-        title= "Take Full Control of Your Barber Shop"
-        description= "Barber shops miss out on revenue because of the erroneous records, scheduling confusion, and slow billing. Our barber shop POS systems reduce these losses, maintain booking records, and facilitate day to day operations. Every service is easier and more profitable with faster checkout and better tracking."
+        title= "Power Your Barber Shop with Our Efficient POS"
+        description= "Our POS helps barber shops handle faster checkouts, manage appointments, track inventory, and organize customer details in one simple system built to support daily operations."
         ctaDesc="Start Today"
       />
     </div>

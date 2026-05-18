@@ -260,28 +260,28 @@ export const BARBER_SHOP_TESTIMONIALS = [
 export const BARBER_SHOP_FAQS = [
     {
         id: "1",
-        question: "How does this POS system handle services and appointments?",
-        answer: "Our POS system of grooming businesses tracks the individual services, stylists and appointment slots separately, ensuring that the schedule remains updated and reduces error."
+        question: "Does POS support both registered and walk-in client handling?",
+        answer: "Yes, the POS switches between walk-in and registered client profiles without restarting the transaction or slowing down the counter."
     },
     {
         id: "2",
-        question: "Is it able to handle multiple branches?",
-        answer: "Yes, it is inventory, sales, prices and reports that remain synchronized in all branches. The transfer of products can take place on demand."
+        question: "Can I precisely track grooming product stock through the POS?",
+        answer: "Yes, every retail product sale updates the inventory precisely. Items are deducted from stock, and records are saved in the form of reports. This makes our POS the best management software for barber shops."
     },
     {
         id: "3",
-        question: "Does the POS support online bookings?",
-        answer: "Yes, the online bookings are integrated effectively. Everything is documented so as to make sure that nothing is lost."
+        question: "Can I manage more than one barber shop location?",
+        answer: "Yes, the system allows you to manage sales data, inventory levels, and staff activity across multiple locations. It provides complete visibility into multiple branch workflows, which helps shop owners manage daily tasks effectively."
     },
     {
         id: "4",
-        question: "Is it possible to track retail sales?",
-        answer: "Yes, our barber shop POS system has online and retail inventory updated in real time. This avoids duplication and over-selling."
+        question: "How quickly can I set up the Owners Inventory for my barber shop?",
+        answer: "Most barbershops are fully operational within hours due to the simple setup of Owners Inventory. Products load fast through bulk import, and teams can start processing real transactions quickly."
     },
     {
         id: "5",
-        question: "Is it easy for staff to learn?",
-        answer: "Yes, the interface is simple. The employees can pick it up in several hours, thus saving training and not disrupting operations."
+        question: "Can multiple barbers have separate access levels?",
+        answer: "Yes, with role-based access, you can limit the access of each barber according to their assigned roles. The system provides shop owners with complete control over inventory and financial data."
     },
 ];
 
@@ -331,54 +331,47 @@ export const BARBER_SHOP_KEY_FEATURES = [
 ];
 
 export const BARBER_SHOP_TESTIMONIAL_DATA = {
-    heading: "What Our Clients Say?",
+    heading: "What Our Clients Say About Owners Inventory?",
     paragraph: "", // Optional paragraph
     secondHeading: "Keep Operations Under Control",
     secondDescription: "Owners’ Inventory POS system helps barber shops track all services, stylists, and retail products in real-time, enhances efficiency and reduces losses.",
-    whyChooseTitle: "Why Choose Our POS System for Barber Shops?",
-    whyChooseDescription: "Our POS barber shop resolves the actual business issues that include slow billing, scheduling conflicts, lack of stock match, and multi-branch management. It makes you work faster, organize and serve clients more confidently.",
+    whyChooseTitle: "Take Your Barber Shop Business to the Next Level",
+    whyChooseDescription: "From appointment booking to payment processing, Owners Inventory brings everything together that a barber shop needs in one place. It provides your team with advanced tools for efficient management of sales.",
 };
 
 export const BARBER_SHOP_TESTIMONIAL_FEATURES = [
     {
         id: "1",
-        title: "Service Variants",
-        description: "The system records service types, stylists, products, and categories correctly. It is the most appropriate POS system in barber shops with multiple offerings.",
+        title: "Built for Barber Shops",
+        description: "The software is designed to manage busy schedules, multiple services, products, and complex checkouts, making it the best barber shop POS system that boosts efficiency.",
         icon: "testWhychoseIcon1",
     },
     {
         id: "2",
-        title: "Faster Billing",
-        description: "Quick checkout and intelligent search minimizes queues. Your employees are efficient in their billing, clients are pleased and the sales increase.",
+        title: "Quick Setup",
+        description: "It is easy to set up and use, which reduces the need for advanced technical knowledge to operate it. Products, services, and client data load quickly into the system through the bulk import option.",
         icon: "testWhychoseIcon2",
     },
     {
         id: "3",
-        title: "Easy for Staff",
-        description: "The interface is clear and very easy. It becomes easily learned by the staff, mistakes are reduced, and training is minimal.",
+        title: "All-in-One Platform",
+        description: "It replaces the need for separate POS software, stock tracking sheets, and reporting tools. The team works from one system rather than managing several tools.",
         icon: "testWhychoseIcon3",
     },
     
     {
         id: "4",
-        title: "Client Profiles",
-        description: "Store preferences, visit history and stylist preferences in the barber shop POS systems. This assists in controlling loyalty schemes and frequent visits.",
+        title: "24/7 Support",
+        description: "We provide support at any hour when issues arise during a busy shift, which ensures that the barber shop POS system never remains stuck.",
         icon: "testWhychoseIcon4",
     },
     {
         id: "5",
-        title: "Branch Operation Accuracy",
-        description: "Schedules are constantly current in shops. This is the ideal POS system that owners use in barber shops because they avoid confusion in bookings.",
+        title: "Actionable Insights",
+        description: "The system provides clear business insights that support accurate decision-making in restocking of items, staff handling, and financial management.",
         icon: "testWhychoseIcon5",
     },
-
-    {
-        id: "6",
-        title: "Sales Insights",
-        description: "Receive popular service, stylist performance, peak hours and employee performance reports. With trustworthy information, smart decisions can be made.",
-        icon: "testWhychoseIcon6",
-    },
-    
+ 
    
 ];
 
