@@ -351,8 +351,8 @@ export const SHOES_STORE_TESTIMONIAL_DATA = {
 export const SHOES_STORE_TESTIMONIAL_FEATURES = [
     {
         id: "1",
-        title: "Apparel Variants",
-        description: "The system records sizes, styles, brands, and categories correctly. It is the most appropriate POS system in shoe stores with a high number of products.",
+        title: "Footwear Variants Management",
+        description: "The system accurately tracks shoe sizes, colors, brands, styles, and categories. It is ideal for shoe stores with large and complex product collections.",
         icon: "testWhychoseIcon1",
     },
     {

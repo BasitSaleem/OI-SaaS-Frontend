@@ -405,7 +405,7 @@ const Page = () => {
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
-          heading= "FAQS"
+          heading= "FAQs"
           paragraph= "The following are some of the common questions that are asked about our POS system for shoe stores."
           faqs={SHOES_STORE_FAQS}
           buttonText="Start Now"
