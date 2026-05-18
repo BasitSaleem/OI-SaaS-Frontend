@@ -57,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "furniture-inventory-management-software",
         "coffee-shop-pos-system",
         "shoe-stores-pos-system",
+        "convenience-store-pos-system",
         "barber-shop-pos-system",
     ];
 

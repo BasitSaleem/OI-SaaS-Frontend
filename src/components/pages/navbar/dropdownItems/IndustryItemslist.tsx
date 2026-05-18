@@ -191,6 +191,13 @@ export const industriesItems: IndustryItem[] = [
     type: 'pos',
   },
   {
+    key: 'convenience-store-pos-system',
+    title: 'Convenience Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/convenience-store-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
     key: 'barber-shop-pos-system',
     title: 'Barber Shop POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/beauty-saloon-pos-system.svg",
@@ -414,6 +421,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Fast Counter Checkout' },
     { title: 'Size & Variant Tracking' },
     { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'convenience-store-pos-system': [
+    { title: 'Fast Counter Checkout' },
+    { title: 'Inventory & Stock Alerts' },
+    { title: 'Multi-Pack Pricing' },
     { title: 'Sales Analytics & Reports' },
   ],
   'barber-shop-pos-system': [
