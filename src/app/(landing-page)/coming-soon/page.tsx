@@ -32,10 +32,10 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 
 const ComingSoonPage = () => {
   useErrorAnimation();
-  
+
   return (
     <div className="h-screen w-full  flex items-center justify-center"
-       style={{ background: DEFAULT_GRADIENT_BACKGROUND }}
+      style={{ background: DEFAULT_GRADIENT_BACKGROUND }}
     >
       <h1 className="text-[#2B2B2B] text-4xl md:text-6xl lg:text-8xl font-semibold uppercase tracking-widest font-['Onest']">
         Coming Soon

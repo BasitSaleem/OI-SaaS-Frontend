@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 interface SubHeadingProps {
   children: React.ReactNode;
-  className?: string; 
+  className?: string;
 }
 
 const CardHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
@@ -15,7 +15,7 @@ const CardHeading: React.FC<SubHeadingProps> = ({ children, className }) => {
         "lg:text-2xl md:text-xl text-2xl",
         "md:leading-[130%] leading-[140%]",
         "",
-        className 
+        className
       )}
     >
       {children}

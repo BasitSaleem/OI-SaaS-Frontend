@@ -90,7 +90,7 @@ const FeatureMainCard: React.FC<FeatureMainCardProps> = ({
                 priority
               />
             ) : null}
-            
+
           </div>
 
           {/* Text */}

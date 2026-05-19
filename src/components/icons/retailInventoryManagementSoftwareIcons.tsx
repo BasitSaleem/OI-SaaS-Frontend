@@ -625,7 +625,7 @@ const icons = {
       </defs>
     </svg>
   ),
- 
+
   whychoseIcon4: (
     <svg
       width="44"

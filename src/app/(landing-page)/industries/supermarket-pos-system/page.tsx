@@ -333,91 +333,91 @@ const Page = () => {
         }}
       />
       <div>
-      <SubIndustriesHero
-        title="Complete POS System for Supermarkets with Stock Tracking"
-        description="The Owners Inventory POS System for supermarkets is the way to control your store’s inventory. It helps you run your supermarket quickly and accurately. Our POS System keeps track of all sales and stock updates in one place. This is great for supermarkets that need to bill customers quickly and keep track of their inventory in real time."
-        image={heroBanner}
-        imageClassName="max-w-[1000px]"
-        ctaDesc="Start Free Today"
-        variant="animation2"
-      />
+        <SubIndustriesHero
+          title="Complete POS System for Supermarkets with Stock Tracking"
+          description="The Owners Inventory POS System for supermarkets is the way to control your store’s inventory. It helps you run your supermarket quickly and accurately. Our POS System keeps track of all sales and stock updates in one place. This is great for supermarkets that need to bill customers quickly and keep track of their inventory in real time."
+          image={heroBanner}
+          imageClassName="max-w-[1000px]"
+          ctaDesc="Start Free Today"
+          variant="animation2"
+        />
 
-      <VoicesRealBusiness title="Ratings on Leading Review Platforms" />
+        <VoicesRealBusiness title="Ratings on Leading Review Platforms" />
 
-      <IndustryUnifiedPlatform
-        heading={SUPERMARKET_UNIFIED_HEADING}
-        paragraph={SUPERMARKET_UNIFIED_PARAGRAPH}
-        cards={SUPERMARKET_UNIFIED_CARDS}
-        iconSet="superMarket"
-      />
+        <IndustryUnifiedPlatform
+          heading={SUPERMARKET_UNIFIED_HEADING}
+          paragraph={SUPERMARKET_UNIFIED_PARAGRAPH}
+          cards={SUPERMARKET_UNIFIED_CARDS}
+          iconSet="superMarket"
+        />
 
-      <WhyChoosePOS
-        heading="How Our Inventory Software Solves These Challenges"
-        paragraph="The Owners Inventory POS System has features that help supermarkets, including:"
-        cards={SUPERMARKET_WHY_CHOOSE_CARDS}
-        mainImage={whyChoseBanner}
-        iconSet="superMarket"
-      />
+        <WhyChoosePOS
+          heading="How Our Inventory Software Solves These Challenges"
+          paragraph="The Owners Inventory POS System has features that help supermarkets, including:"
+          cards={SUPERMARKET_WHY_CHOOSE_CARDS}
+          mainImage={whyChoseBanner}
+          iconSet="superMarket"
+        />
 
-      <KeyHighlights
-        heading="Key Features of Our POS System That Help Supermarkets"
-        features={SUPERMARKET_KEY_FEATURES_CARDS}
-      />
+        <KeyHighlights
+          heading="Key Features of Our POS System That Help Supermarkets"
+          features={SUPERMARKET_KEY_FEATURES_CARDS}
+        />
 
-      <InventoryWorkflow
-        heading={SUPERMARKET_WORKFLOW_DATA.heading}
-        paragraph={SUPERMARKET_WORKFLOW_DATA.paragraph}
-        steps={SUPERMARKET_WORKFLOW_DATA.steps}
-      />
+        <InventoryWorkflow
+          heading={SUPERMARKET_WORKFLOW_DATA.heading}
+          paragraph={SUPERMARKET_WORKFLOW_DATA.paragraph}
+          steps={SUPERMARKET_WORKFLOW_DATA.steps}
+        />
 
-      <IndustriesCallToAction
-        title="Manage Your Inventory Efficiently"
-        description="You can take control of the supermarket with our system. It is made for stores."
-        ctaDesc="Request a Free Demo"
-      />
+        <IndustriesCallToAction
+          title="Manage Your Inventory Efficiently"
+          description="You can take control of the supermarket with our system. It is made for stores."
+          ctaDesc="Request a Free Demo"
+        />
 
-      <IndustriesFeaturesSection features={SUPERMARKET_FEATURE_CARDS} />
+        <IndustriesFeaturesSection features={SUPERMARKET_FEATURE_CARDS} />
 
-      <SecurityCompliance
-        title="Speed, Accuracy, and Compliance."
-        description="Our system works with other tools like accounting software, customer management, online stores and payment systems. This lets you manage the supermarket from one place."
-        secondDescription="These tools make things easier, reduce work and make the supermarket run faster and more efficiently."
-      />
+        <SecurityCompliance
+          title="Speed, Accuracy, and Compliance."
+          description="Our system works with other tools like accounting software, customer management, online stores and payment systems. This lets you manage the supermarket from one place."
+          secondDescription="These tools make things easier, reduce work and make the supermarket run faster and more efficiently."
+        />
 
-      <ToolsSection
-        heading={SUPERMARKET_TOOLS_DATA.heading}
-        description={SUPERMARKET_TOOLS_DATA.paragraph}
-        tools={SUPERMARKET_TOOLS_DATA.tools}
-      />
+        <ToolsSection
+          heading={SUPERMARKET_TOOLS_DATA.heading}
+          description={SUPERMARKET_TOOLS_DATA.paragraph}
+          tools={SUPERMARKET_TOOLS_DATA.tools}
+        />
 
-      <IndustriesTestimonial
-        testimonials={SUPERMARKET_TESTIMONIALS}
-        heading={SUPERMARKET_TESTIMONIAL_DATA.heading}
-        paragraph={SUPERMARKET_TESTIMONIAL_DATA.paragraph}
-        showSmartTools={true}
-        secondHeading={SUPERMARKET_TESTIMONIAL_DATA.secondHeading}
-        secondDescription={SUPERMARKET_TESTIMONIAL_DATA.secondDescription}
-        whyChooseShow={true}
-        whyChooseTitle={SUPERMARKET_TESTIMONIAL_DATA.whyChooseTitle}
-        whyChooseDescription={SUPERMARKET_TESTIMONIAL_DATA.whyChooseDescription}
-        features={SUPERMARKET_TESTIMONIAL_FEATURES}
-        iconSet="superMarket"
-      />
+        <IndustriesTestimonial
+          testimonials={SUPERMARKET_TESTIMONIALS}
+          heading={SUPERMARKET_TESTIMONIAL_DATA.heading}
+          paragraph={SUPERMARKET_TESTIMONIAL_DATA.paragraph}
+          showSmartTools={true}
+          secondHeading={SUPERMARKET_TESTIMONIAL_DATA.secondHeading}
+          secondDescription={SUPERMARKET_TESTIMONIAL_DATA.secondDescription}
+          whyChooseShow={true}
+          whyChooseTitle={SUPERMARKET_TESTIMONIAL_DATA.whyChooseTitle}
+          whyChooseDescription={SUPERMARKET_TESTIMONIAL_DATA.whyChooseDescription}
+          features={SUPERMARKET_TESTIMONIAL_FEATURES}
+          iconSet="superMarket"
+        />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <FaqSection
-          heading= "FAQS"
-          paragraph= "Our supermarket store POS solution is built in such a way that it makes everyday operations easy and effective. These are the responses to some of the most frequent questions of the store owners in supermarkets."
-          faqs={SUPERMARKET_FAQS}
-          buttonText="Start Now"
+        <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+          <FaqSection
+            heading="FAQS"
+            paragraph="Our supermarket store POS solution is built in such a way that it makes everyday operations easy and effective. These are the responses to some of the most frequent questions of the store owners in supermarkets."
+            faqs={SUPERMARKET_FAQS}
+            buttonText="Start Now"
+          />
+        </div>
+        <IndustriesHardwareControl
+          title="Take Control of Your Supermarket"
+          description="Supermarkets can lose money because of stock errors and inefficient processes. Our system helps reduce losses, keeps inventory accurate and makes operations faster. It helps with tracking and billing which leads to profit and growth."
+          ctaDesc="Start Today"
         />
       </div>
-       <IndustriesHardwareControl
-        title= "Take Control of Your Supermarket"
-        description= "Supermarkets can lose money because of stock errors and inefficient processes. Our system helps reduce losses, keeps inventory accurate and makes operations faster. It helps with tracking and billing which leads to profit and growth."
-        ctaDesc="Start Today"
-      />
-    </div>
     </>
   );
 };

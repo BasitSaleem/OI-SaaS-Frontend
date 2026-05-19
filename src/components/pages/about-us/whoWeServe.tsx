@@ -54,9 +54,9 @@ export default function WhoWeServe({
                       <div className="h-10 w-10">
                         {/* Check if icon is a string/StaticImageData or ReactNode */}
                         {typeof card.icon === "string" ||
-                        (card.icon &&
-                          typeof card.icon === "object" &&
-                          "src" in card.icon) ? (
+                          (card.icon &&
+                            typeof card.icon === "object" &&
+                            "src" in card.icon) ? (
                           <Image
                             src={card.icon as string | StaticImageData}
                             alt={card.title}

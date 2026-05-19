@@ -6,11 +6,11 @@ import { FEATURE_CARDS_DATA } from "@/constant/featuresPageData";
 export default function FeaturesssSection() {
   return (
     <div className="">
-    <section className="wrapper ">
-      {FEATURE_CARDS_DATA.map((feature, index) => (
-        <FeatureCard2 key={index} index={index} {...feature} />
-      ))}
-    </section>
+      <section className="wrapper ">
+        {FEATURE_CARDS_DATA.map((feature, index) => (
+          <FeatureCard2 key={index} index={index} {...feature} />
+        ))}
+      </section>
     </div>
   );
 }

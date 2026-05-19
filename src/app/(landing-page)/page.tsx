@@ -118,55 +118,55 @@ export default function Home() {
         }}
       />
       <div className="font-onest overflow-x-hidden">
-          <HeroSection2
-            title={HOME_PAGE_CONTENT.hero.title}
-            description={HOME_PAGE_CONTENT.hero.description}
-            video={HOME_PAGE_CONTENT.hero.video}
-            variant={HOME_PAGE_CONTENT.hero.variant}
-          />
+        <HeroSection2
+          title={HOME_PAGE_CONTENT.hero.title}
+          description={HOME_PAGE_CONTENT.hero.description}
+          video={HOME_PAGE_CONTENT.hero.video}
+          variant={HOME_PAGE_CONTENT.hero.variant}
+        />
 
-          <TrustedBySection heading={HOME_PAGE_CONTENT.trustedBy.heading} />
+        <TrustedBySection heading={HOME_PAGE_CONTENT.trustedBy.heading} />
 
-          <TurningChaos
-            title={HOME_PAGE_CONTENT.turningChaos.title}
-            miniTitle={HOME_PAGE_CONTENT.turningChaos.miniTitle}
-            description={HOME_PAGE_CONTENT.turningChaos.description}
-          />
+        <TurningChaos
+          title={HOME_PAGE_CONTENT.turningChaos.title}
+          miniTitle={HOME_PAGE_CONTENT.turningChaos.miniTitle}
+          description={HOME_PAGE_CONTENT.turningChaos.description}
+        />
 
-          <CaseStudies caseStudies={caseStudiesData} />
+        <CaseStudies caseStudies={caseStudiesData} />
 
-          <FeaturesTabSection />
+        <FeaturesTabSection />
 
-          <SmartWaytoSyncndSellSection />
+        <SmartWaytoSyncndSellSection />
 
-           <UnifiedPlatform
-            heading={HOME_UNIFIED_HEADING}
-            paragraph={HOME_UNIFIED_PARAGRAPH}
-            cards={HOME_UNIFIED_CARDS}
-          />
+        <UnifiedPlatform
+          heading={HOME_UNIFIED_HEADING}
+          paragraph={HOME_UNIFIED_PARAGRAPH}
+          cards={HOME_UNIFIED_CARDS}
+        />
 
-          <VoicesRealBusiness />
+        <VoicesRealBusiness />
 
-          <IndustryPosShowcase
-            mainHeading={HOME_PAGE_CONTENT.industryShowcase.mainHeading}
-            paragraph={HOME_PAGE_CONTENT.industryShowcase.paragraph}
-            buttonText={HOME_PAGE_CONTENT.industryShowcase.buttonText}
-            industries={HOME_INDUSTRIES}
-          />
+        <IndustryPosShowcase
+          mainHeading={HOME_PAGE_CONTENT.industryShowcase.mainHeading}
+          paragraph={HOME_PAGE_CONTENT.industryShowcase.paragraph}
+          buttonText={HOME_PAGE_CONTENT.industryShowcase.buttonText}
+          industries={HOME_INDUSTRIES}
+        />
 
-          <PosIconsSection />
+        <PosIconsSection />
 
-          <ToolsSection />
+        <ToolsSection />
 
-          <div className="wrapper">
-            <SmartTools />
-          </div>
+        <div className="wrapper">
+          <SmartTools />
+        </div>
 
-          <div className="lg:pt-[100px] md:pt-40 pt-28">
-            <FaqSection faqs={HOME_FAQS} />
-          </div>
+        <div className="lg:pt-[100px] md:pt-40 pt-28">
+          <FaqSection faqs={HOME_FAQS} />
+        </div>
 
-          <CalltoActionBottom />
+        <CalltoActionBottom />
       </div>
     </>
   );

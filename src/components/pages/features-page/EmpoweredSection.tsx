@@ -41,27 +41,27 @@ const EmpoweredSection: React.FC<EmpoweredSectionProps> = ({
       </div>
 
       <div className="wrapper ">
-      <div className="mt-4 md:mt-12 lg:mt-20 relative flex self-stretch">
-        <FeaturesMainSwiper
-          slides={features}
-          renderSlide={(card, i) => (
-            <FeatureCateCard
-              key={i}
-              title={card.title}
-              description={card.description}
-              videoSrc={card.videoSrc}
-              imageSrc={card.imageSrc}
-              className={card.className}
-              mediaClassName="w-full scale-x-110  h-[220px] rounded-tl-[20px] rounded-tr-[20px] "
-              heightClass="h-full"
-              paddingClass={card.paddingClass}
-              buttonLabel="View Details"
-              buttonHref={card.buttonHref || "#"}
-            />
-          )}
-          slidesPerView={1}
-        />
-      </div>
+        <div className="mt-4 md:mt-12 lg:mt-20 relative flex self-stretch">
+          <FeaturesMainSwiper
+            slides={features}
+            renderSlide={(card, i) => (
+              <FeatureCateCard
+                key={i}
+                title={card.title}
+                description={card.description}
+                videoSrc={card.videoSrc}
+                imageSrc={card.imageSrc}
+                className={card.className}
+                mediaClassName="w-full scale-x-110  h-[220px] rounded-tl-[20px] rounded-tr-[20px] "
+                heightClass="h-full"
+                paddingClass={card.paddingClass}
+                buttonLabel="View Details"
+                buttonHref={card.buttonHref || "#"}
+              />
+            )}
+            slidesPerView={1}
+          />
+        </div>
       </div>
     </section>
   );

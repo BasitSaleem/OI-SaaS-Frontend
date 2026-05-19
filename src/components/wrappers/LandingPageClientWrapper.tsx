@@ -16,9 +16,9 @@ export default function LandingPageClientWrapper({
   return (
     <>
       {/* <LenisProvider> */}
-        <div key={pathname}>
-          {children}
-        </div>
+      <div key={pathname}>
+        {children}
+      </div>
       {/* </LenisProvider> */}
       {!isCaseStudyDetail && <Footer />}
     </>

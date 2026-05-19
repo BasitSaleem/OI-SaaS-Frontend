@@ -10,22 +10,22 @@ const SmartIntegration: React.FC = () => {
     {
       colClass: "col-span-12 md:col-span-6 lg:col-span-7",
       scaleClass: "scale-110",
-     
+
     },
     {
       colClass: "col-span-12 md:col-span-6 lg:col-span-5",
       scaleClass: "scale-125",
-     
+
     },
     {
       colClass: "col-span-12 md:col-span-6 lg:col-span-5",
       scaleClass: "scale-125",
-     
+
     },
     {
       colClass: "col-span-12 md:col-span-6 lg:col-span-7",
       scaleClass: "scale-110",
-     
+
     },
   ];
 
@@ -44,7 +44,7 @@ const SmartIntegration: React.FC = () => {
 
         <div className="grid grid-cols-12 items-stretch gap-6">
           {features.map((feature, index) => {
-            const pattern = classPatterns[index % classPatterns.length]; 
+            const pattern = classPatterns[index % classPatterns.length];
             return (
               <FeatureCateCard
                 key={index}

@@ -204,9 +204,9 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
-  
 
-  
+
+
 ];
 
 export interface IndustryTreeItem {
@@ -272,7 +272,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Project Quoting' },
   ],
 
-  
+
   'furniture-store-pos-system': [
     { title: 'Furniture Inventory Management' },
     { title: 'Custom Order Tracking' },
@@ -455,13 +455,13 @@ export const IndustryList = ({ items }: { items: IndustryTreeItem[] }) => (
 // // Helper function to group industries by category
 export const groupIndustriesByCategory = (): Record<string, IndustryItem[]> => {
   const grouped: Record<string, IndustryItem[]> = {};
-  
+
   industriesItems.forEach((item) => {
     if (!grouped[item.category]) {
       grouped[item.category] = [];
     }
     grouped[item.category].push(item);
   });
-  
+
   return grouped;
 };

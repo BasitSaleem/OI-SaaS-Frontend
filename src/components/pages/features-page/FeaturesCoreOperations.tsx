@@ -16,7 +16,7 @@ const layoutClasses = [
     paddingClass: "px-[24px]",
     heightClass: "h-fit",
   },
-  
+
   // Second card - 4 columns (shorter height)
   {
     className: "col-span-12 md:col-span-6 xl:col-span-4 xl:row-span-1",

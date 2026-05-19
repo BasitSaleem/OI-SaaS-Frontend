@@ -130,9 +130,10 @@ export default function OffcanvasMenu({
       links: resourcesItems,
       children: resourcesDetailsMap,
     },
-    company: { 
-      title: "company", 
-      links: companyItems },
+    company: {
+      title: "company",
+      links: companyItems
+    },
     profile: {
       title: "Profile",
       links: [
@@ -212,8 +213,8 @@ export default function OffcanvasMenu({
               />
             </button>
           </div> */}
-          
-  <SearchField searchOpen={true} searchQuery={searchQuery} setSearchQuery={setSearchQuery} variant="page" />
+
+          <SearchField searchOpen={true} searchQuery={searchQuery} setSearchQuery={setSearchQuery} variant="page" />
           {/* Dynamic back button */}
           <button
             id="dynamic-back-btn"
@@ -399,24 +400,21 @@ export default function OffcanvasMenu({
                     return (
                       <div
                         key={cat.id}
-                        className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${
-                          isCatOpen ? "border-[var(--primary-purple)]" : "border-[var(--border-muted)]"
-                        }`}
+                        className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${isCatOpen ? "border-[var(--primary-purple)]" : "border-[var(--border-muted)]"
+                          }`}
                       >
                         <button
                           onClick={() =>
                             setOpenCatId(isCatOpen ? null : cat.id)
                           }
-                          className={`w-full flex items-center justify-between px-4 py-3 text-left transition-colors ${
-                            isCatOpen ? "bg-purple-50" : "hover:bg-gray-50"
-                          }`}
+                          className={`w-full flex items-center justify-between px-4 py-3 text-left transition-colors ${isCatOpen ? "bg-purple-50" : "hover:bg-gray-50"
+                            }`}
                         >
                           <span
-                            className={`text-sm font-['Onest'] ${
-                              isCatOpen
+                            className={`text-sm font-['Onest'] ${isCatOpen
                                 ? "font-bold text-[var(--primary-purple)]"
                                 : "font-semibold text-[var(--text-dark)]"
-                            }`}
+                              }`}
                           >
                             {cat.title}
                           </span>
@@ -427,18 +425,16 @@ export default function OffcanvasMenu({
                                 : "/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
-                            className={`w-3 h-3 transition-transform duration-300 ${
-                              isCatOpen ? "rotate-0" : "-rotate-90"
-                            }`}
+                            className={`w-3 h-3 transition-transform duration-300 ${isCatOpen ? "rotate-0" : "-rotate-90"
+                              }`}
                           />
                         </button>
 
                         <div
-                          className={`transition-all duration-300 ease-in-out ${
-                            isCatOpen
+                          className={`transition-all duration-300 ease-in-out ${isCatOpen
                               ? "max-h-[5000px] opacity-100 visible"
                               : "max-h-0 opacity-0 invisible"
-                          }`}
+                            }`}
                         >
                           <ul className="p-2 space-y-2">
                             {featuresItems
@@ -457,11 +453,10 @@ export default function OffcanvasMenu({
                                 return (
                                   <li key={itemKey} className="w-full">
                                     <div
-                                      className={`flex items-center border rounded-lg overflow-hidden transition-colors ${
-                                        isItemOpen
+                                      className={`flex items-center border rounded-lg overflow-hidden transition-colors ${isItemOpen
                                           ? "border-[var(--primary-purple)] bg-gray-50"
                                           : "border-transparent hover:bg-gray-50"
-                                      }`}
+                                        }`}
                                     >
                                       <Link
                                         href={`/features/${item.key.toLowerCase()}`}
@@ -504,11 +499,10 @@ export default function OffcanvasMenu({
 
                                     {hasDetails && (
                                       <div
-                                        className={`transition-all duration-300 pl-4 ${
-                                          isItemOpen
+                                        className={`transition-all duration-300 pl-4 ${isItemOpen
                                             ? "max-h-[300px] opacity-100 mt-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
                                             : "max-h-0 opacity-0 mt-0 overflow-hidden"
-                                        }`}
+                                          }`}
                                       >
                                         <ul className="space-y-1.5 border-l-2 border-gray-100 pl-3">
                                           {(details as any[]).map((d, idx) => (
@@ -548,27 +542,24 @@ export default function OffcanvasMenu({
                     return (
                       <div
                         key={type}
-                        className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${
-                          isTypeOpen
+                        className={`border rounded-xl bg-white overflow-hidden transition-all duration-300 ${isTypeOpen
                             ? "border-[var(--primary-purple)] shadow-sm"
                             : "border-[var(--border-muted)]"
-                        }`}
+                          }`}
                       >
                         <button
                           onClick={() =>
                             setOpenIndustryType(isTypeOpen ? null : (type as any))
                           }
-                          className={`w-full flex items-center justify-between px-4 py-4 text-left transition-colors ${
-                            isTypeOpen ? "bg-purple-50" : "hover:bg-gray-50"
-                          }`}
+                          className={`w-full flex items-center justify-between px-4 py-4 text-left transition-colors ${isTypeOpen ? "bg-purple-50" : "hover:bg-gray-50"
+                            }`}
                         >
                           <div className="flex items-center gap-3">
                             <span
-                              className={`text-base font-['Onest']  tracking-wider ${
-                                isTypeOpen
+                              className={`text-base font-['Onest']  tracking-wider ${isTypeOpen
                                   ? "font-bold text-[var(--primary-purple)]"
                                   : "font-semibold text-[var(--text-dark)]"
-                              }`}
+                                }`}
                             >
                               {type === "pos" ? "POS" : "Inventory"}
                             </span>
@@ -580,18 +571,16 @@ export default function OffcanvasMenu({
                                 : "/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
-                            className={`w-3.5 h-3.5 transition-transform duration-300 ${
-                              isTypeOpen ? "rotate-0" : "-rotate-90"
-                            }`}
+                            className={`w-3.5 h-3.5 transition-transform duration-300 ${isTypeOpen ? "rotate-0" : "-rotate-90"
+                              }`}
                           />
                         </button>
 
                         <div
-                          className={`transition-all duration-300 ease-in-out ${
-                            isTypeOpen
+                          className={`transition-all duration-300 ease-in-out ${isTypeOpen
                               ? "max-h-[5000px] opacity-100 visible p-2"
                               : "max-h-0 opacity-0 invisible"
-                          }`}
+                            }`}
                         >
                           {/* Nested Category Level */}
                           <div className="space-y-2">
@@ -600,17 +589,15 @@ export default function OffcanvasMenu({
                               return (
                                 <div
                                   key={cat.id}
-                                  className={`border rounded-lg bg-gray-50 overflow-hidden transition-all duration-300 ${
-                                    isCatOpen ? "border-purple-200" : "border-gray-100"
-                                  }`}
+                                  className={`border rounded-lg bg-gray-50 overflow-hidden transition-all duration-300 ${isCatOpen ? "border-purple-200" : "border-gray-100"
+                                    }`}
                                 >
                                   <button
                                     onClick={() =>
                                       setOpenCatId(isCatOpen ? null : `${type}-${cat.id}`)
                                     }
-                                    className={`w-full flex items-center justify-between px-4 py-2.5 text-left transition-colors ${
-                                      isCatOpen ? "bg-white" : "hover:bg-white/50"
-                                    }`}
+                                    className={`w-full flex items-center justify-between px-4 py-2.5 text-left transition-colors ${isCatOpen ? "bg-white" : "hover:bg-white/50"
+                                      }`}
                                   >
                                     <span className={`text-sm font-['Onest'] ${isCatOpen ? "font-bold text-[var(--primary-purple)]" : "font-semibold text-gray-700"}`}>
                                       {cat.title}
@@ -622,18 +609,16 @@ export default function OffcanvasMenu({
                                           : "/assets/header-dropdown-images/arrow-down-icon.svg"
                                       }
                                       alt="toggle"
-                                      className={`w-3 h-3 transition-transform duration-300 ${
-                                        isCatOpen ? "rotate-0" : "-rotate-90"
-                                      }`}
+                                      className={`w-3 h-3 transition-transform duration-300 ${isCatOpen ? "rotate-0" : "-rotate-90"
+                                        }`}
                                     />
                                   </button>
 
                                   <div
-                                    className={`transition-all duration-300 ease-in-out ${
-                                      isCatOpen
+                                    className={`transition-all duration-300 ease-in-out ${isCatOpen
                                         ? "max-h-[2000px] opacity-100 visible"
                                         : "max-h-0 opacity-0 invisible"
-                                    }`}
+                                      }`}
                                   >
                                     <ul className="p-2 space-y-1.5">
                                       {typeItems
@@ -724,11 +709,10 @@ export default function OffcanvasMenu({
                       return (
                         <li key={itemKey} className="w-full">
                           <div
-                            className={`flex items-center border rounded-xl overflow-hidden hover:bg-gray-100 transition-colors ${
-                              isOpen
+                            className={`flex items-center border rounded-xl overflow-hidden hover:bg-gray-100 transition-colors ${isOpen
                                 ? "border-[var(--primary-purple)] bg-gray-100"
                                 : "border-[var(--border-muted)]"
-                            }`}
+                              }`}
                           >
                             {/* 80% width clickable navigation link */}
                             <Link
@@ -785,11 +769,10 @@ export default function OffcanvasMenu({
                           {hasDetails && (
                             <div
                               id={`${activePanel}-panel-${index}`}
-                              className={`overflow-hidden transition-all duration-200 ${
-                                isOpen
+                              className={`overflow-hidden transition-all duration-200 ${isOpen
                                   ? "max-h-[1000px] opacity-100"
                                   : "max-h-0 opacity-0"
-                              }`}
+                                }`}
                             >
                               <div className="px-0 pt-3 pb-2">
                                 {Array.isArray(details) ? (
@@ -810,9 +793,8 @@ export default function OffcanvasMenu({
                                       const href = d?.url || d?.href || "#";
                                       return (
                                         <li
-                                          key={`${itemKey}-obj-${
-                                            d?.key || text
-                                          }-${i}`}
+                                          key={`${itemKey}-obj-${d?.key || text
+                                            }-${i}`}
                                           className="text-xs text-[var(--text-dark)] leading-relaxed"
                                         >
                                           {href !== "#" ? (

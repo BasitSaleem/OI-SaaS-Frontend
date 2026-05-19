@@ -141,9 +141,9 @@ const ContactHero: React.FC<contactHeroProps> = ({
                                   <div className="h-10 w-10">
                                     {/* Check if icon is a string/StaticImageData or ReactNode */}
                                     {typeof card.icon === "string" ||
-                                    (card.icon &&
-                                      typeof card.icon === "object" &&
-                                      "src" in card.icon) ? (
+                                      (card.icon &&
+                                        typeof card.icon === "object" &&
+                                        "src" in card.icon) ? (
                                       <Image
                                         src={
                                           card.icon as string | StaticImageData
@@ -188,10 +188,10 @@ const ContactHero: React.FC<contactHeroProps> = ({
 
                         <div ref={supportCardsRef} className="w-full">
                           <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 sm:gap-5 xl:gap-6">
-                          {supportCards.map((card, index) => (
-                            <SupportCard key={index} card={card} />
-                          ))}
-                        </div>
+                            {supportCards.map((card, index) => (
+                              <SupportCard key={index} card={card} />
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>

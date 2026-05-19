@@ -43,10 +43,10 @@ const ToolsSection = ({
             const i = index % 5;
 
             let mdCol = "md:col-span-6";
-            if (i === 4) mdCol = "md:col-span-12"; 
+            if (i === 4) mdCol = "md:col-span-12";
 
             let lgCol = "lg:col-span-4";
-            if (i >= 3) lgCol = "lg:col-span-6"; 
+            if (i >= 3) lgCol = "lg:col-span-6";
 
             return (
               <div

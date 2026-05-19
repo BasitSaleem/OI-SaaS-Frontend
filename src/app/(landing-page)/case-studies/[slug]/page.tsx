@@ -44,7 +44,7 @@ export async function generateMetadata({
 
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  
+
   // Find the case study by matching the slug
   const caseStudy = caseStudiesData.find(
     (study) => study.slug === resolvedParams.slug
@@ -56,7 +56,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
   return (
     <>
-       <CaseStudyHero
+      <CaseStudyHero
         title={caseStudy.companyName}
         subTitle={caseStudy.tagline}
         description={caseStudy.subtitle}
@@ -64,50 +64,50 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         variant="animation2"
         primaryColor={caseStudy.primaryColor}
         secondaryColor={caseStudy.secondaryColor}
-       />
-       <CaseStudyOverview 
-         heading={caseStudy.founderQuote?.heading || ""}
-         study={caseStudy} 
-       />
-       <UnifiedPlatform
-         isCaseStudy={true}
-         title={caseStudy.challengesTitle || "The Challenge"}
-         heading={caseStudy.challengesHead || "Operational Challenges"}
-         paragraph={caseStudy.challengesIntro || ""}
-         cards={caseStudy.challenges?.map((challenge: Challenge) => ({
-           icon: challenge.icon,
-           title: challenge.title,
-           description: challenge.description,
-         })) || []}
-         iconSet={caseStudy.challengesIconSet}
-       />
+      />
+      <CaseStudyOverview
+        heading={caseStudy.founderQuote?.heading || ""}
+        study={caseStudy}
+      />
+      <UnifiedPlatform
+        isCaseStudy={true}
+        title={caseStudy.challengesTitle || "The Challenge"}
+        heading={caseStudy.challengesHead || "Operational Challenges"}
+        paragraph={caseStudy.challengesIntro || ""}
+        cards={caseStudy.challenges?.map((challenge: Challenge) => ({
+          icon: challenge.icon,
+          title: challenge.title,
+          description: challenge.description,
+        })) || []}
+        iconSet={caseStudy.challengesIconSet}
+      />
 
-        <IndustryWorkflowSection
-          title={caseStudy.strategyHead || "A Structured Path to Success"}
-          miniTitle= {caseStudy.strategyTitle || "Our Approach"}
-          description={caseStudy.strategyIntro || "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks."}
-          items={caseStudy.strategySteps?.map((step: StrategyStep, index: number) => ({
-            id: index + 1,
-            title: step.title,
-            description: step.description,
-          })) || []}
-        />
+      <IndustryWorkflowSection
+        title={caseStudy.strategyHead || "A Structured Path to Success"}
+        miniTitle={caseStudy.strategyTitle || "Our Approach"}
+        description={caseStudy.strategyIntro || "We engineered a systematic transition strategy designed to eliminate the manual bottlenecks."}
+        items={caseStudy.strategySteps?.map((step: StrategyStep, index: number) => ({
+          id: index + 1,
+          title: step.title,
+          description: step.description,
+        })) || []}
+      />
 
-        <CaseStudyOutcomes
-         badge={caseStudy.outcomesTitle || "The Difference Made"}
-          heading={caseStudy.outcomesHeading || "How Everything Changed"}
-          description={caseStudy.outcomesIntro || ""}
-          outcomes={caseStudy.outcomes || []}
-          iconSet={caseStudy.outcomesIconSet}
-          bottomImage={caseStudy.outcomesBanner || "/assets/case-studies/outcome-banner.webp"}
-        />
+      <CaseStudyOutcomes
+        badge={caseStudy.outcomesTitle || "The Difference Made"}
+        heading={caseStudy.outcomesHeading || "How Everything Changed"}
+        description={caseStudy.outcomesIntro || ""}
+        outcomes={caseStudy.outcomes || []}
+        iconSet={caseStudy.outcomesIconSet}
+        bottomImage={caseStudy.outcomesBanner || "/assets/case-studies/outcome-banner.webp"}
+      />
 
-        <ResultsInNumbers 
-          badge={caseStudy.resultTitle || "Results in Numbers"}
-          title={caseStudy.resultsHeading}
-          description={caseStudy.resultsSubheading}
-          metrics={caseStudy.resultMetrics}
-        />
+      <ResultsInNumbers
+        badge={caseStudy.resultTitle || "Results in Numbers"}
+        title={caseStudy.resultsHeading}
+        description={caseStudy.resultsSubheading}
+        metrics={caseStudy.resultMetrics}
+      />
     </>
   );
 }

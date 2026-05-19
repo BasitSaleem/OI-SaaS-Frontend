@@ -1071,4 +1071,4 @@ export default function bightHomeIcons({
 
 // Export individual icons as well
 export { icons as bightHomeIcons };
-  
+

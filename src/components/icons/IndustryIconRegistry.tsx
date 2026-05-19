@@ -74,20 +74,20 @@ const posBarberShopPageIcons = dynamic(
 );
 const alAsifCasestudyIcons = dynamic(
   () => import("./alAsifCasestudyIcons"),
-  
+
 );
 const bightHomeIcons = dynamic(
   () => import("./bightHomeIcons"),
-  
+
 );
 const urbansThreadsIcons = dynamic(
   () => import("./urbansThreadsIcons"),
-  
+
 );
 
 const industriesTestmonialProfileIcons = dynamic(
   () => import("./industriesTestmonialProfileIcons"),
-  
+
 );
 
 export type IndustryIconSet =

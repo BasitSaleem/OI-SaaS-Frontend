@@ -127,7 +127,7 @@ const IndustryPosShowcase = ({
             {mainHeading}
           </SubHeading>
           <Paragraph className="">{paragraph}</Paragraph>
-        
+
         </div>
         <div className="hidden md:flex items-center gap-4 mt-8 md:mt-0">
           <button
@@ -143,11 +143,10 @@ const IndustryPosShowcase = ({
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`transition-all duration-300 rounded-full cursor-pointer ${
-                  index === currentSlide
+                className={`transition-all duration-300 rounded-full cursor-pointer ${index === currentSlide
                     ? "w-8 h-3 bg-[var(--primary-teal)]"
                     : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
-                }`}
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
@@ -171,10 +170,9 @@ const IndustryPosShowcase = ({
           }}
         >
           {industries.map((industry, index) => {
-            const normalWidth = isMobile 
-              ? "100%" 
-              : `calc((100% / ${slidesPerView}) - ${
-                (24 * (slidesPerView - 1)) / slidesPerView
+            const normalWidth = isMobile
+              ? "100%"
+              : `calc((100% / ${slidesPerView}) - ${(24 * (slidesPerView - 1)) / slidesPerView
               }px)`;
             const startIdx = currentSlide * slidesPerView;
             const endIdx = startIdx + slidesPerView;
@@ -233,9 +231,8 @@ const IndustryPosShowcase = ({
                 aria-expanded={isTablet && isExpanded}
                 aria-label={
                   isTablet && !isMobile
-                    ? `${industry.title} - Click to ${
-                        isExpanded ? "collapse" : "expand"
-                      }`
+                    ? `${industry.title} - Click to ${isExpanded ? "collapse" : "expand"
+                    }`
                     : undefined
                 }
                 tabIndex={isTablet && !isMobile ? 0 : undefined}
@@ -280,11 +277,10 @@ const IndustryPosShowcase = ({
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`transition-all duration-300 rounded-full cursor-pointer ${
-                index === currentSlide
+              className={`transition-all duration-300 rounded-full cursor-pointer ${index === currentSlide
                   ? "w-8 h-3 bg-[#1AD1B9]"
                   : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
-              }`}
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

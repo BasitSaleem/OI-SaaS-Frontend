@@ -18,7 +18,7 @@ export interface UnifiedPlatformCard {
 }
 
 interface UnifiedPlatformProps {
-   title?: string;
+  title?: string;
   heading: string;
   paragraph: string;
   cards: UnifiedPlatformCard[];
@@ -29,7 +29,7 @@ interface UnifiedPlatformProps {
 }
 
 function UnifiedPlatform({
-   title,
+  title,
   heading,
   paragraph,
   cards,
@@ -133,9 +133,8 @@ function UnifiedPlatform({
                 >
                   {showAll ? "See Less" : "See All"}
                   <span
-                    className={`transition-transform duration-300 ${
-                      showAll ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-300 ${showAll ? "rotate-180" : ""
+                      }`}
                   >
                     <ArrowDown size={24} />
                   </span>

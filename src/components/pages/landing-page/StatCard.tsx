@@ -14,7 +14,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ metric, index, statRefs }) => {
   const sign = metric.value.replace(/[0-9]/g, "");
-  
+
   return (
     <div className="flex flex-col items-center justify-start p-6 bg-white/12 border border-white/50 rounded-[30px] backdrop-blur-[22px] text-center h-full transition-transform duration-300 hover:scale-[1.02]">
       <p

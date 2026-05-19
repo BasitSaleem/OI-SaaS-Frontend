@@ -62,10 +62,10 @@ export default function FeaturesMainSwiper<T>({
       pagination={
         showPagination
           ? {
-              clickable: true,
-              renderBullet: (index, className) =>
-                `<span class="${className}"></span>`,
-            }
+            clickable: true,
+            renderBullet: (index, className) =>
+              `<span class="${className}"></span>`,
+          }
           : false // Disable pagination when false
       }
       breakpoints={breakpoints || defaultBreakpoints}

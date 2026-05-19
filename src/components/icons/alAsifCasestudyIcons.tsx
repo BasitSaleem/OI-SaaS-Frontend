@@ -70,7 +70,7 @@ const icons = {
         strokeWidth="4.53"
       />
       <rect
-       x="5"
+        x="5"
         y="5"
         width="70.8824"
         height="70.8824"
@@ -205,7 +205,7 @@ const icons = {
         strokeWidth="4.53"
       />
       <rect
-         x="5"
+        x="5"
         y="5"
         width="70.8824"
         height="70.8824"
@@ -250,7 +250,7 @@ const icons = {
         strokeWidth="4.53"
       />
       <rect
-         x="5"
+        x="5"
         y="5"
         width="70.8824"
         height="70.8824"
@@ -499,7 +499,7 @@ const icons = {
   ),
 
   challengeIcon5: (
-   <svg
+    <svg
       width="44"
       height="44"
       viewBox="0 0 44 44"
@@ -594,7 +594,7 @@ const icons = {
   ),
 
   challengeIcon7: (
-     <svg
+    <svg
       width="44"
       height="44"
       viewBox="0 0 44 44"
@@ -623,7 +623,7 @@ const icons = {
         strokeLinejoin="round"
       />
     </svg>
-    
+
   ),
 
   outcomeIcon1: (
@@ -1102,5 +1102,5 @@ export default function alAsifCasestudyIcons({
 }
 
 // Export individual icons as well
-export { icons as alAsifCasestudyIconss };  
+export { icons as alAsifCasestudyIconss };
 

@@ -117,17 +117,17 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
               {/* CONTENT ABOVE BACKGROUND LAYER */}
               <div
                 className="relative z-[10] owner-inventory-hero__content overflow-hidden grid grid-cols-12 items-center justify-center w-full wrapper p-3 md:p-4 lg:p-8 rounded-[30px] bg-white"
-                // style={{
-                //   backgroundImage: `url(${bgImage})`,
-                //   backgroundSize: "cover",
-                //   backgroundPosition: "center",
-                // }}
+              // style={{
+              //   backgroundImage: `url(${bgImage})`,
+              //   backgroundSize: "cover",
+              //   backgroundPosition: "center",
+              // }}
               >
-                <div 
+                <div
                   className="absolute bottom-6 z-[-1] right-6 md:top-[284px] lg:right-8 lg:top-[50px] blur-[190px] md:blur-[230px] w-[230px] md:w-[400px] lg:w-[448px] h-[300px] md:h-[400px] lg:h-[406px] rounded-full"
                   style={{ backgroundColor: secondaryColor }}
                 ></div>
-                <div 
+                <div
                   className="absolute bottom-[60px] z-[-2] right-[60px] md:top-[284px] md:right-[300px] lg:right-[370px] lg:top-[87px] blur-[220px] md:blur-[200px] h-[270px] w-[180px] lg:h-[277px] lg:w-[278px] rounded-full"
                   style={{ backgroundColor: primaryColor }}
                 ></div>
@@ -162,11 +162,10 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
                     {heroStats.map((stat, i) => (
                       <div
                         key={i}
-                        className={`${
-                          i < 2
+                        className={`${i < 2
                             ? "col-span-12 md:col-span-4 lg:col-span-6"
                             : "col-span-12 md:col-span-4 lg:col-span-12"
-                        } flex items-center justify-center p-[3px] bg-[linear-gradient(360deg,rgba(255,255,255,0.4)_20.11%,rgba(255,255,255,0)_82.07%)] rounded-[24px]`}
+                          } flex items-center justify-center p-[3px] bg-[linear-gradient(360deg,rgba(255,255,255,0.4)_20.11%,rgba(255,255,255,0)_82.07%)] rounded-[24px]`}
                       >
                         <div
                           className={`bg-white/50 backdrop-blur-lg rounded-[24px] w-full h-full p-6 flex flex-col items-center`}

@@ -6,7 +6,7 @@ interface ModalProps {
   isOpen: boolean;
   gradientBackground?: string;
   onClose: () => void;
-  children: ReactNode;     
+  children: ReactNode;
 }
 
 const DEFAULT_GRADIENT_BACKGROUND = `
@@ -37,9 +37,9 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 `;
 
 
-export default function Modal({ 
-  isOpen, 
-  onClose, 
+export default function Modal({
+  isOpen,
+  onClose,
   children,
   gradientBackground = DEFAULT_GRADIENT_BACKGROUND // Add this parameter with default value
 }: ModalProps) {
@@ -48,9 +48,9 @@ export default function Modal({
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-[99999]">
-      <div 
+      <div
         data-lenis-prevent
-        className="rounded-2xl py-[40px] px-0 md:px-5 w-full backdrop-blur-md h-screen flex items-center justify-center shadow-xl relative bg-contain z-[10000] bg-center bg-no-repeat" 
+        className="rounded-2xl py-[40px] px-0 md:px-5 w-full backdrop-blur-md h-screen flex items-center justify-center shadow-xl relative bg-contain z-[10000] bg-center bg-no-repeat"
         style={{ background: gradientBackground }}
       >
         <div className="wrapper">

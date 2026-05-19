@@ -303,90 +303,90 @@ const Page = () => {
         }}
       />
       <div>
-      <SubIndustriesHero
-        title="Jewelry Inventory Management Software that Simplifies Tracking and Sales "
-        description="Streamline your inventory management, track items, sync stocks across multiple locations, and efficiently manage purchase orders. Owners Inventory maintains accurate records of jewelry stock. Our reliable jewelry management software makes operations efficient and enhances customer satisfaction."
-        image={heroBanner}
-        imageClassName="max-w-[1000px]"
-        ctaDesc="Start Free Today"
-        variant="animation2"
-      />
+        <SubIndustriesHero
+          title="Jewelry Inventory Management Software that Simplifies Tracking and Sales "
+          description="Streamline your inventory management, track items, sync stocks across multiple locations, and efficiently manage purchase orders. Owners Inventory maintains accurate records of jewelry stock. Our reliable jewelry management software makes operations efficient and enhances customer satisfaction."
+          image={heroBanner}
+          imageClassName="max-w-[1000px]"
+          ctaDesc="Start Free Today"
+          variant="animation2"
+        />
 
-      <VoicesRealBusiness title="Rated on Leading Review Platforms" />
+        <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
-      <IndustryUnifiedPlatform
-        heading={JEWELRY_INVENTORY_UNIFIED_HEADING}
-        paragraph={JEWELRY_INVENTORY_UNIFIED_PARAGRAPH}
-        cards={JEWELRY_INVENTORY_UNIFIED_CARDS}
-        iconSet="jewelaryInventory"
-      />
+        <IndustryUnifiedPlatform
+          heading={JEWELRY_INVENTORY_UNIFIED_HEADING}
+          paragraph={JEWELRY_INVENTORY_UNIFIED_PARAGRAPH}
+          cards={JEWELRY_INVENTORY_UNIFIED_CARDS}
+          iconSet="jewelaryInventory"
+        />
 
-      <WhyChoosePOS
-        heading="How Our Jewelry Inventory Management Software Solves These Challenges"
-        paragraph="Our inventory software efficiently handles jewelry inventory management, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
-        cards={JEWELRY_INVENTORY_WHY_CHOOSE_CARDS}
-        mainImage={whyChoseBanner}
-         iconSet="jewelaryInventory"
-      />
+        <WhyChoosePOS
+          heading="How Our Jewelry Inventory Management Software Solves These Challenges"
+          paragraph="Our inventory software efficiently handles jewelry inventory management, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
+          cards={JEWELRY_INVENTORY_WHY_CHOOSE_CARDS}
+          mainImage={whyChoseBanner}
+          iconSet="jewelaryInventory"
+        />
 
-      <KeyHighlights
-        heading="Key Features that Transform Jewelry Store Operations"
-        features={JEWELRY_INVENTORY_KEY_FEATURES_CARDS}
-      />
+        <KeyHighlights
+          heading="Key Features that Transform Jewelry Store Operations"
+          features={JEWELRY_INVENTORY_KEY_FEATURES_CARDS}
+        />
 
-      <InventoryWorkflow
-        heading={JEWELRY_INVENTORY_WORKFLOW_DATA.heading}
-        paragraph={JEWELRY_INVENTORY_WORKFLOW_DATA.paragraph}
-        steps={JEWELRY_INVENTORY_WORKFLOW_DATA.steps}
-      />
+        <InventoryWorkflow
+          heading={JEWELRY_INVENTORY_WORKFLOW_DATA.heading}
+          paragraph={JEWELRY_INVENTORY_WORKFLOW_DATA.paragraph}
+          steps={JEWELRY_INVENTORY_WORKFLOW_DATA.steps}
+        />
 
-      <IndustriesCallToAction
-        title="Manage Your Jewelry Store Efficiently"
-        description="Simplify daily operations, improve inventory accuracy, and handle every order with confidence using our jewelry inventory management software."
-        ctaDesc="Request a Free Demo"
-      />
+        <IndustriesCallToAction
+          title="Manage Your Jewelry Store Efficiently"
+          description="Simplify daily operations, improve inventory accuracy, and handle every order with confidence using our jewelry inventory management software."
+          ctaDesc="Request a Free Demo"
+        />
 
-      <IndustriesFeaturesSection features={JEWELRY_INVENTORY_FEATURE_CARDS} />
+        <IndustriesFeaturesSection features={JEWELRY_INVENTORY_FEATURE_CARDS} />
 
-      <SecurityCompliance
-        title="Security, Accuracy, and Compliance."
-        description="With high security controls and accurate tracking, our secure jewelry inventory software makes it convenient for jewelry stores to handle expensive items. Every transaction is recorded, ensuring accountability at each stage. The role-based access feature of Owners Inventory limits access to sensitive data, while detailed logs identify discrepancies and maintain operational transparency across inventory, sales, and financial records."
-      />
+        <SecurityCompliance
+          title="Security, Accuracy, and Compliance."
+          description="With high security controls and accurate tracking, our secure jewelry inventory software makes it convenient for jewelry stores to handle expensive items. Every transaction is recorded, ensuring accountability at each stage. The role-based access feature of Owners Inventory limits access to sensitive data, while detailed logs identify discrepancies and maintain operational transparency across inventory, sales, and financial records."
+        />
 
-      <ToolsSection
-        heading={JEWELRY_INVENTORY_TOOLS_DATA.heading}
-        description={JEWELRY_INVENTORY_TOOLS_DATA.paragraph}
-        tools={JEWELRY_INVENTORY_TOOLS_DATA.tools}
-      />
+        <ToolsSection
+          heading={JEWELRY_INVENTORY_TOOLS_DATA.heading}
+          description={JEWELRY_INVENTORY_TOOLS_DATA.paragraph}
+          tools={JEWELRY_INVENTORY_TOOLS_DATA.tools}
+        />
 
-      <IndustriesTestimonial
-        testimonials={JEWELRY_INVENTORY_TESTIMONIALS}
-        heading={JEWELRY_INVENTORY_TESTIMONIAL_DATA.heading}
-        paragraph={JEWELRY_INVENTORY_TESTIMONIAL_DATA.paragraph}
-        showSmartTools={true}
-        secondHeading={JEWELRY_INVENTORY_TESTIMONIAL_DATA.secondHeading}
-        secondDescription={JEWELRY_INVENTORY_TESTIMONIAL_DATA.secondDescription}
-        whyChooseShow={true}
-        whyChooseTitle={JEWELRY_INVENTORY_TESTIMONIAL_DATA.whyChooseTitle}
-        whyChooseDescription={JEWELRY_INVENTORY_TESTIMONIAL_DATA.whyChooseDescription}
-        features={JEWELRY_INVENTORY_TESTIMONIAL_FEATURES}
-         iconSet="jewelaryInventory"
-      />
+        <IndustriesTestimonial
+          testimonials={JEWELRY_INVENTORY_TESTIMONIALS}
+          heading={JEWELRY_INVENTORY_TESTIMONIAL_DATA.heading}
+          paragraph={JEWELRY_INVENTORY_TESTIMONIAL_DATA.paragraph}
+          showSmartTools={true}
+          secondHeading={JEWELRY_INVENTORY_TESTIMONIAL_DATA.secondHeading}
+          secondDescription={JEWELRY_INVENTORY_TESTIMONIAL_DATA.secondDescription}
+          whyChooseShow={true}
+          whyChooseTitle={JEWELRY_INVENTORY_TESTIMONIAL_DATA.whyChooseTitle}
+          whyChooseDescription={JEWELRY_INVENTORY_TESTIMONIAL_DATA.whyChooseDescription}
+          features={JEWELRY_INVENTORY_TESTIMONIAL_FEATURES}
+          iconSet="jewelaryInventory"
+        />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <FaqSection
-          heading="FAQS"
-          paragraph="Below are some of the most frequently asked questions about the jewelry inventory management software we provide."
-          faqs={JEWELRY_INVENTORY_FAQS}
-          buttonText="Start Now"
+        <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+          <FaqSection
+            heading="FAQS"
+            paragraph="Below are some of the most frequently asked questions about the jewelry inventory management software we provide."
+            faqs={JEWELRY_INVENTORY_FAQS}
+            buttonText="Start Now"
+          />
+        </div>
+        <IndustriesHardwareControl
+          title="Experience Smarter Jewelry Management"
+          description="Upgrade your store with our jewelry management system designed to handle the complexities of jewelry inventory management and sales."
+          ctaDesc="Start Today"
         />
       </div>
-       <IndustriesHardwareControl
-        title="Experience Smarter Jewelry Management"
-        description="Upgrade your store with our jewelry management system designed to handle the complexities of jewelry inventory management and sales."
-        ctaDesc="Start Today"
-      />
-    </div>
     </>
   );
 };

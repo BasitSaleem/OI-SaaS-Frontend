@@ -84,18 +84,17 @@ export default function FaqSection({
                 key={index}
                 className="mb-6 rounded-[20px] bg-white overflow-hidden"
               >
-                
+
                 <button
                   type="button"
                   className="accordion-toggle flex items-start justify-between w-full p-5 md:px-6 md:py-4 text-left font-medium focus:outline-none rounded-[20px] transition-colors duration-300"
                   onClick={() => toggle(index)}
                 >
                   <span
-                    className={`w-full max-w-[90%] text-base md:text-lg lg:text-xl leading-[170%] md:leading-[170%] lg:leading-[140%] font-['Onest'] font-semibold transition-colors duration-300 ${
-                      openIndex === index
+                    className={`w-full max-w-[90%] text-base md:text-lg lg:text-xl leading-[170%] md:leading-[170%] lg:leading-[140%] font-['Onest'] font-semibold transition-colors duration-300 ${openIndex === index
                         ? "text-(--primary-purple)"
                         : "text-(--text-dark)"
-                    }`}
+                      }`}
                   >
                     {faq.question}
                   </span>
@@ -137,10 +136,9 @@ export default function FaqSection({
                 <div
                   className={`overflow-hidden font-['Onest'] transition-all duration-300 ease-in-out
                     px-5 md:px-6 text-sm md:text-base leading-[170%] text-(--text-dark)
-                    ${
-                      openIndex === index
-                        ? "max-h-96 opacity-100 pb-5"
-                        : "max-h-0 opacity-0 pb-0"
+                    ${openIndex === index
+                      ? "max-h-96 opacity-100 pb-5"
+                      : "max-h-0 opacity-0 pb-0"
                     }`}
                 >
                   {faq.answer}

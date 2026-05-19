@@ -242,9 +242,9 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                 <div
                   className="owner-inventory-hero__lower relative w-full lg:max-w-[1000px] xl:max-w-[1200px] wrapper  pt-10 md:pt-10 xl:pt-10 "
                 >
-                    <div
-                      className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative z-[1] backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
-                    >
+                  <div
+                    className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative z-[1] backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
+                  >
 
                     <div className="w-full h-full rounded-[40px] relative overflow-hidden owner-inventory-hero__video">
                       <HeroImageSlider

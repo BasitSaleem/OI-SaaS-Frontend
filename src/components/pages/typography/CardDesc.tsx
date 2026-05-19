@@ -15,7 +15,7 @@ const CardDesc: React.FC<SubHeadingProps> = ({ children, className }) => {
         "lg:text-lg text-base",
         "lg:leading-[28px] leading-[170%]",
         "",
-        className 
+        className
       )}
     >
       {children}

@@ -8,30 +8,30 @@ export const CONTACT_HERO_CONTENT = {
 };
 
 export const CONTACT_METHODS = [
-    {
-        id: "contact-email",
-        title: "Email Us",
-        description: "Our team is here to help with any inquiries or support needs.",
-        contact: "sales@ownersinventory.com",
-        icon: <Mail className="w-6 h-6" />,
-        link: "mailto:sales@ownersinventory.com"
-    },
-    {
-        id: "contact-phone",
-        title: "Call Us",
-        description: "Mon-Fri from 9am to 6pm for immediate assistance.",
-        contact: "+1 (555) 000-0000",
-        icon: <Phone className="w-6 h-6" />,
-        link: "tel:+15550000000"
-    },
-    {
-        id: "contact-office",
-        title: "Visit Us",
-        description: "Visit our headquarters or drop by for a coffee.",
-        contact: "123 Business Ave, Tech City, TC 12345",
-        icon: <MapPin className="w-6 h-6" />,
-        link: "https://maps.google.com"
-    }
+  {
+    id: "contact-email",
+    title: "Email Us",
+    description: "Our team is here to help with any inquiries or support needs.",
+    contact: "sales@ownersinventory.com",
+    icon: <Mail className="w-6 h-6" />,
+    link: "mailto:sales@ownersinventory.com"
+  },
+  {
+    id: "contact-phone",
+    title: "Call Us",
+    description: "Mon-Fri from 9am to 6pm for immediate assistance.",
+    contact: "+1 (555) 000-0000",
+    icon: <Phone className="w-6 h-6" />,
+    link: "tel:+15550000000"
+  },
+  {
+    id: "contact-office",
+    title: "Visit Us",
+    description: "Visit our headquarters or drop by for a coffee.",
+    contact: "123 Business Ave, Tech City, TC 12345",
+    icon: <MapPin className="w-6 h-6" />,
+    link: "https://maps.google.com"
+  }
 ];
 
 export const CONTACT_CARDS = [

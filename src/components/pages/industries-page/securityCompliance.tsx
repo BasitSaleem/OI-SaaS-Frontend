@@ -25,9 +25,9 @@ const SecurityCompliance: React.FC<SecurityComplianceProps> = ({
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 items-start justify-start w-full  text-center">
               <div className="lg:col-span-6 h-full  xl:col-span-5">
-                <MainHeading className="text-left h-full flex items-center justify-center lg:mb-10 md:mb-6 mb-5"> 
+                <MainHeading className="text-left h-full flex items-center justify-center lg:mb-10 md:mb-6 mb-5">
                   {title}
-                
+
                 </MainHeading>
               </div>
 

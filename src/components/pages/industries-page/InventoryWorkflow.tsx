@@ -49,8 +49,8 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
     const total = steps.length;
     const slidesPerView =
       swiper.params.breakpoints &&
-      swiper.currentBreakpoint &&
-      swiper.params.breakpoints[Number(swiper.currentBreakpoint)]?.slidesPerView !== undefined
+        swiper.currentBreakpoint &&
+        swiper.params.breakpoints[Number(swiper.currentBreakpoint)]?.slidesPerView !== undefined
         ? Number(swiper.params.breakpoints[Number(swiper.currentBreakpoint)].slidesPerView)
         : typeof swiper.params.slidesPerView === "number"
           ? swiper.params.slidesPerView
@@ -88,7 +88,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
           loop={false}
           onInit={(swiper) => {
             handleProgress(swiper);
-            swiper.autoplay.stop(); 
+            swiper.autoplay.stop();
           }}
           onSlideChange={handleProgress}
           autoplay={{

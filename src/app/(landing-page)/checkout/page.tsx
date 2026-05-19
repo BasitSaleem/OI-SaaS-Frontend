@@ -395,11 +395,10 @@ const CheckoutContent = () => {
                         onClick={() => setBillingCycle("monthly")}
                         className={`tab-btn flex-1 cursor-pointer py-2 lg:py-[14px] 
           text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
-          transition-colors duration-300 focus:outline-none  ${
-            billingCycle === "monthly"
-              ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
-              : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
-          }`}
+          transition-colors duration-300 focus:outline-none  ${billingCycle === "monthly"
+                            ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
+                            : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
+                          }`}
                         aria-pressed={billingCycle === "monthly"}
                       >
                         Monthly
@@ -411,11 +410,10 @@ const CheckoutContent = () => {
                           onClick={() => setBillingCycle("yearly")}
                           className={`tab-btn relative cursor-pointer w-full py-2 lg:py-3.5
            text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
-            transition-colors duration-300 focus:outline-none  ${
-              billingCycle === "yearly"
-                ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
-                : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
-            }`}
+            transition-colors duration-300 focus:outline-none  ${billingCycle === "yearly"
+                              ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
+                              : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
+                            }`}
                           aria-pressed={billingCycle === "yearly"}
                         >
                           Yearly

@@ -22,7 +22,7 @@ const Mobileicons = () => {
 
       <button
         id="burger-toggle"
-        className="relative z-[1100]"     
+        className="relative z-[1100]"
         onClick={handleClick}
         aria-expanded={openMobileMenu}
         aria-controls="mobile-menu"
@@ -39,8 +39,8 @@ const Mobileicons = () => {
         />
       </button>
 
-   
-{openMobileMenu && <MobileMenu open={openMobileMenu} onClose={() => setOpenMobileMenu(false)} />}
+
+      {openMobileMenu && <MobileMenu open={openMobileMenu} onClose={() => setOpenMobileMenu(false)} />}
 
 
 

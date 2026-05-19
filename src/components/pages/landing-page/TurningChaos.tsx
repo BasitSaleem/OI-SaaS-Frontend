@@ -154,7 +154,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
         className={`relative z-1  flex flex-col items-center justify-center  w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[var(--background-halfwhite)] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] `}
         style={{
           backgroundImage: `linear-gradient(180deg, var(--white-color) 20%, transparent 100%)`,
-           background: gradientBackground,
+          background: gradientBackground,
         }}
       >
         <div className="w-full absolute blur-3xl left-0 right-0 z-2 h-full"></div>
@@ -206,7 +206,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
             />
           </div>
         </div>
-        
+
       </div>
     </div>
   );

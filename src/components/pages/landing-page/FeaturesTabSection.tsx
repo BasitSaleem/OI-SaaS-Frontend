@@ -47,7 +47,7 @@ export default function FeaturesTabSection() {
                   className="absolute inset-0 rounded-[20px] pointer-events-none"
                   style={{
                     padding: "1px",
-                    background: index % 2 === 1 
+                    background: index % 2 === 1
                       ? "linear-gradient(239.84deg, #795CF5 7.92%, rgba(26, 209, 185, 0.4) 40.44%, rgba(26, 209, 185, 0) 60.44%)"
                       : "linear-gradient(135.32deg, #795CF5 0%, rgba(26, 209, 185, 0.4) 40.44%, rgba(26, 209, 185, 0) 60.44%)",
                     WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
@@ -55,7 +55,7 @@ export default function FeaturesTabSection() {
                     maskComposite: "exclude",
                   }}
                 />
-                
+
                 <div className="flex items-center justify-start mb-5 relative z-10">
                   <Image
                     src={feature.icon}

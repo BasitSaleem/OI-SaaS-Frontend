@@ -333,90 +333,90 @@ const Page = () => {
         }}
       />
       <div>
-      <SubIndustriesHero
-        title="The Best POS System for Shoe Stores"
-        description="Most footwear stores experience confusion while stocking sizes and styles, especially when dealing with multiple brands, categories, and frequent inventory updates. This often leads to misplaced stock, inaccurate records, and missed sales opportunities. Our advanced POS system for shoe stores eliminates errors, increases billing speed, and provides complete control across all branches."
-        image={heroBanner}
-        imageClassName="max-w-[1000px]"
-        ctaDesc="Start Free Today"
-        variant="animation2"
-      />
+        <SubIndustriesHero
+          title="The Best POS System for Shoe Stores"
+          description="Most footwear stores experience confusion while stocking sizes and styles, especially when dealing with multiple brands, categories, and frequent inventory updates. This often leads to misplaced stock, inaccurate records, and missed sales opportunities. Our advanced POS system for shoe stores eliminates errors, increases billing speed, and provides complete control across all branches."
+          image={heroBanner}
+          imageClassName="max-w-[1000px]"
+          ctaDesc="Start Free Today"
+          variant="animation2"
+        />
 
-      <VoicesRealBusiness title="Rated on Leading Review Platforms" />
+        <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
-      <IndustryUnifiedPlatform
-        heading={SHOES_STORE_UNIFIED_HEADING}
-        paragraph={SHOES_STORE_UNIFIED_PARAGRAPH}
-        cards={SHOES_STORE_UNIFIED_CARDS}
-        iconSet="shoesStore"
-      />
+        <IndustryUnifiedPlatform
+          heading={SHOES_STORE_UNIFIED_HEADING}
+          paragraph={SHOES_STORE_UNIFIED_PARAGRAPH}
+          cards={SHOES_STORE_UNIFIED_CARDS}
+          iconSet="shoesStore"
+        />
 
-      <WhyChoosePOS
-        heading="How Our Inventory Software Solves These Challenges"
-        paragraph="Owners’ inventory software helps manage sales efficiently with a powerful POS system for shoe stores. Inventory remains accurate, and customers enjoy a seamless checkout experience."
-        cards={SHOES_STORE_WHY_CHOOSE_CARDS}
-        mainImage={whyChoseBanner}
-        iconSet="shoesStore"
-      />
+        <WhyChoosePOS
+          heading="How Our Inventory Software Solves These Challenges"
+          paragraph="Owners’ inventory software helps manage sales efficiently with a powerful POS system for shoe stores. Inventory remains accurate, and customers enjoy a seamless checkout experience."
+          cards={SHOES_STORE_WHY_CHOOSE_CARDS}
+          mainImage={whyChoseBanner}
+          iconSet="shoesStore"
+        />
 
-      <KeyHighlights
-        heading="Features of Our POS System for Shoe Stores"
-        features={SHOES_STORE_KEY_FEATURES_CARDS}
-      />
+        <KeyHighlights
+          heading="Features of Our POS System for Shoe Stores"
+          features={SHOES_STORE_KEY_FEATURES_CARDS}
+        />
 
-      <InventoryWorkflow
-        heading={SHOES_STORE_WORKFLOW_DATA.heading}
-        paragraph={SHOES_STORE_WORKFLOW_DATA.paragraph}
-        steps={SHOES_STORE_WORKFLOW_DATA.steps}
-      />
+        <InventoryWorkflow
+          heading={SHOES_STORE_WORKFLOW_DATA.heading}
+          paragraph={SHOES_STORE_WORKFLOW_DATA.paragraph}
+          steps={SHOES_STORE_WORKFLOW_DATA.steps}
+        />
 
-      <IndustriesCallToAction
-        title="Take Control of Your Inventory Now"
-        description="Experience complete visibility in the POS system that is utilized in footwear stores through real-time tracking and centralized control. Eliminate stock issues and make improved choices in your shoe business."
-        ctaDesc="Request a Free Demo"
-      />
+        <IndustriesCallToAction
+          title="Take Control of Your Inventory Now"
+          description="Experience complete visibility in the POS system that is utilized in footwear stores through real-time tracking and centralized control. Eliminate stock issues and make improved choices in your shoe business."
+          ctaDesc="Request a Free Demo"
+        />
 
-      <IndustriesFeaturesSection features={SHOES_STORE_FEATURE_CARDS} />
+        <IndustriesFeaturesSection features={SHOES_STORE_FEATURE_CARDS} />
 
-      <SecurityCompliance
-        title="Security, Accuracy, and Compliance."
-        description="Footwear stores require a POS system that is safe and precise. Sales, returns and discounts are safely managed in the owner's Inventory POS. It secures financial information, customer information, and transactions by granting permission access according to role. Proper records decrease billing errors and fraud, and well-arranged data keep stores abreast with taxation and audit standards."
-      />
+        <SecurityCompliance
+          title="Security, Accuracy, and Compliance."
+          description="Footwear stores require a POS system that is safe and precise. Sales, returns and discounts are safely managed in the owner's Inventory POS. It secures financial information, customer information, and transactions by granting permission access according to role. Proper records decrease billing errors and fraud, and well-arranged data keep stores abreast with taxation and audit standards."
+        />
 
-      <ToolsSection
-        heading={SHOES_STORE_TOOLS_DATA.heading}
-        description={SHOES_STORE_TOOLS_DATA.paragraph}
-        tools={SHOES_STORE_TOOLS_DATA.tools}
-      />
+        <ToolsSection
+          heading={SHOES_STORE_TOOLS_DATA.heading}
+          description={SHOES_STORE_TOOLS_DATA.paragraph}
+          tools={SHOES_STORE_TOOLS_DATA.tools}
+        />
 
-      <IndustriesTestimonial
-        testimonials={SHOES_STORE_TESTIMONIALS}
-        heading={SHOES_STORE_TESTIMONIAL_DATA.heading}
-        paragraph={SHOES_STORE_TESTIMONIAL_DATA.paragraph}
-        showSmartTools={true}
-        secondHeading={SHOES_STORE_TESTIMONIAL_DATA.secondHeading}
-        secondDescription={SHOES_STORE_TESTIMONIAL_DATA.secondDescription}
-        whyChooseShow={true}
-        whyChooseTitle={SHOES_STORE_TESTIMONIAL_DATA.whyChooseTitle}
-        whyChooseDescription={SHOES_STORE_TESTIMONIAL_DATA.whyChooseDescription}
-        features={SHOES_STORE_TESTIMONIAL_FEATURES}
-        iconSet="shoesStore"
-      />
+        <IndustriesTestimonial
+          testimonials={SHOES_STORE_TESTIMONIALS}
+          heading={SHOES_STORE_TESTIMONIAL_DATA.heading}
+          paragraph={SHOES_STORE_TESTIMONIAL_DATA.paragraph}
+          showSmartTools={true}
+          secondHeading={SHOES_STORE_TESTIMONIAL_DATA.secondHeading}
+          secondDescription={SHOES_STORE_TESTIMONIAL_DATA.secondDescription}
+          whyChooseShow={true}
+          whyChooseTitle={SHOES_STORE_TESTIMONIAL_DATA.whyChooseTitle}
+          whyChooseDescription={SHOES_STORE_TESTIMONIAL_DATA.whyChooseDescription}
+          features={SHOES_STORE_TESTIMONIAL_FEATURES}
+          iconSet="shoesStore"
+        />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <FaqSection
-          heading= "FAQs"
-          paragraph= "The following are some of the common questions that are asked about our POS system for shoe stores."
-          faqs={SHOES_STORE_FAQS}
-          buttonText="Start Now"
+        <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+          <FaqSection
+            heading="FAQs"
+            paragraph="The following are some of the common questions that are asked about our POS system for shoe stores."
+            faqs={SHOES_STORE_FAQS}
+            buttonText="Start Now"
+          />
+        </div>
+        <IndustriesHardwareControl
+          title="Take Full Control of Your Shoe Store"
+          description="Shoe stores miss out on revenue because of the erroneous stock records, confusion of sizes, and slow billing. Our shoe store POS systems reduce these losses, maintain inventory records, and facilitate day to day operations. Every sale is easier and more profitable with faster checkout and better tracking."
+          ctaDesc="Start Today"
         />
       </div>
-       <IndustriesHardwareControl
-        title= "Take Full Control of Your Shoe Store"
-        description= "Shoe stores miss out on revenue because of the erroneous stock records, confusion of sizes, and slow billing. Our shoe store POS systems reduce these losses, maintain inventory records, and facilitate day to day operations. Every sale is easier and more profitable with faster checkout and better tracking."
-        ctaDesc="Start Today"
-      />
-    </div>
     </>
   );
 };

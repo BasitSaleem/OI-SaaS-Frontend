@@ -39,7 +39,10 @@ export const getCachedVideo = async (url: string): Promise<Blob | null> => {
   }
 };
 
-export const setCachedVideo = async (url: string, blob: Blob): Promise<void> => {
+export const setCachedVideo = async (
+  url: string,
+  blob: Blob,
+): Promise<void> => {
   try {
     const db = await openDB();
     return new Promise((resolve, reject) => {

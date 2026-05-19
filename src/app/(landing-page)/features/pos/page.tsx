@@ -29,14 +29,14 @@ const Page = () => {
         image={heroBanner}
         url="pos"
         // video="/assets/features-page/hero-section-banners/pos-hero-anim.webm"
-        imageClassName= " max-w-[880px]"
+        imageClassName=" max-w-[880px]"
         variant="animation2"
       />
 
       {/* 🔥 Custom layout + cards */}
-      <TrustedBySection 
-      heading="Trusted by Leading Brands" 
-      paragraph="Owners Inventory POS empowers businesses to simplify billing, automate inventory, and grow 
+      <TrustedBySection
+        heading="Trusted by Leading Brands"
+        paragraph="Owners Inventory POS empowers businesses to simplify billing, automate inventory, and grow 
 across multiple locations."
       />
       <KeyHighlights
@@ -48,9 +48,9 @@ across multiple locations."
         heading="Revolutionize Sales with Our Smarter POS"
         paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
         cards={POS_WHY_CHOOSE_CARDS}
-        mainImage= {whyChoseBanner}
-        // mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
-        // backgroundImage={backgroundImage}
+        mainImage={whyChoseBanner}
+      // mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
+      // backgroundImage={backgroundImage}
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
@@ -79,9 +79,9 @@ across multiple locations."
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection
-        heading="Everything You Need to Know About Owners' Inventory"
-        paragraph="We’ve gathered the most common questions about Owners Inventory from setup and features to pricing and support. Still have doubts? Our team is ready to guide you every step of the way." 
-        faqs={POS_FAQS}
+          heading="Everything You Need to Know About Owners' Inventory"
+          paragraph="We’ve gathered the most common questions about Owners Inventory from setup and features to pricing and support. Still have doubts? Our team is ready to guide you every step of the way."
+          faqs={POS_FAQS}
         />
       </div>
     </div>

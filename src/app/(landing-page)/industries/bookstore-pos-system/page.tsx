@@ -334,89 +334,89 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Smart Bookstore POS Software for Better Selling"
-        description="Bookstores lose nearly 18% of sales due to poor inventory tracking and slow checkout experiences. Our Bookstore POS system transforms your store into a fast, organized, and fully connected space. Manage books, customers, sales, suppliers, and online orders from a single, clean dashboard. Make each transaction smooth and every book easy to find."
-        image={heroBanner}
-        imageClassName="max-w-[1000px]"
-        ctaDesc="Start Free Today"
-        variant="animation2"
-      />
+          description="Bookstores lose nearly 18% of sales due to poor inventory tracking and slow checkout experiences. Our Bookstore POS system transforms your store into a fast, organized, and fully connected space. Manage books, customers, sales, suppliers, and online orders from a single, clean dashboard. Make each transaction smooth and every book easy to find."
+          image={heroBanner}
+          imageClassName="max-w-[1000px]"
+          ctaDesc="Start Free Today"
+          variant="animation2"
+        />
 
-      <VoicesRealBusiness title="Ratings on the Leading Review Platforms" />
+        <VoicesRealBusiness title="Ratings on the Leading Review Platforms" />
 
-      <IndustryUnifiedPlatform
-        heading={BOOKSTORE_UNIFIED_HEADING}
-        paragraph={BOOKSTORE_UNIFIED_PARAGRAPH}
-        cards={BOOKSTORE_UNIFIED_CARDS}
-        iconSet="bookstore"
-      />
+        <IndustryUnifiedPlatform
+          heading={BOOKSTORE_UNIFIED_HEADING}
+          paragraph={BOOKSTORE_UNIFIED_PARAGRAPH}
+          cards={BOOKSTORE_UNIFIED_CARDS}
+          iconSet="bookstore"
+        />
 
-      <WhyChoosePOS
-        heading="How Our POS Software Solves These Challenges"
-        paragraph="Owners Inventory eliminates operational confusion by connecting sales, stock, suppliers, and reporting in one unified platform."
-        cards={BOOKSTORE_WHY_CHOOSE_CARDS}
-        mainImage={whyChoseBanner}
-        iconSet="bookstore"
-      />
+        <WhyChoosePOS
+          heading="How Our POS Software Solves These Challenges"
+          paragraph="Owners Inventory eliminates operational confusion by connecting sales, stock, suppliers, and reporting in one unified platform."
+          cards={BOOKSTORE_WHY_CHOOSE_CARDS}
+          mainImage={whyChoseBanner}
+          iconSet="bookstore"
+        />
 
-      <KeyHighlights
-        heading="Our Features Designed for Modern Bookstores"
-        features={BOOKSTORE_KEY_FEATURES_CARDS}
-      />
+        <KeyHighlights
+          heading="Our Features Designed for Modern Bookstores"
+          features={BOOKSTORE_KEY_FEATURES_CARDS}
+        />
 
-      <InventoryWorkflow
-        heading={BOOKSTORE_WORKFLOW_DATA.heading}
-        paragraph={BOOKSTORE_WORKFLOW_DATA.paragraph}
-        steps={BOOKSTORE_WORKFLOW_DATA.steps}
-      />
+        <InventoryWorkflow
+          heading={BOOKSTORE_WORKFLOW_DATA.heading}
+          paragraph={BOOKSTORE_WORKFLOW_DATA.paragraph}
+          steps={BOOKSTORE_WORKFLOW_DATA.steps}
+        />
 
-      <IndustriesCallToAction
-        title="Get Control of Your Inventory Now"
-        description="Our bookstore POS will simplify your inventory and eliminate errors and make it more efficient. Start now and discover how our solution can simplify the operations of the bookstores and enable you to maximize your sales potential."
-        ctaDesc="Request a Free Demo"
-      />
+        <IndustriesCallToAction
+          title="Get Control of Your Inventory Now"
+          description="Our bookstore POS will simplify your inventory and eliminate errors and make it more efficient. Start now and discover how our solution can simplify the operations of the bookstores and enable you to maximize your sales potential."
+          ctaDesc="Request a Free Demo"
+        />
 
-      <IndustriesFeaturesSection features={BOOKSTORE_FEATURE_CARDS} />
+        <IndustriesFeaturesSection features={BOOKSTORE_FEATURE_CARDS} />
 
-      <SecurityCompliance
-        title="Security, Accuracy, and Compliance."
-        description="A good bookstore POS system will make sure that all the transactions are well-documented and tracked. The user roles and permissions restrict access to sensitive information and minimize errors and misuse. All data in the bookstores is safe and secure."
-        secondDescription="The system also keeps audit trails and facilitates compliance needs, protecting inventory and financial records. The real-time tracking will provide a clear view of stock movement and automated reports will reduce the number of mistakes made by the manual process and keep the books accurate."
-      />
+        <SecurityCompliance
+          title="Security, Accuracy, and Compliance."
+          description="A good bookstore POS system will make sure that all the transactions are well-documented and tracked. The user roles and permissions restrict access to sensitive information and minimize errors and misuse. All data in the bookstores is safe and secure."
+          secondDescription="The system also keeps audit trails and facilitates compliance needs, protecting inventory and financial records. The real-time tracking will provide a clear view of stock movement and automated reports will reduce the number of mistakes made by the manual process and keep the books accurate."
+        />
 
-      <ToolsSection
-        heading={BOOKSTORE_TOOLS_DATA.heading}
-        description={BOOKSTORE_TOOLS_DATA.paragraph}
-        tools={BOOKSTORE_TOOLS_DATA.tools}
-      />
+        <ToolsSection
+          heading={BOOKSTORE_TOOLS_DATA.heading}
+          description={BOOKSTORE_TOOLS_DATA.paragraph}
+          tools={BOOKSTORE_TOOLS_DATA.tools}
+        />
 
-      <IndustriesTestimonial
-        testimonials={BOOKSTORE_TESTIMONIALS}
-        heading={BOOKSTORE_TESTIMONIAL_DATA.heading}
-        paragraph={BOOKSTORE_TESTIMONIAL_DATA.paragraph}
-        showSmartTools={true}
-        secondHeading={BOOKSTORE_TESTIMONIAL_DATA.secondHeading}
-        secondDescription={BOOKSTORE_TESTIMONIAL_DATA.secondDescription}
-        whyChooseShow={true}
-        whyChooseTitle={BOOKSTORE_TESTIMONIAL_DATA.whyChooseTitle}
-        whyChooseDescription={BOOKSTORE_TESTIMONIAL_DATA.whyChooseDescription}
-        features={BOOKSTORE_TESTIMONIAL_FEATURES}
-        iconSet="bookstore"
-      />
+        <IndustriesTestimonial
+          testimonials={BOOKSTORE_TESTIMONIALS}
+          heading={BOOKSTORE_TESTIMONIAL_DATA.heading}
+          paragraph={BOOKSTORE_TESTIMONIAL_DATA.paragraph}
+          showSmartTools={true}
+          secondHeading={BOOKSTORE_TESTIMONIAL_DATA.secondHeading}
+          secondDescription={BOOKSTORE_TESTIMONIAL_DATA.secondDescription}
+          whyChooseShow={true}
+          whyChooseTitle={BOOKSTORE_TESTIMONIAL_DATA.whyChooseTitle}
+          whyChooseDescription={BOOKSTORE_TESTIMONIAL_DATA.whyChooseDescription}
+          features={BOOKSTORE_TESTIMONIAL_FEATURES}
+          iconSet="bookstore"
+        />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <FaqSection
-          heading="FAQS"
-          paragraph="Our bookstore POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bookstore owners."
-          faqs={BOOKSTORE_FAQS}
-          buttonText="Start Now"
+        <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+          <FaqSection
+            heading="FAQS"
+            paragraph="Our bookstore POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bookstore owners."
+            faqs={BOOKSTORE_FAQS}
+            buttonText="Start Now"
+          />
+        </div>
+        <IndustriesHardwareControl
+          title="Boost Your Bookstore"
+          description="Turn every sale into a smooth, organised experience. Owners' Inventory keeps books, stationery, and online orders perfectly in sync, saving time and increasing revenue."
+          ctaDesc="Start Today"
         />
       </div>
-       <IndustriesHardwareControl
-        title="Boost Your Bookstore"
-        description="Turn every sale into a smooth, organised experience. Owners' Inventory keeps books, stationery, and online orders perfectly in sync, saving time and increasing revenue."
-        ctaDesc="Start Today"
-      />
-    </div>
     </>
   );
 };

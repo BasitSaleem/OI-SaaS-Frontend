@@ -58,7 +58,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/videos-s3/:path*",
-        destination: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/:path*",
+        destination:
+          "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/:path*",
       },
     ];
   },

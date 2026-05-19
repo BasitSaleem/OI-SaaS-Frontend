@@ -6,7 +6,7 @@ export interface HeroStats {
 }
 
 export interface Quote {
-  authorCompanyName?: string; 
+  authorCompanyName?: string;
   heading?: string;
   text: string;
   author: string;
@@ -45,7 +45,7 @@ export interface CaseStudyData {
   image: string;
   backgroundImage: string;
   ctaText: string;
-  
+
   // New schema fields
   slug?: string;
   companyName?: string;
@@ -103,7 +103,7 @@ export const caseStudiesData: CaseStudyData[] = [
       author: "Faique Asif",
       authorTitle: "Al-Asif CEO",
     },
-     challengesTitle: "The Challenge",
+    challengesTitle: "The Challenge",
     challengesHead: "What Was Holding Them Back",
     challengesIntro: "Al-Asif faced a complex web of operational friction where manual data entry acted as a barrier to real-time growth.",
     challengesIconSet: "alAsifCasestudyIcons",
@@ -154,12 +154,12 @@ export const caseStudiesData: CaseStudyData[] = [
       { heading: "Automation", value: "100%", label: "Profit & Loss Reports" },
     ],
   },
-   {
+  {
     id: "2",
     image: "/assets/home-page-images/client-image-1.webp",
     backgroundImage: "/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
-    primaryColor: "#F95C5B", 
+    primaryColor: "#F95C5B",
     secondaryColor: "#795CF5",
 
     // New schema data
@@ -233,7 +233,7 @@ export const caseStudiesData: CaseStudyData[] = [
     image: "/assets/home-page-images/client-image-1.webp",
     backgroundImage: "/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
-    primaryColor: "#F95C5B", 
+    primaryColor: "#F95C5B",
     secondaryColor: "#1AD1B9",
 
     // New schema data
@@ -247,7 +247,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { percentage: "98%", description: "Inventory Accuracy Across All Channels" },
     ],
     founderQuote: {
-      authorCompanyName: "Urban Threads", 
+      authorCompanyName: "Urban Threads",
       heading: "Urban Threads: Smarter Inventory, Smoother Production",
       overview: "Urban Threads continued to experience stock mismatch, because there was no coordination between manufacturing and sales. Owners Inventory introduced a single system allowing the factory production information to be linked to retail and online inventory in real-time. This provided Urban Threads with one source of truth which made them balance their stock and match the manufacturing output against the real customer demand.",
       text: "Since implementing this system, our operations have become much more streamlined. Everything is aligned perfectly now, which has significantly improved our stock accuracy and decision making. Our operations run more smoothly than they did before.",

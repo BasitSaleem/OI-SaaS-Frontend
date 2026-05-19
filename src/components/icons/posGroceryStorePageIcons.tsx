@@ -950,7 +950,7 @@ const icons = {
       />
     </svg>
   ),
-  
+
   testWhychoseIcon4: (
     <svg
       width="44"

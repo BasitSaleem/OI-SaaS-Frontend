@@ -25,7 +25,7 @@ export default function BrandsSwiper<T>({
       slidesPerView={1.5}
       // Swiper loop requirement: at least slidesPerView * 2 if loop is true
       loop={slides.length > 4}
-       fadeEffect={{ crossFade: true }}
+      fadeEffect={{ crossFade: true }}
       speed={1200} // Smooth transition speed
       autoplay={{
         delay: 2000,

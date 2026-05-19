@@ -104,9 +104,8 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
 
         {/* Text Content */}
         <div
-          className={`flex flex-col ${
-            isEven ? "order-1 lg:order-1" : "order-1 lg:order-2"
-          }`}
+          className={`flex flex-col ${isEven ? "order-1 lg:order-1" : "order-1 lg:order-2"
+            }`}
         >
           <SubHeading className=" mb-4 min-h-[50px]">
             {title}
@@ -123,11 +122,10 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                   (item, idx) => (
                     <div
                       key={idx}
-                      className={`rounded-[20px] transition-all duration-300 ${
-                        openIndex === idx
+                      className={`rounded-[20px] transition-all duration-300 ${openIndex === idx
                           ? "border-3 border-white shadow-[inset_0px_17px_29px_0px_#FFFFFF40] bg-gradient-to-b from-transparent from-[40%] to-white/65 to-[100%] backdrop-blur-[10.45px]"
                           : "border-3 border-transparent bg-transparent"
-                      } overflow-hidden`}
+                        } overflow-hidden`}
                     >
                       <button
                         type="button"
@@ -135,11 +133,10 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                         onClick={() => toggle(idx)}
                       >
                         <span
-                          className={`w-full max-w-[90%]  text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]  font-['Onest'] font-medium transition-colors duration-300 ${
-                            openIndex === idx
+                          className={`w-full max-w-[90%]  text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]  font-['Onest'] font-medium transition-colors duration-300 ${openIndex === idx
                               ? "text-(--text-dark)"
                               : "text-(--text-dark)"
-                          }`}
+                            }`}
                         >
                           {typeof item === "string" ? item : item.listheading}
                         </span>
@@ -182,11 +179,10 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
                       <div
                         className={`overflow-hidden flex flex-col  font-['Onest'] transition-all duration-300 ease-in-out
                                 px-5 md:px-6 text-sm md:text-base leading-[170%] text-(--text-dark)
-                                ${
-                                  openIndex === idx
-                                    ? "max-h-96 opacity-100 pb-5"
-                                    : "max-h-0 opacity-0 pb-0"
-                                }`}
+                                ${openIndex === idx
+                            ? "max-h-96 opacity-100 pb-5"
+                            : "max-h-0 opacity-0 pb-0"
+                          }`}
                       >
                         {typeof item === "string" ? "" : item.listdescription}
                         <br /> <br />

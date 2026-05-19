@@ -10,7 +10,7 @@ export const contactSchema = z.object({
     .min(1, "Phone number is required")
     .regex(
       /^\+?[0-9]{8,15}$/,
-      "Please enter a valid international phone number (8–15 digits, optionally starting with +)"
+      "Please enter a valid international phone number (8–15 digits, optionally starting with +)",
     ),
   email: z
     .string()
@@ -28,9 +28,7 @@ export const contactSchema = z.object({
     .string()
     .min(2, "Subject must be at least 2 characters")
     .max(100, "Subject must be at most 100 characters"),
-  message: z
-    .string()
-    .min(2, "Message must be at least 2 characters"),
+  message: z.string().min(2, "Message must be at least 2 characters"),
 });
 
 export type ContactFormData = z.infer<typeof contactSchema>;

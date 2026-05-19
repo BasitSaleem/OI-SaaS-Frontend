@@ -1,7 +1,7 @@
 export interface ResourceItem {
   title: string;
-    icon: string;
-    key: string;
+  icon: string;
+  key: string;
 }
 
 export const resourcesItems = [

@@ -63,9 +63,9 @@ const SupportCard = ({ card }: { card: CardItem }) => {
               className="h-12 w-12 backdrop-blur-sm rounded-full border-2 border-[rgba(255,255,255,0.05)] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]"
             >
               {typeof card.icon2 === "string" ||
-              (card.icon2 &&
-                typeof card.icon2 === "object" &&
-                "src" in card.icon2) ? (
+                (card.icon2 &&
+                  typeof card.icon2 === "object" &&
+                  "src" in card.icon2) ? (
                 <Image
                   src={card.icon2 as string | StaticImageData}
                   alt={card.title}

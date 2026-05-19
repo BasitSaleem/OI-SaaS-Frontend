@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 interface MainHeadingProps {
   children: React.ReactNode;
-  className?: string; 
+  className?: string;
 }
 
 const MainHeading: React.FC<MainHeadingProps> = ({ children, className }) => {
@@ -14,7 +14,7 @@ const MainHeading: React.FC<MainHeadingProps> = ({ children, className }) => {
         "font-['Onest']",
         "xl:text-[64px] lg:text-5xl md:text-[40px] text-[32px]",
         "xl:leading-[76px] lg:leading-[60px] leading-[130%]",
-        className 
+        className
       )}
     >
       {children}
