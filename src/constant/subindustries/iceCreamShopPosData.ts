@@ -3,53 +3,53 @@ import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFe
 
 // ─── Ice Cream Shop POS — UnifiedPlatform Section ──────────────────────────
 export const ICE_CREAM_SHOP_UNIFIED_HEADING =
-  "Challenges Ice Cream Shops Face Daily";
+  "Challenges that Ice Cream Shop Owners Face Today";
 
 export const ICE_CREAM_SHOP_UNIFIED_PARAGRAPH =
-  "Operating a busy dessert parlor presents unique challenges. These specific issues reduce your gross margin, slow down your counter staff, and leave gaps in your sales and inventory records every single day.";
+  "Running a manual ice cream business causes several problems for operations which impact service quality, customer satisfaction and profitability. The following are the most frequently occurring issues that the ice cream shop owners encounter every day.";
 
 export const ICE_CREAM_SHOP_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
     id: "1",
     icon: "UnifiedIcon1",
-    title: "Portion Control and Ingredient Shrinkage",
+    title: "Slow Checkout During Rush Hours",
     description:
-      "Ice cream shops suffer from hidden shrinkage when staff over-scoop portions or give away extra toppings without recording them. Without accurate tracking for cups, cones, scoops, and mix-ins, cash flow and ingredient margins slowly shrink without a clear record.",
+      "Long queues of customers during the weekends and evenings cause stress for employees. Without a robust point of sale solution, order and payment processing are delayed and inefficient, and become a source of customer frustration.",
   },
   {
     id: "2",
     icon: "UnifiedIcon2",
-    title: "Slow Checkout Lines in Peak Hours",
+    title: "Difficulty Managing Flavor Inventory",
     description:
-      "Ice cream shops experience sudden rushes on hot afternoons, weekends, and evenings. Manually choosing flavors, scoop sizes, and custom toppings on a slow POS slows down checkout, frustrating customers and causing long wait times.",
+      "Unexpected inventory loss can affect ice cream flavors, cones, cups, syrups, and toppings. It is hard to keep an accurate track of stock levels when using manual methods. This often leads to delay in orders and confusion.",
   },
   {
     id: "3",
     icon: "UnifiedIcon3",
-    title: "Stockouts of Popular Flavors or Cones",
+    title: "Order Errors and Customization Confusion",
     description:
-      "Running out of best-selling flavors like Vanilla, Chocolate, or Mint Chip—or essential items like waffle cones—during a hot summer day can turn away dozens of customers. Without automated alerts, restocking decisions are left to guesswork.",
+      "There are also many combinations that can be personalized for ice cream orders, along with sizes and toppings. If there's no order management system in place, employees may overlook key details, causing errors in orders and resulting in wasted products.",
   },
   {
     id: "4",
     icon: "UnifiedIcon4",
-    title: "Cash Gaps at Shift Handover",
+    title: "Limited Customer Tracking",
     description:
-      "With high transaction volumes and multiple cashiers handling the register across different shifts, cash differences appear. Without linking register drawer openings and transactions directly to a specific employee ID, accountability is lost.",
+      "A business cannot keep tabs on loyal customers, loyalty programs or favorite orders without any customer management software. Without a proper customer management system, repeat customers may not receive personalized service, loyalty rewards, or a consistent experience that encourages long-term retention.",
   },
   {
     id: "5",
     icon: "UnifiedIcon5",
-    title: "No Remote Parlor Visibility",
+    title: "No Visibility into Staff Performance",
     description:
-      "Ice cream shop owners cannot be present during every evening rush. Without remote access to real-time sales reports and inventory levels, it's impossible to check flavor demand, staff performance, or daily cash margins without visiting the shop.",
+      "During hectic shifts, it can be hard to keep track of several employees, especially if they are working at different stations or shifts. It can become difficult to manage the entire group without proper staff tracking. ",
   },
   {
     id: "6",
     icon: "UnifiedIcon6",
-    title: "Inconsistent Pricing for Custom Orders",
+    title: "Lack of Business Reporting",
     description:
-      "Pricing multi-scoop cups, specialized toppings, waffle cones, and milkshakes manually leads to pricing errors. Staff may overcharge or undercharge, causing discrepancies and losing customer trust.",
+      "If there are not accurate reporting tools, the owners cannot determine what the best-selling flavors are, when the best business time is, or product performance. Without real-time data, there is a higher risk associated with making business decisions.",
   },
 ];
 
@@ -57,182 +57,198 @@ export const ICE_CREAM_SHOP_WHY_CHOOSE_CARDS = [
   {
     id: "1",
     icon: "whychoseIcon1",
-    title: "Track Cashier Handover Accountability",
+    title: "Faster Order Processing",
     description:
-      "Every scoop, topping addition, void, and cash drawer open is logged under a unique cashier ID. Shift summaries automatically calculate cash differences, keeping cash registers balanced.",
+      "We offer a solution that enables our ice cream shop POS software to handle orders efficiently during high-volume customer periods. The user-friendly checkout screen enables staff to pick flavors, toppings, and combinations without slowing the checkout counter.",
   },
   {
     id: "2",
     icon: "whychoseIcon2",
-    title: "Fast Touchscreen Flavor Selection",
+    title: "Real-time Inventory Tracking",
     description:
-      "A simplified touchscreen layout lets cashiers select scoop sizes, waffle cones, and toppings in a single tap, processing orders in seconds and reducing long queues.",
+      "All the orders for each scoop, topping, cone and retail item will be entered into the inventory management system automatically. Real-time stock management ensures accurate updates after each transaction, preventing the risk of stockouts during peak selling hours.",
   },
   {
     id: "3",
     icon: "whychoseIcon3",
-    title: "Ingredient and Tub Alerts",
+    title: "Accurate Order Customization",
     description:
-      "Keep track of ice cream tubs, toppings, and cone stock levels. The system alerts you when inventory drops below your defined threshold, ensuring you reorder in time.",
+      "Custom orders are easily managed using the POS system. Scoop sizes, additional toppings, waffle cones, syrups and combo deals can be added easily to an order from within the order screen, which helps to minimize errors.",
   },
   {
     id: "4",
     icon: "whychoseIcon4",
-    title: "Shift-Level Performance Tracking",
+    title: "Customer Loyalty Management",
     description:
-      "Review sales metrics, average order size, and cash discrepancies for each employee at the end of their shift. Spot trends and reward high-performing staff.",
+      "Order history, preferences, and loyalty rewards are automatically captured in customer profiles. The loyalty program fosters repeat visits and can assist employees in delivering a more personalized customer experience.",
   },
   {
     id: "5",
     icon: "whychoseIcon5",
-    title: "Manage Multiple Locations Remotely",
+    title: "Built-in Staff Monitoring",
     description:
-      "Access real-time sales, inventory, and labor reports from your phone or desktop. Monitor operations across multiple parlor branches or mobile ice cream trucks from one dashboard.",
+      "The POS dashboard provides owners with a view of employee sales activity, performance, and transaction handling. Real-time operational tracking makes staff productivity management easier.",
+  },
+  {
+    id: "6",
+    icon: "whychoseIcon5",
+    title: "Real-time Reporting and Insights",
+    description:
+      "Powerful reporting tools provide detailed insights into sales performance, top-selling flavors, peak business hours, and inventory movement. Owners can make smarter business decisions using accurate POS data instead of estimates.",
   },
 ];
 
 export const ICE_CREAM_SHOP_FEATURE_CARDS: FeatureCardData[] = [
   {
     id: "1",
-    title: "Centralized Sales and Order Management",
+    title: "Omnichannel Sales and Integration for Ice Cream Shops",
     description:
-      "Manage all transactions, custom scoop orders, and inventory additions in a unified dashboard. For multi-location shops or kiosks, update prices, synchronize flavor catalogs, and track stock transfers from one central system.",
-    imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/omini-chanel.webp",
+      "Owners Inventory links all sales points a shop uses into one. No matter if they are buying at the counter, ordering online, or seasonal retail items, everything is synchronized in one dashboard. Ice cream shop owners can use all of the sales channels without changing tools or manually updating records.",
+    imageSrc: "/assets/industries-pages/ice-cream-shop-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
+    listVariant: "accordion",
     list: [
-      { listheading: "Touchscreen Order Management" },
-      { listheading: "Ingredient and Tub Stock Sync" },
-      { listheading: "Multi-Location Catalog Control" },
+      {
+        listheading: "POS Counter Sales",
+        listdescription:
+          "All counter sales (scoops, cones, toppings, drinks, and combos) are immediately recorded the moment the sale is made. The inventory is updated in real-time, meaning that there is a lower chance of running out of popular flavors during peak hours.",
+        listSubDescription:
+          "The purchase history and loyalty points are automatically added to the customer profiles. Reports show sales data as it happens, meaning there is no manual input that needs to be done after sales.",
+      },
+      {
+        listheading: "Online Orders and Delivery Integration",
+        listdescription:
+          "Online ordering-enabled ice cream shops can link to their menu and stock with the same system that connects to the counter. All online orders automatically reduce stock levels from the real-time inventory.",
+        listSubDescription:
+          "This will help to avoid selling out of things such as limited-edition flavors, seasonal toppings, or specialty cones. It also guarantees that the customers only see products that are available, which helps to reduce order errors and improve customer satisfaction. reduce order errors and improve customer satisfaction. ",
+      },
+      {
+        listheading: "Unified Multi-Channel Dashboard",
+        listdescription:
+          "All counter sales, online orders, deliveries, promotions, and retail product sales can be seen in a single central dashboard. Owners can see total revenue, inventory turnover and daily performance without having to switch between various systems.",
+        listSubDescription:
+          "This is a seamless solution that makes operations easier and removes the need for multiple applications to handle billing, inventory, and order fulfillment.",
+      },
     ],
   },
   {
     id: "2",
-    title: "Real-Time Sales and Expiry Reports",
+    title: "Analytics and Reporting",
     description:
-      "The reporting system provides live summaries of best-selling flavors, daily margins, and employee performance. Expiration date tracking for milk, cream, and fruits helps you maintain high food safety standards and reduce waste.",
+      "The POS system transforms daily sales data into structured reports showing top-selling flavors, peak business hours, and customer buying trends.",
+    subDescription:
+      "Owners can identify which flavors are most popular, which add-ons generate the highest profit, and when demand is highest. This helps in planning production, reducing waste, and improving overall profitability.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
-    list: [
-      { listheading: "Live flavor sales tracking" },
-      { listheading: "Ingredient margin and waste analysis" },
-      { listheading: "Peak hour customer traffic reports" },
-    ],
   },
 ];
 
 export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
   {
     id: 1,
-    title: "Flavor and Size Configurations",
+    title: "Quick Product Search",
     description:
-      "Configure multiple variants for your menu, including cup sizes, cone options, single/double/triple scoop pricing, and dynamic topping selections with automatic cost calculations.",
+      "Ice cream flavors, toppings, beverages, and retail products are searchable instantly through barcode scanning or category-based selection. Staff can add products to orders without delays.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
-    title: "Shift Reconciliation Reports",
+    title: "Combo and Custom Order Management",
     description:
-      "Generate detailed shift reports showing total card, cash, and digital sales per cashier. Identify cash discrepancies immediately upon shift handover.",
+      "Combo deals, multi-scoop orders, and fully customizable desserts are supported by the POS system. Personalized customer orders can be easily generated at checkout by staff.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
-    title: "Role-Based Access Controls",
+    title: "Split Payments Processing",
     description:
-      "Assign permissions to scoopers, supervisors, and managers. Control who can issue refunds, apply discounts, or open the register drawer without a sale.",
+      "Customers can use multiple payment methods in a single transaction. The POS system is configured to handle payments during busy service times.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
-    title: "Split Payments & Digital Wallet Tap",
+    title: "Loyalty Program Integration",
     description:
-      "Accept all modern payment methods, including credit cards, Apple Pay, Google Pay, and cash. Automatically split bills for groups and families.",
+      "Customer loyalty points are automatically added to an account after each purchase. All rewards and discounts are handled directly in the POS, without having to calculate them manually.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
-    title: "Visual Menu Grid & Custom Modifiers",
+    title: "Role-Based Employee Access",
     description:
-      "Cashiers can easily browse a visual layout of flavors, dairy-free alternatives, and toppings, allowing quick customization for custom milkshakes and sundaes.",
+      "Cashiers, servers, and managers have role-based access as per their roles. Owners have complete control over pricing, and discounts, reports, and inventory permissions.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
-    title: "Spoilage and Waste Tracking",
+    title: "Multi-Location Management",
     description:
-      "Record inventory adjustments for melted tubs, broken cones, or expired ingredients with specific reasons to accurately calculate net margins.",
+      "The owner of an ice cream shop with more than one store can keep an eye on the sales data, stocks, and the movement of the stocks across all the stores simultaneously and in real time from a single place.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
-    title: "Bulk Menu Updates",
+    title: "Mobile-Friendly POS Interface",
     description:
-      "Upload and update your entire menu, including seasonal flavors, toppings, and prices, via Excel or CSV. Apply updates instantly across all counters.",
+      "The easy-to-use POS interface allows employees to make orders quickly with little training. The system works well for both dine-in and takeaway settings.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
-    title: "Inter-Branch Stock Transfers",
+    title: "Detailed Sales Reporting",
     description:
-      "Easily request and monitor inventory transfers between multiple parlors or from your central warehouse, ensuring no location runs out of raw materials.",
+      "Monitor POS performance with detailed sales reports to help make better business decisions, including popular menu items, daily trends, and customer purchasing habits.",
     imageSrc:
       "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card8.webp",
   },
 ];
 
 export const ICE_CREAM_SHOP_WORKFLOW_DATA = {
-  heading: "Inventory Workflow for Ice Cream Parlors",
+  heading: "Workflow of Owners Inventory POS for Ice Cream Shops",
   paragraph:
-    "Our Ice Cream Shop POS system automates ingredient and tub tracking, from raw material receipt in cold storage to final customer checkout.",
+    "Our point-of-sale (POS) system for ice cream shops is designed for a typical busy dessert counter. Whether they're creating a menu in the system, dealing with rush hour or monitoring sales for the day, nothing slows them down, becomes disorganized or causes them to worry about staff.",
   steps: [
     {
       number: 1,
-      title: "Receiving Cold Supplies",
+      title: "Set Up Products, Flavors, and Menu Items",
       description:
-        "Verify raw materials, milk, cream, packaging, and ice cream tubs against supplier orders. Record expiration dates on delivery.",
+        "Every ice cream flavor, topping, cone, drink and combo deal can be added to the POS system with pricing, categories, barcodes, and SKUs. Specials and time-limited offers can be changed rapidly as well.",
     },
     {
       number: 2,
-      title: "Menu & Variant Setup",
+      title: "Switch Between Walk-ins and Returning Customers",
       description:
-        "Organize products by category (tubs, cones, sundaes, beverages). Group variants by flavor profiles and cup/cone sizes for quick entry.",
+        "The POS system integrates seamlessly with walk-in business and with repeat customers. It immediately displays loyalty points, for repeat customers.",
     },
     {
       number: 3,
-      title: "Real-Time Ingredient Deduction",
+      title: "Build and Confirm Custom Orders",
       description:
-        "Deduct tubs, cones, and toppings in real time at checkout. Low-stock alerts notify you when essential ingredients are running dry.",
+        "Ice cream orders may have more than one scoop of ice cream, toppings, syrups, waffle cones and add-ons. The POS system enables users to create orders completely customized in one screen. All selections automatically adjust the order in real time, including combo deals and special discounts.",
     },
     {
       number: 4,
-      title: "Supplier Ordering",
+      title: "Secure and Fast Payments",
       description:
-        "Generate purchase orders directly from the dashboard when stock drops. Track supplier fulfillment status and delivery history.",
+        "Multiple payment options are available such as cash, card, and split payment. The customer may pay using multiple payment methods in a single transaction without putting a strain on the checkout process.",
     },
     {
       number: 5,
-      title: "Shift Stock Auditing",
+      title: "Review Sales, Inventory, and Shop Performance",
       description:
-        "Compare sold scoops against physical tub levels at shift change. Track portions and waste to audit cashier accuracy.",
-    },
-    {
-      number: 6,
-      title: "Sales & Margin Analysis",
-      description:
-        "Analyze flavor popularity, hourly peak sales, and menu margins. Drive profitability by focusing on high-velocity, high-margin desserts.",
+        "A comprehensive view of sales, top-selling flavors, topping popularity, and peak hours is available on the dashboard. Inventory is updated automatically with every sale and let the owner know about the stock levels in real-time.",
     },
   ],
 };
@@ -240,70 +256,65 @@ export const ICE_CREAM_SHOP_WORKFLOW_DATA = {
 export const ICE_CREAM_SHOP_TESTIMONIALS = [
   {
     id: "1",
-    name: "Marcus G.",
+    name: "Marcus D.",
     title: "Gelato Parlor Owner",
     image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
-    text: "Portion control was a massive issue before. Now, with accurate waste tracking and checkout logs, we slashed ingredient shrinkage by 15% in our first month.",
+    text: "Before this system, our checkout lines during weekends would be chaotic, but now everything is organized, no chaos and quick.",
   },
   {
     id: "2",
-    name: "Elena K.",
+    name: "Aisha T",
     title: "Ice Cream Parlor Manager",
     image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-    text: "During summer rushes, lines go out the door. The simple touchscreen setup lets cashiers punch in double scoops with toppings in a single tap. It's incredibly fast.",
+    text: "We would constantly lose track of our stock for toppings and cones, but now it is automated and accurate.",
   },
   {
     id: "3",
-    name: "Rayan S.",
+    name: "James R",
     title: "Dessert Shop Operator",
     image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
-    text: "I manage three kiosks from my phone. I get real-time sales reports and know exactly when a location is running low on waffle cones without being there.",
+    text: "Our customer service experience is definitely enhanced with the rapid order fulfillment of custom orders.",
   },
   {
     id: "4",
-    name: "Maya L.",
+    name: "Bilal K",
     title: "Multi-Location Shop Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
-    text: "Deploying seasonal summer menu updates used to take forever across our four shops. Now, I edit prices and push new flavors in just one click.",
+    image: "/assets/features-page/testimonial-images/testinomial-boy14.webp",
+    text: "We found the system to be very easy to set up, our staff learned the system quickly, and the control of daily sales and stock was noticed immediately.",
   },
 ];
 
 export const ICE_CREAM_SHOP_FAQS = [
   {
     id: "1",
-    question: "Can I customize the POS screen for seasonal flavor changes?",
+    question: "Does the POS support custom ice cream orders?",
     answer:
-      "Yes. You can edit your menu layout, add seasonal flavors, and adjust toppings options from the central catalog, which updates cashier screens instantly.",
+      "Yes, the system supports fully customized orders with scoops, flavors, toppings, syrups, and combo deals and does not slow down the checkout process.",
   },
   {
     id: "2",
-    question: "How does ingredient tracking work for custom sundaes and scoops?",
+    question: "Can I track inventory of flavors and toppings accurately?",
     answer:
-      "You can link menu items to specific ingredients (e.g. cups, cones, ice cream tubs). The system automatically deducts them from inventory upon checkout.",
+      "Yes, each sale updates the inventory of flavors, cones, toppings and more, so you know at a glance if you have any left in the freezer.",
   },
   {
     id: "3",
-    question: "Can I manage multiple shops or mobile trucks?",
+    question: "Can I manage multiple ice cream shop locations?",
     answer:
-      "Yes. Track sales, inventory levels, and transfer stock across multiple parlors, carts, and trucks from one cloud account.",
+      "Yes, the system does support multi-location management with owners able to watch sales, stock levels and performance in all branches from a single dashboard.",
   },
   {
     id: "4",
-    question: "How much does the Ice Cream Shop POS system cost?",
+    question:
+      "How quickly can I set up the Owners Inventory for my ice cream shop?",
     answer:
-      "You can start for free with our 3-month trial to test the system during real shifts. After the trial, flexible plans are based on your shop's size and feature requirements.",
+      "Most ice cream shops can set up the POS within hours. Menu items can be uploaded en masse and staff can begin using the system almost instantaneously.",
   },
   {
     id: "5",
-    question: "Does the system support split bills for families or groups?",
+    question: "Can different staff members have different access levels?",
     answer:
-      "Yes. The checkout system allows splitting transactions among multiple card, cash, or mobile payments with a single tap.",
-  },
-  {
-    id: "6",
-    question: "Is training difficult for seasonal or new staff?",
-    answer:
-      "Not at all. The interface is visual and highly intuitive. Cashiers can master the billing system in under 15 minutes, reducing onboarding effort.",
+      "Yes, role-based access can be implemented to set permissions for cashiers, managers, and staff according to their respective roles, to better control and secure the transactions.",
   },
 ];
 
@@ -363,79 +374,58 @@ export const ICE_CREAM_SHOP_KEY_FEATURES = [
 ];
 
 export const ICE_CREAM_SHOP_TESTIMONIAL_DATA = {
-  heading: "What Parlor Owners Say About Us",
+  heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",
-  secondHeading: "Take Control of Your Parlor",
+  secondHeading: "Take Your Ice Cream Shop Business to the Next Level",
   secondDescription:
-    "Real-time tub inventory tracking, shift-level cash accountability, and rapid touchscreen billing in a POS system built for busy dessert shops. Start today and streamline your entire parlor operation.",
-  whyChooseTitle: "Why Choose Owners Inventory for Ice Cream Parlors?",
+    "Owners Inventory is a complete solution for ordering, inventory management, and customer tracking; everything in one easy-to-use system for fast and efficient ice cream shop operations. It enables your team to provide customer service quicker without compromising without compromising business organization.",
+  whyChooseTitle: "Why Choose Owners Inventory Ice Cream Shop POS System?",
   whyChooseDescription:
-    "Dessert parlors run on fast pace and tight margins. Here is why ice cream shop owners trust Owners Inventory to keep operations smooth, staff accountable, and freezers stocked.",
+    "With our software, ice cream shop owners can handle orders, inventory, customer information and reporting without having to hire additional staff to manage their backend. It makes the operation of a fast-paced service easy, especially when speed, accuracy and stock control are essential. The system automates repetitive tasks and saves your team more time to serve customers.",
 };
 
 export const ICE_CREAM_SHOP_TESTIMONIAL_FEATURES = [
   {
     id: "1",
-    title: "Built for High-Volume Counter Service",
+    title: "Built for Ice Cream Shops",
     description:
-      "Process hundreds of orders daily without crashes, freezing, or losing transaction details during summer evening rushes.",
+      "The software is tailored for quick-service restaurant desserts that have numerous flavors, toppings, combos, and seasonal menus. It can handle high-volume rush hours, while maintaining order and quick service, making it the perfect ice cream shop POS system for daily use.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
-    title: "Speedy Scoop & Topping Modifiers",
+    title: "Quick Setup",
     description:
-      "Add toppings and custom flavors to orders with simple modifier buttons, generating accurate receipts in seconds.",
+      "Owners Inventory can be set up easily, even without technical skills. Ice cream menus, flavors, cones, toppings, drinks, as well as combos may be added in seconds or imported in bulk from Excel or CSV files.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
-    title: "Automated Stock Level Alerts",
+    title: "All-in-One Platform",
     description:
-      "The system updates ingredient and tub counts automatically. Low-stock alerts keep your freezers prepared for hot weekend rushes.",
+      "The system replaces all the tools for billing, inventory tracking, online orders, and reporting separately. All transactions, whether they are counter sales, delivery orders, stock levels or the customers profile , are handled from a single place.",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
-    title: "Shift-Level Handover Audit",
+    title: "24/7 Support",
     description:
-      "Cash movements, scoop entries, and register void transactions are all tied to individual cashier accounts to eliminate drawer gaps.",
+      "Round-the-clock support for ensuring uninterrupted ice cream shop operations. Help can be provided at any time of day, whether it's a hectic weekend or the wee hours of night.",
     icon: "testWhychoseIcon4",
   },
   {
     id: "5",
-    title: "Fast Staff Training",
+    title: "Actionable Insights",
     description:
-      "Onboard temporary summer staff quickly. The visual touchscreen menu requires zero computer experience to learn in minutes.",
+      "The system gives real-time, accurate data on topping popularity, popular times for sales, sell-through, and which flavors are selling best.",
     icon: "testWhychoseIcon5",
-  },
-  {
-    id: "6",
-    title: "Real-Time Remote Access",
-    description:
-      "Check live sales, tub counts, and cashier reports from your phone, giving you total visibility of your shops from anywhere.",
-    icon: "testWhychoseIcon6",
-  },
-  {
-    id: "7",
-    title: "Affordable Pricing Plans",
-    description:
-      "Premium-grade POS features without the enterprise-level costs, tailored for independent dessert parlors and kiosks.",
-    icon: "testWhychoseIcon7",
-  },
-  {
-    id: "8",
-    title: "24/7 Dedicated Support",
-    description:
-      "Our support team is available day and night to assist with initial setup, menu uploads, or any questions that arise mid-shift.",
-    icon: "testWhychoseIcon8",
   },
 ];
 
 export const ICE_CREAM_SHOP_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Owners Inventory connects with accounting, online delivery, and payment tools to sync sales, payouts, and margins without manual work.",
+    "Owners Inventory connects to various platforms such as Shopify, Stripe, QuickBooks, Google Calendar, Mailchimp, and other business tools. All sales, accounting, and marketing data remain synchronized across systems. This decreases the amount of manual reconciliation needed and helps to ensure accurate financial reporting on all sales channels, online and offline.",
   tools: [
     {
       id: 1,

@@ -113,14 +113,14 @@ export const CONSTRUCTION_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     list: [
       {
         listheading: "Material Cost Tracking by Project",
-        listdescription: "Every purchase is assigned to a specific project at the time the order is placed. As materials are received and used, their costs are updated against the project record automatically. Project managers can check total material spend at any point during active work without waiting for an end-of-month report.",
+        listdescription:
+          "Every purchase is assigned to a specific project at the time the order is placed. As materials are received and used, their costs are updated against the project record automatically. Project managers can check total material spend at any point during active work without waiting for an end-of-month report.",
       },
       {
         listheading: "Supplier Payment and Order History",
         listdescription:
           "Every supplier transaction is stored with a full record of what was invoiced, what was paid, and what each material cost at the time of purchase. If a supplier charges above the previously agreed price, the overcharge is visible straight away when compared against the order history. Over time, this record gives project owners the data they need to renegotiate pricing, switch suppliers, or consolidate orders based on actual cost performance rather than assumptions.",
       },
-      
     ],
   },
   {
@@ -135,12 +135,10 @@ export const CONSTRUCTION_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     buttonColor: "#1AD1B9",
     list: [
       {
-        listheading:
-          "Accounting Software Integration",
+        listheading: "Accounting Software Integration",
       },
       {
-        listheading:
-          "Budget vs Actual Spend Reporting ",
+        listheading: "Budget vs Actual Spend Reporting ",
       },
     ],
   },
@@ -211,17 +209,18 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     imageSrc:
       "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card8.webp",
   },
-  
 ];
 
 export const CONSTRUCTION_INVENTORY_WORKFLOW_DATA = {
   heading: "Workflow of Construction Inventory Management",
-  paragraph: "Owners Inventory follows a structured workflow that keeps every material, order, site record, and purchase history connected from the start of a project to its completion.",
+  paragraph:
+    "Owners Inventory follows a structured workflow that keeps every material, order, site record, and purchase history connected from the start of a project to its completion.",
   steps: [
     {
       number: 1,
       title: "Receiving and Verifying Incoming Materials",
-      description: "When a delivery arrives on site, it gets checked against the original purchase order inside the system. Quantities are verified and added to the stock count immediately. If there's a shortfall or a damaged item in the delivery, it gets flagged and recorded against that supplier before the delivery is accepted. Nothing enters the site stock without a record attached to it.",
+      description:
+        "When a delivery arrives on site, it gets checked against the original purchase order inside the system. Quantities are verified and added to the stock count immediately. If there's a shortfall or a damaged item in the delivery, it gets flagged and recorded against that supplier before the delivery is accepted. Nothing enters the site stock without a record attached to it.",
     },
     {
       number: 2,
@@ -247,7 +246,7 @@ export const CONSTRUCTION_INVENTORY_WORKFLOW_DATA = {
       description:
         "When restocking is needed, a purchase order is created directly from the dashboard and sent through the approval process before it reaches the supplier. The right person reviews and approves the order, and once approved, it is logged against the project budget. When the delivery arrives, it is matched back to that purchase order automatically.",
     },
-     {
+    {
       number: 6,
       title: "Closing Out and Reconciling Project Stock",
       description:
@@ -260,9 +259,12 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Us",
   paragraph: "",
   secondHeading: "Run Your Construction Projects With Confidence",
-  secondDescription: "Take control of material costs, stock levels, and site operations with a system built for construction companies. Less waste, fewer delays, and every dollar accounted for.",
-  whyChooseTitle: "Why Choose Owners Inventory for Construction Inventory Management Software",
-  whyChooseDescription: "Construction companies operate on tight budgets and tighter schedules. Here is why project owners and site managers trust Owners Inventory to keep their materials accounted for, their teams aligned, and their projects on budget.",
+  secondDescription:
+    "Take control of material costs, stock levels, and site operations with a system built for construction companies. Less waste, fewer delays, and every dollar accounted for.",
+  whyChooseTitle:
+    "Why Choose Owners Inventory for Construction Inventory Management Software",
+  whyChooseDescription:
+    "Construction companies operate on tight budgets and tighter schedules. Here is why project owners and site managers trust Owners Inventory to keep their materials accounted for, their teams aligned, and their projects on budget.",
 };
 
 export const CONSTRUCTION_INVENTORY_TESTIMONIALS = [
@@ -287,7 +289,7 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIALS = [
     image: "/assets/features-page/testimonial-images/testinomial-boy11.webp",
     text: "I manage four active sites, and I used to spend my mornings calling supervisors for stock updates. Now I check everything from my phone in under five minutes. Last week I spotted a site running low on rebar and had a delivery arranged before work started that morning.",
   },
-   {
+  {
     id: "4",
     name: "Tariq Idrees",
     title: "Procurement Manager",
@@ -299,19 +301,22 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIALS = [
 export const CONSTRUCTION_INVENTORY_FAQS = [
   {
     id: "1",
-    question: "Can I track materials across multiple job sites from one account?",
+    question:
+      "Can I track materials across multiple job sites from one account?",
     answer:
       "Yes. Owners Inventory gives you a single dashboard that shows stock levels, purchase orders, and material movements across all your active sites. You do not need a separate account or system for each location. Changes made on one site are reflected across the whole system straight away.",
   },
   {
     id: "2",
-    question: "How does the system handle materials that are transferred between sites?",
+    question:
+      "How does the system handle materials that are transferred between sites?",
     answer:
       "Transfer orders are raised directly from the dashboard. When materials are moved from one site or warehouse to another, the transfer is logged with the quantity, destination, and date. Both sites update automatically once the transfer is confirmed, so stock counts stay accurate on both ends without any manual reconciliation.",
   },
   {
     id: "3",
-    question: "What happens if a delivery arrives short or with damaged materials?",
+    question:
+      "What happens if a delivery arrives short or with damaged materials?",
     answer:
       "When a delivery is received, it is checked against the original purchase order inside the system. If the quantity delivered is short or a damaged item is found, it is flagged and recorded against that supplier before the delivery is accepted. This keeps your stock count accurate and builds a clear history of each supplier's delivery performance over time.",
   },
@@ -323,23 +328,23 @@ export const CONSTRUCTION_INVENTORY_FAQS = [
   },
   {
     id: "5",
-    question: "How much does Owners Inventory cost for a construction business?",
+    question:
+      "How much does Owners Inventory cost for a construction business?",
     answer:
       "Our construction inventory management software is free to start, with a trial period so you can run it across real projects before committing. After the trial, pricing is based on the size of your operation and the features you need. Contact us, and we will send you a quote the same day.",
   },
-   {
+  {
     id: "6",
     question: "How long does it take to get the system set up?",
     answer:
       "Most construction teams are up and running within a day. Your full material list can be imported using an Excel or CSV file rather than being entered one item at a time. Once the list is uploaded and access is assigned to each team member, the system is ready to use across all active sites.",
   },
-   {
+  {
     id: "7",
     question: "Does Owners Inventory integrate with accounting software?",
     answer:
       "Yes, we do. Material costs, supplier invoices, and purchase order data can be synced directly with your accounting software. This removes the need to re-enter data between systems and keeps your project financial records accurate without extra manual work from your team.",
   },
-  
 ];
 
 export const CONSTRUCTION_INVENTORY_KEY_FEATURES = [
@@ -401,37 +406,43 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIAL_FEATURES = [
   {
     id: "1",
     title: "Built for Construction Operations",
-    description: "Most inventory systems are built for retail or warehousing and then adapted for construction. Our construction inventory management software is structured around the way construction projects actually run, with multiple sites, changing material needs, and teams that need quick access to accurate stock information. The system handles the volume and complexity of active construction operations without requiring workarounds.",
+    description:
+      "Most inventory systems are built for retail or warehousing and then adapted for construction. Our construction inventory management software is structured around the way construction projects actually run, with multiple sites, changing material needs, and teams that need quick access to accurate stock information. The system handles the volume and complexity of active construction operations without requiring workarounds.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
     title: "Manage Your Sites Remotely",
-    description: "Project owners are rarely sitting at a desk. Stock levels, purchase order status, and site spending are accessible from any phone, tablet, or laptop in real time. Whether you are on site, in a meeting, or checking in from home, the information you need is available without calling anyone or waiting for a report to be sent through.",
+    description:
+      "Project owners are rarely sitting at a desk. Stock levels, purchase order status, and site spending are accessible from any phone, tablet, or laptop in real time. Whether you are on site, in a meeting, or checking in from home, the information you need is available without calling anyone or waiting for a report to be sent through.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
     title: "Quick Setup, Minimal Training",
-    description: "Getting started does not require weeks of training or a dedicated IT team. Your material list can be imported in a single file upload and the system is ready to use from day one. Site workers, supervisors, and procurement staff can each be set up with the access they need quickly, and the interface is straightforward enough that most team members are comfortable using it within their first shift. ",
+    description:
+      "Getting started does not require weeks of training or a dedicated IT team. Your material list can be imported in a single file upload and the system is ready to use from day one. Site workers, supervisors, and procurement staff can each be set up with the access they need quickly, and the interface is straightforward enough that most team members are comfortable using it within their first shift. ",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
     title: "Scales Across One or Twenty Sites",
-    description: "Owners Inventory works the same way whether you are managing a single project or running operations across multiple active sites. Adding a new site, new team members, or a new supplier does not require a separate system or a call to technical support. The same dashboard that works for one project handles ten without any changes to how the system is set up.",
+    description:
+      "Owners Inventory works the same way whether you are managing a single project or running operations across multiple active sites. Adding a new site, new team members, or a new supplier does not require a separate system or a call to technical support. The same dashboard that works for one project handles ten without any changes to how the system is set up.",
     icon: "testWhychoseIcon4",
   },
   {
     id: "5",
     title: "Pricing Built for Contractors",
-    description: "Professional-grade construction inventory software does not have to come with enterprise-level pricing. Owners Inventory offers plans structured around the real costs of running a construction business, whether you are a small contractor managing one project at a time or a larger operation with ongoing multi-site work. The system is free to start, and after the trial period, pricing is based on your operation size and the features you need. No hidden fees. No long-term commitment required upfront.",
+    description:
+      "Professional-grade construction inventory software does not have to come with enterprise-level pricing. Owners Inventory offers plans structured around the real costs of running a construction business, whether you are a small contractor managing one project at a time or a larger operation with ongoing multi-site work. The system is free to start, and after the trial period, pricing is based on your operation size and the features you need. No hidden fees. No long-term commitment required upfront.",
     icon: "testWhychoseIcon5",
   },
   {
     id: "6",
     title: "Reliable Support",
-    description: "Our support team is available to help from the initial setup through day-to-day use. If a question comes up mid-project or a new team member needs help getting started, you are not left waiting. Support is available when it matters, not just during the onboarding period.",
+    description:
+      "Our support team is available to help from the initial setup through day-to-day use. If a question comes up mid-project or a new team member needs help getting started, you are not left waiting. Support is available when it matters, not just during the onboarding period.",
     icon: "testWhychoseIcon6",
   },
 ];

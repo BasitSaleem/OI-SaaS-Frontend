@@ -31,7 +31,7 @@ const SecurityCompliance: React.FC<SecurityComplianceProps> = ({
                 </MainHeading>
               </div>
 
-              <div className="lg:col-span-6  xl:col-span-7">
+              <div className="lg:col-span-6 flex h-full justify-center items-center  xl:col-span-7">
                 <Paragraph className="text-left mb-8">
                   {description}
                 </Paragraph>

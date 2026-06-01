@@ -339,8 +339,8 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="Smart Ice Cream Shop POS System for Portion Control"
-          description="Managing an ice cream shop means handling rapid rushes of customers while keeping toppings stocked, portions consistent, staff accountable, and cash balanced at every shift handover. Owners Inventory gives you a POS system built around how a dessert parlor actually runs. Billing, real-time tub tracking, flavor modifiers, and shift reports all sit in a single dashboard, so your lines move quickly and your margins stay protected."
+          title="POS System for Ice Cream Shops for Faster Service and Better Store Management"
+          description="Without the proper POS system in place, an ice cream business will experience slow checkout lines, inventory issues, order inaccuracies, and a challenge to handle peak-season demand. It can also lead to poor customer experiences, increased product wastage, and difficulty tracking sales and stock in real time."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"
@@ -357,15 +357,15 @@ const Page = () => {
         />
 
         <WhyChoosePOS
-          heading="How Owners Inventory Solves These Challenges"
-          paragraph="Our ice cream shop POS connects touchscreen billing, tub inventory, staff access, and shift reporting into one system, protecting your parlor margins."
+          heading="How Our POS Solves These Challenges"
+          paragraph="Owners Inventory is an all-in-one point-of-sale (POS) system designed to make ice cream businesses more efficient, less labor-intensive, and more customer-friendly, while offering a single place to handle everything."
           cards={ICE_CREAM_SHOP_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="iceCreamShop"
         />
 
         <KeyHighlights
-          heading="Our Key Features"
+          heading="Key Features of Owners Inventory That Improve Ice Cream Shop Operations"
           features={ICE_CREAM_SHOP_KEY_FEATURES_CARDS}
         />
 
@@ -376,8 +376,8 @@ const Page = () => {
         />
 
         <IndustriesCallToAction
-          title="Manage Your Ice Cream Shop Today"
-          description="Owners working with Owners Inventory report better portion control, fewer stockouts of popular flavors, and faster checkouts during peak rushes. Get started for free and see the difference it makes within your first week."
+          title="Run Your Ice Cream Shop Without the Guesswork"
+          description="End the delays caused by cumbersome checkouts, inconsistent stock information and inaccurate order tracking. Owners Inventory is a full-fledged point-of-sale solution for ice cream parlors that have all the elements required to ensure quick service, menu organization and daily control."
           ctaDesc="Request a Free Demo"
         />
 
@@ -385,8 +385,7 @@ const Page = () => {
 
         <SecurityCompliance
           title="Security, Portions, and Shift Compliance."
-          description="The security of a POS system is key when managing high-volume counter operations. Our POS system records every scoop transaction, refund, or discount under a specific employee ID with the exact timestamp. Role-based access control prevents cashiers from opening the register drawer outside of an actual transaction or performing unapproved voids. Any drawer opening without a sale is automatically flagged in the system so it can be reviewed immediately. Our system automatically maintains a full audit record across every shift without any extra effort from your team."
-          secondDescription="Payment data is protected through end-to-end encryption and secure data handling, with built-in security standards that keep card and mobile tap transactions safe and compliant. Your data is automatically backed up to the cloud so your records can be preserved, even if your hardware breaks down. For inventory control, every tub spoilage or portion correction is logged separately, giving you a clean and organized compliance report that is ready whenever an official audit or margin check is required."
+          description="Employees can only access information relevant to their role. The information is only visible to the employee when it is relevant to their tasks, helping to ensure smooth and secure functioning."
         />
 
         <ToolsSection
@@ -412,15 +411,14 @@ const Page = () => {
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
             heading="FAQs"
-            paragraph="Have questions about Owners Inventory?"
-            secondParagraph="Here are answers to some of the most common questions from ice cream shop owners to help you understand how our POS system works and how it simplifies your parlor operations."
+            paragraph="Below are some of the most commonly asked questions about our ice cream shop POS system."
             faqs={ICE_CREAM_SHOP_FAQS}
             buttonText="Start Now"
           />
         </div>
         <IndustriesHardwareControl
-          title="Boost Your Parlor Today"
-          description="Gelato and ice cream shop owners using Owners Inventory report fewer stockouts, tighter cash control, and faster checkout across every shift. Start today and put your whole dessert parlor operation in one place."
+          title="Power Your Ice Cream Shop with Our Efficient POS"
+          description="In a single easy-to-use platform, optimized for daily use, our POS system enables ice cream parlors to improve checkouts, customizing orders, tracking inventory in real-time, and reporting business data."
           ctaDesc="Start Today"
         />
       </div>
