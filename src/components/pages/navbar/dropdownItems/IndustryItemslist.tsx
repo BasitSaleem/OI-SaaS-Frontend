@@ -177,8 +177,22 @@ export const industriesItems: IndustryItem[] = [
     type: 'inventory',
   },
   {
+    key: 'construction-inventory-management-software',
+    title: 'Construction Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
+  {
     key: 'coffee-shop-pos-system',
     title: 'Coffee Shop POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
+  {
+    key: 'ice-cream-shop-pos-system',
+    title: 'Ice Cream Shop POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
     category: 'restaurant',
     type: 'pos',
@@ -238,6 +252,13 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Fast Casual' },
     { title: 'Bar & Club' },
     { title: 'Multi Unit' },
+    { title: 'Ice Cream Shop' },
+    { title: 'Coffee Shop' },
+    { title: 'Juice Bar' },
+    { title: 'Barber Shop' },
+    { title: 'Beauty Salon' },
+    { title: 'Convenience Store' },
+    { title: 'Shoe Store' },
   ],
   // Add details for new categories if needed
   'bakery-pos-system': [
@@ -369,6 +390,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Delivery & Assembly Tracking' },
     { title: 'Purchase Order Management' },
   ],
+  'construction-inventory-management-software': [
+    { title: 'Material & Equipment Tracking' },
+    { title: 'Multi-Site & Yard Management' },
+    { title: 'Supplier & Purchase Orders' },
+    { title: 'Asset & Cost Control' },
+  ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
     { title: 'ISBN Scanning' },
@@ -415,6 +442,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Quick Checkout & Billing' },
     { title: 'Order & Ingredient Sync' },
     { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'ice-cream-shop-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Flavor & Modifier Customization' },
+    { title: 'Tub & Ingredient Alerts' },
     { title: 'Sales Analytics & Reports' },
   ],
   'shoes-store-pos-system': [

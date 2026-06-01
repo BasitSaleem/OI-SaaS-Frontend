@@ -60,6 +60,9 @@ const posBeautySalonStorePageIcons = dynamic(
 const furnitureInventoryManagementSoftwareIcons = dynamic(
   () => import("./furnitureInventoryManagementSoftwareIcons"),
 );
+const constructionInventoryManagementSoftwareIcons = dynamic(
+  () => import("./constructionInventoryManagementSoftwareIcons"),
+);
 const posCoffeeShopStorePageIcons = dynamic(
   () => import("./posCoffeeShopStorePageIcons"),
 );
@@ -68,6 +71,9 @@ const posShoesStorePageIcons = dynamic(
 );
 const posConvenienceStorePageIcons = dynamic(
   () => import("./posConvenienceStorePageIcons"),
+);
+const posIceCreamShopPageIcons = dynamic(
+  () => import("./posIceCreamShopPageIcons"),
 );
 const posBarberShopPageIcons = dynamic(
   () => import("./posBarberShopPageIcons"),
@@ -113,8 +119,10 @@ export type IndustryIconSet =
   | "coffeeShop"
   | "shoesStore"
   | "convenienceStore"
+  | "iceCreamShop"
   | "barberShop"
   | "furnitureInventory"
+  | "constructionInventory"
   | "alAsifCasestudyIcons"
   | "bightHomeIcons"
   | "urbansThreadsIcons"
@@ -143,8 +151,10 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   coffeeShop: posCoffeeShopStorePageIcons,
   shoesStore: posShoesStorePageIcons,
   convenienceStore: posConvenienceStorePageIcons,
+  iceCreamShop: posIceCreamShopPageIcons,
   barberShop: posBarberShopPageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
+  constructionInventory: constructionInventoryManagementSoftwareIcons,
   alAsifCasestudyIcons: alAsifCasestudyIcons,
   bightHomeIcons: bightHomeIcons,
   urbansThreadsIcons: urbansThreadsIcons,
