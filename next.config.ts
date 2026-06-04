@@ -66,6 +66,30 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/password/reset",
+        destination: "https://app.ownersinventory.com/forgot-password",
+        permanent: true,
+      },
+      {
+        source: "/features/inventory-management",
+        destination: "/features/inventory",
+        permanent: true,
+      },
+      {
+        source: "/features/finance",
+        destination: "/features/accounts-and-finance",
+        permanent: true,
+      },
+       {
+        source: "/features/sales",
+        destination: "/features/sales-and-order",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
