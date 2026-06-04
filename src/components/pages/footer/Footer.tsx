@@ -1,6 +1,5 @@
 "use client";
 import Copyright from "@/constant/Copyright";
-import { Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

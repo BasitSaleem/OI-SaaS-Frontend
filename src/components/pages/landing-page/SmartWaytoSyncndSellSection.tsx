@@ -1,10 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import ButtonSm from "@/components/button/ButtonSm";
 import MainHeading from "../typography/MainHeading";
-import ContactModal from "@/components/models/ContactModal";
 import TrollyAnimation from "./trollyAnimation";
+
+// ContactModal pulls in react-hook-form + zod + react-phone-number-input.
+// Load it only when the user actually triggers it (ssr:false because it's a modal).
+const ContactModal = dynamic(() => import("@/components/models/ContactModal"), {
+  ssr: false,
+});
 
 
 

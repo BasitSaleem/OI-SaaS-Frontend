@@ -1,21 +1,27 @@
 import "../globals.css";
+import dynamic from "next/dynamic";
 import Script from "next/script";
 import { caseStudiesData } from "@/constant/caseStudiesData/caseStudiesData";
 
+// Above-fold: static imports so they appear in the initial HTML + hydration bundle
 import HeroSection2 from "@/components/common-components/HeroSection2";
 import TrustedBySection from "@/components/common-components/TrustedBySection";
-import TurningChaos from "@/components/pages/landing-page/TurningChaos";
-import CaseStudies from "@/components/pages/landing-page/CaseStudy";
-import FeaturesTabSection from "@/components/pages/landing-page/FeaturesTabSection";
-import SmartWaytoSyncndSellSection from "@/components/pages/landing-page/SmartWaytoSyncndSellSection";
-import UnifiedPlatform from "@/components/pages/landing-page/UnifiedPlatform";
-import VoicesRealBusiness from "@/components/pages/landing-page/VoicesRealBusiness";
-import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
-import PosIconsSection from "@/components/pages/landing-page/Smartway";
-import ToolsSection from "@/components/pages/landing-page/ToolsSection";
-import SmartTools from "@/components/pages/landing-page/SmartTools";
-import FaqSection from "@/components/pages/landing-page/FAQSection";
-import CalltoActionBottom from "@/components/pages/landing-page/CalltoActionBottom";
+
+// Below-fold: dynamic imports create separate JS chunks that load after the hero is interactive.
+// SSR is kept (default) so the HTML is still server-rendered for SEO.
+const TurningChaos = dynamic(() => import("@/components/pages/landing-page/TurningChaos"));
+const CaseStudies = dynamic(() => import("@/components/pages/landing-page/CaseStudy"));
+const FeaturesTabSection = dynamic(() => import("@/components/pages/landing-page/FeaturesTabSection"));
+const SmartWaytoSyncndSellSection = dynamic(() => import("@/components/pages/landing-page/SmartWaytoSyncndSellSection"));
+const UnifiedPlatform = dynamic(() => import("@/components/pages/landing-page/UnifiedPlatform"));
+const VoicesRealBusiness = dynamic(() => import("@/components/pages/landing-page/VoicesRealBusiness"));
+const IndustryPosShowcase = dynamic(() => import("@/components/pages/landing-page/IndustryPosShowcase"));
+const PosIconsSection = dynamic(() => import("@/components/pages/landing-page/Smartway"));
+const ToolsSection = dynamic(() => import("@/components/pages/landing-page/ToolsSection"));
+const SmartTools = dynamic(() => import("@/components/pages/landing-page/SmartTools"));
+const FaqSection = dynamic(() => import("@/components/pages/landing-page/FAQSection"));
+const CalltoActionBottom = dynamic(() => import("@/components/pages/landing-page/CalltoActionBottom"));
+
 import {
   HOME_UNIFIED_CARDS,
   HOME_UNIFIED_HEADING,

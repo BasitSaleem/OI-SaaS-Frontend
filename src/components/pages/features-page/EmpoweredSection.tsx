@@ -1,6 +1,5 @@
 "use client";
 
-import CustomSwiper from "@/components/slider/CustomSwiper";
 import React from "react";
 
 import FeaturesMainSwiper from "@/components/slider/FeaturesMainSwiper";

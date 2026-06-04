@@ -55,7 +55,7 @@ const NavItems = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-full inventory-menu lg:flex justify-center w-auto">
+    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-full inventory-menu lg:flex justify-center w-auto" style={{ opacity: 0, transform: "translateY(-150px)" }}>
       <ul className="hidden lg:flex items-center justify-center md:gap-1 lg:gap-3 w-auto">
         {/* FEATURES DROPDOWN */}
         <NavDropdown

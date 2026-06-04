@@ -9,9 +9,21 @@ const nextConfig: NextConfig = {
   // },
   images: {
     minimumCacheTTL: 31536000,
+    // AVIF is 30-50% smaller than WebP; Next.js serves the best format the browser accepts
+    formats: ["image/avif", "image/webp"],
   },
   experimental: {
     inlineCss: true,
+    // Tree-shakes these heavy packages so only imported symbols are bundled
+    // Reduces JS parse/execution time (TBT improvement)
+    optimizePackageImports: [
+      "framer-motion",
+      "gsap",
+      "lucide-react",
+      "react-icons",
+      "@heroicons/react",
+      // "swiper" intentionally excluded — its side-effect CSS imports break Turbopack HMR
+    ],
   },
 
   async headers() {
