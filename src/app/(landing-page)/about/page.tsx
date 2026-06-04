@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import {
   ABOUT_HERO_CONTENT,
   PHILOSOPHY_CARDS,
@@ -10,14 +11,16 @@ import {
   WHO_WE_SERVE_CONTENT,
 } from "@/constant/aboutData";
 
-import WhoWeAre from "@/components/pages/about-us/whoWeAre";
-import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
-import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
+// Above fold — static so useHeaderAnimation runs immediately
 import AboutHero from "@/components/pages/about-us/aboutHero";
-import OurPhilosophy from "@/components/pages/about-us/ourPhilosophy";
-import WhoWeServe from "@/components/pages/about-us/whoWeServe";
 
-import MapComponentDynamic from "@/components/pages/about-us/MapComponentDynamic";
+// Below fold — code-split into separate JS chunks
+const WhoWeAre = dynamic(() => import("@/components/pages/about-us/whoWeAre"));
+const OurPhilosophy = dynamic(() => import("@/components/pages/about-us/ourPhilosophy"));
+const FeaturesCallToAction = dynamic(() => import("@/components/pages/features-page/FeaturesCallToAction"));
+const WhyChoosePOS = dynamic(() => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"));
+const WhoWeServe = dynamic(() => import("@/components/pages/about-us/whoWeServe"));
+const MapComponentDynamic = dynamic(() => import("@/components/pages/about-us/MapComponentDynamic"));
 
 const Page = () => {
   return (
@@ -25,7 +28,6 @@ const Page = () => {
       <AboutHero
         title={ABOUT_HERO_CONTENT.title}
         description={ABOUT_HERO_CONTENT.description}
-        ctaDesc={ABOUT_HERO_CONTENT.ctaDesc}
         variant={ABOUT_HERO_CONTENT.variant}
       />
 

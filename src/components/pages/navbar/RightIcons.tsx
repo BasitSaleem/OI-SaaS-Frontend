@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Image from "next/image";
 import Tooltip from "@/components/toolTip/Tooltip";
 import Link from "next/link";
@@ -14,12 +13,8 @@ const RightIcons: React.FC<RightIconsProps> = ({
   setSearchOpen,
   setSearchQuery,
 }) => {
-  useEffect(() => {
-    console.log("searchOpen changed:", searchOpen);
-  }, [searchOpen]);
-
   return (
-    <div className="header-right-col hidden lg:flex justify-end items-center gap-1.5 xl:gap-4 lg:gap-[6px] ps-1 md:absolute right-2 z-50">
+    <div className="header-right-col hidden lg:flex justify-end items-center gap-1.5 xl:gap-4 lg:gap-[6px] ps-1 md:absolute right-2 z-50" style={{ opacity: 0, transform: "translateY(-150px)" }}>
       <div className="relative group">
 
         <div className="bg-white rounded-full">

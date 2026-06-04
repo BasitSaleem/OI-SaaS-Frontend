@@ -25,6 +25,7 @@ export default function FeaturesTabSection() {
               alt="Platform Features"
               width={800}
               height={600}
+              loading="lazy"
               className="w-full h-auto object-contain z-10 drop-shadow-2xl"
             />
           </div>
@@ -61,6 +62,7 @@ export default function FeaturesTabSection() {
                     src={feature.icon}
                     width={feature.iconWidth || 44}
                     height={feature.iconHeight || 44}
+                    loading="lazy"
                     className="w-6 h-6 sm:w-11 sm:h-11 object-contain"
                     alt={feature.title}
                   />

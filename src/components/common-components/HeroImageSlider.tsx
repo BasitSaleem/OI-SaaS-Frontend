@@ -100,7 +100,6 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
       <div ref={img2Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
         <Image
           src="/assets/home-page-images/hero-animation/animation-img2.webp"
-          priority
           alt="Hero Animation 2"
           fill
           sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
@@ -112,7 +111,6 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
       <div ref={img3Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
         <Image
           src="/assets/home-page-images/hero-animation/animation-img3.webp"
-          priority
           alt="Hero Animation 3"
           fill
           sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"

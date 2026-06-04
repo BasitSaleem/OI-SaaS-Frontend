@@ -78,12 +78,8 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
     const ctx = globalGsap.context(() => {
       const tl = globalGsap.timeline({ defaults: { ease: "power3.out" } });
 
-      // Initial states
-      globalGsap.set(mainHeadingRef.current, { opacity: 0, y: 50 });
-      globalGsap.set(paragraphRef.current, { opacity: 0, y: 30 });
-      globalGsap.set(homeHeroSecRef.current, {
-        clipPath: "inset(0% 0% 100% 0%)",
-      });
+      // Initial states for floating decorative elements (heading/paragraph/hero use CSS initial states)
+
       globalGsap.set(productsImageRef.current, {
         opacity: 0,
         rotation: 45,
@@ -169,7 +165,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
 
   return (
-    <div className="" ref={homeHeroSecRef}>
+    <div className="" ref={homeHeroSecRef} style={{ clipPath: "inset(0% 0% 100% 0%)" }}>
       <div className="pinned-section-1">
         <div className="top-section md:h-6 h-8"></div>
         <section className="owner-inventory-hero rounded-b-[40px] px-3 md:px-5 lg:px-10 w-full z-50">
@@ -205,13 +201,13 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
               </div>
               {/* Heading */}
               <div className="owner-inventory-hero__content relative z-10 flex flex-col items-center justify-center w-full">
-                <div ref={mainHeadingRef}>
+                <div ref={mainHeadingRef} style={{ opacity: 0, transform: "translateY(50px)" }}>
                   <h1 className="text-center xl:text-[64px] md:text-5xl  text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[var(--text-dark)] font-['Onest'] xl:max-w-5xl lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
                     {title}
                   </h1>
                 </div>
 
-                <div ref={paragraphRef}>
+                <div ref={paragraphRef} style={{ opacity: 0, transform: "translateY(30px)" }}>
                   <Paragraph className="mb-4 text-center mx-auto md:max-w-screen-sm xl:max-w-5xl 2xl:max-w-6xl ">
                     {description}
                   </Paragraph>
@@ -255,6 +251,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                     <div
                       ref={productsImageRef}
+                      style={{ opacity: 0 }}
                       className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[90px] lg:top-20 xl:top-[120px] -left-5 lg:left-[-50px] xl:left-[-60px]"
                     >
                       <Image
@@ -271,6 +268,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                     <div
                       ref={advanceReportImageRef}
+                      style={{ opacity: 0 }}
                       className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[180px] -left-5 lg:top-[220px] lg:-left-14 xl:top-[300px] xl:left-[-60px]"
                     >
                       <Image
@@ -287,6 +285,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                     <div
                       ref={inventorySystemImageRef}
+                      style={{ opacity: 0 }}
                       className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[55px] -right-10 md:top-[110px] lg:top-[130px] md:right-[-110px] lg:-right-40 xl:right-[-150px] 2xl:top-[120px] 2xl:right-[-200px]"
                     >
                       <Image
@@ -302,6 +301,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     </div>
                     <div
                       ref={reportsImageRef}
+                      style={{ opacity: 0 }}
                       className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[148px] -right-10 md:top-[200px] md:right-[-60px] lg:top-[250px] lg:-right-20 xl:top-[300px] xl:right-[-120px]"
                     >
                       <Image
@@ -319,6 +319,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                   <div
                     ref={fastServiceDescRef}
+                    style={{ opacity: 0 }}
                     className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute top-[200px] left-0 2xl:top-[120px] 2xl:left-0"
                   >
                     <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
@@ -331,10 +332,12 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={fastServiceImageRef}
                     width={51}
                     height={64}
+                    style={{ opacity: 0 }}
                     className="w-[51px] h-16 hidden lg:block absolute top-[110px] left-[30px] 2xl:top-[50px] 2xl:left-[60px]"
                   />
                   <div
                     ref={safeSecureDescRef}
+                    style={{ opacity: 0 }}
                     className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute bottom-10 right-2 xl:bottom-[250px] 2xl:bottom-[200px] 2xl:right-0"
                   >
                     <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
@@ -347,6 +350,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={safeSecureImageRef}
                     width={100}
                     height={118}
+                    style={{ opacity: 0 }}
                     className="2xl:w-[100px] hidden lg:block 2xl:h-[118px] w-20 h-[90px] absolute bottom-[85px] right-0 xl:bottom-[300px] 2xl:bottom-[250px] 2xl:right-[60px]"
                   />
 
@@ -356,6 +360,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={inventoryBlurIconRef}
                     width={120}
                     height={120}
+                    style={{ opacity: 0 }}
                     className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute top-4 right-2 md:-top-2.5 2xl:-top-7 2xl:right-[200px] md:right-10"
                   />
 
@@ -365,11 +370,13 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
                     ref={inventoryIconRef}
                     width={120}
                     height={120}
+                    style={{ opacity: 0 }}
                     className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-7  right-3.5 md:top-2.5 md:right-15 lg:top-2.5 lg:right-5 2xl:top-0 2xl:right-[220px]"
                   />
 
                   <div
                     ref={growthBoxRef}
+                    style={{ opacity: 0 }}
                     className="hidden lg:flex flex-col w-full max-w-[300px] xl:max-w-[400px] 2xl:max-w-[480px] p-4 absolute bottom-0  -z-20"
                   >
                     <div>
