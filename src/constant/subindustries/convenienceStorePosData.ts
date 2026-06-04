@@ -240,30 +240,30 @@ export const CONVENIENCE_STORE_WORKFLOW_DATA = {
 export const CONVENIENCE_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Ahmed R.",
+    name: "Gavin Walker",
     title: "Convenience Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image17.webp",
     text: "Shift handovers used to take 20-30 minutes of sorting out discrepancies. Now the reconciliation report is ready the moment a shift ends, and cash variances are visible instantly. It takes under five minutes.",
   },
   {
     id: "2",
-    name: "Sara M.",
+    name: "Nora Hall",
     title: "Mini Mart Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image18.webp",
     text: "We carry 400+ SKUs and keep running out of fast-moving items with zero warning. Since turning on low-stock alerts, we caught 3 critical items running low in the first week and haven't had a full stockout since.",
   },
   {
     id: "3",
-    name: "Bilal K.",
+    name: "Austin Hall",
     title: "Corner Store Operator",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image18.webp",
     text: "I run the store remotely. I check sales and shift reports from my phone in under a minute. Last month, I spotted a cash discrepancy at 9 pm and had it resolved before closing, without stepping foot in the store.",
   },
   {
     id: "4",
-    name: "Farah T.",
+    name: "Aurora Young",
     title: "Multi-Location C-Store Owner ",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image19.webp",
     text: "Pricing updates and stock transfers across two locations used to take half my morning. Now I can handle both from one dashboard in under 15 minutes.",
   },
 ];

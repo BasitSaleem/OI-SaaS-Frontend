@@ -256,30 +256,30 @@ export const ICE_CREAM_SHOP_WORKFLOW_DATA = {
 export const ICE_CREAM_SHOP_TESTIMONIALS = [
   {
     id: "1",
-    name: "Marcus D.",
+    name: "Colton Murphy",
     title: "Gelato Parlor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image28.webp",
     text: "Before this system, our checkout lines during weekends would be chaotic, but now everything is organized, no chaos and quick.",
   },
   {
     id: "2",
-    name: "Aisha T",
+    name: "Aubrey Reed",
     title: "Ice Cream Parlor Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image29.webp",
     text: "We would constantly lose track of our stock for toppings and cones, but now it is automated and accurate.",
   },
   {
     id: "3",
-    name: "James R",
+    name: "Tristan Coleman",
     title: "Dessert Shop Operator",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image29.webp",
     text: "Our customer service experience is definitely enhanced with the rapid order fulfillment of custom orders.",
   },
   {
     id: "4",
-    name: "Bilal K",
+    name: "Brayden Reed",
     title: "Multi-Location Shop Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy14.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image30.webp",
     text: "We found the system to be very easy to set up, our staff learned the system quickly, and the control of daily sales and stock was noticed immediately.",
   },
 ];

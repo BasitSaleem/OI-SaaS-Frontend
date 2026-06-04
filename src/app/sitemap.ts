@@ -58,6 +58,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "construction-inventory-management-software",
     "coffee-shop-pos-system",
     "ice-cream-shop-pos-system",
+    "candy-store-pos-system",
+    "food-truck-pos-system",
     "shoe-stores-pos-system",
     "convenience-store-pos-system",
     "barber-shop-pos-system",

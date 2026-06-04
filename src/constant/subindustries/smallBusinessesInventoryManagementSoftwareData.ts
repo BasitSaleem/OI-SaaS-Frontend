@@ -242,23 +242,23 @@ export const SMALL_BUSINESS_INVENTORY_TESTIMONIAL_DATA = {
 export const SMALL_BUSINESS_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Hassan R",
+    name: "Knox Butler",
     title: "Business Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image41.webp",
     text: "We were struggling to keep our inventory organized as our business grew. Owners Inventory gave us a structured way to handle stocks without making things complicated. It's simple to use and perfectly supports our operations efficiently.",
   },
   {
     id: "2",
-    name: "Anabiya K",
+    name: "Kinsley Butler",
     title: "Operations Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image41.webp",
     text: "Managing inventory across different product categories used to take a lot of time. With Owners Inventory, everything feels more streamlined now.",
   },
   {
     id: "3",
-    name: "Rebecca S",
+    name: "Freya Long",
     title: "Business Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image42.webp",
     text: "The system helped us stay organized without adding extra workload. The system just perfectly fits our workflow.",
   },
 ];

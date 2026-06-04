@@ -233,23 +233,23 @@ export const RESTAURANT_INVENTORY_WORKFLOW_DATA = {
 export const RESTAURANT_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Liam C",
+    name: "Natalie Cox",
     title: "Restaurant Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image49.webp",
     text: "Inventory used to be something we checked at the end of the day. Now it's already updated while we are working. Their software has made things a lot easier without changing how our kitchen operates.",
   },
   {
     id: "2",
-    name: "Noah B",
+    name: "Brody Nelson",
     title: "Food Delivery Partner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image49.webp",
     text: "We had issues with food cost inconsistency, especially across busy days. Since using the system, we have been able to track usage better and avoid unnecessary over-ordering. It definitely improved how we manage our stock.",
   },
   {
     id: "3",
-    name: "Tessa J",
+    name: "Leah Howard",
     title: "Café Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image50.webp",
     text: "What I like most is the clarity. We are not second-guessing stock levels or relying on manual notes anymore. It has led us to practical improvement.",
   },
 ];

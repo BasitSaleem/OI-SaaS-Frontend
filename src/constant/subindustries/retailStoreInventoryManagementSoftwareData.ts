@@ -257,23 +257,23 @@ export const RETAIL_STORE_INVENTORY_WORKFLOW_DATA = {
 export const RETAIL_STORE_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Adam Khan",
+    name: "Declan Flores",
     title: "Interior Decor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image38.webp",
     text: "The way we operate in our store is much easier now. Billing is fast and inventory is always current. This system has made a tremendous difference in the way we conduct business in our retail store.",
   },
   {
     id: "2",
-    name: "Rose Singh",
+    name: "Nova Flores",
     title: "Home Decor & Retail Store Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image38.webp",
     text: "Before this system, we used to have stock errors and slow procedures; now all are recorded in real time and time saved and store management is a lot easier.",
   },
   {
     id: "3",
-    name: "Ethan Gill",
+    name: "Paxton Russell",
     title: "Home Decor & Retail Store Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image39.webp",
     text: "We needed a system that could be able to control various products and different categories. This software does that perfectly well because it is easy to use and gives clear reports on a daily basis.",
   },
 ];

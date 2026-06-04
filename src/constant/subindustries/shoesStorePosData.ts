@@ -259,30 +259,30 @@ export const SHOES_STORE_WORKFLOW_DATA = {
 export const SHOES_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Sophia Chen",
+    name: "Violet Walker",
     title: "Shoes Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image16.webp",
     text: "This POS was able to bill us more quickly and do all the size and style changes without being confused, and it was simple for the staff and the customers to check out quickly.",
   },
   {
     id: "2",
-    name: "James Carter",
+    name: "Chase Allen",
     title: "Footwear Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image15.webp",
     text: "This is the case with our shoe store, which had problems with stock management and returns. Owners' Inventory POS keeps everything current, returns are simple and easy to do, and reports are clear and easy to understand.",
   },
   {
     id: "3",
-    name: "Leo Martinez",
+    name: "Nolan Wright",
     title: "Manager Shoes Store​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image16.webp",
     text: "In-store, it used to take hours to have stock sync with multiple branches, but the POS system for shoe stores reflects inventory immediately, and billing is quick even during peak time. Reports show top-selling shoes.",
   },
   {
     id: "4",
-    name: "Maya Rodriguez",
+    name: "Hazel Wright",
     title: "Footwear Store Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image17.webp",
     text: "It was not that easy to keep track of hundreds of shoes, sizes, and styles, but with Owners Inventory POS, everything is organized, all variants can be tracked, and all exchanges can be easily made, and customer profiles allow us to understand their preferences.",
   },
 ];

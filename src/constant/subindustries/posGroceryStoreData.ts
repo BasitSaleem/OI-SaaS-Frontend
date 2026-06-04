@@ -266,30 +266,30 @@ export const GROCERY_STORE_WORKFLOW_DATA = {
 export const GROCERY_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Sana K.",
+    name: "Ella Robinson",
     title: "Grocery Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image8.webp",
     text: "The POS system has made our supermarket operations easy. Billing has become quicker, and the mistakes in the stock have been diminished considerably. Our daily sales are now handled with a lot of confidence.",
   },
   {
     id: "2",
-    name: "Atif Aslam",
+    name: "Hunter Thompson",
     title: "Interior Decor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image8.webp",
     text: "This grocery POS helps to have everything in order and simplifies the restocking process. Our checkout time was immediately increased and customers are pleased with the quicker service.",
   },
   {
     id: "3",
-    name: "Mark R.",
+    name: "Carter Davis",
     title: "Home Decor & Grocery Shop Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image9.webp",
     text: "Our products are thousands each day and we do not get mixed up. Reports enable us to make improved purchasing choices, minimize wastage, and have adequate stocks.",
   },
   {
     id: "4",
-    name: "Sadaf Kanwal",
+    name: "Charlotte Harris",
     title: "Home Decor & Grocery Shop Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image9.webp",
     text: "Prior to the use of this system, the expiry items were stressful to manage. All the sales and stock updates are now being tracked flawlessly. It saves time, mistakes are minimized and it is much easier to run our grocery store.",
   },
 ];

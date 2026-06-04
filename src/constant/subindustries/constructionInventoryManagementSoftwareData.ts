@@ -270,30 +270,30 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIAL_DATA = {
 export const CONSTRUCTION_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "James Richard",
+    name: "Hudson Lewis",
     title: "General Contractor",
-    image: "/assets/features-page/testimonial-images/testinomial-boy14.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image44.webp",
     text: "We were ordering the same materials twice because no one could see what was already on site. Within the first month of using Owners Inventory, we cut duplicate orders by more than half. That alone saved us around $4,000 on a single project.",
   },
   {
     id: "2",
-    name: "Omar Khan",
+    name: "Weston Scott",
     title: "Construction Project Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy13.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image45.webp",
     text: "We had a theft problem we couldn't pin down. Tools and copper wire kept going missing. After we started logging every item in and out through Owners Inventory, we identified the pattern within two weeks and recovered over $2,000 worth of equipment.",
   },
   {
     id: "3",
-    name: "David Salvadore",
+    name: "Avery Clark",
     title: "Multi-Site Construction Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy11.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image44.webp",
     text: "I manage four active sites, and I used to spend my mornings calling supervisors for stock updates. Now I check everything from my phone in under five minutes. Last week I spotted a site running low on rebar and had a delivery arranged before work started that morning.",
   },
   {
     id: "4",
-    name: "Tariq Idrees",
+    name: "Layla Lewis",
     title: "Procurement Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy10.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image45.webp",
     text: "Our purchase orders were a mess. Same orders going to two suppliers, missed deliveries, no approval process. We haven't had a duplicate order in three months since switching to Owners Inventory. The approval workflow alone has saved us hours of back and forth every week.",
   },
 ];

@@ -286,30 +286,30 @@ export const CLOTHING_INVENTORY_WORKFLOW_DATA = {
 export const CLOTHING_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Kirsten Larson",
+    name: "Willow Patterson",
     title: "Clothing Store Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image36.webp",
     text: "Our daily operations are much easier now. Billing is fast and inventory is always accurate. This system has really improved how our clothing store runs.",
   },
   {
     id: "2",
-    name: "Michael R.",
+    name: "Bryson Patterson",
     title: "Interior Decor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image36.webp",
     text: "We needed a system to manage sizes and styles efficiently. This software does that. It is easy for staff to use and provides clear daily reports.",
   },
   {
     id: "3",
-    name: "Linda K.",
+    name: "Ellie Hughes",
     title: "Clothing Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image37.webp",
     text: "This is one of the best systems that we have used. It keeps everything organized and helps owners make better decisions. Our checkout process is now much faster.",
   },
   {
     id: "4",
-    name: "James T.",
+    name: "Sawyer Hughes",
     title: "Home Decor & Clothing Store Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image37.webp",
     text: "Before using this system, we struggled with stock errors and delays. Now everything is tracked accurately. It saves time and makes managing the store stress-free.",
   },
 ];

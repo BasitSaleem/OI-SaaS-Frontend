@@ -260,30 +260,30 @@ export const HARDWARE_WORKFLOW_DATA = {
 export const HARDWARE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Hassan Anwar",
+    name: "Nathan Foster",
     title: "Business Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image23.webp",
     text: "The POS system has simplified our day to day work. Billing is quick and stock is never wrong. This system is making Al-Asif run well.",
   },
   {
     id: "2",
-    name: "Alexa Catherine",
+    name: "Scarlett Turner",
     title: "Store Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image23.webp",
     text: "This is the best POS that we have tried previously. It keeps our store in order and assists us in decision-making. Since we started using it, Bright Homes has experienced fewer errors and has increased its checkout speed.",
   },
   {
     id: "3",
-    name: "Oliver Smith",
+    name: "Eli Turner",
     title: "Store Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image24.webp",
     text: "Our hardware store required a system that could manage thousands of objects and maintain all of them in order. This POS system provides precisely that. It is easy to use by the staff and provides a daily report.",
   },
   {
     id: "4",
-    name: "Amelia Evans",
+    name: "Penelope Foster",
     title: "Store Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image24.webp",
     text: "Before using this system, I was concerned about mistakes and wastage of time. At this point, all the sales and stock updates are monitored flawlessly. It saves time, minimizes errors, and makes the process of running the store less stressful. I would strongly suggest it to anyone who wants a reliable hardware store POS software.",
   },
 ];

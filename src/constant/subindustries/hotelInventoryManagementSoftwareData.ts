@@ -307,23 +307,23 @@ export const HOTEL_INVENTORY_TESTIMONIAL_DATA = {
 export const HOTEL_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Amelia Rose",
-    title: "Hotel Director",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
-    text: "Our operations are now completely organized all thanks to their hotel inventory management software.",
-  },
-  {
-    id: "2",
-    name: "Noah Alexander",
+    name: "Asher Cox",
     title: "Supply Chain Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image50.webp",
     text: "Real-time tracking has made a significant improvement in the coordination of housekeeping and maintenance.",
   },
   {
+    id: "2",
+    name: "Claire Ward",
+    title: "Hotel Director",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image51.webp",
+    text: "Our operations are now completely organized all thanks to their hotel inventory management software.",
+  },
+  {
     id: "3",
-    name: "Sofia Grace",
+    name: "Finn Howard",
     title: "Facility Administrator",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image51.webp",
     text: "With their help, we have significantly improved the cost-control and reduced waste in all departments.",
   },
 ];

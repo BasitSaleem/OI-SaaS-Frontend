@@ -239,23 +239,23 @@ export const AUTO_PARTS_INVENTORY_WORKFLOW_DATA = {
 export const AUTO_PARTS_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Jason Miller",
+    name: "Caden Reed",
     title: "Auto Parts Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image46.webp",
     text: "We used to lose track between our shop and the warehouse all the time. Since switching to Owner’s Inventory, everything is organized and easy to find. It has made our daily operations smoother.",
   },
   {
     id: "2",
-    name: "Brandon Clark",
+    name: "Easton Morris",
     title: "Auto Spare Parts Dealer",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image47.webp",
     text: "What I like most is how simple it is to keep track of inventory without spreadsheets. I can quickly check what's available and make decisions without second-guessing.",
   },
   {
     id: "3",
-    name: "Anthony Rodriguez",
+    name: "Hannah Morris",
     title: "Automotive Parts Shop Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image46.webp",
     text: "Their system has helped us stay more consistent and manage bulk orders effectively during busy weeks. Truly amazing and reliable inventory management software.",
   },
 ];

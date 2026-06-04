@@ -281,23 +281,23 @@ export const FURNITURE_INVENTORY_TESTIMONIAL_DATA = {
 export const FURNITURE_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Michael Brown",
+    name: "Beckett Long",
     title: "Furniture Showroom Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image42.webp",
     text: "Our process of producing furniture has become much more organized than previously. We are always aware of what materials we have in stock and what we need to order next, which has made our process much less confusing and has helped us plan better.",
   },
   {
     id: "2",
-    name: "Jessica Martinez",
+    name: "Stella Morgan",
     title: "Operations Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image43.webp",
     text: "This system has greatly enhanced our overall efficiency, it has provided us with a well-structured approach to managing the raw materials and finished furniture products and the reports are easy to comprehend and very helpful in planning and decision making.",
   },
   {
     id: "3",
-    name: "Amanda Taylor",
+    name: "Grayson Clark",
     title: "Business Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image43.webp",
     text: "We used to face a lot of problems with stock shortages and mismanagement before installing this system. Now, all the items are well-controlled in real-time, which saves us time and effort and allows us to operate without difficulties.",
   },
 ];

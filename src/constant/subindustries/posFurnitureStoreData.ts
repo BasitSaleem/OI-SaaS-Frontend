@@ -288,30 +288,30 @@ export const FURNITURE_STORE_WORKFLOW_DATA = {
 export const FURNITURE_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Ayesha",
+    name: "Madison Griffin",
     title: "Furniture Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image25.webp",
     text: "Before  Owners Inventory, it was always difficult to handle bulky products and custom orders. Monitoring of stock, deliveries, and product variations was time consuming and subject to mistakes. Using this furniture POS system, our team will be able to check the real-time stock, track deliveries, and manage variants, which will save a lot of time daily.",
   },
   {
     id: "2",
-    name: "Ellen",
+    name: "Owen Griffin",
     title: "Interior Decor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image25.webp",
     text: "We also have the mobile POS option, where our sales personnel are able to make sales on the showroom floor. The customers like instant quotes and invoices, and the transactions are fast, precise, and professional. This has made our store operations modern and enhanced the customer experience.",
   },
   {
     id: "3",
-    name: "Sara",
+    name: "Brooklyn Barnes",
     title: "Home Decor & Furniture Shop Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image26.webp",
     text: "It is now easy to manage various locations. Stock transfers, custom orders, and deliveries are synchronized with three showrooms and a warehouse linked by the furniture store POS.",
   },
   {
     id: "4",
-    name: "Bilal",
+    name: "Connor Barnes",
     title: "Modern Furniture Showroom Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image26.webp",
     text: "This has made the operations more efficient, reduced errors and provided us with complete visibility and control of all locations.",
   },
 ];

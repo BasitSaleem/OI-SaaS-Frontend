@@ -223,23 +223,23 @@ export const COFFEE_SHOP_WORKFLOW_DATA = {
 export const COFFEE_SHOP_TESTIMONIALS = [
   {
     id: "1",
-    name: "Ayesha M",
+    name: "Amna Chaudhry",
     title: "Coffee Shop Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image27.webp",
     text: "Managing peak morning rush became easier. Orders move faster from counters to the kitchen, and the setup keeps everything organized without confusion.",
   },
   {
     id: "2",
-    name: "Amanda K",
+    name: "Addison Ross",
     title: "Café Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image28.webp",
     text: "Our payments, orders, and inventory stay in sync. The software helped us reduce manual effort and simplified daily operational management.",
   },
   {
     id: "3",
-    name: "Alexander Reed",
+    name: "Landon Ross",
     title: "Coffee & Beverage Center Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image27.webp",
     text: "As our coffee shop expanded, the software scaled smoothly. Managing multiple orders is now much simpler than before.",
   },
 ];

@@ -241,23 +241,23 @@ export const HEALTHCARE_INVENTORY_TESTIMONIAL_DATA = {
 export const HEALTHCARE_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Adeel K",
+    name: "Jameson Ward",
     title: "Clinical Director",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image52.webp",
     text: "We needed something that could handle expiry tracking without making things complicated. Owners Inventory helped us organize our medical supplies properly. It's simple and reliable, which helped us prevent the mistakes we used to make with manual records.",
   },
   {
     id: "2",
-    name: "Petric M",
+    name: "Bennett Torres",
     title: "Supply Chain Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image53.webp",
     text: "After using Owners Inventory, we finally have a system that keeps things structured. Stock handling is smoother now, and we don't have to double-check things anymore.",
   },
   {
     id: "3",
-    name: "Oliver P",
+    name: "Audrey Torres",
     title: "Facility Administrator",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image52.webp",
     text: "What I like the most about it is the control this software provides over inventory management. It fits into our workflows easily without slowing anything down, which was our biggest concern initially.",
   },
 ];

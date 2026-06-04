@@ -247,23 +247,23 @@ export const JEWELRY_STORE_WORKFLOW_DATA = {
 export const JEWELRY_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Sana K.",
+    name: "Harper Davis",
     title: "Jewelry Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image6.webp",
     text: "Many thanks to Owners Inventory as they help us deliver a powerful jewelry  POS system that made our entire workflow easy and daily operations effortlessly smooth.",
   },
   {
     id: "2",
-    name: "Alexendar R.",
+    name: "Jackson Moore",
     title: "Interior Decor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image7.webp",
     text: "We opened 3 new branches efficiently all thanks to the centralized POS system for jewelry  stores that Owners Inventory catered for us.",
   },
   {
     id: "3",
-    name: "Marie A.",
+    name: "Mia Thompson",
     title: "Home Decor & Jewelry Shop Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image7.webp",
     text: "Our inventory accuracy improved drastically. With real-time tracking and detailed reporting, we now finally have full control over our high-value items.",
   },
 ];

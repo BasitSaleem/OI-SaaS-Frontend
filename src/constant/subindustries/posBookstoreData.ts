@@ -248,30 +248,30 @@ export const BOOKSTORE_WORKFLOW_DATA = {
 export const BOOKSTORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Sarah M.",
+    name: "Olivia Bennett",
     title: "City Bookstore",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image2.webp",
     text: "Everything is easy with Owners Inventory Bookstore POS Software. Billing is quicker, and books remain organised. Now, Stationery Inventory Management is also very easy.",
   },
   {
     id: "2",
     name: "Ahmed R.",
     title: "Knowledge Hub",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image3.webp",
     text: "The software assists us in tracking all titles and stationery. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
   },
   {
     id: "3",
-    name: "Priya K.",
+    name: "Sophia Carter",
     title: "Read & Learn​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image3.webp",
     text: "Discounts, author-wise sales and Stationery Inventory Management have become easy to handle. The Bookstore POS Software offers simple to understand reports, which help us make superior decisions and plan our promotions better.",
   },
   {
     id: "4",
-    name: "Daniel S.",
+    name: "Noah Williams",
     title: "BookWorld​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image4.webp",
     text: "The POS Software of Owners Inventory Bookstore has transformed our bookstore. ISBN tracking, inventory updates and stationery management is not interrupted. Billing is fast and accurate even during peak school seasons. Our clients and employees like the more streamlined experience.",
   },
 ];

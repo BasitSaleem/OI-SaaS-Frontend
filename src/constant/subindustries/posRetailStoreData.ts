@@ -278,30 +278,30 @@ export const RETAIL_STORE_WORKFLOW_DATA = {
 export const RETAIL_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Ayesha",
+    name: "Ava Williams",
     title: "Grocery Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image4.webp",
     text: "Owners' Inventory POS changed how we manage our store. Billing is far quicker, and keeping track of stock is easy. It saves me a lot of time each day.",
   },
   {
     id: "2",
-    name: "Ellen",
+    name: "Mason Taylor",
     title: "Grocery Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image5.webp",
     text: "Now our boutique moves so smoothly. All inventory notifications, sales data, and employee tracking are centralized. It actually makes us plan more and makes us avoid errors.",
   },
   {
     id: "3",
-    name: "Sara",
+    name: "Isabella Moore",
     title: "Gift & Decor Shop Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image5.webp",
     text: "It was easy to feel overwhelmed by running a POS system for small retail stores. It was tense and time-consuming to handle inventory, sales, and staff simultaneously. Since we began using the POS system of Owners Inventory, everything is in one place. I can use the real-time stock reporting and sales data to make smarter decisions on a daily basis. It actually seems like the system is working with me.",
   },
   {
     id: "4",
-    name: "Bilal",
+    name: "Logan Harris",
     title: "Boutique Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image6.webp",
     text: "Our boutique has increased the pace after we adopted this POS. Billing is fast, stock management is easy, and even monitoring staff performance is easier. Customers can feel the difference in quicker checkouts, and I will be able to concentrate on business development rather than on the management of daily mess.",
   },
 ];

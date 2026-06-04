@@ -75,6 +75,12 @@ const posConvenienceStorePageIcons = dynamic(
 const posIceCreamShopPageIcons = dynamic(
   () => import("./posIceCreamShopPageIcons"),
 );
+const posCandyStorePageIcons = dynamic(
+  () => import("./posCandyStorePageIcons"),
+);
+const posFoodTruckPageIcons = dynamic(
+  () => import("./posFoodTruckPageIcons"),
+);
 const posBarberShopPageIcons = dynamic(
   () => import("./posBarberShopPageIcons"),
 );
@@ -120,6 +126,8 @@ export type IndustryIconSet =
   | "shoesStore"
   | "convenienceStore"
   | "iceCreamShop"
+  | "candyStore"
+  | "foodTruck"
   | "barberShop"
   | "furnitureInventory"
   | "constructionInventory"
@@ -152,6 +160,8 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   shoesStore: posShoesStorePageIcons,
   convenienceStore: posConvenienceStorePageIcons,
   iceCreamShop: posIceCreamShopPageIcons,
+  candyStore: posCandyStorePageIcons,
+  foodTruck: posFoodTruckPageIcons,
   barberShop: posBarberShopPageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
   constructionInventory: constructionInventoryManagementSoftwareIcons,

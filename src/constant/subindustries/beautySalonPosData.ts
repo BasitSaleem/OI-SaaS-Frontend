@@ -227,23 +227,23 @@ export const BEAUTY_SALON_WORKFLOW_DATA = {
 export const BEAUTY_SALON_TESTIMONIALS = [
   {
     id: "1",
-    name: "Hira M",
+    name: "Chloe Parker",
     title: "Beauty Salon Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image14.webp",
     text: "We used to experience lag in the checkouts during busy days. However, since implementing their salon POS system, the billing process has improved tremendously, and every transaction is now done with proper recordkeeping.",
   },
   {
     id: "2",
-    name: "Jenna B",
+    name: "Stella Allen",
     title: "Spa Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image15.webp",
     text: "It has enabled us to be organized and streamlined all our operations into one place. The system also makes our payment tracking more efficient and accurate.",
   },
   {
     id: "3",
-    name: "Georgie K",
+    name: "Dylan Parker",
     title: "Beauty & Wellness Center Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image14.webp",
     text: "Their salon POS software is user-friendly. Our team picked it up quickly, and now we are able to handle every salon management operation quickly.",
   },
 ];

@@ -281,30 +281,30 @@ export const SUPERMARKET_WORKFLOW_DATA = {
 export const SUPERMARKET_TESTIMONIALS = [
   {
     id: "1",
-    name: "Olivia Rose",
+    name: "Zoey Scott",
     title: "Supermarket Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
     text: "Our system has made billing and inventory more accurate. The daily work is now easy and stress-free.",
   },
   {
     id: "2",
-    name: "Liam Alexander",
+    name: "Tyler Mitchell",
     title: "Grocery Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
     text: "This is the system we have used. It keeps everything organized. Helps us make better decisions. The checkout is now faster.",
   },
   {
     id: "3",
-    name: "Noah James",
+    name: "Brandon Scott",
     title: "Retail & Supermarket Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
     text: "We used to have trouble managing thousands of items. Now everything is tracked perfectly. The staff can use the system easily.",
   },
   {
     id: "4",
-    name: "Emma Grace",
+    name: "Aisha Malik",
     title: "Supermarket Franchise Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
     text: "We used to have stock errors and delays. Now everything is accurate. It saves time and makes the supermarket more efficient.",
   },
 ];

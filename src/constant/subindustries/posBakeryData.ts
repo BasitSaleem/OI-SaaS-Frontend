@@ -222,24 +222,24 @@ export const BAKERY_WORKFLOW_DATA = {
 
 export const BAKERY_TESTIMONIALS = [
   {
-    id: "sarah-mitchell",
-    name: "Sarah Mitchell",
+    id: "1",
+    name: "Emma Johnson",
     title: "Bakery Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image1.webp",
     text: "The POS system has made billing faster and more efficient. We no longer have to struggle at rush hour.",
   },
   {
-    id: "james-carter",
-    name: "James Carter",
+    id: "2",
+    name: "Ethan Carter",
     title: "Bakery Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image1.webp",
     text: "Managing cake orders has never been easier. Every detail is properly recorded, nothing gets overlooked.",
   },
   {
-    id: "oliver-smith",
-    name: "Oliver Smith",
+    id: "3",
+    name: "Liam Bennett",
     title: "Operations Manager",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image2.webp",
     text: "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions",
   },
 ];

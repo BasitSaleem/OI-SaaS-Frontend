@@ -238,23 +238,23 @@ export const JEWELRY_INVENTORY_WORKFLOW_DATA = {
 export const JEWELRY_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Imran S",
+    name: "Brielle Perry",
     title: "Jewelry Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image39.webp",
     text: "Tracking gold and diamond inventory used to be stressful. Now everything is clear, and we always know exactly what's in the stock.",
   },
   {
     id: "2",
-    name: "Howard K",
+    name: "Ryder Perry",
     title: "Fine Jewelry Shop Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image40.webp",
     text: "Managing custom orders has become much easier because of recorded details. Every order is now delivered on time.",
   },
   {
     id: "3",
-    name: "Trevor N",
+    name: "Piper Russell",
     title: "Jewelry & Accessories Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image40.webp",
     text: "The system gave us a clear view of sales and stocks. It helps us make better purchasing decisions.",
   },
 ];

@@ -198,6 +198,20 @@ export const industriesItems: IndustryItem[] = [
     type: 'pos',
   },
   {
+    key: 'candy-store-pos-system',
+    title: 'Candy Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
+  {
+    key: 'food-truck-pos-system',
+    title: 'Food Truck POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
+  {
     key: 'shoe-stores-pos-system',
     title: 'Shoe Stores POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/shoe-stores-pos-system.svg",
@@ -448,6 +462,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Quick Counter Checkout' },
     { title: 'Flavor & Modifier Customization' },
     { title: 'Tub & Ingredient Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'candy-store-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Candy & Modifier Customization' },
+    { title: 'Jar & Stock Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'food-truck-pos-system': [
+    { title: 'Quick Order Checkout' },
+    { title: 'Menu & Side Customization' },
+    { title: 'Ingredient & Packaging Alerts' },
     { title: 'Sales Analytics & Reports' },
   ],
   'shoes-store-pos-system': [

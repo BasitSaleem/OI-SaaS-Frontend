@@ -278,23 +278,23 @@ export const ECOMMERCE_INVENTORY_WORKFLOW_DATA = {
 export const ECOMMERCE_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Emma Wilson",
+    name: "Emily Nelson",
     title: "Ecommerce Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image47.webp",
     text: "Our inventory has been synchronized across platforms. We no longer have stock problems.",
   },
   {
     id: "2",
-    name: "Liam Khan",
+    name: "Hayden Bailey",
     title: "Online Marketplace Seller",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image48.webp",
     text: "Order processing has become faster and more precise. We have saved a great deal of time. Also managing multiple channels of sales is easy now. Everything is all in one place.",
   },
   {
     id: "3",
-    name: "Sophia Gill",
+    name: "Abigail Baile",
     title: "D2C Brand Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image48.webp",
     text: "Our inventory is organized and clear. It has greatly improved our business operation.",
   },
 ];

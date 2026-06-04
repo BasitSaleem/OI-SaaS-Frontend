@@ -269,30 +269,30 @@ export const CLOTHING_STORE_WORKFLOW_DATA = {
 export const CLOTHING_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Sana K.",
+    name: "Grace Anderson",
     title: "Clothing Store Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image10.webp",
     text: "This POS enabled us to bill faster and to handle our size and color changes without confusion. It is simple for our staff and quick for our customers.",
   },
   {
     id: "2",
-    name: "Atif Aslam",
+    name: "Blake Anderson",
     title: "Interior Decor Owner",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image10.webp",
     text: "We have a women's clothing shop, and stock management was a tense affair. The Owners Inventory’s POS has made our inventory up to date, our returns are hassle-free, and reports are clearer than ever. It has simplified our everyday tasks.",
   },
   {
     id: "3",
-    name: "Mark R.",
+    name: "Caleb Robinson",
     title: "Home Decor & Clothing Store Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image11.webp",
     text: "We have several clothing stores, and manual synchronization of inventory between branches took hours daily. This POS system of Owners Inventory made it very clear. Our inventory is currently updated instantly, and the billing is instant even in the busy periods, and our staff has learned the system quite quickly. The insights and reports also allow us to know the styles that are working best. It has been a wonderful addition to our business.",
   },
   {
     id: "4",
-    name: "Sadaf Kanwal",
+    name: "Lily Mitchell",
     title: "Home Decor & Clothing Store Owner​",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image11.webp",
     text: "We have hundreds of styles, sizes, and colors every season in our store, which makes it hard to be accurate. Everything seems to be organized after turning to the Owners' Inventory POS system. All our variants are traced, no confusion concerning exchanges, and customer profiles make us comprehend purchases preferences.",
   },
 ];
