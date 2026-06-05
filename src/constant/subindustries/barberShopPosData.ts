@@ -87,7 +87,7 @@ export const BARBER_SHOP_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Built-in Staff Management",
     description:
-      "It  gives barber shop owners visibility into individual barber performance directly from a single dashboard. Tracking who handled which service, monitoring productivity, and making informed staffing decisions becomes effective ",
+      "It  gives barber shop owners visibility into individual barber performance directly from a single dashboard. Tracking who handled which service, monitoring productivity, and making informed staffing decisions becomes effective.",
   },
   {
     id: "6",
@@ -142,17 +142,6 @@ export const BARBER_SHOP_FEATURE_CARDS: FeatureCardData[] = [
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
-    list: [
-      {
-        listheading:
-          "Detect slow-moving services, unbalanced pricing, and leakage of revenue",
-      },
-      {
-        listheading:
-          "Predict peak hours based on the previous trends and past sales",
-      },
-      { listheading: "Monitor branch-level performance in real time" },
-    ],
   },
 ];
 
@@ -381,12 +370,10 @@ export const BARBER_SHOP_KEY_FEATURES = [
 export const BARBER_SHOP_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory?",
   paragraph: "", // Optional paragraph
-  secondHeading: "Keep Operations Under Control",
-  secondDescription:
-    "Owners’ Inventory POS system helps barber shops track all services, stylists, and retail products in real-time, enhances efficiency and reduces losses.",
-  whyChooseTitle: "Take Your Barber Shop Business to the Next Level",
-  whyChooseDescription:
-    "From appointment booking to payment processing, Owners Inventory brings everything together that a barber shop needs in one place. It provides your team with advanced tools for efficient management of sales.",
+  secondHeading: "Take Your Barber Shop Business to the Next Level",
+  secondDescription: "From appointment booking to payment processing, Owners Inventory brings everything together that a barber shop needs in one place. It provides your team with advanced tools for efficient management of sales.",
+  whyChooseTitle: "Why Choose Owners Inventory Barbershop Point-of-Sale System?",
+  whyChooseDescription: "Our software gives barbershop owners the ability to effectively manage billing, stock, client records, and reporting without requiring a dedicated person to manage them. It streamlines operational tasks that slow down the shop. It reliably automates routine tasks.",
 };
 
 export const BARBER_SHOP_TESTIMONIAL_FEATURES = [
