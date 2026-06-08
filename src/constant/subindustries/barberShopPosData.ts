@@ -158,7 +158,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Loyalty Program Tracking",
     description:
-      "The POS system automatically tracks clients' loyalty points with every transaction. The loyalty programs are updated in real time against each client profile without needing anyone to calculate rewards manually.",
+      "The POS system automatically tracks client's loyalty points with every transaction. The loyalty programs are updated in real time against each client profile without needing anyone to calculate rewards manually.",
     imageSrc:
       "/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card2.webp",
   },
