@@ -60,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "ice-cream-shop-pos-system",
     "candy-store-pos-system",
     "food-truck-pos-system",
+    "sporting-goods-pos-system",
     "shoe-stores-pos-system",
     "convenience-store-pos-system",
     "barber-shop-pos-system",

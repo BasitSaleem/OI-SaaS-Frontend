@@ -93,6 +93,13 @@ export const industriesItems: IndustryItem[] = [
     type: 'pos',
   },
   {
+    key: 'sporting-goods-pos-system',
+    title: 'Sporting Goods POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
     key: 'clothing-inventory-management-software',
     title: 'Clothing Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
@@ -474,6 +481,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Quick Order Checkout' },
     { title: 'Menu & Side Customization' },
     { title: 'Ingredient & Packaging Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'sporting-goods-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Size & Variant Tracking' },
+    { title: 'Stock & Inventory Alerts' },
     { title: 'Sales Analytics & Reports' },
   ],
   'shoes-store-pos-system': [
