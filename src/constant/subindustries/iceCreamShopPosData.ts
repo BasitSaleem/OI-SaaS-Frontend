@@ -6,7 +6,7 @@ export const ICE_CREAM_SHOP_UNIFIED_HEADING =
   "Challenges that Ice Cream Shop Owners Face Today";
 
 export const ICE_CREAM_SHOP_UNIFIED_PARAGRAPH =
-  "Running a manual ice cream business causes several problems for operations which impact service quality, customer satisfaction and profitability. The following are the most frequently occurring issues that the ice cream shop owners encounter every day.";
+"Running a manual ice cream business causes several problems for operations which impact service quality, customer satisfaction and profitability. The following are the most frequently occurring issues that the ice cream shop owners encounter every day.";
 
 export const ICE_CREAM_SHOP_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -91,7 +91,7 @@ export const ICE_CREAM_SHOP_WHY_CHOOSE_CARDS = [
   },
   {
     id: "6",
-    icon: "whychoseIcon5",
+    icon: "whychoseIcon6",
     title: "Real-time Reporting and Insights",
     description:
       "Powerful reporting tools provide detailed insights into sales performance, top-selling flavors, peak business hours, and inventory movement. Owners can make smarter business decisions using accurate POS data instead of estimates.",
@@ -218,7 +218,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
 export const ICE_CREAM_SHOP_WORKFLOW_DATA = {
   heading: "Workflow of Owners Inventory POS for Ice Cream Shops",
   paragraph:
-    "Our point-of-sale (POS) system for ice cream shops is designed for a typical busy dessert counter. Whether they're creating a menu in the system, dealing with rush hour or monitoring sales for the day, nothing slows them down, becomes disorganized or causes them to worry about staff.",
+    "Our POS system for ice cream shops is designed for a typical busy dessert counter. Whether they're creating a menu in the system, dealing with rush hour or monitoring sales for the day, nothing slows them down, becomes disorganized or causes them to worry about staff.",
   steps: [
     {
       number: 1,
@@ -403,7 +403,7 @@ export const ICE_CREAM_SHOP_TESTIMONIAL_FEATURES = [
     id: "3",
     title: "All-in-One Platform",
     description:
-      "The system replaces all the tools for billing, inventory tracking, online orders, and reporting separately. All transactions, whether they are counter sales, delivery orders, stock levels or the customers profile , are handled from a single place.",
+      "The system replaces all the tools for billing, inventory tracking, online orders, and reporting separately. All transactions, whether they are counter sales, delivery orders, stock levels or the customers profile, are handled from a single place.",
     icon: "testWhychoseIcon3",
   },
   {

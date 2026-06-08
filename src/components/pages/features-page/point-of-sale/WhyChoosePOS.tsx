@@ -55,7 +55,7 @@ function WhyChoosePOS({
 
   return (
     <section className="lg:mt-[100px] md:mt-28 mt-20">
-      <div className="finance-reporting-shadow">
+      <div className="why-chose-gredient-bg">
         <div className="wrapper">
           {/* Heading Section */}
           <div className="flex flex-col items-center justify-center">

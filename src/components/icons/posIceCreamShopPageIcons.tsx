@@ -287,7 +287,6 @@ const icons = {
       <path d="M29.3359 31.1666V38.5" stroke="#F95C5B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
 
-
   ),
 
   UnifiedIcon2: (
@@ -314,10 +313,12 @@ const icons = {
 
   UnifiedIcon4: (
     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M34.651 9.16663L8.98438 34.8333" stroke="#F95C5B" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M22.0052 40.3333C32.1252 40.3333 40.3385 32.12 40.3385 22C40.3385 11.88 32.1252 3.66663 22.0052 3.66663C11.8852 3.66663 3.67188 11.88 3.67188 22C3.67188 32.12 11.8852 40.3333 22.0052 40.3333Z" stroke="#795CF5" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M3.79152 8.43328C5.25819 2.08995 14.8099 2.08995 16.2582 8.43328C17.1199 12.1549 14.7549 15.3083 12.7015 17.2699C11.1982 18.6999 8.83319 18.6816 7.32985 17.2699C5.29485 15.3083 2.92985 12.1549 3.79152 8.43328Z" stroke="#1AD1B9" stroke-width="3" />
+      <path d="M27.6273 30.4333C29.094 24.0899 38.7007 24.0899 40.1673 30.4333C41.029 34.1549 38.664 37.3083 36.5923 39.2699C35.089 40.6999 32.7057 40.6816 31.2023 39.2699C29.1307 37.3083 26.7657 34.1549 27.6273 30.4333Z" stroke="#1AD1B9" stroke-width="3" />
+      <path d="M21.9972 9.16663H26.9105C30.3022 9.16663 31.8788 13.365 29.3305 15.6016L14.6822 28.4166C12.1338 30.635 13.7105 34.8333 17.0838 34.8333H21.9972" stroke="#795CF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10.0568 10.0833H10.078" stroke="#F95C5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M33.8928 32.0833H33.914" stroke="#F95C5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
-
 
   ),
 

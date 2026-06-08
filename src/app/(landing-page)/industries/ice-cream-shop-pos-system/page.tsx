@@ -358,7 +358,7 @@ const Page = () => {
 
         <WhyChoosePOS
           heading="How Our POS Solves These Challenges"
-          paragraph="Owners Inventory is an all-in-one point-of-sale (POS) system designed to make ice cream businesses more efficient, less labor-intensive, and more customer-friendly, while offering a single place to handle everything."
+          paragraph="Owners Inventory is an all-in-one POS system designed to make ice cream businesses more efficient, less labor-intensive, and more customer-friendly, while offering a single place to handle everything."
           cards={ICE_CREAM_SHOP_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="iceCreamShop"
@@ -384,7 +384,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={ICE_CREAM_SHOP_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Portions, and Shift Compliance."
+          title="Security and Role-Based Access."
           description="Employees can only access information relevant to their role. The information is only visible to the employee when it is relevant to their tasks, helping to ensure smooth and secure functioning."
         />
 
