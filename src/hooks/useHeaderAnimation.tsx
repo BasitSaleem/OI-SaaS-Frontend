@@ -9,7 +9,7 @@ export function useHeaderAnimation() {
     if (typeof window === "undefined") return;
 
     const ctx = gsap.context(() => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         const tlHeader = gsap.timeline({
           delay: 0,
           defaults: { duration: 1, ease: "power1.inOut" },
