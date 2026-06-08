@@ -347,7 +347,7 @@ const Page = () => {
         <SecurityCompliance
           title="Security, Accuracy, and Compliance."
           description="Every stock movement, purchase order, and material adjustment in Owners Inventory is recorded with a timestamp and tied to the user who made the change. Nothing is edited or deleted without a record of it. This gives project owners a full audit trail across every site and every project without any extra effort from the team."
-          secondDescription="Role-based access control means each person on the project only sees and does what their role requires. A site worker logging material usage cannot edit purchase orders or view financial reports. A procurement officer can manage supplier orders without accessing data from other projects. Access is assigned based on each person's role and kept within those boundaries."
+          secondDescription="Role-based access control means each person on the project only sees and does what their role requires. A site worker logging material usage cannot edit purchase orders or view financial reports. A procurement officer can manage supplier orders without accessing data from other projects. Access is assigned based on each person's role and kept within those boundaries. Data is backed up automatically to encrypted cloud storage, so records are protected even if a device is lost or damaged on site. Your data is never shared with third parties or accessed outside your account. For construction companies subject to contract audits or compliance checks, every transaction record, adjustment log, and purchase history is stored and ready to be pulled up when needed."
         />
 
         <ToolsSection
