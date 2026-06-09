@@ -131,7 +131,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     id: 1,
     title: "Barcode and SKU Billing",
     description:
-      "Every product has a unique barcode or SKU (Stock Keeping Unit) attached to it that the system reads at checkout. The system instantly finds the correct price, applicable taxes, and any ongoing deals or discounts, in a single scan.",
+      "Every product has a unique barcode or SKU attached to it that the system reads at checkout. The system instantly finds the correct price, applicable taxes, and any ongoing deals or discounts, in a single scan.",
     imageSrc:
       "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card1.webp",
   },

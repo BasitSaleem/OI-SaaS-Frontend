@@ -113,7 +113,7 @@ export const CANDY_STORE_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "POS Counter Sales ",
         listdescription:
-          "Every product sold at the candy store counter updates inventory the moment the transaction is closed. The cashier does not enter anything manually after sales; stock figures adjust automatically, and the customer loyalty profile updates instantly. The transactions appear in the daily performance data without an additional step required from the counter team.",
+          "Every product sold at the candy store counter updates inventory the moment the transaction is closed. The cashier does not enter anything manually after sales stock figures adjust automatically, and the customer loyalty profile updates instantly. The transactions appear in the daily performance data without an additional step required from the counter team.",
       },
       {
         listheading: "Online and In-Store Order Sync",
@@ -372,9 +372,9 @@ export const CANDY_STORE_KEY_FEATURES = [
 export const CANDY_STORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",
-  secondHeading: "Take Your Candy Store Business to the Next Level",
+  secondHeading: "Start Managing Your Candy Store Smarter Today",
   secondDescription:
-    "Owners Inventory is a complete solution for ordering, inventory management, and customer tracking; everything in one easy-to-use system for fast and efficient candy store operations. It enables your team to provide customer service quicker without compromising without compromising business organization.",
+    "Take full control of your inventory, sales, and daily operations with a POS system designed specifically for candy retailers. Streamline your workflow, reduce manual effort, and make data-driven decisions with ease.",
   whyChooseTitle: "Why Choose Owners Inventory for Your Candy Store?",
   whyChooseDescription:
     "Owners Inventory is the right candy store POS for owners who want a specialized POS that handles specific operational and customer demands. It reduces the task inefficiencies of candy shops and improves workflow management.",
@@ -428,7 +428,7 @@ export const CANDY_STORE_TESTIMONIAL_FEATURES = [
 export const CANDY_STORE_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Owners Inventory connects to various platforms such as Shopify, Stripe, QuickBooks, Google Calendar, Mailchimp, and other business tools. All sales, accounting, and marketing data remain synchronized across systems. This decreases the amount of manual reconciliation needed and helps to ensure accurate financial reporting on all sales channels, online and offline.",
+    "Owners Inventory seamlessly connects with Shopify, WooCommerce, QuickBooks, marketing tools, and payment gateways. Sales and inventory data flows between every connected platform. It reduces the reliance on several disconnected systems and increases efficiency.",
   tools: [
     {
       id: 1,
