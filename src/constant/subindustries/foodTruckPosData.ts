@@ -316,14 +316,14 @@ export const FOOD_TRUCK_FAQS = [
     question:
       "How does ingredient tracking work if I prep quantities before service starts?",
     answer:
-      "At the start of each service session, you enter your opening stock. The system uses those quantities as the starting count and deducts ingredient amounts automatically as each order is placed. By the end of service, your remaining stock count reflects exactly what was used, based on what you actually started with that day.",
+      "At the start of each service session, you enter your opening stock. By the end of service, your remaining stock count reflects exactly what was used, based on what you actually started with that day.",
   },
   {
     id: "3",
     question:
       "Does the system handle menu items with add-ons or size variations?",
     answer:
-      "Each menu item can have multiple modifier groups attached to it, covering add-ons, size options, and substitutions. The correct price for each combination is calculated automatically when the modifier is selected, so your staff members do not need to adjust prices manually at the window or risk charging the wrong amount during a busy service.",
+      "Each menu item can have multiple modifier groups attached to it, covering add-ons, size options, and substitutions. So your staff members do not need to adjust prices manually at the window or risk charging the wrong amount during a busy service.",
   },
   {
     id: "4",
@@ -336,7 +336,7 @@ export const FOOD_TRUCK_FAQS = [
     question:
       "What happens to my sales data if my tablet is lost or damaged at an event?",
     answer:
-      "Your data is backed up automatically to encrypted cloud storage after every session. A lost or damaged device does not result in lost records. You can log in from any other tablet, phone, or laptop and access your full transaction history, session reports, and ingredient records straight away.",
+      "Your data is backed up automatically to encrypted cloud storage after every session. You can log in from any other tablet, phone, or laptop and access your full transaction history, session reports, and ingredient records straight away.",
   },
   {
     id: "6",
@@ -418,7 +418,7 @@ export const FOOD_TRUCK_TESTIMONIAL_FEATURES = [
     id: "1",
     title: "Built for Mobile Food Service",
     description:
-      "Most POS systems are designed for fixed restaurants and then adapted for mobile use. Owners Inventory is structured around how a food truck actually runs, with location-based sessions, ingredient-level stock tracking, and offline payment processing built in from the start. The system handles the pace and physical constraints of mobile food service without requiring workarounds.",
+      "Most POS systems are designed for fixed restaurants and then adapted for mobile use. Owners Inventory is structured around how a food truck actually runs, with location-based sessions, ingredient-level stock tracking, and offline payment processing built in from the start.",
     icon: "testWhychoseIcon1",
   },
   {
@@ -453,14 +453,14 @@ export const FOOD_TRUCK_TESTIMONIAL_FEATURES = [
     id: "6",
     title: "Staff Ready Fast ",
     description:
-      "The interface is designed for speed, not complexity. Most new staff members are comfortable taking orders and processing payments within their first service. Role-based access means they only see what their position requires from day one, which keeps the handover process short even when staff turnover is high.",
+      "The interface is designed for speed, not complexity. Role-based access means they only see what their position requires from day one, which keeps the handover process short even when staff turnover is high.",
     icon: "testWhychoseIcon6",
   },
   {
     id: "7",
     title: "Support Is Available When Needed",
     description:
-      "Our team is available from initial setup through day-to-day use. If a question comes up before a busy weekend service or a new staff member needs help getting started, support is available without a wait. You are not handed documentation and left to work it out on your own.",
+      "Our team is available from initial setup through day-to-day use. You are not handed documentation and left to work it out on your own.",
     icon: "testWhychoseIcon7",
   },
   {

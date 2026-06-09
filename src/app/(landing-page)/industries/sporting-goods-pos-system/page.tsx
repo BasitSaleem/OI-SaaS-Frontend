@@ -384,7 +384,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={SPORTING_GOODS_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance"
+          title="Security, Accuracy, and Compliance."
           description="Staff permissions are assigned according to their duty roles. Counter staff handle transactions only, while higher-level employees, such as managers, handle crucial tasks like managing financial reports and making purchase decisions for restocking. The POS helps maintain security protocols by limiting access to sensitive information."
         />
 

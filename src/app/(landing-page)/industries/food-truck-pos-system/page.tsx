@@ -384,7 +384,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={FOOD_TRUCK_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance"
+          title="Security, Accuracy, and Compliance."
           description="Every transaction in our food truck POS is logged under the staff member who handled it, with an exact timestamp. No sale, void, or refund goes unrecorded. Role-based access control keeps each role limited to what it needs. Staff taking orders and processing payments can't edit stock counts, adjust prices, or view sales reports. Owners and managers have full access to session summaries, food cost data, and payment records."
           secondDescription="After every session, your sales data, ingredient records, and payment history back up automatically to encrypted cloud storage. A lost or damaged tablet won't take your records with it. Payments run through PCI DSS-compliant infrastructure, so customer payment data stays protected. "
         />
