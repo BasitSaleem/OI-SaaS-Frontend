@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best POS System for Sporting Goods Stores | Owners Inventory",
-  description: "Speed up checkouts at your sporting goods store with our Sporting Goods POS system. Manage sizes, color variants, inventory levels, splits bills, and track cashier shifts in real time.",
+  title: "Sporting Goods POS System | Owners Inventory",
+  description: "Sporting goods POS system to track sizes, brands, and variants, speed up checkout, and sync inventory across branches and online. Start your free trial today.",
   keywords: [
     "POS system for sporting goods stores",
     "sporting goods POS system",

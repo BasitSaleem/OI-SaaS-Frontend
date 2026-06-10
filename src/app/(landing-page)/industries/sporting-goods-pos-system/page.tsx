@@ -49,7 +49,7 @@ const Page = () => {
               {
                 "@type": "SoftwareApplication",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web, iOS, Android",
                 "offers": {
@@ -58,32 +58,31 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Sporting goods POS software that tracks every catalog item, variant (size, color, brand) and stock level in real time, speeds up register checkouts, manages distributors and purchase orders, syncs inventory across multiple store locations, and provides detailed sales margin analytics.",
+                "description": "Sporting goods POS system that tracks sizes, brands, models, and variants across equipment, apparel, and accessories, speeds up checkout with barcode scanning, manages returns and exchanges, syncs inventory across branches and online channels, and provides detailed sales analytics.",
                 "featureList": [
-                  "SKU-level stock and variant tracking",
-                  "Touchscreen order layout for quick product customisation",
-                  "Real-time stock alerts and automated reorder points",
-                  "Cashier shift handover and drawer cash reconciliation",
-                  "Multi-branch catalog updates and database sync",
-                  "Split bill and digital wallet payment integration",
-                  "Defective items and returns tracking",
-                  "Peak hour sales velocity analytics",
-                  "Offline register billing capability",
-                  "Online pick-up orders synchronization",
-                  "Customer loyalty programs and store credit software",
-                  "Role-based cashier drawer security"
+                  "Variant management for sizes, brands, models, and categories",
+                  "Fast checkout with barcode scanning",
+                  "Real-time inventory tracking across equipment and apparel",
+                  "Seamless returns and exchange handling",
+                  "Customer profiles and loyalty programs",
+                  "Multi-branch inventory and pricing sync",
+                  "E-commerce integration with automatic stock updates",
+                  "Supplier and purchase order management",
+                  "Seasonal and promotional discount management",
+                  "Employee roles, permissions, and activity tracking",
+                  "Smart sales and seasonal trend reports"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Sporting Goods Stores | Owners Inventory",
-                "url": "https://www.ownersinventory.com/industries/sporting-goods-pos-system",
-                "description": "Protect your retail margins and speed up queues with real-time stock tracking, variant matrix control, touchscreen billing, and register cash audits using Owners Inventory.",
+                "name": "Sporting Goods POS System | Owners Inventory",
+                "url": "https://ownersinventory.com/industries/sporting-goods-pos-system",
+                "description": "Manage equipment, apparel, sizes, and brands with real-time variant tracking, fast checkout, smooth returns, and multi-branch sync using Owners Inventory's sporting goods POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
                   "name": "Owners Inventory",
-                  "url": "https://www.ownersinventory.com"
+                  "url": "https://ownersinventory.com"
                 },
                 "breadcrumb": {
                   "@type": "BreadcrumbList",
@@ -92,19 +91,19 @@ const Page = () => {
                       "@type": "ListItem",
                       "position": 1,
                       "name": "Home",
-                      "item": "https://www.ownersinventory.com"
+                      "item": "https://ownersinventory.com"
                     },
                     {
                       "@type": "ListItem",
                       "position": 2,
                       "name": "Industries",
-                      "item": "https://www.ownersinventory.com/industries"
+                      "item": "https://ownersinventory.com/industries"
                     },
                     {
                       "@type": "ListItem",
                       "position": 3,
                       "name": "Sporting Goods POS System",
-                      "item": "https://www.ownersinventory.com/industries/sporting-goods-pos-system"
+                      "item": "https://ownersinventory.com/industries/sporting-goods-pos-system"
                     }
                   ]
                 }
@@ -112,29 +111,29 @@ const Page = () => {
               {
                 "@type": "Organization",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Customer Support",
                   "availableLanguage": "English",
-                  "url": "https://www.ownersinventory.com/contact"
+                  "url": "https://ownersinventory.com/contact"
                 },
                 "sameAs": [
-                  "https://www.facebook.com/ownersinventory",
-                  "https://www.instagram.com/ownersinventory",
-                  "https://www.linkedin.com/company/owners-inventory"
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
                 ]
               },
               {
                 "@type": "Product",
                 "name": "Sporting Goods POS System",
-                "description": "POS software designed for sporting goods stores, athletic wear boutiques, and sports gear retailers to manage variant-level inventory, track store performance, accelerate register checkouts, and coordinate purchase orders.",
+                "description": "POS software designed for sporting goods retailers to manage equipment, apparel, and accessory variants by size, brand, and model, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, and generate detailed sales reports from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
                 },
-                "url": "https://www.ownersinventory.com/industries/sporting-goods-pos-system",
+                "url": "https://ownersinventory.com/industries/sporting-goods-pos-system",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
@@ -144,192 +143,47 @@ const Page = () => {
                 }
               },
               {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Marcus G."
-                      },
-                      "reviewBody": "Inventory tracking by variant size and color was a massive issue before. Now, with barcode scanning and checkout logs, we slashed product shrinkage by 15% in our first month.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Elena K."
-                      },
-                      "reviewBody": "During busy retail rushes, lines go out the door. The simple touchscreen setup lets cashiers scan barcodes and apply discounts in a single tap. It's incredibly fast.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Rayan S."
-                      },
-                      "reviewBody": "I manage three retail stores from my phone. I get real-time sales reports and know exactly when a location is running low on popular catalog variants without being there.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Maya L."
-                      },
-                      "reviewBody": "Deploying catalog pricing updates used to take forever across our four stores. Now, I edit wholesale costs and push retail prices in just one click.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "Can I customize the POS screen for seasonal catalog changes?",
+                    "name": "How does this POS handle sizes, brands, and variants?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can edit your product catalog, add seasonal items, and adjust sizes and colors from the central dashboard, updating register screens instantly."
+                      "text": "The system tracks every size, brand, model, and category separately across equipment, apparel, and accessories, keeping stock accurate and reducing errors."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does inventory tracking work for custom variants and bundles?",
+                    "name": "Can it manage multiple branches?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can link items to specific variant barcodes (e.g. sizes, colors, material types). The system automatically deducts them from your stock upon checkout."
+                      "text": "Yes. Inventory, sales, pricing, and reports stay synced across all branches, and you can transfer stock between locations on demand."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I manage multiple retail shops or online channels?",
+                    "name": "Does the POS support returns and exchanges?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Track sales, inventory levels, and transfer stock across multiple store locations and online storefronts from one cloud account."
+                      "text": "Yes. Returns and exchanges are processed clearly, with every action recorded to keep inventory and revenue accurate."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How much does the Sporting Goods POS system cost?",
+                    "name": "Can I connect my online store?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can start for free with our 3-month trial to test the system during real shifts. After the trial, flexible plans are based on your shop's size and feature requirements."
+                      "text": "Yes. Your online and retail inventory update in real time, preventing overselling and duplicate records across channels."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the system support gift cards and promotional campaigns?",
+                    "name": "Is it easy for staff to learn?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The checkout system allows managing gift cards, store credit, and applying promotional discounts with role-based cashier limits."
+                      "text": "Yes. The interface is simple and clear, so staff can use it confidently within a few hours of training."
                     }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Is training difficult for seasonal or new staff?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Not at all. The interface is highly visual and intuitive. Cashiers can master barcode scanning and billing in under 15 minutes, reducing onboarding effort."
-                    }
-                  }
-                ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Sporting Goods Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines sporting goods inventory and counter operations from receiving to sales reports.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "Receiving Warehouse Shipments",
-                    "text": "Verify raw stock, clothing apparel, sports gear, and equipment against supplier orders. Record variants on delivery."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "Catalog & Variant Setup",
-                    "text": "Organize products by category (apparel, equipment, accessories). Group variants by size, color, and model for quick scanning."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Real-Time SKU Deduction",
-                    "text": "Deduct sizes, colors, and stock in real time at checkout. Low-stock alerts notify you when essential items are running dry."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Supplier Reordering",
-                    "text": "Generate purchase orders directly from the dashboard when stock drops. Track supplier fulfillment status and delivery history."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "Shift Stock Auditing",
-                    "text": "Compare sold products against physical stock levels at shift change. Track damaged items and returns to audit cashier accuracy."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 6,
-                    "name": "Sales & Margin Analysis",
-                    "text": "Analyze product popularity, daily peak sales, and catalog margins. Drive profitability by focusing on high-velocity, high-margin gears."
                   }
                 ]
               }

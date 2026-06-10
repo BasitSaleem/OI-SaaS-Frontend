@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best POS System for Candy Stores | Owners Inventory",
-  description: "Speed up counter queues at your candy shop with our Candy Store POS system. Manage bulk weights, chocolates, inventory jars, split bills, and track cashier shifts in real time.",
+  title: "Candy Store POS System | Owners Inventory",
+  description: "Candy store POS system for fast billing, weight and unit-based selling, and real-time stock tracking for sweet shops. Start your Owners Inventory free trial today.",
   keywords: [
     "POS system for candy stores",
     "candy store POS system",

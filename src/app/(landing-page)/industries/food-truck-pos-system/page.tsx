@@ -49,7 +49,7 @@ const Page = () => {
               {
                 "@type": "SoftwareApplication",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web, iOS, Android",
                 "offers": {
@@ -58,27 +58,25 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Food truck POS software that tracks every menu item, food ingredient count, side, and packaging box in real time, speeds up counter billing, manages suppliers and restock purchases, syncs inventory across multiple carts and locations, and provides detailed sales analytics.",
+                "description": "Food truck POS system built for mobile vendors with fast order taking, custom menu modifiers, offline billing, real-time ingredient tracking, multiple payment methods including contactless, and sales reporting accessible from any mobile device.",
                 "featureList": [
-                  "Portion control and food waste tracking",
-                  "Touchscreen order layout for quick menu modifiers",
-                  "Real-time food ingredient and packaging box alerts",
-                  "Cashier shift handover and register cash reconciliation",
-                  "Multi-branch catalog updates and flavor sync",
-                  "Split bill and digital wallet payment integration",
-                  "Ingredient waste and melted tub tracking",
-                  "Peak hour sales velocity analytics",
-                  "Offline counter billing capability",
-                  "Online pick-up orders synchronization",
-                  "Customer loyalty punch-card software",
-                  "Role-based cashier drawer security"
+                  "Fast mobile order taking with custom modifiers",
+                  "Offline billing that syncs when back online",
+                  "Real-time ingredient and stock tracking",
+                  "Multiple payment options including cards and contactless",
+                  "Custom menu and price adjustment tools",
+                  "Digital and printed receipts",
+                  "Customer loyalty and rewards programs",
+                  "Sales and inventory reporting",
+                  "Multi-location management from one dashboard",
+                  "Supplier and purchase order management"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Food Trucks | Owners Inventory",
+                "name": "Food Truck POS System | Owners Inventory",
                 "url": "https://www.ownersinventory.com/industries/food-truck-pos-system",
-                "description": "Protect your margins and speed up queues with real-time ingredient tracking, portion control, touchscreen modifiers, and register cash audits using Owners Inventory.",
+                "description": "Manage your food truck with fast mobile order taking, offline billing, real-time ingredient tracking, and multi-location reporting using Owners Inventory.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -129,7 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Food Truck POS System",
-                "description": "POS software designed for food trucks, mobile kitchens, and street food carts to manage ingredient inventories, track food waste, accelerate counter checkouts, and coordinate food distributors.",
+                "description": "POS system built for food trucks and mobile vendors with offline billing, ingredient tracking, custom modifiers, and contactless payment support.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -144,192 +142,55 @@ const Page = () => {
                 }
               },
               {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Marcus G."
-                      },
-                      "reviewBody": "Portion control was a massive issue before. Now, with accurate waste tracking and checkout logs, we slashed ingredient shrinkage by 15% in our first month.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Elena K."
-                      },
-                      "reviewBody": "During summer rushes, lines go out the door. The simple touchscreen setup lets cashiers punch in meal combos with extra sides in a single tap. It's incredibly fast.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Rayan S."
-                      },
-                      "reviewBody": "I manage three kiosks from my phone. I get real-time sales reports and know exactly when a location is running low on packaging boxes without being there.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Maya L."
-                      },
-                      "reviewBody": "Deploying seasonal menu updates used to take forever across our four shops. Now, I edit prices and push new flavors in just one click.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "Can I customize the POS screen for seasonal menu changes?",
+                    "name": "Does the food truck POS work offline?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can edit your menu layout, add seasonal items, and adjust sides and options from the central catalog, which updates cashier screens instantly."
+                      "text": "Yes. The system supports offline billing that continues to process orders and syncs all data automatically when your connection is restored."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does ingredient tracking work for custom orders and combos?",
+                    "name": "Can I customize the menu for different locations or days?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can link menu items to specific ingredients (e.g. buns, patties, sauces, packaging). The system automatically deducts them from inventory upon checkout."
+                      "text": "Yes. You can set up custom menus, modifiers, and pricing adjustments for different stops or seasonal demand from a central dashboard."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I manage multiple shops or mobile trucks?",
+                    "name": "What payment methods does the food truck POS support?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Track sales, inventory levels, and transfer stock across multiple parlors, carts, and trucks from one cloud account."
+                      "text": "The system accepts cards, contactless payments, mobile wallets, and cash, giving your customers flexibility at every stop."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How much does the Food Truck POS system cost?",
+                    "name": "How does ingredient tracking work for a food truck?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can start for free with our 3-month trial to test the system during real shifts. After the trial, flexible plans are based on your shop's size and feature requirements."
+                      "text": "Ingredients are deducted in real time with each order. Low-stock alerts notify you before you run out so you can restock between service stops."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the system support split bills for families or groups?",
+                    "name": "Can I manage multiple food trucks from one account?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The checkout system allows splitting transactions among multiple card, cash, or mobile payments with a single tap."
+                      "text": "Yes. Owners Inventory lets you monitor sales, inventory, and staff across multiple trucks and locations from a single dashboard."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is training difficult for seasonal or new staff?",
+                    "name": "How much does the food truck POS system cost?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Not at all. The interface is visual and highly intuitive. Cashiers can master the billing system in under 15 minutes, reducing onboarding effort."
+                      "text": "You can start with a free trial to test the system on real shifts. Flexible plans are available based on your operation size and feature needs."
                     }
-                  }
-                ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Food Truck Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines ice cream parlor inventory and counter operations from cold supply receiving to sales reports.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "Receiving Fresh Supplies",
-                    "text": "Verify raw materials, fresh ingredients, sauces, packaging, and supplies against supplier orders. Record expiration dates on delivery."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "Menu & Variant Setup",
-                    "text": "Organize products by category (menu categories, items, sides, beverages). Group variants by flavor profiles and cup/cone sizes for quick entry."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Real-Time Ingredient Deduction",
-                    "text": "Deduct ingredients, sides, and packaging in real time at checkout. Low-stock alerts notify you when essential ingredients are running dry."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Supplier Ordering",
-                    "text": "Generate purchase orders directly from the dashboard when stock drops. Track supplier fulfillment status and delivery history."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "Shift Stock Auditing",
-                    "text": "Compare sold meals against physical stock levels at shift change. Track portions and waste to audit cashier accuracy."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 6,
-                    "name": "Sales & Margin Analysis",
-                    "text": "Analyze dish popularity, hourly peak sales, and menu margins. Drive profitability by focusing on high-velocity, high-margin desserts."
                   }
                 ]
               }

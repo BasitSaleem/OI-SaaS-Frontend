@@ -49,7 +49,7 @@ const Page = () => {
               {
                 "@type": "SoftwareApplication",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web, iOS, Android",
                 "offers": {
@@ -58,32 +58,31 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Candy store POS software that tracks every candy jar variety, ingredient count, chocolate, and gift box in real time, speeds up counter billing, manages suppliers and restock purchases, syncs inventory across multiple carts and locations, and provides detailed sales analytics.",
+                "description": "Candy store POS system that handles fast billing, weight-based and unit-based selling, real-time inventory tracking, bulk and pick-and-mix sales, supplier management, multiple payment methods, and seasonal promotions from one connected dashboard.",
                 "featureList": [
-                  "Portion control and weight tracking",
-                  "Touchscreen order layout for quick menu modifiers",
-                  "Real-time candy jar and gift bag alerts",
-                  "Cashier shift handover and register cash reconciliation",
-                  "Multi-branch catalog updates and flavor sync",
-                  "Split bill and digital wallet payment integration",
-                  "Ingredient waste and melted tub tracking",
-                  "Peak hour sales velocity analytics",
-                  "Offline counter billing capability",
-                  "Online pick-up orders synchronization",
-                  "Customer loyalty punch-card software",
-                  "Role-based cashier drawer security"
+                  "Fast checkout with weight-based and unit-based pricing",
+                  "Pick-and-mix and bulk candy sales support",
+                  "Real-time inventory tracking",
+                  "Expiry and batch tracking for confectionery",
+                  "Supplier and purchase order management",
+                  "Multiple payment options including cards and contactless",
+                  "Customer loyalty and rewards programs",
+                  "Seasonal promotions and discount management",
+                  "Multi-location management from one dashboard",
+                  "Sales and stock reports",
+                  "Role-based access for staff"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Candy Stores & Shops | Owners Inventory",
-                "url": "https://www.ownersinventory.com/industries/candy-store-pos-system",
-                "description": "Protect your margins and speed up queues with real-time candy tracking, portions control, touchscreen modifiers, and register cash audits using Owners Inventory.",
+                "name": "Candy Store POS System | Owners Inventory",
+                "url": "https://ownersinventory.com/industries/candy-store-pos-system",
+                "description": "Run your candy store with fast billing, weight and unit-based selling, real-time inventory tracking, and easy promotions using Owners Inventory's candy store POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
                   "name": "Owners Inventory",
-                  "url": "https://www.ownersinventory.com"
+                  "url": "https://ownersinventory.com"
                 },
                 "breadcrumb": {
                   "@type": "BreadcrumbList",
@@ -92,19 +91,19 @@ const Page = () => {
                       "@type": "ListItem",
                       "position": 1,
                       "name": "Home",
-                      "item": "https://www.ownersinventory.com"
+                      "item": "https://ownersinventory.com"
                     },
                     {
                       "@type": "ListItem",
                       "position": 2,
                       "name": "Industries",
-                      "item": "https://www.ownersinventory.com/industries"
+                      "item": "https://ownersinventory.com/industries"
                     },
                     {
                       "@type": "ListItem",
                       "position": 3,
                       "name": "Candy Store POS System",
-                      "item": "https://www.ownersinventory.com/industries/candy-store-pos-system"
+                      "item": "https://ownersinventory.com/industries/candy-store-pos-system"
                     }
                   ]
                 }
@@ -112,29 +111,29 @@ const Page = () => {
               {
                 "@type": "Organization",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Customer Support",
                   "availableLanguage": "English",
-                  "url": "https://www.ownersinventory.com/contact"
+                  "url": "https://ownersinventory.com/contact"
                 },
                 "sameAs": [
-                  "https://www.facebook.com/ownersinventory",
-                  "https://www.instagram.com/ownersinventory",
-                  "https://www.linkedin.com/company/owners-inventory"
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
                 ]
               },
               {
                 "@type": "Product",
                 "name": "Candy Store POS System",
-                "description": "POS software designed for candy stores, sweet shops, and confectionery kiosks to manage candy inventories, track weights, accelerate counter checkouts, and coordinate candy distributors.",
+                "description": "POS software designed for candy and confectionery stores to handle fast billing, weight-based and unit-based selling, pick-and-mix sales, real-time inventory tracking, supplier management, multi-payment processing, and seasonal promotions from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
                 },
-                "url": "https://www.ownersinventory.com/industries/candy-store-pos-system",
+                "url": "https://ownersinventory.com/industries/candy-store-pos-system",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
@@ -144,192 +143,47 @@ const Page = () => {
                 }
               },
               {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Marcus G."
-                      },
-                      "reviewBody": "Portion control was a massive issue before. Now, with accurate waste tracking and checkout logs, we slashed ingredient shrinkage by 15% in our first month.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Elena K."
-                      },
-                      "reviewBody": "During summer rushes, lines go out the door. The simple touchscreen setup lets cashiers punch in custom candy bags with chocolates in a single tap. It's incredibly fast.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Rayan S."
-                      },
-                      "reviewBody": "I manage three kiosks from my phone. I get real-time sales reports and know exactly when a location is running low on gift boxes without being there.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Maya L."
-                      },
-                      "reviewBody": "Deploying seasonal holiday candy updates used to take forever across our four shops. Now, I edit prices and push new flavors in just one click.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "Can I customize the POS screen for seasonal candy updates?",
+                    "name": "Can the POS handle weight-based and pick-and-mix sales?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can edit your menu layout, add seasonal candies, and adjust packaging options from the central catalog, which updates cashier screens instantly."
+                      "text": "Yes. The system supports weight-based pricing, unit pricing, and pick-and-mix sales, so you can sell candy loose, by the bag, or as packaged items."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does ingredient tracking work for custom mixes and candy bags?",
+                    "name": "Does it track inventory in real time?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can link menu items to specific ingredients (e.g. bags, jars, bulk candy stock). The system automatically deducts them from inventory upon checkout."
+                      "text": "Yes. Stock updates automatically after every sale, giving you accurate inventory levels and low-stock alerts to keep popular items in stock."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I manage multiple shops or mobile trucks?",
+                    "name": "Can I run seasonal promotions and discounts?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Track sales, inventory levels, and transfer stock across multiple parlors, carts, and trucks from one cloud account."
+                      "text": "Yes. You can create seasonal offers, bundles, and discounts directly in the system, which are applied automatically during billing."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How much does the Candy Store POS system cost?",
+                    "name": "Does it support multiple payment methods?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can start for free with our 3-month trial to test the system during real shifts. After the trial, flexible plans are based on your shop's size and feature requirements."
+                      "text": "Yes. The system accepts cash, cards, and contactless payments for quick, secure checkout."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the system support split bills for families or groups?",
+                    "name": "Is it easy for staff to learn?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The checkout system allows splitting transactions among multiple card, cash, or mobile payments with a single tap."
+                      "text": "Yes. The interface is simple and intuitive, so staff can manage checkout and inventory with minimal training."
                     }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Is training difficult for seasonal or new staff?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Not at all. The interface is visual and highly intuitive. Cashiers can master the billing system in under 15 minutes, reducing onboarding effort."
-                    }
-                  }
-                ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Candy Store Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines ice cream parlor inventory and counter operations from cold supply receiving to sales reports.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "Receiving Candy Supplies",
-                    "text": "Verify raw materials, gummies, chocolates, packaging, and candy jars against supplier orders. Record expiration dates on delivery."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "Menu & Variant Setup",
-                    "text": "Organize products by category (jars, bags, boxes, beverages). Group variants by flavor profiles and cup/cone sizes for quick entry."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Real-Time Ingredient Deduction",
-                    "text": "Deduct jars, bags, and chocolates in real time at checkout. Low-stock alerts notify you when essential ingredients are running dry."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Supplier Ordering",
-                    "text": "Generate purchase orders directly from the dashboard when stock drops. Track supplier fulfillment status and delivery history."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "Shift Stock Auditing",
-                    "text": "Compare sold candy weight against physical jar levels at shift change. Track portions and waste to audit cashier accuracy."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 6,
-                    "name": "Sales & Margin Analysis",
-                    "text": "Analyze candy popularity, hourly peak sales, and menu margins. Drive profitability by focusing on high-velocity, high-margin desserts."
                   }
                 ]
               }

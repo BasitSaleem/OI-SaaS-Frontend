@@ -52,7 +52,7 @@ const Page = () => {
               {
                 "@type": "SoftwareApplication",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web, iOS, Android",
                 "offers": {
@@ -61,32 +61,30 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Barber shop POS software that tracks every service, stylist, and appointment in real time, speeds up checkout with integrated payments, manages retail sales, syncs schedules across multiple branches, and provides detailed performance analytics for grooming businesses.",
+                "description": "Barber shop POS system that speeds up checkout, manages appointments and walk-ins, tracks grooming retail products, processes multiple payment methods, handles tips and commissions, and keeps daily sales organized from one connected dashboard.",
                 "featureList": [
-                  "Complete appointment management for services and stylists",
-                  "Fast checkout with integrated payments and smart item search",
-                  "Real-time schedule tracking and walk-in sync",
-                  "Seamless booking and cancellation handling",
-                  "Client profiles with service history and loyalty points",
-                  "Multi-branch schedule and pricing sync",
-                  "Online booking integration with automatic updates",
-                  "Smart sales and peak hour trend reports",
-                  "Employee roles, permissions, and activity tracking",
-                  "Discount and promotion management across branches",
-                  "Supplier and retail product management",
-                  "Centralized service control from a single dashboard"
+                  "Fast checkout for services and retail products",
+                  "Appointment and walk-in booking management",
+                  "Barber commission and tip tracking",
+                  "Retail product inventory tracking",
+                  "Multiple payment options including cards and contactless",
+                  "Customer profiles and loyalty programs",
+                  "Flexible discounts and service bundles",
+                  "Multi-chair and multi-location management",
+                  "Role-based access for staff",
+                  "Daily sales and performance reports"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Barber Shops | Owners Inventory",
-                "url": "https://www.ownersinventory.com/industries/barber-shop-pos-system",
-                "description": "Manage every service and stylist with real-time appointment tracking, fast checkout, smooth bookings, and multi-branch sync using Owners Inventory's POS system for barber shops.",
+                "name": "Barber Shop POS System | Owners Inventory",
+                "url": "https://ownersinventory.com/industries/barber-shop-pos-system",
+                "description": "Speed up barber shop billing, manage appointments and walk-ins, track retail products, and handle commissions and payments using Owners Inventory's barber shop POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
                   "name": "Owners Inventory",
-                  "url": "https://www.ownersinventory.com"
+                  "url": "https://ownersinventory.com"
                 },
                 "breadcrumb": {
                   "@type": "BreadcrumbList",
@@ -95,19 +93,19 @@ const Page = () => {
                       "@type": "ListItem",
                       "position": 1,
                       "name": "Home",
-                      "item": "https://www.ownersinventory.com"
+                      "item": "https://ownersinventory.com"
                     },
                     {
                       "@type": "ListItem",
                       "position": 2,
                       "name": "Industries",
-                      "item": "https://www.ownersinventory.com/industries"
+                      "item": "https://ownersinventory.com/industries"
                     },
                     {
                       "@type": "ListItem",
                       "position": 3,
-                      "name": "Barber Shop Pos System",
-                      "item": "https://www.ownersinventory.com/industries/barber-shop-pos-system"
+                      "name": "Barber Shop POS System",
+                      "item": "https://ownersinventory.com/industries/barber-shop-pos-system"
                     }
                   ]
                 }
@@ -115,29 +113,29 @@ const Page = () => {
               {
                 "@type": "Organization",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Customer Support",
                   "availableLanguage": "English",
-                  "url": "https://www.ownersinventory.com/contact"
+                  "url": "https://ownersinventory.com/contact"
                 },
                 "sameAs": [
-                  "https://www.facebook.com/ownersinventory",
-                  "https://www.instagram.com/ownersinventory",
-                  "https://www.linkedin.com/company/owners-inventory"
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
                 ]
               },
               {
                 "@type": "Product",
                 "name": "Barber Shop POS System",
-                "description": "POS software designed for barber shops and grooming businesses to manage services, stylists, and appointment variants, speed up billing with integrated payments, handle bookings and cancellations, sync schedules across branches and online channels, manage suppliers, and generate detailed performance reports from a single dashboard.",
+                "description": "POS software designed for barber shops to handle fast checkout, appointment and walk-in management, barber commissions and tips, retail product tracking, multi-payment processing, and multi-location operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
                 },
-                "url": "https://www.ownersinventory.com/industries/barber-shop-pos-system",
+                "url": "https://ownersinventory.com/industries/barber-shop-pos-system",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
@@ -147,184 +145,47 @@ const Page = () => {
                 }
               },
               {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Barber Shop Owner"
-                      },
-                      "reviewBody": "This POS enabled us to bill faster and handle service and stylist changes without confusion. It is simple for our staff and quick for our clients.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Shop Manager"
-                      },
-                      "reviewBody": "Our shop had problems with booking management and cancellations. Owners Inventory POS keeps everything current, bookings are simple to handle, and reports are clear and easy to understand.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Multi-Branch Barber Shop"
-                      },
-                      "reviewBody": "It used to take hours to sync schedules across multiple branches, but the POS system for barber shops reflects bookings immediately, and billing is quick even during peak time. Reports clearly show top-performing stylists.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Grooming Boutique Owner"
-                      },
-                      "reviewBody": "It was difficult to keep track of hundreds of appointments and services, but with Owners Inventory POS, everything is organized, all bookings can be tracked, and client profiles help us understand preferences.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "How does this POS system handle services and appointments?",
+                    "name": "Can the system handle both services and retail product sales?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Our POS system for grooming businesses tracks individual services, stylists, and appointment slots separately, ensuring that schedules remain updated and errors are reduced."
+                      "text": "Yes. The barber shop POS records service and retail product sales separately, making it easy to track performance for each category without mixing data."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it able to handle multiple branches?",
+                    "name": "Does it track barber commissions and tips?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Schedules, sales, prices, and reports stay synchronized across all branches. Staff transfers can take place on demand from a single dashboard."
+                      "text": "Yes. The system tracks commissions and tips per barber automatically, keeping payouts accurate and transparent at the end of each day or pay period."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the POS support online bookings?",
+                    "name": "Can I manage both appointments and walk-in customers?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Online bookings and cancellations are handled efficiently, and every action is documented to ensure nothing is lost or overlooked."
+                      "text": "Yes. The POS supports scheduled appointments and walk-in customers in one system, keeping the chair flow organized during busy periods."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it possible to track retail sales?",
+                    "name": "Does it support multiple payment methods?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Our barber shop POS keeps online and retail inventory updated in real time, preventing duplication and overselling."
+                      "text": "Yes. The system accepts cash, cards, and contactless payments, allowing fast and secure checkout for every client."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it easy for staff to learn?",
+                    "name": "Is it easy for staff to learn and use?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The interface is simple, and employees can pick it up in a few hours, saving training time and avoiding disruption to operations."
+                      "text": "Yes. The interface is simple and intuitive, so barbers and front-desk staff can use it confidently with minimal training."
                     }
-                  }
-                ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Barber Shop Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines barber shop management from booking to reporting and analysis.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "Service Setup",
-                    "text": "When new services are added, the POS system captures type, price, and stylist information. This prevents scheduling conflicts and pricing mistakes."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "Schedule Organization",
-                    "text": "The POS system organizes bookings clearly. Appointments are sorted by stylist, service type, and time, making them easy to locate and manage."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Performance Tracking",
-                    "text": "The POS tracks stylist performance in real time across sales, bookings, and tips, ensuring accurate visibility at every location."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Retail and Purchasing",
-                    "text": "Shops can manage suppliers, purchase orders for grooming products, and delivery schedules to make smarter restocking decisions."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "Client Check-out",
-                    "text": "Clients are processed accurately, ensuring the correct service and product charges are applied. This reduces errors and improves satisfaction."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 6,
-                    "name": "Reporting and Analysis",
-                    "text": "The system generates reports on popular services, low stock, profits, and branch performance, supporting smarter staffing and inventory decisions."
                   }
                 ]
               }

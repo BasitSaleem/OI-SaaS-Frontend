@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best POS System for Ice Cream Shops & Parlors | Owners Inventory",
-  description: "Speed up counter queues at your dessert parlor with our Ice Cream Shop POS system. Manage toppings, ice cream tub inventory, split bills, and track cashier shifts in real time.",
+  title: "Ice Cream Shop POS System | Owners Inventory",
+  description: "Ice cream shop POS system to speed up counter orders, track flavors and toppings, manage inventory, and process payments. Start your Owners Inventory free trial.",
   keywords: [
     "POS system for ice cream shops",
     "ice cream shop POS system",

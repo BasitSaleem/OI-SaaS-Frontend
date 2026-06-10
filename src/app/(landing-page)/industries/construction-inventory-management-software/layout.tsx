@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Construction Inventory Management Software | Owners Inventory",
-  description: "Construction inventory software to track stock in real time, automate billing, manage multi-location warehouses, and get insights to grow your business faster.",
+  title: "Construction Inventory Software | Owners Inventory",
+  description: "Construction inventory management software to track materials, tools, and equipment across sites, manage suppliers, and control costs. Start your free trial today.",
   keywords: [
     "construction inventory management software",
     "construction inventory management system",

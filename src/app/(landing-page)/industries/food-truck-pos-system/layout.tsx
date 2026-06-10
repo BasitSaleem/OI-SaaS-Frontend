@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best POS System for Food Trucks | Owners Inventory",
-  description: "Speed up counter queues at your food truck with our Food Truck POS system. Manage modifiers, food ingredients inventory, split bills, and track cashier shifts in real time.",
+  title: "Food Truck POS System | Owners Inventory",
+  description: "Food truck POS system for fast mobile ordering, offline billing, real-time inventory, and multi-payment support on the go. Start your Owners Inventory free trial.",
   keywords: [
     "POS system for food trucks",
     "food truck POS system",

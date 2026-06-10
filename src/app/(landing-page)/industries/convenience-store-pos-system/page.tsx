@@ -49,7 +49,7 @@ const Page = () => {
               {
                 "@type": "SoftwareApplication",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web, iOS, Android",
                 "offers": {
@@ -58,32 +58,31 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Convenience store POS software that tracks every expiration date, barcode, category, and shelf stock in real time, speeds up counter checkout, manages suppliers and restock purchases, syncs inventory across multiple mart branches, and provides detailed sales analytics.",
+                "description": "Convenience store POS system that handles fast barcode billing, real-time inventory updates, multi-unit selling, expiry tracking, supplier management, multiple payment methods, and centralized control across single or multiple store locations.",
                 "featureList": [
-                  "Complete barcode scanning and quick search features",
-                  "Real-time stock alerts and expiration date tracking",
-                  "Automated supplier purchase order dispatching",
-                  "Customer loyalty points and purchase histories",
-                  "Multi-branch synchronization and price controls",
-                  "Mix-and-match bundle pricing configurations",
-                  "Category performance and margin analytics",
-                  "Employee role authorization and drawer control",
-                  "Offline billing capability",
-                  "E-commerce integration with automatic stock updates",
-                  "Promotion and customized bundle management",
-                  "Live register cash tracking"
+                  "Fast barcode billing for quick checkout",
+                  "Real-time inventory updates after every sale",
+                  "Expiry and batch tracking for perishables",
+                  "Multi-unit and pack selling support",
+                  "Supplier and purchase order management",
+                  "Multiple payment options including cards and contactless",
+                  "Customer loyalty and credit management",
+                  "Multi-branch connectivity from one dashboard",
+                  "Low-stock alerts and reordering",
+                  "Sales and profit reports",
+                  "Role-based access for staff"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Convenience Stores | Owners Inventory",
-                "url": "https://www.ownersinventory.com/industries/convenience-store-pos-system",
-                "description": "Track every barcode and expiration date with real-time stock alerts, speedy checkout, supplier integrations, and multi-branch sync using Owners Inventory's POS system for convenience stores.",
+                "name": "Convenience Store POS System | Owners Inventory",
+                "url": "https://ownersinventory.com/industries/convenience-store-pos-system",
+                "description": "Run your convenience store with fast barcode billing, real-time stock tracking, multi-payment support, and centralized multi-branch control using Owners Inventory's convenience store POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
                   "name": "Owners Inventory",
-                  "url": "https://www.ownersinventory.com"
+                  "url": "https://ownersinventory.com"
                 },
                 "breadcrumb": {
                   "@type": "BreadcrumbList",
@@ -92,19 +91,19 @@ const Page = () => {
                       "@type": "ListItem",
                       "position": 1,
                       "name": "Home",
-                      "item": "https://www.ownersinventory.com"
+                      "item": "https://ownersinventory.com"
                     },
                     {
                       "@type": "ListItem",
                       "position": 2,
                       "name": "Industries",
-                      "item": "https://www.ownersinventory.com/industries"
+                      "item": "https://ownersinventory.com/industries"
                     },
                     {
                       "@type": "ListItem",
                       "position": 3,
-                      "name": "Convenience Store Pos System",
-                      "item": "https://www.ownersinventory.com/industries/convenience-store-pos-system"
+                      "name": "Convenience Store POS System",
+                      "item": "https://ownersinventory.com/industries/convenience-store-pos-system"
                     }
                   ]
                 }
@@ -112,29 +111,29 @@ const Page = () => {
               {
                 "@type": "Organization",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
+                "url": "https://ownersinventory.com",
                 "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Customer Support",
                   "availableLanguage": "English",
-                  "url": "https://www.ownersinventory.com/contact"
+                  "url": "https://ownersinventory.com/contact"
                 },
                 "sameAs": [
-                  "https://www.facebook.com/ownersinventory",
-                  "https://www.instagram.com/ownersinventory",
-                  "https://www.linkedin.com/company/owners-inventory"
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
                 ]
               },
               {
                 "@type": "Product",
                 "name": "Convenience Store POS System",
-                "description": "POS software designed for convenience stores and marts to manage expiration dates, track shelf stock, accelerate counter billing, coordinate distributors, and review sales reports from a single cloud dashboard.",
+                "description": "POS software designed for convenience stores to handle fast barcode billing, real-time inventory tracking, expiry and batch management, multi-unit selling, supplier management, multi-payment processing, and multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
                 },
-                "url": "https://www.ownersinventory.com/industries/convenience-store-pos-system",
+                "url": "https://ownersinventory.com/industries/convenience-store-pos-system",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
@@ -144,184 +143,47 @@ const Page = () => {
                 }
               },
               {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Convenience Store Owner"
-                      },
-                      "reviewBody": "This POS allowed cashiers to bill customers rapidly and manage hundreds of item variations without confusion. Quick scanner compatibility.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Mart Manager"
-                      },
-                      "reviewBody": "We had problems with stock mismatches and expiration tracking. Owners Inventory POS keeps everything current, and reports are simple and easy to understand.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Multi-Store Mart Owner"
-                      },
-                      "reviewBody": "It used to take hours to check stock across multiple marts, but the POS system for convenience stores updates inventory immediately. Centralized pricing is a lifesaver.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Convenience Store Operator"
-                      },
-                      "reviewBody": "Managing items with expiry dates was difficult, but with Owners Inventory POS, everything is automated. Employee access controls have also eliminated shrinkage.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "How does this POS system track expiration dates?",
+                    "name": "What is a POS system for a convenience store?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Our POS system for convenience stores tracks individual batches and shelf life dates. It triggers alerts for products nearing expiry so you can run quick clearance promotions."
+                      "text": "A convenience store POS system manages billing, inventory, and customers in one place. It supports fast barcode checkout and keeps stock accurate across single or multiple locations."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can it handle promotional discounts like multi-buy?",
+                    "name": "Does it track product expiry dates?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, you can easily configure complex promotions such as 'Buy 2 Get 1 Free', mix-and-match deals, bundle pricing, and automatic discounts at checkout."
+                      "text": "Yes. The system tracks batch numbers and expiry dates and sends alerts for items nearing expiry, helping reduce waste on perishable goods."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the POS support quick barcode scanning?",
+                    "name": "Can it handle multiple payment methods?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, our POS is fully optimized for speed, supporting standard USB, Bluetooth, and wireless barcode scanners for high-speed counter checkouts."
+                      "text": "Yes. The system accepts cash, cards, and contactless payments within seconds for smooth, error-free checkout."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I manage multiple convenience store branches?",
+                    "name": "Can I manage more than one store location?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, Owners' POS keeps pricing, stock levels, and sales data synchronized across all locations. Stock transfers are easy to process from the dashboard."
+                      "text": "Yes. You can manage multiple convenience store branches from one centralized dashboard with synced inventory, pricing, and reports."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it easy for cashiers to learn?",
+                    "name": "Is it easy for staff to learn?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Absolutely. The checkout screen is highly intuitive and user-friendly. Cashiers can master the billing interface in less than 30 minutes, minimizing training downtime."
+                      "text": "Yes. The interface is simple and fast, so staff can handle billing and inventory with minimal training."
                     }
-                  }
-                ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Convenience Store Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines convenience store inventory management from acquisition to reporting and analysis.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "Inventory Acquisition",
-                    "text": "Receive new shipments, scan barcodes, record expiration dates, and set cost and retail prices directly inside the POS database."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "Shelf Stock Organization",
-                    "text": "Organize products by category, aisle, brand, and type. The system makes it simple to search and retrieve products during checkout."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Real-Time Tracking",
-                    "text": "The cloud POS records every checkout transaction, return, and branch transfer to maintain live, branch-level stock records."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Supplier Management",
-                    "text": "Manage multiple distributors, generate purchase orders, and monitor order delivery status from a single window."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "Accurate Fulfillment",
-                    "text": "Process daily customer sales quickly, print/email receipts, and handle payments smoothly to maintain absolute transaction transparency."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 6,
-                    "name": "Reports and Analysis",
-                    "text": "Access live reports on best-selling snacks, beverages, daily revenue, inventory turns, and profit margins to plan smarter."
                   }
                 ]
               }
