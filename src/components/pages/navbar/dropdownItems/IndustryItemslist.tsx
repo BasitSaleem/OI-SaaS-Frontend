@@ -239,6 +239,20 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
+  {
+    key: 'pet-store-pos-system',
+    title: 'Pet Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'warehouses-pos-system',
+    title: 'Warehouses POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
+    category: 'wholesale',
+    type: 'pos',
+  },
 
 
 
@@ -506,6 +520,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Stylist Performance Sync' },
     { title: 'Retail Product Tracking' },
     { title: 'Sales Analytics & Reports' },
+  ],
+  'pet-store-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Size & Flavor Variant Tracking' },
+    { title: 'Stock & Inventory Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'warehouses-pos-system': [
+    { title: 'Order Processing & Fulfillment' },
+    { title: 'SKU & Dimension Tracking' },
+    { title: 'Multi-Facility Management' },
+    { title: 'Operational Analytics & Reports' },
   ],
 };
 

@@ -87,6 +87,12 @@ const posSportingGoodsPageIcons = dynamic(
 const posBarberShopPageIcons = dynamic(
   () => import("./posBarberShopPageIcons"),
 );
+const posPetStorePageIcons = dynamic(
+  () => import("./posPetStorePageIcons"),
+);
+const posWarehousesPageIcons = dynamic(
+  () => import("./posWarehousesPageIcons"),
+);
 const alAsifCasestudyIcons = dynamic(
   () => import("./alAsifCasestudyIcons"),
 
@@ -133,6 +139,8 @@ export type IndustryIconSet =
   | "foodTruck"
   | "sportingGoods"
   | "barberShop"
+  | "petStore"
+  | "warehouses"
   | "furnitureInventory"
   | "constructionInventory"
   | "alAsifCasestudyIcons"
@@ -168,6 +176,8 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   foodTruck: posFoodTruckPageIcons,
   sportingGoods: posSportingGoodsPageIcons,
   barberShop: posBarberShopPageIcons,
+  petStore: posPetStorePageIcons,
+  warehouses: posWarehousesPageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
   constructionInventory: constructionInventoryManagementSoftwareIcons,
   alAsifCasestudyIcons: alAsifCasestudyIcons,
