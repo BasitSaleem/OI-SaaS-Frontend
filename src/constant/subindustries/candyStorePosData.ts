@@ -91,7 +91,7 @@ export const CANDY_STORE_WHY_CHOOSE_CARDS = [
   },
   {
     id: "6",
-    icon: "whychoseIcon5",
+    icon: "whychoseIcon6",
     title: "Single Platform for All Operations",
     description:
       "The system brings sales and inventory together across all channels into a single platform. It ensures that pricing and inventory stay aligned without reconciling figures from separate tools.",
