@@ -23,7 +23,7 @@ export const SPORTING_GOODS_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
     id: "3",
     icon: "UnifiedIcon3",
-    title: "Disconnected E-commerce",
+    title: "Disconnected Ecommerce",
     description:
       "Retailers selling through an online store alongside their physical counter without unified inventory management software face stock discrepancies.",
   },
