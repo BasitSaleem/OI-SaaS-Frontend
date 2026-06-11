@@ -91,7 +91,7 @@ export const FOOD_TRUCK_WHY_CHOOSE_CARDS = [
   },
   {
     id: "6",
-    icon: "whychoseIcon5",
+    icon: "whychoseIcon6",
     title: "Menu Costs Reflect Supplier Changes",
     description:
       "Ingredient purchase prices are stored alongside your supplier records. When a supplier price increases, updating the ingredient cost triggers an automatic recalculation of food cost across every affected menu item, so low-margin items are visible before the next service.",
