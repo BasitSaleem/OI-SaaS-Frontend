@@ -95,7 +95,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'sporting-goods-pos-system',
     title: 'Sporting Goods POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/e-commerce.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/sporting-goods-pos-system.svg",
     category: 'retailer',
     type: 'pos',
   },
@@ -186,7 +186,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'construction-inventory-management-software',
     title: 'Construction Inventory Management',
-    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/construction-inventory-management-system.svg",
     category: 'retailer',
     type: 'inventory',
   },
@@ -200,21 +200,21 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'ice-cream-shop-pos-system',
     title: 'Ice Cream Shop POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/ice-cream-shop-pos-system.svg",
     category: 'restaurant',
     type: 'pos',
   },
   {
     key: 'candy-store-pos-system',
     title: 'Candy Store POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/candy-store-pos-system.svg",
     category: 'restaurant',
     type: 'pos',
   },
   {
     key: 'food-truck-pos-system',
     title: 'Food Truck POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/food-truck-pos-system.svg",
     category: 'restaurant',
     type: 'pos',
   },
@@ -235,7 +235,7 @@ export const industriesItems: IndustryItem[] = [
   {
     key: 'barber-shop-pos-system',
     title: 'Barber Shop POS System',
-    icon: "/assets/header-dropdown-images/industries-dropdown/beauty-saloon-pos-system.svg",
+    icon: "/assets/header-dropdown-images/industries-dropdown/barber-shop-pos-system.svg",
     category: 'retailer',
     type: 'pos',
   },
