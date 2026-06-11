@@ -253,6 +253,20 @@ export const industriesItems: IndustryItem[] = [
     category: 'wholesale',
     type: 'pos',
   },
+  {
+    key: 'appliance-store-pos-system',
+    title: 'Appliance Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/hardware-store.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'gym-pos-system',
+    title: 'Gym POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/sporting-goods-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
 
 
 
@@ -532,6 +546,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'SKU & Dimension Tracking' },
     { title: 'Multi-Facility Management' },
     { title: 'Operational Analytics & Reports' },
+  ],
+  'appliance-store-pos-system': [
+    { title: 'Serial Number & Warranties' },
+    { title: 'Logistics & Delivery Scheduling' },
+    { title: 'Multi-Store Inventory Sync' },
+    { title: 'Sales Commission Reports' },
+  ],
+  'gym-pos-system': [
+    { title: 'Check-in & Gate Access' },
+    { title: 'Automated Membership Drafts' },
+    { title: 'Trainer & Class Scheduling' },
+    { title: 'Pro Shop & Retail Checkout' },
   ],
 };
 

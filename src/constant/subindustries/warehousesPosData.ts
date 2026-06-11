@@ -183,7 +183,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The user-friendly warehouse POS system allows managers to assign role-based permissions to employees.  Business owners have complete inventory permissions, reporting access, and operational settings.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card1.webp",
+      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -191,7 +191,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The mobile optimised warehouse interface ensures managers and staff have access to inventory data, monitor stock levels, process orders, and manage the warehouse from anywhere. The easy-to-use mobile dashboard provides flexibility, accelerates decision making and ensures seamless warehouse management. ",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card2.webp",
+      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -199,7 +199,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The system automatically notifies managers when stock levels fall below minimum thresholds. This helps businesses reorder products on time and avoid operational disruptions.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card3.webp",
+      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card8.webp",
   },
   {
     id: 9,
@@ -207,7 +207,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Track warehouse performance through comprehensive reporting, which offers valuable information on inventory movement, stock value, quickly moving items, order fulfillment and operational efficiency.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card4.webp",
+      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card9.webp",
   },
   {
     id: 10,
@@ -215,7 +215,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Control stock, suppliers, warehouse processes, employees and reporting all from a single point, to boost productivity and make warehouse management easier.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card5.webp",
+      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card10.webp",
   },
 ];
 
@@ -266,7 +266,7 @@ export const WAREHOUSES_WORKFLOW_DATA = {
 export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "1",
-    name: "Madeline James",
+    name: "Camden Foster",
     title: "Pet Store Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image61.webp",
@@ -274,7 +274,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Zane Watson",
+    name: "Sloane Harrington",
     title: "Pet Supply Retailer",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image60.webp",
@@ -282,7 +282,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Caroline Watson",
+    name: "Teagan Calloway",
     title: "Multi-Store General Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image61.webp",
@@ -290,7 +290,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Mackenzie Kelly",
+    name: "Archer Stone",
     title: "Pet Boutique Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image62.webp",
@@ -298,7 +298,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   },
   {
     id: "5",
-    name: "Crew James",
+    name: "Maddox Pierce",
     title: "Pet Store Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image63.webp",
@@ -306,7 +306,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   },
   {
     id: "6",
-    name: "Tanner Wood",
+    name: "Waverly Stone",
     title: "Pet Supply Retailer",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image62.webp",
@@ -314,7 +314,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   },
   {
     id: "7",
-    name: "Gage Brooks",
+    name: "Brynn Holloway",
     title: "Multi-Store General Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image63.webp",
