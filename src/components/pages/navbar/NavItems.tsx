@@ -149,7 +149,7 @@ const NavItems = () => {
                     }
                   </h3>
 
-                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto">
+                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto pr-3 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:block [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:hover:bg-[var(--text-muted-alt)] [scrollbar-width:thin] [scrollbar-color:var(--border-muted)_var(--background-halfwhite)]">
                     <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
                       {featuresItems
                         .filter((item) => item.category === selectedCategory)
@@ -380,7 +380,7 @@ const NavItems = () => {
                     </div>
                   </div>
 
-                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto">
+                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto pr-3 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:block [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)] [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[var(--text-muted-alt)] [scrollbar-width:thin] [scrollbar-color:var(--border-muted)_transparent]">
                     <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
                       {industriesItems
                         .filter(
