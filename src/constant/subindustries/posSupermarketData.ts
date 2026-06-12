@@ -342,61 +342,6 @@ export const SUPERMARKET_FAQS = [
   },
 ];
 
-export const SUPERMARKET_KEY_FEATURES = [
-  {
-    id: "supermarket-billing",
-    title: "Supermarket Billing",
-    description:
-      "Speed up your sales with integrated billing and custom item creation for a smoother client experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "supermarket-stock-control",
-    title: "Real-Time Supermarket Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both store and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "supermarket-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your supermarket manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "supermarket-variants",
-    title: "Item & Category Tracking",
-    description:
-      "Manage different product styles, materials, and categories in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "supermarket-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your supermarket clients using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "supermarket-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your store’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "supermarket-ecommerce",
-    title: "Online Supermarket Integration",
-    description:
-      "Sync your physical store with your online supermarket to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const SUPERMARKET_TESTIMONIAL_DATA = {
   heading: "What Do Our Clients Say About Owners Inventory?",
   paragraph: "", // Optional paragraph

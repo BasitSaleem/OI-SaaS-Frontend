@@ -69,7 +69,7 @@ export const SPORTING_GOODS_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon3",
     title: "Seamless Channel Integration",
     description:
-      "In-store and online inventory draw from the same live stock levels. The system updates product listings instantly, preventing overselling across e-commerce and physical channels.",
+      "In-store and online inventory draw from the same live stock levels. The system updates product listings instantly, preventing overselling across eCommerce and physical channels.",
   },
   {
     id: "4",
@@ -115,7 +115,7 @@ export const SPORTING_GOODS_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "Online Store Order Sync",
         listdescription:
-          "Sporting goods listed through a connected online store are drawn from the same inventory as the physical counter. When a product sells in store, the e-commerce listing updates immediately across every connected channel, preventing a customer from purchasing something that has already been cleared from the shelf. ",
+          "Sporting goods listed through a connected online store are drawn from the same inventory as the physical counter. When a product sells in store, the eCommerce listing updates immediately across every connected channel, preventing a customer from purchasing something that has already been cleared from the shelf. ",
       },
       {
         listheading: "Unified Retail Dashboard",
@@ -149,7 +149,7 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Bulk Catalog Import",
     description:
-      "Sporting goods stores with thousands of SKUs and products can load their catalogs into the system using Excel or CSV files. It reduces human intervention by not needing manual entries of items.",
+      "Sporting goods stores with thousands of SKUs and products can load their catalogs into the system using Excel or CSV files. It reduces human intervention by eliminating the need for manual data entry.",
     imageSrc:
       "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card2.webp",
   },
@@ -163,9 +163,9 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
   },
   {
     id: 4,
-    title: "E-commerce Integration",
+    title: "Ecommerce Integration",
     description:
-      "Owners Inventory connects the POS system directly with third-party e-commerce platforms. All product listings, stock levels, and order data sync seamlessly across both channels, which helps avoid overselling.",
+      "Owners Inventory connects the POS system directly with third-party eCommerce platforms. All product listings, stock levels, and order data sync seamlessly across both channels, which helps avoid overselling.",
     imageSrc:
       "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card4.webp",
   },
@@ -315,60 +315,7 @@ export const SPORTING_GOODS_FAQS = [
   },
 ];
 
-export const SPORTING_GOODS_KEY_FEATURES = [
-  {
-    id: "sporting-goods-billing",
-    title: "Touchscreen Order & Billing",
-    description:
-      "Process customer equipment and apparel orders quickly with customizable touchscreen menus and instant bill split options.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "sporting-goods-stock-control",
-    title: "Inventory and Stock Control",
-    description:
-      "Keep track of active equipment stock, apparel variants, and bundle packages. Avoid running out of best-sellers during high demand.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "sporting-goods-vendor-mgmt",
-    title: "Distributor and Supplier Management",
-    description:
-      "Manage gear brands, track purchase order costs, issue POs, and monitor warehouse delivery arrivals.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "sporting-goods-variants",
-    title: "Size & Color Customization",
-    description:
-      "Configure apparel sizes, colors, material types, and accessories as modifiers attached to base product listings.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "sporting-goods-loyalty",
-    title: "Customer & Loyalty Programs",
-    description:
-      "Drive repeat visits with integrated loyalty accounts, digital store credit, and email promotion campaigns.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "sporting-goods-finances",
-    title: "Shift Cash and Card Tracking",
-    description:
-      "Monitor sales summaries, card processing, cash drawer entries, and shift cashier handovers in real time.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "sporting-goods-ecommerce",
-    title: "Online Ordering and Store Sync",
-    description:
-      "Integrate online store orders with your counter terminal, ensuring unified stock levels for both channels.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
+
 
 export const SPORTING_GOODS_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say",
@@ -392,7 +339,7 @@ export const SPORTING_GOODS_TESTIMONIAL_FEATURES = [
     id: "2",
     title: "Multi-Channel Handling",
     description:
-      "It connects essential e-commerce platforms and marketing tools, allowing owners to manage store operations without needing several separate systems and tools.",
+      "It connects essential eCommerce platforms and marketing tools, allowing owners to manage store operations without needing several separate systems and tools.",
     icon: "testWhychoseIcon2",
   },
   {
@@ -428,7 +375,7 @@ export const SPORTING_GOODS_TESTIMONIAL_FEATURES = [
 export const SPORTING_GOODS_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "The software connects essential tools and platforms like WooCommerce and Shopify. It seamlessly integrates with payment gateways and marketing tools. All records stay synchronized across connected platforms and tools, which ensures that the daily performance reports are precise.",
+    "The software connects essential tools and platforms like WooCommerce and Shopify. It integrates seamlessly with payment gateways and marketing tools. All records stay synchronized across connected platforms, ensuring that daily performance reports are accurate.",
   tools: [
     {
       id: 1,

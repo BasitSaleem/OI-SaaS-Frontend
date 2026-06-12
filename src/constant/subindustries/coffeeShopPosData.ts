@@ -277,61 +277,6 @@ export const COFFEE_SHOP_FAQS = [
   },
 ];
 
-export const COFFEE_SHOP_KEY_FEATURES = [
-  {
-    id: "coffee-shop-billing",
-    title: "Coffee Shop Billing",
-    description:
-      "Speed up your sales with integrated billing and custom item creation for a smoother customer experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "coffee-shop-stock-control",
-    title: "Real-Time Coffee Shop Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both store and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "coffee-shop-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your coffee shop manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "coffee-shop-variants",
-    title: "Item & Category Tracking",
-    description:
-      "Manage different product styles, ingredients, and categories in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "coffee-shop-loyalty",
-    title: "Customer & Loyalty Management",
-    description:
-      "Build relationships with your coffee shop customers using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "coffee-shop-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your store’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "coffee-shop-ecommerce",
-    title: "Online Coffee Shop Integration",
-    description:
-      "Sync your physical store with your online coffee shop to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const COFFEE_SHOP_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say?",
   paragraph: "", // Optional paragraph

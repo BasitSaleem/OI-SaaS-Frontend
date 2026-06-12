@@ -361,61 +361,6 @@ export const HOTEL_INVENTORY_FAQS = [
   },
 ];
 
-export const HOTEL_INVENTORY_KEY_FEATURES = [
-  {
-    id: "hotel-billing",
-    title: "Supply Order Management",
-    description:
-      "Speed up your procurement with integrated order processing and automatic stock updates for a smoother hospitality experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "hotel-stock-control",
-    title: "Real-Time Multi-Location Stock",
-    description:
-      "Know exactly what's in stock across all departments. Every item used is instantly updated in your inventory.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "hotel-vendor-mgmt",
-    title: "Manufacturer & Vendor Management",
-    description:
-      "Keep track of all your hotel suppliers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "hotel-variants",
-    title: "Item & Supply Tracking",
-    description:
-      "Manage different hotel items, sizes, and categories in one easy-to-navigate catalog across all departments.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "hotel-loyalty",
-    title: "Guest & Record Management",
-    description:
-      "Build better guest care using integrated CRM tools to track history and supply needs.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "hotel-finances",
-    title: "Financial & Compliance Reporting",
-    description:
-      "Monitor your facility's financial health with detailed reports on spending, consumption, and operational expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "hotel-integration",
-    title: "Multi-Platform Logistics Integration",
-    description:
-      "Sync your logistics partners to manage all inventory and supply chains in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const HOTEL_INVENTORY_TESTIMONIAL_FEATURES = [
   {
     id: "1",

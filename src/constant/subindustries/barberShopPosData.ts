@@ -312,61 +312,6 @@ export const BARBER_SHOP_FAQS = [
   },
 ];
 
-export const BARBER_SHOP_KEY_FEATURES = [
-  {
-    id: "barber-shop-billing",
-    title: "Barber Shop Billing",
-    description:
-      "Speed up your sales with integrated billing and custom service creation for a smoother client experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "barber-shop-stock-control",
-    title: "Real-Time Product Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both shop and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "barber-shop-vendor-mgmt",
-    title: "Product Supplier Management",
-    description:
-      "Keep track of all your grooming product manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "barber-shop-variants",
-    title: "Service & Product Tracking",
-    description:
-      "Manage different service types, products, and categories in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "barber-shop-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your barber shop clients using integrated CRM tools to track their preferences and visit history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "barber-shop-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your shop’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "barber-shop-ecommerce",
-    title: "Online Booking Integration",
-    description:
-      "Sync your physical shop with your online booking site to manage all schedules and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const BARBER_SHOP_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory?",
   paragraph: "", // Optional paragraph

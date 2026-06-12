@@ -297,61 +297,6 @@ export const HEALTHCARE_INVENTORY_FAQS = [
   },
 ];
 
-export const HEALTHCARE_INVENTORY_KEY_FEATURES = [
-  {
-    id: "healthcare-billing",
-    title: "Supply Order Management",
-    description:
-      "Speed up your procurement with integrated order processing and automatic stock updates for a smoother clinical experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "healthcare-stock-control",
-    title: "Real-Time Multi-Location Stock",
-    description:
-      "Know exactly what's in stock across all departments. Every item used is instantly updated in your inventory.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "healthcare-vendor-mgmt",
-    title: "Medical Manufacturer & Vendor Management",
-    description:
-      "Keep track of all your medical suppliers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "healthcare-variants",
-    title: "Item & Supply Tracking",
-    description:
-      "Manage different medical items, sizes, and categories in one easy-to-navigate catalog across all departments.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "healthcare-loyalty",
-    title: "Patient & Record Management",
-    description:
-      "Build better patient care using integrated CRM tools to track history and supply needs.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "healthcare-finances",
-    title: "Financial & Compliance Reporting",
-    description:
-      "Monitor your facility's financial health with detailed reports on spending, consumption, and operational expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "healthcare-integration",
-    title: "Multi-Platform Logistics Integration",
-    description:
-      "Sync your logistics partners to manage all inventory and supply chains in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const HEALTHCARE_INVENTORY_TESTIMONIAL_FEATURES = [
   {
     id: "1",

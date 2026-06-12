@@ -332,61 +332,6 @@ export const ECOMMERCE_INVENTORY_FAQS = [
   },
 ];
 
-export const ECOMMERCE_INVENTORY_KEY_FEATURES = [
-  {
-    id: "ecommerce-billing",
-    title: "Ecommerce Order Management",
-    description:
-      "Speed up your online sales with integrated order processing and automatic stock updates for a smoother customer experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "ecommerce-stock-control",
-    title: "Real-Time Multi-Platform Stock",
-    description:
-      "Know exactly what's in stock across all channels. Every order placed is instantly deducted from your inventory.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "ecommerce-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your product manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "ecommerce-variants",
-    title: "SKU & Variant Tracking",
-    description:
-      "Manage different product SKUs, sizes, colors, and variants in one easy-to-navigate catalog across all platforms.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "ecommerce-loyalty",
-    title: "Customer & Loyalty Management",
-    description:
-      "Build relationships with your online customers using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "ecommerce-finances",
-    title: "Ecommerce Financial Reporting",
-    description:
-      "Monitor your ecommerce business's financial health with detailed reports on sales, refunds, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "ecommerce-integration",
-    title: "Multi-Platform Store Integration",
-    description:
-      "Sync your Shopify, WooCommerce, Amazon, and other stores to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const ECOMMERCE_INVENTORY_TESTIMONIAL_DATA = {
   heading: "What Do Our Clients Say About Owners Inventory?",
   paragraph: "",

@@ -314,61 +314,6 @@ export const CANDY_STORE_FAQS = [
   },
 ];
 
-export const CANDY_STORE_KEY_FEATURES = [
-  {
-    id: "ice-cream-shop-billing",
-    title: "Touchscreen Order & Billing",
-    description:
-      "Process customer candy bags and custom gift box orders quickly with customizable touchscreen menus and instant bill split options.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "ice-cream-shop-stock-control",
-    title: "Jar and Bulk Candy Inventory Control",
-    description:
-      "Keep track of active candy jar count, chocolate supplies, and gift boxes. Avoid running out of best-sellers during high demand.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "ice-cream-shop-vendor-mgmt",
-    title: "Dairy and Ingredient Suppliers",
-    description:
-      "Manage candy distributors, track ingredient costs, issue purchase orders, and monitor bulk candy shipment arrivals.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "ice-cream-shop-variants",
-    title: "Flavor & Modifier Customization",
-    description:
-      "Configure candy sizes, sugar-free alternatives, chocolates, and sauces as modifiers attached to base menu items.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "ice-cream-shop-loyalty",
-    title: "Customer & Loyalty Programs",
-    description:
-      "Drive repeat visits with integrated loyalty accounts, digital punch cards, and SMS promotion codes.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "ice-cream-shop-finances",
-    title: "Shift Cash and Card Tracking",
-    description:
-      "Monitor sales summaries, card processing, cash drawer entries, and shift cashier handovers in real time.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "ice-cream-shop-ecommerce",
-    title: "Online Ordering and Pickup Sync",
-    description:
-      "Integrate online pickup orders with your counter terminal, ensuring unified stock levels for both channels.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const CANDY_STORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",

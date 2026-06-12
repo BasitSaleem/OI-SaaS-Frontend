@@ -282,61 +282,6 @@ export const BEAUTY_SALON_FAQS = [
   },
 ];
 
-export const BEAUTY_SALON_KEY_FEATURES = [
-  {
-    id: "salon-billing",
-    title: "Beauty Salon Billing",
-    description:
-      "Speed up your sales with integrated billing and custom item creation for a smoother client experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "salon-stock-control",
-    title: "Real-Time Salon Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both store and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "salon-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your beauty salon manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "salon-variants",
-    title: "Item & Category Tracking",
-    description:
-      "Manage different product styles, materials, and categories in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "salon-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your beauty salon clients using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "salon-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your store’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "salon-ecommerce",
-    title: "Online Salon Integration",
-    description:
-      "Sync your physical store with your online beauty salon to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const BEAUTY_SALON_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say?",
   paragraph: "", // Optional paragraph

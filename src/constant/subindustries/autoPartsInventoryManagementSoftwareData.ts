@@ -293,61 +293,6 @@ export const AUTO_PARTS_INVENTORY_FAQS = [
   },
 ];
 
-export const AUTO_PARTS_INVENTORY_KEY_FEATURES = [
-  {
-    id: "autoparts-billing",
-    title: "Auto Parts Store Billing",
-    description:
-      "Speed up your store sales with integrated billing and custom part number entry for a smoother customer experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "autoparts-stock-control",
-    title: "Real-Time Parts Stock",
-    description:
-      "Know exactly what's in stock. Every part sold is instantly deducted from your inventory.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "autoparts-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your auto parts manufacturers, manage purchase orders, and monitor shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "autoparts-variants",
-    title: "Make, Model & Year Tracking",
-    description:
-      "Manage different vehicle makes, models, and part variants in one easy-to-navigate catalog.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "autoparts-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your auto parts clients using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "autoparts-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your store's financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "autoparts-ecommerce",
-    title: "Online Auto Parts Store Integration",
-    description:
-      "Sync your physical store with your online auto parts store to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const AUTO_PARTS_INVENTORY_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory?",
   paragraph: "",

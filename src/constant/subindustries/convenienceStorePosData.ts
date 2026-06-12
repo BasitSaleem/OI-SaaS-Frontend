@@ -307,61 +307,6 @@ export const CONVENIENCE_STORE_FAQS = [
   },
 ];
 
-export const CONVENIENCE_STORE_KEY_FEATURES = [
-  {
-    id: "convenience-shop-billing",
-    title: "Convenience Store Billing",
-    description:
-      "Speed up your sales with integrated billing and custom item creation for a smoother customer experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "convenience-shop-stock-control",
-    title: "Real-Time Stock Control",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both store shelves and backrooms.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "convenience-shop-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your food manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "convenience-shop-variants",
-    title: "Item & Category Tracking",
-    description:
-      "Manage different product styles, flavors, and categories in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "convenience-shop-loyalty",
-    title: "Customer & Loyalty Management",
-    description:
-      "Build relationships with your mart customers using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "convenience-shop-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your store’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "convenience-shop-ecommerce",
-    title: "Online Convenience Integration",
-    description:
-      "Sync your physical store with your online mart to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const CONVENIENCE_STORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Us",
   paragraph: "", // Optional paragraph

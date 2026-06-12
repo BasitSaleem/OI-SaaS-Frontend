@@ -349,61 +349,6 @@ export const FURNITURE_STORE_FAQS = [
   },
 ];
 
-export const FURNITURE_STORE_KEY_FEATURES = [
-  {
-    id: "furniture-billing",
-    title: "Furniture Showroom Billing",
-    description:
-      "Speed up your showroom sales with integrated billing and custom item creation for a smoother client experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "furniture-stock-control",
-    title: "Real-Time Furniture Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both showroom and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "furniture-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your furniture suppliers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "furniture-variants",
-    title: "Style & Material Tracking",
-    description:
-      "Manage different furniture styles, materials, and variants in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "furniture-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your furniture clients using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "furniture-finances",
-    title: "Showroom Financial Reporting",
-    description:
-      "Monitor your showroom’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "furniture-ecommerce",
-    title: "Online Furniture Integration",
-    description:
-      "Sync your physical showroom with your online furniture store to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const FURNITURE_STORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Us?",
   paragraph: "", // Optional paragraph
