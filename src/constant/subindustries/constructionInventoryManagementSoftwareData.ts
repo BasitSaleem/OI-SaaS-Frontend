@@ -347,61 +347,6 @@ export const CONSTRUCTION_INVENTORY_FAQS = [
   },
 ];
 
-export const CONSTRUCTION_INVENTORY_KEY_FEATURES = [
-  {
-    id: "construction-business-billing",
-    title: "Supply Order Management",
-    description:
-      "Speed up your procurement with integrated order processing and automatic stock updates for a smoother business experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "construction-business-stock-control",
-    title: "Real-Time Multi-Location Stock",
-    description:
-      "Know exactly what's in stock across all areas. Every item used is instantly updated in your inventory.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "construction-business-vendor-mgmt",
-    title: "Manufacturer & Vendor Management",
-    description:
-      "Keep track of all your suppliers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "construction-business-variants",
-    title: "Item & Supply Tracking",
-    description:
-      "Manage different items, sizes, and categories in one easy-to-navigate catalog across all areas.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "construction-business-loyalty",
-    title: "Customer & Record Management",
-    description:
-      "Build better customer care using integrated CRM tools to track history and supply needs.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "construction-business-finances",
-    title: "Financial & Compliance Reporting",
-    description:
-      "Monitor your business's financial health with detailed reports on spending, consumption, and operational expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "construction-business-integration",
-    title: "Multi-Platform Logistics Integration",
-    description:
-      "Sync your logistics partners to manage all inventory and supply chains in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const CONSTRUCTION_INVENTORY_TESTIMONIAL_FEATURES = [
   {
     id: "1",

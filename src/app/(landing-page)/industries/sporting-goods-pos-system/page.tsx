@@ -231,14 +231,14 @@ const Page = () => {
 
         <IndustriesCallToAction
           title="Organize Your Sporting Goods Inventory Effectively"
-          description="Every empty shelf during peak season and every over-sold e-commerce listing is revenue the sporting goods business absorbs silently. Owners Inventory keeps stock levels accurate, channels synced, and customer loyalty rewarded so the store performs at its best every season."
+          description="Every empty shelf during peak season and every over-sold eCommerce listing is revenue the sporting goods business absorbs silently. Owners Inventory keeps stock levels accurate, channels synced, and customer loyalty rewarded so the store performs at its best every season."
           ctaDesc="Request a Free Demo"
         />
 
         <IndustriesFeaturesSection features={SPORTING_GOODS_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security and Access Control."
           description="Staff permissions are assigned according to their duty roles. Counter staff handle transactions only, while higher-level employees, such as managers, handle crucial tasks like managing financial reports and making purchase decisions for restocking. The POS helps maintain security protocols by limiting access to sensitive information."
         />
 

@@ -119,6 +119,7 @@ const FeaturesTestimonials = ({
             alt="Quote icon"
             width={26}
             height={26}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
 

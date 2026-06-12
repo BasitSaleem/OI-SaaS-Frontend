@@ -309,61 +309,6 @@ export const BOOKSTORE_FAQS = [
   },
 ];
 
-export const BOOKSTORE_KEY_FEATURES = [
-  {
-    id: "fast-book-billing",
-    title: "Fast Book Billing",
-    description:
-      "Speed up your checkout process with barcode scanning. Search by title, author, or ISBN to handle morning rushes with ease.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "live-stock-control",
-    title: "Live Stock Control",
-    description:
-      "Every book sold is automatically deducted from your inventory, giving you a real-time view of what's on your shelves.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "vendor-management",
-    title: "Publisher & Vendor Management",
-    description:
-      "Maintain records of your publishers and suppliers. Generate purchase orders and track shipments with ease.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "edition-tracking",
-    title: "Edition & Format Tracking",
-    description:
-      "Manage different editions, formats, and conditions of books within a single, organized catalog.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "loyalty-programs",
-    title: "Loyalty & CRM",
-    description:
-      "Build strong relationships with your readers through loyalty programs and personalized offers based on their habits.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "financial-reporting",
-    title: "Financial Reporting",
-    description:
-      "Keep track of your bookstore's finances with detailed sales and expense reports to ensure business growth.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "ecommerce-integration",
-    title: "E-commerce Integration",
-    description:
-      "Seamlessly connect your physical bookstore with your online shop to manage all your sales from one platform.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const BOOKSTORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Us?",
   paragraph: "", // Optional paragraph

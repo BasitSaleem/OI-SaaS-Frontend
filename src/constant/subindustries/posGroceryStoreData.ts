@@ -327,61 +327,6 @@ export const GROCERY_STORE_FAQS = [
   },
 ];
 
-export const GROCERY_STORE_KEY_FEATURES = [
-  {
-    id: "grocery-billing",
-    title: "Grocery Showroom Billing",
-    description:
-      "Speed up your showroom sales with integrated billing and custom item creation for a smoother client experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "grocery-stock-control",
-    title: "Real-Time Grocery Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both showroom and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "grocery-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your grocery suppliers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "grocery-variants",
-    title: "Style & Material Tracking",
-    description:
-      "Manage different grocery styles, materials, and variants in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "grocery-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your grocery clients using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "grocery-finances",
-    title: "Showroom Financial Reporting",
-    description:
-      "Monitor your showroom’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "grocery-ecommerce",
-    title: "Online Grocery Integration",
-    description:
-      "Sync your physical showroom with your online grocery store to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const GROCERY_STORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory?",
   paragraph: "", // Optional paragraph

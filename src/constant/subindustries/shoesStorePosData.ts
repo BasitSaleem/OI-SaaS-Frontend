@@ -320,61 +320,6 @@ export const SHOES_STORE_FAQS = [
   },
 ];
 
-export const SHOES_STORE_KEY_FEATURES = [
-  {
-    id: "coffee-shop-billing",
-    title: "Shoes Store Billing",
-    description:
-      "Speed up your sales with integrated billing and custom item creation for a smoother customer experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "coffee-shop-stock-control",
-    title: "Real-Time Shoes Store Stock",
-    description:
-      "Know exactly what’s in stock. Every item sold is instantly deducted from your inventory for both store and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "coffee-shop-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your shoes store manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "coffee-shop-variants",
-    title: "Item & Category Tracking",
-    description:
-      "Manage different product styles, ingredients, and categories in one easy-to-navigate catalog system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "coffee-shop-loyalty",
-    title: "Customer & Loyalty Management",
-    description:
-      "Build relationships with your shoes store customers using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "coffee-shop-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your store’s financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "coffee-shop-ecommerce",
-    title: "Online Shoes Store Integration",
-    description:
-      "Sync your physical store with your online shoes store to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const SHOES_STORE_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say?",
   paragraph: "", // Optional paragraph

@@ -321,61 +321,6 @@ export const HARDWARE_FAQS = [
   },
 ];
 
-export const HARDWARE_KEY_FEATURES = [
-  {
-    id: "fast-accurate-billing-hardware",
-    title: "Fast & Accurate Billing",
-    description:
-      "Checkout is fast with our hardware store POS searches by barcode and smart search. Customers will move faster and your counter will remain queue-free even during rush hours.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "live-inventory-management-hardware",
-    title: "Live Inventory Management",
-    description:
-      "Each sale assists automatically update the stock. This feature ensures that your POS software used in hardware stores is also accurate to ensure you are always aware of what is in stock.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "purchases-management-hardware",
-    title: "Purchases Management",
-    description:
-      "Generate purchase orders, delivery tracking, and supplier management through all records of your hardware store in POS software clean and easy to retrieve.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "multi-unit-variant-support-hardware",
-    title: "Multi-Unit & Variant Support",
-    description:
-      "Manage products sold by the unit, box, various sizes, and materials. It is clear when a hardware store has products with complicated variations.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "customer-credit-management",
-    title: "Customer & Credit Management",
-    description:
-      "Retain customer information, shopping history, and open credit. Your hardware store POS system assists you in sustaining long-term customer relationships.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "expense-cash-flow-control-hardware",
-    title: "Expense & Cash Flow Control",
-    description:
-      "Keep a record of every daily cost and keep a track of your cash counter in an easy way. It maintains financial transparency of your hardware business.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "online-commerce-hardware",
-    title: "Online Commerce",
-    description:
-      "Track low-stock, out-of-stock and overstocked items directly out of your POS. Your data is automatically updated in all parts of the.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const HARDWARE_TESTIMONIAL_DATA = {
   heading: "Client's Voices",
   paragraph: "", // Optional paragraph

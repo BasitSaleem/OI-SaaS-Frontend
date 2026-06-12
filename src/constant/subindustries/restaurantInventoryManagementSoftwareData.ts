@@ -288,61 +288,6 @@ export const RESTAURANT_INVENTORY_FAQS = [
   },
 ];
 
-export const RESTAURANT_INVENTORY_KEY_FEATURES = [
-  {
-    id: "restaurant-billing",
-    title: "Restaurant Order Management",
-    description:
-      "Speed up your food sales with integrated order processing and automatic stock updates for a smoother customer experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "restaurant-stock-control",
-    title: "Real-Time Multi-Platform Stock",
-    description:
-      "Know exactly what's in stock across all channels. Every order placed is instantly deducted from your inventory.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "restaurant-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your ingredient manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "restaurant-variants",
-    title: "Menu & Ingredient Tracking",
-    description:
-      "Manage different menu items, sizes, and ingredients in one easy-to-navigate catalog across all platforms.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "restaurant-loyalty",
-    title: "Customer & Loyalty Management",
-    description:
-      "Build relationships with your guests using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "restaurant-finances",
-    title: "Financial Reporting",
-    description:
-      "Monitor your restaurant's financial health with detailed reports on sales, refunds, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "restaurant-integration",
-    title: "Multi-Platform Delivery Integration",
-    description:
-      "Sync your delivery partners to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const RESTAURANT_INVENTORY_TESTIMONIAL_DATA = {
   heading: "What Do Our Clients Say About Owners Inventory?",
   paragraph: "",

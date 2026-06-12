@@ -271,61 +271,6 @@ export const BAKERY_FAQS = [
   },
 ];
 
-export const BAKERY_KEY_FEATURES = [
-  {
-    id: "fast-accurate-billing",
-    title: "Fast & Accurate Billing",
-    description:
-      "Checkout is fast with our bakery POS — search by ISBN, barcode, or title. Customers move faster and your counter remains queue-free even during rush hours.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "live-inventory-management",
-    title: "Live Inventory Management",
-    description:
-      "Each sale automatically updates the stock. This ensures that your bakery POS software is always accurate so you know what titles are in stock.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "purchases-management",
-    title: "Purchases Management",
-    description:
-      "Generate purchase orders, delivery tracking, and publisher management with all records of your bakery in POS software clean and easy to retrieve.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "multi-category-support",
-    title: "Multi-Category & Edition Support",
-    description:
-      "Manage books across genres, editions, and formats. Ideal for bakerys with large, varied catalogues.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "customer-loyalty-management",
-    title: "Customer & Loyalty Management",
-    description:
-      "Retain customer information, purchase history, and loyalty points. Your bakery POS system helps sustain long-term customer relationships.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "expense-cash-flow-control",
-    title: "Expense & Cash Flow Control",
-    description:
-      "Keep a record of every daily cost and track your cash counter with ease. It maintains financial transparency of your bakery business.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "online-commerce",
-    title: "Online Commerce",
-    description:
-      "Track low-stock, out-of-stock, and overstocked titles directly from your POS. Your data is automatically updated across all parts of the system.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const BAKERY_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Us?",
   paragraph: "", // Optional paragraph

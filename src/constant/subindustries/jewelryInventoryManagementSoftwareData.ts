@@ -292,61 +292,6 @@ export const JEWELRY_INVENTORY_FAQS = [
   },
 ];
 
-export const JEWELRY_INVENTORY_KEY_FEATURES = [
-  {
-    id: "jewelry-billing",
-    title: "Jewelry Showroom Billing",
-    description:
-      "Speed up your showroom sales with integrated billing and custom item creation for a smoother client experience.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
-  },
-  {
-    id: "jewelry-stock-control",
-    title: "Real-Time Jewelry Stock",
-    description:
-      "Know exactly what's in stock. Every piece sold is instantly deducted from your inventory for both showroom and warehouse.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
-  },
-  {
-    id: "jewelry-vendor-mgmt",
-    title: "Manufacturer & Supplier Management",
-    description:
-      "Keep track of all your jewelry manufacturers, manage purchase orders, and monitor your shipment statuses effortlessly.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
-  },
-  {
-    id: "jewelry-variants",
-    title: "Metal & Gemstone Tracking",
-    description:
-      "Manage different jewelry metals, gemstones, and variants in one easy-to-navigate catalog software.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
-  },
-  {
-    id: "jewelry-loyalty",
-    title: "Client & Loyalty Management",
-    description:
-      "Build relationships with your jewelry clients using integrated CRM tools to track their preferences and order history.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
-  },
-  {
-    id: "jewelry-finances",
-    title: "Showroom Financial Reporting",
-    description:
-      "Monitor your jewelry showroom's financial health with detailed reports on sales, deposits, and operating expenses.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
-  },
-  {
-    id: "jewelry-ecommerce",
-    title: "Online Jewelry Store Integration",
-    description:
-      "Sync your physical showroom with your online jewelry store to manage all inventory and orders in one place.",
-    imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
-  },
-];
-
 export const JEWELRY_INVENTORY_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory?",
   paragraph: "", // Optional paragraph
