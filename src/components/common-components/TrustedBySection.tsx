@@ -4,15 +4,16 @@ import Image from "next/image";
 import MainHeading from "../pages/typography/MainHeading";
 import Paragraph from "../pages/typography/Paragraph";
 import dynamic from "next/dynamic";
-const BrandsSwiper = dynamic(() => import("../slider/BrandsSwiper"), { ssr: false }) as React.ComponentType<{
+const BrandsSwiper = dynamic(() => import("../slider/BrandsSwiper"), {
+  ssr: false,
+  // Reserve space before the swiper hydrates to prevent CLS
+  loading: () => <div style={{ minHeight: "120px" }} aria-hidden />,
+}) as React.ComponentType<{
   slides: BrandItem[];
   renderSlide: (slide: BrandItem, index: number) => React.ReactNode;
   swiperOptions?: Record<string, unknown>;
 }>;
 
-// -------------------------
-// ✅ Types
-// -------------------------
 export interface BrandItem {
   id: number;
   name: string;
@@ -22,7 +23,7 @@ export interface BrandItem {
 interface TrustedBySectionProps {
   heading?: string;
   paragraph?: string;
-  brands?: BrandItem[]; 
+  brands?: BrandItem[];
 }
 
 
@@ -52,29 +53,29 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
             {paragraph}
           </Paragraph>
 
-          
+
         )}
 
         {/* 🔥 Brands Swiper */}
         <div className="xl:mt-12 lg:mt-6 mt-5">
-        <BrandsSwiper
-          slides={brands}
-          renderSlide={(brandItem: BrandItem) => (
-            <div className="flex items-center justify-center w-full h-full p-6">
-              <div className="relative w-[140px] md:w-[160px] lg:w-[180px] aspect-[2/1] flex items-center justify-center">
-               
-               <div className="h-10 w-10 rounded bg-[#1AD1B9] -z-10 blur-2xl absolute top-[50%]"></div>
-                <Image
-                  src={brandItem.logo}
-                  alt={brandItem.name}
-                  width={200}
-                  height={100}
-                  className="w-full h-auto max-h-full  object-contain "
-                />
+          <BrandsSwiper
+            slides={brands}
+            renderSlide={(brandItem: BrandItem) => (
+              <div className="flex items-center justify-center w-full h-full p-6">
+                <div className="relative w-[140px] md:w-[160px] lg:w-[180px] aspect-[2/1] flex items-center justify-center">
+
+                  <div className="h-10 w-10 rounded bg-[#1AD1B9] -z-10 blur-2xl absolute top-[50%]"></div>
+                  <Image
+                    src={brandItem.logo}
+                    alt={brandItem.name}
+                    width={200}
+                    height={100}
+                    className="w-full h-auto max-h-full  object-contain "
+                  />
+                </div>
               </div>
-            </div>
-          )}
-        />
+            )}
+          />
         </div>
       </div>
     </section>

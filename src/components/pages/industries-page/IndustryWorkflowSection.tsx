@@ -204,9 +204,9 @@ const IndustryWorkflowSection: React.FC<IndustryWorkflowSectionProps> = ({
           {/* Horizontal Line Container (Mobile Only) */}
           <div
             className="md:hidden absolute left-0 top-[32px] h-[2px] bg-[#E2E2E2] z-0"
-            style={{ 
-              width: `${items.length * 229 + (items.length - 1) * 16}px`,
-              left: '128.5px' 
+            style={{
+              width: `${items.length * 225 + (items.length - 1) * 16}px`,
+              left: '128.5px'
             }}
           >
             <div

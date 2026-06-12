@@ -127,7 +127,7 @@ export default function CustomSwiper<T>({
 }: CustomSwiperProps<T>) {
   // Use ref to track last emitted indices to prevent unnecessary calls
   const lastEmittedIndices = useRef<number[]>([]);
-  
+
   // Throttle the emitVisible function
   const emitVisible = useCallback((swiper: any) => {
     if (!onVisibleChange || !swiper || !swiper.params) return;
@@ -164,7 +164,7 @@ export default function CustomSwiper<T>({
     if (
       visibleIndices.length > 0 &&
       (lastEmittedIndices.current.length !== visibleIndices.length ||
-      !lastEmittedIndices.current.every((val, idx) => val === visibleIndices[idx]))
+        !lastEmittedIndices.current.every((val, idx) => val === visibleIndices[idx]))
     ) {
       lastEmittedIndices.current = [...visibleIndices];
       onVisibleChange({ visibleIndices });
@@ -180,7 +180,7 @@ export default function CustomSwiper<T>({
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-    
+
     // Debounce the emitVisible call
     timeoutRef.current = setTimeout(() => {
       emitVisible(swiper);
@@ -193,8 +193,8 @@ export default function CustomSwiper<T>({
       slidesPerView={1}
       spaceBetween={20}
       loop
-      autoplay={{ 
-        delay: 3000, 
+      autoplay={{
+        delay: 3000,
         disableOnInteraction: false,
         waitForTransition: true // Add this to wait for transition
       }}
@@ -204,11 +204,11 @@ export default function CustomSwiper<T>({
           `<span class="${className} custom-swiper-bullet"></span>`,
       }}
       breakpoints={{
-        768: { 
+        768: {
           slidesPerView: 1.5,
           autoHeight: false,
         },
-        1024: { 
+        1024: {
           slidesPerView: 2,
           autoHeight: false,
         },

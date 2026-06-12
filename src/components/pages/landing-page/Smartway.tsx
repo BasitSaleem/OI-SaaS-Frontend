@@ -128,7 +128,7 @@ export default function PosIconsSection() {
       tl.to("#feature-icon-6", { x: 400, y: -130, duration: 1.6 }, 0);
       // tl.to("#feature-icon-7", { x: -460, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-8", { x: -220, y: 0, duration: 1.6 }, 0);
-       tl.to("#feature-icon-9", { x: -400, y: 100, duration: 1.6 }, 0);
+      tl.to("#feature-icon-9", { x: -400, y: 100, duration: 1.6 }, 0);
       // tl.to("#feature-icon-9", { x: 460, y: 0, duration: 1.6 }, 0);
       tl.to("#feature-icon-10", { x: 220, y: 0, duration: 1.6 }, 0);
       // tl.to("#feature-icon-11", { x: -400, y: 100, duration: 1.6 }, 0);
@@ -141,8 +141,8 @@ export default function PosIconsSection() {
     });
 
     iconsBreak.current.add("(min-width: 1200px)", () => {
-  const tl = gsap.timeline();
-   const xOffset = window.innerWidth >= 1280 ? 460 : 460;
+      const tl = gsap.timeline();
+      const xOffset = window.innerWidth >= 1280 ? 460 : 460;
       const yOffset = window.innerWidth >= 1280 ? 240 : 220;
       tl.to("#feature-icon-1", { x: -xOffset, y: -240, duration: 1.6 }, 0);
       tl.to("#feature-icon-2", { x: xOffset, y: -240, duration: 1.6 }, 0);
@@ -162,51 +162,51 @@ export default function PosIconsSection() {
       tl.to("#feature-icon-15", { x: -460, y: yOffset, duration: 1.6 }, 0);
       tl.to("#feature-icon-16", { x: 460, y: yOffset, duration: 1.6 }, 0);
       tl.to("#feature-icon-17", { x: 0, y: yOffset, duration: 1.6 }, 0);
-});
+    });
 
   };
 
   // ScrollTrigger effect
- useEffect(() => {
-  if (!sectionRef.current) return;
+  useEffect(() => {
+    if (!sectionRef.current) return;
 
-  const mm = gsap.matchMedia(); // matchMedia instance
+    const mm = gsap.matchMedia(); // matchMedia instance
 
-  // Desktop – start at 30%
-  mm.add("(min-width: 1200px)", () => {
-    return ScrollTrigger.create({
-      trigger: sectionRef.current,
-      start: "top 45%",
-      once: true,
-      onEnter: animateIconsToPositions,
+    // Desktop – start at 30%
+    mm.add("(min-width: 1200px)", () => {
+      return ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top 45%",
+        once: true,
+        onEnter: animateIconsToPositions,
+      });
     });
-  });
 
-  // Tablet – start at 50%
-  mm.add("(min-width: 768px) and (max-width: 1199px)", () => {
-    return ScrollTrigger.create({
-      trigger: sectionRef.current,
-      start: "top 50%",
-      once: true,
-      onEnter: animateIconsToPositions,
+    // Tablet – start at 50%
+    mm.add("(min-width: 768px) and (max-width: 1199px)", () => {
+      return ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top 50%",
+        once: true,
+        onEnter: animateIconsToPositions,
+      });
     });
-  });
 
-  // Mobile – start at 70%
-  mm.add("(max-width: 767px)", () => {
-    return ScrollTrigger.create({
-      trigger: sectionRef.current,
-      start: "top 60%",
-      once: true,
-      onEnter: animateIconsToPositions,
+    // Mobile – start at 70%
+    mm.add("(max-width: 767px)", () => {
+      return ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top 60%",
+        once: true,
+        onEnter: animateIconsToPositions,
+      });
     });
-  });
 
-  return () => {
-    mm.revert(); 
-    if (iconsBreak.current) iconsBreak.current.revert();
-  };
-}, []);
+    return () => {
+      mm.revert();
+      if (iconsBreak.current) iconsBreak.current.revert();
+    };
+  }, []);
 
 
   return (
@@ -223,22 +223,22 @@ export default function PosIconsSection() {
             Your Complete Inventory Toolkit
           </MainHeading>
 
-           <p
-              className="font-['Onest'] font-normal text-[var(--white-color)] xl:text-xl lg:text-lg text-base xl:leading-9 lg:leading-7 md:leading-6 leading-5 flex items-center justify-center gap-2"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <span ref={spanRef}>
-                <Image
-                  src="/assets/icons-section/navigation-icon.svg"
-                  alt="Navigation Icon"
-                  width={24}
-                  height={24}
-                  className="flex items-center justify-center w-6 h-6 z-10"
-                />
-              </span>
-              Click any feature below to get started.
-            </p>
+          <p
+            className="font-['Onest'] font-normal text-[var(--white-color)] xl:text-xl lg:text-lg text-base xl:leading-9 lg:leading-7 md:leading-6 leading-5 flex items-center justify-center gap-2"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span ref={spanRef}>
+              <Image
+                src="/assets/icons-section/navigation-icon.svg"
+                alt="Navigation Icon"
+                width={24}
+                height={24}
+                className="flex items-center justify-center w-6 h-6 z-10"
+              />
+            </span>
+            Click any feature below to get started.
+          </p>
           {/* <Paragraph className="text-[var(--white-color)] text-center">
             Click any feature below to get started
           </Paragraph> */}
@@ -277,7 +277,7 @@ export default function PosIconsSection() {
             {iconData.map((icon) => (
               <Link
                 key={icon.id}
-                href= {`/features/${icon.category}`}
+                href={`/features/${icon.category}`}
                 id={icon.id}
                 onClick={(e) => handleTooltipClick(e, icon.id)}
                 className={`absolute cursor-pointer ${icon.size} rounded-[20px] border border-transparent hover:border-white w-auto flex items-center justify-center group`}
@@ -289,9 +289,9 @@ export default function PosIconsSection() {
                   height={80}
                   className="w-full h-full rounded-[20px] transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"
                 />
-                <Tooltip 
-                  text={icon.label} 
-                  isComparisonToolTip={false} 
+                <Tooltip
+                  text={icon.label}
+                  isComparisonToolTip={false}
                   isVisible={activeTooltipId === icon.id}
                   industry="Retail"
                 />

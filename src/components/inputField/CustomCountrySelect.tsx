@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import { useScrollLockEffect } from '@/context/ScrollLockContext';
 import { usePathname } from 'next/navigation';
 import { getCountries, getCountryCallingCode } from 'react-phone-number-input/input';
 import type { Country } from 'react-phone-number-input/input';
@@ -26,6 +27,8 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
     const dropdownRef = useRef<HTMLDivElement>(null);
     const searchInputRef = useRef<HTMLInputElement>(null);
     const pathname = usePathname();
+
+    useScrollLockEffect(isOpen);
 
     const isContactPage = pathname?.includes('/contact');
     const widthClass = isContactPage ? 'min-w-[240px] max-w-[240px] sm:min-w-[340px] sm:max-w-[340px] xl:min-w-[260px] xl:max-w-[260px]' : 'min-w-[250px] max-w-[250px] md:min-w-[300px] md:max-w-[300px] lg:min-w-[340px] lg:max-w-[340px]';
@@ -80,14 +83,15 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
                 )}
                 <span className="text-gray-500 text-xs">
                     {/* Add arrow icon here explicitly if needed, or rely on CSS pseudo-element if preferred. Let's add an SVG arrow */}
-                     <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                        <path d="M1 1L5 5L9 1" stroke="#666666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
+                        <path d="M1 1L5 5L9 1" stroke="#666666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </span>
             </button>
 
             {isOpen && (
                 <div
+                    data-lenis-prevent
                     className={`absolute top-full left-0 -ml-2 z-50 mt-1 ${widthClass} bg-white shadow-lg flex flex-col`}
                     style={{
                         border: '1px solid #E2E2E2',
@@ -106,8 +110,8 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
                             onClick={(e) => e.stopPropagation()}
                         />
                     </div>
-                    <div 
-                        className="overflow-y-auto custom-scrollbar" 
+                    <div
+                        className="overflow-y-auto custom-scrollbar"
                         style={{ maxHeight: '280px', overscrollBehavior: 'contain' }}
                     >
                         {filteredCountries.length > 0 ? (
@@ -125,7 +129,7 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
                                         }}
                                     >
                                         <span className="country-flag-container mr-3 w-6 h-4 flex-shrink-0">
-                                           {CountryFlag && <CountryFlag title={labels[country]} />}
+                                            {CountryFlag && <CountryFlag title={labels[country]} />}
                                         </span>
                                         <span className="flex-1 text-sm whitespace-normal text-[#231F20] font-['Onest'] truncate">
                                             {labels[country]}

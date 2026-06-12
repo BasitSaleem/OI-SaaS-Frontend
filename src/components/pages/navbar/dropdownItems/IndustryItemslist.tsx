@@ -93,6 +93,13 @@ export const industriesItems: IndustryItem[] = [
     type: 'pos',
   },
   {
+    key: 'sporting-goods-pos-system',
+    title: 'Sporting Goods POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/sporting-goods-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
     key: 'clothing-inventory-management-software',
     title: 'Clothing Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
@@ -177,9 +184,37 @@ export const industriesItems: IndustryItem[] = [
     type: 'inventory',
   },
   {
+    key: 'construction-inventory-management-software',
+    title: 'Construction Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/construction-inventory-management-system.svg",
+    category: 'retailer',
+    type: 'inventory',
+  },
+  {
     key: 'coffee-shop-pos-system',
     title: 'Coffee Shop POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
+  {
+    key: 'ice-cream-shop-pos-system',
+    title: 'Ice Cream Shop POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/ice-cream-shop-pos-system.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
+  {
+    key: 'candy-store-pos-system',
+    title: 'Candy Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/candy-store-pos-system.svg",
+    category: 'restaurant',
+    type: 'pos',
+  },
+  {
+    key: 'food-truck-pos-system',
+    title: 'Food Truck POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/food-truck-pos-system.svg",
     category: 'restaurant',
     type: 'pos',
   },
@@ -190,8 +225,23 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
+  {
+    key: 'convenience-store-pos-system',
+    title: 'Convenience Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/convenience-store-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'barber-shop-pos-system',
+    title: 'Barber Shop POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/barber-shop-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
 
-  
+
+
 ];
 
 export interface IndustryTreeItem {
@@ -223,6 +273,13 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Fast Casual' },
     { title: 'Bar & Club' },
     { title: 'Multi Unit' },
+    { title: 'Ice Cream Shop' },
+    { title: 'Coffee Shop' },
+    { title: 'Juice Bar' },
+    { title: 'Barber Shop' },
+    { title: 'Beauty Salon' },
+    { title: 'Convenience Store' },
+    { title: 'Shoe Store' },
   ],
   // Add details for new categories if needed
   'bakery-pos-system': [
@@ -257,7 +314,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Project Quoting' },
   ],
 
-  
+
   'furniture-store-pos-system': [
     { title: 'Furniture Inventory Management' },
     { title: 'Custom Order Tracking' },
@@ -354,6 +411,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Delivery & Assembly Tracking' },
     { title: 'Purchase Order Management' },
   ],
+  'construction-inventory-management-software': [
+    { title: 'Material & Equipment Tracking' },
+    { title: 'Multi-Site & Yard Management' },
+    { title: 'Supplier & Purchase Orders' },
+    { title: 'Asset & Cost Control' },
+  ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
     { title: 'ISBN Scanning' },
@@ -402,10 +465,46 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Customer Loyalty Programs' },
     { title: 'Sales Analytics & Reports' },
   ],
+  'ice-cream-shop-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Flavor & Modifier Customization' },
+    { title: 'Tub & Ingredient Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'candy-store-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Candy & Modifier Customization' },
+    { title: 'Jar & Stock Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'food-truck-pos-system': [
+    { title: 'Quick Order Checkout' },
+    { title: 'Menu & Side Customization' },
+    { title: 'Ingredient & Packaging Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'sporting-goods-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Size & Variant Tracking' },
+    { title: 'Stock & Inventory Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
   'shoes-store-pos-system': [
     { title: 'Fast Counter Checkout' },
     { title: 'Size & Variant Tracking' },
     { title: 'Customer Loyalty Programs' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'convenience-store-pos-system': [
+    { title: 'Fast Counter Checkout' },
+    { title: 'Inventory & Stock Alerts' },
+    { title: 'Multi-Pack Pricing' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'barber-shop-pos-system': [
+    { title: 'Appointment Scheduling' },
+    { title: 'Stylist Performance Sync' },
+    { title: 'Retail Product Tracking' },
     { title: 'Sales Analytics & Reports' },
   ],
 };
@@ -428,13 +527,13 @@ export const IndustryList = ({ items }: { items: IndustryTreeItem[] }) => (
 // // Helper function to group industries by category
 export const groupIndustriesByCategory = (): Record<string, IndustryItem[]> => {
   const grouped: Record<string, IndustryItem[]> = {};
-  
+
   industriesItems.forEach((item) => {
     if (!grouped[item.category]) {
       grouped[item.category] = [];
     }
     grouped[item.category].push(item);
   });
-  
+
   return grouped;
 };

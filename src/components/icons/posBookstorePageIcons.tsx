@@ -1079,6 +1079,7 @@ export default function posBookstorePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

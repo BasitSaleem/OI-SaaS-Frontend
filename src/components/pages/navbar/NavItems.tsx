@@ -36,7 +36,7 @@ const NavItems = () => {
   const [selectedResourceKey, setSelectedResourceKey] =
     useState<string>("learning");
 
-    const [selectedCompanyKey, setSelectedCompanyKey] =
+  const [selectedCompanyKey, setSelectedCompanyKey] =
     useState<string>("About");
 
   // Add new state for selected category
@@ -55,7 +55,7 @@ const NavItems = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-full inventory-menu lg:flex justify-center w-auto">
+    <div className="bg-white lg:px-1 lg:py-1 xl:px-3 xl:py-1.5 shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] rounded-full inventory-menu lg:flex justify-center w-auto" style={{ opacity: 0, transform: "translateY(-150px)" }}>
       <ul className="hidden lg:flex items-center justify-center md:gap-1 lg:gap-3 w-auto">
         {/* FEATURES DROPDOWN */}
         <NavDropdown
@@ -72,9 +72,9 @@ const NavItems = () => {
           onToggle={() => toggle("features")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] lg:max-h-[450px] overflow-y-hidden overflow-x-hidden">
             {/* Left Section (3/12) - Categories */}
-            <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
+            <div className="lg:col-span-3 h-full px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
               <div className="space-y-1 ">
                 {featureCategories.map((category) => {
                   const categoryFeatures = featuresItems.filter(
@@ -88,11 +88,10 @@ const NavItems = () => {
                       key={category.id}
                       onClick={() => setSelectedCategory(category.id)}
                       // onMouseEnter={() => setSelectedCategory(category.id)}
-                      className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${
-                        selectedCategory === category.id
+                      className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${selectedCategory === category.id
                           ? "bg-white border border-transparent text-[var(--primary-purple)]"
                           : "hover:bg-white text-[var(--text-dark)]"
-                      }`}
+                        }`}
                     >
                       <div className="flex flex-col">
                         <span className="text-base font-medium font-['Onest']">
@@ -150,42 +149,42 @@ const NavItems = () => {
                     }
                   </h3>
 
-                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
-                    {featuresItems
-                      .filter((item) => item.category === selectedCategory)
-                      .map((item) => (
-                        <Link
-                          key={item.key}
-                          href={`/features/${item.key.toLowerCase()}`}
-                          prefetch={false}
-                          className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
-                            selectedFeatureKey === item.key
-                              ? "border-[var(--primary-purple)] bg-purple-50 "
-                              : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
-                          } hover:bg-gray-50 transition-all duration-200`}
-                          onMouseEnter={() => setSelectedFeatureKey(item.key)}
-                          onClick={close}
-                        >
-                          <Image
-                            src={item.icon}
-                            alt={item.title}
-                            width={20}
-                            height={20}
-                            className="flex-shrink-0"
-                          />
-                          <span
-                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
-                    ${
-                      selectedFeatureKey === item.key
-                        ? "font-bold"
-                        : "font-medium"
-                    }
-                    `}
+                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto">
+                    <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
+                      {featuresItems
+                        .filter((item) => item.category === selectedCategory)
+                        .map((item) => (
+                          <Link
+                            key={item.key}
+                            href={`/features/${item.key.toLowerCase()}`}
+                            prefetch={false}
+                            className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${selectedFeatureKey === item.key
+                                ? "border-[var(--primary-purple)] bg-purple-50 "
+                                : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
+                              } hover:bg-gray-50 transition-all duration-200`}
+                            onMouseEnter={() => setSelectedFeatureKey(item.key)}
+                            onClick={close}
                           >
-                            {item.title}
-                          </span>
-                        </Link>
-                      ))}
+                            <Image
+                              src={item.icon}
+                              alt={item.title}
+                              width={20}
+                              height={20}
+                              className="flex-shrink-0"
+                            />
+                            <span
+                              className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
+                      ${selectedFeatureKey === item.key
+                                  ? "font-bold"
+                                  : "font-medium"
+                                }
+                      `}
+                            >
+                              {item.title}
+                            </span>
+                          </Link>
+                        ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -194,15 +193,15 @@ const NavItems = () => {
             {/* Right Section (3/12) - Details Panel */}
             <div className="px-4 py-6 hidden md:block lg:col-span-3">
               <div
-                className=" border-l max-h-[350px] min-h-[400px] border-[var(--border-muted)] w-full pl-4  overflow-y-auto overflow-x-hidden 
-  [&::-webkit-scrollbar]:w-2
-  [&::-webkit-scrollbar]:block
-  [&::-webkit-scrollbar-track]:bg-gray-100
-  [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
-  [&::-webkit-scrollbar-thumb]:rounded-full
-  [&::-webkit-scrollbar-thumb]:hover:bg-[var(--text-muted-alt)]
-  [scrollbar-width:thin]
-  [scrollbar-color:var(--border-muted)_var(--background-halfwhite)]"
+                className=" border-l max-h-[400px] min-h-[400px] border-[var(--border-muted)] w-full pl-4  overflow-y-auto overflow-x-hidden 
+                [&::-webkit-scrollbar]:w-2
+                [&::-webkit-scrollbar]:block
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-[var(--border-muted)]
+                [&::-webkit-scrollbar-thumb]:rounded-full
+                [&::-webkit-scrollbar-thumb]:hover:bg-[var(--text-muted-alt)]
+                [scrollbar-width:thin]
+                [scrollbar-color:var(--border-muted)_var(--background-halfwhite)]"
               >
                 <p className="mb-2 text-xs flex items-center gap-2 font-bold font-['Onest'] text-[var(--text-dark)]">
                   {
@@ -213,17 +212,17 @@ const NavItems = () => {
                 </p>
 
                 <span className="text-xs flex items-center mb-3 gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
-                    <svg
-                      width="3"
-                      height="3"
-                      viewBox="0 0 3 3"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="1.5" cy="1.5" r="1.5" fill="var(--text-muted-alt)" />
-                    </svg>
-                    Key Features
-                  </span>
+                  <svg
+                    width="3"
+                    height="3"
+                    viewBox="0 0 3 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.5" r="1.5" fill="var(--text-muted-alt)" />
+                  </svg>
+                  Key Features
+                </span>
 
                 <FeatureList items={featuresDetailsMap[selectedFeatureKey]} />
               </div>
@@ -244,7 +243,7 @@ const NavItems = () => {
           onToggle={() => toggle("industries")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] overflow-y-hidden overflow-x-hidden">
+          <div className="bg-white grid grid-cols-12 gap-6 mt-2 mx-auto xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-[30px] shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto lg:min-h-[450px] lg:max-h-[450px] overflow-y-hidden overflow-x-hidden">
             {/* Left Section (3/12) - Categories */}
             <div className="lg:col-span-3 px-4 py-6 bg-[var(--background-purple-light)] flex flex-col items-start justify-between">
               <div className="space-y-1 w-full">
@@ -278,11 +277,10 @@ const NavItems = () => {
                           }
                         }
                       }}
-                      className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${
-                        selectedIndustryCategory === category.id
+                      className={`w-full text-left px-4 py-2.5 rounded-lg transition-colors duration-200 ${selectedIndustryCategory === category.id
                           ? "bg-white border border-transparent text-[var(--primary-purple)]"
                           : "hover:bg-white text-[var(--text-dark)]"
-                      }`}
+                        }`}
                     >
                       <div className="flex flex-col">
                         <span className="text-base font-medium font-['Onest']">
@@ -353,11 +351,10 @@ const NavItems = () => {
                             setSelectedIndustryKey(firstPosItem.key);
                           }
                         }}
-                        className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none ${
-                          selectedIndustryType === "pos"
+                        className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none ${selectedIndustryType === "pos"
                             ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)] shadow-lg"
                             : "text-gray-600 bg-transparent border-transparent hover:text-[var(--primary-purple)]"
-                        }`}
+                          }`}
                       >
                         POS
                       </button>
@@ -373,69 +370,68 @@ const NavItems = () => {
                             setSelectedIndustryKey(firstInventoryItem.key);
                           }
                         }}
-                        className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none ${
-                          selectedIndustryType === "inventory"
+                        className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none ${selectedIndustryType === "inventory"
                             ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)] shadow-lg"
                             : "text-gray-600 bg-transparent border-transparent hover:text-[var(--primary-purple)]"
-                        }`}
+                          }`}
                       >
                         Inventory
                       </button>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
-                    {industriesItems
-                      .filter(
-                        (item) =>
-                          item.category === selectedIndustryCategory &&
-                          item.type === selectedIndustryType,
-                      )
-                      .map((item) => (
-                        <Link
-                          key={item.key}
-                          href={`/industries/${item.key.toLowerCase()}`}
-                          prefetch={false}
-                          className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${
-                            selectedIndustryKey === item.key
-                              ? "border-[var(--primary-purple)] bg-purple-50"
-                              : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
-                          } hover:bg-gray-50 transition-all duration-200`}
-                          onMouseEnter={() => setSelectedIndustryKey(item.key)}
-                          onClick={close}
-                        >
-                          <Image
-                            src={item.icon}
-                            alt={item.title}
-                            width={20}
-                            height={20}
-                            className="flex-shrink-0"
-                          />
-                          <span
-                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
-                      ${
-                        selectedIndustryKey === item.key
-                          ? "font-bold"
-                          : "font-medium"
-                      }
-                    `}
+                  <div className="w-full max-h-[350px] min-h-[340px] overflow-auto">
+                    <div className="grid grid-cols-2 lg:grid-cols-2 gap-3">
+                      {industriesItems
+                        .filter(
+                          (item) =>
+                            item.category === selectedIndustryCategory &&
+                            item.type === selectedIndustryType,
+                        )
+                        .map((item) => (
+                          <Link
+                            key={item.key}
+                            href={`/industries/${item.key.toLowerCase()}`}
+                            prefetch={false}
+                            className={`relative flex items-center gap-3 px-5 py-4 border rounded-xl ${selectedIndustryKey === item.key
+                                ? "border-[var(--primary-purple)] bg-purple-50"
+                                : "border-[var(--border-muted)] hover:border-[var(--primary-purple)]"
+                              } hover:bg-gray-50 transition-all duration-200`}
+                            onMouseEnter={() => setSelectedIndustryKey(item.key)}
+                            onClick={close}
                           >
-                            {item.title}
-                          </span>
-                        </Link>
-                      ))}
+                            <Image
+                              src={item.icon}
+                              alt={item.title}
+                              width={20}
+                              height={20}
+                              className="flex-shrink-0"
+                            />
+                            <span
+                              className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
+                        ${selectedIndustryKey === item.key
+                                  ? "font-bold"
+                                  : "font-medium"
+                                }
+                      `}
+                            >
+                              {item.title}
+                            </span>
+                          </Link>
+                        ))}
+                    </div>
                   </div>
                   {industriesItems.filter(
                     (item) =>
                       item.category === selectedIndustryCategory &&
                       item.type === selectedIndustryType,
                   ).length === 0 && (
-                    <div className="flex flex-col items-center justify-center py-10 text-center">
-                      <p className="text-[var(--text-grey)] font-['Onest']">
-                        No {selectedIndustryType === "pos" ? "POS" : "Inventory"} systems available for this category yet.
-                      </p>
-                    </div>
-                  )}
+                      <div className="flex flex-col items-center justify-center py-10 text-center">
+                        <p className="text-[var(--text-grey)] font-['Onest']">
+                          No {selectedIndustryType === "pos" ? "POS" : "Inventory"} systems available for this category yet.
+                        </p>
+                      </div>
+                    )}
                 </div>
               )}
             </div>
@@ -450,21 +446,21 @@ const NavItems = () => {
                       (item) => item.key === selectedIndustryKey,
                     )?.title
                   }
-                  
+
                 </p>
 
                 <span className="text-xs flex items-center mb-3 gap-1.5 leading-[100%] font-['Onest'] text-[var(--text-grey)] font-normal">
-                    <svg
-                      width="3"
-                      height="3"
-                      viewBox="0 0 3 3"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="1.5" cy="1.5" r="1.5" fill="var(--text-muted-alt)" />
-                    </svg>
-                    Key Features
-                  </span>
+                  <svg
+                    width="3"
+                    height="3"
+                    viewBox="0 0 3 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.5" r="1.5" fill="var(--text-muted-alt)" />
+                  </svg>
+                  Key Features
+                </span>
 
                 <IndustryList
                   items={industryDetailsMap[selectedIndustryKey] || []}
@@ -586,11 +582,11 @@ const NavItems = () => {
               <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {companyItems.map((item) => (
                   <Link
-                    key={item.title} 
+                    key={item.title}
                     href={`/${item.key.toLowerCase()}`}
                     className="flex items-center gap-2 px-4 py-4 border border-[var(--border-muted)] rounded-xl hover:bg-gray-100 hover:border-[var(--primary-purple)]"
-                     onMouseEnter={() => setSelectedCompanyKey(item.key)}
-                     onClick={close}
+                    onMouseEnter={() => setSelectedCompanyKey(item.key)}
+                    onClick={close}
                   >
                     <Image
                       src={item.icon}
@@ -599,16 +595,15 @@ const NavItems = () => {
                       height={16}
                     />
                     <span
-                            className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
-                    ${
-                      selectedCompanyKey === item.key
-                        ? "font-bold"
-                        : "font-medium"
-                    }
+                      className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
+                    ${selectedCompanyKey === item.key
+                          ? "font-bold"
+                          : "font-medium"
+                        }
                     `}
-                          >
-                            {item.title}
-                          </span>
+                    >
+                      {item.title}
+                    </span>
                   </Link>
                 ))}
               </div>

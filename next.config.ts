@@ -7,8 +7,23 @@ const nextConfig: NextConfig = {
   //     { protocol: "https", hostname: "owner-inventory.s3.us-east-1.amazonaws.com" },
   //   ],
   // },
-    experimental: {
-    inlineCss: true,  
+  images: {
+    minimumCacheTTL: 31536000,
+    // AVIF is 30-50% smaller than WebP; Next.js serves the best format the browser accepts
+    formats: ["image/avif", "image/webp"],
+  },
+  experimental: {
+    inlineCss: true,
+    // Tree-shakes these heavy packages so only imported symbols are bundled
+    // Reduces JS parse/execution time (TBT improvement)
+    optimizePackageImports: [
+      "framer-motion",
+      "gsap",
+      "lucide-react",
+      "react-icons",
+      "@heroicons/react",
+      // "swiper" intentionally excluded — its side-effect CSS imports break Turbopack HMR
+    ],
   },
 
   async headers() {
@@ -51,11 +66,36 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/password/reset",
+        destination: "https://app.ownersinventory.com/forgot-password",
+        permanent: true,
+      },
+      {
+        source: "/features/inventory-management",
+        destination: "/features/inventory",
+        permanent: true,
+      },
+      {
+        source: "/features/finance",
+        destination: "/features/accounts-and-finance",
+        permanent: true,
+      },
+       {
+        source: "/features/sales",
+        destination: "/features/sales-and-order",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
         source: "/videos-s3/:path*",
-        destination: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/:path*",
+        destination:
+          "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/:path*",
       },
     ];
   },

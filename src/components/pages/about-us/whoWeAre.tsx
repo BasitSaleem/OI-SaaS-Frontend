@@ -53,7 +53,7 @@ function WhoWeAre({
     // optional: we can add small scroll-based subtle animation later.
     // For now keep this simple and ensure it doesn't affect layout calculation.
     // If you need gif/anime timeline, create a gsap.context and matchMedia here similarly.
-    return () => {};
+    return () => { };
   }, []);
 
   return (

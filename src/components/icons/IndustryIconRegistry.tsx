@@ -60,19 +60,49 @@ const posBeautySalonStorePageIcons = dynamic(
 const furnitureInventoryManagementSoftwareIcons = dynamic(
   () => import("./furnitureInventoryManagementSoftwareIcons"),
 );
+const constructionInventoryManagementSoftwareIcons = dynamic(
+  () => import("./constructionInventoryManagementSoftwareIcons"),
+);
 const posCoffeeShopStorePageIcons = dynamic(
   () => import("./posCoffeeShopStorePageIcons"),
 );
 const posShoesStorePageIcons = dynamic(
   () => import("./posShoesStorePageIcons"),
 );
+const posConvenienceStorePageIcons = dynamic(
+  () => import("./posConvenienceStorePageIcons"),
+);
+const posIceCreamShopPageIcons = dynamic(
+  () => import("./posIceCreamShopPageIcons"),
+);
+const posCandyStorePageIcons = dynamic(
+  () => import("./posCandyStorePageIcons"),
+);
+const posFoodTruckPageIcons = dynamic(
+  () => import("./posFoodTruckPageIcons"),
+);
+const posSportingGoodsPageIcons = dynamic(
+  () => import("./posSportingGoodsPageIcons"),
+);
+const posBarberShopPageIcons = dynamic(
+  () => import("./posBarberShopPageIcons"),
+);
 const alAsifCasestudyIcons = dynamic(
   () => import("./alAsifCasestudyIcons"),
-  
+
 );
 const bightHomeIcons = dynamic(
   () => import("./bightHomeIcons"),
-  
+
+);
+const urbansThreadsIcons = dynamic(
+  () => import("./urbansThreadsIcons"),
+
+);
+
+const industriesTestmonialProfileIcons = dynamic(
+  () => import("./industriesTestmonialProfileIcons"),
+
 );
 
 export type IndustryIconSet =
@@ -97,9 +127,18 @@ export type IndustryIconSet =
   | "beautySalon"
   | "coffeeShop"
   | "shoesStore"
+  | "convenienceStore"
+  | "iceCreamShop"
+  | "candyStore"
+  | "foodTruck"
+  | "sportingGoods"
+  | "barberShop"
   | "furnitureInventory"
+  | "constructionInventory"
   | "alAsifCasestudyIcons"
   | "bightHomeIcons"
+  | "urbansThreadsIcons"
+  | "industriesTestmonialProfileIcons"
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -123,16 +162,26 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   beautySalon: posBeautySalonStorePageIcons,
   coffeeShop: posCoffeeShopStorePageIcons,
   shoesStore: posShoesStorePageIcons,
+  convenienceStore: posConvenienceStorePageIcons,
+  iceCreamShop: posIceCreamShopPageIcons,
+  candyStore: posCandyStorePageIcons,
+  foodTruck: posFoodTruckPageIcons,
+  sportingGoods: posSportingGoodsPageIcons,
+  barberShop: posBarberShopPageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
+  constructionInventory: constructionInventoryManagementSoftwareIcons,
   alAsifCasestudyIcons: alAsifCasestudyIcons,
-  bightHomeIcons: bightHomeIcons
+  bightHomeIcons: bightHomeIcons,
+  urbansThreadsIcons: urbansThreadsIcons,
+  industriesTestmonialProfileIcons: industriesTestmonialProfileIcons
 };
 
 interface IndustryIconProps {
-  set?: IndustryIconSet;
+  set?: IndustryIconSet | IndustryIconSet[];
   name: string;
   size?: number;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export default function IndustryIcon({
@@ -140,12 +189,31 @@ export default function IndustryIcon({
   name,
   size = 48,
   className = "",
+  style,
 }: IndustryIconProps) {
-  if (!set || !REGISTRY[set]) {
-    console.warn(`IndustryIcon: Set "${set}" not found in registry.`);
-    return null;
-  }
+  if (!set) return null;
 
-  const IconsComponent = REGISTRY[set];
-  return <IconsComponent name={name} size={size} className={className} />;
+  const sets = Array.isArray(set) ? set : [set];
+
+  return (
+    <>
+      {sets.map((s) => {
+        const IconsComponent = REGISTRY[s];
+        if (!IconsComponent) {
+          console.warn(`IndustryIcon: Set "${s}" not found in registry.`);
+          return null;
+        }
+        return (
+          <IconsComponent
+            key={s}
+            name={name}
+            size={size}
+            className={className}
+            style={style}
+          />
+        );
+      })}
+    </>
+  );
 }
+

@@ -950,7 +950,7 @@ const icons = {
       />
     </svg>
   ),
-  
+
   testWhychoseIcon4: (
     <svg
       width="44"
@@ -1121,6 +1121,7 @@ export default function posGroceryStorePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

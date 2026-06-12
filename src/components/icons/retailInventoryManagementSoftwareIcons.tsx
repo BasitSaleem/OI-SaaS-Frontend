@@ -625,7 +625,7 @@ const icons = {
       </defs>
     </svg>
   ),
- 
+
   whychoseIcon4: (
     <svg
       width="44"
@@ -954,6 +954,7 @@ export default function clothingInventoryManagementSoftwareIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

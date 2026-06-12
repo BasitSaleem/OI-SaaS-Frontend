@@ -7,7 +7,7 @@ import { useSafariDetector } from '@/hooks/useSafariDetector';
 
 interface SellerClubSectionProps {
   mediaSrc?: string;
-  imageSrc?: string; 
+  imageSrc?: string;
   mediaAlt?: string;
   heading: string;
   description: string;
@@ -25,8 +25,8 @@ export default function SellerClubSection({
   description,
   buttonText = 'Book a Free Demo',
   buttonUrl = '#',
-  buttonColor= "var(--primary-purple)",
-  marginClasses= "lg:mt-40 md:mt-28 mt-20"
+  buttonColor = "var(--primary-purple)",
+  marginClasses = "lg:mt-40 md:mt-28 mt-20"
 
 }: SellerClubSectionProps) {
   const [bgImage, setBgImage] = useState('/assets/seller-club-mobile.webp');
@@ -60,37 +60,37 @@ export default function SellerClubSection({
       >
         <div className="grid items-start justify-center w-full grid-cols-1 lg:grid-cols-12 md:gap-[76px] gap-10 lg:pt-[60px] md:pt-[90px] pt-10 lg:px-[60px] md:px-[76px] px-9">
           <div className="lg:col-span-7 lg:order-1 order-2 lg:mt-0 mt-8">
-             {shouldShowImage && imageSrc ? (
-                <Image
-                  src={imageSrc}
-                  alt={mediaAlt}
-                  width={743}
-                  height={460}
-                  className="w-full"
-                  priority
-                />
-              ) : mediaSrc && !shouldShowImage ? (
-                <video
-                  className="w-full rounded-[20px]"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                >
-                  <source src={mediaSrc} type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              ) : imageSrc ? (
-                 <Image
-                  src={imageSrc}
-                  alt={mediaAlt}
-                  width={743}
-                  height={460}
-                  className="w-full"
-                  priority
-                />
-              ) : null}
+            {shouldShowImage && imageSrc ? (
+              <Image
+                src={imageSrc}
+                alt={mediaAlt}
+                width={743}
+                height={460}
+                className="w-full"
+                priority
+              />
+            ) : mediaSrc && !shouldShowImage ? (
+              <video
+                className="w-full rounded-[20px]"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              >
+                <source src={mediaSrc} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            ) : imageSrc ? (
+              <Image
+                src={imageSrc}
+                alt={mediaAlt}
+                width={743}
+                height={460}
+                className="w-full"
+                priority
+              />
+            ) : null}
           </div>
 
           <div className="flex flex-col justify-center lg:items-start md:items-center items-start lg:col-span-5 lg:order-2 order-1 lg:text-left md:text-center text-left">

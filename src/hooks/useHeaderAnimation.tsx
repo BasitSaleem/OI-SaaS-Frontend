@@ -9,23 +9,17 @@ export function useHeaderAnimation() {
     if (typeof window === "undefined") return;
 
     const ctx = gsap.context(() => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         const tlHeader = gsap.timeline({
           delay: 0,
           defaults: { duration: 1, ease: "power1.inOut" },
         });
 
-        gsap.set(".inventory-menu, .header-left-col, .header-right-col", {
-          y: -150,
-          opacity: 0,
-        });
-
+        // CSS inline styles on the elements set opacity:0 / translateY(-150px) as the
+        // initial state, so no gsap.set() is needed here — GSAP animates to the final state.
         tlHeader.to(
           ".inventory-menu, .header-left-col, .header-right-col",
-          {
-            y: 0,
-            opacity: 1,
-          },
+          { y: 0, opacity: 1 },
           0
         );
       } else {
@@ -34,15 +28,9 @@ export function useHeaderAnimation() {
           defaults: { duration: 1, ease: "power1.inOut" },
         });
 
-        gsap.set(".mobile-iventory, .header-left-col", {
-          y: -150,
-          opacity: 0,
-        });
-
         tlHeader.to(".mobile-iventory, .header-left-col", { y: 0, opacity: 1 }, 0);
       }
 
-      // Refresh to ensure correct positions
       setTimeout(() => {
         ScrollTrigger.refresh();
       }, 100);

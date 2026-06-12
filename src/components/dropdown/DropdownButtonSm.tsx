@@ -52,9 +52,8 @@ const DropdownButtonSm: React.FC<DropdownButtonSmProps> = ({
       >
         {text}
         <svg
-          className={`ml-2 h-3 w-3 transition-transform duration-300 ${
-            open ? "rotate-180" : ""
-          }`}
+          className={`ml-2 h-3 w-3 transition-transform duration-300 ${open ? "rotate-180" : ""
+            }`}
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -67,16 +66,15 @@ const DropdownButtonSm: React.FC<DropdownButtonSmProps> = ({
       {/* Dropdown Menu */}
       <div
         className={`absolute right-0 mt-1 w-full rounded-lg shadow-lg bg-white
-          transition-all duration-200 ${
-            open ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
+          transition-all duration-200 ${open ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
           }
           lg:group-hover:scale-100 lg:group-hover:opacity-100 lg:pointer-events-auto`}
-          style={{
-        backgroundColor: bgColor === "transparent" ? "transparent" : bgColor,
-        color: textColor,
-        border: isBorder ? `1px solid ${bgColor}` : "transparent",
-        boxShadow: "2px 2px 22px 0px rgba(0,0,0,0.15)"
-      }}
+        style={{
+          backgroundColor: bgColor === "transparent" ? "transparent" : bgColor,
+          color: textColor,
+          border: isBorder ? `1px solid ${bgColor}` : "transparent",
+          boxShadow: "2px 2px 22px 0px rgba(0,0,0,0.15)"
+        }}
       >
         <ul className="py-1 text-sm text-gray-700 ">
           {items.map((item, index) => (

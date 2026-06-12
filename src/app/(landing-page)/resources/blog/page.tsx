@@ -8,23 +8,23 @@ const page = () => {
 
   return (
     <>
-     <HeroSection
-      title="Discover trends, updates, and knowledge to inspire your daily journey."
+      <HeroSection
+        title="Discover trends, updates, and knowledge to inspire your daily journey."
         description="Join our community and never miss out on fresh updates."
         showButtons={false}
         showSubscribe={true}
-        heroHeight= "lg:h-[700px]"
+        heroHeight="lg:h-[700px]"
         heroOverflow="overflow-y-hidden"
         variant="animation2"
-        />
+      />
 
-        <AllBlogs/>
+      <AllBlogs />
 
-     <div className="lg:mt-[100px] md:mt-40 mt-28">
+      <div className="lg:mt-[100px] md:mt-40 mt-28">
         <FaqSection />
-        </div>
+      </div>
       <CalltoActionBottom />
-        
+
     </>
   )
 }

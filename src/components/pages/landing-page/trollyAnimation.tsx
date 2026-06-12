@@ -1,9 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useSafariDetector } from "@/hooks/useSafariDetector";
-import { useVideoCache } from "@/hooks/useVideoCache";
 import { useTrollyAnimation } from "@/hooks/useTrollyAnimation";
 
 
@@ -27,52 +24,12 @@ const TrollyAnimation = () => {
         graphRef,
     } = useTrollyAnimation();
 
-    // const [isMobile, setIsMobile] = useState(false);
-    // const { shouldShowImage } = useSafariDetector();
-    // const { videoSrc } = useVideoCache(
-    //     "/videos-s3/home-page-videos/trolly-anim.webm",
-    // );
-
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setIsMobile(window.innerWidth < 768);
-    //     };
-
-    //     handleResize();
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener("resize", handleResize);
-    // }, []);
 
     return (
         <div
             ref={containerRef}
             className="w-full max-w-[358px] md:max-w-full relative grid grid-cols-2 mx-auto gap-0 gap-y-0 h-full"
         >
-            {/* {shouldShowImage || isMobile ? (
-              <Image
-                src="/assets/home-page-images/animations/trolly-image.webp"
-                alt="Smart sync and sell"
-                width={743}
-                height={460}
-                className="w-full h-auto rounded-3xl"
-                priority
-              />
-            ) : (
-              <video
-                className="w-full h-full object-cover rounded-3xl bg-white lazy-video"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source
-                  src={videoSrc}
-                  type="video/webm"
-                />
-                Your browser does not support the video tag.
-              </video>
-            )} */}
 
             <div className=" w-full min-h-[200px] lg:min-h-[290px] xl:min-h-[322px] rounded-tl-[20px] md:rounded-tl-[40px] relative bg-[#F3F4F6]">
                 <p
@@ -88,8 +45,8 @@ const TrollyAnimation = () => {
                     alt="Smart sync and sell"
                     width={743}
                     height={460}
+                    loading="lazy"
                     className="w-full max-w-[110px] lg:max-w-[200px] absolute bottom-7 right-8 xl:left-[72px] xl:top-24  h-auto cart-image"
-                    priority
                 />
             </div>
 
@@ -107,6 +64,7 @@ const TrollyAnimation = () => {
                     alt="Smart sync and sell"
                     width={743}
                     height={460}
+                    loading="lazy"
                     className="w-[22px] h-[22px] lg:w-9 lg:h-9 xl:w-[50px] xl:h-[50px] object-contain absolute right-2.5 lg:right-[22px] top-[70px] lg:top-[154px] mobile-icon"
                 />
             </div>
@@ -118,6 +76,7 @@ const TrollyAnimation = () => {
                         alt="Smart sync and sell"
                         width={743}
                         height={460}
+                        loading="lazy"
                         className="w-8 h-8 lg:w-10 lg:h-10 xl:w-14 xl:h-14 star-icon"
                     />
 
@@ -138,6 +97,7 @@ const TrollyAnimation = () => {
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
+                            loading="lazy"
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon1"
                         />
                         <Image
@@ -146,6 +106,7 @@ const TrollyAnimation = () => {
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
+                            loading="lazy"
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon2"
                         />
                         <Image
@@ -154,6 +115,7 @@ const TrollyAnimation = () => {
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
+                            loading="lazy"
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon3"
                         />
                         <Image
@@ -162,6 +124,7 @@ const TrollyAnimation = () => {
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
+                            loading="lazy"
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon4"
                         />
                         <Image
@@ -170,6 +133,7 @@ const TrollyAnimation = () => {
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
+                            loading="lazy"
                             className="w-[26px] h-[26px] lg:w-10 lg:h-10 xl:w-14 xl:h-14 cart-icon5"
                         />
                     </div>
@@ -183,6 +147,7 @@ const TrollyAnimation = () => {
                         alt="Smart sync and sell"
                         width={743}
                         height={460}
+                        loading="lazy"
                         className="w-[26px] h-5 mb-3 arrow-icon"
                     />
 
@@ -199,6 +164,7 @@ const TrollyAnimation = () => {
                         alt="Smart sync and sell"
                         width={743}
                         height={460}
+                        loading="lazy"
                         className="w-full max-w-[108px] lg:max-w-[190px] xl:max-w-[242px] h-14 lg:h-[100px] xl:h-[120px] graph-image"
                     />
                 </div>

@@ -37,33 +37,33 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
   maxTitleLength = 50,
 }) => {
 
-   const [isTablet, setIsTablet] = useState(false);
-  
-    // Detect tablet screen size
-    useEffect(() => {
-      const checkTablet = () => {
-        setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-      };
-  
-      checkTablet();
-      window.addEventListener("resize", checkTablet);
-      return () => window.removeEventListener("resize", checkTablet);
-    }, []);
-  
+  const [isTablet, setIsTablet] = useState(false);
+
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    checkTablet();
+    window.addEventListener("resize", checkTablet);
+    return () => window.removeEventListener("resize", checkTablet);
+  }, []);
+
 
   const displayedTitle =
     truncateTitle && title.length > maxTitleLength
       ? title.slice(0, maxTitleLength) + "..."
       : title;
-  
+
   return (
     <div
       className={`p-[1px] rounded-[30px] features-core-opretions__cards 
         bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] 
-        ${heightClass} ${className} h-full`} 
+        ${heightClass} ${className} h-full`}
     >
       <div className="bg-white w-full rounded-[30px] h-full p-2 lg:p-4 flex flex-col">
-        <div className="flex flex-col flex-1"> 
+        <div className="flex flex-col flex-1">
           {/* Media */}
           <div
             className={`w-full md:min-h-[230px] md:max-h-auto  ${paddingClass} pb-0 production-banner 
@@ -106,15 +106,15 @@ const FeatureCateCard: React.FC<FeatureCateCardProps> = ({
           </div>
 
           {/* Text Content */}
-          <div className="mt-5 flex flex-col flex-1"> 
+          <div className="mt-5 flex flex-col flex-1">
             <CardHeading className="mb-4 min-h-[40px] lg:min-h-[40px] flex self-stretch">
               {displayedTitle}
             </CardHeading>
 
-            <CardDesc className="flex-1 mb-6"> 
+            <CardDesc className="flex-1 mb-6">
               {description}
             </CardDesc>
-             
+
             <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
               {authorName}
             </p>

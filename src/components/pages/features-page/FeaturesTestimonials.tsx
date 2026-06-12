@@ -94,11 +94,11 @@ const FeaturesTestimonials = ({
   const renderTestimonialSlide = useCallback((slide: TestimonialSlide, i: number) => {
     const isVisible = visibleSet.has(i);
     const visiblePosition = visibleIndices.indexOf(i);
-    
+
     // Determine if the card is odd or even (0-based index)
     const isOdd = i % 2 === 0;
     const isEven = i % 2 === 1;
-    
+
     // Use odd/even logic for color and icon
     const accentColor = isOdd ? PURPLE : GREEN;
     const icon = isOdd ? PURPLE_ICON : GREEN_ICON;
@@ -119,6 +119,7 @@ const FeaturesTestimonials = ({
             alt="Quote icon"
             width={26}
             height={26}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
 

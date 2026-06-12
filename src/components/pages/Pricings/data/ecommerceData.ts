@@ -45,7 +45,7 @@ export const ecommerceData: {
         "Unlimited Orders & Invoices",
         "Unlimited Purchases",
         "Onboarding Assistance & Email Support",
-        "Live Chat & Phone Support"
+        "Live Chat & Phone Support",
       ],
       link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=b61801dc-658e-4ff1-83b2-8921e65bf410",
     },
@@ -68,7 +68,7 @@ export const ecommerceData: {
         "Unlimited Purchases",
         "Onboarding Assistance & Email Support",
         "Live Chat & Phone Support",
-        "Dedicated Account Manager"
+        "Dedicated Account Manager",
       ],
       link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=90e3d803-80a2-40e0-8e38-7f0ec66e931c",
     },
@@ -134,12 +134,28 @@ export const ecommerceData: {
       ],
     },
     {
-            name: 'Purchases',
-            features: [
-                { name: 'Purchase Orders', info: true, infoText: "Create and manage supplier orders", basic: 'Unlimited', standard: 'Unlimited', professional: 'Unlimited', premium: 'Unlimited' },
-                { name: 'Bulk Purchase', info: true, infoText: "Record multiple purchases quickly", basic: true, standard: true, professional: true, premium: true },
-            ]
+      name: "Purchases",
+      features: [
+        {
+          name: "Purchase Orders",
+          info: true,
+          infoText: "Create and manage supplier orders",
+          basic: "Unlimited",
+          standard: "Unlimited",
+          professional: "Unlimited",
+          premium: "Unlimited",
         },
+        {
+          name: "Bulk Purchase",
+          info: true,
+          infoText: "Record multiple purchases quickly",
+          basic: true,
+          standard: true,
+          professional: true,
+          premium: true,
+        },
+      ],
+    },
     {
       name: "Ecommerce",
       features: [
@@ -147,10 +163,10 @@ export const ecommerceData: {
           name: "Online Store",
           info: true,
           infoText: "Manage your ecommerce website",
-          basic: '1',
-          standard: '1',
-          professional: '1',
-          premium: '1',
+          basic: "1",
+          standard: "1",
+          professional: "1",
+          premium: "1",
         },
         {
           name: "OJ Themes",
@@ -165,10 +181,10 @@ export const ecommerceData: {
           name: "Orders",
           info: true,
           infoText: "Manage online customer orders",
-          basic: 'Unlimited',
-          standard: 'Unlimited',
-          professional: 'Unlimited',
-          premium: 'Unlimited',
+          basic: "Unlimited",
+          standard: "Unlimited",
+          professional: "Unlimited",
+          premium: "Unlimited",
         },
         {
           name: "Discounts",
@@ -209,27 +225,123 @@ export const ecommerceData: {
       ],
     },
     {
-            name: 'Manufacturing',
-            features: [
-                { name: 'Production Orders', info: true, infoText: "Create and manage production tasks", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Machines', info: true, infoText: "Manage production machinery details", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Moulds', info: true, infoText: "Manage mould and tooling records", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Quality & Inspections', info: true, infoText: "Track product quality checks", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-            ]
+      name: "Manufacturing",
+      features: [
+        {
+          name: "Production Orders",
+          info: true,
+          infoText: "Create and manage production tasks",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
         },
-         {
-            name: 'Accounts & Finance',
-            features: [
-                { name: 'Income & Expense', info: true, infoText: "Track business income and expenses", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Billing & Payments', info: true, infoText: "Manage invoices and received payments", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Payables & Receivables', info: true, infoText: "Track dues from customers and suppliers", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Financial Insights & Reports', info: true, infoText: "Analyze financial performance reports", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Balance Sheet & Trial Balance', info: true, infoText: "View financial position summaries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Chart of Accounts', info: true, infoText: "Manage structured financial accounts", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Journal Entries & Reports', info: true, infoText: "Record accounting journal entries", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' },
-                { name: 'Fixed Assets & Allocations', info: true, infoText: "Track assets and depreciation allocations", basic: 'Add-on', standard: 'Add-on', professional: 'Add-on', premium: 'Add-on' }
-            ]
+        {
+          name: "Machines",
+          info: true,
+          infoText: "Manage production machinery details",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
         },
+        {
+          name: "Moulds",
+          info: true,
+          infoText: "Manage mould and tooling records",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Quality & Inspections",
+          info: true,
+          infoText: "Track product quality checks",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+      ],
+    },
+    {
+      name: "Accounts & Finance",
+      features: [
+        {
+          name: "Income & Expense",
+          info: true,
+          infoText: "Track business income and expenses",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Billing & Payments",
+          info: true,
+          infoText: "Manage invoices and received payments",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Payables & Receivables",
+          info: true,
+          infoText: "Track dues from customers and suppliers",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Financial Insights & Reports",
+          info: true,
+          infoText: "Analyze financial performance reports",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Balance Sheet & Trial Balance",
+          info: true,
+          infoText: "View financial position summaries",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Chart of Accounts",
+          info: true,
+          infoText: "Manage structured financial accounts",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Journal Entries & Reports",
+          info: true,
+          infoText: "Record accounting journal entries",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+        {
+          name: "Fixed Assets & Allocations",
+          info: true,
+          infoText: "Track assets and depreciation allocations",
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
+        },
+      ],
+    },
     {
       name: "People",
       features: [
@@ -290,7 +402,7 @@ export const ecommerceData: {
         },
         {
           name: "Bulk Product Import",
-          infoText: 'Import multiple products via file',
+          infoText: "Import multiple products via file",
           basic: true,
           standard: true,
           professional: true,
@@ -459,12 +571,11 @@ export const ecommerceData: {
           name: "Manufacturing",
           info: true,
           infoText: "Analyze production performance reports",
-          basic: 'Add-on',
-          standard: 'Add-on',
-          professional: 'Add-on',
-          premium: 'Add-on',
+          basic: "Add-on",
+          standard: "Add-on",
+          professional: "Add-on",
+          premium: "Add-on",
         },
-        
       ],
     },
     {
@@ -560,8 +671,7 @@ export const ecommerceData: {
         {
           name: "API Calls/Day",
           info: true,
-          infoText:
-            "Limit of daily API requests",
+          infoText: "Limit of daily API requests",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -588,8 +698,7 @@ export const ecommerceData: {
         {
           name: "DHL",
           info: true,
-          infoText:
-            "Ship orders via DHL",
+          infoText: "Ship orders via DHL",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -598,8 +707,7 @@ export const ecommerceData: {
         {
           name: "Leopard",
           info: true,
-          infoText:
-            "Ship locally with Leopard courier",
+          infoText: "Ship locally with Leopard courier",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -608,8 +716,7 @@ export const ecommerceData: {
         {
           name: "Zapier",
           info: true,
-          infoText:
-            "Automate workflows using Zapier",
+          infoText: "Automate workflows using Zapier",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",
@@ -618,8 +725,7 @@ export const ecommerceData: {
         {
           name: "Make",
           info: true,
-          infoText:
-            "Connect apps using Make automation",
+          infoText: "Connect apps using Make automation",
           basic: "Coming Soon",
           standard: "Coming Soon",
           professional: "Coming Soon",

@@ -10,7 +10,7 @@ import { useSearchAnimation } from "@/hooks/useSearchAnimation";
 export default function SearchPageContent({ q }: { q: string }) {
     const [searchQuery, setSearchQuery] = useState(q);
 
-     useSearchAnimation();
+    useSearchAnimation();
 
     useEffect(() => {
         setSearchQuery(q);
@@ -40,7 +40,7 @@ export default function SearchPageContent({ q }: { q: string }) {
             </section>
             <section>
                 <div className="lg:mt-[100px] md:mt-28 mt-20">
-                <FaqSection />
+                    <FaqSection />
                 </div>
                 <CalltoActionBottom />
             </section>

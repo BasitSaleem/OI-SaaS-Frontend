@@ -25,6 +25,7 @@ export default function FeaturesTabSection() {
               alt="Platform Features"
               width={800}
               height={600}
+              loading="lazy"
               className="w-full h-auto object-contain z-10 drop-shadow-2xl"
             />
           </div>
@@ -47,7 +48,7 @@ export default function FeaturesTabSection() {
                   className="absolute inset-0 rounded-[20px] pointer-events-none"
                   style={{
                     padding: "1px",
-                    background: index % 2 === 1 
+                    background: index % 2 === 1
                       ? "linear-gradient(239.84deg, #795CF5 7.92%, rgba(26, 209, 185, 0.4) 40.44%, rgba(26, 209, 185, 0) 60.44%)"
                       : "linear-gradient(135.32deg, #795CF5 0%, rgba(26, 209, 185, 0.4) 40.44%, rgba(26, 209, 185, 0) 60.44%)",
                     WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
@@ -55,12 +56,13 @@ export default function FeaturesTabSection() {
                     maskComposite: "exclude",
                   }}
                 />
-                
+
                 <div className="flex items-center justify-start mb-5 relative z-10">
                   <Image
                     src={feature.icon}
                     width={feature.iconWidth || 44}
                     height={feature.iconHeight || 44}
+                    loading="lazy"
                     className="w-6 h-6 sm:w-11 sm:h-11 object-contain"
                     alt={feature.title}
                   />

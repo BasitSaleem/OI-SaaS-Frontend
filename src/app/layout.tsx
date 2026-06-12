@@ -41,6 +41,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { ScrollLockProvider } from "@/context/ScrollLockContext";
+import LenisProvider from "@/components/pages/lenisProvider/LenixProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +52,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* DNS prefetch for third-party origins — eliminates ~200ms lookup latency per domain */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+        {/* Preconnect for Google Fonts — opens TCP+TLS early so font bytes arrive faster */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
         <meta name="google-site-verification" content="CIvLSxFYDU-_qgrVlQV1g27znqLQZ5P5Sf5bf44fbvE" />
         <meta name="facebook-domain-verification" content="7gvuicd35m5xq653dyvp2anabgc7is" />
         <Script id="microsoft-clarity" strategy="lazyOnload">
@@ -89,37 +103,40 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${onest.variable} ${inter.variable} antialiased`}
       >
-        
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5LZ72NX8"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1435291848047613&ev=PageView&noscript=1"
-          />
-        </noscript>
-        <ScrollToTop />
-        <Navbar />
-        {children}
-        <ToastContainer
-          position="top-right"
-          autoClose={4000}
-          hideProgressBar={false}
-          newestOnTop
-          closeOnClick
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
+        <ScrollLockProvider>
+          <LenisProvider>
+            <noscript>
+              <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5LZ72NX8"
+                height="0"
+                width="0"
+                style={{ display: "none", visibility: "hidden" }}
+              ></iframe>
+            </noscript>
+            <noscript>
+              <img
+                height="1"
+                width="1"
+                style={{ display: "none" }}
+                src="https://www.facebook.com/tr?id=1435291848047613&ev=PageView&noscript=1"
+              />
+            </noscript>
+            <ScrollToTop />
+            <Navbar />
+            {children}
+            <ToastContainer
+              position="top-right"
+              autoClose={4000}
+              hideProgressBar={false}
+              newestOnTop
+              closeOnClick
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+          </LenisProvider>
+        </ScrollLockProvider>
       </body>
     </html>
   );

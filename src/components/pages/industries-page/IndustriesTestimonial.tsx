@@ -7,14 +7,14 @@ import SmartTools from "../landing-page/SmartTools";
 import CustomSwiper from "@/components/slider/CustomSwiper";
 import Paragraph from "../typography/Paragraph";
 import WhyChooseCard from "./WhyChooseCard";
-import { 
-  Package, 
-  BarChart3, 
-  Users, 
-  ClipboardCheck, 
-  Settings2, 
-  Pointer, 
-  AppWindow 
+import {
+  Package,
+  BarChart3,
+  Users,
+  ClipboardCheck,
+  Settings2,
+  Pointer,
+  AppWindow
 } from "lucide-react";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
 
@@ -46,7 +46,7 @@ interface IndustriesTestimonialProps {
   whyChooseDescription?: string;
   features?: Feature[];
   /** The name of the icon set to use (e.g. "bakery", "retail") */
-  iconSet?: IndustryIconSet;
+  iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
 const DEFAULT_GRADIENT_BACKGROUND = `
@@ -89,7 +89,7 @@ const PURPLE_ICON = "/assets/review-section/double-coma-icon.svg";
 const GREEN_ICON = "/assets/review-section/coma-green.svg";
 
 const DEFAULT_FEATURES: Feature[] = [
-  
+
 ];
 
 const IndustriesTestimonial = ({
@@ -147,18 +147,51 @@ const IndustriesTestimonial = ({
             alt="Quote icon"
             width={26}
             height={26}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
 
         <div className="flex items-center gap-4 mb-5">
-          <Image
-            src={slide.image}
-            alt={slide.name}
-            width={48}
-            height={48}
-            className="rounded-full border-2 w-[48px] h-[48px] "
-            style={{ borderColor: accentColor }}
-          />
+
+          {/* <div className="border-2 w-[48px] h-[48px] overflow-hidden rounded-full flex items-center justify-center" style={{ borderColor: accentColor }}>
+          {iconSet && slide.image ? (
+            <IndustryIcon
+              set={iconSet}
+              name={slide.image}
+              size={48}
+              className="rounded-full"
+          
+            />
+          ) : slide.image?.startsWith("/") ? (
+            <Image
+              src={slide.image}
+              alt={slide.name}
+              width={48}
+              height={48}
+              className="rounded-full  object-contain"
+              
+            />
+          ) : null}
+          </div> */}
+
+          <div className="w-[56px] h-[56px] flex items-center justify-center rounded-full border-2" style={{ borderColor: accentColor }}>
+            {slide.image.startsWith("/") ? (
+              <Image
+                src={slide.image}
+                alt={`${slide.title} Icon`}
+                width={56}
+                height={56}
+                className="h-full w-full rounded-full flex items-center justify-center"
+              />
+            ) : (
+              <IndustryIcon
+                set={iconSet}
+                name={slide.image}
+                size={56}
+                className="h-full w-full rounded-full flex items-center justify-center child-svg-full"
+              />
+            )}
+          </div>
 
           <div className="">
             <p className="font-semibold text-xl font-['onest']">
@@ -186,7 +219,7 @@ const IndustriesTestimonial = ({
       style={{ background: '#ffffff' }}
     >
       <section className="wrapper">
-       
+
         <div className="mb-10">
           <MainHeading className="text-center mb-10">
             {heading}
@@ -210,7 +243,7 @@ const IndustriesTestimonial = ({
           />
         )}
 
-         {whyChooseShow && (
+        {whyChooseShow && (
           <div className="mt-24">
             <div className="text-center mx-auto mb-16">
               <MainHeading className="mb-6">
@@ -222,7 +255,7 @@ const IndustriesTestimonial = ({
             <div className="grid grid-cols-12 gap-6">
               {features.map((feature, index) => {
                 let colSpanClass = "col-span-12"; // Mobile default
-                
+
                 if (features.length === 8) {
                   // If there are exactly 8 cards, show 4 cards per row on desktop (col-span-3)
                   colSpanClass += " md:col-span-6 lg:col-span-3";

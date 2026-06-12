@@ -636,28 +636,28 @@ const icons = {
   ),
   whychoseIcon5: (
     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clipPath="url(#clip0_7043_11517)">
-<path d="M42.713 10.9542L33.0479 1.28906L23.3828 10.9542H28.9057V42.7109H37.19V10.9542H42.713Z" stroke="#1AD1B9" strokeWidth="2.57812" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M10.2844 30H2V42.4266H10.2844V30Z" stroke="#F95C5B" strokeWidth="2.57812" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M23.2844 19H15V42.4724H23.2844V19Z" stroke="#B11E67" strokeWidth="2.57812" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_7043_11517">
-<rect width="44" height="44" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+      <g clipPath="url(#clip0_7043_11517)">
+        <path d="M42.713 10.9542L33.0479 1.28906L23.3828 10.9542H28.9057V42.7109H37.19V10.9542H42.713Z" stroke="#1AD1B9" strokeWidth="2.57812" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10.2844 30H2V42.4266H10.2844V30Z" stroke="#F95C5B" strokeWidth="2.57812" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M23.2844 19H15V42.4724H23.2844V19Z" stroke="#B11E67" strokeWidth="2.57812" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_7043_11517">
+          <rect width="44" height="44" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
 
   ),
 
-   whychoseIcon6: (
-     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.0013 40.3334C32.1265 40.3334 40.3346 32.1253 40.3346 22.0001C40.3346 11.8749 32.1265 3.66675 22.0013 3.66675C11.8761 3.66675 3.66797 11.8749 3.66797 22.0001C3.66797 32.1253 11.8761 40.3334 22.0013 40.3334Z" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M14.6682 5.5H16.5016C12.9266 16.2067 12.9266 27.7933 16.5016 38.5H14.6682" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M27.5 5.5C31.075 16.2067 31.075 27.7933 27.5 38.5" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M5.5 29.3333V27.5C16.2067 31.075 27.7933 31.075 38.5 27.5V29.3333" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M5.5 16.5001C16.2067 12.9251 27.7933 12.9251 38.5 16.5001" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
+  whychoseIcon6: (
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.0013 40.3334C32.1265 40.3334 40.3346 32.1253 40.3346 22.0001C40.3346 11.8749 32.1265 3.66675 22.0013 3.66675C11.8761 3.66675 3.66797 11.8749 3.66797 22.0001C3.66797 32.1253 11.8761 40.3334 22.0013 40.3334Z" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14.6682 5.5H16.5016C12.9266 16.2067 12.9266 27.7933 16.5016 38.5H14.6682" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M27.5 5.5C31.075 16.2067 31.075 27.7933 27.5 38.5" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5.5 29.3333V27.5C16.2067 31.075 27.7933 31.075 38.5 27.5V29.3333" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5.5 16.5001C16.2067 12.9251 27.7933 12.9251 38.5 16.5001" stroke="#795CF5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
 
   ),
 
@@ -926,6 +926,7 @@ export default function posHardwarePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

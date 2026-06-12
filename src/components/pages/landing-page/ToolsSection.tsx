@@ -1,6 +1,6 @@
 import React from "react";
+import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
-import CardHeading from "../typography/CardHeading";
 import Paragraph from "../typography/Paragraph";
 
 interface Tool {
@@ -43,20 +43,23 @@ const ToolsSection = ({
             const i = index % 5;
 
             let mdCol = "md:col-span-6";
-            if (i === 4) mdCol = "md:col-span-12"; 
+            if (i === 4) mdCol = "md:col-span-12";
 
             let lgCol = "lg:col-span-4";
-            if (i >= 3) lgCol = "lg:col-span-6"; 
+            if (i >= 3) lgCol = "lg:col-span-6";
 
             return (
               <div
                 key={tool.id}
                 className={`col-span-12 ${mdCol} ${lgCol} bg-white p-5 rounded-2xl flex flex-col gap-4 items-center justify-start`}
               >
-                <img
+                <Image
                   src={tool.image}
                   alt={tool.name}
+                  width={56}
+                  height={56}
                   className="w-14 h-14 object-contain"
+                  loading="lazy"
                 />
                 <p className="font-semibold text-[var(--text-dark)] font-['Onest'] lg:text-2xl text-xl md:leading-[100%] leading-[140%]">{tool.name}</p>
               </div>

@@ -1287,6 +1287,7 @@ export default function posRetailStorePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

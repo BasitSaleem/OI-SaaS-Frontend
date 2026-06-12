@@ -67,7 +67,7 @@ export const featuresItems: FeatureItem[] = [
   //   icon: '/assets/header-dropdown-images/marketing.svg',
   //   category: 'sales-marketing',
   // },
-  
+
   // Operations
   {
     key: 'facilities',
@@ -88,7 +88,7 @@ export const featuresItems: FeatureItem[] = [
     icon: '/assets/header-dropdown-images/inventory-operations.svg',
     category: 'operations',
   },
- 
+
   {
     key: 'products',
     title: 'Products',
@@ -96,15 +96,15 @@ export const featuresItems: FeatureItem[] = [
     category: 'operations',
   },
 
-   {
+  {
     key: 'manufacturing',
     title: 'Manufacturing',
     icon: '/assets/header-dropdown-images/manufacturing.svg',
     category: 'operations',
   },
-  
-  
-  
+
+
+
   // Analytics & Reporting
   {
     key: 'reports',
@@ -118,14 +118,14 @@ export const featuresItems: FeatureItem[] = [
   //   icon: '/assets/header-dropdown-images/advance-reports.svg',
   //   category: 'analytics',
   // },
-  
+
   // Finance
   {
     key: 'accounts-and-finance',
     title: 'Accounts & Finance',
     icon: '/assets/header-dropdown-images/account-finance.svg',
     category: 'finance',
-    
+
   },
 
   {
@@ -140,7 +140,7 @@ export const featuresItems: FeatureItem[] = [
     icon: '/assets/header-dropdown-images/human-resources.svg',
     category: 'finance',
   },
-  
+
   // Tools & Integrations
   {
     key: 'integrations',
@@ -175,61 +175,61 @@ export const featuresDetailsMap: Record<string, FeatureTreeItem[]> = {
     { title: 'Return Sales' },
     { title: 'Multiple Payment Methods' },
   ],
-   inventory: [
+  inventory: [
     { title: 'Transfer Orders' },
     { title: 'Stock Issuing' },
     { title: 'Stock Receiving' },
     { title: 'Stock Adjustments' },
   ],
   people: [
-  { title: 'Users' },
-  { title: 'Customers' },
-  { title: 'Suppliers' },
-],
+    { title: 'Users' },
+    { title: 'Customers' },
+    { title: 'Suppliers' },
+  ],
 
-hr: [
-  { title: 'Employees' },
-  { title: 'Departments' },
-  { title: 'Designations' },
-  { title: 'Payslips' },
-],
+  hr: [
+    { title: 'Employees' },
+    { title: 'Departments' },
+    { title: 'Designations' },
+    { title: 'Payslips' },
+  ],
 
-restaurant: [
-  { title: 'Floors' },
-  { title: 'Tables' },
-  { title: 'Decorations' },
-],
+  restaurant: [
+    { title: 'Floors' },
+    { title: 'Tables' },
+    { title: 'Decorations' },
+  ],
 
-purchases: [
-  { title: 'Purchase Orders' },
-  { title: 'Add Purchase' },
-  { title: 'Bulk Purchase' },
-],
+  purchases: [
+    { title: 'Purchase Orders' },
+    { title: 'Add Purchase' },
+    { title: 'Bulk Purchase' },
+  ],
 
-manufacturing: [
-  { title: 'Production Orders' },
-  { title: 'Machines' },
-  { title: 'Moulds' },
-  { title: 'Quality Inspections' },
-],
+  manufacturing: [
+    { title: 'Production Orders' },
+    { title: 'Machines' },
+    { title: 'Moulds' },
+    { title: 'Quality Inspections' },
+  ],
 
-integrations: [
-  { title: 'Shopify Integration' },
-  { title: 'CMS Integration' },
-  { title: 'Payment Integration' },
-  { title: 'Quickbook Integration' },
-  { title: 'Marketing Tools Integration' },
-],
+  integrations: [
+    { title: 'Shopify Integration' },
+    { title: 'CMS Integration' },
+    { title: 'Payment Integration' },
+    { title: 'Quickbook Integration' },
+    { title: 'Marketing Tools Integration' },
+  ],
 
-// marketing: [
-//   { title: 'Coupons' },
-//   { title: 'Loyalty' },
-// ],
+  // marketing: [
+  //   { title: 'Coupons' },
+  //   { title: 'Loyalty' },
+  // ],
   "sales-and-order": [
-  { title: 'Invoices' },
-  { title: 'Quotations' },
-  { title: 'Sales Orders' },
-],
+    { title: 'Invoices' },
+    { title: 'Quotations' },
+    { title: 'Sales Orders' },
+  ],
 
 
   facilities: [
@@ -254,14 +254,14 @@ integrations: [
     { title: 'Warehouses' },
     { title: 'Production Floors' },
   ],
-  products:[
-    
-     { title: 'Products'},
-      {title: 'Add Product '},
-      // {title: 'Add Raw Material'},
-      {title: 'Categories'},
-      {title: 'Brands'},
-    
+  products: [
+
+    { title: 'Products' },
+    { title: 'Add Product ' },
+    // {title: 'Add Raw Material'},
+    { title: 'Categories' },
+    { title: 'Brands' },
+
   ],
   reports: [
     {
@@ -301,32 +301,37 @@ integrations: [
   ],
 
   "accounts-and-finance": [
-    { title: 'Chart of Accounts' ,
+    {
+      title: 'Chart of Accounts',
       children: [
         { title: 'Chart of Accounts' },
         { title: 'Trial Balance' },
       ]
     },
-     { title: 'Journal Management' ,
+    {
+      title: 'Journal Management',
       children: [
         { title: 'Journal Entry' },
         { title: 'Journal Report Entry' },
       ]
     },
-     { title: 'Financial Reports' ,
+    {
+      title: 'Financial Reports',
       children: [
         { title: 'Balance Sheet' },
         { title: 'Reports (Cash, Flow, PLS)' },
       ]
     },
-     { title: 'Payables & Recievables' ,
+    {
+      title: 'Payables & Recievables',
       children: [
         { title: 'Payables & Recievables' },
         { title: 'Recievables Ledger' },
         { title: 'Payable Report' },
       ]
     },
-     { title: 'Assets' ,
+    {
+      title: 'Assets',
       children: [
         { title: 'Parts' },
         { title: 'Allocations' },
@@ -377,10 +382,10 @@ integrations: [
     { title: 'Themes (Owners Jungle)' },
     { title: 'Orders' },
     { title: 'Discounts' },
-     { title: 'Campaign' },
+    { title: 'Campaign' },
     { title: 'Payment Methods' },
     { title: 'Shipping Companies' },
-     {
+    {
       title: 'Marketing',
       children: [
         { title: 'Coupons' },
@@ -390,19 +395,19 @@ integrations: [
   ],
 
   tools: [
-     { title: 'Activity Logs' },
+    { title: 'Activity Logs' },
     { title: 'Stock Alerts' },
-    
+
   ],
 };
 
 
-export const  FeatureList = ({ items }: { items: FeatureTreeItem[] }) => (
+export const FeatureList = ({ items }: { items: FeatureTreeItem[] }) => (
   <ul className="pl-4 space-y-1">
     {items.map((item) => (
       <li key={item.title}>
         <p
-          
+
           className="text-xs font-normal font-['Onest'] leading-7 text-[var(--text-dark)]"
         >
           {item.title}
@@ -416,14 +421,14 @@ export const  FeatureList = ({ items }: { items: FeatureTreeItem[] }) => (
 // Group features by category (helper function)
 export const groupFeaturesByCategory = (): Record<string, FeatureItem[]> => {
   const grouped: Record<string, FeatureItem[]> = {};
-  
+
   featuresItems.forEach((item) => {
     if (!grouped[item.category]) {
       grouped[item.category] = [];
     }
     grouped[item.category].push(item);
   });
-  
+
   return grouped;
 };
 

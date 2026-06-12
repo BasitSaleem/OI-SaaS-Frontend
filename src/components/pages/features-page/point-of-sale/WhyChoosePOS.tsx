@@ -21,7 +21,7 @@ interface WhyChoosePOSProps {
   mainVideo?: string;
   backgroundImage?: string | StaticImageData;
   /** The name of the icon set to use (e.g. "bakery", "retail") */
-  iconSet?: IndustryIconSet;
+  iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
 function WhyChoosePOS({
@@ -34,28 +34,28 @@ function WhyChoosePOS({
   iconSet,
 }: WhyChoosePOSProps) {
 
-   const [isTablet, setIsTablet] = useState(false);
-  
-    // Detect tablet screen size
-    useEffect(() => {
-      const checkTablet = () => {
-        setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
-      };
-  
-      checkTablet();
-      window.addEventListener("resize", checkTablet);
-      return () => window.removeEventListener("resize", checkTablet);
-    }, []);
+  const [isTablet, setIsTablet] = useState(false);
 
-    const bgUrl = backgroundImage 
-      ? typeof backgroundImage === 'string' 
-        ? backgroundImage 
-        : backgroundImage.src 
-      : '';
+  // Detect tablet screen size
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    checkTablet();
+    window.addEventListener("resize", checkTablet);
+    return () => window.removeEventListener("resize", checkTablet);
+  }, []);
+
+  const bgUrl = backgroundImage
+    ? typeof backgroundImage === 'string'
+      ? backgroundImage
+      : backgroundImage.src
+    : '';
 
   return (
     <section className="lg:mt-[100px] md:mt-28 mt-20">
-      <div className="finance-reporting-shadow">
+      <div className="why-chose-gredient-bg">
         <div className="wrapper">
           {/* Heading Section */}
           <div className="flex flex-col items-center justify-center">
@@ -110,49 +110,49 @@ function WhyChoosePOS({
 
             {/* Main Image Container */}
             <div className="xl:col-span-6 col-span-6">
-              <div 
+              <div
                 className="relative rounded-[20px] pt-12 pb-5 flex align-center justify-center overflow-hidden"
                 style={
-                  mainVideo && !isTablet && bgUrl 
-                    ? { 
-                        backgroundImage: `url(${bgUrl})`,
-                        backgroundSize: '100% 100%',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                      } 
+                  mainVideo && !isTablet && bgUrl
+                    ? {
+                      backgroundImage: `url(${bgUrl})`,
+                      backgroundSize: '100% 100%',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }
                     : {}
                 }
               >
-                 {!mainVideo && mainImage ? (
-                                    <Image
-                                      src={mainImage}
-                                      alt= "why chose banner"
-                                      width={743}
-                                      height={460}
-                                      className="w-full h-auto object-cover"
-                                      priority
-                                    />
-                                  ) : isTablet && mainImage ? (
-                                    <Image
-                                      src={mainImage}
-                                      alt="why chose banner"
-                                      width={743}
-                                      height={460}
-                                      className={`w-full object-cover rounded-3xl`}
-                                      priority
-                                    />
-                                  ) : mainVideo ? (
-                                    <video
-                                      className="w-full object-cover rounded-3xl"
-                                      autoPlay
-                                      muted
-                                      loop
-                                      playsInline
-                                    >
-                                      <source src={mainVideo} type="video/webm" />
-                                      Your browser does not support the video tag.
-                                    </video>
-                                  ) : null}
+                {!mainVideo && mainImage ? (
+                  <Image
+                    src={mainImage}
+                    alt="why chose banner"
+                    width={743}
+                    height={460}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
+                ) : isTablet && mainImage ? (
+                  <Image
+                    src={mainImage}
+                    alt="why chose banner"
+                    width={743}
+                    height={460}
+                    className={`w-full object-cover rounded-3xl`}
+                    priority
+                  />
+                ) : mainVideo ? (
+                  <video
+                    className="w-full object-cover rounded-3xl"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src={mainVideo} type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : null}
               </div>
             </div>
           </div>

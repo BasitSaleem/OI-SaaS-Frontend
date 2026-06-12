@@ -40,40 +40,40 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     truncateTitle && title.length > maxTitleLength
       ? title.slice(0, maxTitleLength) + "..."
       : title;
-  
+
   return (
     <div
       className={`p-[1px] rounded-[30px] features-core-opretions__cards 
         bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] 
-        ${heightClass} ${className} h-full`} 
+        ${heightClass} ${className} h-full`}
     >
       <div className="bg-white w-full rounded-[30px] h-full p-2 lg:p-4 flex flex-col">
-        <div className="flex flex-col flex-1"> 
+        <div className="flex flex-col flex-1">
           {/* Media */}
           <div
             className={`w-full ${paddingClass} pb-0 production-banner 
               bg-[linear-gradient(90deg,rgba(26,209,185,0.2)_32.74%,rgba(56,172,204,0.2)_52.46%,rgba(85,136,223,0.2)_76.39%,rgba(121,92,245,0.2)_100%)] 
               rounded-[20px]`}
           >
-           
-              <img
-                src={imageSrc}
-                alt={title}
-                className={`w-full rounded-[20px] ${mediaClassName}`}
-              />
-           
+
+            <img
+              src={imageSrc}
+              alt={title}
+              className={`w-full rounded-[20px] ${mediaClassName}`}
+            />
+
           </div>
 
           {/* Text Content */}
-          <div className="mt-5 flex flex-col flex-1"> 
+          <div className="mt-5 flex flex-col flex-1">
             <CardHeading className="mb-4 min-h-[70px] lg:min-h-[70px] flex self-stretch">
               {displayedTitle}
             </CardHeading>
 
-            <CardDesc className="flex-1 mb-6"> 
+            <CardDesc className="flex-1 mb-6">
               {description}
             </CardDesc>
-             
+
             <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
               {authorName}
             </p>

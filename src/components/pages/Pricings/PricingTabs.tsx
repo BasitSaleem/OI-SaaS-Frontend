@@ -17,10 +17,9 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
       <div className="flex items-center gap-3">
         {/* Monthly Label */}
         <span
-          className={`text-base font-['Onest'] font-semibold ${
-            activeTab === "monthly" ? "text-[var(--text-dark)]" : "text-gray-400"
-          }`}
-        > 
+          className={`text-base font-['Onest'] font-semibold ${activeTab === "monthly" ? "text-[var(--text-dark)]" : "text-gray-400"
+            }`}
+        >
           Monthly
         </span>
 
@@ -29,25 +28,22 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
           onClick={() =>
             onTabChange(activeTab === "monthly" ? "yearly" : "monthly")
           }
-          className={`relative inline-flex items-center h-6 md:h-8 w-12 md:w-16 rounded-full transition-colors duration-300 focus:outline-none  ${
-            activeTab === "yearly" ? "bg-[var(--primary-purple)]" : "bg-[var(--primary-teal)]"
-          }`}
+          className={`relative inline-flex items-center h-6 md:h-8 w-12 md:w-16 rounded-full transition-colors duration-300 focus:outline-none  ${activeTab === "yearly" ? "bg-[var(--primary-purple)]" : "bg-[var(--primary-teal)]"
+            }`}
           role="switch"
           aria-checked={activeTab === "yearly"}
           aria-label={`Switch to ${activeTab === "monthly" ? "yearly" : "monthly"} pricing`}
         >
           <span
-            className={`inline-block w-5 h-5 md:w-6 md:h-6 bg-white rounded-full shadow transform transition-transform duration-300 ${
-              activeTab === "yearly" ? "translate-x-6 md:translate-x-9" : "translate-x-1"
-            }`}
+            className={`inline-block w-5 h-5 md:w-6 md:h-6 bg-white rounded-full shadow transform transition-transform duration-300 ${activeTab === "yearly" ? "translate-x-6 md:translate-x-9" : "translate-x-1"
+              }`}
           />
         </button>
 
         {/* Yearly Label */}
         <span
-          className={`text-base font-['Onest'] font-semibold ${
-            activeTab === "yearly" ? "text-[var(--text-dark)]" : "text-gray-400"
-          }`}
+          className={`text-base font-['Onest'] font-semibold ${activeTab === "yearly" ? "text-[var(--text-dark)]" : "text-gray-400"
+            }`}
         >
           Yearly
         </span>
@@ -62,10 +58,9 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         onClick={() => onTabChange("monthly")}
         className={`tab-btn px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-[14px] 
           text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
-          transition-colors duration-300 focus:outline-none  ${
-            activeTab === "monthly"
-              ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
-              : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
+          transition-colors duration-300 focus:outline-none  ${activeTab === "monthly"
+            ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
+            : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
           }`}
         aria-pressed={activeTab === "monthly"}
       >
@@ -78,10 +73,9 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
           onClick={() => onTabChange("yearly")}
           className={`tab-btn relative px-4 py-2 md:px-5 md:py-2 lg:px-[60px] lg:py-3.5
            text-sm lg:text-base font-['Onest'] font-semibold border rounded-full 
-            transition-colors duration-300 focus:outline-none  ${
-              activeTab === "yearly"
-                ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
-                : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
+            transition-colors duration-300 focus:outline-none  ${activeTab === "yearly"
+              ? "text-white bg-[var(--primary-purple)] border-[var(--primary-purple)]"
+              : "text-gray-800 bg-transparent border-transparent hover:text-white hover:bg-[var(--primary-purple)] hover:border-[var(--primary-purple)]"
             }`}
           aria-pressed={activeTab === "yearly"}
         >

@@ -1,18 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import globalGsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import dynamic from "next/dynamic";
 import ButtonSm from "@/components/button/ButtonSm";
-import Image from "next/image";
 import MainHeading from "../typography/MainHeading";
-import ContactModal from "@/components/models/ContactModal";
 import TrollyAnimation from "./trollyAnimation";
 
+// ContactModal pulls in react-hook-form + zod + react-phone-number-input.
+// Load it only when the user actually triggers it (ssr:false because it's a modal).
+const ContactModal = dynamic(() => import("@/components/models/ContactModal"), {
+  ssr: false,
+});
 
-if (typeof window !== "undefined") {
-  globalGsap.registerPlugin(ScrollTrigger);
-}
+
 
 function SmartWaytoSyncndSellSection() {
   const [openModal, setOpenModal] = useState(false);

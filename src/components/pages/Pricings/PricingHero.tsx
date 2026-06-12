@@ -1,4 +1,4 @@
-"use client"; // ✅ Required if you're in Next.js App Router
+﻿"use client";
 
 import React, { useEffect } from "react";
 import gsap from "gsap";
@@ -34,7 +34,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
   useEffect(() => {
     let heroBreak = gsap.matchMedia();
 
-    // ✅ Mobile
+    // âœ… Mobile
     heroBreak.add("(min-width: 320px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -51,7 +51,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
     });
 
 
-    // ✅ Desktop
+    // âœ… Desktop
     heroBreak.add("(min-width: 1024px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -191,7 +191,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                           y2="27.4969"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#795CF5" />
+                          <stop stopColor="#795CF5" />
                         </linearGradient>
                         <linearGradient
                           id="paint1_linear_6938_17787"
@@ -201,7 +201,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                           y2="15.625"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#795CF5" />
+                          <stop stopColor="#795CF5" />
                         </linearGradient>
                         <linearGradient
                           id="paint2_linear_6938_17787"
@@ -211,7 +211,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                           y2="19.375"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#795CF5" />
+                          <stop stopColor="#795CF5" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -229,3 +229,4 @@ const PricingHero: React.FC<PricingHeroProps> = ({
 };
 
 export default PricingHero;
+

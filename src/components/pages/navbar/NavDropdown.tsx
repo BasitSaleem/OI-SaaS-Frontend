@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { useScrollLockEffect } from "@/context/ScrollLockContext";
 
 type NavDropdownProps = {
   label: string;
@@ -21,6 +22,8 @@ const NavDropdown = ({ label,
   children, }: NavDropdownProps) => {
   const router = useRouter();
   const ref = useRef<HTMLLIElement>(null);
+
+  useScrollLockEffect(isOpen);
 
   // close when click outside
   useEffect(() => {
@@ -57,10 +60,7 @@ const NavDropdown = ({ label,
 
       {/* Dropdown Menu */}
       {isOpen && <div
-        // className={`
-        //   dropdown-menu absolute lg:top-10 top-8 left-1/2 z-50 hidden xl:w-[1220px] lg:w-[950px] md:w-[700px] bg-amber-700  transform -translate-x-1/2  group-hover:flex flex-col h-[55
-        //           0px]
-        // `}
+        data-lenis-prevent
         className={`
           dropdown-menu absolute lg:top-10 top-8 left-1/2 z-50 hidden transform -translate-x-1/2 lg:min-w-[650px] xl:min-w-[800px]  group-hover:flex flex-col h-[55
                   0px]

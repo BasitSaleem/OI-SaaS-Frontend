@@ -21,23 +21,23 @@ const PrivacyPolicyPage = () => {
             Privacy Policy
           </h1>
 
-           <div  className="flex flex-col gap-6 md:gap-8 pb-10">
-                <SubHeading>
-                 Introduction and Our Commitment to Privacy
-                </SubHeading>
-                
-                <div className="flex flex-col gap-8 lg:gap-10">
-                    <div  className="flex flex-col"> 
-                       <Paragraph
-                          
-                          className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20] mb-4 last:mb-0"
-                        >
-                          Owners Inventory (we, our, or us) values your privacy and is dedicated to keeping your personal information safe. This Privacy Policy describes the information we gather, its use, sharing, and the options you have about your data. Through our Services, you consent to the practices outlined in this Privacy Policy.
-                        </Paragraph>
-                    </div>
-               
-                </div>
+          <div className="flex flex-col gap-6 md:gap-8 pb-10">
+            <SubHeading>
+              Introduction and Our Commitment to Privacy
+            </SubHeading>
+
+            <div className="flex flex-col gap-8 lg:gap-10">
+              <div className="flex flex-col">
+                <Paragraph
+
+                  className="text-sm md:text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-9 font-['Onest'] font-normal text-[#231F20] mb-4 last:mb-0"
+                >
+                  Owners Inventory (we, our, or us) values your privacy and is dedicated to keeping your personal information safe. This Privacy Policy describes the information we gather, its use, sharing, and the options you have about your data. Through our Services, you consent to the practices outlined in this Privacy Policy.
+                </Paragraph>
               </div>
+
+            </div>
+          </div>
 
           <div className="flex flex-col gap-10 md:gap-16 lg:gap-20">
             {PRIVACY_POLICY_DATA.map((part: any, pIndex: number) => (
@@ -45,7 +45,7 @@ const PrivacyPolicyPage = () => {
                 <SubHeading>
                   {part.partTitle}
                 </SubHeading>
-                
+
                 <div className="flex flex-col gap-8 lg:gap-10">
                   {part.sections.map((section: any, sIndex: number) => (
                     <div key={sIndex} className="flex flex-col">

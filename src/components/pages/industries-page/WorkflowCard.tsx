@@ -43,21 +43,21 @@ const WorkflowCard = ({ number, title, description }: WorkflowCardProps) => {
     <div className="relative group p-[0px] pt-[2px] rounded-[30px]  bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] h-full">
       <div className="relative flex flex-col items-center p-2 lg:p-4 rounded-[27px] bg-white  h-full overflow-hidden">
         <div className="relative flex flex-col items-center  rounded-[27px] p-6 h-full  "
-        style={{ background: DEFAULT_GRADIENT_BACKGROUND }}
+          style={{ background: DEFAULT_GRADIENT_BACKGROUND }}
         >
-        
 
-        <div className="relative z-10 flex flex-col items-center">
-          <div className="flex items-center justify-center w-20 h-20 mb-6">
-            <PosHardwarePageIcons name={iconName} size={80} />
+
+          <div className="relative z-10 flex flex-col items-center">
+            <div className="flex items-center justify-center w-20 h-20 mb-6">
+              <PosHardwarePageIcons name={iconName} size={80} />
+            </div>
+            <h3 className="text-xl lg:text-2xl leading-[140%] font-['onest'] font-semibold mb-4 text-[var(--text-dark)] text-center min-h-[58px] lg:min-h-[70px]">
+              {title}
+            </h3>
+            <p className="text-sm leading-[170%] font-['onest'] text-[var(--text-grey)] font-normal  text-center">
+              {description}
+            </p>
           </div>
-          <h3 className="text-xl lg:text-2xl leading-[140%] font-['onest'] font-semibold mb-4 text-[var(--text-dark)] text-center min-h-[58px] lg:min-h-[70px]">
-            {title}
-          </h3>
-          <p className="text-sm leading-[170%] font-['onest'] text-[var(--text-grey)] font-normal  text-center">
-            {description}
-          </p>
-        </div>
         </div>
       </div>
     </div>

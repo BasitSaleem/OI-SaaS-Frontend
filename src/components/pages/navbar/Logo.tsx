@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Logo = () => (
-  <div className="lg:w-auto header-left-col z-50 absolute md:left-2 left-2">
+  <div className="lg:w-auto header-left-col z-50 absolute md:left-2 left-2" style={{ opacity: 0, transform: "translateY(-150px)" }}>
     <a href="/" className="shrink-0">
       <Image
         src="/assets/owner-inventory-logo.svg"

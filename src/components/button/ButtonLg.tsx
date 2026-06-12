@@ -8,7 +8,7 @@ interface ButtonLgProps {
   textColor?: string;
   isBorder?: boolean;
   hoverBgColor?: string;
-  className?: string;  
+  className?: string;
 }
 
 const ButtonLg: React.FC<ButtonLgProps> = ({
@@ -18,7 +18,7 @@ const ButtonLg: React.FC<ButtonLgProps> = ({
   textColor = "white",
   isBorder = false,
   hoverBgColor,
-  className = "",       
+  className = "",
 }) => {
   const parsedBgColor = bgColor.startsWith("[") && bgColor.endsWith("]") ? bgColor.slice(1, -1) : bgColor;
   const parsedTextColor = textColor.startsWith("[") && textColor.endsWith("]") ? textColor.slice(1, -1) : textColor;

@@ -336,90 +336,90 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="The Best POS System for Small Retail Stores"
-        description="Running a small shop requires speed, control, and accuracy. Our POS system for small retail store owners is designed to simplify billing, inventory management, employee tracking, and reporting in one centralized system. Instead of juggling spreadsheets or manual registers, retailers can manage their entire store from a single dashboard."
-        image={heroBanner}
-        imageClassName="max-w-[1000px]"
-        ctaDesc="Start Free Today"
-        variant="animation2"
-      />
+          description="Running a small shop requires speed, control, and accuracy. Our POS system for small retail store owners is designed to simplify billing, inventory management, employee tracking, and reporting in one centralized system. Instead of juggling spreadsheets or manual registers, retailers can manage their entire store from a single dashboard."
+          image={heroBanner}
+          imageClassName="max-w-[1000px]"
+          ctaDesc="Start Free Today"
+          variant="animation2"
+        />
 
-      <VoicesRealBusiness title="Ratings on the Leading Review Platforms" />
+        <VoicesRealBusiness title="Ratings on the Leading Review Platforms" />
 
-      <IndustryUnifiedPlatform
-        heading={RETAIL_STORE_UNIFIED_HEADING}
-        paragraph={RETAIL_STORE_UNIFIED_PARAGRAPH}
-        cards={RETAIL_STORE_UNIFIED_CARDS}
-        iconSet="retail"
-      />
+        <IndustryUnifiedPlatform
+          heading={RETAIL_STORE_UNIFIED_HEADING}
+          paragraph={RETAIL_STORE_UNIFIED_PARAGRAPH}
+          cards={RETAIL_STORE_UNIFIED_CARDS}
+          iconSet="retail"
+        />
 
-      <WhyChoosePOS
-        heading="How Our POS System for Small Retail Stores Solves These Challenges?"
-        paragraph="Our POS system for small retail stores centralizes billing, inventory, payments, reports, and employee management, giving owners full control and reducing operational confusion."
-        cards={RETAIL_STORE_WHY_CHOOSE_CARDS}
-        mainImage={whyChoseBanner}
-        iconSet="retail"
-      />
+        <WhyChoosePOS
+          heading="How Our POS System for Small Retail Stores Solves These Challenges?"
+          paragraph="Our POS system for small retail stores centralizes billing, inventory, payments, reports, and employee management, giving owners full control and reducing operational confusion."
+          cards={RETAIL_STORE_WHY_CHOOSE_CARDS}
+          mainImage={whyChoseBanner}
+          iconSet="retail"
+        />
 
-      <KeyHighlights
-        heading="Our Key Features"
-        features={RETAIL_STORE_KEY_FEATURES_CARDS}
-      />
+        <KeyHighlights
+          heading="Our Key Features"
+          features={RETAIL_STORE_KEY_FEATURES_CARDS}
+        />
 
-      <InventoryWorkflow
-        heading={RETAIL_STORE_WORKFLOW_DATA.heading}
-        paragraph={RETAIL_STORE_WORKFLOW_DATA.paragraph}
-        steps={RETAIL_STORE_WORKFLOW_DATA.steps}
-      />
+        <InventoryWorkflow
+          heading={RETAIL_STORE_WORKFLOW_DATA.heading}
+          paragraph={RETAIL_STORE_WORKFLOW_DATA.paragraph}
+          steps={RETAIL_STORE_WORKFLOW_DATA.steps}
+        />
 
-      <IndustriesCallToAction
-        title="Manage Your Small Retail Business Today"
-        description="Control your store efficiently with the best POS system for small retail stores. Retailers using our best point of sale software for small retail business report faster checkouts, smarter inventory management, and happier customers every day."
-        ctaDesc="Request a Free Demo"
-      />
+        <IndustriesCallToAction
+          title="Manage Your Small Retail Business Today"
+          description="Control your store efficiently with the best POS system for small retail stores. Retailers using our best point of sale software for small retail business report faster checkouts, smarter inventory management, and happier customers every day."
+          ctaDesc="Request a Free Demo"
+        />
 
-      <IndustriesFeaturesSection features={RETAIL_STORE_FEATURE_CARDS} />
+        <IndustriesFeaturesSection features={RETAIL_STORE_FEATURE_CARDS} />
 
-      <SecurityCompliance
-        title="Security, Accuracy, and Compliance."
-        description="The security of a POS system is a key factor when choosing one for a small retail store. Our system uses encrypted transaction processing and secure cloud storage to protect sensitive data about customers and stores. Backups are automatically created to ensure that your business data is safe, even if the hardware fails. Access controls based on roles prevent unauthorized use of the system and maintain operational integrity."
-        secondDescription="The POS system is designed to be simple and easy to use, but still offers enterprise-level security. Retailers must have confidence that each transaction is accurately and securely recorded. As the best point of sale software for small retailers, our platform ensures accurate financial reporting, compliance-ready records, and protected payment processing. This level of reliability is the reason why many businesses consider this to be the best small business POS software for long-term operation stability."
-      />
+        <SecurityCompliance
+          title="Security, Accuracy, and Compliance."
+          description="The security of a POS system is a key factor when choosing one for a small retail store. Our system uses encrypted transaction processing and secure cloud storage to protect sensitive data about customers and stores. Backups are automatically created to ensure that your business data is safe, even if the hardware fails. Access controls based on roles prevent unauthorized use of the system and maintain operational integrity."
+          secondDescription="The POS system is designed to be simple and easy to use, but still offers enterprise-level security. Retailers must have confidence that each transaction is accurately and securely recorded. As the best point of sale software for small retailers, our platform ensures accurate financial reporting, compliance-ready records, and protected payment processing. This level of reliability is the reason why many businesses consider this to be the best small business POS software for long-term operation stability."
+        />
 
-      <ToolsSection
-        heading={RETAIL_STORE_TOOLS_DATA.heading}
-        description={RETAIL_STORE_TOOLS_DATA.paragraph}
-        tools={RETAIL_STORE_TOOLS_DATA.tools}
-      />
+        <ToolsSection
+          heading={RETAIL_STORE_TOOLS_DATA.heading}
+          description={RETAIL_STORE_TOOLS_DATA.paragraph}
+          tools={RETAIL_STORE_TOOLS_DATA.tools}
+        />
 
-      <IndustriesTestimonial
-        testimonials={RETAIL_STORE_TESTIMONIALS}
-        heading={RETAIL_STORE_TESTIMONIAL_DATA.heading}
-        paragraph={RETAIL_STORE_TESTIMONIAL_DATA.paragraph}
-        showSmartTools={true}
-        secondHeading={RETAIL_STORE_TESTIMONIAL_DATA.secondHeading}
-        secondDescription={RETAIL_STORE_TESTIMONIAL_DATA.secondDescription}
-        whyChooseShow={true}
-        whyChooseTitle={RETAIL_STORE_TESTIMONIAL_DATA.whyChooseTitle}
-        whyChooseDescription={RETAIL_STORE_TESTIMONIAL_DATA.whyChooseDescription}
-        features={RETAIL_STORE_TESTIMONIAL_FEATURES}
-        iconSet="retail"
-      />
+        <IndustriesTestimonial
+          testimonials={RETAIL_STORE_TESTIMONIALS}
+          heading={RETAIL_STORE_TESTIMONIAL_DATA.heading}
+          paragraph={RETAIL_STORE_TESTIMONIAL_DATA.paragraph}
+          showSmartTools={true}
+          secondHeading={RETAIL_STORE_TESTIMONIAL_DATA.secondHeading}
+          secondDescription={RETAIL_STORE_TESTIMONIAL_DATA.secondDescription}
+          whyChooseShow={true}
+          whyChooseTitle={RETAIL_STORE_TESTIMONIAL_DATA.whyChooseTitle}
+          whyChooseDescription={RETAIL_STORE_TESTIMONIAL_DATA.whyChooseDescription}
+          features={RETAIL_STORE_TESTIMONIAL_FEATURES}
+          iconSet="retail"
+        />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <FaqSection
-          heading="FAQS"
-          paragraph="Our POS system Small Retail Stores is designed to make daily operations smooth and easy."
-          secondParagraph="Here are answers to some common questions from POS system Small Retail Stores owners."
-          faqs={RETAIL_STORE_FAQS}
-          buttonText="Start Now"
+        <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+          <FaqSection
+            heading="FAQS"
+            paragraph="Our POS system Small Retail Stores is designed to make daily operations smooth and easy."
+            secondParagraph="Here are answers to some common questions from POS system Small Retail Stores owners."
+            faqs={RETAIL_STORE_FAQS}
+            buttonText="Start Now"
+          />
+        </div>
+        <IndustriesHardwareControl
+          title="Boost Your Store Today"
+          description="Take control of your small retail business with the best POS system for small retail stores. Retailers using our best point of sale software for small retail business report 30% faster checkouts and happier customers every day."
+          ctaDesc="Start Today"
         />
       </div>
-       <IndustriesHardwareControl
-        title="Boost Your Store Today"
-        description="Take control of your small retail business with the best POS system for small retail stores. Retailers using our best point of sale software for small retail business report 30% faster checkouts and happier customers every day."
-        ctaDesc="Start Today"
-      />
-    </div>
     </>
   );
 };

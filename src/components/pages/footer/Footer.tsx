@@ -1,6 +1,5 @@
 "use client";
 import Copyright from "@/constant/Copyright";
-import { Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -32,18 +31,18 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 
 const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
   const pathname = usePathname();
-   const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout") || pathname.includes("/case-studies");
+  const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout") || pathname.includes("/case-studies");
+  const isCaseStudyDetail = pathname.includes("/case-studies/") && pathname.split("/").length > 2;
 
   return (
     <footer
-      className={`owner-inventory-footer relative md:pb-10 bg-white/50 backdrop-blur-xl ${
-        isContactPage
+      className={`owner-inventory-footer relative md:pb-10 bg-white/50 backdrop-blur-xl ${isContactPage
           ? "pt-10 mt-12"
           : "-mt-[131px] pt-[251px] lg:pt-[291px]"
-      }`}
+        }`}
       style={{ background: gradientBackground || DEFAULT_GRADIENT_BACKGROUND }}
     >
-      <div className="flex md:wrapper flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-t-[40px] md:rounded-[40px]">
+      <div className={`flex ${isCaseStudyDetail ? "" : "md:wrapper"} flex-col gap-10 bg-[var(--white-color)] px-6 py-10 xl:px-[60px] xl:py-[60px] rounded-t-[40px] md:rounded-[40px]`}>
         {/* Top Row */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-10">
           {/* Logo */}
@@ -110,7 +109,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
 
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
-           <Copyright/>
+          <Copyright />
           {/* <p className="text-xs lg:text-base font-normal font-['Onest'] text-[var(--text-dark)]">
             A product of{" "}
             <Link href="#" className="font-semibold font-['Onest'] underline cursor-pointer">
@@ -119,7 +118,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
           </p> */}
         </div>
       </div>
-      
+
     </footer>
   );
 };

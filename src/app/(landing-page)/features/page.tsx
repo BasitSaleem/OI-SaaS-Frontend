@@ -15,13 +15,13 @@ const FaqSection = dynamic(() => import('@/components/pages/landing-page/FAQSect
 const HeroSection = dynamic(() => import('@/components/pages/landing-page/HeroSection'));
 const SellerClubSection = dynamic(() => import('@/components/pages/landing-page/SellerClubSection'));
 
-import { 
-  FINANCE_FEATURES, 
-  FINANCE_SECTION_DATA, 
-  MAIN_FEATURES_HERO, 
-  TEAM_FEATURES, 
-  TEAM_SECTION_DATA, 
-  UTILITIES_DATA 
+import {
+  FINANCE_FEATURES,
+  FINANCE_SECTION_DATA,
+  MAIN_FEATURES_HERO,
+  TEAM_FEATURES,
+  TEAM_SECTION_DATA,
+  UTILITIES_DATA
 } from '@/constant/featuresPageData';
 
 const Page = () => {
@@ -94,7 +94,7 @@ const Page = () => {
         video={MAIN_FEATURES_HERO.video}
         image={MAIN_FEATURES_HERO.image}
         showButtons={false}
-         variant = "animation2"
+        variant="animation2"
       />
 
       <FeaturesCoreOperations />
@@ -105,7 +105,7 @@ const Page = () => {
         features={TEAM_FEATURES}
         wrapperClass={TEAM_SECTION_DATA.wrapperClass}
       />
-      
+
       <div className="overflow-hidden h-full">
         <FeaturesssSection />
       </div>
@@ -129,11 +129,11 @@ const Page = () => {
         features={FINANCE_FEATURES}
         wrapperClass={FINANCE_SECTION_DATA.wrapperClass}
       />
-      
+
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <FaqSection />
       </div>
-      
+
       <CalltoActionBottom />
     </>
   );

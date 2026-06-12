@@ -7,8 +7,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import MainHeading from "../typography/MainHeading";
 import Paragraph from "../typography/Paragraph";
-import CardHeading from "../typography/CardHeading";
-import CardDesc from "../typography/CardDesc";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -156,7 +154,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
         className={`relative z-1  flex flex-col items-center justify-center  w-full  pt-0 py-0 px-6 lg:px-[100px] overflow-hidden bg-[var(--background-halfwhite)] lg:rounded-bl-[40px] lg:rounded-br-[40px] rounded-bl-[24px] rounded-br-[24px] `}
         style={{
           backgroundImage: `linear-gradient(180deg, var(--white-color) 20%, transparent 100%)`,
-           background: gradientBackground,
+          background: gradientBackground,
         }}
       >
         <div className="w-full absolute blur-3xl left-0 right-0 z-2 h-full"></div>
@@ -203,11 +201,12 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
               alt="Chaos Into Clarity Dashboard"
               width={800}
               height={600}
+              loading="lazy"
               className="w-full h-auto"
             />
           </div>
         </div>
-        
+
       </div>
     </div>
   );

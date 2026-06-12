@@ -22,18 +22,21 @@ components/
 ## Components Overview
 
 ### 1. **page.tsx**
+
 - **Purpose**: Main entry point for the pricing page
 - **Usage**: Import and use this in your Next.js app router or pages directory
 - **Props**: None
 
 ### 2. **PricingPage.tsx**
+
 - **Purpose**: Main container component that orchestrates all pricing components
-- **Features**: 
+- **Features**:
   - State management for monthly/yearly toggle
   - Combines Header, Hero, Pricing Cards, and Comparison Table
 - **Props**: None (manages internal state)
 
 ### 3. **Header.tsx**
+
 - **Purpose**: Navigation header with logo, menu items, and mobile responsive design
 - **Features**:
   - Fixed positioning with smooth animations
@@ -43,6 +46,7 @@ components/
 - **Props**: None (can be extended to accept navigation config)
 
 ### 4. **PricingHero.tsx**
+
 - **Purpose**: Hero section with main heading, subtitle, and pricing tabs
 - **Features**:
   - Responsive typography
@@ -53,6 +57,7 @@ components/
   - `onTabChange`: Function to handle tab changes
 
 ### 5. **PricingTabs.tsx**
+
 - **Purpose**: Toggle component for switching between monthly and yearly pricing
 - **Features**:
   - Smooth transitions
@@ -63,6 +68,7 @@ components/
   - `onTabChange`: Callback function for tab changes
 
 ### 6. **PricingCard.tsx**
+
 - **Purpose**: Individual pricing plan card component
 - **Features**:
   - Dynamic styling based on plan colors
@@ -74,6 +80,7 @@ components/
   - `isYearly`: Boolean to show yearly pricing
 
 ### 7. **PricingCards.tsx**
+
 - **Purpose**: Container component that renders all pricing cards
 - **Features**:
   - Responsive grid layout
@@ -84,6 +91,7 @@ components/
   - `isYearly`: Boolean for pricing mode
 
 ### 8. **ComparisonTable.tsx**
+
 - **Purpose**: Feature comparison table with expandable functionality
 - **Features**:
   - Sticky left column for feature names
@@ -96,13 +104,16 @@ components/
 ## Configuration Files
 
 ### **tableConfig.ts**
+
 Contains all the data for pricing plans and feature categories:
 
 - **pricingPlans**: Array of pricing plan objects with prices, features, colors, etc.
 - **featureCategories**: Array of feature categories with individual features and their availability across plans
 
 ### **types.ts**
+
 TypeScript type definitions for:
+
 - `PricingPlan`: Individual pricing plan structure
 - `FeatureCategory`: Feature group structure
 - `FeatureRow`: Individual feature with plan availability
@@ -112,7 +123,7 @@ TypeScript type definitions for:
 
 1. **Responsive Design**: All components are fully responsive with mobile-first approach
 2. **Consistent Styling**: Uses Tailwind CSS classes matching the original design
-3. **Interactive Elements**: 
+3. **Interactive Elements**:
    - Mobile menu toggle
    - Pricing tab switching
    - Comparison table expand/collapse
@@ -123,11 +134,13 @@ TypeScript type definitions for:
 ## Usage Flow
 
 1. **Import the main component**:
+
    ```tsx
-   import Page from './components/page';
+   import Page from "./components/page";
    ```
 
 2. **Use in your Next.js app**:
+
    ```tsx
    export default function PricingRoute() {
      return <Page />;

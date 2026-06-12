@@ -1033,6 +1033,7 @@ export default function posBeautySalonStorePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div

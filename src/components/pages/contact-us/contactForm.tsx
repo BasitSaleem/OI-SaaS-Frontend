@@ -162,7 +162,7 @@ const ContactForm = () => {
 
         {/* Submit */}
         <div className="pt-2">
-         
+
           <button
             type="submit"
             className="w-full bg-[var(--primary-purple)] border-2 border-transparent leading-[100%] text-sm md:text-base font-['Onest'] font-semibold cursor-pointer text-white hover:text-[var(--primary-purple)] hover:border-[var(--primary-purple)] hover:bg-transparent py-5 rounded-full"

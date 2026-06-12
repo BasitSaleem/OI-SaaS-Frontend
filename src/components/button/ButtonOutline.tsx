@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
-interface ButtonOutlineProps{
-    text:string
-    borderColor:string
-    url:string
-    textColor?:string
+interface ButtonOutlineProps {
+  text: string
+  borderColor: string
+  url: string
+  textColor?: string
 }
-const ButtonOutline:React.FC<ButtonOutlineProps> = (props) => {
+const ButtonOutline: React.FC<ButtonOutlineProps> = (props) => {
   const parsedBorderColor = props.borderColor.startsWith("[") && props.borderColor.endsWith("]") ? props.borderColor.slice(1, -1) : props.borderColor;
   const parsedTextColor = props.textColor ? (props.textColor.startsWith("[") && props.textColor.endsWith("]") ? props.textColor.slice(1, -1) : props.textColor) : "white";
 

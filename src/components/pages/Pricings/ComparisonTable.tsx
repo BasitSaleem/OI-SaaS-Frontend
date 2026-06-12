@@ -158,9 +158,8 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       </div>
 
       <div
-        className={`compare-content pt-10 md:pt-16 lg:pt-20 wrapper mx-auto ${
-          isVisible ? "block" : "hidden"
-        }`}
+        className={`compare-content pt-10 md:pt-16 lg:pt-20 wrapper mx-auto ${isVisible ? "block" : "hidden"
+          }`}
       >
         <div className="w-full hidden lg:flex  items-center justify-end mb-10">
           <PricingTabs
@@ -308,11 +307,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                         <div key={categoryIndex}>
                           {/* Plan header */}
                           <div
-                            className={`p-2 md:p-4 ${
-                              planIndex < tablePlans.length - 1
+                            className={`p-2 md:p-4 ${planIndex < tablePlans.length - 1
                                 ? "border-r"
                                 : ""
-                            }`}
+                              }`}
                             style={{ borderColor: plan.color }}
                           >
                             <div
@@ -394,16 +392,15 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                             return (
                               <div
                                 key={featureIndex}
-                                className={`py-5 text-center font-['onest'] text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${
-                                  planIndex < tablePlans.length - 1
+                                className={`py-5 text-center font-['onest'] text-sm md:text-base xl:text-lg leading-6 text-[var(--text-dark)] font-normal px-2 ${planIndex < tablePlans.length - 1
                                     ? "border-r"
                                     : ""
-                                }`}
+                                  }`}
                                 style={{
                                   height: "68px",
                                   borderBottom:
                                     categoryIndex === categories.length - 1 &&
-                                    featureIndex ===
+                                      featureIndex ===
                                       category.features.length - 1
                                       ? "none"
                                       : `1px solid ${plan.color}`,

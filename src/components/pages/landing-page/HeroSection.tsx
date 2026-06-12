@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import ButtonSm from "@/components/button/ButtonSm";
 import InputField from "@/components/form-fields/InputField";
-import ButtonLg from "@/components/button/ButtonLg";
 import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import { useDevice } from "@/hooks/useDevice";
@@ -64,7 +63,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* HERO BODY */}
         <div className="md:py-[1px] bg-[var(--background-halfwhite)]  rounded-[20px] lg:rounded-[40px]">
-           <div
+          <div
             className={`owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-3.5 md:px-7 bg-[var(--background-halfwhite)] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]`}
           >
             {/* Background Image Optimization */}
@@ -134,20 +133,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {children}
             </div>
 
-            {/* Video */}
+            {/* Video / Image */}
             <div className="owner-inventory-hero__video relative z-[2]  w-full mt-10 md:mt-10 xl:mt-10 mb-10 sm:max-w-lg md:max-w-xl lg:max-w-4xl">
-              {/* <video
-                className="w-full object-cover rounded-3xl lazy-video feature-video"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src={video} type="video/webm" />
-                Your browser does not support the video tag.
-              </video> */}
-
               {!video && image ? (
                 <Image
                   src={image}

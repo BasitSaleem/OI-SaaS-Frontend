@@ -305,90 +305,90 @@ const Page = () => {
         }}
       />
       <div>
-      <SubIndustriesHero
-        title="Beauty Salon POS System for Seamless Transactions and Retail Management"
-        description="A crowded counter makes stylists lose their clients faster than poor quality services. To ensure that the billing process does not become slow, retail inventory is kept at bay, and the records of clients are not scattered around, an efficient POS system is required. The POS helps in managing day-to-day sales processes seamlessly. Our beauty salon's point-of-sale system ensures that customers get quick services while avoiding messy counters."
-        image={heroBanner}
-        imageClassName="max-w-[1000px]"
-        ctaDesc="Start Free Today"
-        variant="animation2"
-      />
+        <SubIndustriesHero
+          title="Beauty Salon POS System for Seamless Transactions and Retail Management"
+          description="A crowded counter makes stylists lose their clients faster than poor quality services. To ensure that the billing process does not become slow, retail inventory is kept at bay, and the records of clients are not scattered around, an efficient POS system is required. The POS helps in managing day-to-day sales processes seamlessly. Our beauty salon's point-of-sale system ensures that customers get quick services while avoiding messy counters."
+          image={heroBanner}
+          imageClassName="max-w-[1000px]"
+          ctaDesc="Start Free Today"
+          variant="animation2"
+        />
 
-      <VoicesRealBusiness title="Ratings on Leading Review Platforms" />
+        <VoicesRealBusiness title="Ratings on Leading Review Platforms" />
 
-      <IndustryUnifiedPlatform
-        heading={BEAUTY_SALON_UNIFIED_HEADING}
-        paragraph={BEAUTY_SALON_UNIFIED_PARAGRAPH}
-        cards={BEAUTY_SALON_UNIFIED_CARDS}
-        iconSet="beautySalon"
-      />
+        <IndustryUnifiedPlatform
+          heading={BEAUTY_SALON_UNIFIED_HEADING}
+          paragraph={BEAUTY_SALON_UNIFIED_PARAGRAPH}
+          cards={BEAUTY_SALON_UNIFIED_CARDS}
+          iconSet="beautySalon"
+        />
 
-      <WhyChoosePOS
-        heading="How Owners Inventory Solves Beauty Salon POS Challenges"
-        paragraph="Owners Inventory provides a structured salon POS system that connects sales, payments, and inventory in one place, helping beauty salon owners prevent confusion and handle daily operations with clarity."
-        cards={BEAUTY_SALON_WHY_CHOOSE_CARDS}
-        mainImage={whyChoseBanner}
-        iconSet="beautySalon"
-      />
+        <WhyChoosePOS
+          heading="How Owners Inventory Solves Beauty Salon POS Challenges"
+          paragraph="Owners Inventory provides a structured salon POS system that connects sales, payments, and inventory in one place, helping beauty salon owners prevent confusion and handle daily operations with clarity."
+          cards={BEAUTY_SALON_WHY_CHOOSE_CARDS}
+          mainImage={whyChoseBanner}
+          iconSet="beautySalon"
+        />
 
-      <KeyHighlights
-        heading="Key Features of Our Beauty Salon Point of Sale System"
-        features={BEAUTY_SALON_KEY_FEATURES_CARDS}
-      />
+        <KeyHighlights
+          heading="Key Features of Our Beauty Salon Point of Sale System"
+          features={BEAUTY_SALON_KEY_FEATURES_CARDS}
+        />
 
-      <InventoryWorkflow
-        heading={BEAUTY_SALON_WORKFLOW_DATA.heading}
-        paragraph={BEAUTY_SALON_WORKFLOW_DATA.paragraph}
-        steps={BEAUTY_SALON_WORKFLOW_DATA.steps}
-      />
+        <InventoryWorkflow
+          heading={BEAUTY_SALON_WORKFLOW_DATA.heading}
+          paragraph={BEAUTY_SALON_WORKFLOW_DATA.paragraph}
+          steps={BEAUTY_SALON_WORKFLOW_DATA.steps}
+        />
 
-      <IndustriesCallToAction
-        title="Take Control of Every Salon Operation"
-        description="Upgrade your beauty salon with a POS system that keeps billing, sales, and services organized in one place. Work faster, reduce errors, and manage daily operations with confidence and clarity."
-        ctaDesc="Request a Free Demo"
-      />
+        <IndustriesCallToAction
+          title="Take Control of Every Salon Operation"
+          description="Upgrade your beauty salon with a POS system that keeps billing, sales, and services organized in one place. Work faster, reduce errors, and manage daily operations with confidence and clarity."
+          ctaDesc="Request a Free Demo"
+        />
 
-      <IndustriesFeaturesSection features={BEAUTY_SALON_FEATURE_CARDS} />
+        <IndustriesFeaturesSection features={BEAUTY_SALON_FEATURE_CARDS} />
 
-      <SecurityCompliance
-        title="Security, Accuracy, and Compliance."
-        description="With accurate details of recorded transactions, the system creates a reliable activity trail. This improves data accuracy, reduces discrepancies in payment records, and helps salon businesses maintain organized documentation. This helps beauty salon owners to perform internal checks and promotes financial clarity."
-      />
+        <SecurityCompliance
+          title="Security, Accuracy, and Compliance."
+          description="With accurate details of recorded transactions, the system creates a reliable activity trail. This improves data accuracy, reduces discrepancies in payment records, and helps salon businesses maintain organized documentation. This helps beauty salon owners to perform internal checks and promotes financial clarity."
+        />
 
-      <ToolsSection
-        heading={BEAUTY_SALON_TOOLS_DATA.heading}
-        description={BEAUTY_SALON_TOOLS_DATA.paragraph}
-        tools={BEAUTY_SALON_TOOLS_DATA.tools}
-      />
+        <ToolsSection
+          heading={BEAUTY_SALON_TOOLS_DATA.heading}
+          description={BEAUTY_SALON_TOOLS_DATA.paragraph}
+          tools={BEAUTY_SALON_TOOLS_DATA.tools}
+        />
 
-      <IndustriesTestimonial
-        testimonials={BEAUTY_SALON_TESTIMONIALS}
-        heading={BEAUTY_SALON_TESTIMONIAL_DATA.heading}
-        paragraph={BEAUTY_SALON_TESTIMONIAL_DATA.paragraph}
-        showSmartTools={true}
-        secondHeading={BEAUTY_SALON_TESTIMONIAL_DATA.secondHeading}
-        secondDescription={BEAUTY_SALON_TESTIMONIAL_DATA.secondDescription}
-        whyChooseShow={true}
-        whyChooseTitle={BEAUTY_SALON_TESTIMONIAL_DATA.whyChooseTitle}
-        whyChooseDescription={BEAUTY_SALON_TESTIMONIAL_DATA.whyChooseDescription}
-        features={BEAUTY_SALON_TESTIMONIAL_FEATURES}
-        iconSet="beautySalon"
-      />
+        <IndustriesTestimonial
+          testimonials={BEAUTY_SALON_TESTIMONIALS}
+          heading={BEAUTY_SALON_TESTIMONIAL_DATA.heading}
+          paragraph={BEAUTY_SALON_TESTIMONIAL_DATA.paragraph}
+          showSmartTools={true}
+          secondHeading={BEAUTY_SALON_TESTIMONIAL_DATA.secondHeading}
+          secondDescription={BEAUTY_SALON_TESTIMONIAL_DATA.secondDescription}
+          whyChooseShow={true}
+          whyChooseTitle={BEAUTY_SALON_TESTIMONIAL_DATA.whyChooseTitle}
+          whyChooseDescription={BEAUTY_SALON_TESTIMONIAL_DATA.whyChooseDescription}
+          features={BEAUTY_SALON_TESTIMONIAL_FEATURES}
+          iconSet="beautySalon"
+        />
 
-      <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
-        <FaqSection
-          heading= "FAQS"
-          paragraph= "The following are some of the common questions that are asked about our beauty salon point of sale system."
-          faqs={BEAUTY_SALON_FAQS}
-          buttonText="Start Now"
+        <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
+          <FaqSection
+            heading="FAQS"
+            paragraph="The following are some of the common questions that are asked about our beauty salon point of sale system."
+            faqs={BEAUTY_SALON_FAQS}
+            buttonText="Start Now"
+          />
+        </div>
+        <IndustriesHardwareControl
+          title="Control Salon Operations with a Reliable POS"
+          description="Manage all your salon activities with an effective POS system. Make things consistent by ensuring that every operation at the salon will perfectly align. Improve efficiency and ensure accuracy in every task without experiencing any delay with our beauty salon point-of-sale system."
+          ctaDesc="Start Today"
         />
       </div>
-       <IndustriesHardwareControl
-        title= "Control Salon Operations with a Reliable POS"
-        description= "Manage all your salon activities with an effective POS system. Make things consistent by ensuring that every operation at the salon will perfectly align. Improve efficiency and ensure accuracy in every task without experiencing any delay with our beauty salon point-of-sale system."
-        ctaDesc="Start Today"
-      />
-    </div>
     </>
   );
 };

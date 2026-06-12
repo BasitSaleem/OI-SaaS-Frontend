@@ -50,8 +50,8 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
 
   return (
     <div className="w-full wrapper">
-    <div className="mt-12 md:mt-16 lg:mt-20 ">
-      
+      <div className="mt-12 md:mt-16 lg:mt-20 ">
+
         <h2 className="text-[32px] leading-[130%] lg:text-5xl font-semibold lg:font-medium text-[var(--text-dark)] text-center font-['Onest'] mb-8 md:mb-12">
           Flexible Plans for Every Business Type
         </h2>
@@ -73,11 +73,10 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
                 onClick={() => onTabChange(tab.id)}
                 onMouseEnter={() => setHoveredTab(tab.id)}
                 onMouseLeave={() => setHoveredTab(null)}
-                className={`flex flex-col items-start p-4 lg:p-6 backdrop-blur-2xl rounded-[12px] lg:rounded-[30px] transition-all duration-300 text-left group min-w-[200px] sm:min-w-[240px] lg:min-w-0 snap-center ${
-                  isActive
+                className={`flex flex-col items-start p-4 lg:p-6 backdrop-blur-2xl rounded-[12px] lg:rounded-[30px] transition-all duration-300 text-left group min-w-[200px] sm:min-w-[240px] lg:min-w-0 snap-center ${isActive
                     ? "bg-[var(--background-purple-light)] shadow-[0_10px_30px_rgba(var(--primary-purple-rgb),0.1)] border border-[var(--primary-purple)]"
                     : "bg-[var(--white-color)] border border-transparent hover:bg-[var(--background-purple-light)] hover:border-[var(--primary-purple)]"
-                }`}
+                  }`}
               >
                 <div className="flex items-start gap-3 mb-2 lg:mb-4">
                   <div>

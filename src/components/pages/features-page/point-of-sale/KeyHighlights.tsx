@@ -65,7 +65,7 @@ const getDefaultLayoutPatterns = (cardCount: number): LayoutPattern[] => {
           paddingClass: "px-0",
         },
       ];
-    
+
     default:
       return [
         {
@@ -189,9 +189,8 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
           >
             {showAll ? "See Less" : "See All"}
             <span
-              className={`transition-transform duration-300 ${
-                showAll ? "rotate-180" : ""
-              }`}
+              className={`transition-transform duration-300 ${showAll ? "rotate-180" : ""
+                }`}
             >
               <ArrowDown size={24} />
             </span>

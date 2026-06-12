@@ -25,48 +25,48 @@ const PricingPage: React.FC = () => {
 
   return (
     <div className="min-h-screen">
-     
-      
-      
+
+
+
       {/* Main Content */}
-        {/* Hero Section */}
-        <PricingHero
-          activeTab={activeTab} 
-          onTabChange={handleTabChange} 
-          activeBusinessTab={activeBusinessTab}
-          onBusinessTabChange={setActiveBusinessTab}
+      {/* Hero Section */}
+      <PricingHero
+        activeTab={activeTab}
+        onTabChange={handleTabChange}
+        activeBusinessTab={activeBusinessTab}
+        onBusinessTabChange={setActiveBusinessTab}
+      />
+
+      {/* <FeaturesTabSection /> */}
+      <AddOnsSection />
+
+      {/* Comparison Table */}
+      <ComparisonTable
+        categories={getAggregatedCategories(activeBusinessTab)}
+        tab={activeTab}
+        onTabChange={setActiveTab}
+        plans={businessData.plans}
+        industry={activeBusinessTab}
+      />
+
+
+
+      <div className="lg:pt-[100px] md:pt-40 pt-28">
+        <FaqSection
+          heading='Everything You Were About to Ask'
+          paragraph='We’ve compiled the most common questions about Owners Inventory — from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
+          faqs={PRICING_FAQS}
+          buttonText='Start Now'
+          buttonUrl='https://app.ownersinventory.com/'
         />
+      </div>
 
-        {/* <FeaturesTabSection /> */}
-        <AddOnsSection />
+      <CalltoActionBottom
+        title='Grow with a platform trusted by businesses worldwide.'
+        description="Join a growing community of retailers, wholesalers, and entrepreneurs who are transforming how they manage inventory, sales, and growth. With Owners Inventory, you're not just using another tool — you're becoming part of a forward-thinking ecosystem that’s built to scale with your ambition. Let’s build smarter, together."
+        showDemoButton={false}
+      />
 
-        {/* Comparison Table */}
-        <ComparisonTable 
-          categories={getAggregatedCategories(activeBusinessTab)} 
-          tab={activeTab} 
-          onTabChange={setActiveTab} 
-          plans={businessData.plans}
-          industry={activeBusinessTab}
-        />
-
-
-        
-          <div className="lg:pt-[100px] md:pt-40 pt-28">
-          <FaqSection 
-           heading='Everything You Were About to Ask'
-           paragraph='We’ve compiled the most common questions about Owners Inventory — from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
-           faqs={PRICING_FAQS}
-           buttonText='Start Now'
-           buttonUrl='https://app.ownersinventory.com/'
-          />
-          </div>
-
-          <CalltoActionBottom 
-          title='Grow with a platform trusted by businesses worldwide.'
-          description="Join a growing community of retailers, wholesalers, and entrepreneurs who are transforming how they manage inventory, sales, and growth. With Owners Inventory, you're not just using another tool — you're becoming part of a forward-thinking ecosystem that’s built to scale with your ambition. Let’s build smarter, together."
-          showDemoButton={false}
-          />
-        
     </div>
   );
 };

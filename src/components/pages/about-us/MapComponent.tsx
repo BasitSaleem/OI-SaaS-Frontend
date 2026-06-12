@@ -90,7 +90,7 @@ const MapComponent = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          
+
           <MapContainer
             center={office.coords}
             zoom={12}

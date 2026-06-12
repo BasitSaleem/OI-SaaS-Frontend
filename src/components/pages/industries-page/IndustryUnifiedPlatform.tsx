@@ -20,7 +20,7 @@ interface IndustryUnifiedPlatformProps {
   cards: IndustryUnifiedPlatformCard[];
   textAlign?: "center" | "left";
   /** The name of the icon set to use (e.g. "bakery", "retail") */
-  iconSet?: IndustryIconSet;
+  iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
 function IndustryUnifiedPlatform({
@@ -119,9 +119,8 @@ function IndustryUnifiedPlatform({
                 >
                   {showAll ? "See Less" : "See All"}
                   <span
-                    className={`transition-transform duration-300 ${
-                      showAll ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-300 ${showAll ? "rotate-180" : ""
+                      }`}
                   >
                     <ArrowDown size={24} />
                   </span>

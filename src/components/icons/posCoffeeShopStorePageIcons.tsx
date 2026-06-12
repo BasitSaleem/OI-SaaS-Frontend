@@ -1106,6 +1106,7 @@ export default function posCoffeeShopStorePageIcons({
   className = "",
 }: IconProps) {
   const icon = icons[name];
+  if (!icon) return null;
 
   return (
     <div
