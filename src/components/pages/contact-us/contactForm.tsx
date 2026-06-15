@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
 import { isValidPhoneNumber } from "react-phone-number-input";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import PhoneInputField from "@/components/inputField/PhoneInputField";
 import InputField from "@/components/inputField/InputField";
@@ -26,6 +27,8 @@ const companySizeOptions = [
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const {
     register,
@@ -47,6 +50,10 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
+    if (!recaptchaToken) {
+      toast.error("Please complete the reCAPTCHA verification.");
+      return;
+    }
     setIsLoading(true);
     try {
       const response = await fetch(API_URL, {
@@ -66,6 +73,8 @@ const ContactForm = () => {
         "Your message has been sent! We'll get back to you shortly.",
       );
       reset();
+      setRecaptchaToken(null);
+      recaptchaRef.current?.reset();
     } catch (err: unknown) {
       const message =
         err instanceof Error
@@ -159,6 +168,16 @@ const ContactForm = () => {
           register={register("message")}
           error={errors.message?.message}
         />
+
+        {/* reCAPTCHA */}
+        <div className="flex justify-start">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+            onChange={(token) => setRecaptchaToken(token)}
+            onExpired={() => setRecaptchaToken(null)}
+          />
+        </div>
 
         {/* Submit */}
         <div className="pt-2">
