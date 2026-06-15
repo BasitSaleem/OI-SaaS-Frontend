@@ -26,10 +26,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
   return (
     <div
-      className={`flex flex-col items-stretch justify-start p-[2px] rounded-[30px] relative flex-1 ${plan.popular
-        ? "bg-gradient-to-r from-[var(--primary-teal)] via-[var(--primary-blue-dark)] via-[var(--primary-blue)] to-[var(--primary-purple)]"
-        : "bg-transparent"
-        }`}
+      className="group flex flex-col items-stretch justify-start p-[2px] rounded-[30px] relative flex-1 transition-all duration-300 bg-transparent hover:bg-gradient-to-r hover:from-[var(--primary-teal)] hover:via-[var(--primary-blue-dark)] hover:via-[var(--primary-blue)] hover:to-[var(--primary-purple)]"
     >
       <div
         className={`flex flex-col items-stretch justify-start flex-1 px-4 py-4 bg-white rounded-[30px] w-full snap-start transition-all duration-300 relative`}
