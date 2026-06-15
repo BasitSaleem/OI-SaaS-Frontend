@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "beauty-salon-pos-system",
     "furniture-inventory-management-software",
     "construction-inventory-management-software",
+    "optical-lab-inventory-management-software",
     "coffee-shop-pos-system",
     "ice-cream-shop-pos-system",
     "candy-store-pos-system",
@@ -68,6 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "warehouses-pos-system",
     "appliance-store-pos-system",
     "gym-pos-system",
+    "thrift-store-pos-system",
   ];
 
   const routes = [

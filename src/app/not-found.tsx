@@ -1,9 +1,9 @@
 import React from 'react'
-import ErrorPage from './error-page/page'
+import ErrorPageContent from '@/components/pages/ErrorPageContent'
 
 const Error = () => {
   return (
-    <div><ErrorPage code={503} /></div>
+    <div><ErrorPageContent code={503} /></div>
   )
 }
 

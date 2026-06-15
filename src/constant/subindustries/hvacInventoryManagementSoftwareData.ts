@@ -259,23 +259,23 @@ export const HVAC_INVENTORY_TESTIMONIAL_DATA = {
 export const HVAC_INVENTORY_TESTIMONIALS = [
   {
     id: "1",
-    name: "Marcus Tucker",
+    name: "Everett Shaw",
     title: "HVAC Service Manager, Multi-Van Operation",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image44.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image69.webp",
     text: "We were running stockout calls three or four times a week. Technicians would show up at a job and the part simply was not in the van. After we set up reorder points in the Owners Inventory for every high-use part, our first-time fix rate moved from around 74% to 91% within a few months. The unplanned return trips have nearly stopped.",
   },
   {
     id: "2",
-    name: "Dana Ronaldo",
+    name: "Colt Ramsey",
     title: "HVAC Business Owner, Residential and Light Commercial",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image45.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image70.webp",
     text: "Emergency parts orders were a weekly expense I had just accepted as part of running the business. Supplier premiums and rush delivery fees were adding up to thousands every quarter. Since we started using Owners Inventory to track minimum stock levels, we have not placed an emergency order in over six weeks.",
   },
   {
     id: "3",
-    name: "Arjun Patel",
+    name: "Finley Cross",
     title: "Operations Lead, Commercial HVAC Contractor",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image44.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image69.webp",
     text: "We had parts on the warehouse shelves that had not moved in months. Nobody had checked actual job consumption before placing orders, so we kept restocking items we did not need. Owners Inventory gave us the usage data to see exactly what was sitting idle. We cleared the dead stock and reinvested that capital into parts that actually moved, and our carrying costs came down within the first quarter.",
   },
 ];

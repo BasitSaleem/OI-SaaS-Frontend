@@ -191,6 +191,13 @@ export const industriesItems: IndustryItem[] = [
     type: 'inventory',
   },
   {
+    key: 'optical-lab-inventory-management-software',
+    title: 'Optical Lab Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/construction-inventory-management-system.svg",
+    category: 'wholesale',
+    type: 'inventory',
+  },
+  {
     key: 'hvac-inventory-management-software',
     title: 'HVAC Inventory Management',
     icon: "/assets/header-dropdown-images/industries-dropdown/construction-inventory-management-system.svg",
@@ -274,9 +281,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
-
-
-
+  {
+    key: 'thrift-store-pos-system',
+    title: 'Thrift Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/clothing.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
 ];
 
 export interface IndustryTreeItem {
@@ -452,6 +463,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Supplier & Purchase Orders' },
     { title: 'Asset & Cost Control' },
   ],
+  'optical-lab-inventory-management-software': [
+    { title: 'Lens Blank & Power Matrix' },
+    { title: 'Prescription Job Tracking' },
+    { title: 'Breakage & Scrap Log' },
+    { title: 'Consumables & Alloy Control' },
+  ],
   'hvac-inventory-management-software': [
     { title: 'Parts & Equipment Tracking' },
     { title: 'Job Site & Technician Management' },
@@ -571,6 +588,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Automated Membership Drafts' },
     { title: 'Trainer & Class Scheduling' },
     { title: 'Pro Shop & Retail Checkout' },
+  ],
+  'thrift-store-pos-system': [
+    { title: 'Unique SKU Barcode Printing' },
+    { title: 'Consignor Splitting & Payouts' },
+    { title: 'Donor CRM & Tax Receipts' },
+    { title: 'Color-Tag Clearance Markdowns' },
   ],
 };
 

@@ -63,6 +63,9 @@ const furnitureInventoryManagementSoftwareIcons = dynamic(
 const constructionInventoryManagementSoftwareIcons = dynamic(
   () => import("./constructionInventoryManagementSoftwareIcons"),
 );
+const opticalLabInventoryManagementSoftwareIcons = dynamic(
+  () => import("./opticalLabInventoryManagementSoftwareIcons"),
+);
 const hvacInventoryManagementSoftwareIcons = dynamic(
   () => import("./hvacInventoryManagementSoftwareIcons"),
 );
@@ -101,6 +104,9 @@ const posApplianceStorePageIcons = dynamic(
 );
 const posGymPageIcons = dynamic(
   () => import("./posGymPageIcons"),
+);
+const posThriftStorePageIcons = dynamic(
+  () => import("./posThriftStorePageIcons"),
 );
 const alAsifCasestudyIcons = dynamic(
   () => import("./alAsifCasestudyIcons"),
@@ -152,8 +158,10 @@ export type IndustryIconSet =
   | "warehouses"
   | "applianceStore"
   | "gym"
+  | "thriftStore"
   | "furnitureInventory"
   | "constructionInventory"
+  | "opticalLabInventory"
   | "hvacInventory"
   | "alAsifCasestudyIcons"
   | "bightHomeIcons"
@@ -192,8 +200,10 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   warehouses: posWarehousesPageIcons,
   applianceStore: posApplianceStorePageIcons,
   gym: posGymPageIcons,
+  thriftStore: posThriftStorePageIcons,
   furnitureInventory: furnitureInventoryManagementSoftwareIcons,
   constructionInventory: constructionInventoryManagementSoftwareIcons,
+  opticalLabInventory: opticalLabInventoryManagementSoftwareIcons,
   hvacInventory: hvacInventoryManagementSoftwareIcons,
   alAsifCasestudyIcons: alAsifCasestudyIcons,
   bightHomeIcons: bightHomeIcons,
