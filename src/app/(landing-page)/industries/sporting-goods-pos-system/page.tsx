@@ -27,7 +27,7 @@ import {
   SPORTING_GOODS_TESTIMONIAL_FEATURES,
   SPORTING_GOODS_TOOLS_DATA,
 } from "@/constant/subindustries/sportingGoodsPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";

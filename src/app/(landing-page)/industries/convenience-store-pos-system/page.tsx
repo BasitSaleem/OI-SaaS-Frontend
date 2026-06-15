@@ -27,7 +27,7 @@ import {
   CONVENIENCE_STORE_TESTIMONIAL_FEATURES,
   CONVENIENCE_STORE_TOOLS_DATA,
 } from "@/constant/subindustries/convenienceStorePosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";

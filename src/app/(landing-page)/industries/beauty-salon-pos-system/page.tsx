@@ -29,7 +29,7 @@ import {
   BEAUTY_SALON_TESTIMONIAL_FEATURES,
   BEAUTY_SALON_TOOLS_DATA,
 } from "@/constant/subindustries/beautySalonPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";

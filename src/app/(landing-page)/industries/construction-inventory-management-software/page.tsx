@@ -26,7 +26,7 @@ import {
   CONSTRUCTION_INVENTORY_TESTIMONIAL_FEATURES,
   CONSTRUCTION_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/constructionInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";

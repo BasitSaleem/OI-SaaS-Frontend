@@ -4,127 +4,46 @@ import dynamic from "next/dynamic";
 import React from "react";
 
 // Dynamically import all industry icon components to keep the main bundle size small
-const posBakeryPageIcons = dynamic(() => import("./posBakeryPageIcons"));
-const posBookstorePageIcons = dynamic(() => import("./posBookstorePageIcons"));
-const posClothingStorePageIcons = dynamic(
-  () => import("./posClothingStorePageIcons"),
-);
-const posFurnitureStorePageIcons = dynamic(
-  () => import("./posFurnitureStorePageIcons"),
-);
-const clothingInventoryManagementSoftwareIcons = dynamic(
-  () => import("./clothingInventoryManagementSoftwareIcons"),
-);
-const retailInventoryManagementSoftwareIcons = dynamic(
-  () => import("./retailInventoryManagementSoftwareIcons"),
-);
-const jewelaryInventoryManagementSoftwareIcons = dynamic(
-  () => import("./jewelaryInventoryManagementSoftwareIcons"),
-);
-const autoStoreInventoryManagementSoftwareIcons = dynamic(
-  () => import("./autoStoreInventoryManagementSoftwareIcons"),
-);
-const ecommerceStoreInventoryManagementSoftwareIcons = dynamic(
-  () => import("./ecommerceStoreInventoryManagementSoftwareIcons"),
-);
-const posGroceryStorePageIcons = dynamic(
-  () => import("./posGroceryStorePageIcons"),
-);
-const posHardwarePageIcons = dynamic(() => import("./posHardwarePageIcons"));
-const posJewelryStorePageIcons = dynamic(
-  () => import("./posJewelryStorePageIcons"),
-);
-const posSupermarketStorePageIcons = dynamic(
-  () => import("./posSupermarketStorePageIcons"),
-);
-
-const restaurantInventoryManagementSoftwareIcons = dynamic(
-  () => import("./restaurantInventoryManagementSoftwareIcons"),
-);
-
-const healthCareInventoryManagementSoftwareIcons = dynamic(
-  () => import("./healthCareInventoryManagementSoftwareIcons"),
-);
-const hotelInventoryManagementSoftwareIcons = dynamic(
-  () => import("./hotelInventoryManagementSoftwareIcons"),
-);
-const smallBusinessInventoryManagementSoftwareIcons = dynamic(
-  () => import("./smallBusinessInventoryManagementSoftwareIcons"),
-);
-const posRetailStorePageIcons = dynamic(
-  () => import("./posRetailStorePageIcons"),
-);
-const posBeautySalonStorePageIcons = dynamic(
-  () => import("./posBeautySalonStorePageIcons"),
-);
-const furnitureInventoryManagementSoftwareIcons = dynamic(
-  () => import("./furnitureInventoryManagementSoftwareIcons"),
-);
-const constructionInventoryManagementSoftwareIcons = dynamic(
-  () => import("./constructionInventoryManagementSoftwareIcons"),
-);
-const opticalLabInventoryManagementSoftwareIcons = dynamic(
-  () => import("./opticalLabInventoryManagementSoftwareIcons"),
-);
-const hvacInventoryManagementSoftwareIcons = dynamic(
-  () => import("./hvacInventoryManagementSoftwareIcons"),
-);
-const posCoffeeShopStorePageIcons = dynamic(
-  () => import("./posCoffeeShopStorePageIcons"),
-);
-const posShoesStorePageIcons = dynamic(
-  () => import("./posShoesStorePageIcons"),
-);
-const posConvenienceStorePageIcons = dynamic(
-  () => import("./posConvenienceStorePageIcons"),
-);
-const posIceCreamShopPageIcons = dynamic(
-  () => import("./posIceCreamShopPageIcons"),
-);
-const posCandyStorePageIcons = dynamic(
-  () => import("./posCandyStorePageIcons"),
-);
-const posFoodTruckPageIcons = dynamic(
-  () => import("./posFoodTruckPageIcons"),
-);
-const posSportingGoodsPageIcons = dynamic(
-  () => import("./posSportingGoodsPageIcons"),
-);
-const posBarberShopPageIcons = dynamic(
-  () => import("./posBarberShopPageIcons"),
-);
-const posPetStorePageIcons = dynamic(
-  () => import("./posPetStorePageIcons"),
-);
-const posWarehousesPageIcons = dynamic(
-  () => import("./posWarehousesPageIcons"),
-);
-const posApplianceStorePageIcons = dynamic(
-  () => import("./posApplianceStorePageIcons"),
-);
-const posGymPageIcons = dynamic(
-  () => import("./posGymPageIcons"),
-);
-const posThriftStorePageIcons = dynamic(
-  () => import("./posThriftStorePageIcons"),
-);
-const alAsifCasestudyIcons = dynamic(
-  () => import("./alAsifCasestudyIcons"),
-
-);
-const bightHomeIcons = dynamic(
-  () => import("./bightHomeIcons"),
-
-);
-const urbansThreadsIcons = dynamic(
-  () => import("./urbansThreadsIcons"),
-
-);
-
-const industriesTestmonialProfileIcons = dynamic(
-  () => import("./industriesTestmonialProfileIcons"),
-
-);
+const posBakeryPageIcons = dynamic(() => import("./posBakeryPageIcons"), { ssr: false });
+const posBookstorePageIcons = dynamic(() => import("./posBookstorePageIcons"), { ssr: false });
+const posClothingStorePageIcons = dynamic(() => import("./posClothingStorePageIcons"), { ssr: false });
+const posFurnitureStorePageIcons = dynamic(() => import("./posFurnitureStorePageIcons"), { ssr: false });
+const clothingInventoryManagementSoftwareIcons = dynamic(() => import("./clothingInventoryManagementSoftwareIcons"), { ssr: false });
+const retailInventoryManagementSoftwareIcons = dynamic(() => import("./retailInventoryManagementSoftwareIcons"), { ssr: false });
+const jewelaryInventoryManagementSoftwareIcons = dynamic(() => import("./jewelaryInventoryManagementSoftwareIcons"), { ssr: false });
+const autoStoreInventoryManagementSoftwareIcons = dynamic(() => import("./autoStoreInventoryManagementSoftwareIcons"), { ssr: false });
+const ecommerceStoreInventoryManagementSoftwareIcons = dynamic(() => import("./ecommerceStoreInventoryManagementSoftwareIcons"), { ssr: false });
+const posGroceryStorePageIcons = dynamic(() => import("./posGroceryStorePageIcons"), { ssr: false });
+const posHardwarePageIcons = dynamic(() => import("./posHardwarePageIcons"), { ssr: false });
+const posJewelryStorePageIcons = dynamic(() => import("./posJewelryStorePageIcons"), { ssr: false });
+const posSupermarketStorePageIcons = dynamic(() => import("./posSupermarketStorePageIcons"), { ssr: false });
+const restaurantInventoryManagementSoftwareIcons = dynamic(() => import("./restaurantInventoryManagementSoftwareIcons"), { ssr: false });
+const healthCareInventoryManagementSoftwareIcons = dynamic(() => import("./healthCareInventoryManagementSoftwareIcons"), { ssr: false });
+const hotelInventoryManagementSoftwareIcons = dynamic(() => import("./hotelInventoryManagementSoftwareIcons"), { ssr: false });
+const smallBusinessInventoryManagementSoftwareIcons = dynamic(() => import("./smallBusinessInventoryManagementSoftwareIcons"), { ssr: false });
+const posRetailStorePageIcons = dynamic(() => import("./posRetailStorePageIcons"), { ssr: false });
+const posBeautySalonStorePageIcons = dynamic(() => import("./posBeautySalonStorePageIcons"), { ssr: false });
+const furnitureInventoryManagementSoftwareIcons = dynamic(() => import("./furnitureInventoryManagementSoftwareIcons"), { ssr: false });
+const constructionInventoryManagementSoftwareIcons = dynamic(() => import("./constructionInventoryManagementSoftwareIcons"), { ssr: false });
+const opticalLabInventoryManagementSoftwareIcons = dynamic(() => import("./opticalLabInventoryManagementSoftwareIcons"), { ssr: false });
+const hvacInventoryManagementSoftwareIcons = dynamic(() => import("./hvacInventoryManagementSoftwareIcons"), { ssr: false });
+const posCoffeeShopStorePageIcons = dynamic(() => import("./posCoffeeShopStorePageIcons"), { ssr: false });
+const posShoesStorePageIcons = dynamic(() => import("./posShoesStorePageIcons"), { ssr: false });
+const posConvenienceStorePageIcons = dynamic(() => import("./posConvenienceStorePageIcons"), { ssr: false });
+const posIceCreamShopPageIcons = dynamic(() => import("./posIceCreamShopPageIcons"), { ssr: false });
+const posCandyStorePageIcons = dynamic(() => import("./posCandyStorePageIcons"), { ssr: false });
+const posFoodTruckPageIcons = dynamic(() => import("./posFoodTruckPageIcons"), { ssr: false });
+const posSportingGoodsPageIcons = dynamic(() => import("./posSportingGoodsPageIcons"), { ssr: false });
+const posBarberShopPageIcons = dynamic(() => import("./posBarberShopPageIcons"), { ssr: false });
+const posPetStorePageIcons = dynamic(() => import("./posPetStorePageIcons"), { ssr: false });
+const posWarehousesPageIcons = dynamic(() => import("./posWarehousesPageIcons"), { ssr: false });
+const posApplianceStorePageIcons = dynamic(() => import("./posApplianceStorePageIcons"), { ssr: false });
+const posGymPageIcons = dynamic(() => import("./posGymPageIcons"), { ssr: false });
+const posThriftStorePageIcons = dynamic(() => import("./posThriftStorePageIcons"), { ssr: false });
+const alAsifCasestudyIcons = dynamic(() => import("./alAsifCasestudyIcons"), { ssr: false });
+const bightHomeIcons = dynamic(() => import("./bightHomeIcons"), { ssr: false });
+const urbansThreadsIcons = dynamic(() => import("./urbansThreadsIcons"), { ssr: false });
+const industriesTestmonialProfileIcons = dynamic(() => import("./industriesTestmonialProfileIcons"), { ssr: false });
 
 export type IndustryIconSet =
   | "bakery"

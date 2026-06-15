@@ -1,6 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Exclude native binaries and dev-only modules from Amplify deployment artifact
+  outputFileTracingExcludes: {
+    "*": [
+      "node_modules/@swc/core-linux-x64-gnu/**",
+      "node_modules/@swc/core-linux-x64-musl/**",
+      "node_modules/@esbuild/linux-x64/**",
+      "node_modules/webpack/**",
+      "node_modules/terser/**",
+    ],
+  },
   // If you use remote images, add allowed hosts here:
   // images: {
   //   remotePatterns: [
@@ -13,7 +23,8 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    inlineCss: true,
+    // inlineCss removed — it embeds ~270KB of CSS into every page's HTML + RSC stream,
+    // inflating 72 static pages by ~19MB total. CSS loads as a shared static file instead.
     // Tree-shakes these heavy packages so only imported symbols are bundled
     // Reduces JS parse/execution time (TBT improvement)
     optimizePackageImports: [
@@ -66,6 +77,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // Required to silence Turbopack warning (Next.js 16 default bundler)
+  turbopack: {},
+
   async redirects() {
     return [
       {

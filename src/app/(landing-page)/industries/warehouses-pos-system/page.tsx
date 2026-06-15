@@ -27,7 +27,7 @@ import {
   WAREHOUSES_TESTIMONIAL_FEATURES,
   WAREHOUSES_TOOLS_DATA,
 } from "@/constant/subindustries/warehousesPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
