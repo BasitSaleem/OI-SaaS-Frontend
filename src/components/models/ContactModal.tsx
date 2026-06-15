@@ -94,13 +94,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className="flex flex-col items-center justify-start">
-        <MainHeading className="mb-5">Contact Us</MainHeading>
+        {/* <MainHeading className="mb-5">Contact Us</MainHeading>
         <Paragraph className="text-center text-[#434242] hidden md:flex">
           We&apos;d love to hear from you! Our team is available to answer any
           questions you may have regarding features, pricing or help installing
           your POS system. Complete the form below and one of our experts will
           call you soon.
-        </Paragraph>
+        </Paragraph> */}
 
         <div
           className="bg-white w-full max-w-[768px] h-auto mt-5 rounded-[20px] lg:rounded-[30px] p-4 md:p-8"
