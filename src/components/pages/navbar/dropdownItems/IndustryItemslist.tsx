@@ -191,6 +191,13 @@ export const industriesItems: IndustryItem[] = [
     type: 'inventory',
   },
   {
+    key: 'hvac-inventory-management-software',
+    title: 'HVAC Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/construction-inventory-management-system.svg",
+    category: 'wholesale',
+    type: 'inventory',
+  },
+  {
     key: 'coffee-shop-pos-system',
     title: 'Coffee Shop POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
@@ -442,6 +449,12 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
   'construction-inventory-management-software': [
     { title: 'Material & Equipment Tracking' },
     { title: 'Multi-Site & Yard Management' },
+    { title: 'Supplier & Purchase Orders' },
+    { title: 'Asset & Cost Control' },
+  ],
+  'hvac-inventory-management-software': [
+    { title: 'Parts & Equipment Tracking' },
+    { title: 'Job Site & Technician Management' },
     { title: 'Supplier & Purchase Orders' },
     { title: 'Asset & Cost Control' },
   ],
