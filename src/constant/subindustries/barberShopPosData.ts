@@ -363,7 +363,7 @@ export const BARBER_SHOP_TESTIMONIAL_FEATURES = [
 export const BARBER_SHOP_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "The system connects with Shopify, Stripe, QuickBooks, Google Calendar, Mailchimp, and other marketing tools. Service records, product sales, and accounting data stay synchronized across all platforms so the barber shop runs from one connected system. It reduces the dependence on disconnected third-party tools and improves the accuracy of numbers in monthly business performance reports. It reduces the dependence on disconnected third-party tools and improves the accuracy of numbers in monthly business performance reports.",
+    "The system connects with Shopify, Stripe, QuickBooks, Google Calendar, Mailchimp, and other marketing tools. Service records, product sales, and accounting data stay synchronized across all platforms so the barber shop runs from one connected system. It reduces the dependence on disconnected third-party tools and improves the accuracy of numbers in monthly business performance reports.",
   tools: [
     {
       id: 1,
