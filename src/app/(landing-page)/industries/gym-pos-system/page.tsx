@@ -195,7 +195,7 @@ const Page = () => {
           title="POS System for Gym: Memberships, Payments, and Retail Sales"
           description="A gym runs on billing cycles, class schedules, and front-desk transactions that must all stay organized simultaneously. When those run through different tools, the front desk slows down, billing errors build up, and members notice. Owners Inventory brings your gym point-of-sale software, membership billing, retail inventory, and payment processing into one connected system so your staff can focus on members, not paperwork."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

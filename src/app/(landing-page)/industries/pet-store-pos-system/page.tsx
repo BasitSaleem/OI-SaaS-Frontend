@@ -196,7 +196,7 @@ const Page = () => {
           title="Pet Store POS System for Smarter Inventory and Better Pet Care"
           description="Pet stores must constantly manage their stock of food, grooming products, toys, health products, and other essentials while maintaining customer trust and encouraging repeat purchases. Owners Inventory software offers a dedicated Pet Store Point of Sale solution to monitor real-time inventory, speed up the checkout process and accurately manage all products."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

@@ -196,7 +196,7 @@ const Page = () => {
           title= "POS System for Warehouses for Faster Operations and Better Inventory Control"
           description= "If a warehouse business doesn't have the right point-of-sale system, it may encounter inventory inaccuracies, delayed order processing, mismanagement of inventory and struggle with high product volume. Without a reliable warehouse POS system, businesses typically suffer from shipment delays, tracking errors, lost inventory, and inefficient warehouse operations."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

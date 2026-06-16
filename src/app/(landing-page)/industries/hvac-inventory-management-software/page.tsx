@@ -194,7 +194,7 @@ const Page = () => {
           title="HVAC Inventory Management Software, No More Stockouts"
           description="A 10-truck operation averaging one stockout per day can lose upward of $375,000 a year on avoidable return trips alone. Owners Inventory gives HVAC contractors real-time visibility into parts stock across every van and warehouse, so technicians arrive prepared and first-time fix rates stay where they should be."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

@@ -195,7 +195,7 @@ const Page = () => {
           title="Thrift Store POS System for Smarter Inventory and Efficient Management"
           description="The items that are donated to thrift stores are constantly changing from second hand and vintage to unique items. Creating a pricing strategy, keeping track of inventory, and ensuring efficient customer service can be difficult when handling these products. Owners Inventory provides the dedicated Thrift Store Point of Sale solution to enable tracking of inventory in real time, streamline checkout procedures, and efficiently manage the store's inventory."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />
