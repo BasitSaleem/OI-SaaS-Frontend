@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useMemo, useState, useCallback } from "react";
+import React, { useMemo, useState, useCallback, useRef } from "react";
+import { useEqualizeHeadings } from "@/hooks/useEqualizeHeadings";
 import MainHeading from "../typography/MainHeading";
 import Image from "next/image";
 import SmartTools from "../landing-page/SmartTools";
@@ -107,6 +108,8 @@ const IndustriesTestimonial = ({
   iconSet,
 }: IndustriesTestimonialProps) => {
   const [visibleIndices, setVisibleIndices] = useState<number[]>([0]);
+  const whyChooseGridRef = useRef<HTMLDivElement>(null);
+  useEqualizeHeadings(whyChooseGridRef, "[data-why-heading]", []);
 
   const updateVisibleIndices = useCallback((next: number[]) => {
     setVisibleIndices((prev) => {
@@ -252,7 +255,7 @@ const IndustriesTestimonial = ({
               <Paragraph >{whyChooseDescription}</Paragraph>
             </div>
 
-            <div className="grid grid-cols-12 gap-6">
+            <div ref={whyChooseGridRef} className="grid grid-cols-12 gap-6">
               {features.map((feature, index) => {
                 let colSpanClass = "col-span-12"; // Mobile default
 

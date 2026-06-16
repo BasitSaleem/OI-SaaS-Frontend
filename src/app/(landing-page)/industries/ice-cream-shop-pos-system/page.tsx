@@ -195,7 +195,7 @@ const Page = () => {
           title="POS System for Ice Cream Shops for Faster Service and Better Store Management"
           description="Without the proper POS system in place, an ice cream business will experience slow checkout lines, inventory issues, order inaccuracies, and a challenge to handle peak-season demand. It can also lead to poor customer experiences, increased product wastage, and difficulty tracking sales and stock in real time."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

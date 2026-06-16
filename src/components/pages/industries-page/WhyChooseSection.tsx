@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import MainHeading from "../typography/MainHeading";
 import WhyChooseCard from "./WhyChooseCard";
+import { useEqualizeHeadings } from "@/hooks/useEqualizeHeadings";
 
 interface Feature {
   title: string;
@@ -21,8 +22,11 @@ const WhyChooseSection = ({
   description,
   features,
 }: WhyChooseSectionProps) => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useEqualizeHeadings(sectionRef, "[data-why-heading]", [features]);
+
   return (
-    <div className="mb-24">
+    <div ref={sectionRef} className="mb-24">
       <div className="text-center max-w-[800px] mx-auto mb-16">
         <MainHeading className="mb-6">{title}</MainHeading>
         <p className="text-[#6B7280] text-lg lg:text-xl font-['onest'] leading-[1.6]">

@@ -14,9 +14,11 @@ const WhyChooseCard = ({ title, description, icon }: WhyChooseCardProps) => {
       <div className="mb-[18px] md:mb-5 flex items-center justify-center w-12 h-12">
         {icon}
       </div>
-      <h3 className="text-xl lg:text-2xl leading-[140%] font-semibold text-[var(--text-dark)] mb-4 font-['onest'] min-h-[58px] lg:min-h-[70px]">
-        {title}
-      </h3>
+      <div data-why-heading className="mb-4">
+        <h3 className="text-xl lg:text-2xl leading-[140%] font-semibold text-[var(--text-dark)] font-['onest']">
+          {title}
+        </h3>
+      </div>
       <p className="text-[var(--text-grey)] text-sm leading-[170%] font-['onest']">
         {description}
       </p>

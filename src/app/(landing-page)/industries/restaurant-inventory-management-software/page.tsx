@@ -306,7 +306,7 @@ const Page = () => {
           title="Restaurant Inventory Management Software for Better Inventory Control"
           description="Our restaurant inventory management software handles complex inventories with precision. It automates processes and streamlines restaurant operations while providing real-time inventory insights. With food cost control and COG tracking, it boosts profitability. The software keeps everything visible in real time across your kitchen and storage."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

@@ -55,7 +55,7 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className="lg:my-40 md:my-28 my-20">
+    <div className="lg:my-[100px] md:my-28 my-20">
       <div
         className={` grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-[170px] gap-12`}
       >
@@ -111,13 +111,13 @@ const IndustriesFeatureCard: React.FC<IndustriesFeatureCardProps> = ({
             {title}
           </SubHeading>
 
-          <Paragraph className="flex-1 mb-6">{description}</Paragraph>
-          <Paragraph className="flex-1 mb-6">{subDescription}</Paragraph>
+          <Paragraph className={`flex-1 mb-6`}>{description}</Paragraph>
+          {subDescription && <Paragraph className="flex-1 mb-6">{subDescription}</Paragraph>}
 
           {list &&
             list.length > 0 &&
             (listVariant === "accordion" ? (
-              <div className="flex flex-col gap-3 mb-8">
+              <div className="flex flex-col gap-3">
                 {(list as any[]).map(
                   (item, idx) => (
                     <div

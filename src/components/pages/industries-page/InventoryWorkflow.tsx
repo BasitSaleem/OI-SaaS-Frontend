@@ -8,6 +8,7 @@ import { Autoplay } from "swiper/modules";
 import { useDevice } from "@/hooks/useDevice";
 import { type Swiper as SwiperType } from "swiper";
 import "swiper/css";
+import { useEqualizeHeadings } from "@/hooks/useEqualizeHeadings";
 
 interface WorkflowStep {
   number: number;
@@ -26,6 +27,12 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
   const [progress, setProgress] = React.useState(0);
   const [swiperInstance, setSwiperInstance] = React.useState<SwiperType | null>(null);
   const sectionRef = React.useRef<HTMLElement>(null);
+  const gridRef = React.useRef<HTMLDivElement>(null);
+  const swiperWrapperRef = React.useRef<HTMLDivElement>(null);
+
+  // Equalize heading heights in the static grid (pre-hydration) and the Swiper (post-hydration)
+  useEqualizeHeadings(gridRef, "[data-workflow-heading]", [steps, isMounted]);
+  useEqualizeHeadings(swiperWrapperRef, "[data-workflow-heading]", [steps, isMounted, swiperInstance]);
 
   React.useEffect(() => {
     if (!sectionRef.current || !swiperInstance) return;
@@ -79,7 +86,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
       </div>
 
       {!isMounted ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {steps.map((step, index) => (
             <WorkflowCard
               key={index}
@@ -90,6 +97,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
           ))}
         </div>
       ) : (
+        <div ref={swiperWrapperRef}>
         <Swiper
           key="inventory-swiper"
           onSwiper={setSwiperInstance}
@@ -130,6 +138,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
       )}
     </section>
   );

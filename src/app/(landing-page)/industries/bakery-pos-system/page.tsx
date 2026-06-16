@@ -301,7 +301,7 @@ const Page = () => {
           title="POS System For Bakeries Controlling Orders & Inventory"
           description="Manage your bakery with complete precision and control using Owners Inventory, the ultimate POS system for bakeries. Every sale, including the latest ingredient updates and fresh batches of morning cakes to orders for custom-made cake designs are synced into one intelligent system. This system is designed for bakeries who need to track inventory in real time and bill quickly."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

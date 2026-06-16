@@ -311,7 +311,7 @@ const Page = () => {
           title="Hotel Inventory Management Software For Effortless Operations"
           description="Our hotel inventory management software is designed to help hotels, resorts, and guesthouses manage their inventory efficiently and effectively. It helps track, control, and optimize your hotel's supplies, such as linens, toiletries, and operational stock. A centralized dashboard allows hotels to eliminate errors and waste, as well as ensure smooth operations in all departments."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />
