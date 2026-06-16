@@ -75,6 +75,13 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   const growthBoxRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
+    const heroEl = homeHeroSecRef.current;
+    const fallbackTimer = setTimeout(() => {
+      if (heroEl && heroEl.style.clipPath !== "inset(0% 0% 0% 0%)") {
+        heroEl.style.clipPath = "inset(0% 0% 0% 0%)";
+      }
+    }, 2500);
+
     const ctx = globalGsap.context(() => {
       const tl = globalGsap.timeline({ defaults: { ease: "power3.out" } });
 
@@ -160,7 +167,10 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
       );
     });
 
-    return () => ctx.revert();
+    return () => {
+      clearTimeout(fallbackTimer);
+      ctx.revert();
+    };
   }, []);
 
 
