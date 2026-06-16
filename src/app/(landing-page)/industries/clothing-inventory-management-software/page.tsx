@@ -335,7 +335,7 @@ const Page = () => {
           title="Clothing Inventory Management Software That Controls Stock"
           description="Run your clothing store with speed, accuracy, and complete control using Owners Inventory, the clothing inventory management software. Every sale and stock update is synced in one system. This software is designed for fashion retailers who need billing, size-based tracking and real-time inventory visibility."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

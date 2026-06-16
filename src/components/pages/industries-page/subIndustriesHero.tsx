@@ -131,7 +131,7 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
                       alt={title ?? ""}
                       width={743}
                       height={460}
-                      className={`w-full object-cover rounded-3xl mb-8 mt-14 ${imageClassName}`}
+                      className={`w-full object-cover rounded-3xl mb-8 ${imageClassName}`}
                       priority
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 743px, 1000px"
                     />

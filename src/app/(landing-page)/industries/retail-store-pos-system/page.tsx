@@ -338,7 +338,7 @@ const Page = () => {
           title="The Best POS System for Small Retail Stores"
           description="Running a small shop requires speed, control, and accuracy. Our POS system for small retail store owners is designed to simplify billing, inventory management, employee tracking, and reporting in one centralized system. Instead of juggling spreadsheets or manual registers, retailers can manage their entire store from a single dashboard."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

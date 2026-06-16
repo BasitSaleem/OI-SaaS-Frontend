@@ -57,7 +57,7 @@ function IndustryUnifiedPlatform({
       aria-label="Unified Platform Section"
     >
       <section ref={sectionRef} className="wrapper">
-        <div className="flex flex-col items-center justify-center gap-10 py-10 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
+        <div className="flex flex-col items-center justify-center py-10 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
           {/* Text Column */}
           <div className="w-full order-1">
             <div className="flex flex-col items-center justify-center">

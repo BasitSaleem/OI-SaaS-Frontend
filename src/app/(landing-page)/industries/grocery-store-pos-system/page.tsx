@@ -338,7 +338,7 @@ const Page = () => {
           title="POS System for Grocery Store That Controls Inventory"
           description="Owners Inventory, the best POS system for grocery stores, allows you to run your grocery store fast, accurately and with full control. All sales and stock remain updated in a single smart POS. The product is designed to fit busy supermarkets, and minimarts that require the quick billing and real-time monitoring of inventory."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

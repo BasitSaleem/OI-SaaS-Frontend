@@ -203,7 +203,7 @@ const Page = () => {
           title="Food Truck POS System Built for Every Service Stop"
           description="Food trucks run on tight margins, short service windows, and constant location changes. You manage payments, track ingredients, and handle staff in a space smaller than most restaurant kitchens. Owners Inventory is a platform that gives you a food truck POS system, which covers order management, ingredient stock tracking, payment processing, and end-of-service reporting in one place, so nothing gets missed between stops."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

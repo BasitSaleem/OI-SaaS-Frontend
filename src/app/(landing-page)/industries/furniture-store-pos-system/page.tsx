@@ -317,7 +317,7 @@ const Page = () => {
           title="POS System for Furniture Stores That Controls Inventory & Sales"
           description="Owners Inventory is a POS system that enables you to run your furniture store accurately, fast, and in full control. Order large quantities, manage custom orders, deliveries and payments all within a single intelligent system. All sales and stock movements remain updated in real time."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

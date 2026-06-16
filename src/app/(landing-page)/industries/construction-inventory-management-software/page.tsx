@@ -194,7 +194,7 @@ const Page = () => {
           title="Construction Inventory Management Software That Saves Money"
           description="Materials account for 40-50% of project costs, yet 10-15% of those materials are wasted. Owners Inventory helps construction companies reduce that waste by giving teams real-time visibility into what they have, where it is, and when to reorder, so every dollar spent on materials is accounted for. "
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

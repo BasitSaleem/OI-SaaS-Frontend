@@ -21,7 +21,7 @@ const SecurityCompliance: React.FC<SecurityComplianceProps> = ({
   return (
     <div className="">
       <div className="wrapper ">
-        <section className="bg-[rgba(121,_92,_245,_0.11)] lg:mt-[100px] md:mt-28 mt-20 px-4 py-6 md:p-6 lg:p-8 flex items-center justify-center rounded-[20px] lg:rounded-[40px] w-[100%] relative z-[100]">
+        <section className="bg-[rgba(121,_92,_245,_0.11)] px-4 py-6 md:p-6 lg:p-8 flex items-center justify-center rounded-[20px] lg:rounded-[40px] w-[100%] relative z-[100]">
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 items-start justify-start w-full  text-center">
               <div className="lg:col-span-6 h-full  xl:col-span-5">

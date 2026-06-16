@@ -315,7 +315,7 @@ const Page = () => {
           title="Point of Sale System for Coffee Shops: Promoting Smooth Operations"
           description="Every coffee shop requires fast, clear, and organized operations during busy hours at its counters. Our all-in-one POS program helps simplify orders, payments, and workflows for coffee shops and cafes. It improves efficiency, reduces order delays, and keeps shop operations smooth while helping you grow your business with ease and improving customer experience."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />
