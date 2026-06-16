@@ -188,51 +188,51 @@ export const THRIFT_STORE_WORKFLOW_DATA = {
 export const THRIFT_STORE_TESTIMONIALS = [
   {
     id: "1",
-    name: "Sarah L",
+    name: "Saylor Hart",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image67.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image72.webp",
     text: "Previously, tens of thousands of donated and second-hand items were extremely difficult to keep track of. Now they are all organized and accessible in a matter of seconds.",
   },
   {
     id: "2",
-    name: "Daniel M",
+    name: "Crew Dalton",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image68.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image72.webp",
     text: "New products comes in daily, and the system lets us know exactly where each piece is at all times, from the time it arrives until the sale.",
   },
   {
     id: "3",
-    name: "Ayesha K",
+    name: "Harlow Webb",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image68.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image73.webp",
     text: "Owners Inventory has helped us keep track of any unique items that we had lost before use and inventory discrepancies have been reduced significantly.",
   },
   {
     id: "4",
-    name: "Omar R",
+    name: "Memphis Lane",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image68.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image73.webp",
     text: "Checkout used to be very slow on busy weekends, but with barcode scanning and automated pricing it is much quicker, with significantly less time spent waiting.",
   },
   {
     id: "5",
-    name: "Jessica P",
+    name: "Bristol Lane",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image67.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/girl-image74.webp",
     text: "The reporting tools enabled us to know what works best in the categories and the products that sit on our shelves for too long, which has helped us to make better pricing decisions.",
   },
   {
     id: "6",
-    name: "Hassan A",
+    name: "Bowen Hart",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image68.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image74.webp",
     text: "Managing multiple thrift store locations was difficult before. Now we can monitor inventory and sales across all branches from one dashboard.",
   },
   {
     id: "7",
-    name: "Michael B",
+    name: "Daxton Webb",
     title: "Thrift Store Client",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image68.webp",
+    image: "/assets/industries-pages/industries-testimonial-images/boy-image75.webp",
     text: "The centralized inventory system has saved us countless hours of manual work and made daily operations much more efficient.",
   },
 ];
@@ -353,8 +353,8 @@ export const THRIFT_STORE_TESTIMONIAL_FEATURES = [
 ];
 
 export const THRIFT_STORE_TOOLS_DATA = {
-  heading: "Integration with Tools",
-  paragraph: "The system seamlessly connects with platforms like Shopify, WooCommerce, QuickBooks, and payment gateways and business tools. This eliminates duplicated data entry and ensures that sales, accounting and inventory data is synced up.",
+  heading: "Integration and Tools",
+  paragraph: "The system seamlessly connects with platforms like Shopify, WooCommerce, QuickBooks, payment gateways and business tools. This eliminates duplicated data entry and ensures that sales, accounting and inventory data is synced up.",
   tools: [
     {
       id: 1,

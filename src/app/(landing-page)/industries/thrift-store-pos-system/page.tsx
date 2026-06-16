@@ -237,7 +237,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={THRIFT_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security and Access Control"
+          title="Security and Access Control."
           description="Role-based access controls are an integral part of Owners Inventory to help safeguard business operations. Staff members have access only to information pertinent to their job functions and secure payment processing will help ensure customer and business information is well protected."
           secondDescription=""
         />

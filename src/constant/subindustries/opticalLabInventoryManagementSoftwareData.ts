@@ -327,7 +327,7 @@ export const OPTICAL_LAB_INVENTORY_TESTIMONIAL_FEATURES = [
 ];
 
 export const OPTICAL_LAB_INVENTORY_TOOLS_DATA = {
-  heading: "Integration Tools",
+  heading: "Integration and Tools",
   paragraph:
     "Our optical lab management software integrates with CRMs, ERPs, accounting software, barcode scanners, prescription management software and payment gateways. The integrations reduce redundant data entry, enhance data quality and ensure a smooth business process.",
   tools: [

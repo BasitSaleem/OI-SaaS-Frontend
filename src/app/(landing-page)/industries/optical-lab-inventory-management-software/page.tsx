@@ -195,7 +195,7 @@ const Page = () => {
           description="Simplify the processing of prescriptions; Monitor lens and frame inventories; Organize lab orders and streamline lens production. Owners Inventory provides optical labs with accurate records, minimizes errors, streamlines turnaround and provides exceptional service to customers."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
-          ctaDesc="Test It For Free"
+          ctaDesc="Start Free Today"
           variant="animation2"
         />
 
@@ -230,13 +230,13 @@ const Page = () => {
         <IndustriesCallToAction
           title="Start Efficiently Managing Your Optical Lab"
           description="Manually tracking orders, facing production delays, and dealing with inaccurate inventories can impact productivity and customer satisfaction. The structured optical lab management software allows you to control prescriptions and production processes with absolute accuracy and visibility."
-          ctaDesc="Start Today"
+          ctaDesc="Request a Free Demo"
         />
 
         <IndustriesFeaturesSection features={OPTICAL_LAB_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance"
+          title="Security, Accuracy, and Compliance."
           description="Prescriptions, production activities, inventory movement, and customer transactions are all fully documented in the system. Data is shielded from unauthorized access by role-based controls and audit logs are kept to track activity and uphold operational standards."
         />
 
@@ -272,7 +272,7 @@ const Page = () => {
         <IndustriesHardwareControl
           title="Experience Smarter Optical Lab Management"
           description="Improve your operations with our optical lab management software that eases prescription processing, inventory control, production tracking, and order management."
-          ctaDesc="Contact Us Today"
+          ctaDesc="Start Today"
         />
       </div>
     </>
