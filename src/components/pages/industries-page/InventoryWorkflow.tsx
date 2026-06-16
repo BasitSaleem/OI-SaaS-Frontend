@@ -72,7 +72,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
 
   return (
     <section ref={sectionRef} className="wrapper overflow-hidden">
-      <div className=" mx-auto text-center mb-6 lg:mb-[50px]">
+      <div className=" mx-auto text-center mb-6 lg:mb-[50px] lg:mt-[100px] md:mt-28 mt-20">
         <MainHeading className="mb-6">{heading}</MainHeading>
         <Paragraph className="text-lg opacity-80 px-4">{paragraph}</Paragraph>
       </div>
