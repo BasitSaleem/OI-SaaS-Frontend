@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Paragraph from "../typography/Paragraph";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import IndustryCard from "./IndustryCard";
@@ -32,6 +32,7 @@ const IndustryPosShowcase = ({
 }: IndustryPosShowcaseProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeCard, setActiveCard] = useState<number | null>(null);
+  const leaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [slidesPerView, setSlidesPerView] = useState(4);
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
@@ -212,15 +213,18 @@ const IndustryPosShowcase = ({
                     ? `translateX(${expandAmount}px)`
                     : "none",
                 }}
-                onMouseEnter={() =>
-                  !isTablet &&
-                  !isMobile &&
-                  isVisible &&
-                  setActiveCard(relativeIndex)
-                }
-                onMouseLeave={() =>
-                  !isTablet && !isMobile && setActiveCard(null)
-                }
+                onMouseEnter={() => {
+                  if (leaveTimerRef.current) {
+                    clearTimeout(leaveTimerRef.current);
+                    leaveTimerRef.current = null;
+                  }
+                  if (!isTablet && !isMobile && isVisible) setActiveCard(relativeIndex);
+                }}
+                onMouseLeave={() => {
+                  if (!isTablet && !isMobile) {
+                    leaveTimerRef.current = setTimeout(() => setActiveCard(null), 80);
+                  }
+                }}
                 onClick={(e) => {
                   if (isTablet && isVisible && !isMobile) {
                     e.stopPropagation();
