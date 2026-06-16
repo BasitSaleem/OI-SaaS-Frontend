@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
@@ -32,6 +33,8 @@ interface ContactModalProps {
 
 const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const [isLoading, setIsLoading] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const {
     register,
@@ -53,6 +56,10 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
+    if (!recaptchaToken) {
+      toast.error("Please complete the reCAPTCHA verification.");
+      return;
+    }
     setIsLoading(true);
     try {
       const response = await fetch(API_URL, {
@@ -70,6 +77,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
 
       toast.success("Your request has been sent! We'll be in touch soon.");
       reset();
+      setRecaptchaToken(null);
+      recaptchaRef.current?.reset();
       onClose();
     } catch (err: unknown) {
       const message =
@@ -85,13 +94,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className="flex flex-col items-center justify-start">
-        <MainHeading className="mb-5">Contact Us</MainHeading>
+        {/* <MainHeading className="mb-5">Contact Us</MainHeading>
         <Paragraph className="text-center text-[#434242] hidden md:flex">
           We&apos;d love to hear from you! Our team is available to answer any
           questions you may have regarding features, pricing or help installing
           your POS system. Complete the form below and one of our experts will
           call you soon.
-        </Paragraph>
+        </Paragraph> */}
 
         <div
           className="bg-white w-full max-w-[768px] h-auto mt-5 rounded-[20px] lg:rounded-[30px] p-4 md:p-8"
@@ -177,6 +186,16 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 rows={4}
                 register={register("message")}
                 error={errors.message?.message}
+              />
+            </div>
+
+            {/* reCAPTCHA */}
+            <div className="flex justify-start mt-6">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                onChange={(token) => setRecaptchaToken(token)}
+                onExpired={() => setRecaptchaToken(null)}
               />
             </div>
 

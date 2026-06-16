@@ -78,7 +78,18 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
         />
       </div>
 
-      {isMounted && (
+      {!isMounted ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {steps.map((step, index) => (
+            <WorkflowCard
+              key={index}
+              number={step.number}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
+        </div>
+      ) : (
         <Swiper
           key="inventory-swiper"
           onSwiper={setSwiperInstance}
