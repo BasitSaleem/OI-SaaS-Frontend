@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import React, { useState, useRef } from "react";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import { ArrowDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import IndustryIcon, {
@@ -75,8 +74,7 @@ function UnifiedPlatform({
                   </span>
                 </div>
               )}
-              <MainHeading className="text-center mb-4">{heading}</MainHeading>
-              <Paragraph className="text-center mb-6">{paragraph}</Paragraph>
+              <SectionHeading heading={heading} headingClassName="text-center mb-4" description={paragraph} descriptionClassName="text-center mb-6" />
             </div>
           </div>
           {/* Cards Column */}

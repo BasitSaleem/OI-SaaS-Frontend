@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
+import React, { createContext, useContext, useState, useCallback, useEffect, useMemo } from "react";
 
 interface ScrollLockContextType {
   lock: () => void;
@@ -23,8 +23,16 @@ export const ScrollLockProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   const isLocked = lockCount > 0;
 
+  // Memoize so consumers only re-render when isLocked actually flips —
+  // not on every lock()/unlock() call that leaves isLocked unchanged
+  // (e.g. nested lock count 1→2). lock/unlock are stable via useCallback.
+  const value = useMemo(
+    () => ({ lock, unlock, isLocked }),
+    [lock, unlock, isLocked]
+  );
+
   return (
-    <ScrollLockContext.Provider value={{ lock, unlock, isLocked }}>
+    <ScrollLockContext.Provider value={value}>
       {children}
     </ScrollLockContext.Provider>
   );

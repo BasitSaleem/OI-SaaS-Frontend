@@ -5,8 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -159,13 +158,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
       >
         <div className="w-full absolute blur-3xl left-0 right-0 z-2 h-full"></div>
         <div className="relative z-10 flex wrapper flex-col items-center justify-center w-full">
-          <MainHeading className="text-center mx-auto md:max-w-screen-sm xl:max-w-5xl xl:mb-8 lg:mb-6 mb-5">
-            {title} <span className="inline sm:block">{miniTitle}</span>
-          </MainHeading>
-
-          <Paragraph className="lg:mb-4 mb-6 text-center">
-            {description}
-          </Paragraph>
+          <SectionHeading heading={<>{title} <span className="inline sm:block">{miniTitle}</span></>} headingClassName="text-center mx-auto md:max-w-screen-sm xl:max-w-5xl xl:mb-8 lg:mb-6 mb-5" description={description} descriptionClassName="lg:mb-4 mb-6 text-center" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-4 lg:gap-8 mt-10">
             {chaos.map(({ id, chaosHead, chaosSign, chaosDesc }, index) => (

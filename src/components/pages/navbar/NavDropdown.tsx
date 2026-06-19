@@ -53,6 +53,8 @@ const NavDropdown = ({ label,
         {label}
         <img
           src="/assets/header-images/dropdown-icon.svg"
+          width={10}
+          height={6}
           className="xl:w-2.5 w-2 h-1 xl:h-1.5"
           alt="dropdown-icon"
         />

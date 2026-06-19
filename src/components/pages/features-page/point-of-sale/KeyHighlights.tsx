@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import FeatureCard from "../FeatureCard";
-import MainHeading from "../../typography/MainHeading";
+import SectionHeading from "../../typography/SectionHeading";
 import { ArrowDown } from "lucide-react";
 import ButtonSm from "@/components/button/ButtonSm";
 import { motion, AnimatePresence } from "framer-motion";
@@ -151,9 +151,10 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
     <section ref={sectionRef} className="wrapper features-core-opretions">
       {/* Heading */}
       <div className="flex flex-col items-center justify-center lg:mt-[100px] md:mt-28 mt-20">
-        <MainHeading className="xl:mb-10 lg:mb-6 mb-5 text-center w-full">
-          {heading}
-        </MainHeading>
+        <SectionHeading
+          heading={heading}
+          headingClassName="xl:mb-10 lg:mb-6 mb-5 text-center w-full"
+        />
       </div>
 
       {/* Cards */}

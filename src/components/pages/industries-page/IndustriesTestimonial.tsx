@@ -1,38 +1,12 @@
 "use client";
 
-import React, { useMemo, useState, useCallback, useRef } from "react";
-import { useEqualizeHeadings } from "@/hooks/useEqualizeHeadings";
-import MainHeading from "../typography/MainHeading";
-import Image from "next/image";
+import React, { useMemo, useState, useCallback } from "react";
+import SectionHeading from "../typography/SectionHeading";
 import SmartTools from "../landing-page/SmartTools";
 import CustomSwiper from "@/components/slider/CustomSwiper";
-import Paragraph from "../typography/Paragraph";
-import WhyChooseCard from "./WhyChooseCard";
-import {
-  Package,
-  BarChart3,
-  Users,
-  ClipboardCheck,
-  Settings2,
-  Pointer,
-  AppWindow
-} from "lucide-react";
-import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
-
-interface TestimonialSlide {
-  name: string;
-  title: string;
-  image: string;
-  text: string;
-  icon?: string;
-  color?: string;
-}
-
-interface Feature {
-  title: string;
-  description: string;
-  icon: React.ReactNode | string;
-}
+import { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
+import IndustryTestimonialCard, { TestimonialSlide } from "./IndustryTestimonialCard";
+import WhyChooseGrid, { Feature } from "./WhyChooseGrid";
 
 interface IndustriesTestimonialProps {
   testimonials?: TestimonialSlide[];
@@ -50,48 +24,7 @@ interface IndustriesTestimonialProps {
   iconSet?: IndustryIconSet | IndustryIconSet[];
 }
 
-const DEFAULT_GRADIENT_BACKGROUND = `
- 
-  linear-gradient(
-    to top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.98) 18%,
-    rgba(255, 255, 255, 0.85) 35%,
-    rgba(255, 255, 255, 0.00) 50%,
-    rgba(255, 255, 255, 0.00) 100%
-  ),
-  radial-gradient(900px 650px at 12% 8%,
-    rgba(207, 181, 249, 0.55) 0%,
-    rgba(207, 181, 249, 0.18) 45%,
-    rgba(207, 181, 249, 0.00) 75%
-  ),
-  radial-gradient(900px 650px at 88% 10%,
-    rgba(160, 215, 255, 0.55) 0%,
-    rgba(160, 215, 255, 0.18) 45%,
-    rgba(160, 215, 255, 0.00) 75%
-  ),
-  linear-gradient(
-    135deg,
-    rgba(210, 185, 255, 0.75) 0%,
-    rgba(175, 205, 255, 0.70) 45%,
-    rgba(160, 230, 245, 0.65) 100%
-  ),
-  linear-gradient(
-    135deg,
-     rgba(160, 230, 245, 0.65) 0%,
-    rgba(175, 205, 255, 0.70) 45%,
-    rgba(210, 185, 255, 0.75) 100%
-  )
-`;
-
-const PURPLE = "#795CF5";
-const GREEN = "#1AD1B9";
-const PURPLE_ICON = "/assets/review-section/double-coma-icon.svg";
-const GREEN_ICON = "/assets/review-section/coma-green.svg";
-
-const DEFAULT_FEATURES: Feature[] = [
-
-];
+const DEFAULT_FEATURES: Feature[] = [];
 
 const IndustriesTestimonial = ({
   testimonials = [],
@@ -100,7 +33,6 @@ const IndustriesTestimonial = ({
   secondHeading = "Stay Ahead with Smart Tools",
   secondDescription,
   showSmartTools = true,
-  gradientBackground = DEFAULT_GRADIENT_BACKGROUND,
   whyChooseShow = true,
   whyChooseTitle = "Why Choose Our System?",
   whyChooseDescription = "Our POS system for Hardware stores ensures transparent control, fast billing, and accurate inventory, making daily operations seamless.",
@@ -108,8 +40,6 @@ const IndustriesTestimonial = ({
   iconSet,
 }: IndustriesTestimonialProps) => {
   const [visibleIndices, setVisibleIndices] = useState<number[]>([0]);
-  const whyChooseGridRef = useRef<HTMLDivElement>(null);
-  useEqualizeHeadings(whyChooseGridRef, "[data-why-heading]", []);
 
   const updateVisibleIndices = useCallback((next: number[]) => {
     setVisibleIndices((prev) => {
@@ -128,93 +58,17 @@ const IndustriesTestimonial = ({
     [visibleIndices]
   );
 
-  const renderTestimonialSlide = useCallback((slide: TestimonialSlide, i: number) => {
-    const isVisible = visibleSet.has(i);
-    const isOdd = i % 2 === 0;
-    const accentColor = isOdd ? PURPLE : GREEN;
-    const icon = isOdd ? PURPLE_ICON : GREEN_ICON;
-
-    return (
-      <div
-        className={[
-          "testimonial-card bg-white relative",
-          "shadow-[0px_0px_20px_rgba(0,0,0,0.05)]",
-          "rounded-[30px] p-6 transition-all duration-300",
-          "flex flex-col h-full",
-          isVisible ? "opacity-100" : "opacity-80",
-        ].join(" ")}
-      >
-        <div className="absolute top-6 right-6">
-          <Image
-            src={icon}
-            alt="Quote icon"
-            width={26}
-            height={26}
-            style={{ width: "auto", height: "auto" }}
-          />
-        </div>
-
-        <div className="flex items-center gap-4 mb-5">
-
-          {/* <div className="border-2 w-[48px] h-[48px] overflow-hidden rounded-full flex items-center justify-center" style={{ borderColor: accentColor }}>
-          {iconSet && slide.image ? (
-            <IndustryIcon
-              set={iconSet}
-              name={slide.image}
-              size={48}
-              className="rounded-full"
-          
-            />
-          ) : slide.image?.startsWith("/") ? (
-            <Image
-              src={slide.image}
-              alt={slide.name}
-              width={48}
-              height={48}
-              className="rounded-full  object-contain"
-              
-            />
-          ) : null}
-          </div> */}
-
-          <div className="w-[56px] h-[56px] flex items-center justify-center rounded-full border-2" style={{ borderColor: accentColor }}>
-            {slide.image.startsWith("/") ? (
-              <Image
-                src={slide.image}
-                alt={`${slide.title} Icon`}
-                width={56}
-                height={56}
-                className="h-full w-full rounded-full flex items-center justify-center"
-              />
-            ) : (
-              <IndustryIcon
-                set={iconSet}
-                name={slide.image}
-                size={56}
-                className="h-full w-full rounded-full flex items-center justify-center child-svg-full"
-              />
-            )}
-          </div>
-
-          <div className="">
-            <p className="font-semibold text-xl font-['onest']">
-              {slide.name}
-            </p>
-            <p
-              className="font-medium font-['onest']"
-              style={{ color: accentColor }}
-            >
-              {slide.title}
-            </p>
-          </div>
-        </div>
-
-        <p className="text-base leading-[170%] flex-1 font-['onest']">
-          {slide.text}
-        </p>
-      </div>
-    );
-  }, [visibleSet]);
+  const renderTestimonialSlide = useCallback(
+    (slide: TestimonialSlide, i: number) => (
+      <IndustryTestimonialCard
+        slide={slide}
+        index={i}
+        isVisible={visibleSet.has(i)}
+        iconSet={iconSet}
+      />
+    ),
+    [visibleSet, iconSet]
+  );
 
   return (
     <div
@@ -224,11 +78,12 @@ const IndustriesTestimonial = ({
       <section className="wrapper">
 
         <div className="mb-10">
-          <MainHeading className="text-center mb-10">
-            {heading}
-          </MainHeading>
-
-          {paragraph && <Paragraph className="mb-10">{paragraph}</Paragraph>}
+          <SectionHeading
+            heading={heading}
+            description={paragraph}
+            headingClassName="text-center mb-10"
+            descriptionClassName="mb-10"
+          />
 
           <CustomSwiper
             slides={testimonials}
@@ -247,64 +102,12 @@ const IndustriesTestimonial = ({
         )}
 
         {whyChooseShow && (
-          <div className="mt-24">
-            <div className="text-center mx-auto mb-16">
-              <MainHeading className="mb-6">
-                {whyChooseTitle}
-              </MainHeading>
-              <Paragraph >{whyChooseDescription}</Paragraph>
-            </div>
-
-            <div ref={whyChooseGridRef} className="grid grid-cols-12 gap-6">
-              {features.map((feature, index) => {
-                let colSpanClass = "col-span-12"; // Mobile default
-
-                if (features.length === 8) {
-                  // If there are exactly 8 cards, show 4 cards per row on desktop (col-span-3)
-                  colSpanClass += " md:col-span-6 lg:col-span-3";
-                } else if (features.length === 6) {
-                  // If there are exactly 6 cards, show 3 cards per row on desktop (col-span-4)
-                  colSpanClass += " md:col-span-6 lg:col-span-4";
-                } else if (features.length === 5) {
-                  // If there are exactly 5 cards:
-                  // Desktop: 3 cards (col-span-4), 2 cards (col-span-6)
-                  // Tablet: 4 cards (col-span-6), 1 card (col-span-12)
-                  if (index < 3) {
-                    colSpanClass += " md:col-span-6 lg:col-span-4";
-                  } else if (index === 3) {
-                    colSpanClass += " md:col-span-6 lg:col-span-6";
-                  } else {
-                    colSpanClass += " md:col-span-12 lg:col-span-6";
-                  }
-                } else if (index < 4) {
-                  // First four cards: col-span-3 (desktop), col-span-6 (tablet)
-                  colSpanClass += " md:col-span-6 lg:col-span-3";
-                } else if (index < 6) {
-                  // Next two cards: col-span-4 (desktop), col-span-6 (tablet)
-                  colSpanClass += " md:col-span-6 lg:col-span-4";
-                } else {
-                  // Last card: col-span-4 (desktop), col-span-12 (tablet)
-                  colSpanClass += " md:col-span-12 lg:col-span-4";
-                }
-
-                return (
-                  <div key={index} className={colSpanClass}>
-                    <WhyChooseCard
-                      title={feature.title}
-                      description={feature.description}
-                      icon={
-                        typeof feature.icon === "string" ? (
-                          <IndustryIcon set={iconSet} name={feature.icon} size={44} />
-                        ) : (
-                          feature.icon
-                        )
-                      }
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <WhyChooseGrid
+            whyChooseTitle={whyChooseTitle}
+            whyChooseDescription={whyChooseDescription}
+            features={features}
+            iconSet={iconSet}
+          />
         )}
 
       </section>

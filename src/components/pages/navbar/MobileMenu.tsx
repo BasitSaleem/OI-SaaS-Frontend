@@ -425,6 +425,8 @@ export default function OffcanvasMenu({
                                 : "/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
+                            width={12}
+                            height={12}
                             className={`w-3 h-3 transition-transform duration-300 ${isCatOpen ? "rotate-0" : "-rotate-90"
                               }`}
                           />
@@ -491,6 +493,8 @@ export default function OffcanvasMenu({
                                                 : "/assets/header-dropdown-images/arrow-down-icon.svg"
                                             }
                                             alt="toggle"
+                                            width={12}
+                                            height={12}
                                             className="w-2.5 h-2.5"
                                           />
                                         </button>
@@ -571,6 +575,8 @@ export default function OffcanvasMenu({
                                 : "/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
+                            width={12}
+                            height={12}
                             className={`w-3.5 h-3.5 transition-transform duration-300 ${isTypeOpen ? "rotate-0" : "-rotate-90"
                               }`}
                           />
@@ -609,6 +615,8 @@ export default function OffcanvasMenu({
                                           : "/assets/header-dropdown-images/arrow-down-icon.svg"
                                       }
                                       alt="toggle"
+                                      width={12}
+                                      height={12}
                                       className={`w-3 h-3 transition-transform duration-300 ${isCatOpen ? "rotate-0" : "-rotate-90"
                                         }`}
                                     />
@@ -658,6 +666,8 @@ export default function OffcanvasMenu({
                                                     <img
                                                       src={isItemOpen ? "/assets/header-dropdown-images/arrow-up-icon.svg" : "/assets/header-dropdown-images/arrow-down-icon.svg"}
                                                       alt="toggle"
+                                                      width={12}
+                                                      height={12}
                                                       className="w-2.5 h-2.5"
                                                     />
                                                   </button>
@@ -752,12 +762,16 @@ export default function OffcanvasMenu({
                                   <img
                                     src="/assets/header-dropdown-images/arrow-up-icon.svg"
                                     alt="collapse"
+                                    width={12}
+                                    height={12}
                                     className="h-3 w-3"
                                   />
                                 ) : (
                                   <img
                                     src="/assets/header-dropdown-images/arrow-down-icon.svg"
                                     alt="expand"
+                                    width={12}
+                                    height={12}
                                     className="h-3 w-3"
                                   />
                                 )}

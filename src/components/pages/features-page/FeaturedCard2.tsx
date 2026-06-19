@@ -82,7 +82,7 @@ const FeatureCard2: React.FC<FeatureCard2Props> = ({
                 Your browser does not support the video tag.
               </video>
             ) : imageSrc ? (
-              <img src={imageSrc} alt={title} className={`w-full`} />
+              <img src={imageSrc} alt={title} width={743} height={460} className={`w-full`} />
             ) : null}
           </div>
         </div>

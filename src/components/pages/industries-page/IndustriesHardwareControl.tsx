@@ -2,8 +2,7 @@
 import React from "react";
 import "../../../app/globals.css";
 import ButtonSm from "@/components/button/ButtonSm";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 
 interface IndustriesHardwareControlProps {
   title?: string;
@@ -25,13 +24,12 @@ const IndustriesHardwareControl: React.FC<IndustriesHardwareControlProps> = ({
         >
           <div className="">
             <div className="flex flex-col items-center justify-center w-full mx-auto lg:py-[100px] md:py-20 py-9 lg:px-8 md:px-6 px-3 text-center">
-              <MainHeading className="text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5">
-                {title}
-              </MainHeading>
-
-              <Paragraph className="text-[var(--white-color)] mb-6">
-                {description}
-              </Paragraph>
+              <SectionHeading
+                heading={title}
+                description={description}
+                headingClassName="text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5"
+                descriptionClassName="text-[var(--white-color)] mb-6"
+              />
 
               <div className="flex gap-6 flex-col w-full md:flex-row items-center justify-center">
                 <ButtonSm

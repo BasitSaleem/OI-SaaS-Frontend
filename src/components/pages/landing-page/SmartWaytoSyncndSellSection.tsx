@@ -3,7 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import ButtonSm from "@/components/button/ButtonSm";
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import TrollyAnimation from "./trollyAnimation";
 
 // ContactModal pulls in react-hook-form + zod + react-phone-number-input.
@@ -25,9 +25,7 @@ function SmartWaytoSyncndSellSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-10 xl:gap-12 items-center justify-center w-full">
           {/* Left Content */}
           <div className="flex flex-col items-start justify-center">
-            <MainHeading className=" mb-0 md:mb-10 lg:mb-[50px]">
-              Modern Features Designed for Real Owners and Real Growth
-            </MainHeading>
+            <SectionHeading heading="Modern Features Designed for Real Owners and Real Growth" headingClassName=" mb-0 md:mb-10 lg:mb-[50px]" />
 
             <div className="hidden md:flex gap-4 w-full items-center justify-start">
               <ButtonSm

@@ -31,7 +31,7 @@ const RelatedFeatures: React.FC = () => {
           className="related-features flex items-start justify-start gap-4"
         >
           <div className="w-[60px] h-[60px] p-3 rounded-2xl bg-white flex items-center justify-center shadow-[0px_0px_10px_0px_rgba(0,0,0,0.15)]">
-            <img src={feature.icon} className="w-full" alt={feature.title} />
+            <img src={feature.icon} width={40} height={40} className="w-full" alt={feature.title} />
           </div>
           <div className="flex flex-col items-start justify-start">
             <h4 className="xl:text-lg text-base leading-100% font-semibold text-[var(--text-dark)] font-['Onest']">

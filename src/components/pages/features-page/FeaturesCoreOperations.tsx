@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import FeatureMainCard from "./FeatureMainCard";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 
 import { CORE_OPERATIONS_DATA } from "@/constant/featuresPageData";
 
@@ -58,12 +57,12 @@ const FeaturesCoreOperations: React.FC = () => {
   return (
     <section className="wrapper features-core-opretions">
       <div className="flex flex-col items-start justify-center mt-28 md:mt-40 lg:mt-20 ">
-        <MainHeading className="lg:max-w-4xl xl:mb-10 lg:mb-6 mb-5">
-          {heading}
-        </MainHeading>
-        <Paragraph className="w-full max-w-[978px]">
-          {paragraph}
-        </Paragraph>
+        <SectionHeading
+          heading={heading}
+          headingClassName="lg:max-w-4xl xl:mb-10 lg:mb-6 mb-5"
+          description={paragraph}
+          descriptionClassName="w-full max-w-[978px]"
+        />
       </div>
 
       {/* Cards */}
