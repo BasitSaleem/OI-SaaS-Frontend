@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import React, { useState, useRef } from "react";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import { ArrowDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
@@ -57,12 +56,16 @@ function IndustryUnifiedPlatform({
       aria-label="Unified Platform Section"
     >
       <section ref={sectionRef} className="wrapper">
-        <div className="flex flex-col items-center justify-center gap-10 py-10 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
+        <div className="flex flex-col items-center justify-center py-10 sm:py-20 xl:py-16 px-4 sm:px-10 xl:px-8 rounded-[20px] lg:rounded-[40px] bg-[var(--background-halfwhite)]">
           {/* Text Column */}
           <div className="w-full order-1">
             <div className="flex flex-col items-center justify-center">
-              <MainHeading className="text-center mb-4">{heading}</MainHeading>
-              <Paragraph className="text-center mb-6">{paragraph}</Paragraph>
+              <SectionHeading
+                heading={heading}
+                description={paragraph}
+                headingClassName="text-center mb-4"
+                descriptionClassName="text-center mb-6"
+              />
             </div>
           </div>
           {/* Cards Column */}

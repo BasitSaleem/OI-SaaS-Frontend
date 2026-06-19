@@ -3,8 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import '../../../app/globals.css'
 import ButtonSm from '@/components/button/ButtonSm';
-import MainHeading from '../typography/MainHeading';
-import Paragraph from '../typography/Paragraph';
+import SectionHeading from '../typography/SectionHeading';
 interface CalltoActionBottomProps {
   showDemoButton?: boolean;
   title?: string;
@@ -34,11 +33,12 @@ const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
         <div className="wrapper">
           <div className="flex flex-col items-center justify-center w-full mx-auto lg:py-44 md:py-48 py-24 text-center lg:max-w-4xl">
 
-            <MainHeading className='text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5'>{title}</MainHeading>
-
-            <Paragraph className='text-[var(--white-color)] mb-10 md:mb-8 lg:mb-14'>
-              {description}
-            </Paragraph>
+            <SectionHeading
+              heading={title}
+              description={description}
+              headingClassName='text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5'
+              descriptionClassName='text-[var(--white-color)] mb-10 md:mb-8 lg:mb-14'
+            />
             <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
 
               {showDemoButton && (

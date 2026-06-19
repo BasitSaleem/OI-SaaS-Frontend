@@ -1,6 +1,6 @@
 "use client";
 
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
@@ -41,9 +41,7 @@ const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealB
 
     >
       <div className="wrapper text-center">
-        <MainHeading className="xl:mb-12 lg:mb-6 mb-5">
-          {title}
-        </MainHeading>
+        <SectionHeading heading={title} headingClassName="xl:mb-12 lg:mb-6 mb-5" />
 
         <FeaturesMainSwiper
           showPagination={false}

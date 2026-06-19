@@ -51,13 +51,24 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
   const growthBoxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const heroEl = homeHeroSecRef.current;
+
+    // Safety fallback: if GSAP fails for any reason, force the content visible
+    const fallbackTimer = setTimeout(() => {
+      if (heroEl && heroEl.style.clipPath !== "inset(0% 0% 0% 0%)") {
+        heroEl.style.clipPath = "inset(0% 0% 0% 0%)";
+      }
+    }, 2500);
+
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
     tl.to(mainHeadingRef.current, { opacity: 1, y: 0, duration: 0.8 }, 0);
     tl.to(paragraphRef.current, { opacity: 1, y: 0, duration: 0.8 }, 0.2);
-    tl.to(homeHeroSecRef.current, { clipPath: "inset(0% 0% 0% 0%)", duration: 1 }, 0.5);
+    tl.to(heroEl, { clipPath: "inset(0% 0% 0% 0%)", duration: 1 }, 0.5);
     tl.to(growthBoxRef.current, { opacity: 1, y: 0, duration: 0.8 }, 1);
     tl.to(heroLowerRef.current, { opacity: 1, y: 0, duration: 1 }, 1.2);
+
+    return () => clearTimeout(fallbackTimer);
   }, []);
 
   return (
@@ -120,7 +131,7 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
                       alt={title ?? ""}
                       width={743}
                       height={460}
-                      className={`w-full object-cover rounded-3xl mb-8 mt-14 ${imageClassName}`}
+                      className={`w-full object-cover rounded-3xl mb-8 ${imageClassName}`}
                       priority
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 743px, 1000px"
                     />

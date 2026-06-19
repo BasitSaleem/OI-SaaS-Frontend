@@ -304,7 +304,7 @@ const Page = () => {
           title="Inventory Management Software for Small Businesses for Better Task Control"
           description="Running a small business requires simple and reliable control over daily operations to boost efficiency. Our inventory management software tracks inventory, manages stock levels, and streamlines daily business tasks. The software is built to save time, whether you run a retail store, a grocery shop, or a small restaurant. It improves accuracy and supports better business decisions."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

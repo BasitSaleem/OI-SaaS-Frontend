@@ -1,5 +1,5 @@
 import React from "react";
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import CaseStudyCard from "./CaseStudyCard";
 import { CaseStudy } from "./CaseStudy";
 
@@ -16,7 +16,7 @@ const CaseStudyOverview: React.FC<CaseStudyOverviewProps> = ({
     <section className="py-16 md:py-24 bg-white">
       <div className="wrapper">
         <div className="mb-12">
-          <MainHeading className="text-center">{heading}</MainHeading>
+          <SectionHeading heading={heading} headingClassName="text-center" />
         </div>
         <CaseStudyCard study={study} hideCTA={true} hideNavigation={true} />
       </div>

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import Image from "next/image";
 import IndustryIcon, {
   IndustryIconSet,
@@ -71,8 +70,12 @@ const CaseStudyOutcomes: React.FC<CaseStudyOutcomesProps> = ({
               </span>
             </div>
           )}
-          <MainHeading className="mb-4">{heading}</MainHeading>
-          <Paragraph className="">{description}</Paragraph>
+          <SectionHeading
+            heading={heading}
+            headingClassName="mb-4"
+            description={description}
+            descriptionClassName=""
+          />
         </div>
 
         {/* Outcomes Grid */}

@@ -13,7 +13,11 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    inlineCss: true,
+    // NOTE: `inlineCss: true` was removed — it stored the full CSS text inside
+    // every page's client-reference-manifest (`entryCSSFiles`, ~750KB each) and
+    // also inlined it into each page's HTML/RSC/segments. Across ~64 prerendered
+    // pages that added ~60MB to `.next/server` and was crashing deployment.
+    // CSS is now served as a normal shared <link> stylesheet from .next/static.
     // Tree-shakes these heavy packages so only imported symbols are bundled
     // Reduces JS parse/execution time (TBT improvement)
     optimizePackageImports: [

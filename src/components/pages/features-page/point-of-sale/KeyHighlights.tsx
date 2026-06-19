@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import FeatureCard from "../FeatureCard";
-import MainHeading from "../../typography/MainHeading";
+import SectionHeading from "../../typography/SectionHeading";
 import { ArrowDown } from "lucide-react";
 import ButtonSm from "@/components/button/ButtonSm";
 import { motion, AnimatePresence } from "framer-motion";
+import { useEqualizeHeadings } from "@/hooks/useEqualizeHeadings";
 
 interface Feature {
   id?: string | number;
@@ -110,6 +111,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
   const [isMobile, setIsMobile] = useState(false);
   const [showAll, setShowAll] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const activeLayoutPatterns = layoutPatterns || getDefaultLayoutPatterns(features.length);
 
@@ -143,20 +145,23 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
     ? features
     : features.slice(0, isMobile ? 3 : 6);
 
+  useEqualizeHeadings(gridRef, "[data-card-heading]", [visibleFeatures]);
+
   return (
     <section ref={sectionRef} className="wrapper features-core-opretions">
       {/* Heading */}
       <div className="flex flex-col items-center justify-center lg:mt-[100px] md:mt-28 mt-20">
-        <MainHeading className="xl:mb-10 lg:mb-6 mb-5 text-center w-full">
-          {heading}
-        </MainHeading>
+        <SectionHeading
+          heading={heading}
+          headingClassName="xl:mb-10 lg:mb-6 mb-5 text-center w-full"
+        />
       </div>
 
       {/* Cards */}
       <div className="relative w-full">
         <div className="w-full absolute top-0 left-0 right-0 bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] h-[163px]"></div>
 
-        <div className="grid grid-cols-12 xl:auto-rows-auto h-auto items-stretch gap-6">
+        <div ref={gridRef} className="grid grid-cols-12 xl:auto-rows-auto h-auto items-stretch gap-6">
           <AnimatePresence>
             {visibleFeatures.map((feature, i) => {
               const pattern = activeLayoutPatterns[i % activeLayoutPatterns.length];

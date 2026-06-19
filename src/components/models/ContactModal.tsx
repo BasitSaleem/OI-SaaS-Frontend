@@ -7,8 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
 
 import Modal from "./ModalLayout";
-import MainHeading from "../pages/typography/MainHeading";
-import Paragraph from "../pages/typography/Paragraph";
 import InputField from "../inputField/InputField";
 import SelectField from "../inputField/SelectField";
 import TextArea from "../inputField/TextArea";

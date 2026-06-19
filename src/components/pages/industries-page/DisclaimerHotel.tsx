@@ -2,8 +2,7 @@
 import React from "react";
 import "../../../app/globals.css";
 
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 
 interface DisclaimerHotelProps {
   title?: string;
@@ -27,14 +26,12 @@ const DisclaimerHotel: React.FC<DisclaimerHotelProps> = ({
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 items-center justify-center w-full  text-center">
               <div className="lg:col-span-6 xl:col-span-7">
-                <MainHeading className="text-left lg:mb-10 md:mb-6 mb-5">
-                  {title}
-
-                </MainHeading>
-
-                <Paragraph className="text-left mb-8">
-                  {description}
-                </Paragraph>
+                <SectionHeading
+                  heading={title}
+                  headingClassName="text-left lg:mb-10 md:mb-6 mb-5"
+                  description={description}
+                  descriptionClassName="text-left mb-8"
+                />
               </div>
 
               <div className="lg:col-span-6 xl:col-span-5">

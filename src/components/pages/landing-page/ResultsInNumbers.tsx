@@ -3,8 +3,7 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import Footer from "../footer/Footer";
 import StatCard, { ResultMetric } from "./StatCard";
 
@@ -114,12 +113,7 @@ const ResultsInNumbers: React.FC<ResultsInNumbersProps> = ({
         </div>
 
         {/* Heading & Description */}
-        <MainHeading className="md:px-0 px-4 text-center mb-6">
-          {title}
-        </MainHeading>
-        <Paragraph className="md:px-0 px-4 text-center mb-16 text-gray-600">
-          {description}
-        </Paragraph>
+        <SectionHeading heading={title} headingClassName="md:px-0 px-4 text-center mb-6" description={description} descriptionClassName="md:px-0 px-4 text-center mb-16 text-gray-600" />
 
         {/* Stats Grid */}
         <div className="md:px-0 px-4 grid grid-cols-1 md:grid-cols-12 w-full gap-6 stats-container">

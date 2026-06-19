@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import "../../../app/globals.css";
 import ButtonSm from "@/components/button/ButtonSm";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import ContactModal from "@/components/models/ContactModal";
 
 interface IndustriesCallToAction {
@@ -35,13 +34,12 @@ const IndustriesCallToAction: React.FC<IndustriesCallToAction> = ({
         >
           <div className="">
             <div className="flex flex-col items-center justify-center w-full mx-auto lg:py-[160px] md:py-28 py-9 lg:px-8 md:px-6 px-3  text-center">
-              <MainHeading className="text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5">
-                {title}
-              </MainHeading>
-
-              <Paragraph className="text-[var(--white-color)] mb-10 md:mb-8 lg:mb-14">
-                {description}
-              </Paragraph>
+              <SectionHeading
+                heading={title}
+                description={description}
+                headingClassName="text-[var(--white-color)] lg:mb-10 md:mb-6 mb-5"
+                descriptionClassName="text-[var(--white-color)] mb-10 md:mb-8 lg:mb-14"
+              />
               <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
                 <ButtonSm
                   url="https://app.ownersinventory.com/sign-up?app=OG"

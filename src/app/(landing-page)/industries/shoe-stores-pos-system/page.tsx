@@ -337,7 +337,7 @@ const Page = () => {
           title="The Best POS System for Shoe Stores"
           description="Most footwear stores experience confusion while stocking sizes and styles, especially when dealing with multiple brands, categories, and frequent inventory updates. This often leads to misplaced stock, inaccurate records, and missed sales opportunities. Our advanced POS system for shoe stores eliminates errors, increases billing speed, and provides complete control across all branches."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

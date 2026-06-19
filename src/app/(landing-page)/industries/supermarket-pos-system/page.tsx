@@ -337,7 +337,7 @@ const Page = () => {
           title="Complete POS System for Supermarkets with Stock Tracking"
           description="The Owners Inventory POS System for supermarkets is the way to control your store’s inventory. It helps you run your supermarket quickly and accurately. Our POS System keeps track of all sales and stock updates in one place. This is great for supermarkets that need to bill customers quickly and keep track of their inventory in real time."
           image={heroBanner}
-          imageClassName="max-w-[1000px]"
+          imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
           variant="animation2"
         />

@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonSm from "@/components/button/ButtonSm";
 import Image from "next/image";
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import Paragraph from "../typography/Paragraph";
 import whoWeBanner from "../../../../public/assets/about-us/who-we-banner.webp";
 import CardHeading from "../typography/CardHeading";
@@ -62,11 +62,12 @@ function WhoWeAre({
         <div className="grid  grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-14 xl:gap-32 items-center justify-center w-full">
           {/* Left Content */}
           <div className="flex flex-col items-start justify-center">
-            <MainHeading className=" mb-0 md:mb-10 lg:mb-[50px]">
-              {title}
-            </MainHeading>
-
-            <Paragraph className="mb-6">{description}</Paragraph>
+            <SectionHeading
+              heading={title}
+              headingClassName=" mb-0 md:mb-10 lg:mb-[50px]"
+              description={description}
+              descriptionClassName="mb-6"
+            />
             <Paragraph>{mission}</Paragraph>
 
             {featureItems.length > 0 && (

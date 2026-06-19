@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import heroBanner from "../../../../../public/assets/features-page/integration-page/integration-hero-banner.webp";
 import whyChoseBanner from "../../../../../public/assets/features-page/integration-page/why-chose-banner.webp";
 import {
@@ -9,13 +10,13 @@ import {
 } from "@/constant/subfeatures/integrationData";
 
 import TrustedBySection from "@/components/common-components/TrustedBySection";
-import FeaturesCallToAction from "@/components/pages/features-page/FeaturesCallToAction";
-import FeaturesTestimonials from "@/components/pages/features-page/FeaturesTestimonials";
-import KeyHighlights from "@/components/pages/features-page/point-of-sale/KeyHighlights";
-import WhyChoosePOS from "@/components/pages/features-page/point-of-sale/WhyChoosePOS";
+const FeaturesCallToAction = dynamic(() => import("@/components/pages/features-page/FeaturesCallToAction"));
+const FeaturesTestimonials = dynamic(() => import("@/components/pages/features-page/FeaturesTestimonials"));
+const KeyHighlights = dynamic(() => import("@/components/pages/features-page/point-of-sale/KeyHighlights"));
+const WhyChoosePOS = dynamic(() => import("@/components/pages/features-page/point-of-sale/WhyChoosePOS"));
 import SubFeaturesHero from "@/components/pages/features-page/SubFeaturesHero";
-import FaqSection from "@/components/pages/landing-page/FAQSection";
-import IndustryPosShowcase from "@/components/pages/landing-page/IndustryPosShowcase";
+const FaqSection = dynamic(() => import("@/components/pages/landing-page/FAQSection"));
+const IndustryPosShowcase = dynamic(() => import("@/components/pages/landing-page/IndustryPosShowcase"));
 
 const Page = () => {
   return (

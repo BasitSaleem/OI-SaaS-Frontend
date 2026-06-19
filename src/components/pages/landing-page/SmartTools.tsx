@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import ButtonSm from "@/components/button/ButtonSm";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,12 +47,7 @@ const SmartTools: React.FC<SmartTools> = ({
             "url('/assets/home-page-images/black-background.webp')",
         }}
       >
-        <MainHeading className="text-center lg:mb-6 md:mb-6 mb-5 text-[var(--white-color)]">
-          {title}
-        </MainHeading>
-        <Paragraph className="text-center lg:mb-[42px] md:mb-6 mb-5 text-[var(--white-color)]">
-          {description}
-        </Paragraph>
+        <SectionHeading heading={title} headingClassName="text-center lg:mb-6 md:mb-6 mb-5 text-[var(--white-color)]" description={description} descriptionClassName="text-center lg:mb-[42px] md:mb-6 mb-5 text-[var(--white-color)]" />
         <div className="flex gap-3 lg:gap-6 flex-col md:flex-row items-center justify-center relative z-50">
           <Link
             href="https://app.ownersinventory.com/sign-up?app=OG"

@@ -1,6 +1,6 @@
 "use client";
 
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import { LANDING_FEATURES } from "@/constant/landingPageData";
 import Image from "next/image";
 
@@ -13,9 +13,10 @@ export default function FeaturesTabSection() {
         <div className="bg-[var(--primary-purple)] h-[200px] lg:h-[300px] w-[200px] lg:w-[300px] blur-[400px] lg:blur-[300px] rounded-full"></div>
       </div>
       <div className="wrapper relative z-[400]">
-        <MainHeading className="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-16 md:mb-12 mb-8 text-left">
-          Powerful Features Built for Growing Businesses
-        </MainHeading>
+        <SectionHeading
+          heading="Powerful Features Built for Growing Businesses"
+          headingClassName="max-w-[800px] leading-tight text-[var(--white-color)] lg:mb-16 md:mb-12 mb-8 text-left"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center">
           {/* IMAGE SECTION */}

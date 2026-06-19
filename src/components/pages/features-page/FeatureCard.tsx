@@ -59,6 +59,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             <img
               src={imageSrc}
               alt={title}
+              width={743}
+              height={460}
               className={`w-full rounded-[20px] ${mediaClassName}`}
             />
 
@@ -66,17 +68,21 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 
           {/* Text Content */}
           <div className="mt-5 flex flex-col flex-1">
-            <CardHeading className="mb-4 min-h-[70px] lg:min-h-[70px] flex self-stretch">
-              {displayedTitle}
-            </CardHeading>
+            <div data-card-heading className="mb-4">
+              <CardHeading className="flex self-stretch">
+                {displayedTitle}
+              </CardHeading>
+            </div>
 
-            <CardDesc className="flex-1 mb-6">
+             <CardDesc className={`flex-1 ${authorName || buttonLabel ? "mb-6" : ""}`}>
               {description}
             </CardDesc>
 
-            <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
-              {authorName}
-            </p>
+            {authorName && (
+              <p className="xl:text-base text-base leading-6 font-bold font-['Onest'] text-[#795CF5] mt-3 lg:mt-4">
+                {authorName}
+              </p>
+            )}
 
             {buttonLabel && (
               <Link
