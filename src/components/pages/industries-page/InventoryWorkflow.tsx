@@ -70,8 +70,8 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
 
 
   return (
-    <section ref={sectionRef} className="wrapper py-16 lg:py-24 overflow-hidden">
-      <div className=" mx-auto text-center mb-16 lg:mb-20">
+    <section ref={sectionRef} className="wrapper overflow-hidden">
+      <div className=" mx-auto text-center mb-6 lg:mb-[50px] lg:mt-[100px] md:mt-28 mt-20">
         <SectionHeading
           heading={heading}
           description={paragraph}
