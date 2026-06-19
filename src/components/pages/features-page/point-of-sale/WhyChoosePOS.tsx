@@ -1,8 +1,7 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import MainHeading from "../../typography/MainHeading";
-import Paragraph from "../../typography/Paragraph";
+import SectionHeading from "../../typography/SectionHeading";
 import CardHeading from "../../typography/CardHeading";
 import React, { useEffect, useState } from "react";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
@@ -59,8 +58,12 @@ function WhyChoosePOS({
         <div className="wrapper">
           {/* Heading Section */}
           <div className="flex flex-col items-center justify-center">
-            <MainHeading className="mb-6 text-center">{heading}</MainHeading>
-            <Paragraph className="mb-[60px] text-center">{paragraph}</Paragraph>
+            <SectionHeading
+              heading={heading}
+              description={paragraph}
+              headingClassName="mb-6 text-center"
+              descriptionClassName="mb-[60px] text-center"
+            />
           </div>
 
           {/* Content Grid */}

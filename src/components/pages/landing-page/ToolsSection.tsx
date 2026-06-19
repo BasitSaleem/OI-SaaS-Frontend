@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 
 interface Tool {
   id: number;
@@ -32,11 +31,7 @@ const ToolsSection = ({
     <section className="wrapper">
       <div className="w-full bg-[var(--background-halfwhite)] p-8 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px]">
 
-        <MainHeading className="text-center lg:mb-6 md:mb-6 mb-5">
-          {heading}
-        </MainHeading>
-
-        <Paragraph className="lg:mb-10 md:mb-6 mb-5 text-center">{description}</Paragraph>
+        <SectionHeading heading={heading} headingClassName="text-center lg:mb-6 md:mb-6 mb-5" description={description} descriptionClassName="lg:mb-10 md:mb-6 mb-5 text-center" />
 
         <div className="mt-10 grid grid-cols-12 gap-6">
           {tools.map((tool, index) => {

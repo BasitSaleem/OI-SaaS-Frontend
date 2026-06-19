@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useMemo, useState, useEffect, useCallback } from "react";
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import Image from "next/image";
 import SmartTools from "../landing-page/SmartTools";
 import CustomSwiper from "@/components/slider/CustomSwiper";
-import Paragraph from "../typography/Paragraph";
 
 interface TestimonialSlide {
   name: string;
@@ -159,11 +158,12 @@ const FeaturesTestimonials = ({
       style={{ background: gradientBackground }}
     >
       <section className="wrapper">
-        <MainHeading className="text-center mb-10">
-          {heading}
-        </MainHeading>
-
-        {paragraph && <Paragraph className="mb-10">{paragraph}</Paragraph>}
+        <SectionHeading
+          heading={heading}
+          headingClassName="text-center mb-10"
+          description={paragraph}
+          descriptionClassName="mb-10"
+        />
 
         <CustomSwiper
           slides={testimonials}

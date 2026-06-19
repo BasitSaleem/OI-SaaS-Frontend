@@ -29,11 +29,15 @@ const Mobileicons = () => {
         <img
           src="/assets/header-images/burger-icon.svg"
           alt="Menu"
+          width={22}
+          height={20}
           className={`w-5.5 h-5 me-4 md:me-5 ${openMobileMenu ? 'hidden' : ''}`}
         />
         <img
           src="/assets/header-images/cross-icon.png"
           alt="Close"
+          width={18}
+          height={16}
           className={`w-4.5 h-4 ${openMobileMenu ? '' : 'hidden'}`}
         />
       </button>

@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import Image from "next/image";
 
 import CaseStudyCard from "./CaseStudyCard";
@@ -72,9 +72,10 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
   return (
     <div className="wrapper">
       <div className="flex justify-between gap-x-3 items-end mb-6 lg:mb-[50px]">
-        <MainHeading className="w-full max-w-full md:max-w-[65%] lg:max-w-[60%] gradient-text">
-          Businesses Thriving with Owners Inventory
-        </MainHeading>
+        <SectionHeading
+          heading="Businesses Thriving with Owners Inventory"
+          headingClassName="w-full max-w-full md:max-w-[65%] lg:max-w-[60%] gradient-text"
+        />
       </div>
 
       {/* Navigation */}

@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import MainHeading from "../pages/typography/MainHeading";
-import Paragraph from "../pages/typography/Paragraph";
+import SectionHeading from "../pages/typography/SectionHeading";
 import dynamic from "next/dynamic";
 const BrandsSwiper = dynamic(() => import("../slider/BrandsSwiper"), {
   ssr: false,
@@ -43,18 +42,12 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({
       <div className="wrapper bg-white text-center">
 
         {/* 🔥 Dynamic heading */}
-        <MainHeading className="">
-          {heading}
-        </MainHeading>
-
-        {/* 🔥 Optional paragraph */}
-        {paragraph && (
-          <Paragraph className="lg:mt-6 mt-4">
-            {paragraph}
-          </Paragraph>
-
-
-        )}
+        <SectionHeading
+          heading={heading}
+          headingClassName=""
+          description={paragraph}
+          descriptionClassName="lg:mt-6 mt-4"
+        />
 
         {/* 🔥 Brands Swiper */}
         <div className="xl:mt-12 lg:mt-6 mt-5">

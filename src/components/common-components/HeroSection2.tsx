@@ -1,22 +1,14 @@
 "use client";
 
-import { ReactNode, useRef, useEffect } from "react";
-import globalGsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ReactNode } from "react";
 import ButtonSm from "@/components/button/ButtonSm";
 import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import DropdownButtonSm from "../dropdown/DropdownButtonSm";
-import MainHeading from "../pages/typography/MainHeading";
 import Paragraph from "../pages/typography/Paragraph";
 import Image from "next/image";
-import SubHeading from "../pages/typography/CardHeading";
-import HeroImageSlider from "./HeroImageSlider";
-import { useSafariDetector } from "@/hooks/useSafariDetector";
-
-if (typeof window !== "undefined") {
-  globalGsap.registerPlugin(ScrollTrigger);
-}
+import { useHeroEntranceAnimation } from "@/hooks/useHeroEntranceAnimation";
+import HeroShowcase from "./HeroShowcase";
 
 interface HeroSection2Props {
   title?: string;
@@ -27,22 +19,6 @@ interface HeroSection2Props {
   heroOverflow?: string;
   variant?: "animation1" | "animation2" | "none";
 }
-
-const HERO_IMAGES = [
-  "/assets/home-page-images/hero-animation/animation-img1.webp",
-  "/assets/home-page-images/hero-animation/animation-img2.webp",
-  "/assets/home-page-images/hero-animation/animation-img3.webp",
-  "/assets/home-page-images/hero-animation/animation-img4.webp",
-  "/assets/home-page-images/hero-animation/animation-img5.webp",
-];
-
-const HERO_BACKGROUNDS = [
-  "#E2D9F3",
-  "#F1DBD5",
-  "#E7E2D4",
-  "#DAE6F1",
-  "#E4E7D4",
-];
 
 const HeroSection2: React.FC<HeroSection2Props> = ({
   title = "Grow Faster with Smarter Inventory Tools",
@@ -56,123 +32,8 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
   useHeaderAnimation();
   useHeroAnimations(variant);
 
-  const { shouldShowImage } = useSafariDetector();
-
-  // Refs
-  const mainHeadingRef = useRef<HTMLHeadingElement>(null);
-  const paragraphRef = useRef<HTMLParagraphElement>(null);
-  const productsImageRef = useRef<HTMLImageElement>(null);
-  const advanceReportImageRef = useRef<HTMLImageElement>(null);
-  const homeHeroSecRef = useRef<HTMLDivElement>(null);
-  const inventorySystemImageRef = useRef<HTMLImageElement>(null);
-  const reportsImageRef = useRef<HTMLImageElement>(null);
-  const fastServiceImageRef = useRef<HTMLImageElement>(null);
-  const fastServiceDescRef = useRef<HTMLImageElement>(null);
-  const safeSecureDescRef = useRef<HTMLImageElement>(null);
-  const safeSecureImageRef = useRef<HTMLImageElement>(null);
-  const inventoryBlurIconRef = useRef<HTMLImageElement>(null);
-  const inventoryIconRef = useRef<HTMLImageElement>(null);
-  const growthBoxRef = useRef<HTMLImageElement>(null);
-
-  useEffect(() => {
-    const heroEl = homeHeroSecRef.current;
-    const fallbackTimer = setTimeout(() => {
-      if (heroEl && heroEl.style.clipPath !== "inset(0% 0% 0% 0%)") {
-        heroEl.style.clipPath = "inset(0% 0% 0% 0%)";
-      }
-    }, 2500);
-
-    const ctx = globalGsap.context(() => {
-      const tl = globalGsap.timeline({ defaults: { ease: "power3.out" } });
-
-      // Initial states for floating decorative elements (heading/paragraph/hero use CSS initial states)
-
-      globalGsap.set(productsImageRef.current, {
-        opacity: 0,
-        rotation: 45,
-        scale: 0.5,
-        x: 60,
-        y: 60,
-      });
-      globalGsap.set(advanceReportImageRef.current, {
-        opacity: 0,
-        rotation: 45,
-        scale: 0.5,
-        x: 60,
-        y: -60,
-      });
-      globalGsap.set(inventorySystemImageRef.current, {
-        opacity: 0,
-        rotation: -45,
-        scale: 0.5,
-        x: -60,
-        y: 60,
-      });
-      globalGsap.set(reportsImageRef.current, {
-        opacity: 0,
-        rotation: -45,
-        scale: 0.5,
-        x: -60,
-        y: -30,
-      });
-      globalGsap.set(fastServiceImageRef.current, { opacity: 0, x: 60, y: 30 });
-      globalGsap.set(fastServiceDescRef.current, { opacity: 0, x: 200 });
-      globalGsap.set(safeSecureImageRef.current, { opacity: 0, x: 60, y: 30 });
-      globalGsap.set(safeSecureDescRef.current, { opacity: 0, x: -200 });
-      globalGsap.set(inventoryBlurIconRef.current, { opacity: 0, scale: 0.8 });
-      globalGsap.set(inventoryIconRef.current, { opacity: 0, scale: 0.8 });
-      globalGsap.set(growthBoxRef.current, { opacity: 0, y: 100 });
-
-      // Animations
-      tl.to(mainHeadingRef.current, { opacity: 1, y: 0, duration: 0.8 }, "0");
-      tl.to(paragraphRef.current, { opacity: 1, y: 0, duration: 0.8 }, "0");
-
-      tl.to(
-        homeHeroSecRef.current,
-        { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8 },
-        "0.2"
-      );
-      tl.to(
-        [
-          productsImageRef.current,
-          advanceReportImageRef.current,
-          inventorySystemImageRef.current,
-          reportsImageRef.current,
-          fastServiceImageRef.current,
-          fastServiceDescRef.current,
-          safeSecureImageRef.current,
-          safeSecureDescRef.current,
-          inventoryBlurIconRef.current,
-          inventoryIconRef.current,
-        ],
-        {
-          opacity: 1,
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotation: 0,
-          duration: 1.5,
-          stagger: 0.1,
-        },
-        "0.4"
-      );
-      tl.to(
-        growthBoxRef.current,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.2,
-        },
-        "0.6"
-      );
-    });
-
-    return () => {
-      clearTimeout(fallbackTimer);
-      ctx.revert();
-    };
-  }, []);
-
+  const refs = useHeroEntranceAnimation();
+  const { mainHeadingRef, paragraphRef, homeHeroSecRef } = refs;
 
   return (
     <div className="" ref={homeHeroSecRef} style={{ clipPath: "inset(0% 0% 100% 0%)" }}>
@@ -245,167 +106,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 
                 {/* Extra flexibility */}
                 {children}
-                <div
-                  className="owner-inventory-hero__lower relative w-full lg:max-w-[1000px] xl:max-w-[1200px] wrapper  pt-10 md:pt-10 xl:pt-10 "
-                >
-                  <div
-                    className="w-full h-[376px] lg:h-[650px] max-w-[250px] md:max-w-[300px] lg:max-w-[498px] mx-auto relative z-[1] backdrop-blur-xl  px-3.5 py-3 lg:px-6 lg:py-5 border-[3px] border-[rgba(255,255,255,0.5)] bg-[rgba(255, 255, 255, 0.12)] rounded-[40px] -mb-34 -lg:mb-20"
-                  >
-
-                    <div className="w-full h-full rounded-[40px] relative overflow-hidden owner-inventory-hero__video">
-                      <HeroImageSlider
-                        images={HERO_IMAGES}
-                        backgrounds={HERO_BACKGROUNDS}
-                      />
-                    </div>
-
-                    <div
-                      ref={productsImageRef}
-                      style={{ opacity: 0 }}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[90px] lg:top-20 xl:top-[120px] -left-5 lg:left-[-50px] xl:left-[-60px]"
-                    >
-                      <Image
-                        src="/assets/home-page-images/products.svg"
-                        alt="Products module icon"
-                        width={33}
-                        height={33}
-                        className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
-                      />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
-                        Products
-                      </p>
-                    </div>
-
-                    <div
-                      ref={advanceReportImageRef}
-                      style={{ opacity: 0 }}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[180px] -left-5 lg:top-[220px] lg:-left-14 xl:top-[300px] xl:left-[-60px]"
-                    >
-                      <Image
-                        src="/assets/home-page-images/advance-report.svg"
-                        alt="Advance Reports module icon"
-                        width={33}
-                        height={33}
-                        className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
-                      />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
-                        Advance Reports
-                      </p>
-                    </div>
-
-                    <div
-                      ref={inventorySystemImageRef}
-                      style={{ opacity: 0 }}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[55px] -right-10 md:top-[110px] lg:top-[130px] md:right-[-110px] lg:-right-40 xl:right-[-150px] 2xl:top-[120px] 2xl:right-[-200px]"
-                    >
-                      <Image
-                        src="/assets/home-page-images/inventory-system.svg"
-                        alt="Inventory Operations module icon"
-                        width={33}
-                        height={33}
-                        className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
-                      />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
-                        Inventory Operations
-                      </p>
-                    </div>
-                    <div
-                      ref={reportsImageRef}
-                      style={{ opacity: 0 }}
-                      className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[148px] -right-10 md:top-[200px] md:right-[-60px] lg:top-[250px] lg:-right-20 xl:top-[300px] xl:right-[-120px]"
-                    >
-                      <Image
-                        src="/assets/home-page-images/reports.svg"
-                        alt="Reports module icon"
-                        width={33}
-                        height={33}
-                        className="xl:w-[33px] xl:h-[33px] lg:w-6 lg:h-6 md:w-[18px] md:h-[18px] w-[13px] h-[13px]"
-                      />
-                      <p className="text-[10px] leading-4 md:text-[12px] md:leading-[19px] lg:text-[22px] lg:leading-[38px] font-medium font-inter text-[var(--text-light)]">
-                        Reports
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    ref={fastServiceDescRef}
-                    style={{ opacity: 0 }}
-                    className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute top-[200px] left-0 2xl:top-[120px] 2xl:left-0"
-                  >
-                    <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
-                      Fast Service
-                    </p>
-                  </div>
-                  <Image
-                    src="/assets/home-page-images/fast-service.svg"
-                    alt="Fast Service"
-                    ref={fastServiceImageRef}
-                    width={51}
-                    height={64}
-                    style={{ opacity: 0 }}
-                    className="w-[51px] h-16 hidden lg:block absolute top-[110px] left-[30px] 2xl:top-[50px] 2xl:left-[60px]"
-                  />
-                  <div
-                    ref={safeSecureDescRef}
-                    style={{ opacity: 0 }}
-                    className="hidden lg:flex w-fit items-center justify-center gap-4 px-4 py-2 backdrop-blur-xl bg-[rgba(255, 255, 255, 0.25)] border-[1.5px]  border-[rgba(255,255,255,1)] rounded-full absolute bottom-10 right-2 xl:bottom-[250px] 2xl:bottom-[200px] 2xl:right-0"
-                  >
-                    <p className="text-base leading-5 font-medium font-['Onest'] text-[#581C87]">
-                      Safe & Secure
-                    </p>
-                  </div>
-                  <Image
-                    src="/assets/home-page-images/safe-secure.svg"
-                    alt="Safe and Secure"
-                    ref={safeSecureImageRef}
-                    width={100}
-                    height={118}
-                    style={{ opacity: 0 }}
-                    className="2xl:w-[100px] hidden lg:block 2xl:h-[118px] w-20 h-[90px] absolute bottom-[85px] right-0 xl:bottom-[300px] 2xl:bottom-[250px] 2xl:right-[60px]"
-                  />
-
-                  <Image
-                    src="/assets/home-page-images/inventory-blur-icon.svg"
-                    alt="Inventory icon decorative"
-                    ref={inventoryBlurIconRef}
-                    width={120}
-                    height={120}
-                    style={{ opacity: 0 }}
-                    className="2xl:w-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] 2xl:h-[120px] absolute top-4 right-2 md:-top-2.5 2xl:-top-7 2xl:right-[200px] md:right-10"
-                  />
-
-                  <Image
-                    src="/assets/home-page-images/inventory-icon.svg"
-                    alt="Inventory management icon"
-                    ref={inventoryIconRef}
-                    width={120}
-                    height={120}
-                    style={{ opacity: 0 }}
-                    className="2xl:w-[120px] 2xl:h-[120px] lg:w-[90px] lg:h-[90px] md:w-[63px] md:h-[63px] w-[46px] h-[46px] absolute top-7  right-3.5 md:top-2.5 md:right-15 lg:top-2.5 lg:right-5 2xl:top-0 2xl:right-[220px]"
-                  />
-
-                  <div
-                    ref={growthBoxRef}
-                    style={{ opacity: 0 }}
-                    className="hidden lg:flex flex-col w-full max-w-[300px] xl:max-w-[400px] 2xl:max-w-[480px] p-4 absolute bottom-0  -z-20"
-                  >
-                    <div>
-                      <p className="text-[#2E263DE5] font-['Onest'] font-semibold text-5xl leading-[53px]">42.5k</p>
-                    </div>
-                    <Image
-                      src="/assets/home-page-images/total-growth.svg"
-                      alt="Total Growth Chart"
-                      width={800}
-                      height={600}
-                      className="w-full "
-                    />
-                    <div>
-                      <p className="text-[rgba(46, 38, 61, 0.9)] text-left xl:text-center mt-3 text-[21px] leading-[30px] font-medium font-['Onest']">
-                        Total Growth
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <HeroShowcase refs={refs} />
               </div>
             </div>
           </div>

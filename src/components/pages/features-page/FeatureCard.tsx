@@ -59,6 +59,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             <img
               src={imageSrc}
               alt={title}
+              width={743}
+              height={460}
               className={`w-full rounded-[20px] ${mediaClassName}`}
             />
 

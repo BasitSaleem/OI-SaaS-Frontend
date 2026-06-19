@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import React, { useState, useRef } from "react";
-import MainHeading from "../typography/MainHeading";
-import Paragraph from "../typography/Paragraph";
+import SectionHeading from "../typography/SectionHeading";
 import { ArrowDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
@@ -61,8 +60,12 @@ function IndustryUnifiedPlatform({
           {/* Text Column */}
           <div className="w-full order-1">
             <div className="flex flex-col items-center justify-center">
-              <MainHeading className="text-center mb-4">{heading}</MainHeading>
-              <Paragraph className="text-center mb-6">{paragraph}</Paragraph>
+              <SectionHeading
+                heading={heading}
+                description={paragraph}
+                headingClassName="text-center mb-4"
+                descriptionClassName="text-center mb-6"
+              />
             </div>
           </div>
           {/* Cards Column */}

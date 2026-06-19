@@ -2,7 +2,7 @@
 import React from "react";
 import "../../../app/globals.css";
 
-import MainHeading from "../typography/MainHeading";
+import SectionHeading from "../typography/SectionHeading";
 import Paragraph from "../typography/Paragraph";
 
 interface SecurityComplianceProps {
@@ -25,10 +25,10 @@ const SecurityCompliance: React.FC<SecurityComplianceProps> = ({
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 items-start justify-start w-full  text-center">
               <div className="lg:col-span-6 h-full  xl:col-span-5">
-                <MainHeading className="text-left h-full flex items-center justify-center lg:mb-10 md:mb-6 mb-5">
-                  {title}
-
-                </MainHeading>
+                <SectionHeading
+                  heading={title}
+                  headingClassName="text-left h-full flex items-center justify-center lg:mb-10 md:mb-6 mb-5"
+                />
               </div>
 
               <div className="lg:col-span-6 flex h-full flex-col justify-center items-center  xl:col-span-7">
