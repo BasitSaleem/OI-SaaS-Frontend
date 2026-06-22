@@ -188,7 +188,7 @@ export const HR_TESTIMONIALS = [
   },
   {
     id: "hr-testimonial-4",
-    name: "Hassan Ali",
+    name: "Hassan Mahmood",
     title: "Operations Director, City Wholesale",
     image: "/assets/features-page/testimonial-images/testinomial-boy24.webp",
     text: `As our business grew, it became difficult to maintain HR activities. Owners Inventory assisted us to have it all in one platform- attendance to payslips. It is safe, adaptable, and quite frankly the best HR software 2025 to handle people and performance jointly.`,

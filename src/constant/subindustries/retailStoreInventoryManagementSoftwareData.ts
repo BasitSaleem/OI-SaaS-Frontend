@@ -264,7 +264,7 @@ export const RETAIL_STORE_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Nova Flores",
+    name: "Nova Alvarez",
     title: "Home Decor & Retail Store Owner​",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image38.webp",
     text: "Before this system, we used to have stock errors and slow procedures; now all are recorded in real time and time saved and store management is a lot easier.",

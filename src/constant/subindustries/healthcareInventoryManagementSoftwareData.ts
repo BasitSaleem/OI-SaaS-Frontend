@@ -255,7 +255,7 @@ export const HEALTHCARE_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Audrey Torres",
+    name: "Audrey Mendez",
     title: "Facility Administrator",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image52.webp",
     text: "What I like the most about it is the control this software provides over inventory management. It fits into our workflows easily without slowing anything down, which was our biggest concern initially.",

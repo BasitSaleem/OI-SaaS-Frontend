@@ -221,7 +221,7 @@ export const SPORTING_GOODS_WORKFLOW_DATA = {
 export const SPORTING_GOODS_TESTIMONIALS = [
   {
     id: "1",
-    name: "Josephine Peterson",
+    name: "Josephine Harrison",
     title: "Sporting Goods Store Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image53.webp",
@@ -245,7 +245,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Vivienne Collins",
+    name: "Vivienne Anderson",
     title: "Outdoor Gear Shop Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image55.webp",
@@ -253,7 +253,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
   },
   {
     id: "5",
-    name: "Emmett Gray",
+    name: "Emmett Shaw",
     title: "Sporting Goods Store Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image55.webp",

@@ -293,7 +293,7 @@ export const CLOTHING_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Bryson Patterson",
+    name: "Bryson Vance",
     title: "Interior Decor Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image36.webp",
     text: "We needed a system to manage sizes and styles efficiently. This software does that. It is easy for staff to use and provides clear daily reports.",
@@ -307,7 +307,7 @@ export const CLOTHING_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Sawyer Hughes",
+    name: "Sawyer Jenkins",
     title: "Home Decor & Clothing Store Owner​",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image37.webp",
     text: "Before using this system, we struggled with stock errors and delays. Now everything is tracked accurately. It saves time and makes managing the store stress-free.",

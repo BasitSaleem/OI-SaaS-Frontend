@@ -287,7 +287,7 @@ export const FOOD_TRUCK_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Griffin Sanders",
+    name: "Griffin Reynolds",
     title: "Multi Truck Operator",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image34.webp",
@@ -295,7 +295,7 @@ export const FOOD_TRUCK_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Luna Jenkins",
+    name: "Luna Hayes",
     title: "Food Truck Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image35.webp",

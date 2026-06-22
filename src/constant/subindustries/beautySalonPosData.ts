@@ -241,7 +241,7 @@ export const BEAUTY_SALON_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Dylan Parker",
+    name: "Dylan Foster",
     title: "Beauty & Wellness Center Owner​",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image14.webp",
     text: "Their salon POS software is user-friendly. Our team picked it up quickly, and now we are able to handle every salon management operation quickly.",

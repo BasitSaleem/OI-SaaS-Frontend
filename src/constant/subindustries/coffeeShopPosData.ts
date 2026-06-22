@@ -237,7 +237,7 @@ export const COFFEE_SHOP_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Landon Ross",
+    name: "Landon Myers",
     title: "Coffee & Beverage Center Owner​",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image27.webp",
     text: "As our coffee shop expanded, the software scaled smoothly. Managing multiple orders is now much simpler than before.",
