@@ -239,7 +239,7 @@ export const CANDY_STORE_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Sadie Murphy",
+    name: "Sadie Campbell",
     title: "Dessert Shop Operator",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image31.webp",
@@ -255,7 +255,7 @@ export const CANDY_STORE_TESTIMONIALS = [
   },
   {
     id: "5",
-    name: "Camila Rivera",
+    name: "Camila Gomez",
     title: "Dessert Shop Operator",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image32.webp",
@@ -271,7 +271,7 @@ export const CANDY_STORE_TESTIMONIALS = [
   },
   {
     id: "7",
-    name: "Zachary Powell",
+    name: "Zachary Diaz",
     title: "Multi-Location Shop Owner",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image33.webp",

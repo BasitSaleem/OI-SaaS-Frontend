@@ -280,7 +280,7 @@ export const SHOES_STORE_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Hazel Wright",
+    name: "Hazel Jenkins",
     title: "Footwear Store Owner​",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image17.webp",
     text: "It was not that easy to keep track of hundreds of shoes, sizes, and styles, but with Owners Inventory POS, everything is organized, all variants can be tracked, and all exchanges can be easily made, and customer profiles allow us to understand their preferences.",
