@@ -276,7 +276,7 @@ export const CLOTHING_STORE_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Blake Anderson",
+    name: "Blake Henderson",
     title: "Interior Decor Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image10.webp",
     text: "We have a women's clothing shop, and stock management was a tense affair. The Owners Inventory’s POS has made our inventory up to date, our returns are hassle-free, and reports are clearer than ever. It has simplified our everyday tasks.",

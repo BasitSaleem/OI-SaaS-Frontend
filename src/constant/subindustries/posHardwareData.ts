@@ -274,14 +274,14 @@ export const HARDWARE_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Eli Turner",
+    name: "Eli Brooks",
     title: "Store Manager",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image24.webp",
     text: "Our hardware store required a system that could manage thousands of objects and maintain all of them in order. This POS system provides precisely that. It is easy to use by the staff and provides a daily report.",
   },
   {
     id: "4",
-    name: "Penelope Foster",
+    name: "Penelope Bryant",
     title: "Store Manager",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image24.webp",
     text: "Before using this system, I was concerned about mistakes and wastage of time. At this point, all the sales and stock updates are monitored flawlessly. It saves time, minimizes errors, and makes the process of running the store less stressful. I would strongly suggest it to anyone who wants a reliable hardware store POS software.",
