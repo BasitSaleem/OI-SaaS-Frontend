@@ -245,7 +245,7 @@ export const JEWELRY_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Ryder Perry",
+    name: "Ryder Coleman",
     title: "Fine Jewelry Shop Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image40.webp",
     text: "Managing custom orders has become much easier because of recorded details. Every order is now delivered on time.",

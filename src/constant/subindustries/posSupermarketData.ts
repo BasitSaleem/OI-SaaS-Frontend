@@ -295,7 +295,7 @@ export const SUPERMARKET_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Brandon Scott",
+    name: "Brandon Howard",
     title: "Retail & Supermarket Owner​",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
     text: "We used to have trouble managing thousands of items. Now everything is tracked perfectly. The staff can use the system easily.",

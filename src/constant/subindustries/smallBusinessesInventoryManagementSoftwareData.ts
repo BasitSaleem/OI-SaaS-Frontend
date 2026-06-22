@@ -249,7 +249,7 @@ export const SMALL_BUSINESS_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Kinsley Butler",
+    name: "Kinsley Myers",
     title: "Operations Manager",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image41.webp",
     text: "Managing inventory across different product categories used to take a lot of time. With Owners Inventory, everything feels more streamlined now.",

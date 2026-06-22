@@ -122,7 +122,7 @@ export const ICE_CREAM_SHOP_FEATURE_CARDS: FeatureCardData[] = [
         listdescription:
           "Online ordering-enabled ice cream shops can link to their menu and stock with the same system that connects to the counter. All online orders automatically reduce stock levels from the real-time inventory.",
         listSubDescription:
-          "This will help to avoid selling out of things such as limited-edition flavors, seasonal toppings, or specialty cones. It also guarantees that the customers only see products that are available, which helps to reduce order errors and improve customer satisfaction. reduce order errors and improve customer satisfaction. ",
+          "This will help to avoid selling out of things such as limited-edition flavors, seasonal toppings, or specialty cones. It also guarantees that the customers only see products that are available, which helps to reduce order errors and improve customer satisfaction.",
       },
       {
         listheading: "Unified Multi-Channel Dashboard",
@@ -277,7 +277,7 @@ export const ICE_CREAM_SHOP_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Brayden Reed",
+    name: "Brayden Fisher",
     title: "Multi-Location Shop Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image30.webp",
     text: "We found the system to be very easy to set up, our staff learned the system quickly, and the control of daily sales and stock was noticed immediately.",
@@ -323,7 +323,7 @@ export const ICE_CREAM_SHOP_TESTIMONIAL_DATA = {
   paragraph: "",
   secondHeading: "Take Your Ice Cream Shop Business to the Next Level",
   secondDescription:
-    "Owners Inventory is a complete solution for ordering, inventory management, and customer tracking; everything in one easy-to-use system for fast and efficient ice cream shop operations. It enables your team to provide customer service quicker without compromising without compromising business organization.",
+    "Owners Inventory is a complete solution for ordering, inventory management, and customer tracking; everything in one easy-to-use system for fast and efficient ice cream shop operations. It enables your team to provide customer service quicker without compromising business organization.",
   whyChooseTitle: "Why Choose Owners Inventory Ice Cream Shop POS System?",
   whyChooseDescription: "With our software, ice cream shop owners can handle orders, inventory, customer information and reporting without having to hire additional staff to manage their backend.",
 };

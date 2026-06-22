@@ -128,7 +128,7 @@ export const TOOLS_TESTIMONIALS = [
   },
   {
     id: "tools-testimonial-3",
-    name: "Imran Malik",
+    name: "Imran Qureshi",
     title: "Founder, Malik Traders",
     image: "/assets/features-page/testimonial-images/testinomial-boy27.webp",
     text: `Owners Inventory General Tools are a life savior to our fashion business. Processing of seasonal collections and handling of multiple SKUs previously consumed hours, but it is now quicker. With its user-friendly design, it is easy to use by anyone. All is organized and controlled, even bulk updates and stock checks. It has certainly streamlined our business processes.`,

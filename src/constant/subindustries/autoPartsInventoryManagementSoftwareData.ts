@@ -253,7 +253,7 @@ export const AUTO_PARTS_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Hannah Morris",
+    name: "Hannah Watson",
     title: "Automotive Parts Shop Owner",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image46.webp",
     text: "Their system has helped us stay more consistent and manage bulk orders effectively during busy weeks. Truly amazing and reliable inventory management software.",

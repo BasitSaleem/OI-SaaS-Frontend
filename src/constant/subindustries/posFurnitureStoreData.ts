@@ -295,7 +295,7 @@ export const FURNITURE_STORE_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Owen Griffin",
+    name: "Owen Martinez",
     title: "Interior Decor Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image25.webp",
     text: "We also have the mobile POS option, where our sales personnel are able to make sales on the showroom floor. The customers like instant quotes and invoices, and the transactions are fast, precise, and professional. This has made our store operations modern and enhanced the customer experience.",
@@ -309,7 +309,7 @@ export const FURNITURE_STORE_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Connor Barnes",
+    name: "Connor Price",
     title: "Modern Furniture Showroom Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image26.webp",
     text: "This has made the operations more efficient, reduced errors and provided us with complete visibility and control of all locations.",

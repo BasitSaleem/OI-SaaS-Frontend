@@ -291,7 +291,7 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Layla Lewis",
+    name: "Layla Morgan",
     title: "Procurement Manager",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image45.webp",
     text: "Our purchase orders were a mess. Same orders going to two suppliers, missed deliveries, no approval process. We haven't had a duplicate order in three months since switching to Owners Inventory. The approval workflow alone has saved us hours of back and forth every week.",
@@ -397,28 +397,28 @@ export const CONSTRUCTION_INVENTORY_TOOLS_DATA = {
   paragraph:
     "Owners Inventory connects with the accounting tools your construction business already uses, so material costs, purchase orders, and project spending stay consistent across every system without manual data entry.",
   tools: [
+    // {
+    //   id: 1,
+    //   name: "Shopify",
+    //   image: "/assets/home-page-images/tools-section/shopify.svg",
+    // },
+    // {
+    //   id: 2,
+    //   name: "WooCommerce",
+    //   image: "/assets/home-page-images/tools-section/woocomerce.svg",
+    // },
     {
       id: 1,
-      name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
-    },
-    {
-      id: 2,
-      name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
-    },
-    {
-      id: 3,
       name: "QuickBooks",
       image: "/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
-      id: 4,
+      id: 2,
       name: "Xero",
       image: "/assets/home-page-images/tools-section/xero.svg",
     },
     {
-      id: 5,
+      id: 3,
       name: "Stripe",
       image: "/assets/home-page-images/tools-section/stripe.svg",
     },

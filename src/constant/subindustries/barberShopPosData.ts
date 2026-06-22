@@ -250,7 +250,7 @@ export const BARBER_SHOP_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Wyatt King",
+    name: "Wyatt Lopez",
     title: "Grooming Business Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image20.webp",
     text: "The setup of the system was quicker than I expected. Our team felt comfortable using the POS on the very first day. We can now easily identify where the stock went and which barber handles the most clients per month.",
@@ -264,14 +264,14 @@ export const BARBER_SHOP_TESTIMONIALS = [
   },
   {
     id: "6",
-    name: "Jaxon Brooks",
+    name: "Jaxon Miller",
     title: "Manager Barber Shop",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image21.webp",
     text: "Our payment processing is now faster, and clients don't have to wait. This alone made the switch worth it. We have saved 5 hours per week with efficient features of POS.",
   },
   {
     id: "7",
-    name: "Ryan Cooper",
+    name: "Ryan Bennett",
     title: "Grooming Business Owner",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image22.webp",
     text: "The POS fits how our barber shop runs. It is simple, fast, and reliable for everyday tasks.",

@@ -254,7 +254,7 @@ export const CONVENIENCE_STORE_TESTIMONIALS = [
   },
   {
     id: "3",
-    name: "Austin Hall",
+    name: "Austin Bell",
     title: "Corner Store Operator",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image18.webp",
     text: "I run the store remotely. I check sales and shift reports from my phone in under a minute. Last month, I spotted a cash discrepancy at 9 pm and had it resolved before closing, without stepping foot in the store.",
@@ -382,28 +382,28 @@ export const CONVENIENCE_STORE_TOOLS_DATA = {
   paragraph:
     "Owners Inventory connects with the accounting and payment tools your business already uses, so sales data, financial records, and inventory levels stay consistent without manual data entry between systems.",
   tools: [
+    // {
+    //   id: 1,
+    //   name: "Shopify",
+    //   image: "/assets/home-page-images/tools-section/shopify.svg",
+    // },
+    // {
+    //   id: 2,
+    //   name: "WooCommerce",
+    //   image: "/assets/home-page-images/tools-section/woocomerce.svg",
+    // },
     {
       id: 1,
-      name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
-    },
-    {
-      id: 2,
-      name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
-    },
-    {
-      id: 3,
       name: "QuickBooks",
       image: "/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
-      id: 4,
+      id: 2,
       name: "Xero",
       image: "/assets/home-page-images/tools-section/xero.svg",
     },
     {
-      id: 5,
+      id: 3,
       name: "Stripe",
       image: "/assets/home-page-images/tools-section/stripe.svg",
     },
