@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
+// Swiper's side-effect CSS imports break Turbopack's CSS HMR in dev.
+// In production (webpack) it's safe to tree-shake it normally.
+const isProduction = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
+  // Remove X-Powered-By header — minor security hardening
+  poweredByHeader: false,
   // If you use remote images, add allowed hosts here:
   // images: {
   //   remotePatterns: [
@@ -26,7 +32,8 @@ const nextConfig: NextConfig = {
       "lucide-react",
       "react-icons",
       "@heroicons/react",
-      // "swiper" intentionally excluded — its side-effect CSS imports break Turbopack HMR
+      // Swiper only in production: its side-effect CSS imports break Turbopack HMR in dev
+      ...(isProduction ? ["swiper"] : []),
     ],
   },
 
