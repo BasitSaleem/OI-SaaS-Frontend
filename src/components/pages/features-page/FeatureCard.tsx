@@ -47,7 +47,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         bg-[linear-gradient(90deg,#1AD1B9_32.74%,#38ACCC_52.46%,#5588DF_76.39%,#795CF5_100%)] 
         ${heightClass} ${className} h-full`}
     >
-      <div className="bg-white w-full rounded-[30px] h-full p-2 lg:p-4 flex flex-col">
+      <div className="bg-white w-full rounded-[30px] h-full p-4 lg:p-4 flex flex-col">
         <div className="flex flex-col flex-1">
           {/* Media */}
           <div
@@ -74,7 +74,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               </CardHeading>
             </div>
 
-             <CardDesc className={`flex-1 ${authorName || buttonLabel ? "mb-6" : ""}`}>
+             <CardDesc className={`flex-1 ${authorName || buttonLabel ? "mb-6" : "mb-1"}`}>
               {description}
             </CardDesc>
 

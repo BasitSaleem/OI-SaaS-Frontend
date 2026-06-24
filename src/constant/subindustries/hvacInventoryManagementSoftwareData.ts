@@ -382,30 +382,17 @@ export const HVAC_INVENTORY_TOOLS_DATA = {
   paragraph:
     "Owners Inventory connects with the accounting and business platforms your HVAC operation already depends on. Parts costs, service spending, and purchase records stay consistent across every connected system without manual data entry between them.",
   tools: [
+   
     {
       id: 1,
-      name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
-    },
-    {
-      id: 2,
-      name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
-    },
-    {
-      id: 3,
       name: "QuickBooks",
       image: "/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
-      id: 4,
+      id: 2,
       name: "Xero",
       image: "/assets/home-page-images/tools-section/xero.svg",
     },
-    {
-      id: 5,
-      name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
-    },
+   
   ],
 };

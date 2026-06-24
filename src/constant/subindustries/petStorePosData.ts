@@ -205,7 +205,7 @@ export const PET_STORE_WORKFLOW_DATA = {
       number: 5,
       title: "Performance Review and Restocking",
       description:
-        "End-of-day reports show which pet products sold across each category, which variants performed strongest, and which items are approaching low stock levels. Owners can use this data to simplify procurement planning and grow their pet store business.",
+        "At the end of the day, the dashboard offers an easy-to-understand view of sales activity and stock turnover. Pet store owners can view the top-selling products, slow-moving items, and items that are running low.",
     },
   ],
 };

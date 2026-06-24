@@ -222,7 +222,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
 export const WAREHOUSES_WORKFLOW_DATA = {
   heading: "Workflow of Owners Inventory POS for Warehouses",
   paragraph:
-    "Our software follows the complete operational cycle of a warehouse from catalog organization and daily order processing to end-of-day performance review. It keeps inventory accurate and operations visible without manual intervention.",
+    "We have an integrated warehouse POS which is designed to cater large inventories, rapid turnover, and precise order processing. The system ensures that the warehouse functions smoothly and efficiently.",
   steps: [
     {
       number: 1,
