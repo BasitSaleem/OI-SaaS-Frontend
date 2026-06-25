@@ -239,7 +239,7 @@ const Page = () => {
 
         <SecurityCompliance
           title="Security and Access Control."
-          description= "Owners Inventory ensures secure operations – with role-based access control. Staff are only provided with information relevant to their roles and all transactions are carried out via secure payment methods to ensure that customer and business information is kept safe."
+          description= "Owners Inventory ensures secure operations with role-based access control. Staff are only provided with information relevant to their roles and all transactions are carried out via secure payment methods to ensure that customer and business information is kept safe."
         />
 
         <ToolsSection
