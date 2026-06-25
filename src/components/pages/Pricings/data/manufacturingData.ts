@@ -1,4 +1,5 @@
 import { FeatureCategory, PricingPlan } from "../types";
+import { getPackageLink } from "../../../../utils/getPackageLink";
 
 export const manufacturingData: {
   plans: PricingPlan[];
@@ -24,7 +25,7 @@ export const manufacturingData: {
         "Unlimited Purchases",
         "Onboarding Assistance & Email Support",
       ],
-      link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=bb2e676e-6b10-40a9-83be-c0c660dc8ad2",
+      link: getPackageLink("manufacturing-basic"),
     },
     {
       id: "pro",
@@ -47,7 +48,7 @@ export const manufacturingData: {
         "Onboarding Assistance & Email Support",
         "Live Chat & Phone Support",
       ],
-      link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=4cb8ef12-08a5-48bb-8d48-4c738f0848bf",
+      link: getPackageLink("manufacturing-pro"),
     },
     {
       id: "enterprise",
@@ -70,7 +71,7 @@ export const manufacturingData: {
         "Live Chat & Phone Support",
         "Dedicated Account Manager",
       ],
-      link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=fd06bfbc-5de7-4457-bad5-0c073c5ee98e",
+      link: getPackageLink("manufacturing-premium"),
     },
   ],
   categories: [

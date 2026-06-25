@@ -39,6 +39,27 @@ import {
 export default function Home() {
   return (
     <>
+      {/*
+        Preload the two most critical above-the-fold images so the browser
+        fetches them immediately from the HTML response — before parsing any JS.
+        React 19 + Next.js App Router hoists <link> tags from Server Components
+        into <head> automatically.
+      */}
+      <link
+        rel="preload"
+        as="image"
+        href="/assets/home-page-images/hero-bg.webp"
+        type="image/webp"
+        fetchPriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/assets/home-page-images/hero-animation/animation-img1.webp"
+        type="image/webp"
+        fetchPriority="high"
+      />
+
       <Script
         id="schema-home"
         type="application/ld+json"
