@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - if [ "$AWS_BRANCH" = "main" ]; then export NEXT_PUBLIC_APP_ENV=production; else export NEXT_PUBLIC_APP_ENV=staging; fi
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
