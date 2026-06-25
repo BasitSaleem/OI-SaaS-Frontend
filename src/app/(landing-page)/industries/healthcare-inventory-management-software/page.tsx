@@ -26,7 +26,7 @@ import {
   HEALTHCARE_INVENTORY_TESTIMONIAL_FEATURES,
   HEALTHCARE_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/healthcareInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -126,6 +126,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Healthcare Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for hospitals, clinics, and pharmacies to track medical supplies, monitor batch and expiry dates, manage multi-location inventory, and maintain compliance and audit records.",
                 "brand": {
                   "@type": "Brand",

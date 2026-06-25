@@ -29,7 +29,7 @@ import {
   JEWELRY_STORE_TESTIMONIAL_FEATURES,
   JEWELRY_STORE_TOOLS_DATA,
 } from "@/constant/subindustries/posJewelryStoreData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Jewellery Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for jewellery stores to handle smart billing with making charges and live metal rates, track inventory by weight and purity, manage repairs and custom orders, secure high-value transactions with role-based access, and connect multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

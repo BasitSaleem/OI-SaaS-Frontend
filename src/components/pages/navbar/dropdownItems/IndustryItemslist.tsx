@@ -191,6 +191,20 @@ export const industriesItems: IndustryItem[] = [
     type: 'inventory',
   },
   {
+    key: 'optical-lab-inventory-management-software',
+    title: 'Optical Lab Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/optical-labs.svg",
+    category: 'wholesale',
+    type: 'inventory',
+  },
+  {
+    key: 'hvac-inventory-management-software',
+    title: 'HVAC Inventory Management',
+    icon: "/assets/header-dropdown-images/industries-dropdown/hvac-inventory-management-software.svg",
+    category: 'wholesale',
+    type: 'inventory',
+  },
+  {
     key: 'coffee-shop-pos-system',
     title: 'Coffee Shop POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/restaurant.svg",
@@ -239,9 +253,41 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
-
-
-
+  {
+    key: 'pet-store-pos-system',
+    title: 'Pet Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/pet-store-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'warehouses-pos-system',
+    title: 'Warehouses POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/pos-system-for-warehouse.svg",
+    category: 'wholesale',
+    type: 'pos',
+  },
+  {
+    key: 'appliance-store-pos-system',
+    title: 'Appliance Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/appliance-store-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'gym-pos-system',
+    title: 'Gym POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/pos-system-for-gym.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
+  {
+    key: 'thrift-store-pos-system',
+    title: 'Thrift Store POS System',
+    icon: "/assets/header-dropdown-images/industries-dropdown/thrift-store-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
 ];
 
 export interface IndustryTreeItem {
@@ -417,6 +463,18 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Supplier & Purchase Orders' },
     { title: 'Asset & Cost Control' },
   ],
+  'optical-lab-inventory-management-software': [
+    { title: 'Lens Blank & Power Matrix' },
+    { title: 'Prescription Job Tracking' },
+    { title: 'Breakage & Scrap Log' },
+    { title: 'Consumables & Alloy Control' },
+  ],
+  'hvac-inventory-management-software': [
+    { title: 'Parts & Equipment Tracking' },
+    { title: 'Job Site & Technician Management' },
+    { title: 'Supplier & Purchase Orders' },
+    { title: 'Asset & Cost Control' },
+  ],
   'bakery-pos': [
     { title: 'Book Inventory Management' },
     { title: 'ISBN Scanning' },
@@ -506,6 +564,36 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Stylist Performance Sync' },
     { title: 'Retail Product Tracking' },
     { title: 'Sales Analytics & Reports' },
+  ],
+  'pet-store-pos-system': [
+    { title: 'Quick Counter Checkout' },
+    { title: 'Size & Flavor Variant Tracking' },
+    { title: 'Stock & Inventory Alerts' },
+    { title: 'Sales Analytics & Reports' },
+  ],
+  'warehouses-pos-system': [
+    { title: 'Order Processing & Fulfillment' },
+    { title: 'SKU & Dimension Tracking' },
+    { title: 'Multi-Facility Management' },
+    { title: 'Operational Analytics & Reports' },
+  ],
+  'appliance-store-pos-system': [
+    { title: 'Serial Number & Warranties' },
+    { title: 'Logistics & Delivery Scheduling' },
+    { title: 'Multi-Store Inventory Sync' },
+    { title: 'Sales Commission Reports' },
+  ],
+  'gym-pos-system': [
+    { title: 'Check-in & Gate Access' },
+    { title: 'Automated Membership Drafts' },
+    { title: 'Trainer & Class Scheduling' },
+    { title: 'Pro Shop & Retail Checkout' },
+  ],
+  'thrift-store-pos-system': [
+    { title: 'Unique SKU Barcode Printing' },
+    { title: 'Consignor Splitting & Payouts' },
+    { title: 'Donor CRM & Tax Receipts' },
+    { title: 'Color-Tag Clearance Markdowns' },
   ],
 };
 

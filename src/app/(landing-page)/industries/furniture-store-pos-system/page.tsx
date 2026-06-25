@@ -30,7 +30,7 @@ import {
   FURNITURE_STORE_TESTIMONIAL_FEATURES,
   FURNITURE_STORE_TOOLS_DATA,
 } from "@/constant/subindustries/posFurnitureStoreData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -134,6 +134,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Furniture Store POS Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for furniture stores to manage bulk inventory, custom orders, advance payments, delivery and installation tracking, multi-branch showrooms, supplier purchasing, and online order syncing from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

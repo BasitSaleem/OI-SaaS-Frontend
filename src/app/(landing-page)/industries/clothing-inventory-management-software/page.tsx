@@ -29,7 +29,7 @@ import {
   CLOTHING_INVENTORY_TESTIMONIAL_FEATURES,
   CLOTHING_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/clothingInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -130,6 +130,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Clothing Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for clothing and fashion retailers to track stock by size, color, and style, manage supplier orders, handle fast billing, sync online and in-store sales, and generate real-time reports.",
                 "brand": {
                   "@type": "Brand",

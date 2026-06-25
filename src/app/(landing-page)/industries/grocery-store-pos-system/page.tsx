@@ -29,7 +29,7 @@ import {
   GROCERY_STORE_TESTIMONIAL_FEATURES,
   GROCERY_STORE_TOOLS_DATA,
 } from "@/constant/subindustries/posGroceryStoreData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -133,6 +133,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Grocery Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for grocery stores, supermarkets, and minimarts to handle fast barcode billing, real-time inventory updates, expiry and batch tracking, multi-unit selling, supplier and purchase management, online ordering, and multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

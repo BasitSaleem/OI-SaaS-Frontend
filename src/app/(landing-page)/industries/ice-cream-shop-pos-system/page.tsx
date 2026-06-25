@@ -27,7 +27,7 @@ import {
   ICE_CREAM_SHOP_TESTIMONIAL_FEATURES,
   ICE_CREAM_SHOP_TOOLS_DATA,
 } from "@/constant/subindustries/iceCreamShopPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -127,6 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Ice Cream Shop POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for ice cream shops to handle fast counter service, custom flavor and topping orders, real-time ingredient tracking, multi-payment processing, loyalty programs, and multi-location management from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

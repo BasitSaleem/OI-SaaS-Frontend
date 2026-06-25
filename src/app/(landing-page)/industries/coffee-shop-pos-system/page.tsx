@@ -29,7 +29,7 @@ import {
   COFFEE_SHOP_TESTIMONIAL_FEATURES,
   COFFEE_SHOP_TOOLS_DATA,
 } from "@/constant/subindustries/coffeeShopPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Coffee Shop POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for coffee shops and cafes to handle fast counter ordering, custom drink modifiers, automated order routing, real-time ingredient tracking, multi-payment processing, online and delivery integration, and multi-location management from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

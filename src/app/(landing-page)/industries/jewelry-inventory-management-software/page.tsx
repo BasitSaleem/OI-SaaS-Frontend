@@ -29,7 +29,7 @@ import {
   JEWELRY_INVENTORY_TESTIMONIAL_FEATURES,
   JEWELRY_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/jewelryInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -130,6 +130,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Jewelry Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for jewelry stores to track high-value stock, manage custom orders and repairs, sync inventory across multiple locations, and automate purchase orders from suppliers and consignments.",
                 "brand": {
                   "@type": "Brand",

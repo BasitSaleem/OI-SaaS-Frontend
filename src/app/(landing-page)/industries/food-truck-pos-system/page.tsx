@@ -27,7 +27,7 @@ import {
   FOOD_TRUCK_TESTIMONIAL_FEATURES,
   FOOD_TRUCK_TOOLS_DATA,
 } from "@/constant/subindustries/foodTruckPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -127,6 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Food Truck POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS system built for food trucks and mobile vendors with offline billing, ingredient tracking, custom modifiers, and contactless payment support.",
                 "brand": {
                   "@type": "Brand",

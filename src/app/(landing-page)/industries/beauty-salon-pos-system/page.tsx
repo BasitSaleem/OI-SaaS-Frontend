@@ -29,7 +29,7 @@ import {
   BEAUTY_SALON_TESTIMONIAL_FEATURES,
   BEAUTY_SALON_TOOLS_DATA,
 } from "@/constant/subindustries/beautySalonPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Beauty Salon POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for beauty salons to handle fast checkout, service and retail product sales, loyalty points, flexible discounts, split payments, real-time stock updates, multi-counter billing, and connected booking flows from a single unified dashboard.",
                 "brand": {
                   "@type": "Brand",

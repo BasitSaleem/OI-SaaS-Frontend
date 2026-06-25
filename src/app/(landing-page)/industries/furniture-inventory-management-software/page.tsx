@@ -26,7 +26,7 @@ import {
   FURNITURE_INVENTORY_TESTIMONIAL_FEATURES,
   FURNITURE_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/furnitureInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -126,6 +126,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Furniture Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for furniture businesses to track stock across showrooms and warehouses in real time, manage product variations by size, material and design, handle billing, coordinate supplier orders, and integrate online and offline sales channels.",
                 "brand": {
                   "@type": "Brand",

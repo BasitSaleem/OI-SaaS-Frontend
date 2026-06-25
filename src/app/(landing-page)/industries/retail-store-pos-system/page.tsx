@@ -30,7 +30,7 @@ import {
   RETAIL_STORE_TESTIMONIAL_FEATURES,
   RETAIL_STORE_TOOLS_DATA,
 } from "@/constant/subindustries/posRetailStoreData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -133,6 +133,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "POS System for Small Retail Stores",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for small retail stores to handle billing, real-time inventory tracking, multiple payment methods, employee management, customer loyalty, expense tracking, and centralized reporting from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

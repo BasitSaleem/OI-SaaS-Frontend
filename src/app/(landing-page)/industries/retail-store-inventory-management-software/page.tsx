@@ -29,7 +29,7 @@ import {
   RETAIL_STORE_INVENTORY_TESTIMONIAL_FEATURES,
   RETAIL_STORE_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/retailStoreInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -130,6 +130,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Inventory Management Software for Retail Store",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Retail inventory management software that helps store owners track stock in real time, automate billing with barcode scanning, manage multiple store locations, integrate online sales channels, and generate detailed sales and profit reports.",
                 "brand": {
                   "@type": "Brand",

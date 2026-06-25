@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "POS System for Bakeries",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Bakery POS software that tracks ingredients at recipe level, manages custom cake and event orders, syncs walk-in, online, and delivery sales in one platform, automates stock deductions, and provides real-time analytics for smarter bakery management.",
                 "brand": {
                   "@type": "Brand",

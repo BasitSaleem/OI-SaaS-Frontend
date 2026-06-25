@@ -33,7 +33,7 @@ const IndustriesCallToAction: React.FC<IndustriesCallToAction> = ({
           }}
         >
           <div className="">
-            <div className="flex flex-col items-center justify-center w-full mx-auto lg:py-[160px] md:py-28 py-9 lg:px-8 md:px-6 px-3  text-center">
+            <div className="flex flex-col items-center justify-center w-full mx-auto lg:py-[100px] md:py-[60px] py-9 lg:px-8 md:px-6 px-3  text-center">
               <SectionHeading
                 heading={title}
                 description={description}

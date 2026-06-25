@@ -30,7 +30,7 @@ import {
   BOOKSTORE_TESTIMONIAL_FEATURES,
   BOOKSTORE_TOOLS_DATA,
 } from "@/constant/subindustries/posBookstoreData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -131,6 +131,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Bookstore POS Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for bookstores to track books and stationery inventory in real time, handle ISBN-based billing, manage author and genre sales insights, sync online and walk-in orders, handle multi-branch operations, and manage supplier purchase orders from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

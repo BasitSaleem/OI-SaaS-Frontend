@@ -26,7 +26,7 @@ import {
   HOTEL_INVENTORY_TESTIMONIAL_FEATURES,
   HOTEL_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/hotelInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -128,6 +128,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Hotel Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for hotels and guesthouses to track supplies across housekeeping, maintenance, and laundry departments, manage purchase orders, reduce waste, and maintain real-time visibility from a single centralized dashboard.",
                 "brand": {
                   "@type": "Brand",

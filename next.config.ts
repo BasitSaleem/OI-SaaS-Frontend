@@ -77,6 +77,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // Required to silence Turbopack warning (Next.js 16 default bundler)
+  turbopack: {},
+
   async redirects() {
     return [
       {

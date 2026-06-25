@@ -29,7 +29,7 @@ import {
   CLOTHING_STORE_TESTIMONIAL_FEATURES,
   CLOTHING_STORE_TOOLS_DATA,
 } from "@/constant/subindustries/posClothingStoreData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Clothing Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for clothing stores to manage size and color variants, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, manage suppliers, and generate detailed sales and trend reports from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

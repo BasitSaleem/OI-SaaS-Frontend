@@ -70,8 +70,8 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
 
 
   return (
-    <section ref={sectionRef} className="wrapper py-16 lg:py-24 overflow-hidden">
-      <div className=" mx-auto text-center mb-16 lg:mb-20">
+    <section ref={sectionRef} className="wrapper overflow-hidden">
+      <div className=" mx-auto text-center mb-6 lg:mb-[50px] lg:mt-[100px] md:mt-28 mt-20">
         <SectionHeading
           heading={heading}
           description={paragraph}
@@ -81,7 +81,7 @@ const InventoryWorkflow = ({ heading, paragraph, steps }: InventoryWorkflowProps
       </div>
 
       {/* Progress Bar */}
-      <div className="max-w-full md:max-w-[400px] lg:hidden block h-1.5 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden mb-4">
+      <div className="max-w-full md:max-w-[400px] lg:hidden block h-1.5 bg-[var(--primary-purple)]/10 rounded-full overflow-hidden mb-6">
         <div
           className="h-full bg-gradient-to-r from-[var(--primary-teal)] to-[var(--primary-purple)] transition-all duration-300 ease-out"
           style={{ width: `${progress}%` }}

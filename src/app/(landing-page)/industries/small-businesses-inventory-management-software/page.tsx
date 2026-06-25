@@ -26,7 +26,7 @@ import {
   SMALL_BUSINESS_INVENTORY_TESTIMONIAL_FEATURES,
   SMALL_BUSINESS_INVENTORY_TOOLS_DATA,
 } from "@/constant/subindustries/smallBusinessesInventoryManagementSoftwareData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -127,6 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Inventory Management Software for Small Business",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for small businesses to track stock in real time, automate billing and workflows, manage multiple sales channels, reduce overstocking, and generate accurate reports to support better business decisions.",
                 "brand": {
                   "@type": "Brand",

@@ -43,6 +43,10 @@ const ToolsSection = ({
             let lgCol = "lg:col-span-4";
             if (i >= 3) lgCol = "lg:col-span-6";
 
+            if (tools.length === 2) {
+              lgCol = "lg:col-span-6";
+            }
+
             return (
               <div
                 key={tool.id}

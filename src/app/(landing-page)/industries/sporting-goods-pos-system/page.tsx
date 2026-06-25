@@ -27,7 +27,7 @@ import {
   SPORTING_GOODS_TESTIMONIAL_FEATURES,
   SPORTING_GOODS_TOOLS_DATA,
 } from "@/constant/subindustries/sportingGoodsPosData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -128,6 +128,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Sporting Goods POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for sporting goods retailers to manage equipment, apparel, and accessory variants by size, brand, and model, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, and generate detailed sales reports from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

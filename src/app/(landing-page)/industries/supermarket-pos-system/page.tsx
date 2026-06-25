@@ -29,7 +29,7 @@ import {
   SUPERMARKET_TESTIMONIAL_FEATURES,
   SUPERMARKET_TOOLS_DATA,
 } from "@/constant/subindustries/posSupermarketData";
-import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflow";
+import InventoryWorkflow from "@/components/pages/industries-page/InventoryWorkflowNoSSR";
 import IndustriesTestimonial from "@/components/pages/industries-page/IndustriesTestimonial";
 import IndustriesFeaturesSection from "@/components/pages/industries-page/IndustriesFeaturesSection";
 import ToolsSection from "@/components/pages/landing-page/ToolsSection";
@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Supermarket POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for supermarkets to handle fast barcode billing, real-time inventory tracking, supplier and purchase management, multi-unit selling, customer loyalty programs, online ordering, and centralized multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

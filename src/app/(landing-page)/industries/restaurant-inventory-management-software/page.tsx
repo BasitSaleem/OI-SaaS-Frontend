@@ -129,6 +129,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Restaurant Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for restaurants to automate ingredient tracking, manage recipe-level food costs, reduce waste, track supplier orders, and sync inventory across dine-in, takeaway, and delivery channels in real time.",
                 "brand": {
                   "@type": "Brand",
