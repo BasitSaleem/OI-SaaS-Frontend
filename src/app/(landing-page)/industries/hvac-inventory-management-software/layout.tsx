@@ -2,16 +2,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "HVAC Inventory Management Software | Owners Inventory",
-  description: "Stop losing money to stockouts and unplanned return trips. Owners Inventory gives HVAC contractors real-time parts visibility across every van and warehouse. Start free today.",
+  description: "Stop losing jobs to stockouts. HVAC inventory management software tracks parts across every van and warehouse in real time. Start free with Owners Inventory.",
   keywords: [
-    "hvac inventory management software",
-    "hvac inventory management system",
-    "hvac parts tracking software",
-    "hvac stock management software",
-    "inventory management software for hvac",
-    "hvac van stock tracking",
-    "hvac inventory tracking software",
-    "hvac parts inventory system"
+    "HVAC inventory management software",
+    "HVAC inventory software",
+    "inventory management software for HVAC",
+    "HVAC parts inventory software",
+    "HVAC stock management software",
+    "best HVAC inventory software"
   ],
   alternates: {
     canonical: "https://ownersinventory.com/industries/hvac-inventory-management-software"

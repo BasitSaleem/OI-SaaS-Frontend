@@ -1,17 +1,15 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thrift Store POS System | Owners Inventory",
-  description: "Specialized thrift store POS system to track unique SKU inventories, consignment payouts, donor records, and color-tag markdowns. Start your free trial today.",
+  title: "Thrift Store POS System for Unique Inventory",
+  description: "A thrift store POS system built for donated, vintage, and one-of-a-kind stock. Flexible pricing, fast checkout, real-time tracking. Try Owners Inventory free.",
   keywords: [
-    "POS system for thrift stores",
     "thrift store POS system",
-    "thrift shop POS software",
-    "consignment POS system",
-    "second hand retail POS",
-    "thrift store inventory management",
-    "owners inventory",
-    "charity shop POS software",
+    "thrift store POS software",
+    "POS system for thrift stores",
+    "thrift shop POS system",
+    "thrift store point of sale",
+    "best POS system for thrift stores"
   ],
   alternates: {
     canonical: "https://ownersinventory.com/industries/thrift-store-pos-system",

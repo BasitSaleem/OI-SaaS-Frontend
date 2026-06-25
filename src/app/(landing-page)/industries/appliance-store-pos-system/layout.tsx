@@ -2,16 +2,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Appliance Store POS System | Owners Inventory",
-  description: "Appliance store POS system to track model inventory, serial numbers, and warranties, manage deliveries, and calculate commissions. Start your free trial today.",
+  description: "Sell appliances faster with a POS that tracks multi-brand stock, manages warranties, and speeds up billing. Start your free trial with Owners Inventory today.",
   keywords: [
-    "POS system for appliance stores",
     "appliance store POS system",
     "appliance store POS software",
-    "best POS for appliance stores",
-    "appliance inventory management POS",
-    "appliance retail management software",
-    "owners inventory",
-    "appliance showroom POS system",
+    "POS system for appliance stores",
+    "appliance shop POS system",
+    "appliance store point of sale",
+    "best POS system for appliance stores"
   ],
   alternates: {
     canonical: "https://ownersinventory.com/industries/appliance-store-pos-system",
