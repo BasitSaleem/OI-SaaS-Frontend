@@ -128,6 +128,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Hotel Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for hotels and guesthouses to track supplies across housekeeping, maintenance, and laundry departments, manage purchase orders, reduce waste, and maintain real-time visibility from a single centralized dashboard.",
                 "brand": {
                   "@type": "Brand",

@@ -57,25 +57,28 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "HVAC inventory management software that gives contractors real-time visibility into parts stock across every van and warehouse, so technicians arrive prepared and first-time fix rates stay where they should be.",
+                "description": "HVAC inventory management software that gives contractors real-time parts visibility across every van and warehouse, with automated reorder triggers, van stock replenishment, work order parts tracking, structured purchase order approvals, seasonal reorder adjustments, and supplier records in one system.",
                 "featureList": [
-                  "Real-time parts tracking across vans and warehouses",
-                  "Van and warehouse stock in one view",
-                  "Automated reorder triggers and low-stock alerts",
+                  "Real-time parts stock tracking across vans and warehouses",
+                  "Automated low-stock alerts and reorder triggers",
                   "Seasonal reorder point adjustments",
-                  "Structured purchase order approvals",
-                  "Work order parts tracking",
-                  "Barcode and SKU-based item tracking",
+                  "Structured purchase order creation and approval",
+                  "Automated van stock replenishment",
+                  "Work order parts tracking and consumption logging",
+                  "Barcode and SKU tracking",
+                  "Parts catalog with category and storage organization",
                   "Bulk parts import via Excel or CSV",
+                  "Supplier records and pricing history",
+                  "Role-based access control for technicians and procurement",
                   "Parts usage and cost reporting",
-                  "Accounting software integration (QuickBooks, Xero)"
+                  "Integrations with QuickBooks and Xero"
                 ]
               },
               {
                 "@type": "WebPage",
                 "name": "HVAC Inventory Management Software | Owners Inventory",
                 "url": "https://ownersinventory.com/industries/hvac-inventory-management-software",
-                "description": "Stop losing money to missing parts and unplanned return trips. Owners Inventory gives HVAC contractors real-time visibility into parts stock across every van and warehouse.",
+                "description": "Track HVAC parts across every van and warehouse in real time, automate reorders, manage purchase orders, and cut stockouts with Owners Inventory's HVAC inventory management software.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -126,7 +129,8 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "HVAC Inventory Management Software",
-                "description": "Inventory management software designed for HVAC businesses to track parts across vans and warehouses, manage purchase orders, control project costs, and monitor stock in real time from a single dashboard.",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "Inventory management software designed for HVAC contractors to track parts across vans and warehouses in real time, automate reorders and van replenishment, manage purchase order approvals, log work order parts usage, and control parts costs from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -141,6 +145,78 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Marcus Tucker"
+                      },
+                      "reviewBody": "We were running stockout calls three or four times a week, with technicians showing up at a job and the part simply not in the van. After we set up reorder points for every high-use part, our first-time fix rate moved from around 74% to 91% within a few months. The unplanned return trips have nearly stopped.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Dana Ronaldo"
+                      },
+                      "reviewBody": "Emergency parts orders were a weekly expense I had just accepted as part of running the business, with supplier premiums and rush fees adding up to thousands every quarter. Since we started using Owners Inventory to track minimum stock levels, we have not placed an emergency order in over six weeks.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Arjun Patel"
+                      },
+                      "reviewBody": "We had parts on the warehouse shelves that had not moved in months because nobody had checked actual job consumption before placing orders. Owners Inventory gave us the usage data to see exactly what was sitting idle. We cleared the dead stock, reinvested that capital into parts that actually moved, and our carrying costs came down within the first quarter.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
@@ -153,10 +229,26 @@ const Page = () => {
                   },
                   {
                     "@type": "Question",
+                    "name": "How does the system handle a member whose recurring payment fails?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "The gym billing system flags the failed payment immediately, initiates an automated retry sequence, and sends the member a notification with a link to update their card. Staff are alerted only if the automated process does not resolve the payment within the configured timeframe."
+                    }
+                  },
+                  {
+                    "@type": "Question",
                     "name": "Can I adjust reorder points based on seasonal demand shifts?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Each part carries a reorder point that can be updated at any time. The system sends alerts based on whatever minimum level is currently active for that item, so stocking stays calibrated to the time of year."
+                      "text": "Yes. Each part carries a reorder point that can be updated at any time. The system sends alerts based on whatever minimum level is currently active for that item, so stocking stays calibrated to the time of year."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What happens when a technician uses the last available unit of a critical part?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "When a part reaches zero or drops below its minimum threshold, the system sends an automated alert to the assigned manager. Because the alert triggers at the threshold rather than at zero, there is usually enough lead time to source the part before the next job requiring it is dispatched."
                     }
                   },
                   {
@@ -164,7 +256,7 @@ const Page = () => {
                     "name": "Does Owners Inventory connect with accounting software used by HVAC businesses?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Parts costs, supplier invoices, and purchase order data sync with QuickBooks, Xero, and other supported accounting platforms. There is no manual re-entry of data between systems."
+                      "text": "Yes. Parts costs, supplier invoices, and purchase order data sync with QuickBooks, Xero, and other supported accounting platforms, with no manual re-entry and consistent financial records on both sides."
                     }
                   },
                   {
@@ -177,11 +269,54 @@ const Page = () => {
                   },
                   {
                     "@type": "Question",
-                    "name": "What happens when a technician uses the last available unit of a critical part?",
+                    "name": "Is there a way to track which supplier has the best pricing history on specific parts?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "When a part reaches zero or drops below its minimum threshold, the system sends an automated alert to the assigned manager. Because the alert triggers at the threshold rather than at zero, there is usually enough lead time to source the part before the next job requiring it is dispatched."
+                      "text": "Yes. Every supplier transaction is stored with the invoiced price, the paid amount, and the date of purchase. That data is available to support renegotiations, consolidation decisions, or supplier switches."
                     }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages HVAC Parts Inventory",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines HVAC parts management from receiving deliveries to closing out and reconciling stock.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Receiving and Verifying Deliveries",
+                    "text": "When a delivery arrives at the warehouse, it is checked against the original purchase order in the system. Short deliveries or damaged items are flagged against the supplier before acceptance, keeping the stock count accurate and the supplier record truthful."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Allocating Parts to Jobs and Vehicles",
+                    "text": "Once received, parts are assigned to specific service vehicles, technicians, or active job locations, so managers can later see exactly which parts were used, by whom, and on which job."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Logging Parts Usage Per Job",
+                    "text": "When a technician uses a part on a service call, it is logged against that job at the point of issue. Consumption data stays accurate across all team members, making it easy to spot job categories consuming parts faster than planned."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Monitoring Stock During Active Service",
+                    "text": "Stock levels update automatically as parts are used throughout the day. When a location approaches its reorder threshold, the alert fires in time to arrange restocking before the next affected job is dispatched."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Raising and Approving Purchase Orders",
+                    "text": "When a reorder is needed, the purchase order is created from the dashboard and routed through the configured approval process before reaching the supplier. On delivery, incoming stock is matched back to that purchase order automatically."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 6,
+                    "name": "Closing Out and Reconciling Stock",
+                    "text": "At the end of a billing cycle or service period, the system generates a reconciliation showing what was ordered, received, consumed, and returned, giving managers a clear picture of actual parts costs against revenue."
                   }
                 ]
               }

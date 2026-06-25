@@ -58,26 +58,26 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Warehouse POS system that tracks SKUs, dimensions, and unit types across all product categories, speeds up order processing with barcode scanning, manages returns and shipments, syncs inventory across facilities and sales channels, and provides detailed operational analytics.",
+                "description": "Warehouse POS system that manages large inventories across multiple storage locations with real-time stock tracking, barcode scanning, fast order processing and dispatch, supplier and purchase order management, role-based access, and detailed reporting from one centralized dashboard.",
                 "featureList": [
-                  "SKU management for dimensions, unit types, and categories",
-                  "Fast order processing with barcode scanning",
-                  "Real-time inventory tracking across all product lines",
-                  "Seamless returns and shipment handling",
-                  "Customer order profiles and history tracking",
-                  "Multi-facility inventory and pricing sync",
-                  "E-commerce integration with automatic stock updates",
+                  "Real-time inventory tracking across receiving, transfers, sales, and dispatch",
+                  "Barcode scanning for fast picking, packing, and stock checks",
+                  "Multi-location and multi-section stock management",
+                  "Order processing and dispatch management",
                   "Supplier and purchase order management",
-                  "Seasonal and promotional discount management",
-                  "Employee roles, permissions, and activity tracking",
-                  "Smart operational and demand trend reports"
+                  "Role-based employee access control",
+                  "Mobile-friendly warehouse interface",
+                  "Automated low-stock alerts",
+                  "Detailed warehouse and inventory reporting",
+                  "Centralized business management dashboard",
+                  "Integrations with Shopify, Stripe, QuickBooks, and more"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "Warehouses POS System | Owners Inventory",
-                "url": "https://ownersinventory.com/industries/warehouses-pos-system",
-                "description": "Manage warehouse inventory with real-time SKU tracking, fast order processing, smooth returns, and multi-facility sync using Owners Inventory's warehouse POS system.",
+                "name": "Warehouse POS System | Owners Inventory",
+                "url": "https://ownersinventory.com/industries/warehouse-pos-system",
+                "description": "Manage large inventories, multi-location stock, fast order processing, and barcode-driven dispatch with Owners Inventory's warehouse POS system. Real-time tracking from one dashboard.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -102,8 +102,8 @@ const Page = () => {
                     {
                       "@type": "ListItem",
                       "position": 3,
-                      "name": "Warehouses POS System",
-                      "item": "https://ownersinventory.com/industries/warehouses-pos-system"
+                      "name": "Warehouse POS System",
+                      "item": "https://ownersinventory.com/industries/warehouse-pos-system"
                     }
                   ]
                 }
@@ -127,13 +127,14 @@ const Page = () => {
               },
               {
                 "@type": "Product",
-                "name": "Warehouses POS System",
-                "description": "POS software designed for warehouse operators to manage product SKUs by dimension and unit type, speed up order processing with barcode scanning, handle returns and shipments, sync inventory across facilities and sales channels, and generate detailed operational reports from a single dashboard.",
+                "name": "Warehouse POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "POS software designed for warehouses to manage large inventories across multiple storage locations, with real-time stock tracking, barcode scanning, order processing and dispatch, supplier and purchase order management, role-based access, and detailed reporting from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
                 },
-                "url": "https://ownersinventory.com/industries/warehouses-pos-system",
+                "url": "https://ownersinventory.com/industries/warehouse-pos-system",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
@@ -143,47 +144,250 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Daniel H"
+                      },
+                      "reviewBody": "Before using this system, we used to have mismatching inventory and late shipments, but now our warehouse is managed much more efficiently and is far better organized.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sarah M"
+                      },
+                      "reviewBody": "We can now track every product movement in real time, which has greatly reduced stock errors and missing inventory.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Ahmed T"
+                      },
+                      "reviewBody": "Order processing is significantly faster now. Our staff can manage bulk shipments and dispatches without confusion.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Jason R"
+                      },
+                      "reviewBody": "Installation was straightforward and our warehouse staff adapted to the system easily. Day-to-day stock tracking has become so much simpler.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Fatima K"
+                      },
+                      "reviewBody": "We manage inventory across multiple storage locations, and this system keeps everything synchronized without extra manual work.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Michael D"
+                      },
+                      "reviewBody": "Our receiving and stock checking has been much easier with the barcode scanning feature, and operations are smoother each day.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sophie L"
+                      },
+                      "reviewBody": "This warehouse POS system fits perfectly with the way we work. It is reliable, fast, and keeps our inventory accurate at all times.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "How does this POS handle SKUs, dimensions, and variants?",
+                    "name": "Can the system track inventory in real time?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "The system tracks every SKU, dimension, and unit type separately across all product categories, keeping stock accurate and reducing fulfillment errors."
+                      "text": "Yes. All stock movements such as receiving, transfers, dispatches, and returns are recorded automatically in real time, keeping inventory records accurate at all times."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can it manage multiple warehouse facilities?",
+                    "name": "Does the system support barcode scanning?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Inventory, orders, pricing, and reports stay synced across all facilities, and you can transfer stock between locations on demand."
+                      "text": "Yes. The warehouse POS system supports barcode scanning for quicker stock retrieval, inventory verification, receiving incoming goods, and order processing."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the POS support returns and shipment tracking?",
+                    "name": "Can I manage multiple warehouse locations?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Returns and shipments are processed clearly, with every action recorded to keep inventory and revenue accurate."
+                      "text": "Yes. It is a multi-location warehouse management system. Owners and managers can track inventory, transfers, orders, and warehouse performance across all locations from one central dashboard."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I connect my online sales channels?",
+                    "name": "How quickly can I set up Owners Inventory for my warehouse?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Your online and warehouse inventory update in real time, preventing overselling and duplicate records across all channels."
+                      "text": "Most warehouses are up and running within hours. Products, SKUs, suppliers, and stock categories can be imported in bulk so teams can get started quickly."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it easy for warehouse staff to learn?",
+                    "name": "Can different warehouse employees have different access levels?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The interface is simple and clear, so staff can use it confidently within a few hours of training."
+                      "text": "Yes. Warehouse workers, supervisors, accountants, and managers can be given role-based permissions, helping maintain security and control over warehouse operations."
                     }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages Warehouse Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines warehouse operations from inventory setup to performance monitoring.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Add and Organize Warehouse Inventory",
+                    "text": "Add products, raw materials, spare parts, and packaged goods with SKUs, barcodes, categories, supplier information, and storage locations. Organize inventory by racks, shelves, or sections for easy access and control."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Manage Incoming and Outgoing Stock",
+                    "text": "All incoming deliveries and outgoing shipments are recorded in real time. Stock levels update automatically while receiving, transferring, dispatching, or returning stock, with no paperwork required."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Process Orders and Bulk Shipments",
+                    "text": "Warehouse staff create and manage customer orders, wholesale shipments, and bulk dispatches from one dashboard. The system automatically checks quantities and stock availability to eliminate picking and packing mistakes."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Fast Barcode Scanning and Stock Lookup",
+                    "text": "Barcode scanners let employees quickly search products, confirm inventory, and process orders, improving warehouse efficiency and reducing delays during peak times."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Secure Billing and Transaction Management",
+                    "text": "The system handles invoice creation, payment monitoring, supplier interactions, and customer accounts. All records are stored securely and remain readily available when needed."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 6,
+                    "name": "Monitor Inventory and Warehouse Performance",
+                    "text": "Warehouse owners get live data on stock movement, low-stock alerts, fast-moving items, pending orders, and daily operating reports, helping prevent stockouts, overstocking, and order delays."
                   }
                 ]
               }

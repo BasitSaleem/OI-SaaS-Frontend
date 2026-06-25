@@ -128,6 +128,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Sporting Goods POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for sporting goods retailers to manage equipment, apparel, and accessory variants by size, brand, and model, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, and generate detailed sales reports from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

@@ -133,6 +133,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Grocery Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for grocery stores, supermarkets, and minimarts to handle fast barcode billing, real-time inventory updates, expiry and batch tracking, multi-unit selling, supplier and purchase management, online ordering, and multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

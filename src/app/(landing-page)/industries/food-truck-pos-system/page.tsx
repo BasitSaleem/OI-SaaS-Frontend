@@ -127,6 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Food Truck POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS system built for food trucks and mobile vendors with offline billing, ingredient tracking, custom modifiers, and contactless payment support.",
                 "brand": {
                   "@type": "Brand",

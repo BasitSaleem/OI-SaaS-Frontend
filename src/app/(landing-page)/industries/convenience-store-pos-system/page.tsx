@@ -128,6 +128,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Convenience Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for convenience stores to handle fast barcode billing, real-time inventory tracking, expiry and batch management, multi-unit selling, supplier management, multi-payment processing, and multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

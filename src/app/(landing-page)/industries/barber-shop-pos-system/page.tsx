@@ -130,6 +130,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Barber Shop POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for barber shops to handle fast checkout, appointment and walk-in management, barber commissions and tips, retail product tracking, multi-payment processing, and multi-location operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

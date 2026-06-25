@@ -130,6 +130,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Inventory Management Software for Retail Store",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Retail inventory management software that helps store owners track stock in real time, automate billing with barcode scanning, manage multiple store locations, integrate online sales channels, and generate detailed sales and profit reports.",
                 "brand": {
                   "@type": "Brand",

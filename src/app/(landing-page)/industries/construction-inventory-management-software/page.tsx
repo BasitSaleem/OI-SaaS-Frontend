@@ -126,6 +126,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Construction Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for construction businesses to track materials, tools, and equipment across multiple job sites and warehouses, manage suppliers and purchase orders, control project costs, and monitor stock transfers from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

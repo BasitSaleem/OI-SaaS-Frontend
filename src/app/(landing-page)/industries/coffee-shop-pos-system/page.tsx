@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Coffee Shop POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for coffee shops and cafes to handle fast counter ordering, custom drink modifiers, automated order routing, real-time ingredient tracking, multi-payment processing, online and delivery integration, and multi-location management from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

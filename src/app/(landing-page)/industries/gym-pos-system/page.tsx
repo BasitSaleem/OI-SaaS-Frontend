@@ -58,25 +58,28 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Gym POS system that tracks membership statuses, recurring drafts, class bookings, personal trainers, and pro shop retail transactions from a centralized cloud dashboard.",
+                "description": "Gym POS system that combines membership billing, automated recurring payments, class pack sales, retail inventory, loyalty tracking, and reporting in one connected platform, with unified member profiles, multi-method payments, and multi-location support from a single dashboard.",
                 "featureList": [
-                  "Real-time member check-in monitoring and barcode lookup",
-                  "Automated monthly recurring membership billing",
-                  "Class capacity roster and trainer schedule calendar",
-                  "Integrated juice bar and pro shop retail POS",
-                  "Automated trainer session commission tracking",
-                  "Waivers and digital agreement logging",
-                  "Supplier purchase orders for gym accessories",
-                  "Member portal class booking sync",
-                  "Comprehensive member retention analytics",
-                  "Multi-club data and revenue dashboards"
+                  "Membership and plan management with freezes, upgrades, and cancellations",
+                  "Automated recurring billing with payment retry and dunning",
+                  "Class pack, day pass, and guest visit transaction handling",
+                  "Retail product catalog connected to every sale",
+                  "Real-time inventory tracking with low-stock alerts",
+                  "Unified member profiles with billing and attendance history",
+                  "Loyalty points tracking and redemption",
+                  "Flexible discount and promotion application",
+                  "Multi-method payments including split and partial payments",
+                  "Online membership and order syncing",
+                  "Role-based access control for staff",
+                  "Detailed revenue and sales reporting",
+                  "Integrations with Shopify, WooCommerce, QuickBooks, Xero, and Stripe"
                 ]
               },
               {
                 "@type": "WebPage",
                 "name": "Gym POS System | Owners Inventory",
                 "url": "https://ownersinventory.com/industries/gym-pos-system",
-                "description": "Manage memberships and schedules with real-time check-in monitoring, automated recurring billing, pro shop checkout, and trainer bookings using Owners Inventory's gym POS system.",
+                "description": "Run your gym with membership billing, automated recurring payments, retail inventory, loyalty tracking, and unified reporting using Owners Inventory's gym POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -127,7 +130,8 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Gym POS System",
-                "description": "POS software designed for gyms, fitness clubs, and wellness studios to coordinate members, schedule trainers, record retail transactions, and monitor multi-facility sales.",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "POS software designed for gyms and fitness studios to handle membership billing, automated recurring payments, class pack and day pass sales, retail inventory, loyalty tracking, multi-method payments, and reporting from a single connected dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -142,47 +146,162 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Jordan Mercer"
+                      },
+                      "reviewBody": "We had three different tools handling memberships, retail, and payments, and switching between them during a busy morning was slowing everything down. After setting up Owners Inventory, the entire front desk runs through one screen. Checkouts are faster, billing errors have dropped significantly, and I can see what the business is doing without pulling reports from two places.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Rachel Kimani"
+                      },
+                      "reviewBody": "Failed payments were something we just lived with. By the time we noticed a member had a declined charge, they had already stopped coming in. The automated retry and notification system recovered a number of accounts we would have written off completely. The difference in monthly recurring revenue was noticeable within the first billing cycle.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Derek Huang"
+                      },
+                      "reviewBody": "Retail was always an afterthought for us because tracking stock manually was too time-consuming. Products would run out and nobody would notice until a member asked. The low stock alerts and real-time count updates changed how we manage retail entirely. We have not had an empty shelf situation since we started using the system.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "Can the system manage recurring membership billing?",
+                    "name": "Can the gym POS handle membership sales and retail product sales in the same transaction?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The POS coordinates recurring monthly, bi-weekly, or annual membership billing via credit card, tracking card updates to reduce transaction failures."
+                      "text": "Yes. A member can pay for a class pack and pick up a supplement in the same checkout. The system processes both within one transaction flow, updates the membership record and retail stock count simultaneously, and produces a single receipt."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does it support keytag barcode check-ins?",
+                    "name": "How does the system handle a member whose recurring payment fails?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Members can scan barcode keytags or display digital member cards on their phones at checkout to verify check-in statuses and active accounts."
+                      "text": "The gym billing system flags the failed payment immediately, initiates an automated retry sequence, and sends the member a notification with a link to update their card. Staff are alerted only if the automated process does not resolve the payment within the configured timeframe."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can we manage booking schedules for personal trainers?",
+                    "name": "Can I manage multiple membership tiers with different billing cycles?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can manage trainer booking availabilities, assign them to specific clients, and track class attendance on a central, shared calendar."
+                      "text": "Yes. Monthly plans, annual memberships, class packs, and drop-in rates are all configurable as separate membership types with their own pricing and renewal rules. Each can carry a different billing cycle, managed concurrently without mixing records."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I track retail sales for a juice bar or shop?",
+                    "name": "Does the system connect with accounting software?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The pro shop retail interface allows you to sell gym apparel, shakes, energy drinks, and supplements alongside main gym memberships."
+                      "text": "Yes. Transaction data, membership revenue, and retail sales sync with QuickBooks, Xero, and other supported platforms, keeping financial records consistent without manual data entry on either side."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does it automate trainer commissions?",
+                    "name": "Does the POS system for gyms work for boutique studios and smaller operations?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can associate specific trainers with group classes or training sessions and automatically generate commission payouts based on hour metrics."
+                      "text": "Yes. The system scales to the size of the operation. A single-location studio with 80 members uses the same platform as a multi-location gym with several hundred, and pricing adjusts to the scope of the business."
                     }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages Gym Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines gym operations from member check-in to end-of-day reconciliation.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Member Check-In and Transaction Start",
+                    "text": "When a member arrives, their profile pulls up by name, membership number, or barcode scan. Staff can see their active plan, outstanding balance, and account notes before the transaction begins, whether it's a day pass, renewal, or retail purchase."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Processing the Sale",
+                    "text": "Membership payments, class pack purchases, and retail sales are added to the same transaction. Discount codes apply in the same step. The system calculates the total, applies any redeemed loyalty points, and presents the final amount before payment."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Collecting Payment",
+                    "text": "The gym payment software accepts the selected payment method and confirms the transaction. A receipt generates automatically. If a payment fails, the system records the decline, notifies the member, and schedules a retry."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Updating Membership and Inventory Records",
+                    "text": "Every completed transaction updates the relevant records immediately. A renewal extends the active period, a product purchase reduces retail stock, and a class pack sale logs against the member's booking entitlement, with no separate update step."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Monitoring Active Membership Status",
+                    "text": "Between transactions, the system tracks upcoming renewals, flagged payment failures, and expiring plans. Alerts surface on the dashboard so staff can reach out proactively rather than discovering lapsed members after the fact."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 6,
+                    "name": "End-of-Day Reconciliation",
+                    "text": "At the close of the business day, the system generates a summary of all transactions, payment method totals, retail sales, and membership activity, available to export directly to connected accounting software."
                   }
                 ]
               }
@@ -192,7 +311,7 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="POS System for Gym: Memberships, Payments, and Retail Sales"
+          title="POS System for Gym: Run Billing, Retail, and Members from One Place"
           description="A gym runs on billing cycles, class schedules, and front-desk transactions that must all stay organized simultaneously. When those run through different tools, the front desk slows down, billing errors build up, and members notice. Owners Inventory brings your gym point-of-sale software, membership billing, retail inventory, and payment processing into one connected system so your staff can focus on members, not paperwork."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"

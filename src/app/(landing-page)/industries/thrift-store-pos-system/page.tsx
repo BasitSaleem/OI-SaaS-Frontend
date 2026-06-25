@@ -58,25 +58,26 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Specialized thrift store POS system to track unique SKU inventories, consignment payouts, donor records, and color-tag markdowns from a centralized cloud dashboard.",
+                "description": "Thrift store POS system that tracks constantly changing donated, consigned, and second-hand inventory in real time, manages one-of-a-kind items, supports flexible condition-based pricing, speeds up checkout with barcode scanning, and centralizes donations, sales, and reporting from one dashboard.",
                 "featureList": [
-                  "Unique SKU creation and barcode tag printing",
-                  "Automated consignment splits and payment tracking",
-                  "Donor CRM profile management and database tracking",
-                  "Automated tax-deductible donation receipt generation",
-                  "Color-coded discount tag markdown scheduler",
-                  "Layaways, holds, and partial payment processing",
-                  "Multi-store inventory synchronization and transfers",
-                  "Mobile-friendly volunteer and staff register screens",
-                  "Consignor payouts via cash, check, or store credits",
-                  "Integrated online catalog and e-commerce sync"
+                  "Unique and one-of-a-kind item inventory management",
+                  "Real-time tracking of donated, consigned, and purchased stock",
+                  "Flexible condition-based pricing and tag management",
+                  "Custom discount, clearance, and seasonal sale management",
+                  "Fast barcode checkout and automated billing",
+                  "Donation logging and inventory tracking",
+                  "Multiple payment options including split payment",
+                  "Multi-location store management from one dashboard",
+                  "Online and in-store order syncing",
+                  "Role-based access control for staff",
+                  "Detailed sales, inventory turnover, and category reports"
                 ]
               },
               {
                 "@type": "WebPage",
                 "name": "Thrift Store POS System | Owners Inventory",
                 "url": "https://ownersinventory.com/industries/thrift-store-pos-system",
-                "description": "Coordinate second-hand retail and consignment sales with unique barcoded tag generation, donor CRM profiles, automated tax receipts, and color-tag discounts using Owners Inventory's thrift store POS system.",
+                "description": "Manage donated, consigned, and one-of-a-kind stock with real-time inventory, flexible pricing, fast checkout, and multi-location control using Owners Inventory's thrift store POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -127,7 +128,8 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Thrift Store POS System",
-                "description": "POS software designed for thrift stores, consignment shops, charity resale stores, and vintage boutiques to manage unique SKU inventories, consignor splits, and donor profiles.",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "POS software designed for thrift stores to track donated, consigned, and one-of-a-kind inventory in real time, set flexible condition-based pricing, speed up checkout with barcode scanning, manage donations, and run multi-location operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -142,6 +144,166 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sarah L"
+                      },
+                      "reviewBody": "Previously, tens of thousands of donated and second-hand items were extremely difficult to keep track of. Now they are all organized and accessible in a matter of seconds.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Daniel M"
+                      },
+                      "reviewBody": "New products come in daily, and the system lets us know exactly where each piece is at all times, from the time it arrives until the sale.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Ayesha K"
+                      },
+                      "reviewBody": "Owners Inventory has helped us keep track of unique items we had lost before, and inventory discrepancies have been reduced significantly.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Omar R"
+                      },
+                      "reviewBody": "Checkout used to be very slow on busy weekends, but with barcode scanning and automated pricing it is much quicker, with significantly less time spent waiting.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Jessica P"
+                      },
+                      "reviewBody": "The reporting tools enabled us to know what works best in each category and which products sit on our shelves for too long, which has helped us make better pricing decisions.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Hassan A"
+                      },
+                      "reviewBody": "Managing multiple thrift store locations was difficult before. Now we can monitor inventory and sales across all branches from one dashboard.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Michael B"
+                      },
+                      "reviewBody": "The centralized inventory system has saved us countless hours of manual work and made daily operations much more efficient.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
@@ -149,7 +311,7 @@ const Page = () => {
                     "name": "Can I track donated inventory in the system?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, it offers you the ability to track the incoming inventory, manage the merchandise that you have donated and keep a record of it, which is very convenient."
+                      "text": "Yes. The system lets you track incoming inventory, manage donated merchandise, and keep a record of it, making donation handling convenient and transparent."
                     }
                   },
                   {
@@ -157,7 +319,7 @@ const Page = () => {
                     "name": "How does the POS handle discounts and promotions?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Discounts, clearance, seasonal offers, special offers can be set up in the system and automatically applied at checkout without the need for manual calculations."
+                      "text": "Discounts, clearance, seasonal offers, and special offers can be set up in the system and applied automatically at checkout without any manual calculations."
                     }
                   },
                   {
@@ -165,7 +327,7 @@ const Page = () => {
                     "name": "Can I upload my existing inventory all at once?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, you can import product information from an excel or CSV file, which enables you to set up your inventory very fast without having to enter the products manually one by one."
+                      "text": "Yes. You can import product information from an Excel or CSV file, setting up your inventory quickly without entering products one by one."
                     }
                   },
                   {
@@ -173,7 +335,7 @@ const Page = () => {
                     "name": "Can the system manage multiple thrift store locations?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Absolutely. The system enables you to track your stock, sales, and performance at various locations in one place."
+                      "text": "Yes. The system lets you track stock, sales, and performance across multiple locations from one central dashboard."
                     }
                   },
                   {
@@ -181,8 +343,45 @@ const Page = () => {
                     "name": "Does it track sales history and item performance?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "The system keeps track of sales activity, and detailed reports on product performance, inventory turnover and popular categories will be produced to help make sound business decisions."
+                      "text": "Yes. The system tracks sales activity and produces detailed reports on product performance, inventory turnover, and popular categories to support sound business decisions."
                     }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages Thrift Store Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines thrift store operations from catalog setup to performance review.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Catalog Setup and Organization",
+                    "text": "Products are added by relevant attributes such as name, category, condition, price, SKU, and barcode. This includes clothing, furniture, home decor, books, electronics, accessories, and collectibles."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Item Identification at Checkout",
+                    "text": "Staff locate products at the counter by scanning a barcode or searching for the item. Product details, prices, and promotional offers are immediately available for accurate transactions."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Transaction Building and Pricing",
+                    "text": "Staff scan products or select them from the inventory database. Discounts, promotional pricing, clearance offers, and special sales events are applied automatically in the checkout interface."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Seamless Payment Processing",
+                    "text": "The POS offers numerous payment options such as cash, credit and debit cards, mobile wallets, and split payments, with no need to switch between different systems."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Performance Review and Inventory Monitoring",
+                    "text": "At the end of the day, store owners review detailed reports on sales performance, stock turnover, popular categories, and slow-moving items to make better pricing and inventory decisions."
                   }
                 ]
               }

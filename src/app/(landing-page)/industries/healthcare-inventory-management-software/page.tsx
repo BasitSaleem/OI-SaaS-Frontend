@@ -126,6 +126,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Healthcare Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for hospitals, clinics, and pharmacies to track medical supplies, monitor batch and expiry dates, manage multi-location inventory, and maintain compliance and audit records.",
                 "brand": {
                   "@type": "Brand",

@@ -127,6 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Inventory Management Software for Small Business",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for small businesses to track stock in real time, automate billing and workflows, manage multiple sales channels, reduce overstocking, and generate accurate reports to support better business decisions.",
                 "brand": {
                   "@type": "Brand",

@@ -58,26 +58,28 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Pet store POS system that tracks sizes, flavors, species types, and variants across food, accessories, and medications, speeds up checkout with barcode scanning, manages returns and exchanges, syncs inventory across branches and online channels, and provides detailed sales analytics.",
+                "description": "Pet store POS system that manages diverse product categories including food, grooming, toys, and healthcare with real-time inventory tracking, expiry and batch management, fast barcode checkout, subscription and auto-ship orders, customer purchase insights, and multi-location control from one dashboard.",
                 "featureList": [
-                  "Variant management for sizes, flavors, and species types",
-                  "Fast checkout with barcode scanning",
-                  "Real-time inventory tracking across food and accessories",
-                  "Seamless returns and exchange handling",
-                  "Customer profiles and loyalty programs",
-                  "Multi-branch inventory and pricing sync",
-                  "E-commerce integration with automatic stock updates",
+                  "Multi-category product management for food, accessories, grooming, and healthcare",
+                  "Expiry and batch tracking with stock rotation alerts",
+                  "Real-time inventory updates after every sale",
+                  "Fast barcode checkout and automated billing",
+                  "Customer purchase history and loyalty tracking",
+                  "Subscription and auto-ship recurring orders",
+                  "Custom discount and bundle management",
                   "Supplier and purchase order management",
-                  "Seasonal and promotional discount management",
-                  "Employee roles, permissions, and activity tracking",
-                  "Smart sales and trend reports"
+                  "Multi-location store management from one dashboard",
+                  "Multiple payment options including split payment",
+                  "Online and in-store order syncing",
+                  "Role-based access control for staff",
+                  "Detailed sales and inventory reporting"
                 ]
               },
               {
                 "@type": "WebPage",
                 "name": "Pet Store POS System | Owners Inventory",
                 "url": "https://ownersinventory.com/industries/pet-store-pos-system",
-                "description": "Manage pet food, accessories, and medications with real-time variant tracking, fast checkout, smooth returns, and multi-branch sync using Owners Inventory's pet store POS system.",
+                "description": "Manage pet food, grooming, toys, and healthcare with real-time inventory, expiry tracking, fast checkout, and loyalty insights using Owners Inventory's pet store POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -128,7 +130,8 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Pet Store POS System",
-                "description": "POS software designed for pet store retailers to manage food, accessories, and medication variants by size, flavor, and species type, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, and generate detailed sales reports from a single dashboard.",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "POS software designed for pet stores to manage diverse product categories, track expiry and batches, handle fast barcode checkout, set up subscription and auto-ship orders, track customer purchase history, manage suppliers, and run multi-location operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -143,47 +146,244 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sarah L"
+                      },
+                      "reviewBody": "Previously, it was a headache to manage the expiry dates of pet food, but with the system we are alerted automatically and there is a lot less waste.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Daniel M"
+                      },
+                      "reviewBody": "It used to be difficult to keep track of various pet products like food, toys, and grooming supplies. Now they're all in one place and easy to keep track of.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Ayesha K"
+                      },
+                      "reviewBody": "Before Owners Inventory, we used to experience stockouts on our best sellers, but since the change we are always prepared to reorder the items selling out in our store.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Omar R"
+                      },
+                      "reviewBody": "When customers used to purchase lots of pet items, checkout would be quite slow, but now we scan barcodes and bill quickly and smoothly, even during peak hours.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Jessica P"
+                      },
+                      "reviewBody": "We now truly know what our customers are purchasing for their pets, and the sales information enabled us to tweak our offerings and improve sales.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Hassan A"
+                      },
+                      "reviewBody": "Managing multiple pet store locations used to be confusing. Now we can see all branches in one dashboard without switching systems.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Michael B"
+                      },
+                      "reviewBody": "The loyalty feature actually made a difference for us. Pet owners come back more often because their rewards are tracked automatically.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "How does this POS handle sizes, flavors, and variants?",
+                    "name": "Can I manage pet food expiry dates in the system?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "The system tracks every size, flavor, and species type separately across food, accessories, and medications, keeping stock accurate and reducing errors."
+                      "text": "Yes. The system tracks expiry dates and batch numbers for effective stock rotation, helping minimize product waste and keep only fresh items on the shelves."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can it manage multiple branches?",
+                    "name": "How does the POS handle discounts and promotions?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Inventory, sales, pricing, and reports stay synced across all branches, and you can transfer stock between locations on demand."
+                      "text": "Discounts and special offers are set up in the system and applied automatically at checkout, calculated correctly without any manual work."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the POS support returns and exchanges?",
+                    "name": "Can I upload my full pet product catalog at once?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Returns and exchanges are processed clearly, with every action recorded to keep inventory and revenue accurate."
+                      "text": "Yes. You can import your full product catalog using Excel or CSV files for quick, efficient setup without manually entering each product."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I connect my online store?",
+                    "name": "Can the system manage multiple pet store locations?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Your online and retail inventory update in real time, preventing overselling and duplicate records across channels."
+                      "text": "Yes. You can manage inventory, sales, and performance for each branch from a centralized dashboard without switching systems."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it easy for staff to learn?",
+                    "name": "Does it track customer purchase history for pet products?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The interface is simple and clear, so staff can use it confidently within a few hours of training."
+                      "text": "Yes. Customers' purchasing patterns and preferences are recorded and used to make tailored recommendations, helping enhance repeat sales."
                     }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages Pet Store Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines pet store operations from catalog setup to performance review and restocking.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Catalog Setup and Organization",
+                    "text": "Pet products are added with all relevant details such as name, SKU, category, price, and expiry. Categories include pet food, grooming tools, toys, medicines, and accessories, with bulk import options for large catalogs."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Customer Identification at the Counter",
+                    "text": "When a customer arrives at the counter, the cashier can access their profile, viewing their pets' purchase history, preferences, and loyalty points on screen."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Transaction Building and Pricing",
+                    "text": "Staff scan pet products via barcode or select them from the system, including variations like size, brand, or formula type. Discounts, bundles, and promotional pricing are applied within the same interface."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Seamless Payment Processing",
+                    "text": "The POS supports several payment options including cash, card, mobile wallets, and split payment, allowing fast and simple transaction completion without switching between tools."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Performance Review and Restocking",
+                    "text": "At the end of the day, the dashboard provides a clear view of sales activity and stock turnover, showing top-selling products, slow-moving items, and items running low for smarter restocking."
                   }
                 ]
               }

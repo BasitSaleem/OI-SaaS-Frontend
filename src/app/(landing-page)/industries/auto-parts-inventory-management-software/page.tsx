@@ -129,6 +129,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Auto Parts Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for auto parts stores and automotive businesses to track vehicle parts, manage supplier orders, handle bulk orders, and maintain real-time stock visibility across multiple locations.",
                 "brand": {
                   "@type": "Brand",

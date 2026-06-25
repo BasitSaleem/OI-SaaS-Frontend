@@ -134,6 +134,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Furniture Store POS Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for furniture stores to manage bulk inventory, custom orders, advance payments, delivery and installation tracking, multi-branch showrooms, supplier purchasing, and online order syncing from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

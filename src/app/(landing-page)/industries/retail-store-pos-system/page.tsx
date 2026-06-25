@@ -133,6 +133,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "POS System for Small Retail Stores",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for small retail stores to handle billing, real-time inventory tracking, multiple payment methods, employee management, customer loyalty, expense tracking, and centralized reporting from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

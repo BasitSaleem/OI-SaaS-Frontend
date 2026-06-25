@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Clothing Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for clothing stores to manage size and color variants, speed up billing with barcode scanning, handle returns and exchanges, sync inventory across branches and online channels, manage suppliers, and generate detailed sales and trend reports from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

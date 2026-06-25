@@ -128,6 +128,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Candy Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for candy and confectionery stores to handle fast billing, weight-based and unit-based selling, pick-and-mix sales, real-time inventory tracking, supplier management, multi-payment processing, and seasonal promotions from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

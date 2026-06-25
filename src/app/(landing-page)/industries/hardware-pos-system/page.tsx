@@ -133,6 +133,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Hardware Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for hardware stores to handle fast barcode billing, real-time inventory tracking, supplier and purchase order management, multi-unit and variant selling, customer credit, online ordering, and centralized multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

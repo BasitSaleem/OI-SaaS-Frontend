@@ -58,25 +58,26 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Appliance store POS system that tracks model inventory, serial numbers, and warranties, manages customer deliveries and installation dispatching, syncs stock across showrooms and warehouses, and provides detailed sales commission reports.",
+                "description": "Appliance store POS system that manages large multi-brand product catalogs, tracks inventory in real time, handles warranty and service records, speeds up checkout with barcode scanning, automates stock replenishment, and centralizes sales, suppliers, and reporting across multiple locations from one dashboard.",
                 "featureList": [
-                  "Model and serial number tracking for high-value appliances",
-                  "Integrated home delivery and installation scheduling",
-                  "Real-time stock lookup across showrooms and warehouses",
-                  "Flexible payment options, deposits, and layaways",
-                  "Automated sales commission logs and rep tracking",
-                  "Manufacturer warranty validation and returns tracking",
-                  "Supplier purchase order and brand management",
-                  "E-commerce sync for online orders",
-                  "Customer profile history and address records",
-                  "Detailed gross margin and profitability reporting"
+                  "Real-time inventory tracking across purchases, sales, transfers, and returns",
+                  "Centralized product management for brands, models, and specifications",
+                  "Fast checkout with barcode scanning and auto-billing",
+                  "Warranty and after-sales service tracking",
+                  "Automated stock replenishment alerts",
+                  "Multi-location inventory management from one dashboard",
+                  "Supplier and purchase order management",
+                  "Role-based employee access control",
+                  "Mobile-friendly store interface",
+                  "Detailed sales, inventory, and profit reporting",
+                  "Online and in-store order syncing"
                 ]
               },
               {
                 "@type": "WebPage",
                 "name": "Appliance Store POS System | Owners Inventory",
                 "url": "https://ownersinventory.com/industries/appliance-store-pos-system",
-                "description": "Manage showrooms and warehouses with real-time model inventory, serial number warranty tracking, home delivery scheduling, and sales commissions using Owners Inventory's appliance store POS system.",
+                "description": "Manage large multi-brand catalogs, track inventory, handle warranties, and speed up checkout with multi-location control using Owners Inventory's appliance store POS system.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -127,7 +128,8 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Appliance Store POS System",
-                "description": "POS software designed for appliance retailers to manage product models by serial numbers, schedule home deliveries, record warranty details, track sales commissions, and sync showroom floors with backend warehouses.",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "POS software designed for appliance stores to manage large multi-brand catalogs, track inventory in real time, handle warranty and service records, automate stock replenishment, manage suppliers, and run multi-location operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
@@ -142,47 +144,258 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Daniel H"
+                      },
+                      "reviewBody": "Managing appliance inventory used to be difficult, especially with multiple brands and models. This system keeps our stock accurate and organized at all times.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sarah M"
+                      },
+                      "reviewBody": "We can instantly see product availability and inventory levels, which has helped us avoid running out of products and deliver great customer service.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Ahmed T"
+                      },
+                      "reviewBody": "Billing is much quicker these days, and our salespeople can complete transactions fast even during the busy shopping season.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Jason R"
+                      },
+                      "reviewBody": "Our staff quickly learned how to use the system, and setup was simple, making product and sales management much easier.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Fatima K"
+                      },
+                      "reviewBody": "We have a few appliance stores in our business, and this system has helped us keep the same inventory accurate across all our stores.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Michael D"
+                      },
+                      "reviewBody": "Warranty tracking is now much more organized, and we can easily access customer purchase records to offer improved after-sales service.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sophie L"
+                      },
+                      "reviewBody": "This appliance store POS system is an ideal solution for our needs. It is reliable, user-friendly, and lets us track our inventory and sales more efficiently.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "Can the system track serial numbers for manufacturer warranties?",
+                    "name": "Can the system track inventory in real time?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can capture and track serial numbers during stock entry and tie them directly to sales invoices. This makes verifying warranty coverage and managing returns simple."
+                      "text": "Yes. All inventory activities are updated automatically in real time. Records update on the fly for purchases, sales, returns, transfers, and incoming stock to keep levels accurate."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the POS support delivery and installation scheduling?",
+                    "name": "Does the system support barcode scanning?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can input customer shipping details, schedule deliveries, and track installer notes directly through the invoice generation interface."
+                      "text": "Yes. The appliance store POS supports barcode scanning for quick product identification, billing, stocktaking, stock verification, and sales."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I look up stock levels at other showrooms or warehouses?",
+                    "name": "Can I manage multiple appliance store locations?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The POS operates on a multi-location architecture, giving your staff instant visibility into stock levels across all showrooms and warehouses."
+                      "text": "Yes. Multi-location management is supported. Owners and managers can view inventory, sales, transfers, and store performance for multiple stores from a single dashboard."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can we handle deposits and customer layaways?",
+                    "name": "How quickly can I set up Owners Inventory for my appliance store?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can configure partial payments, collect deposits, reserve the appliance, and allow customers to pay the remaining balance upon delivery or installment schedules."
+                      "text": "Most appliance stores can begin using the system within a few hours. Product catalogs, inventory records, supplier information, and customer data can be imported in bulk for a faster setup."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the system automatically calculate sales commissions?",
+                    "name": "Can different employees have different access levels?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can associate sales reps with invoices and track commissions based on product margins or flat rates, which simplifies payroll calculations."
+                      "text": "Yes. Role-based permissions let owners assign different access levels for salespeople, managers, inventory supervisors, accountants, and administrators, ensuring security and control."
                     }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can the system manage product warranties?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. Warranties, purchase history, and customer information are stored in the POS so warranty tracking and after-sales support are readily available."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory POS Manages Appliance Store Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines appliance store operations from inventory setup to performance monitoring.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Add and Organize Appliance Inventory",
+                    "text": "Quickly add products, brands, models, categories, barcodes, supplier information, specifications, and warranty details. Sort stock for easy access and efficient management."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Manage Incoming and Outgoing Inventory",
+                    "text": "Keep a running tally of all stock received and sales made. Inventory updates automatically whenever products are received, sold, transferred, or returned."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Process Sales and Customer Orders",
+                    "text": "Store staff manage sales orders, invoices, payment processing, and customer transactions from one dashboard, reducing billing errors and increasing transaction speed."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Fast Barcode Scanning and Product Lookup",
+                    "text": "Employees use barcode scanners to quickly find products, check stock levels, and process transactions efficiently, minimizing wait times during peak hours."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Secure Billing and Transaction Management",
+                    "text": "The system creates invoices, tracks payments, manages customer accounts, and keeps financial records. All transaction information is stored securely and remains readily accessible."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 6,
+                    "name": "Monitor Inventory and Store Performance",
+                    "text": "Store owners get real-time updates on stock, low-stock alerts, fast-selling products, sales performance, and pending orders, with automated insights to improve planning and profitability."
                   }
                 ]
               }

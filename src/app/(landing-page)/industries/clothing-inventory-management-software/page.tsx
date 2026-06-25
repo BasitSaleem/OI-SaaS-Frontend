@@ -130,6 +130,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Clothing Inventory Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "Inventory management software designed for clothing and fashion retailers to track stock by size, color, and style, manage supplier orders, handle fast billing, sync online and in-store sales, and generate real-time reports.",
                 "brand": {
                   "@type": "Brand",

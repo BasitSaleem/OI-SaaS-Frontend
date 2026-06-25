@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Supermarket POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for supermarkets to handle fast barcode billing, real-time inventory tracking, supplier and purchase management, multi-unit selling, customer loyalty programs, online ordering, and centralized multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

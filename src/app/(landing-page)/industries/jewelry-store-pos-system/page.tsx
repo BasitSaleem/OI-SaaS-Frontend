@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Jewellery Store POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for jewellery stores to handle smart billing with making charges and live metal rates, track inventory by weight and purity, manage repairs and custom orders, secure high-value transactions with role-based access, and connect multi-branch operations from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

@@ -132,6 +132,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Beauty Salon POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for beauty salons to handle fast checkout, service and retail product sales, loyalty points, flexible discounts, split payments, real-time stock updates, multi-counter billing, and connected booking flows from a single unified dashboard.",
                 "brand": {
                   "@type": "Brand",

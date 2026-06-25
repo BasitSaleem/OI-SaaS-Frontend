@@ -127,6 +127,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Ice Cream Shop POS System",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for ice cream shops to handle fast counter service, custom flavor and topping orders, real-time ingredient tracking, multi-payment processing, loyalty programs, and multi-location management from a single dashboard.",
                 "brand": {
                   "@type": "Brand",

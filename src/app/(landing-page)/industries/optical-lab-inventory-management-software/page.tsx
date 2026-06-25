@@ -57,25 +57,26 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Optical lab inventory management software to track lens blanks, frame stocks, and consumables, monitor lens breakages, match jobs to trays, and optimize lab workflow from surfacing to edging.",
+                "description": "Optical lab management software that streamlines prescription intake and verification, tracks lens and frame inventory in real time, manages production work orders through every stage, records quality checks, and synchronizes orders across stores, clinics, and online channels from one dashboard.",
                 "featureList": [
-                  "Real-time lens blank and frame stock tracking",
-                  "Tray and job matching with barcode tracking",
-                  "Lens breakage and scrap cost monitoring",
-                  "Optical consumables and alloy chemical tracking",
-                  "Multi-station workflow status updates",
-                  "Low-stock alerts and automated reordering",
-                  "Supplier purchase order management",
-                  "Bulk lens matrix import capability",
-                  "Role-based access controls for technicians",
-                  "Detailed production yield and wastage reporting"
+                  "Electronic prescription intake and verification",
+                  "Real-time lens, frame, coating, and accessory inventory tracking",
+                  "Production and work order management through cutting, coating, and assembly",
+                  "Quality assurance tracking at multiple production stages",
+                  "Custom prescription and special order handling",
+                  "Multi-location inventory and order synchronization",
+                  "Retail store, clinic, wholesale, and online order integration",
+                  "Unified dashboard for production, inventory, and orders",
+                  "Role-based access control with audit logs",
+                  "Production efficiency and turnaround reporting",
+                  "Integrations with CRM, ERP, accounting, and barcode systems"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "Optical Lab Inventory Management Software | Owners Inventory",
-                "url": "https://ownersinventory.com/industries/optical-lab-inventory-management-software",
-                "description": "Track lens blanks, frame stocks, and consumables, monitor breakages, and optimize lab workflow with Owners Inventory.",
+                "name": "Optical Lab Management Software | Owners Inventory",
+                "url": "https://ownersinventory.com/industries/optical-lab-management-software",
+                "description": "Streamline prescription processing, track lens and frame inventory, manage production workflows, and synchronize orders across locations with Owners Inventory's optical lab management software.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -100,8 +101,8 @@ const Page = () => {
                     {
                       "@type": "ListItem",
                       "position": 3,
-                      "name": "Optical Lab Inventory Management Software",
-                      "item": "https://ownersinventory.com/industries/optical-lab-inventory-management-software"
+                      "name": "Optical Lab Management Software",
+                      "item": "https://ownersinventory.com/industries/optical-lab-management-software"
                     }
                   ]
                 }
@@ -125,13 +126,14 @@ const Page = () => {
               },
               {
                 "@type": "Product",
-                "name": "Optical Lab Inventory Management Software",
-                "description": "Inventory management software designed for optical laboratories to track lenses, frames, and consumables, trace jobs, and monitor breakage yield rates from a single dashboard.",
+                "name": "Optical Lab Management Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "description": "Lab management software designed for optical labs to handle prescription intake and verification, lens and frame inventory control, production work order tracking, quality assurance, custom orders, and multi-channel order management from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Owners Inventory"
                 },
-                "url": "https://ownersinventory.com/industries/optical-lab-inventory-management-software",
+                "url": "https://ownersinventory.com/industries/optical-lab-management-software",
                 "offers": {
                   "@type": "Offer",
                   "price": "0",
@@ -141,47 +143,156 @@ const Page = () => {
                 }
               },
               {
+                "@type": "ItemList",
+                "name": "Customer Reviews",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "David R"
+                      },
+                      "reviewBody": "It used to be hard to order prescriptions, particularly during peak times, but now we can do it without any confusion and track the job from start to finish.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Michael T"
+                      },
+                      "reviewBody": "The inventory tracking system is highly effective in ensuring proper stock of lenses and frames at all times. We no longer face unforeseen shortages.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sarah L"
+                      },
+                      "reviewBody": "The reporting tools provide us with a clear insight into production performance and order volumes, which has enabled us to be much more efficient.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                      },
+                      "itemReviewed": {
+                        "@type": "SoftwareApplication",
+                        "name": "Owners Inventory"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "Can I manage massive lens matrices (Sphere/Cylinder combinations)?",
+                    "name": "How can optical lab management software improve operational accuracy?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Owners Inventory supports bulk imports via CSV, allowing you to upload complete power matrices (Sphere, Cylinder, Addition, Material, Diameter) at once. You don't need to manually create thousands of separate product records."
+                      "text": "Prescription tracking, production activities, and inventory movement are tracked automatically in the system. This minimizes human error and ensures each order is fulfilled in line with the customer's needs."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does the system track and report lens breakages?",
+                    "name": "Is it suitable for small optical labs?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "When a lens breaks during processing, technicians log the breakage code (e.g., surfacing, polishing, edging) directly from the station. The system writes off the lens, prompts stockroom staff to issue a replacement, and logs the scrap cost for monthly yield reports."
+                      "text": "Yes. Owners Inventory works for optical labs and production facilities of all sizes, helping streamline operations and automate repetitive tasks."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can we track customer-owned frames sent for lenses?",
+                    "name": "Can I manage multiple lab locations with the software?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. Customer-owned frames can be registered as temporary inventory, linked to a specific job ticket, and assigned to a barcode tray. Once the lenses are mounted and the job is completed, the system automatically checks the frame out of inventory."
+                      "text": "Yes. The software offers centralized views for multiple locations, managing stock levels, production status, and order fulfillment from one dashboard."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does the software support multiple lab locations or retail store links?",
+                    "name": "How does it help with inventory management?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. You can manage multiple lab facilities or link a central surfacing lab to retail optician shops. Transferred stock, finished jobs, and inventory levels are tracked across all locations under a single dashboard."
+                      "text": "The system provides real-time monitoring of lenses, frames, coatings, and accessories. It automatically updates stock after use, purchase, and adjustment, keeping inventory records accurate."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can we set minimum stock alerts for optical consumables?",
+                    "name": "Can it track custom prescriptions and special orders?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, you can set reorder thresholds for any consumable including polishing pads, alloy blocks, blocking tape, and safety labels. The system alerts you immediately when stock falls below safety margins."
+                      "text": "Yes. Owners Inventory records prescription details, custom requirements, production steps, delivery dates, and payment information, ensuring accurate fulfillment and shipment."
                     }
+                  }
+                ]
+              },
+              {
+                "@type": "HowTo",
+                "name": "How Owners Inventory Manages Optical Lab Operations",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines optical lab operations from prescription intake to quality inspection.",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Prescription Intake and Order Registration",
+                    "text": "Upon receipt of prescriptions, all relevant information such as lens specifications, coatings, frame choices, and customer needs is entered into the system. Each order is assigned an order number for full traceability during production."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Inventory and Material Management",
+                    "text": "The system classifies and records lenses, frames, coatings, and accessories. Stock levels are monitored in real time so staff can easily find the materials needed for production, minimizing delays from shortages."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Production Workflow Management",
+                    "text": "Owners Inventory monitors all stages of production for each order, from lens cutting to coating, edging, fitting, and assembly. Staff can follow progress in real time and prioritize urgent orders."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Custom Prescription and Special Order Handling",
+                    "text": "Special lenses, coatings, and custom frame modifications are handled case by case with detailed specifications. All customer needs and production instructions are recorded to guarantee accurate production without disrupting standard flows."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 5,
+                    "name": "Quality Inspection and Verification",
+                    "text": "Completed glasses are checked for prescription accuracy and product standards before delivery. Inspection results are entered into the system to help minimize remakes and ensure the product meets customer needs."
                   }
                 ]
               }

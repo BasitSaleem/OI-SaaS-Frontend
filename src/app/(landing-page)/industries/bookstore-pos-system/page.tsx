@@ -131,6 +131,7 @@ const Page = () => {
               {
                 "@type": "Product",
                 "name": "Bookstore POS Software",
+                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
                 "description": "POS software designed for bookstores to track books and stationery inventory in real time, handle ISBN-based billing, manage author and genre sales insights, sync online and walk-in orders, handle multi-branch operations, and manage supplier purchase orders from a single dashboard.",
                 "brand": {
                   "@type": "Brand",
