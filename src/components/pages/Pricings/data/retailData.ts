@@ -1,4 +1,5 @@
 import { FeatureCategory, PricingPlan } from "../types";
+import { getPackageLink } from "../../../../utils/getPackageLink";
 
 export const retailData: {
   plans: PricingPlan[];
@@ -22,7 +23,7 @@ export const retailData: {
         "Unlimited Purchases",
         "Onboarding Assistance & Email Support",
       ],
-      link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=d755fe7d-4372-426c-af33-e63b71a6521f",
+      link: getPackageLink("retail-basic"),
     },
     {
       id: "pro",
@@ -44,7 +45,7 @@ export const retailData: {
         "Onboarding Assistance & Email Support",
         "Live Chat & Phone Support",
       ],
-      link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=8e773346-3c38-4e76-9c1e-7f293a40d81c",
+      link: getPackageLink("retail-pro"),
     },
     {
       id: "enterprise",
@@ -66,7 +67,7 @@ export const retailData: {
         "Live Chat & Phone Support",
         "Dedicated Account Manager",
       ],
-      link: "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=d63271f4-1978-47af-b573-ba4a5516d8f8",
+      link: getPackageLink("retail-premium"),
     },
   ],
   categories: [
