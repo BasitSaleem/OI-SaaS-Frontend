@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Onest, Inter } from "next/font/google";
 import "./globals.css";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
 import Navbar from "@/components/pages/navbar/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
+// ClientProviders is a "use client" component that lazy-loads ToastProvider
+// (react-toastify CSS) and ThirdPartyScripts (GTM/FB/Clarity) with ssr:false.
+// ssr:false dynamic imports must live inside Client Components — not Server Components.
+import ClientProviders from "@/components/providers/ClientProviders";
 
 // Load fonts with optimized weights and display swap
 const onest = Onest({
@@ -65,39 +66,6 @@ export default function RootLayout({
 
         <meta name="google-site-verification" content="CIvLSxFYDU-_qgrVlQV1g27znqLQZ5P5Sf5bf44fbvE" />
         <meta name="facebook-domain-verification" content="7gvuicd35m5xq653dyvp2anabgc7is" />
-        <Script id="microsoft-clarity" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "vj9pzbdqky");
-          `}
-        </Script>
-        {/* Google Tag Manager - Consistently configured via GTM */}
-        <Script id="google-tag-manager" strategy="lazyOnload">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5LZ72NX8');
-          `}
-        </Script>
-        <Script id="fb-pixel" strategy="lazyOnload">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1435291848047613');
-            fbq('track', 'PageView');
-          `}
-        </Script>
       </head>
       <body
         suppressHydrationWarning
@@ -105,6 +73,7 @@ export default function RootLayout({
       >
         <ScrollLockProvider>
           <LenisProvider>
+            {/* GTM noscript fallback — no JS performance impact */}
             <noscript>
               <iframe
                 src="https://www.googletagmanager.com/ns.html?id=GTM-5LZ72NX8"
@@ -124,17 +93,8 @@ export default function RootLayout({
             <ScrollToTop />
             <Navbar />
             {children}
-            <ToastContainer
-              position="top-right"
-              autoClose={4000}
-              hideProgressBar={false}
-              newestOnTop
-              closeOnClick
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="light"
-            />
+            {/* Lazy-loads ToastProvider (CSS) + ThirdPartyScripts (analytics) */}
+            <ClientProviders />
           </LenisProvider>
         </ScrollLockProvider>
       </body>
