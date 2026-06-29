@@ -391,16 +391,16 @@ export const GYM_TESTIMONIAL_FEATURES = [
 export const GYM_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph: "Owners Inventory connects with the payment and accounting platforms your gym already uses. Membership fees, retail revenue, and payment records stay consistent across every connected system without manual data entry between them.",
-  tools: [
+   tools: [
     {
       id: 1,
-      name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      name: "Mailchimp",
+      image: "/assets/home-page-images/tools-section/mailchimp.svg",
     },
     {
       id: 2,
-      name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      name: "Google Calendar",
+      image: "/assets/home-page-images/tools-section/google-calendar.svg",
     },
     {
       id: 3,
