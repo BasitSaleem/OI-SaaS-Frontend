@@ -450,7 +450,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={APPLIANCE_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security and Role-Based Access."
+          title="Security and Role-Based Access"
           description="Different access levels can be assigned within the system and can be provided to the users based on their roles and responsibilities. Appropriate access can be granted to each member of the sales staff, store managers, accounting teams, inventory controllers and business owners to ensure security and operational control."
           secondDescription="This helps to protect sensitive business information, restrict unauthorized editing or changes, and enable correct record keeping throughout the organisation."
         />

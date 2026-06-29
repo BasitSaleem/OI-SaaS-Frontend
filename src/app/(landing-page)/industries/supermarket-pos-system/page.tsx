@@ -380,7 +380,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={SUPERMARKET_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Speed, Accuracy, and Compliance."
+          title="Speed, Accuracy, and Compliance"
           description="Our system works with other tools like accounting software, customer management, online stores and payment systems. This lets you manage the supermarket from one place."
           secondDescription="These tools make things easier, reduce work and make the supermarket run faster and more efficiently."
         />

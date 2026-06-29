@@ -346,7 +346,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={FURNITURE_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy and Compliance."
+          title="Security, Accuracy and Compliance"
           description="All production and inventory activities are recorded effectively by the system. Only authorized personnel will have access, minimizing mistakes and unauthorized activities."
           secondDescription="It maintains a comprehensive audit trail for accountability and compliance. Real-time tracking improves stock and production tracking. Accuracy and reliability are improved by automated reporting."
         />

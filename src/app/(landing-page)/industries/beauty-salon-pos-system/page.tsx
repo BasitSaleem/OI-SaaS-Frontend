@@ -352,7 +352,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={BEAUTY_SALON_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="With accurate details of recorded transactions, the system creates a reliable activity trail. This improves data accuracy, reduces discrepancies in payment records, and helps salon businesses maintain organized documentation. This helps beauty salon owners to perform internal checks and promotes financial clarity."
         />
 

@@ -358,7 +358,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={JEWELRY_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="An advanced jewelry POS system makes sure that all the transactions are duly managed and tracked. Role-based access controls access to sensitive financial, and inventory information minimizing risks and avoiding internal losses."
           secondDescription="The system has full audit trails and facilitates compliance needs in protection of jewelry assets which have high-values. Live tracking will guarantee clear stock movement while automated reports will minimize errors in tracking and assist in maintaining proper financial records with certainty."
         />

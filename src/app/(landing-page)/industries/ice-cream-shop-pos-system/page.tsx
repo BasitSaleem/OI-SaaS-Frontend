@@ -238,7 +238,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={ICE_CREAM_SHOP_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security and Role-Based Access."
+          title="Security and Role-Based Access"
           description="Employees can only access information relevant to their role. The information is only visible to the employee when it is relevant to their tasks, helping to ensure smooth and secure functioning."
         />
 

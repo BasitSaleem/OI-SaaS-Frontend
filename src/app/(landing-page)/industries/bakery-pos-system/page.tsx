@@ -349,7 +349,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={BAKERY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="Each transaction in the Owners Inventory has a time stamp and is recorded securely. Each staff member has access to only the information relevant to his or her responsibilities."
           secondDescription="Audit trails increase transparency, and they reduce the possibility of errors within an organization or unauthorized changes. Automated reports reduce manual errors and help ensure that financial records are accurate and in compliance."
         />

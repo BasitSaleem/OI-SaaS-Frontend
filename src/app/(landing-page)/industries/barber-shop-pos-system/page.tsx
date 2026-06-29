@@ -241,7 +241,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={BARBER_SHOP_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="Staff permissions inside the salon POS system are assigned according to roles. All barbers can access only the information that is required to complete their assigned tasks. It provides owners with full control of the shop workflows. Every transaction is logged with a complete audit record, keeping business data protected at all times."
         />
 

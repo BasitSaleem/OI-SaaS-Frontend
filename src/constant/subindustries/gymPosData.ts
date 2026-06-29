@@ -377,7 +377,7 @@ export const GYM_TESTIMONIAL_FEATURES = [
     id: "5",
     title: "Straightforward Pricing",
     description:
-      "The best POS for gyms management does not require a long-term contract or an enterprise-level budget. The system is free to start. After the trial period, pricing is structured around your actual usage with no hidden fees attached to integrations or additional payment methods.",
+      "The best POS for gym management does not require a long-term contract or an enterprise-level budget. The system is free to start. After the trial period, pricing is structured around your actual usage with no hidden fees attached to integrations or additional payment methods.",
     icon: "testWhychoseIcon5",
   },
    {

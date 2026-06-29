@@ -346,7 +346,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={ECOMMERCE_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="It ensures accurate tracking of inventory and secure handling of data across all online operations. This system helps to maintain reliability and consistency."
         />
 

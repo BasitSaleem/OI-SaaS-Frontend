@@ -438,7 +438,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={PET_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security and Access Control."
+          title="Security and Access Control"
           description= "Owners Inventory ensures secure operations with role-based access control. Staff are only provided with information relevant to their roles and all transactions are carried out via secure payment methods to ensure that customer and business information is kept safe."
         />
 

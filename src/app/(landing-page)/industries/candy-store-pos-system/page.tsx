@@ -239,7 +239,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={CANDY_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security and Access Control."
+          title="Security and Access Control"
           description="Our POS maintains complete security of the store's private data. With role-based access, staff get limited access to information that is only relevant to their assigned job. Each transaction is processed with secure payment gateways that keep the financial data of customers protected."
         />
 
