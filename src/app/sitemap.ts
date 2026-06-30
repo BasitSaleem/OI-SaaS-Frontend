@@ -66,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "convenience-store-pos-system",
     "barber-shop-pos-system",
     "pet-store-pos-system",
-    "warehouses-pos-system",
+    "warehouse-pos-system",
     "appliance-store-pos-system",
     "gym-pos-system",
     "thrift-store-pos-system",
