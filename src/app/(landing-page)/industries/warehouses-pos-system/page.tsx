@@ -442,7 +442,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={WAREHOUSES_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security and Role-Based Access."
+          title="Security and Role-Based Access"
           description= "Access to system sections is limited based on employee's roles and responsibilities. Employees in the warehouse, as well as supervisors, accountants and managers can work with restricted access to reduce unauthorized changes and maintain security."
           secondDescription= "This helps keep warehouses up to date with records and ensure safe and organized operations."
         />

@@ -380,7 +380,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={SHOES_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="Footwear stores require a POS system that is safe and precise. Sales, returns and discounts are safely managed in the owner's Inventory POS. It secures financial information, customer information, and transactions by granting permission access according to role. Proper records decrease billing errors and fraud, and well-arranged data keep stores abreast with taxation and audit standards."
         />
 

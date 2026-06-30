@@ -347,7 +347,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={OPTICAL_LAB_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="Prescriptions, production activities, inventory movement, and customer transactions are all fully documented in the system. Data is shielded from unauthorized access by role-based controls and audit logs are kept to track activity and uphold operational standards."
         />
 

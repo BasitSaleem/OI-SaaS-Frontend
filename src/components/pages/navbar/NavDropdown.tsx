@@ -1,6 +1,4 @@
 'use client'
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { useScrollLockEffect } from "@/context/ScrollLockContext";
 
@@ -20,9 +18,7 @@ const NavDropdown = ({ label,
   onClose,
   onToggle,
   children, }: NavDropdownProps) => {
-  const router = useRouter();
   const ref = useRef<HTMLLIElement>(null);
-
   useScrollLockEffect(isOpen);
 
   // close when click outside
@@ -36,7 +32,6 @@ const NavDropdown = ({ label,
     }
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen, onClose]);
-  const linkUrl = `/${label.toLowerCase()}`;
 
   // desktop hover open close
   const openOnHover = () => onOpen();
@@ -44,9 +39,7 @@ const NavDropdown = ({ label,
   return (
     <li className="group lg:group" onMouseEnter={openOnHover}
       onMouseLeave={closeOnLeave}>
-      {/* Trigger */}
-      <Link
-        href="#"
+      <button
         onClick={onToggle} // will still toggle dropdown on click
         className="flex items-center justify-center xl:gap-3 gap-1 px-[6px] py-[6px] xl:px-4 xl:py-[9px] lg:text-xs xl:text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--background-halfwhite)] hover:bg-gray-100 hover:border-[var(--primary-purple)] font-['onest'] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full"
       >
@@ -58,7 +51,7 @@ const NavDropdown = ({ label,
           className="xl:w-2.5 w-2 h-1 xl:h-1.5"
           alt="dropdown-icon"
         />
-      </Link>
+      </button>
 
       {/* Dropdown Menu */}
       {isOpen && <div

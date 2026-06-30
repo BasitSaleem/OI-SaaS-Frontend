@@ -356,7 +356,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={GYM_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description= "Every transaction processed through the gym billing system carries a timestamp and a record of which staff member completed it. Payment records, membership changes, discount applications, and refunds are all logged with a traceable history. Nothing is edited or removed without leaving an audit trail, which matters when a member disputes a charge or when an end-of-period financial review is underway."
           secondDescription= "Access within the system is assigned by role. Front desk staff process transactions and view member profiles. Managers access the reporting and billing configuration. Owners see the full account. Nobody operates outside the scope of their role permits. Member payment data is stored and transmitted with encryption. Records back up automatically so no transaction history is lost if a device fails."
         />

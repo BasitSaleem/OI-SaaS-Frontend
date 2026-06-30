@@ -371,7 +371,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={HVAC_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="Every stock movement, purchase order, and parts adjustment is recorded with a timestamp and tied to the user who made it. Nothing is edited or deleted without a traceable record. For HVAC businesses that deal with warranty audits or maintenance contract reviews, every transaction is stored and ready to produce when needed."
           secondDescription="Access is assigned by role. A technician logging parts on a job cannot touch purchase orders or financial data. A procurement staff member managing supplier orders works within their own scope and nothing beyond it. All data backs up automatically to encrypted cloud storage and is never shared with third parties. Records stay protected regardless of what happens to any device in the field."
         />

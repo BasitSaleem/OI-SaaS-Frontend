@@ -23,7 +23,7 @@ export const THRIFT_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     id: "3",
     icon: "UnifiedIcon3",
     title: "Pricing Management Difficulties",
-    description: "There are times when thrifts must be able to offer some flexibility in the pricing of the items available, depending on the condition, the brand, the age, the demand, the promotion, or any other factor. Managing these variations manually creates inconsistencies.",
+    description: "There are times when thrift stores must be able to offer some flexibility in the pricing of the items available, depending on the condition, the brand, the age, the demand, the promotion, or any other factor. Managing these variations manually creates inconsistencies.",
   },
   {
     id: "4",
@@ -124,7 +124,7 @@ export const THRIFT_STORE_KEY_FEATURES_CARDS = [
   {
     id: 1,
     title: "Unique Item Inventory Management",
-    description: "Incorporate product detail, custom categories, SKU assignments and bar code support to accurately track donated, consigned, vintage, and second hand items.",
+    description: "Add product detail, custom categories, SKU assignments and barcode support to accurately track donated, consigned, vintage, and second hand items.",
     imageSrc: "/assets/industries-pages/thrift-store-pos/key-features-section/key-feature-card1.webp",
   },
   {
@@ -165,7 +165,7 @@ export const THRIFT_STORE_WORKFLOW_DATA = {
     {
       number: 2,
       title: "Item Identification at Checkout",
-      description: "Staff can easily locate products at the counter by scanning a bar code or searching for the product. Product details, prices and promotional offers are immediately available, making for accurate transactions.",
+      description: "Staff can easily locate products at the counter by scanning a Barcode or searching for the product. Product details, prices and promotional offers are immediately available, making for accurate transactions.",
     },
     {
       number: 3,
@@ -198,14 +198,14 @@ export const THRIFT_STORE_TESTIMONIALS = [
     name: "Crew Dalton",
     title: "Thrift Store Client",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image72.webp",
-    text: "New products comes in daily, and the system lets us know exactly where each piece is at all times, from the time it arrives until the sale.",
+    text: "New products come in daily, and the system lets us know exactly where each piece is at all times, from the time it arrives until the sale.",
   },
   {
     id: "3",
     name: "Harlow Webb",
     title: "Thrift Store Client",
     image: "/assets/industries-pages/industries-testimonial-images/girl-image73.webp",
-    text: "Owners Inventory has helped us keep track of any unique items that we had lost before use and inventory discrepancies have been reduced significantly.",
+    text: "Owners Inventory has helped us keep track of any unique items that we previously lost track of, and inventory discrepancies have been reduced significantly.",
   },
   {
     id: "4",
@@ -323,7 +323,7 @@ export const THRIFT_STORE_TESTIMONIAL_FEATURES = [
   {
     id: "2",
     title: "Built for Thrift Store Operations",
-    description: "The site is specifically geared in the direction of thrift stores, consignment shops, resale retailers and secondhand shops. Easy management of unique products, donated stock, fluctuating stock levels and flexible pricing.",
+    description: "The software is specifically geared in the direction of thrift stores, consignment shops, resale retailers and secondhand shops. Easy management of unique products, donated stock, fluctuating stock levels and flexible pricing.",
     icon: "testWhychoseIcon2",
   },
   {

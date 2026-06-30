@@ -377,7 +377,7 @@ export const GYM_TESTIMONIAL_FEATURES = [
     id: "5",
     title: "Straightforward Pricing",
     description:
-      "The best POS for gyms management does not require a long-term contract or an enterprise-level budget. The system is free to start. After the trial period, pricing is structured around your actual usage with no hidden fees attached to integrations or additional payment methods.",
+      "The best POS for gym management does not require a long-term contract or an enterprise-level budget. The system is free to start. After the trial period, pricing is structured around your actual usage with no hidden fees attached to integrations or additional payment methods.",
     icon: "testWhychoseIcon5",
   },
    {
@@ -391,16 +391,16 @@ export const GYM_TESTIMONIAL_FEATURES = [
 export const GYM_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph: "Owners Inventory connects with the payment and accounting platforms your gym already uses. Membership fees, retail revenue, and payment records stay consistent across every connected system without manual data entry between them.",
-  tools: [
+   tools: [
     {
       id: 1,
-      name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      name: "Mailchimp",
+      image: "/assets/home-page-images/tools-section/mailchimp.svg",
     },
     {
       id: 2,
-      name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      name: "Google Calendar",
+      image: "/assets/home-page-images/tools-section/google-calendar.svg",
     },
     {
       id: 3,

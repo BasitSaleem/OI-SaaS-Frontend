@@ -349,7 +349,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={AUTO_PARTS_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Data Control."
+          title="Security, Accuracy, and Data Control"
           description="Managing automotive inventory requires strict control over data and transactions. The system records every activity, ensuring transparency and reducing risks of errors or unauthorized changes. Role-based access improves security across operations. Owners' inventory provides a secure environment for automotive store operations."
           secondDescription="By improving data accuracy, the system supports better operational control and consistency."
         />

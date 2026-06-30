@@ -381,7 +381,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={RETAIL_STORE_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="The security of a POS system is a key factor when choosing one for a small retail store. Our system uses encrypted transaction processing and secure cloud storage to protect sensitive data about customers and stores. Backups are automatically created to ensure that your business data is safe, even if the hardware fails. Access controls based on roles prevent unauthorized use of the system and maintain operational integrity."
           secondDescription="The POS system is designed to be simple and easy to use, but still offers enterprise-level security. Retailers must have confidence that each transaction is accurately and securely recorded. As the best point of sale software for small retailers, our platform ensures accurate financial reporting, compliance-ready records, and protected payment processing. This level of reliability is the reason why many businesses consider this to be the best small business POS software for long-term operation stability."
         />

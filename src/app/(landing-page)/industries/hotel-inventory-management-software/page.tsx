@@ -354,7 +354,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={HOTEL_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="This system provides a secure way to handle inventory data, while maintaining the accuracy of all hotel operations. Each transaction is documented, creating an audit trail which helps to maintain accountability."
         />
 

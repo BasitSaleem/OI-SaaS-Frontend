@@ -350,7 +350,7 @@ const Page = () => {
         <IndustriesFeaturesSection features={JEWELRY_INVENTORY_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Security, Accuracy, and Compliance."
+          title="Security, Accuracy, and Compliance"
           description="With high security controls and accurate tracking, our secure jewelry inventory software makes it convenient for jewelry stores to handle expensive items. Every transaction is recorded, ensuring accountability at each stage. The role-based access feature of Owners Inventory limits access to sensitive data, while detailed logs identify discrepancies and maintain operational transparency across inventory, sales, and financial records."
         />
 
