@@ -397,7 +397,7 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title= "POS System for Warehouse for Faster Operations and Better Inventory Control"
+          title= "Warehouse POS System for Faster Operations and Better Inventory Control"
           description= "If a warehouse business doesn't have the right point-of-sale system, it may encounter inventory inaccuracies, delayed order processing, mismanagement of inventory and struggle with high product volume. Without a reliable warehouse POS system, businesses typically suffer from shipment delays, tracking errors, lost inventory, and inefficient warehouse operations."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
@@ -477,7 +477,7 @@ const Page = () => {
         </div>
         <IndustriesHardwareControl
           title="Improve Inventory Accuracy and Warehouse Efficiency"
-          description="Our warehouse pos system streamlines inventory management, order fulfillment, stock monitoring and operational reporting on a single platform designed for efficient, effective and reliable warehouse operations day after day. "
+          description="Our warehouse POS system streamlines inventory management, order fulfillment, stock monitoring and operational reporting on a single platform designed for efficient, effective and reliable warehouse operations day after day. "
           ctaDesc="Start Today"
         />
       </div>

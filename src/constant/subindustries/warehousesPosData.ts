@@ -54,7 +54,7 @@ export const WAREHOUSES_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Inventory Management",
     description:
-      "Stock levels in our warehouse is always updated in real-time, when products are received or transferred to and from the warehouse, when they are sold and dispatched. Real-time inventory tracking helps prevent stock shortages, overstocking, and inventory inaccuracies.",
+      "Stock levels in our warehouse are always updated in real-time, when products are received or transferred to and from the warehouse, when they are sold and dispatched. Real-time inventory tracking helps prevent stock shortages, overstocking, and inventory inaccuracies.",
   },
   {
     id: "2",
@@ -278,7 +278,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     title: "Inventory Control Specialist",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image60.webp",
-    text: "“We can now track every product movement in real time, which has greatly reduced stock errors and missing inventory.",
+    text: "We can now track every product movement in real time, which has greatly reduced stock errors and missing inventory.",
   },
   {
     id: "3",
@@ -294,7 +294,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     title: "Distribution Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image62.webp",
-    text: "Installation was straightforward and our warehouse staff adapted to this system easily. Every day tracking of stock has become so much simpler.",
+    text: "Installation was straightforward and our warehouse staff adapted to this system easily. Everyday tracking of stock has become so much simpler.",
   },
   {
     id: "5",
@@ -413,7 +413,7 @@ export const WAREHOUSES_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",
   secondHeading: "Streamline and Scale Your Warehouse Operations",
-  secondDescription: "Owners Inventory replaces inventory management, stock management, dispatch management, supplier coordination and reporting in one comprehensive warehouse point-of-sale solution. It supports warehouse teams to optimize their workflow, minimize manual tasks, and guarantee precise inventory management throughout the entire process.",
+  secondDescription: "Owners Inventory combines inventory management, stock management, dispatch management, supplier coordination and reporting in one comprehensive warehouse point-of-sale solution. It supports warehouse teams to optimize their workflow, minimize manual tasks, and guarantee precise inventory management throughout the entire process.",
   whyChooseTitle: "Why Choose Owners Inventory Warehouse POS System?",
   whyChooseDescription: "Our software enables our warehouse owners to run their inventory, stock movement, order processing, supplier records and reporting without having to use multiple disconnected systems.",
 };
@@ -422,7 +422,7 @@ export const WAREHOUSES_TESTIMONIAL_FEATURES = [
   {
     id: "1",
     title: "Quick Setup",
-    description: "Owners Inventory is easily programmable and doesn't need any high technical skills. Products, SKUs, warehouse sections, suppliers and stock categories can be added in bulk from excel or csv files or added quickly.",
+    description: "Owners Inventory is easy to set up and doesn't need any high technical skills. Products, SKUs, warehouse sections, suppliers and stock categories can be added in bulk from Excel or CSV files or added quickly.",
     icon: "testWhychoseIcon1",
   },
   {
