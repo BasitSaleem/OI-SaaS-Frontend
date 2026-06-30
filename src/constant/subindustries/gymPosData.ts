@@ -98,7 +98,7 @@ export const GYM_FEATURE_CARDS: FeatureCardData[] = [
     id: "1",
     title: "Omni-Channel Sales and Integration for Gyms and Fitness Studios",
     description: "Owners Inventory connects your front desk transactions with online membership sign-ups and product orders in one system. Every sale, whether processed at the counter or through your website, feeds into the same records. Stock counts, membership statuses, and payment histories stay accurate across both channels automatically.",
-    imageSrc: "/assets/industries-pages/gym-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -124,7 +124,7 @@ export const GYM_FEATURE_CARDS: FeatureCardData[] = [
     title: "Better Analytics and Reporting",
     description:
       "Owners Inventory organizes your gym's financial data into clear reports that are actually useful for decision-making. Rather than a raw list of transactions, the reporting dashboard presents membership revenue by plan type, retail sales by product category, payment failure rates, and revenue trends over any date range you select. Gym owners can identify which membership tiers bring the strongest retention, which retail products are moving and which are sitting, and where billing failures are creating gaps in monthly recurring revenue. That information supports purchasing decisions, pricing adjustments, and promotional planning without requiring a separate analytics tool.",
-    imageSrc: "/assets/industries-pages/gym-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -138,35 +138,35 @@ export const GYM_KEY_FEATURES_CARDS = [
     description:
       "The system stores every membership tier, pricing structure, and renewal date in one place. Staff can activate new memberships, upgrade existing plans, apply freeze requests, and process cancellations without leaving the POS screen.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
     title: "Automated Payment Retry and Dunning",
     description: "When a payment fails, the gym POS system retries the charge at configured intervals and notifies the member to update their payment method. Staff are only looped in after automated recovery has been exhausted. This process alone recovers a significant portion of revenue that would otherwise go unnoticed.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
     title: "Retail Product Catalog",
     description: "Every physical product sold at your gym is listed with pricing, stock levels, category assignment, and barcode. Staff can search by product name or filter by category during checkout. New products are added in bulk from a spreadsheet upload.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
     title: "Loyalty Points Tracking",
     description: "Loyalty points accumulate per transaction and apply automatically at checkout. The system tracks each member's point balance and records every redemption against their profile, so the history stays accurate.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
     title: "Flexible Discount Application",
     description: "Promotional discounts, class pack pricing, referral incentives, and seasonal offers are configured inside the system and applied at checkout without separate calculations. Discounts attach to specific products, membership types, or individual transactions depending on how each offer is structured.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -174,7 +174,7 @@ export const GYM_KEY_FEATURES_CARDS = [
     description:
       "When any retail product falls below its set minimum quantity, the system sends an alert before the item sells out. Staff are never in the position of selling a product that is no longer in stock.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -182,7 +182,7 @@ export const GYM_KEY_FEATURES_CARDS = [
     description:
       "A member paying part of a transaction with loyalty points and the remainder by card is processed in a single checkout flow. Cash and card combinations, partial gift card redemptions, and promotional credit applications are all completed without requiring manual adjustments between payment screens.",
     imageSrc:
-      "/assets/industries-pages/gym-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/key-features-section/key-feature-card7.webp",
   },
   
 ];
@@ -231,7 +231,7 @@ export const GYM_TESTIMONIALS = [
     name: "Jasper Holt",
     title: "Gym Franchise Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image68.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image68.webp",
     text: "We had three different tools handling memberships, retail, and payments. Switching between them during a busy morning was slowing everything down. After setting up Owners Inventory, the entire front desk runs through one screen. Checkouts are faster, billing errors have dropped significantly, and I can actually see what the business is doing without pulling reports from two places.",
   },
   {
@@ -239,7 +239,7 @@ export const GYM_TESTIMONIALS = [
     name: "Emery Grant",
     title: "Operations Manager, Mid-Size Fitness Club",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image67.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image67.webp",
     text: "Failed payments were something we just lived with. By the time we noticed a member had a declined charge, they had already stopped coming in. The automated retry and notification system in Owners Inventory recovered a number of accounts we would have written off completely. The difference in monthly recurring revenue was noticeable within the first billing cycle.",
   },
   {
@@ -247,7 +247,7 @@ export const GYM_TESTIMONIALS = [
     name: "Reese Dalton",
     title: "Owner, Multi-Location Gym",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image68.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image68.webp",
     text: "Retail was always an afterthought for us because tracking stock manually was too time-consuming. Products would run out, and nobody would notice until a member asked for something we could not find. The low stock alerts and the fact that every sale updates the count in real time changed how we manage the retail side entirely. We have not had an empty shelf situation since we started using the system.",
   },
   
@@ -290,14 +290,14 @@ export const GYM_KEY_FEATURES = [
     title: "Front Desk Check-in & Retail POS",
     description:
       "Scan member keycards, verify accounts, process retail sales, and book classes from a touchscreen front-desk interface.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/pos-banner.webp",
   },
   {
     id: "gym-stock-control",
     title: "Pro Shop & Stock Control",
     description:
       "Track active inventories for drinks, supplements, and apparel. Avoid stockout situations with low inventory notifications.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/products-banner.webp",
   },
   {
     id: "gym-vendor-mgmt",
@@ -305,7 +305,7 @@ export const GYM_KEY_FEATURES = [
     description:
       "Draft purchase orders for gym accessories and retail supplies, keeping distributor details saved on file.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/purchases-banner.webp",
   },
   {
     id: "gym-variants",
@@ -313,21 +313,21 @@ export const GYM_KEY_FEATURES = [
     description:
       "Customize membership tiers, entry rules, expiration dates, class passes, and contract agreements.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/inventory-banner.webp",
   },
   {
     id: "gym-loyalty",
     title: "Member History & CRM Profiles",
     description:
       "Access client profiles detailing check-in logs, trainer bookings, billing schedules, and health notes.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/people-banner.webp",
   },
   {
     id: "gym-finances",
     title: "Trainer Commissions & Payroll",
     description:
       "Monitor monthly recurring revenues, track class attendance averages, and automate commission payroll for staff.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/finance-banner.webp",
   },
   {
     id: "gym-ecommerce",
@@ -335,7 +335,7 @@ export const GYM_KEY_FEATURES = [
     description:
       "Integrate your website's member portal. Sync scheduling updates in real-time, register members for classes, and collect online payments.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/ecommerce-banner.webp",
   },
 ];
 
@@ -395,27 +395,27 @@ export const GYM_TOOLS_DATA = {
     {
       id: 1,
       name: "Mailchimp",
-      image: "/assets/home-page-images/tools-section/mailchimp.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/mailchimp.svg",
     },
     {
       id: 2,
       name: "Google Calendar",
-      image: "/assets/home-page-images/tools-section/google-calendar.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/google-calendar.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

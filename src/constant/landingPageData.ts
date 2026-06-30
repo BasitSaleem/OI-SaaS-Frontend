@@ -3,7 +3,7 @@ export const HOME_PAGE_CONTENT = {
     title: "Take Control. Gain Clarity. Grow with Owners Inventory",
     description:
       "Turn all assets to advantage. Our Owners Inventory platform assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion.",
-    video: "/assets/Manual.mp4",
+    video: "https://d2qlv5xtew5ayb.cloudfront.net/assets/Manual.mp4",
     variant: "animation2" as const,
   },
   trustedBy: {
@@ -70,8 +70,8 @@ export const HOME_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -81,8 +81,8 @@ export const HOME_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Speed up service with quick-bill POS, manage tables and menus with ease, and track ingredients or stock levels in real-time — ensuring smooth operations from kitchen to counter.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -92,8 +92,8 @@ export const HOME_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Handle bulk orders with custom pricing, manage multi-location stock, and keep fulfillment smooth. Streamline sales, purchases, and inventory operations. All in one system built for high-volume wholesalers.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -102,8 +102,8 @@ export const HOME_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Ensure safety and compliance with batch tracking, expiry alerts, and detailed logs, all while managing walk-in sales and digital prescriptions effortlessly.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -113,8 +113,8 @@ export const HOME_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Track every size, color, and style with product variants, manage seasonal collections, and keep stock aligned across online and physical stores, whether you sell streetwear, shoes, or high fashion.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
 ];
@@ -122,9 +122,9 @@ export const LANDING_FEATURES = [
   {
     id: "inventorypos-system",
     title: "Smart POS System for Modern Retail",
-    icon: "/assets/features-section/pos-system.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-section/pos-system.svg",
     videoSrc: "/videos-s3/home-page-videos/screen1.webm",
-    imageSrc: "/assets/home-page-images/animations/screen1-tab.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/screen1-tab.webp",
     tabIndex: 1,
     iconWidth: 20,
     iconHeight: 20,
@@ -132,9 +132,9 @@ export const LANDING_FEATURES = [
   {
     id: "inventory-ecommerce",
     title: "Built-in E-commerce - Fully Synced and Ready to Sell",
-    icon: "/assets/features-section/cart-icons.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-section/cart-icons.svg",
     videoSrc: "/videos-s3/home-page-videos/screen2.webm",
-    imageSrc: "/assets/home-page-images/animations/screen2-tab.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/screen2-tab.webp",
     tabIndex: 2,
     iconWidth: 18,
     iconHeight: 14,
@@ -142,9 +142,9 @@ export const LANDING_FEATURES = [
   {
     id: "inventory-management",
     title: "Inventory Management to Stay in Control of Every Product",
-    icon: "/assets/features-section/management-icon.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-section/management-icon.svg",
     videoSrc: "/videos-s3/home-page-videos/screen3.webm",
-    imageSrc: "/assets/home-page-images/animations/screen3-tab.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/screen3-tab.webp",
     tabIndex: 3,
     iconWidth: 16,
     iconHeight: 14,
@@ -152,9 +152,9 @@ export const LANDING_FEATURES = [
   {
     id: "inventory-autosync",
     title: "Streamline Manufacturing + Stay in Control of Every Process",
-    icon: "/assets/features-section/autosync.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-section/autosync.svg",
     videoSrc: "/videos-s3/home-page-videos/screen4.webm",
-    imageSrc: "/assets/home-page-images/animations/screen4-tab.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/screen4-tab.webp",
     tabIndex: 4,
     iconWidth: 18,
     iconHeight: 18,

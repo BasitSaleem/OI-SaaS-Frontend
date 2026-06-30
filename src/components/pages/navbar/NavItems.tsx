@@ -493,30 +493,42 @@ const NavItems = () => {
             <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[var(--border-muted)] scrollbar-track-transparent col-span-12">
               <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {resourcesItems.map((item) => (
-                  <Link
-                    key={item.title}
-                    href={`/resources/${item.key.toLowerCase()}`}
-                    className="flex items-center gap-2 px-4 py-4 border border-[var(--border-muted)] rounded-xl hover:bg-gray-100 hover:border-[var(--primary-purple)]"
-                    onMouseEnter={() => setSelectedResourceKey(item.key)}
-                    onClick={close}
+                  <div
+                    key={item.key} 
+                    className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${
+                      selectedResourceKey === item.key
+                        ? "border-[var(--primary-purple)] bg-gray-100"
+                        : "border-[var(--border-muted)]"
+                    } hover:bg-gray-100`}
                   >
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={16}
-                      height={16}
-                    />
-                    <span
-                      className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
-                    ${selectedResourceKey === item.key
-                          ? "font-bold"
-                          : "font-medium"
-                        }
-                    `}
+                    <button
+                      onClick={() => setSelectedResourceKey(item.key)}
+                      className="flex items-center gap-2 w-[80%]"
                     >
-                      {item.title}
-                    </span>
-                  </Link>
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={16}
+                        height={16}
+                      />
+                      <span className="text-sm font-medium text-left text-[var(--text-dark)]">
+                        {item.title}
+                      </span>
+                    </button>
+                    <Link
+                      href={`/resources/${item.key.toLowerCase()}`}
+                      className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
+                    >
+                      <Image
+                        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/detail-icon.svg"
+                        alt="arrow-up"
+                        width={12}
+                        height={16}
+                        priority
+                        className="h-4 w-3"
+                      />
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>

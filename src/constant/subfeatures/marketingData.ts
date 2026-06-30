@@ -6,8 +6,8 @@ export const MARKETING_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "For Retail Stores, you can work on both traffic and sales. Here, offering fun seasonal coupons and rewarding your regular shoppers with loyalty points can be helpful.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -17,8 +17,8 @@ export const MARKETING_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "For Restaurants, you will want to encourage repeat visits. Loyalty programs for both dine in customers and takeaway orders are encouraged.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -28,8 +28,8 @@ export const MARKETING_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "The focus is on large, valuable orders. You can drive bigger bulk purchases and reward your most important, long term clients with custom loyalty programs and targeted discounts.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const MARKETING_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "For pharmacies, you can encourage customers to return for essentials by offering loyalty points on non prescription items. You can also send them coupons for health and wellness products based on their past purchases.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -49,8 +49,8 @@ export const MARKETING_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "In the Fashion and Apparel Industry, offering exciting promo codes when you drop new collections and establishing a strong reward system will boost repeat purchases.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
 ];
@@ -62,7 +62,7 @@ export const MARKETING_FEATURES_CARDS = [
     description:
       "Create and manage powerful coupons effortlessly to boost sales. Generate discount codes for products or full orders, set rules like amounts and expiry dates, and track all usage details in one place. Get clear insights to see how well each coupon campaign performs.",
     imageSrc:
-      "/assets/features-page/marketing-page/features-section/coupons.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/marketing-page/features-section/coupons.webp",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const MARKETING_FEATURES_CARDS = [
     description:
       "Build long-term customer relationships by automatically rewarding buyers for their loyalty. Our system makes it easy to give regular customers points or exclusive discounts based on their purchase history. With smart rules and personalized incentives, you can encourage repeat business, strengthen retention, and keep your best customers coming back.",
     imageSrc:
-      "/assets/features-page/marketing-page/features-section/loyalty-programs.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/marketing-page/features-section/loyalty-programs.webp",
   },
 ];
 
@@ -112,21 +112,21 @@ export const MARKETING_TESTIMONIALS = [
     id: "marketing-testimonial-1",
     name: "Thomas Reed",
     title: "Operations Director, Nexa Supplies",
-    image: "/assets/features-page/testimonial-images/testinomial-boy7.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy7.webp",
     text: `Implementing the loyalty points system through Owner's Inventory was honestly  one of the best decisions we made last year. Our customers genuinely love the points, which has increased how often they buy from us. We couldn't be happier with the results.`,
   },
   {
     id: "marketing-testimonial-2",
     name: "Natalie Green",
     title: "Business Owner, GreenLine Retail",
-    image: "/assets/features-page/testimonial-images/testinomial-girl7.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl7.webp",
     text: `Before Owner's Inventory, running sales with coupons was a mess. Now, the coupon feature is so simple to set up and use. We have consistently seen a huge boost in sales, which has increased how often they buy from us. happier with the results.`,
   },
   {
     id: "marketing-testimonial-3",
     name: "Brian Foster",
     title: "Warehouse Manager, StockFlow Inc",
-    image: "/assets/features-page/testimonial-images/testinomial-boy8.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy8.webp",
     text: `As a growing business, we needed a way to reward our best and most loyal customers. Setting up a special loyalty program for them has never been easier. It has given us a professional way to build strong client relationships.`,
   },
 ];
@@ -134,35 +134,35 @@ export const MARKETING_TESTIMONIALS = [
 export const MARKETING_WHY_CHOOSE_CARDS = [
   {
     id: "marketing-why-choose-1",
-    icon: "/assets/features-page/purchases-page/why-chose/grow-business.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/grow-business.svg",
     title: "Automated and Hassle Free",
     description:
       "Create promotions in minutes and let them run automatically no daily work needed.",
   },
   {
     id: "marketing-why-choose-2",
-    icon: "/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
     title: "Retaining Customers",
     description:
       "Keep top customers happy with regular rewards, strengthen relationships, and boost repeat purchases.",
   },
   {
     id: "marketing-why-choose-3",
-    icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
     title: "Insight Driven Decisions",
     description:
       "Track every coupon and loyalty activity in real time. See what works and adjust your marketing quickly for better results.",
   },
   {
     id: "marketing-why-choose-4",
-    icon: "/assets/features-page/purchases-page/why-chose/automated-buying.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/automated-buying.svg",
     title: "All-in-One Marketing Platform",
     description:
       "Run promotions, rewards, and tracking all in one place, keeping marketing simple and sales data unified.",
   },
   {
     id: "marketing-why-choose-5",
-    icon: "/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
     title: "24/7 Expert Support",
     description:
       "Our team is always ready to help you set up and manage your marketing programs.",

@@ -53,7 +53,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                 {
                   // background image is painted in CSS ::before using this variable
                   ["--hero-bg" as any]:
-                    "url('/assets/home-page-images/hero-bg.webp')",
+                    "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-bg.webp')",
                 } as React.CSSProperties
               }
             >

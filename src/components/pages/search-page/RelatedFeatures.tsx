@@ -6,13 +6,13 @@ const features = [
   {
     title: "Point Of Sale",
     desc: "Lorem ipsum dolor sit amet.",
-    icon: "/assets/header-dropdown-images/point-of-sale.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/point-of-sale.svg",
     link: "#",
   },
   {
     title: "Point Of Sale",
     desc: "Lorem ipsum dolor sit amet.",
-    icon: "/assets/header-dropdown-images/point-of-sale.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/point-of-sale.svg",
     link: "#",
   },
   // add more items here

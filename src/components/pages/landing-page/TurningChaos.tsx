@@ -190,7 +190,7 @@ const TurningChaos: React.FC<TurningChaosProps> = ({
 
           <div className=" w-full max-w-[913px] mt-[45px]" ref={imageRef}>
             <Image
-              src="/assets/home-page-images/chaos-mainImage.webp"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/chaos-mainImage.webp"
               alt="Chaos Into Clarity Dashboard"
               width={800}
               height={600}

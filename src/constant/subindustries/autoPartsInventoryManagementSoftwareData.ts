@@ -107,7 +107,7 @@ export const AUTO_PARTS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     subDescription:
       "This helps businesses manage processes automatically, reducing the reliance on manual processes.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -140,7 +140,7 @@ export const AUTO_PARTS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory provides detailed analytics reports for auto parts stores. These reports include auto parts performance, stock movement, and demand. It highlights slow-moving parts, identifies frequently sold vehicle components, and supports better restocking decisions. With accurate insights, auto parts store owners improve overall business efficiency.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -154,7 +154,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "With detailed parts catalogs, it organizes vehicle parts by specifications, categories, and compatibility information. This makes it easy to provide the right product to the customer.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -162,7 +162,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It uses barcode scanning to track items accurately, reducing operational errors and data inconsistencies. The system promotes stock visibility to keep store owners aware.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -170,7 +170,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The software tracks supplier data and order details. The insights, such as delivery time, stock quality, and item prices, help owners compare suppliers and choose the right ones for future partnerships.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -178,7 +178,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It easily adjusts stock counts during returns, inspections, and transfers, which ensures your inventory levels remain accurate. It effectively manages stock in case of in-store or online purchases.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -186,7 +186,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Owners Inventory can keep a precise stock record of multiple auto stores in different locations. It ensures efficient inventory management and updates across your auto parts business.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -194,7 +194,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The automotive inventory management software maintains data on customer purchases, returns, and buying behavior, which helps businesses improve their service and build long-term relationships with customers.",
     imageSrc:
-      "/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card6.webp",
   },
 ];
 
@@ -241,21 +241,21 @@ export const AUTO_PARTS_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Caden Reed",
     title: "Auto Parts Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image46.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image46.webp",
     text: "We used to lose track between our shop and the warehouse all the time. Since switching to Owner’s Inventory, everything is organized and easy to find. It has made our daily operations smoother.",
   },
   {
     id: "2",
     name: "Easton Morris",
     title: "Auto Spare Parts Dealer",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image47.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image47.webp",
     text: "What I like most is how simple it is to keep track of inventory without spreadsheets. I can quickly check what's available and make decisions without second-guessing.",
   },
   {
     id: "3",
     name: "Hannah Watson",
     title: "Automotive Parts Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image46.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image46.webp",
     text: "Their system has helped us stay more consistent and manage bulk orders effectively during busy weeks. Truly amazing and reliable inventory management software.",
   },
 ];
@@ -362,27 +362,27 @@ export const AUTO_PARTS_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

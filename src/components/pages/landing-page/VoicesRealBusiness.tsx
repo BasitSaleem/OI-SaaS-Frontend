@@ -15,17 +15,17 @@ const otherBrands = [
   {
     id: 1,
     name: "ASK Food Industries",
-    logo: "/assets/home-page-images/voices-icons/captera-logo.svg",
+    logo: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/voices-icons/captera-logo.svg",
   },
   {
     id: 2,
     name: "Industrial Valco",
-    logo: "/assets/home-page-images/voices-icons/getapp-logo.svg",
+    logo: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/voices-icons/getapp-logo.svg",
   },
   {
     id: 3,
     name: "Texas Pipe & Supply",
-    logo: "/assets/home-page-images/voices-icons/trust-pilot-logo.svg",
+    logo: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/voices-icons/trust-pilot-logo.svg",
   },
 
 ];
@@ -57,7 +57,7 @@ const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealB
               />
 
               <Image
-                src="/assets/home-page-images/voices-icons/stars-icons.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/voices-icons/stars-icons.svg"
                 width={158}
                 height={57}
                 alt="Yellow Stars"

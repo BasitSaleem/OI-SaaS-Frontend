@@ -105,7 +105,7 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Our system connects all your sales channels. This includes stores, ecommerce platforms, and mobile apps. Store owners can manage in-store and online sales from one dashboard. The inventory is synchronized across all channels.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -136,7 +136,7 @@ export const CLOTHING_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The system gives store owners reporting tools. These tools provide insights into sales performance, inventory movement and profitability. This helps store owners make decisions about buying, pricing and stock optimization.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -162,7 +162,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "We make the checkout fast, with barcode scanning and a smart search so customers have a smooth experience even when the store is really busy.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -170,7 +170,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Our system updates stock after every sale so the inventory of clothing items is always accurate and up to date.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -178,7 +178,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can create purchase orders, track when they arrive and manage suppliers for your clothing products. This keeps all your records neat and easy to find.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card3.webp",
   },
 
   {
@@ -187,7 +187,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can easily manage your clothing products by size, color, designs and materials. This is great for clothing stores that have a lot of items.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -195,7 +195,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "We help you keep track of customer information about what they have bought before. You can even give them discounts or rewards for buying clothing items again.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -203,7 +203,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can track what you spend each day and keep an eye on the money coming in and out of your clothing business so you always know about financial activities.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -211,7 +211,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can sell your clothing items online. Our system will keep track of what you have in stock and update everything in real time. This makes it easy to manage orders.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -219,7 +219,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "If you have more than one clothing store you can manage all of them from one place. You can keep track of stock, prices and sales for all your stores.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card8.webp",
   },
   {
     id: 9,
@@ -227,7 +227,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Our system helps you understand what is selling and what is not and how much profit you are making so you can make good decisions to grow your clothing business.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card9.webp",
   },
   {
     id: 10,
@@ -235,7 +235,7 @@ export const CLOTHING_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can control what each staff member can do based on their job so you can keep your clothing business safe and running smoothly.",
     imageSrc:
-      "/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/key-features-section/key-features-card10.webp",
   },
 ];
 
@@ -288,28 +288,28 @@ export const CLOTHING_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Willow Patterson",
     title: "Clothing Store Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image36.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image36.webp",
     text: "Our daily operations are much easier now. Billing is fast and inventory is always accurate. This system has really improved how our clothing store runs.",
   },
   {
     id: "2",
     name: "Bryson Vance",
     title: "Interior Decor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image36.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image36.webp",
     text: "We needed a system to manage sizes and styles efficiently. This software does that. It is easy for staff to use and provides clear daily reports.",
   },
   {
     id: "3",
     name: "Ellie Hughes",
     title: "Clothing Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image37.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image37.webp",
     text: "This is one of the best systems that we have used. It keeps everything organized and helps owners make better decisions. Our checkout process is now much faster.",
   },
   {
     id: "4",
     name: "Sawyer Jenkins",
     title: "Home Decor & Clothing Store Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image37.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image37.webp",
     text: "Before using this system, we struggled with stock errors and delays. Now everything is tracked accurately. It saves time and makes managing the store stress-free.",
   },
 ];
@@ -418,27 +418,27 @@ export const CLOTHING_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

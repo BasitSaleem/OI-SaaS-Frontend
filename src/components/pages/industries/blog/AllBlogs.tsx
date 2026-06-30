@@ -80,7 +80,7 @@ const AllBlogs: React.FC = () => {
             <div className="w-full md:w-auto max-w-xl mt-4 md:mt-0">
               <div className="flex items-center gap-3 bg-white border border-[#E5E7EB] px-4 py-3 rounded-full shadow-[0_2px_12px_0_rgba(121,92,245,0.08)] hover:border-[#795CF5] transition-colors duration-200">
                 <Image
-                  src="/assets/header-images/search-icon.svg"
+                  src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/search-icon.svg"
                   alt="Search"
                   className="flex-shrink-0"
                   width={16}

@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import heroBanner from "../../../../../public/assets/features-page/general-tools/general-tools-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/general-tools/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/general-tools/general-tools-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/general-tools/why-chose-banner.webp";
 import {
   TOOLS_FAQS,
   TOOLS_FEATURES_CARDS,

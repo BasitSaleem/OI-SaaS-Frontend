@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
-import heroBanner from "../../../../../public/assets/industries-pages/clothing-inventory-management-software/hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/clothing-inventory-management-software/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-inventory-management-software/why-chose-banner.webp";
 
 import {
   CLOTHING_INVENTORY_KEY_FEATURES_CARDS,

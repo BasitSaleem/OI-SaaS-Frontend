@@ -103,7 +103,7 @@ export const HARDWARE_FEATURE_CARDS = [
     title: "Omni-Channel and Sales Integration",
     description:
       "Our inventory system links all the sales channels, including offline stores, online platforms, and mobile applications, to one and the same, synchronized platform. Our system will allow you to sell in-store using POS and online and all of it is integrated in a single platform.",
-    imageSrc: "/assets/industries-pages/pos-hardware/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -118,7 +118,7 @@ export const HARDWARE_FEATURE_CARDS = [
     title: "Better Decision Reporting and Analytics",
     description:
       "Comprehensive reporting and analytics provide owners with a clear understanding of stock movement, sales trends, and profitability. This enables intelligent decision-making on purchases, reorders, and stock optimization.",
-    imageSrc: "/assets/industries-pages/pos-hardware/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -137,7 +137,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Checkout is fast with our hardware store POS searches by barcode and smart search. Customers will move faster and your counter will remain stress-free even during rush hours.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -145,7 +145,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Each sale would automatically update the stock. This feature ensures that your POS software used in hardware stores is also accurate to ensure you are always aware of what is in stock.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -153,7 +153,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Generate purchase orders, delivery tracking, and supplier management. It keeps all records of your hardware store in POS software clean and easy to retrieve.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -161,7 +161,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Manage products sold by the unit, box, various sizes, and materials. It is ideal when a hardware store has products with complicated variations.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -169,7 +169,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Retain customer information, shopping history, and open credit. Your hardware store POS system assists you in sustaining long-term customer relationships.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -177,7 +177,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Keep a record of every daily cost and keep a track of your cash counter in an easy way. It maintains financial transparency of your hardware business.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -185,7 +185,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Your hardware store gets the ability to run an online e-business with the same POS system. All products stay synced, and customers always see updated stock. This feature creates new sales channels without extra effort.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -193,7 +193,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "All branches stay connected through one hardware store POS system. Stock, sales, and pricing stay updated across every location. Owners get full control of every branch from a single dashboard.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card8.webp",
   },
   {
     id: 9,
@@ -201,7 +201,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Gain clear understanding about sales, stock worth, moving fast, and profits. These reports will make you better decisions and expand your store.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card9.webp",
   },
   {
     id: 10,
@@ -209,7 +209,7 @@ export const POS_KEY_FEATURES_CARDS = [
     description:
       "Limit access to where necessary. This secures your hardware store POS and keeps your information secure.",
     imageSrc:
-      "/assets/industries-pages/pos-hardware/key-features-section/key-features-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card10.webp",
   },
 ];
 
@@ -262,28 +262,28 @@ export const HARDWARE_TESTIMONIALS = [
     id: "1",
     name: "Nathan Foster",
     title: "Business Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image23.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image23.webp",
     text: "The POS system has simplified our day to day work. Billing is quick and stock is never wrong. This system is making Al-Asif run well.",
   },
   {
     id: "2",
     name: "Scarlett Turner",
     title: "Store Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image23.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image23.webp",
     text: "This is the best POS that we have tried previously. It keeps our store in order and assists us in decision-making. Since we started using it, Bright Homes has experienced fewer errors and has increased its checkout speed.",
   },
   {
     id: "3",
     name: "Eli Brooks",
     title: "Store Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image24.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image24.webp",
     text: "Our hardware store required a system that could manage thousands of objects and maintain all of them in order. This POS system provides precisely that. It is easy to use by the staff and provides a daily report.",
   },
   {
     id: "4",
     name: "Penelope Bryant",
     title: "Store Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image24.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image24.webp",
     text: "Before using this system, I was concerned about mistakes and wastage of time. At this point, all the sales and stock updates are monitored flawlessly. It saves time, minimizes errors, and makes the process of running the store less stressful. I would strongly suggest it to anyone who wants a reliable hardware store POS software.",
   },
 ];
@@ -392,27 +392,27 @@ export const HARDWARE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

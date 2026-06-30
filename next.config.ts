@@ -17,6 +17,15 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
     // AVIF is 30-50% smaller than WebP; Next.js serves the best format the browser accepts
     formats: ["image/avif", "image/webp"],
+    // SVGs from our own CloudFront are safe to allow
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "d2qlv5xtew5ayb.cloudfront.net",
+      },
+    ],
   },
   experimental: {
     // NOTE: `inlineCss: true` was removed — it stored the full CSS text inside

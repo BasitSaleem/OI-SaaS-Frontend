@@ -16,7 +16,7 @@ if (typeof window !== "undefined") {
 interface SubIndustriesHeroProps {
   title?: string;
   description?: string;
-  image?: StaticImageData;
+  image?: string | StaticImageData;
   ctaDesc?: string;
   variant?: "animation1" | "animation2" | "none";
   imageClassName?: string;
@@ -91,7 +91,7 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
           <div className="md:py-[1px] bg-[#F3F4F6] rounded-[20px] lg:rounded-[40px]">
             <div
               className="owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-3.5 sm:px-7 bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]"
-              style={{ ["--hero-bg" as any]: "url('/assets/industries-pages/pos-hardware/industries-hero-bg.webp')" } as React.CSSProperties}
+              style={{ ["--hero-bg" as any]: "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/industries-hero-bg.webp')" } as React.CSSProperties}
             >
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
                 <div ref={mainHeadingRef} style={{ opacity: 0, transform: "translateY(50px)" }}>

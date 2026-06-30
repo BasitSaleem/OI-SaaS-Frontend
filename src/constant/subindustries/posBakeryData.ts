@@ -110,7 +110,7 @@ export const BAKERY_FEATURE_CARDS = [
     title: "Omni-Channel & Sales Integration",
     description:
       "Modern bakeries sell through multiple channels, including in-store counters, online orders, and delivery platforms. Managing them separately can cause stock errors and inconsistent records. Owners Inventory connects all sales channels in one system, updating inventory instantly and giving bakery owners clear visibility of sales and stock from a single dashboard.",
-    imageSrc: "/assets/industries-pages/bakery-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -127,7 +127,7 @@ export const BAKERY_FEATURE_CARDS = [
     title: "Better Analytics & Reporting",
     description:
       "Comprehensive analytics provides clear insight into trends in sales, ingredients consumption and profitability. You can determine which products sell best, identify peak times, and spot patterns of waste before it impacts your margins.",
-    imageSrc: "/assets/industries-pages/bakery-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -146,7 +146,7 @@ export const BAKERY_KEY_FEATURES_CARDS = [
     description:
       "From the counter to the kitchen, every area of your bakery becomes interconnected. Orders become smooth and easy to follow.",
     imageSrc:
-      "/assets/industries-pages/bakery-pos/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -154,7 +154,7 @@ export const BAKERY_KEY_FEATURES_CARDS = [
     description:
       "Spreadsheets, notebooks, and manual reports are no longer mandatory to keep track of operations. Everything updates on its own, saving hundreds of hours every month.",
     imageSrc:
-      "/assets/industries-pages/bakery-pos/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -162,7 +162,7 @@ export const BAKERY_KEY_FEATURES_CARDS = [
     description:
       "There is no need for staff to guess whether an ingredient will run out or not. Your baking cycle is maintained as the system automatically notifies you in advance in case of ingredient shortage.",
     imageSrc:
-      "/assets/industries-pages/bakery-pos/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -170,7 +170,7 @@ export const BAKERY_KEY_FEATURES_CARDS = [
     description:
       "Our dashboard allows you to monitor the performance of your bakery from anywhere whether you are in the kitchen, at home, or on the road.",
     imageSrc:
-      "/assets/industries-pages/bakery-pos/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -178,7 +178,7 @@ export const BAKERY_KEY_FEATURES_CARDS = [
     description:
       "Orders, inventory, sales, employees, and reports are all organized under one single platform. As a result customers become satisfied and operations run smoothly.",
     imageSrc:
-      "/assets/industries-pages/bakery-pos/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/key-features-section/key-features-card5.webp",
   },
 ];
 
@@ -225,21 +225,21 @@ export const BAKERY_TESTIMONIALS = [
     id: "1",
     name: "Emma Johnson",
     title: "Bakery Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image1.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image1.webp",
     text: "The POS system has made billing faster and more efficient. We no longer have to struggle at rush hour.",
   },
   {
     id: "2",
     name: "Ethan Carter",
     title: "Bakery Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image1.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image1.webp",
     text: "Managing cake orders has never been easier. Every detail is properly recorded, nothing gets overlooked.",
   },
   {
     id: "3",
     name: "Liam Bennett",
     title: "Operations Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image2.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image2.webp",
     text: "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions",
   },
 ];
@@ -341,27 +341,27 @@ export const BAKERY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

@@ -87,7 +87,7 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
 
       <div ref={img1Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 1 }}>
         <Image
-          src="/assets/home-page-images/hero-animation/animation-img1.webp"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img1.webp"
           priority
           alt="Hero Animation 1"
           fill
@@ -99,7 +99,7 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
 
       <div ref={img2Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
         <Image
-          src="/assets/home-page-images/hero-animation/animation-img2.webp"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img2.webp"
           alt="Hero Animation 2"
           fill
           sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
@@ -110,7 +110,7 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
 
       <div ref={img3Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
         <Image
-          src="/assets/home-page-images/hero-animation/animation-img3.webp"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img3.webp"
           alt="Hero Animation 3"
           fill
           sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
@@ -121,7 +121,7 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
 
       <div ref={img4Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
         <Image
-          src="/assets/home-page-images/hero-animation/animation-img4.webp"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img4.webp"
           alt="Hero Animation 4"
           fill
           sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"
@@ -132,7 +132,7 @@ const HeroImageSlider: React.FC<HeroImageSliderProps> = ({
 
       <div ref={img5Ref} className="w-full h-full absolute top-0 left-0" style={{ opacity: 0 }}>
         <Image
-          src="/assets/home-page-images/hero-animation/animation-img5.webp"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img5.webp"
           alt="Hero Animation 5"
           fill
           sizes="(max-width: 768px) 380px, (max-width: 1200px) 500px, 500px"

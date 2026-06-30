@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import heroBanner from "../../../../../public/assets/features-page/products-page/products-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/products-page/why-choose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/products-hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/why-choose-banner.webp";
 import {
   PRODUCT_FAQS,
   PRODUCT_FEATURES_CARDS,

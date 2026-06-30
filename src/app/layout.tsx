@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/assets/favicon.svg",
+        url: "https://d2qlv5xtew5ayb.cloudfront.net/assets/favicon.svg",
         type: "image/svg+xml",
       },
     ],

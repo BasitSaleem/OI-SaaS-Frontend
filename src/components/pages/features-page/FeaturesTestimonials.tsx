@@ -55,8 +55,8 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 const PURPLE = "#795CF5";
 const GREEN = "#1AD1B9";
 const INACTIVE_ACCENT = "#9CA3AF";
-const PURPLE_ICON = "/assets/review-section/double-coma-icon.svg";
-const GREEN_ICON = "/assets/review-section/coma-green.svg";
+const PURPLE_ICON = "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg";
+const GREEN_ICON = "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/coma-green.svg";
 
 const FeaturesTestimonials = ({
   testimonials = [],

@@ -6,8 +6,8 @@ export const PURCHASES_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Reorder your fast moving products automatically. Also, easily manages supplier discounts and tracks incoming shipments in real time.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -17,8 +17,8 @@ export const PURCHASES_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "For restaurants, easily track ingredient purchases, manage multiple vendors and use smart controls to prevent expensive overstocking or wastage.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -28,8 +28,8 @@ export const PURCHASES_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Handle bulk procurement efficiently with supplier catalogs, multi warehouse support, and automated reorder levels.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const PURCHASES_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Ensure accuracy and compliance with expiry monitoring and batch tracking. Supplier authentication for all medicine purchases is also provided.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -49,8 +49,8 @@ export const PURCHASES_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Order fabrics, accessories and finished goods efficiently by tracking supplier performance. Works according to seasonal demand and material availability.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
 ];
@@ -62,7 +62,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "By Centralized Purchase Management, We manage purchase orders, bills and all supplier details in one spot. This simple system ensures procurement and inventory are always in sync. Our Purchase Order Management Software is the single source of truth for your business.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/centralized-purchase.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/centralized-purchase.webp",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "Keep all your supplier records organized like contact information and past transactions. Having this complete history makes it much easier and more reliable to manage your relationships with them.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/supplier-directory.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/supplier-directory.webp",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "The system automatically generates and sends purchase orders based on stock levels and sales trends, preventing inventory shortages and missed sales, a key function of our Automated Purchase Management Solution.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/automated-purchase.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/automated-purchase.webp",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "This function allows users to easily create and manage bills and purchase orders. Get instant access to all financial data for transparent and simple accounting.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/bill-management.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/bill-management.webp",
   },
   {
     id: 5,
@@ -94,7 +94,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "Easily define approval steps for purchases. This guarantees compliance and accountability which gives you control without creating any hurdles.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/purchase-approval.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/purchase-approval.webp",
   },
   {
     id: 6,
@@ -102,7 +102,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "Quickly imports data in bulk and exports reports to Excel. This is used for accounting and audits. Get the data flexibility that perfectly adapts to your workflow.",
     imageSrc:
-      "/assets/features-page/purchases-page/features-section/import-option.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/import-option.webp",
   },
   {
     id: 7,
@@ -110,7 +110,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "Gain real-time visibility into purchase activity, supplier performance and pending bills. This is the power of a dedicated Purchase Tracking Software.",
     imageSrc:
-      "/assets/features-page/people-page/features-section/performance-tracking.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/features-section/performance-tracking.webp",
   },
   {
     id: 8,
@@ -118,7 +118,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "Gain instant, real time clarity! Track all purchase activity, monitor supplier performance, and see pending bills right on a single, easy-to-use, interactive dashboard.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/filter-option.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/sales-order/features-section/filter-option.webp",
   },
   {
     id: 9,
@@ -126,7 +126,7 @@ export const PURCHASES_FEATURES_CARDS = [
     description:
       "A clean, interactive design means managing purchases is quick and easy. Spend less time struggling with software and more time improving your business.",
     imageSrc:
-      "/assets/features-page/sales-order/features-section/user-friendly-interface.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/sales-order/features-section/user-friendly-interface.webp",
   },
 ];
 
@@ -168,21 +168,21 @@ export const PURCHASES_TESTIMONIALS = [
     id: "purchases-testimonial-1",
     name: "David Lawson",
     title: "Procurement Head, TradePoint",
-    image: "/assets/features-page/testimonial-images/testinomial-boy10.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy10.webp",
     text: `Before Owners Inventory, managing our materials purchases was a difficult task. Now, the entire automated process is easy. We have completely eliminated manual errors and saved hours for our team.`,
   },
   {
     id: "purchases-testimonial-2",
     name: "Megan Scott",
     title: "Inventory Analyst, StockBridge",
-    image: "/assets/features-page/testimonial-images/testinomial-girl10.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl10.webp",
     text: `Switching to this system has changed how we handle procurement. We no longer worry about late payments or missed orders.`,
   },
   {
     id: "purchases-testimonial-3",
     name: "Chris Bennett",
     title: "CEO, OmniRetail Solutions",
-    image: "/assets/features-page/testimonial-images/testinomial-boy11.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy11.webp",
     text: `We are impressed with how the system handles everything, from supplier management to automated bill generation. It simplifies buying, tracking and managing everything.`,
   },
 ];
@@ -190,35 +190,35 @@ export const PURCHASES_TESTIMONIALS = [
 export const PURCHASES_WHY_CHOOSE_CARDS = [
   {
     id: "purchases-why-choose-1",
-    icon: "/assets/features-page/purchases-page/why-chose/automated-buying.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/automated-buying.svg",
     title: "Automated Buying, Zero Effort",
     description:
       "We automate your purchase process from receiving items to bill approval, reducing errors and boosting efficiency.",
   },
   {
     id: "purchases-why-choose-2",
-    icon: "/assets/features-page/purchases-page/why-chose/everything-in-oneplace.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/everything-in-oneplace.svg",
     title: "Everything in One Place",
     description:
       "Stay updated with precise, real-time data so you can make smarter decisions and always know what’s happening in your inventory.",
   },
   {
     id: "purchases-why-choose-3",
-    icon: "/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/smarter-decision.svg",
     title: "Smarter Decisions, Faster",
     description:
       "Our system gives you real-time analytics and easy dashboards, helping you instantly see trends and supplier performance for faster decisions.",
   },
   {
     id: "purchases-why-choose-4",
-    icon: "/assets/features-page/purchases-page/why-chose/grow-business.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/grow-business.svg",
     title: "Grows With Your Business",
     description:
       "Whether you're a small team or a large operation, Owners Inventory scales effortlessly and adapts to your business without any hassle.",
   },
   {
     id: "purchases-why-choose-5",
-    icon: "/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/dedicated-support.svg",
     title: "Dedicated Support, 24/7",
     description:
       "Our dedicated support team is available 24/7, ensuring your purchasing operations run smoothly without interruption.",

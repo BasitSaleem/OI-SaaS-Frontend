@@ -78,7 +78,7 @@ export default function CaseStudyCard({
           <div className="relative ">
             <div className="flex items-start lg:items-center gap-x-6">
               <Image
-                src="/assets/home-page-images/blue-checker.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/blue-checker.svg"
                 alt="blue-checker"
                 width={36}
                 height={33}
@@ -125,7 +125,7 @@ export default function CaseStudyCard({
               aria-label="Previous slide"
             >
               <Image
-                src="/assets/home-page-images/slider-arrow-left.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/slider-arrow-left.svg"
                 alt="arrow-left"
                 width={20}
                 height={20}
@@ -155,7 +155,7 @@ export default function CaseStudyCard({
               aria-label="Next slide"
             >
               <Image
-                src="/assets/home-page-images/slider-arrow-right.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/slider-arrow-right.svg"
                 alt="arrow-right"
                 width={20}
                 height={20}

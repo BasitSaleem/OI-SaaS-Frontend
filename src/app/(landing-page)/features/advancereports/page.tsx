@@ -42,7 +42,7 @@ const Page = () => {
         heading="Why Choose Our Advanced Reporting"
         paragraph="Owners Inventory transforms your sales data into smart insights that help you plan better, sell smarter, and grow faster."
         cards={ADVANCE_REPORTS_WHY_CHOOSE_CARDS}
-        mainImage="/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
+        mainImage="https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/why-chose/why-chose-main.webp"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">
