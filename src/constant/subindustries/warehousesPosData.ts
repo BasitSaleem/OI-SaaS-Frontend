@@ -54,7 +54,7 @@ export const WAREHOUSES_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Inventory Management",
     description:
-      "Stock levels in our warehouse is always updated in real-time, when products are received or transferred to and from the warehouse, when they are sold and dispatched. Real-time inventory tracking helps prevent stock shortages, overstocking, and inventory inaccuracies.",
+      "Stock levels in our warehouse are always updated in real-time, when products are received or transferred to and from the warehouse, when they are sold and dispatched. Real-time inventory tracking helps prevent stock shortages, overstocking, and inventory inaccuracies.",
   },
   {
     id: "2",
