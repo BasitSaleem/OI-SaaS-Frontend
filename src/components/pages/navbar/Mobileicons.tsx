@@ -27,14 +27,14 @@ const Mobileicons = () => {
         aria-controls="mobile-menu"
       >
         <img
-          src="/assets/header-images/burger-icon.svg"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/burger-icon.svg"
           alt="Menu"
           width={22}
           height={20}
           className={`w-5.5 h-5 me-4 md:me-5 ${openMobileMenu ? 'hidden' : ''}`}
         />
         <img
-          src="/assets/header-images/cross-icon.png"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/cross-icon.png"
           alt="Close"
           width={18}
           height={16}

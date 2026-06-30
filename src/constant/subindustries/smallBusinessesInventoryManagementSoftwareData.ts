@@ -107,7 +107,7 @@ export const SMALL_BUSINESS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     subDescription:
       "This removes the need to manage separate systems and keeps operations streamlined without confusion.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -140,7 +140,7 @@ export const SMALL_BUSINESS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The software converts daily sales and stock data into clear, understandable reports. It helps business owners identify best-selling items, slow-moving products, and sales patterns over time. These insights help businesses make better purchasing decisions, reduce unnecessary stock holding, and maintain consistent growth rates.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -154,7 +154,7 @@ export const SMALL_BUSINESS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Real-time inventory updates provide an accurate stock item count after every sale, purchase, or return without delays or manual intervention.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -162,7 +162,7 @@ export const SMALL_BUSINESS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It uses barcode scanning to handle product tracking more efficiently. It improves accuracy in daily inventory management tasks while minimizing errors.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -170,7 +170,7 @@ export const SMALL_BUSINESS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The software allows small business owners to manage inventory across multiple locations, including warehouses and in-store items. It ensures stocks stay easily accessible and organized.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -178,7 +178,7 @@ export const SMALL_BUSINESS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It helps you generate invoices and billing records with built-in tools that are directly connected with the inventory, which ensures that every transaction reflects accurate stock movement.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -186,7 +186,7 @@ export const SMALL_BUSINESS_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The software keeps business owners updated with accurate reports that contain detailed information on inventory usage and operational performance. This supports better business decision-making.",
     imageSrc:
-      "/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/small-businesses-inventory-management-software/key-features-section/key-features-card5.webp",
   },
 ];
 
@@ -244,21 +244,21 @@ export const SMALL_BUSINESS_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Knox Butler",
     title: "Business Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image41.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image41.webp",
     text: "We were struggling to keep our inventory organized as our business grew. Owners Inventory gave us a structured way to handle stocks without making things complicated. It's simple to use and perfectly supports our operations efficiently.",
   },
   {
     id: "2",
     name: "Kinsley Myers",
     title: "Operations Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image41.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image41.webp",
     text: "Managing inventory across different product categories used to take a lot of time. With Owners Inventory, everything feels more streamlined now.",
   },
   {
     id: "3",
     name: "Freya Long",
     title: "Business Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image42.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image42.webp",
     text: "The system helped us stay organized without adding extra workload. The system just perfectly fits our workflow.",
   },
 ];
@@ -349,27 +349,27 @@ export const SMALL_BUSINESS_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

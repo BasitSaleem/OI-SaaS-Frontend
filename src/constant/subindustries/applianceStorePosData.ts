@@ -95,7 +95,7 @@ export const APPLIANCE_STORE_FEATURE_CARDS: FeatureCardData[] = [
     id: "1",
     title: "Omnichannel Inventory and Appliance Store Integration",
     description: "Owners Inventory integrates all aspects of appliance store business in one place. All inventory movement, sales, supplier orders, warranty registrations, and stock transfers are updated in real-time on a single dashboard. All products are synced and accurate, whether received from suppliers, moved between store locations, sold in-store or ordered online.",
-    imageSrc: "/assets/industries-pages/appliance-store-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -122,7 +122,7 @@ export const APPLIANCE_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Analytics and Reporting",
     description: "The Appliance Store Point of Sale Software translates the daily operations of your business into detailed reports providing useful data about your business sales, inventory changes, most successful products, profits, warranties, customer purchases and stock turnover.",
     subDescription: "Managers can be alerted to high-demand products, they can monitor the slow moving inventory, they can make better purchase decisions and they can improve their store performance as well. These learnings can reduce over stocking costs, prevent stockouts and improve profitability.",
-    imageSrc: "/assets/industries-pages/appliance-store-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -136,7 +136,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Inventory is automatically updated when products are purchased, returned, transferred or received. With real-time inventory tracking, you can avoid running low on stock, overstocking, and inventory discrepancies.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -144,7 +144,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Barcode scanning is supported on the POS system, which allows for quicker product look up, billing, stock count and inventory management. This helps in increasing the accuracy and speeds up store's operations.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -152,7 +152,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "For companies that have more than one store or storage facility, they will be able to track inventory, transfers, and stock levels from a single dashboard. The system gives full visibility of all locations.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -160,7 +160,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Automate customer transactions and payment processing, and speed up product searches and billing. The system assists in minimizing checkout time and improving the overall shopping experience.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -168,7 +168,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Purchase orders may be created, supplier transactions tracked, inventory received and procurement activities managed from a single platform, ensuring efficient stock replenishment.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -176,7 +176,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Centralize warranty records, purchase and service history. Staff can easily access the customer and product information, so they can provide efficient after-sales service.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -184,7 +184,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "The appliance store POS system enables managers to set permissions for each employee according to their role. The business owner will have complete control over inventory, report, pricing, and settings.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -192,7 +192,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "The mobile-friendly interface enables access to inventory data from anywhere, helps managers manage sales, product management, and business performance. This flexibility helps in making better decisions and makes the operations more efficient.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card8.webp",
   },
   {
     id: 9,
@@ -200,7 +200,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "The system will automatically alert managers when inventory falls below a pre-defined level.  This enables businesses to place orders when needed and prevents the loss of sales.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card9.webp",
   },
   {
     id: 10,
@@ -208,7 +208,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor store performance using detailed reports that show you sales trends, inventory value, best sellers, profit margins, customer buying habits, and performance of the business.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card10.webp",
   },
    {
     id: 11,
@@ -216,7 +216,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "To enhance productivity and streamline the operations in an appliance store, manage all the inventory, suppliers, warranties, customers, employees and reporting from one platform.",
     imageSrc:
-      "/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card11.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card11.webp",
   },
 ];
 
@@ -270,7 +270,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Sutton Blake",
     title: "Appliance Store Chain Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image64.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image64.webp",
     text: "Managing appliance inventory used to be difficult, especially with multiple brands and models. This system keeps our stock accurate and organized at all times.",
   },
   {
@@ -278,7 +278,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Juniper Hayes",
     title: "Multi-Branch Operations Director",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image65.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image65.webp",
     text: "We can see product availability and stock levels instantly. We no longer worry about running out of stock, and our customer service has improved as a result.",
   },
   {
@@ -286,7 +286,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Beau Chandler",
     title: "Electronics & Appliance Retailer",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image64.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image64.webp",
     text: "Billing is much quicker these days, and our salespeople can now complete transactions quickly even during the busy shopping season too.",
   },
   {
@@ -294,7 +294,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Lincoln Hayes",
     title: "Appliance Store Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image65.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image65.webp",
     text: "Our staff quickly learned how to use the system, and setup was simple, making product and sales management easier.",
   },
   {
@@ -302,7 +302,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Silas Grant",
     title: "Showroom Sales Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image66.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image66.webp",
     text: "We have a few appliance store locations and this system keeps our inventory synchronized and visible across all of them from one place.",
   },
   {
@@ -310,7 +310,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Marlowe Pierce",
     title: "Operations Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image66.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image66.webp",
     text: "Warranty tracking is now much more organized and we have the ability to easily access customer purchase records and offer improved after-sales service.",
   },
   {
@@ -318,7 +318,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     name: "Rowan Fletcher",
     title: "Appliance Showroom Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image67.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image67.webp",
     text: "This appliance store POS system is an ideal solution for our needs, as it is reliable, user-friendly, and allows us to track our inventory and sales more efficiently.",
   },
 ];
@@ -362,14 +362,14 @@ export const APPLIANCE_STORE_KEY_FEATURES = [
     title: "Touchscreen Quotes & Billing",
     description:
       "Generate customer invoices and quotes quickly with touchscreen navigation and flexible financing checkouts.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/pos-banner.webp",
   },
   {
     id: "appliance-stock-control",
     title: "Serial Number Stock Control",
     description:
       "Track individual high-value items, serial numbers, and model variants to prevent stock mismatches.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/products-banner.webp",
   },
   {
     id: "appliance-vendor-mgmt",
@@ -377,7 +377,7 @@ export const APPLIANCE_STORE_KEY_FEATURES = [
     description:
       "Manage procurement workflows directly with brand suppliers and track incoming freight shipments.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/purchases-banner.webp",
   },
   {
     id: "appliance-variants",
@@ -385,21 +385,21 @@ export const APPLIANCE_STORE_KEY_FEATURES = [
     description:
       "Organize appliances by brands, energy ratings, specifications, dimensions, and warranty coverage levels.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/inventory-banner.webp",
   },
   {
     id: "appliance-loyalty",
     title: "Customer & Delivery Profiles",
     description:
       "Link sales records to customer home addresses, delivery preferences, and scheduled installation details.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/people-banner.webp",
   },
   {
     id: "appliance-finances",
     title: "Sales Commission Audits",
     description:
       "Monitor sales representative totals, register cash drops, card processing fees, and calculate commissions.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/finance-banner.webp",
   },
   {
     id: "appliance-ecommerce",
@@ -407,7 +407,7 @@ export const APPLIANCE_STORE_KEY_FEATURES = [
     description:
       "Link your online store to the physical POS. Sync active inventory counts instantly and manage delivery dispatch queues from a central location.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/ecommerce-banner.webp",
   },
 ];
 
@@ -461,27 +461,27 @@ export const APPLIANCE_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

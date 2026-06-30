@@ -15,11 +15,11 @@ interface ToolsSectionProps {
 }
 
 const DEFAULT_TOOLS = [
-  { id: 1, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
-  { id: 2, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
-  { id: 3, name: "QuickBooks", image: "/assets/home-page-images/tools-section/quick-book.svg" },
-  { id: 4, name: "Xero", image: "/assets/home-page-images/tools-section/xero.svg" },
-  { id: 5, name: "Stripe", image: "/assets/home-page-images/tools-section/stripe.svg" },
+  { id: 1, name: "Shopify", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg" },
+  { id: 2, name: "WooCommerce", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg" },
+  { id: 3, name: "QuickBooks", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg" },
+  { id: 4, name: "Xero", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg" },
+  { id: 5, name: "Stripe", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg" },
 ];
 
 const ToolsSection = ({

@@ -107,7 +107,7 @@ export const RESTAURANT_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     subDescription:
       "This keeps track of stocks accurately, prevents order duplication, and allows restaurants to manage complex operations of multiple platforms from a single system.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -142,7 +142,7 @@ export const RESTAURANT_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory transforms daily kitchen and inventory data into clear, usable insights. It tracks ingredient consumption, compares actual usage with expected patterns, and highlights cost variations across menu items. Restaurants can easily identify inefficiencies and adjust purchasing decisions. This structured reporting helps maintain consistent profitability.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -156,7 +156,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The system tracks inventory at the ingredient level across the kitchen and storage. It provides real-time visibility into stock levels and usage patterns. This helps restaurants manage inventory accurately and avoid unexpected shortages during service hours.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -164,7 +164,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Each menu item is aligned with its ingredient-level costing. Restaurants can track menu profitability and adjust pricing according to it. It maintains a consistent inventory across restaurant operations. The system calculates the cost of goods and supports better purchase decisions.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -172,7 +172,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The dashboard of the system centralizes purchase orders and vendor management processes. It keeps track of supplier deliveries, invoices, and stock updates in one place. This ensures smooth procurement, reduces delays, and maintains accurate stock levels.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -180,7 +180,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Restaurant inventory is automatically updated after every usage and sale, which helps systems keep track of stock transfer between storage and the kitchen. This improves accuracy and keeps inventory data aligned with actual stock levels.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -188,7 +188,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The platform provides detailed and precise reports on inventory usage and sales data. It helps identify variances, track food cost trends, and monitor performance. It allows restaurants to take data-driven actions to improve efficiency and long-term profitability.",
     imageSrc:
-      "/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card5.webp",
   },
 ];
 
@@ -235,21 +235,21 @@ export const RESTAURANT_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Natalie Cox",
     title: "Restaurant Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image49.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image49.webp",
     text: "Inventory used to be something we checked at the end of the day. Now it's already updated while we are working. Their software has made things a lot easier without changing how our kitchen operates.",
   },
   {
     id: "2",
     name: "Brody Nelson",
     title: "Food Delivery Partner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image49.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image49.webp",
     text: "We had issues with food cost inconsistency, especially across busy days. Since using the system, we have been able to track usage better and avoid unnecessary over-ordering. It definitely improved how we manage our stock.",
   },
   {
     id: "3",
     name: "Leah Howard",
     title: "Café Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image50.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image50.webp",
     text: "What I like most is the clarity. We are not second-guessing stock levels or relying on manual notes anymore. It has led us to practical improvement.",
   },
 ];
@@ -352,27 +352,27 @@ export const RESTAURANT_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

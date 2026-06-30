@@ -6,8 +6,8 @@ export const PRODUCT_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Easily handle hundreds of SKUs and seasonal products. Manage prices, track sales and monitor moving inventory. Perfect for retail establishments like supermarkets, cosmetics stores, etc.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -17,8 +17,8 @@ export const PRODUCT_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Accurately create and manage menu items, combos, and track food items. Keep your menu aligned with availability and instantly update pricing.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -28,8 +28,8 @@ export const PRODUCT_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Manage supplier catalogs and bulk inventory with complete accuracy. Minimize manual labor without compromising organization and audit-readiness.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const PRODUCT_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Effectively manage medication batches and expiration dates. Maintain the accuracy and full  traceability of your pharmacy’s product data.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -49,8 +49,8 @@ export const PRODUCT_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Effortlessly arrange sizes, colors, and styles. Collection-based management for apparel and accessories is all supported by the Product Catalog Management Software.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
 ];
@@ -62,7 +62,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "Add and Manage Products in Inventory Management without any difficulty. Enter information such as the name, price, description, barcode, SKU, and product name. Activate or deactivate your products at any time to maintain consistency and up-to-date cataloging.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/product-management.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/product-management.webp",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "Utilize the bulk upload tool to save significant time. Through Excel and CSV files, easily import a number of items, and then export them as needed. Handle updates easily without any additional changes or errors.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/bulk-imports.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/bulk-imports.webp",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "Dynamic charts and graphs can help you understand your inventory more quickly.  It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/search-filter.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/search-filter.webp",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "It’s easy to manage and update cost, selling, and discount prices, all at one place. Easily set active or inactive listings and promotions.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/price-management.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/price-management.webp",
   },
   {
     id: 5,
@@ -94,7 +94,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "You can create SKUs and barcodes for each and every item. For faster sales and reporting, instantly scan, update, and track products.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/barcode-management.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/barcode-management.webp",
   },
   {
     id: 6,
@@ -102,7 +102,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "Monitor stock levels in real time. Quickly spot products that are running low, overstocked or out of stock and take appropriate actions before they affect overall sales. ",
     imageSrc:
-      "/assets/features-page/products-page/features-section/visibility-status.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/visibility-status.webp",
   },
   {
     id: 7,
@@ -110,7 +110,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "Effortlessly organize your entire product catalog into categories to simplify inventory management and boost the efficiency of your store.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/categories.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/categories.webp",
   },
   {
     id: 8,
@@ -118,7 +118,7 @@ export const PRODUCT_FEATURES_CARDS = [
     description:
       "Manage and highlight brands efficiently to manage your product catalog, enhance reporting, and make brand based filtering easy. Proper brand management ensures consistency, recognition, and easier stock control across your inventory.",
     imageSrc:
-      "/assets/features-page/products-page/features-section/brands.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/brands.webp",
   },
 ];
 
@@ -160,28 +160,28 @@ export const PRODUCT_TESTIMONIALS = [
     id: "product-testimonial-1",
     name: "Nicole Baker",
     title: "Founder, Baker Supplies",
-    image: "/assets/features-page/testimonial-images/testinomial-girl13.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl13.webp",
     text: `It used to take hours and hours of manual entry to Manage Items in the POS System. But now with the help of Owners Inventory, we can upload or modify products in seconds. And because of that the process is now very easy and reliable.`,
   },
   {
     id: "product-testimonial-2",
     name: "Paul Richardson",
     title: "Founder, QuickStock",
-    image: "/assets/features-page/testimonial-images/testinomial-boy14.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy14.webp",
     text: `The bulk upload feature in inventory management has been a lifesaver for my business. We can now manage hundreds and thousands of SKUs across multiple stores without any errors, which has saved us so much time and hassle.`,
   },
   {
     id: "product-testimonial-3",
     name: "Victoria King",
     title: "Supply Manager, Unified Goods",
-    image: "/assets/features-page/testimonial-images/testinomial-girl14.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl14.webp",
     text: `The product tracking tools make it so much easier to see what’s selling and what’s not. It really helps us plan our inventory and make smarter decisions for better results.`,
   },
   {
     id: "product-testimonial-4",
     name: "Adam Lewis",
     title: "E-commerce Manager, ShopEase",
-    image: "/assets/features-page/testimonial-images/testinomial-boy15.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy15.webp",
     text: `This software keeps our product data consistent and accurate. It’s simple to use but very efficient, a perfect blend for growing our business.`,
   },
 ];
@@ -189,35 +189,35 @@ export const PRODUCT_TESTIMONIALS = [
 export const PRODUCT_WHY_CHOOSE_CARDS = [
   {
     id: "product-why-choose-1",
-    icon: "/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/all-in-one-platform.svg",
     title: "Smooth Automation",
     description:
       "For optimal productivity, automate routine processes like imports, updates, and syncs.",
   },
   {
     id: "product-why-choose-2",
-    icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/seamless-automation.svg",
     title: "Adaptable to Growth",
     description:
       "Owners Inventory expands as your business grows, whether you are a startup or a multinational corporation.",
   },
   {
     id: "product-why-choose-3",
-    icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
     title: "Secure Data Management",
     description:
       "Owners Inventory safeguards your product data, guaranteeing transparency and confidentiality.",
   },
   {
     id: "product-why-choose-4",
-    icon: "/assets/features-page/products-page/product-control.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/product-control.svg",
     title: "Product Control",
     description:
       "Manage all product details from every retailer in one dashboard, no switching systems.",
   },
   {
     id: "product-why-choose-5",
-    icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/real-time-insights.svg",
     title: "Real-Time Updates",
     description:
       "Instant updates sync system-wide, removing errors and ensuring everyone has accurate, up-to-date information.",

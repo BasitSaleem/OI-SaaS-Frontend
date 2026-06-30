@@ -79,8 +79,8 @@ export interface CaseStudyData {
 export const caseStudiesData: CaseStudyData[] = [
   {
     id: "1",
-    image: "/assets/home-page-images/client-image-1.webp",
-    backgroundImage: "/assets/home-page-images/isolation-mode.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/client-image-1.webp",
+    backgroundImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
     primaryColor: "#1AD1B9",
     secondaryColor: "#795CF5",
@@ -132,7 +132,7 @@ export const caseStudiesData: CaseStudyData[] = [
     outcomesIntro: "The transformation fundamentally changed how Al-Asif operates, ensuring the business is automated, accurate, and ready for future expansion.",
     outcomesHeading: "How Everything Changed",
     outcomesIconSet: "alAsifCasestudyIcons",
-    outcomesBanner: "/assets/case-studies/outcome-banner.webp",
+    outcomesBanner: "https://d2qlv5xtew5ayb.cloudfront.net/assets/case-studies/outcome-banner.webp",
     outcomes: [
       { id: "1", title: "Seamless Operations", icon: "outcomeIcon1", description: "Through Owners Inventory, Al-Asif managed to have a system where sales, inventory, and accounting went hand in hand. Manual errors were eliminated, and everything became smooth." },
       { id: "2", title: "Real-Time Visibility", icon: "outcomeIcon2", description: "Managers received real-time information regarding stocks, sales, and financial status. Decisions previously made in hours might be made in minutes, and the data was precise." },
@@ -156,8 +156,8 @@ export const caseStudiesData: CaseStudyData[] = [
   },
   {
     id: "2",
-    image: "/assets/home-page-images/client-image-1.webp",
-    backgroundImage: "/assets/home-page-images/isolation-mode.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/client-image-1.webp",
+    backgroundImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
     primaryColor: "#F95C5B",
     secondaryColor: "#795CF5",
@@ -205,7 +205,7 @@ export const caseStudiesData: CaseStudyData[] = [
     outcomesHeading: "Clear Control, Measurable Impact",
     outcomesIntro: "Under the new system, BrightHome Appliances changed the way it managed inventory, orders and seasonal demand. Previously existing pain points became growth-supporting strengths.",
     outcomesIconSet: "bightHomeIcons",
-    outcomesBanner: "/assets/case-studies/brighthome-outcome-banner.webp",
+    outcomesBanner: "https://d2qlv5xtew5ayb.cloudfront.net/assets/case-studies/brighthome-outcome-banner.webp",
     outcomes: [
       { id: "1", title: "Faster Order Fulfillment", icon: "outcomeIcon1", description: "Real-time visibility of the stock and the automated workflows led to a dramatic decrease in the order processing time. The customers were getting their appliances much quicker, even on peak seasons." },
       { id: "2", title: "Inventory Accuracy", icon: "outcomeIcon2", description: "Inventory tracking of all warehouses in real time eradicated conjecture. The level of stock turned out to be dependable and minimised any mistakes and increased confidence in planning." },
@@ -230,8 +230,8 @@ export const caseStudiesData: CaseStudyData[] = [
 
   {
     id: "3",
-    image: "/assets/home-page-images/client-image-1.webp",
-    backgroundImage: "/assets/home-page-images/isolation-mode.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/client-image-1.webp",
+    backgroundImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/isolation-mode.webp",
     ctaText: "Read Case Study",
     primaryColor: "#F95C5B",
     secondaryColor: "#1AD1B9",
@@ -278,7 +278,7 @@ export const caseStudiesData: CaseStudyData[] = [
     outcomesHeading: "Business Impact Achieved",
     outcomesIntro: "Being fully connected in manufacturing and sales, Urban Threads had more control over inventory and production. Real-time visibility enabled the teams to respond more quickly and work confidently.",
     outcomesIconSet: "urbansThreadsIcons",
-    outcomesBanner: "/assets/case-studies/urbanthreads-outcome-banner.webp",
+    outcomesBanner: "https://d2qlv5xtew5ayb.cloudfront.net/assets/case-studies/urbanthreads-outcome-banner.webp",
     outcomes: [
       { id: "1", title: "Balanced Stock Levels", icon: "outcomeIcon1", description: "Stockouts and overstock were minimized. Inventory levels in all channels became predictable and stable." },
       { id: "2", title: "Improved Production Accuracy", icon: "outcomeIcon2", description: "The production output was low relative to real sales. This reduced wastage and prevented unwarranted production cycles." },

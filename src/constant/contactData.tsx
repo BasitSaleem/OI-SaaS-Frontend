@@ -52,14 +52,14 @@ export const CONTACT_CARDS = [
 export const CONTACT_SUPPORT_CARDS = [
   {
     iconName: "helpCenter",
-    icon2: "/assets/about-us/arrow-link.svg",
+    icon2: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/arrow-link.svg",
     title: "Privacy Policy",
     description: "Data Protection Guidelines",
     url: "/privacy-policy",
   },
   {
     iconName: "documentation",
-    icon2: "/assets/about-us/arrow-link.svg",
+    icon2: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/arrow-link.svg",
     title: "Terms & Conditions",
     description: "User Agreement Terms",
     url: "/terms-and-conditions",

@@ -91,7 +91,7 @@ export const OPTICAL_LAB_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Our AI-powered optical lab software helps manage orders from retail stores, eye clinics, wholesale customers, and online channels. Every order automatically updates inventory and production records, reducing manual errors and improving operational efficiency.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -120,7 +120,7 @@ export const OPTICAL_LAB_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Our optical lab management software generates real-time reports on the production efficiency, turnaround time, inventory utilization, and sales performance. Based on the accurate data, managers can identify workflow bottlenecks, understand demand trends, and optimize the resources.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -135,7 +135,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Prescription is documented electronically and verified prior to manufacturing. This will minimize manual errors, and will guarantee the right lens manufacturing from the beginning.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -143,7 +143,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The system monitors inventory with respect to lens type, coating, brand, frame style and supplier. Staff can easily find products and keep the inventory accurate.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -151,7 +151,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Each order is assigned a work order that tracks progress through cutting, coating, and assembly. This improves accountability and enhances workflow.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -159,7 +159,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Inspection of production is carried out at various stages of the manufacturing process. Labs can maintain the quality standards without remakes and customer complaints.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -167,7 +167,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Orders from retail stores, clinics and individual customers are managed from a single dashboard. All orders, order status and delivery schedules are visible to staff.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -175,7 +175,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Owners Inventory automatically analyzes production performance, inventory movement, turnaround time, and sales trends. Detailed reports enable managers to identify growth opportunities, improve efficiency and provide better customer service.",
     imageSrc:
-      "/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/key-features-section/key-features-card6.webp",
   },
 ];
 
@@ -234,21 +234,21 @@ export const OPTICAL_LAB_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Delaney Shaw",
     title: "Optical Partner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image70.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image70.webp",
     text: "It used to be hard to order prescriptions, particularly when working at peak times, but now we're able to do it without any confusion and track the job from start to finish.",
   },
   {
     id: "2",
     name: "Sterling Cross",
     title: "Lab Director",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image71.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image71.webp",
     text: "The inventory tracking system is highly effective in ensuring proper stock of lenses and frames at all times. We no longer face unforeseen shortages.",
   },
   {
     id: "3",
     name: "Bristol Lane",
     title: "Operations Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image71.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image71.webp",
     text: "The reporting tools provide us with a good insight into production performance and order volumes, and it has enabled us to be much more efficient.",
   },
 ];
@@ -334,27 +334,27 @@ export const OPTICAL_LAB_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

@@ -101,7 +101,7 @@ export const SPORTING_GOODS_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory connects every sales point into one retail management platform. In-store sales, online transactions, purchase orders, and store locations all feed the same dashboard so sporting goods retailers can manage their entire business without switching between disconnected platforms.",
     subDescription: "It ensures that all the figures remain the same at the end of the day report.",
-    imageSrc: "/assets/industries-pages/sporting-goods-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -129,7 +129,7 @@ export const SPORTING_GOODS_FEATURE_CARDS: FeatureCardData[] = [
     title: "Analytics and Reporting",
     description:
       "Daily business data is converted into real-time reports. These reports contain structured information about inventory performance, category revenue, sales trends, and stock levels. It helps retailers identify which equipment lines drive more revenue, where apparel categories peak at specific times of year, and where seasonal inventory needs adjusting.",
-    imageSrc: "/assets/industries-pages/sporting-goods-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -143,7 +143,7 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
     description:
       "The POS makes products instantly searchable using barcode and SKU scanning. Staff can add items to transactions without browsing large catalogs, which speeds up the checkout process.",
     imageSrc:
-      "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -151,7 +151,7 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
     description:
       "Sporting goods stores with thousands of SKUs and products can load their catalogs into the system using Excel or CSV files. It reduces human intervention by eliminating the need for manual data entry.",
     imageSrc:
-      "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -159,7 +159,7 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
     description:
       "Stock levels, sales performance, and store operation data across every location are visible from one centralized dashboard. Owners can monitor inventory data at each branch in real time and restock items instantly.",
     imageSrc:
-      "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -167,7 +167,7 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
     description:
       "Owners Inventory connects the POS system directly with third-party eCommerce platforms. All product listings, stock levels, and order data sync seamlessly across both channels, which helps avoid overselling.",
     imageSrc:
-      "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -175,7 +175,7 @@ export const SPORTING_GOODS_KEY_FEATURES_CARDS = [
     description:
       "Marketing campaigns and email marketing tools connect directly with sporting goods POS software, helping feed targeted promotions to the right audience at the right time. This builds strong customer relationships.",
     imageSrc:
-      "/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/sporting-goods-pos/key-features-section/key-feature-card5.webp",
   },
 
 ];
@@ -224,7 +224,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Josephine Harrison",
     title: "Sporting Goods Store Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image53.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image53.webp",
     text: "We carry over 2,000 SKUs across sizes and colors. Stock figures used to be wrong every week. Since switching to Owners Inventory, everything matches the shelf accurately.",
   },
   {
@@ -232,7 +232,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Rhett Peterson",
     title: "Athletic Wear Retailer",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image54.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image54.webp",
     text: "Seasonal restockings used to be pure guesswork. The reports now show exactly what moved fastest last season, and we enter every period properly stocked.",
   },
   {
@@ -240,7 +240,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Eleanor Gray",
     title: "Multi-Store General Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image54.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image54.webp",
     text: "Online and in-store stock finally stays aligned. Three overselling incidents in one month before switching. Zero since we made the change.",
   },
   {
@@ -248,7 +248,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Vivienne Anderson",
     title: "Outdoor Gear Shop Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image55.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image55.webp",
     text: "The loyalty program brought customers back more consistently. Repeat purchases from returning athletes went up noticeably within the first two months.",
   },
   {
@@ -256,7 +256,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Emmett Shaw",
     title: "Sporting Goods Store Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image55.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image55.webp",
     text: "End-of-day reconciliation used to take forty-five minutes. Now the dashboard already has everything calculated the moment we close up each evening.",
   },
   {
@@ -264,7 +264,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Slade Collins",
     title: "Athletic Wear Retailer",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image56.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image56.webp",
     text: "Setup was faster than we expected. The whole team was processing real-time transactions within hours, and nobody needed formal training to become comfortable.",
   },
   {
@@ -272,7 +272,7 @@ export const SPORTING_GOODS_TESTIMONIALS = [
     name: "Genevieve Wood",
     title: "Multi-Store General Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image56.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image56.webp",
     text: "Purchase order management changed how we work with suppliers completely. Every delivery updates stock automatically, and procurement records stay accurate without any manual entry.",
   },
 
@@ -380,27 +380,27 @@ export const SPORTING_GOODS_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

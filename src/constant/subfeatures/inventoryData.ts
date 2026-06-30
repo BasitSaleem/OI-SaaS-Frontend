@@ -6,8 +6,8 @@ export const INVENTORY_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Add and maintain products in POS quickly with comprehensive listings, categories, and barcodes to maintain your shelves and online catalog flawlessly.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -17,8 +17,8 @@ export const INVENTORY_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Control menu items, ingredients, and combos with our POS product management feature and make sure that all branches are operating off the same menu.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -28,8 +28,8 @@ export const INVENTORY_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Manage product catalogs easily with efficient bulk item organization, level pricing, and supplier catalogs with robust product catalog management software.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const INVENTORY_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Monitor batch and expiry of medicines with inventory product management software, ensuring that the stock in your pharmacy is secure, legally compliant, and reliable.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -49,8 +49,8 @@ export const INVENTORY_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Keep track of all sizes, colors, and styles, with product variants, seasonal collections, and stock coordination between online and physical stores, whether you sell streetwear, shoes, or high fashion.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
 ];
@@ -62,7 +62,7 @@ export const INVENTORY_FEATURES_CARDS = [
     description:
       "Simple movement of products across warehouses, stores, or branches. Monitor every step so that your products can be delivered on time and correctly. Transfer orders keep your stock flowing problem-free.",
     imageSrc:
-      "/assets/features-page/inventory-operations-page/features-section/tranfer-order.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/tranfer-order.webp",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const INVENTORY_FEATURES_CARDS = [
     description:
       "Efficiently issue stock at your warehouse or store with full records. Stock issuing ensures that outgoing products are accurately tracked and inventory levels are current at all times.",
     imageSrc:
-      "/assets/features-page/inventory-operations-page/features-section/stock-issuing.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/stock-issuing.webp",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const INVENTORY_FEATURES_CARDS = [
     description:
       "Get inventory fast and correctly, and check on all incoming goods. Verify product inclusions against supplier invoices and update the inventory instantly in the process of correct stock control.",
     imageSrc:
-      "/assets/features-page/inventory-operations-page/features-section/stock-recieving.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/stock-recieving.webp",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ export const INVENTORY_FEATURES_CARDS = [
     description:
       "Quickly change and correct stock levels to record damaged items or update quantities. Make sure that your inventory is trustworthy, legal, and up-to-date.",
     imageSrc:
-      "/assets/features-page/inventory-operations-page/features-section/stock-adjustment.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/stock-adjustment.webp",
   },
 ];
 
@@ -134,28 +134,28 @@ export const INVENTORY_TESTIMONIALS = [
     id: "inventory-testimonial-1",
     name: "Steven Parker",
     title: "Store Operations Manager, RetailEdge",
-    image: "/assets/features-page/testimonial-images/testinomial-boy12.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy12.webp",
     text: `Owners' Inventory has changed the way we manage our stock in a big way. Their inventory management software makes it easy to keep track of and restock items. Our whole inventory operations process has gotten more accurate and faster. Our team can now make quick, smart decisions more easily every day.`,
   },
   {
     id: "inventory-testimonial-2",
     name: "Sophia Turner",
     title: "CEO, OmniTrade Solutions",
-    image: "/assets/features-page/testimonial-images/testinomial-girl11.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl11.webp",
     text: `Managing more than one branch was always hard, but Owners Inventory made it easier.  The system makes everything easier, from keeping an eye on things to making reports.  Their inventory management services help us stay on top of things and save us a lot of time.  The support team is always there for us and ready to help when we need it.`,
   },
   {
     id: "inventory-testimonial-3",
     name: "Mark Evans",
     title: "Logistics Supervisor, SupplyHub",
-    image: "/assets/features-page/testimonial-images/testinomial-boy13.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy13.webp",
     text: `We use Owners Inventory every day to keep track of the products in our warehouse and store.  Our team finds it easy to use the platform's inventory operations software for everyday tasks. It keeps everything in sync. It's a really useful tool that grows with our business.`,
   },
   {
     id: "inventory-testimonial-4",
     name: "Rachel Adams",
     title: "Operations Manager, Prime Retail",
-    image: "/assets/features-page/testimonial-images/testinomial-girl12.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl12.webp",
     text: `With Owners Inventory, we can finally see all of our products. Now, the process of managing inventory is easier, faster, and more reliable. For any business that wants to better manage its inventory, this is a game-changer. We've made fewer mistakes by hand and made our sales flow better overall.`,
   },
 ];
@@ -163,28 +163,28 @@ export const INVENTORY_TESTIMONIALS = [
 export const INVENTORY_WHY_CHOOSE_CARDS = [
   {
     id: "inventory-why-choose-1",
-    icon: "/assets/features-page/inventory-operations-page/why-chose/designed-every-business.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/why-chose/designed-every-business.svg",
     title: "Designed for Every Business Type",
     description:
       "Our POS product management fits smoothly into any workflow retail, wholesale, or hospitality.",
   },
   {
     id: "inventory-why-choose-2",
-    icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
     title: "Real-Time Control & Accuracy",
     description:
       "Get real-time updates on stock, pricing, and product information using smart inventory product management software.",
   },
   {
     id: "inventory-why-choose-3",
-    icon: "/assets/features-page/inventory-operations-page/why-chose/effortless-setup.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/why-chose/effortless-setup.svg",
     title: "Effortless Setup & Scalability",
     description:
       "Our POS product management feature enables you to easily add and expand your catalog and is designed to scale with your business.",
   },
   {
     id: "inventory-why-choose-4",
-    icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
     title: "Insight-Driven Decisions",
     description:
       "Get easy access to clear analytics on your POS system product listing to determine top performers and increase profitability.",

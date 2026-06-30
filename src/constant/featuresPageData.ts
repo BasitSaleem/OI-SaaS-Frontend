@@ -3,8 +3,8 @@ export const MAIN_FEATURES_HERO = {
   description:
     "Owners Inventory brings together everything you need to manage, track, and grow your business in one unified platform. Explore our powerful features, categorized to help you run operations smoothly, manage people efficiently, and scale with confidence.",
   video:
-    "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/main-feature.webm",
-  image: "/assets/features-page/features-hero-banner.webp",
+    "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/main-feature.webm",
+  image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/features-hero-banner.webp",
 };
 
 export const CORE_OPERATIONS_DATA = {
@@ -18,8 +18,8 @@ export const CORE_OPERATIONS_DATA = {
       description:
         "Fast, reliable, and intuitive POS system for retail and quick sales.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/purchases.webm",
-      imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/purchases.webm",
+      imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/pos-banner.webp",
       buttonLabel: "View Details",
       buttonHref: "/features/pos",
     },
@@ -29,9 +29,9 @@ export const CORE_OPERATIONS_DATA = {
       description:
         "Manage product catalogs, variants, pricing, and stock in one place.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/products.webm",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/products.webm",
       imageSrc:
-        "/assets/features-page/featurescard-banners/products-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/products-banner.webp",
       buttonLabel: "View Details",
       buttonHref: "/features/products",
     },
@@ -41,9 +41,9 @@ export const CORE_OPERATIONS_DATA = {
       description:
         "Automate purchase orders, procurement and vendor management.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/purchases.webm",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/purchases.webm",
       imageSrc:
-        "/assets/features-page/featurescard-banners/purchases-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/purchases-banner.webp",
       buttonLabel: "View Details",
       buttonHref: "/features/purchases",
     },
@@ -53,9 +53,9 @@ export const CORE_OPERATIONS_DATA = {
       description:
         "Track stock levels, transfers, and adjustments with real-time accuracy.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/inventory-operations.webm",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/inventory-operations.webm",
       imageSrc:
-        "/assets/features-page/featurescard-banners/inventory-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/inventory-banner.webp",
       buttonLabel: "View Details",
       buttonHref: "/features/inventory",
     },
@@ -65,8 +65,8 @@ export const CORE_OPERATIONS_DATA = {
       description:
         "Streamline your order processing, from quotation to fulfillment.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/sale-order.webm",
-      imageSrc: "/assets/features-page/featurescard-banners/sales-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/sale-order.webm",
+      imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/sales-banner.webp",
       buttonLabel: "View Details",
       buttonHref: "/features/sales-and-order",
     },
@@ -80,8 +80,8 @@ export const TEAM_FEATURES = [
     description:
       "Centralized customer and supplier management with loyalty programs and CRM tools.",
     videoSrc:
-      "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/peoples-bg.webm",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/peoples-bg.webm",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/people-banner.webp",
     buttonHref: "/features/people",
   },
   {
@@ -90,8 +90,8 @@ export const TEAM_FEATURES = [
     description:
       "Simplify attendance, shifts, payroll, and employee records in one system.",
     videoSrc:
-      "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/humanresources.webm",
-    imageSrc: "/assets/features-page/featurescard-banners/hr-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/humanresources.webm",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/hr-banner.webp",
     buttonHref: "/features/hr",
   },
   {
@@ -100,9 +100,9 @@ export const TEAM_FEATURES = [
     description:
       "Track and manage workspaces, business assets, and internal resources effectively.",
     videoSrc:
-      "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/facilities.webm",
+      "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/facilities.webm",
     imageSrc:
-      "/assets/features-page/featurescard-banners/facilities-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/facilities-banner.webp",
     buttonHref: "/features/facilities",
   },
 ];
@@ -114,9 +114,9 @@ export const FEATURE_CARDS_DATA = [
     description:
       "Seamlessly connect your inventory with online stores and marketplaces. Manage stock, sync products, and process orders across multiple sales channels — all from one unified platform.",
     videoSrc:
-      "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/E-commerce.webm",
+      "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/E-commerce.webm",
     imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/ecommerce-banner.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/ecommerce",
     buttonColor: "var(--primary-purple)",
@@ -131,8 +131,8 @@ export const FEATURE_CARDS_DATA = [
 
 export const UTILITIES_DATA = {
   mediaSrc:
-    "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/general-tools.webm",
-  imageSrc: "/assets/features-page/featurescard-banners/utilities-banner.webp",
+    "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/general-tools.webm",
+  imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/utilities-banner.webp",
   heading: "Utilities & General Tools",
   description:
     "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring your business runs efficiently at every level.",
@@ -152,9 +152,9 @@ export const SMART_INTEGRATION_DATA = {
       description:
         "Manage production planning, bills of materials, and assembly workflows with ease.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/manufacturing.webm",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/manufacturing.webm",
       imageSrc:
-        "/assets/features-page/featurescard-banners/manufacturing-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/manufacturing-banner.webp",
       buttonHref: "/features/manufacturing",
     },
     {
@@ -163,9 +163,9 @@ export const SMART_INTEGRATION_DATA = {
       description:
         "Connect Owners Inventory with third-party apps, marketplaces, and payment gateways.",
       videoSrc:
-        "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/integration.webm",
+        "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/integration.webm",
       imageSrc:
-        "/assets/features-page/featurescard-banners/integration-banner.webp",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/integration-banner.webp",
       buttonHref: "/features/integrations",
     },
   ],
@@ -178,15 +178,15 @@ export const FINANCE_FEATURES = [
     description:
       "Integrated invoicing, expense tracking, and tax compliance made simple.",
     videoSrc:
-      "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/acounting%26financial.webm",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/acounting%26financial.webm",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/finance-banner.webp",
     buttonHref: "/features/accounts-and-finance",
   },
   // {
   //     title: "Advanced Reports",
   //     description: "Unlock in-depth analytics, trends, and forecasting for smarter decision-making.",
-  //     videoSrc: "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/advance-report.webm",
-  //     imageSrc: "/assets/features-page/reports-page/features-section/comprehensive-reporting.webp",
+  //     videoSrc: "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/advance-report.webm",
+  //     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/reports-page/features-section/comprehensive-reporting.webp",
   //     buttonHref: "/features/advancereports",
   // },
   {
@@ -195,8 +195,8 @@ export const FINANCE_FEATURES = [
     description:
       "Get instant insights into sales, purchases, and stock performance.",
     videoSrc:
-      "https://owner-inventory.s3.us-east-1.amazonaws.com/videos/features-page/standards-reports.webm",
-    imageSrc: "/assets/features-page/featurescard-banners/reports-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/standards-reports.webm",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/reports-banner.webp",
     buttonHref: "/features/reports",
   },
 ];

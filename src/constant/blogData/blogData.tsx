@@ -1,7 +1,7 @@
 export const blogData = [
   {
     id: "1",
-    blogImg: "/assets/blog-images/first-blog.webp",
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/first-blog.webp",
     heading: "How does Owners Inventory sync across multiple platforms?",
     author: "John",
     date: "14 August, 2025",
@@ -19,7 +19,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -29,7 +29,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/second-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/second-blog.webp"
     , blogOverview: "Yes! It is easy to sell on multiple channels with us, and we provide easy integrations with large e-commerce articles such as Shopify, WooCommerce, and others."
     ,
     status: "popular",
@@ -44,7 +44,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -56,7 +56,7 @@ export const blogData = [
     status: "popular",
 
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/third-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/third-blog.webp"
     , blogOverview: "Absolutely. Our inventory for small business provides small stores up to big chain stores with flexible features and affordable plans depending on the size of your business."
     ,
     blogDetails: [{
@@ -69,7 +69,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -79,7 +79,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/fourth-blog.webp",
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/fourth-blog.webp",
     blogOverview: "Yes. Owner Inventory offers real-time dashboards, predictive analytics, and customizable reports to assist you in effortlessly monitoring sales, performance and inventory trends."
     ,
     status: "recent",
@@ -94,7 +94,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -106,7 +106,7 @@ export const blogData = [
     status: "recent",
 
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/fifth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/fifth-blog.webp"
     , blogOverview: "We have a committed support staff on chat, email, and phone. We also have some excellent tutorials, video instructions and FAQs so that you can solve problems fast."
     ,
     blogDetails: [{
@@ -119,7 +119,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -131,7 +131,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/fourth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/fourth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -144,7 +144,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ],
 
@@ -155,7 +155,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/fifth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/fifth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     status: "recent",
@@ -170,7 +170,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -182,7 +182,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/sixth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/sixth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -195,7 +195,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/blogDetailImg.png"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogDetailImg.png"
     }
     ]
   },
@@ -207,7 +207,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/seventh-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/seventh-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -220,7 +220,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   },
@@ -232,7 +232,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/eightth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/eightth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -245,7 +245,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   }
@@ -258,7 +258,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/sixth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/sixth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -271,7 +271,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   },
@@ -283,7 +283,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/seventh-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/seventh-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -296,7 +296,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   },
@@ -308,7 +308,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/eightth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/eightth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -321,7 +321,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   },
@@ -333,7 +333,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/sixth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/sixth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -346,7 +346,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   },
@@ -358,7 +358,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/seventh-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/seventh-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -371,7 +371,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   },
@@ -383,7 +383,7 @@ export const blogData = [
     author: "John",
     date: "14 August, 2025",
     totalRead: "5mins",
-    blogImg: "/assets/blog-images/eightth-blog.webp"
+    blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/eightth-blog.webp"
     , blogOverview: "Inventory is the backbone of any business that sells products—whether you’re running a retail store, an e-commerce site, or managing a large warehouse. Poor inventory management can lead to lost sales, unhappy customers, and wasted resources. Many companies unknowingly fall into the same traps."
     ,
     blogDetails: [{
@@ -396,7 +396,7 @@ export const blogData = [
       heading: "Ignoring Seasonal Trends",
       detail: ["Many businesses overlook the fact that demand fluctuates throughout the year. For example, winter jackets don’t sell in summer, but demand spikes in cold months. Not preparing for these cycles leads to lost revenue opportunities.",
         "Solution: Analyze seasonal demand patterns and plan inventory levels accordingly. Create a calendar for high-demand periods."],
-      img: "/assets/point-of-sale/key-highlights/quick-billing.webp"
+      img: "https://d2qlv5xtew5ayb.cloudfront.net/assets/point-of-sale/key-highlights/quick-billing.webp"
     }
     ]
   }

@@ -4,7 +4,7 @@ const Logo = () => (
   <div className="lg:w-auto header-left-col z-50 absolute md:left-2 left-2" style={{ opacity: 0, transform: "translateY(-150px)" }}>
     <a href="/" className="shrink-0">
       <Image
-        src="/assets/owner-inventory-logo.svg"
+        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owner-inventory-logo.svg"
         alt="Owner's logo"
         width={130}
         height={40}

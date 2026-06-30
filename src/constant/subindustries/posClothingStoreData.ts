@@ -104,7 +104,7 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
     description:
       "The Owners POS updates inventory with every sale in real time. By connecting all the sales channels, such as physical stores, online platforms, and marketplaces, enables brands to operate under one system. This keeps stocks updated and provides a smooth shopping experience to customers. We provide:",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/clothing-store-omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/clothing-store-omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -120,7 +120,7 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
     description:
       "Accurate POS reporting provides store owners with clear visibility into size-wise sales, color performance, style trends, and profitability, which allows them to improve stock management and margin control.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/clothing-store-better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/clothing-store-better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -145,7 +145,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "The clothing store POS system handles all sizes, colors, styles, and fabrics with utmost precision. Each variant is kept in a different track to keep your inventory always right.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card1.webp",
   },
   {
     id: 2,
@@ -153,7 +153,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "The retail clothing stores' POS system processes checkouts at a faster rate through barcode scanning and smart item search. Lines are shorter and clients are able to have a quality shopping experience.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card2.webp",
   },
   {
     id: 3,
@@ -161,7 +161,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "Real-time inventory in available on all sizes and colors. This will assist you in decreasing inventory shortages and excess in every store.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card3.webp",
   },
 
   {
@@ -170,7 +170,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "The POS systems of clothing stores deal with returns and size swaps readily. All the actions are documented well to prevent confusion or revenue loss.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card4.webp",
   },
   {
     id: 5,
@@ -178,7 +178,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "Record customer preferences, sizes, purchase history and loyalty points. This keeps the shoppers entertained and assists in boosting their repeat sales.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card5.webp",
   },
   {
     id: 6,
@@ -186,7 +186,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "When you have more than one outlet, this system maintains pricing, inventory and sales across all branches. That is why most retailers refer to it as the best POS system in a retail clothing store.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card6.webp",
   },
   {
     id: 7,
@@ -194,7 +194,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "Integrate your online shop and POS to automatically update inventory. No longer manual work, mismatched stock, or duplication.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card7.webp",
   },
   {
     id: 8,
@@ -202,7 +202,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "See what sells best, what sells slowly, seasonal trends, and employee performance. Make sure your decisions are supported by facts, rather than conjecture.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card8.webp",
   },
   {
     id: 9,
@@ -210,7 +210,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "Control employees, authorization, and monitoring of activities in the system. This aids in preventing misuse, enhances accountability and also gives a smooth running of the store.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card9.webp",
   },
   {
     id: 10,
@@ -218,7 +218,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     description:
       "Interchangeably make and implement discounts, seasonal rates, and promotional activities. This will aid in attracting the customers, increase sales and ensure that prices are the same in all stores.",
     imageSrc:
-      "/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card10.webp",
   },
 ];
 
@@ -271,28 +271,28 @@ export const CLOTHING_STORE_TESTIMONIALS = [
     id: "1",
     name: "Grace Anderson",
     title: "Clothing Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image10.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image10.webp",
     text: "This POS enabled us to bill faster and to handle our size and color changes without confusion. It is simple for our staff and quick for our customers.",
   },
   {
     id: "2",
     name: "Blake Henderson",
     title: "Interior Decor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image10.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image10.webp",
     text: "We have a women's clothing shop, and stock management was a tense affair. The Owners Inventory’s POS has made our inventory up to date, our returns are hassle-free, and reports are clearer than ever. It has simplified our everyday tasks.",
   },
   {
     id: "3",
     name: "Caleb Robinson",
     title: "Home Decor & Clothing Store Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image11.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image11.webp",
     text: "We have several clothing stores, and manual synchronization of inventory between branches took hours daily. This POS system of Owners Inventory made it very clear. Our inventory is currently updated instantly, and the billing is instant even in the busy periods, and our staff has learned the system quite quickly. The insights and reports also allow us to know the styles that are working best. It has been a wonderful addition to our business.",
   },
   {
     id: "4",
     name: "Lily Mitchell",
     title: "Home Decor & Clothing Store Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image11.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image11.webp",
     text: "We have hundreds of styles, sizes, and colors every season in our store, which makes it hard to be accurate. Everything seems to be organized after turning to the Owners' Inventory POS system. All our variants are traced, no confusion concerning exchanges, and customer profiles make us comprehend purchases preferences.",
   },
 ];
@@ -400,27 +400,27 @@ export const CLOTHING_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

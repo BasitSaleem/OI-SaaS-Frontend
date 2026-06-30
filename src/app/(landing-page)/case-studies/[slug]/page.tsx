@@ -99,7 +99,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         description={caseStudy.outcomesIntro || ""}
         outcomes={caseStudy.outcomes || []}
         iconSet={caseStudy.outcomesIconSet}
-        bottomImage={caseStudy.outcomesBanner || "/assets/case-studies/outcome-banner.webp"}
+        bottomImage={caseStudy.outcomesBanner || "https://d2qlv5xtew5ayb.cloudfront.net/assets/case-studies/outcome-banner.webp"}
       />
 
       <ResultsInNumbers

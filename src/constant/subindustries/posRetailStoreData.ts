@@ -96,7 +96,7 @@ export const RETAIL_STORE_FEATURE_CARDS = [
     description:
       "Our POS system for small stores join all your sales channels, including physical shops, online platforms, and mobile sales, into one stand alone system. Whether a sale happens in-store or online, everything updates within a few seconds which makes room for accuracy and consistency.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/retail-store-omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/retail-store-omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -112,7 +112,7 @@ export const RETAIL_STORE_FEATURE_CARDS = [
     description:
       "Our best point of sale software for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/retail-store-better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/retail-store-better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -131,7 +131,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Our best point of sale software for small retail businesses updates stock in real time. You always know what is in stock, what’s on sale, and what needs refilling.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card1.webp",
   },
   {
     id: 2,
@@ -139,7 +139,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Our best small business POS accelerates checkout through fast item scanning and proper billing. It saves waiting time and enhances customer satisfaction.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card2.webp",
   },
   {
     id: 3,
@@ -147,7 +147,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Our POS system for small retail stores will provide easy-to-read reports. At a glance, you can view best-selling products, profitability, and daily sales.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card3.webp",
   },
   {
     id: 4,
@@ -155,7 +155,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor employee performance, sales, and track shifts directly out of the POS. This will keep your team focused and effective.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card4.webp",
   },
   {
     id: 5,
@@ -163,7 +163,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Receive cash, card, and digital payments within seconds. Easy payment processing enables a seamless checkout and reduces mistakes.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card5.webp",
   },
   {
     id: 6,
@@ -171,7 +171,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Sell, track inventory, and control costs from anywhere. The best POS system for a small retail shop lets you stay in control even when absent.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card6.webp",
   },
   {
     id: 7,
@@ -179,7 +179,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Keep your customer information, order history, and preferences in a convenient place. Develop loyalty programs that will enable your small retail business to boost repeat sales.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card7.webp",
   },
   {
     id: 8,
@@ -187,7 +187,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Get real-time notifications about low stock. This avoids stockouts and enables small stores to replenish their stocks in good time.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card8.webp",
   },
   {
     id: 9,
@@ -195,7 +195,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Produce barcodes and price labels directly from of the POS. It maintains your inventory and enhances the precision of scanning.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card9.webp",
   },
   {
     id: 10,
@@ -203,7 +203,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Enter expenses daily in a couple of clicks. This aspect provides small retailers with a clear picture of profits and expenditure.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card10.webp",
   },
   {
     id: 11,
@@ -211,7 +211,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Access POS systems in small retail stores, mobile, tablet, or desktop as it provides flexibility to operate the store anywhere.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card11.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card11.webp",
   },
   {
     id: 12,
@@ -219,7 +219,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "All information remains secure in the cloud. Your store data is insured even in case devices are lost or damaged.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card12.webp",
   },
   {
     id: 13,
@@ -227,7 +227,7 @@ export const RETAIL_STORE_KEY_FEATURES_CARDS = [
     description:
       "Make instant offers, bundles, and special discounts. This assists in attracting customers and boosting sales.",
     imageSrc:
-      "/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/key-features-section/retail-store-key-card13.webp",
   },
 ];
 
@@ -280,28 +280,28 @@ export const RETAIL_STORE_TESTIMONIALS = [
     id: "1",
     name: "Ava Williams",
     title: "Grocery Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image4.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image4.webp",
     text: "Owners' Inventory POS changed how we manage our store. Billing is far quicker, and keeping track of stock is easy. It saves me a lot of time each day.",
   },
   {
     id: "2",
     name: "Mason Taylor",
     title: "Grocery Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image5.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image5.webp",
     text: "Now our boutique moves so smoothly. All inventory notifications, sales data, and employee tracking are centralized. It actually makes us plan more and makes us avoid errors.",
   },
   {
     id: "3",
     name: "Isabella Moore",
     title: "Gift & Decor Shop Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image5.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image5.webp",
     text: "It was easy to feel overwhelmed by running a POS system for small retail stores. It was tense and time-consuming to handle inventory, sales, and staff simultaneously. Since we began using the POS system of Owners Inventory, everything is in one place. I can use the real-time stock reporting and sales data to make smarter decisions on a daily basis. It actually seems like the system is working with me.",
   },
   {
     id: "4",
     name: "Logan Harris",
     title: "Boutique Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image6.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image6.webp",
     text: "Our boutique has increased the pace after we adopted this POS. Billing is fast, stock management is easy, and even monitoring staff performance is easier. Customers can feel the difference in quicker checkouts, and I will be able to concentrate on business development rather than on the management of daily mess.",
   },
 ];
@@ -417,27 +417,27 @@ export const RETAIL_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

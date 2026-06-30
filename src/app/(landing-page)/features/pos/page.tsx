@@ -1,8 +1,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/pos-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/pos-whychose-tab.webp";
-import backgroundImage from "../../../../../public/assets/features-page/why-chose-banners/pos-whychose.webp"
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/hero-section-banners/pos-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/why-chose-banners/pos-whychose-tab.webp";
+const backgroundImage = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/why-chose-banners/pos-whychose.webp";
 
 import TrustedBySection from "@/components/common-components/TrustedBySection";
 const FeaturesCallToAction = dynamic(() => import("@/components/pages/features-page/FeaturesCallToAction"));
@@ -29,7 +29,7 @@ const Page = () => {
         description="Sell smarter with our POS system. Intended to be fast, accurate, and the best point of sale, it simplifies all transactions, operates inventory in real-time, and provides you with complete control over your business, all through a simple, easy-to-use interface."
         image={heroBanner}
         url="pos"
-        // video="/assets/features-page/hero-section-banners/pos-hero-anim.webm"
+        // video="https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/hero-section-banners/pos-hero-anim.webm"
         imageClassName=" max-w-[880px]"
         variant="animation2"
       />
@@ -50,7 +50,7 @@ across multiple locations."
         paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
         cards={POS_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
-      // mainVideo="/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
+      // mainVideo="https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
       // backgroundImage={backgroundImage}
       />
 

@@ -1,6 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import imageOne from "../../../../../public/assets/marketing-assets/Frame1.png";
+const imageOne = "https://d2qlv5xtew5ayb.cloudfront.net/assets/marketing-assets/Frame1.png";
 import {
   MARKETING_FAQS,
   MARKETING_FEATURES_CARDS,
@@ -121,7 +121,7 @@ const Page = () => {
         heading="Why Choose Our Marketing Features?"
         paragraph="Choose Owner's Inventory because we offer simplicity, smart automation and real time data you can trust. We give you more than just marketing tools. We actively help you engage customers, increase their loyalty and grow your revenue in a much smarter way."
         cards={MARKETING_WHY_CHOOSE_CARDS}
-        mainImage="/assets/marketing-assets/Frame2.png"
+        mainImage="https://d2qlv5xtew5ayb.cloudfront.net/assets/marketing-assets/Frame2.png"
       />
 
       <div className="lg:mt-[100px] md:mt-28 mt-20">

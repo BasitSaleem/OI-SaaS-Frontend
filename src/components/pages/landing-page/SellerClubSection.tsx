@@ -29,15 +29,15 @@ export default function SellerClubSection({
   marginClasses = "lg:mt-40 md:mt-28 mt-20"
 
 }: SellerClubSectionProps) {
-  const [bgImage, setBgImage] = useState('/assets/seller-club-mobile.webp');
+  const [bgImage, setBgImage] = useState('https://d2qlv5xtew5ayb.cloudfront.net/assets/seller-club-mobile.webp');
   const { shouldShowImage } = useSafariDetector();
 
   useEffect(() => {
     const handleResize = () => {
       setBgImage(
         window.innerWidth >= 768
-          ? '/assets/seller-club-bg.webp'
-          : '/assets/seller-club-mobile.webp'
+          ? 'https://d2qlv5xtew5ayb.cloudfront.net/assets/seller-club-bg.webp'
+          : 'https://d2qlv5xtew5ayb.cloudfront.net/assets/seller-club-mobile.webp'
       );
     };
 

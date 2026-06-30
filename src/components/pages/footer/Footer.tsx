@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
           {/* Logo */}
           <Link href={'/'} className="owner-inventery-footer__logo">
             <Image
-              src="/assets/owner-inventory-logo.svg"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owner-inventory-logo.svg"
               alt="Owner's logo"
               width={130}
               height={40}
@@ -92,7 +92,7 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
                 className="cursor-pointer w-7 h-7 md:w-[17px] md:h-[17px] lg:w-7 lg:h-7"
               >
                 <Image
-                  src={`/assets/footer/${social.platform}-logo.svg`}
+                  src={`https://d2qlv5xtew5ayb.cloudfront.net/assets/footer/${social.platform}-logo.svg`}
                   alt={`${social.platform} logo`}
                   width={28}
                   height={28}

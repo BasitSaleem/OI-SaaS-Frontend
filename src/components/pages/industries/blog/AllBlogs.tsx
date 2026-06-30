@@ -88,7 +88,7 @@ const AllBlogs: React.FC = () => {
                   px="px-1"
                 />
                 <Image
-                  src="/assets/header-images/search-icon.svg"
+                  src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/search-icon.svg"
                   alt="Search"
                   className="cursor-pointer"
                   width={16}

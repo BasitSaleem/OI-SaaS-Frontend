@@ -97,7 +97,7 @@ export const WAREHOUSES_FEATURE_CARDS: FeatureCardData[] = [
     id: "1",
     title: "Omnichannel Inventory and Warehouse Integration",
     description: "Owners Inventory syncs all aspects of warehouse operations. All inventory activity is updated in real-time on a single dashboard, from stock being ordered from suppliers, to moved between stores and dispatched to customers.",
-    imageSrc: "/assets/industries-pages/warehouses-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -129,7 +129,7 @@ export const WAREHOUSES_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The warehouse POS solution translates the warehouse activities into organized warehouse reports that display stock movement, fast-moving product, low stock alerts, order fulfillment rate, and inventory turnover.",
     subDescription: "Managers can determine which products need to be replenished, which products are overstocked, and what improvements can be made to the warehouse processes. This can minimize storage expenses, avert stockouts, and optimize overall performance.",
-    imageSrc: "/assets/industries-pages/warehouses-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -143,7 +143,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Product, raw material and stock quantities are automatically updated after each receiving, transfer, sale and dispatch. Real time inventory tracking helps warehouse managers to prevent stock shortage, overstocking, and stock discrepancies.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -151,7 +151,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The POS system supports the use of barcode scanning to speed the receiving, picking, packing and stock checking of products. Staff can complete warehouse tasks quickly and with minimal manual entry errors.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -159,7 +159,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Multiple warehouses and stock sections can be tracked from a single point of view: stock level, transfers, and movement. The system offers 100% visibility of all the warehouse locations in real-time.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -167,7 +167,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Orders can be received, packed, and processed on the POS system. The warehouse personnel can easily handle customer orders and minimize delays and shipping errors.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -175,7 +175,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Warehouse managers can generate purchase orders, monitor supplier transactions, and receive stock from suppliers from a single platform. The system makes the procurement process easy and enhances the planning of replenishment of the stock.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card5.webp",
   },
    {
     id: 6,
@@ -183,7 +183,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The user-friendly warehouse POS system allows managers to assign role-based permissions to employees.  Business owners have complete inventory permissions, reporting access, and operational settings.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -191,7 +191,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The mobile optimised warehouse interface ensures managers and staff have access to inventory data, monitor stock levels, process orders, and manage the warehouse from anywhere. The easy-to-use mobile dashboard provides flexibility, accelerates decision making and ensures seamless warehouse management. ",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -199,7 +199,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "The system automatically notifies managers when stock levels fall below minimum thresholds. This helps businesses reorder products on time and avoid operational disruptions.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card8.webp",
   },
   {
     id: 9,
@@ -207,7 +207,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Track warehouse performance through comprehensive reporting, which offers valuable information on inventory movement, stock value, quickly moving items, order fulfillment and operational efficiency.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card9.webp",
   },
   {
     id: 10,
@@ -215,7 +215,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     description:
       "Control stock, suppliers, warehouse processes, employees and reporting all from a single point, to boost productivity and make warehouse management easier.",
     imageSrc:
-      "/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card10.webp",
   },
 ];
 
@@ -269,7 +269,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Camden Foster",
     title: "Warehouse Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image61.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image61.webp",
     text: "Before using this system, we used to have mismatching inventory and late shipments, but with this system, our warehouse is now managed much more efficiently and organized.",
   },
   {
@@ -277,7 +277,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Sloane Harrington",
     title: "Inventory Control Specialist",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image60.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image60.webp",
     text: "We can now track every product movement in real time, which has greatly reduced stock errors and missing inventory.",
   },
   {
@@ -285,7 +285,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Teagan Calloway",
     title: "Warehouse Operations Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image61.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image61.webp",
     text: "Order processing is significantly faster now. Our staff can manage bulk shipments and dispatches without confusion.",
   },
   {
@@ -293,7 +293,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Archer Stone",
     title: "Distribution Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image62.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image62.webp",
     text: "Installation was straightforward and our warehouse staff adapted to this system easily. Everyday tracking of stock has become so much simpler.",
   },
   {
@@ -301,7 +301,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Maddox Pierce",
     title: "Supply Chain Director",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image63.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image63.webp",
     text: "We manage inventory across multiple storage locations, and this system keeps everything synchronized without extra manual work.",
   },
   {
@@ -309,7 +309,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Waverly Stone",
     title: "Logistics Coordinator",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image62.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image62.webp",
     text: "Our receiving and stock checking has been much easier with the barcode scanning feature and operations are smoother each day.",
   },
   {
@@ -317,7 +317,7 @@ export const WAREHOUSES_TESTIMONIALS = [
     name: "Brynn Holloway",
     title: "Warehouse General Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image63.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image63.webp",
     text: "This warehouse POS system fits perfectly with the way we work. It is reliable, fast, and keeps our inventory accurate at all times.",
   },
 ];
@@ -360,14 +360,14 @@ export const WAREHOUSES_KEY_FEATURES = [
     title: "Touchscreen Order & Billing",
     description:
       "Process customer orders quickly with customizable touchscreen menus and instant billing options.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/pos-banner.webp",
   },
   {
     id: "warehouses-stock-control",
     title: "Inventory and Stock Control",
     description:
       "Keep track of active product stock, SKU variants, and bundle packages. Avoid running out of best-sellers during high demand periods.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/products-banner.webp",
   },
   {
     id: "warehouses-vendor-mgmt",
@@ -375,7 +375,7 @@ export const WAREHOUSES_KEY_FEATURES = [
     description:
       "Manage supplier brands, track purchase order costs, issue POs, and monitor delivery arrivals.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/purchases-banner.webp",
   },
   {
     id: "warehouses-variants",
@@ -383,21 +383,21 @@ export const WAREHOUSES_KEY_FEATURES = [
     description:
       "Configure product SKUs, dimensions, unit types, and categories as structured attributes attached to base product listings.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/inventory-banner.webp",
   },
   {
     id: "warehouses-loyalty",
     title: "Customer & Order Programs",
     description:
       "Streamline repeat orders with integrated customer accounts, order history, and targeted communication campaigns.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/people-banner.webp",
   },
   {
     id: "warehouses-finances",
     title: "Shift Cash and Card Tracking",
     description:
       "Monitor order summaries, card processing, cash transactions, and shift handovers in real time.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/finance-banner.webp",
   },
   {
     id: "warehouses-ecommerce",
@@ -405,7 +405,7 @@ export const WAREHOUSES_KEY_FEATURES = [
     description:
       "Integrate online orders with your warehouse terminal, ensuring unified stock levels across all distribution channels.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/ecommerce-banner.webp",
   },
 ];
 
@@ -460,27 +460,27 @@ export const WAREHOUSES_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

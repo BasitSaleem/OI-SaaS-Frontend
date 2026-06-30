@@ -527,7 +527,7 @@ const NavItems = () => {
                       className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
                     >
                       <Image
-                        src="/assets/detail-icon.svg"
+                        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/detail-icon.svg"
                         alt="arrow-up"
                         width={12}
                         height={16}

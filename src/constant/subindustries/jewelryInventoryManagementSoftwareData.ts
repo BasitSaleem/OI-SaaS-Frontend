@@ -105,7 +105,7 @@ export const JEWELRY_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Our AI-powered inventory software helps jewelry stores manage sales across physical counters, custom orders, and digital channels. It ensures every order and sale updates the inventory accurately. The software minimizes manual errors in handling multiple orders from different platforms. It makes sure that accurate stock levels are shown on the dashboard for better visibility.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -140,7 +140,7 @@ export const JEWELRY_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Our inventory tracking system handles expensive jewelry item management by providing real-time analytics reports. These reports highlight demand patterns for different items such as gold, diamonds, and silver jewelry. It keeps track of best-selling products and dead stock. The system helps store owners restock inventory based on buyer demand and modern trends. Accurate decision-making helps promote sales and business growth.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -154,7 +154,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Jewelry consignments and vendor-delivered items are tracked separately. The system provides accurate details of each vendor and consignment. Ownership, commission percentages, and payment schedules are managed automatically, reducing miscommunication with suppliers and ensuring accurate stock and financial records.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -162,7 +162,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Each product is categorized by type, size, price, and collection.  Our software ensures accurate placement in displays, allowing staff to quickly find items and maintain a well-organized showcase. This improves customer experience and boosts sales.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -170,7 +170,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Jewelry items arriving from suppliers are logged immediately. Weights, certifications, and quality checks are recorded. The system updates inventory automatically, reducing manual errors and providing real-time visibility of stocks available for display or sale.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -178,14 +178,14 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The inventory control system records special orders or repair requests with all specifications, such as included engravings, gemstone selection, and delivery deadline. It tracks progress payments and order completion dates to maintain transparency. This keeps staff and customers updated with accurate order and repair details.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   // {
   //     id: 5,
   //     title: "Expense and Cash Flow Tracking",
   //     description:
   //         "You can see what you spend every day and track money coming in and going out. This helps you control your jewelry business finances.",
-  //     imageSrc: "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
+  //     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
   // },
   {
     id: 5,
@@ -193,7 +193,7 @@ export const JEWELRY_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Owners Inventory automatically analyzes daily sales, stock movements, product trends, and slow-moving items. It provides analytics reports to keep store owners updated. These reports help them make decisions based on actual data that proves beneficial for increasing sales and growing their business. It ensures that your store runs without any guesswork.",
     imageSrc:
-      "/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-inventory-management-software/key-features-section/key-features-card5.webp",
   },
 ];
 
@@ -240,21 +240,21 @@ export const JEWELRY_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Brielle Perry",
     title: "Jewelry Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image39.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image39.webp",
     text: "Tracking gold and diamond inventory used to be stressful. Now everything is clear, and we always know exactly what's in the stock.",
   },
   {
     id: "2",
     name: "Ryder Coleman",
     title: "Fine Jewelry Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image40.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image40.webp",
     text: "Managing custom orders has become much easier because of recorded details. Every order is now delivered on time.",
   },
   {
     id: "3",
     name: "Piper Russell",
     title: "Jewelry & Accessories Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image40.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image40.webp",
     text: "The system gave us a clear view of sales and stocks. It helps us make better purchasing decisions.",
   },
 ];
@@ -356,27 +356,27 @@ export const JEWELRY_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

@@ -21,7 +21,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
           {searchOpen ? <Image
             onClick={() => { setSearchOpen(false); setSearchQuery(""); }}
             id="crossIcon"
-            src="/assets/header-images/cross-btn.svg"
+            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/cross-btn.svg"
             alt="Close"
             className={`${searchOpen ? "block" : "hidden"} cursor-pointer`}
             width={16}
@@ -31,7 +31,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
 
 
             id="searchIcon"
-            src="/assets/header-images/search-icon.svg"
+            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/search-icon.svg"
             alt="Search"
             className={`${searchOpen ? "hidden" : "block"} cursor-pointer`}
             width={16}
@@ -52,7 +52,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
       <div className="relative group">
         <Link href="https://app.ownersinventory.com/">
           <Image
-            src="/assets/header-images/user.svg"
+            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/user.svg"
             alt="User"
             width={16}
             height={16}

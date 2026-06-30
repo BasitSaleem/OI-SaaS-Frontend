@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/reports-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/why-chose-banners/reports-whychose.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/hero-section-banners/reports-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/why-chose-banners/reports-whychose.webp";
 import {
   REPORTS_FAQS,
   REPORTS_FEATURES_CARDS,

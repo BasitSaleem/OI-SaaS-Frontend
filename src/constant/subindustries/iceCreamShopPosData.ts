@@ -104,7 +104,7 @@ export const ICE_CREAM_SHOP_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omnichannel Sales and Integration for Ice Cream Shops",
     description:
       "Owners Inventory links all sales points a shop uses into one. No matter if they are buying at the counter, ordering online, or seasonal retail items, everything is synchronized in one dashboard. Ice cream shop owners can use all of the sales channels without changing tools or manually updating records.",
-    imageSrc: "/assets/industries-pages/ice-cream-shop-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -141,7 +141,7 @@ export const ICE_CREAM_SHOP_FEATURE_CARDS: FeatureCardData[] = [
     subDescription:
       "Owners can identify which flavors are most popular, which add-ons generate the highest profit, and when demand is highest. This helps in planning production, reducing waste, and improving overall profitability.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -155,7 +155,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Ice cream flavors, toppings, beverages, and retail products are searchable instantly through barcode scanning or category-based selection. Staff can add products to orders without delays.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -163,7 +163,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Combo deals, multi-scoop orders, and fully customizable desserts are supported by the POS system. Personalized customer orders can be easily generated at checkout by staff.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -171,7 +171,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Customers can use multiple payment methods in a single transaction. The POS system is configured to handle payments during busy service times.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -179,7 +179,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Customer loyalty points are automatically added to an account after each purchase. All rewards and discounts are handled directly in the POS, without having to calculate them manually.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -187,7 +187,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Cashiers, servers, and managers have role-based access as per their roles. Owners have complete control over pricing, and discounts, reports, and inventory permissions.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -195,7 +195,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "The owner of an ice cream shop with more than one store can keep an eye on the sales data, stocks, and the movement of the stocks across all the stores simultaneously and in real time from a single place.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -203,7 +203,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "The easy-to-use POS interface allows employees to make orders quickly with little training. The system works well for both dine-in and takeaway settings.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -211,7 +211,7 @@ export const ICE_CREAM_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Monitor POS performance with detailed sales reports to help make better business decisions, including popular menu items, daily trends, and customer purchasing habits.",
     imageSrc:
-      "/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ice-cream-shop-pos/key-features-section/key-feature-card8.webp",
   },
 ];
 
@@ -258,28 +258,28 @@ export const ICE_CREAM_SHOP_TESTIMONIALS = [
     id: "1",
     name: "Colton Murphy",
     title: "Gelato Parlor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image28.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image28.webp",
     text: "Before this system, our checkout lines during weekends would be chaotic, but now everything is organized, no chaos and quick.",
   },
   {
     id: "2",
     name: "Aubrey Reed",
     title: "Ice Cream Parlor Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image29.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image29.webp",
     text: "We would constantly lose track of our stock for toppings and cones, but now it is automated and accurate.",
   },
   {
     id: "3",
     name: "Tristan Coleman",
     title: "Dessert Shop Operator",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image29.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image29.webp",
     text: "Our customer service experience is definitely enhanced with the rapid order fulfillment of custom orders.",
   },
   {
     id: "4",
     name: "Brayden Fisher",
     title: "Multi-Location Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image30.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image30.webp",
     text: "We found the system to be very easy to set up, our staff learned the system quickly, and the control of daily sales and stock was noticed immediately.",
   },
 ];
@@ -374,27 +374,27 @@ export const ICE_CREAM_SHOP_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

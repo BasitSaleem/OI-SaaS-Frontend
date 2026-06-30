@@ -232,7 +232,7 @@ const CheckoutContent = () => {
             style={
               {
                 ["--hero-bg" as any]:
-                  "url('/assets/home-page-images/hero-bg.webp')",
+                  "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-bg.webp')",
               } as React.CSSProperties
             }
           >
@@ -449,7 +449,7 @@ const CheckoutContent = () => {
 
                           {/* Squiggled Arrow pointing from Yearly to Badges */}
                           <Image
-                            src="/assets/owners-inventory-pricing/pricing-arrow.svg"
+                            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/pricing-arrow.svg"
                             alt=""
                             width={78}
                             height={30}

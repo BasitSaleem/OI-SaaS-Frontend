@@ -98,7 +98,7 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Retail stores operate across multiple sales channels, physical stores, online shops and mobile apps. Managing these channels need control over stock, prices and orders. A connected inventory system lets store owners see real-time stock updates no matter where the sale happens. It handles walk-in customers, online buyers and big orders from one platform.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -133,7 +133,7 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The point of sale system provides insights into sales, inventory trends and customer behavior. It analyzes which products sell the most and which ones do not sell well. These insights help retailers plan inventory, reduce stock and improve profitability.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -147,7 +147,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "We enable fast transactions with barcode scanning and automatic billing. This gives customers a smooth checkout experience. Our retail inventory management software helps with billing.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -155,7 +155,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "We help you track how much stock you have right now and keep accurate records of all your products. Our software is good for managing inventory.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -163,7 +163,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can create purchase orders, track when suppliers deliver and manage suppliers all in one place.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card3.webp",
   },
 
   {
@@ -172,7 +172,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can organize products by type, brand, size or category. This makes it easy for staff to find and manage products.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -180,7 +180,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "We help you store customers' purchase history and offer programs to keep them coming. Retail stores can use our software for customer management.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -188,7 +188,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can see what you spend every day and track money coming in and going out. This helps you control your business finances. Our software is good for tracking expenses in retail.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -196,7 +196,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can manage stock, sales and reports for multiple stores all in one place. Retail inventory management software helps with branch management.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -204,7 +204,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You get detailed reports on sales, stock performance and revenue. This helps you make decisions.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card8.webp",
   },
   {
     id: 9,
@@ -212,7 +212,7 @@ export const RETAIL_STORE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can decide who can do what in the system based on their job. This keeps things secure.",
     imageSrc:
-      "/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-inventory-management-software/key-features-section/key-features-card9.webp",
   },
 ];
 
@@ -259,21 +259,21 @@ export const RETAIL_STORE_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Declan Flores",
     title: "Interior Decor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image38.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image38.webp",
     text: "The way we operate in our store is much easier now. Billing is fast and inventory is always current. This system has made a tremendous difference in the way we conduct business in our retail store.",
   },
   {
     id: "2",
     name: "Nova Alvarez",
     title: "Home Decor & Retail Store Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image38.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image38.webp",
     text: "Before this system, we used to have stock errors and slow procedures; now all are recorded in real time and time saved and store management is a lot easier.",
   },
   {
     id: "3",
     name: "Paxton Russell",
     title: "Home Decor & Retail Store Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image39.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image39.webp",
     text: "We needed a system that could be able to control various products and different categories. This software does that perfectly well because it is easy to use and gives clear reports on a daily basis.",
   },
 ];
@@ -383,27 +383,27 @@ export const RETAIL_STORE_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

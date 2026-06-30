@@ -104,7 +104,7 @@ export const BARBER_SHOP_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omnichannel Sales and Integration for Barber Shop",
     description:
       "Owners Inventory connects every sales point a barber shop uses into one seamless system. Counter transactions, online payments, and retail product sales all feed into the same dashboard. Barber shop owners can manage every channel without switching between platforms or manually organizing records.",
-    imageSrc: "/assets/industries-pages/barber-shop-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -138,7 +138,7 @@ export const BARBER_SHOP_FEATURE_CARDS: FeatureCardData[] = [
       "The POS system turns daily transactional data into structured and precise reporting. These reports show service revenue, product sales, and sales trends over time.",
     subDescription:
       "It helps owners to determine which services are consistently in demand, which retail products generate the strongest margins, and where quieter periods fall. This helps business owners make informed decisions.",
-    imageSrc: "/assets/industries-pages/barber-shop-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -152,7 +152,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Every grooming product and retail item in the barber shop is searchable by barcode or SKU directly inside the POS. Staff add items to a transaction instantly without typing the product name or scrolling through long lists of items.",
     imageSrc:
-      "/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -160,7 +160,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     description:
       "The POS system automatically tracks client's loyalty points with every transaction. The loyalty programs are updated in real time against each client profile without needing anyone to calculate rewards manually.",
     imageSrc:
-      "/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -168,7 +168,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Clients paying with more than one payment method are handled within a single transaction, which increases the efficiency of the overall checkout process.",
     imageSrc:
-      "/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -176,7 +176,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     description:
       "With role-based access, every barber sees only what is relevant to their counter work while owners retain full control of financial data, discount settings, and inventory management.",
     imageSrc:
-      "/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -184,7 +184,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Barber shops operating across multiple locations can track inventory levels and product sales from a centralized view. Owners can monitor stock movements at each branch in real time without needing to visit it themselves.",
     imageSrc:
-      "/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card5.webp",
   },
 ];
 
@@ -231,49 +231,49 @@ export const BARBER_SHOP_TESTIMONIALS = [
     id: "1",
     name: "Savannah King",
     title: "Barber Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image20.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image20.webp",
     text: "Closing the transaction used to take forever. Now everything reconciles automatically and we reduced checkout delays by nearly 40%.",
   },
   {
     id: "2",
     name: "Paisley Brooks",
     title: "Grooming Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image21.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image21.webp",
     text: "Stock shortages mid-week were a regular problem. Since switching to Owners Inventory, our tracking has become far more accurate.",
   },
   {
     id: "3",
     name: "Cole Young",
     title: "Manager Barber Shop",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image19.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image19.webp",
     text: "The client profile management changed everything. Returning clients feel recognized the moment they sit down.",
   },
   {
     id: "4",
     name: "Wyatt Lopez",
     title: "Grooming Business Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image20.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image20.webp",
     text: "The setup of the system was quicker than I expected. Our team felt comfortable using the POS on the very first day. We can now easily identify where the stock went and which barber handles the most clients per month.",
   },
   {
     id: "5",
     name: "Riley Cooper",
     title: "Grooming Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image22.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image22.webp",
     text: "We carry over 50 grooming products. Tracking all of them was a terrible experience for us. This system handled our portfolio effortlessly without complicating things.",
   },
   {
     id: "6",
     name: "Jaxon Miller",
     title: "Manager Barber Shop",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image21.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image21.webp",
     text: "Our payment processing is now faster, and clients don't have to wait. This alone made the switch worth it. We have saved 5 hours per week with efficient features of POS.",
   },
   {
     id: "7",
     name: "Ryan Bennett",
     title: "Grooming Business Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image22.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image22.webp",
     text: "The POS fits how our barber shop runs. It is simple, fast, and reliable for everyday tasks.",
   },
 ];
@@ -368,27 +368,27 @@ export const BARBER_SHOP_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

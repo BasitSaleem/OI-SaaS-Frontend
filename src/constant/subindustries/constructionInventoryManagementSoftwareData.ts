@@ -105,7 +105,7 @@ export const CONSTRUCTION_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Every material purchase, supplier payment, and stock adjustment made through Owners Inventory is recorded against the project it belongs to. Project owners get a clear view of total spending across every active site without pulling records from separate systems. All billing activity sits in one place, so comparing actual costs against the project budget is straightforward at any point during active work, not just at the end.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -129,7 +129,7 @@ export const CONSTRUCTION_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory connects with accounting software so material costs, supplier invoices, and purchase order data flow directly into your financial records without manual re-entry. When a purchase order is completed and a delivery is confirmed, the transaction is available to sync with your accounting system straight away. This keeps project accounts accurate and reduces the time your team spends reconciling inventory records against financial statements at the end of each month.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -151,7 +151,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Construction sites deal with hundreds of different materials, tools, and equipment at any given time. Owners Inventory lets you organize everything by category, type, unit of measurement, or location. Finding a specific item takes seconds instead of searching through a spreadsheet. Whether it's structural steel, electrical fittings, or heavy equipment, every item sits in its own category with its own stock record.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -159,7 +159,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Every material and tool can be assigned a barcode or SKU inside the system. Scanning an item at the point of receiving or issuing it updates the stock count instantly. This removes the need for manual entry and the errors that come with it. Items are tracked from the moment they arrive on site to the moment they're used, transferred, or written off.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -167,7 +167,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Each material can be given a minimum stock level. When quantities drop below that level, the system sends an automatic alert before the item runs out. Project managers get notified in time to place an order without stopping work. It replaces the habit of ordering in bulk just to avoid running short.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -175,7 +175,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "When materials are damaged, returned, or written off, the adjustment is recorded with a reason, date, and reference. Nothing disappears from the records without a trace. Every correction is logged, so your stock count stays accurate, and any audit trail is ready when it is needed.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -183,7 +183,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Materials can be moved between job sites, warehouses, or storage yards using transfer orders that the system tracks at every step. If one site has unused stock and another is running low, the transfer is initiated and recorded from a single dashboard. No reconciling spreadsheets between locations. No phone calls to confirm what was sent.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -191,7 +191,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Not everyone on a construction project needs access to the same information. Site supervisors, procurement staff, and project owners can each be given different levels of access. A site worker can log material usage without being able to edit purchase orders. Sensitive financial data stays visible only to the people who need it.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -199,7 +199,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Adding a full material list to the system doesn't have to be done one item at a time. You can upload an Excel or CSV file to import products, update prices, or add new categories in a single step. This is useful at the start of a new project when a large bill of materials needs to be loaded quickly.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -207,7 +207,7 @@ export const CONSTRUCTION_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The reporting dashboard shows material consumption rates, stock value by category, and total expenses filtered by site or date range. Project managers can see which materials are being used fastest and which categories are running over their allocated budget. Reports are pulled from live data, so the numbers reflect what is actually happening on site rather than what was last manually entered into a spreadsheet.",
     imageSrc:
-      "/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/construction-inventory-management-software/key-features-section/key-features-card8.webp",
   },
 ];
 
@@ -272,28 +272,28 @@ export const CONSTRUCTION_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Hudson Lewis",
     title: "General Contractor",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image44.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image44.webp",
     text: "We were ordering the same materials twice because no one could see what was already on site. Within the first month of using Owners Inventory, we cut duplicate orders by more than half. That alone saved us around $4,000 on a single project.",
   },
   {
     id: "2",
     name: "Weston Scott",
     title: "Construction Project Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image45.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image45.webp",
     text: "We had a theft problem we couldn't pin down. Tools and copper wire kept going missing. After we started logging every item in and out through Owners Inventory, we identified the pattern within two weeks and recovered over $2,000 worth of equipment.",
   },
   {
     id: "3",
     name: "Avery Clark",
     title: "Multi-Site Construction Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image44.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image44.webp",
     text: "I manage four active sites, and I used to spend my mornings calling supervisors for stock updates. Now I check everything from my phone in under five minutes. Last week I spotted a site running low on rebar and had a delivery arranged before work started that morning.",
   },
   {
     id: "4",
     name: "Layla Morgan",
     title: "Procurement Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image45.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image45.webp",
     text: "Our purchase orders were a mess. Same orders going to two suppliers, missed deliveries, no approval process. We haven't had a duplicate order in three months since switching to Owners Inventory. The approval workflow alone has saved us hours of back and forth every week.",
   },
 ];
@@ -400,27 +400,27 @@ export const CONSTRUCTION_INVENTORY_TOOLS_DATA = {
     // {
     //   id: 1,
     //   name: "Shopify",
-    //   image: "/assets/home-page-images/tools-section/shopify.svg",
+    //   image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     // },
     // {
     //   id: 2,
     //   name: "WooCommerce",
-    //   image: "/assets/home-page-images/tools-section/woocomerce.svg",
+    //   image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     // },
     {
       id: 1,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 2,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 3,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

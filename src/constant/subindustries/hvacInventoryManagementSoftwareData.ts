@@ -105,7 +105,7 @@ export const HVAC_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory connects every channel your HVAC business uses to manage parts into one system. Stock levels, purchase records, and order data stay consistent whether a transaction happens at the warehouse, through a supplier, or via a field request.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -134,7 +134,7 @@ export const HVAC_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory converts daily parts usage and purchasing data into clear, readable reports. Managers can identify fast-moving components, slow stock that is tying up capital, and seasonal demand patterns over time. That data supports smarter purchasing decisions, reduces unnecessary stock holding, and keeps parts costs proportional to actual job volume.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -148,7 +148,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "HVAC inventory covers a wide range of SKUs, from low-cost consumables like capacitors and filters to higher-value components such as compressors and heat exchangers. Every item can be organized by category, unit of measurement, storage location, and stock priority.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -156,7 +156,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Each part is assigned a barcode or SKU inside the system. Scanning at the point of receipt or issue updates the stock count without manual entry. From arrival at the warehouse to installation on a service call, every part carries a complete movement record.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -164,7 +164,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Service vehicles are managed as separate stock locations within the same account. Managers can see what is in each van, what has been consumed, and what requires replenishment alongside warehouse levels, all from a single screen.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -172,7 +172,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Parts used on a job are recorded against the corresponding work order at the point of issue. Service history ties directly to parts consumption, which lets managers identify which job types draw the heaviest stock and build purchasing schedules around actual patterns rather than assumptions.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -180,7 +180,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Minimum stock thresholds are monitored continuously. When a part reaches its reorder point, the system triggers an alert or a purchase order depending on how the account is configured. High-frequency parts can be set to reorder automatically so the restocking process does not depend on someone noticing the shortage manually.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -188,7 +188,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "A full parts catalog can be loaded from an Excel or CSV file in one upload. Pricing updates, new categories, and additional items can be added the same way. This is particularly useful when onboarding a new service territory or migrating from an older tracking system.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -196,7 +196,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The reporting dashboard shows consumption rates by part, stock value by category, purchasing costs by supplier, and emergency order frequency. Managers can identify which items move fastest, which are building up as dead stock, and where the parts budget is being stretched by unplanned purchases.",
     imageSrc:
-      "/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card7.webp",
   },
 ];
 
@@ -261,21 +261,21 @@ export const HVAC_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Everett Shaw",
     title: "HVAC Service Manager, Multi-Van Operation",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image69.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image69.webp",
     text: "We were running stockout calls three or four times a week. Technicians would show up at a job and the part simply was not in the van. After we set up reorder points in the Owners Inventory for every high-use part, our first-time fix rate moved from around 74% to 91% within a few months. The unplanned return trips have nearly stopped.",
   },
   {
     id: "2",
     name: "Colt Ramsey",
     title: "HVAC Business Owner, Residential and Light Commercial",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image70.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image70.webp",
     text: "Emergency parts orders were a weekly expense I had just accepted as part of running the business. Supplier premiums and rush delivery fees were adding up to thousands every quarter. Since we started using Owners Inventory to track minimum stock levels, we have not placed an emergency order in over six weeks.",
   },
   {
     id: "3",
     name: "Finley Cross",
     title: "Operations Lead, Commercial HVAC Contractor",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image69.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image69.webp",
     text: "We had parts on the warehouse shelves that had not moved in months. Nobody had checked actual job consumption before placing orders, so we kept restocking items we did not need. Owners Inventory gave us the usage data to see exactly what was sitting idle. We cleared the dead stock and reinvested that capital into parts that actually moved, and our carrying costs came down within the first quarter.",
   },
 ];
@@ -386,12 +386,12 @@ export const HVAC_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 2,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
    
   ],

@@ -114,7 +114,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         return value ? (
           <div className="flex items-center justify-center">
             <Image
-              src="/assets/owners-inventory-pricing/compare-feature/tick-icon.svg"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/compare-feature/tick-icon.svg"
               className="xl:h-[28px] md:h-6 md:w-[18px] w-3 h-[24px]"
               alt="Tick icon"
               width={28}
@@ -141,14 +141,14 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
         >
           Compare Feature List
           <Image
-            src="/assets/owners-inventory-pricing/compare-feature/arrow-down.svg"
+            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/compare-feature/arrow-down.svg"
             alt="Dropdown icon"
             width={20}
             height={20}
             className={`arrow-down ${isVisible ? "hidden" : "block"}`}
           />
           <Image
-            src="/assets/owners-inventory-pricing/compare-feature/arrow-up.svg"
+            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/compare-feature/arrow-up.svg"
             alt="Dropdown icon"
             width={20}
             height={20}
@@ -244,7 +244,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                                     }
                                   >
                                     <Image
-                                      src="/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
+                                      src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/compare-feature/info-icon.svg"
                                       className="md:h-3 md:w-3 h-[10px] w-[10px] cursor-pointer"
                                       alt="Info Icon"
                                       width={12}
