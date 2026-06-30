@@ -477,7 +477,7 @@ const Page = () => {
         </div>
         <IndustriesHardwareControl
           title="Improve Inventory Accuracy and Warehouse Efficiency"
-          description="Our warehouse pos system streamlines inventory management, order fulfillment, stock monitoring and operational reporting on a single platform designed for efficient, effective and reliable warehouse operations day after day. "
+          description="Our warehouse POS system streamlines inventory management, order fulfillment, stock monitoring and operational reporting on a single platform designed for efficient, effective and reliable warehouse operations day after day. "
           ctaDesc="Start Today"
         />
       </div>
