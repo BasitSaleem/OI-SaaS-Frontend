@@ -1,30 +1,25 @@
-import AllBlogs from '@/components/pages/industries/blog/AllBlogs'
-import CalltoActionBottom from '@/components/pages/landing-page/CalltoActionBottom'
-import FaqSection from '@/components/pages/landing-page/FAQSection'
-import HeroSection from '@/components/pages/landing-page/HeroSection'
-import React from 'react'
+import LatestArticles from '@/components/pages/blog/LatestArticles'
+import IndustriesCallToAction from '@/components/pages/industries-page/IndustriesCallToAction'
+import BlogHero from '@/components/pages/blog/BlogHero'
+import TrendingNow from '@/components/pages/blog/TrendingNow'
 
 const page = () => {
-
   return (
     <>
-      <HeroSection
-        title="Discover trends, updates, and knowledge to inspire your daily journey."
-        description="Join our community and never miss out on fresh updates."
-        showButtons={false}
-        showSubscribe={true}
-        heroHeight="lg:h-[700px]"
-        heroOverflow="overflow-y-hidden"
-        variant="animation2"
-      />
+      <BlogHero />
 
-      <AllBlogs />
-
-      <div className="lg:mt-[100px] md:mt-40 mt-28">
-        <FaqSection />
+      <div className="lg:mt-[100px] md:mt-20 mt-16">
+        <TrendingNow />
       </div>
-      <CalltoActionBottom />
 
+      <div className="lg:mt-[100px] md:mt-20 mt-16">
+        <LatestArticles />
+      </div>
+      <IndustriesCallToAction
+        title="Stay Ahead with Smart Insights"
+        description="Get expert inventory management tips, industry trends, and exclusive resources delivered straight to your inbox every week. No spam, just value."
+        ctaDesc="Get Started Instantly"
+      />
     </>
   )
 }

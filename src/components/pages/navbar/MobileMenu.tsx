@@ -2,12 +2,11 @@
 "use client";
 
 import Image from "next/image";
-import { Children, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import { createPortal } from "react-dom";
 import { useScrollLockEffect } from "@/context/ScrollLockContext";
 import { companyItems } from "./dropdownItems/Companylist";
-import { title } from "process";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -18,7 +17,6 @@ import {
   industriesItems,
   industryDetailsMap,
   industryCategories,
-  IndustryCategory,
 } from "./dropdownItems/IndustryItemslist";
 import {
   FeatureList,
@@ -303,7 +301,7 @@ export default function OffcanvasMenu({
                 Pricing
               </Link>
             </li>
-            {/* <li className={listItem}>
+            <li className={listItem}>
               <div className={navButton}>
                 <Link
                   href="/resources"
@@ -325,7 +323,7 @@ export default function OffcanvasMenu({
                   />
                 </button>
               </div>
-            </li> */}
+            </li>
             <li className={listItem}>
               <div className={navButton}>
                 <Link

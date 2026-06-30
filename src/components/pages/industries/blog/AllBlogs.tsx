@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { blogData } from '@/constant/blogData/blogData'
 import FeatureCard from '../../features-page/FeatureCard'
 import SmallTabs from '@/components/tabs/SmallTabs'
-import InputField from '@/components/form-fields/InputField'
 import Image from 'next/image'
 
 const layoutClasses = [
@@ -79,20 +78,18 @@ const AllBlogs: React.FC = () => {
               Blogs
             </h1>
             <div className="w-full md:w-auto max-w-xl mt-4 md:mt-0">
-              <div className="flex items-center bg-white px-3 rounded-full overflow-hidden shadow-sm">
-                <InputField
-                  placeholder="Search here..."
-                  type="email"
-                  rounded="left"
-                  py="py-[10px]"
-                  px="px-1"
-                />
+              <div className="flex items-center gap-3 bg-white border border-[#E5E7EB] px-4 py-3 rounded-full shadow-[0_2px_12px_0_rgba(121,92,245,0.08)] hover:border-[#795CF5] transition-colors duration-200">
                 <Image
                   src="/assets/header-images/search-icon.svg"
                   alt="Search"
-                  className="cursor-pointer"
+                  className="flex-shrink-0"
                   width={16}
-                  height={12}
+                  height={16}
+                />
+                <input
+                  type="text"
+                  placeholder="Search articles, topics or keywords..."
+                  className="flex-1 bg-transparent text-sm font-['Onest'] text-[#231F20] placeholder:text-[#9CA3AF] outline-none min-w-0"
                 />
               </div>
             </div>

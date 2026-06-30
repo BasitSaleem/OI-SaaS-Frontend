@@ -34,7 +34,7 @@ const NavItems = () => {
   const [selectedIndustryKey, setSelectedIndustryKey] =
     useState("bakery-pos-system");
   const [selectedResourceKey, setSelectedResourceKey] =
-    useState<string>("learning");
+    useState<string>("blog");
 
   const [selectedCompanyKey, setSelectedCompanyKey] =
     useState<string>("About");
@@ -481,7 +481,7 @@ const NavItems = () => {
         </li>
 
         {/* RESOURCES DROPDOWN */}
-        {/* <NavDropdown
+        <NavDropdown
           label="Resources"
           isOpen={openMenu === "resources"}
           onOpen={() => open("resources")}
@@ -489,84 +489,39 @@ const NavItems = () => {
           onToggle={() => toggle("resources")}
         >
           <div className="h-2 bg-transparent"></div>
-          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white xl:w-[1220px] lg:w-[950px] md:w-[700px] rounded-2xl shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-[450px] overflow-hidden">
-           
-            <div
-              className={`overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[var(--border-muted)] scrollbar-track-transparent ${
-                resourcesDetailsMap[selectedResourceKey]
-                  ? "md:col-span-9 col-span-12"
-                  : "col-span-12"
-              }`}
-            >
-              <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 content-start">
+          <div className="grid grid-cols-12 gap-6 p-10 mt-2 mx-auto bg-white rounded-2xl shadow-[0_0_20px_0_rgba(var(--text-dark-rgb),0.1)] h-auto overflow-hidden">
+            <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[var(--border-muted)] scrollbar-track-transparent col-span-12">
+              <div className="grid grid-cols-2 min-w-[600px] gap-6 content-start">
                 {resourcesItems.map((item) => (
-                  <div
-                    key={item.key} 
-                    className={`flex items-center gap-2 px-3 py-4 border rounded-xl ${
-                      selectedResourceKey === item.key
-                        ? "border-[var(--primary-purple)] bg-gray-100"
-                        : "border-[var(--border-muted)]"
-                    } hover:bg-gray-100`}
+                  <Link
+                    key={item.title}
+                    href={`/resources/${item.key.toLowerCase()}`}
+                    className="flex items-center gap-2 px-4 py-4 border border-[var(--border-muted)] rounded-xl hover:bg-gray-100 hover:border-[var(--primary-purple)]"
+                    onMouseEnter={() => setSelectedResourceKey(item.key)}
+                    onClick={close}
                   >
-                    <button
-                      onClick={() => setSelectedResourceKey(item.key)}
-                      className="flex items-center gap-2 w-[80%]"
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={16}
+                      height={16}
+                    />
+                    <span
+                      className={`text-sm font-['Onest'] text-left text-[var(--text-dark)]
+                    ${selectedResourceKey === item.key
+                          ? "font-bold"
+                          : "font-medium"
+                        }
+                    `}
                     >
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={16}
-                        height={16}
-                      />
-                      <span className="text-sm font-medium text-left text-[var(--text-dark)]">
-                        {item.title}
-                      </span>
-                    </button>
-                    <Link
-                      href={`/resources/${item.key.toLowerCase()}`}
-                      className="w-[20%] border-l-2 flex items-center justify-end border-gray-300"
-                    >
-                      <Image
-                        src="/assets/detail-icon.svg"
-                        alt="arrow-up"
-                        width={12}
-                        height={16}
-                        priority
-                        className="h-4 w-3"
-                      />
-                    </Link>
-                  </div>
+                      {item.title}
+                    </span>
+                  </Link>
                 ))}
               </div>
             </div>
-
-          
-            {resourcesDetailsMap[selectedResourceKey] && (
-              <div className="hidden md:block col-span-3 border-l border-[var(--border-muted)] pl-4 overflow-y-auto">
-                <p className="mb-4 text-xs font-bold font-['Onest'] text-[var(--text-dark)]">
-                  {
-                    resourcesItems.find((i) => i.key === selectedResourceKey)
-                      ?.title
-                  }
-                </p>
-                <ul className="space-y-0">
-                  {resourcesDetailsMap[selectedResourceKey].map((item) => (
-                    <li key={item}>
-                      {" "}
-                     
-                      <a
-                        href="#"
-                        className="text-xs font-normal leading-9 text-[var(--text-dark)] font-['Onest'] hover:text-gray-400"
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
-        </NavDropdown> */}
+        </NavDropdown>
 
         {/* COMPANY DROPDOWN */}
         <NavDropdown
