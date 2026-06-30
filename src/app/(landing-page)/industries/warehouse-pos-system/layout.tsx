@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "best warehouse POS system"
   ],
   alternates: {
-    canonical: "https://ownersinventory.com/industries/warehouses-pos-system",
+    canonical: "https://ownersinventory.com/industries/warehouse-pos-system",
   },
 };
 

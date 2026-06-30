@@ -261,8 +261,8 @@ export const industriesItems: IndustryItem[] = [
     type: 'pos',
   },
   {
-    key: 'warehouses-pos-system',
-    title: 'Warehouses POS System',
+    key: 'warehouse-pos-system',
+    title: 'Warehouse POS System',
     icon: "/assets/header-dropdown-images/industries-dropdown/pos-system-for-warehouse.svg",
     category: 'wholesale',
     type: 'pos',
