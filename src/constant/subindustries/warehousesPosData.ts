@@ -220,7 +220,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
 ];
 
 export const WAREHOUSES_WORKFLOW_DATA = {
-  heading: "Workflow of Owners Inventory POS for Warehouses",
+  heading: "Workflow of Owners Inventory POS for Warehouse",
   paragraph:
     "We have an integrated warehouse POS which is designed to cater large inventories, rapid turnover, and precise order processing. The system ensures that the warehouse functions smoothly and efficiently.",
   steps: [
@@ -267,7 +267,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "1",
     name: "Camden Foster",
-    title: "Pet Store Owner",
+    title: "Warehouse Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image61.webp",
     text: "Before using this system, we used to have mismatching inventory and late shipments, but with this system, our warehouse is now managed much more efficiently and organized.",
@@ -275,7 +275,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "2",
     name: "Sloane Harrington",
-    title: "Pet Supply Retailer",
+    title: "Inventory Control Specialist",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image60.webp",
     text: "“We can now track every product movement in real time, which has greatly reduced stock errors and missing inventory.",
@@ -283,7 +283,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "3",
     name: "Teagan Calloway",
-    title: "Multi-Store General Manager",
+    title: "Warehouse Operations Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image61.webp",
     text: "Order processing is significantly faster now. Our staff can manage bulk shipments and dispatches without confusion.",
@@ -291,7 +291,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "4",
     name: "Archer Stone",
-    title: "Pet Boutique Owner",
+    title: "Distribution Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image62.webp",
     text: "Installation was straightforward and our warehouse staff adapted to this system easily. Every day tracking of stock has become so much simpler.",
@@ -299,7 +299,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "5",
     name: "Maddox Pierce",
-    title: "Pet Store Owner",
+    title: "Supply Chain Director",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image63.webp",
     text: "We manage inventory across multiple storage locations, and this system keeps everything synchronized without extra manual work.",
@@ -307,7 +307,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "6",
     name: "Waverly Stone",
-    title: "Pet Supply Retailer",
+    title: "Logistics Coordinator",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image62.webp",
     text: "Our receiving and stock checking has been much easier with the barcode scanning feature and operations are smoother each day.",
@@ -315,7 +315,7 @@ export const WAREHOUSES_TESTIMONIALS = [
   {
     id: "7",
     name: "Brynn Holloway",
-    title: "Multi-Store General Manager",
+    title: "Warehouse General Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image63.webp",
     text: "This warehouse POS system fits perfectly with the way we work. It is reliable, fast, and keeps our inventory accurate at all times.",

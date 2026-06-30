@@ -406,7 +406,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Appliance Store POS System for Faster Sales and Better Inventory Control"
-          description= "The Appliance Store Point of Sale System allows you to sell appliances faster and manage your inventory more effectively. Without a proper point-of-sale solution, appliance stores can suffer from stock problems, slow sales processing, pricing errors and problems with selling high dollar products."
+          description= "The Appliance Store Point of Sale System allows you to sell appliances faster and manage your inventory more effectively. Without the right point-of-sale system, appliance stores struggle with stock inaccuracies, slow billing, pricing errors, and managing warranties across hundreds of high-value products."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"
@@ -452,7 +452,7 @@ const Page = () => {
         <SecurityCompliance
           title="Security and Role-Based Access"
           description="Different access levels can be assigned within the system and can be provided to the users based on their roles and responsibilities. Appropriate access can be granted to each member of the sales staff, store managers, accounting teams, inventory controllers and business owners to ensure security and operational control."
-          secondDescription="This helps to protect sensitive business information, restrict unauthorized editing or changes, and enable correct record keeping throughout the organisation."
+          secondDescription="This helps to protect sensitive business information, restrict unauthorized editing or changes, and enable correct record keeping throughout the organization."
         />
 
         <ToolsSection
@@ -485,7 +485,7 @@ const Page = () => {
         </div>
         <IndustriesHardwareControl
           title= "Power Your Appliance Store with Smarter Inventory Management"
-          description= "Control inventory, manage sales, follow warranties, coordinate suppliers and track performance, through a single POS solution designed to help your business grow."
+          description= "Control inventory, manage sales, track warranties, coordinate suppliers, and track performance, through a single POS solution designed to help your business grow."
           ctaDesc="Start Today"
         />
       </div>

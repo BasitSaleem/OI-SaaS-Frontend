@@ -242,7 +242,7 @@ export const OPTICAL_LAB_INVENTORY_TESTIMONIALS = [
     name: "Sterling Cross",
     title: "Lab Director",
     image: "/assets/industries-pages/industries-testimonial-images/boy-image71.webp",
-    text: "The inventory tracking system is highly effective in ensuring proper stock of lenses and frames at all times. We no longer face unforeseen shortages",
+    text: "The inventory tracking system is highly effective in ensuring proper stock of lenses and frames at all times. We no longer face unforeseen shortages.",
   },
   {
     id: "3",

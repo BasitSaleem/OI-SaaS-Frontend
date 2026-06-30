@@ -99,17 +99,17 @@ export const PET_STORE_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "POS Counter Sales",
         listdescription:
-          "All the transactions made on the Pet Store counter are reflected in the system in real time. The system automatically updates inventory after each purchase and also records the customer's purchase history, as well as loyalty points, with their profile without having to manually input any data by staff.",
+          "All the transactions made on the pet store counter are reflected in the system in real time. The system automatically updates inventory after each purchase and also records the customer's purchase history, as well as loyalty points, with their profile without having to manually input any data by staff.",
       },
       {
         listheading: "Online and In-Store Order Sync",
         listdescription:
-          "Both shop and online sales channels connect to a live inventory when integrated with an online store. This will not oversell and keeps stocks accurate throughout all platforms.",
+          "Both shop and online sales channels connect to a live inventory when integrated with an online store. This prevents overselling and keeps stocks accurate throughout all platforms.",
       },
       {
         listheading: "Unified Sales Dashboard",
         listdescription:
-          "This is on a single dashboard and shows all transactions – in store sales, online orders and bulk buying. This enables store owners to keep an eye on real-time performance without having to switch between systems.",
+          "A single dashboard display all transactions - in store sales, online orders and bulk buying. This enables store owners to keep an eye on real-time performance without having to switch between systems.",
       },
     ],
   },
@@ -117,7 +117,7 @@ export const PET_STORE_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Analytics and Reporting",
     description:
-      "It offers comprehensive information on sales trends, customer behavior, and inventory performance. Owners and managers of pet stores can easily determine what toys are popular, which ones aren't moving and how the store is doing overall throughout the day to make business decisions.",
+      "It offers comprehensive information on sales trends, customer behavior, and inventory performance. Owners and managers of pet stores can easily determine what toys are popular, which ones aren't moving, and monitor daily store performance — all in one place to make business decisions.",
     imageSrc: "/assets/industries-pages/pet-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
@@ -387,13 +387,13 @@ export const PET_STORE_TESTIMONIAL_FEATURES = [
     id: "3",
     title: "No Hardware Dependency",
     description:
-      "Our system is not an expensive system which needs hardware set up or any binding contract, it is compatible with your current system. No extra barcode scanners or equipment upgrades required.",
+      "Owners Inventory works with your existing equipment and requires no expensive hardware setup or long-term contracts. No extra barcode scanners or equipment upgrades required.",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
     title: "Expiry and Stock Awareness",
-    description: "There are times when products such as pet food and health care products will expire. The system has a capacity for expiry and batch tracking to enable proper rotation of the stock, reduce the waste and ensure the product quality.",
+    description: "Pet food and healthcare products have expiration dates that require careful tracking. The system has a capacity for expiry and batch tracking to enable proper rotation of the stock, reduce the waste and ensure the product quality.",
     icon: "testWhychoseIcon4",
   },
   {
@@ -413,7 +413,7 @@ export const PET_STORE_TESTIMONIAL_FEATURES = [
 
 export const PET_STORE_TOOLS_DATA = {
   heading: "Integration and Tools",
-  paragraph: "It seamlessly connects to tools such as Shopify, WooCommerce, QuickBooks, and payment gateways. This allows for seamless data transfer and synchronization with sales, accounting, and marketing tools, eliminating the need for manual data entry and duplication.",
+  paragraph: "Owners Inventory connects with platforms including Shopify, WooCommerce, QuickBooks, and payment gateways. This allows for seamless data transfer and synchronization with sales, accounting, and marketing tools, eliminating the need for manual data entry and duplication.",
   tools: [
     {
       id: 1,
