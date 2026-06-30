@@ -4,7 +4,7 @@ import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFe
 // ─── Appliance Store POS — UnifiedPlatform Section ──────────────────────────
 export const APPLIANCE_STORE_UNIFIED_HEADING = "Challenges That Appliance Store Owners Face Today";
 
-export const APPLIANCE_STORE_UNIFIED_PARAGRAPH = "Operating an appliance store without a computer system poses a number of operational issues. These are some of the most frequently encountered problems that appliance retailers encounter.";
+export const APPLIANCE_STORE_UNIFIED_PARAGRAPH = "Operating an appliance store without a dedicated POS system creates daily operational problems. These are some of the most frequently encountered problems that appliance retailers encounter.";
 
 export const APPLIANCE_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -80,13 +80,13 @@ export const APPLIANCE_STORE_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Automated Stock Replenishment",
     description:
-      "Inventory alerts notify managers when inventory levels reach predetermined limits. This enables businesses to place their products in orders in time and have an optimum stock level.",
+      "Inventory alerts notify managers when inventory levels reach predetermined limits. This enables businesses to reorder stock on time and maintain optimal inventory levels.",
   },
   {
     id: "6",
     icon: "whychoseIcon6",
     title: "Real-Time Reports and Business Insights",
-    description: "The system offers comprehensive reports on sales performance, inventory value, popular items, profit margin, customer buying, and stock movement.",
+    description: "The system offers comprehensive reports on sales performance, inventory value, profit margin, customer purchase history, and stock movement.",
   },
 ];
 
@@ -279,7 +279,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     title: "Multi-Branch Operations Director",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image65.webp",
-    text: "We can instantly see the availability of products and the inventory level, which has helped us not have to worry about running out of products and have great customer service.",
+    text: "We can see product availability and stock levels instantly. We no longer worry about running out of stock, and our customer service has improved as a result.",
   },
   {
     id: "3",
@@ -303,7 +303,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     title: "Showroom Sales Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/boy-image66.webp",
-    text: "There are a few appliance stores in our business and this system has helped us to have the same inventory in all our stores.",
+    text: "We have a few appliance store locations and this system keeps our inventory synchronized and visible across all of them from one place.",
   },
   {
     id: "6",
@@ -311,7 +311,7 @@ export const APPLIANCE_STORE_TESTIMONIALS = [
     title: "Operations Manager",
     image:
       "/assets/industries-pages/industries-testimonial-images/girl-image66.webp",
-    text: "Warranty tracking is now much more organised and we have the ability to easily access customer purchase records and offer improved after-sales service.",
+    text: "Warranty tracking is now much more organized and we have the ability to easily access customer purchase records and offer improved after-sales service.",
   },
   {
     id: "7",

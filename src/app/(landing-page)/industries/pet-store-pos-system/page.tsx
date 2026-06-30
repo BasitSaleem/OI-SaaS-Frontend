@@ -394,7 +394,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Pet Store POS System for Smarter Inventory and Better Pet Care"
-          description="Pet stores must constantly manage their stock of food, grooming products, toys, health products, and other essentials while maintaining customer trust and encouraging repeat purchases. Owners Inventory software offers a dedicated Pet Store Point of Sale solution to monitor real-time inventory, speed up the checkout process and accurately manage all products."
+          description="Pet stores must constantly manage their stock of food, grooming products, toys, health products, and other essentials while maintaining customer trust and encouraging repeat purchases. Owners Inventory software offers a dedicated pet store point of sale solution to monitor real-time inventory, speed up the checkout process and accurately manage all products."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
@@ -472,7 +472,7 @@ const Page = () => {
         </div>
         <IndustriesHardwareControl
           title="The Smartest Move for Your Pet Business"
-          description="Stop relying on outdated tools and disconnected systems. Get a faster, more efficient way to manage the shelves, customers and operations for your pet shop!"
+          description="Stop relying on outdated tools and disconnected systems. Get a faster, more efficient way to manage the shelves, customers and operations for your pet shop."
           ctaDesc="Start Today"
         />
       </div>
