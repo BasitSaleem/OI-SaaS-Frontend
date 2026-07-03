@@ -10,7 +10,6 @@ import CaseStudyCard from "./CaseStudyCard";
 export interface CaseStudy {
   id: string;
   image: string;
-  backgroundImage: string;
   ctaText: string;
   slug?: string;
   founderQuote?: {

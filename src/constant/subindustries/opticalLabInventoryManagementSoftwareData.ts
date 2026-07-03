@@ -218,7 +218,7 @@ export const OPTICAL_LAB_INVENTORY_WORKFLOW_DATA = {
 };
 
 export const OPTICAL_LAB_INVENTORY_TESTIMONIAL_DATA = {
-  heading: "The POS Reviews: What Our Clients Say",
+  heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",
   secondHeading: "Manage Your Optical Lab Efficiently",
   secondDescription:
@@ -333,20 +333,20 @@ export const OPTICAL_LAB_INVENTORY_TOOLS_DATA = {
   tools: [
     {
       id: 1,
-      name: "Shopify",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
+      name: "Salesforce",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/salesforce.svg",
     },
     {
       id: 2,
-      name: "WooCommerce",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
+      name: "Mailchimp",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/mailchimp.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
       image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
-    {
+    {  
       id: 4,
       name: "Xero",
       image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",

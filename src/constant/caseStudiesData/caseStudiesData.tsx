@@ -43,7 +43,6 @@ export interface ResultMetric {
 export interface CaseStudyData {
   id: string;
   image: string;
-  backgroundImage: string;
   ctaText: string;
 
   // New schema fields
@@ -79,8 +78,7 @@ export interface CaseStudyData {
 export const caseStudiesData: CaseStudyData[] = [
   {
     id: "1",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/client-image-1.webp",
-    backgroundImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/isolation-mode.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/alasif-banner.webp",
     ctaText: "Read Case Study",
     primaryColor: "#1AD1B9",
     secondaryColor: "#795CF5",
@@ -156,8 +154,7 @@ export const caseStudiesData: CaseStudyData[] = [
   },
   {
     id: "2",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/client-image-1.webp",
-    backgroundImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/isolation-mode.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/brighthome-banner.webp",
     ctaText: "Read Case Study",
     primaryColor: "#F95C5B",
     secondaryColor: "#795CF5",
@@ -230,8 +227,7 @@ export const caseStudiesData: CaseStudyData[] = [
 
   {
     id: "3",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/client-image-1.webp",
-    backgroundImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/isolation-mode.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/urbanthread-banner.webp",
     ctaText: "Read Case Study",
     primaryColor: "#F95C5B",
     secondaryColor: "#1AD1B9",
@@ -250,7 +246,7 @@ export const caseStudiesData: CaseStudyData[] = [
       authorCompanyName: "Urban Threads",
       heading: "Urban Threads: Smarter Inventory, Smoother Production",
       overview: "Urban Threads continued to experience stock mismatch, because there was no coordination between manufacturing and sales. Owners Inventory introduced a single system allowing the factory production information to be linked to retail and online inventory in real-time. This provided Urban Threads with one source of truth which made them balance their stock and match the manufacturing output against the real customer demand.",
-      text: "Since implementing this system, our operations have become much more streamlined. Everything is aligned perfectly now, which has significantly improved our stock accuracy and decision making. Our operations run more smoothly than they did before.",
+      text: "Since implementing this system, our operations have become more streamlined, improving stock accuracy, decision-making, and overall efficiency.",
       author: "Theodore Blackwell",
       authorTitle: "Urban Threads CEO",
     },
