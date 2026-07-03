@@ -5,6 +5,8 @@ export interface BlogTOCItem {
   label: string;
 }
 
+export type TOCItem = BlogTOCItem;
+
 export interface BlogHeroStat {
   percentage: string;
   description: string;
