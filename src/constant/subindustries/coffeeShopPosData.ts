@@ -104,7 +104,7 @@ export const COFFEE_SHOP_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omni-Channel and Sales Integration",
     description:
       "Owners Inventory effectively connects coffee shops across in-store, online ordering, and delivery platforms. The software offers a unified platform for these orders. It automatically updates workflows between channels, helping coffee businesses maintain accuracy, reduce human effort, and improve coordination while keeping sales consistent.",
-    imageSrc: "/assets/industries-pages/coffee-shop-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -132,7 +132,7 @@ export const COFFEE_SHOP_FEATURE_CARDS: FeatureCardData[] = [
     title: "Better Analytics and Reporting",
     description:
       "The tool provides clear insights into orders, customers, and payment trends across coffee shops. It allows owners to analyze peak hours, best-selling items, and revenue patterns. This helps improve pricing control, optimize process flow, and support better business decision-making for seamless long-term growth.",
-    imageSrc: "/assets/industries-pages/coffee-shop-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -146,7 +146,7 @@ export const COFFEE_SHOP_KEY_FEATURES_CARDS = [
     description:
       "Coffee shop owners can grant their employees limited access to information depending on their roles in the organization. In this way, they can keep track of all activities in the store while maintaining privacy.",
     imageSrc:
-      "/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -154,7 +154,7 @@ export const COFFEE_SHOP_KEY_FEATURES_CARDS = [
     description:
       "All activities, including payment, orders, and daily sales, are visible in one dashboard. Owners can track shop performance with real-time visibility.",
     imageSrc:
-      "/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -162,7 +162,7 @@ export const COFFEE_SHOP_KEY_FEATURES_CARDS = [
     description:
       "With every transaction, digital or printed receipts are generated automatically. This reduces manual errors in billing and ensures that every purchase is recorded precisely.",
     imageSrc:
-      "/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -170,7 +170,7 @@ export const COFFEE_SHOP_KEY_FEATURES_CARDS = [
     description:
       "The software enables owners to customize their menu, set prices, and update their products according to changes in the seasons and promotions.",
     imageSrc:
-      "/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -178,7 +178,7 @@ export const COFFEE_SHOP_KEY_FEATURES_CARDS = [
     description:
       "This software can be very helpful for growing businesses that have multiple shop locations. They can easily manage their inventory and revenue generation processes for all coffee shops through a single dashboard.",
     imageSrc:
-      "/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/coffee-shop-pos/key-features-section/key-feature-card5.webp",
   },
 ];
 
@@ -225,21 +225,21 @@ export const COFFEE_SHOP_TESTIMONIALS = [
     id: "1",
     name: "Amna Chaudhry",
     title: "Coffee Shop Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image27.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image27.webp",
     text: "Managing peak morning rush became easier. Orders move faster from counters to the kitchen, and the setup keeps everything organized without confusion.",
   },
   {
     id: "2",
     name: "Addison Ross",
     title: "Café Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image28.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image28.webp",
     text: "Our payments, orders, and inventory stay in sync. The software helped us reduce manual effort and simplified daily operational management.",
   },
   {
     id: "3",
     name: "Landon Myers",
     title: "Coffee & Beverage Center Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image27.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image27.webp",
     text: "As our coffee shop expanded, the software scaled smoothly. Managing multiple orders is now much simpler than before.",
   },
 ];
@@ -341,27 +341,27 @@ export const COFFEE_SHOP_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

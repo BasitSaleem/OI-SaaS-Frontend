@@ -16,37 +16,37 @@ const errorContent: Record<
 > = {
   400: {
     message: 'We’re sorry, it’s a “Bad Request”. Please go back to the homepage.',
-    image: "/assets/error-pages/error-400.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/error-pages/error-400.svg",
     alt: "400 Bad Request",
   },
   401: {
     message:
       'We’re sorry, the page you requested is “Unauthorized”. Please go back to the homepage.',
-    image: "/assets/error-pages/error-401.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/error-pages/error-401.svg",
     alt: "401 Unauthorized",
   },
   403: {
     message:
       'We’re sorry, you have requested a “Forbidden Page”. Please go back to the homepage.',
-    image: "/assets/error-pages/error-403.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/error-pages/error-403.svg",
     alt: "403 Forbidden",
   },
   404: {
     message:
       'We’re sorry, the page you are looking for could not be found. Please go back to the homepage.',
-    image: "/assets/error-pages/error-404.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/error-pages/error-404.svg",
     alt: "404 Not Found",
   },
   500: {
     message:
       'We’re sorry, there is an “Internal Server Error”. Please go back to the homepage.',
-    image: "/assets/error-pages/error-500.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/error-pages/error-500.svg",
     alt: "500 Internal Server Error",
   },
   503: {
     message:
       'We’re sorry, “Service is not Available”. Please go back to the homepage.',
-    image: "/assets/error-pages/error-503.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/error-pages/error-503.svg",
     alt: "503 Service Unavailable",
   },
 };
@@ -54,7 +54,7 @@ const errorContent: Record<
 export default function ErrorPageContent({ code }: ErrorPageProps) {
   const content = errorContent[code] || {
     message: "Unexpected error occurred. Please go back to the homepage.",
-    image: "/assets/img/error-pages/error-500.svg",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/img/error-pages/error-500.svg",
     alt: "Error",
   };
 

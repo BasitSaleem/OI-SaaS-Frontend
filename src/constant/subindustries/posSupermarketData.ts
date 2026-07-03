@@ -104,7 +104,7 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omni-Channel and Sales Integration",
     description:
       "Our system connects all the places where people buy things from your supermarket like the store, the website and the mobile app into one simple system. You can manage in-store and online sales from one place.",
-    imageSrc: "/assets/industries-pages/supermarket-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -136,7 +136,7 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
     title: "Better Decision Reporting and Analytics",
     description:
       "Our system gives you numbers and insights into what is selling, what is in stock and how much money the supermarket is making. This helps you make decisions about what to buy, how to price things and what to keep in stock.",
-    imageSrc: "/assets/industries-pages/supermarket-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -158,7 +158,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "Barcode scanning for quick checkout keeps customers moving smoothly even during busy times. The Owners Inventory POS System is great for accurate billing.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -166,7 +166,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "Stock updates itself after each sale so the inventory is always correct. The Owners Inventory POS System is great for inventory management.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -174,7 +174,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "You can make purchase orders quickly, keep track of deliveries and manage suppliers well. The Owners Inventory POS System is great for purchases management.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -182,7 +182,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "You can easily deal with items that come in sizes, weights, and types of packaging. The Owners Inventory POS System is great for multi-unit and variant support.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -190,7 +190,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "Track customer information and purchase history is easy. Give loyal customers discounts and special deals. The Owners Inventory POS System is great for customer and loyalty management.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -198,7 +198,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "You can keep track of your expenses and cash flow to maintain financial transparency. The Owners Inventory POS System is great for expense and cash flow control.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -206,7 +206,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "You can sell groceries online with synced inventory and real-time updates. The Owners Inventory POS System is great for online commerce.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -214,7 +214,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "With control, you can manage multiple supermarket branches from one dashboard. The Owners Inventory POS System is great for branches.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card8.webp",
   },
   {
     id: 9,
@@ -222,7 +222,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "Sales trends, profits and stock movement can help you make smart choices. The Owners Inventory POS System is great for sales and stock reports.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card9.webp",
   },
   {
     id: 10,
@@ -230,7 +230,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     description:
       "You can control access for cashiers, managers and admins to ensure data security. The Owners Inventory POS System is great for staff permissions and user roles.",
     imageSrc:
-      "/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card10.webp",
   },
 ];
 
@@ -283,28 +283,28 @@ export const SUPERMARKET_TESTIMONIALS = [
     id: "1",
     name: "Zoey Scott",
     title: "Supermarket Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
     text: "Our system has made billing and inventory more accurate. The daily work is now easy and stress-free.",
   },
   {
     id: "2",
     name: "Tyler Mitchell",
     title: "Grocery Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
     text: "This is the system we have used. It keeps everything organized. Helps us make better decisions. The checkout is now faster.",
   },
   {
     id: "3",
     name: "Brandon Howard",
     title: "Retail & Supermarket Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
     text: "We used to have trouble managing thousands of items. Now everything is tracked perfectly. The staff can use the system easily.",
   },
   {
     id: "4",
     name: "Aisha Malik",
     title: "Supermarket Franchise Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
     text: "We used to have stock errors and delays. Now everything is accurate. It saves time and makes the supermarket more efficient.",
   },
 ];
@@ -413,27 +413,27 @@ export const SUPERMARKET_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

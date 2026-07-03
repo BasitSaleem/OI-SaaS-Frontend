@@ -8,7 +8,7 @@ export const resourcesItems = [
   {
     key: 'blog',
     title: 'Blog',
-    icon: '/assets/header-dropdown-images/resources-dropdown/blog.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/resources-dropdown/blog.svg',
   },
 ];
 

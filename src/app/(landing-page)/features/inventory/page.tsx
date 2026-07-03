@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import heroBanner from "../../../../../public/assets/features-page/hero-section-banners/operation-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/features-page/inventory-operations-page/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/hero-section-banners/operation-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/why-chose-banner.webp";
 import {
   INVENTORY_FAQS,
   INVENTORY_FEATURES_CARDS,

@@ -118,7 +118,7 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
     description:
       "Sell furniture in-store and online using the same system. Maintain consistent prices, live stock, and customer data on every platform. Your operations are synchronized across showroom and online sales without manual updates.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/furniture-store-omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/furniture-store-omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -134,7 +134,7 @@ export const FURNITURE_STORE_FEATURE_CARDS = [
     description:
       "Take better decisions based on real time sales, stock, and profitability data. Get a clear image of performance to maximize revenue and reduce losses.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/furniture-store-better-reporting.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/furniture-store-better-reporting.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -156,7 +156,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Track the balance due, advance payments, and delivery status of made-to-order furniture. Store all custom orders in a systematic manner between booking and final installation.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card3.webp",
   },
   {
     id: 2,
@@ -164,7 +164,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Create professional invoices in a flash, with taxes, discounts, delivery fees, and partial payments. Speeds up the checkout process and retains complete pricing accuracy on each transaction.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card1.webp",
   },
   {
     id: 3,
@@ -172,7 +172,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Stock updates automatically with every sale or purchase, reducing manual errors. Always be aware of what is available, what variants are available in what form and what is on display in the showroom.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card2.webp",
   },
 
   {
@@ -181,7 +181,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Operate several showroom stores with centralized inventory and sales control. Monitor performance, inventory, and pricing across all locations on one dashboard.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card4.webp",
   },
   {
     id: 5,
@@ -189,7 +189,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Returns and warranties remain visible within the furniture store POS system. Conflicts are minimized since all the information is recorded.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card5.webp",
   },
   {
     id: 6,
@@ -197,7 +197,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Large products remain trackable through label tools within the furniture POS software. There is no mishandling in showrooms or warehouses.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card6.webp",
   },
   {
     id: 7,
@@ -205,7 +205,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Stagnating and aging inventory isidentified with furniture store POS reporting. Knowledge helps in making improved buying and inventory choices.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card7.webp",
   },
   {
     id: 8,
@@ -213,7 +213,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Sell furniture online and keep stock in your showroom and online. Ensure that inventory and price are synchronized across all  sales channels in real time.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card8.webp",
   },
   {
     id: 9,
@@ -221,7 +221,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Know product performance, profit margins, and stock valuation in real time. Determine the best-selling collections and those that are not selling to maximize on purchases.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card9.webp",
   },
   {
     id: 10,
@@ -229,7 +229,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Furniture mobile POS software allows showroom teams to access stock instantly. The deal is closed faster on the showroom floor.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card10.webp",
   },
   {
     id: 11,
@@ -237,7 +237,7 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Grant access control to sales personnel, managers and admins to enhance security. Secure confidential financial and inventory information and ensure uninterrupted teamwork.",
     imageSrc:
-      "/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card11.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-store-pos/key-features-section/furniture-store-key-card11.webp",
   },
 ];
 
@@ -290,28 +290,28 @@ export const FURNITURE_STORE_TESTIMONIALS = [
     id: "1",
     name: "Madison Griffin",
     title: "Furniture Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image25.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image25.webp",
     text: "Before  Owners Inventory, it was always difficult to handle bulky products and custom orders. Monitoring of stock, deliveries, and product variations was time consuming and subject to mistakes. Using this furniture POS system, our team will be able to check the real-time stock, track deliveries, and manage variants, which will save a lot of time daily.",
   },
   {
     id: "2",
     name: "Owen Martinez",
     title: "Interior Decor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image25.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image25.webp",
     text: "We also have the mobile POS option, where our sales personnel are able to make sales on the showroom floor. The customers like instant quotes and invoices, and the transactions are fast, precise, and professional. This has made our store operations modern and enhanced the customer experience.",
   },
   {
     id: "3",
     name: "Brooklyn Barnes",
     title: "Home Decor & Furniture Shop Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image26.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image26.webp",
     text: "It is now easy to manage various locations. Stock transfers, custom orders, and deliveries are synchronized with three showrooms and a warehouse linked by the furniture store POS.",
   },
   {
     id: "4",
     name: "Connor Price",
     title: "Modern Furniture Showroom Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image26.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image26.webp",
     text: "This has made the operations more efficient, reduced errors and provided us with complete visibility and control of all locations.",
   },
 ];
@@ -420,27 +420,27 @@ export const FURNITURE_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

@@ -41,7 +41,7 @@ const TrollyAnimation = () => {
 
                 <Image
                     ref={cartImgRef}
-                    src="/assets/home-page-images/trolly-animation/cart-image.webp"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/cart-image.webp"
                     alt="Smart sync and sell"
                     width={743}
                     height={460}
@@ -60,7 +60,7 @@ const TrollyAnimation = () => {
 
                 <Image
                     ref={mobileIconRef}
-                    src="/assets/home-page-images/trolly-animation/mobile-icon.svg"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/mobile-icon.svg"
                     alt="Smart sync and sell"
                     width={743}
                     height={460}
@@ -72,7 +72,7 @@ const TrollyAnimation = () => {
                 <div className="flex flex-col items-start justify-start gap-4 lg:gap-7 absolute left-6 xl:left-10 bottom-[30px]">
                     <Image
                         ref={starIconRef}
-                        src="/assets/home-page-images/trolly-animation/star-icon.svg"
+                        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/star-icon.svg"
                         alt="Smart sync and sell"
                         width={743}
                         height={460}
@@ -93,7 +93,7 @@ const TrollyAnimation = () => {
                     >
                         <Image
                             ref={cartIcon1Ref}
-                            src="/assets/home-page-images/trolly-animation/trolly-icon1.svg"
+                            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/trolly-icon1.svg"
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
@@ -102,7 +102,7 @@ const TrollyAnimation = () => {
                         />
                         <Image
                             ref={cartIcon2Ref}
-                            src="/assets/home-page-images/trolly-animation/trolly-icon2.svg"
+                            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/trolly-icon2.svg"
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
@@ -111,7 +111,7 @@ const TrollyAnimation = () => {
                         />
                         <Image
                             ref={cartIcon3Ref}
-                            src="/assets/home-page-images/trolly-animation/trolly-icon3.svg"
+                            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/trolly-icon3.svg"
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
@@ -120,7 +120,7 @@ const TrollyAnimation = () => {
                         />
                         <Image
                             ref={cartIcon4Ref}
-                            src="/assets/home-page-images/trolly-animation/trolly-icon4.svg"
+                            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/trolly-icon4.svg"
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
@@ -129,7 +129,7 @@ const TrollyAnimation = () => {
                         />
                         <Image
                             ref={cartIcon5Ref}
-                            src="/assets/home-page-images/trolly-animation/trolly-icon5.svg"
+                            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/trolly-icon5.svg"
                             alt="Smart sync and sell"
                             width={743}
                             height={460}
@@ -143,7 +143,7 @@ const TrollyAnimation = () => {
                 <div className="flex flex-col items-end justify-end gap-1.5 lg:gap-3 absolute right-6 xl:right-10 bottom-4 lg:bottom-[30px]">
                     <Image
                         ref={arrowRef}
-                        src="/assets/home-page-images/trolly-animation/arrow-up-icon.svg"
+                        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/arrow-up-icon.svg"
                         alt="Smart sync and sell"
                         width={743}
                         height={460}
@@ -160,7 +160,7 @@ const TrollyAnimation = () => {
 
                     <Image
                         ref={graphRef}
-                        src="/assets/home-page-images/trolly-animation/graph-line.svg"
+                        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/trolly-animation/graph-line.svg"
                         alt="Smart sync and sell"
                         width={743}
                         height={460}

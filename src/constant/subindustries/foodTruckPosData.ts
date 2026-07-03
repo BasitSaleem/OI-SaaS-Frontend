@@ -104,7 +104,7 @@ export const FOOD_TRUCK_FEATURE_CARDS: FeatureCardData[] = [
     title: "Centralized Sales and Billing for Food Trucks",
     description:
       "Every order processed at the service window, every ingredient purchase logged against a supplier, and every session report generated at the close of service runs through the same dashboard. Your sales records and stock records stay in sync automatically, so the numbers on the screen always reflect what actually happened during that service.",
-    imageSrc: "/assets/industries-pages/food-truck-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -132,7 +132,7 @@ export const FOOD_TRUCK_FEATURE_CARDS: FeatureCardData[] = [
     title: "Reporting and Accounting Integration",
     description:
       "The reporting dashboard pulls together daily service summaries, menu item sales performance, food cost data, and payment breakdowns into one view that updates as transactions are processed. High-margin items and low-margin items are easy to compare across services, so pricing decisions are based on real cost data rather than estimates. Session reports filtered by location show which stops generate consistent revenue and which ones are not worth returning to.",
-    imageSrc: "/assets/industries-pages/food-truck-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -164,7 +164,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "The system runs on tablets and mobile devices, fitting the setup of a food truck without fixed counters or bulky hardware. Orders, payments, and receipts are all handled from the same screen. The interface is built for fast operation in tight spaces, with large item buttons, clear navigation, and a screen readable in direct sunlight or low light.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -172,7 +172,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "Your full menu is built inside the system with item names, prices, portion sizes, and categories. Add-ons, size variations, and substitutions are attached to relevant items so the correct price calculates automatically. When a price needs updating, the change applies across the menu in a single edit.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -180,7 +180,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "Each menu item is mapped to the ingredients it uses and the exact quantity per portion. Stock reduces automatically with every order, giving you a live count throughout the service. Prep quantities entered at the start of each service are factored in from the first transaction.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -188,7 +188,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "Every ingredient can be assigned a minimum quantity. When stock drops to that level, an alert triggers before the ingredient runs out, giving you time to stop accepting affected orders or arrange a resupply before the next service.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -196,7 +196,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "The system keeps processing orders and payments without an internet connection. All transactions, ingredient deductions, and payment details recorded offline sync automatically to the dashboard once the connection is restored.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -204,7 +204,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "Cash, credit and debit cards, and tap-to-pay are all accepted at the window. A single order can be split across multiple payment methods without any manual calculation. Every payment is recorded with the method, amount, time, and staff member who processed it. ",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -212,7 +212,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "At the end of each service, the system generates a report covering total orders, revenue, payment breakdown, voided items, and refunds. Reports are produced automatically when the session closes and are accessible from any device.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -220,7 +220,7 @@ export const FOOD_TRUCK_KEY_FEATURES_CARDS = [
     description:
       "Permissions are assigned by role, so each team member only accesses what their position requires. Staff handling payments can't edit menu prices or adjust stock counts. Owners and managers have full access to sales reports, session summaries, and cost data.",
     imageSrc:
-      "/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/food-truck-pos/key-features-section/key-feature-card8.webp",
   },
 ];
 
@@ -274,7 +274,7 @@ export const FOOD_TRUCK_TESTIMONIALS = [
     name: "Miles Jenkins",
     title: "Food Truck Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image35.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image35.webp",
     text: "Cash reconciliation used to take me 40 minutes after every service. Now the session report is ready the moment I close out, and any cash difference is flagged straight away. It takes under five minutes and I actually trust the number.",
   },
   {
@@ -282,7 +282,7 @@ export const FOOD_TRUCK_TESTIMONIALS = [
     name: "Skylar Sanders",
     title: "Street Food Operator ",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image34.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image34.webp",
     text: "We were running out of ingredients mid-service at least twice a week. The low-stock alerts changed that completely. We have not had to turn away a single order in six weeks since we started using Owners Inventory.",
   },
   {
@@ -290,7 +290,7 @@ export const FOOD_TRUCK_TESTIMONIALS = [
     name: "Griffin Reynolds",
     title: "Multi Truck Operator",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image34.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image34.webp",
     text: "I run two trucks at different locations on weekends and had no real way to compare how each one performed. Now both are visible in the same dashboard. The location reports make it obvious which stops are worth coming back to and which ones are not.",
   },
   {
@@ -298,7 +298,7 @@ export const FOOD_TRUCK_TESTIMONIALS = [
     name: "Luna Hayes",
     title: "Food Truck Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image35.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image35.webp",
     text: "I updated ingredient costs after a supplier price increase, and the system recalculated the food cost on every affected menu item straight away. I spotted two items running at a loss and fixed the prices before the next service. That alone saved the week.",
   },
 ];
@@ -425,27 +425,27 @@ export const FOOD_TRUCK_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

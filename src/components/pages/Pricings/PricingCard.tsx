@@ -43,7 +43,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <div className="mb-8">
               <div className="relative z-3 w-48 h-48 mx-auto relative">
                 <Image
-                  src="/assets/owners-inventory-pricing/lets-talk.svg"
+                  src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/lets-talk.svg"
                   alt="Let's Talk"
                   fill
                   className="object-contain"

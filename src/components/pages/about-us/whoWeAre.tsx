@@ -7,7 +7,7 @@ import ButtonSm from "@/components/button/ButtonSm";
 import Image from "next/image";
 import SectionHeading from "../typography/SectionHeading";
 import Paragraph from "../typography/Paragraph";
-import whoWeBanner from "../../../../public/assets/about-us/who-we-banner.webp";
+const whoWeBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/who-we-banner.webp";
 import CardHeading from "../typography/CardHeading";
 import CardDesc from "../typography/CardDesc";
 

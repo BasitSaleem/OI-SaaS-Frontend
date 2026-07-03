@@ -107,7 +107,7 @@ export const HEALTHCARE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     subDescription:
       "The system ensures medical supply records remain consistently accurate without duplication errors.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -138,7 +138,7 @@ export const HEALTHCARE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Owners Inventory provides accurate reports of your healthcare inventory usage. The insights help healthcare administrators understand demand patterns of medicines, which helps in restocking inventory according to consumer needs. Informed decision-making helps the healthcare business improve financial efficiency.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -152,7 +152,7 @@ export const HEALTHCARE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It provides immediate insights into stock availability and usage patterns, helping healthcare teams manage medical supply inventory and prevent critical delays.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -160,7 +160,7 @@ export const HEALTHCARE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It tracks medical items accurately using barcode scanning, which helps staff find medicines within the right time and deliver better services to patients or customers.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -168,7 +168,7 @@ export const HEALTHCARE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The multi-location system can manage and monitor medical inventory across multiple departments or facilities. It ensures the consistent availability of supplies at multiple locations.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -176,7 +176,7 @@ export const HEALTHCARE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Inventory updates automatically with every transaction. The automated healthcare inventory system maintains accurate healthcare inventory records without manual intervention, reducing operational inefficiencies.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -184,7 +184,7 @@ export const HEALTHCARE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It generates clear reports on stock usage and inventory performance trends to ensure better restocking decisions for healthcare facility owners.",
     imageSrc:
-      "/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card5.webp",
   },
 ];
 
@@ -243,21 +243,21 @@ export const HEALTHCARE_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Jameson Ward",
     title: "Clinical Director",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image52.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image52.webp",
     text: "We needed something that could handle expiry tracking without making things complicated. Owners Inventory helped us organize our medical supplies properly. It's simple and reliable, which helped us prevent the mistakes we used to make with manual records.",
   },
   {
     id: "2",
     name: "Bennett Torres",
     title: "Supply Chain Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image53.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image53.webp",
     text: "After using Owners Inventory, we finally have a system that keeps things structured. Stock handling is smoother now, and we don't have to double-check things anymore.",
   },
   {
     id: "3",
     name: "Audrey Mendez",
     title: "Facility Administrator",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image52.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image52.webp",
     text: "What I like the most about it is the control this software provides over inventory management. It fits into our workflows easily without slowing anything down, which was our biggest concern initially.",
   },
 ];
@@ -350,27 +350,27 @@ export const HEALTHCARE_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

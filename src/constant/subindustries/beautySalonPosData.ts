@@ -104,7 +104,7 @@ export const BEAUTY_SALON_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omni-Channel Sales and Integration for Salon and Spas",
     description:
       "Owners Inventory connects in-house and digital sales into one unified system flow. Transactions from both the physical checkout counter and external booking sources are counted in real time. This ensures consistent payment tracking and accurate sales records across all salon operations without duplication or manual listings. ",
-    imageSrc: "/assets/industries-pages/beauty-salon-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -136,7 +136,7 @@ export const BEAUTY_SALON_FEATURE_CARDS: FeatureCardData[] = [
     title: "Better Analytics and Reporting",
     description:
       "The system organizes sales and transaction data into clear reports. Instead of displaying raw numbers, it highlights patterns in services and product sales, helping salon owners understand what drives revenue and where improvements are needed to enhance overall business performance.",
-    imageSrc: "/assets/industries-pages/beauty-salon-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -150,7 +150,7 @@ export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
     description:
       "The POS categorizes products into different groups or allows employees to filter items either by their names or categories. This ensures smooth checkout processing without any lags.",
     imageSrc:
-      "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -158,7 +158,7 @@ export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
     description:
       "The system tracks the accumulated loyalty points per client and applies them during checkouts without requiring users to input data manually.",
     imageSrc:
-      "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -166,7 +166,7 @@ export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
     description:
       "Service bundles, promotional offers, and price adjustments are handled inside the same billing screen, reducing the need to calculate anything separately before the client pays.",
     imageSrc:
-      "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -174,7 +174,7 @@ export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
     description:
       "When any retail product runs out of stock, the system sends automatic alerts. It helps staff to be aware of what is available in the inventory before making any recommendations or providing a service.",
     imageSrc:
-      "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -182,7 +182,7 @@ export const BEAUTY_SALON_KEY_FEATURES_CARDS = [
     description:
       "Clients paying with more than one method are processed within a single transaction. The system processes cash, cards, and mobile wallets correctly without the need to input them separately.",
     imageSrc:
-      "/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/beauty-salon-pos/key-features-section/key-feature-card5.webp",
   },
 ];
 
@@ -229,21 +229,21 @@ export const BEAUTY_SALON_TESTIMONIALS = [
     id: "1",
     name: "Chloe Parker",
     title: "Beauty Salon Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image14.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image14.webp",
     text: "We used to experience lag in the checkouts during busy days. However, since implementing their salon POS system, the billing process has improved tremendously, and every transaction is now done with proper recordkeeping.",
   },
   {
     id: "2",
     name: "Stella Allen",
     title: "Spa Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image15.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image15.webp",
     text: "It has enabled us to be organized and streamlined all our operations into one place. The system also makes our payment tracking more efficient and accurate.",
   },
   {
     id: "3",
     name: "Dylan Foster",
     title: "Beauty & Wellness Center Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image14.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image14.webp",
     text: "Their salon POS software is user-friendly. Our team picked it up quickly, and now we are able to handle every salon management operation quickly.",
   },
 ];
@@ -339,27 +339,27 @@ export const BEAUTY_SALON_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

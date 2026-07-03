@@ -83,7 +83,7 @@ function IndustryUnifiedPlatform({
                     className="w-full p-6 rounded-[30px] border border-gray-100 shadow-[0px_0px_20px_0px_#00000005] bg-white flex flex-col md:grid md:grid-rows-subgrid md:row-span-3 gap-0"
                   >
                     <div className="w-[66px] h-[66px] flex items-center justify-center mb-[18px] md:mb-5  rounded-xl border-5 border-[var(--background-halfwhite)]">
-                      {card.icon.startsWith("/") ? (
+                      {card.icon.startsWith("/") || card.icon.startsWith("http") ? (
                         <Image
                           src={card.icon}
                           alt={`${card.title} Icon`}

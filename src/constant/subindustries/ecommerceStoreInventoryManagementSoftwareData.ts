@@ -105,7 +105,7 @@ export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "All platforms that you use to sell your products, such as your mobile app, e-commerce site, or marketplaces are connected into our system. You can manage all your products from a single place, without switching between tools. This software keeps all your orders, inventory, and sales data in sync so that your business is always accurate.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -136,7 +136,7 @@ export const ECOMMERCE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "We provide valuable insights into the eCommerce operation so that you can make better decisions.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -155,7 +155,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Automatically, stock levels are updated after each transaction. Your inventory will always be accurate. Stock tracking is easy with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -163,7 +163,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "From receiving orders to shipping them, you can do it all in one location. It makes order fulfillment more efficient and organized. Order management is easy with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -171,7 +171,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Integrate your websites, apps, and marketplaces into a single system. You can easily manage your sales channels. Integrating Owners Inventory is easy.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -179,7 +179,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Manage thousands of product categories and variants without confusion. Product management is easy with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -187,7 +187,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Track across different warehouses or storage facilities. It helps to improve organization and speed up delivery. Warehouse management is made easy with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -195,7 +195,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Save customer information and history of orders. This system helps businesses manage customer data, improve services, and builds loyalty.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -203,7 +203,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Keep your inventory up to date and manage returns with ease. Returns management is easy with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -211,7 +211,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You can get detailed reports about your sales, inventory, and profit. Reporting is easy with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card8.webp",
   },
   {
     id: 9,
@@ -219,7 +219,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Automate the reordering of low-stock items and receive alerts. It prevents stockouts, and increases efficiency. Automation is a great feature of the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card9.webp",
   },
   {
     id: 10,
@@ -227,7 +227,7 @@ export const ECOMMERCE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Manage staff access for security and management. It is easy to assign user roles with the Owners Inventory System.",
     imageSrc:
-      "/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/ecommerce-store-inventory-management-software/key-features-section/key-features-card10.webp",
   },
 ];
 
@@ -280,21 +280,21 @@ export const ECOMMERCE_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Emily Nelson",
     title: "Ecommerce Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image47.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image47.webp",
     text: "Our inventory has been synchronized across platforms. We no longer have stock problems.",
   },
   {
     id: "2",
     name: "Hayden Bailey",
     title: "Online Marketplace Seller",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image48.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image48.webp",
     text: "Order processing has become faster and more precise. We have saved a great deal of time. Also managing multiple channels of sales is easy now. Everything is all in one place.",
   },
   {
     id: "3",
     name: "Abigail Baile",
     title: "D2C Brand Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image48.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image48.webp",
     text: "Our inventory is organized and clear. It has greatly improved our business operation.",
   },
 ];
@@ -403,27 +403,27 @@ export const ECOMMERCE_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

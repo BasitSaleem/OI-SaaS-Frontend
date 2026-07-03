@@ -46,25 +46,25 @@ export const featuresItems: FeatureItem[] = [
   {
     key: 'pos',
     title: 'Point of Sale',
-    icon: '/assets/header-dropdown-images/point-of-sale.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/point-of-sale.svg',
     category: 'sales-marketing',
   },
   {
     key: 'ecommerce',
     title: 'Ecommerce',
-    icon: '/assets/header-dropdown-images/ecommerce.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/ecommerce.svg',
     category: 'sales-marketing',
   },
   {
     key: 'sales-and-order',
     title: 'Sales & Orders',
-    icon: '/assets/header-dropdown-images/sales-order.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/sales-order.svg',
     category: 'sales-marketing',
   },
   // {
   //   key: 'marketing',
   //   title: 'Marketing',
-  //   icon: '/assets/header-dropdown-images/marketing.svg',
+  //   icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/marketing.svg',
   //   category: 'sales-marketing',
   // },
 
@@ -72,34 +72,34 @@ export const featuresItems: FeatureItem[] = [
   {
     key: 'facilities',
     title: 'Facilities',
-    icon: '/assets/header-dropdown-images/facilitate.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/facilitate.svg',
     category: 'operations',
   },
   {
     key: 'purchases',
     title: 'Purchases',
-    icon: '/assets/header-dropdown-images/perchases.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/perchases.svg',
     category: 'operations',
   },
 
   {
     key: 'inventory',
     title: 'Inventory Operations',
-    icon: '/assets/header-dropdown-images/inventory-operations.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/inventory-operations.svg',
     category: 'operations',
   },
 
   {
     key: 'products',
     title: 'Products',
-    icon: '/assets/header-dropdown-images/products.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/products.svg',
     category: 'operations',
   },
 
   {
     key: 'manufacturing',
     title: 'Manufacturing',
-    icon: '/assets/header-dropdown-images/manufacturing.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/manufacturing.svg',
     category: 'operations',
   },
 
@@ -109,13 +109,13 @@ export const featuresItems: FeatureItem[] = [
   {
     key: 'reports',
     title: 'Reports',
-    icon: '/assets/header-dropdown-images/reports.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/reports.svg',
     category: 'analytics',
   },
   // {
   //   key: 'advanceReports',
   //   title: 'Advance Reports',
-  //   icon: '/assets/header-dropdown-images/advance-reports.svg',
+  //   icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/advance-reports.svg',
   //   category: 'analytics',
   // },
 
@@ -123,7 +123,7 @@ export const featuresItems: FeatureItem[] = [
   {
     key: 'accounts-and-finance',
     title: 'Accounts & Finance',
-    icon: '/assets/header-dropdown-images/account-finance.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/account-finance.svg',
     category: 'finance',
 
   },
@@ -131,13 +131,13 @@ export const featuresItems: FeatureItem[] = [
   {
     key: 'people',
     title: 'People',
-    icon: '/assets/header-dropdown-images/proples.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/proples.svg',
     category: 'finance',
   },
   {
     key: 'hr',
     title: 'Human Resource',
-    icon: '/assets/header-dropdown-images/human-resources.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/human-resources.svg',
     category: 'finance',
   },
 
@@ -145,13 +145,13 @@ export const featuresItems: FeatureItem[] = [
   {
     key: 'integrations',
     title: 'Integrations',
-    icon: '/assets/header-dropdown-images/integrations.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/integrations.svg',
     category: 'tools',
   },
   {
     key: 'tools',
     title: 'System Tools',
-    icon: '/assets/header-dropdown-images/general-tools.svg',
+    icon: 'https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/general-tools.svg',
     category: 'tools',
   },
 ];

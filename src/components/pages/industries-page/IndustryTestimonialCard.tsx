@@ -20,8 +20,8 @@ interface IndustryTestimonialCardProps {
 
 const PURPLE = "#795CF5";
 const GREEN = "#1AD1B9";
-const PURPLE_ICON = "/assets/review-section/double-coma-icon.svg";
-const GREEN_ICON = "/assets/review-section/coma-green.svg";
+const PURPLE_ICON = "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg";
+const GREEN_ICON = "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/coma-green.svg";
 
 const IndustryTestimonialCard = ({
   slide,
@@ -55,7 +55,7 @@ const IndustryTestimonialCard = ({
 
       <div className="flex items-center gap-4 mb-5">
         <div className="w-[56px] h-[56px] flex items-center justify-center rounded-full border-2" style={{ borderColor: accentColor }}>
-          {slide.image.startsWith("/") ? (
+          {slide.image.startsWith("/") || slide.image.startsWith("http") ? (
             <Image
               src={slide.image}
               alt={`${slide.title} Icon`}

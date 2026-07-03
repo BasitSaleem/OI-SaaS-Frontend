@@ -44,7 +44,7 @@ const SmartTools: React.FC<SmartTools> = ({
         className="w-full px-4 xl:px-16 pt-[60px] pb-0 rounded-[20px] lg:rounded-[40px] mt-[28px] md:mt-20 lg:mt-[100px] overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('/assets/home-page-images/black-background.webp')",
+            "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/black-background.webp')",
         }}
       >
         <SectionHeading heading={title} headingClassName="text-center lg:mb-6 md:mb-6 mb-5 text-[var(--white-color)]" description={description} descriptionClassName="text-center lg:mb-[42px] md:mb-6 mb-5 text-[var(--white-color)]" />
@@ -72,7 +72,7 @@ const SmartTools: React.FC<SmartTools> = ({
         <div className="w-full lg:max-w-[1000px] md:max-w-[760px] xl:max-w-[1065px] bg-transparent px-5 relative z-30 mx-auto mt-8 md:mt-10">
           {shouldShowImage ? (
             <Image
-              src="/assets/home-page-images/smart-way-banner.webp"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/smart-way-banner.webp"
               alt="Chaos Image"
               width={1065}
               height={600}
@@ -87,7 +87,7 @@ const SmartTools: React.FC<SmartTools> = ({
               preload="none"
             >
               <source
-                src="/assets/home-page-images/animations/stay-ahead.webm"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/stay-ahead.webm"
                 type="video/webm"
               />
               Your browser does not support the video tag.

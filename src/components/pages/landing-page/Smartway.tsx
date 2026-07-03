@@ -25,7 +25,7 @@ export default function PosIconsSection() {
       <div className=" md:h-auto flex flex-col items-center justify-center">
         <section
           className="w-full relative rounded-[20px] lg:rounded-[40px] py-10 px-6 xl:p-[70px] lg:p-10 md:p-10 ownerinventory-landing__pos-icons-section bg-cover bg-no-repeat bg-top"
-          style={{ backgroundImage: "url('/assets/icons-section/icons-section.webp')" }}
+          style={{ backgroundImage: "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/icons-section/icons-section.webp')" }}
         >
           <SectionHeading heading="Your Complete Inventory Toolkit" headingClassName="text-[var(--white-color)] text-center mb-6" />
 
@@ -36,7 +36,7 @@ export default function PosIconsSection() {
           >
             <span ref={spanRef}>
               <Image
-                src="/assets/icons-section/navigation-icon.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/icons-section/navigation-icon.svg"
                 alt="Navigation Icon"
                 width={24}
                 height={24}
@@ -52,7 +52,7 @@ export default function PosIconsSection() {
               className="relative flex flex-col justify-center gap-[11px] items-center"
             >
               <Image
-                src="/assets/icons-section/icons-section-logo.webp"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/icons-section/icons-section-logo.webp"
                 alt="Logo Image"
                 width={198}
                 height={100}

@@ -4,11 +4,11 @@ import HeroModuleBadge from "./HeroModuleBadge";
 import { HeroEntranceRefs } from "@/hooks/useHeroEntranceAnimation";
 
 const HERO_IMAGES = [
-  "/assets/home-page-images/hero-animation/animation-img1.webp",
-  "/assets/home-page-images/hero-animation/animation-img2.webp",
-  "/assets/home-page-images/hero-animation/animation-img3.webp",
-  "/assets/home-page-images/hero-animation/animation-img4.webp",
-  "/assets/home-page-images/hero-animation/animation-img5.webp",
+  "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img1.webp",
+  "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img2.webp",
+  "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img3.webp",
+  "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img4.webp",
+  "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-animation/animation-img5.webp",
 ];
 
 const HERO_BACKGROUNDS = [
@@ -55,7 +55,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
 
         <HeroModuleBadge
           ref={productsImageRef}
-          src="/assets/home-page-images/products.svg"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/products.svg"
           alt="Products module icon"
           label="Products"
           className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[90px] lg:top-20 xl:top-[120px] -left-5 lg:left-[-50px] xl:left-[-60px]"
@@ -63,7 +63,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
 
         <HeroModuleBadge
           ref={advanceReportImageRef}
-          src="/assets/home-page-images/advance-report.svg"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/advance-report.svg"
           alt="Advance Reports module icon"
           label="Advance Reports"
           className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[180px] -left-5 lg:top-[220px] lg:-left-14 xl:top-[300px] xl:left-[-60px]"
@@ -71,14 +71,14 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
 
         <HeroModuleBadge
           ref={inventorySystemImageRef}
-          src="/assets/home-page-images/inventory-system.svg"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/inventory-system.svg"
           alt="Inventory Operations module icon"
           label="Inventory Operations"
           className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[55px] -right-10 md:top-[110px] lg:top-[130px] md:right-[-110px] lg:-right-40 xl:right-[-150px] 2xl:top-[120px] 2xl:right-[-200px]"
         />
         <HeroModuleBadge
           ref={reportsImageRef}
-          src="/assets/home-page-images/reports.svg"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/reports.svg"
           alt="Reports module icon"
           label="Reports"
           className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[148px] -right-10 md:top-[200px] md:right-[-60px] lg:top-[250px] lg:-right-20 xl:top-[300px] xl:right-[-120px]"
@@ -95,7 +95,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
         </p>
       </div>
       <Image
-        src="/assets/home-page-images/fast-service.svg"
+        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/fast-service.svg"
         alt="Fast Service"
         ref={fastServiceImageRef}
         width={51}
@@ -113,7 +113,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
         </p>
       </div>
       <Image
-        src="/assets/home-page-images/safe-secure.svg"
+        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/safe-secure.svg"
         alt="Safe and Secure"
         ref={safeSecureImageRef}
         width={100}
@@ -123,7 +123,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
       />
 
       <Image
-        src="/assets/home-page-images/inventory-blur-icon.svg"
+        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/inventory-blur-icon.svg"
         alt="Inventory icon decorative"
         ref={inventoryBlurIconRef}
         width={120}
@@ -133,7 +133,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
       />
 
       <Image
-        src="/assets/home-page-images/inventory-icon.svg"
+        src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/inventory-icon.svg"
         alt="Inventory management icon"
         ref={inventoryIconRef}
         width={120}
@@ -151,7 +151,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
           <p className="text-[#2E263DE5] font-['Onest'] font-semibold text-5xl leading-[53px]">42.5k</p>
         </div>
         <Image
-          src="/assets/home-page-images/total-growth.svg"
+          src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/total-growth.svg"
           alt="Total Growth Chart"
           width={800}
           height={600}

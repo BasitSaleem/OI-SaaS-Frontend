@@ -12,28 +12,28 @@ export const TEAM_MEMBERS = [
     id: "team-john-doe",
     name: "John Doe",
     role: "Founder & CEO",
-    image: "/assets/about-us/team/john.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/team/john.webp",
     bio: "John has 15+ years of experience in retail management and software development."
   },
   {
     id: "team-jane-smith",
     name: "Jane Smith",
     role: "Chief Operating Officer",
-    image: "/assets/about-us/team/jane.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/team/jane.webp",
     bio: "Jane specializes in scaling operations and customer success strategies."
   },
   {
     id: "team-michael-brown",
     name: "Michael Brown",
     role: "Head of Engineering",
-    image: "/assets/about-us/team/michael.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/team/michael.webp",
     bio: "Michael leads our technical team in building robust and scalable solutions."
   },
   {
     id: "team-sarah-wilson",
     name: "Sarah Wilson",
     role: "Head of Design",
-    image: "/assets/about-us/team/sarah.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/team/sarah.webp",
     bio: "Sarah ensures our platform is intuitive, beautiful, and easy to use for everyone."
   }
 ];
@@ -44,21 +44,21 @@ export const ABOUT_TIMELINE = [
     year: "2018",
     title: "The Beginning",
     description: "Owners Inventory started with a simple vision: to bridge the gap between complex enterprise software and the needs of small business owners.",
-    image: "/assets/about-us/mission-image.png"
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/mission-image.png"
   },
   {
     id: "timeline-2020",
     year: "2020",
     title: "Growth Phase",
     description: "We expanded our suite of tools to include POS and HR management, serving over 500+ businesses across multiple industries.",
-    image: "/assets/about-us/mission-image.png"
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/mission-image.png"
   },
   {
     id: "timeline-2023",
     year: "2023",
     title: "Going Global",
     description: "With our new cloud-based infrastructure, we now support businesses in 5+ countries with real-time analytics and global support.",
-    image: "/assets/about-us/mission-image.png"
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/mission-image.png"
   }
 ];
 
@@ -87,22 +87,22 @@ export const PHILOSOPHY_CARDS = [
 
 export const WHAT_WE_DO_CARDS = [
   {
-    icon: "/assets/about-us/why-chose/stock-levels.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose/stock-levels.svg",
     title: "Accurate Stock Levels",
     description: "Eliminate over-selling and stockout with precise, real-time tracking.",
   },
   {
-    icon: "/assets/about-us/why-chose/simplified-perchasing.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose/simplified-perchasing.svg",
     title: "Simplified Purchasing",
     description: "Streamlined PO creation and vendor management to keep inventory flowing.",
   },
   {
-    icon: "/assets/about-us/why-chose/real-time-insights.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose/real-time-insights.svg",
     title: "Real-time Insights",
     description: "Performance analytics that help you view, manage, and optimize margins.",
   },
   {
-    icon: "/assets/about-us/why-chose/growth-management.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose/growth-management.svg",
     title: "Growth Management",
     description: "Tools designed to help you expand locations without expanding complexity.",
   },
@@ -140,7 +140,7 @@ export const LOOKING_AHEAD_CONTENT = {
 export const WHAT_WE_DO_CONTENT = {
   heading: "What We Do",
   paragraph: "Owners Inventory offers a single platform that simplifies business operations for retailers, wholesalers, distributors, manufacturers, and eCommerce sellers, integrating inventory management, purchasing and POS into one system.",
-  mainImage: "/assets/about-us/why-chose-banner.webp",
+  mainImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose-banner.webp",
 };
 
 export const WHO_WE_SERVE_CONTENT = {

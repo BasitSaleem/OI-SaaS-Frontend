@@ -50,7 +50,7 @@ const FeatureAccordionList = ({ list }: FeatureAccordionListProps) => {
                 }
               >
                 <Image
-                  src="/assets/plus-icon.svg"
+                  src="https://d2qlv5xtew5ayb.cloudfront.net/assets/plus-icon.svg"
                   alt="Plus-icon"
                   width={18}
                   height={18}
@@ -67,7 +67,7 @@ const FeatureAccordionList = ({ list }: FeatureAccordionListProps) => {
                 }
               >
                 <Image
-                  src="/assets/minus-icon.svg"
+                  src="https://d2qlv5xtew5ayb.cloudfront.net/assets/minus-icon.svg"
                   alt="Minus-icon"
                   width={18}
                   height={18}

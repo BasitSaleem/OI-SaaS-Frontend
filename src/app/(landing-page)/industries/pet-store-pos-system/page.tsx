@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
-import heroBanner from "../../../../../public/assets/industries-pages/pet-store-pos/hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/pet-store-pos/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/why-chose-banner.webp";
 
 import {
   PET_STORE_KEY_FEATURES_CARDS,

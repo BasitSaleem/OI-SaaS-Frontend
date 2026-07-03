@@ -86,7 +86,7 @@ function WhyChoosePOS({
                   {/* Icon */}
                   <div className="flex-shrink-0 self-start">
                     <div className="h-10 w-10">
-                      {typeof card.icon === "string" && !card.icon.startsWith("/") ? (
+                      {typeof card.icon === "string" && !card.icon.startsWith("/") && !card.icon.startsWith("http") ? (
                         <IndustryIcon set={iconSet} name={card.icon} size={40} />
                       ) : (
                         <Image

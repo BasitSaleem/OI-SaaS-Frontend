@@ -119,7 +119,7 @@ export const HOTEL_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The platform connects all hotel departments, which ensures smooth coordination and improved resource management. The centralized system reduces confusion and improves communications, while increasing overall efficiency.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -153,7 +153,7 @@ export const HOTEL_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Our deep insight into hotel inventory management software operations will help you to make more informed and profitable decisions.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -173,7 +173,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The inventory levels are updated automatically whenever an item is consumed, transferred, or restocked. This ensures complete accuracy, eliminates manual updating delays, and minimizes stock mismatches. Managers can instantly monitor stock level, allowing them to make more informed and faster decisions. The real-time tracking improves the coordination of departments, as everyone works with updated data.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -181,7 +181,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "It ensures uninterrupted service by tracking linens, towels, toiletries, and cleaning products, as well as room essentials. It helps the housekeeping team maintain optimal stock levels and avoid shortages at peak times. The system allows for tracking usage patterns by room or floor to improve planning and efficiency.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -189,7 +189,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The unified system allows you to manage inventory in all departments including housekeeping, maintenance, and laundry. It eliminates the need to use separate tracking tools, and improves coordination among teams. The management can maintain full visibility and control over the whole operation while each department has access to relevant data.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -197,7 +197,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "The SKU is unique to each inventory item, which makes it easy to track and efficiently manage the stock. The structured approach helps reduce confusion when working with large quantities of items. This approach simplifies stock audits, reporting, and searching across locations.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -205,7 +205,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Tracking inventory in multiple locations is possible, such as central warehouses and floor storage areas, or department-specific storage. It improves organisation and makes sure that the items can be easily accessed when required. This also reduces the time needed to search for items and minimizes delays.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -213,7 +213,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Maintain consistent stock availability, manage suppliers, monitor timelines for delivery, track purchase orders, and keep track of purchase orders. This system records all vendor interactions to help you assess supplier performance and improve your procurement decisions. It ensures a reliable supply chain and avoids shortages at the last minute.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -221,7 +221,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Create detailed reports in order to identify items with high consumption or costs. This information helps you reduce waste, improve stock levels, and optimize purchasing strategies. This leads to improved cost control and better inventory planning over time.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -229,7 +229,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "You will receive real-time notifications when stock levels are low, delayed replenishment, or abnormal consumption patterns. You can take action immediately before problems affect your operations. Automatic alerts help ensure critical products are available at all times and avoid service interruptions.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card8.webp",
   },
   {
     id: 9,
@@ -237,7 +237,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "To ensure only authorized personnel can update or access inventory data, assign roles and permissions. It improves the security of data and ensures accountability, while also allowing team members to concentrate on their respective responsibilities.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card9.webp",
   },
   {
     id: 10,
@@ -245,7 +245,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "To maintain transparency, monitor the movements of stock between locations or departments. Each transfer is documented, which reduces the risk of misplacement or loss and ensures accurate stock tracking within the hotel.",
     imageSrc:
-      "/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card10.webp",
   },
 ];
 
@@ -309,21 +309,21 @@ export const HOTEL_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Asher Cox",
     title: "Supply Chain Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image50.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image50.webp",
     text: "Real-time tracking has made a significant improvement in the coordination of housekeeping and maintenance.",
   },
   {
     id: "2",
     name: "Claire Ward",
     title: "Hotel Director",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image51.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image51.webp",
     text: "Our operations are now completely organized all thanks to their hotel inventory management software.",
   },
   {
     id: "3",
     name: "Finn Howard",
     title: "Facility Administrator",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image51.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image51.webp",
     text: "With their help, we have significantly improved the cost-control and reduced waste in all departments.",
   },
 ];
@@ -421,19 +421,19 @@ export const HOTEL_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 2,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 3,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
-    //   { id: 4, name: "Shopify", image: "/assets/home-page-images/tools-section/shopify.svg" },
-    // { id: 5, name: "WooCommerce", image: "/assets/home-page-images/tools-section/woocomerce.svg" },
+    //   { id: 4, name: "Shopify", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg" },
+    // { id: 5, name: "WooCommerce", image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg" },
   ],
 };

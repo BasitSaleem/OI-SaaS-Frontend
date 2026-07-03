@@ -5,7 +5,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     description:
       "Connect with top third-party platforms through Owners Inventory, which are essential for expanding and improving modern businesses. Integrations that make Owners Inventory a connected, and future-ready solution are listed below. ",
     imageSrc:
-      "/assets/features-page/integration-page/features-section/strong-integration.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/strong-integration.webp",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     description:
       "Connect your Shopify store with Owners Inventory to sync products, stock, orders, and customer data in real time. Keep inventory updated automatically, manage orders easily, and track sales performance across all channels from one place.",
     imageSrc:
-      "/assets/features-page/integration-page/features-section/shopify-integration.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/shopify-integration.webp",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     description:
       "Connect WooCommerce with Owners Inventory to sync products, stock, pricing, and orders in real time. Manage inventory, orders, and sales insights from one unified dashboard.",
     imageSrc:
-      "/assets/features-page/integration-page/features-section/woocommerce-integration.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/woocommerce-integration.webp",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     description:
       "Integrate QuickBooks with Owners Inventory to automatically sync sales, purchases, and expenses, reduce manual errors, and get real-time financial reports for better control.",
     imageSrc:
-      "/assets/features-page/integration-page/features-section/quickbook-integration.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/quickbook-integration.webp",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     description:
       "Owners Inventory integrates with trusted payment gateways to accept secure online and in-store payments, track transactions in real time, automate reconciliation, and maintain full control over revenue.",
     imageSrc:
-      "/assets/features-page/integration-page/features-section/payment-gateway.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/payment-gateway.webp",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     description:
       "Owners Inventory integrates with marketing tools to sync customer data, track campaign performance, and use real-time sales insights for targeted promotions and follow-ups.",
     imageSrc:
-      "/assets/features-page/integration-page/features-section/marketing-tools.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/marketing-tools.webp",
   },
 ];
 
@@ -87,27 +87,27 @@ export const INTEGRATION_TESTIMONIALS = [
     id: "integration-testimonial-1",
     name: "Bilal Ahmed",
     title: "Managing Director, Star Distributors",
-    image: "/assets/features-page/testimonial-images/testinomial-boy25.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy25.webp",
     text: `Connecting our Shopify store with Owners Inventory has completely changed our process. Orders, customers, and stock sync instantly, and our team no longer needs to update anything manually. It’s smooth, reliable, and saves us hours daily.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg",
     color: "var(--primary-purple)",
   },
   {
     id: "integration-testimonial-2",
     name: "Fahad Khan",
     title: "Retail Operations Lead, Metro Stores",
-    image: "/assets/features-page/testimonial-images/testinomial-boy26.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy26.webp",
     text: `We integrated WooCommerce and QuickBooks together through Owners Inventory, and it has made all the difference. Reports are accurate, payments flow properly, and financial tasks are far easier to manage. Everything works in real time across our team.`,
-    icon: "/assets/review-section/coma-green.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/coma-green.svg",
     color: "var(--primary-teal)",
   },
   {
     id: "integration-testimonial-3",
     name: "Nadia Hussain",
     title: "Operations Lead, City Supplies",
-    image: "/assets/features-page/testimonial-images/testinomial-girl25.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl25.webp",
     text: `What stands out the most is how easy the system makes complex work feel. Our payment gateway and marketing tools work together without any confusion. The integration is stable, and the support team always guides us when we need help.`,
-    icon: "/assets/review-section/double-coma-icon.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg",
     color: "var(--primary-purple)",
   },
 ];
@@ -115,28 +115,28 @@ export const INTEGRATION_TESTIMONIALS = [
 export const INTEGRATION_WHY_CHOOSE_CARDS = [
   {
     id: "integration-why-choose-1",
-    icon: "/assets/features-page/intigration-page/why-chose/unified-business.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/intigration-page/why-chose/unified-business.svg",
     title: "Unified Business Control",
     description:
       "Manage marketing, accounting, and operations in one connected system with full visibility.",
   },
   {
     id: "integration-why-choose-2",
-    icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/seamless-automation.svg",
     title: "Error-Free Automation",
     description:
       "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate in expansion.",
   },
   {
     id: "integration-why-choose-3",
-    icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
     title: "Faster Decision Making",
     description:
       "Get real-time data from all channels to make accurate, informed decisions.",
   },
   {
     id: "integration-why-choose-4",
-    icon: "/assets/features-page/intigration-page/why-chose/easy-to-scale.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/intigration-page/why-chose/easy-to-scale.svg",
     title: "Easy to Scale",
     description:
       "Easily add or expand integrations as you grow, staying flexible with a system that adapts to changing needs.",

@@ -6,8 +6,8 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Get clear insight into store performance and customer demand with advanced POS reports that enable you to realize sales growth and better inventory management.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -17,8 +17,8 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "With our POS reporting system, you can use daily sales, menu items that do well, and peak times to increase efficiency and profits.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -28,8 +28,8 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Monitor supply, production, and delivery statistics using a POS with an advanced reporting system that allows better planning and cost control.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Our advanced POS reports will help you to easily sell and track the sales of medicines, stock levels and expiry date so that you will be accurate and operate smoothly.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -49,8 +49,8 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Know customer purchasing patterns and sales hotspot products through advanced POS reporting that can make you smarter in planning your stock.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
 ];
@@ -62,7 +62,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Monitor the time of product retention in your inventory and determine slow moving products. Make sound choices when it comes to reordering, discounts, or clearance strategies to maximize the stock turnover.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/aging-report.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/aging-report.webp",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Each product has its own unique ID in order to track it accurately. This prevents mix up of similar items and also keeps uniformity among all reports.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/id.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/id.webp",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Track products with Universal Product Codes to effectively monitor and normalize tracking across locations. UPC tracking contributes to the simplification of sales analysis and inventory management.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/upc.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/upc.webp",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Sort and filter by SKU to obtain detailed performance information. With SKU-based reporting, it is simple to analyze trends and deal with huge inventories.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/sku.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/sku.webp",
   },
   {
     id: 5,
@@ -94,7 +94,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Search and browse stock and sales of products by name. This characteristic makes reporting easy and detects inventory performance rapidly.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/name.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/name.webp",
   },
   {
     id: 6,
@@ -102,7 +102,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "View the beginning stock positions at any time to see starting inventory positions. This assists in trend comparison and the determination of true stock movement.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/open-stock.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/open-stock.webp",
   },
   {
     id: 7,
@@ -110,7 +110,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Record every stock purchase and addition to your inventory. A detailed record of stock bought assists with planning, budgeting and examination of supplier performance.",
     imageSrc:
-      "/assets/features-page/human-resource-page/features-section/automated-payslip.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/features-section/automated-payslip.webp",
   },
   {
     id: 8,
@@ -118,7 +118,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Examine sales volumes and product demand to see best-sellers. This aids in optimization of inventory, enhanced replenishment and increased revenue.",
     imageSrc:
-      "/assets/features-page/human-resource-page/features-section/payrol-setup.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/features-section/payrol-setup.webp",
   },
   {
     id: 9,
@@ -126,7 +126,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "See your available inventory in real-time. The knowledge of the current stock enables us to avoid stockouts, minimize surplus, and enhance order fulfillment.",
     imageSrc:
-      "/assets/features-page/human-resource-page/features-section/table-controls.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/features-section/table-controls.webp",
   },
   {
     id: 10,
@@ -134,7 +134,7 @@ export const ADVANCE_REPORTS_FEATURES_CARDS = [
     description:
       "Combine all movements, purchases, sales, and adjustments to see the entire stock position. The total stock reporting will guarantee effective inventory control and smarter decisions.",
     imageSrc:
-      "/assets/features-page/advancereport-page/features-section/total-stock.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/advancereport-page/features-section/total-stock.webp",
   },
 ];
 
@@ -176,28 +176,28 @@ export const ADVANCE_REPORTS_TESTIMONIALS = [
     id: "advance-reports-testimonial-1",
     name: "Alex Morgan",
     title: "Product Operations Lead, ScaleMart",
-    image: "/assets/features-page/testimonial-images/testinomial-boy18.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy18.webp",
     text: `Advanced reporting of Owners Inventory has transformed the way we operate our store entirely. I am able to monitor sales trends, stock levels and customer preferences under a single location. It saves me hours per week and makes me make wiser decisions. Definitely recommend it to all retail business owners!`,
   },
   {
     id: "advance-reports-testimonial-2",
     name: "Ju",
     title: "Inventory Manager, TradeWorks",
-    image: "/assets/features-page/testimonial-images/testinomial-girl17.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl17.webp",
     text: `The inventory aging and sales reports are fantastic. I am able to easily tell which products are selling and which are not. It has actually assisted us in overstock reduction and better purchasing decisions. The dashboard is easy and simple to interpret as well.`,
   },
   {
     id: "advance-reports-testimonial-3",
     name: "Eric Thompson",
     title: "Business Consultant, RetailWorks",
-    image: "/assets/features-page/testimonial-images/testinomial-boy19.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy19.webp",
     text: `We have changed to Owners Inventory because of its sophisticated POS reporting features and it has transformed the game. It is always clear and precise whether it is daily sales tracking or a report on the product. It makes me confident in my ability to plan and expand our business.`,
   },
   {
     id: "advance-reports-testimonial-4",
     name: "Lauren White",
     title: "Director, White Retail Group",
-    image: "/assets/features-page/testimonial-images/testinomial-girl18.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl18.webp",
     text: `The best thing about owning inventory is how quick and easy it is to make detailed reports. The enhanced reporting tool provides me with insights that I did not have previously, such as what products sell fastest and which require a push. It is easy, quick, and makes the operation of the store a lot easier.`,
   },
 ];
@@ -205,35 +205,35 @@ export const ADVANCE_REPORTS_TESTIMONIALS = [
 export const ADVANCE_REPORTS_WHY_CHOOSE_CARDS = [
   {
     id: "advance-reports-why-choose-1",
-    icon: "/assets/features-page/people-page/why-chose/real-time-insights.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/real-time-insights.svg",
     title: "Real-Time Data Insights",
     description:
       "Monitor real-time performance data and be on top of all sales trends.",
   },
   {
     id: "advance-reports-why-choose-2",
-    icon: "/assets/features-page/people-page/why-chose/seamless-automation.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/seamless-automation.svg",
     title: "Customizable POS Reports",
     description:
       "Generate detailed, filter-based reports that are customized to your business objectives.",
   },
   {
     id: "advance-reports-why-choose-3",
-    icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
     title: "Visual Dashboards",
     description:
       "Transform complicated information into simple charts and summaries.",
   },
   {
     id: "advance-reports-why-choose-4",
-    icon: "/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/why-chose/scalable-for-growth.svg",
     title: "Multi-Outlet Analysis",
     description:
       "Compare store and location performance in a single dashboard.",
   },
   {
     id: "advance-reports-why-choose-5",
-    icon: "/assets/features-page/human-resource-page/why-chose/reliable-support.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/human-resource-page/why-chose/reliable-support.svg",
     title: "Smart Decision Support",
     description:
       "Optimize inventory, pricing, and customer strategy using evidence-based insights.",

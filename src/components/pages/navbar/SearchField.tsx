@@ -60,7 +60,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
             className="absolute top-1/2 transform -translate-y-1/2 rounded-full p-2 right-2 lg:right-12 bg-white cursor-pointer"
           >
             <Image
-              src="/assets/header-images/search-icon.svg"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/search-icon.svg"
               alt="Search"
               className="cursor-pointer"
               width={16}

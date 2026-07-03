@@ -96,7 +96,7 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
     title: "Omni-Channel and Sales Integration",
     description:
       "Our inventory system integrates all your selling points such as the physical showrooms, on-line jewelry catalogs and mobile platforms in a single integrated system. Store POS sales as well as online orders can be handled simultaneously without confusion and duplication of records.",
-    imageSrc: "/assets/industries-pages/jewelry-store-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -111,7 +111,7 @@ export const JEWELRY_STORE_FEATURE_CARDS = [
     title: "Better Decision Reporting and Analytics",
     description:
       "Top-notch reporting and analytics help jewelry store owners to understand the valuation of their stocks, sales performance, and profitability. This assists in making wiser decisions when doing purchases, reorders, and pricing strategy.",
-    imageSrc: "/assets/industries-pages/jewelry-store-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -131,7 +131,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Smart search and barcode scanning assist in accomplishing complicated jewelry billing in a few seconds. This enhances customer satisfaction and minimizes congestion at the counters during peak time.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card1.webp",
   },
   {
     id: 2,
@@ -139,7 +139,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Track merchandise by weight, carat, design, category and certification. Each transaction is updated automatically with stock. The value and quantity of available stock that is always known.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card2.webp",
   },
   {
     id: 3,
@@ -147,7 +147,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Prepare purchase orders of gold, diamonds and finished jewelry. Monitor payments and supplier deliveries. This ensures that procurement is well-organized and prevents the effect of stock shortage at the wrong time.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card3.webp",
   },
 
   {
@@ -156,7 +156,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Link all the branches on a single dashboard. Track sales, inventory and prices of all locations. The owners can have a centralized control without being physically available.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card4.webp",
   },
   {
     id: 5,
@@ -164,7 +164,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "To generate long-term loyalty, capture store customer purchase history, preferences, anniversaries and credit details. Direct selling enhances loyalty and builds rapport.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card5.webp",
   },
   {
     id: 6,
@@ -172,7 +172,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Manage delivery times, jewelry repair tickets, and charges easily. Employees will be able to monitor all stages of repairs without delays and misunderstandings.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card6.webp",
   },
   {
     id: 7,
@@ -180,7 +180,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor daily expenses, gold purchases, and cash transactions with full financial transparency. This assists in keeping proper books and improving financial planning.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card7.webp",
   },
   {
     id: 8,
@@ -188,7 +188,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Profit analysis by product, weight, category, or type of metal. Critical analytics minimize the guesswork and increase the overall profitability.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card8.webp",
   },
   {
     id: 9,
@@ -196,7 +196,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor all the transactions, user logs to make sure there is accountability and to avoid fraud. Complete audit trails lead to the establishment of transparency and enhancement of internal controls.",
     imageSrc:
-      "/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card9.webp",
   },
 ];
 
@@ -249,21 +249,21 @@ export const JEWELRY_STORE_TESTIMONIALS = [
     id: "1",
     name: "Harper Davis",
     title: "Jewelry Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image6.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image6.webp",
     text: "Many thanks to Owners Inventory as they help us deliver a powerful jewelry  POS system that made our entire workflow easy and daily operations effortlessly smooth.",
   },
   {
     id: "2",
     name: "Jackson Moore",
     title: "Interior Decor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image7.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image7.webp",
     text: "We opened 3 new branches efficiently all thanks to the centralized POS system for jewelry  stores that Owners Inventory catered for us.",
   },
   {
     id: "3",
     name: "Mia Thompson",
     title: "Home Decor & Jewelry Shop Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image7.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image7.webp",
     text: "Our inventory accuracy improved drastically. With real-time tracking and detailed reporting, we now finally have full control over our high-value items.",
   },
 ];
@@ -372,27 +372,27 @@ export const JEWELRY_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

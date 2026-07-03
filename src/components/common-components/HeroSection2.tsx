@@ -61,7 +61,7 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
               {/* Background Image Optimization */}
               <div className="absolute inset-0 z-[-1] pointer-events-none">
                 <Image
-                  src="/assets/home-page-images/hero-bg.webp"
+                  src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-bg.webp"
                   alt="Background"
                   fill
                   priority

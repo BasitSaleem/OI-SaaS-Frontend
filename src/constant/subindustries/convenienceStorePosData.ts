@@ -98,7 +98,7 @@ export const CONVENIENCE_STORE_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "Every sale at the counter, every purchase order in the back office, and every supplier transaction runs through the same centralized dashboard. Real-time sync means the front and back of the store always reflect the same numbers. For owners with multiple locations, pricing updates and stock transfers apply from a single point.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -114,7 +114,7 @@ export const CONVENIENCE_STORE_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The reporting dashboard pulls together daily sales summaries, product performance reports, and profit margin reports into one continuously updated view. Top-selling products and slow-moving inventory are easy to compare so purchasing decisions are based on actual sales velocity. Peak hour analysis shows when the store is busiest so staffing and stock levels can be planned around real demand rather than guesswork.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -133,7 +133,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Every product has a unique barcode or SKU attached to it that the system reads at checkout. The system instantly finds the correct price, applicable taxes, and any ongoing deals or discounts, in a single scan.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -141,7 +141,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "The system captures a complete shift report covering each employee's sales, any differences in the cash amount, and a complete summary of the cashier's transactions at the end of every shift. Shift-level reporting builds accountability on a daily basis rather than leaving it for end-of-week review.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -149,7 +149,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "User permissions are assigned by role, so a cashier only accesses what is needed at the counter. The system records every sale under a specific employee ID, and staff performance reports show transaction history, shift hours, and sales activity for each team member. ",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -157,7 +157,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "The system accepts all major payment methods, including cash, credit and debit cards, and tap-to-pay. Security standards for card payments are built into the system, ensuring transactions are safe and follow the required rules. Customers can also pay with multiple payment methods simultaneously, and the system automatically splits the payment without any manual calculations.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -165,7 +165,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "Cashiers can search for any product by its name or category directly on the screen during busy hours, even if the barcode is missing or damaged. The search pulls up results from the product list within seconds, so the checkout process keeps moving without any delays or holdups.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -173,7 +173,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "When damaged goods are received or a quantity mismatch is found, the system records the stock adjustments with a reason, reference, and date. Every adjustment is saved and tracked, so your stock count stays accurate, and your records remain organised and ready if an official check or audit is ever needed.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -181,7 +181,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "You can add a large number of products to your catalog all at once by uploading an Excel or CSV file. Whether you are adding new products, updating prices, or changing product descriptions, everything is applied across the system in a single upload without individual manual entries.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -189,7 +189,7 @@ export const CONVENIENCE_STORE_KEY_FEATURES_CARDS = [
     description:
       "You can move products from one location to another using transfer orders that keep track of every step of the process. If you manage more than one store, you can start and monitor stock transfers between branches from one central dashboard, without having to manually match or reconcile records between locations.",
     imageSrc:
-      "/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/convenience-store-pos/key-features-section/key-feature-card8.webp",
   },
 ];
 
@@ -242,28 +242,28 @@ export const CONVENIENCE_STORE_TESTIMONIALS = [
     id: "1",
     name: "Gavin Walker",
     title: "Convenience Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image17.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image17.webp",
     text: "Shift handovers used to take 20-30 minutes of sorting out discrepancies. Now the reconciliation report is ready the moment a shift ends, and cash variances are visible instantly. It takes under five minutes.",
   },
   {
     id: "2",
     name: "Nora Hall",
     title: "Mini Mart Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image18.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image18.webp",
     text: "We carry 400+ SKUs and keep running out of fast-moving items with zero warning. Since turning on low-stock alerts, we caught 3 critical items running low in the first week and haven't had a full stockout since.",
   },
   {
     id: "3",
     name: "Austin Bell",
     title: "Corner Store Operator",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image18.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image18.webp",
     text: "I run the store remotely. I check sales and shift reports from my phone in under a minute. Last month, I spotted a cash discrepancy at 9 pm and had it resolved before closing, without stepping foot in the store.",
   },
   {
     id: "4",
     name: "Aurora Young",
     title: "Multi-Location C-Store Owner ",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image19.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image19.webp",
     text: "Pricing updates and stock transfers across two locations used to take half my morning. Now I can handle both from one dashboard in under 15 minutes.",
   },
 ];
@@ -385,27 +385,27 @@ export const CONVENIENCE_STORE_TOOLS_DATA = {
     // {
     //   id: 1,
     //   name: "Shopify",
-    //   image: "/assets/home-page-images/tools-section/shopify.svg",
+    //   image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     // },
     // {
     //   id: 2,
     //   name: "WooCommerce",
-    //   image: "/assets/home-page-images/tools-section/woocomerce.svg",
+    //   image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     // },
     {
       id: 1,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 2,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 3,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

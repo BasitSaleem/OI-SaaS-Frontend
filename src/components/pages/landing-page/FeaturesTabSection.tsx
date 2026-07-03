@@ -22,7 +22,7 @@ export default function FeaturesTabSection() {
           {/* IMAGE SECTION */}
           <div className=" lg:col-span-6 xl:col-span-6 lg:order-1 order-2 flex items-center justify-center relative">
             <Image
-              src="/assets/home-page-images/animations/screen1-tab.webp"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/screen1-tab.webp"
               alt="Platform Features"
               width={800}
               height={600}

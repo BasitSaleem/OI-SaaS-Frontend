@@ -100,7 +100,7 @@ export const FURNITURE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     subDescription:
       "The integrated system enables the business to trace stock wherever it is sold.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/inventory-management",
     buttonColor: "var(--primary-purple)",
@@ -129,7 +129,7 @@ export const FURNITURE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     description:
       "The system offers advanced reporting tools. These give an understanding of production efficiency, flow of inventory and cost-effectiveness. This allows the manufacturers to make good decisions regarding procurement, production planning, and cost management.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -161,7 +161,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Facilitate speedy transactions with barcode scanning and automated billing to provide a smooth customer experience.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card1.webp",
   },
   {
     id: 2,
@@ -169,7 +169,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Track furniture in real-time, and with size, material and design variation.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card2.webp",
   },
   {
     id: 3,
@@ -177,7 +177,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Manage orders, deliveries by suppliers, and vendor relations in one platform.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card3.webp",
   },
   {
     id: 4,
@@ -185,7 +185,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Categorize furniture in terms of category, type or material to make inventory easier to manage.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card4.webp",
   },
   {
     id: 5,
@@ -193,7 +193,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Store customer information, track orders and delivery information.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card5.webp",
   },
   {
     id: 6,
@@ -201,7 +201,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Monitor daily expenses and cash flow to ensure that your business is under financial control.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card6.webp",
   },
   {
     id: 7,
@@ -209,7 +209,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Manage different showrooms and warehouses using a centralized dashboard.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card7.webp",
   },
   {
     id: 8,
@@ -217,7 +217,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Create sales performance, inventory turnover, and product demand reports.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card8.webp",
   },
   {
     id: 9,
@@ -225,7 +225,7 @@ export const FURNITURE_INVENTORY_KEY_FEATURES_CARDS = [
     description:
       "Grant roles and permissions to employees to achieve system security and access control.",
     imageSrc:
-      "/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/furniture-inventory-management-software/key-features-section/key-features-card9.webp",
   },
 ];
 
@@ -283,21 +283,21 @@ export const FURNITURE_INVENTORY_TESTIMONIALS = [
     id: "1",
     name: "Beckett Long",
     title: "Furniture Showroom Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image42.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image42.webp",
     text: "Our process of producing furniture has become much more organized than previously. We are always aware of what materials we have in stock and what we need to order next, which has made our process much less confusing and has helped us plan better.",
   },
   {
     id: "2",
     name: "Stella Morgan",
     title: "Operations Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image43.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image43.webp",
     text: "This system has greatly enhanced our overall efficiency, it has provided us with a well-structured approach to managing the raw materials and finished furniture products and the reports are easy to comprehend and very helpful in planning and decision making.",
   },
   {
     id: "3",
     name: "Grayson Clark",
     title: "Business Manager",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image43.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image43.webp",
     text: "We used to face a lot of problems with stock shortages and mismanagement before installing this system. Now, all the items are well-controlled in real-time, which saves us time and effort and allows us to operate without difficulties.",
   },
 ];
@@ -402,27 +402,27 @@ export const FURNITURE_INVENTORY_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

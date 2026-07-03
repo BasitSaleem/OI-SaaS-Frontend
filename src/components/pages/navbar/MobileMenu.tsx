@@ -179,7 +179,7 @@ export default function OffcanvasMenu({
             className="p-1 w-fit rounded focus:outline-none focus:ring-2 focus:ring-[var(--text-dark)]/50"
           >
             <Image
-              src="/assets/header-images/cross-btn.svg"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/cross-btn.svg"
               alt="Close"
               width={16}
               height={16}
@@ -204,7 +204,7 @@ export default function OffcanvasMenu({
               className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 cursor-pointer"
             >
               <Image
-                src="/assets/header-images/search-icon.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/search-icon.svg"
                 alt="Search"
                 width={14}
                 height={14}
@@ -223,7 +223,7 @@ export default function OffcanvasMenu({
             )}
           >
             <Image
-              src="/assets/header-images/back-btn.svg"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/back-btn.svg"
               alt="Back"
               width={12}
               height={12}
@@ -259,7 +259,7 @@ export default function OffcanvasMenu({
                   aria-controls="features-content"
                 >
                   <Image
-                    src="/assets/header-images/mobile-nav-icon.svg"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/mobile-nav-icon.svg"
                     width={7}
                     height={7}
                     alt="Open"
@@ -284,7 +284,7 @@ export default function OffcanvasMenu({
                   aria-controls="industries-content"
                 >
                   <Image
-                    src="/assets/header-images/mobile-nav-icon.svg"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/mobile-nav-icon.svg"
                     width={7}
                     height={7}
                     alt="Open"
@@ -316,7 +316,7 @@ export default function OffcanvasMenu({
                   aria-controls="resources-content"
                 >
                   <Image
-                    src="/assets/header-images/mobile-nav-icon.svg"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/mobile-nav-icon.svg"
                     width={7}
                     height={7}
                     alt="Open"
@@ -341,7 +341,7 @@ export default function OffcanvasMenu({
                   aria-controls="company-content"
                 >
                   <Image
-                    src="/assets/header-images/mobile-nav-icon.svg"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/mobile-nav-icon.svg"
                     width={7}
                     height={7}
                     alt="Open"
@@ -365,7 +365,7 @@ export default function OffcanvasMenu({
                   aria-controls="profile-content"
                 >
                   <Image
-                    src="/assets/header-images/mobile-nav-icon.svg"
+                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/mobile-nav-icon.svg"
                     width={7}
                     height={7}
                     alt="Open"
@@ -419,8 +419,8 @@ export default function OffcanvasMenu({
                           <img
                             src={
                               isCatOpen
-                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
-                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                ? "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-up-icon.svg"
+                                : "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
                             width={12}
@@ -487,8 +487,8 @@ export default function OffcanvasMenu({
                                           <img
                                             src={
                                               isItemOpen
-                                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
-                                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                                ? "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-up-icon.svg"
+                                                : "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-down-icon.svg"
                                             }
                                             alt="toggle"
                                             width={12}
@@ -569,8 +569,8 @@ export default function OffcanvasMenu({
                           <img
                             src={
                               isTypeOpen
-                                ? "/assets/header-dropdown-images/arrow-up-icon.svg"
-                                : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                ? "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-up-icon.svg"
+                                : "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-down-icon.svg"
                             }
                             alt="toggle"
                             width={12}
@@ -609,8 +609,8 @@ export default function OffcanvasMenu({
                                     <img
                                       src={
                                         isCatOpen
-                                          ? "/assets/header-dropdown-images/arrow-up-icon.svg"
-                                          : "/assets/header-dropdown-images/arrow-down-icon.svg"
+                                          ? "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-up-icon.svg"
+                                          : "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-down-icon.svg"
                                       }
                                       alt="toggle"
                                       width={12}
@@ -662,7 +662,7 @@ export default function OffcanvasMenu({
                                                     className="w-[15%] flex items-center justify-center p-2.5 border-l border-gray-100"
                                                   >
                                                     <img
-                                                      src={isItemOpen ? "/assets/header-dropdown-images/arrow-up-icon.svg" : "/assets/header-dropdown-images/arrow-down-icon.svg"}
+                                                      src={isItemOpen ? "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-up-icon.svg" : "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-down-icon.svg"}
                                                       alt="toggle"
                                                       width={12}
                                                       height={12}
@@ -758,7 +758,7 @@ export default function OffcanvasMenu({
                               >
                                 {isOpen ? (
                                   <img
-                                    src="/assets/header-dropdown-images/arrow-up-icon.svg"
+                                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-up-icon.svg"
                                     alt="collapse"
                                     width={12}
                                     height={12}
@@ -766,7 +766,7 @@ export default function OffcanvasMenu({
                                   />
                                 ) : (
                                   <img
-                                    src="/assets/header-dropdown-images/arrow-down-icon.svg"
+                                    src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/arrow-down-icon.svg"
                                     alt="expand"
                                     width={12}
                                     height={12}

@@ -94,7 +94,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               aria-label="Previous slide"
             >
               <Image
-                src="/assets/home-page-images/slider-arrow-left.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/slider-arrow-left.svg"
                 alt="arrow-left"
                 width={20}
                 height={20}
@@ -124,7 +124,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               aria-label="Next slide"
             >
               <Image
-                src="/assets/home-page-images/slider-arrow-right.svg"
+                src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/slider-arrow-right.svg"
                 alt="arrow-right"
                 width={20}
                 height={20}

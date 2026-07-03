@@ -19,14 +19,14 @@ export default function SellerClubSection2({
   buttonHref,
   imageSrc,
 }: SellerClubSection2Props) {
-  const [bgImage, setBgImage] = useState("/assets/seller-club-mobile.webp");
+  const [bgImage, setBgImage] = useState("https://d2qlv5xtew5ayb.cloudfront.net/assets/seller-club-mobile.webp");
 
   useEffect(() => {
     const handleResize = () => {
       setBgImage(
         window.innerWidth >= 768
-          ? "/assets/seller-club-bg.webp"
-          : "/assets/seller-club-mobile.webp"
+          ? "https://d2qlv5xtew5ayb.cloudfront.net/assets/seller-club-bg.webp"
+          : "https://d2qlv5xtew5ayb.cloudfront.net/assets/seller-club-mobile.webp"
       );
     };
 

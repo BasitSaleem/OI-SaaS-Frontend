@@ -104,7 +104,7 @@ export const GROCERY_STORE_FEATURE_CARDS = [
     description:
       "Our POS system for grocery stores links the entire sales channel, such as physical stores, online grocery websites, and mobile ordering apps, into a single synchronized system. Sell in-store and online without concern about stock mismatches, or stock with incorrect prices. All the updates are in one system and real time.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/jewelary-store-omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/jewelary-store-omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -120,7 +120,7 @@ export const GROCERY_STORE_FEATURE_CARDS = [
     description:
       "High-level reporting systems give grocery stores owners clear information on the movement of the stocks, day-to-day sales, and gross margin. This will facilitate smarter buying and inventory management.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/jewelary-store-better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/jewelary-store-better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -142,7 +142,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Quick product search and barcode scanning increase the speed of the check out and customer satisfaction.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card1.webp",
   },
   {
     id: 2,
@@ -150,7 +150,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "All transactions are recorded in inventory and stock is always visible.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card2.webp",
   },
   {
     id: 3,
@@ -158,7 +158,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Make purchase orders, delivery tracking and multiple suppliers without confusion.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card3.webp",
   },
 
   {
@@ -167,7 +167,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Sell products per unit, kg, gram, carton, or pack. Ideal when there are several packaging choices of the grocery products.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card4.webp",
   },
   {
     id: 5,
@@ -175,7 +175,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Keep customer information, loyalty programs and credit cards to develop long-term customer relationships.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card5.webp",
   },
   {
     id: 6,
@@ -183,7 +183,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor daily expenses and cash flow with complete financial transparency.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card6.webp",
   },
   {
     id: 7,
@@ -191,7 +191,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Operate your grocery store online with synchronized stock and prices. Accept payments online and handle delivery orders without any hassles.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card7.webp",
   },
   {
     id: 8,
@@ -199,7 +199,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Control several grocery stores simultaneously with centralized control over inventory and sales.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card8.webp",
   },
   {
     id: 9,
@@ -207,7 +207,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Understand sales trends, stock value, and profit margins with easy-to-read reports.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card9.webp",
   },
   {
     id: 10,
@@ -215,7 +215,7 @@ export const GROCERY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Provide cashiers, supervisors and managers with secure access levels in order to secure sensitive data.",
     imageSrc:
-      "/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/key-features-section/grocery-store-key-card10.webp",
   },
 ];
 
@@ -268,28 +268,28 @@ export const GROCERY_STORE_TESTIMONIALS = [
     id: "1",
     name: "Ella Robinson",
     title: "Grocery Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image8.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image8.webp",
     text: "The POS system has made our supermarket operations easy. Billing has become quicker, and the mistakes in the stock have been diminished considerably. Our daily sales are now handled with a lot of confidence.",
   },
   {
     id: "2",
     name: "Hunter Thompson",
     title: "Interior Decor Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image8.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image8.webp",
     text: "This grocery POS helps to have everything in order and simplifies the restocking process. Our checkout time was immediately increased and customers are pleased with the quicker service.",
   },
   {
     id: "3",
     name: "Carter Davis",
     title: "Home Decor & Grocery Shop Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image9.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image9.webp",
     text: "Our products are thousands each day and we do not get mixed up. Reports enable us to make improved purchasing choices, minimize wastage, and have adequate stocks.",
   },
   {
     id: "4",
     name: "Charlotte Harris",
     title: "Home Decor & Grocery Shop Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image9.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image9.webp",
     text: "Prior to the use of this system, the expiry items were stressful to manage. All the sales and stock updates are now being tracked flawlessly. It saves time, mistakes are minimized and it is much easier to run our grocery store.",
   },
 ];
@@ -398,27 +398,27 @@ export const GROCERY_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

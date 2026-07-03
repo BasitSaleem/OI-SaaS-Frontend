@@ -112,7 +112,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
 
           {/* Squiggled Arrow pointing from Yearly to Badges */}
           <Image
-            src="/assets/owners-inventory-pricing/pricing-arrow.svg"
+            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/pricing-arrow.svg"
             alt=""
             width={78}
             height={30}

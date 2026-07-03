@@ -90,7 +90,7 @@ export const PET_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omnichannel Sales Integration for Pet Stores",
     description:
       "All sales channels are integrated into one system. All transactions are synced in a single system for accurate tracking and reporting, regardless of whether the customer is in-store, on the web or using integrated marketplaces.",
-    imageSrc: "/assets/industries-pages/pet-store-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -118,7 +118,7 @@ export const PET_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Analytics and Reporting",
     description:
       "It offers comprehensive information on sales trends, customer behavior, and inventory performance. Owners and managers of pet stores can easily determine what toys are popular, which ones aren't moving, and monitor daily store performance — all in one place to make business decisions.",
-    imageSrc: "/assets/industries-pages/pet-store-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -132,7 +132,7 @@ export const PET_STORE_KEY_FEATURES_CARDS = [
     description:
       "Organize products by food, accessories, grooming, healthcare, and track everything with detailed SKU and barcode tracking for greater accuracy.",
     imageSrc:
-      "/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -140,21 +140,21 @@ export const PET_STORE_KEY_FEATURES_CARDS = [
     description:
       "Track product batches and expiration dates with ease using built-in expiry and batch management tools. The system helps store owners identify products nearing expiration, follow proper stock rotation practices, and reduce waste.",
     imageSrc:
-      "/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
     title: "Custom Discount Management",
     description: "Apply discounts on pet bundles, seasonal offers, or promotional products automatically during checkout without manual calculations.",
     imageSrc:
-      "/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
     title: "Subscription and Auto-Ship Orders ",
     description: "Set up recurring orders for food, litter, and treats so loyal customers receive their regular products automatically, building steady repeat revenue with no manual reordering.",
     imageSrc:
-      "/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -162,7 +162,7 @@ export const PET_STORE_KEY_FEATURES_CARDS = [
     description:
       "Handle customized pet product bundles and special customer requests with precise order tracking and fulfillment.",
     imageSrc:
-      "/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -170,7 +170,7 @@ export const PET_STORE_KEY_FEATURES_CARDS = [
     description:
       "Create and control purchase orders directly in the system, monitor supplier deliveries and keep a proper record of inflow of stock.",
     imageSrc:
-      "/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pet-store-pos/key-features-section/key-feature-card6.webp",
   },
 ];
 
@@ -216,7 +216,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Madeline James",
     title: "Pet Store Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image57.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image57.webp",
     text: "Previously, it was a headache to manage the expiry dates of pet food, but with the system, we are getting alerted automatically and there is a lot less waste!",
   },
   {
@@ -224,7 +224,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Zane Watson",
     title: "Pet Supply Retailer",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image57.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image57.webp",
     text: "It used to be difficult to keep track of various products for pets such as food, toys, grooming products, and more. Now they're all in one place and easy to keep track of.",
   },
   {
@@ -232,7 +232,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Caroline Watson",
     title: "Multi-Store General Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image58.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image58.webp",
     text: "Before Owners Inventory, we used to experience stockouts on our best sellers, but since the change we are always prepared to order the items that are selling out in our store.",
   },
   {
@@ -240,7 +240,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Mackenzie Kelly",
     title: "Pet Boutique Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image59.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image59.webp",
     text: "When customers used to purchase lots of pet items, checkout would be quite slow, but now we have the barcodes to scan and bill quickly and smoothly, even during peak hours.",
   },
   {
@@ -248,7 +248,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Crew James",
     title: "Pet Store Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image58.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image58.webp",
     text: "We now truly know what our customers are purchasing for their pets and the sales information enabled us to tweak our offerings and make sales better.",
   },
   {
@@ -256,7 +256,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Tanner Wood",
     title: "Pet Supply Retailer",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image59.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image59.webp",
     text: "Managing multiple pet store locations used to be confusing. Now we can see all branches in one dashboard without switching systems.",
   },
   {
@@ -264,7 +264,7 @@ export const PET_STORE_TESTIMONIALS = [
     name: "Gage Brooks",
     title: "Multi-Store General Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image60.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image60.webp",
     text: "The loyalty feature actually made a difference for us. Pet owners come back more often because their rewards are tracked automatically.",
   },
 ];
@@ -309,14 +309,14 @@ export const PET_STORE_KEY_FEATURES = [
     title: "Touchscreen Order & Billing",
     description:
       "Process customer product orders quickly with customizable touchscreen menus and instant bill split options.",
-    imageSrc: "/assets/features-page/featurescard-banners/pos-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/pos-banner.webp",
   },
   {
     id: "pet-store-stock-control",
     title: "Inventory and Stock Control",
     description:
       "Keep track of active product stock, variants, and bundle packages. Avoid running out of best-sellers during high demand.",
-    imageSrc: "/assets/features-page/featurescard-banners/products-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/products-banner.webp",
   },
   {
     id: "pet-store-vendor-mgmt",
@@ -324,7 +324,7 @@ export const PET_STORE_KEY_FEATURES = [
     description:
       "Manage pet supply brands, track purchase order costs, issue POs, and monitor warehouse delivery arrivals.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/purchases-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/purchases-banner.webp",
   },
   {
     id: "pet-store-variants",
@@ -332,21 +332,21 @@ export const PET_STORE_KEY_FEATURES = [
     description:
       "Configure product sizes, flavors, species types, and accessories as modifiers attached to base product listings.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/inventory-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/inventory-banner.webp",
   },
   {
     id: "pet-store-loyalty",
     title: "Customer & Loyalty Programs",
     description:
       "Drive repeat visits with integrated loyalty accounts, digital store credit, and email promotion campaigns.",
-    imageSrc: "/assets/features-page/featurescard-banners/people-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/people-banner.webp",
   },
   {
     id: "pet-store-finances",
     title: "Shift Cash and Card Tracking",
     description:
       "Monitor sales summaries, card processing, cash drawer entries, and shift cashier handovers in real time.",
-    imageSrc: "/assets/features-page/featurescard-banners/finance-banner.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/finance-banner.webp",
   },
   {
     id: "pet-store-ecommerce",
@@ -354,7 +354,7 @@ export const PET_STORE_KEY_FEATURES = [
     description:
       "Integrate online store orders with your counter terminal, ensuring unified stock levels for both channels.",
     imageSrc:
-      "/assets/features-page/featurescard-banners/ecommerce-banner.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/ecommerce-banner.webp",
   },
 ];
 
@@ -418,27 +418,27 @@ export const PET_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

@@ -78,7 +78,7 @@ const ContactHero: React.FC<contactHeroProps> = ({
           <div className="md:py-[1px] bg-[#F3F4F6] rounded-[20px] lg:rounded-[40px]">
             <div
               className="owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-16 px-3.5 sm:px-7 bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]"
-              style={{ ["--hero-bg" as any]: "url('/assets/home-page-images/hero-bg.webp')" } as React.CSSProperties}
+              style={{ ["--hero-bg" as any]: "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/hero-bg.webp')" } as React.CSSProperties}
             >
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-11 items-start">

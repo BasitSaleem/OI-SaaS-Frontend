@@ -60,7 +60,7 @@ export default function Modal({
             onClick={onClose}
           >
             <Image
-              src="/assets/modalcross-icon.svg"
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/modalcross-icon.svg"
               alt="cross icon"
               width={32}
               height={32}

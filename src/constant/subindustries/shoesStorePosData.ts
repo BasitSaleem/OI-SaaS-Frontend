@@ -96,7 +96,7 @@ export const SHOES_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omni-Channel and Sales Integration",
     description:
       "The Owners' POS synchronizes stock upon each sale. It enables brands to work under a single system by integrating all the sales channels, including the physical stores, online stores, and marketplaces. This maintains inventory and offers an easy shopping experience. We provide:",
-    imageSrc: "/assets/industries-pages/shoes-store-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -111,7 +111,7 @@ export const SHOES_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Better Decisions with Reporting and Analytics",
     description:
       "Proper reporting of the POS systems of the shoe store provides a clear understanding of sales by size, fashion trends, and brand performance. This assists in managing the stock and control of margin.",
-    imageSrc: "/assets/industries-pages/shoes-store-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -136,7 +136,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "The POS system of shoe stores can handle all sizes, styles, brands, and categories accurately. All product variants are monitored individually to maintain inventory.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -144,7 +144,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "The shoe store's checkout process uses a POS system that scans all the barcodes and performs a smarter search within a short period of time. This helps to eliminate queues and enhance customer experience.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -152,7 +152,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor inventory on-site at the POS system of the footwear stores. This assists in decreasing the shortages and oversupply in all branches.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -160,7 +160,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "The POS system for shoe stores eases the process of returns and size exchanges. All documents remain transparent to prevent confusion and loss of revenue.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -168,7 +168,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "Store customer information, sizes and purchase history using the shoe store POS system. This enhances loyalty and repeat purchases.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
@@ -176,7 +176,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "In the case of several outlets, the POS system of shoe stores maintains prices, stock, and sales in all the locations. This is why most people refer to it as the best POS system for a shoe store.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card6.webp",
   },
   {
     id: 7,
@@ -184,7 +184,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "Integrate your online shoe store with the POS system for a shoe store in order to automatically match the inventory. This eliminates manual processes and inventory mistakes.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card7.webp",
   },
   {
     id: 8,
@@ -192,7 +192,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "Footwear stores use POS system reports to monitor the performance of staff, best-selling shoes and slow-moving shoes to make better decisions.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card8.webp",
   },
   {
     id: 9,
@@ -200,7 +200,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "Monitor personnel access and activity with the POS system for shoe stores. This enhances store operation and accountability.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card9.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card9.webp",
   },
   {
     id: 10,
@@ -208,7 +208,7 @@ export const SHOES_STORE_KEY_FEATURES_CARDS = [
     description:
       "The POS system offers easy discount creation and application features designed for shoe stores. Stay competitive and appeal to an increased number of customers.",
     imageSrc:
-      "/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card10.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/shoes-store-pos/key-features-section/key-feature-card10.webp",
   },
 ];
 
@@ -261,28 +261,28 @@ export const SHOES_STORE_TESTIMONIALS = [
     id: "1",
     name: "Violet Walker",
     title: "Shoes Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image16.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image16.webp",
     text: "This POS was able to bill us more quickly and do all the size and style changes without being confused, and it was simple for the staff and the customers to check out quickly.",
   },
   {
     id: "2",
     name: "Chase Allen",
     title: "Footwear Store Owner",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image15.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image15.webp",
     text: "This is the case with our shoe store, which had problems with stock management and returns. Owners' Inventory POS keeps everything current, returns are simple and easy to do, and reports are clear and easy to understand.",
   },
   {
     id: "3",
     name: "Nolan Wright",
     title: "Manager Shoes Store​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image16.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image16.webp",
     text: "In-store, it used to take hours to have stock sync with multiple branches, but the POS system for shoe stores reflects inventory immediately, and billing is quick even during peak time. Reports show top-selling shoes.",
   },
   {
     id: "4",
     name: "Hazel Jenkins",
     title: "Footwear Store Owner​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image17.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image17.webp",
     text: "It was not that easy to keep track of hundreds of shoes, sizes, and styles, but with Owners Inventory POS, everything is organized, all variants can be tracked, and all exchanges can be easily made, and customer profiles allow us to understand their preferences.",
   },
 ];
@@ -386,27 +386,27 @@ export const SHOES_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
-import heroBanner from "../../../../../public/assets/industries-pages/retail-store-pos/retail-store-hero-banner.webp";
-import whyChoseBanner from "../../../../../public/assets/industries-pages/retail-store-pos/retail-store-why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/retail-store-hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/retail-store-why-chose-banner.webp";
 
 import {
   RETAIL_STORE_KEY_FEATURES_CARDS,

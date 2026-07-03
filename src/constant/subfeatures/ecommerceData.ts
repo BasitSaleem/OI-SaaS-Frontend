@@ -6,8 +6,8 @@ export const ECOMMERCE_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Extend your retail presence on the web with live inventory and pricing. Our eCommerce POS integration ensures that inventory is correct and customers are satisfied in all locations.",
-    image: "/assets/industry-type/retail-store.webp",
-    mobileImage: "/assets/industry-type/retail-store-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
   },
   {
@@ -17,8 +17,8 @@ export const ECOMMERCE_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Have one platform that manages dine-in, takeout, and online orders. By integrating point of sale eCommerce, menus, orders and payment remain in perfect harmony.",
-    image: "/assets/industry-type/restaurant.webp",
-    mobileImage: "/assets/industry-type/restaurant-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
   },
   {
@@ -28,8 +28,8 @@ export const ECOMMERCE_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Automate sales in large quantities by price and inventory adjustment. POS system eCommerce integration provides standardization between warehouses and internet portals.",
-    image: "/assets/industry-type/whole-sale.webp",
-    mobileImage: "/assets/industry-type/whole-sale-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const ECOMMERCE_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
       "Easily access prescriptions, expiry notifications, and online refills. Our integrated POS and eCommerce system maintains accurate and compliance records in real time.",
-    image: "/assets/industry-type/pharmacy.webp",
-    mobileImage: "/assets/industry-type/pharmacy-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
   },
   {
@@ -49,8 +49,8 @@ export const ECOMMERCE_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Keep track of styles, colors, and sizes. The eCommerce POS system harmonizes inventory between online and in-store collections to provide a seamless way of managing seasons.",
-    image: "/assets/industry-type/fashion.webp",
-    mobileImage: "/assets/industry-type/fashion-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
   },
   {
@@ -60,8 +60,8 @@ export const ECOMMERCE_INDUSTRIES = [
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
       "Keep track of specs, warranties, and inventory changes. Your product listings and orders will always be in sync with POS and eCommerce integration.",
-    image: "/assets/industry-type/brands.webp",
-    mobileImage: "/assets/industry-type/brands-mobile.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/brands.webp",
+    mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/brands-mobile.webp",
     link: "/industries/ecommerce-store-inventory-management-software",
   },
 ];
@@ -73,7 +73,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Present all your products, complete collections, smart filters, and color, size, or brand variations. Create a product discovery that is fast and easy to all customers.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/product-catalog.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/product-catalog.webp",
   },
   {
     id: 2,
@@ -81,7 +81,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Offer a user-friendly process to shopping with a trusted shopping cart and checkout. Accept various payment gateways, such as credit cards and mobile wallets, with secure payment gateways.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/safe-checkout.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/safe-checkout.webp",
   },
   {
     id: 3,
@@ -89,7 +89,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Customize your online store to your brand. Select a template, customize colors, layouts, and fonts, and make a store that feels and looks unique to you.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/template-customization.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/template-customization.webp",
   },
   {
     id: 4,
@@ -97,7 +97,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Establish brand trust through deep content develop custom pages, blog, host FAQs, and communicate company news right on your platform.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/company-info.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/company-info.webp",
   },
   {
     id: 5,
@@ -105,7 +105,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Arrange your catalog effectively. Sort products into groups by brand, category or style so that your customers can easily browse and your staff can easily track inventory.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/brand-grouping.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/brand-grouping.webp",
   },
   {
     id: 6,
@@ -113,7 +113,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Create some eye-catching banners and sliders to showcase your best products, current sales, and updated offers, all of which can be easily customized.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/sliders-production.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/sliders-production.webp",
   },
   {
     id: 7,
@@ -121,7 +121,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Make all operations transparent. Monitor product status, order updates and fulfillment workflows in real time to reduce errors and delays.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/status-tracking.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/status-tracking.webp",
   },
   {
     id: 8,
@@ -129,7 +129,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Reach out to your customers with ease. Showcase the locations of display stores on maps, manage contact forms, and expand your subscriber list using built-in email collection features.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/map-subscriber.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/map-subscriber.webp",
   },
   {
     id: 9,
@@ -137,7 +137,7 @@ export const ECOMMERCE_FEATURES_CARDS = [
     description:
       "Enhance all orders in a single dashboard since placing through delivery. Issue discounts, issue invoices, and keep track of shipping with ease to maintain correctness and customer satisfaction.",
     imageSrc:
-      "/assets/features-page/ecommerce-page/features-section/shiping-management.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/features-section/shiping-management.webp",
   },
 ];
 
@@ -181,28 +181,28 @@ export const ECOMMERCE_TESTIMONIALS = [
     id: "ecommerce-testimonial-1",
     name: "Daniel Wright",
     title: "Founder, UrbanMart",
-    image: "/assets/features-page/testimonial-images/testinomial-boy3.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy3.webp",
     text: `Owners Inventory has simplified running our business significantly. Our online and store inventory used to be very hard to maintain, but now it is automatically maintained. The dashboard is easy and user-friendly and we can monitor the sales real-time without any fuss. It is as though the entire business operates itself.`,
   },
   {
     id: "ecommerce-testimonial-2",
     name: "Jessica Brown",
     title: "Supply Chain Manager, RetailPlus",
-    image: "/assets/features-page/testimonial-images/testinomial-girl3.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl3.webp",
     text: `Our sales process has been expedited and made more trustworthy since we use Owners Inventory. Orders, payments, and reports are updated in real-time, which saves our team much work. Our data is now accurate through all channels and customers are pleased with the fact that their shopping experience has become so easy.`,
   },
   {
     id: "ecommerce-testimonial-3",
     name: "Robert Hayes",
     title: "Inventory Manager, Prime Distributors",
-    image: "/assets/features-page/testimonial-images/testinomial-boy4.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy4.webp",
     text: `Owners Inventory totally transformed our store operation. We save hours daily by handling our online and in-store sales on a single dashboard. It is easy, smooth and even enjoyable to use.`,
   },
   {
     id: "ecommerce-testimonial-4",
     name: "Amanda Clark",
     title: "COO, MarketFlow",
-    image: "/assets/features-page/testimonial-images/testinomial-girl4.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl4.webp",
     text: `Our non-technical personnel learned it within a short time. The system is quick, easy to navigate and customer care is readily available. We could not have a better solution.`,
   },
 ];
@@ -210,28 +210,28 @@ export const ECOMMERCE_TESTIMONIALS = [
 export const ECOMMERCE_WHY_CHOOSE_CARDS = [
   {
     id: "ecommerce-why-choose-1",
-    icon: "/assets/features-page/ecommerce-page/why-chose/unified-sale.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/why-chose/unified-sale.svg",
     title: "Unified Sales Experience",
     description:
       "Sync online and in-store sales effortlessly with real-time POS integration.",
   },
   {
     id: "ecommerce-why-choose-2",
-    icon: "/assets/features-page/ecommerce-page/why-chose/centralized-inventory.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/why-chose/centralized-inventory.svg",
     title: "Centralized Inventory Control",
     description:
       "Manage all your inventory from one dashboard with automatic multi-channel updates.",
   },
   {
     id: "ecommerce-why-choose-3",
-    icon: "/assets/features-page/ecommerce-page/why-chose/smarter-customer.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/ecommerce-page/why-chose/smarter-customer.svg",
     title: "Smarter Customer Insights",
     description:
       "Understand your customers with POS-integrated profiles, order history, and personalized offers.",
   },
   {
     id: "ecommerce-why-choose-4",
-    icon: "/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
     title: "Scalable for Every Business",
     description:
       "Whether you’re a startup or a multi-store brand, our POS and eCommerce solution scales with you.",

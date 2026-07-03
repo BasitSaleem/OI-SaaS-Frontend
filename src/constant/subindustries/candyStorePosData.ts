@@ -104,7 +104,7 @@ export const CANDY_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Omni-Channel Sales Integration for Candy Stores",
     description:
       "Our software connects every sales channel and marketing tool into one connected system. When a customer walks into a candy store, places an online order, or buys through a connected marketplace, every transaction feeds into the same system. This helps keep accurate sales records across all channels.",
-    imageSrc: "/assets/industries-pages/candy-store-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -132,7 +132,7 @@ export const CANDY_STORE_FEATURE_CARDS: FeatureCardData[] = [
     title: "Analytics and Reporting",
     description:
       "The software provided detailed reports of the candy shop's performance. It highlights best-selling items, overstocked products, daily sales, and transactions processed. Every purchase order becomes precise when it is made through real-time reports that show valuable insights.",
-    imageSrc: "/assets/industries-pages/candy-store-pos/better-decision.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -146,7 +146,7 @@ export const CANDY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Every candy product is organized inside the system with its unique barcode, SKU, price, and category. It can manage thousands of SKUs without losing the accuracy of any product line.",
     imageSrc:
-      "/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
@@ -154,7 +154,7 @@ export const CANDY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Staff can load bulk products into the POS, which helps get candy inventory organized and ready to sell from the counter without a slow setup process holding operations back.",
     imageSrc:
-      "/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
@@ -162,7 +162,7 @@ export const CANDY_STORE_KEY_FEATURES_CARDS = [
     description:
       "Discounts on seasonal candy, promotional bundles, and clearance sweet treats are applied automatically with each transaction. It handles pricing adjustments without needing the cashier to enter or calculate anything manually.",
     imageSrc:
-      "/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
@@ -170,7 +170,7 @@ export const CANDY_STORE_KEY_FEATURES_CARDS = [
     description:
       "The software captures custom candy orders accurately, such as gift packs, sizes, candy flavors, and different variants. It makes sure that every customer is served with their specifically ordered sweet items.",
     imageSrc:
-      "/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
@@ -178,7 +178,7 @@ export const CANDY_STORE_KEY_FEATURES_CARDS = [
     description:
       "It lets store owners create and track purchase orders for bulk candy suppliers directly inside the system while recording incoming stock precisely, keeping stock levels visible, and organizing supplier transactions.",
     imageSrc:
-      "/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/candy-store-pos/key-features-section/key-feature-card5.webp",
   },
 ];
 
@@ -226,7 +226,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Peyton Coleman",
     title: "Candy Store Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image30.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image30.webp",
     text: "Bulk candy tracking used to take two hours every morning. Now it is done automatically. We have not done a manual stock count in three months.",
   },
   {
@@ -234,7 +234,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Colton Murphy",
     title: "Candy Store Manager",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image31.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image31.webp",
     text: "Reduced seasonal overstock by 35% this Halloween compared to last year. The reports showed exactly what was moving, so we ordered smarter.",
   },
   {
@@ -242,7 +242,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Sadie Campbell",
     title: "Dessert Shop Operator",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image31.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image31.webp",
     text: "Loyalty program members' repeat visits are up noticeably within the first six weeks. Customer satisfaction has increased significantly.",
   },
   {
@@ -250,7 +250,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Dominic Rivera",
     title: "Multi-Location Shop Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image32.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image32.webp",
     text: "Checkout time dropped by half during peak hours. The queue that used to build every Saturday afternoon just does not happen anymore.",
   },
   {
@@ -258,7 +258,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Camila Gomez",
     title: "Dessert Shop Operator",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image32.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image32.webp",
     text: "Online and in-store stock finally matched, and we have not accidentally oversold products since switching to Owners Inventory.",
   },
   {
@@ -266,7 +266,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Aria Powell",
     title: "Multi-Location Shop Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/girl-image33.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image33.webp",
     text: "Identified five underperforming product lines in the first two weeks of using their POS. We replaced them and got a 20% margin improvement in the following month.",
   },
   {
@@ -274,7 +274,7 @@ export const CANDY_STORE_TESTIMONIALS = [
     name: "Zachary Diaz",
     title: "Multi-Location Shop Owner",
     image:
-      "/assets/industries-pages/industries-testimonial-images/boy-image33.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image33.webp",
     text: "Pricing errors at checkout dropped after we set our discounts inside the system. Our billing procedures are 2x faster than before.",
   },
 ];
@@ -378,27 +378,27 @@ export const CANDY_STORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };

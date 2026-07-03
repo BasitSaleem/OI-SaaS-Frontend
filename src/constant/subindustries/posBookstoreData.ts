@@ -104,7 +104,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
     description:
       "Our inventory system will connect all your sales outlets like the physical bookstores, online stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/bookstore-omini-chanel.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/bookstore-omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
@@ -120,7 +120,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
     description:
       "Comprehensive reporting and analytics give bookstore owners clear insights into stock movement, sales trends, and profitability. This helps in smarter purchasing, reordering and optimization of books on time.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/bookstore-better-decision.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/bookstore-better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
@@ -141,7 +141,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "The system keeps all books and stationery at the right level of stock. Stationery Inventory is also easy to manage as the dashboard shows different quantities and categories.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card1.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card1.webp",
   },
   {
     id: 2,
@@ -149,7 +149,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "Barcode scanning and a clean billing screen make checkout quicker. Customers are fond of short queues and accurate receipts.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card2.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card2.webp",
   },
   {
     id: 3,
@@ -157,7 +157,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "Using our Bookstore POS system, you can have the sales data organized by the author or genre. You will receive reports that will show the trending authors or most selling categories.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card3.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card3.webp",
   },
   {
     id: 4,
@@ -165,7 +165,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "The purchase orders and suppliers are located in a single location. Store owners get a clear picture of costs, stock requirements, and order history.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card4.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card4.webp",
   },
   {
     id: 5,
@@ -173,7 +173,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "All the personal data and buying history of each customer are automatically saved. The store can easily offer loyalty points and customised offers.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card5.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card5.webp",
   },
   {
     id: 6,
@@ -181,7 +181,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "In the Bookstore POS Software, online and walk-in sales are connected. The stock is updated instantly, and hence there is no confusion between channels.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card6.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card6.webp",
   },
   {
     id: 7,
@@ -189,7 +189,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "You can access instant sales and stock reports for quick, informed decision-making.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card7.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card7.webp",
   },
   {
     id: 8,
@@ -197,7 +197,7 @@ export const BOOKSTORE_KEY_FEATURES_CARDS = [
     description:
       "One dashboard keeps all store branches up-to-date with sales, pricing, and stock changes.",
     imageSrc:
-      "/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card8.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/key-features-section/bookstore-key-card8.webp",
   },
 ];
 
@@ -250,28 +250,28 @@ export const BOOKSTORE_TESTIMONIALS = [
     id: "1",
     name: "Olivia Bennett",
     title: "City Bookstore",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image2.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image2.webp",
     text: "Everything is easy with Owners Inventory Bookstore POS Software. Billing is quicker, and books remain organised. Now, Stationery Inventory Management is also very easy.",
   },
   {
     id: "2",
     name: "Ahmed R.",
     title: "Knowledge Hub",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image3.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image3.webp",
     text: "The software assists us in tracking all titles and stationery. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
   },
   {
     id: "3",
     name: "Sophia Carter",
     title: "Read & Learn​",
-    image: "/assets/industries-pages/industries-testimonial-images/girl-image3.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image3.webp",
     text: "Discounts, author-wise sales and Stationery Inventory Management have become easy to handle. The Bookstore POS Software offers simple to understand reports, which help us make superior decisions and plan our promotions better.",
   },
   {
     id: "4",
     name: "Noah Williams",
     title: "BookWorld​",
-    image: "/assets/industries-pages/industries-testimonial-images/boy-image4.webp",
+    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image4.webp",
     text: "The POS Software of Owners Inventory Bookstore has transformed our bookstore. ISBN tracking, inventory updates and stationery management is not interrupted. Billing is fast and accurate even during peak school seasons. Our clients and employees like the more streamlined experience.",
   },
 ];
@@ -380,27 +380,27 @@ export const BOOKSTORE_TOOLS_DATA = {
     {
       id: 1,
       name: "Shopify",
-      image: "/assets/home-page-images/tools-section/shopify.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "/assets/home-page-images/tools-section/woocomerce.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "/assets/home-page-images/tools-section/quick-book.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "/assets/home-page-images/tools-section/xero.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "/assets/home-page-images/tools-section/stripe.svg",
+      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };
