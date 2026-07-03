@@ -37,9 +37,40 @@ interface VoicesRealBusinessProps {
 const VoicesRealBusiness = ({ title = "Voices of Real Businesses" }: VoicesRealBusinessProps) => {
   return (
     <section
-      className="mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px] real-voices bg-cover bg-no-repeat"
-
+      className="relative overflow-hidden mt-28 md:mt-40 lg:mt-[100px] py-8 lg:py-[60px] mb-28 md:mb-40 lg:mb-[100px]"
     >
+      {/* Decorative Background Circles */}
+      <div
+        className="absolute -z-10 rounded-full pointer-events-none"
+        style={{
+          width: "696px",
+          height: "696px",
+          backgroundColor: "rgba(26, 209, 185, 0.4)",
+          bottom: "-450px",
+          left: "-50px",
+          filter: "blur(200px)",
+        }}
+      />
+      <div
+        className="absolute -z-10 rounded-full pointer-events-none"
+        style={{
+          width: "696px",
+          height: "696px",
+          backgroundColor: "#CFB3E2",
+          bottom: "-450px",
+          right: "-50px",
+          filter: "blur(200px)",
+        }}
+      />
+      {/* Noise Overlay */}
+      <div
+        className="absolute inset-0 -z-10 pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+          backgroundSize: "3px 3px",
+          opacity: 0.15,
+        }}
+      />
       <div className="wrapper text-center">
         <SectionHeading heading={title} headingClassName="xl:mb-12 lg:mb-6 mb-5" />
 
