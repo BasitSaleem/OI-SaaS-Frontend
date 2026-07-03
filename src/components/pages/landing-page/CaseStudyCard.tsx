@@ -75,7 +75,7 @@ export default function CaseStudyCard({
 
         {/* Quote Section */}
         <div className="md:col-span-6 lg:col-span-5">
-          <div className="relative ">
+          <div className="relative">
             <div className="flex items-start lg:items-center gap-x-6">
               <Image
                 src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/blue-checker.svg"
@@ -95,11 +95,9 @@ export default function CaseStudyCard({
             </div>
 
             <div
-              className={`bg-contain bg-center bg-no-repeat  ${hideCTA ? "min-h-[610px] md:min-h-[470px] lg:min-h-[460px] md:max-h-[470px]" : "min-h-[460px] lg:min-h-[460px]"
+              className={`bg-contain bg-center bg-no-repeat  ${hideCTA ? "min-h-[500px] md:min-h-[470px] lg:min-h-[500px] md:max-h-[470px]" : "min-h-[500px] lg:min-h-[500px]"
                 }`}
-              style={{
-                backgroundImage: `url(${study.backgroundImage})`,
-              }}
+              
             >
               <Image
                 src={study.image}
