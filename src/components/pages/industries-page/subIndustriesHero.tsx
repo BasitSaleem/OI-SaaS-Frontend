@@ -91,8 +91,32 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
           <div className="md:py-[1px] bg-[#F3F4F6] rounded-[20px] lg:rounded-[40px]">
             <div
               className="owner-inventory-hero__bottom hero-bg-circle relative overflow-hidden flex flex-col items-center justify-center w-full pt-10 pb-6 md:py-[76px] lg:py-0 px-3.5 sm:px-7 bg-[#F3F4F6] rounded-tr-[20px] rounded-b-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] lg:rounded-tl-[40px] backdrop-blur-[374px]"
-              style={{ ["--hero-bg" as any]: "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/industries-hero-bg.webp')" } as React.CSSProperties}
+              
             >
+              {/* Background Decorative Circles */}
+              <div
+                className="absolute -z-10 rounded-full pointer-events-none bottom-[50px] md:top-1/3 md:translate-y-1/3 left-[-50px] md:left-[15%] w-[300px] h-[300px] blur-[130px] md:w-[400px] md:h-[400px] md:blur-[150px] lg:blur-[200px]"
+                style={{
+                  backgroundColor: "#F95D5C",
+                  
+                }}
+              />
+              <div
+                className="absolute -z-10 rounded-full bottom-[50px] md:top-1/3 md:translate-y-1/3 right-[-50px] md:right-[15%] pointer-events-none w-[300px] h-[300px] blur-[130px] md:w-[400px] md:h-[400px] md:blur-[150px] lg:blur-[200px]"
+                style={{
+                  backgroundColor: "#1DD0B8",
+                 
+                }}
+              />
+              {/* Noise Overlay */}
+              <div
+                className="absolute inset-0 -z-10 pointer-events-none"
+                style={{
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                  backgroundSize: "3px 3px",
+                  opacity: 0.15,
+                }}
+              />
               <div className="relative z-[2] owner-inventory-hero__content flex flex-col items-center justify-center w-full wrapper">
                 <div ref={mainHeadingRef} style={{ opacity: 0, transform: "translateY(50px)" }}>
                   <h1 className="text-center xl:text-[64px] lg:text-5xl md:text-[40px] text-4xl xl:leading-[76px] lg:leading-[60px] leading-[48px] font-semibold text-[#231F20] font-['Onest'] lg:mt-[70px] xl:mb-8 lg:mb-6 mb-5">
