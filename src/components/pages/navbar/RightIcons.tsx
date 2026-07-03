@@ -50,7 +50,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
 
       {/* User Icon */}
       <div className="relative group">
-        <Link href="https://app.ownersinventory.com/">
+        <Link href="https://app.ownersinventory.com/" aria-label="Log in to your account">
           <Image
             src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/user.svg"
             alt="User"
