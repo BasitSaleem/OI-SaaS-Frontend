@@ -46,7 +46,7 @@ const BlogTableOfContents: React.FC<BlogTableOfContentsProps> = ({ items }) => {
       <p className="text-base font-semibold font-['Onest'] text-[#231F20] mb-3">
         Table of Contents
       </p>
-      <div className="flex flex-col divide-y divide-[#F3F4F6]">
+      <div className="flex flex-col">
         {items.map((item) => {
           const isActive = activeId === item.id;
           return (
@@ -56,7 +56,7 @@ const BlogTableOfContents: React.FC<BlogTableOfContentsProps> = ({ items }) => {
               className={[
                 "text-left text-sm font-['Onest'] font-medium py-3 px-3 rounded-full transition-all duration-200 w-full truncate",
                 isActive
-                  ? "bg-[#1AD1B9] text-white rounded-full"
+                  ? "bg-[#EFFFFD] text-[var(--primary-teal-dark)] rounded-full"
                   : "text-[#555] hover:text-[#231F20]",
               ].join(" ")}
             >
