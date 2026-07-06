@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import { blogData, getBlogById } from "@/constant/blogData/blogData";
 import BlogDetailHero from "@/components/pages/blog-detail/BlogDetailHero";
 import BlogDetailBody from "@/components/pages/blog-detail/BlogDetailBody";
-import BlogDetailTestimonial from "@/components/pages/blog-detail/BlogDetailTestimonial";
 import BlogRelatedTopics from "@/components/pages/blog-detail/BlogRelatedTopics";
+import FaqSection from "@/components/pages/landing-page/FAQSection";
 import IndustriesCallToAction from "@/components/pages/industries-page/IndustriesCallToAction";
 
 export function generateStaticParams() {
@@ -42,9 +42,10 @@ export default async function BlogDetailPage({
     <>
       <BlogDetailHero
         title={blog.heading}
+        description={blog.blogOverview}
         publishDate={blog.date}
         readingTime={blog.totalRead}
-        views="2,340 views"
+        views="4.5k views"
         authorName={blog.author}
         authorAvatar={blog.authorAvatar ?? blog.blogImg}
         authorRole={blog.authorRole ?? "Author"}
@@ -52,15 +53,22 @@ export default async function BlogDetailPage({
 
       <BlogDetailBody data={blog} />
 
-      {blog.authorQuote && (
-        <BlogDetailTestimonial testimonial={blog.authorQuote} />
-      )}
-
       {blog.relatedTopicIds && (
         <BlogRelatedTopics
           relatedTopicIds={blog.relatedTopicIds}
           currentId={blog.id}
         />
+      )}
+
+      {blog.faqs && blog.faqs.length > 0 && (
+        <div className="mt-16 lg:mt-24">
+          <FaqSection
+            faqs={blog.faqs}
+            heading="Frequently Asked Questions"
+            paragraph="Quick answers to the most common questions about this topic. Need more detail? Our team is ready to help."
+            showButton
+          />
+        </div>
       )}
 
       <div className="mt-16 lg:mt-24">

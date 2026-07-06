@@ -9,7 +9,7 @@ export type { BlogCardProps };
 const BlogCard: React.FC<BlogCardProps> = ({
   cardHeading,
   cardDesc,
-  image = "/assets/blog-images/first-blog.webp",
+  image = "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/first-blog.webp",
   category = "Inventory Management",
   date,
   views = "4.5k",
@@ -19,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   showAuthor = false,
   authorName = "John Smith",
   authorDesignation = "Content Writer",
-  authorImage = "/assets/blog-images/first-blog.webp",
+  authorImage = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image61.webp",
   alwaysShowButton = false,
 }) => {
   const sharedProps = {

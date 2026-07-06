@@ -15,10 +15,18 @@ import BlogCard from "./BlogCard";
 import { blogData } from "@/constant/blogData/blogData";
 
 const TrendingNow = () => {
+  const trendingBlogs = blogData.slice(0, 6);
+
+  // Desktop: show 3 full cards when there are 3 or fewer, otherwise peek a
+  // partial 4th (3.5) to hint that more cards exist. Loop only makes sense
+  // once there are more cards than fit on screen.
+  const desktopPerView = trendingBlogs.length > 3 ? 3.5 : 3;
+  const enableLoop = trendingBlogs.length > 3;
+
   const swiperRef = useRef<SwiperType | null>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [totalSlides, setTotalSlides] = useState(blogData.slice(0, 6).length);
+  const [totalSlides, setTotalSlides] = useState(trendingBlogs.length);
 
   useEqualizeHeadings(sliderRef, "[data-card-heading]", [activeIndex]);
 
@@ -27,7 +35,7 @@ const TrendingNow = () => {
   const goToSlide = useCallback((i: number) => swiperRef.current?.slideToLoop(i), []);
 
   const recalcTotal = () => {
-    setTotalSlides(blogData.slice(0, 6).length);
+    setTotalSlides(trendingBlogs.length);
   };
 
   return (
@@ -89,13 +97,13 @@ const TrendingNow = () => {
       <div ref={sliderRef} className="wrapper overflow-hidden">
         <Swiper
           modules={[Navigation]}
-          loop
+          loop={enableLoop}
           grabCursor
           breakpoints={{
-            0:    { slidesPerView: 1,   spaceBetween: 16 },
-            640:  { slidesPerView: 1.5, spaceBetween: 18 },
-            768:  { slidesPerView: 2.5, spaceBetween: 20 },
-            1024: { slidesPerView: 3.5, spaceBetween: 24 },
+            0: { slidesPerView: 1, spaceBetween: 16 },
+            640: { slidesPerView: 1.5, spaceBetween: 18 },
+            768: { slidesPerView: 2.5, spaceBetween: 20 },
+            1024: { slidesPerView: desktopPerView, spaceBetween: 24 },
           }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
@@ -105,14 +113,14 @@ const TrendingNow = () => {
           onBreakpoint={() => recalcTotal()}
           className="!overflow-visible"
         >
-          {blogData.slice(0, 6).map((blog, i) => (
+          {trendingBlogs.map((blog, i) => (
             <SwiperSlide key={blog.id ?? i} className="h-auto self-stretch">
               <BlogCard
                 cardHeading={blog.heading}
                 image={blog.blogImg}
                 date={blog.date}
                 readTime={blog.totalRead}
-                  href={`/resources/blog/${blog.id}`}
+                href={`/resources/blog/${blog.id}`}
               />
             </SwiperSlide>
           ))}

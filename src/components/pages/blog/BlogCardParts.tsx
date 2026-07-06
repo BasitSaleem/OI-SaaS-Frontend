@@ -83,12 +83,17 @@ export const ReadArticleButton = ({
   always?: boolean;
   fullWidth?: boolean;
 }) => (
-  /* Mobile/tablet: always visible. Desktop: hover-only unless always=true.
+  /* Mobile/tablet: always visible (no hover there). Desktop: hidden by
+     default, smoothly revealed on hover (1s) unless always=true.
+     The reveal animates grid-template-rows 0fr→1fr + opacity, which grows the
+     card height. This no longer causes the slider to shiver because
+     useEqualizeHeadings only re-runs on WIDTH changes, so the per-frame height
+     growth during this transition is ignored.
      after:absolute after:inset-0 stretches the link to cover the entire card
      (card must have position:relative) so clicking anywhere navigates. */
   <div
     className={[
-      "grid transition-all duration-300 ease-in-out",
+      "grid transition-[grid-template-rows,opacity] duration-[600ms] ease-in-out",
       always
         ? "grid-rows-[1fr] opacity-100"
         : "grid-rows-[1fr] opacity-100 lg:grid-rows-[0fr] lg:opacity-0 lg:group-hover:grid-rows-[1fr] lg:group-hover:opacity-100",

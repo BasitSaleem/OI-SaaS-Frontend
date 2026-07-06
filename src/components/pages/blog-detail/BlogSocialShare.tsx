@@ -78,7 +78,7 @@ const BlogSocialShare: React.FC<BlogSocialShareProps> = ({ title }) => {
       <div
         className="rounded-2xl px-5 py-7 flex flex-col items-center text-center gap-4"
         style={{
-          backgroundImage: "url('/assets/icons-section/icons-section.webp')",
+          backgroundImage: "url('https://d2qlv5xtew5ayb.cloudfront.net/assets/icons-section/icons-section.webp')",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",

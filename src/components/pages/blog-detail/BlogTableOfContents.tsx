@@ -42,7 +42,7 @@ const BlogTableOfContents: React.FC<BlogTableOfContentsProps> = ({ items }) => {
   };
 
   return (
-    <div className="sticky top-24 bg-white rounded-2xl border border-[#E5E7EB] p-4 flex flex-col">
+    <div className="bg-white rounded-2xl border border-[#E5E7EB] p-4 flex flex-col">
       <p className="text-base font-semibold font-['Onest'] text-[#231F20] mb-3">
         Table of Contents
       </p>

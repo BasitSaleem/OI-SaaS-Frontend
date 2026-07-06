@@ -12,7 +12,7 @@ const BlogDetailSidebar: React.FC<BlogDetailSidebarProps> = ({
   tableOfContents,
   articleTitle,
 }) => (
-  <aside className="hidden lg:flex flex-col">
+  <aside className="flex flex-col gap-6">
     <BlogTableOfContents items={tableOfContents} />
     <BlogSocialShare title={articleTitle} />
   </aside>

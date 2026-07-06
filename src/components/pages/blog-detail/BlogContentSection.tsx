@@ -22,7 +22,13 @@ const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: numb
   }
 
   if (block.type === "smallHeading") {
-    return <SmallHeading className="mt-2">{block.content}</SmallHeading>;
+    // Sub-label within a section (e.g. plan tiers) — smaller than the section
+    // heading so the hierarchy reads clearly.
+    return (
+      <h4 className="text-lg md:text-xl font-semibold font-['Onest'] text-[#231F20] mt-2">
+        {block.content}
+      </h4>
+    );
   }
 
   if (block.type === "numberedList") {
@@ -57,6 +63,133 @@ const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: numb
           </li>
         ))}
       </ul>
+    );
+  }
+
+  if (block.type === "callout") {
+    const success = block.variant === "success";
+    return (
+      <div
+        className={[
+          "rounded-2xl p-5 md:p-6 flex flex-col gap-2",
+          success
+            ? "bg-[#EAFBF4] border border-[#1AD1B9]/40"
+            : "bg-[#F3F4F6]",
+        ].join(" ")}
+      >
+        {block.title && (
+          <p className={`text-base md:text-lg font-semibold font-['Onest'] ${success ? "text-[#0F8A73]" : "text-[#231F20]"}`}>
+            {block.title}
+          </p>
+        )}
+        <p className="text-base md:text-lg leading-[1.7] font-['Onest'] text-[#555] font-normal">
+          {block.content}
+        </p>
+      </div>
+    );
+  }
+
+  if (block.type === "budgetCards") {
+    return (
+      <div className="flex flex-col gap-4">
+        {block.cards.map((card, i) => (
+          <div
+            key={i}
+            className="bg-[#F3F4F6] rounded-2xl p-5 md:p-6 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6"
+          >
+            <div className="lg:w-[26%] flex-shrink-0">
+              <p className="text-base md:text-lg font-semibold font-['Onest'] text-[#231F20]">
+                {card.title}
+              </p>
+              {card.subtitle && (
+                <p className="text-sm font-['Onest'] text-[#666] mt-0.5">{card.subtitle}</p>
+              )}
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 flex-1">
+              {card.metrics.map((m, j) => (
+                <div key={j} className="flex flex-col gap-1">
+                  <span className="text-[11px] md:text-xs uppercase tracking-[0.5px] font-medium font-['Onest'] text-[#999]">
+                    {m.label}
+                  </span>
+                  <span
+                    className={`text-sm md:text-[15px] font-medium font-['Onest'] ${
+                      m.highlight ? "text-[#795CF5]" : "text-[#555]"
+                    }`}
+                  >
+                    {m.value}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (block.type === "detailList") {
+    const isNumber = block.marker === "number";
+    return (
+      <div className="flex flex-col gap-6">
+        {block.items.map((item, i) => (
+          <div key={i} className="flex items-start gap-4">
+            {isNumber ? (
+              <BlogWorkflowIcon n={i + 1} className="flex-shrink-0" />
+            ) : (
+              <span className="flex-shrink-0 mt-0.5 w-7 h-7 rounded-full bg-[#F1ECFD] text-[#795CF5] flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 16v-4" />
+                  <path d="M12 8h.01" />
+                </svg>
+              </span>
+            )}
+            <div className="flex flex-col gap-1.5">
+              <p className="text-base md:text-lg font-semibold font-['Onest'] text-[#231F20]">
+                {item.title}
+              </p>
+              <p className="text-base md:text-lg leading-[1.7] font-['Onest'] text-[#555] font-normal">
+                {item.content}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (block.type === "table") {
+    return (
+      <div className="w-full overflow-x-auto rounded-2xl border border-[#E5E7EB]">
+        <table className="w-full border-collapse text-left">
+          <thead>
+            <tr className="border-b border-[#E5E7EB]">
+              {block.columns.map((col, i) => (
+                <th
+                  key={i}
+                  className="px-5 py-4 text-sm md:text-base font-semibold font-['Onest'] text-[#231F20] whitespace-nowrap"
+                >
+                  {col}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row, r) => (
+              <tr key={r} className="border-b border-[#F3F4F6] last:border-b-0">
+                {row.map((cell, c) => (
+                  <td
+                    key={c}
+                    className="px-5 py-4 text-sm md:text-base leading-[1.6] font-['Onest'] text-[#555] font-normal"
+                  >
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     );
   }
 

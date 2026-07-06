@@ -42,22 +42,23 @@ const BlogDetailBody: React.FC<BlogDetailBodyProps> = ({ data }) => {
         </div>
       )}
 
-      {/* Two-column layout — desktop */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-        {/* Left sidebar — col-span-3 */}
-        <div className="lg:col-span-3">
+      {/* Two-column layout — desktop: sticky sidebar (left) + scrollable
+          content (right), like the privacy/terms pages. The sidebar column
+          itself is sticky so its containing block is the full-height row,
+          letting the complete sidebar — table of contents, CTA card, and
+          share links — stay pinned together for the whole article. */}
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+        {/* Left sidebar — sticky (TOC + CTA + share all move together) */}
+        <div className="hidden lg:block lg:sticky lg:top-[100px] w-full lg:w-[300px] flex-shrink-0">
           <BlogDetailSidebar
             tableOfContents={toc}
             articleTitle={data.heading}
           />
         </div>
 
-        {/* Right content — col-span-9 */}
-        <div className="lg:col-span-9">
-          <BlogDetailContent
-            overview={data.blogOverview}
-            sections={sections}
-          />
+        {/* Right content — scrolls with the page */}
+        <div className="min-w-0 flex-1 w-full">
+          <BlogDetailContent overview={data.blogOverview} sections={sections} />
         </div>
       </div>
     </section>

@@ -86,6 +86,7 @@ const LatestArticles = () => {
               href={`/resources/blog/${blog.id}`}
               showAuthor
               authorName={blog.author}
+              authorImage={blog.authorAvatar ?? blog.blogImg}
               alwaysShowButton={i === 0}
             />
           </div>

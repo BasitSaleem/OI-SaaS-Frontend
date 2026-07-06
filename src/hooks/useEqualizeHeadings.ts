@@ -31,7 +31,20 @@ export function useEqualizeHeadings(
     };
 
     equalize();
-    const observer = new ResizeObserver(equalize);
+
+    // Only re-equalize when the container's WIDTH changes (breakpoint /
+    // reflow). Height changes are ignored on purpose: hover animations (e.g.
+    // the Read Article button expanding) grow the container, and reacting to
+    // that would re-run equalize every frame — which rewrites heading heights,
+    // resizes the container again, and loops. That feedback loop is what makes
+    // the cards shiver on hover.
+    let lastWidth = ref.current?.getBoundingClientRect().width ?? 0;
+    const observer = new ResizeObserver((entries) => {
+      const width = entries[0]?.contentRect.width ?? 0;
+      if (Math.round(width) === Math.round(lastWidth)) return;
+      lastWidth = width;
+      equalize();
+    });
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
     // deps are forwarded from the caller
