@@ -336,7 +336,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="The Best POS System for Clothing Stores"
-          description="Over 72% of clothing retailers face stock inconsistencies across sizes and colors. Our advanced POS systems for clothing stores eliminate errors, improve checkout speed, and give complete visibility across all branches."
+          description="Over 72% of clothing retailers face stock inconsistencies across sizes and colors. Our advanced [POS systems for clothing stores](/features/pos) eliminate errors, improve checkout speed, and give complete visibility across all branches."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"
@@ -373,7 +373,7 @@ const Page = () => {
 
         <IndustriesCallToAction
           title="Get Control of Your Inventory Now"
-          description="Gain complete visibility over your clothing inventory with real-time tracking, variant control, and a centralized dashboard for accurate management. With owners inventory, eliminate stock confusion and make smarter decisions for growing your clothing brand."
+          description="Gain complete visibility over your [clothing inventory](/industries/clothing-inventory-management-software) with real-time tracking, variant control, and a centralized dashboard for accurate management. With owners inventory, eliminate stock confusion and make smarter decisions for growing your clothing brand."
           ctaDesc="Request a Free Demo"
         />
 

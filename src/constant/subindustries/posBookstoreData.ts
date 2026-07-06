@@ -287,7 +287,7 @@ export const BOOKSTORE_FAQS = [
     id: "2",
     question: "Can the system handle Stationery Inventory Management?",
     answer:
-      "Yes. The software incorporates Stationery Inventory Management. All pens, notebooks, and school supplies are kept up to date, and the stock quantities are always up to date.",
+      "Yes. The software incorporates [Stationery Inventory Management](/features/inventory). All pens, notebooks, and school supplies are kept up to date, and the stock quantities are always up to date.",
   },
   {
     id: "3",

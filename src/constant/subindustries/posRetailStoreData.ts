@@ -110,7 +110,7 @@ export const RETAIL_STORE_FEATURE_CARDS = [
     id: "2",
     title: "Reporting and Analytics for Better Decisions",
     description:
-      "Our best point of sale software for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
+      "Our best [point of sale software](/features/pos) for small retailers provides clear insights into daily revenue, profit margins, and product performance.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/retail-store-pos/retail-store-better-decision.webp",
     buttonLabel: "View Details",
@@ -317,7 +317,7 @@ export const RETAIL_STORE_FAQS = [
     id: "2",
     question: "Can I manage inventory easily with this system?",
     answer:
-      "Yes! The POS shows real-time inventory changes and provides low inventory notifications. You are able to trace items, view best sellers, and prevent overstocking or scarcity of goods. It simplifies inventory management and makes it error-free.",
+      "Yes! The POS shows real-time inventory changes and provides low inventory notifications. You are able to trace items, view best sellers, and prevent overstocking or scarcity of goods. It simplifies [inventory management](/industries/retail-store-inventory-management-software) and makes it error-free.",
   },
   {
     id: "3",
@@ -335,7 +335,7 @@ export const RETAIL_STORE_FAQS = [
     id: "5",
     question: "Is this POS suitable for shops with a small budget?",
     answer:
-      "Definitely. This is among the most suitable small business POS systems that are adapted to small retail stores. It provides high-quality features at a low cost, providing small retailers with a professional system without emptying their pockets.",
+      "Definitely. This is among the most suitable small business POS systems that are adapted to small retail stores. It provides high-quality features at a [low cost](/pricing), providing small retailers with a professional system without emptying their pockets.",
   },
 ];
 

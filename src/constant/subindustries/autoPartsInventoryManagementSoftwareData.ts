@@ -49,7 +49,7 @@ export const AUTO_PARTS_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon6",
     title: "Multi-location Inventory Check",
     description:
-      "Automotive businesses with warehouses and multiple stores lack real-time visibility of inventory. This leads to mismatched records, delays in delivering orders, and ineffective management across locations.",
+      "Automotive businesses with [warehouses and multiple stores](/industries/warehouse-pos-system) lack real-time visibility of inventory. This leads to mismatched records, delays in delivering orders, and ineffective management across locations.",
   },
 ];
 
@@ -152,7 +152,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     id: 1,
     title: "Detailed Parts Catalog",
     description:
-      "With detailed parts catalogs, it organizes vehicle parts by specifications, categories, and compatibility information. This makes it easy to provide the right product to the customer.",
+      "With [detailed parts catalogs](/features/products), it organizes vehicle parts by specifications, categories, and compatibility information. This makes it easy to provide the right product to the customer.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card1.webp",
   },
@@ -207,7 +207,7 @@ export const AUTO_PARTS_INVENTORY_WORKFLOW_DATA = {
       number: 1,
       title: "Managing Purchase Orders",
       description:
-        "The system creates purchase orders based on demand, supplier schedules, and low stock triggers. It helps order parts efficiently, tracks incoming shipments, and ensures that the right automotive parts are received on time without manual follow-ups or missing restocking cycles.",
+        "The system creates [purchase orders](/features/purchases) based on demand, supplier schedules, and low stock triggers. It helps order parts efficiently, tracks incoming shipments, and ensures that the right automotive parts are received on time without manual follow-ups or missing restocking cycles.",
     },
     {
       number: 2,

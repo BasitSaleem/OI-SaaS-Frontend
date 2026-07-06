@@ -58,13 +58,13 @@ export const GYM_WHY_CHOOSE_CARDS = [
     id: "1",
     icon: "whychoseIcon1",
     title: "Faster Front-Desk Transactions",
-    description: "The gym point of sale system processes membership renewals, class pack sales, and retail purchases from the same screen. Staff do not switch between tools to complete a sale. Each transaction is automatically recorded, so the billing history stays current without any manual entry.",
+    description: "The gym [point of sale system](/features/pos) processes membership renewals, class pack sales, and retail purchases from the same screen. Staff do not switch between tools to complete a sale. Each transaction is automatically recorded, so the billing history stays current without any manual entry.",
   },
   {
     id: "2",
     icon: "whychoseIcon2",
     title: "Automated Recurring Billing",
-    description: "Membership billing runs on configured cycles without requiring staff to initiate each charge. When a payment fails, the system flags it immediately and triggers a follow-up sequence. Gym owners can see exactly which accounts have outstanding balances and act on them before those members stop showing up.",
+    description: "[Membership billing](/features/accounts-and-finance) runs on configured cycles without requiring staff to initiate each charge. When a payment fails, the system flags it immediately and triggers a follow-up sequence. Gym owners can see exactly which accounts have outstanding balances and act on them before those members stop showing up.",
   },
   {
     id: "3",
@@ -123,7 +123,7 @@ export const GYM_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Better Analytics and Reporting",
     description:
-      "Owners Inventory organizes your gym's financial data into clear reports that are actually useful for decision-making. Rather than a raw list of transactions, the reporting dashboard presents membership revenue by plan type, retail sales by product category, payment failure rates, and revenue trends over any date range you select. Gym owners can identify which membership tiers bring the strongest retention, which retail products are moving and which are sitting, and where billing failures are creating gaps in monthly recurring revenue. That information supports purchasing decisions, pricing adjustments, and promotional planning without requiring a separate analytics tool.",
+      "Owners Inventory organizes your gym's financial data into clear reports that are actually useful for decision-making. Rather than a raw list of transactions, the [reporting dashboard](/features/reports) presents membership revenue by plan type, retail sales by product category, payment failure rates, and revenue trends over any date range you select. Gym owners can identify which membership tiers bring the strongest retention, which retail products are moving and which are sitting, and where billing failures are creating gaps in monthly recurring revenue. That information supports purchasing decisions, pricing adjustments, and promotional planning without requiring a separate analytics tool.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/gym-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
@@ -377,7 +377,7 @@ export const GYM_TESTIMONIAL_FEATURES = [
     id: "5",
     title: "Straightforward Pricing",
     description:
-      "The best POS for gym management does not require a long-term contract or an enterprise-level budget. The system is free to start. After the trial period, pricing is structured around your actual usage with no hidden fees attached to integrations or additional payment methods.",
+      "The best POS for gym management does [not require a long-term contract](/pricing) or an enterprise-level budget. The system is free to start. After the trial period, pricing is structured around your actual usage with no hidden fees attached to integrations or additional payment methods.",
     icon: "testWhychoseIcon5",
   },
    {

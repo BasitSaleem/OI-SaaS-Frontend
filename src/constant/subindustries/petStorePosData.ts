@@ -104,7 +104,7 @@ export const PET_STORE_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "Online and In-Store Order Sync",
         listdescription:
-          "Both shop and online sales channels connect to a live inventory when integrated with an online store. This prevents overselling and keeps stocks accurate throughout all platforms.",
+          "Both shop and online sales channels connect to a live inventory when integrated with an [online store](/features/ecommerce). This prevents overselling and keeps stocks accurate throughout all platforms.",
       },
       {
         listheading: "Unified Sales Dashboard",
@@ -393,14 +393,14 @@ export const PET_STORE_TESTIMONIAL_FEATURES = [
   {
     id: "4",
     title: "Expiry and Stock Awareness",
-    description: "Pet food and healthcare products have expiration dates that require careful tracking. The system has a capacity for expiry and batch tracking to enable proper rotation of the stock, reduce the waste and ensure the product quality.",
+    description: "Pet food and healthcare products have expiration dates that require careful tracking. The system has a capacity for [expiry and batch tracking](/features/inventory) to enable proper rotation of the stock, reduce the waste and ensure the product quality.",
     icon: "testWhychoseIcon4",
   },
   {
     id: "5",
     title: "Transparent Pricing Structure",
     description:
-      "No hidden fees for adding products, accessing reports or growing your store online. You only pay for the features your business actually uses.",
+      "[No hidden fees](/pricing) for adding products, accessing reports or growing your store online. You only pay for the features your business actually uses.",
     icon: "testWhychoseIcon5",
   },
   {

@@ -302,7 +302,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Inventory Management System for Ecommerce Stores"
-          description="The Owners Inventory eCommerce inventory management software is the software that helps you control your online business inventory. It helps you to manage your online store accurately and quickly. Our system tracks all sales, orders, and stock updates across various platforms. It's perfect for businesses who need to update their inventory in real-time and fulfill orders across multiple channels."
+          description="The Owners Inventory [eCommerce inventory management](/features/ecommerce) software is the software that helps you control your online business inventory. It helps you to manage your online store accurately and quickly. Our system tracks all sales, orders, and stock updates across various platforms. It's perfect for businesses who need to update their inventory in real-time and fulfill orders across multiple channels."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

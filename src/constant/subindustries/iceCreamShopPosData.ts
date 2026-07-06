@@ -14,7 +14,7 @@ export const ICE_CREAM_SHOP_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon1",
     title: "Slow Checkout During Rush Hours",
     description:
-      "Long queues of customers during the weekends and evenings cause stress for employees. Without a robust point of sale solution, order and payment processing are delayed and inefficient, and become a source of customer frustration.",
+      "Long queues of customers during the weekends and evenings cause stress for employees. Without a robust [point of sale solution](/features/pos), order and payment processing are delayed and inefficient, and become a source of customer frustration.",
   },
   {
     id: "2",
@@ -66,7 +66,7 @@ export const ICE_CREAM_SHOP_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon2",
     title: "Real-time Inventory Tracking",
     description:
-      "All the orders for each scoop, topping, cone and retail item will be entered into the inventory management system automatically. Real-time stock management ensures accurate updates after each transaction, preventing the risk of stockouts during peak selling hours.",
+      "All the orders for each scoop, topping, cone and retail item will be entered into the inventory management system automatically. [Real-time stock management](/features/inventory) ensures accurate updates after each transaction, preventing the risk of stockouts during peak selling hours.",
   },
   {
     id: "3",
@@ -87,7 +87,7 @@ export const ICE_CREAM_SHOP_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Built-in Staff Monitoring",
     description:
-      "The POS dashboard provides owners with a view of employee sales activity, performance, and transaction handling. Real-time operational tracking makes staff productivity management easier.",
+      "The POS dashboard provides owners with a view of employee sales activity, performance, and transaction handling. Real-time operational tracking makes [staff productivity management](/features/people) easier.",
   },
   {
     id: "6",

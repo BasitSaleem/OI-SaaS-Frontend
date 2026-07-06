@@ -303,7 +303,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Optical Lab Management Software That Simplifies Workflow and Order Tracking"
-          description="Simplify the processing of prescriptions, monitor lens and frame inventories, organize lab orders and streamline lens production. Owners Inventory provides optical labs with accurate records, minimizes errors, streamlines turnaround and provides exceptional service to customers."
+          description="Simplify the processing of prescriptions, monitor [lens and frame inventories](/features/inventory), organize lab orders and streamline lens production. Owners Inventory provides optical labs with accurate records, minimizes errors, streamlines turnaround and provides exceptional service to customers."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

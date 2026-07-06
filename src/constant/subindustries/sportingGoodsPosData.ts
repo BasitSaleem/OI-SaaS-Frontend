@@ -5,7 +5,7 @@ import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFe
 export const SPORTING_GOODS_UNIFIED_HEADING =
   "Challenges Sporting Goods Stores Face Today";
 
-export const SPORTING_GOODS_UNIFIED_PARAGRAPH = "Sporting goods retail deals with inventory complexity that generic point-of-sale systems cannot handle. These challenges affect stock levels, customer experience, and profitability across every selling season.";
+export const SPORTING_GOODS_UNIFIED_PARAGRAPH = "Sporting goods retail deals with inventory complexity that generic [point-of-sale systems](/features/pos) cannot handle. These challenges affect stock levels, customer experience, and profitability across every selling season.";
 
 export const SPORTING_GOODS_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -115,7 +115,7 @@ export const SPORTING_GOODS_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "Online Store Order Sync",
         listdescription:
-          "Sporting goods listed through a connected online store are drawn from the same inventory as the physical counter. When a product sells in store, the eCommerce listing updates immediately across every connected channel, preventing a customer from purchasing something that has already been cleared from the shelf. ",
+          "Sporting goods listed through a [connected online store](/features/ecommerce) are drawn from the same inventory as the physical counter. When a product sells in store, the eCommerce listing updates immediately across every connected channel, preventing a customer from purchasing something that has already been cleared from the shelf. ",
       },
       {
         listheading: "Unified Retail Dashboard",

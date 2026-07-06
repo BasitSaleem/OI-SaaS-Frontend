@@ -252,7 +252,7 @@ export const ECOMMERCE_INVENTORY_WORKFLOW_DATA = {
       number: 3,
       title: "Inventory Tracking",
       description:
-        "All platforms and warehouses are able to track stock in real-time. Instant updates are made to sales, returns, and transfers.",
+        "All platforms and warehouses are able to [track stock in real-time](/features/inventory). Instant updates are made to sales, returns, and transfers.",
     },
     {
       number: 4,
@@ -398,7 +398,7 @@ export const ECOMMERCE_INVENTORY_TESTIMONIAL_FEATURES = [
 export const ECOMMERCE_INVENTORY_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Our software is compatible with accounting systems, shipping systems, payment gateways and eCommerce platforms. The integrations improve productivity and reduce the amount of manual work.",
+    "Our software is compatible with accounting systems, shipping systems, payment gateways and [eCommerce platforms](/features/integrations). The integrations improve productivity and reduce the amount of manual work.",
   tools: [
     {
       id: 1,

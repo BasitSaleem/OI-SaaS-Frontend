@@ -251,7 +251,7 @@ export const THRIFT_STORE_FAQS = [
   {
     id: "3",
     question: "Can I upload my existing inventory all at once?",
-    answer: "Yes, you can import product information from an excel or CSV file, which enables you to set up your inventory very fast without having to enter the products manually one by one.",
+    answer: "Yes, you can import [product information](/features/products) from an excel or CSV file, which enables you to set up your inventory very fast without having to enter the products manually one by one.",
   },
   {
     id: "4",
@@ -341,7 +341,7 @@ export const THRIFT_STORE_TESTIMONIAL_FEATURES = [
   {
     id: "5",
     title: "Transparent Pricing Structure",
-    description: "No hidden costs for adding products, accessing reports or growing your business. The cost will be predictable and manageable, only paying for the features that your business needs.",
+    description: "[No hidden costs](/pricing) for adding products, accessing reports or growing your business. The cost will be predictable and manageable, only paying for the features that your business needs.",
     icon: "testWhychoseIcon5",
   },
   {

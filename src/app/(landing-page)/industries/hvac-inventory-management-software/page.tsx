@@ -345,7 +345,7 @@ const Page = () => {
 
         <WhyChoosePOS
           heading="How Owners Inventory Solves HVAC Parts Management"
-          paragraph="Owners Inventory connects parts tracking, purchase order management, van stock replenishment, and supplier records into one system. Service managers get the information they need to keep technicians equipped and purchasing decisions rooted in real consumption data rather than estimates."
+          paragraph="Owners Inventory connects [parts tracking](/features/inventory), [purchase order management](/features/purchases), van stock replenishment, and supplier records into one system. Service managers get the information they need to keep technicians equipped and purchasing decisions rooted in real consumption data rather than estimates."
           cards={HVAC_INVENTORY_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="hvacInventory"

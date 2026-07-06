@@ -66,7 +66,7 @@ export const RESTAURANT_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon2",
     title: "Smart Food Cost Management",
     description:
-      "Recipe-level costing and cost of goods analysis help restaurant owners control expenses. It allows managers to monitor ingredient usage, optimize purchases, and maintain consistent profitability.",
+      "[Recipe-level costing](/features/manufacturing) and cost of goods analysis help restaurant owners control expenses. It allows managers to monitor ingredient usage, optimize purchases, and maintain consistent profitability.",
   },
   {
     id: "3",
@@ -87,7 +87,7 @@ export const RESTAURANT_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Purchase Order Automation",
     description:
-      "Our inventory control software manages purchase orders and tracks supplier deliveries consistently to ensure that every essential ingredient is available in restaurants on time. It maintains accurate records of supplier details, delivery quality, and pricing.",
+      "Our inventory control software manages [purchase orders](/features/purchases) and tracks supplier deliveries consistently to ensure that every essential ingredient is available in restaurants on time. It maintains accurate records of supplier details, delivery quality, and pricing.",
   },
   {
     id: "6",
@@ -186,7 +186,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
     id: 5,
     title: "Reporting and Analytics",
     description:
-      "The platform provides detailed and precise reports on inventory usage and sales data. It helps identify variances, track food cost trends, and monitor performance. It allows restaurants to take data-driven actions to improve efficiency and long-term profitability.",
+      "The platform provides detailed and precise reports on inventory usage and sales data. It helps identify variances, track [food cost trends](/features/reports), and monitor performance. It allows restaurants to take data-driven actions to improve efficiency and long-term profitability.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/restaurant-inventory-management-software/key-features-section/key-features-card5.webp",
   },
@@ -259,7 +259,7 @@ export const RESTAURANT_INVENTORY_FAQS = [
     id: "1",
     question: "How does Owners Inventory handle ingredient-level tracking?",
     answer:
-      "The software tracks ingredient-level inventory based on recipe usage. It tracks usage accurately and provides visibility of what exactly is being used in the kitchen with advanced AI features.",
+      "The software tracks [ingredient-level inventory](/features/inventory) based on recipe usage. It tracks usage accurately and provides visibility of what exactly is being used in the kitchen with advanced AI features.",
   },
   {
     id: "2",

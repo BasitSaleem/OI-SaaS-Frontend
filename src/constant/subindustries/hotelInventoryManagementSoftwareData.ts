@@ -219,7 +219,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     id: 7,
     title: "Consumption & Usage Reports",
     description:
-      "Create detailed reports in order to identify items with high consumption or costs. This information helps you reduce waste, improve stock levels, and optimize purchasing strategies. This leads to improved cost control and better inventory planning over time.",
+      "Create [detailed reports](/features/reports) in order to identify items with high consumption or costs. This information helps you reduce waste, improve stock levels, and optimize purchasing strategies. This leads to improved cost control and better inventory planning over time.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card7.webp",
   },
@@ -357,7 +357,7 @@ export const HOTEL_INVENTORY_FAQS = [
     id: "5",
     question: "Does it work for hotels having large chains?",
     answer:
-      "It is designed for multi-location operation and fully scalable. A centralized inventory system allows large hotel chains to manage multiple properties while still maintaining control in each property.",
+      "It is designed for [multi-location operation](/features/facilities) and fully scalable. A centralized inventory system allows large hotel chains to manage multiple properties while still maintaining control in each property.",
   },
 ];
 

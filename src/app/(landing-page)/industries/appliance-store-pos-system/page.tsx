@@ -406,7 +406,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Appliance Store POS System for Faster Sales and Better Inventory Control"
-          description= "The Appliance Store Point of Sale System allows you to sell appliances faster and manage your inventory more effectively. Without the right point-of-sale system, appliance stores struggle with stock inaccuracies, slow billing, pricing errors, and managing warranties across hundreds of high-value products."
+          description= "The Appliance Store Point of Sale System allows you to sell appliances faster and manage your inventory more effectively. Without the right [point-of-sale system](/features/pos), appliance stores struggle with stock inaccuracies, slow billing, pricing errors, and managing warranties across hundreds of high-value products."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

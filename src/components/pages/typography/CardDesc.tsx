@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import renderRichText from "@/utils/richText";
 
 interface SubHeadingProps {
   children: React.ReactNode;
@@ -18,7 +19,7 @@ const CardDesc: React.FC<SubHeadingProps> = ({ children, className }) => {
         className
       )}
     >
-      {children}
+      {renderRichText(children)}
     </p>
   );
 };

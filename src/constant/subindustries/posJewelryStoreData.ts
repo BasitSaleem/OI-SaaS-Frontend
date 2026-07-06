@@ -51,7 +51,7 @@ export const JEWELRY_STORE_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Stock Accuracy",
     description:
-      "Each sale, purchase or repair update is immediately reflected in inventory. Tracking by weights provides perfect management of gold and diamonds. This eliminates the problem of mismatch of stock and it allows you to guard against the loss of your high-value-assets.",
+      "Each sale, purchase or repair update is immediately reflected in inventory. [Tracking by weights](/features/inventory) provides perfect management of gold and diamonds. This eliminates the problem of mismatch of stock and it allows you to guard against the loss of your high-value-assets.",
   },
   {
     id: "2",
@@ -291,7 +291,7 @@ export const JEWELRY_STORE_FAQS = [
     id: "4",
     question: "Can your POS manage custom orders and repairs?",
     answer:
-      "Yes, indeed. For a flawless customer experience, our jewelry  point of sale system offers full repair and custom order management along with status tracking and automated updates.",
+      "Yes, indeed. For a flawless customer experience, our [jewelry  point of sale system](/features/pos) offers full repair and custom order management along with status tracking and automated updates.",
   },
   {
     id: "5",
@@ -367,7 +367,7 @@ export const JEWELRY_STORE_TESTIMONIAL_FEATURES = [
 export const JEWELRY_STORE_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Contemporary jewelry inventory systems fit perfectly well with POS, accounting packages, customer relationship management (CRM), barcode readers, and eCommerce. This enables the owners to have all inventory, sales, finances, and customer relationship under one dashboard.",
+    "Contemporary [jewelry inventory systems](/industries/jewelry-inventory-management-software) fit perfectly well with POS, accounting packages, customer relationship management (CRM), barcode readers, and eCommerce. This enables the owners to have all inventory, sales, finances, and customer relationship under one dashboard.",
   tools: [
     {
       id: 1,

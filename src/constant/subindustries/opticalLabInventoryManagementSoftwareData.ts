@@ -118,7 +118,7 @@ export const OPTICAL_LAB_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Advanced Analytics and Reporting",
     description:
-      "Our optical lab management software generates real-time reports on the production efficiency, turnaround time, inventory utilization, and sales performance. Based on the accurate data, managers can identify workflow bottlenecks, understand demand trends, and optimize the resources.",
+      "Our optical lab management software generates [real-time reports](/features/reports) on the production efficiency, turnaround time, inventory utilization, and sales performance. Based on the accurate data, managers can identify workflow bottlenecks, understand demand trends, and optimize the resources.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/optical-lab-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
@@ -182,7 +182,7 @@ export const OPTICAL_LAB_INVENTORY_KEY_FEATURES_CARDS = [
 export const OPTICAL_LAB_INVENTORY_WORKFLOW_DATA = {
   heading: "Optical Lab Management Workflow of Owners Inventory",
   paragraph:
-    "Our software makes optical lab work even easier by managing prescriptions, production workflows, and inventory accurately. Each order is monitored throughout the production process to minimize mistakes and speed up delivery.",
+    "Our software makes optical lab work even easier by managing prescriptions, [production workflows](/features/manufacturing), and inventory accurately. Each order is monitored throughout the production process to minimize mistakes and speed up delivery.",
   steps: [
     {
       number: 1,

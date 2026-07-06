@@ -107,14 +107,14 @@ export const RETAIL_STORE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "POS Sales Management",
         listdescription:
-          "A user-friendly point of sale system lets staff search for products fast using categories, barcodes or names. This helps staff process transactions quickly.",
+          "A user-friendly [point of sale system](/features/pos) lets staff search for products fast using categories, barcodes or names. This helps staff process transactions quickly.",
         listSubDescription:
           "It also makes sure bundled purchases, discounts and multiple items are processed correctly.",
       },
       {
         listheading: "Online and Wholesale Order Integration",
         listdescription:
-          "Online and wholesale order integration is important for businesses. These businesses handle bulk orders with different prices, quantities and delivery needs. The point of sale system captures all order details and aligns them with available stock.",
+          "Online and wholesale order integration is important for businesses. These businesses handle bulk orders with different prices, quantities and delivery needs. The [point of sale system](/industries/retail-store-pos-system) captures all order details and aligns them with available stock.",
         listSubDescription:
           "If a customer places an order for products the point of sale system checks stock instantly. This prevents delays or incorrect order processing.",
       },
@@ -284,7 +284,7 @@ export const RETAIL_STORE_INVENTORY_FAQS = [
     question:
       "What is retail inventory management software and how does it help my store?",
     answer:
-      "Retail inventory management software is a tool that helps you keep track of the inventory, sales and purchases. It does all of this in one place, which makes your life easier.",
+      "[Retail inventory management](/features/inventory) software is a tool that helps you keep track of the inventory, sales and purchases. It does all of this in one place, which makes your life easier.",
   },
   {
     id: "2",
