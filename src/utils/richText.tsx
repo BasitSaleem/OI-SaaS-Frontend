@@ -28,7 +28,7 @@ export function renderRichText(text: React.ReactNode): React.ReactNode {
       <Link
         key={`${match[2]}-${match.index}`}
         href={match[2]}
-        className="text-inherit font-semibold no-underline"
+        className="text-[var(--primary-purple,#795CF5)] font-semibold no-underline"
       >
         {match[1]}
       </Link>
