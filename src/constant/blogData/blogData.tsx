@@ -116,7 +116,7 @@ export interface BlogData {
 
 export const blogData: BlogData[] = [
   {
-    id: "pos-system-cost-2026",
+    id: "pos-system-cost",
     slug: "how-much-does-a-pos-system-cost",
     blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/first-blog.webp",
     heading: "How Much Does a POS System Cost? A Complete Pricing Breakdown for 2026",
