@@ -30,6 +30,7 @@ export const ADVANCE_REPORTS_INDUSTRIES = [
       "Monitor supply, production, and delivery statistics using a POS with an advanced reporting system that allows better planning and cost control.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

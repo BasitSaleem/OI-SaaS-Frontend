@@ -30,6 +30,7 @@ export const POS_INDUSTRIES = [
       "Easily manage large orders, special pricing, and multi-location stock with wholesaler-focused POS features that streamline bulk transactions and boost efficiency for high-volume businesses.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

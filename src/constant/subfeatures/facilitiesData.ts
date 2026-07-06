@@ -30,6 +30,7 @@ export const FACILITIES_INDUSTRIES = [
       "Manage multiple distribution centers and warehouses at a single platform. Coordinate incoming shipments, control loading zones, and optimize storage and delivery schedules with facility analytics.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

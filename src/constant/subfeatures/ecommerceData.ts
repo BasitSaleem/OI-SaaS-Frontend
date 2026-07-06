@@ -30,6 +30,7 @@ export const ECOMMERCE_INDUSTRIES = [
       "Automate sales in large quantities by price and inventory adjustment. POS system eCommerce integration provides standardization between warehouses and internet portals.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

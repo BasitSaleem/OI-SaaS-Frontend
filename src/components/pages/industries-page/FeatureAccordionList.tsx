@@ -30,7 +30,7 @@ const FeatureAccordionList = ({ list }: FeatureAccordionListProps) => {
           >
             <button
               type="button"
-              className="accordion-toggle flex items-start justify-between w-full p-5 md:px-6 md:py-4 text-left font-medium focus:outline-none rounded-[20px] transition-colors duration-300"
+              className="accordion-toggle cursor-pointer flex items-start justify-between w-full p-5 md:px-6 md:py-4 text-left font-medium focus:outline-none rounded-[20px] transition-colors duration-300"
               onClick={() => toggle(idx)}
             >
               <span

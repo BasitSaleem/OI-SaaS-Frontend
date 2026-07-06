@@ -30,6 +30,7 @@ export const HR_INDUSTRIES = [
       "Manage distribution teams and warehouse employees via a central HR platform. Monitor attendance, shifts, and payroll accurately to ensure your supply chain runs smoothly all the way through.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

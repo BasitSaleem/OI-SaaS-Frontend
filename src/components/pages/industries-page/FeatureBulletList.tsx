@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FeatureListItem } from "./FeatureAccordionList";
 
 interface FeatureBulletListProps {
@@ -51,7 +52,17 @@ const FeatureBulletList = ({ list }: FeatureBulletListProps) => (
           </svg>
         </span>
         <span className="font-['Onest'] text-[var(--text-dark)] font-medium text-base md:text-xl lg:text-2xl  leading-[150%] lg:leading-[135%]">
-          {typeof item === "string" ? item : item.listheading}
+          {(() => {
+            const text = typeof item === "string" ? item : item.listheading;
+            if (text.toLowerCase().includes("pos")) {
+              return (
+                <Link href="/features/pos" className="hover:text-[var(--primary-purple)]">
+                  {text}
+                </Link>
+              );
+            }
+            return text;
+          })()}
         </span>
       </li>
     ))}

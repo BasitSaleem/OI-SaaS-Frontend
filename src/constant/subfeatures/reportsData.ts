@@ -30,6 +30,7 @@ export const REPORTS_INDUSTRIES = [
       "Streamline bulk order analysis through inventory management reports that indicate the stock flow, customer demand, and the accuracy of pricing among various warehouses.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

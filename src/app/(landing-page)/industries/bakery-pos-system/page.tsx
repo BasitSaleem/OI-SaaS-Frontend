@@ -1,5 +1,6 @@
 import React from "react";
 import Script from "next/script";
+import Link from "next/link";
 const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/bakery-hero-banner.webp";
 const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/why-chose-banner.webp";
 
@@ -369,7 +370,14 @@ const Page = () => {
           secondDescription={BAKERY_TESTIMONIAL_DATA.secondDescription}
           whyChooseShow={true}
           whyChooseTitle={BAKERY_TESTIMONIAL_DATA.whyChooseTitle}
-          whyChooseDescription={BAKERY_TESTIMONIAL_DATA.whyChooseDescription}
+          whyChooseDescription={
+            <>
+              <Link href="/" className="font-semibold">
+                Owners Inventory
+              </Link>{" "}
+              was designed specifically to support bakery workflows. The system combines performance and simplicity so that you can concentrate on the baking process while it handles all the other operations.
+            </>
+          }
           features={BAKERY_TESTIMONIAL_FEATURES}
           iconSet="bakery"
         />

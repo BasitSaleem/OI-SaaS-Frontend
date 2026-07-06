@@ -18,7 +18,7 @@ interface IndustriesTestimonialProps {
   secondDescription?: string;
   whyChooseShow?: boolean;
   whyChooseTitle?: string;
-  whyChooseDescription?: string;
+  whyChooseDescription?: React.ReactNode;
   features?: Feature[];
   /** The name of the icon set to use (e.g. "bakery", "retail") */
   iconSet?: IndustryIconSet | IndustryIconSet[];

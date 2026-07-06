@@ -12,7 +12,7 @@ export interface Feature {
 
 interface WhyChooseGridProps {
   whyChooseTitle: string;
-  whyChooseDescription: string;
+  whyChooseDescription: React.ReactNode;
   features: Feature[];
   iconSet?: IndustryIconSet | IndustryIconSet[];
 }

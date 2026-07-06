@@ -94,6 +94,7 @@ export const HOME_INDUSTRIES = [
       "Handle bulk orders with custom pricing, manage multi-location stock, and keep fulfillment smooth. Streamline sales, purchases, and inventory operations. All in one system built for high-volume wholesalers.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,
