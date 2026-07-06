@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import renderRichText from "@/utils/richText";
 
 
 interface ParagraphProps {
@@ -18,7 +19,7 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
         className
       )}
     >
-      {children}
+      {renderRichText(children)}
     </p>
   );
 };

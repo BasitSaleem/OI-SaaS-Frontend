@@ -377,7 +377,7 @@ const Page = () => {
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
             heading="FAQS"
-            paragraph="Below are some of the most frequently asked questions about the jewelry inventory management software we provide."
+            paragraph="Below are some of the most frequently asked questions about the [jewelry inventory management](/features/inventory) software we provide."
             faqs={JEWELRY_INVENTORY_FAQS}
             buttonText="Start Now"
           />

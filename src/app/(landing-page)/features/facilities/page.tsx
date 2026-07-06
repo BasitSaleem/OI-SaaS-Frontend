@@ -51,7 +51,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Facility Management Built for Every Industry"
-          paragraph="Owners Inventory simplifies facility management by connecting warehouses and retail floors under one smart dashboard. Track operations, inventory, and staff in real time. Keep all locations efficient, connected, and ready to perform."
+          paragraph="Owners Inventory simplifies facility management by [connecting warehouses](/industries/warehouse-pos-system) and retail floors under one smart dashboard. Track operations, inventory, and staff in real time. Keep all locations efficient, connected, and ready to perform."
           buttonText="Explore All Industries"
           industries={FACILITIES_INDUSTRIES}
         />

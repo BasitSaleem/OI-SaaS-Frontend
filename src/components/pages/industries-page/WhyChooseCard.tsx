@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import renderRichText from "@/utils/richText";
 
 interface WhyChooseCardProps {
   title: string;
@@ -20,7 +21,7 @@ const WhyChooseCard = ({ title, description, icon }: WhyChooseCardProps) => {
         </h3>
       </div>
       <p className="text-[var(--text-grey)] text-sm leading-[170%] font-['onest']">
-        {description}
+        {renderRichText(description)}
       </p>
     </div>
   );

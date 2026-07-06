@@ -197,7 +197,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="POS System for Barber Shops for Faster Service and Management"
-          description="Managing a barber shop without the right point of sale system means slow payment processing, untracked retail stock, and booking confusion that costs you clients. Owners Inventory is an easy-to-use barber shop POS software, trusted by over 120+ barber shops. It handles payments with ease, keeps every product accounted for, and gives your barbers the counter setup that actually keeps up with workflows."
+          description="Managing a barber shop without the right [point of sale system](/features/pos) means slow payment processing, untracked retail stock, and booking confusion that costs you clients. Owners Inventory is an easy-to-use barber shop POS software, trusted by over 120+ barber shops. It handles payments with ease, keeps every product accounted for, and gives your barbers the counter setup that actually keeps up with workflows."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

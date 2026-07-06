@@ -94,7 +94,7 @@ export const BARBER_SHOP_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon6",
     title: "Accurate Reporting",
     description:
-      "The POS data collected from every transaction is stored using powerful reporting tools that deliver real-time insights into sales trends, peak hours, and product sales. Business decisions are made from accurate numbers rather than estimates from guesswork.",
+      "The POS data collected from every transaction is stored using powerful [reporting tools](/features/reports) that deliver real-time insights into sales trends, peak hours, and product sales. Business decisions are made from accurate numbers rather than estimates from guesswork.",
   },
 ];
 
@@ -174,7 +174,7 @@ export const BARBER_SHOP_KEY_FEATURES_CARDS = [
     id: 4,
     title: "Role-Based Access Control",
     description:
-      "With role-based access, every barber sees only what is relevant to their counter work while owners retain full control of financial data, discount settings, and inventory management.",
+      "With role-based access, every barber sees only what is relevant to their counter work while owners retain full control of financial data, discount settings, and [inventory management](/features/inventory).",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/barber-shop-pos/key-features-section/key-feature-card4.webp",
   },
@@ -355,7 +355,7 @@ export const BARBER_SHOP_TESTIMONIAL_FEATURES = [
     id: "5",
     title: "Actionable Insights",
     description:
-      "The system provides clear business insights that support accurate decision-making in restocking of items, staff handling, and financial management.",
+      "The system provides clear business insights that support accurate decision-making in restocking of items, [staff handling](/features/people), and financial management.",
     icon: "testWhychoseIcon5",
   },
 ];

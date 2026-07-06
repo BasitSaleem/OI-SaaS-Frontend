@@ -335,7 +335,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Smart Bookstore POS Software for Better Selling"
-          description="Bookstores lose nearly 18% of sales due to poor inventory tracking and slow checkout experiences. Our Bookstore POS system transforms your store into a fast, organized, and fully connected space. Manage books, customers, sales, suppliers, and online orders from a single, clean dashboard. Make each transaction smooth and every book easy to find."
+          description="Bookstores lose nearly 18% of sales due to poor inventory tracking and slow checkout experiences. Our [Bookstore POS system](/features/pos) transforms your store into a fast, organized, and fully connected space. Manage books, customers, sales, suppliers, and online orders from a single, clean dashboard. Make each transaction smooth and every book easy to find."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

@@ -86,7 +86,7 @@ export const APPLIANCE_STORE_WHY_CHOOSE_CARDS = [
     id: "6",
     icon: "whychoseIcon6",
     title: "Real-Time Reports and Business Insights",
-    description: "The system offers comprehensive reports on sales performance, inventory value, profit margin, customer purchase history, and stock movement.",
+    description: "The system offers comprehensive [reports on sales performance](/features/reports), inventory value, profit margin, customer purchase history, and stock movement.",
   },
 ];
 
@@ -142,7 +142,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Barcode Scanning Support",
     description:
-      "Barcode scanning is supported on the POS system, which allows for quicker product look up, billing, stock count and inventory management. This helps in increasing the accuracy and speeds up store's operations.",
+      "Barcode scanning is supported on the POS system, which allows for quicker product look up, billing, stock count and [inventory management](/features/inventory). This helps in increasing the accuracy and speeds up store's operations.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card2.webp",
   },
@@ -166,7 +166,7 @@ export const APPLIANCE_STORE_KEY_FEATURES_CARDS = [
     id: 5,
     title: "Supplier and Purchase Order Management",
     description:
-      "Purchase orders may be created, supplier transactions tracked, inventory received and procurement activities managed from a single platform, ensuring efficient stock replenishment.",
+      "[Purchase orders](/features/purchases) may be created, supplier transactions tracked, inventory received and procurement activities managed from a single platform, ensuring efficient stock replenishment.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/appliance-store-pos/key-features-section/key-feature-card5.webp",
   },

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import renderRichText from "@/utils/richText";
 import "../../../app/globals.css";
 import ButtonLg from "@/components/button/ButtonLg";
 import Paragraph from "../typography/Paragraph";
@@ -141,7 +142,7 @@ export default function FaqSection({
                       : "max-h-0 opacity-0 pb-0"
                     }`}
                 >
-                  {faq.answer}
+                  {renderRichText(faq.answer)}
                 </div>
               </div>
             ))}

@@ -21,7 +21,7 @@ export const HVAC_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon2",
     title: "Scattered Stock With No Accurate Count",
     description:
-      "Parts sit across multiple service vans, a central warehouse, and sometimes an off-site storage unit. Without a connected system, nobody holds an accurate count at any given time. A technician places an order for a part that has been sitting in another van for three days, and neither person knew.",
+      "Parts sit across multiple service vans, a [central warehouse](/industries/warehouse-pos-system), and sometimes an off-site storage unit. Without a connected system, nobody holds an accurate count at any given time. A technician places an order for a part that has been sitting in another van for three days, and neither person knew.",
   },
   {
     id: "3",
@@ -132,7 +132,7 @@ export const HVAC_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Better Parts Analytics and Reporting",
     description:
-      "Owners Inventory converts daily parts usage and purchasing data into clear, readable reports. Managers can identify fast-moving components, slow stock that is tying up capital, and seasonal demand patterns over time. That data supports smarter purchasing decisions, reduces unnecessary stock holding, and keeps parts costs proportional to actual job volume.",
+      "Owners Inventory converts daily parts usage and purchasing data into [clear, readable reports](/features/reports). Managers can identify fast-moving components, slow stock that is tying up capital, and seasonal demand patterns over time. That data supports smarter purchasing decisions, reduces unnecessary stock holding, and keeps parts costs proportional to actual job volume.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/better-decision.webp",
     buttonLabel: "View Details",
@@ -162,7 +162,7 @@ export const HVAC_INVENTORY_KEY_FEATURES_CARDS = [
     id: 3,
     title: "Van and Warehouse Stock in One View",
     description:
-      "Service vehicles are managed as separate stock locations within the same account. Managers can see what is in each van, what has been consumed, and what requires replenishment alongside warehouse levels, all from a single screen.",
+      "Service vehicles are managed as [separate stock locations](/features/facilities) within the same account. Managers can see what is in each van, what has been consumed, and what requires replenishment alongside warehouse levels, all from a single screen.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hvac-inventory-management-software/key-features-section/key-features-card3.webp",
   },
@@ -365,7 +365,7 @@ export const HVAC_INVENTORY_TESTIMONIAL_FEATURES = [
     id: "5",
     title: "Transparent Pricing for Contractors",
     description:
-      "Professional HVAC inventory software does not need to carry an enterprise price tag. The system is free to start. After the trial period, pricing is tied to scope, with no hidden fees and no upfront long-term commitment required.",
+      "Professional HVAC inventory software does not need to carry an enterprise price tag. The system is free to start. After the trial period, [pricing is tied to scope](/pricing), with no hidden fees and no upfront long-term commitment required.",
     icon: "testWhychoseIcon5",
   },
   {

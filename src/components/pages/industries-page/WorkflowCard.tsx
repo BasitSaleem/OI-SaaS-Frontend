@@ -1,6 +1,7 @@
 "use client";
 
 import PosHardwarePageIcons from "../../icons/posHardwarePageIcons";
+import renderRichText from "@/utils/richText";
 
 interface WorkflowCardProps {
   number: number;
@@ -57,7 +58,7 @@ const WorkflowCard = ({ number, title, description }: WorkflowCardProps) => {
               </h3>
             </div>
             <p className="text-sm leading-[170%] font-['onest'] text-[var(--text-grey)] font-normal  text-center">
-              {description}
+              {renderRichText(description)}
             </p>
           </div>
         </div>

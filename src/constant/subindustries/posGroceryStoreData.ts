@@ -79,7 +79,7 @@ export const GROCERY_STORE_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon4",
     title: "Smart Reordering",
     description:
-      "Automatic low-stock alerts and purchase order management prevent stockouts. Suppliers and deliveries are well organized.",
+      "Automatic low-stock alerts and [purchase order management](/features/purchases) prevent stockouts. Suppliers and deliveries are well organized.",
   },
   {
     id: "5",

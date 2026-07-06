@@ -244,13 +244,13 @@ export const FURNITURE_STORE_KEY_FEATURES_CARDS = [
 export const FURNITURE_STORE_WORKFLOW_DATA = {
   heading: "Inventory Workflow of Owners Inventory",
   paragraph:
-    "Our furniture store POS system simplifies every stage of inventory management. From supplier purchase to final customer delivery, every stock movement is tracked in one connected system.",
+    "Our furniture store POS system simplifies every stage of [inventory management](/features/inventory). From supplier purchase to final customer delivery, every stock movement is tracked in one connected system.",
   steps: [
     {
       number: 1,
       title: "Inventory Procurement",
       description:
-        "Prepare purchase orders with manufacturers and suppliers. Items are received with complete variant information. Maintain accurate records of costs, quantities, and supplier timelines for better planning.",
+        "Prepare [purchase orders](/features/purchases) with manufacturers and suppliers. Items are received with complete variant information. Maintain accurate records of costs, quantities, and supplier timelines for better planning.",
     },
     {
       number: 2,

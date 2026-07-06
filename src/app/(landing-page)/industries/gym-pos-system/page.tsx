@@ -330,7 +330,7 @@ const Page = () => {
 
         <WhyChoosePOS
           heading= "How Owners Inventory Solves Gym POS Challenges"
-          paragraph= "Owners Inventory connects your gym's payment processing, membership management, retail inventory, and reporting into one gym POS system. Front desk staff get faster checkouts. Gym owners get accurate financial data. Members get a consistent experience from the moment they sign up to every transaction that follows."
+          paragraph= "Owners Inventory connects your gym's payment processing, [membership management](/features/people), retail inventory, and reporting into one gym POS system. Front desk staff get faster checkouts. Gym owners get accurate financial data. Members get a consistent experience from the moment they sign up to every transaction that follows."
           cards={GYM_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="gym"

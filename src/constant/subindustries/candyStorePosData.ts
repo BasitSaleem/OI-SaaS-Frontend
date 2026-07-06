@@ -28,7 +28,7 @@ export const CANDY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon3",
     title: "Slow Counter Operations",
     description:
-      "A candy shop handling busy counters without an efficient point-of-sale system for candy stores turns checkout into a time-consuming procedure. Slow processing during busy hours frustrates buyers and damages the brand's reputation.",
+      "A candy shop handling busy counters without an efficient [point-of-sale system](/features/pos) for candy stores turns checkout into a time-consuming procedure. Slow processing during busy hours frustrates buyers and damages the brand's reputation.",
   },
   {
     id: "4",
@@ -66,7 +66,7 @@ export const CANDY_STORE_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon2",
     title: "Real-time Inventory Control",
     description:
-      "The candy store point-of-sale gives real-time visibility into stock movements. It shows which items are low in stock and which ones are taking up extra shelf space. It provides accurate stock availability data.",
+      "The candy store point-of-sale gives real-time visibility into [stock movements](/features/inventory). It shows which items are low in stock and which ones are taking up extra shelf space. It provides accurate stock availability data.",
   },
   {
     id: "3",
@@ -118,7 +118,7 @@ export const CANDY_STORE_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "Online and In-Store Order Sync",
         listdescription:
-          "When a candy store connects its physical counter to an online store through Owners Inventory, both channels draw from the same live inventory. Sold products are deducted from inventory immediately. The system ensures that your inventory channels are accurately synchronized.",
+          "When a candy store connects its physical counter to an [online store](/features/ecommerce) through Owners Inventory, both channels draw from the same live inventory. Sold products are deducted from inventory immediately. The system ensures that your inventory channels are accurately synchronized.",
       },
       {
         listheading: "Unified Sales Dashboard",

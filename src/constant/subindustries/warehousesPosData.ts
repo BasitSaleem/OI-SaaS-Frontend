@@ -54,7 +54,7 @@ export const WAREHOUSES_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Inventory Management",
     description:
-      "Stock levels in our warehouse are always updated in real-time, when products are received or transferred to and from the warehouse, when they are sold and dispatched. Real-time inventory tracking helps prevent stock shortages, overstocking, and inventory inaccuracies.",
+      "Stock levels in our warehouse are always updated in real-time, when products are received or transferred to and from the warehouse, when they are sold and dispatched. [Real-time inventory tracking](/features/inventory) helps prevent stock shortages, overstocking, and inventory inaccuracies.",
   },
   {
     id: "2",
@@ -127,7 +127,7 @@ export const WAREHOUSES_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Analytics and Reporting",
     description:
-      "The warehouse POS solution translates the warehouse activities into organized warehouse reports that display stock movement, fast-moving product, low stock alerts, order fulfillment rate, and inventory turnover.",
+      "The warehouse POS solution translates the warehouse activities into [organized warehouse reports](/features/reports) that display stock movement, fast-moving product, low stock alerts, order fulfillment rate, and inventory turnover.",
     subDescription: "Managers can determine which products need to be replenished, which products are overstocked, and what improvements can be made to the warehouse processes. This can minimize storage expenses, avert stockouts, and optimize overall performance.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/better-decision.webp",
     buttonLabel: "View Details",
@@ -173,7 +173,7 @@ export const WAREHOUSES_KEY_FEATURES_CARDS = [
     id: 5,
     title: "Supplier and Purchase Order Management",
     description:
-      "Warehouse managers can generate purchase orders, monitor supplier transactions, and receive stock from suppliers from a single platform. The system makes the procurement process easy and enhances the planning of replenishment of the stock.",
+      "Warehouse managers can [generate purchase orders](/features/purchases), monitor supplier transactions, and receive stock from suppliers from a single platform. The system makes the procurement process easy and enhances the planning of replenishment of the stock.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/warehouses-pos/key-features-section/key-feature-card5.webp",
   },
@@ -339,7 +339,7 @@ export const WAREHOUSES_FAQS = [
     id: "3",
     question:
       "Can I manage multiple warehouse locations?",
-    answer: "Yes, it is a multi-location warehouse management system. Owners and managers can track inventory, transfers, orders and warehouse performance in all their locations from one central dashboard.",
+    answer: "Yes, it is a [multi-location warehouse management system](/features/facilities). Owners and managers can track inventory, transfers, orders and warehouse performance in all their locations from one central dashboard.",
   },
   {
     id: "4",

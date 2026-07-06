@@ -5,6 +5,7 @@ import SectionHeading from "../../typography/SectionHeading";
 import CardHeading from "../../typography/CardHeading";
 import React, { useEffect, useState } from "react";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
+import renderRichText from "@/utils/richText";
 
 interface CardItem {
   icon: string | StaticImageData;
@@ -104,7 +105,7 @@ function WhyChoosePOS({
                   <div className="flex flex-col items-start gap-4 flex-1">
                     <h3 className="font-semibold text-[var(--text-dark)] font-['Onest'] lg:text-2xl text-xl md:leading-[130%] leading-[140%]">{card.title}</h3>
                     <p className="text-base leading-[170%] font-normal font-['Onest'] text-[var(--text-grey)]">
-                      {card.description}
+                      {renderRichText(card.description)}
                     </p>
                   </div>
                 </div>

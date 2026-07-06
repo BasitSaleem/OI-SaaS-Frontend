@@ -195,7 +195,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Sporting Goods POS Software for Better Inventory Visibility"
-          description="Sporting goods retailers managing inventory manually across seasons deal with stock gaps, overselling, and slow checkout that quietly drains revenue every trading day. Owners Inventory is a sporting goods POS built to streamline every aspect of inventory management and syncing in-store and online channels in real-time. It gives sporting goods retailers the point-of-sale control needed to run their stores at peak performance."
+          description="Sporting goods retailers managing inventory manually across seasons deal with stock gaps, overselling, and slow checkout that quietly drains revenue every trading day. Owners Inventory is a sporting goods POS built to streamline every aspect of [inventory management](/features/inventory) and syncing in-store and online channels in real-time. It gives sporting goods retailers the point-of-sale control needed to run their stores at peak performance."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

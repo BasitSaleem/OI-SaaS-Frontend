@@ -413,7 +413,7 @@ export const CLOTHING_INVENTORY_TESTIMONIAL_FEATURES = [
 export const CLOTHING_INVENTORY_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Our inventory solution integrates seamlessly with POS systems, accounting software, CRM platforms and ecommerce tools. This allows store owners to manage inventory, sales, finances and customer data from one place. Integrated tools streamline operations which reduces effort and improves overall efficiency across the clothing business.",
+    "Our inventory solution integrates seamlessly with [POS systems](/features/pos), accounting software, CRM platforms and ecommerce tools. This allows store owners to manage inventory, sales, finances and customer data from one place. Integrated tools streamline operations which reduces effort and improves overall efficiency across the clothing business.",
   tools: [
     {
       id: 1,

@@ -66,7 +66,7 @@ export const INTEGRATION_FAQS = [
     id: 3,
     question: "Is it possible to simultaneously sync several eCommerce sites?",
     answer:
-      "Yes, it is indeed. To centrally manage inventory, products, and sales, you can link several Shopify or WooCommerce stores. This allows you to operate with proper consistency and control.",
+      "Yes, it is indeed. To centrally manage inventory, products, and sales, you can link [several Shopify or WooCommerce stores](/industries/ecommerce-store-inventory-management-software). This allows you to operate with proper consistency and control.",
   },
   {
     id: 4,

@@ -6,7 +6,7 @@ export const JEWELRY_INVENTORY_UNIFIED_HEADING =
   "Challenges Faced by Jewelry Stores Today";
 
 export const JEWELRY_INVENTORY_UNIFIED_PARAGRAPH =
-  "Items in jewelry stores require precise tracking to ensure everything is organized. Without an efficient Point of Sale system, it becomes difficult to keep stock records, which affects revenue negatively.";
+  "Items in jewelry stores require precise tracking to ensure everything is organized. Without an efficient [Point of Sale system](/industries/jewelry-store-pos-system), it becomes difficult to keep stock records, which affects revenue negatively.";
 
 export const JEWELRY_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -73,7 +73,7 @@ export const JEWELRY_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon3",
     title: "Product and Variant Management",
     description:
-      "The system manages jewelry by type, price, size, and style, making it easy for staff to find items and speed up selling procedures without making customers wait. It allows you to adjust stock and categorize new arrivals simply, without confusion.",
+      "The system manages jewelry by type, price, size, and style, making it easy for staff to find items and speed up selling procedures without making customers wait. It allows you to adjust stock and [categorize new arrivals](/features/products) simply, without confusion.",
   },
   {
     id: "4",

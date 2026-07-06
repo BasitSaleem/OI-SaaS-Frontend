@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import renderRichText from "@/utils/richText";
 
 export type FeatureListItem =
   | string
@@ -85,9 +86,9 @@ const FeatureAccordionList = ({ list }: FeatureAccordionListProps) => {
                   : "max-h-0 opacity-0 pb-0"
                 }`}
             >
-              {typeof item === "string" ? "" : item.listdescription}
+              {typeof item === "string" ? "" : renderRichText(item.listdescription)}
               <br /> <br />
-              {typeof item === "string" ? item : item.listSubDescription}
+              {typeof item === "string" ? renderRichText(item) : renderRichText(item.listSubDescription)}
             </div>
           </div>
         )

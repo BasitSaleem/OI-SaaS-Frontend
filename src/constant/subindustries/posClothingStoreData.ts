@@ -192,7 +192,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     id: 7,
     title: "Ecommerce Integration",
     description:
-      "Integrate your online shop and POS to automatically update inventory. No longer manual work, mismatched stock, or duplication.",
+      "Integrate your [online shop](/features/ecommerce) and POS to automatically update inventory. No longer manual work, mismatched stock, or duplication.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card7.webp",
   },
@@ -243,7 +243,7 @@ export const CLOTHING_STORE_WORKFLOW_DATA = {
       number: 3,
       title: "Inventory Tracking",
       description:
-        "The POS system manages real-time stock movement. This provides inventory updates across all the branches in case of sale, return, and exchange. Our inventory tracking makes it easy for clothing stores to manage varied complexities and size-level mismatches.",
+        "The POS system manages real-time stock movement. This provides inventory updates across all the branches in case of sale, return, and exchange. Our [inventory tracking](/features/inventory) makes it easy for clothing stores to manage varied complexities and size-level mismatches.",
     },
     {
       number: 4,

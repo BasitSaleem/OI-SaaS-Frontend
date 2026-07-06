@@ -6,6 +6,7 @@ import SectionHeading from "../typography/SectionHeading";
 import { ArrowDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import IndustryIcon, { IndustryIconSet } from "@/components/icons/IndustryIconRegistry";
+import renderRichText from "@/utils/richText";
 
 export interface IndustryUnifiedPlatformCard {
   icon: string;
@@ -106,7 +107,7 @@ function IndustryUnifiedPlatform({
                       </h3>
                     </div>
                     <p className="text-base font-['onest'] leading-6 text-[var(--text-grey)]">
-                      {card.description}
+                      {renderRichText(card.description)}
                     </p>
                   </motion.div>
                 ))}

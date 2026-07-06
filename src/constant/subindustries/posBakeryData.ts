@@ -215,7 +215,7 @@ export const BAKERY_WORKFLOW_DATA = {
       number: 5,
       title: "Reporting & Analysis",
       description:
-        "The system gives a detailed view of your bakery performance, beyond the daily operation. It monitors the production output, ingredient consumption trends, peak sales hour, and profitability. Accurate reports help optimize pricing and adjust production volume, allowing decisions based on real data, not assumptions.",
+        "The system gives a detailed view of your bakery performance, beyond the daily operation. It monitors the [production output](/features/manufacturing), ingredient consumption trends, peak sales hour, and profitability. Accurate reports help optimize pricing and adjust production volume, allowing decisions based on real data, not assumptions.",
     },
   ],
 };

@@ -69,7 +69,7 @@ export const INVENTORY_FEATURES_CARDS = [
     id: 2,
     title: "Stock Issuing",
     description:
-      "Efficiently issue stock at your warehouse or store with full records. Stock issuing ensures that outgoing products are accurately tracked and inventory levels are current at all times.",
+      "Efficiently issue stock at [your warehouse](/industries/warehouse-pos-system) or store with full records. Stock issuing ensures that outgoing products are accurately tracked and inventory levels are current at all times.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/stock-issuing.webp",
   },
