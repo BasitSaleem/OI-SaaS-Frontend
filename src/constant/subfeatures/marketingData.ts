@@ -30,6 +30,7 @@ export const MARKETING_INDUSTRIES = [
       "The focus is on large, valuable orders. You can drive bigger bulk purchases and reward your most important, long term clients with custom loyalty programs and targeted discounts.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

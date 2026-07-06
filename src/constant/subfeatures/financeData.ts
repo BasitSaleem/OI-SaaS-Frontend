@@ -30,6 +30,7 @@ export const FINANCE_INDUSTRIES = [
       "Manage bulk purchases, customer invoices, and supplier payments with speed and accuracy. The system simplifies your entire cash flow process, keeping financial statements and stock transfers perfectly aligned.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

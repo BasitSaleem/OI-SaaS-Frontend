@@ -30,6 +30,7 @@ export const PEOPLE_INDUSTRIES = [
       "Standardize human resource operations in warehouses and logistics units. Monitor attendance, delegate tasks, and preserve uniformity in your supply chain.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

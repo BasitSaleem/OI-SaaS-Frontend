@@ -30,6 +30,7 @@ export const TOOLS_INDUSTRIES = [
       "Optimize bulk inventory within warehouses and stores. Maintain efficient supply chains and satisfy customers in time.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,

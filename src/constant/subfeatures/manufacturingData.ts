@@ -30,6 +30,7 @@ export const MANUFACTURING_INDUSTRIES = [
       "Streamline big orders with tiered pricing, bulk billing, and automated tracking with multiple warehouses, designed to make your supply chain robust and reliable.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
+    link: "/industries/warehouse-pos-system",
   },
   {
     id: 4,
