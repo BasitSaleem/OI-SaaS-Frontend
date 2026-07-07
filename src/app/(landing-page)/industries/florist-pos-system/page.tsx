@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
-const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos-system/hero-banner.webp";
-const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos-system/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/florist-pos/hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/florist-pos/why-chose-banner.webp";
 
 import {
   FLORIST_KEY_FEATURES_CARDS,
@@ -299,7 +299,7 @@ const Page = () => {
           heading={FLORIST_UNIFIED_HEADING}
           paragraph={FLORIST_UNIFIED_PARAGRAPH}
           cards={FLORIST_UNIFIED_CARDS}
-          iconSet="retail"
+          iconSet="florist"
         />
 
         <WhyChoosePOS
@@ -307,7 +307,7 @@ const Page = () => {
           paragraph="Owners Inventory is the all-in-one florist POS system that allows florists to manage, custom orders, flower inventory, deliveries, and customer accounts from a single platform."
           cards={FLORIST_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
-          iconSet="retail"
+          iconSet="florist"
         />
 
         <KeyHighlights
@@ -351,7 +351,7 @@ const Page = () => {
           whyChooseTitle={FLORIST_TESTIMONIAL_DATA.whyChooseTitle}
           whyChooseDescription={FLORIST_TESTIMONIAL_DATA.whyChooseDescription}
           features={FLORIST_TESTIMONIAL_FEATURES}
-          iconSet="retail"
+          iconSet="florist"
         />
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

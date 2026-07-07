@@ -306,7 +306,7 @@ const Page = () => {
           heading={NAIL_SALON_UNIFIED_HEADING}
           paragraph={NAIL_SALON_UNIFIED_PARAGRAPH}
           cards={NAIL_SALON_UNIFIED_CARDS}
-          iconSet="beautySalon"
+          iconSet="nailSalon"
         />
 
         <WhyChoosePOS
@@ -314,7 +314,7 @@ const Page = () => {
           paragraph="Owners Inventory is the all-in-one nail salon POS system that allows salon owners to manage bookings, product inventory, technician schedules, client accounts, and business performance from a single platform."
           cards={NAIL_SALON_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
-          iconSet="beautySalon"
+          iconSet="nailSalon"
         />
 
         <KeyHighlights
@@ -358,7 +358,7 @@ const Page = () => {
           whyChooseTitle={NAIL_SALON_TESTIMONIAL_DATA.whyChooseTitle}
           whyChooseDescription={NAIL_SALON_TESTIMONIAL_DATA.whyChooseDescription}
           features={NAIL_SALON_TESTIMONIAL_FEATURES}
-          iconSet="beautySalon"
+          iconSet="nailSalon"
         />
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

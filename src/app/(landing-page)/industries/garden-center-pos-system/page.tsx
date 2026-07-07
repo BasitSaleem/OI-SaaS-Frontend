@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
-const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos-system/hero-banner.webp";
-const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos-system/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/why-chose-+banner.webp";
 
 import {
   GARDEN_CENTER_KEY_FEATURES_CARDS,
@@ -289,7 +289,7 @@ const Page = () => {
           heading={GARDEN_CENTER_UNIFIED_HEADING}
           paragraph={GARDEN_CENTER_UNIFIED_PARAGRAPH}
           cards={GARDEN_CENTER_UNIFIED_CARDS}
-          iconSet="retail"
+          iconSet="gardenCenter"
         />
 
         <WhyChoosePOS
@@ -297,7 +297,7 @@ const Page = () => {
           paragraph="Each problem above maps directly to a capability inside the platform. Built for how nurseries and garden centers actually operate, not generic retail."
           cards={GARDEN_CENTER_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
-          iconSet="retail"
+          iconSet="gardenCenter"
         />
 
         <KeyHighlights
@@ -342,7 +342,7 @@ const Page = () => {
           whyChooseTitle={GARDEN_CENTER_TESTIMONIAL_DATA.whyChooseTitle}
           whyChooseDescription={GARDEN_CENTER_TESTIMONIAL_DATA.whyChooseDescription}
           features={GARDEN_CENTER_TESTIMONIAL_FEATURES}
-          iconSet="retail"
+          iconSet="gardenCenter"
         />
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

@@ -1,7 +1,7 @@
 import React from "react";
 import Script from "next/script";
-const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos-system/hero-banner.webp";
-const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos-system/why-chose-banner.webp";
+const heroBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/electronics-pos/hero-banner.webp";
+const whyChoseBanner = "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/electronics-pos/why-chose-banner.webp";
 
 import {
   ELECTRONICS_KEY_FEATURES_CARDS,
@@ -291,7 +291,7 @@ const Page = () => {
           heading={ELECTRONICS_UNIFIED_HEADING}
           paragraph={ELECTRONICS_UNIFIED_PARAGRAPH}
           cards={ELECTRONICS_UNIFIED_CARDS}
-          iconSet="applianceStore"
+          iconSet="electronics"
         />
 
         <WhyChoosePOS
@@ -299,7 +299,7 @@ const Page = () => {
           paragraph="Each of these challenges has a direct solution in the Owners Inventory platform. The system is built around operational precision, not surface-level convenience."
           cards={ELECTRONICS_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
-          iconSet="applianceStore"
+          iconSet="electronics"
         />
 
         <KeyHighlights
@@ -344,7 +344,7 @@ const Page = () => {
           whyChooseTitle={ELECTRONICS_TESTIMONIAL_DATA.whyChooseTitle}
           whyChooseDescription={ELECTRONICS_TESTIMONIAL_DATA.whyChooseDescription}
           features={ELECTRONICS_TESTIMONIAL_FEATURES}
-          iconSet="applianceStore"
+          iconSet="electronics"
         />
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">

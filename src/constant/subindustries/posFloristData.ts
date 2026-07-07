@@ -355,42 +355,46 @@ export const FLORIST_FAQS = [
 export const FLORIST_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",
-  secondHeading: "Why Choose Owners Inventory Florist POS System?",
-  secondDescription:
-    "Our software eliminates the need for florist business owners to use multiple separate tools to handle flower inventory, sales orders, custom events, delivery scheduling, customer accounts, and business reporting.",
-  whyChooseTitle: "Built for Florist Operations",
-  whyChooseDescription:
-    "It is a system developed specifically for flower shops where time is critical, order coordination is needed, custom orders are a necessity, and management of perishable stock is a daily requirement. It handles the complexity of any florist business, whether it's a quiet Tuesday or the day before Valentine's Day.",
+  secondHeading: "Streamline and Scale Your Florist Business",
+  secondDescription: "Owners Inventory is a single integrated system that combines sales, inventory, custom orders, delivery, customer management and reporting. It streamlines day-to-day operations, eliminates manual tasks, and provides customers with timely, accurate and professional service, whether they come in, call or order online.",
+  whyChooseTitle: "Why Choose Owners Inventory Florist POS System?",
+  whyChooseDescription: "Our software eliminates the need for florist business owners to use multiple separate tools to handle flower inventory, sales orders, custom events, delivery scheduling, customer accounts, and business reporting.",
 };
 
 export const FLORIST_TESTIMONIAL_FEATURES = [
   {
     id: "1",
-    title: "Quick Setup",
+    title: "Built for Florist Operations",
     description:
-      "Owners Inventory can be set up in a matter of minutes without being an advanced technical user. It is possible to upload the varieties of flowers, arrangements, suppliers, customer types and staff profiles in bulk from a spreadsheet, or to add them directly via the platform.",
+      "It is a system developed specifically for flower shops where time is critical, order coordination is needed, custom orders are a necessity, and management of perishable stock is a daily requirement. It handles the complexity of any florist business, whether it's a quiet Tuesday or the day before Valentine's Day.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
-    title: "All-in-One Platform",
+    title: "Quick Setup",
     description:
-      "Substitutes the need for individual applications in order management, inventory management, delivery scheduling, customer accounts and financial reporting. All aspects of the florist business are handled from a single platform and eliminating the need for multiple systems and costs.",
+      "Owners Inventory can be set up in a matter of minutes without being an advanced technical user. It is possible to upload the varieties of flowers, arrangements, suppliers, customer types and staff profiles in bulk from a spreadsheet, or to add them directly via the platform.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
-    title: "24/7 Support",
+    title: "All-in-One Platform",
     description:
-      "There is ongoing and continuous support available, 24 hours a day, 7 days a week throughout the year. From a busy Saturday morning to delivery problems on Mother's Day or a stock discrepancy before the big wedding, there is always help when it is needed most.",
+      "Substitutes the need for individual applications in order management, inventory management, delivery scheduling, customer accounts and financial reporting. All aspects of the florist business are handled from a single platform and eliminating the need for multiple systems and costs.",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
-    title: "Actionable Insights",
+    title: "24/7 Support",
     description:
-      "Real-time sales data, flower price details, best-selling arrangements, waste rates, and customer behaviour provide the clarity for florist owners to plan purchases, set prices and take the business to the next level of success.",
+      "There is ongoing and continuous support available, 24 hours a day, 7 days a week throughout the year. From a busy Saturday morning to delivery problems on Mother's Day or a stock discrepancy before the big wedding, there is always help when it is needed most.",
     icon: "testWhychoseIcon4",
+  },
+  {
+    id: "5",
+    title: "Actionable Insights",
+    description: "Real-time sales data, flower price details, best-selling arrangements, waste rates, and customer behaviour provide the clarity for florist owners to plan purchases, set prices and take the business to the next level of success.",
+    icon: "testWhychoseIcon5",
   },
 ];
 
@@ -419,15 +423,15 @@ export const FLORIST_TOOLS_DATA = {
     },
     {
       id: 4,
-      name: "Xero",
+      name: "Google Calendar",
       image:
-        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/google-calendar.svg",
     },
     {
       id: 5,
-      name: "Stripe",
+      name: "Mailchimp",
       image:
-        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/mailchimp.svg",
     },
   ],
 };

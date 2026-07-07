@@ -110,29 +110,11 @@ export const ELECTRONICS_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Sales and Inventory Reporting Built for Electronics Retail",
     description:
-      "Generic sales reports tell you what sold. Owners Inventory's reporting tells you what sold, which variant, at which location, through which channel, and what the margin looked like on that unit.",
+      "Generic sales reports tell you what sold. Owners Inventory's reporting tells you what sold, which variant, at which location, through which channel, and what the margin looked like on that unit. Sales reports break down revenue by product, category, staff member, and payment type. Inventory reports show stock movement over any date range, including transfers, adjustments, and received stock. Commission tracking lets you attribute sales to individual staff members if your team earns on performance. For purchasing, you can see what was ordered, from whom, at what cost, and whether what arrived matched what was invoiced. According to Deloitte's 2023 retail industry outlook, electronics retailers that track margins at the variant level are better positioned to respond to distributor price changes without eroding profitability.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/electronics-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
-    list: [
-      {
-        listheading:
-          "Sales reports break down revenue by product, category, staff member, and payment type.",
-      },
-      {
-        listheading:
-          "Inventory reports show stock movement over any date range, including transfers, adjustments, and received stock.",
-      },
-      {
-        listheading:
-          "Commission tracking lets you attribute sales to individual staff members if your team earns on performance.",
-      },
-      {
-        listheading:
-          "According to Deloitte's 2023 retail industry outlook, electronics retailers that track margins at the variant level are better positioned to respond to distributor price changes without eroding profitability.",
-      },
-    ],
   },
 ];
 
@@ -284,9 +266,9 @@ export const ELECTRONICS_FAQS = [
 export const ELECTRONICS_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say",
   paragraph: "",
-  secondHeading: "Try Free for 30 Days. No Contracts.",
+  secondHeading: "Don't wait until a stock discrepancy costs you a sale",
   secondDescription:
-    "Start on any plan with a free 30-day trial and cancel at any time.",
+    "Set up Owners Inventory in a day and run your first real shift on accurate data.",
   whyChooseTitle:
     "Why Electronics Stores Choose Owners Inventory Over Generic POS Software",
   whyChooseDescription:
@@ -297,23 +279,36 @@ export const ELECTRONICS_TESTIMONIAL_FEATURES = [
   {
     id: "1",
     title: "Serial Number Tracking Stops Return Fraud",
-    description:
-      "Electronics have some of the highest return fraud rates in retail, according to the NRF's 2023 retail theft report. When a device is sold with its serial number and IMEI tied to the transaction, a customer can't swap in a different unit at returns. The record is already there, and staff don't need to make a judgment call.",
+    description: "Electronics have some of the highest return fraud rates in retail, according to the NRF's 2023 retail theft report. When a device is sold with its serial number and IMEI tied to the transaction, a customer can't swap in a different unit at returns. The record is already there, and staff don't need to make a judgment call.",
     icon: "testWhychoseIcon1",
   },
-  {
+   {
     id: "2",
-    title: "Warranty Lookups in Under a Minute",
+    title: "Try Free for 30 Days. No Contracts",
     description:
-      "When a customer comes in with a warranty claim, you need the original transaction, serial number, and purchase date. In Owners Inventory, that lookup takes under a minute. Search by serial number, customer name, or date. No spreadsheets, no paper receipts.",
+      "Committing to new POS software without testing it against your actual inventory is a risk most electronics retailers can't afford to take. A 30-day trial means you can run real purchase orders, log real serial numbers, and process real sales before deciding whether the platform fits how your store operates. Start on any plan, use it the way you'd use it day to day, and cancel anytime if it doesn't hold up. No contract locks you in before you've seen the fit.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
+    title: "Live Support on Every Plan",
+    description:
+      "Every plan includes onboarding help and email support, so your team isn't figuring out variant setup or IMEI logging alone. Pro and Enterprise plans add live chat and phone support for when a question can't wait on an email reply. Based on onboarding data from Owners Inventory customers, most electronics retailers complete setup and run their first live shift within the same day.",
+    icon: "testWhychoseIcon3",
+  },
+  {
+    id: "4",
     title: "Real Support at Every Plan",
     description:
       "All plans include onboarding assistance and email support. Pro and Enterprise plans add live chat and phone support. Enterprise customers get a dedicated account manager. Based on onboarding data from Owners Inventory customers, most electronics retailers complete setup and run their first live shift within the same day.",
-    icon: "testWhychoseIcon3",
+    icon: "testWhychoseIcon4",
+  },
+  {
+    id: "5",
+    title: "Warranty Lookups in Under a Minute",
+    description:
+      "When a customer comes in with a warranty claim, you need the original transaction, serial number, and purchase date. In Owners Inventory, that lookup takes under a minute. Search by serial number, customer name, or date. No spreadsheets, no paper receipts.",
+    icon: "testWhychoseIcon5",
   },
 ];
 

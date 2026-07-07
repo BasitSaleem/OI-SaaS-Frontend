@@ -286,42 +286,47 @@ export const GARDEN_CENTER_FAQS = [
 export const GARDEN_CENTER_TESTIMONIAL_DATA = {
   heading: "What Garden Center Owners Say",
   paragraph: "",
-  secondHeading: "Why Garden Centers Choose Owners Inventory",
-  secondDescription:
-    "Here's what sets Owners Inventory apart from a generic POS system once you look past the feature list.",
-  whyChooseTitle: "Built for Mixed Product Operations",
-  whyChooseDescription:
-    "Most generic POS platforms weren't built with perishable, variant-heavy, and bulk product mixes in mind. Garden centers sell perishable plants, bulk materials, hardscape, seasonal decor, and chemical supplies in the same transaction. Owners Inventory handles that mix without workarounds or separate tools for each category.",
+  secondHeading: "Don't Let a Stockout Cost You A Peak Weekend",
+  secondDescription: "Set up Owners Inventory in a day and run your first shift on accurate data.",
+  whyChooseTitle: "Why Garden Centers Choose Owners Inventory",
+  whyChooseDescription: "Here's what sets Owners Inventory apart from a generic POS system once you look past the feature list.",
 };
 
 export const GARDEN_CENTER_TESTIMONIAL_FEATURES = [
   {
     id: "1",
-    title: "30-Day Free Trial, No Contract",
+    title: "Built for Mixed Product Operations",
     description:
-      "Start on any plan with a free 30-day trial and cancel at any time.",
+      "Most generic POS platforms weren't built with perishable, variant-heavy, and bulk product mixes in mind. Garden centers sell perishable plants, bulk materials, hardscape, seasonal decor, and chemical supplies in the same transaction. Owners Inventory handles that mix without workarounds or separate tools for each category.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
-    title: "Multi-Location From the Start",
+    title: "30-Day Free Trial, No Contract",
     description:
-      "If you run two locations, or a garden center alongside a greenhouse operation, both run from the same account. Stock transfers between sites, shared customer records, and combined reporting are available without a plan upgrade.",
+      "Start on any plan with a free 30-day trial and cancel at any time.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
-    title: "Same-Day Setup",
+    title: "Multi-Location From the Start",
     description:
-      "Most garden centers complete the initial setup within a few hours. Bulk product import via CSV handles large spring catalogs without manual SKU entry, and variant structures are built from parent product records.",
+      "If you run two locations, or a garden center alongside a greenhouse operation, both run from the same account. Stock transfers between sites, shared customer records, and combined reporting are available without a plan upgrade.",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
+    title: "Same-Day Setup",
+    description:
+      "Most garden centers complete the initial setup within a few hours. Bulk product import via CSV handles large spring catalogs without manual SKU entry, and variant structures are built from parent product records.",
+    icon: "testWhychoseIcon4",
+  },
+   {
+    id: "5",
     title: "Live Support During Peak Season",
     description:
       "All plans include onboarding and email support. Pro and Enterprise add live chat and phone access. Enterprise includes a dedicated account manager, which matters when you're two weeks into spring rush and something needs fixing before the weekend.",
-    icon: "testWhychoseIcon4",
+    icon: "testWhychoseIcon5",
   },
 ];
 

@@ -44,6 +44,11 @@ const alAsifCasestudyIcons = dynamic(() => import("./alAsifCasestudyIcons"), { s
 const bightHomeIcons = dynamic(() => import("./bightHomeIcons"), { ssr: false });
 const urbansThreadsIcons = dynamic(() => import("./urbansThreadsIcons"), { ssr: false });
 const industriesTestmonialProfileIcons = dynamic(() => import("./industriesTestmonialProfileIcons"), { ssr: false });
+const posElectronicsPageIcons = dynamic(() => import("./posElectronicsPageIcons"), { ssr: false });
+const posGardenCenterPageIcons = dynamic(() => import("./posGardenCenterPageIcons"), { ssr: false });
+const posNailSalonPageIcons = dynamic(() => import("./posNailSalonPageIcons"), { ssr: false });
+const posFloristPageIcons = dynamic(() => import("./posFloristPageIcons"), { ssr: false });
+
 
 export type IndustryIconSet =
   | "bakery"
@@ -86,6 +91,11 @@ export type IndustryIconSet =
   | "bightHomeIcons"
   | "urbansThreadsIcons"
   | "industriesTestmonialProfileIcons"
+  | "electronics"
+  | "gardenCenter"
+  | "nailSalon"
+  | "florist"
+
 
 const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   bakery: posBakeryPageIcons,
@@ -127,7 +137,12 @@ const REGISTRY: Record<IndustryIconSet, React.ComponentType<any>> = {
   alAsifCasestudyIcons: alAsifCasestudyIcons,
   bightHomeIcons: bightHomeIcons,
   urbansThreadsIcons: urbansThreadsIcons,
-  industriesTestmonialProfileIcons: industriesTestmonialProfileIcons
+  industriesTestmonialProfileIcons: industriesTestmonialProfileIcons,
+  electronics: posElectronicsPageIcons,
+  gardenCenter: posGardenCenterPageIcons,
+  nailSalon: posNailSalonPageIcons,
+  florist: posFloristPageIcons
+
 };
 
 interface IndustryIconProps {
