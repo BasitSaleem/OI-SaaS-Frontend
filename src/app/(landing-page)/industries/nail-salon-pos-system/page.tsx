@@ -57,24 +57,22 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Nail salon POS system built to manage appointments, split commissions, track retail gel or polish stock, and schedule technician shifts dynamically.",
+                "description": "Owners Inventory's nail salon POS system manages appointments, product inventory, technician schedules, client accounts, and business performance from a single platform.",
                 "featureList": [
-                  "Interactive booking calendar",
-                  "Automated technician commission splitting",
-                  "Retail product stock updates",
-                  "Service packages and bundle pricing",
-                  "Client database and CRM profiles",
-                  "Expense and rent tracking",
-                  "Online booking widgets and sync",
-                  "Multi-salon operations from a single dashboard",
-                  "Staff performance and service reports",
-                  "Access permissions for stylists and receptionists",
-                  "Integrations with accounting tools and payment processors"
+                  "Real-time product inventory tracking",
+                  "Appointment and scheduling management",
+                  "Service menu and custom add-on builder",
+                  "Multi-channel order management",
+                  "Client account and loyalty management",
+                  "Mobile-friendly interface",
+                  "Automated low-stock alerts",
+                  "Gift cards and membership management",
+                  "Detailed sales and waste reporting"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Nail Salons | Owners Inventory",
+                "name": "Nail Salon POS System for Appointment, Bookings, and Client Management | Owners Inventory",
                 "url": "https://www.ownersinventory.com/industries/nail-salon-pos-system",
                 "description": "Manage your nail salon with appointment scheduling, automated commission splitting, retail inventory tracking, and online booking sync using Owners Inventory.",
                 "inLanguage": "en",
@@ -153,9 +151,9 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Nail Salon Owner"
+                        "name": "Emily R."
                       },
-                      "reviewBody": "This system has made calendar scheduling and commission calculations quick and precise. Salon management is finally stress-free.",
+                      "reviewBody": "What used to be a lot of emails, sticky notes and spreadsheets is now all in a single location, and our clients receive a much more professional experience when booking a bridal party.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -175,9 +173,9 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Salon Manager"
+                        "name": "Claire M."
                       },
-                      "reviewBody": "The best system we have implemented. It schedules appointments, tracks stylist shifts, and splits tips automatically.",
+                      "reviewBody": "It saved our technicians a lot of hours each week as they used to be asking us constantly for booking details and client notes etc., but now it's all on their phone and clients are notified automatically.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -197,42 +195,50 @@ const Page = () => {
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "What is a POS system for a nail salon?",
+                    "name": "Can the system track nail products and supply inventory in real time?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "A nail salon point of sale system helps manage appointments, client records, technician schedules, commission rates, and retail checkouts from one unified software."
+                      "text": "Yes. All stock transactions are automatically captured, such as deliveries from suppliers, service provision and stock sold in the retail outlets and items written off as waste, eliminating the need to manually count stock and ensuring the accuracy of stock levels at all times."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can it calculate commissions and tips?",
+                    "name": "Does the system support appointment booking and technician scheduling?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. The system automatically tracks commissions, tip percentages, and booth rent payouts for each technician during checkout."
+                      "text": "The nail salon point of sale allows walk-in bookings, advance reservations, phone appointments, and online bookings, all on one calendar view. It also automatically eliminates conflicts and double bookings based on the availability of technicians, duration of service, and client preferences."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is it easy for nail artists to use?",
+                    "name": "Can I manage both retail product sales and services from the same system?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Absolutely. The layout is simple and designed for quick booking lookups, and checking schedules on tablets or phones."
+                      "text": "Yes. All walk-in service sales, retail product sales, gift cards, and memberships go through the same checkout and fulfillment system, and inventory and client records are updated in real-time for each sale."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does it support online booking sync?",
+                    "name": "How quickly can I set up the Owners Inventory for my nail salon?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, your website booking widgets and phone reservations sync instantly with the central receptionist calendar."
+                      "text": "In most nail salons, the salon is open and operating within a couple of hours. Your team can start using the system the same day, as you can upload service menus, client records, supplier information, and product catalogs en masse."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I manage retail product sales?",
+                    "name": "Can different staff members have different access levels?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, you can scan and sell retail items like nail files, polishes, and lotions, keeping retail stock counts automatically in sync."
+                      "text": "Yes. For the front desk, nail technician and manager, roles based permissions can be set to provide access to only the areas applicable to their role. Data and reporting is only for business owners and authorized managers."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does the system support client loyalty programs and membership packages?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Loyalty points, membership allowances, gift card balances and promotional discounts are all held within each of the clients' profiles and automatically applied at checkout, reducing the manual tracking of loyalty and minimizing the possibility of error at the front desk."
                     }
                   }
                 ]
@@ -240,43 +246,43 @@ const Page = () => {
               {
                 "@type": "HowTo",
                 "name": "How Owners Inventory Manages Nail Salon Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines nail salon operations and staff scheduling.",
+                "description": "A step-by-step workflow showing how Owners Inventory streamlines nail salon operations.",
                 "step": [
                   {
                     "@type": "HowToStep",
                     "position": 1,
-                    "name": "Appointment Booking",
-                    "text": "Clients book appointments online or call the salon. The system assigns a time slot, chair, and technician."
+                    "name": "Set Up Your Service Menu and Inventory",
+                    "text": "Include all services, pricing levels, technician levels, add-ons and product costs into the system. Organize group services in order of type, occasion and length of service making them easily accessible to clients when they are consulting and booking online."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 2,
-                    "name": "Client Check-In",
-                    "text": "Welcome clients, verify booking details, and update the schedule status to 'In Service' as styling starts."
+                    "name": "Receive and Track Incoming Stock",
+                    "text": "Record all supplier deliveries of products, quantities, batch information and notes on condition. Stock levels are automatically updated and discrepancies between quantity ordered and quantity received are marked in the system."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 3,
-                    "name": "Service Delivery",
-                    "text": "Technicians perform manicure, pedicure, or art services, noting any retail products used or purchased."
+                    "name": "Manage Bookings and Walk-In Appointments",
+                    "text": "Create bookings for walk-ins, phone calls, and online reservations from a single calendar. The system can match the availability of technicians, confirm the time of the service and schedule the appointment to the appropriate technician without needing to make handoffs."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 4,
-                    "name": "Product Inventory",
-                    "text": "Retail products and nail polish stock levels are tracked and updated automatically to avoid running out."
+                    "name": "Process Checkout and Client Payments",
+                    "text": "Create itemized invoices, apply loyalty points or memberships, accept all payments and automatically update the client profile. Front desk receipts are sent digitally, maintaining a fast and paper-free front desk."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 5,
-                    "name": "Checkout & Tip Split",
-                    "text": "Process payments quickly, add tips, calculate commission splits, and log details into the client's CRM history."
+                    "name": "Handle Client Accounts and Loyalty Rewards",
+                    "text": "Monitor client loyalty points, memberships, gift card balances and upcoming appointments. Automated reminders are sent out prior to appointments and follow-up post-visits are sent afterwards to encourage re-booking."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 6,
-                    "name": "Reporting & Insights",
-                    "text": "Review detailed insights to understand what services and technicians are most profitable. Transform your nail salon today."
+                    "name": "Monitor Daily Performance and Stock Health",
+                    "text": "Live data for revenue, product stock, utilization of technicians, pending appointments and loss of product is visible at a glance for the owner of the salon. Automated reporting identifies which services are most profitable and on which services performance may be improved."
                   }
                 ]
               }
@@ -286,15 +292,15 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="Complete POS System for Nail Salons and Booking Management"
-          description="The Owners Inventory POS System for nail salons is designed to streamline client bookings, technician schedules, and commission payouts. Track retail product inventory, manage client histories, and sync walk-ins dynamically from a single receptionist console."
+          title="Nail Salon POS System for Appointment, Bookings, and Client Management"
+          description="A nail salon that doesn't have the proper point of sale system will find it difficult to manage appointments, track product inventory, keep track of the technician's schedule, and retain customers. Manual systems result in double bookings, product shortages, pricing inaccuracies, and front desks that can't keep up with the volume of business."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Start Free Today"
+          ctaDesc="Book a Demo"
           variant="animation2"
         />
 
-        <VoicesRealBusiness title="Ratings on Leading Review Platforms" />
+        <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
         <IndustryUnifiedPlatform
           heading={NAIL_SALON_UNIFIED_HEADING}
@@ -304,15 +310,15 @@ const Page = () => {
         />
 
         <WhyChoosePOS
-          heading="How Our Inventory Software Solves These Challenges"
-          paragraph="The Owners Inventory POS System has features tailored for salons, including:"
+          heading="How Our Nail Salon POS System Solves These Challenges"
+          paragraph="Owners Inventory is the all-in-one nail salon POS system that allows salon owners to manage bookings, product inventory, technician schedules, client accounts, and business performance from a single platform."
           cards={NAIL_SALON_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="beautySalon"
         />
 
         <KeyHighlights
-          heading="Key Features of Our POS System That Help Nail Salons"
+          heading="Key Features of Owners Inventory That Improve Nail Salon Operations"
           features={NAIL_SALON_KEY_FEATURES_CARDS}
         />
 
@@ -323,17 +329,16 @@ const Page = () => {
         />
 
         <IndustriesCallToAction
-          title="Manage Your Nail Salon Operations Efficiently"
-          description="Take control of client appointments, staff commission rates, and checkout billing with our specialized salon system."
-          ctaDesc="Request a Free Demo"
+          title="Run Your Nail Salon Business Without the Guesswork"
+          description="Say goodbye to lost bookings, lost products due to poor visibility and lost revenue due to variations in price. Owners Inventory is a fully comprehensive nail salon point of sale solution, enabling salons to manage bookings, nail services, products, client accounts and business performance from one single location."
+          ctaDesc="Book a Demo"
         />
 
         <IndustriesFeaturesSection features={NAIL_SALON_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Speed, Reliability, and Salon Operations"
-          description="Our system connects with online booking engines, local receipt printers, receipt drawers, card terminals, and accounting packages to manage your salon efficiently."
-          secondDescription="Eliminate scheduling conflicts, simplify tip splits, and optimize your retail polish stock levels easily."
+          title="Security and Role-Based Access"
+          description="Each team member has access to only the information he needs. Counter employees, nail technicians, and managers each have defined permission levels."
         />
 
         <ToolsSection
@@ -359,14 +364,14 @@ const Page = () => {
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
             heading="FAQS"
-            paragraph="Our nail salon POS solution is built to simplify booking registers and staff commission splits. Here are answers to common questions."
+            paragraph="Find answers to common questions about inventory tracking, appointment management, staff permissions, setup, and day-to-day nail salon operations."
             faqs={NAIL_SALON_FAQS}
             buttonText="Start Now"
           />
         </div>
         <IndustriesHardwareControl
-          title="Take Control of Your Nail Salon"
-          description="Salons can lose revenue due to booking conflicts and slow receptionist checkouts. Our software updates schedules, splits commissions, and tracks retail sales to drive salon growth."
+          title="Improve Booking Accuracy and Nail Salon Efficiency"
+          description="Our nail salon point of sale software will streamline and simplify your salon's daily operations with a single convenient solution, including appointment management, inventory, service pricing, and salon scheduling, plus client relations and business reporting tools."
           ctaDesc="Start Today"
         />
       </div>

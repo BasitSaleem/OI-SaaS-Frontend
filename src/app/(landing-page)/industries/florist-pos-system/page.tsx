@@ -57,26 +57,25 @@ const Page = () => {
                   "priceCurrency": "USD",
                   "description": "Free trial available"
                 },
-                "description": "Florist POS system designed to track perishable stem counts, manage bouquet recipe details, coordinate local deliveries, handle pre-orders, and sync online flower sales with raw stock.",
+                "description": "Owners Inventory's florist POS system helps florists manage custom orders, flower inventory, local deliveries, and customer accounts from a single platform.",
                 "featureList": [
-                  "Perishables and freshness tracking",
-                  "Custom bouquet recipe builder",
-                  "Integrated delivery scheduling",
-                  "Loose stem and ribbon packaging support",
-                  "Anniversary and birthday CRM reminders",
-                  "Expense and operational cost tracking",
-                  "Online ecommerce bouquet sync",
-                  "Multi-store florist dashboard controls",
-                  "Holiday margin and sales reports",
-                  "Role-based stylist and cashier access",
-                  "Integrations with accounting tools and payment gateways"
+                  "Real-time flower inventory tracking",
+                  "Custom order and arrangement builder",
+                  "Multi-channel order management",
+                  "Delivery management and driver dispatch",
+                  "Supplier and purchase order management",
+                  "Customer account and loyalty management",
+                  "Role-based staff access",
+                  "Mobile-friendly interface",
+                  "Automated low-stock alerts",
+                  "Detailed sales and waste reporting"
                 ]
               },
               {
                 "@type": "WebPage",
-                "name": "POS System for Florist Shops | Owners Inventory",
+                "name": "Florist POS System for Smarter Sales, Inventory, and Order Management | Owners Inventory",
                 "url": "https://www.ownersinventory.com/industries/florist-pos-system",
-                "description": "Streamline flower sales, manage perishables, build custom bouquets, schedule deliveries, and track web orders using Owners Inventory's POS for florist shops.",
+                "description": "Manage flower sales, track fresh stem inventory, schedule local deliveries, and run your florist shop efficiently using Owners Inventory.",
                 "inLanguage": "en",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -153,9 +152,9 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Flower Shop Owner"
+                        "name": "Emily R."
                       },
-                      "reviewBody": "Our system has made billing custom orders and tracking stem counts simple. Flower shop management is finally stress-free.",
+                      "reviewBody": "Before switching, we were throwing away flowers every week because we had no idea what was actually in the cooler. Now our stock levels are always accurate and waste has dropped dramatically.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -175,9 +174,9 @@ const Page = () => {
                       "@type": "Review",
                       "author": {
                         "@type": "Person",
-                        "name": "Florist Boutique Manager"
+                        "name": "Claire M."
                       },
-                      "reviewBody": "This is the best system we have used. It schedules local deliveries, tracks florist details, and coordinates web sales.",
+                      "reviewBody": "Managing wedding orders used to mean juggling emails, sticky notes, and spreadsheets. Now everything is in one place and our clients get a much more professional experience.",
                       "reviewRating": {
                         "@type": "Rating",
                         "ratingValue": "5",
@@ -197,42 +196,42 @@ const Page = () => {
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "What is a POS system for a florist?",
+                    "name": "Can the system track flowers and supply inventory in real time?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "A florist point of sale system helps manage fresh stem inventory, custom arrangement pricing, event scheduling, and local deliveries from one unified tool."
+                      "text": "Yes. Every stock movement is recorded automatically, including supplier deliveries, sales, waste write-offs, and adjustments, so inventory levels are always accurate without manual counting."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Can I manage delivery orders?",
+                    "name": "Does the system support custom order and event management?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, you can schedule delivery dates, add recipient messages, track delivery drivers, and record addresses directly at checkout."
+                      "text": "Yes. The pos system for florist will enable you to create in-depth custom orders for weddings, corporate clients, subscription services, as well as special occasions with complete ingredient, rates and delivery information linked to every purchase."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How does it handle perishables?",
+                    "name": "Can I manage both walk-in sales and advance orders from the same system?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "You can enter freshness warnings and expiration dates for flowers, allowing you to prioritize selling older blooms and reduce waste."
+                      "text": "Yes. The operations of all order types, such as counter sales, phone orders, online store orders, and event packages all pass through the same queue and fulfilment process, and all occur in the same platform."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Does it support custom arrangement billing?",
+                    "name": "How quickly can I set up the Owners Inventory for my florist shop?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, you can create a custom item at checkout, selecting the specific stems, ribbons, and vases used to automatically adjust raw inventory levels."
+                      "text": "Most florist shops are fully set up within a few hours. Customer records, supplier information and flower varieties and arrangements can be uploaded in bulk, meaning your team can start using the system the same day."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Is the system secure for multiple cashiers?",
+                    "name": "Can different staff members have different access levels?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Absolutely. You can assign different access levels to cashiers, design staff, and supervisors to keep financial data secure."
+                      "text": "Yes. Roletype permissions can be set to allow access to counter staff, floral designers, delivery drivers, and managers to only the areas they need to access for their job."
                     }
                   }
                 ]
@@ -245,38 +244,38 @@ const Page = () => {
                   {
                     "@type": "HowToStep",
                     "position": 1,
-                    "name": "Stem Acquisition",
-                    "text": "Wholesalers deliver fresh flowers. Log them with supplier details and freshness dates to track product shelf life."
+                    "name": "Set Up Your Flower Menu and Inventory",
+                    "text": "Record all costs, suppliers, storage information, and allergen/care notes for all flowers, foliage, materials, and packaging. Group and sort arrangements according to their category, occasions, seasons and/or prices, so that they can be easily retrieved during customer consultations."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 2,
-                    "name": "Freshness Storage",
-                    "text": "Sort flowers in refrigerators or displays, noting storage locations and expected freshness windows."
+                    "name": "Receive and Track Incoming Stock",
+                    "text": "Record all supplier deliveries including quantities, supplier batch information and conditions notes. The stock level is automatically updated and the system flags any discrepancy between the quantity ordered and what was received."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 3,
-                    "name": "Inventory Control",
-                    "text": "Check stock levels, record spoilage, and coordinate custom orders for upcoming weddings or events."
+                    "name": "Process Walk-In and Custom Orders",
+                    "text": "Create individual custom orders for retail, events, subscriptions and delivery customers. The system verifies stock, ensures pricing and provides order information directly to the design team, eliminating manual handoffs."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 4,
-                    "name": "Wholesale Purchasing",
-                    "text": "Manage purchase orders to restock popular blooms ahead of holiday demand spikes."
+                    "name": "Manage Delivery Scheduling and Dispatch",
+                    "text": "Assign orders to available drivers, create delivery windows, add instructions and photos, and track order completion in real-time. Automated customer notifications ensure customers are kept up-to-date, avoiding delays at the door."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 5,
-                    "name": "Custom Assembly & Checkout",
-                    "text": "Scan barcodes, add card notes, select delivery options, and process payments for custom florist orders."
+                    "name": "Handle Billing and Customer Accounts",
+                    "text": "Create invoices, handle deposits, process all kinds of payments and track all of the customer finances. Separate billing for corporate accounts and wedding clients with complete track of payments."
                   },
                   {
                     "@type": "HowToStep",
                     "position": 6,
-                    "name": "Analytics & Spoilage Reports",
-                    "text": "View reports on sales performance, waste rates, and holiday earnings. Enhance florist shop operations today."
+                    "name": "Monitor Daily Performance and Stock Health",
+                    "text": "Florist owners see live data on sales, inventory levels, pending deliveries, flower waste, and revenue at a glance. Automated reports highlight which arrangements are most profitable, which flowers need attention, and where operational improvements can be made."
                   }
                 ]
               }
@@ -286,15 +285,15 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="Complete POS System for Florist Shops with Stem Tracking"
-          description="The Owners Inventory POS System for florists is designed to handle perishable flowers and custom arrangements. Price bouquets accurately, manage delivery dates, organize events, and track stem quantities dynamically from one centralized dashboard."
+          title="Florist POS System for Smarter Sales, Inventory, and Order Management"
+          description="If a florist shop doesn't have the correct point of sale system, they will find it hard to generate sales, keep track of their flowers, provide timely deliveries, and handle seasonal demand. Manual processes can result in wilted flower stock, long checkout lines, inaccurate custom orders and poor customer communication for flower businesses."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Start Free Today"
+          ctaDesc="Book a Demo"
           variant="animation2"
         />
 
-        <VoicesRealBusiness title="Ratings on Leading Review Platforms" />
+        <VoicesRealBusiness title="Rated on leading review platforms" />
 
         <IndustryUnifiedPlatform
           heading={FLORIST_UNIFIED_HEADING}
@@ -304,15 +303,15 @@ const Page = () => {
         />
 
         <WhyChoosePOS
-          heading="How Our Inventory Software Solves These Challenges"
-          paragraph="The Owners Inventory POS System has features built for florists, including:"
+          heading="How Our Florist POS System Solves These Challenges"
+          paragraph="Owners Inventory is the all-in-one florist POS system that allows florists to manage, custom orders, flower inventory, deliveries, and customer accounts from a single platform."
           cards={FLORIST_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="retail"
         />
 
         <KeyHighlights
-          heading="Key Features of Our POS System That Help Florists"
+          heading="Key Features of Owners Inventory That Improve Florist Operations"
           features={FLORIST_KEY_FEATURES_CARDS}
         />
 
@@ -323,17 +322,16 @@ const Page = () => {
         />
 
         <IndustriesCallToAction
-          title="Manage Your Flower Shop Inventory Efficiently"
-          description="Take control of your fresh stems, custom events, and holiday orders with our custom florist software."
-          ctaDesc="Request a Free Demo"
+          title="Run Your Florist Business Without the Guesswork"
+          description="Minimise waste from poor inventory visibility, missed orders due to manual handling and delivery failures from a lack of connection with scheduling tools. Owners Inventory is an all-in-one florist point of sale system that allows shops to control their sales, custom orders, flower inventory, deliveries, customer accounts and business performance all from a single place."
+          ctaDesc="Book a Demo"
         />
 
         <IndustriesFeaturesSection features={FLORIST_FEATURE_CARDS} />
 
         <SecurityCompliance
-          title="Freshness, Speed, and Compliance"
-          description="Our system connects with local receipt printers, barcode scanners, card terminals, and online e-commerce channels so you can manage your florist shop from one place."
-          secondDescription="Reduce floral waste, coordinate driver schedules, and optimize wholesale flower ordering easily."
+          title="Security and Role-Based Access"
+          description="Only the information each team member needs is accessed. Each member of the counter staff, delivery personnel, florist and manager has clear permission levels, keeping financial data secure and ensuring accurate financial records."
         />
 
         <ToolsSection
@@ -359,14 +357,14 @@ const Page = () => {
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
             heading="FAQS"
-            paragraph="Our florist POS solution is built to optimize daily workflows and fresh stem tracking. Here are answers to some of the most common questions."
+            paragraph="Find answers to common questions about inventory tracking, order management, staff permissions, setup, and day-to-day florist shop operations."
             faqs={FLORIST_FAQS}
             buttonText="Start Now"
           />
         </div>
         <IndustriesHardwareControl
-          title="Take Control of Your Florist Shop"
-          description="Flower shops can lose profits due to rapid plant spoilage and inaccurate event pricing. Our system minimizes waste, simplifies bouquet billing, and optimizes purchasing to drive growth."
+          title="Improve Order Accuracy and Florist Efficiency"
+          description="Our florist point of sale software consolidates inventory management, sales processing, custom order processing, delivery coordination, customer relationship tools, and business reporting into a single easy-to-use system, simplifying daily business operations in your flower shop to make it more profitable and organized."
           ctaDesc="Start Today"
         />
       </div>

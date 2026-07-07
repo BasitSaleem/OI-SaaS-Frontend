@@ -3,53 +3,46 @@ import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFe
 
 // ─── Garden Center POS — UnifiedPlatform Section ──────────────────────────
 export const GARDEN_CENTER_UNIFIED_HEADING =
-  "Challenges Holding Back Garden Centers";
+  "Challenges Garden Centers Face";
 
 export const GARDEN_CENTER_UNIFIED_PARAGRAPH =
-  "Garden centers and nurseries handle unique inventory items, such as living plants, bulk soil, landscaping materials, and tools, creating specific operational challenges. These include:";
+  "Seasonal demand cycles, perishable inventory, and heavy reliance on supplier relationships makes nursery point of sale operations harder to manage than most retail systems can handle.";
 
 export const GARDEN_CENTER_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
     id: "1",
     icon: "UnifiedIcon1",
-    title: "Live Plant & Perishable Inventory",
+    title: "Seasonal Inventory Swings",
     description:
-      "Tracking the health, watering schedules, and seasonal shelf life of diverse plant species is hard. Manual logs lead to stock inaccuracies that can cost your business up to 20% in lost profits annually.",
+      "Spring can push a garden center from 400 SKUs to 1,200 in under six weeks, then back down again in fall. Most owners feel that swing in their gut before they see it in a report. Without a way to track it, next year's purchasing decisions will be made from memory instead of data.",
   },
   {
     id: "2",
     icon: "UnifiedIcon2",
-    title: "Bulk & Loose Material Billing",
+    title: "Perishable Plants Tracked Like Durable Goods",
     description:
-      "Ringing up bulk items sold by weight, volume (cubic yards), or bags—like mulch, gravel, and topsoil—often causes cashier errors and slows down checkout lines.",
+      "A flat of annuals that arrives Monday can be unsellable by Friday if it isn't watered or moved indoors. Generic POS systems track a 4\" petunia the same way they track a bag of mulch, so write-offs show up at month's end with no record of when or why the loss happened.",
   },
   {
     id: "3",
     icon: "UnifiedIcon3",
-    title: "Supplier & Vendor Coordination",
+    title: "Orders Disconnected From Sales",
     description:
-      "It is difficult to manage multiple plant nurseries, tool manufacturers, and seed suppliers without a centralized purchasing dashboard. The Owners Inventory POS simplifies supplier orders.",
+      "Most garden centers work with four to eight nursery suppliers a season, often ordering by gut feel instead of SKU-level data. Without purchase history tied to sales, you over-order on what didn't move and under-order on what sold out fast.",
   },
   {
     id: "4",
     icon: "UnifiedIcon4",
-    title: "Lack of Seasonal Insights",
+    title: "No Variant Tracking on Plants and Supplies",
     description:
-      "Without detailed reporting, center owners must guess which plant varieties or landscaping products perform best during spring or autumn spikes.",
+      "A tomato plant comes in a 4\" pot, a 1-gallon container, and a 3-gallon. Fertilizer comes in four bag sizes. When the system can't separate these variants, stock counts are unreliable and staff end up counting shelves instead of helping customers.",
   },
   {
     id: "5",
     icon: "UnifiedIcon5",
-    title: "Fluctuating Seasonal Pricing",
+    title: "No Customer Purchase Records",
     description:
-      "Prices for soil, fertilizers, and plants change based on season and availability. Manually updating tags is error-prone. The Owners Inventory POS automates pricing updates.",
-  },
-  {
-    id: "6",
-    icon: "UnifiedIcon6",
-    title: "Limited Online Inventory Sync",
-    description:
-      "Many garden centers miss out on online orders because local plant stock counts do not sync in real time with their web shop. The Owners Inventory POS keeps everything in sync.",
+      "A customer who bought a specific rose variety last spring and wants it again has no way of reminding your staff what she bought. She'll try to describe the tag. Your staff will guess. Without a purchase history on her profile, your team is relying on her memory.",
   },
 ];
 
@@ -57,53 +50,46 @@ export const GARDEN_CENTER_WHY_CHOOSE_CARDS = [
   {
     id: "1",
     icon: "whychoseIcon1",
-    title: "Real-Time Plant Tracking",
+    title: "Seasonal Catalog Management",
     description:
-      "Monitor stock levels of flowers, shrubs, and trees dynamically, ensuring accurate quantities across categories.",
+      "The product catalog supports bulk CSV import, so you can bring in a full spring catalog in one upload. When the season ends, you archive inactive products without losing their sales history.",
   },
   {
     id: "2",
     icon: "whychoseIcon2",
-    title: "Bulk Billing & Weights",
+    title: "Shrinkage Tracking by Product",
     description:
-      "Easily process bulk materials by yard, bag, or weight with custom buttons to keep checkout lanes moving fast.",
+      "Stock adjustments let you log damaged or unsellable units with a reason code. Pull adjustment reports by date range and category to see which plant lines carried the most shrinkage and which supplier's deliveries were consistently short.",
   },
   {
     id: "3",
     icon: "whychoseIcon3",
-    title: "Intelligent Supplier Orders",
+    title: "Sales-Based Purchase Orders",
     description:
-      "Manage purchase orders for nurseries and wholesalers, and receive alerts when high-demand seeds or soils run low.",
+      "The purchasing module generates purchase orders from inside the same system tracking your sales. Pull a SKU-level movement report, identify what sold fastest in the past 30 days, and send orders to your nursery suppliers without switching tools.",
   },
   {
     id: "4",
     icon: "whychoseIcon4",
-    title: "Centralized Price Control",
+    title: "Variant-Level Stock for Plants and Hardscape",
     description:
-      "Instantly adjust seasonal pricing, bundle items, and launch promotions across all nursery locations from one dashboard.",
+      "Each container size or product variation gets its own SKU and stock count. A 1-gallon Japanese maple and a 5-gallon are tracked separately with independent reorder alerts, so you won't order more 4\" pots when you're low on gallons.",
   },
   {
     id: "5",
     icon: "whychoseIcon5",
-    title: "Data-Driven Purchase Decisions",
+    title: "Customer Profiles With Purchase History",
     description:
-      "Analyze live reports showing top-selling plant categories and profit margins to plan your seasonal growing orders.",
-  },
-  {
-    id: "6",
-    icon: "whychoseIcon6",
-    title: "Integrated Ecommerce Shop",
-    description:
-      "Sync nursery inventory with online platforms, allowing customers to check plant availability online and buy web orders.",
+      "Every customer gets a profile with their full purchase history. When they come back in spring asking what rose variety they bought two seasons ago, the staff can pull it up at the register.",
   },
 ];
 
 export const GARDEN_CENTER_FEATURE_CARDS: FeatureCardData[] = [
   {
     id: "1",
-    title: "Omni-Channel and Sales Integration",
+    title: "Omni-Channel Selling for Garden Centers",
     description:
-      "Our system connects all of your sales points—including the physical garden center, landscape sales, and online orders—into one simple console. Manage local stock and web orders in one place.",
+      "Your garden center point of sale system, online store, and dashboard all run off the same stock numbers, so nothing gets oversold.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
@@ -111,169 +97,120 @@ export const GARDEN_CENTER_FEATURE_CARDS: FeatureCardData[] = [
     listVariant: "accordion",
     list: [
       {
-        listheading: "POS Sales Management",
+        listheading: "POS Counter",
         listdescription:
-          "Keep nursery checkouts simple, support barcodes and custom labels, and trace stock levels automatically.",
-        listSubDescription:
-          "This helps garden centers operate smoothly, reduce cashier errors, and handle high-volume spring customer crowds with ease.",
+          "The POS terminal handles in-store sales, plant returns, and gift cards, including bulk soil and mulch sold by the bag or yard. It works offline too, so a connectivity drop during a busy Saturday sale won't stop checkout.",
       },
       {
-        listheading: "Ecommerce Operations and Online Sales",
+        listheading: "Online Store Sync",
         listdescription:
-          "Accept online payments, schedule plant pickups, and coordinate delivery routes from a centralized console.",
+          "Online orders from Shopify, WooCommerce, or the built-in store pull from the same inventory pool as your register. If a customer buys a 3-gallon Japanese maple online right as a walk-in grabs the last one, the system catches it before it becomes a refund.",
       },
       {
-        listheading: "Single Multi-Channel Control",
+        listheading: "Unified Dashboard",
         listdescription:
-          "View live stock levels, check plant health notes, and monitor sales trends across all store departments.",
-        listSubDescription:
-          "This allows you to manage nursery resources efficiently, reducing plant loss and enhancing seasonal margins.",
+          "In-store revenue, online orders, stock levels across your retail floor and greenhouse, and supplier order status all show up from one login, so you can check whether this week's nursery delivery arrived without leaving the checkout screen.",
       },
     ],
   },
   {
     id: "2",
-    title: "Better Decision Reporting and Analytics",
+    title: "Sales and Inventory Reporting for Nursery POS Systems",
     description:
-      "Our system delivers detailed sales metrics, seasonal demand curves, and inventory turnover reports, enabling nursery managers to optimize wholesale orders.",
+      "Sales reports show revenue by product category and date range, so you can compare spring performance year over year. Inventory reports track stock movement, including adjustments, received shipments, and transfers between locations. For purchasing, you can see what was ordered from each supplier, at what cost, and whether the delivery matched the invoice. If your 4\" annual herbs sold out the first weekend of May three years running, that's in the data before this April's order goes out.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
-    list: [
-      { listheading: "Track high-demand plant species" },
-      { listheading: "Monitor fertilizer and tool stock levels" },
-      {
-        listheading:
-          "Generate seasonal profit reports to plan next year's nursery orders",
-      },
-    ],
+    list: [],
   },
 ];
 
 export const GARDEN_CENTER_KEY_FEATURES_CARDS = [
   {
     id: 1,
-    title: "Fast Barcode & Bulk Billing",
+    title: "Variant-Level Inventory Tracking",
     description:
-      "Quickly scan pots and seeds, or key in cubic yard quantities of soil and mulch. The Owners Inventory POS simplifies garden center billing.",
+      "Plants, supplies, and hardscape items are tracked with full variant support, including container size and species variant. Each variation carries its own SKU, stock count, and low-stock threshold, so purchasing decisions come from variant-level data, not a blended count across sizes.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card1.webp",
   },
   {
     id: 2,
-    title: "Live Plant Inventory",
+    title: "Bulk Import and Seasonal Catalogs",
     description:
-      "Stock levels update immediately with every checkout, keeping plant counts accurate and helping you manage plant care.",
+      "Spring catalogs often run to hundreds of new SKUs. Bulk CSV import loads an entire supplier catalog in one step. Seasonal deactivation preserves the product record and sales history without cluttering your active catalog.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card2.webp",
   },
   {
     id: 3,
-    title: "Nursery Purchases & Orders",
+    title: "Purchase Order Management",
     description:
-      "Create purchase orders quickly, track wholesale plant deliveries, and manage multiple supplier accounts.",
+      "Your nursery suppliers and hardscape vendors are managed inside the purchases module. Purchase orders are generated from the same interface where you review stock movement. When stock arrives, receiving it against the purchase order updates counts immediately and flags any shortfall.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card3.webp",
   },
   {
     id: 4,
-    title: "Bulk & Variant Plant Support",
+    title: "Real-Time Inventory Sync",
     description:
-      "Deal with variations in size (e.g. 1-gallon vs 5-gallon pots), soil type, and packaging options.",
+      "Every in-store sale reduces the online count in real time. A customer who buys your last 5-gallon hydrangea at the register won't find it available on your website five minutes later. This applies whether you're selling through Shopify, WooCommerce, or the built-in store.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card4.webp",
   },
   {
     id: 5,
-    title: "Customer & Loyalty Accounts",
+    title: "Staff Access Controls",
     description:
-      "Track landscaping accounts and amateur gardener buying histories. Push custom discounts and gardening tips.",
+      "Limit who can process returns, apply discounts, or adjust stock counts. A seasonal hire can ring up sales without being able to mark down a rack of overwintered perennials, and every action is logged to a specific user and timestamp, so you can trace who applied a clearance discount and when.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card5.webp",
   },
   {
     id: 6,
-    title: "Expense & Finance Tracking",
+    title: "Shift Reports by Category",
     description:
-      "Monitor operational costs, water bills, and employee shifts to maintain financial transparency.",
+      "The end-of-day shift report shows revenue by product category, payment type, and staff member. Which departments pulled the most revenue this weekend? It's in the report, not a spreadsheet you have to build yourself.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card6.webp",
-  },
-  {
-    id: 7,
-    title: "Nursery Web Store Sync",
-    description:
-      "Publish plants online with live stock counts and coordinate pickups or deliveries directly from your POS.",
-    imageSrc:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card7.webp",
-  },
-  {
-    id: 8,
-    title: "Multi-Location Control",
-    description:
-      "Manage inventory, sales, and employee permissions across multiple garden centers and nurseries from one screen.",
-    imageSrc:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card8.webp",
-  },
-  {
-    id: 9,
-    title: "Seasonal Sales Reports",
-    description:
-      "Analyze sales trends, tax details, and margins during busy spring or fall gardening months.",
-    imageSrc:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card9.webp",
-  },
-  {
-    id: 10,
-    title: "Staff Permission Levels",
-    description:
-      "Limit register access for seasonal staff while granting supervisor privileges for price overrides and stock counts.",
-    imageSrc:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/garden-center-pos/key-features-section/key-feature-card10.webp",
   },
 ];
 
 export const GARDEN_CENTER_WORKFLOW_DATA = {
-  heading: "Garden Center Inventory Workflow",
+  heading: "Workflow of the Owners Inventory Garden Center POS",
   paragraph:
-    "Our POS software automates backend inventory control for garden centers and nurseries. It streamlines plant arrivals, bulk item billing, local deliveries, and seasonal ordering.",
+    "Here's how a typical spring day runs, from opening stock checks through end-of-day reporting.",
   steps: [
     {
       number: 1,
-      title: "Plant Acquisition",
+      title: "Starting the Day",
       description:
-        "Log wholesale plant arrivals and seeds, noting pot size, varieties, and supplier accounts.",
+        "The manager opens the dashboard and checks stock alerts. Two varieties flagged overnight: 4-inch herbs are below reorder threshold, and a premium soil blend has four bags left. A purchase order is ready to send before the first customer walks in, based on the movement report from the past two weekends.",
     },
     {
       number: 2,
-      title: "Storage & Layout",
+      title: "Customer Check-In and Product Lookup",
       description:
-        "Organize inventory in greenhouses or outdoor yards, grouping plants by category and care requirements.",
+        "A customer comes in asking for the specific tomato variety she planted two years ago. The staff member searches her profile by name or phone number, pulls up her purchase history, and locates the variety in under a minute. It's in stock in the 1-gallon size.",
     },
     {
       number: 3,
-      title: "Inventory Tracking",
+      title: "Mixed Transaction at Checkout",
       description:
-        "Monitor stock levels, record plant losses or damage, and coordinate bulk yard items.",
+        "She picks up two tomato plants, a bag of fertilizer, and a set of garden stakes. The cashier processes one transaction covering all four items across three product categories. Tax rates apply correctly per category. Inventory updates for each SKU the moment the sale closes.",
     },
     {
       number: 4,
-      title: "Nursery Ordering",
+      title: "Receiving Supplier Stock",
       description:
-        "Automate purchase orders for pots, soils, and popular plant lines ahead of seasonal spikes.",
+        "An afternoon delivery arrives from the wholesale nursery. The receiving team opens the pending purchase order, confirms quantities received, and logs the shipment. Stock counts update immediately. Any line item short on delivery is flagged against the original order.",
     },
     {
       number: 5,
-      title: "Order Checkout",
+      title: "End-of-Day Reporting",
       description:
-        "Scan barcodes, bill bulk materials by volume, apply landscaping discounts, and process payments.",
-    },
-    {
-      number: 6,
-      title: "Reporting & Insights",
-      description:
-        "Review detailed insights to understand what garden categories are most profitable and make smart business decisions.",
+        "The shift report takes about two minutes to close. It shows total revenue by product category, refunds processed, payment types, and any stock adjustments made during the day. Weekend movement data is ready to inform Monday's purchasing decisions.",
     },
   ],
 };
@@ -281,159 +218,146 @@ export const GARDEN_CENTER_WORKFLOW_DATA = {
 export const GARDEN_CENTER_TESTIMONIALS = [
   {
     id: "1",
-    name: "Zoey Scott",
-    title: "Garden Center Owner",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
-    text: "This system has made billing bulk materials and tracking plant counts simple. Garden center management is finally stress-free.",
+    name: "Rachel Kowalski",
+    title: "Owner, Greenfield Nursery, Columbus OH",
+    image:
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+    text: "We were placing supplier orders based on what we remembered selling last spring. Switched to Owners Inventory and pulled actual SKU movement reports for the first time. Our overstock on slow-turn perennials dropped by about 30% the first season.",
   },
   {
     id: "2",
-    name: "Tyler Mitchell",
-    title: "Nursery Manager",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
-    text: "The best system we have implemented. It organizes bulk material billing, tracks plant quantities, and integrates with our website.",
+    name: "Marcus Obi",
+    title: "Manager, Terracycle Garden Center, Portland OR",
+    image:
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+    text: "Variant tracking changed how we manage our container inventory. Before, we'd reorder 1-gallon shrubs not realizing we had 40 units of the 3-gallon sitting in the back. Now each size has its own count and its own alert. We haven't had a duplicate overstock issue since we set it up.",
   },
   {
     id: "3",
-    name: "Brandon Howard",
-    title: "Nursery & Landscaping Owner",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
-    text: "We used to have trouble tracking thousands of plant varieties. Now everything is logged perfectly, and billing is fast.",
+    name: "Diana Furst",
+    title: "Owner, Sunroot Gardens, Denver CO",
+    image:
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
+    text: "A customer came in asking for the exact heirloom pepper variety she bought from us in 2022. My staff pulled it up in thirty seconds from her profile. She's been back four times this season.",
   },
   {
     id: "4",
-    name: "Aisha Malik",
-    title: "Multi-Store Center Franchise",
-    image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
-    text: "Shrinkage has dropped and spring billing is much faster. It saves time and makes our nurseries much more efficient.",
+    name: "Liam Tran",
+    title: "Owner, Westside Plant House, Sacramento CA",
+    image:
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+    text: "We added an online store through the platform last year. The inventory sync is the part that actually works. When something sells at the register, the website updates before the next customer can add it to their cart. No more apologetic refund emails.",
   },
 ];
 
 export const GARDEN_CENTER_FAQS = [
   {
     id: "1",
-    question: "What is a garden center POS system?",
+    question: "Can I track different container sizes for the same plant as separate inventory items?",
     answer:
-      "A garden center point of sale system helps manage plant inventories, bulk material sales (soil, mulch), landscaper accounts, and supplier orders from one central software.",
+      "Each container size is set up as a variant under the parent product. A 4\" petunia and a 1-gallon petunia carry separate SKUs, stock counts, and reorder thresholds. Low-stock alerts fire at the variant level, so you're reordering the right size rather than a blended total.",
   },
   {
     id: "2",
-    question: "Can I sell bulk materials by volume?",
+    question: "How does the system handle seasonal catalog changes between spring and fall?",
     answer:
-      "Yes, the system allows you to build custom billing buttons to sell soil, gravel, and mulch by bag, weight, or cubic yards easily.",
+      "Products can be deactivated at the end of a season without losing their sales history. When the same variety comes back the following year, you reactivate the product and set new opening stock counts. Bulk import handles large catalog additions at the start of each season.",
   },
   {
     id: "3",
-    question: "How does it handle plant variants?",
+    question: "Can I manage purchase orders for multiple nursery suppliers in one place?",
     answer:
-      "You can define variations for plant sizes, colors, and pot types, ensuring accurate stock records and prices at checkout.",
+      "Each supplier has its own record inside the purchases module. Purchase orders are created per supplier and tied to specific SKUs. When stock is received, it's matched against the open order and inventory updates immediately, with quantity discrepancies flagged before the stock enters your active count.",
   },
   {
     id: "4",
-    question: "Does it support online sales?",
+    question: "Does the system support online sales alongside in-store?",
     answer:
-      "Yes, you can sync your in-store stock levels automatically with your online store so customers can purchase items online.",
+      "Your Shopify store, WooCommerce site, or the built-in Owners Inventory online store all pull from the same inventory pool as your register. A sale at the counter reduces the online count in real time, so you can't oversell across channels once the sync is active.",
   },
   {
     id: "5",
-    question: "Can I limit access for seasonal employees?",
+    question: "Can I run two garden center locations from one account?",
     answer:
-      "Yes, you can configure staff roles so seasonal cashiers can only run checkouts, while supervisors manage price changes and purchase orders.",
+      "All plans support multiple locations. Stock at each site is visible from one dashboard, and transfer orders move inventory between locations with a complete movement record. Customer profiles and purchase history are shared across both sites.",
   },
 ];
 
 export const GARDEN_CENTER_TESTIMONIAL_DATA = {
-  heading: "What Do Our Clients Say About Owners Inventory?",
+  heading: "What Garden Center Owners Say",
   paragraph: "",
-  secondHeading: "Nursery Inventory Management Made Easy",
+  secondHeading: "Why Garden Centers Choose Owners Inventory",
   secondDescription:
-    "Control your nursery stock, simplify bulk material billing, and manage landscaping orders with our system designed specifically for garden centers.",
-  whyChooseTitle: "Why Choose Our System?",
+    "Here's what sets Owners Inventory apart from a generic POS system once you look past the feature list.",
+  whyChooseTitle: "Built for Mixed Product Operations",
   whyChooseDescription:
-    "Our system gives you plant-level tracking, fast bulk billing, and control over your garden business.",
+    "Most generic POS platforms weren't built with perishable, variant-heavy, and bulk product mixes in mind. Garden centers sell perishable plants, bulk materials, hardscape, seasonal decor, and chemical supplies in the same transaction. Owners Inventory handles that mix without workarounds or separate tools for each category.",
 };
 
 export const GARDEN_CENTER_TESTIMONIAL_FEATURES = [
   {
     id: "1",
-    title: "Simple Setup",
+    title: "30-Day Free Trial, No Contract",
     description:
-      "Set up your plant catalog and store inventory quickly without interrupting daily operations. Easy to learn for seasonal staff.",
+      "Start on any plan with a free 30-day trial and cancel at any time.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
-    title: "Stable Performance",
+    title: "Multi-Location From the Start",
     description:
-      "Rings up sales and manages high customer traffic without slowing down during busy spring gardening seasons.",
+      "If you run two locations, or a garden center alongside a greenhouse operation, both run from the same account. Stock transfers between sites, shared customer records, and combined reporting are available without a plan upgrade.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
-    title: "Clear Inventory Counts",
+    title: "Same-Day Setup",
     description:
-      "Know exactly how many trees, flowers, and tools are available, preventing stock issues.",
+      "Most garden centers complete the initial setup within a few hours. Bulk product import via CSV handles large spring catalogs without manual SKU entry, and variant structures are built from parent product records.",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
-    title: "Accurate Reports",
+    title: "Live Support During Peak Season",
     description:
-      "Generate detailed sales and margin reports to understand what garden categories are most profitable.",
+      "All plans include onboarding and email support. Pro and Enterprise add live chat and phone access. Enterprise includes a dedicated account manager, which matters when you're two weeks into spring rush and something needs fixing before the weekend.",
     icon: "testWhychoseIcon4",
-  },
-  {
-    id: "5",
-    title: "Flexible Page Settings",
-    description:
-      "Adapts to your nursery's needs, supporting landscaper discounts, bulk pricing, and supplier ordering.",
-    icon: "testWhychoseIcon5",
-  },
-  {
-    id: "6",
-    title: "Secure Cash Registers",
-    description:
-      "Configure staff roles, restrict voids, and manage drawer access to safeguard your garden center's revenue.",
-    icon: "testWhychoseIcon6",
-  },
-  {
-    id: "7",
-    title: "Advanced Integrations",
-    description:
-      "Integrates with barcode scanners, receipt printers, card terminals, online stores, and accounting software.",
-    icon: "testWhychoseIcon7",
   },
 ];
 
 export const GARDEN_CENTER_TOOLS_DATA = {
-  heading: "Integration and Tools",
-  paragraph:
-    "Our point of sale system integrates with accounting, ecommerce platforms, and payment systems to streamline garden center operations and reduce manual work.",
+  heading: "Integrations That Connect Your Garden Center",
+  paragraph: "",
   tools: [
     {
       id: 1,
       name: "Shopify",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
+      image:
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/shopify.svg",
     },
     {
       id: 2,
       name: "WooCommerce",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
+      image:
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/woocomerce.svg",
     },
     {
       id: 3,
       name: "QuickBooks",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
+      image:
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/quick-book.svg",
     },
     {
       id: 4,
       name: "Xero",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
+      image:
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
     },
     {
       id: 5,
       name: "Stripe",
-      image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
+      image:
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
     },
   ],
 };
