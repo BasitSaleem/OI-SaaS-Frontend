@@ -571,7 +571,7 @@ export const industryDetailsMap: Record<string, IndustryTreeItem[]> = {
     { title: 'Stock & Inventory Alerts' },
     { title: 'Sales Analytics & Reports' },
   ],
-  'warehouses-pos-system': [
+  'warehouse-pos-system': [
     { title: 'Order Processing & Fulfillment' },
     { title: 'SKU & Dimension Tracking' },
     { title: 'Multi-Facility Management' },

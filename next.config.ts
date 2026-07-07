@@ -111,6 +111,11 @@ const nextConfig: NextConfig = {
         destination: "/features/sales-and-order",
         permanent: true,
       },
+      {
+        source: "/industries/warehouses-pos-system",
+        destination: "/industries/warehouse-pos-system",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
