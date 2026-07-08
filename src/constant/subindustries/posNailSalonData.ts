@@ -104,26 +104,21 @@ export const NAIL_SALON_FEATURE_CARDS: FeatureCardData[] = [
     title: "Booking and Appointment Synchronization",
     description:
       "All online, on the phone, and in-house bookings are added to the same calendar, and the booking process is the same for all bookings. Technician work schedules, customer records and stock levels are all updated instantaneously.",
-    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/nail-salon-pos/omini-chanel.webp",
+    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/nail-salon-pos/omni-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
     buttonColor: "var(--primary-purple)",
     listVariant: "accordion",
-    list: [],
+    list: [
+      {
+        listheading: "Unified Operations Dashboard",
+        listdescription:
+          "Track bookings, stock, supplier orders, technician performance & client activity all with one-click. Multi-location salon owners can see all sites without switching tools or systems to see them.",
+      },
+    ],
   },
   {
     id: "2",
-    title: "Unified Operations Dashboard",
-    description:
-      "Track bookings, stock, supplier orders, technician performance & client activity all with one-click. Multi-location salon owners can see all sites without switching tools or systems to see them.",
-    imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/nail-salon-pos/better-decision.webp",
-    buttonLabel: "View Details",
-    buttonHref: "/features/products",
-    buttonColor: "#1AD1B9",
-    list: [],
-  },
-  {
-    id: "3",
     title: "Analytics and Reporting",
     description:
       "The nail salon point of sale transforms your daily operations into reports that show you revenue trends, which services are the most popular, product cost per nail, waste percentage, technician utilization and client retention rates.",
@@ -347,42 +342,48 @@ export const NAIL_SALON_FAQS = [
 export const NAIL_SALON_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory",
   paragraph: "",
-  secondHeading: "Why Choose Owners Inventory Nail Salon POS System?",
-  secondDescription:
-    "Our software removes the need for nail salon owners to employ a number of separate devices to manage product inventory, appointment scheduling, service pricing, technicians scheduling, client accounts, and enterprise reporting.",
-  whyChooseTitle: "Built for Nail Salon Operations",
+  secondHeading: "Streamline and Scale Your Nail Salon Business",
+  secondDescription: "Owners Inventory is an integrated solution, with bookings, inventory, service management, client loyalty, technician scheduling and reporting all in one system. It simplifies day to day tasks, eliminates manual steps, and provides a consistent and professional experience, for clients that walk in, call, or book online.",
+  whyChooseTitle: "Why Choose Owners Inventory Nail Salon POS System?",
   whyChooseDescription:
-    "It has been created particularly for nail salons that rely on appointments, require co-ordination among the technicians, have many services and products that are continually being updated, and where stock turns frequently. It's capable of accommodating the needs of any nail salon, from a regular Tuesday to the night before Valentine's Day.",
+    "Our software removes the need for nail salon owners to employ a number of separate devices to manage product inventory, appointment scheduling, service pricing, technicians scheduling, client accounts, and enterprise reporting.",
 };
 
 export const NAIL_SALON_TESTIMONIAL_FEATURES = [
   {
     id: "1",
-    title: "Quick Setup",
+    title: "Built for Nail Salon Operations",
     description:
-      "Owners Inventory can be set up within a few hours without advanced technical knowledge. Service menus, product inventory, supplier details, client records, and staff profiles can all be uploaded in bulk from a spreadsheet or added directly through the platform.",
+      "It has been created particularly for nail salons that rely on appointments, require co-ordination among the technicians, have many services and products that are continually being updated, and where stock turns frequently. It's capable of accommodating the needs of any nail salon, from a regular Tuesday to the night before Valentine's Day.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
-    title: "All-in-One Platform",
+    title: "Quick Setup",
     description:
-      "Eliminates the necessity of multiple applications for appointment scheduling, inventory management, client loyalty, technician schedules, and financial reporting. All of your nail salon's operations are managed from one single platform, eliminating the need to use multiple disconnected systems and the cost that comes with that.",
+      "Owners Inventory can be set up within a few hours without advanced technical knowledge. Service menus, product inventory, supplier details, client records, and staff profiles can all be uploaded in bulk from a spreadsheet or added directly through the platform.",
     icon: "testWhychoseIcon2",
   },
   {
     id: "3",
-    title: "24/7 Support",
+    title: "All-in-One Platform",
     description:
-      "Help is on hand 24 hours a day and 7 days a week. Whether it's a busy Saturday morning or a scheduling issue for Mother's Day, or a stock problem before a full week is booked up, help is always at the ready when it's most needed.",
+      "Eliminates the necessity of multiple applications for appointment scheduling, inventory management, client loyalty, technician schedules, and financial reporting. All of your nail salon's operations are managed from one single platform, eliminating the need to use multiple disconnected systems and the cost that comes with that.",
     icon: "testWhychoseIcon3",
   },
   {
     id: "4",
+    title: "24/7 Support",
+    description:
+      "Help is on hand 24 hours a day and 7 days a week. Whether it's a busy Saturday morning or a scheduling issue for Mother's Day, or a stock problem before a full week is booked up, help is always at the ready when it's most needed.",
+    icon: "testWhychoseIcon4",
+  },
+   {
+    id: "5",
     title: "Actionable Insights",
     description:
       "With real-time revenue data, product cost breakdowns, best-performing services, technician utilization rates, and client retention figures, nail salon owners have clarity that empowers them to plan with certainty, set prices, and expand their nail salon with confidence.",
-    icon: "testWhychoseIcon4",
+    icon: "testWhychoseIcon5",
   },
 ];
 
@@ -411,15 +412,15 @@ export const NAIL_SALON_TOOLS_DATA = {
     },
     {
       id: 4,
-      name: "Xero",
+      name: "Google Calendar",
       image:
-        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/xero.svg",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/google-calendar.svg",
     },
     {
       id: 5,
-      name: "Stripe",
+      name: "Mailchimp",
       image:
-        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/stripe.svg",
+        "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/tools-section/mailchimp.svg",
     },
   ],
 };

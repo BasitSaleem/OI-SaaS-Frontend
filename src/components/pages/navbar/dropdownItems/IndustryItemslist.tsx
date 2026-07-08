@@ -162,13 +162,13 @@ export const industriesItems: IndustryItem[] = [
     category: 'retailer',
     type: 'pos',
   },
-  // {
-  //   key: 'nail-salon-pos-system',
-  //   title: 'Nail Salon POS System',
-  //   icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/industries-dropdown/nail-salon-pos-system.svg",
-  //   category: 'retailer',
-  //   type: 'pos',
-  // },
+  {
+    key: 'nail-salon-pos-system',
+    title: 'Nail Salon POS System',
+    icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/header-dropdown-images/industries-dropdown/nail-salon-pos-system.svg",
+    category: 'retailer',
+    type: 'pos',
+  },
   {
     key: 'restaurant-inventory-management-software',
     title: 'Restaurant Inventory Management',
