@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 import NavItems from "./NavItems";
 import RightIcons from "./RightIcons";
@@ -17,10 +18,14 @@ const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  const pathname = usePathname();
+
   useEffect(() => {
     // Pages without a hero section (pricing, privacy, resources, etc.) never call
     // useHeaderAnimation, so the header elements — which start at opacity:0 / translateY(-150px)
     // via CSS inline styles — would stay hidden. Reveal them immediately here.
+    // pathname dependency ensures this re-runs on every client-side navigation,
+    // not just on initial mount — fixing the header being invisible on /pricing.
     if (!document.querySelector(".pinned-section-1")) {
       HEADER_SELECTORS.forEach((sel) => {
         document.querySelectorAll(sel).forEach((el) => {
@@ -29,7 +34,7 @@ const Navbar = () => {
         });
       });
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="header-animation relative z-[200]">
