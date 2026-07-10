@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Logo = () => (
   <div className="lg:w-auto header-left-col z-50 absolute md:left-2 left-2" style={{ opacity: 0, transform: "translateY(-150px)" }}>
-    <a href="/" className="shrink-0">
+   <Link href="/" className="shrink-0">
       <Image
         src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owner-inventory-logo.svg"
         alt="Owner's logo"
@@ -11,7 +12,7 @@ const Logo = () => (
         className="main-logo w-[78px] h-[24px] md:w-[105px] md:h-[35px] lg:W-[120px] lg:h-[35px] xl:w-[130px] xl:h-[40px]"
         priority
       />
-    </a>
+    </Link>
   </div>
 );
 
