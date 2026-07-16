@@ -13,6 +13,7 @@ interface CountrySelectProps {
     onChange: (value: string) => void;
     labels?: { [key: string]: string };
     className?: string; // To support className prop passed by PhoneInput
+    buttonClassName?: string;
 }
 
 const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HTMLButtonElement>> = ({
@@ -20,6 +21,7 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
     onChange,
     labels = en, // Default to English labels
     className,
+    buttonClassName,
     ...rest
 }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +76,7 @@ const CountrySelect: React.FC<CountrySelectProps & React.ButtonHTMLAttributes<HT
                 type="button"
                 {...rest}
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors outline-none"
+                className={`flex items-center gap-2 px-2 py-0 rounded-lg hover:bg-gray-50 transition-colors outline-none ${buttonClassName || ''}`}
             >
                 {FlagComponent && (
                     <span className="country-flag-container w-6 h-4 flex items-center justify-center">

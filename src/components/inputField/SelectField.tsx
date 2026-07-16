@@ -15,6 +15,7 @@ interface SelectFieldProps {
   variant?: "default" | "signup";
   value?: string | number;
   onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  inputClassName?: string;
 }
 
 const SelectField: React.FC<SelectFieldProps> = ({
@@ -28,6 +29,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
   variant = "default",
   value,
   onChange,
+  inputClassName,
 }) => {
   return (
     <div className="relative w-full">
@@ -45,7 +47,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
           value={value}
           onChange={onChange}
           disabled={readOnly}
-          className={`w-full px-4 py-3 pr-10 rounded-[14px] border bg-white appearance-none outline-none focus:border-[#795CF5] transition-colors font-['Onest'] ${!value ? "text-[#9A9A9A]" : "text-[#231F20]"
+          className={`w-full ${inputClassName || "px-4 py-3"} pr-10 rounded-[14px] border bg-white appearance-none outline-none focus:border-[#795CF5] transition-colors font-['Onest'] ${!value ? "text-[#9A9A9A]" : "text-[#231F20]"
             } ${error ? "border-red-500 focus:border-red-500" : "border-[#D9D9D9]"}`}
         >
           <option value="" disabled>

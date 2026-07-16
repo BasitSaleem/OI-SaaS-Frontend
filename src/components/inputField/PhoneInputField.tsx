@@ -14,6 +14,7 @@ interface PhoneInputFieldProps {
     required?: boolean;
     className?: string;
     error?: string;
+    inputClassName?: string;
 }
 
 const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
@@ -24,6 +25,7 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
     required = false,
     className,
     error,
+    inputClassName,
 }) => {
     return (
         <div className={className}>
@@ -39,8 +41,11 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
                 value={value}
                 onChange={onChange}
                 defaultCountry="US"
-                className="font-['Onest']"
+                className={`font-['Onest'] ${inputClassName || ''}`}
                 countrySelectComponent={CustomCountrySelect}
+                countrySelectProps={{
+                    buttonClassName: inputClassName?.includes('!py-2') ? '!py-0' : ''
+                }}
                 numberInputProps={{
                     className: "PhoneInputInput"
                 }}
