@@ -50,7 +50,7 @@ export default function Modal({
     <div className="fixed inset-0 flex items-center justify-center z-[99999]">
       <div
         data-lenis-prevent
-        className="rounded-2xl py-[40px] px-0 md:px-5 w-full backdrop-blur-md h-screen flex items-center justify-center shadow-xl relative bg-contain z-[10000] bg-center bg-no-repeat"
+        className="rounded-2xl py-[40px] px-0 md:px-5 w-[60%] backdrop-blur-md h-auto flex items-center justify-center shadow-xl relative bg-contain z-[10000] bg-center bg-no-repeat"
         style={{ background: gradientBackground }}
       >
         <div className="wrapper">
