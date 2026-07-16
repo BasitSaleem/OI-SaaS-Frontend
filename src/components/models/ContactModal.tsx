@@ -113,6 +113,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 required
                 register={register("name")}
                 error={errors.name?.message}
+                inputClassName="!px-3 !py-2 "
               />
               <Controller
                 name="phone"
@@ -125,6 +126,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                     value={field.value}
                     onChange={(val) => field.onChange(val ?? "")}
                     error={errors.phone?.message}
+                    inputClassName="!px-3 !py-2"
                   />
                 )}
               />
@@ -139,6 +141,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 required
                 register={register("email")}
                 error={errors.email?.message}
+                inputClassName="!px-3 !py-2 h-[44px]"
               />
               <InputField
                 label="Company Name"
@@ -146,6 +149,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 required
                 register={register("company")}
                 error={errors.company?.message}
+                inputClassName="!px-3 !py-2 h-[44px]"
               />
             </div>
 
@@ -163,6 +167,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                     onChange={(e) => field.onChange(e.target.value)}
                     options={companySizeOptions}
                     error={errors.companySize?.message}
+                    inputClassName="!px-3 !py-2 h-[44px]"
                   />
                 )}
               />
@@ -172,6 +177,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 required
                 register={register("subject")}
                 error={errors.subject?.message}
+                inputClassName="!px-3 !py-2 h-[44px]"
               />
             </div>
 
@@ -181,9 +187,10 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 label="Message"
                 placeHolder="How can we assist you today?"
                 required
-                rows={4}
+                isResizable
                 register={register("message")}
                 error={errors.message?.message}
+                inputClassName="!px-3 !py-2"
               />
             </div>
 
