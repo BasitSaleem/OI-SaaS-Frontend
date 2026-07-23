@@ -6,7 +6,7 @@ export const FLORIST_UNIFIED_HEADING =
   "Challenges That Florist Business Owners Face Today";
 
 export const FLORIST_UNIFIED_PARAGRAPH =
-  "Running a business without a dedicated system of a point of sale is quite challenging. Let's take a look at the typical issues that florist owners and managers face on a daily basis.";
+  "Running a florist business without a dedicated Point of sale system is quite challenging. Let's take a look at the typical issues that florist owners and managers face on a daily basis.";
 
 export const FLORIST_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -14,7 +14,7 @@ export const FLORIST_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon1",
     title: "Inaccurate Flower and Supply Inventory Tracking",
     description:
-      "A florist is dealing in perishable material which changes daily. If a suitable tracking system is not in place, shops risk overstocking of flowers that might wilt before being sold, running out of popular flower arrangements, over ordering supplies from the wholesaler, and wasting money where they do not need to.",
+      "A florist is dealing in perishable material which changes daily. If a suitable tracking system is not in place, shops risk overstocking of flowers that might wilt before being sold, running out of popular flower arrangements, over-ordering supplies from the wholesaler, and wasting money where they do not need to.",
   },
   {
     id: "2",
@@ -28,7 +28,7 @@ export const FLORIST_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon3",
     title: "Difficulty Managing Custom and Recurring Orders",
     description:
-      "Handing out orders by telephone, paper or a simple spreadsheet can lead to inaccuracies. Misplaced addresses, forgotten special instructions, wrong flower varieties, missed add-ons: all hurt people's happiness and satisfaction as well as customer retention.",
+      "Handling orders by telephone, paper or a simple spreadsheet can lead to inaccuracies. Misplaced addresses, forgotten special instructions, wrong flower varieties, missed add-ons: all reduce customer retention and satisfaction as well as customer retention.",
   },
   {
     id: "4",
@@ -59,7 +59,7 @@ export const FLORIST_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Flower and Inventory Management",
     description:
-      "Stock levels are automatically updated every time a sale or a supplier delivery are made, or when the day is adjusted. Real-time inventory tracking results in no over-ordering, less flower waste and availability of popular stems and arrangements for walk-in customers and advance ordering.",
+      "Stock levels are automatically updated every time a sale or a suppliers deliveries are made, or when the day is adjusted. Real-time inventory tracking results in no over-ordering, less flower waste and availability of popular stems and arrangements for walk-in customers and advance ordering.",
   },
   {
     id: "2",
@@ -87,14 +87,14 @@ export const FLORIST_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Customer Profiles and Loyalty Tracking",
     description:
-      "Every customer interaction, order history, preference, and communication is stored in a centralized profile. Staff can pull up a returning customer's favorite flowers in seconds and proactively reach out for birthdays, anniversaries, and seasonal promotions.",
+      "Every customer interaction, order history, preferences, and communication is stored in a centralized profile. Staff can pull up a returning customer's favorite flowers in seconds and proactively reach out for birthdays, anniversaries, and seasonal promotions.",
   },
   {
     id: "6",
     icon: "whychoseIcon6",
     title: "Real-Time Sales and Business Reporting",
     description:
-      "One reporting dashboard provides revenue per day, per week or per month, top selling arrangements, flower cost per order, delivery performance and waste. The business owners of the flower shop will now enjoy the visibility that is essential for them when they need to make a purchase, set a price as well as maintain their profitable growth.",
+      "One reporting dashboard provides revenue per day, per week or per month, top selling arrangements, flower cost per order, delivery performance and waste. Flower shop owners will now enjoy the visibility that is essential for them when they need to make a purchase, set a price as well as maintain their profitable growth.",
   },
 ];
 
@@ -131,7 +131,7 @@ export const FLORIST_FEATURE_CARDS: FeatureCardData[] = [
     id: "2",
     title: "Analytics and Reporting",
     description:
-      "The florist POS system turns everyday to reports that include trends in revenue, best selling arrangements, costs of flowers per order, waste percentage, delivery percentage and customer retention. This information guides owners to better buying decisions, pricing, and identification of the arrangements and seasons that are most profitable.",
+      "The florist POS system turns everyday data into reports that include trends in revenue, best selling arrangements, costs of flowers per order, waste percentage, delivery percentage and customer retention. This information guides owners to better buying decisions, pricing, and identification of the arrangements and seasons that are most profitable.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/florist-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
@@ -238,7 +238,7 @@ export const FLORIST_WORKFLOW_DATA = {
       number: 2,
       title: "Receive and Track Incoming Stock",
       description:
-        "Record all supplier deliveries including quantities, supplier batch information and conditions notes. The stock level is automatically updated and the system flags any discrepancy between the quantity ordered and what was received.",
+        "Record all supplier deliveries including quantities, supplier batch information and condition notes. The stock level is automatically updated and the system flags any discrepancy between the quantity ordered and what was received.",
     },
     {
       number: 3,
@@ -256,7 +256,7 @@ export const FLORIST_WORKFLOW_DATA = {
       number: 5,
       title: "Handle Billing and Customer Accounts",
       description:
-        "Create invoices, handle deposits, process all kinds of payments and track all of the customer finances. Separate billing for corporate accounts and wedding clients with complete track of payments.",
+        "Create invoices, handle deposits, process all kinds of payments and track all of the customer finances. Separate billing for corporate accounts and wedding clients with complete tracking of payments.",
     },
     {
       number: 6,

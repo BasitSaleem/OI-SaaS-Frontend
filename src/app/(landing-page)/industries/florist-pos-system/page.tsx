@@ -286,7 +286,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Florist POS System for Smarter Sales, Inventory, and Order Management"
-          description="If a florist shop doesn't have the correct point of sale system, they will find it hard to generate sales, keep track of their flowers, provide timely deliveries, and handle seasonal demand. Manual processes can result in wilted flower stock, long checkout lines, inaccurate custom orders and poor customer communication for flower businesses."
+          description="If a florist shop doesn't have the right point of sale system, they will find it hard to generate sales, keep track of their flowers, provide timely deliveries, and handle seasonal demand. Manual processes can result in wilted flower stock, long checkout lines, inaccurate custom orders and poor customer communication for flower businesses."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Book a Demo"
@@ -331,7 +331,7 @@ const Page = () => {
 
         <SecurityCompliance
           title="Security and Role-Based Access"
-          description="Only the information each team member needs is accessed. Each member of the counter staff, delivery personnel, florist and manager has clear permission levels, keeping financial data secure and ensuring accurate financial records."
+          description="Each team member can access only the information they need. Each member of the counter staff, delivery personnel, florist and manager has clear permission levels, keeping financial data secure and ensuring accurate financial records."
         />
 
         <ToolsSection
