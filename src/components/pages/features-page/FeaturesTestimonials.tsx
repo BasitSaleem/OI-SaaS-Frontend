@@ -123,14 +123,15 @@ const FeaturesTestimonials = ({
         </div>
 
         <div className="flex items-center gap-4 mb-5">
-          <Image
-            src={slide.image}
-            alt={slide.name}
-            width={48}
-            height={48}
-            className="rounded-full border-2 w-[48px] h-[48px] "
-            style={{ borderColor: accentColor }}
-          />
+          <div className="w-[56px] h-[56px] flex items-center justify-center rounded-full border-2 overflow-hidden shrink-0 p-[2px]" style={{ borderColor: accentColor }}>
+            <Image
+              src={slide.image}
+              alt={slide.name}
+              width={56}
+              height={56}
+              className="h-full w-full rounded-full flex items-center justify-center object-cover object-top"
+            />
+          </div>
 
           <div className="">
             <p className="font-semibold text-xl font-['onest']">

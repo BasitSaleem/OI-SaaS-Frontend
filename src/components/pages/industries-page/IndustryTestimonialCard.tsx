@@ -54,14 +54,14 @@ const IndustryTestimonialCard = ({
       </div>
 
       <div className="flex items-center gap-4 mb-5">
-        <div className="w-[56px] h-[56px] flex items-center justify-center rounded-full border-2" style={{ borderColor: accentColor }}>
+        <div className="w-[56px] h-[56px] flex items-center justify-center rounded-full border-2 overflow-hidden shrink-0 p-[2px]" style={{ borderColor: accentColor }}>
           {slide.image.startsWith("/") || slide.image.startsWith("http") ? (
             <Image
               src={slide.image}
               alt={`${slide.title} Icon`}
               width={56}
               height={56}
-              className="h-full w-full rounded-full flex items-center justify-center"
+              className="h-full w-full rounded-full flex items-center justify-center object-cover object-top"
             />
           ) : (
             <IndustryIcon

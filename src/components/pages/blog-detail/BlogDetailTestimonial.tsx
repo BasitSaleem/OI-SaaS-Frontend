@@ -38,7 +38,7 @@ const BlogDetailTestimonial: React.FC<BlogDetailTestimonialProps> = ({ testimoni
 
           <div className="flex items-center gap-4">
             <div
-              className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border-2"
+              className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border-2 p-[2px]"
               style={{ borderColor: "#795CF5" }}
             >
               <Image
@@ -46,7 +46,7 @@ const BlogDetailTestimonial: React.FC<BlogDetailTestimonialProps> = ({ testimoni
                 alt={testimonial.author}
                 width={56}
                 height={56}
-                className="object-cover w-full h-full"
+                className="object-cover object-top w-full h-full"
               />
             </div>
             <div>
