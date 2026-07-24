@@ -36,7 +36,7 @@ const TrollyAnimation = () => {
                     ref={p1Ref}
                     className="text-[10px] lg:text-base xl:text-xl leading-[110%] font-medium font-['onest'] text-[var(--text-dark)] text-start absolute top-7 w-full max-w-[120px] lg:max-w-[200px] xl:max-w-[239px] left-6 xl:left-10 paragraph1"
                 >
-                    Sell online with built in, fully synced e-commerce
+                    Sell online with built-in, fully synced e-commerce
                 </p>
 
                 <Image

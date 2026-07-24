@@ -28,7 +28,7 @@ export const ELECTRONICS_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon3",
     title: "Stock Visibility Gap",
     description:
-      "Most electronics stores that sell both in-store and online are running two separate stock counts. A customer buys the last unit of a laptop in-store on a Saturday afternoon. That same unit is still shows as available on the website. By Monday, there's a canceled order, a refund to process, and a customer who won't be back.",
+      "Most electronics stores that sell both in-store and online are running two separate stock counts. A customer buys the last unit of a laptop in-store on a Saturday afternoon. That same unit still shows as available on the website. By Monday, there's a canceled order, a refund to process, and a customer who won't be back.",
   },
   {
     id: "4",
@@ -59,7 +59,7 @@ export const ELECTRONICS_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon3",
     title: "Counter Sales Update Online Stock Instantly",
     description:
-      "When a sale is processed at the electronic POS, inventory updates immediately across all connected channels. Your online store, whether running through Shopify, WooCommerce, or Owners Inventory's built-in eCommerce module, reflects the same stock count as your physical floor.",
+      "When a sale is processed at the electronics POS, inventory updates immediately across all connected channels. Your online store, whether running through Shopify, WooCommerce, or Owners Inventory's built-in eCommerce module, reflects the same stock count as your physical floor.",
   },
   {
     id: "4",
@@ -250,7 +250,7 @@ export const ELECTRONICS_FAQS = [
   {
     id: "4",
     question:
-      "We have over 200 SKUs across multiple brands. How long does the pos system for an electronics store setup actually take?",
+      "We have over 200 SKUs across multiple brands. How long does setting up the POS system for an electronics store actually take?",
     answer:
       "Based on onboarding data from Owners Inventory customers, most electronics retailers with large catalogs are operational within a day. Products can be imported in bulk via CSV, and variants are built out from the parent product rather than entered one by one. If you're migrating from another system, the support team helps with the data transfer.",
   },
@@ -279,7 +279,7 @@ export const ELECTRONICS_TESTIMONIAL_FEATURES = [
   {
     id: "1",
     title: "Serial Number Tracking Stops Return Fraud",
-    description: "Electronics have some of the highest return fraud rates in retail, according to the NRF's 2023 retail theft report. When a device is sold with its serial number and IMEI tied to the transaction, a customer can't swap in a different unit at returns. The record is already there, and staff don't need to make a judgment call.",
+    description: "Electronics have some of the highest return fraud rates in retail, according to the NRF's 2023 retail theft report. When a device is sold with its serial number and IMEI tied to the transaction, a customer can't swap in a different unit during a return. The record is already there, and staff don't need to make a judgment call.",
     icon: "testWhychoseIcon1",
   },
    {

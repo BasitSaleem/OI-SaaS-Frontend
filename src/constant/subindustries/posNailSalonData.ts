@@ -35,7 +35,7 @@ export const NAIL_SALON_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon4",
     title: "No Visibility into Technician Performance",
     description:
-      "There is no way to determine who is working all their time, who has an open spot, and who's the most profitable with a decentralized system. Schedule and staff based on guesswork instead of data.",
+      "There is no way to determine who is working at full capacity, who has an open spot, and who's the most profitable with a decentralized system. Schedule and staff based on guesswork instead of data.",
   },
   {
     id: "5",
@@ -80,7 +80,7 @@ export const NAIL_SALON_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon4",
     title: "Technician Scheduling and Performance Tracking",
     description:
-      "Access availability, utilization and appointment load for technicians in real time. Place services with the appropriate team members, determine gaps to be filled and monitor revenue per technician.",
+      "Access availability, utilization and appointment load for technicians in real time. Assign services to the appropriate team members, determine gaps to be filled and monitor revenue per technician.",
   },
   {
     id: "5",
@@ -143,7 +143,7 @@ export const NAIL_SALON_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Appointment and Scheduling Management",
     description:
-      "Schedule, reconfirm, and organize all appointments all from one calendar view. Prevent double bookings, manage technician schedules and schedule in automation and waitlist.",
+      "Schedule, reconfirm, and organize all appointments all from one calendar view. Prevent double bookings, manage technician automate scheduling and manage waitlists",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/nail-salon-pos/key-features-section/key-feature-card2.webp",
   },
@@ -264,7 +264,7 @@ export const NAIL_SALON_TESTIMONIALS = [
     title: "Technician Manager",
     image:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
-    text: "It saved our technicians a lot of hours each week as they used to be asking us constantly for booking details and client notes etc., but now it's all on their phone and clients are notified automatically.",
+    text: "It saved our technicians a lot of hours each week as they used to ask us constantly for booking details and client notes etc., but now it's all on their phone and clients are notified automatically.",
   },
   {
     id: "3",

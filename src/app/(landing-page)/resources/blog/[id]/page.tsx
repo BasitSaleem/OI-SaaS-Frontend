@@ -46,7 +46,7 @@ export default async function BlogDetailPage({
     <>
       <BlogDetailHero
         title={blog.heading}
-        description={blog.blogOverview}
+        // description={blog.blogOverview}
         publishDate={blog.date}
         readingTime={blog.totalRead}
         views="4.5k views"

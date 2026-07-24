@@ -42,7 +42,7 @@ const Page = () => {
 
       <WhyChoosePOS
         heading="Why Choose Us?"
-        paragraph="Owners Inventory simplifies complex facility operations into one connected platform. We help you monitor performance, standardize processes, and achieve full operational visibility across every location."
+        // paragraph="Owners Inventory simplifies complex facility operations into one connected platform. We help you monitor performance, standardize processes, and achieve full operational visibility across every location."
         cards={HR_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       />

@@ -85,7 +85,7 @@ export const caseStudiesData: CaseStudyData[] = [
 
     // New schema data
     slug: "al-asif",
-    companyName: "AL-Asif",
+    companyName: "Al-Asif",
     tagline: "The Digital Evolution",
     subtitle: "Transforming manual sales, inventory, and accounting into a unified, live system that drives efficiency and accuracy.",
     heroStats: [
@@ -94,7 +94,7 @@ export const caseStudiesData: CaseStudyData[] = [
       { percentage: "30%", description: "Faster Billing Speed" },
     ],
     founderQuote: {
-      authorCompanyName: "AL-Asif",
+      authorCompanyName: "Al-Asif",
       heading: "The Beginning of Al-Asif’s Transformation",
       overview: "Their business greatly relied on handwritten bills, manual record checks, and calculations in ledgers. There was a lack of structure and visibility in day-to-day activities. Stock shortages became a routine, delays on the billing side aggravated employees and clients alike, and the financial transparency always lagged. The management wanted precision, the workers wanted simplicity, and the whole business wanted a single point of truth, a single location where all things remained updated, interrelated, and free of errors.",
       text: "We require a single system to process our sales, inventory, and accounts correctly and immediately. We don't just want software; we want to eliminate manual effort.",

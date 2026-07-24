@@ -312,7 +312,39 @@ export const blogData: BlogData[] = [
         blocks: [
           { type: "paragraph", content: "Most POS providers charge separately for software, additional terminals, extra locations, and each module you add. Owners Inventory works differently. It's a B2B SaaS platform that combines POS, inventory management, ecommerce, purchasing, and finance into one plan, so you're not building your monthly POS fees from separate line items." },
           { type: "paragraph", content: "If your list includes multi-location support, warehouse management, and accounting integrations, the bundled structure changes the math. Assembling those from separate providers typically adds cost and complexity." },
-          { type: "paragraph", content: "All plans include unlimited users, unlimited products, and unlimited orders. No contracts, with a 30-day free trial included. For full tier details and add-on pricing, visit the Owners Inventory pricing page." },
+          { type: "paragraph", content: "All plans include unlimited users, unlimited products, and unlimited orders. No contracts, with a 30-day free trial included. For full tier details and add-on pricing, visit the [Owners Inventory pricing](/pricing) page." },
+        ],
+      },
+      {
+        id: "faqs",
+        heading: "Frequently Asked Questions",
+        blocks: [
+          {
+            type: "detailList",
+            marker: "info",
+            items: [
+              {
+                title: "What is the average cost of a POS system for a small business?",
+                content: "For a single-location business, realistic first-year costs fall between $2,400 and $5,000, covering hardware ($800–$1,500), software ($50–$100/month), and processing fees. High card transaction volume increases that figure significantly.",
+              },
+              {
+                title: "Can I use a free POS system if I'm doing high card volume?",
+                content: "Free plans recover costs through higher processing rates, often 2.7%–2.9% versus the 2.35% in-person average. On $500,000 in annual card sales, that gap costs $1,750–$2,750 extra per year. Above roughly $150,000–$200,000 in annual volume, a paid plan almost always wins on total cost.",
+              },
+              {
+                title: "What's the difference between flat-rate and interchange-plus pricing, and which should I choose?",
+                content: "Flat-rate charges one fixed percentage on every transaction, simple and predictable. Interchange-plus passes the actual card network cost through to you, then adds a small fixed markup. It costs less at scale, especially with high debit card volume. Under $10,000 monthly, flat-rate is fine. Above $20,000, interchange-plus is worth comparing.",
+              },
+              {
+                title: "Is it better to buy or lease POS hardware?",
+                content: "Buy. Leasing reduces upfront cost but typically costs more in total over two to three years, and you don't own the equipment at the end. Buying also gives you the freedom to switch processors without hardware constraints.",
+              },
+              {
+                title: "What hidden costs do most buyers miss?",
+                content: "PCI compliance fees ($79–$120/year per CardPaymentOptions), add-on charges for loyalty programs and advanced reporting, integration fees for third-party tools, setup fees, and contract cancellation penalties. These are rarely mentioned upfront and frequently appear on the first few invoices.",
+              },
+            ],
+          },
         ],
       },
       {
