@@ -26,7 +26,7 @@ const Page = () => {
     <div>
       <SubFeaturesHero
         title="Empower Your Business with POS"
-        description="Sell smarter with our POS system. Intended to be fast, accurate, and the best point of sale, it simplifies all transactions, operates inventory in real-time, and provides you with complete control over your business, all through a simple, easy-to-use interface."
+        description="Sell smarter with our POS system. Intended to be Fast, accurate, and built to be the best point of sale, it simplifies all transactions, operates inventory in real-time, and provides you with complete control over your business, all through a simple, easy-to-use interface."
         image={heroBanner}
         url="pos"
         // video="https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/hero-section-banners/pos-hero-anim.webm"
@@ -47,7 +47,7 @@ across multiple locations."
 
       <WhyChoosePOS
         heading="Revolutionize Sales with Our Smarter POS"
-        paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovativeness that help your business remain ahead of the curve. We do not simply assist you in selling, we assist you in being smarter, faster and more profitable."
+        paragraph="Select the Owners Inventory POS because of reliability, efficiency, and innovation that help your business remain ahead of the curve. We do not simply assist you in selling; we assist you in being smarter, faster, and more profitable."
         cards={POS_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       // mainVideo="https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/why-chose-banners/pos-whychose-anim.webm"
@@ -61,7 +61,7 @@ across multiple locations."
          industries={posIndustries} /> */}
         <IndustryPosShowcase
           mainHeading="Industry-Ready POS to Power Your Sales"
-          paragraph="There is no single business like another; then why use generic point-of-sale systems? Owners Inventory offers a customized point of sale software and point of sale solution to meet your industry specifications."
+          paragraph="No two businesses are alike, so why settle for a generic point-of-sale system? Owners Inventory offers a customized point of sale software and point of sale solution to meet your industry specifications."
           buttonText="Explore All Industries"
           industries={POS_INDUSTRIES}
         />
@@ -69,7 +69,7 @@ across multiple locations."
 
       <FeaturesCallToAction
         title="Sell Smarter. Run Your Business Better"
-        description="Get a POS system to make your business smooth and trouble-free in practice by having complete control of sales, inventory, and operations."
+        description="Get a POS system to make your business smooth and trouble-free by having complete control of sales, inventory, and operations."
       />
       <FeaturesTestimonials
         testimonials={POS_TESTIMONIALS}
@@ -80,7 +80,7 @@ across multiple locations."
 
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection
-          heading="Everything You Need to Know About Owners' Inventory"
+          heading="Everything You Need to Know About Owners Inventory"
           paragraph="We’ve gathered the most common questions about Owners Inventory from setup and features to pricing and support. Still have doubts? Our team is ready to guide you every step of the way."
           faqs={POS_FAQS}
         />

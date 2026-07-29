@@ -123,7 +123,7 @@ const Page = () => {
 
       <WhyChoosePOS
         heading="Why Choose Us?"
-        paragraph="By choosing Owners Inventory, you are not just adopting software. You are implementing a complete purchasing strategy designed for control and growth. Our platform transforms purchasing from a cost center into a strategic advantage, ensuring every transaction is accurate."
+        paragraph="By choosing Owners Inventory, you are not just adopting software. You are implementing a complete financial management strategy designed for control and growth. Our platform transforms accounting from a routine back-office task into a strategic advantage, ensuring every transaction is accurate."
         cards={FINANCE_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       />
@@ -131,7 +131,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Built for Every Industry That Runs on Numbers"
-          paragraph="Sell, serve, supply, whatever you do, proper accounting and finance management will keep your business on the right track. Owners Inventory is flexible and fits all workflows, provides real-time reporting of sales, costs, and performance."
+          paragraph="Sell, serve, supply, whatever you do, proper accounting and finance management will keep your business on the right track. Owners Inventory is flexible and fits all workflows and provides real-time reporting of sales, costs, and performance."
           buttonText="Explore All Industries"
           industries={FINANCE_INDUSTRIES}
         />

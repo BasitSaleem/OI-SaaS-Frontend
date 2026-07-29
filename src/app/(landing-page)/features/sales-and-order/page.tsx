@@ -42,7 +42,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Sales and Orders Tailored for Your Industry"
-          paragraph="All businesses sell differently, and your sales system needs to realize that. Whatever you sell, Owners Inventory offers flexible, industry-ready tools to make transactions easier, more accurate, and enable your team to make sales more quickly."
+          paragraph="All businesses sell differently, and your sales system needs to realize that. Whatever you sell, Owners Inventory offers flexible, industry-ready tools to make transactions easy, more accurate, and enable your team to make sales more quickly."
           buttonText="Explore All Industries"
           industries={SALES_INDUSTRIES}
         />
@@ -61,7 +61,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-[100]">
         <FaqSection
           heading="Everything You Need to Know About Sales and Orders"
-          paragraph="Sales management should not be complex. Our modern POS point of sale with a stock management system will give you everything you will need to manage billing, invoices, and orders easily. Here is what you need to know about how our sales and order management software can help businesses like yours grow faster and smarter."
+          paragraph="Sales management should not be complex. Our modern POS with a stock management system will give you everything you will need to manage billing, invoices, and orders easily. Here is what you need to know about how our sales and order management software can help businesses like yours grow faster and smarter."
           faqs={SALES_FAQS}
         />
       </div>
