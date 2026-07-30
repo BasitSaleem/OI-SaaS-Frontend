@@ -2,7 +2,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 
 // ─── Jewelry Store POS — UnifiedPlatform Section ──────────────────────────────
 export const JEWELRY_STORE_UNIFIED_HEADING =
-  "Challenges in jewelry Retail POS Industry";
+  "Challenges in Jewelry Retail POS Industry";
 
 export const JEWELRY_STORE_UNIFIED_PARAGRAPH =
   "The jewelry retail industry faces unique operational challenges that require specialized, secure, and intelligent POS solutions to ensure accuracy, transparency, and profitability.";
@@ -13,7 +13,7 @@ export const JEWELRY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon1",
     title: "Complex Inventory Management",
     description:
-      "Jewelry retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality jewelry POS software and organized reporting, it’s easy for these collections of precious pieces can become difficult to manage.",
+      "Jewelry retailers deal with thousands of SKUs, stones, metals, weight, cut, custom design, and certifications. Without high-quality jewelry POS software and organized reporting, it’s easy for these collections of precious pieces can easily become difficult to manage.",
   },
   {
     id: "2",
@@ -65,7 +65,7 @@ export const JEWELRY_STORE_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon3",
     title: "Live Gold & Silver Rate Updates",
     description:
-      "Updates rates of metal daily in a few seconds and automatically apply them to all the products. This ensures the stability of your prices and your margins will not be at risk to market changes",
+      "Updates rates of metal daily in a few seconds and automatically apply them to all the products. This ensures price stability, and your margins will not be at risk from market changes.",
   },
   {
     id: "4",
@@ -137,7 +137,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Live Inventory Management",
     description:
-      "Track merchandise by weight, carat, design, category and certification. Each transaction is updated automatically with stock. The value and quantity of available stock that is always known.",
+      "Track merchandise by weight, carat, design, category and certification. Each transaction is updated automatically with stock. The value and quantity of available stock are always known.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card2.webp",
   },
@@ -170,7 +170,7 @@ export const JEWELRY_STORE_KEY_FEATURES_CARDS = [
     id: 6,
     title: "Repair Management",
     description:
-      "Manage delivery times, jewelry repair tickets, and charges easily. Employees will be able to monitor all stages of repairs without delays and misunderstandings.",
+      "Manage delivery times, jewelry repair tickets, and charges easily. Employees can monitor all stages of repairs without delays and misunderstandings.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/jewelry-store-pos/key-features-section/jewelary-store-key-card6.webp",
   },
@@ -250,12 +250,12 @@ export const JEWELRY_STORE_TESTIMONIALS = [
     name: "Harper Davis",
     title: "Jewelry Store Owner",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image6.webp",
-    text: "Many thanks to Owners Inventory as they help us deliver a powerful jewelry  POS system that made our entire workflow easy and daily operations effortlessly smooth.",
+    text: "Many thanks to Owners Inventory as they helped us deliver a powerful jewelry POS system that made our entire workflow easy and daily operations effortlessly smooth.",
   },
   {
     id: "2",
     name: "Jackson Moore",
-    title: "Interior Decor Owner",
+    title: "Jewelry Store Owner",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image7.webp",
     text: "We opened 3 new branches efficiently all thanks to the centralized POS system for jewelry  stores that Owners Inventory catered for us.",
   },
@@ -273,7 +273,7 @@ export const JEWELRY_STORE_FAQS = [
     id: "1",
     question: "How long does it take to build a jewelry POS system?",
     answer:
-      "Time depends on the size of your catalog, custom features, and integration requirements, as the majority of jewelry  point-of-sale systems go live within 6 to 12 weeks.",
+      "Time depends on the size of your catalog, custom features, and integration requirements, as the majority of jewelry  point-of-sale systems typically go live within 6–12 weeks depending on scope.",
   },
   {
     id: "2",
@@ -285,7 +285,7 @@ export const JEWELRY_STORE_FAQS = [
     id: "3",
     question: "Do you integrate barcodes?",
     answer:
-      "Yes, you can tag, scan, and track gold, diamond, and gemstone jewelry  pieces all thanks to our POS’s compatibility with barcodes systems.",
+      "Yes, you can tag, scan, and track gold, diamond, and gemstone jewelry  pieces all thanks to our POS’s compatibility with barcode systems.",
   },
   {
     id: "4",

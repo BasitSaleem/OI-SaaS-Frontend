@@ -337,7 +337,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="POS System for Grocery Store That Controls Inventory"
-          description="Owners Inventory, the best [POS system for grocery stores](/features/pos), allows you to run your grocery store fast, accurately and with full control. All sales and stock remain updated in a single smart POS. The product is designed to fit busy supermarkets, and minimarts that require the quick billing and [real-time monitoring of inventory](/features/inventory)."
+          description="Owners Inventory, the best [POS system](/features/pos) for grocery stores, allows you to run your grocery store fast, accurately and with full control. All sales and stock remain updated in a single smart POS. The product is designed to fit busy supermarkets, and minimarts that require the quick billing and real-time monitoring of [inventory](/features/inventory)."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
@@ -354,7 +354,7 @@ const Page = () => {
         />
 
         <WhyChoosePOS
-          heading="How Our Inventory Software Solves These Challenges"
+          heading="How Owners Inventory Solves These Challenges"
           paragraph="Owner Inventory integrates the sales, stock, suppliers and reports together into a single smart grocery POS. All the store operations are automatically updated and kept in sync."
           cards={GROCERY_STORE_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}

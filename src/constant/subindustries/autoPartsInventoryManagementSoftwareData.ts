@@ -6,7 +6,7 @@ export const AUTO_PARTS_INVENTORY_UNIFIED_HEADING =
   "Challenges Auto Parts Businesses Face in Managing Inventory";
 
 export const AUTO_PARTS_INVENTORY_UNIFIED_PARAGRAPH =
-  "Most auto parts businesses deal with complex inventories that contain different vehicle parts, work with different suppliers, and operate across multiple locations. This makes it difficult to maintain consistent operational efficiency.";
+  "Most auto parts businesses deal with complex inventories, work with multiple suppliers, and operate across multiple locations. This makes it difficult to maintain consistent operational efficiency.";
 
 export const AUTO_PARTS_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -35,7 +35,7 @@ export const AUTO_PARTS_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon4",
     title: "Supplier Order Delays",
     description:
-      "Managing multiple suppliers slows down the purchase process. Supplier records are crucial to make purchase decisions. Without proper performance reports, delays occur in ordering and receiving vehicle parts, which disrupts workflows and impacts the service timelines.",
+      "Managing multiple suppliers slows down the purchase process. Supplier records are crucial for making purchase decisions. Without proper performance reports, delays occur in ordering and receiving vehicle parts, which disrupts workflows and impacts service timelines.",
   },
   {
     id: "5",
@@ -66,7 +66,7 @@ export const AUTO_PARTS_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon2",
     title: "Easy Parts Compatibility ",
     description:
-      "Structured product data helps staff identify the right parts for vehicles. This ensures accurate part selection for repair and fulfillment of customer orders. This speeds up selling processes and improves accuracy.",
+      "Structured product data helps staff identify the right parts for vehicles. This ensures accurate part selection for repair and fulfillment of customer orders. This speeds up the sales process and improves accuracy.",
   },
   {
     id: "3",
@@ -94,7 +94,7 @@ export const AUTO_PARTS_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon6",
     title: "Smart Business Reporting",
     description:
-      "Owner's Inventory provides detailed reports and insights into stock movements, sales trends, and supplier performance. It ensures better decision-making for future orders while keeping inventory filled with in-demand items.",
+      "Owners Inventory provides detailed reports and insights into stock movements, sales trends, and supplier performance. It ensures better decision-making for future orders while keeping inventory filled with in-demand items.",
   },
 ];
 
@@ -103,7 +103,7 @@ export const AUTO_PARTS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     id: "1",
     title: "Omni-Channel Sales Integration for Auto Parts Business",
     description:
-      "Auto parts businesses manage sales across different channels. The auto parts management software provides an integrated single system where every activity is recorded in one place, ensuring accurate inventory tracking. It integrates sales, bulk workshop orders, and external sales channels into a single workflow.",
+      "Auto parts businesses manage sales across different channels. The auto parts management software provides a single, integrated system where every activity is recorded in one place, ensuring accurate inventory tracking. It integrates sales, bulk workshop orders, and external sales channels into a single workflow.",
     subDescription:
       "This helps businesses manage processes automatically, reducing the reliance on manual processes.",
     imageSrc:
@@ -116,7 +116,7 @@ export const AUTO_PARTS_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "POS Sales Counter",
         listdescription:
-          "Every sale in the POS is processed accurately by selecting the required automotive parts. The system updates the inventory after completing a transaction. It provides accurate counting of stock levels with each stock adjustment, which promotes accurate reporting and prevents miscalculations.",
+          "Every sale is processed accurately as staff select the required automotive parts. The system updates the inventory after completing a transaction. It provides accurate counting of stock levels with each stock adjustment, which promotes accurate reporting and prevents miscalculations.",
       },
       {
         listheading: "Order Synchronization ",
@@ -152,7 +152,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     id: 1,
     title: "Detailed Parts Catalog",
     description:
-      "With [detailed parts catalogs](/features/products), it organizes vehicle parts by specifications, categories, and compatibility information. This makes it easy to provide the right product to the customer.",
+      "The system uses [detailed parts catalogs](/features/products) to organize vehicle parts by specifications, categories, and compatibility information. This makes it easy to provide the right product to the customer.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card1.webp",
   },
@@ -176,7 +176,7 @@ export const AUTO_PARTS_INVENTORY_KEY_FEATURES_CARDS = [
     id: 4,
     title: "Stock Adjustment Control",
     description:
-      "It easily adjusts stock counts during returns, inspections, and transfers, which ensures your inventory levels remain accurate. It effectively manages stock in case of in-store or online purchases.",
+      "It easily adjusts stock counts during returns, inspections, and transfers, which ensures inventory levels remain accurate. It effectively manages stock in case of in-store or online purchases.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/auto-parts-inventory-management-software/key-features-section/key-features-card4.webp",
   },
@@ -219,7 +219,7 @@ export const AUTO_PARTS_INVENTORY_WORKFLOW_DATA = {
       number: 3,
       title: "Real-time Updates",
       description:
-        "With a real-time dashboard, it provides updates relevant to inventory management, stock levels, sales, returns, and delivery. This eliminates dependency on manual reports. It provides complete visibility of parts in stock, helping owners avoid stockouts and operational confusion.",
+        "The system uses a real-time dashboard to provide updates on inventory management, stock levels, sales, returns, and delivery. This eliminates dependency on manual reports. It provides complete visibility of parts in stock, helping owners avoid stockouts and operational confusion.",
     },
     {
       number: 4,
@@ -242,7 +242,7 @@ export const AUTO_PARTS_INVENTORY_TESTIMONIALS = [
     name: "Caden Reed",
     title: "Auto Parts Store Owner",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image46.webp",
-    text: "We used to lose track between our shop and the warehouse all the time. Since switching to Owner’s Inventory, everything is organized and easy to find. It has made our daily operations smoother.",
+    text: "We used to lose track between our shop and the warehouse all the time. Since switching to Owners Inventory, everything is organized and easy to find. It has made our daily operations smoother.",
   },
   {
     id: "2",
@@ -265,7 +265,7 @@ export const AUTO_PARTS_INVENTORY_FAQS = [
     id: "1",
     question: "How long does it take to set up the system?",
     answer:
-      "The setup of the Owners Inventory is quite simple because of its navigation and easy-to-understand features. You can set up your automotive inventory quickly in the POS and start organizing data.",
+      "Setting up Owners Inventory is quite simple, thanks to its intuitive navigation and easy-to-understand features. You can set up your automotive inventory quickly in the POS and start organizing data.",
   },
   {
     id: "2",
@@ -296,12 +296,12 @@ export const AUTO_PARTS_INVENTORY_FAQS = [
 export const AUTO_PARTS_INVENTORY_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say About Owners Inventory?",
   paragraph: "",
-  secondHeading: "Run Your Retail Store With Precision",
+  secondHeading: "Drive Your Auto Parts Business With Precision",
   secondDescription:
-    "Stay in control of inventory, sales and operations with a system designed for retail businesses. Simplify and improve accuracy.",
+    "Stay in control of inventory, sales, and operations with a system designed for automotive businesses. Simplify and improve accuracy.",
   whyChooseTitle: "Why Choose Our Inventory Management Software?",
   whyChooseDescription:
-    "Owners Inventory is designed to support automotive store operations. It helps them manage complex inventory with different auto part variants, streamline workflows, and improve operational performance.",
+    "It helps automotive store owners manage complex inventory with different auto part variants, streamline workflows, and improve operational performance.",
 };
 
 export const AUTO_PARTS_INVENTORY_TESTIMONIAL_FEATURES = [

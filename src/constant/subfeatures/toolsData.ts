@@ -5,7 +5,7 @@ export const TOOLS_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Manage product catalogs and suppliers effectively. Check stock levels and stocking up of high demand items.",
+      "Manage product catalogs and suppliers effectively. Check stock levels and stock up on high-demand items.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -16,7 +16,7 @@ export const TOOLS_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
-      "Check the ingredients, track stock consumption, and minimize waste on a cross-location basis. Keep stocks clean and efficient kitchens.",
+      "Check the ingredients, track stock consumption, and minimize waste on a cross-location basis. Keep stock organized and kitchens running efficiently.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
@@ -27,7 +27,7 @@ export const TOOLS_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Optimize bulk inventory within warehouses and stores. Maintain efficient supply chains and satisfy customers in time.",
+      "Optimize bulk inventory within warehouses and stores. Maintain efficient supply chains and satisfy customers on time.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
     link: "/industries/warehouse-pos-system",
@@ -38,7 +38,7 @@ export const TOOLS_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
-      "Track medications, report expiry dates, and have proper supplier records easily. This guarantees safety, compliance, and operations.",
+      "Track medications, report expiry dates, and have proper supplier records easily. This guarantees safety, compliance, and smooth operations.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/pharmacy-mobile.webp",
     link: "/industries/healthcare-inventory-management-software",
@@ -61,7 +61,7 @@ export const TOOLS_FEATURES_CARDS = [
     id: 1,
     title: "Activity Log",
     description:
-      "Have full access to all activities carried out in your inventory system. The Activity Log assists you in tracking, reviewing, and ensuring changes with detailed records keeping your operations transparent and well documented.",
+      "Have full access to all activities carried out in your inventory system. The Activity Log assists you in tracking, reviewing, and verifying changes with detailed records, keeping your operations transparent and well documented.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/general-tools/features-section/activity-log.webp",
   },
@@ -69,7 +69,7 @@ export const TOOLS_FEATURES_CARDS = [
     id: 2,
     title: "Stock Alert",
     description:
-      "Automatically track inventory levels and avoid overstocking with warnings. The Stock Alert feature tracks product levels in all stores and warehouses and notifies you in real time when there is a requirement to adjust the stock.",
+      "Automatically track inventory levels and avoid overstocking with warnings. The Stock Alert feature tracks product levels in all stores and warehouses and notifies you in real time when stock needs adjusting.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/general-tools/features-section/stock-alert.webp",
   },
@@ -80,13 +80,13 @@ export const TOOLS_FAQS = [
     id: 1,
     question: "What are General Tools in Owners Inventory?",
     answer:
-      "General Tools are a group of features that can be used to streamline daily inventory work. They assist you with tracking activities, update control, and keeping clean and organized records. This simplifies your workflow and makes it much more reliable.",
+      "General Tools are a group of features that can be used to streamline daily inventory work. They assist you with tracking activities, controlling updates, and keeping records clean and organized. This simplifies your workflow and makes it much more reliable.",
   },
   {
     id: 2,
     question: "How does the Activity Log help my business?",
     answer:
-      "Activity Log maintains a comprehensive log of all activities that occur in your system. You are able to see the person who changed, the date when it was changed, and what has been changed. This enhances accountability, transparency, and control within your team.",
+      "Activity Log maintains a comprehensive log of all activities that occur in your system. You are able to see the person who made the change, the date it was changed, and what has been changed. This enhances accountability, transparency, and control within your team.",
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ export const TOOLS_FAQS = [
     id: 4,
     question: "Is the interface easy for new team members to learn?",
     answer:
-      "Definitely, General Tools are simple in design. New users do not require long durations of training to navigate features. The design is accurate and transparent, and constructed in such a way that teams can operate with confidence at the outset.",
+      "Definitely, General Tools are simple in design. New users do not require long durations of training to navigate features. The design is clean and transparent, and constructed in such a way that teams can operate with confidence at the outset.",
   },
   {
     id: 5,
@@ -132,7 +132,7 @@ export const TOOLS_TESTIMONIALS = [
     name: "Imran Qureshi",
     title: "Founder, Malik Traders",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy27.webp",
-    text: `Owners Inventory General Tools are a life savior to our fashion business. Processing of seasonal collections and handling of multiple SKUs previously consumed hours, but it is now quicker. With its user-friendly design, it is easy to use by anyone. All is organized and controlled, even bulk updates and stock checks. It has certainly streamlined our business processes.`,
+    text: `Owners Inventory General Tools are a lifesaver to our fashion business. Processing of seasonal collections and handling of multiple SKUs previously consumed hours, but it is now quicker. With its user-friendly design, it is easy to use by anyone. All is organized and controlled, even bulk updates and stock checks. It has certainly streamlined our business processes.`,
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg",
     color: "var(--primary-purple)",
   },
@@ -141,7 +141,7 @@ export const TOOLS_TESTIMONIALS = [
     name: "Ahmed Raza",
     title: "Inventory Supervisor, Prime Goods",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy28.webp",
-    text: `The General Tools of Owners Inventory have made significant contributions to our restaurant. Automated notifications and real-time stock updates enable us not to run out of ingredients. We are able to trace all products in our outlets conveniently. It is time-saving and stress-free to our employees. In general, it has simplified our inventory management greatly and increased accuracy.`,
+    text: `The General Tools of Owners Inventory have made significant contributions to our restaurant. Automated notifications and real-time stock updates enable us not to run out of ingredients. We are able to trace all products in our outlets conveniently. It is time-saving and stress-free for our employees. In general, it has simplified our inventory management greatly and increased accuracy.`,
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/coma-green.svg",
     color: "var(--primary-teal)",
   },
@@ -158,7 +158,7 @@ export const TOOLS_WHY_CHOOSE_CARDS = [
   {
     id: "tools-why-choose-2",
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
-    title: "Real-time insights",
+    title: "Real-time Insights",
     description:
       "Stay updated with precise, real-time data so you can make smarter decisions and always know what’s happening in your inventory.",
   },

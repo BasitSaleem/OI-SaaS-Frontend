@@ -13,7 +13,7 @@ export const GROCERY_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon1",
     title: "Stock Mismanagement",
     description:
-      "Out-of-date products, lost goods and wrong counts cause extensive losses. Grocery stores handle thousands of moving goods daily. Paper tracking causes confusion and contraction, leading to reduced profits per year.",
+      "Out-of-date products, lost goods and wrong counts cause extensive losses. Grocery stores handle thousands of moving goods daily. Paper tracking causes confusion and disruption, leading to reduced profits per year.",
   },
   {
     id: "2",
@@ -86,7 +86,7 @@ export const GROCERY_STORE_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Centralized Price Management",
     description:
-      "Products are updated immediately in all counters and branches automatically and eradicate billing errors.",
+      "Products update instantly across all counters and branches, eradicating billing errors.",
   },
   {
     id: "6",
@@ -118,7 +118,7 @@ export const GROCERY_STORE_FEATURE_CARDS = [
     id: "2",
     title: "Better Decision Reporting and Analytics",
     description:
-      "High-level reporting systems give grocery stores owners clear information on the movement of the stocks, day-to-day sales, and gross margin. This will facilitate smarter buying and inventory management.",
+      "High-level reporting systems give grocery store owners clear information on the movement of the stocks, day-to-day sales, and gross margin. This will facilitate smarter buying and inventory management.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/grocery-store-pos/jewelary-store-better-decision.webp",
     buttonLabel: "View Details",
@@ -127,10 +127,10 @@ export const GROCERY_STORE_FEATURE_CARDS = [
     list: [
       {
         listheading:
-          "Real-time sales and stock analysis help improve decisions",
+          "Real-time sales and stock analysis helps improve decisions",
       },
-      { listheading: "Inventory demand and reorder automation" },
-      { listheading: "Determine wastages and enhance profit margins" },
+      { listheading: "Automate inventory demand and reordering" },
+      { listheading: "Reduce wastage and boost profit margins" },
     ],
   },
 ];
@@ -274,21 +274,21 @@ export const GROCERY_STORE_TESTIMONIALS = [
   {
     id: "2",
     name: "Hunter Thompson",
-    title: "Interior Decor Owner",
+    title: "Grocery Store Owner",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image8.webp",
     text: "This grocery POS helps to have everything in order and simplifies the restocking process. Our checkout time was immediately increased and customers are pleased with the quicker service.",
   },
   {
     id: "3",
     name: "Carter Davis",
-    title: "Home Decor & Grocery Shop Owner​",
+    title: "Grocery Shop Owner​",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image9.webp",
     text: "Our products are thousands each day and we do not get mixed up. Reports enable us to make improved purchasing choices, minimize wastage, and have adequate stocks.",
   },
   {
     id: "4",
     name: "Charlotte Harris",
-    title: "Home Decor & Grocery Shop Owner​",
+    title: "Supermarket Manager​",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image9.webp",
     text: "Prior to the use of this system, the expiry items were stressful to manage. All the sales and stock updates are now being tracked flawlessly. It saves time, mistakes are minimized and it is much easier to run our grocery store.",
   },
@@ -305,7 +305,7 @@ export const GROCERY_STORE_FAQS = [
     id: "2",
     question: "Does the software automatically update stock?",
     answer:
-      "Yes. The system updates your stock levels automatically and instantly every time a sale is made or new items are added through purchase. You don’t have to adjust anything manually, quantities are reduced or increased on their own, helping you avoid mistakes.",
+      "Yes. The system updates your stock levels automatically and instantly every time a sale is made or new items are added through purchase. You don’t have to adjust anything manually. Quantities are reduced or increased on their own helping you avoid mistakes.",
   },
   {
     id: "3",
@@ -393,7 +393,7 @@ export const GROCERY_STORE_TESTIMONIAL_FEATURES = [
 export const GROCERY_STORE_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Our grocery POS also connects to accounting software, customer relationship management software, online shopping platforms, barcode readers, scales and secure payment gateways. Such combined tools make business easier, require less manual effort, and inventory management more efficient and faster throughout your grocery business.",
+    "Our grocery POS also connects to accounting software, customer relationship management software, online shopping platforms, barcode readers, scales and secure payment gateways. Such tools make your business easier to run, require less manual effort, and make inventory management more efficient and faster.",
   tools: [
     {
       id: 1,

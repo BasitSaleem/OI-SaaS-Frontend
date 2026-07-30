@@ -34,7 +34,7 @@ const Page = () => {
       {/* 🔥 Custom layout + cards */}
       <TrustedBySection
         heading="Our Valued Clients"
-        paragraph="Owners Inventory helps businesses like Al-Asif and Bright Home manage inventory smarter and more efficiently. It simplifies operations, increases visibility, and improves decision making driving their success."
+        paragraph="Owners Inventory helps businesses like Al-Asif and Bright Home manage inventory smarter and more efficiently. It simplifies operations, increases visibility, and improves decision making, driving their success."
       />
       <KeyHighlights
         heading="Key Highlights"
@@ -43,7 +43,7 @@ const Page = () => {
 
       <WhyChoosePOS
         heading="Why Choose Our Tools?"
-        paragraph="Our tools are designed to help inventory management be more intelligent, quicker, and simpler. They are created with accuracy and performance in mind allowing you to save time, minimize errors and keep full control of your business activities."
+        paragraph="Our tools are designed to help inventory management be more intelligent, quicker, and simpler. They are created with accuracy and performance in mind, allowing you to save time, minimize errors and keep full control of your business activities."
         cards={TOOLS_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       />

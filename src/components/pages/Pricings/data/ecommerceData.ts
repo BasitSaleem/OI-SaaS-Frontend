@@ -38,7 +38,7 @@ export const ecommerceData: {
       popular: true,
       features: [
         "1 Online Store",
-        "2 Warehouse",
+        "2 Warehouses",
         "1 Store",
         "1 POS Terminal",
         "Unlimited Users",
@@ -60,7 +60,7 @@ export const ecommerceData: {
       bgColor: "rgba(85, 136, 223, 0.1)",
       features: [
         "1 Online Store",
-        "Unlimited Warehouse",
+        "Unlimited Warehouses",
         "1 Store",
         "1 POS Terminal",
         "Unlimited Users",

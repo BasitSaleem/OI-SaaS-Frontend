@@ -372,7 +372,7 @@ const Page = () => {
 
         <IndustriesCallToAction
           title="Get Control of Your Inventory Now"
-          description="Our bookstore POS will simplify your inventory and eliminate errors and make it more efficient. Start now and discover how our solution can simplify the operations of the bookstores and enable you to maximize your sales potential."
+          description="Our bookstore POS will simplify your inventory, eliminate errors, and make operations more efficient. Start now and discover how our solution can simplify bookstore operations and enable you to maximize your sales potential."
           ctaDesc="Request a Free Demo"
         />
 
@@ -406,7 +406,7 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Our bookstore POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bookstore owners."
             faqs={BOOKSTORE_FAQS}
             buttonText="Start Now"
@@ -414,7 +414,7 @@ const Page = () => {
         </div>
         <IndustriesHardwareControl
           title="Boost Your Bookstore"
-          description="Turn every sale into a smooth, organised experience. Owners' Inventory keeps books, stationery, and online orders perfectly in sync, saving time and increasing revenue."
+          description="Turn every sale into a smooth, organised experience. Owners Inventory keeps books, stationery, and online orders perfectly in sync, saving time and increasing revenue."
           ctaDesc="Start Today"
         />
       </div>
