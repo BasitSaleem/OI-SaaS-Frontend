@@ -28,7 +28,7 @@ export const HOTEL_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon3",
     title: "Excess Stock and Purchasing Waste",
     description:
-      "Overstocking slow-moving products is often the result of poor visibility. Storage costs increase, ties up working capital, and expired or unused stock directly affects profitability.",
+      "Overstocking slow-moving products is often the result of poor visibility. Storage costs increase, working capital gets tied up, and expired or unused stock directly affects profitability.",
   },
   {
     id: "4",
@@ -64,7 +64,7 @@ export const HOTEL_INVENTORY_WHY_CHOOSE_CARDS = [
   {
     id: "1",
     icon: "whychoseIcon1",
-    title: "Real-Time Inventory synchronization",
+    title: "Real-Time Inventory Synchronization",
     description:
       "Each stock movement, whether it is a transfer, a restocking, or usage, will be automatically updated in real-time. All departments will have the exact same data to work with, which reduces errors, and improves coordination.",
   },
@@ -73,7 +73,7 @@ export const HOTEL_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon2",
     title: "Multi-Department Centralized Control",
     description:
-      "Hotel inventory can be managed through a single system. It eliminates the requirement for multiple tracking systems, and provides consistency between departments.",
+      "Hotel inventory can be managed through a single system. It eliminates the requirement for multiple tracking systems and provides consistency between departments.",
   },
   {
     id: "3",
@@ -87,7 +87,7 @@ export const HOTEL_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon4",
     title: "Automatic Reordering System",
     description:
-      "Set stock minimum thresholds on essential products. When stock levels drop below defined thresholds, the system will automatically notify you and suggest a reorder.",
+      "Set minimum stock thresholds on essential products. When stock levels drop below defined thresholds, the system will automatically notify you and suggest a reorder.",
   },
   {
     id: "5",
@@ -159,9 +159,9 @@ export const HOTEL_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
     buttonColor: "#1AD1B9",
     list: [
       { listheading: "Identify high-usage and expensive products" },
-      { listheading: "Tracking accurately can help reduce waste" },
-      { listheading: "Real data to optimize procurement cycles" },
-      { listheading: "Budgeting and Forecasting Accuracy Improved" },
+      { listheading: "Reduce waste through accurate tracking" },
+      { listheading: "Optimize procurement cycles with real data" },
+      { listheading: "Improve budgeting and forecasting accuracy" },
     ],
   },
 ];
@@ -211,7 +211,7 @@ export const HOTEL_INVENTORY_KEY_FEATURES_CARDS = [
     id: 6,
     title: "Purchase Order & Supplier Tracking",
     description:
-      "Maintain consistent stock availability, manage suppliers, monitor timelines for delivery, track purchase orders, and keep track of purchase orders. This system records all vendor interactions to help you assess supplier performance and improve your procurement decisions. It ensures a reliable supply chain and avoids shortages at the last minute.",
+      "Maintain consistent stock availability, manage suppliers, monitor delivery timelines, and keep track of purchase orders. This system records all vendor interactions to help you assess supplier performance and improve your procurement decisions. It ensures a reliable supply chain and avoids shortages at the last minute.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/hotel-inventory-management-software/key-features-section/key-features-card6.webp",
   },
@@ -345,7 +345,7 @@ export const HOTEL_INVENTORY_FAQS = [
     id: "3",
     question: "Can it reduce manual labor?",
     answer:
-      "It automates stock tracking, alerts, reports, and reporting which reduces the need for manual spreadsheets and logs. This saves time, and minimizes human error in day-to-day operations.",
+      "It automates stock tracking, alerts, and reporting, which reduces the need for manual spreadsheets and logs. This saves time, and minimizes human error in day-to-day operations.",
   },
   {
     id: "4",
@@ -355,7 +355,7 @@ export const HOTEL_INVENTORY_FAQS = [
   },
   {
     id: "5",
-    question: "Does it work for hotels having large chains?",
+    question: "Does it work for large hotel chains?",
     answer:
       "It is designed for [multi-location operation](/features/facilities) and fully scalable. A centralized inventory system allows large hotel chains to manage multiple properties while still maintaining control in each property.",
   },
