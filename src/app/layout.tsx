@@ -90,7 +90,7 @@ export default function RootLayout({
                 height="1"
                 width="1"
                 style={{ display: "none" }}
-                src="https://www.facebook.com/tr?id=1435291848047613&ev=PageView&noscript=1"
+                src="https://www.facebook.com/tr?id=1083033820953659&ev=PageView&noscript=1"
               />
             </noscript>
             <ScrollToTop />
