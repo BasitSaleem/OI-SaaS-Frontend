@@ -10,7 +10,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   cardHeading,
   cardDesc,
   image = "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/first-blog.webp",
-  category = "Inventory Management",
+  category = "",
   date,
   views = "4.5k",
   readTime = "5 min read",

@@ -85,6 +85,7 @@ export interface BlogData {
   totalRead: string;
   status: "popular" | "recent";
   heroStats?: BlogHeroStat[];
+   category?: string;
 
   // Overview / intro
   blogOverview: string;
@@ -128,6 +129,7 @@ export const blogData: BlogData[] = [
     date: "June 18, 2026",
     totalRead: "8 min read",
     status: "popular",
+     category: "Inventory Management",
     primaryColor: "#1AD1B9",
     secondaryColor: "#795CF5",
 
@@ -391,6 +393,7 @@ export const blogData: BlogData[] = [
 
     relatedTopicIds: [],
   },
+  
 ];
 
 // ── Helpers ──────────────────────────────────────────────────────────────────

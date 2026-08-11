@@ -26,7 +26,7 @@ export async function generateMetadata({
     title: `${blog.heading} | Owners Inventory`,
     description: blog.blogOverview.slice(0, 160),
     alternates: {
-      canonical: `https://ownersinventory.com/resources/blog/${blog.id}`,
+      canonical: `https://ownersinventory.com/blog/${blog.id}`,
     },
     robots: isStaging ? { index: false, follow: false } : { index: true, follow: true },
   };

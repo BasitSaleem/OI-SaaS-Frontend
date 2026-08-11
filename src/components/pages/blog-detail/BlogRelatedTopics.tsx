@@ -33,7 +33,7 @@ const BlogRelatedTopics: React.FC<BlogRelatedTopicsProps> = ({ relatedTopicIds, 
             image={blog.blogImg}
             date={blog.date}
             readTime={blog.totalRead}
-            href={`/resources/blog/${blog.id}`}
+            href={`/blog/${blog.id}`}
             showAuthor
             authorName={blog.author}
           />

@@ -11,8 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/pricing",
     // "/privacy-policy",
     // "/terms-and-conditions",
-    "/resources",
-    "/resources/blog",
+    "/blog",
   ];
 
   const subFeatures = [
