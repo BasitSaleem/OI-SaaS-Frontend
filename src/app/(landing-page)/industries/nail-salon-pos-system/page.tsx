@@ -296,7 +296,7 @@ const Page = () => {
           description="A nail salon that doesn't have the proper point of sale system will find it difficult to manage appointments, track product inventory, keep track of the technician's schedule, and retain customers. Manual systems result in double bookings, product shortages, pricing inaccuracies, and front desks that can't keep up with the volume of business."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Book a Demo"
+          ctaDesc="Start Free Today"
           variant="animation2"
         />
 
@@ -330,7 +330,7 @@ const Page = () => {
 
         <IndustriesCallToAction
           title="Run Your Nail Salon Business Without the Guesswork"
-          description="Say goodbye to lost bookings, lost products due to poor visibility and lost revenue due to variations in price. Owners Inventory is a comprehensive nail salon point of sale solution, enabling salons to manage bookings, nail services, products, client accounts and business performance from one single location."
+          description="Say goodbye to lost bookings, lost products due to poor visibility and lost revenue due to variations in price. Owners Inventory is a fully comprehensive nail salon point of sale solution, enabling salons to manage bookings, nail services, products, client accounts and business performance from one single location."
           ctaDesc="Book a Demo"
         />
 

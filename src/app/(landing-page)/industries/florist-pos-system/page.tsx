@@ -289,7 +289,7 @@ const Page = () => {
           description="If a florist shop doesn't have the right point of sale system, they will find it hard to generate sales, keep track of their flowers, provide timely deliveries, and handle seasonal demand. Manual processes can result in wilted flower stock, long checkout lines, inaccurate custom orders and poor customer communication for flower businesses."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Book a Demo"
+          ctaDesc="Start Free Today"
           variant="animation2"
         />
 

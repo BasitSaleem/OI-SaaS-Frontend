@@ -279,7 +279,7 @@ const Page = () => {
           description="Running a garden center means selling perishable plants, bulk soil, seasonal décor, hardscape materials, and fertilizer all from the same checkout. Most generic POS systems weren't built for that mix. Owners Inventory's garden center point of sale system handles it from one platform."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Get Started for Free"
+          ctaDesc="Start Free Today"
           variant="animation2"
         />
 
@@ -347,7 +347,7 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Common questions garden center owners ask before switching POS systems."
             faqs={GARDEN_CENTER_FAQS}
             buttonText="Start Now"
