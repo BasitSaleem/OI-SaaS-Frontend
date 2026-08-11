@@ -5,6 +5,7 @@ import SmallHeading from "@/components/pages/typography/SmallHeading";
 import SubHeading from "@/components/pages/typography/SubHeading";
 import BlogWorkflowIcon from "@/components/icons/blogDetailIcons";
 import { BlogSection, BlogBlock } from "@/constant/blogData/blogData";
+import MediumHeading from "../typography/MediumHeading";
 
 interface BlogContentSectionProps {
   section: BlogSection;
@@ -59,9 +60,9 @@ const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: numb
     // Sub-label within a section (e.g. plan tiers) — smaller than the section
     // heading so the hierarchy reads clearly.
     return (
-      <h4 className="text-lg md:text-xl font-semibold font-['Onest'] text-[#231F20] mt-2">
+      <h3 className="text-lg md:text-xl font-semibold font-['Onest'] text-[#231F20] mt-2">
         {block.content}
-      </h4>
+      </h3>
     );
   }
 
@@ -238,7 +239,7 @@ const BlogContentSection: React.FC<BlogContentSectionProps> = ({ section }) => {
       {section.mainHeading ? (
         <SubHeading>{section.heading}</SubHeading>
       ) : (
-        <SmallHeading>{section.heading}</SmallHeading>
+        <MediumHeading>{section.heading}</MediumHeading>
       )}
       {section.blocks.map((block, i) => {
         const counter = { numbered: numberedCount };

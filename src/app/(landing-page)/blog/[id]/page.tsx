@@ -75,13 +75,6 @@ export default async function BlogDetailPage({
         </div>
       )}
 
-      <div className="mt-16 lg:mt-24">
-        <IndustriesCallToAction
-          title="Optimize Your Inventory Today"
-          description="Join thousands of businesses that have transformed their inventory management with Owners Inventory."
-          ctaDesc="Get Started Free"
-        />
-      </div>
     </>
   );
 }
