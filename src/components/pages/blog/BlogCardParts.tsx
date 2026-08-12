@@ -63,11 +63,11 @@ export const DateViews = ({
       </span>
     )}
 
-    {date && (
+    {/* {date && (
       <span className="w-[5px] h-[5px] rounded-full bg-[#999] flex-shrink-0" />
-    )}
+    )} */}
 
-    <div className="flex items-center gap-1">
+    {/* <div className="flex items-center gap-1">
       <svg
         width="18"
         height="18"
@@ -93,7 +93,7 @@ export const DateViews = ({
       <span className="text-[14px] font-medium font-['Onest'] text-[#666] whitespace-nowrap leading-[1.6]">
         {views}
       </span>
-    </div>
+    </div> */}
   </div>
 );
 
