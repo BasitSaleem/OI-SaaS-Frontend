@@ -92,7 +92,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                   const finalLink = `${plan.link}&billingCycle=${billingCycle}`;
                   window.open(finalLink, "_blank", "noopener,noreferrer");
                 }
-              }}
+              }}              
               className="w-full py-4 rounded-full cursor-pointer text-base font-['Onest'] font-semibold text-white mb-8 transition-opacity hover:opacity-90"
               style={{ backgroundColor: plan.color }}
             >
@@ -101,6 +101,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
             <ul className="space-y-3 mb-10 flex-grow">
               {displayFeatures.map((feature, index) => (
+                
                 <li
                   key={index}
                   className="flex items-center gap-3 text-sm text-[var(--text-light-alt)] font-['Onest']"
