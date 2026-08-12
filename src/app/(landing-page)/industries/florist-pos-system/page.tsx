@@ -324,7 +324,7 @@ const Page = () => {
         <IndustriesCallToAction
           title="Run Your Florist Business Without the Guesswork"
           description="Minimise waste from poor inventory visibility, missed orders due to manual handling and delivery failures from a lack of connection with scheduling tools. Owners Inventory is an all-in-one florist point of sale system that allows shops to control their sales, custom orders, flower inventory, deliveries, customer accounts and business performance all from a single place."
-          ctaDesc="Book a Demo"
+          ctaDesc="Request a Free Demo"
         />
 
         <IndustriesFeaturesSection features={FLORIST_FEATURE_CARDS} />

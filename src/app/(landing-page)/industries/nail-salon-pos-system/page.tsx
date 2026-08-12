@@ -331,7 +331,7 @@ const Page = () => {
         <IndustriesCallToAction
           title="Run Your Nail Salon Business Without the Guesswork"
           description="Say goodbye to lost bookings, lost products due to poor visibility and lost revenue due to variations in price. Owners Inventory is a fully comprehensive nail salon point of sale solution, enabling salons to manage bookings, nail services, products, client accounts and business performance from one single location."
-          ctaDesc="Book a Demo"
+          ctaDesc="Request a Free Demo"
         />
 
         <IndustriesFeaturesSection features={NAIL_SALON_FEATURE_CARDS} />

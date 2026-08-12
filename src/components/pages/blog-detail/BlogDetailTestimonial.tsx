@@ -33,7 +33,7 @@ const BlogDetailTestimonial: React.FC<BlogDetailTestimonialProps> = ({ testimoni
           />
 
           <p className="text-base md:text-lg leading-[1.7] font-['Onest'] text-[#444]">
-            {testimonial.text}
+            {testimonial.text.startsWith('"') || testimonial.text.startsWith('“') ? testimonial.text : `"${testimonial.text}"`}
           </p>
 
           <div className="flex items-center gap-4">

@@ -87,7 +87,7 @@ const IndustryTestimonialCard = ({
       </div>
 
       <p className="text-base leading-[170%] flex-1 font-['onest']">
-        {slide.text}
+        {slide.text.startsWith('"') || slide.text.startsWith('“') ? slide.text : `"${slide.text}"`}
       </p>
     </div>
   );
