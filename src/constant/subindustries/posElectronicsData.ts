@@ -205,7 +205,7 @@ export const ELECTRONICS_TESTIMONIALS = [
     name: "Daniel Reyes",
     title: "Owner, Techline Electronics, Austin TX",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image84.webp",
     text: "We were tracking serial numbers in a spreadsheet that three people updated inconsistently. We had warranty claims we couldn't verify and returns we couldn't confirm. After switching to Owners Inventory, every unit is logged at receiving and tied to the sale. Our first warranty dispute after the switch took four minutes to resolve instead of a full afternoon of digging.",
   },
   {
@@ -213,7 +213,7 @@ export const ELECTRONICS_TESTIMONIALS = [
     name: "Priya Shetty",
     title: "Operations Manager, Voltage Retail, Chicago IL",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image84.webp",
     text: "We run two locations and a Shopify store. Before, we had no reliable way to know what stock we had where, and we'd oversell online twice a month at minimum. Owners Inventory synced everything. Overselling stopped in the first week. We now transfer stock between locations through the platform instead of driving units over without any record.",
   },
   {
@@ -221,7 +221,7 @@ export const ELECTRONICS_TESTIMONIALS = [
     name: "Marcus Webb",
     title: "Founder, CoreTech Store, Seattle WA",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image85.webp",
     text: "The variant management is what sold me. I carry about 35 laptop models, each with four or five configuration options. That's 150-plus SKUs to track. The old system lumped them together and the counts were always wrong. Now each variant has its own count, its own alert threshold, and its own reorder history. I stopped over-ordering slow configurations and stopped running out of the fast ones.",
   },
 ];

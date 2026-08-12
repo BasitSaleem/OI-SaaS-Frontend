@@ -59,7 +59,7 @@ export const FLORIST_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Flower and Inventory Management",
     description:
-      "Stock levels are automatically updated every time a sale or a suppliers deliveries are made, or when the day is adjusted. Real-time inventory tracking results in no over-ordering, less flower waste and availability of popular stems and arrangements for walk-in customers and advance ordering.",
+      "Stock levels are automatically updated every time a sale or a supplier deliveries are made, or when the day is adjusted. Real-time inventory tracking results in no over-ordering, less flower waste and availability of popular stems and arrangements for walk-in customers and advance ordering.",
   },
   {
     id: "2",
@@ -273,7 +273,7 @@ export const FLORIST_TESTIMONIALS = [
     name: "Emily R.",
     title: "Florist Shop Owner",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image81.webp",
     text: "Before switching, we were throwing away flowers every week because we had no idea what was actually in the cooler. Now our stock levels are always accurate and waste has dropped dramatically.",
   },
   {
@@ -281,7 +281,7 @@ export const FLORIST_TESTIMONIALS = [
     name: "Claire M.",
     title: "Event Florist Owner",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image82.webp",
     text: "Managing wedding orders used to mean juggling emails, sticky notes, and spreadsheets. Now everything is in one place and our clients get a much more professional experience.",
   },
   {
@@ -289,7 +289,7 @@ export const FLORIST_TESTIMONIALS = [
     name: "James T.",
     title: "Delivery Operations Manager",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image81.webp",
     text: "Our delivery drivers used to call us constantly for order details. Now they get everything on their phone and customers get notified automatically. It has saved us hours every week.",
   },
   {
@@ -297,7 +297,7 @@ export const FLORIST_TESTIMONIALS = [
     name: "Priya N.",
     title: "Online Store Manager",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image82.webp",
     text: "We added an online store and were worried about managing two channels at once. Owners Inventory handles everything together and we have not had a missed order since.",
   },
   {
@@ -305,7 +305,7 @@ export const FLORIST_TESTIMONIALS = [
     name: "Robert A.",
     title: "Boutique Owner",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image83.webp",
     text: "The reporting alone is worth it. I can finally see which arrangements actually make money and which ones I should stop offering.",
   },
   {
@@ -313,7 +313,7 @@ export const FLORIST_TESTIMONIALS = [
     name: "Hannah K.",
     title: "Floral Designer",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image83.webp",
     text: "Setup was fast and the whole team was comfortable with it within a day. The daily stock checks alone have already paid for the system.",
   },
 ];

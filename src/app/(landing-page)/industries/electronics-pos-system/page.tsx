@@ -281,7 +281,7 @@ const Page = () => {
           description="Electronics retail doesn't fit neatly into a generic POS. You're tracking hundreds of SKUs across multiple configurations, managing serial numbers at the unit level, syncing inventory between your counter and your online store, and reconciling supplier invoices against actual stock received. Most retail software handles a fraction of that. Owners Inventory's electronics store POS system handles all of it from one platform."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Get Started for Free"
+          ctaDesc="Start Free Today"
           variant="animation2"
         />
 
@@ -349,7 +349,7 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Common questions from electronics store owners evaluating Owners Inventory before making a decision."
             faqs={ELECTRONICS_FAQS}
             buttonText="Start Now"

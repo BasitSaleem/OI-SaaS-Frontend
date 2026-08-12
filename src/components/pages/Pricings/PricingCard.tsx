@@ -70,8 +70,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 {plan.description}
               </p>
             </div>
-
-
             <div className={`flex items-baseline gap-1 ${isYearly ? 'mb-0' : 'mb-8'}`}>
               <span
                 className="text-4xl leading-[100%] font-semibold font-['Onest']"

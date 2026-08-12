@@ -356,7 +356,7 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Find answers to common questions about inventory tracking, order management, staff permissions, setup, and day-to-day florist shop operations."
             faqs={FLORIST_FAQS}
             buttonText="Start Now"
