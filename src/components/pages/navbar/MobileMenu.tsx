@@ -270,7 +270,7 @@ export default function OffcanvasMenu({
             <li className={listItem}>
               <div className={navButton}>
                 <Link
-                  href="/industries"
+                  href="#"
                   prefetch={false}
                   className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                   onClick={onClose}
@@ -304,7 +304,8 @@ export default function OffcanvasMenu({
             <li className={listItem}>
               <div className={navButton}>
                 <Link
-                  href="/resources"
+                  href="#"
+                  prefetch={false}
                   className="w-[80%] flex items-center justify-start text-sm font-semibold text-[var(--text-dark)] hover:border-[var(--primary-purple)]"
                 >
                   Resources
