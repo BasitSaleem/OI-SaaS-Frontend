@@ -293,7 +293,7 @@ const Page = () => {
           variant="animation2"
         />
 
-        <VoicesRealBusiness title="Rated on leading review platforms" />
+        <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
         <IndustryUnifiedPlatform
           heading={FLORIST_UNIFIED_HEADING}

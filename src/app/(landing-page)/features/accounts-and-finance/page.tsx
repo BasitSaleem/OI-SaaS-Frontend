@@ -26,12 +26,12 @@ const getLayoutPatterns = (cardCount: number) => {
       return [
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
       ];
@@ -39,23 +39,23 @@ const getLayoutPatterns = (cardCount: number) => {
       return [
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className:
             "col-span-12 md:col-span-6 lg:col-span-6 lg:col-start-4 xl:col-span-6 xl:col-start-4",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
       ];
@@ -64,32 +64,32 @@ const getLayoutPatterns = (cardCount: number) => {
       return [
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
         {
           className: "col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-6",
-          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover",
+          mediaClassName: "w-full h-[220px] xl:h-[260px] object-cover object-top",
           paddingClass: "px-0",
         },
       ];

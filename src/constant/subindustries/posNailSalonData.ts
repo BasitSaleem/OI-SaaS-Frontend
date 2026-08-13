@@ -279,7 +279,7 @@ export const NAIL_SALON_TESTIMONIALS = [
     name: "Priya N.",
     title: "Online Booking Manager",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image77.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image85.webp",
     text: "We introduced an online booking system and were concerned about overhauling two systems, but with Owners Inventory it's all done at once and there's never been a missed appointment.",
   },
   {
