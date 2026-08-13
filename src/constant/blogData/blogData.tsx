@@ -126,7 +126,7 @@ export const blogData: BlogData[] = [
     author: "Sarah Mitchell",
     authorAvatar: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blogs/Women13.webp",
     authorRole: "Inventory Consultant",
-    date: "June 18, 2026",
+    date: "Aug 12, 2026",
     totalRead: "8 min read",
     status: "popular",
      category: "Inventory Management",

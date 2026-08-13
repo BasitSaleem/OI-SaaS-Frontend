@@ -266,7 +266,7 @@ export const ELECTRONICS_FAQS = [
 export const ELECTRONICS_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say",
   paragraph: "",
-  secondHeading: "Don't wait until a stock discrepancy costs you a sale",
+  secondHeading: "Don't Wait Until a Stock Discrepancy Costs You a Sale",
   secondDescription:
     "Set up Owners Inventory in a day and run your first real shift on accurate data.",
   whyChooseTitle:

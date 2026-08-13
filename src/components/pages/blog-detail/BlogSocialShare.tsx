@@ -108,7 +108,7 @@ const BlogSocialShare: React.FC<BlogSocialShareProps> = ({ title }) => {
       {/* Share Section */}
       <div className="bg-[#F3F4F6] rounded-2xl border border-[#E5E7EB] px-4 py-4 flex flex-col gap-3">
         <p className="text-base font-semibold font-['Onest'] text-[#231F20]">
-          Share this Case Study
+          Share this Blog
         </p>
         <div className="flex items-center gap-2">
           {shares.map((s) =>

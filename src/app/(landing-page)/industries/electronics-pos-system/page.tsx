@@ -285,7 +285,7 @@ const Page = () => {
           variant="animation2"
         />
 
-        <VoicesRealBusiness title="Rated on leading review platforms" />
+        <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
         <IndustryUnifiedPlatform
           heading={ELECTRONICS_UNIFIED_HEADING}
@@ -356,7 +356,7 @@ const Page = () => {
           />
         </div>
         <IndustriesHardwareControl
-          title="Owners Inventory gives electronics retailers the tools to run a tight operation"
+          title="Owners Inventory Gives Electronics Retailers the Tools to Run a Tight Operation"
           description="Serial tracking, variant inventory, supplier management, multi-location stock control, and real-time eCommerce sync are all included. Setup takes hours, not weeks. No contract required."
           ctaDesc="Start Today"
         />
