@@ -210,7 +210,7 @@ export const ELECTRONICS_TESTIMONIALS = [
   },
   {
     id: "2",
-    name: "Priya Shetty",
+    name: "Emily Johnson",
     title: "Operations Manager, Voltage Retail, Chicago IL",
     image:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image84.webp",

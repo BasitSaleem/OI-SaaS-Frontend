@@ -294,10 +294,10 @@ export const FLORIST_TESTIMONIALS = [
   },
   {
     id: "4",
-    name: "Priya N.",
+    name: "Madison Carter",
     title: "Online Store Manager",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image82.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image86.webp",
     text: "We added an online store and were worried about managing two channels at once. Owners Inventory handles everything together and we have not had a missed order since.",
   },
   {
