@@ -60,7 +60,7 @@ export default function FaqSection({
   heading = "Everything You Were About to Ask",
   paragraph = "Find quick answers to the most common questions about Owners Inventory. And if you need anything more, our support team is ready to assist.",
   secondParagraph,
-  buttonText = "Start Free Trail",
+  buttonText = "Start Free Trial",
   buttonUrl = "/pricing",
   buttonBgColor = "var(--primary-teal)",
   buttonTextColor = "white",

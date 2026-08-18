@@ -4,7 +4,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 export const HOME_UNIFIED_HEADING = "Why We Stand Out";
 
 export const HOME_UNIFIED_PARAGRAPH =
-  "The future of business management is here, quick, integrated, expandable. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.";
+  "The future of business management is here: quick, integrated, and expandable. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.";
 
 export const HOME_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -12,21 +12,21 @@ export const HOME_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/unified-platform/unified-operations.svg",
     title: "Unified Operations",
     description:
-      "Smartly process inventory, POS, e-commerce, customer data all in one place. No longer having to carry around various tools.",
+      "Smartly process inventory, POS, e-commerce, and customer data, all in one place. No longer having to carry around various tools.",
   },
   {
     id: "real-time-reporting",
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/unified-platform/real-time-reporting.svg",
     title: "Real-Time Reporting",
     description:
-      "Keep up with real-time sales data, inventory data, and performance dashboards that enable better-informed and swift decisions.",
+      "Keep up with real-time sales data, inventory data, and performance dashboards that enable faster, better-informed decisions.",
   },
   {
     id: "cost-efficient-operations",
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/unified-platform/cost-effection.svg",
     title: "Cost-Efficient Operations",
     description:
-      "Automate your operations by integrating several applications into a single smart product. Reduce the cost of software and reduce manual errors.",
+      "Automate your operations by integrating several applications into a single smart product. cuts software costs and manual errors.",
   },
   {
     id: "built-to-scale",

@@ -15,7 +15,7 @@ interface CalltoActionBottomProps {
 const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
   showDemoButton = true,
   title = "Empower Your Business with a Platform Built for Growth",
-  description = "Enter a world of ambitious retailers, wholesalers, and entrepreneurs who are transforming the way inventory, sales and growth are handled. You are not merely taking a tool with Owners Inventory, but rather entering an intelligent, scalable ecosystem that can get your business through any phase. Automate, base decisions on data, and realize your full potential. We combine aspiration with success.",
+  description = "Join ambitious retailers, wholesalers, and entrepreneurs who are changing how they handle inventory, sales, and growth. Owners Inventory isn't just a tool. It's one connected system built to move with your business through every phase, from your first sale to your hundredth location. Automate the busywork, make decisions backed by real data, and get the full return on your effort.",
   demoButtonText = "Free Demo",
   actionButtonText = "Get Started for Free"
 }) => {

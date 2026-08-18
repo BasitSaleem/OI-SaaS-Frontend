@@ -65,7 +65,7 @@ const HeroShowcase = ({ refs }: HeroShowcaseProps) => {
           ref={advanceReportImageRef}
           src="https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/advance-report.svg"
           alt="Advance Reports module icon"
-          label="Advance Reports"
+          label="Advanced Reports"
           className="flex w-fit items-center justify-center gap-1.5 md:gap-4 px-2.5 py-1.5 md:px-4 md:py-3 glass-background absolute top-[180px] -left-5 lg:top-[220px] lg:-left-14 xl:top-[300px] xl:left-[-60px]"
         />
 

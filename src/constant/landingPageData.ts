@@ -2,7 +2,7 @@ export const HOME_PAGE_CONTENT = {
   hero: {
     title: "Take Control. Gain Clarity. Grow with Owners Inventory",
     description:
-      "Turn all assets to advantage. Our Owners Inventory platform assists you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion.",
+      "Turn all assets to advantage. Our Owners Inventory platform assists you in managing, examining, and displaying your inventory in a single, smart, interconnected environment - built to keep pace with your growth.",
     video: "https://d2qlv5xtew5ayb.cloudfront.net/assets/Manual.mp4",
     variant: "animation2" as const,
   },
@@ -13,7 +13,7 @@ export const HOME_PAGE_CONTENT = {
     title: "Turning Chaos Into Clarity",
     miniTitle: "One Inventory at a Time",
     description:
-      "Owners Inventory assists any business to manage its assets with accuracy regardless of its size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system. Made by the owners, owned by the owners - since you need the tools that can think like you. Let us simplify the management of what belongs to you.",
+      "Owners Inventory assists any business to manage its assets with accuracy regardless of its size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system. Made by the owners, owned by the owners. From day one, we've built tools that think the way you do, so managing what's yours stays simple.",
   },
   industryShowcase: {
     mainHeading: "Built for Every Industry",
@@ -76,7 +76,7 @@ export const HOME_INDUSTRIES = [
   },
   {
     id: 2,
-    title: "Restaurant",
+    title: "Restaurants",
     gradient:
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
@@ -152,7 +152,7 @@ export const LANDING_FEATURES = [
   },
   {
     id: "inventory-autosync",
-    title: "Streamline Manufacturing + Stay in Control of Every Process",
+    title: "Streamline Manufacturing - from raw materials to finished goods.",
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-section/autosync.svg",
     videoSrc: "/videos-s3/home-page-videos/screen4.webm",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/home-page-images/animations/screen4-tab.webp",
