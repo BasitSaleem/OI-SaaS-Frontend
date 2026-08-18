@@ -305,7 +305,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Auto Parts Inventory Management Software to Organize and Track Stocks"
-          description="Our [auto parts inventory management](/features/inventory) software provides smarter ways to track stock, manage inventory, and order parts efficiently. Get real-time visibility into stocks, automate purchases, and manage repair workflows or service orders. The software improves reporting with quick alerts. It simplifies operations and lets automotive store owners run their business with assurance."
+          description="Our [auto parts inventory management](/features/inventory) software provides smarter ways to track stock, manage inventory, and order parts efficiently. Get real-time visibility into stocks, automate purchases, and manage repair workflows or service orders. The software enhances reporting with real-time alerts. It simplifies operations and lets automotive store owners run their business with assurance."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
@@ -342,7 +342,7 @@ const Page = () => {
 
         <IndustriesCallToAction
           title="Drive Efficiency for Your Auto Parts Business"
-          description="Simplify your auto parts store’s workflows, track every component in real time, and reduce errors. Owner's Inventory keeps your stock perfectly synchronized. Request a demo today and start making better purchase decisions."
+          description="Simplify your auto parts store’s workflows, track every component in real time, and reduce errors. Owners Inventory keeps your stock perfectly synchronized. Request a demo today and start making better purchase decisions."
           ctaDesc="Request a Free Demo"
         />
 
@@ -377,7 +377,7 @@ const Page = () => {
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
             heading="FAQS"
-            paragraph="The Auto Parts Inventory Management Software is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by Auto Parts Inventory Management Software."
+            paragraph="The Auto Parts Inventory Management Software is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions about auto parts inventory management software."
             faqs={AUTO_PARTS_INVENTORY_FAQS}
             buttonText="Start Now"
           />

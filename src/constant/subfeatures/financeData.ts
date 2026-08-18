@@ -5,7 +5,7 @@ export const FINANCE_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Easily track all sales, returns, and costs in a single location to have full financial visibility. The real time profit and loss reports allow you to quickly track the performance of the store, manage the costs, and make smarter decisions on restocking.",
+      "Easily track all sales, returns, and costs in a single location to have full financial visibility. The real-time profit and loss reports allow you to quickly track the performance of the store, manage the costs, and make smarter decisions on restocking.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -61,7 +61,7 @@ export const FINANCE_FEATURES_CARDS = [
     id: 1,
     title: "Comprehensive Financial Accounting",
     description:
-      "Our integrated POS and accounting software allows you to manage all accounting and finance functions easily. Through Chart of Accounts to Journal Entries and Reports, all transactions are properly trailed and recorded in real time.",
+      "Our integrated POS and accounting software allows you to manage all accounting and finance functions easily. Through Chart of Accounts to Journal Entries and Reports, all transactions are properly trailed and recorded in real-time.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/finance-page/features-section/comprehensive-financial.webp",
   },
@@ -93,7 +93,7 @@ export const FINANCE_FEATURES_CARDS = [
     id: 5,
     title: "Payables & Receivables Tracking",
     description:
-      "Track pending payments and due dues real-time. Cash flow management is easier and smarter with detailed ledgers and aging analysis.",
+      "Track pending payments and dues in real-time. Cash flow management is easier and smarter with detailed ledgers and aging analysis.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/finance-page/features-section/recievable-tracking.webp",
   },
@@ -141,7 +141,7 @@ export const FINANCE_FAQS = [
     id: 3,
     question: "Does it support financial reporting and tax management?",
     answer:
-      "Absolutely. The system produces in-depth financial reports such as profit and loss statements, balance sheets, or cash flow summaries. You also have the time to prepare tax-ready data in real time, which saves time and accuracy on audit.",
+      "Absolutely. The system produces in-depth financial reports such as profit and loss statements, balance sheets, or cash flow summaries. You also have the time to prepare tax-ready data in real-time, which saves time and improves accuracy during audits.",
   },
   {
     id: 4,
@@ -153,7 +153,7 @@ export const FINANCE_FAQS = [
     id: 5,
     question: "Can I track expenses and payments through the POS?",
     answer:
-      "Yes, everything, including expenditures, payments, and sales, is automatically synchronized via the POS. Your transactions are all visible in your reports in a few seconds. This provides you with a complete and uptodate view of your financial performance on a daily basis.",
+      "Yes, everything, including expenditures, payments, and sales, is automatically synchronized via the POS. Your transactions are all visible in your reports in a few seconds. This provides you with a complete and up-to-date view of your financial performance on a daily basis.",
   },
 ];
 
@@ -163,21 +163,21 @@ export const FINANCE_TESTIMONIALS = [
     name: "Monica Patel",
     title: "Business Operations Head, Patel Traders",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl19.webp",
-    text: `Owners Inventory made our accounting a lot easier. We are able to monitor all our sales and expenditures in a single location without moving through systems. The financial reports are straightforward, fast, and valid - it actually saves us time daily.`,
+    text: `Owners Inventory made our accounting a lot easier. We are able to monitor all our sales and expenditures in a single location without switching between systems. The financial reports are straightforward, fast, and valid - it actually saves us time daily.`,
   },
   {
     id: "finance-testimonial-2",
     name: "Nathan Scott",
     title: "Operations Head, FreshWay Stores",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy20.webp",
-    text: `We began using Owners Inventory primarily to use in sales but its accounting and finance capabilities have been a great addition. Posting journal entries, monitoring payments, and looking at profit and loss statements can be done in minutes by our team. It is the real financial reporting POS system that ensures our data is correct and our operations clear.`,
+    text: `We began using Owners Inventory primarily for sales in sales but its accounting and finance capabilities have been a great addition. Posting journal entries, monitoring payments, and looking at profit and loss statements can be done in minutes by our team. It is the real financial reporting POS system that ensures our data is correct and our operations clear.`,
   },
   {
     id: "finance-testimonial-3",
     name: "Ayesha Khan",
     title: "Managing Director, Khan Enterprises",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl20.webp",
-    text: `Business finance management is so easy with this software. We can see all the receivables, expenses, and cash flow in a single location through the POS accounts and finance dashboard. I like it best because it is precise and easy, it is powerful enough to use by accountants and easy enough to use by managers like me.`,
+    text: `Business finance management is so easy with this software. We can see all the receivables, expenses, and cash flow in a single location through the POS accounts and finance dashboard. I like it best because it is precise and easy, it is powerful enough for accountants to use and easy enough for managers like me to use.`,
   },
 ];
 
@@ -187,7 +187,7 @@ export const FINANCE_WHY_CHOOSE_CARDS = [
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/why-chose/automated-buying.svg",
     title: "All-in-One Platform",
     description:
-      "Automate sales, inventory, and accounting without adding switches between systems.",
+      "Automate sales, inventory, and accounting without switching between systems.",
   },
   {
     id: "finance-why-choose-2",
@@ -201,7 +201,7 @@ export const FINANCE_WHY_CHOOSE_CARDS = [
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/finance-page/why-chose/easy-to-use.svg",
     title: "Easy to Use",
     description:
-      "Clean, easy-to-use interface that any person can use - no accounting background required.",
+      "Clean, easy-to-use interface that that anyone can use - no accounting background required.",
   },
   {
     id: "finance-why-choose-4",

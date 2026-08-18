@@ -3,7 +3,7 @@ export const INTEGRATION_FEATURES_CARDS = [
     id: 1,
     title: "Strong Integrations for All Types of Businesses",
     description:
-      "Connect with top third-party platforms through Owners Inventory, which are essential for expanding and improving modern businesses. Integrations that make Owners Inventory a connected, and future-ready solution are listed below. ",
+      "Connect with top third-party platforms through Owners Inventory, which are essential for expanding and improving modern businesses. Integrations that make Owners Inventory a connected and future-ready solution are listed below. ",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/integration-page/features-section/strong-integration.webp",
   },
@@ -33,7 +33,7 @@ export const INTEGRATION_FEATURES_CARDS = [
   },
   {
     id: 5,
-    title: "Payment Getaway Integration",
+    title: "Payment Gateway Integration",
     description:
       "Owners Inventory integrates with trusted payment gateways to accept secure online and in-store payments, track transactions in real time, automate reconciliation, and maintain full control over revenue.",
     imageSrc:
@@ -76,7 +76,7 @@ export const INTEGRATION_FAQS = [
   },
   {
     id: 5,
-    question: "Can I request a custom Integration?",
+    question: "Can I request the custom Integration?",
     answer:
       "Yes, you can. Custom tool integration tailored to your company’s operations can be created by our team. We customize integration to fit your long-term objectives, industry demands, and workflows. If there is any specific tool or platform you want to integrate, we can build that for you as well.",
   },
@@ -125,7 +125,7 @@ export const INTEGRATION_WHY_CHOOSE_CARDS = [
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/seamless-automation.svg",
     title: "Error-Free Automation",
     description:
-      "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate in expansion.",
+      "Get rid of human errors and duplicate data. Give repetitive tasks to automated workflows so that your team can concentrate on growth.",
   },
   {
     id: "integration-why-choose-3",

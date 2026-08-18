@@ -14,7 +14,7 @@ export const SUPERMARKET_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon1",
     title: "Stock Mismanagement",
     description:
-      "This happens when you have to handle thousands of products and it is hard to keep track of them. You might make mistakes when you track things by hand which can cost your business up to 20% each year.",
+      "This happens when you have to handle thousands of products, and it is hard to keep track of them. You might make mistakes when you track things by hand, which can cost your business up to 20% each year.",
   },
   {
     id: "2",
@@ -28,14 +28,14 @@ export const SUPERMARKET_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon3",
     title: "Supplier Coordination Issues",
     description:
-      "It can be hard to keep track of suppliers and deliveries without a centralized system. The Owners Inventory POS System can help with supplier coordination issues.",
+      "It can be hard to keep track of suppliers and deliveries without a centralized system. The Owners Inventory POS System can simplify supplier coordination.",
   },
   {
     id: "4",
     icon: "UnifiedIcon4",
     title: "Lack of Sales Insights",
     description:
-      "Without the reports, supermarket owners have to guess which items are selling well and which are not. The Owners Inventory POS System can help with lack of sales insights.",
+      "Without proper reports, supermarket owners have to guess which items are selling well and which are not. The Owners Inventory POS System can help close this sales insight gap.",
   },
   {
     id: "5",
@@ -66,14 +66,14 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon2",
     title: "Faster & Smoother Billing",
     description:
-      "Scanning barcodes and using search make checkout faster which keeps lines short even during busy times. With us your billing becomes smoother and faster",
+      "Scanning barcodes and using search make checkout faster, which keeps lines short even during busy times. With us, your billing becomes smoother and faster.",
   },
   {
     id: "3",
     icon: "whychoseIcon3",
     title: "Intelligent Supplier Management",
     description:
-      "You can keep monitoring your suppliers, handle purchase orders and get alerts when your stock is low to avoid running out.",
+      "You can monitor your suppliers, handle purchase orders, and get alerts when your stock is low to avoid running out.",
   },
   {
     id: "4",
@@ -87,7 +87,7 @@ export const SUPERMARKET_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Data-Driven Decision Making",
     description:
-      "Live reports show which products are selling well and which ones are not which helps you set prices and make the right purchases.",
+      "Live reports show which products are selling well and which ones are not — helping you set prices and make the right purchases.",
   },
   {
     id: "6",
@@ -103,7 +103,7 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
     id: "1",
     title: "Omni-Channel and Sales Integration",
     description:
-      "Our system connects all the places where people buy things from your supermarket like the store, the website and the mobile app into one simple system. You can manage in-store and online sales from one place.",
+      "Our system connects all the places where people buy things from your supermarket such as the store, the website, and the mobile app, into one simple system. You can manage in-store and online sales from one place.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
@@ -113,9 +113,9 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "POS Sales Management",
         listdescription:
-          "We ensure that the checkout process is made easy, you can keep track of the stock in real time and be able to retrieve precise sales information about your store.",
+          "We make the checkout process easy, let you track stock in real time, and help you retrieve precise sales information about your store.",
         listSubDescription:
-          "This assists supermarkets to run smoothly, minimize mistakes and have a better control of day to day operations and general performance. It also enhances customer experience by minimizing waiting time at billing counters, and processing all transactions fast and properly.",
+          "This helps supermarkets run smoothly, minimize mistakes, and gain better control of day-to-day operations and general performance. It also enhances customer experience by minimizing wait times at billing counters and processing all transactions quickly and accurately.",
       },
       {
         listheading: "Ecommerce Operations and Sales Online",
@@ -125,9 +125,9 @@ export const SUPERMARKET_FEATURE_CARDS: FeatureCardData[] = [
       {
         listheading: "Single Multi-Channel Control",
         listdescription:
-          "You can see what is in stock, what is selling and how the supermarket is doing in time. This gives you a view and control of your business.",
+          "You can see what is in stock, what is selling and how the supermarket is doing over time. This gives you a clear view and greater control of your business.",
         listSubDescription:
-          "This way you can run the supermarket efficiently. Make sure the customers have a good experience everywhere they shop.",
+          "This way, you can run the supermarket efficiently and make sure customers have a good experience everywhere they shop.",
       },
     ],
   },
@@ -188,7 +188,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
     id: 5,
     title: "Customer & Loyalty Management",
     description:
-      "Track customer information and purchase history is easy. Give loyal customers discounts and special deals. The Owners Inventory POS System is great for customer and loyalty management.",
+      "Tracking customer information and purchase history is easy. Give loyal customers discounts and special deals. The Owners Inventory POS System is great for customer and loyalty management.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/supermarket-pos/key-features-section/key-feature-card5.webp",
   },
@@ -237,7 +237,7 @@ export const SUPERMARKET_KEY_FEATURES_CARDS = [
 export const SUPERMARKET_WORKFLOW_DATA = {
   heading: "Inventory Workflow of Owners Inventory",
   paragraph:
-    "Our POS system automates inventory so that it is easier in our supermarket. It assists in real time monitoring of stock, real time updates of sales, and proper control of inventory in all operations.",
+    "Our POS System automates inventory so that it is easier in our supermarket. It assists in real time monitoring of stock, real time updates of sales, and proper control of inventory in all operations.",
   steps: [
     {
       number: 1,
@@ -273,7 +273,7 @@ export const SUPERMARKET_WORKFLOW_DATA = {
       number: 6,
       title: "Reporting & Analysis",
       description:
-        "Our reports show sales performance, stock movement and revenue in detail. Our supermarket POS system simplifies tasks, reduces errors and improves efficiency. Change your supermarket's operations today.",
+        "Our reports show sales performance, stock movement and revenue in detail. Our supermarket POS System simplifies tasks, reduces errors and improves efficiency. Change your supermarket's operations today.",
     },
   ],
 };
@@ -312,13 +312,13 @@ export const SUPERMARKET_TESTIMONIALS = [
 export const SUPERMARKET_FAQS = [
   {
     id: "1",
-    question: "What is a POS system for a supermarket?",
+    question: "What is a POS System for a supermarket?",
     answer:
       "A supermarket system helps manage sales, inventory and customers from one place. It makes billing and inventory more accurate.",
   },
   {
     id: "2",
-    question: "Can this POS system handle large inventories?",
+    question: "Can this POS System handle large inventories?",
     answer:
       "Yes, it is designed to manage thousands of products with categories, sizes and variations.",
   },
@@ -358,7 +358,7 @@ export const SUPERMARKET_TESTIMONIAL_FEATURES = [
     id: "1",
     title: "Easy Setup",
     description:
-      "The system is easily installed and easy to operate and you can be up and running in a short time without interfering with your day to day running of the store. It can be easily learnt even by personnel who have little technical experience.",
+      "The system is easily installed and easy to operate and you can be up and running in a short time without interfering with your day-by-day running of the store. It can be easily learnt even by personnel who have little technical experience.",
     icon: "testWhychoseIcon1",
   },
   {

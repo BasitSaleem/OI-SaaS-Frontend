@@ -50,7 +50,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Purchases Tailored for Your Industry"
-          paragraph="Whether you operate as a Manufacturer, a Wholesaler or a Retailer, our Purchases Function is specifically designed to manage your unique operations with perfection. Whether you are managing huge bulk supplies or delicate goods, Owners Inventory adapts to your unique purchasing needs."
+          paragraph="Whether you operate as a Manufacturer, a Wholesaler, or a Retailer, our Purchases Function is specifically designed to manage your unique operations with perfection. Whether you are managing huge bulk supplies or delicate goods, Owners Inventory adapts to your unique purchasing needs."
           buttonText="Explore All Industries"
           industries={PURCHASES_INDUSTRIES}
         />
@@ -58,7 +58,7 @@ const Page = () => {
 
       <FeaturesCallToAction
         title="Buy Smarter. Manage Better. Grow Faster."
-        description="Streamline every purchase step with our intelligent Purchase Order Processing System. Using tools that help you stay organized, cost efficient and ready for growth with Owners Inventory."
+        description="Streamline every purchase step with our intelligent Purchase Order Processing System. Using tools that help you stay organized, cost-efficient, and ready for growth with Owners Inventory."
       />
       <FeaturesTestimonials
         testimonials={PURCHASES_TESTIMONIALS}
@@ -71,7 +71,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="Everything You Need to Know About Purchases Management"
-          paragraph="Learn how Owners Inventory can simplify procurement and strengthen your business with intelligent purchasing tool."
+          paragraph="Learn how Owners Inventory can simplify procurement and strengthen your business with intelligent purchasing tools."
           faqs={PURCHASES_FAQS}
         />
       </div>

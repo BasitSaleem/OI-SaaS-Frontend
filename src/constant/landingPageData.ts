@@ -2,18 +2,18 @@ export const HOME_PAGE_CONTENT = {
   hero: {
     title: "Take Control. Gain Clarity. Grow with Owners Inventory",
     description:
-      "Turn all assets to advantage. Our Owners Inventory platform assist you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion.",
+      "Turn all assets to advantage. Our Owners Inventory platform assists you in managing, examining and displaying your inventory in a single, smart, interconnected environment - created to respond to real expansion.",
     video: "https://d2qlv5xtew5ayb.cloudfront.net/assets/Manual.mp4",
     variant: "animation2" as const,
   },
   trustedBy: {
-    heading: "Preferred to businesses who demand precision and performance",
+    heading: "Preferred by businesses who demand precision and performance",
   },
   turningChaos: {
     title: "Turning Chaos Into Clarity",
     miniTitle: "One Inventory at a Time",
     description:
-      "Owners Inventory assists any business to manage its assets with accuracy regardless of their size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system. Made by the owners, owned by the owners - since you need the tools that can think like you. Let us simplify the management of what belongs to you.",
+      "Owners Inventory assists any business to manage its assets with accuracy regardless of its size. Everything is quicker, easier, and smarter, in terms of tracking and publishing with our inventory management system. Made by the owners, owned by the owners - since you need the tools that can think like you. Let us simplify the management of what belongs to you.",
   },
   industryShowcase: {
     mainHeading: "Built for Every Industry",
@@ -34,7 +34,7 @@ export const HOME_FAQS = [
     id: 2,
     question: "Can I integrate Owners Inventory with my e-commerce store?",
     answer:
-      "Yes! It is easy to sell on multiple channels with us, and we provide easy integrations with large e-commerce articles such as Shopify, WooCommerce, and others.",
+      "Yes! It is easy to sell on multiple channels with us, and we provide easy integrations with large e-commerce platforms such as Shopify, WooCommerce, and others.",
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ export const HOME_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
+      "See the whole picture with point of sale reporting systems that monitor daily sales, fast-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",

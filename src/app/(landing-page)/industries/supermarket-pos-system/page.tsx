@@ -336,7 +336,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Complete POS System for Supermarkets with Stock Tracking"
-          description="The Owners Inventory POS System for supermarkets is the way to control your store’s inventory. It helps you run your supermarket quickly and accurately. Our POS System keeps track of all sales and stock updates in one place. This is great for supermarkets that need to bill customers quickly and keep track of their inventory in real time."
+          description="The Owners Inventory POS System for supermarkets is the ideal way to control your store's inventory. It helps you run your supermarket quickly and accurately. Our POS System keeps track of all sales and stock updates in one place. This is great for supermarkets that need to bill customers quickly and keep track of their inventory in real time."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
@@ -353,7 +353,7 @@ const Page = () => {
         />
 
         <WhyChoosePOS
-          heading="How Our Inventory Software Solves These Challenges"
+          heading="How Our POS System Solves These Challenges"
           paragraph="The Owners Inventory POS System has features that help supermarkets, including:"
           cards={SUPERMARKET_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
@@ -407,7 +407,7 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Our supermarket store POS solution is built in such a way that it makes everyday operations easy and effective. These are the responses to some of the most frequent questions of the store owners in supermarkets."
             faqs={SUPERMARKET_FAQS}
             buttonText="Start Now"

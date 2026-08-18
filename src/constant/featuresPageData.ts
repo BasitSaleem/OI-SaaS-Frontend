@@ -39,7 +39,7 @@ export const CORE_OPERATIONS_DATA = {
       id: "purchases-feature",
       title: "Purchases",
       description:
-        "Automate purchase orders, procurement and vendor management.",
+        "Automate purchase orders, procurement, and vendor management.",
       videoSrc:
         "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/purchases.webm",
       imageSrc:
@@ -135,7 +135,7 @@ export const UTILITIES_DATA = {
   imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/utilities-banner.webp",
   heading: "Utilities & General Tools",
   description:
-    "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring your business runs efficiently at every level.",
+    "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring, your business runs efficiently at every level.",
   buttonText: "View Details",
   buttonColor: "var(--primary-teal)",
   buttonUrl: "/features/tools",

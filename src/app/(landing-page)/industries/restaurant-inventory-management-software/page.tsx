@@ -305,7 +305,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Restaurant Inventory Management Software for Better Inventory Control"
-          description="Our restaurant inventory management software handles complex inventories with precision. It automates processes and streamlines restaurant operations while providing real-time inventory insights. With food cost control and COG tracking, it boosts profitability. The software keeps everything visible in real time across your kitchen and storage."
+          description="Our restaurant inventory management software handles complex inventories with precision. It automates processes and streamlines restaurant operations while providing real-time inventory insights. With food cost control and COGS tracking, it boosts profitability. The software keeps everything visible in real time across your kitchen and storage."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
@@ -351,7 +351,7 @@ const Page = () => {
         <SecurityCompliance
           title="Security, Accuracy, and Compliance"
           description="It provides controlled access to staff based on their roles. The system records transactions securely. Maintaining detailed logs promotes transparency in inventory and sales activities."
-          secondDescription="The inventory control software for restaurants helps them reduce errors, prevent unauthorized access to sensitive data, and maintain accurate records of all operations for better internal control or compliance purposes."
+          secondDescription="The inventory control software for restaurants helps them reduce errors, prevent unauthorized access to sensitive data, and maintain accurate records of all operations for better internal control and compliance purposes."
         />
 
         <ToolsSection
@@ -376,8 +376,8 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
-            paragraph="The Restaurant Inventory Management Software is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by Restaurant Inventory Management Software."
+            heading="FAQs"
+            paragraph="The Restaurant Inventory Management Software is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions about Restaurant Inventory Management Software."
             faqs={RESTAURANT_INVENTORY_FAQS}
             buttonText="Start Now"
           />

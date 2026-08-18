@@ -4,7 +4,7 @@ import { FeatureCardData } from "@/components/pages/industries-page/IndustriesFe
 // ─── Thrift Store POS — UnifiedPlatform Section ──────────────────────────
 export const THRIFT_STORE_UNIFIED_HEADING = "Challenges Faced by Today’s Thrift Stores";
 
-export const THRIFT_STORE_UNIFIED_PARAGRAPH = "Generic retail systems do not necessarily meet the needs of owners of thrift stores. These problems can impact profitability and customer satisfaction, ranging from the management of one-of-a-kind products to the quick changes in stock.";
+export const THRIFT_STORE_UNIFIED_PARAGRAPH = "Generic retail systems do not necessarily meet the needs of thrift store owners. These problems can impact profitability and customer satisfaction, ranging from the management of one-of-a-kind products to the quick changes in stock.";
 
 export const THRIFT_STORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {

@@ -31,7 +31,7 @@ const DEFAULT_GRADIENT_BACKGROUND = `
 
 const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
   const pathname = usePathname();
-  const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout") || pathname.includes("/case-studies");
+  const isContactPage = pathname.includes("/contact") || pathname.includes("coming-soon") || pathname.includes("checkout") || pathname.includes("/case-studies") || pathname.includes("/blog/")  ;
   const isCaseStudyDetail = pathname.includes("/case-studies/") && pathname.split("/").length > 2;
 
   return (

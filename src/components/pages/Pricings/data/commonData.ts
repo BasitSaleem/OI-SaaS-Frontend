@@ -425,7 +425,7 @@ export const commonFeatureCategories: FeatureCategory[] = [
 ];
 
 export const PRICING_HERO_CONTENT = {
-  title: "Start free. Scale anytime.",
+  title: "Start Today. Scale anytime.",
   description:
-    "Get full access to powerful inventory tools without upfront costs. Start managing smarter today and upgrade only when your business is ready — no contracts, no pressure.",
+    "Get full access to powerful inventory tools without upfront costs. Start managing smarter today and upgrade only when your business is ready no contracts, no pressure.",
 };

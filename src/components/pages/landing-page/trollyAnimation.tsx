@@ -36,7 +36,7 @@ const TrollyAnimation = () => {
                     ref={p1Ref}
                     className="text-[10px] lg:text-base xl:text-xl leading-[110%] font-medium font-['onest'] text-[var(--text-dark)] text-start absolute top-7 w-full max-w-[120px] lg:max-w-[200px] xl:max-w-[239px] left-6 xl:left-10 paragraph1"
                 >
-                    Sell online with built in, fully synced e-commerce
+                    Sell online with built-in, fully synced e-commerce
                 </p>
 
                 <Image
@@ -84,7 +84,7 @@ const TrollyAnimation = () => {
                         ref={p3Ref}
                         className="text-[10px] lg:text-base xl:text-xl leading-[100%] font-medium font-['onest'] text-white text-start w-full max-w-[110px] lg:max-w-[190px] xl:max-w-[220px] paragraph3"
                     >
-                        Inventory management to stay in control of every product
+                        Real-time stock updates across every location and channel
                     </p>
 
                     <div
@@ -155,7 +155,7 @@ const TrollyAnimation = () => {
                         ref={p4Ref}
                         className="text-[10px] lg:text-base xl:text-xl leading-[100%] font-medium font-['onest'] text-[var(--text-dark)] text-start w-full max-w-[110px] lg:max-w-[190px] xl:max-w-[220px] paragraph4"
                     >
-                        Inventory management to stay in control of every product
+                        Scale from one store to many without losing stock visibility
                     </p>
 
                     <Image

@@ -5,7 +5,7 @@ export const PEOPLE_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Make everyday tasks easier with intelligent scheduling, time-tracking, and shift arrangements. Make your sales team structured, improve customer service, and make each store operate efficiently.",
+      "Make everyday tasks easier with intelligent scheduling, time-tracking, and shift arrangements. keep your sales team organized, improve customer service, and help each store run efficiently.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -49,7 +49,7 @@ export const PEOPLE_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Coordinate design, retail, and production departments on a single platform. Monitor attendance and performance in outlets to secure a smooth coordination and on-brand implementation.",
+      "Coordinate design, retail, and production departments on a single platform. Monitor attendance and performance in outlets to ensure smooth coordination and on-brand implementation.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
@@ -61,7 +61,7 @@ export const PEOPLE_FEATURES_CARDS = [
     id: 1,
     title: "User & Contact Management",
     description:
-      "Easily coordinate your business contacts with just a single dashboard. Add, edit or delete old records in a few clicks, which is important to maintain a clean database and stay updated.",
+      "Easily coordinate your business contacts with just a single dashboard. Add, edit or delete old records in a few clicks, which is important for maintaining a clean database and staying updated.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/features-section/user-contact-management.webp",
   },
@@ -77,7 +77,7 @@ export const PEOPLE_FEATURES_CARDS = [
     id: 3,
     title: "Role-Based Permissions",
     description:
-      "Access who is allowed to read, edit or manipulate certain data on your system. Grant role permissions to ensure data safety and accountability.",
+      "Control who is allowed to read, edit, or manipulate certain data. Grant role permissions to ensure data safety and accountability.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/features-section/role-based-permision.webp",
   },
@@ -93,7 +93,7 @@ export const PEOPLE_FEATURES_CARDS = [
     id: 5,
     title: "Activity Logs & Audits",
     description:
-      "Keep track of all the changes that occur in the system using detailed activity logs. Edits, deletion and amendments of tracks to guarantee complete visibility and transparency.",
+      "Keep track of all the changes that occur in the system using detailed activity logs. Track every edit, deletion, and amendment to guarantee complete visibility and transparency.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/features-section/activity-logs.webp",
   },
@@ -150,7 +150,7 @@ export const PEOPLE_FEATURES_CARDS = [
 export const PEOPLE_FAQS = [
   {
     id: 1,
-    question: "What is the People feature in the Owners Inventory?",
+    question: "What is People feature in the Owners Inventory?",
     answer:
       "People is a full-fledged employee management system that helps you to handle attendance, performance, and scheduling in a single, easy-to-use platform.",
   },
@@ -158,14 +158,14 @@ export const PEOPLE_FAQS = [
     id: 2,
     question: "Can I track attendance automatically?",
     answer:
-      "Yes. The employee attendance management system records check-ins, leaves, and working hours, which are accurate during reporting because it is quickly recorded in real-time.",
+      "Yes. The employee attendance management system records check-ins, leaves, and working hours in real time, so your reports are always accurate.",
   },
   {
     id: 3,
     question:
       "Does the People feature of Owners Inventory support performance evaluations?",
     answer:
-      "Absolutely. The employee performance management system enables you to establish goals, monitor performance, and measure performance so as to reward your best employees.",
+      "Absolutely. The employee performance management system enables you to establish goals, track progress, and measure results so you can reward your best employees.",
   },
   {
     id: 4,
@@ -225,7 +225,7 @@ export const PEOPLE_WHY_CHOOSE_CARDS = [
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/real-time-insights.svg",
     title: "Real-Time Insights",
     description:
-      "Use real-time data on attendance, productivity, and growth to make smarter decisions",
+      "Use real-time data on attendance, productivity, and growth to make smarter decisions.",
   },
   {
     id: "people-why-choose-3",

@@ -59,7 +59,7 @@ export const CLOTHING_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Stock Accuracy",
     description:
-      "The inventory gets updated after every sale, return, or purchase of clothes. This way you always know what is in stock including sizes, color, and styles of clothes.",
+      "The inventory gets updated after every sale, return, or purchase of clothes. This way you always know what is in stock including sizes, colors, and styles..",
   },
   {
     id: "2",
@@ -87,7 +87,7 @@ export const CLOTHING_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon5",
     title: "Data-Driven Decision Making",
     description:
-      "You can access the reports in real-time to find out which clothing items are selling and which ones are slow-moving and how much profit you are making from the clothing items.",
+      "You can access real-time reports to see which items are selling and which are slow-moving. This also shows how much profit you're making.",
   },
   {
     id: "6",
@@ -294,7 +294,7 @@ export const CLOTHING_INVENTORY_TESTIMONIALS = [
   {
     id: "2",
     name: "Bryson Vance",
-    title: "Interior Decor Owner",
+    title: "Boutique Manager",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image36.webp",
     text: "We needed a system to manage sizes and styles efficiently. This software does that. It is easy for staff to use and provides clear daily reports.",
   },

@@ -313,7 +313,7 @@ const Page = () => {
       />
       <div>
         <SubIndustriesHero
-          title="Result-Oriented POS Solutions for jewelry Stores"
+          title="Result-Oriented POS Solutions for Jewelry Stores"
           description="Owners Inventory is the ultimate jewelry store POS system that can be used to run your store with precision, elegance, and total control. All sales, repair orders, and stock-related activities remain synchronized within a single intelligent platform. It is designed for high-value goods, comprehensive tracking, and safe billing."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
@@ -351,7 +351,7 @@ const Page = () => {
 
         <IndustriesCallToAction
           title="Take Control of Your Jewelry Inventory Now"
-          description="The Best POS for jewelry stores will make your inventory easier and will help minimize mistakes during pricing and make daily work more effective. Begin today and find out how our solution will make doing business in the jewelry business a lot easier and profitability of your store maximized."
+          description="The Best POS for jewelry stores will make managing your inventory easier and will help minimize mistakes during pricing and make daily work more effective. Begin today and find out how our solution will make running your jewelry business easier and help maximize your store's profitability of your store maximized."
           ctaDesc="Request a Free Demo"
         />
 
@@ -359,8 +359,8 @@ const Page = () => {
 
         <SecurityCompliance
           title="Security, Accuracy, and Compliance"
-          description="An advanced jewelry POS system makes sure that all the transactions are duly managed and tracked. Role-based access controls access to sensitive financial, and inventory information minimizing risks and avoiding internal losses."
-          secondDescription="The system has full audit trails and facilitates compliance needs in protection of jewelry assets which have high-values. Live tracking will guarantee clear stock movement while automated reports will minimize errors in tracking and assist in maintaining proper financial records with certainty."
+          description="An advanced jewelry POS system makes sure that all the transactions are duly managed and tracked. Role-based access limits who can view sensitive financial and inventory information minimizing risks and avoiding internal losses."
+          secondDescription="The system has full audit trails and facilitates compliance needs in protecting high-value jewelry assets. Live tracking guarantees clear stock movement. Automated reports minimize errors and help maintain accurate financial records."
         />
 
         <ToolsSection

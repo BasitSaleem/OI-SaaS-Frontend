@@ -21,14 +21,14 @@ export const RESTAURANT_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon2",
     title: "High Food Cost",
     description:
-      "Fluctuating prices, waste, and overordering items causes high food costs. Lack of real-time tracking makes restaurants struggle to manage expenses and maintain profit margins.",
+      "Fluctuating prices, waste, and overordering items cause high food costs. Lack of real-time tracking makes restaurants struggle to manage expenses and maintain profit margins.",
   },
   {
     id: "3",
     icon: "UnifiedIcon3",
     title: "Excess Food Waste",
     description:
-      "Perishable ingredients get spoiled quickly without proper tracking of their expiry dates, which makes inventory processes inefficient and leads to wasted food.",
+      "Perishable ingredients spoil quickly quickly without proper tracking of their expiry dates, which makes inventory processes inefficient and leads to wasted food.",
   },
   {
     id: "4",
@@ -80,7 +80,7 @@ export const RESTAURANT_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon4",
     title: "Streamlined Menu Costing",
     description:
-      "The system calculates the exact ingredient usage per recipe. It helps restaurant price menus accurately, predict profit margins, and maintain consistent quality without guesswork.",
+      "The system calculates the exact ingredient usage per recipe. It helps restaurants price menus accurately, predict profit margins, and maintain consistent quality without guesswork.",
   },
   {
     id: "5",
@@ -195,7 +195,7 @@ export const RESTAURANT_INVENTORY_KEY_FEATURES_CARDS = [
 export const RESTAURANT_INVENTORY_WORKFLOW_DATA = {
   heading: "Our Restaurant Inventory Management Software Workflow",
   paragraph:
-    "Owners Inventory helps restaurants maintain a structured workflow for their day-to-day tasks and complex operations. It tracks every activity of your inventory. The system provides real-time, accurate updates using smart AI features. It reduces confusion, delays, and dependency on guesswork.",
+    "Owners Inventory helps restaurants maintain a structured workflow for their day-to-day tasks and complex operations. It tracks every activity of their inventory. The system provides real-time, accurate updates using smart AI features. It reduces confusion, delays, and dependency on guesswork.",
   steps: [
     {
       number: 1,
@@ -213,13 +213,13 @@ export const RESTAURANT_INVENTORY_WORKFLOW_DATA = {
       number: 3,
       title: "Recipe-Based Deduction",
       description:
-        "The items in the menus are linked with ingredient usage in the system. So when any order is processed, the inventory is deducted automatically based on recipes. This keeps stock levels accurate and shows real-time ingredient consumption without relying on manual calculation.",
+        "Menu items are linked to ingredient usage in the system. So when any order is processed, the inventory is deducted automatically based on recipes. This keeps stock levels accurate and shows real-time ingredient consumption without relying on manual calculation.",
     },
     {
       number: 4,
       title: "Order and POS Processing",
       description:
-        "Orders are recorded accurately and synced with inventory in real time to ensure accurate stock counts on reports. After every order, inventory is updated instantly without disrupting restaurant operations workflows.",
+        "Orders are recorded accurately and synced with inventory in real time to ensure accurate stock counts in reports. After every order, inventory is updated instantly without disrupting restaurant operations workflows.",
     },
     {
       number: 5,
@@ -282,7 +282,7 @@ export const RESTAURANT_INVENTORY_FAQS = [
   {
     id: "5",
     question:
-      "Is Inventory software of Owners Inventory suitable for a small restaurant?",
+      "Is Owners Inventory's software suitable for small restaurants?",
     answer:
       "Our system is suitable for restaurants of every size. It keeps both small and large inventories efficiently managed, simplifies routine operations, and improves accuracy in reports. It provides restaurant owners with better control over stock.",
   },
@@ -304,14 +304,14 @@ export const RESTAURANT_INVENTORY_TESTIMONIAL_FEATURES = [
     id: "1",
     title: "Built for Restaurant Needs",
     description:
-      "It manages daily operation of the restaurant perfectly, like counting inventory and managing recipe ingredients, while supporting efficient kitchen workflows and smooth serving.",
+      "It manages daily operations of the restaurant perfectly, like counting inventory and managing recipe ingredients, while supporting efficient kitchen workflows and smooth service.",
     icon: "testWhychoseIcon1",
   },
   {
     id: "2",
     title: "Effective Cost Control ",
     description:
-      "With precise usage of items and automated inventory monitoring, it reduces overspending while controlling cost and boosting revenue generation.",
+      "With precise usage of items and automated inventory monitoring, it reduces overspending while controlling costs and boosting revenue generation.",
     icon: "testWhychoseIcon2",
   },
   {

@@ -127,7 +127,7 @@ export const CLOTHING_STORE_FEATURE_CARDS = [
     list: [
       {
         listheading:
-          "Identify slow-moving stock pricing gaps and revenue leakages",
+          "Identify slow-moving stock, pricing gaps, and revenue leakages",
       },
       {
         listheading:
@@ -159,7 +159,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     id: 3,
     title: "Real-Time Inventory Tracking",
     description:
-      "Real-time inventory in available on all sizes and colors. This will assist you in decreasing inventory shortages and excess in every store.",
+      "Real-time inventory is available on all sizes and colors. This will assist you in decreasing inventory shortages and excess in every store.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card3.webp",
   },
@@ -168,7 +168,7 @@ export const CLOTHING_STORE_KEY_FEATURES_CARDS = [
     id: 4,
     title: "Seamless Returns & Exchanges",
     description:
-      "The POS systems of clothing stores deal with returns and size swaps readily. All the actions are documented well to prevent confusion or revenue loss.",
+      "The POS system for clothing stores deals with returns and size swaps readily. All the actions are documented well to prevent confusion or revenue loss.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/clothing-store-pos/key-features-section/clothing-store-key-card4.webp",
   },
@@ -277,7 +277,7 @@ export const CLOTHING_STORE_TESTIMONIALS = [
   {
     id: "2",
     name: "Blake Henderson",
-    title: "Interior Decor Owner",
+    title: "Clothing Store Owner",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image10.webp",
     text: "We have a women's clothing shop, and stock management was a tense affair. The Owners Inventory’s POS has made our inventory up to date, our returns are hassle-free, and reports are clearer than ever. It has simplified our everyday tasks.",
   },
@@ -286,14 +286,14 @@ export const CLOTHING_STORE_TESTIMONIALS = [
     name: "Caleb Robinson",
     title: "Home Decor & Clothing Store Owner​",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image11.webp",
-    text: "We have several clothing stores, and manual synchronization of inventory between branches took hours daily. This POS system of Owners Inventory made it very clear. Our inventory is currently updated instantly, and the billing is instant even in the busy periods, and our staff has learned the system quite quickly. The insights and reports also allow us to know the styles that are working best. It has been a wonderful addition to our business.",
+    text: "We have several clothing stores, and manual synchronization of inventory between branches took hours daily. This POS system from Owners Inventory made everything clear. Our inventory is currently updated instantly, and the billing is instant even in the busy periods, and our staff has learned the system quite quickly. The insights and reports also allow us to know the styles that are working best. It has been a wonderful addition to our business.",
   },
   {
     id: "4",
     name: "Lily Mitchell",
     title: "Home Decor & Clothing Store Owner​",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image11.webp",
-    text: "We have hundreds of styles, sizes, and colors every season in our store, which makes it hard to be accurate. Everything seems to be organized after turning to the Owners' Inventory POS system. All our variants are traced, no confusion concerning exchanges, and customer profiles make us comprehend purchases preferences.",
+    text: "We have hundreds of styles, sizes, and colors every season in our store, which makes it hard to be accurate. Everything seems to be organized after turning to the Owners Inventory POS system. All our variants are traced, no confusion concerning exchanges, and customer profiles make us comprehend purchases preferences.",
   },
 ];
 
@@ -381,7 +381,7 @@ export const CLOTHING_STORE_TESTIMONIAL_FEATURES = [
     id: "6",
     title: "Easy for Staff",
     description:
-      "The interface is simple and comprehensible even to the first-time user. The training period is minimal, and the error is minimized.",
+      "The interface is simple and comprehensible even to the first-time user. The training period is minimal, and errors are minimized.",
     icon: "testWhychoseIcon6",
   },
   // {

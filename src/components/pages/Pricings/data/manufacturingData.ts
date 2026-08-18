@@ -37,8 +37,8 @@ export const manufacturingData: {
       bgColor: "rgba(56,172,204,0.1)",
       popular: true,
       features: [
-        "3 Production Floor",
-        "Unlimited Warehouse",
+        "3 Production Floors",
+        "Unlimited Warehouses",
         "1 Store (For Invoicing)",
         "1 POS Terminal",
         "Unlimited Users",
@@ -59,8 +59,8 @@ export const manufacturingData: {
       color: "#5588DF",
       bgColor: "rgba(85,136,223,0.1)",
       features: [
-        "Unlimited Production Floor",
-        "Unlimited Warehouse",
+        "Unlimited Production Floors",
+        "Unlimited Warehouses",
         "1 Store (For Invoicing)",
         "1 POS Terminal",
         "Unlimited Users",

@@ -116,6 +116,16 @@ const nextConfig: NextConfig = {
         destination: "/industries/warehouse-pos-system",
         permanent: true,
       },
+      {
+        source: "/resources/blog",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/resources",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

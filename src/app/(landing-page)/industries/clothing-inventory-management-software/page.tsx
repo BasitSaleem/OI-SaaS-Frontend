@@ -352,7 +352,7 @@ const Page = () => {
 
         <WhyChoosePOS
           heading="How Our Inventory Software Solves These Challenges"
-          paragraph="Owner’s Inventory simplifies clothing store operations by connecting sales, stock, suppliers, and reporting into one smart system. Every activity is automatically tracked and updated in real time."
+          paragraph="Owners Inventory simplifies clothing store operations by connecting sales, stock, suppliers, and reporting into one smart system. Every activity is automatically tracked and updated in real time."
           cards={CLOTHING_INVENTORY_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="clothingInventory"

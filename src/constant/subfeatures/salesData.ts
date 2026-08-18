@@ -5,7 +5,7 @@ export const SALES_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Quickly scan barcodes, offer a wide range of discount options, and real-time inventory display - ideal in electronics, grocery, cosmetics, or other fast-moving retail environments.",
+      "Quickly scan barcodes, offer a wide range of discount options, and real-time inventory show - ideal in electronics, grocery, cosmetics, or other fast-moving retail environments.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -27,7 +27,7 @@ export const SALES_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Streamline big orders with tiered pricing, bulk billing, and automated tracking with multiple warehouses, designed to make your supply chain robust and reliable.",
+      "Streamline big orders with tiered pricing, bulk billing, and tracking across multiple warehouses, designed to make your supply chain robust and reliable.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
     link: "/industries/warehouse-pos-system",
@@ -61,7 +61,7 @@ export const SALES_FEATURES_CARDS = [
     id: 1,
     title: "Manage All Sales Documents",
     description:
-      "Our sales and order management software enables you to easily manage quotations, sales orders, and invoices in a single location. Be efficient and maintain a seamless flow between enquiry and delivery.",
+      "Our sales and order management software enables you to easily manage quotations, sales orders, and invoices in a single location. Be efficient and maintain a seamless flow between inquiry and delivery.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/sales-order/features-section/manage-all-sales-doc.webp",
   },
@@ -69,7 +69,7 @@ export const SALES_FEATURES_CARDS = [
     id: 2,
     title: "Smart Record Viewing",
     description:
-      "See everything in a simple dashboard with search, filters, page breaks, and column visibility. Our current POS point of sale and stock management system maintains your data uncluttered and reachable.",
+      "See everything in a simple dashboard with search, filters, page breaks, and column visibility. Our current POS and stock management system maintains your data uncluttered and accessible.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/sales-order/features-section/smart-record-view.webp",
   },
@@ -93,7 +93,7 @@ export const SALES_FEATURES_CARDS = [
     id: 5,
     title: "Orders Board and Status Stages",
     description:
-      "Keep track of each order by using a visual board that has distinct statuses including To Do, In Progress, and Done. Ideal to control workflow in your sales and order management system.",
+      "Keep track of each order by using a visual board that has distinct statuses including To Do, In Progress, and Done. Ideal for controlling your workflow in your sales and order management system.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/sales-order/features-section/order-stage.webp",
   },
@@ -136,7 +136,7 @@ export const SALES_FAQS = [
     id: 1,
     question: "What is sales and order management, and why is it important?",
     answer:
-      "Sales and order management is the process of monitoring all sales made on the orders placed from delivery. An effective system guarantees precision, minimizes delays, and aids in customer satisfaction.",
+      "Sales and order management is the process of tracking every sale, from the moment an order is placed to delivery. An effective system guarantees precision, minimizes delays, and garauntees in customer satisfaction.",
   },
   {
     id: 2,
@@ -148,9 +148,9 @@ export const SALES_FAQS = [
   {
     id: 3,
     question:
-      "Is this a modern POS point of sale with a stock management system?",
+      "Is this a modern POS with a stock management system?",
     answer:
-      "Yes. Owners Inventory is a combination of powerful POS and full inventory control capabilities, which provides you with one platform to bill, track sales, and manage products.",
+      "Yes. Owners Inventory is a combines powerful POS and full inventory control into one platform. which provides you with one platform to bill, track sales, and manage products.",
   },
   {
     id: 4,
@@ -174,7 +174,7 @@ export const SALES_TESTIMONIALS = [
     name: "Laura Martinez",
     title: "Inventory Lead, ShopSphere",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl5.webp",
-    text: `We have been using Owners Inventory for more than a year and it has really changed the way we do business. Orders, returns and stock levels are so much easier to track now. The system provides us with total control of our inventory operations process and makes everything transparent. Moreover, their support team is never too slow to render assistance whenever we get stuck. It has been a wonderful experience since the beginning.`,
+    text: `We have been using Owners Inventory for more than a year and it has really changed the way we do business. Orders, returns, and stock levels are so much easier to track now. The system provides us with total control of our inventory operations process and makes everything transparent. Moreover, their support team is never too slow to render assistance whenever we get stuck. It has been a wonderful experience since the beginning.`,
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg",
     color: "var(--primary-purple)",
   },
@@ -192,7 +192,7 @@ export const SALES_TESTIMONIALS = [
     name: "Rebecca Moore",
     title: "Operations Director, CoreCommerce",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl6.webp",
-    text: `Our retail store is more efficiently managed now. We are able to view real-time stock levels, issue invoices on-the-fly and learn about customer requirements. The system actually assists us to keep on top of each sale.`,
+    text: `Our retail store is more efficiently managed now. We are able to view real-time stock levels, issue invoices on-the-fly, and learn about customer requirements. The system actually assists us to keep on top of each sale.`,
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/double-coma-icon.svg",
     color: "var(--primary-purple)",
   },
@@ -201,7 +201,7 @@ export const SALES_TESTIMONIALS = [
     name: "Andrew Collins",
     title: "Business Owner, SmartGrocers",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy6.webp",
-    text: `Owners Inventory has totally transformed the manner of sale and stockings. We had to deal with incomplete records and handwritten updates before we used it. Everything is now synchronized and can be seen in real time. The single dashboard identifies each and every sale and order without any beat. It is easy, trustworthy and has genuinely eased our overall workflow.`,
+    text: `Owners Inventory has totally transformed the manner of sale and stocking. We had to deal with incomplete records and handwritten updates before we used it. Everything is now synchronized and can be seen in real time. The single dashboard identifies each and every sale and order. It is easy, user friendly and has genuinely eased our overall workflow.`,
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/review-section/coma-green.svg",
     color: "var(--primary-teal)",
   },

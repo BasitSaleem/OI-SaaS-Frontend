@@ -4,19 +4,44 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export const ReadTimeBadge = ({ readTime }: { readTime: string }) => (
+export const ReadTimeBadge = ({
+  readTime,
+}: {
+  readTime: string;
+}) => (
   <div className="absolute bottom-3 right-3 flex items-center gap-1 bg-[rgba(51,51,51,0.6)] backdrop-blur-[2px] px-2 py-1 rounded-full">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="12" r="9" stroke="white" strokeWidth="1.5" />
-      <path d="M12 7V12L15 15" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="9"
+        stroke="white"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M12 7V12L15 15"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
+
     <span className="text-white text-[12px] font-medium font-['Onest'] uppercase whitespace-nowrap leading-[1.6]">
       {readTime}
     </span>
   </div>
 );
 
-export const CategoryBadge = ({ category }: { category: string }) => (
+export const CategoryBadge = ({
+  category,
+}: {
+  category: string;
+}) => (
   <div className="absolute top-3 left-3 flex items-center backdrop-blur-[8px] bg-[rgba(224,255,251,0.85)] px-3 py-[6px] rounded-full h-[28px]">
     <span className="text-[#008D6E] text-[14px] font-medium font-['Onest'] whitespace-nowrap leading-[1.6]">
       {category}
@@ -24,23 +49,51 @@ export const CategoryBadge = ({ category }: { category: string }) => (
   </div>
 );
 
-export const DateViews = ({ date, views }: { date?: string; views: string }) => (
+export const DateViews = ({
+  date,
+  views,
+}: {
+  date?: string;
+  views: string;
+}) => (
   <div className="flex items-center gap-2">
     {date && (
       <span className="text-[14px] font-medium font-['Onest'] text-[#666] whitespace-nowrap leading-[1.6]">
         {date}
       </span>
     )}
-    {date && <span className="w-[5px] h-[5px] rounded-full bg-[#999] flex-shrink-0" />}
-    <div className="flex items-center gap-1">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#999" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="12" cy="12" r="3" stroke="#999" strokeWidth="1.5" />
+
+    {/* {date && (
+      <span className="w-[5px] h-[5px] rounded-full bg-[#999] flex-shrink-0" />
+    )} */}
+
+    {/* <div className="flex items-center gap-1">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+          stroke="#999"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="3"
+          stroke="#999"
+          strokeWidth="1.5"
+        />
       </svg>
+
       <span className="text-[14px] font-medium font-['Onest'] text-[#666] whitespace-nowrap leading-[1.6]">
         {views}
       </span>
-    </div>
+    </div> */}
   </div>
 );
 
@@ -63,11 +116,13 @@ export const AuthorBlock = ({
         className="w-full h-full object-cover"
       />
     </div>
+
     <div className="flex flex-col min-w-0">
       <span className="font-semibold text-base font-['Onest'] text-[#231F20] leading-[1.4] truncate">
         {authorName}
       </span>
-      <span className="font-medium text-xs font-['Onest'] text-[#795CF5] leading-[1.4] truncate">
+
+      <span className="font-medium uppercase text-xs font-['Onest'] text-[#795CF5] leading-[1.4] truncate">
         {authorDesignation}
       </span>
     </div>
@@ -83,14 +138,6 @@ export const ReadArticleButton = ({
   always?: boolean;
   fullWidth?: boolean;
 }) => (
-  /* Mobile/tablet: always visible (no hover there). Desktop: hidden by
-     default, smoothly revealed on hover (1s) unless always=true.
-     The reveal animates grid-template-rows 0fr→1fr + opacity, which grows the
-     card height. This no longer causes the slider to shiver because
-     useEqualizeHeadings only re-runs on WIDTH changes, so the per-frame height
-     growth during this transition is ignored.
-     after:absolute after:inset-0 stretches the link to cover the entire card
-     (card must have position:relative) so clicking anywhere navigates. */
   <div
     className={[
       "grid transition-[grid-template-rows,opacity] duration-[600ms] ease-in-out",

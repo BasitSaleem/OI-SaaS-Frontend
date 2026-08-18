@@ -23,7 +23,7 @@ const Page = () => {
     <div>
       <SubFeaturesHero
         title="Connect Businesses through Smart Integrations"
-        description="Integrate operations with smooth third-party platforms and tools to unify your business with Owners Inventory’s Integration Module. Accounting, payments and marketing are all connected together by our integration-ready service."
+        description="Integrate operations with third-party platforms and tools seamlessly to unify your business with Owners Inventory’s Integration Module. Accounting, payments, and marketing are all connected by our integration-ready service."
         image={heroBanner}
         imageClassName="mt-11 max-w-[1000px]"
         ctaDesc="Get Started for Free"
@@ -36,7 +36,7 @@ const Page = () => {
         paragraph="Owners Inventory helps brands like Al-Asif, Sportify, and ASK Food Industries connect their stores, manage inventory, and streamline financial processes, enabling them to scale smoothly with powerful integrations."
       />
       <KeyHighlights
-        heading="Why Integrations Matters"
+        heading="Why Integrations Matter"
         features={INTEGRATION_FEATURES_CARDS}
       />
 
@@ -62,7 +62,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
         <FaqSection
           heading="Everything You Should Know About Owners Inventory Integration"
-          paragraph="Gain the clarity you require regarding the powerful inventory management reporting tools of Owners Inventory. We have also addressed the most frequently asked questions, so you can make the most of your point of sale reporting system, from setup to insights."
+          paragraph="Gain the clarity you need about how Owners Inventory connects with the tools you already use. We've addressed the most frequently asked questions about our integration module, so you can make the most of your Shopify, WooCommerce, QuickBooks, and payment gateway connections, from setup to syncing."
           faqs={INTEGRATION_FAQS}
         />
       </div>

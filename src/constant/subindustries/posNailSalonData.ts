@@ -35,7 +35,7 @@ export const NAIL_SALON_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon4",
     title: "No Visibility into Technician Performance",
     description:
-      "There is no way to determine who is working all their time, who has an open spot, and who's the most profitable with a decentralized system. Schedule and staff based on guesswork instead of data.",
+      "There is no way to determine who is working at full capacity, who has an open spot, and who's the most profitable with a decentralized system. Schedule and staff based on guesswork instead of data.",
   },
   {
     id: "5",
@@ -80,7 +80,7 @@ export const NAIL_SALON_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon4",
     title: "Technician Scheduling and Performance Tracking",
     description:
-      "Access availability, utilization and appointment load for technicians in real time. Place services with the appropriate team members, determine gaps to be filled and monitor revenue per technician.",
+      "Access availability, utilization and appointment load for technicians in real time. Assign services to the appropriate team members, determine gaps to be filled and monitor revenue per technician.",
   },
   {
     id: "5",
@@ -255,7 +255,7 @@ export const NAIL_SALON_TESTIMONIALS = [
     name: "Emily R.",
     title: "Nail Salon Owner",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image76.webp",
     text: "What used to be a lot of emails, sticky notes and spreadsheets is now all in a single location, and our clients receive a much more professional experience when booking a bridal party.",
   },
   {
@@ -263,15 +263,15 @@ export const NAIL_SALON_TESTIMONIALS = [
     name: "Claire M.",
     title: "Technician Manager",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
-    text: "It saved our technicians a lot of hours each week as they used to be asking us constantly for booking details and client notes etc., but now it's all on their phone and clients are notified automatically.",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image77.webp",
+    text: "It saved our technicians a lot of hours each week as they used to ask us constantly for booking details and client notes etc., but now it's all on their phone and clients are notified automatically.",
   },
   {
     id: "3",
     name: "James T.",
     title: "Salon Owner",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image76.webp",
     text: "Since switching to Owners Inventory, we've stopped running out of popular colors mid-week. The low-stock alerts alone have saved us from so many last-minute supplier calls.",
   },
   {
@@ -279,7 +279,7 @@ export const NAIL_SALON_TESTIMONIALS = [
     name: "Priya N.",
     title: "Online Booking Manager",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image85.webp",
     text: "We introduced an online booking system and were concerned about overhauling two systems, but with Owners Inventory it's all done at once and there's never been a missed appointment.",
   },
   {
@@ -287,7 +287,7 @@ export const NAIL_SALON_TESTIMONIALS = [
     name: "Robert A.",
     title: "Boutique Owner",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image78.webp",
     text: "The reporting alone is worth it. I can finally see which services actually make money and which ones I should stop discounting.",
   },
   {
@@ -295,7 +295,7 @@ export const NAIL_SALON_TESTIMONIALS = [
     name: "Hannah K.",
     title: "Front Desk Coordinator",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image78.webp",
     text: "It was set up quickly and everyone was familiar with it within a day of installing it, and they have already found that the daily stock checks are paying for the system.",
   },
 ];

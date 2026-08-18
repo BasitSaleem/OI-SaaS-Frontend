@@ -89,7 +89,7 @@ const BlogDetailHero: React.FC<BlogDetailHeroProps> = ({
             >
               <div className="relative z-[2] flex flex-col items-center justify-center text-center w-full wrapper gap-6 md:gap-7">
                 {/* Meta row — date · read time · views */}
-                <div
+                {/* <div
                   ref={metaRef}
                   style={{ opacity: 0, transform: "translateY(20px)" }}
                   className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 md:gap-x-8"
@@ -106,7 +106,7 @@ const BlogDetailHero: React.FC<BlogDetailHeroProps> = ({
                     <BlogEyeIcon />
                     {views}
                   </span>
-                </div>
+                </div> */}
 
                 {/* Heading */}
                 <h1

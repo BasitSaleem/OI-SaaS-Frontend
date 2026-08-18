@@ -5,7 +5,7 @@ export const PRODUCT_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Easily handle hundreds of SKUs and seasonal products. Manage prices, track sales and monitor moving inventory. Perfect for retail establishments like supermarkets, cosmetics stores, etc.",
+      "Easily handle hundreds of SKUs and seasonal products. Manage prices, track sales and monitor fast-moving inventory. Perfect for retail establishments like supermarkets, cosmetics stores, etc.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -61,7 +61,7 @@ export const PRODUCT_FEATURES_CARDS = [
     id: 1,
     title: "Product Management and Creation",
     description:
-      "Add and Manage Products in Inventory Management without any difficulty. Enter information such as the name, price, description, barcode, SKU, and product name. Activate or deactivate your products at any time to maintain consistency and up-to-date cataloging.",
+      "Add and Manage Products in Inventory Management without any difficulty. Enter information such as the name, price, description, barcode, and SKU. Activate or deactivate your products at any time to maintain consistency and up-to-date cataloging.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/product-management.webp",
   },
@@ -69,7 +69,7 @@ export const PRODUCT_FEATURES_CARDS = [
     id: 2,
     title: "Bulk Imports and Uploads",
     description:
-      "Utilize the bulk upload tool to save significant time. Through Excel and CSV files, easily import a number of items, and then export them as needed. Handle updates easily without any additional changes or errors.",
+      "Utilize the bulk upload tool to save significant time. Through Excel and CSV files, easily import a number of items, and then export them as needed. Handle updates easily, without introducing errors.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/bulk-imports.webp",
   },
@@ -77,7 +77,7 @@ export const PRODUCT_FEATURES_CARDS = [
     id: 3,
     title: "Search & Filters",
     description:
-      "Dynamic charts and graphs can help you understand your inventory more quickly.  It's easy to see patterns and make decisions based on data when you use visual breakdowns.",
+      "Find any product in seconds with powerful search and filtering tools. Narrow results by category, price, stock status, supplier, or any custom attribute to get exactly what you're looking for, without scrolling through your entire catalog.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/search-filter.webp",
   },
@@ -85,7 +85,7 @@ export const PRODUCT_FEATURES_CARDS = [
     id: 4,
     title: "Price Management",
     description:
-      "It’s easy to manage and update cost, selling, and discount prices, all at one place. Easily set active or inactive listings and promotions.",
+      "It’s easy to manage and update cost, selling, and discount prices, all in one place. Easily set active or inactive listings and promotions.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/features-section/price-management.webp",
   },
@@ -146,7 +146,7 @@ export const PRODUCT_FAQS = [
     id: 4,
     question: "Is it suitable for my business type?",
     answer:
-      "Yes. Owners Inventory is designed to accommodate all types of business models, whether you’re the single store owner or a mega retail chain.",
+      "Yes. Owners Inventory is designed to accommodate all types of business models, whether you’re a single-store owner or a mega retail chain.",
   },
   {
     id: 5,
@@ -162,7 +162,7 @@ export const PRODUCT_TESTIMONIALS = [
     name: "Nicole Baker",
     title: "Founder, Baker Supplies",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl13.webp",
-    text: `It used to take hours and hours of manual entry to Manage Items in the POS System. But now with the help of Owners Inventory, we can upload or modify products in seconds. And because of that the process is now very easy and reliable.`,
+    text: `It used to take hours and hours of manual entry to manage Items in the POS System. But now with the help of Owners Inventory, we can upload or modify products in seconds. And because of that, the process is now very easy and reliable.`,
   },
   {
     id: "product-testimonial-2",
@@ -214,7 +214,7 @@ export const PRODUCT_WHY_CHOOSE_CARDS = [
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/products-page/product-control.svg",
     title: "Product Control",
     description:
-      "Manage all product details from every retailer in one dashboard, no switching systems.",
+      "Manage all product details from every location in one dashboard, no switching systems.",
   },
   {
     id: "product-why-choose-5",

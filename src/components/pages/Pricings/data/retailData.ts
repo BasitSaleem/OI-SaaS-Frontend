@@ -35,8 +35,8 @@ export const retailData: {
       bgColor: "rgba(56,172,204,0.1)",
       popular: true,
       features: [
-        "3 Store",
-        "6 POS Terminal",
+        "3 Stores",
+        "6 POS Terminals",
         "1 Warehouse",
         "Unlimited Users",
         "Unlimited Products",
@@ -56,9 +56,9 @@ export const retailData: {
       color: "#5588DF",
       bgColor: "rgba(85,136,223,0.1)",
       features: [
-        "Unlimited Store",
-        "Unlimited POS Terminal",
-        "Unlimited Warehouse",
+        "Unlimited Stores",
+        "Unlimited POS Terminals",
+        "Unlimited Warehouses",
         "Unlimited Users",
         "Unlimited Products",
         "Unlimited Orders & Invoices",

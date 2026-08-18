@@ -5,7 +5,7 @@ export const REPORTS_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "See the whole picture with point of sale reporting systems that monitor daily sales, high-moving products, and inventory turnover - so you can maximize efficiency and profit margin.",
+      "See the whole picture with point of sale reporting systems that monitor daily sales, fast-moving products, and inventory turnover, so you can maximize efficiency and profit margin.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -49,7 +49,7 @@ export const REPORTS_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Receive specific point of sale system reports of best-selling styles, seasonal performance, and size-based inventory making stock planning easy and evidence-based.",
+      "Receive specific point of sale system reports of best-selling styles, seasonal performance, and size-based inventory, making stock planning easy and evidence-based.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
@@ -61,7 +61,7 @@ export const REPORTS_FEATURES_CARDS = [
     id: 1,
     title: "Comprehensive Inventory Reporting",
     description:
-      "You can manage and get detailed inventory reports for both your store and your warehouse. You can view everything that happens with each product in one place.",
+      "You can access detailed inventory reports for both your store and your warehouse. You can view everything that happens with each product in one place.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/reports-page/features-section/comprehensive-reporting.webp",
   },
@@ -69,7 +69,7 @@ export const REPORTS_FEATURES_CARDS = [
     id: 2,
     title: "Stock Visibility in Real Time",
     description:
-      "Display the right amount of stock, how many items are in stock, and where they are available. Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
+      "Display the right amount of stock, and their availibility. Get updates right away that help you avoid running out of stock or having an excessive amount of it.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/reports-page/features-section/stock-visibility.webp",
   },
@@ -85,7 +85,7 @@ export const REPORTS_FEATURES_CARDS = [
     id: 4,
     title: "Warehouse vs. Store Comparison",
     description:
-      "Look at the stock levels in the warehouse and the store next to each other. Get a better idea of how your inventory is distributed out and make transfers between locations more efficient.",
+      "Look at the stock levels in the warehouse and the store next to each other. Get a better idea of how your inventory is distributed and make transfers between locations more efficient.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/reports-page/features-section/store-comparison.webp",
   },
@@ -126,7 +126,7 @@ export const REPORTS_FAQS = [
     id: 2,
     question: "Does the system include POS reports as well?",
     answer:
-      "Yes. Our point-of-sale report solution provides daily sales reports, high-selling items, employee performance, and transaction records to maintain every sale transparent and traceable.",
+      "Yes. Our point-of-sale report solution provides daily sales reports, high-selling items, employee performance, and transaction records to keep every sale transparent and traceable.",
   },
   {
     id: 3,
@@ -144,7 +144,7 @@ export const REPORTS_FAQS = [
     id: 5,
     question: "How often are the reports updated?",
     answer:
-      "Our inventory management reports and point of sale reporting systems always keep all their data up to date in real time, so your decision is informed with the most up-to-date information available.",
+      "Our inventory management reports and point of sale reporting systems always keep all their data up to date in real time, so your decisions are informed with the most up-to-date information available.",
   },
 ];
 
@@ -154,21 +154,21 @@ export const REPORTS_TESTIMONIALS = [
     name: "Ryan Cooper",
     title: "Operations Analyst, MarketLink",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy16.webp",
-    text: `Prior to Owners Inventory, we were operating on spread sheets and manual tracking that is prone to confusion and overstocking. Everything is now centralized and real time visible. The reporting dashboard provides us with an excellent opportunity to see what sells, what does not, and where to optimize. That is as though we had a data analyst embedded within our day-to-day processes.`,
+    text: `Prior to Owners Inventory, we were operating on spreadsheets and manual tracking that is prone to confusion and overstocking. Everything is now centralized and visible in real-time. The reporting dashboard provides us with an excellent opportunity to see what sells, what does not, and where to optimize. It's as though we had a data analyst embedded in our day-to-day processes`,
   },
   {
     id: "reports-testimonial-2",
     name: "Claire Roberts",
     title: "Logistics Coordinator, RetailNet",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl15.webp",
-    text: `Managing a cafe that is busy implies that every ingredient and each order counts. Owners Inventory allows us to monitor menu performance, food waste, and plan foods to prepare on the following day. The real-time POS reports are unbelievably accurate - the system seems to know about our rhythm of business.`,
+    text: `Managing a cafe that is busy means that every ingredient and each order counts. Owners Inventory allows us to monitor menu performance and food waste, and plan meals for the following day. The real-time POS reports are unbelievably accurate, the system seems to know about our rhythm of business.`,
   },
   {
     id: "reports-testimonial-3",
     name: "Jonathan Brooks",
     title: "Director, Unified Retail",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy17.webp",
-    text: `We operate several pharmacies and this system maintains all these updated stock, expiry dates, and daily sales. The support team is attentive and professional.`,
+    text: `We operate several pharmacies and this system keeps our stock, expiry dates, and daily sales updated.. The support team is attentive and professional.`,
   },
   {
     id: "reports-testimonial-4",
@@ -197,7 +197,7 @@ export const REPORTS_WHY_CHOOSE_CARDS = [
   {
     id: "reports-why-choose-3",
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/people-page/why-chose/scalable-for-growth.svg",
-    title: "Unique Reports to Each Requirement",
+    title: "Unique Reports for Each Requirement",
     description:
       "Design custom inventory management reports to suit your objectives, such as daily summaries or detailed trend analysis.",
   },

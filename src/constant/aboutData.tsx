@@ -66,7 +66,7 @@ export const PHILOSOPHY_CARDS = [
   {
     iconName: "complication",
     title: "Power without complication",
-    description: "Power without being complicated: Simple to operate, yet able to perform complicated tasks.",
+    description: "Power without complexity: simple to operate, yet capable of handling advanced tasks.",
   },
   {
     iconName: "centralized",
@@ -76,12 +76,12 @@ export const PHILOSOPHY_CARDS = [
   {
     iconName: "scalabilityExpension",
     title: "Scalability for Expansion",
-    description: "Built to scale grow from a single store to multi-location operations with Owners Inventory.",
+    description: "Built to scale and grow from a single store to multi-location operations with Owners Inventory.",
   },
   {
     iconName: "ownerControl",
-    title: "Owner's Control",
-    description: "Power squarely in the hands of the business owners: Flexibility to run operations at your own will.",
+    title: "Owners Control",
+    description: "Power squarely in the hands of the business owners: Flexibility to run operations at your own pace.",
   },
 ];
 
@@ -89,7 +89,7 @@ export const WHAT_WE_DO_CARDS = [
   {
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose/stock-levels.svg",
     title: "Accurate Stock Levels",
-    description: "Eliminate over-selling and stockout with precise, real-time tracking.",
+    description: "Eliminate over-selling and stockouts with precise, real-time tracking.",
   },
   {
     icon: "https://d2qlv5xtew5ayb.cloudfront.net/assets/about-us/why-chose/simplified-perchasing.svg",
@@ -128,7 +128,7 @@ export const WHO_WE_SERVE_CARDS = [
 
 export const PHILOSOPHY_CONTENT = {
   heading: "Our Philosophy",
-  paragraph: "At Owners Inventory, we are of the opinion that visibility and control are the real owners. Business owners can make smarter decisions, minimize inefficiencies, and scale with confidence when they have a clear picture of what is going on in their business. We have a couple of principles that our platform is based on.",
+  paragraph: "At Owners Inventory, We believe visibility and control are what truly empower owners. Business owners can make smarter decisions, minimize inefficiencies, and scale with confidence when they have a clear picture of what is going on in their business. We have a couple of principles that our platform is based on.",
 };
 
 export const LOOKING_AHEAD_CONTENT = {

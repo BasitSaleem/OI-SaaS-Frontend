@@ -28,7 +28,7 @@ export const ELECTRONICS_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon3",
     title: "Stock Visibility Gap",
     description:
-      "Most electronics stores that sell both in-store and online are running two separate stock counts. A customer buys the last unit of a laptop in-store on a Saturday afternoon. That same unit is still shows as available on the website. By Monday, there's a canceled order, a refund to process, and a customer who won't be back.",
+      "Most electronics stores that sell both in-store and online are running two separate stock counts. A customer buys the last unit of a laptop in-store on a Saturday afternoon. That same unit still shows as available on the website. By Monday, there's a canceled order, a refund to process, and a customer who won't be back.",
   },
   {
     id: "4",
@@ -59,7 +59,7 @@ export const ELECTRONICS_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon3",
     title: "Counter Sales Update Online Stock Instantly",
     description:
-      "When a sale is processed at the electronic POS, inventory updates immediately across all connected channels. Your online store, whether running through Shopify, WooCommerce, or Owners Inventory's built-in eCommerce module, reflects the same stock count as your physical floor.",
+      "When a sale is processed at the electronics POS, inventory updates immediately across all connected channels. Your online store, whether running through Shopify, WooCommerce, or Owners Inventory's built-in eCommerce module, reflects the same stock count as your physical floor.",
   },
   {
     id: "4",
@@ -205,15 +205,15 @@ export const ELECTRONICS_TESTIMONIALS = [
     name: "Daniel Reyes",
     title: "Owner, Techline Electronics, Austin TX",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image84.webp",
     text: "We were tracking serial numbers in a spreadsheet that three people updated inconsistently. We had warranty claims we couldn't verify and returns we couldn't confirm. After switching to Owners Inventory, every unit is logged at receiving and tied to the sale. Our first warranty dispute after the switch took four minutes to resolve instead of a full afternoon of digging.",
   },
   {
     id: "2",
-    name: "Priya Shetty",
+    name: "Emily Johnson",
     title: "Operations Manager, Voltage Retail, Chicago IL",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image84.webp",
     text: "We run two locations and a Shopify store. Before, we had no reliable way to know what stock we had where, and we'd oversell online twice a month at minimum. Owners Inventory synced everything. Overselling stopped in the first week. We now transfer stock between locations through the platform instead of driving units over without any record.",
   },
   {
@@ -221,7 +221,7 @@ export const ELECTRONICS_TESTIMONIALS = [
     name: "Marcus Webb",
     title: "Founder, CoreTech Store, Seattle WA",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image85.webp",
     text: "The variant management is what sold me. I carry about 35 laptop models, each with four or five configuration options. That's 150-plus SKUs to track. The old system lumped them together and the counts were always wrong. Now each variant has its own count, its own alert threshold, and its own reorder history. I stopped over-ordering slow configurations and stopped running out of the fast ones.",
   },
 ];
@@ -250,7 +250,7 @@ export const ELECTRONICS_FAQS = [
   {
     id: "4",
     question:
-      "We have over 200 SKUs across multiple brands. How long does the pos system for an electronics store setup actually take?",
+      "We have over 200 SKUs across multiple brands. How long does setting up the POS system for an electronics store actually take?",
     answer:
       "Based on onboarding data from Owners Inventory customers, most electronics retailers with large catalogs are operational within a day. Products can be imported in bulk via CSV, and variants are built out from the parent product rather than entered one by one. If you're migrating from another system, the support team helps with the data transfer.",
   },
@@ -266,7 +266,7 @@ export const ELECTRONICS_FAQS = [
 export const ELECTRONICS_TESTIMONIAL_DATA = {
   heading: "What Our Clients Say",
   paragraph: "",
-  secondHeading: "Don't wait until a stock discrepancy costs you a sale",
+  secondHeading: "Don't Wait Until a Stock Discrepancy Costs You a Sale",
   secondDescription:
     "Set up Owners Inventory in a day and run your first real shift on accurate data.",
   whyChooseTitle:
@@ -279,7 +279,7 @@ export const ELECTRONICS_TESTIMONIAL_FEATURES = [
   {
     id: "1",
     title: "Serial Number Tracking Stops Return Fraud",
-    description: "Electronics have some of the highest return fraud rates in retail, according to the NRF's 2023 retail theft report. When a device is sold with its serial number and IMEI tied to the transaction, a customer can't swap in a different unit at returns. The record is already there, and staff don't need to make a judgment call.",
+    description: "Electronics have some of the highest return fraud rates in retail, according to the NRF's 2023 retail theft report. When a device is sold with its serial number and IMEI tied to the transaction, a customer can't swap in a different unit during a return. The record is already there, and staff don't need to make a judgment call.",
     icon: "testWhychoseIcon1",
   },
    {

@@ -23,15 +23,18 @@ const inter = Inter({
   display: "swap",
 });
 
+import { getRobotsMetadata } from "@/utils/robots";
+
+const isStaging = process.env.NEXT_PUBLIC_APP_ENV === "staging";
+
 export const metadata: Metadata = {
   title: "Owners Inventory | Grow Faster with Smarter Tools",
   description: "Grow Faster with Smarter Inventory Tools. Experience the next generation of inventory management with Owners Inventory.",
   keywords: ["inventory management", "POS system", "business tools", "SaaS"],
   publisher: "Owners Inventory",
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: getRobotsMetadata(),
+
+
   icons: {
     icon: [
       {
@@ -87,7 +90,7 @@ export default function RootLayout({
                 height="1"
                 width="1"
                 style={{ display: "none" }}
-                src="https://www.facebook.com/tr?id=1435291848047613&ev=PageView&noscript=1"
+                src="https://www.facebook.com/tr?id=1083033820953659&ev=PageView&noscript=1"
               />
             </noscript>
             <ScrollToTop />
