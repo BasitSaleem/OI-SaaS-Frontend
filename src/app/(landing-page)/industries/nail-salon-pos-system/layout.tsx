@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nail Salon POS System for Scheduling and Commission Tracking",
-  description: "Nail salon POS system to manage client appointments, automate technician commission splitting, track retail polish or gel inventory, and run multi-location salons.",
-  keywords: ["nail salon pos system", "salon billing software", "appointment scheduling pos", "technician commission tracker"],
+  title: "Nail Salon POS System | Owners Inventory",
+  description: "Manage bookings, inventory, and technician schedules with POS software built for nail salons. Real-time stock tracking. Start your free trial.",
+  keywords: [" nail salon pos system", "best pos system for nail salon", "salon pos software", "nail salon point of sale", "pos for nail salon", "nail salon booking software", "nail salon inventory management", "salon appointment scheduling software"],
   alternates: {
     canonical: "https://ownersinventory.com/industries/nail-salon-pos-system",
   },

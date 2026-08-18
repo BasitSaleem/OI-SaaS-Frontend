@@ -46,149 +46,99 @@ const Page = () => {
             "@context": "https://schema.org",
             "@graph": [
               {
-                "@type": "SoftwareApplication",
-                "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
-                "applicationCategory": "BusinessApplication",
-                "operatingSystem": "Web, iOS, Android",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "0",
-                  "priceCurrency": "USD",
-                  "description": "Free trial available"
-                },
-                "description": "Owners Inventory's garden center POS system tracks seasonal items, plant variants, bulk products, and supplier purchase orders from one unified dashboard.",
-                "featureList": [
-                  "Variant-level inventory tracking",
-                  "Bulk import and seasonal catalogs",
-                  "Purchase order management",
-                  "Real-time inventory sync",
-                  "Staff access controls",
-                  "Shift reports by category"
-                ]
-              },
-              {
-                "@type": "WebPage",
-                "name": "Garden Center POS System Built for Nursery and Plant Retail Operations | Owners Inventory",
-                "url": "https://www.ownersinventory.com/industries/garden-center-pos-system",
-                "description": "Run your garden center and nursery with plant inventory, bulk material pricing, landscaper discounts, and online store sync using Owners Inventory's POS software.",
-                "inLanguage": "en",
-                "isPartOf": {
-                  "@type": "WebSite",
-                  "name": "Owners Inventory",
-                  "url": "https://www.ownersinventory.com"
-                },
-                "breadcrumb": {
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://www.ownersinventory.com"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "name": "Industries",
-                      "item": "https://www.ownersinventory.com/industries"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 3,
-                      "name": "Garden Center",
-                      "item": "https://www.ownersinventory.com/industries/garden-center-pos-system"
-                    }
-                  ]
-                }
-              },
-              {
-                "@type": "Organization",
-                "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
-                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "contactType": "Customer Support",
-                  "availableLanguage": "English",
-                  "url": "https://www.ownersinventory.com/contact"
-                },
-                "sameAs": [
-                  "https://www.facebook.com/ownersinventory",
-                  "https://www.instagram.com/ownersinventory",
-                  "https://www.linkedin.com/company/owners-inventory"
-                ]
-              },
-              {
-                "@type": "Product",
-                "name": "Garden Center POS System",
-                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
-                "description": "Nursery POS software to manage bulk items (soil, mulch), track live plants, and configure landscaper pricing packages from a unified console.",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Owners Inventory"
-                },
-                "url": "https://www.ownersinventory.com/industries/garden-center-pos-system",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "0",
-                  "priceCurrency": "USD",
-                  "availability": "https://schema.org/InStock",
-                  "description": "Free trial available. Book a demo to get started."
-                }
-              },
-              {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
+                "@type": "BreadcrumbList",
+                "@id": "https://ownersinventory.com/industries/garden-center-pos-system/#breadcrumb",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Rachel Kowalski"
-                      },
-                      "reviewBody": "We were placing supplier orders based on what we remembered selling last spring. Switched to Owners Inventory and pulled actual SKU movement reports for the first time. Our overstock on slow-turn perennials dropped by about 30% the first season.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
+                    "name": "Home",
+                    "item": "https://ownersinventory.com"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Marcus Obi"
-                      },
-                      "reviewBody": "Variant tracking changed how we manage our container inventory. Before, we'd reorder 1-gallon shrubs not realizing we had 40 units of the 3-gallon sitting in the back. Now each size has its own count and its own alert. We haven't had a duplicate overstock issue since we set it up.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
+                    "name": "Industries",
+                    "item": "https://ownersinventory.com/industries"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Garden Center POS System",
+                    "item": "https://ownersinventory.com/industries/garden-center-pos-system"
                   }
                 ]
               },
               {
+                "@type": "WebPage",
+                "@id": "https://ownersinventory.com/industries/garden-center-pos-system/#webpage",
+                "url": "https://ownersinventory.com/industries/garden-center-pos-system",
+                "name": "Garden Center POS System Built for Nursery and Plant Retail Operations | Owners Inventory",
+                "description": "Garden center POS software with variant-level plant inventory tracking, seasonal catalog management, multi-supplier purchase orders, and real-time sync across in-store and online sales.",
+                "isPartOf": {
+                  "@id": "https://ownersinventory.com/#website"
+                },
+                "about": {
+                  "@id": "https://ownersinventory.com/#software"
+                },
+                "breadcrumb": {
+                  "@id": "https://ownersinventory.com/industries/garden-center-pos-system/#breadcrumb"
+                },
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://ownersinventory.com/#organization",
+                "name": "Owners Inventory",
+                "url": "https://ownersinventory.com",
+                "description": "Owners Inventory is an all-in-one business management platform for retail, wholesale, manufacturing, and ecommerce businesses. It combines POS, inventory management, purchasing, ecommerce, HR, and finance in one system.",
+                "foundingDate": "2025",
+                "areaServed": "Worldwide",
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "email": "sales@ownersinventory.com",
+                  "availableLanguage": "English"
+                }
+              },
+              {
+                "@type": "SoftwareApplication",
+                "@id": "https://ownersinventory.com/#software",
+                "name": "Owners Inventory",
+                "applicationCategory": "BusinessApplication",
+                "applicationSubCategory": "Inventory Management Software",
+                "operatingSystem": "Web, iOS, Android",
+                "url": "https://ownersinventory.com",
+                "description": "Owners Inventory is an all-in-one platform combining POS, inventory management, ecommerce, purchasing, HR, accounts and finance for retail, wholesale, and manufacturing businesses.",
+                "publisher": {
+                  "@id": "https://ownersinventory.com/#organization"
+                }
+              },
+              {
+                "@type": "Product",
+                "@id": "https://ownersinventory.com/industries/garden-center-pos-system/#product",
+                "name": "Garden Center POS System by Owners Inventory",
+                "description": "A point of sale and inventory system built for garden centers and nurseries, with variant-level plant and container tracking, seasonal catalog management, multi-supplier purchase orders, and multi-location support.",
+                "brand": {
+                  "@id": "https://ownersinventory.com/#organization"
+                },
+                "category": "Point of Sale Software for Garden Centers and Nurseries",
+                "audience": {
+                  "@type": "BusinessAudience",
+                  "audienceType": "Garden centers, nurseries, and plant retailers"
+                },
+                "isRelatedTo": {
+                  "@id": "https://ownersinventory.com/#software"
+                }
+              },
+              {
                 "@type": "FAQPage",
+                "@id": "https://ownersinventory.com/industries/garden-center-pos-system/#faq",
                 "mainEntity": [
                   {
                     "@type": "Question",
@@ -229,43 +179,6 @@ const Page = () => {
                       "@type": "Answer",
                       "text": "All plans support multiple locations. Stock at each site is visible from one dashboard, and transfer orders move inventory between locations with a complete movement record. Customer profiles and purchase history are shared across both sites."
                     }
-                  }
-                ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Garden Center Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines garden center and nursery operations.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "Starting the Day",
-                    "text": "The manager opens the dashboard and checks stock alerts. Two varieties flagged overnight: 4-inch herbs are below reorder threshold, and a premium soil blend has four bags left. A purchase order is ready to send before the first customer walks in, based on the movement report from the past two weekends."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "Customer Check-In and Product Lookup",
-                    "text": "A customer comes in asking for the specific tomato variety she planted two years ago. The staff member searches her profile by name or phone number, pulls up her purchase history, and locates the variety in under a minute. It's in stock in the 1-gallon size."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Mixed Transaction at Checkout",
-                    "text": "She picks up two tomato plants, a bag of fertilizer, and a set of garden stakes. The cashier processes one transaction covering all four items across three product categories. Tax rates apply correctly per category. Inventory updates for each SKU the moment the sale closes."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Receiving Supplier Stock",
-                    "text": "An afternoon delivery arrives from the wholesale nursery. The receiving team opens the pending purchase order, confirms quantities received, and logs the shipment. Stock counts update immediately. Any line item short on delivery is flagged against the original order."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "End-of-Day Reporting",
-                    "text": "The shift report takes about two minutes to close. It shows total revenue by product category, refunds processed, payment types, and any stock adjustments made during the day. Weekend movement data is ready to inform Monday's purchasing decisions."
                   }
                 ]
               }

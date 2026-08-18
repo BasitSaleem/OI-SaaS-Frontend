@@ -106,6 +106,10 @@ export interface BlogData {
   faqs?: BlogFAQ[];
 
   // Sidebar / footer
+  metaTitle?: string;
+  metaDescription?: string;
+  keywords?: string[];
+  // Sidebar / footer
   relatedTopicIds?: string[];
 
   // Colors (optional accent theming)
@@ -119,6 +123,19 @@ export const blogData: BlogData[] = [
   {
     id: "pos-system-cost",
     slug: "how-much-does-a-pos-system-cost",
+    metaTitle: "POS System Cost Breakdown 2026 | Owners Inventory",
+    metaDescription: "See what a POS system really costs in 2026: hardware, software, and processing fees, all broken down. Get real numbers so you can budget with confidence.",
+    keywords: [
+      "pos system cost",
+      "how much does a pos system cost",
+      "pos system pricing 2026",
+      "pos hardware cost",
+      "pos software cost",
+      "payment processing fees",
+      "point of sale system cost",
+      "pos system cost for small business",
+      "cheap pos system",
+    ],
     blogImg: "https://d2qlv5xtew5ayb.cloudfront.net/assets/blog-images/first-blog.webp",
     heading: "How Much Does a POS System Cost? A Complete Pricing Breakdown for 2026",
     tagline: "Complete POS Pricing Guide",
