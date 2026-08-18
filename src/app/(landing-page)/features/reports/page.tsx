@@ -24,7 +24,7 @@ const Page = () => {
     <div>
       <SubFeaturesHero
         title="Turn Data into Decisions with Inventory Management Reports"
-        description="Transform data into actionable insights by using powerful inventory management reports and point of sale reporting systems, all at one location."
+        description="Transform data into actionable insights by using powerful inventory management reports and point of sale reporting systems, all in one place."
         image={heroBanner}
         imageClassName="lg:mt-14 mt-11 max-w-[1000px]"
         ctaDesc="Get Started for Free"
@@ -51,7 +51,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Industries We Serve"
-          paragraph="Each business has a different story to tell so should your reports. Owners' Inventory provides inventory management reports and point of sale system reports that are tailored to your industry. Gain valuable insights, smarter analytics, and clear data visualization that enable you to make decisive business choices."
+          paragraph="Each business has a different story to tell, so should your reports. Owners Inventory provides inventory management reports and point of sale system reports that are tailored to your industry. Gain valuable insights, smarter analytics, and clear data visualization that enable you to make decisive business choices."
           buttonText="Explore All Industries"
           industries={REPORTS_INDUSTRIES}
         />

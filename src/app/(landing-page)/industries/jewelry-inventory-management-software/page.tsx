@@ -324,7 +324,7 @@ const Page = () => {
 
         <WhyChoosePOS
           heading="How Our Jewelry Inventory Management Software Solves These Challenges"
-          paragraph="Our inventory software efficiently handles jewelry inventory management, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
+          paragraph="Our software efficiently manages daily jewelry operations, helps store owners view store activities, and reduces errors. It keeps accurate records of every item and transaction made."
           cards={JEWELRY_INVENTORY_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
           iconSet="jewelaryInventory"

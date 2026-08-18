@@ -33,7 +33,7 @@ const Page = () => {
 
       <TrustedBySection
         heading="Trusted by Leading Businesses"
-        paragraph="We work with trusted brands like Al-Asif, and many growing companies to help them manage products, generate reports, and improve overall performance with fast, reliable tools."
+        paragraph="We work with trusted brands like Al-Asif and many growing companies to help them manage products, generate reports, and improve overall performance with fast, reliable tools."
       />
       <KeyHighlights
         heading="Key Highlights"
@@ -42,7 +42,7 @@ const Page = () => {
 
       <WhyChoosePOS
         heading="Why Choose Us?"
-        paragraph="Take full control of your inventory with Owners' Inventory. Our POS system makes product management easy, accurate, and efficient, helping your business grow smarter and faster."
+        paragraph="Take full control of your inventory with Owners Inventory. Our POS system makes product management easy, accurate, and efficient, helping your business grow smarter and faster."
         cards={INVENTORY_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       />
@@ -58,7 +58,7 @@ const Page = () => {
 
       <FeaturesCallToAction
         title="Simplify. Scale. Sell Smarter."
-        description="Feel the convenience of inventory products management software that adds order, speed, and precision to each sale. On retail counters, in warehouses, store each product where it belongs, under your watch."
+        description="Feel the convenience of inventory product management software that adds order, speed, and precision to each sale. Store each product where it belongs, on retail counters or in warehouses and all under your watch."
       />
       <FeaturesTestimonials
         testimonials={INVENTORY_TESTIMONIALS}

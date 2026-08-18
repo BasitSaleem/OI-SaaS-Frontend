@@ -13,7 +13,7 @@ export const BOOKSTORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "stockConfusion",
     title: "Stock Confusion",
     description:
-      "Many bookstores struggle with inaccurate or missing stock data. Small bookstores, many stores lose sales due to the inability to find books when needed. Employees tend to waste more time searching rather than selling.",
+      "Many bookstores struggle with inaccurate or missing stock data. This is especially true for small bookstores, which often lose sales due to the inability to find books when needed. Employees tend to waste more time searching rather than selling.",
   },
   {
     id: "2",
@@ -34,7 +34,7 @@ export const BOOKSTORE_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "onlineVisibility",
     title: "Weak Sales Insights",
     description:
-      "Most stores lack the knowledge related to authors, genres, or publishers that are the bestsellers. When reports are not complete or old, it makes the decisions more difficult.",
+      "Most stores lack insight into which authors, genres, or publishers are bestsellers. When reports are not complete or old, it makes the decisions more difficult.",
   },
   {
     id: "5",
@@ -79,7 +79,7 @@ export const BOOKSTORE_WHY_CHOOSE_CARDS = [
     icon: "supplierMisalignment",
     title: "Smart Supplier Management",
     description:
-      "Track Publishers, distributors, purchase orders, and deliveries and receive low-stock notifications on popular books.",
+      "Track publishers, distributors, purchase orders, and deliveries and receive low-stock notifications on popular books.",
   },
   {
     id: "4",
@@ -102,7 +102,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
     id: "1",
     title: "Omni-Channel and Sales Integration",
     description:
-      "Our inventory system will connect all your sales outlets like the physical bookstores, online stores and mobile sales to one synchronized platform. You are able to sell in the store using POS and at the same time online and all that is incorporated in a single system.",
+      "Our inventory system will connect all your sales outlets like physical bookstores, online stores, and mobile sales to one synchronized platform. You can sell in-store and online at the same time, all within a single system",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/bookstore-omini-chanel.webp",
     buttonLabel: "View Details",
@@ -118,7 +118,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
     id: "2",
     title: "Better Decision Reporting and Analytics",
     description:
-      "Comprehensive reporting and analytics give bookstore owners clear insights into stock movement, sales trends, and profitability. This helps in smarter purchasing, reordering and optimization of books on time.",
+      "Comprehensive reporting and analytics give bookstore owners clear insights into stock movement, sales trends, and profitability. This helps in smarter purchasing, reordering, and optimization of books on time.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bookstore-pos/bookstore-better-decision.webp",
     buttonLabel: "View Details",
@@ -128,7 +128,7 @@ export const BOOKSTORE_FEATURE_CARDS = [
       { listheading: "Real-time sales and inventory control" },
       { listheading: "Forecast demand and schedule reorders" },
       {
-        listheading: "Determine slow moving titles and enhance stock turnover",
+        listheading: "Determine slow-moving titles and enhance stock turnover",
       },
     ],
   },
@@ -258,7 +258,7 @@ export const BOOKSTORE_TESTIMONIALS = [
     name: "Ahmed R.",
     title: "Knowledge Hub",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image3.webp",
-    text: "The software assists us in tracking all titles and stationery. Our operations are smooth with multi-branch syncing and online order integration. Owners' Inventory is convenient and dependable.",
+    text: "The software assists us in tracking all titles and stationery. Our operations are smooth with multi-branch syncing and online order integration. Owners Inventory is convenient and dependable.",
   },
   {
     id: "3",
@@ -272,22 +272,22 @@ export const BOOKSTORE_TESTIMONIALS = [
     name: "Noah Williams",
     title: "BookWorld​",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image4.webp",
-    text: "The POS Software of Owners Inventory Bookstore has transformed our bookstore. ISBN tracking, inventory updates and stationery management is not interrupted. Billing is fast and accurate even during peak school seasons. Our clients and employees like the more streamlined experience.",
+    text: "The POS Software of Owners Inventory Bookstore has transformed our bookstore. ISBN tracking, inventory updates and stationery management are not interrupted. Billing is fast and accurate even during peak school seasons. Our clients and employees like the more streamlined experience.",
   },
 ];
 
 export const BOOKSTORE_FAQS = [
   {
     id: "1",
-    question: "What is Owners' Inventory Bookstore POS Software?",
+    question: "What is Owners Inventory Bookstore POS Software?",
     answer:
-      "Owners Inventory Bookstore POS Software is a program intended to store books, stationery, sales and customer information under a single platform. It assists bookstores in monitoring inventory and performing smooth checkouts.",
+      "Owners Inventory Bookstore POS Software is a program intended to store books, stationery, sales and customer information on a single platform. It assists bookstores in monitoring inventory and performing smooth checkouts.",
   },
   {
     id: "2",
     question: "Can the system handle Stationery Inventory Management?",
     answer:
-      "Yes. The software incorporates [Stationery Inventory Management](/features/inventory). All pens, notebooks, and school supplies are kept up to date, and the stock quantities are always up to date.",
+      "Yes. The software incorporates [Stationery Inventory Management](/features/inventory). All pens, notebooks, and school supplies are kept up to date, and the stock quantities are always accurate.",
   },
   {
     id: "3",
@@ -317,7 +317,7 @@ export const BOOKSTORE_TESTIMONIAL_DATA = {
     "Have complete control of your books, sales, and day-to-day operations with a system that is tailored to the needs of a modern bookstore.",
   whyChooseTitle: "Why Choose Our System?",
   whyChooseDescription:
-    "Owners' Inventory makes bookstore management simple, fast, and reliable. Every feature is built to help stores save time, reduce errors, and boost sales. From books to stationery, every item stays organised and accessible.",
+    "Owners Inventory makes bookstore management simple, fast, and reliable. Every feature is built to help stores save time, reduce errors, and boost sales. From books to stationery, every item stays organised and accessible.",
 };
 
 export const BOOKSTORE_TESTIMONIAL_FEATURES = [
@@ -325,7 +325,7 @@ export const BOOKSTORE_TESTIMONIAL_FEATURES = [
     id: "1",
     title: "Accurate Stock Management",
     description:
-      "Books and stationery always have a clear inventory level. Real-time updates helps in avoiding stock errors.",
+      "Books and stationery always have a clear inventory level. Real-time updates help avoid stock errors.",
     icon: "testWhychoseIcon1",
   },
   {
@@ -346,7 +346,7 @@ export const BOOKSTORE_TESTIMONIAL_FEATURES = [
     id: "4",
     title: "Flexible Discounts & Pricing",
     description:
-      "Special offers in terms of author, genre or publisher are not difficult to manage. Pricing in wholesale and retail may be different.",
+      "Special offers by author, genre, or publisher are easy to manage. Pricing in wholesale and retail may be different.",
     icon: "testWhychoseIcon4",
   },
   {
@@ -367,7 +367,7 @@ export const BOOKSTORE_TESTIMONIAL_FEATURES = [
     id: "7",
     title: "Secure & Stable Platform",
     description:
-      "Offline mode ensures that sales are maintained even when WiFi is unavailable. The transactions and payments are not impacted.",
+      "Offline mode ensures that sales are maintained even when Wi-Fi is unavailable. The transactions and payments are not impacted.",
     icon: "testWhychoseIcon7",
   },
 ];
@@ -375,7 +375,7 @@ export const BOOKSTORE_TESTIMONIAL_FEATURES = [
 export const BOOKSTORE_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables the owners of the bookstores to control inventory, sales, finances and customer information on a single dashboard. The integrated tools simplify the business processes, minimize the number of people working manually and make inventory management quicker and more efficient in all the operations of the bookstore.",
+    "Contemporary inventory systems are integrated with POS, accounting software, CRM systems, and ecommerce. This enables bookstore owners to control inventory, sales, finances, and customer information on a single dashboard. The integrated tools simplify the business processes, minimize the number of people working manually and make inventory management quicker and more efficient across all bookstore operations.",
   tools: [
     {
       id: 1,

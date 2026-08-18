@@ -61,7 +61,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               alt={title}
               width={743}
               height={460}
-              className={`w-full rounded-[20px] ${mediaClassName}`}
+              className={`w-full rounded-[20px] object-top ${mediaClassName}`}
             />
 
           </div>

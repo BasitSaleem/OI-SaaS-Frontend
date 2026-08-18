@@ -24,7 +24,7 @@ const Page = () => {
     <div>
       <SubFeaturesHero
         title="Empower Your People, Power Your Business"
-        description="Experience the future of business management, quick, unified, and growth-oriented. Powerful automation, real-time insights, and seamless integrations will allow you to work smarter, scale faster, and save more, all within one intelligent platform, with Owners Inventory."
+        description="Experience the future of business management: quick, unified, and growth-oriented. With Owners Inventory, work smarter, scale faster, and save more, all within one intelligent platform."
         image={heroBanner}
         imageClassName="max-w-[1000px]"
         variant="animation2"
@@ -48,7 +48,7 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Built for Every Industry"
-          paragraph="The People feature of Owners Inventory is built to fit the way any business operates, be it a retail store or a restaurant, wholesaler or pharmacy, or a fashion brand. Whatever your business is, Owners Inventory can put your operation in a better place to run smoothly, faster, and smarter."
+          paragraph="The People feature of Owners Inventory is built to fit the way any business operates, be it a retail store, restaurant, wholesaler, pharmacy, or fashion brand. Whatever your business is, Owners Inventory can put your operation in a better place to run smoothly, faster, and smarter."
           buttonText="Explore All Industries"
           industries={PEOPLE_INDUSTRIES}
         />

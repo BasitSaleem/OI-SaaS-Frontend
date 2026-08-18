@@ -19,9 +19,9 @@ export const HEALTHCARE_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
     id: "2",
     icon: "UnifiedIcon2",
-    title: "Frequent Stock outs",
+    title: "Frequent Stock-Outs",
     description:
-      "Without proper inventory control, essential medical supplies can run out unexpectedly. It disrupts patient care and makes it difficult for staff to handle emergency situations.",
+      "Without proper inventory control, essential medical supplies can run out unexpectedly. This disrupts patient care and makes it difficult for staff to handle emergency situations.",
   },
   {
     id: "3",
@@ -35,7 +35,7 @@ export const HEALTHCARE_INVENTORY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "UnifiedIcon4",
     title: "Overstocking and Wastage",
     description:
-      "Over-ordering medical supplies due to poor demand insights leads to excess inventory and increasing storage costs. This also causes wastage of medical items and negatively impacts the financial performance of the supply chain.",
+      "Over-ordering medical supplies due to poor demand insights leads to excess inventory and increased storage costs. This also causes wastage of medical items and negatively impacts the financial performance of the supply chain.",
   },
   {
     id: "5",
@@ -59,7 +59,7 @@ export const HEALTHCARE_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon1",
     title: "Real-Time Inventory Updates",
     description:
-      "The software tracks healthcare inventory across all departments in real-time with a centralized system. It allows managers to monitor stock movements and check the accurate availability of stocks.",
+      "The software tracks healthcare inventory across all departments in real-time with a centralized system. It allows managers to monitor stock movements and check accurate stock availability.",
   },
   {
     id: "2",
@@ -80,7 +80,7 @@ export const HEALTHCARE_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon4",
     title: "Optimized Inventory Levels",
     description:
-      "The system balances inventory levels with better usage understanding. It helps healthcare organizations avoid overstocking and reduce waste by keeping the right quantity of stock. This also controls the extra cost.",
+      "The system balances inventory levels with better usage understanding. It helps healthcare organizations avoid overstocking and reduce waste by keeping the right quantity of stock. This also helps control unnecessary costs.",
   },
   {
     id: "5",
@@ -94,7 +94,7 @@ export const HEALTHCARE_INVENTORY_WHY_CHOOSE_CARDS = [
     icon: "whychoseIcon6",
     title: "Organized Inventory Reports",
     description:
-      "The software maintains clear and structured inventory records with detailed tracking history and easy access that supports accurate internal checks and audit preparations.",
+      "The software maintains clear and structured inventory records with detailed tracking history and easy access that supports accurate internal checks and audit preparation.",
   },
 ];
 
@@ -118,7 +118,7 @@ export const HEALTHCARE_INVENTORY_FEATURE_CARDS: FeatureCardData[] = [
         listdescription:
           "At healthcare counters, Owners Inventory enables fast and secure billing while providing accurate stock updates. Every payment is recorded in real time. This reduces manual errors in transaction recording and billing.",
         listSubDescription:
-          "The system boosts healthcare services' speed and ensures staff have clear visibility of stock availability during patient interactions.",
+          "The system improves service speed and ensures staff have clear visibility of stock availability during patient interactions.",
       },
       {
         listheading: "Digital Orders and External Request Handling",
@@ -158,7 +158,7 @@ export const HEALTHCARE_INVENTORY_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Barcode-based Tracking",
     description:
-      "It tracks medical items accurately using barcode scanning, which helps staff find medicines within the right time and deliver better services to patients or customers.",
+      "It tracks medical items accurately using barcode scanning, which helps staff find medicines at the right time and deliver better services to patients or customers.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/healthcare-inventory-management-software/key-features-section/key-features-card2.webp",
   },
@@ -197,13 +197,13 @@ export const HEALTHCARE_INVENTORY_WORKFLOW_DATA = {
       number: 1,
       title: "Stock Entry and Setup",
       description:
-        "Setup starts by adding items using a barcode or manual entry. Each item's details are recorded, such as batch number, expiry date, and quantity, which keeps healthcare inventory structured for accurate tracking and easy future management across different departments.",
+        "The setup starts by adding items using a barcode or manual entry. Each item's details are recorded, such as batch number, expiry date, and quantity, which keeps healthcare inventory structured for accurate tracking and easy future management across different departments.",
     },
     {
       number: 2,
       title: "Centralized Inventory",
       description:
-        "All supplies and medical equipment are categorized and stored in their designated place. The centralized system sends real-time updates. The healthcare teams can efficiently view stock availability across locations, reducing confusion. It also boosts coordination by ensuring every department has access to accurate inventory information.",
+        "All supplies and medical equipment are categorized and stored in their designated place. The centralized system sends real-time updates. Healthcare teams can efficiently view stock availability across locations, reducing confusion. It also boosts coordination by ensuring every department has access to accurate inventory information.",
     },
     {
       number: 3,
@@ -244,7 +244,7 @@ export const HEALTHCARE_INVENTORY_TESTIMONIALS = [
     name: "Jameson Ward",
     title: "Clinical Director",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image52.webp",
-    text: "We needed something that could handle expiry tracking without making things complicated. Owners Inventory helped us organize our medical supplies properly. It's simple and reliable, which helped us prevent the mistakes we used to make with manual records.",
+    text: "We needed something that could handle expiry tracking without making things complicated. Owners Inventory helped us organize our medical supplies properly. It's simple and reliable, helping us prevent the mistakes we used to make with manual records.",
   },
   {
     id: "2",
@@ -265,16 +265,16 @@ export const HEALTHCARE_INVENTORY_TESTIMONIALS = [
 export const HEALTHCARE_INVENTORY_FAQS = [
   {
     id: "1",
-    question: "How does your inventory software handle large inventory?",
+    question: "How does your inventory software handle large inventories?",
     answer:
-      "Owners Inventory handles large inventory by organizing data in a structured format, such as categorization based on medicine name, usage details, and purpose. It allows quick access, faster updates, and smoother handling of bulk medicine supplies.",
+      "Owners Inventory handles large inventories by organizing data in a structured format, such as categorization based on medicine name, usage details, and purpose. It allows quick access, faster updates, and smoother handling of bulk medicine supplies.",
   },
   {
     id: "2",
     question:
       "Is it possible to migrate existing inventory data into the system?",
     answer:
-      "Yes, it supports data migrations from existing financial records, inventory details, and stock usage, which help healthcare teams continue operations without starting from scratch.",
+      "Yes, it supports data migration from existing financial records, inventory details, and stock usage, which helps healthcare teams continue operations without starting from scratch.",
   },
   {
     id: "3",
@@ -323,7 +323,7 @@ export const HEALTHCARE_INVENTORY_TESTIMONIAL_FEATURES = [
     id: "4",
     title: "Flexible Across Setups",
     description:
-      "The system adapts to clinics, pharmacies, and multi-departmental organizations without disrupting workflow and requiring major upgrades, which makes it a reliable solution.",
+      "The system adapts to clinics, pharmacies, and multi-departmental organizations without disrupting workflows or requiring major upgrades, which makes it a reliable solution.",
     icon: "testWhychoseIcon4",
   },
   {
@@ -345,7 +345,7 @@ export const HEALTHCARE_INVENTORY_TESTIMONIAL_FEATURES = [
 export const HEALTHCARE_INVENTORY_TOOLS_DATA = {
   heading: "Integration and Tools",
   paragraph:
-    "The software fits into existing healthcare systems without requiring changes. It can integrate with essential healthcare tools such as ERP, CRM, and payment gateways. It helps align current billing, procurement, and internal processes. The healthcare teams can continue operations smoothly with improved inventory control. This flexibility allows the POS to connect with tools, making it easy to adapt to the healthcare environment.",
+    "The software fits into existing healthcare systems without requiring changes. It can integrate with essential healthcare tools such as ERP, CRM, and payment gateways. It helps align current billing, procurement, and internal processes. Healthcare teams can continue operations smoothly with improved inventory control. This flexibility allows the POS to connect with tools, making it easy to adapt to the healthcare environment.",
   tools: [
     {
       id: 1,

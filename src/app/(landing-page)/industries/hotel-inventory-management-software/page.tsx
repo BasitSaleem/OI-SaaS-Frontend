@@ -346,7 +346,7 @@ const Page = () => {
         />
 
         <IndustriesCallToAction
-          title="Managing Your Hotel Operations Smarter and faster"
+          title="Managing Your Hotel Operations Smarter and Faster"
           description="A centralized system designed specifically for the hospitality industry can help you organize your hotel's inventory, cut down on unnecessary waste, and increase operational efficiency."
           ctaDesc="Request a Free Demo"
         />

@@ -46,151 +46,88 @@ const Page = () => {
             "@context": "https://schema.org",
             "@graph": [
               {
-                "@type": "SoftwareApplication",
-                "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
-                "applicationCategory": "BusinessApplication",
-                "operatingSystem": "Web, iOS, Android",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "0",
-                  "priceCurrency": "USD",
-                  "description": "Free trial available"
-                },
-                "description": "Owners Inventory's electronics store POS system tracks unique serial numbers and IMEIs, manages warranties, syncs inventory in real time between in-store and online channels, and matches purchase orders.",
-                "featureList": [
-                  "Offline POS terminal mode",
-                  "IMEI and unit-level tracking",
-                  "Role-based staff permissions",
-                  "Trade-in and buyback processing",
-                  "Purchase order and vendor management",
-                  "Omni-channel selling and digital order sync",
-                  "Sales and inventory margin reports by variant",
-                  "Stripe payment integration"
+                "@type": "BreadcrumbList",
+                "@id": "https://ownersinventory.com/industries/electronics-pos-system/#breadcrumb",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ownersinventory.com" },
+                  { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://ownersinventory.com/industries" },
+                  { "@type": "ListItem", "position": 3, "name": "Electronics POS System", "item": "https://ownersinventory.com/industries/electronics-pos-system" }
                 ]
               },
               {
                 "@type": "WebPage",
+                "@id": "https://ownersinventory.com/industries/electronics-pos-system/#webpage",
+                "url": "https://ownersinventory.com/industries/electronics-pos-system",
                 "name": "POS Software Built for Electronics Retail | Owners Inventory",
-                "url": "https://www.ownersinventory.com/industries/electronics-pos-system",
-                "description": "Manage your electronics store with serial number tracking, warranty controls, supplier management, multi-branch dashboard, and online store sync using Owners Inventory.",
-                "inLanguage": "en",
-                "isPartOf": {
-                  "@type": "WebSite",
-                  "name": "Owners Inventory",
-                  "url": "https://www.ownersinventory.com"
-                },
-                "breadcrumb": {
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://www.ownersinventory.com"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "name": "Industries",
-                      "item": "https://www.ownersinventory.com/industries"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 3,
-                      "name": "Electronics",
-                      "item": "https://www.ownersinventory.com/industries/electronics-pos-system"
-                    }
-                  ]
-                }
+                "description": "POS software for electronics retailers. Track serial numbers and IMEI at the unit level, manage refurbished and new stock in the same catalog, and reconcile supplier orders at receiving.",
+                "isPartOf": { "@id": "https://ownersinventory.com/#website" },
+                "about": { "@id": "https://ownersinventory.com/#software" },
+                "breadcrumb": { "@id": "https://ownersinventory.com/industries/electronics-pos-system/#breadcrumb" },
+                "inLanguage": "en-US"
               },
               {
                 "@type": "Organization",
+                "@id": "https://ownersinventory.com/#organization",
                 "name": "Owners Inventory",
-                "url": "https://www.ownersinventory.com",
-                "logo": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
+                "url": "https://ownersinventory.com",
+                "description": "Owners Inventory is an all-in-one business management platform for retail, wholesale, manufacturing, and ecommerce businesses. It combines POS, inventory management, purchasing, ecommerce, HR, and finance in one system.",
+                "foundingDate": "2025",
+                "areaServed": "Worldwide",
+                "sameAs": [
+                  "https://www.facebook.com/ownersinventory/",
+                  "https://www.instagram.com/ownersinventory/",
+                  "https://www.linkedin.com/company/owners-inventory/"
+                ],
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Customer Support",
-                  "availableLanguage": "English",
-                  "url": "https://www.ownersinventory.com/contact"
-                },
-                "sameAs": [
-                  "https://www.facebook.com/ownersinventory",
-                  "https://www.instagram.com/ownersinventory",
-                  "https://www.linkedin.com/company/owners-inventory"
-                ]
-              },
-              {
-                "@type": "Product",
-                "name": "Electronics Store POS System",
-                "image": "https://ownersinventory.com/assets/owner-inventory-logo.svg",
-                "description": "POS software designed for electronics retailers to manage IMEI and serial numbers, track warranties, handle supplier orders, and run multi-branch retail operations seamlessly.",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Owners Inventory"
-                },
-                "url": "https://www.ownersinventory.com/industries/electronics-pos-system",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "0",
-                  "priceCurrency": "USD",
-                  "availability": "https://schema.org/InStock",
-                  "description": "Free trial available. Book a demo to get started."
+                  "email": "sales@ownersinventory.com",
+                  "availableLanguage": "English"
                 }
               },
               {
-                "@type": "ItemList",
-                "name": "Customer Reviews",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Daniel Reyes"
-                      },
-                      "reviewBody": "We were tracking serial numbers in a spreadsheet that three people updated inconsistently. We had warranty claims we couldn't verify and returns we couldn't confirm. After switching to Owners Inventory, every unit is logged at receiving and tied to the sale. Our first warranty dispute after the switch took four minutes to resolve instead of a full afternoon of digging.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
+                "@type": "SoftwareApplication",
+                "@id": "https://ownersinventory.com/#software",
+                "name": "Owners Inventory",
+                "applicationCategory": "BusinessApplication",
+                "applicationSubCategory": "Inventory Management Software",
+                "operatingSystem": "Web, iOS, Android",
+                "url": "https://ownersinventory.com",
+                "description": "Owners Inventory is an all-in-one platform combining POS, inventory management, ecommerce, purchasing, HR, accounts and finance for retail, wholesale, and manufacturing businesses.",
+                "publisher": { "@id": "https://ownersinventory.com/#organization" }
+              },
+              {
+                "@type": "Product",
+                "@id": "https://ownersinventory.com/industries/electronics-pos-system/#product",
+                "name": "Electronics POS System by Owners Inventory",
+                "description": "A point of sale and inventory system built for electronics retailers, with serial number and IMEI tracking at the unit level, refurbished and new stock managed as separate variants under the same product, and receiving workflows that match incoming stock against purchase orders at the variant level.",
+                "brand": { "@id": "https://ownersinventory.com/#organization" },
+                "category": "Point of Sale Software for Electronics Retailers",
+                "audience": {
+                  "@type": "BusinessAudience",
+                  "audienceType": "Electronics retailers and repair shops"
+                },
+                "isRelatedTo": { "@id": "https://ownersinventory.com/#software" },
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://ownersinventory.com/pricing",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/OnlineOnly",
+                  "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                      "@type": "Review",
-                      "author": {
-                        "@type": "Person",
-                        "name": "Priya Shetty"
-                      },
-                      "reviewBody": "We run two locations and a Shopify store. Before, we had no reliable way to know what stock we had where, and we'd oversell online twice a month at minimum. Owners Inventory synced everything. Overselling stopped in the first week. We now transfer stock between locations through the platform instead of driving units over without any record.",
-                      "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5",
-                        "worstRating": "1"
-                      },
-                      "itemReviewed": {
-                        "@type": "SoftwareApplication",
-                        "name": "Owners Inventory"
-                      }
-                    }
-                  }
-                ]
+                  "eligibleDuration": {
+                    "@type": "QuantitativeValue",
+                    "value": "30",
+                    "unitCode": "DAY"
+                  },
+                  "description": "30-day free trial, no contracts required."
+                }
               },
               {
                 "@type": "FAQPage",
+                "@id": "https://ownersinventory.com/industries/electronics-pos-system/#faq",
                 "mainEntity": [
                   {
                     "@type": "Question",
@@ -218,7 +155,7 @@ const Page = () => {
                   },
                   {
                     "@type": "Question",
-                    "name": "We have over 200 SKUs across multiple brands. How long does the pos system for an electronics store setup actually take?",
+                    "name": "We have over 200 SKUs across multiple brands. How long does setting up the POS system for an electronics store actually take?",
                     "acceptedAnswer": {
                       "@type": "Answer",
                       "text": "Based on onboarding data from Owners Inventory customers, most electronics retailers with large catalogs are operational within a day. Products can be imported in bulk via CSV, and variants are built out from the parent product rather than entered one by one. If you're migrating from another system, the support team helps with the data transfer."
@@ -233,43 +170,6 @@ const Page = () => {
                     }
                   }
                 ]
-              },
-              {
-                "@type": "HowTo",
-                "name": "How Owners Inventory Manages Electronics Store Operations",
-                "description": "A step-by-step workflow showing how Owners Inventory streamlines electronics store operations and serial tracking.",
-                "step": [
-                  {
-                    "@type": "HowToStep",
-                    "position": 1,
-                    "name": "IMEIs and Serials Logged at Receiving",
-                    "text": "A shipment arrives and each device is scanned individually. Serial numbers and IMEIs are logged against the purchase order as units come in. If a distributor sent a 512GB model instead of the 256GB you ordered, the discrepancy shows up at this step, before the wrong product enters your active inventory."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 2,
-                    "name": "A Customer Asks for a Specific Variant",
-                    "text": "A customer wants a particular phone in 128GB, blue, unlocked. The staff member searches by those attributes, sees one unit in stock, and confirms the IMEI before pulling it from the shelf. No guessing, no checking a separate spreadsheet."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 3,
-                    "name": "Sale Closes With a Full Unit Record",
-                    "text": "The variant is added to the sale, payment is processed, and the receipt is generated with the serial number and IMEI attached to the transaction. That record is retrievable instantly if the customer comes back with a warranty claim or a return."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 4,
-                    "name": "Stock Updates Before Overselling Happens",
-                    "text": "The moment that unit sells at the counter, the same SKU updates across your Shopify or WooCommerce store. If a web order for that exact configuration was placed seconds earlier, the system flags the conflict rather than confirming both sales."
-                  },
-                  {
-                    "@type": "HowToStep",
-                    "position": 5,
-                    "name": "A Trade-In Comes Across the Counter",
-                    "text": "A customer brings in a used device. You log it as a received item with its serial number, condition, and the price you're paying. It enters inventory as a tracked unit from that moment. When it sells, the margin between what you paid and what you received is on record."
-                  }
-                ]
               }
             ]
           })
@@ -281,11 +181,11 @@ const Page = () => {
           description="Electronics retail doesn't fit neatly into a generic POS. You're tracking hundreds of SKUs across multiple configurations, managing serial numbers at the unit level, syncing inventory between your counter and your online store, and reconciling supplier invoices against actual stock received. Most retail software handles a fraction of that. Owners Inventory's electronics store POS system handles all of it from one platform."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
-          ctaDesc="Get Started for Free"
+          ctaDesc="Start Free Today"
           variant="animation2"
         />
 
-        <VoicesRealBusiness title="Rated on leading review platforms" />
+        <VoicesRealBusiness title="Rated on Leading Review Platforms" />
 
         <IndustryUnifiedPlatform
           heading={ELECTRONICS_UNIFIED_HEADING}
@@ -349,14 +249,14 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Common questions from electronics store owners evaluating Owners Inventory before making a decision."
             faqs={ELECTRONICS_FAQS}
             buttonText="Start Now"
           />
         </div>
         <IndustriesHardwareControl
-          title="Owners Inventory gives electronics retailers the tools to run a tight operation"
+          title="Owners Inventory Gives Electronics Retailers the Tools to Run a Tight Operation"
           description="Serial tracking, variant inventory, supplier management, multi-location stock control, and real-time eCommerce sync are all included. Setup takes hours, not weeks. No contract required."
           ctaDesc="Start Today"
         />

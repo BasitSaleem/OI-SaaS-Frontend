@@ -4,7 +4,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 export const HOME_UNIFIED_HEADING = "Why We Stand Out";
 
 export const HOME_UNIFIED_PARAGRAPH =
-  "The future of business management is here, quick, integrated, expansionary. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.";
+  "The future of business management is here, quick, integrated, expandable. Owners Inventory is an automated, scalable, and more intelligent tool that assists you in working smarter, performing faster, and saving more with powerful automation, real-time insights, and streamlined integrations, all in one smart platform.";
 
 export const HOME_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {

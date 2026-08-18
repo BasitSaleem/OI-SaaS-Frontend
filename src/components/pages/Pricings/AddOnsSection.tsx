@@ -65,10 +65,10 @@ const AddOnsSection: React.FC = () => {
       <div className="mt-20 md:mt-28 lg:mt-[100px]">
         <div className="text-center mb-12">
           <h2 className="text-[32px] leading-[130%] lg:text-5xl font-semibold lg:font-medium text-[var(--text-dark)] text-center font-['Onest'] mb-6">
-            Need more? Easily add it whenever required.
+            Need more? Easily Add Them whenever required.
           </h2>
           <Paragraph>
-            Flexible add-ons available on Basic and Pro plans. Enterprise plans
+            Flexible add-ons available on Basic and Pro plans. The Enterprise plans
             include unlimited locations.
           </Paragraph>
         </div>

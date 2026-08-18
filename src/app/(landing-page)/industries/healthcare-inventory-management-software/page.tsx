@@ -302,7 +302,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Healthcare Inventory Management Software Built for Operational Accuracy"
-          description="Managing inventory based on guesswork causes healthcare facilities to face issues like expired medications, missing surgical equipment, and stock errors. But with an inventory management system, you can accurately identify the availability of medical supplies across departments. Our healthcare inventory management software keeps critical items available, reduces inefficiencies, and supports better healthcare services for hospitals, clinics, and pharmacies."
+          description="Managing inventory through guesswork causes healthcare facilities to face issues like expired medications, missing surgical equipment, and stock errors. But with a healthcare inventory management system, you can accurately identify the availability of medical supplies across departments. Our healthcare inventory management software keeps critical items available, reduces inefficiencies, and supports better patient care and operational efficiency."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"

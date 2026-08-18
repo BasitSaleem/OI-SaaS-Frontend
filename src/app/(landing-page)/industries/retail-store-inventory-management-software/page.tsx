@@ -306,7 +306,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="Inventory Management Software for Retail Store That Simplifies Operations"
-          description="Managing a store is a big job that requires being accurate, fast and having complete control over stock and sales. Our inventory management software for stores helps make operations smooth and efficient. It also tracks stock automatically and handles sales in one smart system."
+          description="Managing a store is a big job that requires accuracy, speed, and complete control over stock and sales. Our inventory management software for stores helps make operations smooth and efficient. It also tracks stock automatically and handles sales in one smart system."
           image={heroBanner}
           imageClassName="max-w-[1000px]"
           ctaDesc="Start Free Today"
@@ -352,7 +352,7 @@ const Page = () => {
         <SecurityCompliance
           title="Security, Accuracy, and Compliance"
           description="Security, accuracy, and compliance are crucial for businesses. Every transaction is recorded securely with time-stamped data. This ensures transparency and accountability in all transactions."
-          secondDescription="The point of sale system has role-based access control. This means authorized staff can access information. Automated processes maintain inventory records."
+          secondDescription="The point of sale system has role-based access control. This means only authorized staff can access sensitive information. Automated processes maintain inventory records."
         />
 
         <ToolsSection
@@ -378,7 +378,7 @@ const Page = () => {
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
             heading="FAQS"
-            paragraph="The Inventory Management Software for Retail Store  is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions by Inventory Management Software for Retail Store."
+            paragraph="The Inventory Management Software for Retail Store  is aimed at ensuring the ease of daily operations and efficiency. The following are some of the responses to typical questions about retail inventory management software."
             faqs={RETAIL_STORE_INVENTORY_FAQS}
             buttonText="Start Now"
           />

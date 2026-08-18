@@ -301,7 +301,7 @@ const Page = () => {
       <div>
         <SubIndustriesHero
           title="POS System For Bakeries Controlling Orders & Inventory"
-          description="Manage your bakery with complete precision and control using Owners Inventory, the ultimate [POS system for bakeries](/features/pos). Every sale, including the latest ingredient updates and fresh batches of morning cakes to orders for custom-made cake designs are synced into one intelligent system. This system is designed for bakeries who need to track inventory in real time and bill quickly."
+          description="Manage your bakery with complete precision and control using Owners Inventory, the ultimate [POS system](/features/pos) for bakeries. Every sale, from ingredient updates and fresh batches to custom cake orders is synced into one intelligent system. This system is designed for bakeries that need to track inventory in real time and bill quickly."
           image={heroBanner}
           imageClassName="max-w-[1000px] mt-10"
           ctaDesc="Start Free Today"
@@ -323,7 +323,7 @@ const Page = () => {
         />
 
         <WhyChoosePOS
-          heading="How Our Inventory Software Solves These Challenges?"
+          heading="How Our Inventory Software Solves These Challenges"
           paragraph="Every feature of our Bakery POS System was created to help take the pressure off and streamline your processes."
           cards={BAKERY_WHY_CHOOSE_CARDS}
           mainImage={whyChoseBanner}
@@ -352,7 +352,7 @@ const Page = () => {
         <SecurityCompliance
           title="Security, Accuracy, and Compliance"
           description="Each transaction in the Owners Inventory has a time stamp and is recorded securely. Each staff member has access to only the information relevant to his or her responsibilities."
-          secondDescription="Audit trails increase transparency, and they reduce the possibility of errors within an organization or unauthorized changes. Automated reports reduce manual errors and help ensure that financial records are accurate and in compliance."
+          secondDescription="Audit trails increase transparency and reduce the risk of errors or unauthorized changes within an organization. Automated reports reduce manual errors and help ensure that financial records are accurate and in compliance."
         />
 
         <ToolsSection
@@ -384,7 +384,7 @@ const Page = () => {
 
         <div className="lg:mt-[100px] md:mt-28 mt-20 relative z-100">
           <FaqSection
-            heading="FAQS"
+            heading="FAQs"
             paragraph="Our bakery POS system is designed to make daily operations smooth and easy. Here are answers to some common questions from bakery owners."
             faqs={BAKERY_FAQS}
             buttonText="Start Now"

@@ -36,8 +36,8 @@ const chaos: Chaos[] = [
   {
     id: 3,
     chaosNumber: "3",
-    chaosHead: "Reach",
-    chaosDesc: "Serving Teams in Continents",
+    chaosHead: "Continents",
+    chaosDesc: "Serving Teams Across the Globe",
   },
   {
     id: 4,

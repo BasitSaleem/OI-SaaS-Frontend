@@ -1,13 +1,48 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import SmallHeading from "@/components/pages/typography/SmallHeading";
 import SubHeading from "@/components/pages/typography/SubHeading";
 import BlogWorkflowIcon from "@/components/icons/blogDetailIcons";
 import { BlogSection, BlogBlock } from "@/constant/blogData/blogData";
+import MediumHeading from "../typography/MediumHeading";
 
 interface BlogContentSectionProps {
   section: BlogSection;
 }
+
+const renderFormattedText = (text: string) => {
+  if (!text) return text;
+
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const label = match[1];
+    const url = match[2];
+    parts.push(
+      <Link
+        key={match.index}
+        href={url}
+        className="font-bold text-[#231F20] hover:underline"
+      >
+        {label}
+      </Link>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+};
 
 const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: number } }> = ({
   block,
@@ -16,7 +51,7 @@ const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: numb
   if (block.type === "paragraph") {
     return (
       <p className="text-base md:text-lg leading-[1.7] font-['Onest'] text-[#555] font-normal">
-        {block.content}
+        {renderFormattedText(block.content)}
       </p>
     );
   }
@@ -25,9 +60,9 @@ const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: numb
     // Sub-label within a section (e.g. plan tiers) — smaller than the section
     // heading so the hierarchy reads clearly.
     return (
-      <h4 className="text-lg md:text-xl font-semibold font-['Onest'] text-[#231F20] mt-2">
+      <h3 className="text-lg md:text-xl font-semibold font-['Onest'] text-[#231F20] mt-2">
         {block.content}
-      </h4>
+      </h3>
     );
   }
 
@@ -204,7 +239,7 @@ const BlogContentSection: React.FC<BlogContentSectionProps> = ({ section }) => {
       {section.mainHeading ? (
         <SubHeading>{section.heading}</SubHeading>
       ) : (
-        <SmallHeading>{section.heading}</SmallHeading>
+        <MediumHeading>{section.heading}</MediumHeading>
       )}
       {section.blocks.map((block, i) => {
         const counter = { numbered: numberedCount };

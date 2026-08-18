@@ -5,7 +5,7 @@ export const PURCHASES_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Reorder your fast moving products automatically. Also, easily manages supplier discounts and tracks incoming shipments in real time.",
+      "Reorder your fast-moving products automatically. It also easily manages supplier discounts and tracks incoming shipments in real time.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/retail-store-mobile.webp",
     link: "/industries/retail-store-pos-system",
@@ -16,7 +16,7 @@ export const PURCHASES_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
-      "For restaurants, easily track ingredient purchases, manage multiple vendors and use smart controls to prevent expensive overstocking or wastage.",
+      "For restaurants, easily track ingredient purchases, manage multiple vendors, and use smart controls to prevent expensive overstocking or wastage.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
@@ -49,7 +49,7 @@ export const PURCHASES_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Order fabrics, accessories and finished goods efficiently by tracking supplier performance. Works according to seasonal demand and material availability.",
+      "Order fabrics, accessories, and finished goods efficiently by tracking supplier performance. It works according to seasonal demand and material availability.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/fashion-mobile.webp",
     link: "/industries/clothing-store-pos-system",
@@ -61,7 +61,7 @@ export const PURCHASES_FEATURES_CARDS = [
     id: 1,
     title: "Centralized Purchase Management",
     description:
-      "By Centralized Purchase Management, We manage purchase orders, bills and all supplier details in one spot. This simple system ensures procurement and inventory are always in sync. Our Purchase Order Management Software is the single source of truth for your business.",
+      "By Centralized Purchase Management, we manage purchase orders, bills, and all supplier details in one spot. This simple system ensures procurement and inventory are always in sync. Our Purchase Order Management Software is the single source of truth for your business.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/centralized-purchase.webp",
   },
@@ -69,7 +69,7 @@ export const PURCHASES_FEATURES_CARDS = [
     id: 2,
     title: "Supplier Directory & Management",
     description:
-      "Keep all your supplier records organized like contact information and past transactions. Having this complete history makes it much easier and more reliable to manage your relationships with them.",
+      "Keep all your supplier records organized, including contact information and past transactions. Having this complete history makes it much easier and more reliable to manage your relationships with them.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/supplier-directory.webp",
   },
@@ -93,7 +93,7 @@ export const PURCHASES_FEATURES_CARDS = [
     id: 5,
     title: "Purchase Approval Workflow",
     description:
-      "Easily define approval steps for purchases. This guarantees compliance and accountability which gives you control without creating any hurdles.",
+      "Easily define approval steps for purchases. This guarantees compliance and accountability, which gives you control without creating any hurdles.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/purchase-approval.webp",
   },
@@ -101,7 +101,7 @@ export const PURCHASES_FEATURES_CARDS = [
     id: 6,
     title: "Import & Export Options",
     description:
-      "Quickly imports data in bulk and exports reports to Excel. This is used for accounting and audits. Get the data flexibility that perfectly adapts to your workflow.",
+      "Quickly import data in bulk and export reports to Excel. This is used for accounting and audits. Get flexible data tools that adapt to your workflow.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/purchases-page/features-section/import-option.webp",
   },
@@ -160,7 +160,7 @@ export const PURCHASES_FAQS = [
     id: 5,
     question: "Is this suitable for multi-location businesses?",
     answer:
-      "Yes. Whether managing a single location or a complex network of branches,Owners Inventory facilitates centralized purchasing control.",
+      "Yes. Whether managing a single location or a complex network of branches, Owners Inventory facilitates centralized purchasing control.",
   },
 ];
 

@@ -67,13 +67,13 @@ export const POS_TESTIMONIALS = [
     name: "James Carter",
     title: "Operations Manager, RetailCore",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-boy1.webp",
-    text: `Managing a busy restaurant, we have to count every second and this POS has created that difference. There is no confusion in sending orders to the kitchen and there is no problem with managing menus or tables. The speed of our service has increased and customers have felt the difference. It has become an element of our workflow.`,
+    text: `Managing a busy restaurant, we have to count every second and this POS has created that difference. There is no confusion in sending orders to the kitchen and there is no problem with managing menus or tables. The speed of our service has increased and customers have felt the difference. It's become an essential part of our workflow.`,
   },
   {
     name: "Emily Johnson",
     title: "Founder, Bloom Stores",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/testimonial-images/testinomial-girl2.webp",
-    text: `The process of managing multiple store locations would have involved countless spreadsheets and phone calls. With Owners Inventory, all is linked together. It is comforting when we finally get a system that works, regardless of our location.`,
+    text: `The process of managing multiple store locations used to involve countless spreadsheets and phone calls. With Owners Inventory, all is linked together. It is comforting when we finally get a system that works, regardless of our location.`,
   },
   {
     name: "Michael Turner",
@@ -88,7 +88,7 @@ export const POS_FEATURES_CARDS = [
     id: 1,
     title: "Customer Management",
     description:
-      "Switch to registered and walk-in customers easily to generate a seamless checkout experience. Our software point of sale allows you to monitor purchase history, loyalty points, and preferences to engage your customers better.",
+      "Switch to registered and walk-in customers easily to generate a seamless checkout experience. Our point-of-sale software allows you to monitor purchase history, loyalty points, and preferences to engage your customers better.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/features-section/customer-management.webp",
   },
@@ -96,7 +96,7 @@ export const POS_FEATURES_CARDS = [
     id: 2,
     title: "Barcode & SKU Search",
     description:
-      "Search products by barcode or SKU. Best point of sale systems make the process of scanning and lookup accurate, fast and reliable.",
+      "Search products by barcode or SKU. The best point of sale systems make the process of scanning and lookup accurate, fast and reliable.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/features-section/barcode-sku.webp",
   },
@@ -104,7 +104,7 @@ export const POS_FEATURES_CARDS = [
     id: 3,
     title: "Product Selection Table",
     description:
-      "Quickly add items to the sale with customizable quantity, discount, and price. The flexibility of this point of sales system allows you to make changes to transactions within seconds.",
+      "Quickly add items to the sale with customizable quantity, discount, and price. The flexibility of this point of sale system allows you to make changes to transactions within seconds.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/features-section/product-selection.webp",
   },
@@ -112,7 +112,7 @@ export const POS_FEATURES_CARDS = [
     id: 4,
     title: "Category & Product Filters",
     description:
-      "Use filters to browse products by name or category. You can save time on peak hours with our best point of sale software and maintain check out lines running smoothly.",
+      "Use filters to browse products by name or category. You can save time during peak hours with our best point of sale software and keep checkout lines running smoothly.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/features-section/product-filter.webp",
   },
@@ -120,7 +120,7 @@ export const POS_FEATURES_CARDS = [
     id: 5,
     title: "Billing Summary",
     description:
-      "Create automatic billing summaries with auto-calculated items, discounts, taxes, payable amounts, and customer change. Our point of sale systems minimize human error and enhance accuracy of transactions.",
+      "Create automatic billing summaries with auto-calculated items, discounts, taxes, payable amounts, and customer change. Our point of sale systems minimize human error and enhance the accuracy of transactions",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/features-section/billing-summary.webp",
   },
@@ -128,7 +128,7 @@ export const POS_FEATURES_CARDS = [
     id: 6,
     title: "Stock Visibility",
     description:
-      "Do not miss out on a sale because the stock is not there. The point of sale solution automatically shows the Out of Stock tags, which keeps real time inventory visible.",
+      "Never miss a sale due to out-of-stock items. The point of sale solution automatically shows the Out of Stock tags, which keeps real-time inventory visible.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/point-of-sale/features-section/stock-viability.webp",
   },
@@ -163,13 +163,13 @@ export const POS_FAQS = [
     id: 1,
     question: "What can I manage with Owners Inventory POS?",
     answer:
-      "Our POS allows you to make all your sales effectively, stock in real-time, manage clients profiles, offer discounts or promotions, and produce detailed sales reports, all in one simple to use system.",
+      "Our POS allows you to make all your sales effectively, stock in real-time, manage client profiles, offer discounts or promotions, and produce detailed sales reports, all-in-one simple to use system.",
   },
   {
     id: 2,
     question: "Does the POS support multi-location inventory?",
     answer:
-      "Yes. It coordinates the stock between several stores or warehouses, monitors the amount of stock in real-time, and minimizes the difference, so operations go smoothly at all stations.",
+      "Yes. It coordinates the stock between several stores or warehouses, monitors the amount of stock in real-time, and minimizes the stock discrepancies, so operations go smoothly at all stations.",
   },
   {
     id: 3,

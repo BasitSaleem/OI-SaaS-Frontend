@@ -2,7 +2,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 
 // ─── Hardware Store POS — UnifiedPlatform Section ──────────────────────────────
 export const HARDWARE_UNIFIED_HEADING =
-  "Challenges Holding Back Hardware Store";
+  "Challenges Holding Back Hardware Stores";
 
 export const HARDWARE_UNIFIED_PARAGRAPH =
   "Hardware stores encounter numerous day-to-day challenges that decelerate growth and add expenses. Below are some of the challenges encountered by most stores.";
@@ -102,7 +102,7 @@ export const HARDWARE_FEATURE_CARDS = [
     id: "omni-channel-integration-hardware",
     title: "Omni-Channel and Sales Integration",
     description:
-      "Our inventory system links all the sales channels, including offline stores, online platforms, and mobile applications, to one and the same, synchronized platform. Our system will allow you to sell in-store using POS and online and all of it is integrated in a single platform.",
+      "Our inventory system links all the sales channels, including offline stores, online platforms, and mobile applications, to one synchronized platform. Our system will allow you to sell in-store using POS and online and all of it is integrated in a single platform.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/omini-chanel.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/pos",
@@ -143,7 +143,7 @@ export const POS_KEY_FEATURES_CARDS = [
     id: 2,
     title: "Live Inventory Management",
     description:
-      "Each sale would automatically update the stock. This feature ensures that your POS software used in hardware stores is also accurate to ensure you are always aware of what is in stock.",
+      "Each sale would automatically update the stock. This keeps your stock data accurate, so you always know what's in stock.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card2.webp",
   },
@@ -151,7 +151,7 @@ export const POS_KEY_FEATURES_CARDS = [
     id: 3,
     title: "Purchases Management",
     description:
-      "Generate purchase orders, delivery tracking, and supplier management. It keeps all records of your hardware store in POS software clean and easy to retrieve.",
+      "Generate purchase orders, delivery tracking, and supplier management. It keeps all your hardware store's POS records clean and easy to retrieve.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/pos-hardware/key-features-section/key-features-card3.webp",
   },
@@ -365,7 +365,7 @@ export const HARDWARE_TESTIMONIAL_FEATURES = [
     id: "flexible-features-hardware",
     title: "Flexible Features",
     description:
-      "The POS system at the hardware store is compatible with numerous sub-industries and products. Your hardware company gets equipment that suits actual day-to-day requirements.",
+      "The POS system at the hardware store is compatible with numerous sub-industries and products. Your hardware company gets features that suit actual day-to-day requirements.",
     icon: "testWhychoseIcon5",
   },
   {
@@ -379,7 +379,7 @@ export const HARDWARE_TESTIMONIAL_FEATURES = [
     id: "integration-addons-hardware",
     title: "Integration and Addons",
     description:
-      "Integrates with accounting software, eCommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier for easy scaling.",
+      "Integrates with accounting software, eCommerce, barcode scanners, and payment gateways. Add-ons like loyalty programs, SMS, multi-branch, and supplier tracking for easy scaling.",
     icon: "testWhychoseIcon7",
   },
 ];

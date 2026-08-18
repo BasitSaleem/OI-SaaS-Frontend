@@ -4,7 +4,7 @@ import { UnifiedPlatformCard } from "@/components/pages/landing-page/UnifiedPlat
 export const BAKERY_UNIFIED_HEADING = "Challenges Bakeries Face Today";
 
 export const BAKERY_UNIFIED_PARAGRAPH =
-  "There are some unique challenges that come with running a successful bakery. Having high-demand, fast-moving products, and a million other variations mean you need a system that truly gets your workflow.";
+  "There are some unique challenges that come with running a successful bakery. Having high-demand, fast-moving products, and a million other variations means you need a system that truly gets your workflow.";
 
 export const BAKERY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
   {
@@ -26,14 +26,14 @@ export const BAKERY_UNIFIED_CARDS: UnifiedPlatformCard[] = [
     icon: "stockConfusion",
     title: "Product Variations",
     description:
-      "Cakes, pastries, and breads are available in a variety of toppings, sizes and flavors. Putting lots of hard work and time to maintain it manually would be useless.",
+      "Cakes, pastries, and breads are available in a variety of toppings, sizes and flavors. Manually tracking all these variations would waste hours of effort.",
   },
   {
     id: "4",
     icon: "slowBilling",
     title: "Custom Orders and Pre-Bookings",
     description:
-      "Event orders, birthday and wedding cakes need to be more detailed. Losing a note, forgetting details or missing deadlines can damage your reputation.",
+      "Event orders, birthday cakes, and wedding cakes need more detailed tracking. Losing a note, forgetting details or missing deadlines can damage your reputation.",
   },
   {
     id: "5",
@@ -126,13 +126,13 @@ export const BAKERY_FEATURE_CARDS = [
     id: "better-analytics-reporting",
     title: "Better Analytics & Reporting",
     description:
-      "Comprehensive analytics provides clear insight into trends in sales, ingredients consumption and profitability. You can determine which products sell best, identify peak times, and spot patterns of waste before it impacts your margins.",
+      "Comprehensive analytics provides clear insight into trends in sales, ingredient consumption and profitability. You can determine which products sell best, identify peak times, and spot patterns of waste before it impacts your margins.",
     imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/bakery-pos/better-decision.webp",
     buttonLabel: "View Details",
     buttonHref: "/features/products",
     buttonColor: "#1AD1B9",
     list: [
-      { listheading: "Security, Accuracy & Compliance" },
+      { listheading: "Security, Accuracy and Compliance" },
       { listheading: "Predict demand and schedule reorders" },
       { listheading: "Determine revenue leakages and enhance profitability" },
     ],
@@ -191,19 +191,19 @@ export const BAKERY_WORKFLOW_DATA = {
       number: 1,
       title: "Ingredient Procurement",
       description:
-        "A bakery’s success depends on the availability of ingredients. Owners' inventory helps generate purchase orders based on the current inventory levels. The quantities of ingredients that are delivered by suppliers are recorded. It tracks supplier interactions, allowing you to make informed purchase decisions.",
+        "A bakery’s success depends on the availability of ingredients. Owners inventory helps generate purchase orders based on the current inventory levels. The quantities of ingredients that are delivered by suppliers are recorded. It tracks supplier interactions, allowing you to make informed purchase decisions.",
     },
     {
       number: 2,
       title: "Stock Organization",
       description:
-        "The bakery must track both the raw materials and final products. Owners Inventory lets you categorize your inventory by product type, ingredient, size, flavor, or season. The structure ensures that your billing and kitchen staff is always aware of what's available. Categorization clarity reduces confusion and speed up production.",
+        "The bakery must track both the raw materials and final products. Owners Inventory lets you categorize your inventory by product type, ingredient, size, flavor, or season. The structure ensures that your billing and kitchen staff are always aware of what's available. Categorization clarity reduces confusion and speeds up production.",
     },
     {
       number: 3,
       title: "Automatic Deduction",
       description:
-        "Recipe-based automated deduction is a powerful feature of our bakery POS software. Products on menus are related to ingredients. The system calculates precisely which ingredients were used to make an item. Stock adjustments are made automatically. It updates inventory level to ensure accurate stocks and prevent overuse.",
+        "Recipe-based automated deduction is a powerful feature of our bakery POS software. Products on menus are related to ingredients. The system calculates precisely which ingredients are used to make an item. Stock adjustments are made automatically. It updates inventory levels to ensure accurate stocks and prevent overuse.",
     },
     {
       number: 4,
@@ -215,7 +215,7 @@ export const BAKERY_WORKFLOW_DATA = {
       number: 5,
       title: "Reporting & Analysis",
       description:
-        "The system gives a detailed view of your bakery performance, beyond the daily operation. It monitors the [production output](/features/manufacturing), ingredient consumption trends, peak sales hour, and profitability. Accurate reports help optimize pricing and adjust production volume, allowing decisions based on real data, not assumptions.",
+        "The system gives a detailed view of your bakery performance, beyond the daily operation. It monitors the [production output](/features/manufacturing), ingredient consumption trends, peak sales hours, and profitability. Accurate reports help optimize pricing and adjust production volume, allowing decisions based on real data, not assumptions.",
     },
   ],
 };
@@ -240,7 +240,7 @@ export const BAKERY_TESTIMONIALS = [
     name: "Liam Bennett",
     title: "Operations Manager",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image2.webp",
-    text: "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions",
+    text: "Our bakery now has a clear view of its sales and stock. We can make confident purchasing and pricing decisions.",
   },
 ];
 
@@ -249,7 +249,7 @@ export const BAKERY_FAQS = [
     id: "faq-custom-orders",
     question: "Does our POS support custom orders as well?",
     answer:
-      "Yes, your POS seamlessly handles custom orders. Sizes, notes, designs, and payments can be all recorded. It also lets you store templates for custom orders that are often requested.",
+      "Yes, your POS seamlessly handles custom orders. Sizes, notes, designs, and payments can all be recorded. It also lets you store templates for custom orders that are often requested.",
   },
   {
     id: "faq-manage-ingredients",
@@ -267,12 +267,12 @@ export const BAKERY_FAQS = [
     id: "faq-multi-branch",
     question: "Do you provide support for several branches?",
     answer:
-      "Absolutely, it is possible to oversee every branch from one single dashboard. You can quickly compare performance across locations with centralized reporting.",
+      "Absolutely, it is possible to oversee every branch from a single dashboard. You can quickly compare performance across locations with centralized reporting.",
   },
 ];
 
 export const BAKERY_TESTIMONIAL_DATA = {
-  heading: "What Our Clients Say About Us?",
+  heading: "What Our Clients Say About Us",
   paragraph: "", // Optional paragraph
   secondHeading: "Manage Your Bakery Effectively",
   secondDescription:

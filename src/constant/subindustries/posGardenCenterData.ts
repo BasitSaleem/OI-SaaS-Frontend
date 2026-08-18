@@ -221,7 +221,7 @@ export const GARDEN_CENTER_TESTIMONIALS = [
     name: "Rachel Kowalski",
     title: "Owner, Greenfield Nursery, Columbus OH",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image79.webp",
     text: "We were placing supplier orders based on what we remembered selling last spring. Switched to Owners Inventory and pulled actual SKU movement reports for the first time. Our overstock on slow-turn perennials dropped by about 30% the first season.",
   },
   {
@@ -229,7 +229,7 @@ export const GARDEN_CENTER_TESTIMONIALS = [
     name: "Marcus Obi",
     title: "Manager, Terracycle Garden Center, Portland OR",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image12.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image79.webp",
     text: "Variant tracking changed how we manage our container inventory. Before, we'd reorder 1-gallon shrubs not realizing we had 40 units of the 3-gallon sitting in the back. Now each size has its own count and its own alert. We haven't had a duplicate overstock issue since we set it up.",
   },
   {
@@ -237,7 +237,7 @@ export const GARDEN_CENTER_TESTIMONIALS = [
     name: "Diana Furst",
     title: "Owner, Sunroot Gardens, Denver CO",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/girl-image80.webp",
     text: "A customer came in asking for the exact heirloom pepper variety she bought from us in 2022. My staff pulled it up in thirty seconds from her profile. She's been back four times this season.",
   },
   {
@@ -245,7 +245,7 @@ export const GARDEN_CENTER_TESTIMONIALS = [
     name: "Liam Tran",
     title: "Owner, Westside Plant House, Sacramento CA",
     image:
-      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image13.webp",
+      "https://d2qlv5xtew5ayb.cloudfront.net/assets/industries-pages/industries-testimonial-images/boy-image80.webp",
     text: "We added an online store through the platform last year. The inventory sync is the part that actually works. When something sells at the register, the website updates before the next customer can add it to their cart. No more apologetic refund emails.",
   },
 ];

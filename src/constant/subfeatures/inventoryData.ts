@@ -16,7 +16,7 @@ export const INVENTORY_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-purple-light) 0%, var(--primary-purple-dark) 100%)",
     description:
-      "Control menu items, ingredients, and combos with our POS product management feature and make sure that all branches are operating off the same menu.",
+      "Control menu items, ingredients, and combos with our POS product management feature, and make sure that all branches are operating off the same menu.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/restaurant-mobile.webp",
     link: "/industries/restaurant-inventory-management-software",
@@ -27,7 +27,7 @@ export const INVENTORY_INDUSTRIES = [
     gradient:
       "linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%)",
     description:
-      "Manage product catalogs easily with efficient bulk item organization, level pricing, and supplier catalogs with robust product catalog management software.",
+      "Manage product catalogs easily with efficient bulk item organization, tiered pricing, and supplier catalogs with robust product catalog management software.",
     image: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale.webp",
     mobileImage: "https://d2qlv5xtew5ayb.cloudfront.net/assets/industry-type/whole-sale-mobile.webp",
     link: "/industries/warehouse-pos-system",
@@ -61,7 +61,7 @@ export const INVENTORY_FEATURES_CARDS = [
     id: 1,
     title: "Transfer Orders",
     description:
-      "Simple movement of products across warehouses, stores, or branches. Monitor every step so that your products can be delivered on time and correctly. Transfer orders keep your stock flowing problem-free.",
+      "Simply move products across warehouses, stores, or branches.. Monitor every step so that your products can be delivered on time and correctly. Transfer orders keep your stock flowing without problem.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/tranfer-order.webp",
   },
@@ -77,7 +77,7 @@ export const INVENTORY_FEATURES_CARDS = [
     id: 3,
     title: "Stock Receiving",
     description:
-      "Get inventory fast and correctly, and check on all incoming goods. Verify product inclusions against supplier invoices and update the inventory instantly in the process of correct stock control.",
+      "Get inventory quickly and accurately, and check on all incoming goods. Verify product inclusions against supplier invoices and update the inventory instantly in the process of correct stock control.",
     imageSrc:
       "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/inventory-operations-page/features-section/stock-recieving.webp",
   },

@@ -24,7 +24,7 @@ const Page = () => {
     <div>
       <SubFeaturesHero
         title="Manage Your Products Seamlessly with Owners Inventory"
-        description="Create, manage, and monitor all your products effectively through the Product Management Feature in Owners Inventory. Organize stock levels, set prices, SKUs, and barcodes with complete transparency and accuracy."
+        description="Create, manage, and monitor all your products effectively through the Product Management Feature in Owners Inventory. Organize stock levels, set prices, and assign SKUs and barcodes with complete transparency and accuracy."
         image={heroBanner}
         imageClassName="lg:my-14 my-11 max-w-[1040px]"
         ctaDesc="Get Started for Free"
@@ -42,8 +42,8 @@ const Page = () => {
       />
 
       <WhyChoosePOS
-        heading="Why Choose Product Management System?"
-        paragraph="Choose Owners Inventory because of its accuracy, scalability, and efficiency. It's not about stocks, but about smartly managing your business."
+        heading="Why Choose Our Product Management System?"
+        paragraph="Choose Owners Inventory because of its accuracy, scalability, and efficiency. It's not about stock, but about smartly managing your business."
         cards={PRODUCT_WHY_CHOOSE_CARDS}
         mainImage={whyChoseBanner}
       />
@@ -51,14 +51,14 @@ const Page = () => {
       <div className="lg:mt-[100px] md:mt-28 mt-20">
         <IndustryPosShowcase
           mainHeading="Industry-Ready Product Dashboard Solutions"
-          paragraph="It does not matter whether you are a manufacturer, wholesaler, distributor, or retailer, our Product Management feature helps you manage your product operations with complete transparency and accuracy. From pricing to performance, Owners Inventory makes sure that every product in your catalog is organized, and optimized for your business."
+          paragraph="It does not matter whether you are a manufacturer, wholesaler, distributor, or retailer, our Product Management feature helps you manage your product operations with complete transparency and accuracy. From pricing to performance, Owners Inventory makes sure that every product in your catalog is organized and optimized for your business."
           buttonText="Explore All Industries"
           industries={PRODUCT_INDUSTRIES}
         />
       </div>
 
       <FeaturesCallToAction
-        title="Empower Products Elevate Businesses"
+        title="Empower Products. Elevate Businesses"
         description="With Owners Inventory, you have complete control over your POS System Product Listing, inventory, and pricing. Organizing and optimizing every aspect of your business is made easier with our platform."
       />
       <FeaturesTestimonials
