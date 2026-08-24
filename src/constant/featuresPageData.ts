@@ -63,7 +63,7 @@ export const CORE_OPERATIONS_DATA = {
       id: "sales-orders-feature",
       title: "Sales & Orders",
       description:
-        "Streamline your order processing, from quotation to fulfillment.",
+        "Streamline your order processing from quotation to fulfillment.",
       videoSrc:
         "https://d2qlv5xtew5ayb.cloudfront.net/videos/features-page/sale-order.webm",
       imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/sales-banner.webp",
@@ -86,7 +86,7 @@ export const TEAM_FEATURES = [
   },
   {
     id: "hr-feature",
-    title: "Human Resource (HR)",
+    title: "Human Resources (HR)",
     description:
       "Simplify attendance, shifts, payroll, and employee records in one system.",
     videoSrc:
@@ -110,7 +110,7 @@ export const TEAM_FEATURES = [
 export const FEATURE_CARDS_DATA = [
   {
     id: "ecommerce-card",
-    title: "Ecommerce - Sell Anywhere, Anytime.",
+    title: "E-commerce - Sell Anywhere, Anytime.",
     description:
       "Seamlessly connect your inventory with online stores and marketplaces. Manage stock, sync products, and process orders across multiple sales channels — all from one unified platform.",
     videoSrc:
@@ -135,7 +135,7 @@ export const UTILITIES_DATA = {
   imageSrc: "https://d2qlv5xtew5ayb.cloudfront.net/assets/features-page/featurescard-banners/utilities-banner.webp",
   heading: "Utilities & General Tools",
   description:
-    "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management ensuring, your business runs efficiently at every level.",
+    "Behind every smooth operation are the right tools. With Owners Inventory, you get smart utilities like workflow automation, customizable settings, and user management, ensuring your business runs efficiently at every level.",
   buttonText: "View Details",
   buttonColor: "var(--primary-teal)",
   buttonUrl: "/features/tools",

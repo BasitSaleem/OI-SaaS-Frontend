@@ -11,6 +11,8 @@ import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import { useDevice } from "@/hooks/useDevice";
 import Image from "next/image";
 
+import DropdownButtonSm from "@/components/dropdown/DropdownButtonSm";
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -83,27 +85,29 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 {title}
               </h1>
 
-              {description && !showButtons && (
-                <p className="font-['Onest'] text-xl leading-9 font-normal text-[var(--text-dark)] text-center w-full max-w-4xl mt-16">
+              {description && (
+                <p className="font-['Onest'] text-xl leading-9 font-normal text-[var(--text-dark)] text-center w-full max-w-4xl mt-5 md:mt-6">
                   {description}
                 </p>
               )}
 
               {showButtons && (
-                <div className="inline-flex p-1 lg:p-1.5 mt-10 xl:mt-20 rounded-full bg-white owner-inventory-hero__content--buttons">
+                <div className="flex md:gap-4 gap-2 lg:p-1.5 mt-8 md:mt-10 xl:mt-12 relative z-60 owner-inventory-hero__content--buttons">
                   <ButtonSm
-                    url="#"
-                    text="Book Free Demo"
-                    bgColor="var(--primary-teal)"
+                    url="https://app.ownersinventory.com/sign-up?app=OG"
+                    text="Get Started for Free"
+                    bgColor="[#795CF5]"
                     textColor="white"
                     isBorder
                   />
-                  <ButtonSm
-                    url="#"
-                    text="View Pricing Plans"
-                    bgColor="white"
-                    textColor="var(--text-dark)"
-                    isBorder={false}
+                  <DropdownButtonSm
+                    text="Book a Free Demo"
+                    bgColor="[#1AD1B9]"
+                    textColor="white"
+                    isBorder={true}
+                    items={[
+                      { label: "Meet With Expert", url: "/contact" },
+                    ]}
                   />
                 </div>
               )}

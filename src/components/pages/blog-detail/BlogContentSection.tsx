@@ -195,7 +195,7 @@ const BlockRenderer: React.FC<{ block: BlogBlock; itemCounters: { numbered: numb
 
   if (block.type === "table") {
     return (
-      <div className="w-full overflow-x-auto rounded-2xl border border-[#E5E7EB]">
+      <div className="w-full overflow-x-auto">
         <table className="w-full border-collapse text-left">
           <thead>
             <tr className="border-b border-[#E5E7EB]">
