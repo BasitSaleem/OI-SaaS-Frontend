@@ -77,11 +77,12 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
           </ul>
 
           {/* Social Icons */}
-          <div className="flex items-center justify-center gap-6 md:gap-[10px] lg:gap-4 xl:gap-6">
+          <div className="flex items-center justify-center gap-3 md:gap-[10px] lg:gap-2 xl:gap-3">
             {[
               { platform: "facebook", href: "https://www.facebook.com/ownersinventory/" },
               { platform: "instagram", href: "https://www.instagram.com/ownersinventory/" },
-              // { platform: "twitter", href: "#" },
+              { platform: "twitter", href: "https://x.com/OwnersInventory" },
+              { platform: "tiktok", href: "https://www.tiktok.com/@ownersinventory" },
               { platform: "linkdn", href: "https://www.linkedin.com/company/owners-inventory/" },
             ].map((social, index) => (
               <Link
@@ -89,16 +90,27 @@ const Footer: React.FC<FooterProps> = ({ gradientBackground }) => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cursor-pointer w-7 h-7 md:w-[17px] md:h-[17px] lg:w-7 lg:h-7"
+                className="flex items-center justify-center cursor-pointer w-7 h-7 md:w-[17px] md:h-[17px] lg:w-7 lg:h-7"
               >
-                <Image
-                  src={`https://d2qlv5xtew5ayb.cloudfront.net/assets/footer/${social.platform}-logo.svg`}
-                  alt={`${social.platform} logo`}
-                  width={28}
-                  height={28}
-                  className="w-full"
-                  loading="lazy"
-                />
+                {social.platform === "tiktok" ? (
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                    <rect width="28" height="28" rx="8" fill="#231F20"/>
+                    <path 
+                      transform="translate(2, 2)" 
+                      d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" 
+                      fill="white"
+                    />
+                  </svg>
+                ) : (
+                  <Image
+                    src={`https://d2qlv5xtew5ayb.cloudfront.net/assets/footer/${social.platform}-logo.svg`}
+                    alt={`${social.platform} logo`}
+                    width={28}
+                    height={28}
+                    className="w-full h-full"
+                    loading="lazy"
+                  />
+                )}
               </Link>
             ))}
           </div>
