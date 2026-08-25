@@ -78,7 +78,9 @@ export default function Home() {
                 "sameAs": [
                   "https://www.facebook.com/ownersinventory/",
                   "https://www.instagram.com/ownersinventory/",
-                  "https://www.linkedin.com/company/owners-inventory/"
+                  "https://www.linkedin.com/company/owners-inventory/",
+                  "https://x.com/OwnersInventory",
+                  "https://www.tiktok.com/@ownersinventory"
                 ],
                 "contactPoint": {
                   "@type": "ContactPoint",

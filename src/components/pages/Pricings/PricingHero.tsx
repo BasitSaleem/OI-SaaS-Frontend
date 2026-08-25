@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 
@@ -13,6 +13,7 @@ import {
 import Paragraph from "../typography/Paragraph";
 import PricingSecurityNote from "./PricingSecurityNote";
 import { usePricingHeroScroll } from "@/hooks/usePricingHeroScroll";
+import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 
 interface PricingHeroProps {
   activeTab: "monthly" | "yearly";
@@ -27,11 +28,12 @@ const PricingHero: React.FC<PricingHeroProps> = ({
   activeBusinessTab,
   onBusinessTabChange,
 }) => {
+  useHeaderAnimation();
   usePricingHeroScroll();
 
   return (
     <>
-      <div className="">
+      <div className="pinned-section-1">
         <div className="top-section md:h-6 h-8"></div>
         <section className="owner-inventory-hero  rounded-b-[40px] px-3 md:px-5 lg:px-10 overflow-hidden">
           <div className="owner-inventory-hero__home flex items-center justify-start lg:justify-center lg:items-center w-[63%] ml-0 lg:mx-auto relative inset-x-0">
