@@ -6,22 +6,19 @@ export async function sendLeadToWebhook(data: ContactFormData) {
     const firstName = nameParts[0] || "";
     const lastName = nameParts.slice(1).join(" ") || "";
 
-    const webhookUrl = "https://vicidialwebhook.redstartechnologies.com/contact-lead";
-    const webhookPayload = {
+    const webhookParams = new URLSearchParams({
       first_name: firstName,
       last_name: lastName,
       email: data.email,
       phone_number: data.phone,
       selected_service: data.subject,
       client_notes: `Company: ${data.company}\nCompany Size: ${data.companySize}\nMessage: ${data.message}`,
-    };
+    });
+
+    const webhookUrl = `https://vicidialwebhook.redstartechnologies.com/contact-lead?${webhookParams.toString()}`;
 
     const response = await fetch(webhookUrl, {
       method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(webhookPayload),
     });
 
     if (!response.ok) {
