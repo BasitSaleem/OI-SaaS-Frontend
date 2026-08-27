@@ -1,6 +1,8 @@
-import { ContactFormData } from "./contactSchema";
+"use server";
 
-export async function sendLeadToWebhook(data: ContactFormData) {
+import { ContactFormData } from "@/utils/contactSchema";
+
+export async function submitLeadAction(data: ContactFormData) {
   try {
     const nameParts = data.name.trim().split(/\s+/);
     const firstName = nameParts[0] || "";
@@ -22,9 +24,13 @@ export async function sendLeadToWebhook(data: ContactFormData) {
     });
 
     if (!response.ok) {
-      console.warn(`Webhook integration responded with status: ${response.status}`);
+      console.error(`Webhook returned status: ${response.status}`);
+      return { success: false, error: `Server error: ${response.status}` };
     }
-  } catch (error) {
-    console.error("Failed to send lead to webhook:", error);
+
+    return { success: true };
+  } catch (error: any) {
+    console.error("Server Action Error:", error);
+    return { success: false, error: error.message || "Server Action Error" };
   }
 }
