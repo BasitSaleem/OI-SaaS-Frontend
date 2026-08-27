@@ -14,6 +14,7 @@ import TextArea from "@/components/inputField/TextArea";
 import ButtonSm from "@/components/button/ButtonSm";
 import { HiOutlineShieldCheck } from "react-icons/hi";
 import { contactSchema, ContactFormData } from "@/utils/contactSchema";
+import { sendLeadToWebhook } from "@/utils/webhook";
 
 const API_URL = "https://osbackend.ownersjungle.com/api/v1/oi/saas-leads";
 
@@ -56,6 +57,7 @@ const ContactForm = () => {
     }
     setIsLoading(true);
     try {
+      sendLeadToWebhook(data);
       const response = await fetch(API_URL, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },

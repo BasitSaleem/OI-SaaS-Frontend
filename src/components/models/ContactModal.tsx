@@ -13,6 +13,7 @@ import TextArea from "../inputField/TextArea";
 import ButtonSm from "../button/ButtonSm";
 import PhoneInputField from "../inputField/PhoneInputField";
 import { contactSchema, ContactFormData } from "@/utils/contactSchema";
+import { sendLeadToWebhook } from "@/utils/webhook";
 
 const API_URL = "https://osbackend.ownersjungle.com/api/v1/oi/saas-leads";
 
@@ -60,6 +61,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
     }
     setIsLoading(true);
     try {
+      sendLeadToWebhook(data);
       const response = await fetch(API_URL, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
