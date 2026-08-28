@@ -119,7 +119,7 @@ export interface BlogData {
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 
-const allBlogData: BlogData[] = [
+export const blogData: BlogData[] = [
   {
     id: "pos-system-cost",
     slug: "how-much-does-a-pos-system-cost",
@@ -848,10 +848,6 @@ const allBlogData: BlogData[] = [
     relatedTopicIds: ["consignment-inventory", "pos-system-cost"],
   },
 ];
-
-export const blogData: BlogData[] = allBlogData.filter(
-  (b) => b.id !== "consignment-inventory" && b.id !== "purchase-order-guide"
-);
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
