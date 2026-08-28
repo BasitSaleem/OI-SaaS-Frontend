@@ -16,7 +16,13 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/search"],
+      disallow: [
+        "/search",
+        "/blog/consignment-inventory",
+        "/blog/what-is-consignment-inventory",
+        "/blog/purchase-order-guide",
+        "/blog/what-is-a-purchase-order",
+      ],
     },
     sitemap: "https://ownersinventory.com/sitemap.xml",
   };
