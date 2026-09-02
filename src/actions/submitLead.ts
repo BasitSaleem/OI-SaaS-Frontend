@@ -27,6 +27,9 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
     const phone = params.get("phone_number") || "";
     const leadSource = params.get("lead_source") || "OI Website";
     const companyName = params.get("company_name") || "";
+    const employeeCount = params.get("employee_count") || "";
+    const servicesProposed = params.get("services_proposed") || "";
+    const clientNotes = params.get("client_notes") || "";
 
     // 3. Send data to Primary CRM Webhook
     const response = await fetch(`https://vicidialwebhook.redstartechnologies.com/contact-lead?${paramsStr}`, {
@@ -215,11 +218,64 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
       ghlResult.contactUpsert = { success: false, error: "GHL credentials missing from environment" };
     }
 
-    return { 
+    // 5. Slack Notification
+    const slackWebhookUrl = process.env.NEXT_PUBLIC_SLACK_WEBHOOK_URL;
+    let slackResult: { success: boolean; error?: string } = { success: false };
+
+    if (slackWebhookUrl) {
+      try {
+        const slackMessage = {
+          text: `New website lead: ${firstName} ${lastName}`,
+          blocks: [
+            {
+              type: "header",
+              text: { type: "plain_text", text: "🔔 New Website Lead", emoji: true },
+            },
+            {
+              type: "section",
+              fields: [
+                { type: "mrkdwn", text: `*Name:*\n${firstName} ${lastName}` },
+                { type: "mrkdwn", text: `*Email:*\n${email || "-"}` },
+                { type: "mrkdwn", text: `*Phone:*\n${phone || "-"}` },
+                { type: "mrkdwn", text: `*Company:*\n${companyName || "-"}` },
+                { type: "mrkdwn", text: `*Company Size:*\n${employeeCount || "-"}` },
+                { type: "mrkdwn", text: `*Subject:*\n${servicesProposed || "-"}` },
+                { type: "mrkdwn", text: `*Source:*\n${leadSource}` },
+              ],
+            },
+            ...(clientNotes
+              ? [{ type: "section", text: { type: "mrkdwn", text: `*Notes:*\n${clientNotes}` } }]
+              : []),
+          ],
+        };
+
+        const slackRes = await fetch(slackWebhookUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(slackMessage),
+        });
+
+        slackResult.success = slackRes.ok;
+        if (!slackRes.ok) {
+          const errText = await slackRes.text().catch(() => "");
+          slackResult.error = errText || `Slack webhook returned status ${slackRes.status}`;
+          console.error("Slack webhook error:", slackResult.error);
+        }
+      } catch (slackErr: any) {
+        slackResult = { success: false, error: slackErr?.message || "Unknown Slack error" };
+        console.error("Error sending lead to Slack:", slackErr);
+      }
+    } else {
+      console.warn("NEXT_PUBLIC_SLACK_WEBHOOK_URL missing from environment, skipping Slack notification.");
+      slackResult.error = "Slack webhook URL missing from environment";
+    }
+
+    return {
       success: response.ok,
       error: response.ok ? undefined : `Webhook returned status ${response.status}`,
       vicidial: webhookResult,
-      ghl: ghlResult
+      ghl: ghlResult,
+      slack: slackResult
     };
   } catch (error: any) {
     console.error("Server Action Error (Full):", error);
