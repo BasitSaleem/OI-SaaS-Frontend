@@ -6,6 +6,7 @@ import ButtonSm from "@/components/button/ButtonSm";
 import Image from "next/image";
 import Link from "next/link";
 import { useSafariDetector } from "@/hooks/useSafariDetector";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 interface SmartTools {
   title?: string;
@@ -50,7 +51,7 @@ const SmartTools: React.FC<SmartTools> = ({
         <SectionHeading heading={title} headingClassName="text-center lg:mb-6 md:mb-6 mb-5 text-[var(--white-color)]" description={description} descriptionClassName="text-center lg:mb-[42px] md:mb-6 mb-5 text-[var(--white-color)]" />
         <div className="flex gap-3 lg:gap-6 flex-col md:flex-row items-center justify-center relative z-50">
           <Link
-            href="https://app.ownersinventory.com/sign-up?app=OG"
+            href={getPackageLink("signup")}
             className="bg-transparent w-full md:w-fit
     px-4 py-2.5 md:px-5 md:py-3 lg:px-[40px] xl:px-[64px] lg:py-4 flex items-center justify-center text-sm md:text-base font-['Onest'] font-medium
      text-[var(--white-color)]  border border-[var(--white-color)] hover:border-transparent rounded-full hover:text-black  hover:bg-[var(--white-color)]

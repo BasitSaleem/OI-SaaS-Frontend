@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Tooltip from "@/components/toolTip/Tooltip";
 import Link from "next/link";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 type RightIconsProps = {
   searchOpen: boolean;
@@ -50,7 +51,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
 
       {/* User Icon */}
       <div className="relative group">
-        <Link href="https://app.ownersinventory.com/" aria-label="Log in to your account">
+        <Link href={getPackageLink("login")} aria-label="Log in to your account">
           <Image
             src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/user.svg"
             alt="User"
@@ -69,7 +70,7 @@ const RightIcons: React.FC<RightIconsProps> = ({
       </div>
 
       <Link
-        href="https://app.ownersinventory.com/sign-up?app=OG"
+        href={getPackageLink("signup")}
         className="px-3.5 py-1.5 xl:px-[18px] xl:py-[9px] md:text-[10px] xl:text-sm font-bold font-['Onest'] text-white bg-[var(--text-dark)] rounded-full border hover:bg-white hover:text-[var(--text-dark)] hover:border-[var(--text-dark)] transition-all whitespace-nowrap"
       >
         Start for Free

@@ -6,6 +6,7 @@ import { ArrowDown } from "lucide-react";
 import ButtonSm from "@/components/button/ButtonSm";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEqualizeHeadings } from "@/hooks/useEqualizeHeadings";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 interface Feature {
   id?: string | number;
@@ -205,7 +206,7 @@ const KeyHighlights: React.FC<KeyHighlightsProps> = ({
 
       <div className="md:mt-7 mt-5 flex items-center justify-center">
         <ButtonSm
-          url="https://app.ownersinventory.com/"
+          url={getPackageLink("signup")}
           text="Book a Free Demo"
           bgColor="[#1AD1B9]"
           textColor="white"

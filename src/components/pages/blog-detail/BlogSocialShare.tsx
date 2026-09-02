@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 interface BlogSocialShareProps {
   title: string;
@@ -96,7 +97,7 @@ const BlogSocialShare: React.FC<BlogSocialShareProps> = ({ title }) => {
           See how Owners Inventory can transform your inventory management operations.
         </p>
         <Link
-          href="https://app.ownersinventory.com/sign-up?app=OG"
+          href={getPackageLink("signup")}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-[#231F20] font-semibold font-['Onest'] text-sm px-6 py-2.5 rounded-full hover:bg-white/90 transition-colors duration-200 w-full text-center"

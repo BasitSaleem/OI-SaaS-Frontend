@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import ButtonSm from "@/components/button/ButtonSm";
 import SectionHeading from "../typography/SectionHeading";
 import TrollyAnimation from "./trollyAnimation";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 // ContactModal pulls in react-hook-form + zod + react-phone-number-input.
 // Load it only when the user actually triggers it (ssr:false because it's a modal).
@@ -29,7 +30,7 @@ function SmartWaytoSyncndSellSection() {
 
             <div className="hidden md:flex gap-4 w-full items-center justify-start">
               <ButtonSm
-                url="https://app.ownersinventory.com/"
+                url={getPackageLink("signup")}
                 text="Book a Free Demo"
                 bgColor="var(--primary-teal)"
                 textColor="white"
@@ -52,7 +53,7 @@ function SmartWaytoSyncndSellSection() {
 
           <div className="md:hidden flex gap-4 w-full items-center justify-start">
             <ButtonSm
-              url="https://app.ownersinventory.com/"
+              url={getPackageLink("signup")}
               text="Book a Free Demo"
               bgColor="var(--primary-teal)"
               textColor="white"

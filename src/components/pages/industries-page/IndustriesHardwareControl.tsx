@@ -3,6 +3,7 @@ import React from "react";
 import "../../../app/globals.css";
 import ButtonSm from "@/components/button/ButtonSm";
 import SectionHeading from "../typography/SectionHeading";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 interface IndustriesHardwareControlProps {
   title?: string;
@@ -33,7 +34,7 @@ const IndustriesHardwareControl: React.FC<IndustriesHardwareControlProps> = ({
 
               <div className="flex gap-6 flex-col w-full md:flex-row items-center justify-center">
                 <ButtonSm
-                  url="https://app.ownersinventory.com/sign-up?app=OG"
+                  url={getPackageLink("signup")}
                   text={ctaDesc}
                   className="w-full md:w-fit"
                   bgColor="white"

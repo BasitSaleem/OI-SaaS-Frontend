@@ -12,6 +12,7 @@ import { useDevice } from "@/hooks/useDevice";
 import Image from "next/image";
 
 import DropdownButtonSm from "@/components/dropdown/DropdownButtonSm";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -94,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {showButtons && (
                 <div className="flex md:gap-4 gap-2 lg:p-1.5 mt-8 md:mt-10 xl:mt-12 relative z-60 owner-inventory-hero__content--buttons">
                   <ButtonSm
-                    url="https://app.ownersinventory.com/sign-up?app=OG"
+                    url={getPackageLink("signup")}
                     text="Get Started for Free"
                     bgColor="[#795CF5]"
                     textColor="white"

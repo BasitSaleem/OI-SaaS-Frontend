@@ -11,6 +11,7 @@ import CalltoActionBottom from '../landing-page/CalltoActionBottom';
 import FeaturesTabSection from '../landing-page/FeaturesTabSection';
 import AddOnsSection from './AddOnsSection';
 import { PRICING_FAQS } from '@/constant/pricingFaqData';
+import { getPackageLink } from '@/utils/getPackageLink';
 
 const PricingPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'monthly' | 'yearly'>('monthly');
@@ -57,7 +58,7 @@ const PricingPage: React.FC = () => {
           paragraph='We’ve compiled the most common questions about Owners Inventory from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
           faqs={PRICING_FAQS}
           buttonText='Start Now'
-          buttonUrl='https://app.ownersinventory.com/'
+          buttonUrl={getPackageLink('signup')}
         />
       </div>
 

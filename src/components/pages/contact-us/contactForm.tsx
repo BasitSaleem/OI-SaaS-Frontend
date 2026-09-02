@@ -1,22 +1,16 @@
 "use client";
-
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
-import { isValidPhoneNumber } from "react-phone-number-input";
 import ReCAPTCHA from "react-google-recaptcha";
-
 import PhoneInputField from "@/components/inputField/PhoneInputField";
 import InputField from "@/components/inputField/InputField";
 import SelectField from "@/components/inputField/SelectField";
 import TextArea from "@/components/inputField/TextArea";
-import ButtonSm from "@/components/button/ButtonSm";
 import { HiOutlineShieldCheck } from "react-icons/hi";
 import { contactSchema, ContactFormData } from "@/utils/contactSchema";
 import { submitLeadAction } from "@/actions/submitLead";
-
-const API_URL = "https://osbackend.ownersjungle.com/api/v1/oi/saas-leads";
 
 const companySizeOptions = [
   { label: "Less than 5 employees", value: "Less than 5 employees" },
@@ -57,22 +51,34 @@ const ContactForm = () => {
     }
     setIsLoading(true);
     try {
-      submitLeadAction(data).then((res) => {
-        if (!res.success) {
-          console.error("Webhook submission failed:", res.error);
-        }
-      });
-      const response = await fetch(API_URL, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+      const nameParts = data.name.trim().split(/\s+/);
+      const firstName = nameParts[0] || "";
+      const lastName = nameParts.slice(1).join(" ") || "";
+
+      // Format full client notes string for CRM display
+      const notesArray: string[] = [];
+      if (data.company) notesArray.push(`Company: ${data.company}`);
+      if (data.companySize) notesArray.push(`Company Size: ${data.companySize}`);
+      if (data.message) notesArray.push(`Message: ${data.message}`);
+      const clientNotes = notesArray.join(" | ");
+
+      // Build query payload with individual fields
+      const params = new URLSearchParams({
+        first_name: firstName,
+        last_name: lastName,
+        email: data.email,
+        phone_number: data.phone,
+        selected_service: data.subject,
+        lead_source: "OI Website",
+        company_name: data.company || "",
+        employee_count: data.companySize || "",
+        services_proposed: data.subject || "",
+        client_notes: clientNotes,
       });
 
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => null);
-        throw new Error(
-          errorData?.message || "Something went wrong. Please try again.",
-        );
+      const res = await submitLeadAction(params.toString(), recaptchaToken || "", data);
+      if (!res.success) {
+        throw new Error(res.error || "Submission failed. Please try again.");
       }
 
       toast.success(
@@ -179,7 +185,7 @@ const ContactForm = () => {
         <div className="flex justify-start">
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY?.trim() || ""}
             onChange={(token) => setRecaptchaToken(token)}
             onExpired={() => setRecaptchaToken(null)}
           />
