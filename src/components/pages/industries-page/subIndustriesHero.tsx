@@ -8,6 +8,7 @@ import { useHeroAnimations } from "@/hooks/useHeroAnimations";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
 import Image, { StaticImageData } from "next/image";
 import Paragraph from "../typography/Paragraph";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -136,7 +137,7 @@ const SubIndustriesHero: React.FC<SubIndustriesHeroProps> = ({
                   className="flex md:gap-4 gap-2 lg:p-1.5 relative z-[60] owner-inventory-hero__content--buttons"
                 >
                   <ButtonSm
-                    url="https://app.ownersinventory.com/sign-up?app=OG"
+                    url={getPackageLink("signup")}
                     text={ctaDesc}
                     bgColor="[#1AD1B9]"
                     textColor="white"

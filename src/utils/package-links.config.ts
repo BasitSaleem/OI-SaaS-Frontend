@@ -13,7 +13,8 @@ export type PackageKey =
   | "ecommerce-premium"
   | "hybrid-pro"
   | "hybrid-enterprise"
-  | "login";
+  | "login"
+  | "signup";
 
 export interface PackageLinkConfig {
   key: PackageKey;
@@ -125,5 +126,13 @@ export const PACKAGE_LINKS: PackageLinkConfig[] = [
     name: "Login",
     staging: "https://osglobal.ownersjungle.com/login?app=OG",
     production: "https://app.ownersuniverse.com/login?app=OG",
+  },
+
+  // Sign Up
+  {
+    key: "signup",
+    name: "Sign Up",
+    staging: "https://osglobal.ownersjungle.com/sign-up?app=OG",
+    production: "https://app.ownersuniverse.com/sign-up?app=OG",
   },
 ];

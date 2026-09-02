@@ -5,6 +5,7 @@ import "../../../app/globals.css";
 import ButtonSm from "@/components/button/ButtonSm";
 import SectionHeading from "../typography/SectionHeading";
 import ContactModal from "@/components/models/ContactModal";
+import { getPackageLink } from "@/utils/getPackageLink";
 
 interface IndustriesCallToAction {
   title?: string,
@@ -42,7 +43,7 @@ const IndustriesCallToAction: React.FC<IndustriesCallToAction> = ({
               />
               <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
                 <ButtonSm
-                  url="https://app.ownersinventory.com/sign-up?app=OG"
+                  url={getPackageLink("signup")}
                   text={ctaDesc}
                   className="w-full md:w-fit"
                   bgColor="[#795CF5]"
