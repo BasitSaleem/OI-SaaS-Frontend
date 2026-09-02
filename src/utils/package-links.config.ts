@@ -12,7 +12,8 @@ export type PackageKey =
   | "ecommerce-pro"
   | "ecommerce-premium"
   | "hybrid-pro"
-  | "hybrid-enterprise";
+  | "hybrid-enterprise"
+  | "login";
 
 export interface PackageLinkConfig {
   key: PackageKey;
@@ -116,5 +117,13 @@ export const PACKAGE_LINKS: PackageLinkConfig[] = [
       "https://osglobal.ownersjungle.com/create-organization?product=OI&pkgId=51dfa210-cd5a-4943-ba46-ee106f854f80",
     production:
       "https://app.ownersuniverse.com/create-organization?pkgId=51dfa210-cd5a-4943-ba46-ee106f854f80",
+  },
+
+  // Login
+  {
+    key: "login",
+    name: "Login",
+    staging: "https://osglobal.ownersjungle.com/login?app=OG",
+    production: "https://app.ownersuniverse.com/login?app=OG",
   },
 ];

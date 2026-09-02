@@ -13,6 +13,7 @@ import {
   resourcesDetailsMap,
   resourcesItems,
 } from "./dropdownItems/ResourceItemlist";
+import { getPackageLink } from "@/utils/getPackageLink";
 import {
   industriesItems,
   industryDetailsMap,
@@ -376,7 +377,7 @@ export default function OffcanvasMenu({
             </li> */}
             <li className={listItem}>
               <Link
-                href="https://app.ownersinventory.com/"
+                href={getPackageLink("login")}
                 prefetch={false}
                 className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-[var(--text-dark)] bg-white border border-[var(--border-muted)] hover:bg-gray-100 hover:border-[var(--primary-purple)] active:bg-gray-100 active:border-[var(--primary-purple)] rounded-full font-['Onest']"
               >
