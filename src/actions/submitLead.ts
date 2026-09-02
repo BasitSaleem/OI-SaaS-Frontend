@@ -1,5 +1,11 @@
 "use server";
 
+import { isProduction } from "@/utils/getPackageLink";
+
+const SAAS_LEADS_API_URL = isProduction()
+  ? "http://server.ownersinventory.com/api/v1/oi/saas-leads"
+  : "https://osbackend.ownersjungle.com/api/v1/oi/saas-leads";
+
 export async function submitLeadAction(paramsStr: string, recaptchaToken: string, clientData?: any) {
   try {
     // 1. Google reCAPTCHA validation
@@ -52,7 +58,7 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
     if (clientData) {
       try {
         console.log("Sending lead to backend API from server...");
-        const backendRes = await fetch("https://osbackend.ownersjungle.com/api/v1/oi/saas-leads", {
+        const backendRes = await fetch(SAAS_LEADS_API_URL, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(clientData),

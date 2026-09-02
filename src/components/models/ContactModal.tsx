@@ -15,8 +15,6 @@ import PhoneInputField from "../inputField/PhoneInputField";
 import { contactSchema, ContactFormData } from "@/utils/contactSchema";
 import { submitLeadAction } from "@/actions/submitLead";
 
-const API_URL = "https://osbackend.ownersjungle.com/api/v1/oi/saas-leads";
-
 const companySizeOptions = [
   { label: "Less than 5 employees", value: "Less than 5 employees" },
   { label: "5-20 employees", value: "5-20 employees" },

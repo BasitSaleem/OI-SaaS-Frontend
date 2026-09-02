@@ -9,7 +9,7 @@ export class PackageNotFoundError extends Error {
   }
 }
 
-function isProduction(): boolean {
+export function isProduction(): boolean {
   const appEnv = process.env.NEXT_PUBLIC_APP_ENV;
   if (appEnv) return appEnv === "production";
   return process.env.NODE_ENV === "production";

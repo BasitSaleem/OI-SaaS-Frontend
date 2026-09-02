@@ -1,22 +1,16 @@
 "use client";
-
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
-import { isValidPhoneNumber } from "react-phone-number-input";
 import ReCAPTCHA from "react-google-recaptcha";
-
 import PhoneInputField from "@/components/inputField/PhoneInputField";
 import InputField from "@/components/inputField/InputField";
 import SelectField from "@/components/inputField/SelectField";
 import TextArea from "@/components/inputField/TextArea";
-import ButtonSm from "@/components/button/ButtonSm";
 import { HiOutlineShieldCheck } from "react-icons/hi";
 import { contactSchema, ContactFormData } from "@/utils/contactSchema";
 import { submitLeadAction } from "@/actions/submitLead";
-
-const API_URL = "https://osbackend.ownersjungle.com/api/v1/oi/saas-leads";
 
 const companySizeOptions = [
   { label: "Less than 5 employees", value: "Less than 5 employees" },
