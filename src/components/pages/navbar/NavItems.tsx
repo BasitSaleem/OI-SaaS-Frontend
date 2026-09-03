@@ -474,6 +474,7 @@ const NavItems = () => {
         <li>
           <Link
             href="/pricing"
+            prefetch={false}
             className="flex items-center justify-center gap-3 px-3.5 py-1.5 xl:px-4 xl:py-[9px] lg:text-xs  xl:text-sm font-semibold hover:bg-gray-100 hover:border-[var(--primary-purple)] font-['onest'] text-[var(--text-dark)] bg-white border border-[var(--background-halfwhite)] rounded-full"
           >
             Pricing

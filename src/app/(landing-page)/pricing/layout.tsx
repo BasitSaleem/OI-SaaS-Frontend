@@ -15,6 +15,12 @@ export const metadata: Metadata = {
   },
 };
 
+// Keep this route off Next's static/ISR path so it's always served through
+// SSR compute — required so the geo-redirect middleware (src/middleware.ts)
+// runs on every request instead of the CDN serving a cached static shell
+// that never reaches the middleware/compute layer.
+export const dynamic = "force-dynamic";
+
 export default function PricingLayout({
   children,
 }: {

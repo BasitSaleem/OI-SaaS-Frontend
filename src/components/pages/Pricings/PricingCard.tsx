@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { PricingPlan, FeatureRow } from "./types";
+import { Currency, formatAmount, convertToPkr } from "@/utils/currency";
 
 interface PricingCardProps {
   plan: PricingPlan;
@@ -10,6 +11,7 @@ interface PricingCardProps {
   planIndex?: number;
   industryKeyFeatures?: FeatureRow[];
   industry: string;
+  currency?: Currency;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
@@ -18,10 +20,15 @@ const PricingCard: React.FC<PricingCardProps> = ({
   allPlans,
   planIndex,
   industryKeyFeatures,
-  industry
+  industry,
+  currency = "USD",
 }) => {
   const router = useRouter();
-  const basePrice = isYearly ? (plan.yearlyPrice ?? plan.price) : plan.price;
+  const usdPrice = isYearly ? (plan.yearlyPrice ?? plan.price) : plan.price;
+  const pkrPrice = isYearly
+    ? (plan.pkrYearlyPrice ?? convertToPkr(usdPrice))
+    : (plan.pkrPrice ?? convertToPkr(usdPrice));
+  const basePrice = currency === "PKR" ? pkrPrice : usdPrice;
   const displayFeatures = plan.features;
 
   return (
@@ -75,7 +82,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 className="text-4xl leading-[100%] font-semibold font-['Onest']"
                 style={{ color: plan.color }}
               >
-                ${basePrice}
+                {formatAmount(basePrice, currency)}
               </span>
               <span className="text-sm font-normal leading-[170%] text-[var(--text-grey)] font-['Onest']">
                 /month

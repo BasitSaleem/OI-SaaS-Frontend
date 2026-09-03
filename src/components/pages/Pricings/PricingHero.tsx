@@ -14,12 +14,15 @@ import Paragraph from "../typography/Paragraph";
 import PricingSecurityNote from "./PricingSecurityNote";
 import { usePricingHeroScroll } from "@/hooks/usePricingHeroScroll";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
+import { Currency } from "@/utils/currency";
 
 interface PricingHeroProps {
   activeTab: "monthly" | "yearly";
   onTabChange: (tab: "monthly" | "yearly") => void;
   activeBusinessTab: BusinessType;
   onBusinessTabChange: (tab: BusinessType) => void;
+  currency?: Currency;
+  allowedBusinessTabs?: BusinessType[];
 }
 
 const PricingHero: React.FC<PricingHeroProps> = ({
@@ -27,6 +30,8 @@ const PricingHero: React.FC<PricingHeroProps> = ({
   onTabChange,
   activeBusinessTab,
   onBusinessTabChange,
+  currency = "USD",
+  allowedBusinessTabs,
 }) => {
   useHeaderAnimation();
   usePricingHeroScroll();
@@ -73,12 +78,14 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                   activeTab={activeTab}
                   onTabChange={onTabChange}
                   variant="tabs"
+                  hideDiscountBadge={currency === "PKR"}
                 />
 
                 {/* Industry Tabs */}
                 <IndustryTabs
                   activeTab={activeBusinessTab}
                   onTabChange={onBusinessTabChange}
+                  allowedTabs={allowedBusinessTabs}
                 />
 
                 {/* Pricing Cards */}
@@ -92,6 +99,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                       )?.features
                     }
                     industry={activeBusinessTab}
+                    currency={currency}
                   />
                 </div>
 

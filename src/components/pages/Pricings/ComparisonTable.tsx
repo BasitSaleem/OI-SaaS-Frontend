@@ -14,6 +14,7 @@ import { useDevice } from "@/hooks/useDevice";
 import { useRouter } from "next/navigation";
 import { BusinessType } from "./tableConfig";
 import { LuCircleFadingPlus } from "react-icons/lu";
+import { Currency, formatAmount, convertToPkr } from "@/utils/currency";
 
 interface ComparisonTableProps {
   categories: FeatureCategory[];
@@ -21,6 +22,7 @@ interface ComparisonTableProps {
   onTabChange: (tab: "monthly" | "yearly") => void;
   plans: PricingPlan[];
   industry: BusinessType;
+  currency?: Currency;
 }
 
 const ComparisonTable: React.FC<ComparisonTableProps> = ({
@@ -29,6 +31,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
   onTabChange,
   plans,
   industry,
+  currency = "USD",
 }) => {
   const router = useRouter();
   const { isMobile, isTablet, isDesktop } = useDevice();
@@ -293,10 +296,16 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
               <div className="flex min-w-max">
                 {tablePlans.map((plan, planIndex) => {
                   // decide which price to show
-                  const displayPrice =
+                  const usdDisplayPrice =
                     tab === "yearly"
                       ? (plan.yearlyPrice ?? plan.price)
                       : plan.price;
+                  const pkrDisplayPrice =
+                    tab === "yearly"
+                      ? (plan.pkrYearlyPrice ?? convertToPkr(usdDisplayPrice))
+                      : (plan.pkrPrice ?? convertToPkr(usdDisplayPrice));
+                  const displayPrice =
+                    currency === "PKR" ? pkrDisplayPrice : usdDisplayPrice;
 
                   return (
                     <div
@@ -326,7 +335,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               >
                                 {displayPrice === 0
                                   ? "Free"
-                                  : `$${displayPrice}`}
+                                  : formatAmount(displayPrice, currency)}
                                 <span className="text-xs text-[#231F20]">
                                   {displayPrice === 0
                                     ? ""

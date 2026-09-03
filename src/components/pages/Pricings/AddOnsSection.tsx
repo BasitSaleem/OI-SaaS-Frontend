@@ -2,11 +2,15 @@
 import React, { useState } from "react";
 import PricingPageIcon from "@/components/icons/pricingPageIcons";
 import Paragraph from "../typography/Paragraph";
+import { Currency, formatAmount, convertToPkr } from "@/utils/currency";
 
 interface AddOnItem {
   id: string;
   name: string;
   price: number;
+  // Real PKR price (not a USD conversion) — falls back to a placeholder
+  // conversion (see src/utils/currency.ts) when omitted.
+  pkrPrice?: number;
   description: string;
   icon: any; // Using any for icon name to match PricingPageIcon props
 }
@@ -16,6 +20,7 @@ const addOns: AddOnItem[] = [
     id: "warehouse",
     name: "Warehouses",
     price: 25,
+    pkrPrice: 1000,
     description: "Add warehouses for multi-location inventory tracking.",
     icon: "warehouse",
   },
@@ -23,6 +28,7 @@ const addOns: AddOnItem[] = [
     id: "finance",
     name: "Accounts & Finance",
     price: 15,
+    pkrPrice: 999,
     description: "Full accounting module with reports and financial tracking.",
     icon: "finance",
   },
@@ -30,6 +36,7 @@ const addOns: AddOnItem[] = [
     id: "online",
     name: "Online Store",
     price: 25,
+    pkrPrice: 1499,
     description: "Add your online store to manage e-commerce operations.",
     icon: "onlineStore",
   },
@@ -37,6 +44,7 @@ const addOns: AddOnItem[] = [
     id: "production",
     name: "Production Floors",
     price: 25,
+    pkrPrice: 1999,
     description: "Add production floors for manufacturing operations.",
     icon: "productionFloors",
   },
@@ -44,6 +52,7 @@ const addOns: AddOnItem[] = [
     id: "pos",
     name: "POS Terminal",
     price: 10,
+    pkrPrice: 500,
     description:
       "Add a point-of-sale terminal to your system for in-person sales.",
     icon: "posTerminal",
@@ -52,12 +61,17 @@ const addOns: AddOnItem[] = [
     id: "store",
     name: "Stores",
     price: 25,
+    pkrPrice: 1000,
     description: "Add additional store locations as you grow.",
     icon: "store",
   },
 ];
 
-const AddOnsSection: React.FC = () => {
+interface AddOnsSectionProps {
+  currency?: Currency;
+}
+
+const AddOnsSection: React.FC<AddOnsSectionProps> = ({ currency = "USD" }) => {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   return (
@@ -105,7 +119,12 @@ const AddOnsSection: React.FC = () => {
 
                 <div className="flex items-baseline gap-1 mb-4">
                   <span className="text-2xl font-bold leading-[135%] text-[var(--primary-teal)] font-['Onest']">
-                    ${addon.price}
+                    {formatAmount(
+                      currency === "PKR"
+                        ? (addon.pkrPrice ?? convertToPkr(addon.price))
+                        : addon.price,
+                      currency
+                    )}
                   </span>
                   <span className="text-sm text-[var(--text-dark)] font-['Onest']">
                     /month
