@@ -213,7 +213,10 @@ export default function OffcanvasMenu({
             </button>
           </div> */}
 
+          {/* Search hidden from the mobile menu too — SearchField/searchQuery
+              wiring kept in place, just not rendered.
           <SearchField searchOpen={true} searchQuery={searchQuery} setSearchQuery={setSearchQuery} variant="page" />
+          */}
           {/* Dynamic back button */}
           <button
             id="dynamic-back-btn"
