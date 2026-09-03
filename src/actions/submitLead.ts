@@ -37,8 +37,16 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
     const servicesProposed = params.get("services_proposed") || "";
     const clientNotes = params.get("client_notes") || "";
 
+    // The vicidial webhook 400s on an empty last_name (e.g. a single-word
+    // name submitted before the client-side fallback existed, or any other
+    // caller of this action). Guard here too so the webhook call itself
+    // never fails on this alone.
+    if (!lastName && firstName) {
+      params.set("last_name", firstName);
+    }
+
     // 3. Send data to Primary CRM Webhook
-    const response = await fetch(`https://vicidialwebhook.redstartechnologies.com/contact-lead?${paramsStr}`, {
+    const response = await fetch(`https://vicidialwebhook.redstartechnologies.com/contact-lead?${params.toString()}`, {
       method: "GET",
     });
     
@@ -55,6 +63,12 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
     }
 
     // 3.5. Send data to Backend API (bypassing client-side CORS)
+    // This is the actual system of record for the lead — the vicidial
+    // webhook, GHL, and Slack steps are secondary notifications/integrations
+    // that shouldn't block or misreport success if this one succeeds.
+    let backendResult: { success: boolean; status?: number; error?: string } = {
+      success: false,
+    };
     if (clientData) {
       try {
         console.log("Sending lead to backend API from server...");
@@ -63,12 +77,17 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(clientData),
         });
+        backendResult.success = backendRes.ok;
+        backendResult.status = backendRes.status;
         if (!backendRes.ok) {
+          const errText = await backendRes.text().catch(() => "");
+          backendResult.error = errText || `Backend API returned status ${backendRes.status}`;
           console.error(`Backend API returned status: ${backendRes.status}`);
         } else {
           console.log("Successfully sent lead to backend API");
         }
-      } catch (backendErr) {
+      } catch (backendErr: any) {
+        backendResult.error = backendErr?.message || "Unknown backend API error";
         console.error("Error sending lead to backend API:", backendErr);
       }
     }
@@ -276,10 +295,20 @@ export async function submitLeadAction(paramsStr: string, recaptchaToken: string
       slackResult.error = "Slack webhook URL missing from environment";
     }
 
+    // The lead counts as successfully submitted if it made it into the
+    // backend/CRM (the source of truth for the site), even if a secondary
+    // integration (vicidial webhook, GHL, Slack) failed. Fall back to the
+    // webhook result only if there was no clientData to send to the backend
+    // at all (shouldn't normally happen — both callers always pass it).
+    const success = clientData ? backendResult.success : response.ok;
+
     return {
-      success: response.ok,
-      error: response.ok ? undefined : `Webhook returned status ${response.status}`,
+      success,
+      error: success
+        ? undefined
+        : backendResult.error || `Submission failed (status ${backendResult.status ?? "unknown"}).`,
       vicidial: webhookResult,
+      backend: backendResult,
       ghl: ghlResult,
       slack: slackResult
     };

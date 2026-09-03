@@ -61,7 +61,10 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
     try {
       const nameParts = data.name.trim().split(/\s+/);
       const firstName = nameParts[0] || "";
-      const lastName = nameParts.slice(1).join(" ") || "";
+      // The vicidial webhook requires a non-empty last_name — a single-word
+      // name (common) would otherwise produce "" here and get rejected with
+      // a 400, even though the lead still saves to the backend/CRM.
+      const lastName = nameParts.slice(1).join(" ") || firstName;
 
       // Format full client notes string for CRM display
       const notesArray: string[] = [];
