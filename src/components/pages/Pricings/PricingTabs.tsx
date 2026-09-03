@@ -5,12 +5,16 @@ interface PricingTabsProps {
   activeTab: "monthly" | "yearly";
   onTabChange: (tab: "monthly" | "yearly") => void;
   variant?: "tabs" | "toggle";
+  // Hides the "20% OFF" yearly-discount banner — set true wherever yearly
+  // pricing isn't actually discounted (e.g. /pk/pricing).
+  hideDiscountBadge?: boolean;
 }
 
 const PricingTabs: React.FC<PricingTabsProps> = ({
   activeTab,
   onTabChange,
   variant = "tabs",
+  hideDiscountBadge = false,
 }) => {
   if (variant === "toggle") {
     return (
@@ -83,42 +87,44 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         </button>
 
         {/* Discount Banner - Responsive Design */}
-        <div className="absolute left-[70%] md:left-[80%] top-[-25px] md:top-[-20px] translate-x-2 flex flex-col gap-2 md:gap-4 items-center">
-          <div className="flex flex-col items-center md:gap-1 ml-6 md:ml-10">
-            {/* 20% Badge */}
-            <div
-              className="w-[69px] h-[24px] md:w-[70px] md:h-[24px] lg:w-[112px] lg:h-[38px] flex items-center justify-center rotate-[-5deg] text-white font-bold text-[10px] md:text-sm lg:text-xl z-30"
-              style={{
-                clipPath:
-                  "polygon(0% 26.57%, 97.23% 0%, 89.75% 37.8%, 99.46% 70.94%, 2.23% 97.44%, 9.71% 59.68%, 0% 26.57%)",
-                backgroundColor: "var(--text-dark)",
-              }}
-            >
-              20%
+        {!hideDiscountBadge && (
+          <div className="absolute left-[70%] md:left-[80%] top-[-25px] md:top-[-20px] translate-x-2 flex flex-col gap-2 md:gap-4 items-center">
+            <div className="flex flex-col items-center md:gap-1 ml-6 md:ml-10">
+              {/* 20% Badge */}
+              <div
+                className="w-[69px] h-[24px] md:w-[70px] md:h-[24px] lg:w-[112px] lg:h-[38px] flex items-center justify-center rotate-[-5deg] text-white font-bold text-[10px] md:text-sm lg:text-xl z-30"
+                style={{
+                  clipPath:
+                    "polygon(0% 26.57%, 97.23% 0%, 89.75% 37.8%, 99.46% 70.94%, 2.23% 97.44%, 9.71% 59.68%, 0% 26.57%)",
+                  backgroundColor: "var(--text-dark)",
+                }}
+              >
+                20%
+              </div>
+
+              {/* OFF Badge */}
+              <div
+                className="w-[52px] h-[17px] md:w-[58px] md:h-[19px] lg:w-[94px] lg:h-[30px] -mt-1 md:-mt-2.5 flex items-center justify-center text-[var(--primary-dark)] font-black text-[8px] md:text-[9px] lg:text-xl z-20"
+                style={{
+                  clipPath:
+                    "polygon(0% 26.57%, 97.2% 0%, 89.72% 37.77%, 99.42% 70.89%, 2.23% 97.38%, 9.7% 59.65%, 0% 26.57%)",
+                  backgroundColor: "var(--primary-teal)",
+                }}
+              >
+                OFF
+              </div>
             </div>
 
-            {/* OFF Badge */}
-            <div
-              className="w-[52px] h-[17px] md:w-[58px] md:h-[19px] lg:w-[94px] lg:h-[30px] -mt-1 md:-mt-2.5 flex items-center justify-center text-[var(--primary-dark)] font-black text-[8px] md:text-[9px] lg:text-xl z-20"
-              style={{
-                clipPath:
-                  "polygon(0% 26.57%, 97.2% 0%, 89.72% 37.77%, 99.42% 70.89%, 2.23% 97.38%, 9.7% 59.65%, 0% 26.57%)",
-                backgroundColor: "var(--primary-teal)",
-              }}
-            >
-              OFF
-            </div>
+            {/* Squiggled Arrow pointing from Yearly to Badges */}
+            <Image
+              src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/pricing-arrow.svg"
+              alt=""
+              width={78}
+              height={30}
+              className="absolute left-[10px] md:left-0 lg:left-5 bottom-[-30px] md:bottom-[-30px] lg:bottom-[-40px] w-10 md:w-16 lg:w-[78px]"
+            />
           </div>
-
-          {/* Squiggled Arrow pointing from Yearly to Badges */}
-          <Image
-            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/owners-inventory-pricing/pricing-arrow.svg"
-            alt=""
-            width={78}
-            height={30}
-            className="absolute left-[10px] md:left-0 lg:left-5 bottom-[-30px] md:bottom-[-30px] lg:bottom-[-40px] w-10 md:w-16 lg:w-[78px]"
-          />
-        </div>
+        )}
       </div>
     </div>
   );

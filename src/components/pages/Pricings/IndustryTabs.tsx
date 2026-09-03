@@ -40,13 +40,26 @@ const tabs: Tab[] = [
 interface IndustryTabsProps {
   activeTab: BusinessType;
   onTabChange: (tab: BusinessType) => void;
+  allowedTabs?: BusinessType[];
 }
 
 const IndustryTabs: React.FC<IndustryTabsProps> = ({
   activeTab,
   onTabChange,
+  allowedTabs,
 }) => {
   const [hoveredTab, setHoveredTab] = useState<BusinessType | null>(null);
+
+  const visibleTabs = allowedTabs
+    ? tabs.filter((tab) => allowedTabs.includes(tab.id))
+    : tabs;
+
+  // Only one business type available (e.g. the /pk/pricing page, which only
+  // shows Retail for now) — there's nothing to switch between, so skip the
+  // selector UI entirely instead of showing a single, unclickable-feeling tab.
+  if (visibleTabs.length <= 1) {
+    return null;
+  }
 
   return (
     <div className="w-full wrapper">
@@ -57,7 +70,7 @@ const IndustryTabs: React.FC<IndustryTabsProps> = ({
         </h2>
 
         <div className="bg-white/24 border border-white backdrop-blur-md rounded-[16px] lg:rounded-[30px] p-2 lg:p-6 flex lg:grid lg:grid-cols-4 overflow-x-auto lg:overflow-x-visible gap-4 no-scrollbar snap-x snap-mandatory lg:snap-none">
-          {tabs.map((tab) => {
+          {visibleTabs.map((tab) => {
             const isActive = activeTab === tab.id;
             const isHovered = hoveredTab === tab.id;
             const showHoverIcon = isActive || isHovered;

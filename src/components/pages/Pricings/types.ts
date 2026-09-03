@@ -4,6 +4,11 @@ export interface PricingPlan {
   price: number;
   description?: string;
   yearlyPrice?: number;
+  // Real PKR prices (not a USD conversion) — set on plans shown on
+  // /pk/pricing. Falls back to a placeholder USD->PKR conversion
+  // (see src/utils/currency.ts) when omitted.
+  pkrPrice?: number;
+  pkrYearlyPrice?: number;
   color: string;
   bgColor: string;
   features: string[];

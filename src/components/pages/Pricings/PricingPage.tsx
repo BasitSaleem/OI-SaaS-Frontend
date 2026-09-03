@@ -12,10 +12,29 @@ import FeaturesTabSection from '../landing-page/FeaturesTabSection';
 import AddOnsSection from './AddOnsSection';
 import { PRICING_FAQS } from '@/constant/pricingFaqData';
 import { getPackageLink } from '@/utils/getPackageLink';
+import { Currency } from '@/utils/currency';
+import Link from 'next/link';
 
-const PricingPage: React.FC = () => {
+interface PricingPageProps {
+  currency?: Currency;
+  // Restricts which industry/business-type tabs are selectable — e.g. the
+  // /pk/pricing page currently only offers Retail. Omit to show all of them.
+  allowedBusinessTabs?: BusinessType[];
+  // When false, the comparison table shows only the active industry's own
+  // feature set instead of the categories merged across all four industries.
+  // /pk/pricing sets this false so it only ever shows Retail's data.
+  aggregateComparisonCategories?: boolean;
+}
+
+const PricingPage: React.FC<PricingPageProps> = ({
+  currency = 'USD',
+  allowedBusinessTabs,
+  aggregateComparisonCategories = true,
+}) => {
   const [activeTab, setActiveTab] = useState<'monthly' | 'yearly'>('monthly');
-  const [activeBusinessTab, setActiveBusinessTab] = useState<BusinessType>('Retail');
+  const [activeBusinessTab, setActiveBusinessTab] = useState<BusinessType>(
+    allowedBusinessTabs?.[0] ?? 'Retail'
+  );
 
   const handleTabChange = (tab: 'monthly' | 'yearly') => {
     console.log("tab", tab);
@@ -36,18 +55,40 @@ const PricingPage: React.FC = () => {
         onTabChange={handleTabChange}
         activeBusinessTab={activeBusinessTab}
         onBusinessTabChange={setActiveBusinessTab}
+        currency={currency}
+        allowedBusinessTabs={allowedBusinessTabs}
       />
 
+      {/* Region switch: /pricing -> /pk/pricing is manual (still useful since
+          the geo-redirect only fires from /pricing); the reverse is removed —
+          region detection (src/proxy.ts) handles routing PK visitors to this
+          page automatically, so no "View global pricing" escape hatch here. */}
+      {currency === 'USD' && (
+        <div className="wrapper flex justify-center mt-6">
+          <Link
+            href="/pk/pricing"
+            className="text-sm font-medium font-['Onest'] text-[var(--primary-purple)] hover:underline"
+          >
+            View PKR pricing
+          </Link>
+        </div>
+      )}
+
       {/* <FeaturesTabSection /> */}
-      <AddOnsSection />
+      <AddOnsSection currency={currency} />
 
       {/* Comparison Table */}
       <ComparisonTable
-        categories={getAggregatedCategories(activeBusinessTab)}
+        categories={
+          aggregateComparisonCategories
+            ? getAggregatedCategories(activeBusinessTab)
+            : businessData.categories
+        }
         tab={activeTab}
         onTabChange={setActiveTab}
         plans={businessData.plans}
         industry={activeBusinessTab}
+        currency={currency}
       />
 
 
