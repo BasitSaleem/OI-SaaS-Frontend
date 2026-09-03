@@ -16,38 +16,9 @@ const RightIcons: React.FC<RightIconsProps> = ({
 }) => {
   return (
     <div className="header-right-col hidden lg:flex justify-end items-center gap-1.5 xl:gap-4 lg:gap-[6px] ps-1 md:absolute right-2 z-50" style={{ opacity: 0, transform: "translateY(-150px)" }}>
-      <div className="relative group">
-
-        <div className="bg-white rounded-full">
-          {searchOpen ? <Image
-            onClick={() => { setSearchOpen(false); setSearchQuery(""); }}
-            id="crossIcon"
-            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/cross-btn.svg"
-            alt="Close"
-            className={`${searchOpen ? "block" : "hidden"} cursor-pointer`}
-            width={16}
-            height={16}
-          /> : <Image
-            onClick={() => setSearchOpen(true)}
-
-
-            id="searchIcon"
-            src="https://d2qlv5xtew5ayb.cloudfront.net/assets/header-images/search-icon.svg"
-            alt="Search"
-            className={`${searchOpen ? "hidden" : "block"} cursor-pointer`}
-            width={16}
-            height={16}
-          />}
-        </div>
-        {/* Tooltip */}
-        <Tooltip text="Search" />
-        {/* <div className="absolute left-[50%] -translate-x-[50%] top-[120%] z-[999] hidden group-hover:flex flex-col items-left">
-          <div className="w-2 h-2 rotate-45 bg-white border-l border-t border-[var(--primary-purple)] -mb-1 mx-auto"></div>
-          <div className="rounded-xl border border-[var(--primary-purple)] bg-white px-4 py-2 text-sm leading-4 font-['Onest'] font-semibold text-[var(--text-dark)] shadow-lg w-fit">
-            Search
-          </div>
-        </div> */}
-      </div>
+      {/* Search icon hidden from the header — the /search route, SearchField
+          component, and this trigger's wiring (searchOpen/setSearchOpen)
+          are intentionally left in place, just not rendered. */}
 
       {/* User Icon */}
       <div className="relative group">
