@@ -136,3 +136,5 @@ export const PACKAGE_LINKS: PackageLinkConfig[] = [
     production: "https://app.ownersuniverse.com/sign-up?app=OG",
   },
 ];
+
+export const PK_WHATSAPP_LINK = "https://wa.me/message/QA5W6YN32WDAG1";

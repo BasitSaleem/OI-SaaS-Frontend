@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { PricingPlan, FeatureRow } from "./types";
 import { Currency, formatAmount, convertToPkr } from "@/utils/currency";
+import { PK_WHATSAPP_LINK } from "@/utils/package-links.config";
 
 interface PricingCardProps {
   plan: PricingPlan;
@@ -63,7 +64,18 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <p className="text-sm text-[var(--text-dark)]/60 font-['Onest'] mb-10">
               {plan.description}
             </p>
-            <button className="w-full py-4 rounded-full font-bold text-white bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] transition-colors mt-auto">
+            <button
+              onClick={() => {
+                if (currency === "PKR") {
+                  window.open(PK_WHATSAPP_LINK, "_blank", "noopener,noreferrer");
+                  return;
+                }
+                if (plan.link) {
+                  window.open(plan.link, "_blank", "noopener,noreferrer");
+                }
+              }}
+              className="w-full py-4 rounded-full font-bold text-white bg-[var(--primary-teal)] hover:bg-[var(--primary-teal-dark)] transition-colors mt-auto cursor-pointer"
+            >
               Let's Connect
             </button>
           </div>
@@ -93,6 +105,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
             <button
               onClick={() => {
+                if (currency === "PKR") {
+                  window.open(PK_WHATSAPP_LINK, "_blank", "noopener,noreferrer");
+                  return;
+                }
                 if (!plan.isCustom && plan.link) {
                   const billingCycle = isYearly ? "yearly" : "monthly";
                   const finalLink = `${plan.link}&billingCycle=${billingCycle}`;

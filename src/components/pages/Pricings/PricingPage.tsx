@@ -12,6 +12,7 @@ import FeaturesTabSection from '../landing-page/FeaturesTabSection';
 import AddOnsSection from './AddOnsSection';
 import { PRICING_FAQS } from '@/constant/pricingFaqData';
 import { getPackageLink } from '@/utils/getPackageLink';
+import { PK_WHATSAPP_LINK } from '@/utils/package-links.config';
 import { Currency } from '@/utils/currency';
 import Link from 'next/link';
 
@@ -99,7 +100,7 @@ const PricingPage: React.FC<PricingPageProps> = ({
           paragraph='We’ve compiled the most common questions about Owners Inventory from setup and features to pricing and support. If you’re still unsure, our team is here to help.'
           faqs={PRICING_FAQS}
           buttonText='Start Now'
-          buttonUrl={getPackageLink('signup')}
+          buttonUrl={currency === 'PKR' ? PK_WHATSAPP_LINK : getPackageLink('signup')}
         />
       </div>
 
@@ -107,6 +108,7 @@ const PricingPage: React.FC<PricingPageProps> = ({
         title='Grow with a platform trusted by businesses worldwide.'
         description="Join a growing community of retailers, wholesalers, and entrepreneurs who are transforming how they manage inventory and sales while driving growth. With Owners Inventory, you're not just using another tool you're becoming part of a forward-thinking ecosystem that’s built to scale with your ambition. Let’s build smarter, together."
         showDemoButton={false}
+        actionButtonUrl={currency === 'PKR' ? PK_WHATSAPP_LINK : undefined}
       />
 
     </div>
