@@ -69,7 +69,13 @@ export default function Button({
 
   // Otherwise → render <Link>
   return (
-    <Link href={url} style={style} className={classes}>
+    <Link
+      href={url}
+      target={url.startsWith("http") ? "_blank" : undefined}
+      rel={url.startsWith("http") ? "noopener noreferrer" : undefined}
+      style={style}
+      className={classes}
+    >
       <span>{text}</span>
       {icon && <span className="ml-1 flex items-center">{icon}</span>}
     </Link>

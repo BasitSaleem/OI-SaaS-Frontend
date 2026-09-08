@@ -15,6 +15,7 @@ import { useRouter } from "next/navigation";
 import { BusinessType } from "./tableConfig";
 import { LuCircleFadingPlus } from "react-icons/lu";
 import { Currency, formatAmount, convertToPkr } from "@/utils/currency";
+import { PK_WHATSAPP_LINK } from "@/utils/package-links.config";
 
 interface ComparisonTableProps {
   categories: FeatureCategory[];
@@ -346,6 +347,10 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                               </p>
                               <button
                                 onClick={() => {
+                                  if (currency === "PKR") {
+                                    window.open(PK_WHATSAPP_LINK, "_blank", "noopener,noreferrer");
+                                    return;
+                                  }
                                   if (plan.link) {
                                     const billingCycle = tab === "yearly" ? "yearly" : "monthly";
                                     const finalLink = `${plan.link}&billingCycle=${billingCycle}`;

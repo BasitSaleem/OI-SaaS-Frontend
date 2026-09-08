@@ -27,6 +27,8 @@ const ButtonLg: React.FC<ButtonLgProps> = ({
   return (
     <Link
       href={url}
+      target={url.startsWith("http") ? "_blank" : undefined}
+      rel={url.startsWith("http") ? "noopener noreferrer" : undefined}
       style={{
         backgroundColor: parsedBgColor === "transparent" ? "transparent" : parsedBgColor,
         color: parsedTextColor,
