@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "bugs-fixing",
+    "bugs-fixing2",
+    "haider-dev",
+    "main",
+    "staging",
+    "testing"
+  ],
+  "parent": {
+    "bugs-fixing": "main",
+    "bugs-fixing2": "main",
+    "haider-dev": "main",
+    "main": null,
+    "staging": "main",
+    "testing": "main"
+  },
+  "order": [
+    "main",
+    "bugs-fixing",
+    "bugs-fixing2",
+    "haider-dev",
+    "staging",
+    "testing"
+  ]
+}
