@@ -21,3 +21,11 @@ export function formatAmount(amount: number, currency: Currency): string {
   }
   return `${CURRENCY_SYMBOL.PKR}${amount.toLocaleString("en-PK")}`;
 }
+
+// The yearly-billing discount shown on /pk/pricing's ribbon badge — mirrors
+// how the USD plans' yearly discount works (a fixed lower pkrYearlyPrice per
+// plan, see data/retailData.ts), just at a different rate. Monthly billing is
+// full price; only Yearly is discounted. This constant only drives the
+// badge's label text — the actual discounted numbers live on each plan's
+// pkrYearlyPrice field.
+export const PK_DISCOUNT_PERCENT = 10;
