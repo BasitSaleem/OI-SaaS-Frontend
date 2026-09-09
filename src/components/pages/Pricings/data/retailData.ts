@@ -11,9 +11,10 @@ export const retailData: {
       name: "Basic",
       price: 25,
       yearlyPrice: 20,
-      // No yearly discount for PKR — same price either billing cycle.
+      // 10% off when billed yearly, same as the USD plans' yearly discount
+      // (2499 * 0.9 = 2249.1 -> 2249).
       pkrPrice: 2499,
-      pkrYearlyPrice: 2499,
+      pkrYearlyPrice: 2249,
       description: "Perfect for small businesses getting started",
       color: "#1AD1B9",
       bgColor: "rgba(26,209,185,0.1)",
@@ -33,9 +34,9 @@ export const retailData: {
       name: "Pro",
       price: 75,
       yearlyPrice: 60,
-      // No yearly discount for PKR — same price either billing cycle.
+      // 10% off when billed yearly (4999 * 0.9 = 4499.1 -> 4499).
       pkrPrice: 4999,
-      pkrYearlyPrice: 4999,
+      pkrYearlyPrice: 4499,
       description: "Ideal for growing businesses",
       color: "#38ACCC",
       bgColor: "rgba(56,172,204,0.1)",
@@ -58,9 +59,9 @@ export const retailData: {
       name: "Enterprise",
       price: 115,
       yearlyPrice: 92,
-      // No yearly discount for PKR — same price either billing cycle.
+      // 10% off when billed yearly (9999 * 0.9 = 8999.1 -> 8999).
       pkrPrice: 9999,
-      pkrYearlyPrice: 9999,
+      pkrYearlyPrice: 8999,
       description: "For established businesses scaling up",
       color: "#5588DF",
       bgColor: "rgba(85,136,223,0.1)",

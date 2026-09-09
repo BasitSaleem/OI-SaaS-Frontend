@@ -11,6 +11,8 @@ interface CalltoActionBottomProps {
   description?: string;
   demoButtonText?: string;
   actionButtonText?: string;
+  actionButtonUrl?: string;
+  demoButtonUrl?: string;
 }
 
 const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
@@ -18,7 +20,9 @@ const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
   title = "Empower Your Business with a Platform Built for Growth",
   description = "Join ambitious retailers, wholesalers, and entrepreneurs who are changing how they handle inventory, sales, and growth. Owners Inventory isn't just a tool. It's one connected system built to move with your business through every phase, from your first sale to your hundredth location. Automate the busywork, make decisions backed by real data, and get the full return on your effort.",
   demoButtonText = "Free Demo",
-  actionButtonText = "Get Started for Free"
+  actionButtonText = "Get Started for Free",
+  actionButtonUrl,
+  demoButtonUrl,
 }) => {
   return (
     <div  >
@@ -43,12 +47,12 @@ const CalltoActionBottom: React.FC<CalltoActionBottomProps> = ({
             <div className="flex gap-6 flex-col w-full  md:flex-row items-center justify-center">
 
               {showDemoButton && (
-                <Link href={getPackageLink('signup')} className="bg-transparent
+                <Link href={demoButtonUrl || getPackageLink('signup')} className="bg-transparent
             px-4 py-2.5 md:px-[70px] md:py-3 lg:px-[70px] lg:py-4 flex items-center justify-center w-full md:w-fit text-sm md:text-base font-['Onest'] font-medium
              text-[var(--white-color)]  border border-white hover:border-transparent rounded-full hover:text-[var(--text-dark)]  hover:bg-[var(--white-color)]
              transition-colors duration-300">{demoButtonText}</Link>
               )}
-              <ButtonSm url={getPackageLink('signup')} text={actionButtonText} className='w-full md:w-fit' bgColor='var(--primary-purple)' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder />
+              <ButtonSm url={actionButtonUrl || getPackageLink('signup')} text={actionButtonText} className='w-full md:w-fit' bgColor='var(--primary-purple)' textColor="white" paddingLg="md:px-[38px] lg:px-[38px] lg:py-4" isBorder />
 
             </div>
           </div>
