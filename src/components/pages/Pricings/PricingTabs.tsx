@@ -5,9 +5,12 @@ interface PricingTabsProps {
   activeTab: "monthly" | "yearly";
   onTabChange: (tab: "monthly" | "yearly") => void;
   variant?: "tabs" | "toggle";
-  // Hides the "20% OFF" yearly-discount banner — set true wherever yearly
-  // pricing isn't actually discounted (e.g. /pk/pricing).
+  // Hides the discount ribbon banner entirely — set true wherever there's no
+  // discount to advertise at all.
   hideDiscountBadge?: boolean;
+  // The number shown on the ribbon (e.g. 20 for /pricing's yearly discount,
+  // 10 for /pk/pricing's blanket promo). Defaults to the site's usual 20%.
+  discountPercent?: number;
 }
 
 const PricingTabs: React.FC<PricingTabsProps> = ({
@@ -15,6 +18,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
   onTabChange,
   variant = "tabs",
   hideDiscountBadge = false,
+  discountPercent = 20,
 }) => {
   if (variant === "toggle") {
     return (
@@ -90,7 +94,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
         {!hideDiscountBadge && (
           <div className="absolute left-[70%] md:left-[80%] top-[-25px] md:top-[-20px] translate-x-2 flex flex-col gap-2 md:gap-4 items-center">
             <div className="flex flex-col items-center md:gap-1 ml-6 md:ml-10">
-              {/* 20% Badge */}
+              {/* Discount % Badge */}
               <div
                 className="w-[69px] h-[24px] md:w-[70px] md:h-[24px] lg:w-[112px] lg:h-[38px] flex items-center justify-center rotate-[-5deg] text-white font-bold text-[10px] md:text-sm lg:text-xl z-30"
                 style={{
@@ -99,7 +103,7 @@ const PricingTabs: React.FC<PricingTabsProps> = ({
                   backgroundColor: "var(--text-dark)",
                 }}
               >
-                20%
+                {discountPercent}%
               </div>
 
               {/* OFF Badge */}

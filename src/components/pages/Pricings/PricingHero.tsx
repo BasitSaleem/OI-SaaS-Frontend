@@ -14,7 +14,7 @@ import Paragraph from "../typography/Paragraph";
 import PricingSecurityNote from "./PricingSecurityNote";
 import { usePricingHeroScroll } from "@/hooks/usePricingHeroScroll";
 import { useHeaderAnimation } from "@/hooks/useHeaderAnimation";
-import { Currency } from "@/utils/currency";
+import { Currency, PK_DISCOUNT_PERCENT } from "@/utils/currency";
 
 interface PricingHeroProps {
   activeTab: "monthly" | "yearly";
@@ -78,7 +78,7 @@ const PricingHero: React.FC<PricingHeroProps> = ({
                   activeTab={activeTab}
                   onTabChange={onTabChange}
                   variant="tabs"
-                  hideDiscountBadge={currency === "PKR"}
+                  discountPercent={currency === "PKR" ? PK_DISCOUNT_PERCENT : 20}
                 />
 
                 {/* Industry Tabs */}
